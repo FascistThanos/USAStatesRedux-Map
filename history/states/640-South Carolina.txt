@@ -1,9 +1,19 @@
 state={
 	id=640
-	name="STATE_640"
+	name="South Carolina"
+	history={
+		owner = SCS
+		add_core_of = SCS
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 3
+			arms_factory = 2
+		}
+	}
 	provinces={
 		576 583 3553 3636 4144 4822 4925 5537 5662 6370 6445 6700 7713 8057 8216 14034 14044 14065 14068 14096 14098 14122 14127 14137 14152 
 	}
-	manpower=0
+	manpower=5343000
 	buildings_max_level_factor=1.000
+	state_category=metropolis
 }

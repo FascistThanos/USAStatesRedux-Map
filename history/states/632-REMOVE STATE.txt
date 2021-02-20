@@ -1,0 +1,14 @@
+state={
+	id=632
+	name="REMOVE THIS STATE"
+	history={
+		owner = VAV
+		add_core_of = VAV
+	}
+	provinces={
+		15368 
+	}
+	manpower=10
+	buildings_max_level_factor=1.000
+	state_category = wasteland
+}
