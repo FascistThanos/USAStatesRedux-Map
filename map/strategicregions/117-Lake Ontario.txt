@@ -1,0 +1,9 @@
+strategic_region={
+	id=117
+	name="Lake Ontario"
+	provinces={
+		16757 16776 16777 16798 16814 16876 16879 
+	}
+	weather={
+	}
+}

@@ -1,0 +1,1460 @@
+TXT_revolution_NM = {
+	icon = GFX_operations_coup_government
+	map_icon = GFX_operations_coup_government_map
+	name = TXT_revolution_NM
+	desc = TXT_revolution_NM_desc
+	days = 95
+
+	allowed = {
+		original_tag = TXT
+	}
+	available = {
+		NMN = {
+			NOT = {
+				has_war_with = ROOT
+			}
+		}
+	}
+	visible = {
+    has_completed_focus = TXT_handson
+		original_tag = TXT
+    FROM = {
+			tag = NMN
+		}
+    network_national_coverage = {
+			target = FROM
+			value > 0
+		}
+	}
+	operatives = 1
+
+	# Integer [0-100] - Every operation has a hard requirement of network strength in the target country
+	network_strength = 25
+
+	requirements = { #SCOPE_COUNTRY
+	}
+
+	equipment = {
+		infantry_equipment = 1000
+		support_equipment = 100
+	}
+
+	on_start = {  # SCOPE_OPERATION
+
+	}
+
+	outcome_modifiers = { operation_outcome }
+	cost_modifiers = { operation_cost }
+	risk_modifiers = { operation_risk }
+	outcome_potential = {
+		custom_effect_tooltip = TXT_inciterevolution_tt
+	}
+	risk_chance = 0.2
+	# outcome is an effect that runs when the operation has completed
+	outcome_execute = { # SCOPE_OPERATION
+		if = {
+      limit = {
+        NMN = {
+          has_country_flag = texan_interferance
+        }
+      }
+      NMN = {
+        random_list = {
+          25 = {
+            add_popularity = {
+              ideology = communism
+              popularity = -0.1
+            }
+          }
+          35 = {
+            add_popularity = {
+              ideology = communism
+              popularity = 0.1
+            }
+          }
+          40 = {
+            country_event = stateoperationflavor.1
+          }
+        }
+      }
+    }
+    else = {
+      NMN = {
+        random_list = {
+          10 = {
+            add_popularity = {
+              ideology = communism
+              popularity = -0.1
+            }
+          }
+          20 = {
+            add_popularity = {
+              ideology = communism
+              popularity = 0.1
+            }
+          }
+          20 = {
+            add_popularity = {
+              ideology = communism
+              popularity = 0.15
+            }
+            hidden_effect = {
+              set_country_flag = texan_interferance
+            }
+          }
+          30 = {
+            country_event = stateoperationflavor.1
+          }
+          20 = {
+            start_civil_war = {
+              ideology = communism
+              size = 0.5
+              states = {
+                891 890 887 889 376
+              }
+            }
+            hidden_effect = {
+              set_country_flag = texan_interferance
+            }
+          }
+        }
+      }
+    }
+	}
+
+	# This is where all the separate phases are defined
+	# Each phase for an operation may have a single actual phase assigned to it, which is determined here
+	phases = { #infiltration
+		infiltration_submarine = { base = 33 }
+		infiltration_paradrop = {
+			base = 33
+			modifier = {
+				ROOT = { has_equipment = { transport_plane_equipment < 1 } }
+				factor = 0.1
+			}
+		}
+		infiltration_diplomatic = { base = 33 }
+	}
+	phases = {
+		lar_communist_uprising_organise_cells = { base = 33 }
+		lar_communist_uprising_infiltrate_civil_service = { base = 33 }
+		lar_communist_uprising_organize_strikes = { base = 33 }
+	}
+	phases = {
+		lar_communist_uprising_train_workers_militia = { base = 25 }
+	}
+}
+TXT_revolution_OK = {
+  icon = GFX_operations_coup_government
+  map_icon = GFX_operations_coup_government_map
+  name = TXT_revolution_NM
+  desc = TXT_revolution_NM_desc
+  days = 95
+
+  allowed = {
+    original_tag = TXT
+  }
+  available = {
+    OKO = {
+      NOT = {
+        has_war_with = ROOT
+      }
+    }
+  }
+  visible = {
+    has_completed_focus = TXT_handson
+    original_tag = TXT
+    FROM = {
+      tag = OKO
+    }
+    network_national_coverage = {
+			target = FROM
+			value > 0
+		}
+  }
+  operatives = 1
+
+  # Integer [0-100] - Every operation has a hard requirement of network strength in the target country
+  network_strength = 25
+
+  requirements = { #SCOPE_COUNTRY
+  }
+
+  equipment = {
+    infantry_equipment = 1000
+    support_equipment = 100
+  }
+
+  on_start = {  # SCOPE_OPERATION
+
+  }
+
+  outcome_modifiers = { operation_outcome }
+  cost_modifiers = { operation_cost }
+  risk_modifiers = { operation_risk }
+  outcome_potential = {
+    custom_effect_tooltip = TXT_inciterevolution_tt
+  }
+  risk_chance = 0.2
+  # outcome is an effect that runs when the operation has completed
+  outcome_execute = { # SCOPE_OPERATION
+    if = {
+      limit = {
+        OKO = {
+          has_country_flag = texan_interferance
+        }
+      }
+      OKO = {
+        random_list = {
+          25 = {
+            add_popularity = {
+              ideology = communism
+              popularity = -0.1
+            }
+          }
+          35 = {
+            add_popularity = {
+              ideology = communism
+              popularity = 0.1
+            }
+          }
+          40 = {
+            country_event = stateoperationflavor.1
+          }
+        }
+      }
+    }
+    else = {
+      OKO = {
+        random_list = {
+          10 = {
+            add_popularity = {
+              ideology = communism
+              popularity = -0.1
+            }
+          }
+          20 = {
+            add_popularity = {
+              ideology = communism
+              popularity = 0.1
+            }
+          }
+          20 = {
+            add_popularity = {
+              ideology = communism
+              popularity = 0.15
+            }
+            hidden_effect = {
+              set_country_flag = texan_interferance
+            }
+          }
+          30 = {
+            country_event = stateoperationflavor.1
+          }
+          20 = {
+            start_civil_war = {
+              ideology = communism
+              size = 0.5
+              states = {
+                891 890 887 889 376
+              }
+            }
+            hidden_effect = {
+              set_country_flag = texan_interferance
+            }
+          }
+        }
+      }
+    }
+  }
+
+  # This is where all the separate phases are defined
+  # Each phase for an operation may have a single actual phase assigned to it, which is determined here
+  phases = { #infiltration
+    infiltration_submarine = { base = 33 }
+    infiltration_paradrop = {
+      base = 33
+      modifier = {
+        ROOT = { has_equipment = { transport_plane_equipment < 1 } }
+        factor = 0.1
+      }
+    }
+    infiltration_diplomatic = { base = 33 }
+  }
+  phases = {
+    lar_communist_uprising_organise_cells = { base = 33 }
+    lar_communist_uprising_infiltrate_civil_service = { base = 33 }
+    lar_communist_uprising_organize_strikes = { base = 33 }
+  }
+  phases = {
+    lar_communist_uprising_train_workers_militia = { base = 25 }
+  }
+}
+TXT_revolution_AR = {
+  icon = GFX_operations_coup_government
+  map_icon = GFX_operations_coup_government_map
+  name = TXT_revolution_NM
+  desc = TXT_revolution_NM_desc
+  days = 95
+
+  allowed = {
+    original_tag = TXT
+  }
+  available = {
+    ARA = {
+      NOT = {
+        has_war_with = ROOT
+      }
+    }
+  }
+  visible = {
+    has_completed_focus = TXT_handson
+    original_tag = TXT
+    FROM = {
+      tag = ARA
+    }
+    network_national_coverage = {
+			target = FROM
+			value > 0
+		}
+  }
+  operatives = 1
+
+  # Integer [0-100] - Every operation has a hard requirement of network strength in the target country
+  network_strength = 25
+
+  requirements = { #SCOPE_COUNTRY
+  }
+
+  equipment = {
+    infantry_equipment = 1000
+    support_equipment = 100
+  }
+
+  on_start = {  # SCOPE_OPERATION
+
+  }
+
+  outcome_modifiers = { operation_outcome }
+  cost_modifiers = { operation_cost }
+  risk_modifiers = { operation_risk }
+  outcome_potential = {
+    custom_effect_tooltip = TXT_inciterevolution_tt
+  }
+  risk_chance = 0.2
+  # outcome is an effect that runs when the operation has completed
+  outcome_execute = { # SCOPE_OPERATION
+    if = {
+      limit = {
+        ARA = {
+          has_country_flag = texan_interferance
+        }
+      }
+      ARA = {
+        random_list = {
+          25 = {
+            add_popularity = {
+              ideology = communism
+              popularity = -0.1
+            }
+          }
+          35 = {
+            add_popularity = {
+              ideology = communism
+              popularity = 0.1
+            }
+          }
+          40 = {
+            country_event = stateoperationflavor.1
+          }
+        }
+      }
+    }
+    else = {
+      ARA = {
+        random_list = {
+          10 = {
+            add_popularity = {
+              ideology = communism
+              popularity = -0.1
+            }
+          }
+          20 = {
+            add_popularity = {
+              ideology = communism
+              popularity = 0.1
+            }
+          }
+          20 = {
+            add_popularity = {
+              ideology = communism
+              popularity = 0.15
+            }
+            hidden_effect = {
+              set_country_flag = texan_interferance
+            }
+          }
+          30 = {
+            country_event = stateoperationflavor.1
+          }
+          20 = {
+            start_civil_war = {
+              ideology = communism
+              size = 0.5
+              states = {
+                891 890 887 889 376
+              }
+            }
+            hidden_effect = {
+              set_country_flag = texan_interferance
+            }
+          }
+        }
+      }
+    }
+  }
+
+  # This is where all the separate phases are defined
+  # Each phase for an operation may have a single actual phase assigned to it, which is determined here
+  phases = { #infiltration
+    infiltration_submarine = { base = 33 }
+    infiltration_paradrop = {
+      base = 33
+      modifier = {
+        ROOT = { has_equipment = { transport_plane_equipment < 1 } }
+        factor = 0.1
+      }
+    }
+    infiltration_diplomatic = { base = 33 }
+  }
+  phases = {
+    lar_communist_uprising_organise_cells = { base = 33 }
+    lar_communist_uprising_infiltrate_civil_service = { base = 33 }
+    lar_communist_uprising_organize_strikes = { base = 33 }
+  }
+  phases = {
+    lar_communist_uprising_train_workers_militia = { base = 25 }
+  }
+}
+TXT_revolution_LA = {
+  icon = GFX_operations_coup_government
+  map_icon = GFX_operations_coup_government_map
+  name = TXT_revolution_NM
+  desc = TXT_revolution_NM_desc
+  days = 95
+
+  allowed = {
+    original_tag = TXT
+  }
+  available = {
+    LAL = {
+      NOT = {
+        has_war_with = ROOT
+      }
+    }
+  }
+  visible = {
+    has_completed_focus = TXT_handson
+    original_tag = TXT
+    FROM = {
+      tag = LAL
+    }
+    network_national_coverage = {
+			target = FROM
+			value > 0
+		}
+  }
+  operatives = 1
+
+  # Integer [0-100] - Every operation has a hard requirement of network strength in the target country
+  network_strength = 25
+
+  requirements = { #SCOPE_COUNTRY
+  }
+
+  equipment = {
+    infantry_equipment = 1000
+    support_equipment = 100
+  }
+
+  on_start = {  # SCOPE_OPERATION
+
+  }
+
+  outcome_modifiers = { operation_outcome }
+  cost_modifiers = { operation_cost }
+  risk_modifiers = { operation_risk }
+  outcome_potential = {
+    custom_effect_tooltip = TXT_inciterevolution_tt
+  }
+  risk_chance = 0.2
+  # outcome is an effect that runs when the operation has completed
+  outcome_execute = { # SCOPE_OPERATION
+    if = {
+      limit = {
+        LAL = {
+          has_country_flag = texan_interferance
+        }
+      }
+      LAL = {
+        random_list = {
+          25 = {
+            add_popularity = {
+              ideology = communism
+              popularity = -0.1
+            }
+          }
+          35 = {
+            add_popularity = {
+              ideology = communism
+              popularity = 0.1
+            }
+          }
+          40 = {
+            country_event = stateoperationflavor.1
+          }
+        }
+      }
+    }
+    else = {
+      LAL = {
+        random_list = {
+          10 = {
+            add_popularity = {
+              ideology = communism
+              popularity = -0.1
+            }
+          }
+          20 = {
+            add_popularity = {
+              ideology = communism
+              popularity = 0.1
+            }
+          }
+          20 = {
+            add_popularity = {
+              ideology = communism
+              popularity = 0.15
+            }
+            hidden_effect = {
+              set_country_flag = texan_interferance
+            }
+          }
+          30 = {
+            country_event = stateoperationflavor.1
+          }
+          20 = {
+            start_civil_war = {
+              ideology = communism
+              size = 0.5
+              states = {
+                891 890 887 889 376
+              }
+            }
+            hidden_effect = {
+              set_country_flag = texan_interferance
+            }
+          }
+        }
+      }
+    }
+  }
+
+  # This is where all the separate phases are defined
+  # Each phase for an operation may have a single actual phase assigned to it, which is determined here
+  phases = { #infiltration
+    infiltration_submarine = { base = 33 }
+    infiltration_paradrop = {
+      base = 33
+      modifier = {
+        ROOT = { has_equipment = { transport_plane_equipment < 1 } }
+        factor = 0.1
+      }
+    }
+    infiltration_diplomatic = { base = 33 }
+  }
+  phases = {
+    lar_communist_uprising_organise_cells = { base = 33 }
+    lar_communist_uprising_infiltrate_civil_service = { base = 33 }
+    lar_communist_uprising_organize_strikes = { base = 33 }
+  }
+  phases = {
+    lar_communist_uprising_train_workers_militia = { base = 25 }
+  }
+}
+TXT_revolution_AZ = {
+  icon = GFX_operations_coup_government
+  map_icon = GFX_operations_coup_government_map
+  name = TXT_revolution_NM
+  desc = TXT_revolution_NM_desc
+  days = 95
+
+  allowed = {
+    original_tag = TXT
+  }
+  available = {
+    AZA = {
+      NOT = {
+        has_war_with = ROOT
+      }
+    }
+  }
+  visible = {
+    has_completed_focus = TXT_handson
+    original_tag = TXT
+    FROM = {
+      tag = AZA
+    }
+    network_national_coverage = {
+			target = FROM
+			value > 0
+		}
+  }
+  operatives = 1
+
+  # Integer [0-100] - Every operation has a hard requirement of network strength in the target country
+  network_strength = 25
+
+  requirements = { #SCOPE_COUNTRY
+  }
+
+  equipment = {
+    infantry_equipment = 1000
+    support_equipment = 100
+  }
+
+  on_start = {  # SCOPE_OPERATION
+
+  }
+
+  outcome_modifiers = { operation_outcome }
+  cost_modifiers = { operation_cost }
+  risk_modifiers = { operation_risk }
+  outcome_potential = {
+    custom_effect_tooltip = TXT_inciterevolution_tt
+  }
+  risk_chance = 0.2
+  # outcome is an effect that runs when the operation has completed
+  outcome_execute = { # SCOPE_OPERATION
+    if = {
+      limit = {
+        AZA = {
+          has_country_flag = texan_interferance
+        }
+      }
+      AZA = {
+        random_list = {
+          25 = {
+            add_popularity = {
+              ideology = communism
+              popularity = -0.1
+            }
+          }
+          35 = {
+            add_popularity = {
+              ideology = communism
+              popularity = 0.1
+            }
+          }
+          40 = {
+            country_event = stateoperationflavor.1
+          }
+        }
+      }
+    }
+    else = {
+      AZA = {
+        random_list = {
+          10 = {
+            add_popularity = {
+              ideology = communism
+              popularity = -0.1
+            }
+          }
+          20 = {
+            add_popularity = {
+              ideology = communism
+              popularity = 0.1
+            }
+          }
+          20 = {
+            add_popularity = {
+              ideology = communism
+              popularity = 0.15
+            }
+            hidden_effect = {
+              set_country_flag = texan_interferance
+            }
+          }
+          30 = {
+            country_event = stateoperationflavor.1
+          }
+          20 = {
+            start_civil_war = {
+              ideology = communism
+              size = 0.5
+              states = {
+                891 890 887 889 376
+              }
+            }
+            hidden_effect = {
+              set_country_flag = texan_interferance
+            }
+          }
+        }
+      }
+    }
+  }
+
+  # This is where all the separate phases are defined
+  # Each phase for an operation may have a single actual phase assigned to it, which is determined here
+  phases = { #infiltration
+    infiltration_submarine = { base = 33 }
+    infiltration_paradrop = {
+      base = 33
+      modifier = {
+        ROOT = { has_equipment = { transport_plane_equipment < 1 } }
+        factor = 0.1
+      }
+    }
+    infiltration_diplomatic = { base = 33 }
+  }
+  phases = {
+    lar_communist_uprising_organise_cells = { base = 33 }
+    lar_communist_uprising_infiltrate_civil_service = { base = 33 }
+    lar_communist_uprising_organize_strikes = { base = 33 }
+  }
+  phases = {
+    lar_communist_uprising_train_workers_militia = { base = 25 }
+  }
+}
+TXT_revolution_UT = {
+  icon = GFX_operations_coup_government
+  map_icon = GFX_operations_coup_government_map
+  name = TXT_revolution_NM
+  desc = TXT_revolution_NM_desc
+  days = 95
+
+  allowed = {
+    original_tag = TXT
+  }
+  available = {
+    UTU = {
+      NOT = {
+        has_war_with = ROOT
+      }
+    }
+  }
+  visible = {
+    has_completed_focus = TXT_handson
+    original_tag = TXT
+    FROM = {
+      tag = UTU
+    }
+    network_national_coverage = {
+      target = FROM
+      value > 0
+    }
+  }
+  operatives = 1
+
+  # Integer [0-100] - Every operation has a hard requirement of network strength in the target country
+  network_strength = 25
+
+  requirements = { #SCOPE_COUNTRY
+  }
+
+  equipment = {
+    infantry_equipment = 1000
+    support_equipment = 100
+  }
+
+  on_start = {  # SCOPE_OPERATION
+
+  }
+
+  outcome_modifiers = { operation_outcome }
+  cost_modifiers = { operation_cost }
+  risk_modifiers = { operation_risk }
+  outcome_potential = {
+    custom_effect_tooltip = TXT_inciterevolution_tt
+  }
+  risk_chance = 0.2
+  # outcome is an effect that runs when the operation has completed
+  outcome_execute = { # SCOPE_OPERATION
+    if = {
+      limit = {
+        UTU = {
+          has_country_flag = texan_interferance
+        }
+      }
+      UTU = {
+        random_list = {
+          25 = {
+            add_popularity = {
+              ideology = communism
+              popularity = -0.1
+            }
+          }
+          35 = {
+            add_popularity = {
+              ideology = communism
+              popularity = 0.1
+            }
+          }
+          40 = {
+            country_event = stateoperationflavor.1
+          }
+        }
+      }
+    }
+    else = {
+      UTU = {
+        random_list = {
+          10 = {
+            add_popularity = {
+              ideology = communism
+              popularity = -0.1
+            }
+          }
+          20 = {
+            add_popularity = {
+              ideology = communism
+              popularity = 0.1
+            }
+          }
+          20 = {
+            add_popularity = {
+              ideology = communism
+              popularity = 0.15
+            }
+            hidden_effect = {
+              set_country_flag = texan_interferance
+            }
+          }
+          30 = {
+            country_event = stateoperationflavor.1
+          }
+          20 = {
+            start_civil_war = {
+              ideology = communism
+              size = 0.5
+              states = {
+                891 890 887 889 376
+              }
+            }
+            hidden_effect = {
+              set_country_flag = texan_interferance
+            }
+          }
+        }
+      }
+    }
+  }
+
+  # This is where all the separate phases are defined
+  # Each phase for an operation may have a single actual phase assigned to it, which is determined here
+  phases = { #infiltration
+    infiltration_submarine = { base = 33 }
+    infiltration_paradrop = {
+      base = 33
+      modifier = {
+        ROOT = { has_equipment = { transport_plane_equipment < 1 } }
+        factor = 0.1
+      }
+    }
+    infiltration_diplomatic = { base = 33 }
+  }
+  phases = {
+    lar_communist_uprising_organise_cells = { base = 33 }
+    lar_communist_uprising_infiltrate_civil_service = { base = 33 }
+    lar_communist_uprising_organize_strikes = { base = 33 }
+  }
+  phases = {
+    lar_communist_uprising_train_workers_militia = { base = 25 }
+  }
+}
+TXT_revolution_NV = {
+  icon = GFX_operations_coup_government
+  map_icon = GFX_operations_coup_government_map
+  name = TXT_revolution_NM
+  desc = TXT_revolution_NM_desc
+  days = 95
+
+  allowed = {
+    original_tag = TXT
+  }
+  available = {
+    NVN = {
+      NOT = {
+        has_war_with = ROOT
+      }
+    }
+  }
+  visible = {
+    has_completed_focus = TXT_handson
+    original_tag = TXT
+    FROM = {
+      tag = NVN
+    }
+    network_national_coverage = {
+      target = FROM
+      value > 0
+    }
+  }
+  operatives = 1
+
+  # Integer [0-100] - Every operation has a hard requirement of network strength in the target country
+  network_strength = 25
+
+  requirements = { #SCOPE_COUNTRY
+  }
+
+  equipment = {
+    infantry_equipment = 1000
+    support_equipment = 100
+  }
+
+  on_start = {  # SCOPE_OPERATION
+
+  }
+
+  outcome_modifiers = { operation_outcome }
+  cost_modifiers = { operation_cost }
+  risk_modifiers = { operation_risk }
+  outcome_potential = {
+    custom_effect_tooltip = TXT_inciterevolution_tt
+  }
+  risk_chance = 0.2
+  # outcome is an effect that runs when the operation has completed
+  outcome_execute = { # SCOPE_OPERATION
+    if = {
+      limit = {
+        NVN = {
+          has_country_flag = texan_interferance
+        }
+      }
+      NVN = {
+        random_list = {
+          25 = {
+            add_popularity = {
+              ideology = communism
+              popularity = -0.1
+            }
+          }
+          35 = {
+            add_popularity = {
+              ideology = communism
+              popularity = 0.1
+            }
+          }
+          40 = {
+            country_event = stateoperationflavor.1
+          }
+        }
+      }
+    }
+    else = {
+      NVN = {
+        random_list = {
+          10 = {
+            add_popularity = {
+              ideology = communism
+              popularity = -0.1
+            }
+          }
+          20 = {
+            add_popularity = {
+              ideology = communism
+              popularity = 0.1
+            }
+          }
+          20 = {
+            add_popularity = {
+              ideology = communism
+              popularity = 0.15
+            }
+            hidden_effect = {
+              set_country_flag = texan_interferance
+            }
+          }
+          30 = {
+            country_event = stateoperationflavor.1
+          }
+          20 = {
+            start_civil_war = {
+              ideology = communism
+              size = 0.5
+              states = {
+                891 890 887 889 376
+              }
+            }
+            hidden_effect = {
+              set_country_flag = texan_interferance
+            }
+          }
+        }
+      }
+    }
+  }
+
+  # This is where all the separate phases are defined
+  # Each phase for an operation may have a single actual phase assigned to it, which is determined here
+  phases = { #infiltration
+    infiltration_submarine = { base = 33 }
+    infiltration_paradrop = {
+      base = 33
+      modifier = {
+        ROOT = { has_equipment = { transport_plane_equipment < 1 } }
+        factor = 0.1
+      }
+    }
+    infiltration_diplomatic = { base = 33 }
+  }
+  phases = {
+    lar_communist_uprising_organise_cells = { base = 33 }
+    lar_communist_uprising_infiltrate_civil_service = { base = 33 }
+    lar_communist_uprising_organize_strikes = { base = 33 }
+  }
+  phases = {
+    lar_communist_uprising_train_workers_militia = { base = 25 }
+  }
+}
+TXT_revolution_CA = {
+  icon = GFX_operations_coup_government
+  map_icon = GFX_operations_coup_government_map
+  name = TXT_revolution_NM
+  desc = TXT_revolution_NM_desc
+  days = 95
+
+  allowed = {
+    original_tag = TXT
+  }
+  available = {
+    CAC = {
+      NOT = {
+        has_war_with = ROOT
+      }
+    }
+  }
+  visible = {
+    has_completed_focus = TXT_handson
+    original_tag = TXT
+    FROM = {
+      tag = CAC
+    }
+    network_national_coverage = {
+      target = FROM
+      value > 0
+    }
+  }
+  operatives = 1
+
+  # Integer [0-100] - Every operation has a hard requirement of network strength in the target country
+  network_strength = 25
+
+  requirements = { #SCOPE_COUNTRY
+  }
+
+  equipment = {
+    infantry_equipment = 1000
+    support_equipment = 100
+  }
+
+  on_start = {  # SCOPE_OPERATION
+
+  }
+
+  outcome_modifiers = { operation_outcome }
+  cost_modifiers = { operation_cost }
+  risk_modifiers = { operation_risk }
+  outcome_potential = {
+    custom_effect_tooltip = TXT_inciterevolution_tt
+  }
+  risk_chance = 0.2
+  # outcome is an effect that runs when the operation has completed
+  outcome_execute = { # SCOPE_OPERATION
+    if = {
+      limit = {
+        CAC = {
+          has_country_flag = texan_interferance
+        }
+      }
+      CAC = {
+        random_list = {
+          25 = {
+            add_popularity = {
+              ideology = communism
+              popularity = -0.1
+            }
+          }
+          35 = {
+            add_popularity = {
+              ideology = communism
+              popularity = 0.1
+            }
+          }
+          40 = {
+            country_event = stateoperationflavor.1
+          }
+        }
+      }
+    }
+    else = {
+      CAC = {
+        random_list = {
+          10 = {
+            add_popularity = {
+              ideology = communism
+              popularity = -0.1
+            }
+          }
+          20 = {
+            add_popularity = {
+              ideology = communism
+              popularity = 0.1
+            }
+          }
+          20 = {
+            add_popularity = {
+              ideology = communism
+              popularity = 0.15
+            }
+            hidden_effect = {
+              set_country_flag = texan_interferance
+            }
+          }
+          30 = {
+            country_event = stateoperationflavor.1
+          }
+          20 = {
+            start_civil_war = {
+              ideology = communism
+              size = 0.5
+              states = {
+                891 890 887 889 376
+              }
+            }
+            hidden_effect = {
+              set_country_flag = texan_interferance
+            }
+          }
+        }
+      }
+    }
+  }
+
+  # This is where all the separate phases are defined
+  # Each phase for an operation may have a single actual phase assigned to it, which is determined here
+  phases = { #infiltration
+    infiltration_submarine = { base = 33 }
+    infiltration_paradrop = {
+      base = 33
+      modifier = {
+        ROOT = { has_equipment = { transport_plane_equipment < 1 } }
+        factor = 0.1
+      }
+    }
+    infiltration_diplomatic = { base = 33 }
+  }
+  phases = {
+    lar_communist_uprising_organise_cells = { base = 33 }
+    lar_communist_uprising_infiltrate_civil_service = { base = 33 }
+    lar_communist_uprising_organize_strikes = { base = 33 }
+  }
+  phases = {
+    lar_communist_uprising_train_workers_militia = { base = 25 }
+  }
+}
+TXT_revolution_KS = {
+  icon = GFX_operations_coup_government
+  map_icon = GFX_operations_coup_government_map
+  name = TXT_revolution_NM
+  desc = TXT_revolution_NM_desc
+  days = 95
+
+  allowed = {
+    original_tag = TXT
+  }
+  available = {
+    KSK = {
+      NOT = {
+        has_war_with = ROOT
+      }
+    }
+  }
+  visible = {
+    has_completed_focus = TXT_handson
+    original_tag = TXT
+    FROM = {
+      tag = KSK
+    }
+    network_national_coverage = {
+      target = FROM
+      value > 0
+    }
+  }
+  operatives = 1
+
+  # Integer [0-100] - Every operation has a hard requirement of network strength in the target country
+  network_strength = 25
+
+  requirements = { #SCOPE_COUNTRY
+  }
+
+  equipment = {
+    infantry_equipment = 1000
+    support_equipment = 100
+  }
+
+  on_start = {  # SCOPE_OPERATION
+
+  }
+
+  outcome_modifiers = { operation_outcome }
+  cost_modifiers = { operation_cost }
+  risk_modifiers = { operation_risk }
+  outcome_potential = {
+    custom_effect_tooltip = TXT_inciterevolution_tt
+  }
+  risk_chance = 0.2
+  # outcome is an effect that runs when the operation has completed
+  outcome_execute = { # SCOPE_OPERATION
+    if = {
+      limit = {
+        KSK = {
+          has_country_flag = texan_interferance
+        }
+      }
+      KSK = {
+        random_list = {
+          25 = {
+            add_popularity = {
+              ideology = communism
+              popularity = -0.1
+            }
+          }
+          35 = {
+            add_popularity = {
+              ideology = communism
+              popularity = 0.1
+            }
+          }
+          40 = {
+            country_event = stateoperationflavor.1
+          }
+        }
+      }
+    }
+    else = {
+      KSK = {
+        random_list = {
+          10 = {
+            add_popularity = {
+              ideology = communism
+              popularity = -0.1
+            }
+          }
+          20 = {
+            add_popularity = {
+              ideology = communism
+              popularity = 0.1
+            }
+          }
+          20 = {
+            add_popularity = {
+              ideology = communism
+              popularity = 0.15
+            }
+            hidden_effect = {
+              set_country_flag = texan_interferance
+            }
+          }
+          30 = {
+            country_event = stateoperationflavor.1
+          }
+          20 = {
+            start_civil_war = {
+              ideology = communism
+              size = 0.5
+              states = {
+                891 890 887 889 376
+              }
+            }
+            hidden_effect = {
+              set_country_flag = texan_interferance
+            }
+          }
+        }
+      }
+    }
+  }
+
+  # This is where all the separate phases are defined
+  # Each phase for an operation may have a single actual phase assigned to it, which is determined here
+  phases = { #infiltration
+    infiltration_submarine = { base = 33 }
+    infiltration_paradrop = {
+      base = 33
+      modifier = {
+        ROOT = { has_equipment = { transport_plane_equipment < 1 } }
+        factor = 0.1
+      }
+    }
+    infiltration_diplomatic = { base = 33 }
+  }
+  phases = {
+    lar_communist_uprising_organise_cells = { base = 33 }
+    lar_communist_uprising_infiltrate_civil_service = { base = 33 }
+    lar_communist_uprising_organize_strikes = { base = 33 }
+  }
+  phases = {
+    lar_communist_uprising_train_workers_militia = { base = 25 }
+  }
+}
+TXT_revolution_NY = {
+  icon = GFX_operations_coup_government
+  map_icon = GFX_operations_coup_government_map
+  name = TXT_revolution_NM
+  desc = TXT_revolution_NM_desc
+  days = 95
+
+  allowed = {
+    original_tag = TXT
+  }
+  available = {
+    NYN = {
+      NOT = {
+        has_war_with = ROOT
+      }
+    }
+  }
+  visible = {
+    has_completed_focus = TXT_handson
+    original_tag = TXT
+    FROM = {
+      tag = NYN
+    }
+    network_national_coverage = {
+      target = FROM
+      value > 0
+    }
+  }
+  operatives = 1
+
+  # Integer [0-100] - Every operation has a hard requirement of network strength in the target country
+  network_strength = 25
+
+  requirements = { #SCOPE_COUNTRY
+  }
+
+  equipment = {
+    infantry_equipment = 1000
+    support_equipment = 100
+  }
+
+  on_start = {  # SCOPE_OPERATION
+
+  }
+
+  outcome_modifiers = { operation_outcome }
+  cost_modifiers = { operation_cost }
+  risk_modifiers = { operation_risk }
+  outcome_potential = {
+    custom_effect_tooltip = TXT_inciterevolution_tt
+  }
+  risk_chance = 0.2
+  # outcome is an effect that runs when the operation has completed
+  outcome_execute = { # SCOPE_OPERATION
+    if = {
+      limit = {
+        NYN = {
+          has_country_flag = texan_interferance
+        }
+      }
+      NYN = {
+        random_list = {
+          25 = {
+            add_popularity = {
+              ideology = communism
+              popularity = -0.1
+            }
+          }
+          35 = {
+            add_popularity = {
+              ideology = communism
+              popularity = 0.1
+            }
+          }
+          40 = {
+            country_event = stateoperationflavor.1
+          }
+        }
+      }
+    }
+    else = {
+      NYN = {
+        random_list = {
+          10 = {
+            add_popularity = {
+              ideology = communism
+              popularity = -0.1
+            }
+          }
+          20 = {
+            add_popularity = {
+              ideology = communism
+              popularity = 0.1
+            }
+          }
+          20 = {
+            add_popularity = {
+              ideology = communism
+              popularity = 0.15
+            }
+            hidden_effect = {
+              set_country_flag = texan_interferance
+            }
+          }
+          30 = {
+            country_event = stateoperationflavor.1
+          }
+          20 = {
+            start_civil_war = {
+              ideology = communism
+              size = 0.5
+              states = {
+                891 890 887 889 376
+              }
+            }
+            hidden_effect = {
+              set_country_flag = texan_interferance
+            }
+          }
+        }
+      }
+    }
+  }
+
+  # This is where all the separate phases are defined
+  # Each phase for an operation may have a single actual phase assigned to it, which is determined here
+  phases = { #infiltration
+    infiltration_submarine = { base = 33 }
+    infiltration_paradrop = {
+      base = 33
+      modifier = {
+        ROOT = { has_equipment = { transport_plane_equipment < 1 } }
+        factor = 0.1
+      }
+    }
+    infiltration_diplomatic = { base = 33 }
+  }
+  phases = {
+    lar_communist_uprising_organise_cells = { base = 33 }
+    lar_communist_uprising_infiltrate_civil_service = { base = 33 }
+    lar_communist_uprising_organize_strikes = { base = 33 }
+  }
+  phases = {
+    lar_communist_uprising_train_workers_militia = { base = 25 }
+  }
+}

@@ -1,0 +1,881 @@
+﻿###########################
+# Greenland Events
+###########################
+
+add_namespace = greenland
+
+# Greenland Demands Nunavut
+country_event = {
+	id = greenland.1
+	title = greenland.1.t
+	desc = greenland.1.d
+	picture = GFX_report_event_german_troops
+	
+	is_triggered_only = yes
+	
+	option = { # Nunavut accepts
+		name = greenland.1.a
+		ai_chance = { factor = 95 }
+		GRN = {
+			country_event = { hours = 4 id = greenland.2 }
+		}
+	}
+	option = { # Nunavut denys
+		name = greenland.1.b
+		ai_chance = { factor = 5 }
+		GRN = {
+			country_event = { hours = 4 id = greenland.3 }
+		}
+		add_stability = -0.05
+	}
+}
+
+# Nunavut Accepts
+country_event = {
+	id = greenland.2
+	title = greenland.2.t
+	desc = greenland.2.d
+	picture = GFX_report_event_saf_soldiers
+	
+	is_triggered_only = yes
+	
+	option = { # gives cores (may change to claims) and land
+		name = greenland.2.a
+		ai_chance = { factor = 100 }
+		683 = {
+			if = {
+				limit = { is_owned_by = NUN }
+				add_core_of = GRN
+				add_compliance = 60
+			}
+		}
+		950 = {
+			if = {
+				limit = { is_owned_by = NUN }
+				add_core_of = GRN
+				add_compliance = 60
+			}
+		}
+		NUN = {
+			every_unit_leader = {
+				set_nationality = GRN
+			}
+		}
+		annex_country = { target = NUN transfer_troops = yes }
+		add_political_power = 30
+		add_war_support = 0.1
+		add_stability = 0.02
+		set_global_flag = greenland_nunavut_annexed
+		#news event thing
+		hidden_effect = {
+			news_event = { hours = 6 id = greenland_news.1 }
+		}
+	}
+}
+
+# Nunavut Denys
+country_event = {
+	id = greenland.3
+	title = greenland.3.t
+	desc = greenland.3.d
+	picture = GFX_report_event_soviet_tanks_snow
+	
+	is_triggered_only = yes
+	
+	option = { # gives war goal
+		name = greenland.3.a
+		ai_chance = { factor = 100 }
+		add_state_claim = 683
+		add_state_claim = 950
+		create_wargoal = {
+			type = take_state_focus
+			target = NUN
+			generator = { 683 950 }
+		}
+		#news event thing
+		hidden_effect = {
+			news_event = { hours = 6 id = greenland_news.2 }
+		}
+	}
+}
+
+# The Greek Question
+country_event = {
+	id = greenland.4
+	title = greenland.4.t
+	desc = greenland.4.d
+	picture = GFX_report_event_german_troops
+	
+	is_triggered_only = yes
+	
+	option = { # Accept Subjugation
+		name = greenland.4.a
+		ai_chance = { factor = 20 }
+		GRN = {
+			country_event = { hours = 4 id = greenland.5 }
+		}
+		ai_chance = {
+			modifier = {
+				if = {
+					limit = { 
+						has_global_flag = greenland_nunavut_annexed
+					}
+				}
+				factor = 3 
+			}
+		}
+	}
+	option = { # What? (they don't subjugate)
+		name = greenland.4.b
+		ai_chance = { factor = 80 }
+		GRN = {
+			country_event = { hours = 4 id = greenland.6 }
+		}
+		ai_chance = {
+			modifier = {
+				if = {
+					limit = { 
+						has_global_flag = greenland_nunavut_annexed
+					}
+				}
+				factor = 0.41
+			}
+		}
+		add_stability = -0.01
+	}
+}
+
+# Greece Accepts
+country_event = {
+	id = greenland.5
+	title = greenland.5.t
+	desc = greenland.5.d
+	picture = GFX_report_event_saf_soldiers
+	
+	is_triggered_only = yes
+	
+	option = { # gives claims (cores op here) and land
+		name = greenland.5.a
+		ai_chance = { factor = 100 }
+		47 = {
+			if = {
+				limit = { is_owned_by = GRE }
+				add_claim_by = GRN
+				add_compliance = 60
+			}
+		}
+		731 = {
+			if = {
+				limit = { is_owned_by = GRE }
+				add_claim_by = GRN
+				add_compliance = 60
+			}
+		}
+		164 = {
+			if = {
+				limit = { is_owned_by = GRE }
+				add_claim_by = GRN
+				add_compliance = 60
+			}
+		}
+		182 = {
+			if = {
+				limit = { is_owned_by = GRE }
+				add_claim_by = GRN
+				add_compliance = 60
+			}
+		}
+		184 = {
+			if = {
+				limit = { is_owned_by = GRE }
+				add_claim_by = GRN
+				add_compliance = 60
+			}
+		}
+		185 = {
+			if = {
+				limit = { is_owned_by = GRE }
+				add_claim_by = GRN
+				add_compliance = 60
+			}
+		}
+		186 = {
+			if = {
+				limit = { is_owned_by = GRE }
+				add_claim_by = GRN
+				add_compliance = 60
+			}
+		}
+		187 = {
+			if = {
+				limit = { is_owned_by = GRE }
+				add_claim_by = GRN
+				add_compliance = 60
+			}
+		}
+		annex_country = { target = GRE transfer_troops = yes }
+		add_political_power = 40
+		add_war_support = 0.15
+		add_stability = 0.03
+		set_global_flag = greenland_greece_annexed
+		#news event thing
+		hidden_effect = {
+			news_event = { hours = 6 id = greenland_news.3 }
+		}
+	}
+}
+
+# Greece denys
+country_event = {
+	id = greenland.6
+	title = greenland.6.t
+	desc = greenland.6.d
+	picture = GFX_report_event_soviet_tanks_snow
+	
+	is_triggered_only = yes
+	
+	option = { # gives war goal
+		name = greenland.6.a
+		ai_chance = { factor = 100 }
+		add_state_claim = 47
+		add_state_claim = 164
+		add_state_claim = 182
+		add_state_claim = 184
+		add_state_claim = 185
+		add_state_claim = 186
+		add_state_claim = 187
+		add_state_claim = 731
+		create_wargoal = {
+			type = take_state_focus
+			target = GRE
+			generator = { 47 164 182 184 185 186 187 731 }
+		}
+		#news event thing
+		hidden_effect = {
+			news_event = { hours = 6 id = greenland_news.4 }
+		}
+	}
+}
+
+
+# greece and denmark released
+country_event = {
+	id = greenland.7
+	title = greenland.7.t
+	desc = greenland.7.d
+	picture = GFX_report_event_german_troops
+	
+	is_triggered_only = yes
+	
+	option = { # debug
+		name = greenland.7.a
+		ai_chance = { factor = 1 }
+		release = GRE
+		release = DEN
+		
+	}
+	
+}
+
+# Greenland Demands Newfoundland
+country_event = {
+	id = greenland.8
+	title = greenland.8.t
+	desc = greenland.8.d
+	picture = GFX_report_event_german_troops
+	
+	is_triggered_only = yes
+	
+	option = { # Newfoundland accepts
+		name = greenland.8.a
+		ai_chance = { factor = 59 }
+		GRN = {
+			country_event = { hours = 4 id = greenland.9}
+		}
+		
+		ai_chance = {
+			modifier = {
+				if = {
+					limit = { 
+						has_global_flag = greenland_greece_annexed
+					}
+				}
+				factor = 2
+			}
+		}
+	}
+	option = { # Newfoundland denys
+		name = greenland.8.b
+		ai_chance = { factor = 41 }
+		GRN = {
+			country_event = { hours = 4 id = greenland.10 }
+		}
+		
+		ai_chance = {
+			modifier = {
+				if = {
+					limit = { 
+						has_global_flag = greenland_greece_annexed
+					}
+				}
+				factor = 0.65
+			}
+		}
+		add_stability = -0.05
+	}
+}
+
+# Newfoundland Accepts
+country_event = {
+	id = greenland.9
+	title = greenland.9.t
+	desc = greenland.9.d
+	picture = GFX_report_event_saf_soldiers
+	
+	is_triggered_only = yes
+	
+	option = { # gives claims and land
+		name = greenland.9.a
+		ai_chance = { factor = 100 }
+		331 = {
+			if = {
+				limit = { is_owned_by = NLN }
+				add_claim_by = GRN
+				add_compliance = 60
+			}
+		}
+		1145 = {
+			if = {
+				limit = { is_owned_by = NLN }
+				add_claim_by = GRN
+				add_compliance = 60
+			}
+		}
+		1146 = {
+			if = {
+				limit = { is_owned_by = NLN }
+				add_claim_by = GRN
+				add_compliance = 60
+			}
+		}
+		annex_country = { target = NLN transfer_troops = yes }
+		add_political_power = 40
+		add_war_support = 0.1
+		add_stability = 0.03
+		set_global_flag = greenland_newfoundland_annexed
+		#news event thing
+		hidden_effect = {
+			news_event = { hours = 6 id = greenland_news.5 }
+		}
+	}
+}
+
+# Newfoundland Denys
+country_event = {
+	id = greenland.10
+	title = greenland.10.t
+	desc = greenland.10.d
+	picture = GFX_report_event_soviet_tanks_snow
+	
+	is_triggered_only = yes
+	
+	option = { # gives war goal
+		name = greenland.10.a
+		ai_chance = { factor = 100 }
+		add_state_claim = 683
+		add_state_claim = 950
+		create_wargoal = {
+			type = take_state_focus
+			target = NLN
+			generator = { 331 1145 1146 }
+		}
+		#news event thing
+		hidden_effect = {
+			news_event = { hours = 6 id = greenland_news.6 }
+		}
+	}
+}
+
+# Greenland wants LA for No Reason
+country_event = {
+	id = greenland.11
+	title = greenland.11.t
+	desc = greenland.11.d
+	picture = GFX_report_event_german_troops
+	
+	is_triggered_only = yes
+	
+	option = { # they give la
+		name = greenland.11.a
+		ai_chance = { factor = 10 }
+		GRN = {
+			country_event = { hours = 6 id = greenland.12 }
+		}
+	}
+	option = { # they don't give la
+		name = greenland.11.b
+		ai_chance = { factor = 40 }
+		GRN = {
+			country_event = { hours = 6 id = greenland.13 }
+		}
+	}
+	option = { # they give alaska as a compromise
+		name = greenland.11.c
+		ai_chance = { factor = 45 }
+		GRN = {
+			country_event = { hours = 6 id = greenland.14 }
+		}
+	}
+}
+
+# California gives us LA
+country_event = {
+	id = greenland.12
+	title = greenland.12.t
+	desc = greenland.12.d
+	picture = GFX_report_event_saf_soldiers
+	
+	is_triggered_only = yes
+	
+	option = { # gives claim and land for la
+		name = greenland.12.a
+		ai_chance = { factor = 100 }
+		803 = {
+			if = {
+				limit = { is_owned_by = CAC }
+				add_claim_by = GRN
+				GRN = { transfer_state = 803 }
+				add_compliance = 60
+			}
+		}
+		add_political_power = 30
+		add_war_support = 0.1
+		add_stability = 0.05
+		set_global_flag = greenland_la_annexed
+		#news event thing
+		hidden_effect = {
+			news_event = { hours = 6 id = greenland_news.7 }
+		}
+	}
+}
+
+# California denys!
+country_event = {
+	id = greenland.13
+	title = greenland.13.t
+	desc = greenland.13.d
+	picture = GFX_report_event_soviet_tanks_snow
+	
+	is_triggered_only = yes
+	
+	option = { # gives war goal
+		name = greenland.13.a
+		ai_chance = { factor = 100 }
+		add_state_claim = 803
+		create_wargoal = {
+			type = take_state_focus
+			target = CAC
+			generator = { 803 }
+		}
+		#news event thing
+		hidden_effect = {
+			news_event = { hours = 6 id = greenland_news.8 }
+		}
+	}
+}
+
+# California offers a Compromise
+country_event = {
+	id = greenland.14
+	title = greenland.14.t
+	desc = greenland.14.d
+	picture = GFX_report_event_generic_parliament
+	
+	is_triggered_only = yes
+	
+	option = { # gives claim and land in alaska to columbia and greenland
+		name = greenland.14.a
+		ai_chance = { factor = 100 }
+		835 = {
+			if = {
+				limit = { is_owned_by = AKA }
+				add_claim_by = GRN
+				GRN = { transfer_state = 835 }
+				add_compliance = 60
+			}
+		}
+		832 = {
+			if = {
+				limit = { is_owned_by = AKA }
+				add_claim_by = GRN
+				GRN = { transfer_state = 832 }
+				add_compliance = 60
+			}
+		}
+		831 = {
+			if = {
+				limit = { is_owned_by = AKA }
+				add_claim_by = GRN
+				GRN = { transfer_state = 831 }
+				add_compliance = 60
+			}
+		}
+		830 = {
+			if = {
+				limit = { is_owned_by = AKA }
+				add_claim_by = GRN
+				GRN = { transfer_state = 830 }
+				add_compliance = 60
+			}
+		}
+		463 = {
+			if = {
+				limit = { is_owned_by = AKA }
+				add_claim_by = GRN
+				GRN = { transfer_state = 463 }
+				add_compliance = 60
+			}
+		}
+		833 = {
+			if = {
+				limit = { is_owned_by = AKA }
+				add_claim_by = GRN
+				GRN = { transfer_state = 833 }
+				add_compliance = 60
+			}
+		}
+		834 = {
+			if = {
+				limit = { is_owned_by = AKA }
+				add_claim_by = BCB
+				BCB = { transfer_state = 834 }
+				add_compliance = 60
+			}
+		}
+		add_political_power = 30
+		add_war_support = 0.1
+		add_stability = 0.05
+		set_global_flag = greenland_alaska_annexed
+		#news event thing
+		hidden_effect = {
+			news_event = { hours = 6 id = greenland_news.9 }
+		}
+	}
+}
+
+# denmark, scan released
+country_event = {
+	id = greenland.15
+	title = greenland.15.t
+	desc = greenland.15.d
+	picture = GFX_report_event_german_troops
+	
+	is_triggered_only = yes
+	
+	option = { # debug
+		name = greenland.15.a
+		ai_chance = { factor = 1 }
+		release = ICE
+		release = DEN
+		release = FIN
+		release = NOR
+		release = SWE
+		
+	}
+	
+}
+
+# iceland released
+country_event = {
+	id = greenland.16
+	title = greenland.16.t
+	desc = greenland.16.d
+	picture = GFX_report_event_german_troops
+	
+	is_triggered_only = yes
+	
+	option = { # debug
+		name = greenland.16.a
+		ai_chance = { factor = 1 }
+		release = ICE
+		
+	}
+	
+}
+
+# Greenland Elections
+country_event = {
+	id = greenland.17
+	title = greenland.17.t
+	desc = greenland.17.d
+	picture = GFX_report_event_hungary_parliament
+	
+	is_triggered_only = yes
+	
+	option = { # council wins
+		name = greenland.17.a
+		ai_chance = { factor = 80 }
+		set_global_flag = GRN_election_council
+		complete_national_focus = GRN_the_council_wins
+		
+	}
+	option = { # polar bears wins
+		name = greenland.17.b
+		ai_chance = { factor = 20 }
+		
+		create_country_leader = {
+				name = "Ice Bear"
+				desc = ""
+				picture = "Portrait_GRN_Ice_Bear.dds"
+				expire = "1965.1.1"
+				ideology = conservatism
+				traits = {
+					great_war_hero
+				}
+			}
+		set_party_name = { 
+			ideology = democratic
+			long_name = GRN_democratic_polarbear_long
+			name = GRN_democratic_polarbear
+		}
+		create_navy_leader = {
+			name = "Grizzly Bear"
+			picture = "Portrait_GRN_Grizz.dds"
+			traits = { navy_career_officer crisis_magician }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 5
+			maneuvering_skill = 3
+			coordination_skill = 5
+		}
+		create_corps_commander = {
+			name = "Panda Bear"
+			picture = "Portrait_GRN_Panda.dds"
+			traits = { ambusher scavenger }
+			skill = 3
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+		}
+		set_global_flag = GRN_election_polar_bears
+		complete_national_focus = GRN_the_polar_bears_somehow_win
+		
+	}
+}
+
+# Greenland invites us to join the Northern Alliance
+country_event = {
+	id = greenland.18
+	title = greenland.18.t
+	desc = greenland.18.d
+	picture = GFX_report_event_hungary_parliament
+	
+	is_triggered_only = yes
+	
+	option = { # they accept
+		name = greenland.18.a
+		ai_chance = { factor = 80 }
+			if = {
+					limit = { original_tag = LAB }
+					GRN = { add_to_faction = LAB }
+				}
+			if = {
+					limit = { original_tag = NLN }
+					GRN = { add_to_faction = NLN }
+				}
+			if = {
+					limit = { original_tag = NSN }
+					GRN = { add_to_faction = NSN }
+				}
+			if = {
+					limit = { original_tag = PEP }
+					GRN = { add_to_faction = PEP }
+				}
+			if = {
+					limit = { original_tag = NBN }
+					GRN = { add_to_faction = NBN }
+				}
+		
+	}
+	option = { # don't accept
+		name = greenland.18.b
+		ai_chance = { factor = 20 }
+		reverse_add_opinion_modifier = {
+			target = GRN
+			modifier = GRN_northern_alliance_no
+		}
+		
+	}
+}
+
+# Greenland invites us to join the Arctic Alliance
+country_event = {
+	id = greenland.19
+	title = greenland.19.t
+	desc = greenland.19.d
+	picture = GFX_report_event_hungary_parliament
+	
+	is_triggered_only = yes
+	
+	option = { # they accept
+		name = greenland.19.a
+		ai_chance = { factor = 80 }
+			if = {
+					limit = { original_tag = NUN }
+					GRN = { add_to_faction = NUN }
+				}
+			if = {
+					limit = { original_tag = NTN }
+					GRN = { add_to_faction = NTN }
+				}
+			if = {
+					limit = { original_tag = YTY }
+					GRN = { add_to_faction = YTY }
+				}
+			if = {
+					limit = { original_tag = AKA }
+					GRN = { add_to_faction = AKA }
+				}
+			
+		
+	}
+	option = { # don't accept
+		name = greenland.19.b
+		ai_chance = { factor = 20 }
+		reverse_add_opinion_modifier = {
+			target = GRN
+			modifier = GRN_arctic_alliance_no
+		}
+		
+	}
+}
+
+# Greenland proposes an Northern Union
+country_event = {
+	id = greenland.20
+	title = greenland.20.t
+	desc = greenland.20.d
+	picture = GFX_report_event_hungary_parliament
+	
+	is_triggered_only = yes
+	
+	option = { # they accept
+		name = greenland.20.a
+		ai_chance = { factor = 80 }
+			if = {
+					limit = { original_tag = LAB }
+					set_global_flag = LAB_UNION
+				}
+			if = {
+					limit = { original_tag = NLN }
+					set_global_flag = NLN_UNION
+				}
+			if = {
+					limit = { original_tag = NSN }
+					set_global_flag = NSN_UNION
+				}
+			if = {
+					limit = { original_tag = PEP }
+					set_global_flag = PEP_UNION
+				}
+			if = {
+					limit = { original_tag = NBN }
+					set_global_flag = NBN_UNION
+				}
+			GRN = { country_event = { id = greenland.21 } }	
+		
+	}
+	option = { # don't accept
+		name = greenland.20.b
+		ai_chance = { factor = 20 }
+		reverse_add_opinion_modifier = {
+			target = GRN
+			modifier = GRN_northern_union_no
+			
+		}
+		add_stability = 0.05
+		GRN = { country_event = { id = greenland.22 } }	
+		
+	}
+}
+
+# they accept
+country_event = {
+	id = greenland.21
+	title = greenland.21.t
+	desc = greenland.21.d
+	picture = GFX_report_event_hungary_parliament
+	
+	is_triggered_only = yes
+	
+	option = { # excellent
+		name = greenland.21.a
+		ai_chance = { factor = 80 }
+		add_political_power = 20	
+		
+	}
+}
+
+# they deny
+country_event = {
+	id = greenland.22
+	title = greenland.22.t
+	desc = greenland.22.d
+	picture = GFX_report_event_hungary_parliament
+	
+	is_triggered_only = yes
+	
+	option = { # bruh
+		name = greenland.22.a
+		ai_chance = { factor = 80 }
+		add_political_power = -10	
+		
+	}
+}
+
+# Greenland proposes an Arctic Union
+country_event = {
+	id = greenland.23
+	title = greenland.23.t
+	desc = greenland.23.d
+	picture = GFX_report_event_hungary_parliament
+	
+	is_triggered_only = yes
+	
+	option = { # they accept
+		name = greenland.23.a
+		ai_chance = { factor = 80 }
+			if = {
+					limit = { original_tag = NUN }
+					set_global_flag = NUN_UNION
+				}
+			if = {
+					limit = { original_tag = NTN }
+					set_global_flag = NTN_UNION
+				}
+			if = {
+					limit = { original_tag = YTY }
+					set_global_flag = YTY_UNION
+				}
+			if = {
+					limit = { original_tag = AKA }
+					set_global_flag = AKA_UNION
+				}
+			GRN = { country_event = { id = greenland.21 } }	
+		
+	}
+	option = { # don't accept
+		name = greenland.23.b
+		ai_chance = { factor = 20 }
+		reverse_add_opinion_modifier = {
+			target = GRN
+			modifier = GRN_arctic_union_no
+			
+		}
+		add_stability = 0.05
+		GRN = { country_event = { id = greenland.22 } }	
+		
+	}
+}
+
