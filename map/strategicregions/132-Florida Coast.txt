@@ -1,0 +1,11 @@
+
+strategic_region={
+	id=132
+	name="Florida Coast"
+	provinces={
+		15686 15760 15769 15850 15862 16147 16153 16190 16227 16728 
+	}
+	naval_terrain=water_fjords
+	weather={
+	}
+}

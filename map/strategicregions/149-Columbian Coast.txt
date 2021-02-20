@@ -1,0 +1,11 @@
+
+strategic_region={
+	id=149
+	name="Columbian Coast"
+	provinces={
+		15517 15782 15825 15907 15932 16013 16035 16318 16321 16452 16504 16540 
+	}
+	naval_terrain=water_fjords
+	weather={
+	}
+}

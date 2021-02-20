@@ -1,0 +1,11 @@
+
+strategic_region={
+	id=145
+	name="Guyana Coast"
+	provinces={
+		15916 16012 16080 16130 16140 16212 16299 16616 16748 16750 16751 
+	}
+	naval_terrain=water_shallow_sea
+	weather={
+	}
+}

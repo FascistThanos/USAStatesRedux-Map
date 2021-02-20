@@ -1,0 +1,9 @@
+strategic_region={
+	id=163
+	name="Western Canal Zone"
+	provinces={
+		16199 16215 16280 16326 16368 16444 
+	}
+	weather={
+	}
+}

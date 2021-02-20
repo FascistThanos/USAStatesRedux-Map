@@ -1,0 +1,11 @@
+
+strategic_region={
+	id=154
+	name="West Emperor Chain"
+	provinces={
+		15457 15486 15519 15533 15570 15573 15590 15656 15682 15697 15703 15793 15823 15875 15982 16011 16056 16084 16177 16192 16367 16377 16461 16561 16722 16724 
+	}
+	naval_terrain=water_deep_ocean
+	weather={
+	}
+}

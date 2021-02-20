@@ -1,0 +1,11 @@
+
+strategic_region={
+	id=164
+	name="Central American Plain"
+	provinces={
+		15426 15504 15544 15567 15748 15847 15874 15877 16152 16198 16221 16244 16327 16541 16566 16578 16747 16753 
+	}
+	naval_terrain=water_shallow_sea
+	weather={
+	}
+}

@@ -1,0 +1,11 @@
+
+strategic_region={
+	id=165
+	name="Pacific Line Ridge"
+	provinces={
+		15417 15535 15568 15657 15659 15693 15722 15739 15752 15761 15774 15791 15810 15812 15987 16016 16017 16158 16205 16325 16336 16369 16478 16491 16551 
+	}
+	naval_terrain=water_deep_ocean
+	weather={
+	}
+}

@@ -1,0 +1,9 @@
+strategic_region={
+	id=136
+	name="Gulf of Gonâve"
+	provinces={
+		15969 
+	}
+	weather={
+	}
+}

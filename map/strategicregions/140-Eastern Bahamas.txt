@@ -1,0 +1,11 @@
+
+strategic_region={
+	id=140
+	name="Eastern Bahamas"
+	provinces={
+		15507 15622 15707 15947 16032 16266 16301 16404 
+	}
+	naval_terrain=water_fjords
+	weather={
+	}
+}

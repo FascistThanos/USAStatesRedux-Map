@@ -1,0 +1,11 @@
+
+strategic_region={
+	id=155
+	name="Micronesian Gap"
+	provinces={
+		15446 15511 15525 15658 15665 15674 15694 15711 15837 15871 16161 16289 16412 16545 16576 16749 
+	}
+	naval_terrain=water_deep_ocean
+	weather={
+	}
+}

@@ -1,9 +1,9 @@
 
 strategic_region={
-	id=116
-	name="Lake Erie"
+	id=133
+	name="Carolina Coast"
 	provinces={
-		16756 16759 16787 16811 16883 16884 16885 
+		15923 15991 16070 16079 16254 16356 16533 16615 
 	}
 	naval_terrain=water_shallow_sea
 	weather={

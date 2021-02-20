@@ -1,0 +1,11 @@
+
+strategic_region={
+	id=161
+	name="Southern Mexico Coast"
+	provinces={
+		15512 15636 15788 15945 16027 16053 16096 16165 16209 16527 16568 16581 16623 16651 16656 
+	}
+	naval_terrain=water_shallow_sea
+	weather={
+	}
+}

@@ -1,0 +1,11 @@
+
+strategic_region={
+	id=148
+	name="Alaskan Coast"
+	provinces={
+		15600 15690 15802 16119 16310 16317 16322 16347 16441 16451 16543 16552 16585 16654 16713 
+	}
+	naval_terrain=water_shallow_sea
+	weather={
+	}
+}
