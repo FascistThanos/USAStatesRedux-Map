@@ -1,9 +1,18 @@
 state={
 	id=641
-	name="STATE_641"
+	name="Mississippi"
+	history={
+		owner = MSM
+		add_core_of = MSM
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+		}
+	}
 	provinces={
 		10 232 238 1111 1232 1725 1850 1882 1911 1920 2229 2455 2649 3130 3214 3229 3427 3798 4172 4404 4640 4761 4982 5698 6090 6522 6961 7616 7855 14013 14020 14089 14091 14105 14110 14144 14145 14159 14163 14166 14173 14179 14209 14210 14240 14249 14262 14271 14292 
 	}
-	manpower=0
+	manpower=6216000
 	buildings_max_level_factor=1.000
+	state_category = large_city
 }
