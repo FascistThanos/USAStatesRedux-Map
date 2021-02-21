@@ -1,9 +1,0 @@
-strategic_region={
-	id=93
-	name="STRATEGICREGION_93"
-	provinces={
-		126 6203 
-	}
-	weather={
-	}
-}

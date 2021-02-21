@@ -1,9 +1,0 @@
-strategic_region={
-	id=166
-	name="Pacific International Zone"
-	provinces={
-		15411 15503 15557 15560 15587 15708 15880 16037 16042 16156 16237 16238 16282 16307 16595 
-	}
-	weather={
-	}
-}
