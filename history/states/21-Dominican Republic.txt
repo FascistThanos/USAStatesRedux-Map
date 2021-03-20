@@ -1,0 +1,9 @@
+state={
+	id=21
+	name="Dominican Republic"
+	provinces={
+		359 1917 3998 5055 6269 12302 12312 12313 12314 12317 
+	}
+	
+	}
+}

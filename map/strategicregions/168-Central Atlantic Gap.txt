@@ -1,0 +1,11 @@
+
+strategic_region={
+	id=168
+	name="Central Atlantic Gap"
+	provinces={
+		12749 12781 12791 12890 12990 13018 13075 13094 13102 13184 13194 13283 13330 13341 13342 13362 13419 13558 13648 13689 13763 13852 13917 14105 14109 
+	}
+	naval_terrain=water_deep_ocean
+	weather={
+	}
+}

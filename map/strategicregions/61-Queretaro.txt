@@ -1,0 +1,9 @@
+strategic_region={
+	id=61
+	name="Querétaro"
+	provinces={
+		4408 12293 
+	}
+	weather={
+	}
+}

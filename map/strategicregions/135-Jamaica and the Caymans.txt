@@ -1,0 +1,11 @@
+
+strategic_region={
+	id=135
+	name="Jamaica and the Caymans"
+	provinces={
+		12787 12876 13187 13188 13293 13848 
+	}
+	naval_terrain=water_fjords
+	weather={
+	}
+}

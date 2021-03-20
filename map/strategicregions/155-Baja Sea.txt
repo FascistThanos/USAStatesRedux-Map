@@ -1,0 +1,11 @@
+
+strategic_region={
+	id=155
+	name="Baja Sea"
+	provinces={
+		12936 13015 13223 13259 13308 13328 13556 13560 13650 13681 13718 13839 13862 13888 13948 13965 14090 14096 
+	}
+	naval_terrain=water_shallow_sea
+	weather={
+	}
+}

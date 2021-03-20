@@ -1,0 +1,11 @@
+
+strategic_region={
+	id=157
+	name="Western Canal Zone"
+	provinces={
+		12914 12989 13028 13055 13311 13449 13465 13528 13618 13682 13808 13867 13868 13895 13927 
+	}
+	naval_terrain=water_shallow_sea
+	weather={
+	}
+}

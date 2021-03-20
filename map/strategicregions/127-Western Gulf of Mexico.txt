@@ -1,0 +1,9 @@
+strategic_region={
+	id=127
+	name="Western Gulf of Mexico"
+	provinces={
+		12825 12971 13080 13132 13170 13298 13666 13687 13720 13960 14085 14086 
+	}
+	weather={
+	}
+}

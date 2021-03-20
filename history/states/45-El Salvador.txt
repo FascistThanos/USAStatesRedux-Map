@@ -1,0 +1,10 @@
+
+state={
+	id=45
+	name="El Salvador"
+	provinces={
+		123 12685 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+}

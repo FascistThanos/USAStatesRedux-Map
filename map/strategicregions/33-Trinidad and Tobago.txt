@@ -1,0 +1,9 @@
+strategic_region={
+	id=33
+	name="Trinidad and Tobago"
+	provinces={
+		1938 12734 
+	}
+	weather={
+	}
+}

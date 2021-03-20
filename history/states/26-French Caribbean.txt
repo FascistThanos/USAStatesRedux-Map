@@ -1,0 +1,7 @@
+state={
+	id=26
+	name="French Caribbean Islands"
+	provinces={
+		12719 12722 12723 12724 
+	}	
+}

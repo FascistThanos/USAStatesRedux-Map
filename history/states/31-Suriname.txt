@@ -1,0 +1,9 @@
+state={
+	id=31
+	name="Suriname"
+	provinces={
+		1170 1787 2410 3205 12364 
+	}
+	
+	}
+}

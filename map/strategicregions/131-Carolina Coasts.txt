@@ -1,0 +1,11 @@
+
+strategic_region={
+	id=131
+	name="Carolina Coasts"
+	provinces={
+		13049 13429 13496 13788 14080 
+	}
+	naval_terrain=water_shallow_sea
+	weather={
+	}
+}

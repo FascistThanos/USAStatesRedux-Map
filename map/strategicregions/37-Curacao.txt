@@ -1,0 +1,9 @@
+strategic_region={
+	id=37
+	name="Curaçao"
+	provinces={
+		12730 
+	}
+	weather={
+	}
+}

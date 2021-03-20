@@ -1,0 +1,9 @@
+strategic_region={
+	id=54
+	name="Puebla"
+	provinces={
+		1718 2673 6732 
+	}
+	weather={
+	}
+}

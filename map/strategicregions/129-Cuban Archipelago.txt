@@ -1,0 +1,11 @@
+
+strategic_region={
+	id=129
+	name="Cuban Archipelago"
+	provinces={
+		13252 13334 13378 13415 13778 13931 
+	}
+	naval_terrain=water_fjords
+	weather={
+	}
+}

@@ -1,0 +1,9 @@
+strategic_region={
+	id=38
+	name="Aruba"
+	provinces={
+		12728 
+	}
+	weather={
+	}
+}

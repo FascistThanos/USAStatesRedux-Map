@@ -1,0 +1,10 @@
+
+strategic_region={
+	id=58
+	name="Colima"
+	provinces={
+		12305 12707 
+	}
+	weather={
+	}
+}

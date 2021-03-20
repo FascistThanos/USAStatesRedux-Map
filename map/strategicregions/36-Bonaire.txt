@@ -1,0 +1,9 @@
+strategic_region={
+	id=36
+	name="Bonaire"
+	provinces={
+		12731 
+	}
+	weather={
+	}
+}

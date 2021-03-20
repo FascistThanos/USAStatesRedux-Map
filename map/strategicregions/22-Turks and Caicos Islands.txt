@@ -1,0 +1,10 @@
+
+strategic_region={
+	id=22
+	name="Turks and Caicos Islands"
+	provinces={
+		12694 12695 12696 12943 
+	}
+	weather={
+	}
+}

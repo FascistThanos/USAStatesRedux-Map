@@ -1,0 +1,11 @@
+
+strategic_region={
+	id=173
+	name="Lake Superior"
+	provinces={
+		14164 14165 14179 14187 14189 14190 14221 14228 14244 14247 14251 14259 14261 14273 14304 14305 14306 14307 14308 14309 14310 
+	}
+	naval_terrain=water_shallow_sea
+	weather={
+	}
+}

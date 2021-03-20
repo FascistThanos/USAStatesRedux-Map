@@ -1,0 +1,9 @@
+state={
+	id=125
+	name="Bermuda"
+	provinces={
+		12654 
+	}
+	
+	}
+}

@@ -1,0 +1,11 @@
+
+strategic_region={
+	id=170
+	name="Lake Erie"
+	provinces={
+		14167 14184 14242 14265 14320 14321 
+	}
+	naval_terrain=water_shallow_sea
+	weather={
+	}
+}

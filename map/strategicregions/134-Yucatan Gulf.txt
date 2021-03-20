@@ -1,0 +1,11 @@
+
+strategic_region={
+	id=134
+	name="Yucatan Gulf"
+	provinces={
+		12795 12853 13005 13168 13847 13893 13910 14100 
+	}
+	naval_terrain=water_shallow_sea
+	weather={
+	}
+}

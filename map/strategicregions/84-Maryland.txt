@@ -1,0 +1,9 @@
+strategic_region={
+	id=84
+	name="Maryland"
+	provinces={
+		2242 3398 3527 3710 4647 6771 11512 11563 11584 11646 
+	}
+	weather={
+	}
+}

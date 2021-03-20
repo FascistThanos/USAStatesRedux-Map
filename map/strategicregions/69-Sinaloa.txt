@@ -1,0 +1,9 @@
+strategic_region={
+	id=69
+	name="Sinaloa"
+	provinces={
+		675 1171 1720 2952 3716 5149 12238 12240 12248 12251 12259 12272 
+	}
+	weather={
+	}
+}

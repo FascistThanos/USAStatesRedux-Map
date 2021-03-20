@@ -1,0 +1,11 @@
+
+strategic_region={
+	id=132
+	name="Eastern Seaboard"
+	provinces={
+		13164 13761 13877 
+	}
+	naval_terrain=water_shallow_sea
+	weather={
+	}
+}

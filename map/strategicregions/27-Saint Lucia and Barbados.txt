@@ -1,0 +1,11 @@
+
+strategic_region={
+	id=27
+	name="Saint Lucia and Barbados"
+	provinces={
+		12725 12727 13779 
+	}
+	naval_terrain=water_fjords
+	weather={
+	}
+}

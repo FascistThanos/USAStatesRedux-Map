@@ -1,0 +1,11 @@
+
+strategic_region={
+	id=158
+	name="East Pacific Rise"
+	provinces={
+		12760 12833 12838 12915 12937 12968 12973 12997 13039 13203 13275 13350 13490 13506 13561 13597 13620 13713 13729 13733 13785 13932 14102 14103 14114 
+	}
+	naval_terrain=water_deep_ocean
+	weather={
+	}
+}

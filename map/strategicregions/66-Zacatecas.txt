@@ -1,0 +1,9 @@
+strategic_region={
+	id=66
+	name="Zacatecas"
+	provinces={
+		1283 1530 1838 2355 3137 5590 6135 12250 12252 12257 12258 12265 12274 
+	}
+	weather={
+	}
+}

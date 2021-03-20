@@ -1,0 +1,9 @@
+strategic_region={
+	id=124
+	name="Açores"
+	provinces={
+		4786 5213 12658 12662 12665 
+	}
+	weather={
+	}
+}

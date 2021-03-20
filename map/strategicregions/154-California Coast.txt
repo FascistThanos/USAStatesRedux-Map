@@ -1,0 +1,11 @@
+
+strategic_region={
+	id=154
+	name="California Coast"
+	provinces={
+		12759 12832 13037 13151 13166 13282 13300 13336 13339 13472 13640 13644 13674 13701 13703 13806 13913 13982 14078 14079 14084 
+	}
+	naval_terrain=water_shallow_sea
+	weather={
+	}
+}

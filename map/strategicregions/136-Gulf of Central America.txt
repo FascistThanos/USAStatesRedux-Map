@@ -1,0 +1,11 @@
+
+strategic_region={
+	id=136
+	name="Gulf of Central America"
+	provinces={
+		13127 13213 13232 13318 13363 13406 13559 13613 13747 13941 14106 14110 
+	}
+	naval_terrain=water_shallow_sea
+	weather={
+	}
+}

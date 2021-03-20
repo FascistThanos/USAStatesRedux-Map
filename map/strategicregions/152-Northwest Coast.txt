@@ -1,0 +1,11 @@
+
+strategic_region={
+	id=152
+	name="Northwest Coast"
+	provinces={
+		12788 12889 12994 13027 13058 13072 13090 13142 13214 13218 13229 13402 13476 13512 13526 13645 13726 13889 13900 13929 14062 
+	}
+	naval_terrain=water_fjords
+	weather={
+	}
+}
