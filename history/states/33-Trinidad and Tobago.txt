@@ -4,6 +4,4 @@ state={
 	provinces={
 		1938 12734 
 	}
-	
-	}
 }

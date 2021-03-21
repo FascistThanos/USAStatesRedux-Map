@@ -1,10 +1,7 @@
-
 state={
 	id=46
 	name="Quintana Roo"
 	provinces={
 		713 912 4935 5952 6012 12300 12310 12703 
-	}
-	
 	}
 }
