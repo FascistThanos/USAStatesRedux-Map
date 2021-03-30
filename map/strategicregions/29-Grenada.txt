@@ -1,9 +1,0 @@
-strategic_region={
-	id=29
-	name="Grenada"
-	provinces={
-		12732 
-	}
-	weather={
-	}
-}

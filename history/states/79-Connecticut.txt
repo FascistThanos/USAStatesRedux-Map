@@ -1,7 +1,0 @@
-state={
-	id=79
-	name="Connecticut"
-	provinces={
-		1218 6596 11240 11265 11313 11341 
-	}
-}

@@ -1,7 +1,0 @@
-state={
-	id=25
-	name="European Caribbean Islands"
-	provinces={
-		12712 12714 12715 12716 12717 
-	}
-}

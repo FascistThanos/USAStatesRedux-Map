@@ -1,9 +1,0 @@
-strategic_region={
-	id=123
-	name="Hawaii"
-	provinces={
-		814 2665 4827 12281 12308 12691 12693 12700 12701 12702 
-	}
-	weather={
-	}
-}

@@ -1,9 +1,0 @@
-state={
-	id=84
-	name="Maryland"
-	provinces={
-		2242 3398 3527 3710 4647 6771 11512 11563 11584 
-	}
-	manpower=0
-	buildings_max_level_factor=
-}

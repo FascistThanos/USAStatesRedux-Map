@@ -1,9 +1,0 @@
-strategic_region={
-	id=20
-	name="Haiti"
-	provinces={
-		319 2466 3111 3792 5208 12296 12307 12704 12706 
-	}
-	weather={
-	}
-}

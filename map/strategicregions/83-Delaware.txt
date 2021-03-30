@@ -1,9 +1,0 @@
-strategic_region={
-	id=83
-	name="Delaware"
-	provinces={
-		312 1858 
-	}
-	weather={
-	}
-}

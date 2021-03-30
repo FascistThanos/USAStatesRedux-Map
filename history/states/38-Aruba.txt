@@ -1,7 +1,0 @@
-state={
-	id=38
-	name="Aruba"
-	provinces={
-		12728 
-	}
-}

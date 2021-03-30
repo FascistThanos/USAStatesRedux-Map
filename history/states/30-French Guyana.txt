@@ -1,7 +1,0 @@
-state={
-	id=30
-	name="French Guyana"
-	provinces={
-		606 2917 12360 
-	}
-}

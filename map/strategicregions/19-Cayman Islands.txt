@@ -1,9 +1,0 @@
-strategic_region={
-	id=19
-	name="Cayman Islands"
-	provinces={
-		12705 
-	}
-	weather={
-	}
-}

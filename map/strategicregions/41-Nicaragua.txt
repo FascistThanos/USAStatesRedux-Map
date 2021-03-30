@@ -1,9 +1,0 @@
-strategic_region={
-	id=41
-	name="Nicaragua"
-	provinces={
-		481 484 507 1014 2074 3067 3612 4107 6777 12339 12340 12341 12344 12729 12733 
-	}
-	weather={
-	}
-}

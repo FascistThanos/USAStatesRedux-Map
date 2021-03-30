@@ -1,7 +1,0 @@
-state={
-	id=60
-	name="Guanajuato"
-	provinces={
-		1094 5170 5240 6278 6319 
-	}
-}

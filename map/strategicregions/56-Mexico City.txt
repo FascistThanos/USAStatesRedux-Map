@@ -1,9 +1,0 @@
-strategic_region={
-	id=56
-	name="Mexico City"
-	provinces={
-		3541 12297 12315 
-	}
-	weather={
-	}
-}

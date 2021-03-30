@@ -1,7 +1,0 @@
-state={
-	id=78
-	name="Rhode Island"
-	provinces={
-		5770 
-	}
-}

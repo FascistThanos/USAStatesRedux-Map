@@ -1,9 +1,0 @@
-strategic_region={
-	id=59
-	name="Jalisco"
-	provinces={
-		245 621 655 1007 3422 6490 12292 12299 
-	}
-	weather={
-	}
-}

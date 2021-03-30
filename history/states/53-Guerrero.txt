@@ -1,7 +1,0 @@
-state={
-	id=53
-	name="Guerrero"
-	provinces={
-		3721 3899 5278 5812 5817 6543 6941 
-	}
-}

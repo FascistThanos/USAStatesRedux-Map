@@ -1,9 +1,0 @@
-strategic_region={
-	id=55
-	name="Hidalgo"
-	provinces={
-		381 4802 12288 12291 
-	}
-	weather={
-	}
-}

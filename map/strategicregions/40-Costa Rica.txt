@@ -1,9 +1,0 @@
-strategic_region={
-	id=40
-	name="Costa Rica"
-	provinces={
-		5 30 5739 6862 
-	}
-	weather={
-	}
-}

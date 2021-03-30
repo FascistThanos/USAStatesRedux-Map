@@ -1,9 +1,0 @@
-strategic_region={
-	id=43
-	name="Guatemala"
-	provinces={
-		407 945 1603 1811 2896 3134 4334 5484 5613 6071 12331 12332 14787
-	}
-	weather={
-	}
-}

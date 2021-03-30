@@ -1,7 +1,0 @@
-state={
-	id=23
-	name="Puerto Rico"
-	provinces={
-		2607 6364 12709 12711 
-	}
-}

@@ -1,7 +1,0 @@
-state={
-	id=24
-	name="US & British Virgin Islands"
-	provinces={
-		12708 12713
-	}
-}
