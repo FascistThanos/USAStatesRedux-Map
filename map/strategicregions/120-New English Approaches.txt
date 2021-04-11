@@ -1,0 +1,11 @@
+
+strategic_region={
+	id=120
+	name="New English Approaches"
+	provinces={
+		8439 8872 9098 9118 9240 9444 
+	}
+	naval_terrain=water_shallow_sea
+	weather={
+	}
+}

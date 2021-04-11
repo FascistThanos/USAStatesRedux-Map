@@ -1,0 +1,9 @@
+strategic_region={
+	id=77
+	name="Aguascalientes"
+	provinces={
+		462 7405 
+	}
+	weather={
+	}
+}

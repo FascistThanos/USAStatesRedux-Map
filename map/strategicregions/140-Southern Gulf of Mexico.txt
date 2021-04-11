@@ -1,0 +1,9 @@
+strategic_region={
+	id=140
+	name="Southern Gulf of Mexico"
+	provinces={
+		8506 8508 8597 8922 9157 9233 9421 9424 9481 9613 9618 
+	}
+	weather={
+	}
+}

@@ -1,0 +1,11 @@
+
+strategic_region={
+	id=114
+	name="Jamaica"
+	provinces={
+		2975 3729 3749 7592 7604 7614 7615 7616 8400 9302 
+	}
+	naval_terrain=water_fjords
+	weather={
+	}
+}

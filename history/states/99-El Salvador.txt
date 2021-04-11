@@ -1,0 +1,7 @@
+state={
+	id=99
+	name="El Salvador"
+	provinces={
+		2519 2905 3446 3901 7736 7741 10309 
+	}
+}

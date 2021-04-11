@@ -1,0 +1,9 @@
+strategic_region={
+	id=88
+	name="Federal District of Mexico City"
+	provinces={
+		7545 
+	}
+	weather={
+	}
+}

@@ -1,0 +1,11 @@
+
+strategic_region={
+	id=152
+	name="Pacific Northwest"
+	provinces={
+		8241 8298 8605 8622 8982 9027 9143 9223 9267 9402 9417 9455 9476 9579 9585 
+	}
+	naval_terrain=water_shallow_sea
+	weather={
+	}
+}

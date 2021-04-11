@@ -1,0 +1,8 @@
+state={
+	id=85
+	name="Tlaxcala"
+	provinces={
+		7526 
+	}
+	
+}

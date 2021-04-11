@@ -1,0 +1,9 @@
+strategic_region={
+	id=82
+	name="Hidalgo"
+	provinces={
+		239 1857 2447 3356 3844 7453 7463 7467 7468 7498 7500 
+	}
+	weather={
+	}
+}

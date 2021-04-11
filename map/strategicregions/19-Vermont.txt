@@ -1,0 +1,9 @@
+strategic_region={
+	id=19
+	name="Vermont"
+	provinces={
+		2508 3470 3591 4928 4953 4958 4969 4990 5006 5026 5080 5124 
+	}
+	weather={
+	}
+}

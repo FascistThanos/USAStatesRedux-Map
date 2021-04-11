@@ -1,0 +1,11 @@
+
+strategic_region={
+	id=166
+	name="Lake Huron"
+	provinces={
+		9677 9685 9697 9713 9736 9738 9756 9765 9772 9781 9818 9819 9820 9821 9822 9823 9825 9829 9830 9832 9836 
+	}
+	naval_terrain=water_shallow_sea
+	weather={
+	}
+}

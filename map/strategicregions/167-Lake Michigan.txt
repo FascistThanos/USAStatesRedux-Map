@@ -1,0 +1,11 @@
+
+strategic_region={
+	id=167
+	name="Lake Michigan"
+	provinces={
+		9678 9688 9693 9706 9725 9727 9731 9770 9824 9826 9827 9831 9834 9835 9837 
+	}
+	naval_terrain=water_shallow_sea
+	weather={
+	}
+}
