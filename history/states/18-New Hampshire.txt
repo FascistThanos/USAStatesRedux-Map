@@ -1,6 +1,15 @@
 state={
 	id=18
 	name="New Hampshire"
+	history={
+		owner = NHN
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = NHN
+	}
+	manpower=1
+	state_category=wasteland
 	provinces={
 		386 1233 2090 2196 2343 3602 5003 5031 5065 5105 
 	}

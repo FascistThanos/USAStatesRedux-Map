@@ -1,6 +1,15 @@
 state={
 	id=20
 	name="Massachusetts"
+	history={
+		owner = MAM
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = MAM
+	}
+	manpower=1
+	state_category=wasteland
 	provinces={
 		1721 2780 3015 3718 4224 5136 5168 5176 5206 5238 5271 8140 8141 
 	}

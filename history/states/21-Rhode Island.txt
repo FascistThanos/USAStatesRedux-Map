@@ -1,6 +1,15 @@
 state={
 	id=21
 	name="Rhode Island"
+	history={
+		owner = RIR
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = RIR
+	}
+	manpower=1
+	state_category=wasteland
 	provinces={
 		1652 
 	}

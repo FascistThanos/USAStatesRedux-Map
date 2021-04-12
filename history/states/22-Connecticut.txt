@@ -1,6 +1,15 @@
 state={
 	id=22
 	name="Connecticut"
+	history={
+		owner = CTC
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = CTC
+	}
+	manpower=1
+	state_category=wasteland
 	provinces={
 		1884 3173 4207 5243 5251 5282 
 	}
