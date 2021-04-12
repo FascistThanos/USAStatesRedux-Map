@@ -1,0 +1,45 @@
+scripted_gui = {
+  open_union_overview = {
+    window_name = "state_of_the_union_button_gui"
+    context_type = player_context
+    parent_window_token = politics_tab
+
+    visible = {
+
+    }
+
+    effects = {
+      open_union_gui_window_button_click = {
+        set_country_flag = opened_union_overview
+      }
+      open_union_gui_window_button2_click = {
+        clr_country_flag = opened_union_overview
+      }
+
+    }
+    triggers = {
+      open_union_gui_window_button_visible = {
+        has_completed_focus = DC_democratic14
+      }
+      open_union_gui_window_button2_visible = {
+        has_country_flag = opened_union_overview
+      }
+    }
+  }
+  union_overview = {
+    window_name = "state_of_the_union_gui"
+    context_type = player_context
+
+    visible = {
+      has_country_flag = opened_union_overview
+    }
+
+    effects = {
+
+    }
+    triggers = {
+
+    }
+  }
+}
+#has_country_flag = opened_union_overview

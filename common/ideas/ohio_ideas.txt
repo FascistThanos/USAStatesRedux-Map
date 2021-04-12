@@ -1,0 +1,675 @@
+ideas = {
+  country = {
+    worse_depression = {
+      allowed = {
+        always = no
+      }
+
+      allowed_civil_war = {
+        always = yes
+      }
+
+      removal_cost = -1
+
+      modifier = {
+        political_power_gain = -0.50
+        political_advisor_cost_factor = 0.30
+        consumer_goods_factor = 0.15
+        production_speed_arms_factory_factor = -0.25
+        production_speed_industrial_complex_factor = -0.25
+      }
+    }
+    agricultural__industry = {
+      allowed = {
+        always = no
+      }
+
+      allowed_civil_war = {
+        always = yes
+      }
+
+      removal_cost = -1
+
+      modifier = {
+        monthly_population = 0.05
+        trade_opinion_factor = 0.25
+        production_factory_efficiency_gain_factor = -0.05
+        production_speed_arms_factory_factor = -0.25
+        production_speed_industrial_complex_factor = -0.25
+      }
+    }
+    agricultural_industry = {
+      allowed = {
+        always = no
+      }
+
+      allowed_civil_war = {
+        always = yes
+      }
+
+      removal_cost = -1
+
+      modifier = {
+        monthly_population = 0.05
+        trade_opinion_factor = 0.25
+        production_factory_efficiency_gain_factor = -0.05
+        production_speed_arms_factory_factor = -0.15
+        production_speed_industrial_complex_factor = -0.15
+      }
+    }
+    rising_communism = {
+      allowed = {
+        always = no
+      }
+
+      allowed_civil_war = {
+        always = yes
+      }
+      removal_cost = -1
+
+      modifier = {
+        communism_drift = 0.05
+        stability_factor = -0.10
+        political_power_factor = -0.25
+        high_command_cost_factor = 0.25
+      }
+    }
+    OHO_natsj = {
+      allowed = {
+        always = no
+      }
+
+      allowed_civil_war = {
+        always = yes
+      }
+
+      removal_cost = -1
+
+      modifier = {
+        conscription = 0.015
+        consumer_goods_factor	= -0.02
+      }
+    }
+    OHO_idea_hourofpower = {
+      allowed = {
+        always = no
+      }
+
+      allowed_civil_war = {
+        always = yes
+      }
+
+      removal_cost = -1
+
+      modifier = {
+        fascism_drift = 0.02
+        stability_weekly = 0.04
+      }
+    }
+    OHO_idea_socialjustice = {
+      allowed = {
+        always = no
+      }
+
+      allowed_civil_war = {
+        always = no
+      }
+
+      removal_cost = -1
+
+      modifier = {
+        political_power_gain = 0.25
+        stability_weekly = 0.005
+      }
+    }
+    OHO_idea_missions_acrossOH = {
+      allowed = {
+        always = no
+      }
+      allowed_civil_war = {
+        always = no
+      }
+
+      removal_cost = -1
+
+      modifier = {
+        production_speed_buildings_factor = 0.1
+        industry_repair_factor = 0.25
+        compliance_gain = 0.25
+      }
+    }
+    OHO_idea_coughlin_cop = {
+      allowed = {
+        always = no
+      }
+      allowed_civil_war = {
+        always = no
+      }
+
+      removal_cost = -1
+
+      modifier = {
+        fascism_drift = 0.01
+        stability_weekly = 0.002
+      }
+    }
+    OHO_idea_trust_ingod = {
+      allowed = {
+        always = no
+      }
+      allowed_civil_war = {
+        always = no
+      }
+
+      removal_cost = -1
+
+      modifier = {
+        non_core_manpower = 0.02
+        conscription = 0.01
+        army_org_factor = 0.02
+      }
+    }
+      OHO_idea_one_nation_indivisible = {
+      allowed = {
+        always = no
+      }
+      allowed_civil_war = {
+        always = no
+      }
+
+      removal_cost = -1
+
+      modifier = {
+        encryption_factor = 0.2
+        conscription = 0.015
+        war_support_factor = 0.10
+      }
+    }
+    OHO_antisemeticviews = {
+      allowed = {
+      always = no
+      }
+
+      allowed_civil_war = {
+      always = yes
+      }
+
+      removal_cost = -1
+
+      modifier = {
+        conscription = -0.025
+      }
+    }
+    OHO_shiftextremeright = {
+      allowed = {
+      always = no
+      }
+
+      allowed_civil_war = {
+      always = yes
+      }
+
+      removal_cost = -1
+
+      modifier = {
+        fascism_drift = 0.04
+        democratic_drift = -0.02
+        communism_drift = -0.02
+      }
+    }
+    OHO_coughlinbroadcasts = {
+      allowed = {
+      always = no
+      }
+
+      allowed_civil_war = {
+      always = yes
+      }
+
+      removal_cost = -1
+
+      modifier = {
+        fascism_drift = 0.02
+      }
+    }
+    OHO_isolationism = {
+      allowed = {
+      always = no
+      }
+
+      allowed_civil_war = {
+      always = yes
+      }
+
+      removal_cost = -1
+
+      modifier = {
+        production_speed_infrastructure_factor = 0.25
+        production_speed_industrial_complex_factor = 0.25
+        enemy_justify_war_goal_time = 2
+        justify_war_goal_time = 2
+        research_speed_factor = -0.02
+      }
+    }
+    OHO__isolationism = {
+      allowed = {
+      always = no
+      }
+
+      allowed_civil_war = {
+      always = yes
+      }
+
+      removal_cost = -1
+
+      modifier = {
+        production_speed_infrastructure_factor = 0.50
+        production_speed_industrial_complex_factor = 0.50
+        enemy_justify_war_goal_time = 2
+        justify_war_goal_time = 2
+        research_speed_factor = -0.02
+        trade_opinion_factor = -1.25
+        local_resources_factor = 0.25
+      }
+    }
+    OHO_depression_recovery = {
+      allowed = {
+      always = no
+      }
+
+      allowed_civil_war = {
+      always = yes
+      }
+
+      removal_cost = -1
+
+      modifier = {
+        political_power_gain = -0.30
+        political_advisor_cost_factor = 0.20
+        consumer_goods_factor = 0.10
+        production_speed_arms_factory_factor = -0.15
+        production_speed_industrial_complex_factor = -0.15
+      }
+    }
+      OHO_strong_economy = {
+        allowed = {
+        always = no
+        }
+
+        allowed_civil_war = {
+        always = yes
+        }
+
+        removal_cost = -1
+
+        modifier = {
+          political_power_gain = 0.15
+          political_advisor_cost_factor = -0.10
+          consumer_goods_factor = -0.05
+          production_speed_arms_factory_factor = 0.10
+          production_speed_industrial_complex_factor = 0.10
+        }
+      }
+      OHO_agressivedemo = {
+        allowed = {
+          always = no
+        }
+
+        allowed_civil_war = {
+          always = no
+        }
+
+        removal_cost = -1
+
+        modifier = {
+          justify_war_goal_time = -0.30
+          war_support_factor = 0.10
+          subversive_activites_upkeep = -0.25
+          army_core_attack_factor = 0.05
+          compliance_growth = 0.050
+          ai_focus_aggressive_factor = 0.25
+        }
+      }
+      OHO_truedemo = {
+        allowed = {
+          always = no
+        }
+
+        allowed_civil_war = {
+          always = yes
+        }
+
+        removal_cost = -1
+
+        modifier = {
+          democratic_drift = 0.02
+          stability_factor = 0.10
+          army_core_defence_factor = 0.1
+        }
+      }
+    OHO_general_rearm = {
+      allowed = {
+        always = no
+      }
+
+      allowed_civil_war = {
+        always = yes
+      }
+
+      removal_cost = -1
+
+      modifier = {
+        conscription = 0.015
+        production_speed_arms_factory_factor = 0.1
+        consumer_goods_factor = 0.05
+
+      }
+    }
+    OHO_expansionism = {
+      allowed = {
+        always = no
+      }
+
+      allowed_civil_war = {
+        always = yes
+      }
+
+      removal_cost = -1
+
+      modifier = {
+        justify_war_goal_time = -0.50
+        mobilization_laws_cost_factor = -0.10
+        foreign_subversive_activites = -0.25
+      }
+    }
+    OHO_internal_affairs = {
+      allowed = {
+        always = no
+      }
+
+      allowed_civil_war = {
+        always = yes
+      }
+
+      removal_cost = -1
+
+      modifier = {
+        consumer_goods_factor = -0.05
+        production_speed_industrial_complex_factor = 0.10
+        production_speed_infrastructure_factor = 0.10
+      }
+    }
+    OHO__nationalism = {
+      allowed = {
+        always = no
+      }
+
+      allowed_civil_war = {
+        always = yes
+      }
+
+      removal_cost = -1
+
+      modifier = {
+        war_support_factor = 0.15
+        conscription = 0.005
+        non_core_manpower = 0.02
+      }
+    }
+    military_academies = {
+      allowed = {
+        always = no
+      }
+
+      allowed_civil_war = {
+        always = yes
+      }
+
+      removal_cost = -1
+
+      modifier = {
+        training_time_factor = -0.15
+      }
+    }
+    prohibition_usury = {
+      allowed = {
+        always = no
+      }
+
+      allowed_civil_war = {
+        always = yes
+      }
+
+      removal_cost = -1
+
+      modifier = {
+        consumer_goods_factor = -0.05
+      }
+    }
+    OHO_rebirth = {
+      allowed = {
+        always = no
+      }
+
+      allowed_civil_war = {
+        always = no
+      }
+
+      removal_cost = -1
+
+      modifier = {
+        production_speed_infrastructure_factor = 0.25
+        production_speed_industrial_complex_factor = 0.25
+        production_speed_arms_factory_factor = 0.25
+        stability_weekly = 0.01
+        communism_drift = 0.05
+        political_power_gain = 0.5
+      }
+    }
+    OHO_party_line = {
+      allowed = {
+        always = no
+      }
+
+      allowed_civil_war = {
+        always = no
+      }
+
+      removal_cost = -1
+
+      modifier = {
+        stability_factor = -0.15
+        political_power_gain = -0.5
+      }
+    }
+    OHO_permrev = {
+      allowed = {
+        always = no
+      }
+
+      allowed_civil_war = {
+        always = no
+      }
+
+      removal_cost = -1
+
+      modifier = {
+        subversive_activites_upkeep = -0.25
+        send_volunteer_divisions_required = -0.25
+        send_volunteer_size = 2
+      }
+    }
+    OHO_sovschooling = {
+      allowed = {
+        always = no
+      }
+
+      allowed_civil_war = {
+        always = no
+      }
+
+      removal_cost = -1
+
+      modifier = {
+        communism_drift = 0.05
+        research_speed_factor = -0.03
+      }
+    }
+    OHO_sympathizers = {
+      allowed = {
+        always = no
+      }
+
+      allowed_civil_war = {
+        always = no
+      }
+
+      removal_cost = -1
+
+      modifier = {
+        fascism_drift = 0.10
+      }
+    }
+    OHO_revolution = {
+      allowed = {
+        always = no
+      }
+
+      allowed_civil_war = {
+        always = no
+      }
+
+      removal_cost = -1
+
+      modifier = {
+        subversive_activites_upkeep = -0.50
+      }
+    }
+    OHO_corrupt_advisors = {
+      allowed = {
+        always = no
+      }
+
+      allowed_civil_war = {
+        always = no
+      }
+
+      removal_cost = -1
+
+      modifier = {
+        political_power_factor = -0.10
+      }
+    }
+    OHO_unwilling_generals = {
+      allowed = {
+        always = no
+      }
+
+      allowed_civil_war = {
+        always = no
+      }
+
+      removal_cost = -1
+
+      modifier = {
+        political_power_factor = -0.10
+      }
+    }
+    OHO_repairing_sabotage = {
+      allowed = {
+        always = no
+      }
+
+      allowed_civil_war = {
+        always = no
+      }
+
+      removal_cost = -1
+
+      modifier = {
+        consumer_goods_factor = 0.05
+      }
+    }
+    OHO_michigan_blockade = {
+      allowed = {
+        always = no
+      }
+
+      allowed_civil_war = {
+        always = no
+      }
+
+      removal_cost = -1
+
+      modifier = {
+        trade_opinion_factor = -0.2
+      }
+    }
+    OHO_industrialization = {
+      allowed = {
+        always = yes
+      }
+      allowed_civil_war = {
+        always = yes
+      }
+
+      removal_cost = -1
+
+      modifier = {
+        production_speed_buildings_factor = 0.1
+      }
+    }
+  }
+  ####Advisors###
+  political_advisor = {
+  	OHO_ford = {
+  		allowed = {
+  			original_tag = OHO
+  		}
+
+      picture = generic_political_advisor_male_europe
+
+  		traits = { war_industrialist }
+
+  		ai_will_do = {
+  		  factor = 0
+  		}
+  	}
+    OHO_fpbolton = {
+      allowed = {
+        original_tag = OHO
+      }
+
+      picture = generic_political_advisor_female_europe
+
+      traits = { silent_workhorse }
+    }
+    OHO_haroldburton = {
+      allowed = {
+        original_tag = OHO
+      }
+
+      picture = GFX_idea_joachim_von_ribbentrop
+
+      traits = { smooth_talking_charmer }
+    }
+    OHO_jamescox = {
+      allowed = {
+        original_tag = OHO
+      }
+
+      picture = generic_political_advisor_male_europe
+
+      traits = { silent_workhorse }
+    }
+    OHO_roberttaft = {
+      allowed = {
+        original_tag = OHO
+      }
+
+      picture = GFX_idea_fra_paul_baudoin
+
+      traits = { democratic_reformer }
+    }
+  }
+}

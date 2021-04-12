@@ -1,0 +1,959 @@
+########################### WASHINGTON DC by FascistThanos ###########################
+
+focus_tree = {
+  id = dc_focus
+
+  country = {
+      factor = 0
+    modifier = {
+      add = 30
+      tag = DCD
+    }
+  }
+
+
+default = no
+
+continuous_focus_position = { x = 50 y = 3000 }
+
+  focus = {
+    id = DC_constitution
+    icon = GFX_Generic_Factionalism
+    cost = 10.00
+    x = 25
+    y = 0
+    completion_reward = {
+      country_event = dc.5
+    }
+  }
+
+  focus = {
+    id = DC_divided
+    icon = GFX_WDC_burning_flag
+    cost = 10.00
+    prerequisite = {
+      focus = DC_constitution
+    }
+    x = 0
+    y = 1
+    relative_position_id = DC_constitution
+    completion_reward = {
+      add_political_power = 50
+    }
+  }
+  focus = {
+    id = DC_fascist1
+    icon = GFX_Generic_Ultranationalist_Government
+    cost = 10.00
+    prerequisite = {
+      focus = DC_divided
+    }
+    mutually_exclusive = {
+      focus = DC_democratic1
+      focus = DC_communist1
+    }
+    x = 4
+    y = 1
+    relative_position_id = DC_divided
+      completion_reward = {
+          add_stability = -0.05
+          add_war_support = 0.10
+          add_popularity = {
+              ideology = fascism
+              popularity = 0.25
+            }
+          hidden_effect = {
+              news_event = {
+                  hours = 1
+                  id = genericfocusnews.5
+                }
+            }
+        }
+
+  }
+  focus = {
+    id = DC_communist1
+    icon = GFX_Generic_Revolutionary_Government
+    cost = 10.00
+    prerequisite = {
+      focus = DC_divided
+    }
+    mutually_exclusive = {
+      focus = DC_democratic1
+      focus = DC_fascist1
+    }
+    x = 13
+    y = 1
+    relative_position_id = DC_divided
+      completion_reward = {
+          add_popularity = {
+              ideology = communism
+              popularity = 0.30
+            }
+          hidden_effect = {
+              news_event = {
+                  hours = 1
+                  id = genericfocusnews.5
+                }
+            }
+        }
+  }
+  focus = {
+    id = DC_democratic1
+    icon = GFX_Generic_Blue_Democracy
+    cost = 10.00
+    prerequisite = {
+      focus = DC_divided
+    }
+    mutually_exclusive = {
+      focus = DC_fascist1
+    }
+    x = -8
+    y = 1
+    relative_position_id = DC_divided
+      ai_will_do = {
+          factor = 1
+        }
+      cancel_if_invalid = yes
+      continue_if_invalid = no
+      available_if_capitulated = no
+      completion_reward = {
+          add_stability = 0.15
+        }
+
+  }
+  focus = {
+    id = DC_democratic2
+    icon = GFX_Generic_Meeting
+    cost = 10.00
+    prerequisite = {
+      focus = DC_democratic1
+    }
+    x = 0
+    y = 1
+    relative_position_id = DC_democratic1
+      ai_will_do = {
+          factor = 1
+        }
+      cancel_if_invalid = yes
+      continue_if_invalid = no
+      available_if_capitulated = no
+      completion_reward = {
+          remove_ideas = DC_crisis
+        }
+
+  }
+  focus = {
+    id = DC_democratic3
+    icon = GFX_Generic_Legislation
+    cost = 5.00
+    prerequisite = {
+      focus = DC_democratic2
+    }
+    x = -2
+    y = 1
+    relative_position_id = DC_democratic2
+      ai_will_do = {
+          factor = 1
+        }
+      cancel_if_invalid = yes
+      continue_if_invalid = no
+      available_if_capitulated = no
+      completion_reward = {
+          add_political_power = 50
+          add_stability = 0.02
+        }
+
+  }
+  focus = {
+    id = DC_democratic4
+    icon = GFX_Generic_Parliament_Box
+    cost = 5.00
+    prerequisite = {
+      focus = DC_democratic2
+    }
+    x = 0
+    y = 1
+    relative_position_id = DC_democratic2
+      ai_will_do = {
+          factor = 1
+        }
+      cancel_if_invalid = yes
+      continue_if_invalid = no
+      available_if_capitulated = no
+      completion_reward = {
+          add_political_power = 50
+          add_stability = 0.03
+        }
+
+  }
+  focus = {
+    id = DC_democratic5
+    icon = GFX_Generic_Shady_Deal
+    cost = 5.00
+    prerequisite = {
+      focus = DC_democratic2
+    }
+    x = 2
+    y = 1
+    relative_position_id = DC_democratic2
+      ai_will_do = {
+          factor = 1
+        }
+      cancel_if_invalid = yes
+      continue_if_invalid = no
+      available_if_capitulated = no
+      completion_reward = {
+          add_political_power = 50
+          add_stability = 0.03
+        }
+
+  }
+  focus = {
+    id = DC_democratic6
+    icon = GFX_Focus_Television
+    cost = 15.00
+    prerequisite = {
+      focus = DC_democratic3
+    }
+    prerequisite = {
+      focus = DC_democratic4
+    }
+    prerequisite = {
+      focus = DC_democratic5
+    }
+    x = 0
+    y = 1
+    relative_position_id = DC_democratic4
+      cancel_if_invalid = yes
+      continue_if_invalid = no
+      available_if_capitulated = no
+      completion_reward = {
+          news_event = {
+              hours = 1
+              id = genericfocusnews.3
+            }
+          add_ideas = DC_stable
+          add_stability = 0.05
+        }
+
+  }
+  focus = {
+    id = DC_democratic7
+    icon = GFX_Generic_Democracy
+    cost = 10.00
+    prerequisite = {
+      focus = DC_democratic6
+    }
+    x = 0
+    y = 1
+    relative_position_id = DC_democratic6
+      cancel_if_invalid = yes
+      continue_if_invalid = no
+      available_if_capitulated = no
+      completion_reward = {
+          add_country_leader_trait = great_reformer
+        }
+
+  }
+  focus = {
+    id = DC_democratic8
+    icon = GFX_Generic_Workers_Democracy
+    cost = 10.00
+    prerequisite = {
+      focus = DC_democratic7
+    }
+    x = -2
+    y = 1
+    relative_position_id = DC_democratic7
+      cancel_if_invalid = yes
+      continue_if_invalid = no
+      available_if_capitulated = no
+      completion_reward = {
+          add_ideas = DC_wpa
+        }
+
+  }
+  focus = {
+    id = DC_democratic9
+    icon = GFX_focus_usa_guarantee_the_american_dream
+    cost = 10.00
+    prerequisite = {
+      focus = DC_democratic7
+    }
+    x = 0
+    y = 1
+    relative_position_id = DC_democratic7
+      cancel_if_invalid = yes
+      continue_if_invalid = no
+      available_if_capitulated = no
+      completion_reward = {
+          add_ideas = DC_ssa
+        }
+
+  }
+  focus = {
+    id = DC_democratic10
+    icon = GFX_goal_generic_construct_mil_factory
+    cost = 10.00
+    prerequisite = {
+      focus = DC_democratic7
+    }
+    x = 2
+    y = 1
+    relative_position_id = DC_democratic7
+      cancel_if_invalid = yes
+      continue_if_invalid = no
+      available_if_capitulated = no
+      completion_reward = {
+          add_ideas = DC_mic
+        }
+
+  }
+  focus = {
+    id = DC_democratic11
+    icon = GFX_focus_eng_concessions_to_the_trade_unions
+    cost = 10.00
+    prerequisite = {
+      focus = DC_democratic8
+    }
+    x = 0
+    y = 1
+    relative_position_id = DC_democratic8
+      cancel_if_invalid = yes
+      continue_if_invalid = no
+      available_if_capitulated = no
+      completion_reward = {
+          add_ideas = DC_jobs
+        }
+
+  }
+  focus = {
+    id = DC_democratic12
+    icon = GFX_goal_generic_production
+    cost = 10.00
+    prerequisite = {
+      focus = DC_democratic9
+    }
+    x = 0
+    y = 1
+    relative_position_id = DC_democratic9
+      cancel_if_invalid = yes
+      continue_if_invalid = no
+      available_if_capitulated = no
+      completion_reward = {
+          879 = {
+              add_extra_state_shared_building_slots = 2
+            }
+          add_ideas = DC_publicworks
+        }
+
+  }
+  focus = {
+    id = DC_democratic13
+    icon = GFX_goal_generic_fortify_city
+    cost = 10.00
+    prerequisite = {
+      focus = DC_democratic10
+    }
+    x = 0
+    y = 1
+    relative_position_id = DC_democratic10
+      cancel_if_invalid = yes
+      continue_if_invalid = no
+      available_if_capitulated = no
+      completion_reward = {
+          add_ideas = DC_onestepahead
+        }
+
+  }
+  focus = {
+    id = DC_democratic14
+    icon = GFX_goal_unknown
+    cost = 10.00
+    prerequisite = {
+      focus = DC_democratic15
+    }
+    x = 0
+    y = 1
+    relative_position_id = DC_democratic15
+      cancel_if_invalid = yes
+      continue_if_invalid = no
+      available_if_capitulated = no
+      completion_reward = {
+          remove_ideas = DC_wpa
+          remove_ideas = DC_ssa
+          remove_ideas = DC_mic
+          remove_ideas = DC_jobs
+          remove_ideas = DC_publicworks
+          remove_ideas = DC_onestepahead
+          add_ideas = DC_newdeal
+        }
+
+  }
+  focus = {
+    id = DC_democratic15
+    icon = GFX_goal_unknown
+    cost = 10.00
+    prerequisite = {
+      focus = DC_democratic11
+    }
+    prerequisite = {
+      focus = DC_democratic12
+    }
+    prerequisite = {
+      focus = DC_democratic13
+    }
+    x = 2
+    y = 1
+    relative_position_id = DC_democratic11
+      cancel_if_invalid = yes
+      continue_if_invalid = no
+      available_if_capitulated = no
+      completion_reward = {
+          MDM = {
+              country_event = dc.6
+            }
+          hidden_effect = {
+              MDM = {
+                  end_puppet = DCD
+                }
+            }
+        }
+
+  }
+  focus = {
+    id = DC_fascist2
+    icon = GFX_Generic_Ripping_Papers
+    cost = 10.00
+    prerequisite = {
+      focus = DC_fascist1
+    }
+    x = 0
+    y = 1
+    relative_position_id = DC_fascist1
+      completion_reward = {
+          add_stability = 0.05
+        }
+
+  }
+  focus = {
+    id = DC_fascist4
+    icon = GFX_Generic_Political_Purge
+    cost = 10.00
+    prerequisite = {
+      focus = DC_fascist2
+    }
+    x = -2
+    y = 1
+    relative_position_id = DC_fascist2
+      completion_reward = {
+
+}
+
+  }
+  focus = {
+    id = DC_fascist5
+    icon = GFX_Generic_Espionage04
+    cost = 10.00
+    prerequisite = {
+      focus = DC_fascist4
+    }
+    x = 0
+    y = 1
+    relative_position_id = DC_fascist4
+      completion_reward = {
+          add_ideas = DC_COINTELPRO
+        }
+
+  }
+  focus = {
+    id = DC_fascist6
+    icon = GFX_Generic_Lookout
+    cost = 10.00
+    prerequisite = {
+      focus = DC_fascist2
+    }
+    x = 2
+    y = 1
+    relative_position_id = DC_fascist2
+      completion_reward = {
+          custom_effect_tooltip = available_political_advisor
+          show_ideas_tooltip = USA_joseph_mccarthy
+        }
+
+  }
+  focus = {
+    id = DC_fascist7
+    icon = GFX_Generic_Arrests
+    cost = 10.00
+    prerequisite = {
+      focus = DC_fascist6
+    }
+    x = 0
+    y = 1
+    relative_position_id = DC_fascist6
+      completion_reward = {
+          add_stability = 0.10
+        }
+
+  }
+  focus = {
+    id = DC_fascist8
+    icon = GFX_Generic_Ultranationalist_Volunteers
+    cost = 10.00
+    prerequisite = {
+      focus = DC_fascist2
+    }
+    x = 0
+    y = 3
+    relative_position_id = DC_fascist2
+      completion_reward = {
+          remove_ideas = dc_crisis
+        }
+
+  }
+  focus = {
+    id = DC_fascist9
+    icon = GFX_Generic_Ultranationalist_Volunteers
+    cost = 10.00
+    prerequisite = {
+      focus = DC_fascist8
+    }
+    mutually_exclusive = {
+      focus = DC_fascist10
+    }
+    x = -1
+    y = 1
+    relative_position_id = DC_fascist8
+      completion_reward = {
+          create_country_leader = {
+              name = "Douglas Macarthur"
+              desc = POLITICS_WDC_DOUGLAS_MACARTHUR_DESC
+              picture = "Portrait_WDC_Douglas_Macarthur.dds"
+              expire = "1965.1.1"
+              ideology = rexism
+              traits = { american_caesar }
+            }
+          add_war_support = 0.10
+        }
+
+  }
+  focus = {
+    id = DC_fascist10
+    icon = GFX_Generic_Imperial_Eagle
+    cost = 10.00
+    prerequisite = {
+      focus = DC_fascist8
+    }
+    mutually_exclusive = {
+      focus = DC_fascist9
+    }
+    x = 1
+    y = 1
+    relative_position_id = DC_fascist8
+      completion_reward = {
+          create_country_leader = {
+              name = "Alvin M. Owsley"
+              desc = POLITICS_WDC_ALVIN_OWLSEY_DESC
+              picture = "Portrait_WDC_Alvin_Owsley.dds"
+              expire = "1965.1.1"
+              ideology = falangism
+              traits = { rearmer  legionnaire }
+            }
+          add_stability = 0.10
+        }
+
+  }
+  focus = {
+    id = DC_war_powers
+    icon = GFX_Generic_Elections
+    cost = 10.00
+    prerequisite = {
+      focus = DC_fascist9
+    }
+    x = 0
+    y = 1
+    relative_position_id = DC_fascist9
+      completion_reward = {
+          add_ideas = DC_warpowers
+        }
+
+  }
+  focus = {
+    id = DC_stringent_recruitment
+    icon = GFX_Generic_Infantry_Training
+    cost = 10.00
+    prerequisite = {
+      focus = DC_fascist10
+    }
+    x = 0
+    y = 1
+    relative_position_id = DC_fascist10
+      completion_reward = {
+          add_ideas = DC_recruitment
+        }
+
+  }
+  focus = {
+    id = DCD_call_to_arms
+    text = DCD_call_to_arms
+    icon = GFX_Generic_Army_Focus_Red02
+    cost = 10.00
+    prerequisite = {
+      focus = DC_democratic14
+    }
+    x = 17
+    y = 11
+
+  }
+  focus = {
+    id = DCD_appeal_to_loyalists
+    text = DCD_appeal_to_loyalists
+    icon = GFX_Generic_Liberation
+    cost = 10.00
+    prerequisite = {
+      focus = DCD_call_to_arms
+    }
+    mutually_exclusive = {
+      focus = DCD_liberty_prevails
+    }
+    x = 25
+    y = 12
+
+  }
+  focus = {
+    id = DCD_liberty_prevails
+    text = DCD_liberty_prevails
+    icon = GFX_Generic_Liberty_Calling
+    cost = 10.00
+    prerequisite = {
+      focus = DCD_call_to_arms
+    }
+    mutually_exclusive = {
+      focus = DCD_appeal_to_loyalists
+    }
+    x = 13
+    y = 12
+
+  }
+  focus = {
+    id = DCD_Famed13
+    icon = GFX_DCD_Famed_13
+    cost = 10.00
+    prerequisite = {
+      focus = DCD_liberty_prevails
+    }
+    x = 13
+    y = 13
+
+  }
+  focus = {
+    id = DCD_mediate
+    icon = GFX_DCD_Diplomatic_War
+    cost = 10.00
+    prerequisite = {
+      focus = DCD_Famed13
+    }
+    x = 11
+    y = 14
+
+  }
+  focus = {
+    id = DCD_diplomatic_war
+    icon = GFX_DCD_Diplomatic_War2
+    cost = 10.00
+    prerequisite = {
+      focus = DCD_Famed13
+    }
+    x = 13
+    y = 14
+
+  }
+  focus = {
+    id = DCD_our_ideals
+    icon = GFX_DCD_Common_Liberalism
+    cost = 10.00
+    prerequisite = {
+      focus = DCD_Famed13
+    }
+    x = 15
+    y = 14
+
+  }
+  focus = {
+    id = DCD_third_congress
+    icon = GFX_DCD_Continental_Congress
+    cost = 10.00
+    prerequisite = {
+      focus = DCD_mediate
+    }
+    prerequisite = {
+      focus = DCD_diplomatic_war
+    }
+    prerequisite = {
+      focus = DCD_our_ideals
+    }
+    x = 13
+    y = 15
+
+  }
+  focus = {
+    id = DCD_successful_congress
+    text = DCD_successful_congress
+    icon = GFX_goal_generic_intelligence_exchange
+    cost = 10.00
+    prerequisite = {
+      focus = DCD_third_congress
+    }
+    x = 9
+    y = 16
+
+  }
+  focus = {
+    id = DCD_congress_failure
+    text = DCD_congress_failure
+    icon = GFX_goal_generic_forceful_treaty
+    cost = 10.00
+    prerequisite = {
+      focus = DCD_third_congress
+    }
+    x = 17
+    y = 16
+
+  }
+  focus = {
+    id = DCD_radio_liberty
+    icon = GFX_DCD_Radio_Liberty
+    cost = 10.00
+    prerequisite = {
+      focus = DCD_successful_congress
+    }
+    x = 5
+    y = 17
+
+  }
+  focus = {
+    id = DCD_radio_liberty_middle
+    icon = GFX_DCD_Expand_North
+    cost = 10.00
+    prerequisite = {
+      focus = DCD_radio_liberty
+    }
+    x = 4
+    y = 18
+
+  }
+  focus = {
+    id = DCD_radio_liberty_north
+    icon = GFX_DCD_Expand_North
+    cost = 10.00
+    prerequisite = {
+      focus = DCD_radio_liberty
+    }
+    x = 6
+    y = 19
+
+  }
+  focus = {
+    id = DCD_radio_liberty_south
+    icon = GFX_DCD_Expand_South
+    cost = 10.00
+    prerequisite = {
+      focus = DCD_radio_liberty
+    }
+    x = 6
+    y = 18
+
+  }
+  focus = {
+    id = DCD_push_southwest
+    icon = GFX_DCD_Expand_Southwest
+    cost = 10.00
+    prerequisite = {
+      focus = DCD_radio_liberty
+    }
+    x = 4
+    y = 19
+
+  }
+  focus = {
+    id = DCD_radio_liberty_west
+    icon = GFX_DCD_Manifest_Destiny
+    cost = 10.00
+    prerequisite = {
+      focus = DCD_push_southwest
+    }
+    prerequisite = {
+      focus = DCD_radio_liberty_north
+    }
+    x = 5
+    y = 20
+
+  }
+  focus = {
+    id = DCD_radio_loyalty
+    text = DCD_radio_loyalty
+    icon = GFX_goal_tfv_strengthen_commonwealth_ties
+    cost = 10.00
+    prerequisite = {
+      focus = DCD_appeal_to_loyalists
+    }
+    x = 25
+    y = 13
+
+  }
+  focus = {
+    id = DCD_absolute_loyalty_middle
+    text = DCD_absolute_loyalty_middle
+    icon = GFX_expandnorth
+    cost = 10.00
+    prerequisite = {
+      focus = DCD_radio_loyalty
+    }
+    x = 24
+    y = 14
+
+  }
+  focus = {
+    id = DCD_absolute_loyalty_north
+    text = DCD_absolute_loyalty_north
+    icon = GFX_expandnorth
+    cost = 10.00
+    prerequisite = {
+      focus = DCD_radio_loyalty
+    }
+    x = 26
+    y = 15
+
+  }
+  focus = {
+    id = DCD_absolute_loyalty_south
+    text = DCD_absolute_loyalty_south
+    icon = GFX_expandsouthwest
+    cost = 10.00
+    prerequisite = {
+      focus = DCD_radio_loyalty
+    }
+    x = 26
+    y = 14
+
+  }
+  focus = {
+    id = DCD_absolute_loyalty_southwest
+    text = DCD_absolute_loyalty_southwest
+    icon = GFX_expandsouth
+    cost = 10.00
+    prerequisite = {
+      focus = DCD_radio_loyalty
+    }
+    x = 24
+    y = 15
+
+  }
+  focus = {
+    id = DCD_radio_liberty_west_Copy
+    text = DCD_radio_liberty_west
+    icon = GFX_manifestdestiny
+    cost = 10.00
+    prerequisite = {
+      focus = DCD_radio_loyalty
+    }
+    x = 25
+    y = 16
+
+  }
+  focus = {
+    id = DCD_raise_loyalists
+    text = DCD_raise_loyalists
+    icon = GFX_goal_unknown
+    cost = 10.00
+    prerequisite = {
+      focus = DCD_radio_loyalty
+    }
+    x = 25
+    y = 17
+
+  }
+  focus = {
+    id = DCD_gather_arms
+    text = DCD_gather_arms
+    icon = GFX_goal_unknown
+    cost = 10.00
+    prerequisite = {
+      focus = DCD_raise_loyalists
+    }
+    x = 25
+    y = 18
+
+  }
+  focus = {
+    id = DCD_strike_MD
+    text = DCD_strike_MD
+    icon = GFX_goal_unknown
+    cost = 10.00
+    prerequisite = {
+      focus = DCD_gather_arms
+    }
+    mutually_exclusive = {
+      focus = DCD_strike_VA
+    }
+    x = 27
+    y = 19
+
+  }
+  focus = {
+    id = DCD_strike_VA
+    text = DCD_strike_VA
+    icon = GFX_goal_unknown
+    cost = 10.00
+    prerequisite = {
+      focus = DCD_gather_arms
+    }
+    mutually_exclusive = {
+      focus = DCD_strike_MD
+    }
+    x = 23
+    y = 19
+
+  }
+  focus = {
+    id = DCD_gateway_south
+    text = DCD_gateway_south
+    icon = GFX_goal_unknown
+    cost = 10.00
+    prerequisite = {
+      focus = DCD_strike_VA
+    }
+    x = 23
+    y = 20
+
+  }
+  focus = {
+    id = DCD_break_north
+    text = DCD_break_north
+    icon = GFX_goal_unknown
+    cost = 10.00
+    prerequisite = {
+      focus = DCD_strike_MD
+    }
+    x = 27
+    y = 20
+
+  }
+  focus = {
+    id = DCD_reclaim_legitimacy
+    text = DCD_reclaim_legitimacy
+    icon = GFX_goal_unknown
+    cost = 10.00
+    prerequisite = {
+      focus = DCD_break_north
+      focus = DCD_gateway_south
+    }
+    x = 25
+    y = 21
+    completion_reward = {
+
+    }
+  }
+}

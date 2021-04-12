@@ -1,6 +1,15 @@
 state={
 	id=4
 	name="Prince Edward Island"
+	history={
+		owner = PEP
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = PEP
+	}
+	manpower=1
+	state_category=wasteland
 	provinces={
 		4772 4803 4808 4815 
 	}
