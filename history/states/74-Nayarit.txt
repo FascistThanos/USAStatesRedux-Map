@@ -1,6 +1,15 @@
 state={
 	id=74
 	name="Nayarit"
+	history={
+		owner = NAY
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = NAY
+	}
+	manpower=1
+	state_category=wasteland
 	provinces={
 		1336 1800 2628 3045 3109 7387 7391 7394 7419 7422 7427 7429 7457 8196 8198 
 	}

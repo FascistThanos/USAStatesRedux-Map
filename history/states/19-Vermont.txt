@@ -1,17 +1,22 @@
+
 state={
 	id=19
 	name="Vermont"
+
 	history={
 		owner = VTV
 		buildings = {
 			infrastructure = 1
+
 		}
 		add_core_of = VTV
+
+	}
+
+	provinces={
+		2508 3470 3591 4928 4953 4958 4969 4990 5006 5026 5080 5124 8135 10228 
 	}
 	manpower=1
+	buildings_max_level_factor=1.000
 	state_category=wasteland
-	provinces={
-		2508 3470 3591 4928 4953 4958 4969 4990 5006 5026 5080 5124 
-	}
-	
 }
