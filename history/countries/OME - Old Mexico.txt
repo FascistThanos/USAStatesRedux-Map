@@ -84,22 +84,6 @@ set_technology = {
 	}
 }
 
-1936.1.26 = {
-create_faction = Mexico
-add_to_faction = YUC
-add_to_faction = CHP
-add_to_faction = OAX
-add_to_faction = VEC
-add_to_faction = GUE
-add_to_faction = NAY
-add_to_faction = TAU
-add_to_faction = COU
-add_to_faction = SIN
-add_to_faction = CIA
-add_to_faction = SON
-add_to_faction = BAJ
-}
-
 set_convoys = 100
 set_stability = 0.9
 

@@ -1,6 +1,15 @@
 state={
 	id=89
 	name="Morelos"
+	history={
+		owner = MOR
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = MOR
+	}
+	manpower=1
+	state_category=wasteland
 	provinces={
 		3803 7561 
 	}

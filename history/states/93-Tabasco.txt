@@ -1,6 +1,15 @@
 state={
 	id=93
 	name="Tabasco"
+	history={
+		owner = TAB
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = TAB
+	}
+	manpower=1
+	state_category=wasteland
 	provinces={
 		2666 3436 4042 7597 7613 7619 7624 7627 7640 7646 
 	}

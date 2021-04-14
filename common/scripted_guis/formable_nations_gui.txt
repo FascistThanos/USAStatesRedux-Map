@@ -3568,7 +3568,7 @@ scripted_gui = {
           original_tag = COU
           original_tag = CIA
           original_tag = SON
-          original_tag = BAJ
+          original_tag = BCA
         }
       }
       MEX_flag_visible = {
@@ -3587,7 +3587,7 @@ scripted_gui = {
             original_tag = COU
             original_tag = CIA
             original_tag = SON
-            original_tag = BAJ
+            original_tag = BCA
           }
           controls_state = 475
           controls_state = 474

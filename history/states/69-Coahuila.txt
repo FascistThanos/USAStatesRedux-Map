@@ -2,11 +2,11 @@ state={
 	id=69
 	name="Coahuila"
 	history={
-		owner = COU
+		owner = COA
 		buildings = {
 			infrastructure = 1
 		}
-		add_core_of = COU
+		add_core_of = COA
 	}
 	manpower=1
 	state_category=wasteland
