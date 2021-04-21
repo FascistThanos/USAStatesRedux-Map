@@ -1,8 +1,17 @@
 state={
 	id=121
 	name="Antigua and Barbuda"
-	provinces={
-		8212 8214 
+	history={
+		owner = AAB
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = AAB
 	}
-	
+	manpower=1
+	state_category=wasteland
+	provinces={
+		8212 8214
+	}
+
 }

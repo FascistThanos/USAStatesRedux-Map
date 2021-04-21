@@ -1,7 +1,16 @@
 state={
 	id=102
 	name="Costa Rica"
+	history={
+		owner = COS
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = COS
+	}
+	manpower=1
+	state_category=wasteland
 	provinces={
-		1276 1532 2316 2353 2626 3680 4273 7765 7770 
+		1276 1532 2316 2353 2626 3680 4273 7765 7770
 	}
 }

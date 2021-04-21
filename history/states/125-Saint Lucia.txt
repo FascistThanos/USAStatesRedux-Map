@@ -1,8 +1,17 @@
 state={
 	id=125
 	name="Saint Lucia"
-	provinces={
-		8221 
+	history={
+		owner = STL
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = STL
 	}
-	
+	manpower=1
+	state_category=wasteland
+	provinces={
+		8221
+	}
+
 }

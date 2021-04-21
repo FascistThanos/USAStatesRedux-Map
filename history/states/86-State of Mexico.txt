@@ -1,6 +1,15 @@
 state={
 	id=86
 	name="State of Mexico"
+	history={
+		owner = EME
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = EME
+	}
+	manpower=1
+	state_category=wasteland
 	provinces={
 		672 1343 2897 4260 4279 7525 7532 7538 
 	}

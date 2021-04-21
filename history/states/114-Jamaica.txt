@@ -1,8 +1,17 @@
 state={
 	id=114
 	name="Jamaica"
-	provinces={
-		2975 3729 3749 7592 7604 7614 7615 7616 
+	history={
+		owner = JAM
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = JAM
 	}
-	
+	manpower=1
+	state_category=wasteland
+	provinces={
+		2975 3729 3749 7592 7604 7614 7615 7616
+	}
+
 }

@@ -1,8 +1,17 @@
 state={
 	id=116
 	name="Puerto Rico"
-	provinces={
-		1740 2932 7593 7595 7601 7617 
+	history={
+		owner = PRP
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = PRP
 	}
-	
+	manpower=1
+	state_category=wasteland
+	provinces={
+		1740 2932 7593 7595 7601 7617
+	}
+
 }

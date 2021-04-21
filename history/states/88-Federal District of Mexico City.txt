@@ -1,6 +1,15 @@
 state={
 	id=88
 	name="Federal District of Mexico City"
+	history={
+		owner = DFD
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = DFD
+	}
+	manpower=1
+	state_category=wasteland
 	provinces={
 		7545 
 	}

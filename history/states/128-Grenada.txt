@@ -1,8 +1,17 @@
 state={
 	id=128
 	name="Grenada"
-	provinces={
-		8228 
+	history={
+		owner = GND
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = GND
 	}
-	
+	manpower=1
+	state_category=wasteland
+	provinces={
+		8228
+	}
+
 }

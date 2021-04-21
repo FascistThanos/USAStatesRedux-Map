@@ -1,7 +1,16 @@
 state={
 	id=103
 	name="Panama"
+	history={
+		owner = PAN
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = PAN
+	}
+	manpower=1
+	state_category=wasteland
 	provinces={
-		164 289 499 1524 1796 2931 3020 3198 3328 3989 7771 7775 7780 7789 7796 7797 7798 8233 8235 8236 
+		164 289 499 1524 1796 2931 3020 3198 3328 3989 7771 7775 7780 7789 7796 7797 7798 8233 8235 8236
 	}
 }

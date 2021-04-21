@@ -1,7 +1,16 @@
 state={
 	id=99
 	name="El Salvador"
+	history={
+		owner = ELS
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = ELS
+	}
+	manpower=1
+	state_category=wasteland
 	provinces={
-		2519 2905 3446 3901 7736 7741 10309 
+		2519 2905 3446 3901 7736 7741 10309
 	}
 }

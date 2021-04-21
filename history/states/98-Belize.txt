@@ -1,7 +1,16 @@
 state={
 	id=98
 	name="Belize"
+	history={
+		owner = BLZ
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = BLZ
+	}
+	manpower=1
+	state_category=wasteland
 	provinces={
-		1606 2161 3586 3797 4321 7605 7629 7635 7647 7657 7660 7674 7690 8208 
+		1606 2161 3586 3797 4321 7605 7629 7635 7647 7657 7660 7674 7690 8208
 	}
 }

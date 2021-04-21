@@ -1,8 +1,17 @@
 state={
 	id=134
 	name="Hawaii"
+	history={
+		owner = HIH
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = HIH
+	}
+	manpower=1
+	state_category=wasteland
 	provinces={
-		897 1786 1929 3671 4172 7409 7428 7439 7461 7464 7504 7529 7540 7548 7557 8192 8199 8200 8201 
+		897 1786 1929 3671 4172 7409 7428 7439 7461 7464 7504 7529 7540 7548 7557 8192 8199 8200 8201
 	}
 	manpower=0
 	buildings_max_level_factor=1.000

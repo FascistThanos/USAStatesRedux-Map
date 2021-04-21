@@ -1,8 +1,17 @@
 state={
 	id=130
 	name="Curaçao"
-	provinces={
-		8226 8227 
+	history={
+		owner = CRC
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = CRC
 	}
-	
+	manpower=1
+	state_category=wasteland
+	provinces={
+		8226 8227
+	}
+
 }

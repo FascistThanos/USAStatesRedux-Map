@@ -1,8 +1,17 @@
 state={
 	id=108
 	name="French Guyana"
-	provinces={
-		1288 3877 7815 7818 
+	history={
+		owner = FGY
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = FGY
 	}
-	
+	manpower=1
+	state_category=wasteland
+	provinces={
+		1288 3877 7815 7818
+	}
+
 }

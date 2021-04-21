@@ -1,8 +1,17 @@
 state={
 	id=111
 	name="Turks and Caicos Islands"
-	provinces={
-		8193 8194 8195 
+	history={
+		owner = TCI
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = TCI
 	}
-	
+	manpower=1
+	state_category=wasteland
+	provinces={
+		8193 8194 8195
+	}
+
 }

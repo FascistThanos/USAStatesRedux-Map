@@ -1,8 +1,17 @@
 state={
 	id=132
-	name="STATE_132"
+	name="Bermuda"
+	history={
+		owner = BRM
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = BRM
+	}
+	manpower=1
+	state_category=wasteland
 	provinces={
-		8155 
+		8155
 	}
 	manpower=0
 	buildings_max_level_factor=1.000
