@@ -1,0 +1,22 @@
+
+state={
+	id=147
+	name="Alaskan Archipelago"
+
+	history={
+		owner = AKA
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = AKA
+
+	}
+
+	provinces={
+		1237 1512 1885 2663 3247 7994 8001 8003 8004 8022 8023 8024 8025 8033 8036 8037 8040 8041 8043 8044 8045 8046 8047 8050 8054 8055 8056 8059 8069 8073 8076 8081 8082 8083 8086 8090 8092 8093 8094 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+}

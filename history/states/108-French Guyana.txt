@@ -11,7 +11,7 @@ state={
 	manpower=1
 	state_category=wasteland
 	provinces={
-		1288 3877 7815 7818
+		1288 3877 7815 7818 8238
 	}
 
 }

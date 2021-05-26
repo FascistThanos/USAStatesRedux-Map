@@ -1646,7 +1646,7 @@ on_actions = {
 						option = FORMED_MEX
 					}
 				}
-				OME = {
+				DFD = {
 					transfer_state = 475
 					transfer_state = 474
 					transfer_state = 476
@@ -1745,7 +1745,7 @@ on_actions = {
 	        810 = { add_core_of = ROOT }
 					set_cosmetic_tag = MEX
 					every_controlled_state = {
-						add_core_of = OME
+						add_core_of = DFD
 					}
 				}
 			}

@@ -1,0 +1,19 @@
+state={
+	id=144
+	name="Nunavutan Hudson Bay"
+	history={
+		owner = NUN
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = NUN
+
+	}
+	provinces={
+		1528 4555 7990 7999 8009 8016 8017 8018 8020 8028 8029 8032 8049 8070 8072 8087 7982
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	state_category = wasteland
+}

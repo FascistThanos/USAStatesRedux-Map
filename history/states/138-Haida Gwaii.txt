@@ -1,0 +1,19 @@
+state={
+	id=138
+	name="Haida Gwaii"
+	history={
+		owner = BCB
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = BCB
+
+	}
+	provinces={
+		1231 1416 4539 8075 8084 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+}
