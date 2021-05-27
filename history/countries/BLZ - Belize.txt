@@ -1,6 +1,3 @@
-﻿capital = 311
-
-#oob = ""
 
 # Starting tech
 set_technology = {
@@ -20,7 +17,7 @@ set_convoys = 5
 	complete_national_focus = industrial_effort
 	complete_national_focus = construction_effort
 	complete_national_focus = production_effort
-	
+
 	set_technology = {
 
 		#doctrines
@@ -57,7 +54,7 @@ set_popularities = {
 	neutrality = 23
 }
 #create_country_leader = {
-#	
+#
 #	name = "Jonas Lote"
 #	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
 #	expire = "1965.1.1"

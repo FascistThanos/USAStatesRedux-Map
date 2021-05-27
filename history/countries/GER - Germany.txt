@@ -1,15 +1,10 @@
-﻿capital = 64
-
-oob = "GER_1936"
-
-set_fuel_ratio = 0.8
 
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
 	tech_recon = 1
-	tech_support = 1		
+	tech_support = 1
 	tech_engineers = 1
 	tech_mountaineers = 1
 	motorised_infantry = 1
@@ -26,66 +21,13 @@ set_technology = {
 	strategic_bomber1 = 1
 	CAS1 = 1
 	naval_bomber1 = 1
-	
+
 	mobile_warfare = 1
 	trade_interdiction = 1
 	formation_flying = 1
 	synth_oil_experiments = 1
 	fuel_silos = 1
 	fuel_refining = 1
-}
-
-if = {
-	limit = {
-		not = { has_dlc = "Man the Guns" }
-	}
-	set_technology = {
-		early_submarine = 1
-		basic_submarine = 1
-		early_destroyer = 1
-		basic_destroyer = 1
-		early_light_cruiser = 1
-		basic_light_cruiser = 1
-		early_heavy_cruiser = 1
-		basic_heavy_cruiser = 1
-		early_battleship = 1
-		basic_battleship = 1
-		early_battlecruiser = 1
-		transport = 1
-	}
-	set_naval_oob = "GER_1936_naval"
-}
-if = {
-	limit = {
-		has_dlc = "Man the Guns"
-	}
-	set_technology = {
-		basic_naval_mines = 1
-		submarine_mine_laying = 1
-		early_ship_hull_light = 1
-		basic_ship_hull_light = 1
-		early_ship_hull_cruiser = 1
-		basic_ship_hull_cruiser = 1
-		early_ship_hull_heavy = 1
-		basic_ship_hull_heavy = 1
-		panzerschiffe = 1
-		pre_dreadnoughts = 1
-		early_ship_hull_submarine = 1
-		basic_ship_hull_submarine = 1
-		mtg_transport = 1
-		basic_torpedo = 1
-		improved_ship_torpedo_launcher = 1
-		basic_battery = 1
-		basic_light_battery = 1
-		basic_medium_battery = 1
-		basic_heavy_battery = 1
-		basic_secondary_battery = 1
-		improved_secondary_battery = 1
-		basic_depth_charges = 1
-		sonar = 1
-		basic_cruiser_armor_scheme = 1
-	}
-	set_naval_oob = "GER_1936_naval_mtg"
 }
 if = {
 	limit = {
@@ -102,7 +44,7 @@ set_variable = { var = wehrmacht_anger value = 0 }
 set_variable = { var = ss_anger value = 0 }
 set_research_slots = 4
 set_convoys = 200
-set_stability = 0.75 
+set_stability = 0.75
 set_war_support = 0.3
 
 #Trade
@@ -117,7 +59,7 @@ create_import = {
 	set_war_support = 0.7
 
 	add_political_power = 1197
-	
+
 	#adding ministers
 	add_ideas = {
 		henschel
@@ -132,14 +74,12 @@ create_import = {
 		war_economy
 		extensive_conscription
 	}
-	
-	oob = "GER_1939"
-	
+
 	set_autonomy = {
 		target = SLO
 		autonomous_state = autonomy_puppet
 	}
-	
+
 	give_military_access = SLO
 	create_wargoal = {
 		type = take_state_focus
@@ -158,7 +98,7 @@ create_import = {
 	unlock_national_focus = GER_mol_rib_pact
 	every_other_country = {
 		limit = {
-			has_government = fascism 
+			has_government = fascism
 		}
 		add_opinion_modifier = { target = GER modifier = MR_pact_fascists }
 	}
@@ -178,7 +118,7 @@ create_import = {
 		add_opinion_modifier = { target = GER modifier = sov_ger_treaty_trade }
 	}
 	#Soviet treaty end
-	
+
 	unlock_national_focus = GER_rhineland
 	unlock_national_focus = GER_anschluss
 	unlock_national_focus = GER_demand_sudetenland
@@ -201,11 +141,11 @@ create_import = {
 	complete_national_focus = GER_extra_tech_slot
 
 	#BUILDINGS
-	
+
 
 	set_technology = {
-		improved_light_tank = 1 
-		basic_medium_tank = 1 
+		improved_light_tank = 1
+		basic_medium_tank = 1
 		CAS2 = 1
 		heavy_fighter1 = 1
 		interwar_artillery = 1
@@ -215,7 +155,7 @@ create_import = {
 		support_weapons = 1
 		support_weapons2 = 1
 		paratroopers = 1
-		
+
 
 		#doctrines
 		delay = 1
@@ -227,7 +167,7 @@ create_import = {
 		unrestricted_submarine_warfare = 1
 		raider_patrols = 1
 		#air
-		formation_flying = 1		
+		formation_flying = 1
 		dive_bombing = 1
 		direct_ground_support = 1
 
@@ -256,36 +196,6 @@ create_import = {
 		dispersed_industry3 = 1
 		dispersed_industry4 = 1
 
-	}
-	if = {
-		limit = {
-			not = {
-				has_dlc = "Man the Guns"
-			}
-		}
-		set_technology = {
-			basic_heavy_cruiser = 1
-			improved_heavy_cruiser = 1
-			improved_battleship = 1
-			early_carrier = 1
-			basic_carrier = 1
-			improved_carrier = 1
-		}
-		set_naval_oob = "GER_1939_naval_legacy"
-	}
-	if = {
-		limit = {
-			has_dlc = "Man the Guns"
-		}
-		set_technology = {
-			improved_ship_hull_cruiser = 1
-			basic_ship_hull_heavy = 1
-			early_ship_hull_carrier = 1
-			basic_ship_hull_carrier = 1
-			improved_heavy_battery = 1
-			basic_heavy_armor_scheme = 1
-		}
-		set_naval_oob = "GER_1939_naval_mtg"
 	}
 }
 
@@ -1186,7 +1096,7 @@ create_equipment_variant = {
 		type = fighter_equipment_1
 		upgrades = {
 			plane_gun_upgrade = 1
-			plane_range_upgrade = 1  
+			plane_range_upgrade = 1
 			plane_engine_upgrade = 0
 			plane_reliability_upgrade = 2
 		}
@@ -1196,7 +1106,7 @@ create_equipment_variant = {
 		type = fighter_equipment_1
 		upgrades = {
 			plane_gun_upgrade = 2
-			plane_range_upgrade = 1  
+			plane_range_upgrade = 1
 			plane_engine_upgrade = 2
 			plane_reliability_upgrade = 4
 		}

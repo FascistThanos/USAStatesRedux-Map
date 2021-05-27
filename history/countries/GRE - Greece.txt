@@ -1,14 +1,3 @@
-﻿capital = 47
-
-oob = "GRE_1936"
-if = {
-	limit = { has_dlc = "Man the Guns" }
-		set_naval_oob = "GRE_1936_naval_mtg"
-	else = {
-		set_naval_oob = "GRE_1936_naval_legacy"
-	}
-}
-
 ###################
 #### 3D MODELS ####
 ###################
@@ -27,7 +16,7 @@ set_research_slots = 3
 set_technology = {
 	infantry_weapons = 1
 	tech_mountaineers = 1
-	tech_support = 1		
+	tech_support = 1
 	tech_engineers = 1
 	tech_recon = 1
 	gw_artillery = 1
@@ -71,23 +60,23 @@ if = {
 1936.1.1 = {
 	if = {
 		limit = { has_dlc = "Battle for the Bosporus" }
-		add_opinion_modifier = { 
+		add_opinion_modifier = {
 			target = ROM
 			modifier = BFTB_balkan_pact_ally
 		}
-		add_opinion_modifier = { 
+		add_opinion_modifier = {
 			target = TUR
 			modifier = BFTB_balkan_pact_ally
 		}
-		add_opinion_modifier = { 
+		add_opinion_modifier = {
 			target = YUG
 			modifier = BFTB_balkan_pact_ally
 		}
-		add_opinion_modifier = { 
+		add_opinion_modifier = {
 			target = BUL
 			modifier = BFTB_balkan_pact_enemy
 		}
-		add_opinion_modifier = { 
+		add_opinion_modifier = {
 			target = HUN
 			modifier = BFTB_balkan_pact_enemy
 		}
@@ -109,12 +98,12 @@ if = {
 		set_variable = { var = GRE_debt_to_the_ifc_italy_var value = 10 }
 		set_variable = { var = GRE_debt_to_the_ifc_paid_var value = 0 }
 
-		add_opinion_modifier = { 
+		add_opinion_modifier = {
 			target = GER
 			modifier = GRE_strong_trading_ties
 		}
-		GER = { 
-			add_opinion_modifier = { 
+		GER = {
+			add_opinion_modifier = {
 				target = GRE
 				modifier = GRE_strong_trading_ties
 			}
@@ -181,7 +170,7 @@ set_convoys = 10
 			communism = 26
 			neutrality = 42
 		}
-		
+
 		create_country_leader = {
 			name = "Themistoklis Sofoulis"
 			desc = "POLITICS_THEMISTOKLIS_SOFOULIS_DESC"
@@ -192,7 +181,7 @@ set_convoys = 10
 				professional_crisis_solver
 			}
 		}
-	
+
 		create_country_leader = {
 			name = "Ioannis Metaxas"
 			desc = "POLITICS_IOANNIS_METAXAS_DESC"
@@ -203,9 +192,9 @@ set_convoys = 10
 				arkhigos
 			}
 		}
-	
+
 		set_party_name = { ideology = neutrality long_name = GRE_metaxas_party_long name = GRE_metaxas_party }
-	
+
 		set_variable = { var = GRE_debt_to_the_ifc_britain_var value = 5 }
 		set_variable = { var = GRE_debt_to_the_ifc_france_var value = 5 }
 		set_variable = { var = GRE_debt_to_the_ifc_italy_var value = 5 }
@@ -213,14 +202,14 @@ set_convoys = 10
 		set_country_flag = GRE_1936_election
 		set_country_flag = GRE_factions_unlocked
 		set_variable = { var = GRE_monarchist_loyalty value = 2 }
-		set_variable = { var = GRE_fascist_loyalty value = 0 } 
+		set_variable = { var = GRE_fascist_loyalty value = 0 }
 		set_variable = { var = GRE_communist_loyalty value = -1 }
 		set_variable = { var = GRE_republican_loyalty value = -2 }
 	}
 
 #generic focuses
-	if = { 
-		limit = { NOT = { has_dlc = "Battle for the Bosporus" } } 	
+	if = {
+		limit = { NOT = { has_dlc = "Battle for the Bosporus" } }
 		complete_national_focus = army_effort
 		complete_national_focus = equipment_effort
 		complete_national_focus = motorization_effort
@@ -237,18 +226,9 @@ set_convoys = 10
 			limited_conscription
 		}
 	}
-	
-	oob = "GRE_1939"
-	if = {
-		limit = { has_dlc = "Man the Guns" }
-			set_naval_oob = "GRE_1939_naval_mtg"
-		else = {
-			set_naval_oob = "GRE_1939_naval_legacy"
-		}
-	}
-	
+
 	set_technology = {
-		tech_support = 1		
+		tech_support = 1
 		tech_engineers2 = 1
 		tech_recon = 1
 		early_fighter = 1
@@ -323,7 +303,7 @@ set_war_support = 0.23
 set_convoys = 80
 
 
-if = { 
+if = {
 	limit = { has_dlc = "Battle for the Bosporus" }
 	create_country_leader = {
 		name = "Konstantinos Demertzis"
@@ -335,7 +315,7 @@ if = {
 			monarchist_puppet
 		}
 	}
-	
+
 	create_country_leader = {
 		name = "Nikos Zachariadis"
 		desc = "POLITICS_NIKOS_ZACHARIADIS_DESC"
@@ -346,7 +326,7 @@ if = {
 			reluctant_stalinist
 		}
 	}
-	
+
 	create_country_leader = {
 		name = "Eleftherios Venizelos"
 		desc = "POLITICS_ELEFTHERIOS_VENIZELOS_DESC"
@@ -357,7 +337,7 @@ if = {
 			ethnarch
 		}
 	}
-	
+
 	create_country_leader = {
 		name = "George Mercouris"
 		desc = "POLITICS_GEORGIOS_KOSMIDIS_DESC"
@@ -383,7 +363,7 @@ if = {
 			#
 		}
 	}
-	
+
 	create_country_leader = {
 		name = "Markos Vafiadis"
 		desc = "POLITICS_MARKOS_VAFIADIS_DESC"
@@ -394,7 +374,7 @@ if = {
 			#
 		}
 	}
-	
+
 	create_country_leader = {
 		name = "Konstantinos Tsaldaris"
 		desc = "POLITICS_KONSTANTINOS_TSALDARIS_DESC"
@@ -405,7 +385,7 @@ if = {
 			#
 		}
 	}
-	
+
 	create_country_leader = {
 		name = "Georgios Kosmidis"
 		desc = "POLITICS_GEORGIOS_KOSMIDIS_DESC"
@@ -418,7 +398,7 @@ if = {
 	}
 }
 
-if = { 
+if = {
 	limit = { has_dlc = "Battle for the Bosporus" }
 	create_field_marshal = {
 		name = "Alexandros Papagos"
@@ -431,7 +411,7 @@ if = {
 		planning_skill = 3
 		logistics_skill = 2
 	}
-	
+
 	create_corps_commander = {
 		name = "Charalambos Katsimitros"
 		gfx = "GFX_portrait_gre_charalambos_katsimitros"
@@ -441,9 +421,9 @@ if = {
 		attack_skill = 2
 		defense_skill = 3
 		planning_skill = 2
-		logistics_skill = 2 
+		logistics_skill = 2
 	}
-	
+
 	create_corps_commander = {
 		name = "Markos Drakos"
 		gfx = "GFX_portrait_gre_markos_drakos"
@@ -455,7 +435,7 @@ if = {
 		planning_skill = 3
 		logistics_skill = 3
 	}
-	
+
 	create_navy_leader = {
 		name = "Alexandros Sakellariou"
 		portrait_path = "gfx/leaders/Europe/portrait_europe_generic_navy_4.dds"
@@ -520,7 +500,7 @@ if = {
 	limit = { has_dlc = "Man the Guns" }
 	# Submarines #
 	create_equipment_variant = {
-		name = "Katsonis Class"				
+		name = "Katsonis Class"
 		type = ship_hull_submarine_1
 		name_group = GRE_SS_HISTORICAL
 		parent_version = 0
@@ -532,7 +512,7 @@ if = {
 		obsolete = yes
 	}
 	create_equipment_variant = {
-		name = "Glafkos Class"				
+		name = "Glafkos Class"
 		type = ship_hull_submarine_2
 		name_group = GRE_SS_HISTORICAL
 		parent_version = 0
@@ -544,7 +524,7 @@ if = {
 	}
 	# Destroyers #
 	create_equipment_variant = {
-		name = "Aetos Class"					
+		name = "Aetos Class"
 		type = ship_hull_light_1
 		name_group = GRE_DD_HISTORICAL
 		parent_version = 0
@@ -561,7 +541,7 @@ if = {
 		obsolete = yes
 	}
 	create_equipment_variant = {
-		name = "Hydra Class"	
+		name = "Hydra Class"
 		type = ship_hull_light_1
 		name_group = GRE_DD_HISTORICAL
 		parent_version = 0
@@ -578,7 +558,7 @@ if = {
 	}
 	# Cruisers #
 	create_equipment_variant = {
-		name = "Averof Class"				
+		name = "Averof Class"
 		type = ship_hull_cruiser_coastal_defense_ship
 		name_group = GRE_CA_HISTORICAL
 		parent_version = 0
@@ -597,7 +577,7 @@ if = {
 		obsolete = yes
 	}
 	create_equipment_variant = {
-		name = "Elli Class"				
+		name = "Elli Class"
 		type = ship_hull_cruiser_1
 		name_group = GRE_CL_HISTORICAL
 		parent_version = 0
@@ -616,7 +596,7 @@ if = {
 	}
 	# Battleships #
 	create_equipment_variant = {
-		name = "Kilkis Class"	
+		name = "Kilkis Class"
 		type = ship_hull_pre_dreadnought
 		name_group = GRE_BB_HISTORICAL
 		parent_version = 0
@@ -646,7 +626,7 @@ if = {
 		limit = { has_dlc = "Man the Guns" }
 		# Destroyers #
 	create_equipment_variant = {
-			name = "Vasilefs Georgios I Class"	
+			name = "Vasilefs Georgios I Class"
 			type = ship_hull_light_2
 			name_group = GRE_DD_HISTORICAL
 			parent_version = 0

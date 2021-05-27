@@ -1,13 +1,4 @@
-﻿capital = 12
 
-oob = "LAT_1936"
-if = {
-	limit = { has_dlc = "Man the Guns" }
-		set_naval_oob = "LAT_1936_naval_mtg"
-	else = {
-		set_naval_oob = "LAT_1936_naval_legacy"
-	}
-}
 
 add_ideas = {
 	limited_conscription
@@ -39,7 +30,7 @@ set_convoys = 10
 1939.1.1 = {
 
 	add_political_power = 1198
-	
+
 	#generic focuses
 	complete_national_focus = army_effort
 	complete_national_focus = equipment_effort
@@ -50,18 +41,9 @@ set_convoys = 10
 	complete_national_focus = industrial_effort
 	complete_national_focus = construction_effort
 	complete_national_focus = production_effort
-	
-	oob = "LAT_1939"
-	if = {
-		limit = { has_dlc = "Man the Guns" }
-			set_naval_oob = "LAT_1939_naval_mtg"
-		else = {
-			set_naval_oob = "LAT_1939_naval_legacy"
-		}
-	}
 
 	set_technology = {
-		tech_support = 1		
+		tech_support = 1
 		tech_engineers = 1
 		gw_artillery = 1
 		interwar_artillery = 1
@@ -179,7 +161,7 @@ if = {
 	limit = { has_dlc = "Man the Guns" }
 	# Submarines #
 	create_equipment_variant = {
-		name = "Ronis Class"								
+		name = "Ronis Class"
 		type = ship_hull_submarine_1
 		name_group = LAT_SS_HISTORICAL
 		parent_version = 0
