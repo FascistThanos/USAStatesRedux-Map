@@ -1,6 +1,4 @@
-﻿capital = 116
 
-#oob = ""
 
 # Starting tech
 set_technology = {
@@ -20,7 +18,7 @@ set_convoys = 5
 	complete_national_focus = industrial_effort
 	complete_national_focus = construction_effort
 	complete_national_focus = production_effort
-	
+
 	set_technology = {
 
 		#doctrines

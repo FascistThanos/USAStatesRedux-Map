@@ -1,6 +1,4 @@
-﻿capital = 107
 
-oob = "YUG_1936"
 
 set_research_slots = 3
 
@@ -9,7 +7,7 @@ add_ideas = {
 }
 
 set_technology = {
-	tech_support = 1		
+	tech_support = 1
 	tech_engineers = 1
 	tech_mountaineers = 1
 	early_fighter = 1
@@ -52,7 +50,7 @@ if = {
 	}
 
 	add_political_power = 1198
-	
+
 	#generic focuses
 	complete_national_focus = army_effort
 	complete_national_focus = equipment_effort
@@ -64,7 +62,6 @@ if = {
 	complete_national_focus = construction_effort
 	complete_national_focus = production_effort
 	
-	oob = "YUG_1939"
 	set_technology = {
 		fighter1 = 1
 		early_bomber = 1

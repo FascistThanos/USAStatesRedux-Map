@@ -1,14 +1,3 @@
-﻿capital = 361
-
-oob = "USA_1936"
-if = {
-	limit = { has_dlc = "Man the Guns" }
-		set_naval_oob = "USA_1936_naval_mtg"
-	else = {
-		set_naval_oob = "USA_1936_naval_legacy"
-	}
-}
-
 set_research_slots = 4
 set_stability = 0.75
 set_war_support = 0
@@ -29,7 +18,7 @@ set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
 	tech_recon = 1
-	tech_support = 1		
+	tech_support = 1
 	tech_engineers = 1
 	gw_artillery = 1
 	interwar_antiair = 1
@@ -122,7 +111,7 @@ give_guarantee = URG
 1936.1.3 = {
 
 	add_political_power = 1199
-	
+
 	#adding ministers
 	add_ideas = {
 		USA_robert_taft
@@ -151,15 +140,15 @@ give_guarantee = URG
 	complete_national_focus = USA_war_plans_division
 	complete_national_focus = USA_agricultural_adjustment_act
 	complete_national_focus = USA_neutrality_act
-	complete_national_focus = USA_intervention_in_asia	
+	complete_national_focus = USA_intervention_in_asia
 	complete_national_focus = USA_war_plan_orange
-	complete_national_focus = USA_intervention_in_europe		
+	complete_national_focus = USA_intervention_in_europe
 	complete_national_focus = USA_war_plan_black
 	complete_national_focus = USA_strategic_bombing
  	complete_national_focus = USA_fair_labour_standards_act
 
 	set_global_flag = earhart_disappeared
-	
+
 
 	set_technology = {
 		fighter1 = 1
@@ -305,7 +294,7 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {
-		
+
 	}
 }
 
@@ -316,7 +305,7 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = marxism
 	traits = {
-		
+
 	}
 }
 
@@ -326,7 +315,7 @@ create_corps_commander = {
 	traits = {  trickster armor_officer panzer_leader war_hero trait_reckless }
 	skill = 5
 
-	attack_skill = 7 
+	attack_skill = 7
 	defense_skill = 3
 	planning_skill = 2
 	logistics_skill = 4
@@ -514,7 +503,7 @@ create_corps_commander = {
 	picture = "Portrait_USA_William_Hood_Simpson.dds"
 	traits = { infantry_officer }
 	skill = 3
-	
+
 	attack_skill = 2
 	defense_skill = 4
 	planning_skill = 2
@@ -547,7 +536,7 @@ create_corps_commander = {
 	name = "Joseph Stilwell"
 	picture = "Portrait_USA_Joseph_Stilwell.dds"
 	traits = { politically_connected infantry_officer career_officer harsh_leader }
-	skill = 1 
+	skill = 1
 	id = 601
 	attack_skill = 1
 	defense_skill = 1
@@ -1017,7 +1006,7 @@ if = {
 		obsolete = yes
 	}
 	create_equipment_variant = {
-		name = "Colorado Class"				
+		name = "Colorado Class"
 		type = ship_hull_heavy_1
 		name_group = USA_BB_HISTORICAL
 		parent_version = 0
@@ -1065,7 +1054,7 @@ if = {
 			fixed_ship_engine_slot = carrier_ship_engine_1
 			fixed_ship_secondaries_slot = empty
 			front_1_custom_slot = ship_deck_space
-			
+
 		}
 		obsolete = yes
 	}
@@ -1181,7 +1170,7 @@ if = {
 				rear_1_custom_slot = ship_depth_charge_1
 			}
 		}
-		
+
 		# Battleships #
 		create_equipment_variant = {
 			name = "North Carolina Class"

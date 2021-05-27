@@ -1,13 +1,3 @@
-﻿capital = 110
-
-oob = "NOR_1936"
-if = {
-	limit = { has_dlc = "Man the Guns" }
-		set_naval_oob = "NOR_1936_naval_mtg"
-	else = {
-		set_naval_oob = "NOR_1936_naval_legacy"
-	}
-}
 
 set_research_slots = 3
 
@@ -22,7 +12,7 @@ set_technology = {
 	infantry_weapons1 = 1
 	gw_artillery = 1
 	interwar_antiair = 1
-	tech_support = 1		
+	tech_support = 1
 	tech_engineers = 1
 	early_fighter = 1
 	early_bomber = 1
@@ -55,7 +45,7 @@ if = {
 1939.1.1 = {
 
 	add_political_power = 1198
-	
+
 	#generic focuses
 	complete_national_focus = army_effort
 	complete_national_focus = equipment_effort
@@ -66,15 +56,6 @@ if = {
 	complete_national_focus = industrial_effort
 	complete_national_focus = construction_effort
 	complete_national_focus = production_effort
-	
-	oob = "NOR_1939"
-	if = {
-		limit = { has_dlc = "Man the Guns" }
-			set_naval_oob = "NOR_1939_naval_mtg"
-		else = {
-			set_naval_oob = "NOR_1939_naval_legacy"
-		}
-	}
 
 	set_technology = {
 		interwar_artillery = 1
@@ -228,7 +209,7 @@ if = {
 	limit = { has_dlc = "Man the Guns" }
 	# Submarines #
 	create_equipment_variant = {
-		name = "A & B Class"						
+		name = "A & B Class"
 		type = ship_hull_submarine_1
 		parent_version = 0
 		modules = {
@@ -239,7 +220,7 @@ if = {
 	}
 	# Destroyers #
 	create_equipment_variant = {
-		name = "Draug Class"							
+		name = "Draug Class"
 		type = ship_hull_light_1
 		name_group = NOR_DD_HISTORICAL
 		parent_version = 0
@@ -255,7 +236,7 @@ if = {
 		}
 	}
 	create_equipment_variant = {
-		name = "Frøya Class"								# minelayer		
+		name = "Frøya Class"								# minelayer
 		type = ship_hull_light_1
 		parent_version = 0
 		modules = {
@@ -271,7 +252,7 @@ if = {
 		obsolete = yes
 	}
 	create_equipment_variant = {
-		name = "Olaf Tryggvason Class"							# minelayer		
+		name = "Olaf Tryggvason Class"							# minelayer
 		type = ship_hull_light_2
 		parent_version = 0
 		modules = {
@@ -287,7 +268,7 @@ if = {
 	}
 	# Heavy Cruisers #
 	create_equipment_variant = {
-		name = "Norge Class"				
+		name = "Norge Class"
 		type = ship_hull_cruiser_coastal_defense_ship
 		name_group = NOR_CA_HISTORICAL
 		parent_version = 0
@@ -316,7 +297,7 @@ if = {
 		limit = { has_dlc = "Man the Guns" }
 		# Destroyers #
 		create_equipment_variant = {
-			name = "Sleipner & Odin Class"							
+			name = "Sleipner & Odin Class"
 			type = ship_hull_light_1
 			name_group = NOR_DD_HISTORICAL
 			parent_version = 0

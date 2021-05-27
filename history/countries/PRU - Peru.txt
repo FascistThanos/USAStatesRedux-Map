@@ -1,13 +1,4 @@
-﻿capital = 303
 
-oob = "PRU_1936"
-if = {
-	limit = { has_dlc = "Man the Guns" }
-		set_naval_oob = "PRU_1936_naval_mtg"
-	else = {
-		set_naval_oob = "PRU_1936_naval_legacy"
-	}
-}
 
 # Starting tech
 set_technology = {
@@ -48,7 +39,7 @@ set_convoys = 5
 1939.1.1 = {
 
 	add_political_power = 1198
-	
+
 	#generic focuses
 	complete_national_focus = army_effort
 	complete_national_focus = equipment_effort
@@ -59,15 +50,6 @@ set_convoys = 5
 	complete_national_focus = industrial_effort
 	complete_national_focus = construction_effort
 	complete_national_focus = production_effort
-	
-	oob = "PRU_1939"
-	if = {
-		limit = { has_dlc = "Man the Guns" }
-			set_naval_oob = "PRU_1939_naval_mtg"
-		else = {
-			set_naval_oob = "PRU_1939_naval_legacy"
-		}
-	}
 
 	set_technology = {
 		tactical_bomber1 = 1
@@ -149,7 +131,7 @@ if = {
 	limit = { has_dlc = "Man the Guns" }
 	# Submarines #
 	create_equipment_variant = {
-		name = "R1 Class"				
+		name = "R1 Class"
 		type = ship_hull_submarine_1
 		parent_version = 0
 		modules = {
@@ -160,7 +142,7 @@ if = {
 	}
 	# Destroyers #
 	create_equipment_variant = {
-		name = "Almirante Villar Class"				
+		name = "Almirante Villar Class"
 		type = ship_hull_light_1
 		name_group = PRU_DD_HISTORICAL
 		parent_version = 0
@@ -177,7 +159,7 @@ if = {
 	}
 	# Heavy Cruisers #
 	create_equipment_variant = {
-		name = "Almirante Grau Class"				
+		name = "Almirante Grau Class"
 		type = ship_hull_cruiser_coastal_defense_ship
 		name_group = PRU_CA_HISTORICAL
 		parent_version = 0

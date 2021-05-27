@@ -1,11 +1,9 @@
-﻿capital = 328
 
-oob = "MAN_1936"
 
 set_technology = {
 	infantry_weapons = 1
 	gw_artillery = 1
-	
+
 }
 
 if = {
@@ -27,9 +25,9 @@ set_convoys = 5
 		enemy = CHI
 		hostility_reason = puppet
 	}
-	
+
 	add_political_power = 1198
-	
+
 	#generic focuses
 	complete_national_focus = army_effort
 	complete_national_focus = equipment_effort
@@ -45,7 +43,7 @@ set_convoys = 5
 	if = {
 		limit = { has_dlc = "Waking the Tiger" }
 
-		
+
 		#No bandits
 		unlock_national_focus = MAN_pacify_the_countryside
 		remove_ideas = MAN_banditry
@@ -67,7 +65,7 @@ set_convoys = 5
 		complete_national_focus = MAN_develop_aluminum_sources
 		complete_national_focus = MAN_social_research_unit
 	}
-	
+
 	oob = "MAN_1939"
 	set_technology = {
 		#doctrines
@@ -107,7 +105,7 @@ set_popularities = {
 
 create_country_leader = {
 	name = "Aisin Gioro Puyi"
-	
+
 	picture = "gfx/leaders/MAN/Portrait_Manchuria_Henry_Pu_Yi.dds"
 	expire = "1960.1.1"
 	ideology = rexism
@@ -118,7 +116,7 @@ create_country_leader = {
 
 create_country_leader = {
 	name = "Aisin Gioro Puyi"
-	
+
 	picture = "gfx/leaders/MAN/Portrait_Manchuria_Henry_Pu_Yi.dds"
 	expire = "1960.1.1"
 	ideology = despotism
@@ -132,7 +130,7 @@ create_corps_commander = {
 	GFX = "GFX_portrait_man_zhang_haipeng"
 	traits = {  }
 	skill = 2
-	
+
 	attack_skill = 2
 	defense_skill = 2
 	planning_skill = 1
@@ -144,7 +142,7 @@ create_corps_commander = {
 	GFX = "GFX_portrait_man_zhang_jinghui"
 	traits = { infantry_officer }
 	skill = 2
-	
+
 	attack_skill = 2
 	defense_skill = 1
 	planning_skill = 2

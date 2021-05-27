@@ -1,6 +1,4 @@
-﻿capital = 317
 
-oob = "NIC_1936"
 
 # Starting tech
 set_technology = {
@@ -16,7 +14,7 @@ set_convoys = 10
 1939.1.1 = {
 
 	add_political_power = 1198
-	
+
 	#generic focuses
 	complete_national_focus = army_effort
 	complete_national_focus = equipment_effort
@@ -27,8 +25,7 @@ set_convoys = 10
 	complete_national_focus = industrial_effort
 	complete_national_focus = construction_effort
 	complete_national_focus = production_effort
-	
-	oob = "NIC_1939"
+
 	set_technology = {
 		interwar_artillery = 1
 		infantry_weapons1 = 1

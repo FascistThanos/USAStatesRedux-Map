@@ -1,6 +1,4 @@
-﻿capital = 293
 
-oob = "YEM_1936"
 
 # Starting tech
 set_technology = {
@@ -18,7 +16,7 @@ set_convoys = 5
 1939.1.1 = {
 
 	add_political_power = 1198
-	
+
 	#generic focuses
 	complete_national_focus = army_effort
 	complete_national_focus = equipment_effort
@@ -29,8 +27,7 @@ set_convoys = 5
 	complete_national_focus = industrial_effort
 	complete_national_focus = construction_effort
 	complete_national_focus = production_effort
-	
-	oob = "YEM_1939"
+
 	set_technology = {
 		#doctrines
 		grand_battle_plan = 1

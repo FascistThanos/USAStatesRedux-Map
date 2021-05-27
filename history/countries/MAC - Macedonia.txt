@@ -1,11 +1,11 @@
-﻿capital = 106
+
 
 set_research_slots = 3
 
 # Starting tech
 # clone of Yugoslavia
 set_technology = {
-	tech_support = 1		
+	tech_support = 1
 	tech_engineers = 1
 	tech_mountaineers = 1
 	early_fighter = 1

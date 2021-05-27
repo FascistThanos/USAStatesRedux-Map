@@ -1,6 +1,4 @@
-﻿capital = 615
 
-oob = "SHX_1936"
 
 set_stability = 0.7
 set_war_support = 0.4
@@ -34,7 +32,7 @@ if = {
 		#	enemy = JAP
 		#	hostility_reason = asked_to_join
 		#}
-		
+
 		#complete_national_focus = CHI_secure_internal_politics
 		#complete_national_focus = CHI_cooperation_with_the_communists
 		#complete_national_focus = CHI_land_redistribution
@@ -51,7 +49,7 @@ if = {
 		#complete_national_focus = CHI_public_works
 		#complete_national_focus = CHI_labor_reform
 		#complete_national_focus = CHI_rural_militias
-		else = {			
+		else = {
 			#generic focuses
 			complete_national_focus = army_effort
 			complete_national_focus = equipment_effort
@@ -62,7 +60,7 @@ if = {
 			complete_national_focus = industrial_effort
 			complete_national_focus = construction_effort
 			complete_national_focus = production_effort
-		}	
+		}
 	}
 
 	add_ideas = {
@@ -71,7 +69,7 @@ if = {
 		service_by_requirement
 		closed_economy
 	}
-	
+
 	set_technology = {
 		#doctrines
 		air_superiority = 1

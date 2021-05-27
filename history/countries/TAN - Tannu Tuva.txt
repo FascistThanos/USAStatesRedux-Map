@@ -1,6 +1,4 @@
-﻿capital = 329
 
-oob = "TAN_1936"
 
 # Starting tech
 set_technology = {
@@ -14,7 +12,7 @@ add_ideas = {
 1939.1.1 = {
 
 	add_political_power = 1198
-	
+
 	#generic focuses
 	complete_national_focus = army_effort
 	complete_national_focus = equipment_effort
@@ -26,8 +24,7 @@ add_ideas = {
 	complete_national_focus = industrial_effort
 	complete_national_focus = construction_effort
 	complete_national_focus = production_effort
-	
-	oob = "TAN_1939"
+
 	set_technology = {
 		infantry_weapons = 1
 

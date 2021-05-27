@@ -1,13 +1,3 @@
-﻿capital = 107
-
-oob = "YUG_1936"
-if = {
-	limit = { has_dlc = "Man the Guns" }
-		set_naval_oob = "YUG_1936_naval_mtg"
-	else = {
-		set_naval_oob = "YUG_1936_naval_legacy"
-	}
-}
 
 set_research_slots = 3
 
@@ -30,30 +20,30 @@ if = {
 	limit = {
 		#has_dlc = Battle for the Bosporus
 	}
-	add_opinion_modifier = { 
+	add_opinion_modifier = {
 		target = GRE
 		modifier = BFTB_balkan_pact_ally
 	}
-	add_opinion_modifier = { 
+	add_opinion_modifier = {
 		target = ROM
 		modifier = BFTB_balkan_pact_ally
 	}
-	add_opinion_modifier = { 
+	add_opinion_modifier = {
 		target = TUR
 		modifier = BFTB_balkan_pact_ally
 	}
-	add_opinion_modifier = { 
+	add_opinion_modifier = {
 		target = BUL
 		modifier = BFTB_balkan_pact_enemy
 	}
-	add_opinion_modifier = { 
+	add_opinion_modifier = {
 		target = HUN
 		modifier = BFTB_balkan_pact_enemy
 	}
 }
 
 set_technology = {
-	tech_support = 1		
+	tech_support = 1
 	tech_engineers = 1
 	tech_mountaineers = 1
 	early_fighter = 1
@@ -108,7 +98,7 @@ if = {
 }
 
 	add_political_power = 1198
-	
+
 	if = {
 	limit = {
 		has_dlc = "Death or Dishonor"
@@ -124,17 +114,17 @@ if = {
 		complete_national_focus = YUG_mountain_brigades
 		complete_national_focus = YUG_modernize_the_air_force
 		complete_national_focus = YUG_purchase_foreign
-		complete_national_focus = YUG_license_production 
-		complete_national_focus = YUG_fighter_license 
+		complete_national_focus = YUG_license_production
+		complete_national_focus = YUG_fighter_license
 		complete_national_focus = YUG_rare_minerals_exploitation
 		complete_national_focus = YUG_establish_the_banovina_of_croatia
 		complete_national_focus = YUG_ban_slovene_nationalist_parties
 		complete_national_focus = YUG_concessions_for_macedonians
-		complete_national_focus = YUG_small_arms 
+		complete_national_focus = YUG_small_arms
 		complete_national_focus = YUG_domestic_artillery_production
 		complete_national_focus = YUG_expand_the_serbian_shipyards
 	}
-	
+
 	if = {
 	limit = {
 		NOT = { has_dlc = "Death or Dishonor" }
@@ -150,7 +140,7 @@ if = {
 	complete_national_focus = construction_effort
 	complete_national_focus = production_effort
 	}
-	
+
 	oob = "YUG_1939"
 	if = {
 		limit = { has_dlc = "Man the Guns" }
@@ -298,7 +288,7 @@ create_corps_commander = {
 	gfx = GFX_Portrait_yugoslavia_ivan_gosnjak
 	traits = { urban_assault_specialist }
 	skill = 3
-	
+
 	attack_skill = 3
 	defense_skill = 2
 	planning_skill = 2
@@ -320,7 +310,7 @@ create_field_marshal = {
 	name = "Milutin Nedić"
 	gfx = GFX_Portrait_yugoslavia_milutin_nedic
 	traits = { thorough_planner }
-	skill = 3	
+	skill = 3
 	attack_skill = 3
 	defense_skill = 2
 	planning_skill = 2
@@ -391,7 +381,7 @@ if = {
 	limit = { has_dlc = "Man the Guns" }
 	# Submarines #
 	create_equipment_variant = {
-		name = "Hrabri Class"				
+		name = "Hrabri Class"
 		type = ship_hull_submarine_2
 		name_group = YUG_SS_HISTORICAL
 		parent_version = 0
@@ -403,7 +393,7 @@ if = {
 	}
 	# Destroyers #
 	create_equipment_variant = {
-		name = "Dubrovnik Class"				
+		name = "Dubrovnik Class"
 		type = ship_hull_light_2
 		name_group = YUG_DD_HISTORICAL
 		parent_version = 0
@@ -420,7 +410,7 @@ if = {
 	}
 	# Cruisers #
 	create_equipment_variant = {
-		name = "Dalmacija Class"				
+		name = "Dalmacija Class"
 		type = ship_hull_cruiser_coastal_defense_ship
 		name_group = YUG_CL_HISTORICAL
 		parent_version = 0
@@ -449,7 +439,7 @@ if = {
 		limit = { has_dlc = "Man the Guns" }
 		# Destroyers #
 		create_equipment_variant = {
-			name = "Beograd Class"	
+			name = "Beograd Class"
 			type = ship_hull_light_2
 			name_group = YUG_DD_HISTORICAL
 			parent_version = 0

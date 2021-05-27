@@ -1,14 +1,10 @@
-﻿capital = 3
-
-oob = "SWI_1936"
-
 set_research_slots = 3
 
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
 	tech_mountaineers = 1
-	tech_support = 1		
+	tech_support = 1
 	tech_engineers = 1
 	tech_recon = 1
 	early_fighter = 1
@@ -19,7 +15,7 @@ set_technology = {
 1939.1.1 = {
 
 	add_political_power = 1198
-	
+
 	#generic focuses
 	complete_national_focus = army_effort
 	complete_national_focus = equipment_effort
@@ -29,8 +25,7 @@ set_technology = {
 	complete_national_focus = industrial_effort
 	complete_national_focus = construction_effort
 	complete_national_focus = production_effort
-	
-	oob = "SWI_1939"
+
 	set_technology = {
 		fighter1 = 1
 		gw_artillery = 1
@@ -88,7 +83,7 @@ set_popularities = {
 }
 
 add_ideas = {
-	neutrality_idea	
+	neutrality_idea
 	limited_conscription
 }
 
@@ -119,7 +114,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Dr. Max Leo Keller"
 	desc = "POLITICS_MAX_LEO_KELLER_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds" 
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
 	expire = "1965.1.1"
 	ideology = nazism
 	traits = {

@@ -1,6 +1,4 @@
-﻿capital = 11
 
-oob = "LIT_1936"
 
 set_research_slots = 3
 
@@ -19,7 +17,7 @@ set_convoys = 10
 1939.1.1 = {
 
 	add_political_power = 1198
-	
+
 	#generic focuses
 	complete_national_focus = army_effort
 	complete_national_focus = equipment_effort
@@ -30,10 +28,10 @@ set_convoys = 10
 	complete_national_focus = industrial_effort
 	complete_national_focus = construction_effort
 	complete_national_focus = production_effort
-	
+
 	oob = "LIT_1939"
 	set_technology = {
-		tech_support = 1		
+		tech_support = 1
 		tech_engineers = 1
 		early_bomber = 1
 		gw_artillery = 1

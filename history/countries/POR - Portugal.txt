@@ -1,13 +1,4 @@
-﻿capital = 112
-
-oob = "POR_1936"
-if = {
-	limit = { has_dlc = "Man the Guns" }
-		set_naval_oob = "POR_1936_naval_mtg"
-	else = {
-		set_naval_oob = "POR_1936_naval_legacy"
-	}
-}
+﻿
 
 set_research_slots = 3
 
@@ -16,7 +7,7 @@ set_technology = {
 	infantry_weapons1 = 1
 	gw_artillery = 1
 	interwar_antiair = 1
-	tech_support = 1		
+	tech_support = 1
 	tech_engineers = 1
 	early_fighter = 1
 	early_bomber = 1
@@ -48,23 +39,23 @@ if = {
 }
 
 if = {
-	limit = { has_dlc = "La Resistance" }	
+	limit = { has_dlc = "La Resistance" }
 	add_ideas = POR_unreliable_army
 	add_ideas = POR_unstable_republic
 	set_stability = 0.60
-	set_war_support = 0.15	
+	set_war_support = 0.15
 	set_research_slots = 2
 
 	ENG = {
 		add_opinion_modifier = {
-			target = POR 
+			target = POR
 			modifier  = POR_anglo_portuguese_alliance
 		}
 	}
 
 	POR = {
 		add_opinion_modifier = {
-			target = ENG 
+			target = ENG
 			modifier  = POR_anglo_portuguese_alliance
 		}
 	}
@@ -82,14 +73,14 @@ if = {
 			modifier = fascism_leanings_good
 		}
 	}
-	
+
 }
 
 
 1939.1.1 = {
 
 	add_political_power = 1198
-	
+
 	if = {
 		limit = {
 			has_dlc = "La Resistance"
@@ -137,14 +128,6 @@ if = {
 		}
 	}
 		
-	oob = "POR_1939"
-	if = {
-		limit = { has_dlc = "Man the Guns" }
-			set_naval_oob = "POR_1939_naval_mtg"
-		else = {
-			set_naval_oob = "POR_1939_naval_legacy"
-		}
-	}
 	set_technology = {
 		interwar_artillery = 1
 		infantry_weapons2 = 1
@@ -224,7 +207,7 @@ if = {
 			conservative_nationalist_lar
 		}
 	}
-	
+
 	create_country_leader = {
 		name = "Bento Gonçalves"
 		desc = "POLITICS_BENTO_GONCALVES_DESC"
@@ -235,7 +218,7 @@ if = {
 			veteran_communist
 		}
 	}
-	
+
 	create_country_leader = {
 		name = "Francisco de Barcelos Rolão Preto"
 		desc = "POLITICS_FRANSISCO_BARCELOS_ROLAO_PRETO_DESC"
@@ -246,7 +229,7 @@ if = {
 			fascist_militia_leader
 		}
 	}
-	
+
 	create_country_leader = {
 		name = "José Norton de Matos"
 		desc = "POLITICS_JOSE_NORTON_DE_MATOS_DESC"
@@ -257,44 +240,44 @@ if = {
 			democratic_reformer
 		}
 	}
-	
-	
+
+
 	create_field_marshal = {
 		name = "José Vicente de Freitas"
 		gfx = "GFX_portrait_por_jose_vicente_de_freitas"
 		traits = { old_guard politically_connected }
 		skill = 3
-	
+
 		attack_skill = 4
 		defense_skill = 2
 		planning_skill = 2
 		logistics_skill = 3
 	}
-	
+
 	create_corps_commander = {
 		name = "Luís Augusto Ferreira Martins"
 		gfx = "GFX_portrait_por_luis_augusto_ferreira_martins"
 		traits = { infantry_officer }
 		skill = 3
-	
+
 		attack_skill = 2
 		defense_skill = 4
 		planning_skill = 3
 		logistics_skill = 4
 	}
-	
+
 	create_corps_commander = {
 		name = "Raul Augusto Esteves"
 		portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
 		traits = { cavalry_officer }
 		skill = 3
-	
+
 		attack_skill = 4
 		defense_skill = 2
 		planning_skill = 2
 		logistics_skill = 3
 	}
-	
+
 	create_navy_leader = {
 		name = "José Mendes Cabeçadas"
 		gfx = "GFX_portrait_por_jose_mendes_cabecadas"
@@ -321,7 +304,7 @@ if = {
 			conservative_nationalist
 		}
 	}
-	
+
 	create_country_leader = {
 		name = "Bento Gonçalves"
 		desc = "POLITICS_BENTO_GONCALVES_DESC"
@@ -332,7 +315,7 @@ if = {
 			#
 		}
 	}
-	
+
 	create_country_leader = {
 		name = "Francisco de Barcelos Rolão Preto"
 		desc = "POLITICS_FRANSISCO_BARCELOS_ROLAO_PRETO_DESC"
@@ -343,14 +326,14 @@ if = {
 			#
 		}
 	}
-	
-	
+
+
 	create_corps_commander = {
 		name = "José Vicente de Freitas"
 		portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
 		traits = {  }
 		skill = 3
-	
+
 		attack_skill = 2
 		defense_skill = 3
 		planning_skill = 2
@@ -368,7 +351,7 @@ if = {
 	limit = { has_dlc = "Man the Guns" }
 	# Submarines #
 	create_equipment_variant = {
-		name = "Delfim Class"				
+		name = "Delfim Class"
 		type = ship_hull_submarine_2
 		name_group = POR_SS_HISTORICAL
 		parent_version = 0
@@ -380,7 +363,7 @@ if = {
 	}
 	# Destroyers #
 	create_equipment_variant = {
-		name = "Guadiana Class"					
+		name = "Guadiana Class"
 		type = ship_hull_light_1
 		name_group = POR_DD_HISTORICAL
 		parent_version = 0
@@ -397,7 +380,7 @@ if = {
 		obsolete = yes
 	}
 	create_equipment_variant = {
-		name = "Douro Class"	
+		name = "Douro Class"
 		type = ship_hull_light_1
 		name_group = POR_DD_HISTORICAL
 		parent_version = 0

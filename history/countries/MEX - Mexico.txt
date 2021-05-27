@@ -1,14 +1,3 @@
-﻿capital = 277
-
-oob = "MEX_1936"
-if = {
-	limit = { has_dlc = "Man the Guns" }
-		set_naval_oob = "MEX_1936_naval_mtg"
-	else = {
-		set_naval_oob = "MEX_1936_naval_legacy"
-	}
-}
-
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
@@ -63,18 +52,7 @@ if = {
 
 1939.1.1 = {
 	add_political_power = 1198
-
-	set_global_flag = flag_mexico_cedillo_has_revolted
-	
-	oob = "MEX_1939"
-	if = {
-		limit = { has_dlc = "Man the Guns" }
-			set_naval_oob = "MEX_1939_naval_mtg"
-		else = {
-			set_naval_oob = "MEX_1939_naval_legacy"
-		}
-	}
-	
+		
 	set_technology = {
 		interwar_artillery = 1
 		infantry_weapons1 = 1
@@ -116,7 +94,7 @@ if = {
 		remove_ideas = {
 			MEX_cedillo_tension_2 # Already rebelled by this point
 		}
-		
+
 		complete_national_focus = MEX_focus_plan_of_agua_prieta
 		# 70
 		complete_national_focus = MEX_focus_exile_calles # Increase Church Power (3)
@@ -148,7 +126,7 @@ if = {
 		remove_ideas = {
 			MEX_oil_concessions
 		}
-		
+
 		ENG = {
 			add_opinion_modifier = {
 				target = MEX
@@ -169,7 +147,7 @@ if = {
 			target = USA
 			modifier = embargo
 		}
-		
+
 		else = {
 			#generic focuses
 			complete_national_focus = army_effort
@@ -389,7 +367,7 @@ if = {
 	limit = { has_dlc = "Man the Guns" }
 	# Destroyers #
 	create_equipment_variant = {
-		name = "Nicolás Bravo Class"			
+		name = "Nicolás Bravo Class"
 		type = ship_hull_light_1
 		name_group = MEX_DD_HISTORICAL
 		parent_version = 0
@@ -422,7 +400,7 @@ if = {
 		}
 	}
 	create_equipment_variant = {
-		name = "Anahuac Class"			
+		name = "Anahuac Class"
 		type = ship_hull_cruiser_coastal_defense_ship
 		name_group = MEX_BB_HISTORICAL
 		parent_version = 0
