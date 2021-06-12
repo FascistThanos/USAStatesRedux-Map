@@ -1,9 +1,0 @@
-strategic_region={
-	id=93
-	name="Tabasco"
-	provinces={
-		2666 3436 4042 7597 7613 7619 7624 7627 7640 7646 
-	}
-	weather={
-	}
-}

@@ -1,9 +1,0 @@
-strategic_region={
-	id=87
-	name="Puebla"
-	provinces={
-		3098 3307 3539 4041 7503 7506 7550 7558 7562 7573 7582 7611 
-	}
-	weather={
-	}
-}

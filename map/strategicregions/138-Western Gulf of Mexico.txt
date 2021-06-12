@@ -1,9 +1,0 @@
-strategic_region={
-	id=138
-	name="Western Gulf of Mexico"
-	provinces={
-		8646 8869 8935 8971 8996 9459 9475 
-	}
-	weather={
-	}
-}

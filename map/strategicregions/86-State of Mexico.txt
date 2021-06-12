@@ -1,9 +1,0 @@
-strategic_region={
-	id=86
-	name="State of Mexico"
-	provinces={
-		672 1343 2897 4260 4279 7525 7532 7538 
-	}
-	weather={
-	}
-}

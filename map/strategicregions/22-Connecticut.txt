@@ -1,9 +1,0 @@
-strategic_region={
-	id=22
-	name="Connecticut"
-	provinces={
-		1884 3173 4207 5243 5251 5282 
-	}
-	weather={
-	}
-}

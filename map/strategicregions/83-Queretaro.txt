@@ -1,9 +1,0 @@
-strategic_region={
-	id=83
-	name="Querétaro"
-	provinces={
-		3639 7456 7476 7490 
-	}
-	weather={
-	}
-}

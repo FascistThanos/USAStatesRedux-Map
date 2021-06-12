@@ -1,9 +1,0 @@
-strategic_region={
-	id=21
-	name="Rhode Island"
-	provinces={
-		1652 
-	}
-	weather={
-	}
-}

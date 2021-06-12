@@ -1,9 +1,0 @@
-strategic_region={
-	id=20
-	name="Massachusetts"
-	provinces={
-		1721 2780 3015 3718 4224 5136 5168 5176 5206 5238 5271 8140 8141 
-	}
-	weather={
-	}
-}

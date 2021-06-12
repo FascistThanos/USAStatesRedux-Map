@@ -1,9 +1,0 @@
-strategic_region={
-	id=89
-	name="Morelos"
-	provinces={
-		3803 7561 
-	}
-	weather={
-	}
-}
