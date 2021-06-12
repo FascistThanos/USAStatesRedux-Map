@@ -1,6 +1,6 @@
-﻿capital = 942
+﻿capital = 9
 
-oob = "SKS_1936"
+# oob = "SKS_1936"
 
 set_research_slots = 3
 set_country_flag = monroe_doctrine
