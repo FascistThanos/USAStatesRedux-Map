@@ -1,6 +1,4 @@
-﻿capital = 630
-
-oob = "JAJ_1936"
+capital = 817
 
 set_research_slots = 4
 
@@ -9,7 +7,7 @@ set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
 	tech_recon = 1
-	tech_support = 1		
+	tech_support = 1
 	tech_engineers = 1
 	gw_artillery = 1
 	gwtank = 1
@@ -21,24 +19,39 @@ set_technology = {
 	CAS1 = 1
 	early_bomber = 1
 	early_submarine = 1
-	basic_submarine = 1
-	early_destroyer = 1
-	early_light_cruiser = 1
-	basic_light_cruiser = 1
-	early_heavy_cruiser = 1
-	early_battleship = 1
-	early_battlecruiser = 1
-	early_carrier = 1
-	basic_carrier = 1
-	transport = 1
+	basic_naval_mines = 1
+	submarine_mine_laying = 1
+	early_ship_hull_light = 1
+	basic_ship_hull_light = 1
+	early_ship_hull_submarine = 1
+	basic_ship_hull_submarine = 1
+	early_ship_hull_cruiser = 1
+	basic_ship_hull_cruiser = 1
+	early_ship_hull_heavy = 1
+	early_ship_hull_carrier = 1
+	basic_ship_hull_carrier = 1
+	basic_battery = 1
+	basic_light_battery = 1
+	basic_medium_battery = 1
+	basic_heavy_battery = 1
+	basic_torpedo = 1
+	sonar = 1
+	basic_depth_charges = 1
+	basic_secondary_battery = 1
+	improved_secondary_battery = 1
+	basic_cruiser_armor_scheme = 1
+	basic_heavy_armor_scheme = 1
+	mtg_transport = 1
+	improved_airplane_launcher = 1
 	superior_firepower = 1
 	base_strike = 1
+	fighter1 = 1
 }
 
 1939.1.1 = {
 
 	add_political_power = 1199
-	
+
 	#generic focuses
 	complete_national_focus = army_effort
 	complete_national_focus = equipment_effort
@@ -49,7 +62,7 @@ set_technology = {
 	complete_national_focus = construction_effort
 	complete_national_focus = production_effort
 
-	oob = "JAJ_1939"
+	oob = "WAW_1939"
 	set_technology = {
 		fighter1 = 1
 		cv_fighter1 = 1
@@ -108,8 +121,8 @@ set_technology = {
 
 
 
-set_convoys = 100
-set_stability = 0.9
+set_convoys = 138
+set_stability = 0.51
 
 set_politics = {
 
@@ -119,18 +132,38 @@ set_politics = {
 	elections_allowed = yes
 }
 add_ideas = {
-	home_of_the_free
+	
 }
 set_popularities = {
-	democratic = 98
-	communism = 1
-	fascism = 1
+	democratic = 70
+	communism = 10
+	fascism = 8
+	neutrality = 12
+
+}
+create_country_leader = {
+	name = "Clarence D. Martin"
+	desc = "POLITICS_CLARENCE_D_MARTIN_DESC"
+	picture = "Portrait_WAW_Clarence_D_Martin.dds"
+	expire = "1965.1.1"
+	ideology = liberalism
+	traits = {
+	}
+}
+create_country_leader = {
+	name = "Alfred Wagenknecht"
+	desc = "POLITICS_CLARENCE_D_MARTIN_DESC"
+	picture = "Portrait_WAW_Alfred_Wagenknecht.dds"
+	expire = "1965.1.1"
+	ideology = marxism
+	traits = {
+	}
 }
 1939.1.1 = {
-	set_stability = 0.9
+	set_stability = 0.51
 
 	set_politics = {
-		
+
 		ruling_party = democratic
 		last_election = "1936.11.3"
 		election_frequency = 48
@@ -138,9 +171,21 @@ set_popularities = {
 	}
 }
 set_popularities = {
-	democratic = 98
-	communism = 1
-	fascism = 1
+	democratic = 70
+	communism = 10
+	fascism = 8
+	neutrality = 12
+}
+
+create_corps_commander = {
+	name = "Jonathan Wainwright"
+	picture = "Portrait_WAW_Jonathan_M_Wainwright.dds"
+	traits = {  }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
 }
 ### Ship Variants ###
 
@@ -156,7 +201,63 @@ create_equipment_variant = {
 	obsolete = yes
 }
 
+#####################################Custom
+create_equipment_variant = {
+	name = "Kent Class I"
+	type = ship_hull_light_2
+	name_group = USA_DD_HISTORICAL
+	parent_version = 0
+	modules = {
+		fixed_ship_battery_slot = ship_light_battery_2
+		fixed_ship_anti_air_slot = ship_anti_air_1
+		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+		fixed_ship_radar_slot = ship_sonar_1
+		fixed_ship_engine_slot = light_ship_engine_2
+		fixed_ship_torpedo_slot = ship_torpedo_1
+		mid_1_custom_slot = ship_torpedo_1
+		rear_1_custom_slot = ship_mine_layer_1
+	}
+}
 
+create_equipment_variant = {
+	name = "Seattle Class I"
+	type = ship_hull_cruiser_1
+	name_group = USA_CL_HISTORICAL
+	parent_version = 0
+	modules = {
+		fixed_ship_battery_slot = ship_light_medium_battery_2
+		fixed_ship_anti_air_slot = ship_anti_air_1
+		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+		fixed_ship_radar_slot = empty
+		fixed_ship_engine_slot = cruiser_ship_engine_2
+		fixed_ship_armor_slot = ship_armor_cruiser_2
+		mid_1_custom_slot = empty
+		mid_2_custom_slot = empty
+		rear_1_custom_slot = ship_light_medium_battery_2
+	}
+	obsolete = yes
+}
+
+create_equipment_variant = {
+	name = "Olympia Class I"
+	type = ship_hull_cruiser_2
+	name_group = USA_CL_HISTORICAL
+	parent_version = 0
+	modules = {
+		fixed_ship_battery_slot = ship_medium_battery_2
+		fixed_ship_anti_air_slot = ship_anti_air_1
+		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+		fixed_ship_radar_slot = empty
+		fixed_ship_engine_slot = cruiser_ship_engine_2
+		fixed_ship_secondaries_slot = ship_secondaries_1
+		fixed_ship_armor_slot = ship_armor_cruiser_2
+		mid_1_custom_slot = ship_airplane_launcher_1
+		mid_2_custom_slot = empty
+		rear_1_custom_slot = ship_medium_battery_2
+	}
+}
+
+#####################################Generic
 create_equipment_variant = {
 	name = "Portland Class"
 	type = heavy_cruiser_1
@@ -204,7 +305,7 @@ create_equipment_variant = {
 }
 
 1939.1.1 = {
-	
+
 	create_equipment_variant = {
 		name = "Salmon Class"
 		type = submarine_2

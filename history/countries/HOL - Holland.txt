@@ -1,3 +1,14 @@
+﻿capital = 7
+
+oob = "HOL_1936"
+if = {
+	limit = { has_dlc = "Man the Guns" }
+		set_naval_oob = "HOL_1936_naval_mtg"
+	else = {
+		set_naval_oob = "HOL_1936_naval_legacy"
+	}
+}
+
 set_research_slots = 3
 set_stability = 0.75
 set_war_support = 0
@@ -5,7 +16,7 @@ set_war_support = 0
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
-	tech_support = 1
+	tech_support = 1		
 	tech_recon = 1
 	gw_artillery = 1
 	interwar_antiair = 1
@@ -97,30 +108,30 @@ if = {
 	}
 
 	add_political_power = 1198
-
+	
 	#generic focuses
 	remove_ideas = HOL_weak_government
 
-	complete_national_focus = HOL_obtain_foreign_colonial_investments
-	complete_national_focus = HOL_the_crown_jewel_colony
-	complete_national_focus = HOL_the_western_possessions
-	complete_national_focus = HOL_abandon_the_gold_standard
-	complete_national_focus = HOL_continue_the_public_works
-	complete_national_focus = HOL_finish_the_noordoostpolder
-	complete_national_focus = HOL_the_maastunnel
-	complete_national_focus = HOL_expand_the_artillerieinrichtingen
-	complete_national_focus = HOL_philips_focus
-	complete_national_focus = HOL_expand_RD_facilities
-	complete_national_focus = HOL_overturn_military_budget_cuts
-	complete_national_focus = HOL_prepare_naval_expansion
-	complete_national_focus = HOL_cornerstone_of_colonial_defense
-	complete_national_focus = HOL_modernize_the_cruiser_fleet
-	complete_national_focus = HOL_expand_curacao_oil_refineries
-	complete_national_focus = HOL_prepare_the_inundation_lines
-	complete_national_focus = HOL_germany_is_the_greater_threat
-	complete_national_focus = HOL_antilles_defenses
-	complete_national_focus = HOL_form_new_government
-
+	complete_national_focus = HOL_obtain_foreign_colonial_investments	
+	complete_national_focus = HOL_the_crown_jewel_colony				
+	complete_national_focus = HOL_the_western_possessions				
+	complete_national_focus = HOL_abandon_the_gold_standard			
+	complete_national_focus = HOL_continue_the_public_works			
+	complete_national_focus = HOL_finish_the_noordoostpolder			
+	complete_national_focus = HOL_the_maastunnel						
+	complete_national_focus = HOL_expand_the_artillerieinrichtingen	
+	complete_national_focus = HOL_philips_focus							
+	complete_national_focus = HOL_expand_RD_facilities				
+	complete_national_focus = HOL_overturn_military_budget_cuts		
+	complete_national_focus = HOL_prepare_naval_expansion				
+	complete_national_focus = HOL_cornerstone_of_colonial_defense		
+	complete_national_focus = HOL_modernize_the_cruiser_fleet			
+	complete_national_focus = HOL_expand_curacao_oil_refineries		
+	complete_national_focus = HOL_prepare_the_inundation_lines		
+	complete_national_focus = HOL_germany_is_the_greater_threat		
+	complete_national_focus = HOL_antilles_defenses					
+	complete_national_focus = HOL_form_new_government	
+	
 
 	set_technology = {
 		tech_engineers = 1
@@ -386,7 +397,7 @@ if = {
 	}
 	# Destroyers #
 	create_equipment_variant = {
-		name = "Van Ghent Class"
+		name = "Van Ghent Class"			
 		type = ship_hull_light_1
 		name_group = HOL_DD_HISTORICAL
 		parent_version = 0
@@ -403,7 +414,7 @@ if = {
 		obsolete = yes
 	}
 	create_equipment_variant = {
-		name = "Van Galen Class"
+		name = "Van Galen Class"				
 		type = ship_hull_light_1
 		name_group = HOL_DD_HISTORICAL
 		parent_version = 0
@@ -454,7 +465,7 @@ if = {
 	}
 	# Heavy Cruisers #
 	create_equipment_variant = {
-		name = "Hertog Hendrik Class"
+		name = "Hertog Hendrik Class"			
 		type = ship_hull_cruiser_coastal_defense_ship
 		name_group = HOL_CA_HISTORICAL
 		parent_version = 0
@@ -472,7 +483,7 @@ if = {
 		obsolete = yes
 	}
 	create_equipment_variant = {
-		name = "Soerabaja Class"				# represents Soerabaja (De Zeven Provinciën) and Jacob van Heemskerck
+		name = "Soerabaja Class"				# represents Soerabaja (De Zeven Provinciën) and Jacob van Heemskerck 
 		type = ship_hull_cruiser_coastal_defense_ship
 		name_group = HOL_CA_HISTORICAL
 		parent_version = 0
@@ -515,7 +526,7 @@ if = {
 		}
 		# Destroyers #
 		create_equipment_variant = {
-			name = "Gerard Callenburgh Class"
+			name = "Gerard Callenburgh Class"					
 			type = ship_hull_light_2
 			name_group = HOL_DD_HISTORICAL
 			parent_version = 0
@@ -531,7 +542,7 @@ if = {
 			}
 		}
 		create_equipment_variant = {
-			name = "van der Zaan Class"				# DD-sized minelayer
+			name = "van der Zaan Class"				# DD-sized minelayer			
 			type = ship_hull_light_2
 			parent_version = 0
 			modules = {

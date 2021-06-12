@@ -141,7 +141,7 @@ set_politics = {
 	elections_allowed = yes
 }
 add_ideas = {
-
+	
 }
 set_popularities = {
 	democratic = 70
@@ -159,7 +159,15 @@ create_country_leader = {
 	traits = {
 	}
 }
-
+create_country_leader = {
+	name = "Alfred Wagenknecht"
+	desc = "POLITICS_CLARENCE_D_MARTIN_DESC"
+	picture = "Portrait_WAW_Alfred_Wagenknecht.dds"
+	expire = "1965.1.1"
+	ideology = marxism
+	traits = {
+	}
+}
 1939.1.1 = {
 	set_stability = 0.51
 

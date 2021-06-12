@@ -1,4 +1,17 @@
+﻿capital = 126
 
+set_oob = "ENG_1936"
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_naval_oob = "ENG_1936_Naval"
+	else = {
+		set_naval_oob = "ENG_1936_Naval_Legacy"
+	}
+}
+
+load_oob = "ENG_Motorized"
 
 set_research_slots = 4
 
@@ -26,10 +39,10 @@ set_technology = {
 	naval_bomber1 = 1
 	early_bomber = 1
 	CAS1 = 1
-
+	
 	trench_warfare = 1
 
-
+	
 	fleet_in_being = 1
 	electronic_mechanical_engineering = 1
 	radio = 1
@@ -104,7 +117,7 @@ add_ideas = {
 	ENG_the_war_to_end_all_wars
 	george_v
 }
-
+	
 
 set_convoys = 800
 
@@ -161,7 +174,7 @@ if = {
 1936.1.3 = {
 
 	add_political_power = 1198
-
+	
 	#adding ministers
 	add_ideas = {
 		ENG_ernest_bevin
@@ -169,7 +182,7 @@ if = {
 		rsaf_enfield
 		archibald_wavell
 		charles_portal
-		english_electric
+		english_electric		
 
 		#laws
 		partial_economic_mobilisation
@@ -178,7 +191,7 @@ if = {
 		ENG_george_vi
 	}
 
-
+	
 create_country_leader = {
 	name = "Neville Chamberlain"
 	desc = "POLITICS_NEVILLE_CHAMBERLAIN_DESC"
@@ -203,8 +216,8 @@ create_country_leader = {
 	complete_national_focus = uk_commonwealth_focus
 
 	give_guarantee = POL
-
-
+	
+	
 	set_technology = {
 		fighter1 = 1
 		fighter2 = 1
@@ -225,7 +238,7 @@ create_country_leader = {
 		infantry_weapons2 = 1
 		support_weapons = 1
 		support_weapons2 = 1
-
+		
 
 		#doctrines
 		#Air
@@ -266,6 +279,46 @@ create_country_leader = {
 		dispersed_industry2 = 1
 		dispersed_industry3 = 1
 	}
+	if = {
+		limit = {
+			not = { has_dlc = "Man the Guns"}
+		}
+		set_technology = {
+			basic_submarine = 1
+			improved_submarine = 1
+			improved_destroyer = 1
+			basic_light_cruiser = 1
+			improved_light_cruiser = 1
+			basic_battleship = 1
+			basic_carrier = 1
+			improved_carrier = 1
+		}
+		set_naval_oob = "ENG_1939_Naval_Legacy"
+	}
+	if = {
+		limit = {
+			has_dlc = "Man the Guns"
+		}
+		set_technology = {
+			basic_ship_hull_submarine = 1
+			improved_ship_hull_submarine = 1
+			improved_ship_hull_light = 1
+			improved_ship_hull_cruiser = 1
+			basic_ship_hull_heavy = 1
+			
+			improved_ship_hull_carrier = 1
+			dp_secondary_battery = 1
+			improved_sonar = 1
+		}
+		set_naval_oob = "ENG_1939_Naval"
+		remove_ideas = MTG_naval_treaty_adherent
+		add_ideas = MTG_naval_treaty_adherent_reduced
+		clr_global_flag = MTG_second_london_conference
+		modify_global_flag = { flag = MTG_naval_treaty_signatories value = -2 }
+	}
+
+	set_convoys = 200
+}
 
 set_politics = {
 	ruling_party = democratic
@@ -326,7 +379,7 @@ create_country_leader = {
 #	expire = "1965.1.1"
 #	ideology = liberalism
 #	traits = {
-#
+#		
 #	}
 #}
 
@@ -360,7 +413,7 @@ create_country_leader = {
 #	expire = "1965.1.1"
 #	ideology = leninism
 #	traits = {
-#
+#		
 #	}
 #}
 
@@ -381,7 +434,7 @@ create_field_marshal = {
 	id = 996
 	picture = "Portrait_Britain_Bernard_Montgomery.dds"
 	traits = { logistics_wizard offensive_doctrine media_personality trait_cautious inflexible_strategist organizer }
-	skill = 4
+	skill = 4 
 	attack_skill = 2
 	defense_skill = 4
 	planning_skill = 3
@@ -606,7 +659,7 @@ create_corps_commander = {
 	picture = "Portrait_Britain_Brian_Horrocks.dds"
 	traits = {  armor_officer career_officer war_hero }
 	skill = 3
-
+	
 	attack_skill = 1
 	defense_skill = 3
 	planning_skill = 3
@@ -1294,7 +1347,7 @@ if = {
 		}
 		obsolete = yes
 	}
-
+	
 	create_equipment_variant = {
 		name = "Hermes Class"
 		type = ship_hull_carrier_conversion_ca
@@ -1341,7 +1394,7 @@ if = {
 				front_1_custom_slot = ship_deck_space
 			}
 		}
-
+	
 }
 1939.1.1 = {
 	if = {
@@ -1373,7 +1426,7 @@ if = {
 		limit = {
 			has_dlc = "Man the Guns"
 		}
-
+		
 		create_equipment_variant = {
 			name = "Illustrious Class"
 			type = ship_hull_carrier_2

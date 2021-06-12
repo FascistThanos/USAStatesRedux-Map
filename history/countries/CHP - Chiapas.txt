@@ -1,15 +1,15 @@
-﻿capital = 630
+﻿capital = 475
 
-oob = "JAJ_1936"
+oob = "CHP_1936"
 
-set_research_slots = 4
+set_research_slots = 3
 
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
 	tech_recon = 1
-	tech_support = 1		
+	tech_support = 1
 	tech_engineers = 1
 	gw_artillery = 1
 	gwtank = 1
@@ -38,7 +38,7 @@ set_technology = {
 1939.1.1 = {
 
 	add_political_power = 1199
-	
+
 	#generic focuses
 	complete_national_focus = army_effort
 	complete_national_focus = equipment_effort
@@ -49,7 +49,7 @@ set_technology = {
 	complete_national_focus = construction_effort
 	complete_national_focus = production_effort
 
-	oob = "JAJ_1939"
+	oob = "CHP_1939"
 	set_technology = {
 		fighter1 = 1
 		cv_fighter1 = 1
@@ -81,35 +81,13 @@ set_technology = {
 		carrier_primacy = 1
 
 		#electronics
-		electronic_mechanical_engineering = 1
-		radio = 1
-		radio_detection = 1
-		mechanical_computing = 1
-		computing_machine = 1
-		basic_encryption = 1
-		basic_decryption = 1
-
-		#industry
-		basic_machine_tools = 1
-		improved_machine_tools = 1
-		advanced_machine_tools = 1
-		synth_oil_experiments = 1
-		oil_processing = 1
-		improved_oil_processing = 1
-		construction1 = 1
-		construction2 = 1
-		construction3 = 1
-		dispersed_industry = 1
-		dispersed_industry2 = 1
-		dispersed_industry3 = 1
 	}
 }
 
 
 
-
 set_convoys = 100
-set_stability = 0.9
+set_stability = 0.43
 
 set_politics = {
 
@@ -122,15 +100,15 @@ add_ideas = {
 	home_of_the_free
 }
 set_popularities = {
-	democratic = 98
-	communism = 1
-	fascism = 1
+	democratic = 56
+	communism = 23
+	fascism = 21
 }
 1939.1.1 = {
-	set_stability = 0.9
+	set_stability = 0.43
 
 	set_politics = {
-		
+
 		ruling_party = democratic
 		last_election = "1936.11.3"
 		election_frequency = 48
@@ -138,9 +116,18 @@ set_popularities = {
 	}
 }
 set_popularities = {
-	democratic = 98
-	communism = 1
-	fascism = 1
+	democratic = 56
+	communism = 23
+	fascism = 21
+}
+create_country_leader = {
+	name = "Efraín A. Gutiérrez"
+	desc = "POLITICS_EFRAIN_GUTIERREZ_DESC"
+	picture = "Portrait_CHP_Efrain_A_Gutierrez.dds"
+	expire = "1965.1.1"
+	ideology = liberalism
+	traits = {
+	}
 }
 ### Ship Variants ###
 
@@ -175,78 +162,3 @@ create_equipment_variant = {
 		ship_reliability_upgrade = 1
 		ship_engine_upgrade = 1
 		ship_armor_upgrade = 1
-		ship_gun_upgrade = 1
-	}
-	obsolete = yes
-}
-
-create_equipment_variant = {
-	name = "New Mexico Class"
-	type = battleship_1
-	upgrades = {
-		ship_reliability_upgrade = 2
-		ship_engine_upgrade = 2
-		ship_armor_upgrade = 2
-		ship_gun_upgrade = 2
-	}
-}
-
-create_equipment_variant = {
-	name = "Yorktown Class"
-	type = carrier_2
-	upgrades = {
-		ship_deckspace_upgrade = 1
-		carrier_armor_upgrade = 1
-		ship_engine_upgrade = 1
-		ship_reliability_upgrade = 1
-	}
-
-}
-
-1939.1.1 = {
-	
-	create_equipment_variant = {
-		name = "Salmon Class"
-		type = submarine_2
-		upgrades = {
-			ship_reliability_upgrade = 1
-			sub_engine_upgrade = 1
-			sub_stealth_upgrade = 1
-			sub_torpedo_upgrade = 1
-		}
-	}
-
-	create_equipment_variant = {
-		name = "Benson & Gleaves Class"
-		type = destroyer_2
-		upgrades = {
-			ship_torpedo_upgrade = 3
-			ship_engine_upgrade = 3
-			ship_ASW_upgrade = 3
-			ship_anti_air_upgrade = 3
-		}
-	}
-
-	create_equipment_variant = {
-		name = "Wasp Class"
-		type = carrier_2
-		upgrades = {
-			ship_deckspace_upgrade = 2
-			carrier_armor_upgrade = 2
-			ship_engine_upgrade = 2
-			ship_reliability_upgrade = 2
-		}
-	}
-
-	# 1941
-	#create_equipment_variant = {
-	#	name = "South Dakota Class"
-	#	type = battleship_2
-	#	upgrades = {
-	#		ship_reliability_upgrade = 3
-	#		ship_engine_upgrade = 3
-	#		ship_armor_upgrade = 3
-	#		ship_gun_upgrade = 3
-	#	}
-	#}
-}
