@@ -1,4 +1,4 @@
-﻿capital = 968
+﻿capital = 46
 
 oob = "ARA_1936"
 

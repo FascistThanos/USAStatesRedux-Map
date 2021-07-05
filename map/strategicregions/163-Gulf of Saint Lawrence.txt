@@ -1,0 +1,11 @@
+
+strategic_region={
+	id=163
+	name="Gulf of Saint Lawrence"
+	provinces={
+		9433 
+	}
+	naval_terrain=water_shallow_sea
+	weather={
+	}
+}

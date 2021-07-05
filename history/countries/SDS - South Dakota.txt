@@ -1,4 +1,4 @@
-﻿capital = 933
+﻿capital = 52
 
 oob = "SDS_1936"
 

@@ -1,0 +1,9 @@
+strategic_region={
+	id=108
+	name="French Guyana"
+	provinces={
+		1288 3877 7815 7818 8238
+	}
+	weather={
+	}
+}

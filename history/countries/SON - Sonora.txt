@@ -1,4 +1,4 @@
-﻿capital = 483
+﻿capital = 67
 
 oob = "SON_1936"
 

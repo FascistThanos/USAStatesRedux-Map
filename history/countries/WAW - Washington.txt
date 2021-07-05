@@ -1,4 +1,4 @@
-﻿capital = 820
+﻿capital = 63
 
 oob = "WAW_1936"
 
@@ -141,7 +141,7 @@ set_politics = {
 	elections_allowed = yes
 }
 add_ideas = {
-	
+
 }
 set_popularities = {
 	democratic = 70

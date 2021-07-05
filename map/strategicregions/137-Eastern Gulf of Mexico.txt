@@ -1,0 +1,10 @@
+
+strategic_region={
+	id=137
+	name="Eastern Gulf of Mexico"
+	provinces={
+		8290 8725 8924 8930 8958 9051 9124 9230 9280 9389 9426 9463 9597 8172
+	}
+	weather={
+	}
+}

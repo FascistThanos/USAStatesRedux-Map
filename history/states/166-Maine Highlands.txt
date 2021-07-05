@@ -1,0 +1,18 @@
+state={
+	id=166
+	name="Maine Highlands"
+	history={
+		owner = MEM
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = MEM
+	}
+
+	provinces={
+		1537 2474 2902 3500 4814 4819 
+	}
+	manpower=39852
+	buildings_max_level_factor=1.000
+	state_category = rural
+}

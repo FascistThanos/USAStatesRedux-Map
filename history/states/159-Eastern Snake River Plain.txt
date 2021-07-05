@@ -1,9 +1,22 @@
+
 state={
 	id=159
-	name="STATE_159"
-	provinces={
-		1484 2511 2922 3204 3559 5063 5085 5112 
+	name="Eastern Snake River Plain"
+
+	history={
+		owner = IDI
+		buildings = {
+			infrastructure = 3
+
+		}
+		add_core_of = IDI
+
 	}
-	manpower=0
+
+	provinces={
+		1484 2511 2922 3204 3559 5063 5085 5112 10244 
+	}
+	manpower=42583
 	buildings_max_level_factor=1.000
+	state_category=town
 }

@@ -1,4 +1,4 @@
-﻿capital = 482
+﻿capital = 68
 
 oob = "CIA_1936"
 

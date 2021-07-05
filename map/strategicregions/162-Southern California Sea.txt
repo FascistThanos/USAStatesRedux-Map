@@ -1,0 +1,11 @@
+
+strategic_region={
+	id=162
+	name="Southern California Sea"
+	provinces={
+		8402 8551 8676 8737 8742 8744 8761 8797 9114 9297 9415 
+	}
+	naval_terrain=water_shallow_sea
+	weather={
+	}
+}

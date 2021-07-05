@@ -1,4 +1,4 @@
-﻿capital = 850
+﻿capital = 60
 
 oob = "IDI_1936"
 

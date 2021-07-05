@@ -1,0 +1,10 @@
+
+strategic_region={
+	id=172
+	name="Needs to be split"
+	provinces={
+		
+	}
+	weather={
+	}
+}

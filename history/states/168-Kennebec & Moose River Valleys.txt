@@ -1,0 +1,17 @@
+state={
+	id=168
+	name="Kennebec & Moose Rivery Valleys"
+	history={
+		owner = MEM
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = MEM
+	}
+	provinces={
+		711 1601 3086 4835 4848 4862 4923 10225 10223
+	}
+	manpower=50214
+	buildings_max_level_factor=1.000
+	state_category = town
+}

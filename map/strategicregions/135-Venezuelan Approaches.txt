@@ -1,0 +1,11 @@
+
+strategic_region={
+	id=135
+	name="Venezuelan Approaches"
+	provinces={
+		8660 9454 9627 
+	}
+	naval_terrain=water_shallow_sea
+	weather={
+	}
+}

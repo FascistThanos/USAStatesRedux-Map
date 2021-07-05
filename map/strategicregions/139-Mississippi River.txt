@@ -1,0 +1,11 @@
+
+strategic_region={
+	id=139
+	name="Mississippi River"
+	provinces={
+		9290 
+	}
+	naval_terrain=water_shallow_sea
+	weather={
+	}
+}

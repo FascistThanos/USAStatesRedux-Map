@@ -1,4 +1,4 @@
-﻿capital = 1070
+﻿capital = 154
 
 oob = "WDC_1936"
 

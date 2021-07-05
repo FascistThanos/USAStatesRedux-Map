@@ -1,9 +1,18 @@
 state={
 	id=161
-	name="STATE_161"
+	name="Bonneville-Bannock"
+	history = {
+		owner = IDI
+		buildings = {
+			infrastructure = 3
+
+		}
+		add_core_of = IDI
+	}
 	provinces={
 		158 655 1516 1824 2023 3518 5086 5117 5160 5169 5178 5188 5192 5207 
 	}
-	manpower=0
+	manpower=30598
 	buildings_max_level_factor=1.000
+	state_category = town
 }

@@ -1,0 +1,9 @@
+strategic_region={
+	id=4
+	name="Prince Edward Island"
+	provinces={
+		4772 4803 4808 4815 
+	}
+	weather={
+	}
+}

@@ -1,4 +1,4 @@
-﻿capital = 899
+﻿capital = 117
 
 oob = "UVU_1936"
 
