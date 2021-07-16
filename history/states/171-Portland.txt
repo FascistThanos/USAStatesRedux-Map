@@ -1,17 +1,22 @@
+
 state={
 	id=171
 	name="Portland"
+
 	history={
 		owner = MEM
 		buildings = {
 			infrastructure = 8
+
 		}
 		add_core_of = MEM
+
 	}
+
 	provinces={
-		10318 10319 10320 10321 
+		10317
 	}
 	manpower=155972
 	buildings_max_level_factor=1.000
-	state_category = city
+	state_category=city
 }

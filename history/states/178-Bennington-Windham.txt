@@ -1,0 +1,17 @@
+state={
+	id=178
+	name="Bennington-Windham"
+	history={
+		owner = VTV
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = VTV
+	}
+	provinces={
+		2508 5124 
+	}
+	manpower=32054
+	buildings_max_level_factor=1.000
+	state_category = rural
+}

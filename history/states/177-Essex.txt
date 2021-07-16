@@ -1,0 +1,17 @@
+state={
+	id=177
+	name="Essex"
+	history={
+		owner = VTV
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = VTV
+	}
+	provinces={
+		4928 4958 4969 
+	}
+	manpower=52104
+	buildings_max_level_factor=1.000
+	state_category = town
+}
