@@ -525,7 +525,7 @@ NAirGfx = {
 	AIRPLANES_3_TRANSPORT_SUPPLY_ANIM = 3,			-- Number of planes needed for a single instance of this animation
 	AIRPLANES_1_SCOUT_PLANE_PATROL_ANIM = 1,
 	AIRPLANES_3_SCOUT_PLANE_PATROL_ANIM = 3,
-		
+
 	BOMBERS_DIVISION_FACTOR = 60,					-- Number of effective bombers in a strategic region will be divided by this factor.
 	MISSILES_DIVISION_FACTOR = 60,					-- Number of missiles shown in a strategic region will be divided by this factor.
 	FIGHTERS_DIVISION_FACTOR = 60,					-- Number of missiles shown in a strategic region will be divided by this factor.
@@ -847,8 +847,8 @@ NGraphics = {
 
 	CUBEMAP_INTENSITY = 1.0,
 	
-	TREE_FADE_NEAR = 150.0,
-	TREE_FADE_FAR = 250.0,
+	TREE_FADE_NEAR = 250.0,
+	TREE_FADE_FAR = 350.0,
 	
 	TRADE_ROUTE_NUM_CONVOYS_SCALE_FACTOR = 0.3,
 	TRADE_ROUTE_MAX_NUM_CONVOYS = 4,

@@ -1,8 +1,17 @@
 state={
 	id=129
 	name="Trinidad and Tobago"
-	provinces={
-		1914 7767 8230 
+	history={
+		owner = TAT
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = TAT
 	}
-	
+	manpower=1
+	state_category=wasteland
+	provinces={
+		1914 7767 8230
+	}
+
 }

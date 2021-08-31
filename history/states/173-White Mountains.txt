@@ -1,0 +1,17 @@
+state={
+	id=173
+	name="White Mountains"
+	history={
+		owner = NHN
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = NHN
+	}
+	provinces={
+		2343 5003 
+	}
+	manpower=50268
+	buildings_max_level_factor=1.000
+	state_category = town
+}

@@ -1,8 +1,17 @@
 state={
 	id=123
 	name="Dominica"
-	provinces={
-		7704 
+	history={
+		owner = DMC
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = DMC
 	}
-	
+	manpower=1
+	state_category=wasteland
+	provinces={
+		7704
+	}
+
 }

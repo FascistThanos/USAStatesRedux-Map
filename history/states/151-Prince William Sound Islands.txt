@@ -1,0 +1,19 @@
+state={
+	id=151
+	name="Prince William Sound Islands"
+	history={
+		owner = AKA
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = AKA
+
+	}
+	provinces={
+		7991 7995 7997 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	state_category = wasteland
+}

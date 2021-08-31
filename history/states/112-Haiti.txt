@@ -1,8 +1,17 @@
 state={
 	id=112
 	name="Haiti"
-	provinces={
-		579 2031 2593 2639 2822 3483 3912 4072 7516 7520 7524 7541 7542 7568 7569 7590 7594 7612 8203 
+	history={
+		owner = HAI
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = HAI
 	}
-	
+	manpower=1
+	state_category=wasteland
+	provinces={
+		579 2031 2593 2639 2822 3483 3912 4072 7516 7520 7524 7541 7542 7568 7569 7590 7594 7612 8203
+	}
+
 }

@@ -3,7 +3,7 @@ NDefines = {
 NGame = {
 	START_DATE = "1936.1.1.12",
 	END_DATE = "1949.1.1.1",
-	MAP_SCALE_PIXEL_TO_KM = 3.733,					-- Yes, we did the math
+	MAP_SCALE_PIXEL_TO_KM = 3.731,					-- Yes, we did the math
 	SAVE_VERSION = 7,								-- 1.8.0
 	CHECKSUM_SALT = "zwOdv5d9wm9uDSOT",				-- Data to modify generated checksum when game binaries have changed but not any content files.
 	LAG_DAYS_FOR_LOWER_SPEED = 10,					-- Days of client lag for decrease of gamespeed
@@ -20,6 +20,7 @@ NGame = {
 	MAX_EFFECT_ITERATION = 1000,					-- maximum allowed iteration for loop effects
 	MAX_SCRIPTED_LOC_RECURSION = 30,				-- max recursion for scripted localizations
 	HANDS_OFF_START_TAG = "URG",					-- tag for player country for -hands_off runs. use an existing tag that is less likely to affect the game
+	ALERT_SFX_COOLDOWN_DAYS = 14,					-- After playing an alert sound, don't play the same sound for XXX days, even if it fires again.
 },
 
 NDiplomacy = {

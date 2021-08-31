@@ -1,4 +1,4 @@
-﻿capital = 1149
+﻿capital = 109
 
 oob = "CUB_1936"
 
@@ -54,7 +54,7 @@ set_convoys = 20
 1939.1.1 = {
 
 	add_political_power = 1198
-	
+
 	#generic focuses
 	complete_national_focus = army_effort
 	complete_national_focus = equipment_effort
@@ -65,7 +65,7 @@ set_convoys = 20
 	complete_national_focus = industrial_effort
 	complete_national_focus = construction_effort
 	complete_national_focus = production_effort
-	
+
 	oob = "CUB_1939"
 	set_technology = {
 		gw_artillery = 1
@@ -123,7 +123,7 @@ create_country_leader = {
 	desc = "POLITICS_JOSE_AGRIPINO_BARNET_DESC"
 	picture = "Portrait_CUB_MiguelMarianoGómezyArias.dds"
 	expire = "1965.1.1"
-	ideology = conservatism 
+	ideology = conservatism
 	traits = {
 		#
 	}
@@ -164,7 +164,7 @@ create_country_leader = {
 		desc = "POLITICS_FEDERICO_LAREDO_BRU_DESC"
 		picture = "Portrait_CUB_Ramón_Grau_San_Martín.dds"
 		expire = "1965.1.1"
-		ideology = fascism_ideology 
+		ideology = fascism_ideology
 		traits = {
 			#
 		}

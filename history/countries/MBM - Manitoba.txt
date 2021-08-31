@@ -1,6 +1,6 @@
-﻿capital = 467
+﻿capital = 8
 
-oob = "MBM_1936"
+# oob = "MBM_1936"
 
 set_research_slots = 3
 set_country_flag = monroe_doctrine

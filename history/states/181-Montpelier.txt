@@ -1,0 +1,17 @@
+state={
+	id=181
+	name="Montpelier"
+	history={
+		owner = VTV
+		buildings = {
+			infrastructure = 8
+		}
+		add_core_of = VTV
+	}
+	provinces={
+		10319
+	}
+	manpower=150001
+	buildings_max_level_factor=1.000
+	state_category = city
+}

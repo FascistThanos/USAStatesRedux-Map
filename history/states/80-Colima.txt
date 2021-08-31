@@ -1,6 +1,15 @@
 state={
 	id=80
 	name="Colima"
+	history={
+		owner = CLA
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = CLA
+	}
+	manpower=1
+	state_category=wasteland
 	provinces={
 		1614 2755 7553 8205 
 	}

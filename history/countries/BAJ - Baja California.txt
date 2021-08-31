@@ -1,4 +1,4 @@
-﻿capital = 484
+﻿capital = 65
 
 oob = "BAJ_1936"
 

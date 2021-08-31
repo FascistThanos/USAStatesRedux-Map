@@ -1,4 +1,4 @@
-﻿capital = 1022
+﻿capital = 40
 
 oob = "FLF_1936"
 

@@ -1,0 +1,19 @@
+
+state={
+	id=157
+	name="Custer-Lemhi"
+	history = {
+		owner = IDI
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = IDI
+	}
+	provinces={
+		381 397 452 533 2394 2649 3563 3923 4932 4962 4992 
+	}
+	manpower=10256
+	buildings_max_level_factor=1.000
+	state_category = pastoral
+}

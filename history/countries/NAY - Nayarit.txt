@@ -1,4 +1,4 @@
-﻿capital = 478
+﻿capital = 74
 
 oob = "NAY_1936"
 

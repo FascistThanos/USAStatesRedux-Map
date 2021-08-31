@@ -1,0 +1,19 @@
+state={
+	id=145
+	name="Norwestern Territorial Coastal Islands"
+	history={
+		owner = NTN
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = NTN
+
+	}
+	provinces={
+		7888 7892 7893 7903 7906 7910 7913 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	state_category = wasteland
+}

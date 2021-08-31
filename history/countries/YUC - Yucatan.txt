@@ -1,4 +1,4 @@
-﻿capital = 474
+﻿capital = 95
 
 oob = "YUC_1936"
 

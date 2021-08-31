@@ -1,8 +1,17 @@
 state={
 	id=113
 	name="Cayman Islands"
-	provinces={
-		8204 
+	history={
+		owner = CYM
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = CYM
 	}
-	
+	manpower=1
+	state_category=wasteland
+	provinces={
+		8204
+	}
+
 }

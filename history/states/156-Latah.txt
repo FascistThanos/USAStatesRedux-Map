@@ -1,0 +1,18 @@
+state={
+	id=156
+	name="Latah"
+	history = {
+		owner = IDI
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = IDI
+	}
+	provinces={
+		780 1371 2894 4855 4873 4898 
+	}
+	manpower=15089
+	buildings_max_level_factor=1.000
+	state_category = pastoral
+}

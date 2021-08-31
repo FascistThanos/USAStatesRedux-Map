@@ -1,0 +1,17 @@
+state={
+	id=172
+	name="Great North Woods"
+	history={
+		owner = NHN
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = NHN
+	}
+	provinces={
+		1233 
+	}
+	manpower=15982
+	buildings_max_level_factor=1.000
+	state_category = pastoral
+}

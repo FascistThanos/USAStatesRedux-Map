@@ -1,6 +1,15 @@
 state={
 	id=82
 	name="Hidalgo"
+	history={
+		owner = HID
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = HID
+	}
+	manpower=1
+	state_category=wasteland
 	provinces={
 		239 1857 2447 3356 3844 7453 7463 7467 7468 7498 7500 
 	}

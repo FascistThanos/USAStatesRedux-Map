@@ -1,8 +1,17 @@
 state={
 	id=122
 	name="Guadalupe"
+		history={
+			owner = GDL
+			buildings = {
+				infrastructure = 1
+			}
+			add_core_of = GDL
+		}
+		manpower=1
+		state_category=wasteland
 	provinces={
-		7678 7685 8219 
+		7678 7685 8219
 	}
-	
+
 }

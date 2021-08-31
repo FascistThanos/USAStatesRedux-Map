@@ -1,8 +1,17 @@
 state={
 	id=127
 	name="Barbados"
-	provinces={
-		8223 
+	history={
+		owner = BRB
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = BRB
 	}
-	
+	manpower=1
+	state_category=wasteland
+	provinces={
+		8223
+	}
+
 }

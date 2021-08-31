@@ -3,11 +3,11 @@ state={
 	id=71
 	name="Tamaulipas"
 	history={
-		owner = TAU
+		owner = TAM
 		buildings = {
 			infrastructure = 1
 		}
-		add_core_of = TAU
+		add_core_of = TAM
 	}
 	manpower=1
 	state_category=wasteland

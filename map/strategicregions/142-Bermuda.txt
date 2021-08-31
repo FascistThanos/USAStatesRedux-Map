@@ -1,9 +1,8 @@
-
 strategic_region={
 	id=142
 	name="Bermuda"
 	provinces={
-		8155 9189 
+		8155 9189
 	}
 	naval_terrain=water_fjords
 	weather={

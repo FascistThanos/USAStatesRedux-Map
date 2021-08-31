@@ -1,6 +1,15 @@
 state={
 	id=96
 	name="Quintana Roo"
+	history={
+		owner = QRO
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = QRO
+	}
+	manpower=1
+	state_category=wasteland
 	provinces={
 		597 2199 2443 2573 2888 3169 3612 3991 4250 4303 4368 7443 7449 7505 7519 7523 7536 7539 7546 7556 7567 7586 7598 7607 8202 
 	}

@@ -1,8 +1,17 @@
 state={
 	id=124
 	name="Martinique"
-	provinces={
-		8220 
+	history={
+		owner = MTQ
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = MTQ
 	}
-	
+	manpower=1
+	state_category=wasteland
+	provinces={
+		8220
+	}
+
 }

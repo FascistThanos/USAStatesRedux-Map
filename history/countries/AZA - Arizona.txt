@@ -1,5 +1,5 @@
 ﻿
-capital = 864
+capital = 58
 
 oob = "AZA_1936"
 

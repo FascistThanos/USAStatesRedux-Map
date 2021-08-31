@@ -1,4 +1,4 @@
-﻿capital = 1012
+﻿capital = 32
 
 oob = "INI_1936"
 

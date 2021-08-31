@@ -1,0 +1,18 @@
+state={
+	id=155
+	name="Shoshone"
+	history = {
+		owner = IDI
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = IDI
+	}
+	provinces={
+		632 1754 2349 2460 4754 4826 
+	}
+	manpower=10985
+	buildings_max_level_factor=1.000
+	state_category = pastoral
+}

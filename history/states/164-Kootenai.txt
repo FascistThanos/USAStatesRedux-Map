@@ -1,0 +1,18 @@
+state={
+	id=164
+	name="Kootenai"
+	history = {
+		owner = IDI
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = IDI
+	}
+	provinces={
+		800 1026 3687 3814 4704 4740 4761 10199 
+	}
+	manpower=26532
+	buildings_max_level_factor=1.000
+	state_category = rural
+}

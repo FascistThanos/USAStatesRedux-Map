@@ -1,6 +1,6 @@
-﻿capital = 834
+﻿capital = 15
 
-oob = "AKA_1936"
+# oob = "AKA_1936"
 
 set_research_slots = 3
 

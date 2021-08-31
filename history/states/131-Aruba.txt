@@ -1,8 +1,17 @@
 state={
 	id=131
 	name="Aruba"
-	provinces={
-		8224 
+	history={
+		owner = ARB
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = ARB
 	}
-	
+	manpower=1
+	state_category=wasteland
+	provinces={
+		8224
+	}
+
 }

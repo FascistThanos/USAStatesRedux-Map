@@ -1,7 +1,16 @@
 state={
 	id=106
 	name="Guyana"
+	history={
+		owner = GYA
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = GYA
+	}
+	manpower=1
+	state_category=wasteland
 	provinces={
-		46 129 166 516 1544 1556 2180 2518 2736 3148 3166 3213 4086 7810 7816 7817 
+		46 129 166 516 1544 1556 2180 2518 2736 3148 3166 3213 4086 7810 7816 7817 8237
 	}
 }

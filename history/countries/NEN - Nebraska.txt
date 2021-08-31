@@ -1,4 +1,4 @@
-﻿capital = 930
+﻿capital = 51
 
 oob = "NEN_1936"
 

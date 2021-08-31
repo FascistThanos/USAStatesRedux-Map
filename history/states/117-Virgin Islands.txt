@@ -1,8 +1,17 @@
 state={
 	id=117
 	name="Virgin Islands"
-	provinces={
-		8206 8207 8209 8211 
+	history={
+		owner = UVU
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = UVU
 	}
-	
+	manpower=1
+	state_category=wasteland
+	provinces={
+		8206 8207 8209 8211
+	}
+
 }

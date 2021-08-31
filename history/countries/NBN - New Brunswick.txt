@@ -1,6 +1,6 @@
-﻿capital = 1122
+﻿capital = 6
 
-oob = "NBN_1936"
+# oob = "NBN_1936"
 
 set_research_slots = 3
 set_country_flag = monroe_doctrine

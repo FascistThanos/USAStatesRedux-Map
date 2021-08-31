@@ -1,0 +1,17 @@
+state={
+	id=165
+	name="Aroostook"
+	history={
+		owner = MEM
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = MEM
+	}
+	provinces={
+		2896 3532 4757 
+	}
+	manpower=35698
+	buildings_max_level_factor=1.000
+	state_category = rural
+}
