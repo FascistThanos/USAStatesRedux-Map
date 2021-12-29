@@ -1,0 +1,18 @@
+state={
+	id=196
+	name="East Hartford"
+	history={
+		owner = CTC
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = CTC
+	}
+	provinces={
+		10968 10982 10983 10993 
+	}
+	manpower=345007
+	state_category = large_city
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

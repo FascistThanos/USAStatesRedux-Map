@@ -1,17 +1,23 @@
+
 state={
 	id=26
 	name="Delaware"
+
 	history={
 		owner = DED
 		buildings = {
 			infrastructure = 1
+
 		}
 		add_core_of = DED
+
+	}
+
+	provinces={
+		3695 5584 5645 10849 10851 10861 10862 
 	}
 	manpower=1
+	buildings_max_level_factor=1.000
 	state_category=wasteland
-	provinces={
-		3695 5584 5645 
-	}
-	
+	local_supplies=0.000
 }

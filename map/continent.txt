@@ -1,9 +1,25 @@
 continents = {
-	europe
-	north_america
+	new_england
+	northeast
+	southeast
+	south
+	midwest
+	rocky_mountain
+	west_coast
+	northern_territories
+	prairie_provinces
+	central_canada
+	atlantic_region
+	noroeste
+	occidente
+	noreste
+	sureste
+	centro
+	sur
+	caribbean
+	central_america
 	south_america
-	australia
-	africa
-	asia
-	middle_east
+	great_lakes
 }
+#Canada starts at norhtern territories
+#Mexico Starts at noroeste

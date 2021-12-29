@@ -1,8 +1,9 @@
+
 strategic_region={
 	id=21
 	name="Rhode Island"
 	provinces={
-		1652 
+		1652 10625 10801 10998 10999 11006 11009 11011 11013 11456 
 	}
 	weather={
 	}

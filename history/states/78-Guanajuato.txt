@@ -1,17 +1,23 @@
+
 state={
 	id=78
 	name="Guanajuato"
+
 	history={
 		owner = GAJ
 		buildings = {
 			infrastructure = 1
+
 		}
 		add_core_of = GAJ
+
+	}
+
+	provinces={
+		878 1945 2306 2578 3535 4089 4128 7441 7447 7452 7462 7465 7481 7482 7486 10415 10416 10417 10418 
 	}
 	manpower=1
+	buildings_max_level_factor=1.000
 	state_category=wasteland
-	provinces={
-		878 1945 2306 2578 3535 4089 4128 7441 7447 7452 7462 7465 7481 7482 7486 
-	}
-	
+	local_supplies=0.000
 }

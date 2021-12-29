@@ -1,0 +1,10 @@
+form_nation = {
+
+	icon = generic_formable_nations
+
+	allowed = {
+	}
+	visible = {
+		is_ai = yes
+	}
+}

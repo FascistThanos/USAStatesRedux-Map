@@ -1,0 +1,5533 @@
+﻿focus_tree = {
+	id = greenland_focus
+	
+	country = {
+		factor = 0
+	}
+	
+	default = no
+	
+	continuous_focus_position = { x = 50 y = 1100 }
+
+#A New Greenland - starting political path
+	focus = {
+		id = GRN_a_new_greenland
+		icon = GFX_goal_generic_special_forces
+		x = 11
+		y = 0
+		#relative_position_id = AST_empower_the_workers
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		}
+		
+		cost = 4
+		#prerequisite = { focus = AST_workers_paradise }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 100
+			set_rule = {
+				can_create_factions = yes
+			}
+		}
+		
+		ai_will_do = {
+			factor = 10
+			modifier = {
+			
+			}
+		}
+	}
+	
+#Fascist Greenland Path
+#The Greenland Empire
+	focus = {
+		id = GRN_the_greenland_empire
+		icon = GFX_goal_support_fascism
+		x = 2
+		y = 1
+		#relative_position_id = AST_empower_the_workers
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		}
+		mutually_exclusive = { 
+			focus = GRN_the_kingdom_of_greenland 
+		}
+		mutually_exclusive = { 
+			focus = GRN_the_republic_of_greenland 
+		}
+		mutually_exclusive = { 
+			focus = GRN_the_polar_bears_rise_up
+		}
+		
+		cost = 10
+		prerequisite = { focus = GRN_a_new_greenland }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+		  set_politics = {
+            ruling_party = fascism
+            elections_allowed = no
+          }
+          add_popularity = {
+            ideology = fascism
+            popularity = 0.50
+          }
+          add_stability = -0.55
+		  remove_ideas = home_of_the_free
+		  add_timed_idea = {
+				idea = fascist_influence
+				days = 150
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			
+			}
+		}
+	}
+	
+#Recruit the Polar Bears
+	focus = {
+		id = GRN_recruit_the_polar_bears
+		icon = GFX_goal_generic_wolf_pack
+		x = 0
+		y = 2
+		#relative_position_id = AST_empower_the_workers
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		}
+		
+		cost = 10
+		prerequisite = { focus = GRN_the_greenland_empire }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = 0.05
+			add_war_support = 0.05
+			add_ideas = { 
+				recruit_the_polar_bears_idea
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			
+			}
+		}
+	}
+	
+#Militarize the Ice
+	focus = {
+		id = GRN_militarize_the_ice
+		icon = GFX_goal_rhineland
+		x = 2
+		y = 2
+		#relative_position_id = AST_empower_the_workers
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		}
+		
+		cost = 10
+		prerequisite = { focus = GRN_the_greenland_empire }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = 0.05
+			add_war_support = 0.1
+			add_ideas = { 
+				militarized_the_ice
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			
+			}
+		}
+	}
+	
+#Rally the Men
+	focus = {
+		id = GRN_rally_the_men
+		icon = GFX_focus_generic_manpower
+		x = 4
+		y = 2
+		#relative_position_id = AST_empower_the_workers
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		}
+		
+		cost = 10
+		prerequisite = { focus = GRN_the_greenland_empire }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_manpower = 5000
+			add_war_support = 0.1
+			add_stability = 0.05
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			
+			}
+		}
+	}
+	
+#Annex Nunavut
+	focus = {
+		id = GRN_annex_nunavut
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		x = 1
+		y = 3
+		#relative_position_id = AST_empower_the_workers
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		}
+		
+		cost = 10
+		prerequisite = { 
+			focus = GRN_rally_the_men 
+		}
+		prerequisite = { 
+			focus = GRN_recruit_the_polar_bears 
+		}
+		prerequisite = { 
+			focus = GRN_militarize_the_ice 
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			#event chain
+			NUN = {
+					country_event = greenland.1
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			
+			}
+		}
+	}
+	
+#The Greek Question
+	focus = {
+		id = GRN_the_greek_question
+		icon = GFX_focus_generic_attack_greece
+		x = 3
+		y = 3
+		#relative_position_id = AST_empower_the_workers
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		}
+		
+		cost = 10
+		prerequisite = { 
+			focus = GRN_rally_the_men 
+		}
+		prerequisite = { 
+			focus = GRN_recruit_the_polar_bears 
+		}
+		prerequisite = { 
+			focus = GRN_militarize_the_ice 
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			custom_effect_tooltip = needs_to_be_reworked_tt
+			
+			custom_effect_tooltip = GRN_annex_nunavut_first
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+			modifier = {
+			
+			} 
+		}
+	}
+
+#Nunavut Factories
+	focus = {
+		id = GRN_nunavut_factories
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 1
+		y = 4
+		#relative_position_id = AST_empower_the_workers
+		
+		available = {
+		#owns nunavut
+		has_full_control_of_state = 683
+		has_full_control_of_state = 950
+		}
+		bypass = {
+		
+		}
+		
+		cost = 15
+		prerequisite = { focus = GRN_annex_nunavut }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			950 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			683 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			
+			}
+		}
+	}	
+	
+#Greek Factories
+	focus = {
+		id = GRN_greek_factories
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 3
+		y = 4
+		#relative_position_id = AST_empower_the_workers
+		
+		available = {
+		#owns greece
+		has_full_control_of_state = 47
+		has_full_control_of_state = 164
+		has_full_control_of_state = 182
+		has_full_control_of_state = 184
+		has_full_control_of_state = 185
+		has_full_control_of_state = 186
+		has_full_control_of_state = 187
+		has_full_control_of_state = 731
+		}
+		bypass = {
+		
+		}
+		
+		cost = 15
+		prerequisite = { focus = GRN_the_greek_question }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			47 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			186 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			
+			}
+		}
+	}	
+	
+#Subjugate Newfoundland
+	focus = {
+		id = GRN_subjugate_newfoundland
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		x = 2
+		y = 5
+		#relative_position_id = AST_empower_the_workers
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		}
+		
+		cost = 10
+		prerequisite = { 
+			focus = GRN_nunavut_factories
+			focus = GRN_greek_factories
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			#event chain
+			NLN = {
+					country_event = greenland.8
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			
+			}
+		}
+	}
+	
+#Integrate our Colonies
+	focus = {
+		id = GRN_integrate_our_colonies
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		x = 1
+		y = 6
+		#relative_position_id = AST_empower_the_workers
+		
+		available = {
+		#owns newfoundland
+		has_full_control_of_state = 331
+		has_full_control_of_state = 1145
+		has_full_control_of_state = 1146
+		}
+		bypass = {
+		
+		}
+		
+		cost = 17
+		prerequisite = { 
+			focus = GRN_subjugate_newfoundland
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			331 = {
+				if = {
+					limit = { is_owned_by = GRN }
+					add_core_of = GRN
+				}
+			}
+			1145 = {
+				if = {
+					limit = { is_owned_by = GRN }
+					add_core_of = GRN
+				}
+			}
+			184 = {
+				if = {
+					limit = { is_owned_by = GRN }
+					add_core_of = GRN
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1 
+			modifier = {
+			
+			}
+		}
+	}
+
+#Colonial Research
+	focus = {
+		id = GRN_colonial_research
+		icon = GFX_focus_research2
+		x = 3
+		y = 6
+		#relative_position_id = AST_empower_the_workers
+		
+		available = {
+		#owns newfoundland
+		has_full_control_of_state = 331
+		has_full_control_of_state = 1145
+		has_full_control_of_state = 1146
+		}
+		bypass = {
+		
+		}
+		
+		cost = 10
+		prerequisite = { 
+			focus = GRN_subjugate_newfoundland
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			#research slot
+			add_research_slot = 1
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			
+			}
+		}
+	}
+
+#Take LA for No Reason (if made serious tree, replace with alaska?
+	focus = {
+		id = GRN_take_la_for_no_reason
+		icon = GFX_goal_california_war
+		x = 0
+		y = 7
+		#relative_position_id = AST_empower_the_workers
+		
+		available = {
+		 
+		} 
+		bypass = {
+		
+		}
+		 
+		cost = 10
+		prerequisite = {  
+			focus = GRN_integrate_our_colonies
+		}
+		prerequisite = { 
+			focus = GRN_colonial_research 
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			#event chain
+			CAC = {
+					country_event = greenland.11
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			
+			}
+		}
+	}
+	
+#The Student becomes the Master
+	focus = {
+		id = GRN_the_student_becomes_the_master
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		x = 2
+		y = 7
+		#relative_position_id = AST_empower_the_workers
+		
+		available = {
+		 
+		} 
+		bypass = {
+		
+		}
+		 
+		cost = 10
+		prerequisite = {  
+			focus = GRN_integrate_our_colonies
+		}
+		prerequisite = { 
+			focus = GRN_colonial_research 
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			#wargoal on denmark 
+			create_wargoal = {
+			type = take_state_focus
+			target = DEN
+			generator = { 37 99 }
+		}
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			
+			}
+		}
+	}
+
+#War on the Arctic
+	focus = {
+		id = GRN_war_on_the_arctic
+		icon = GFX_goal_generic_military_deal
+		x = 4
+		y = 7
+		#relative_position_id = AST_empower_the_workers
+		
+		available = {
+		 
+		} 
+		bypass = {
+		
+		}
+		 
+		cost = 10
+		prerequisite = {  
+			focus = GRN_integrate_our_colonies
+		}
+		prerequisite = { 
+			focus = GRN_colonial_research 
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			#wargoal on northwestern and yukon
+			create_wargoal = {
+			type = annex_everything
+			target = NTN
+			}
+			create_wargoal = {
+			type = annex_everything
+			target = YTY
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			
+			}
+		}
+	}	
+	
+	
+	
+#Monarchist Greenland Path
+#The Kingdom of Greenland
+	focus = {
+		id = GRN_the_kingdom_of_greenland
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		x = 7
+		y = 1
+		#relative_position_id = AST_empower_the_workers
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		}
+		mutually_exclusive = { 
+			focus = GRN_the_republic_of_greenland 
+		}
+		mutually_exclusive = { 
+			focus = GRN_the_polar_bears_rise_up
+		}
+		mutually_exclusive = { 
+			focus = GRN_the_greenland_empire
+		}
+		
+		cost = 10
+		prerequisite = { focus = GRN_a_new_greenland }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+		  set_politics = {
+            ruling_party = neutrality
+            elections_allowed = no
+          }
+          add_popularity = {
+            ideology = neutrality
+            popularity = 0.40
+          }
+          add_stability = 0.05
+		  remove_ideas = home_of_the_free
+		  add_timed_idea = {
+				idea = support_for_monarchism
+				days = 150
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			
+			}
+		}
+	}
+	
+##Restore the Danish Monarchy##
+	focus = {
+		id = GRN_restore_the_danish_monarchy
+		icon = GFX_focus_generic_monarchy_2
+		x = 6
+		y = 2
+		#relative_position_id = AST_empower_the_workers
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		}
+		
+		cost = 10
+		prerequisite = { 
+			focus = GRN_the_kingdom_of_greenland
+		}
+		mutually_exclusive = { focus = GRN_the_santa_monarchy }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			#leader becomes danish monarch and cosmetic tag
+			create_country_leader = {
+				name = "Charles X"
+				desc = ""
+				picture = "Portrait_GRN_Charles_X.dds"
+				expire = "1965.1.1"
+				ideology = despotism
+				traits = {
+					popular_figurehead great_survivor
+				} 
+			}
+			set_cosmetic_tag = DEN_GRN  
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			
+			}
+		}
+	}
+	
+#Prepare to take back Denmark
+	focus = {
+		id = GRN_prepare_to_take_back_denmark
+		icon = GFX_goal_generic_propaganda
+		x = 5
+		y = 3
+		#relative_position_id = AST_empower_the_workers
+		
+		available = {
+		 
+		} 
+		bypass = {
+		
+		}
+		 
+		cost = 10
+		prerequisite = {  
+			focus = GRN_restore_the_danish_monarchy
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			#wargoal on denmark and claims
+			create_wargoal = {
+			type = annex_everything
+			target = DEN
+			}
+			37 = {
+					add_claim_by = GRN
+			}
+			99 = {
+					add_claim_by = GRN
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			
+			}
+		}
+	}
+	
+#Rebuilding Copenhagen
+	focus = {
+		id = GRN_rebuilding_copenhagen
+		icon = GFX_goal_generic_production
+		x = 5
+		y = 4
+		#relative_position_id = AST_empower_the_workers
+		
+		available = {
+		has_full_control_of_state = 37
+		has_full_control_of_state = 99
+		
+		}
+		bypass = {
+		
+		}
+		
+		
+		cost = 10
+		prerequisite = { focus = GRN_prepare_to_take_back_denmark }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			37 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			#cores
+			37 = {
+					add_core_of = GRN
+			}
+			99 = {
+					add_core_of = GRN
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			
+			}
+		}
+	}
+
+#Annex Iceland (and norway sweden coast?
+	focus = {
+		id = GRN_annex_iceland
+		icon = GFX_goal_anschluss
+		x = 4
+		y = 5
+		#relative_position_id = AST_empower_the_workers
+		
+		available = {
+		 
+		} 
+		bypass = {
+		
+		}
+		 
+		cost = 27
+		prerequisite = {  
+			focus = GRN_rebuilding_copenhagen
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			#annexes iceland and coast of norway and sweden
+			custom_effect_tooltip = needs_to_be_fixed_tt
+			add_political_power = 50
+			add_war_support = 0.05
+			add_stability = 0.05
+			set_global_flag = greenland_iceland_annexed
+			
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			
+			}
+		}
+	}
+
+#Annex Scandinavia (the rest)
+	focus = {
+		id = GRN_annex_scandinavia
+		icon = GFX_goal_anschluss
+		x = 6
+		y = 5
+		#relative_position_id = AST_empower_the_workers
+		
+		available = {
+		 
+		} 
+		bypass = {
+		
+		} 
+		 
+		cost = 27
+		prerequisite = {  
+			focus = GRN_rebuilding_copenhagen
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			#annexes rest of scandi
+			141 = {
+				if = {
+					limit = { is_owned_by = SWE }
+					add_claim_by = GRN
+					GRN = { transfer_state = 141 }
+					add_compliance = 60
+				}
+			}
+			38 = {
+				if = {
+					limit = { is_owned_by = SWE }
+					add_claim_by = GRN
+					GRN = { transfer_state = 38 }
+					add_compliance = 60
+				}
+			}
+			666 = {
+				if = {
+					limit = { is_owned_by = SWE }
+					add_claim_by = GRN
+					GRN = { transfer_state = 666 }
+					add_compliance = 60
+				}
+			}
+			
+			144 = {
+				if = {
+					limit = { is_owned_by = NOR }
+					add_claim_by = GRN
+					GRN = { transfer_state = 144 }
+					add_compliance = 60
+				}
+			}
+			
+			148 = {
+				if = {
+					limit = { is_owned_by = FIN }
+					add_claim_by = GRN
+					GRN = { transfer_state = 148 }
+					add_compliance = 60
+				}
+			}
+			722 = {
+				if = {
+					limit = { is_owned_by = FIN }
+					add_claim_by = GRN
+					GRN = { transfer_state = 722 }
+					add_compliance = 60
+				}
+			}
+			147 = {
+				if = {
+					limit = { is_owned_by = FIN }
+					add_claim_by = GRN
+					GRN = { transfer_state = 147 }
+					add_compliance = 60
+				}
+			}
+			150 = {
+				if = {
+					limit = { is_owned_by = FIN }
+					add_claim_by = GRN
+					GRN = { transfer_state = 150 }
+					add_compliance = 60
+				}
+			}
+			149 = {
+				if = {
+					limit = { is_owned_by = FIN }
+					add_claim_by = GRN
+					GRN = { transfer_state = 149 }
+					add_compliance = 60
+				}
+			}
+			111 = {
+				if = {
+					limit = { is_owned_by = FIN }
+					add_claim_by = GRN
+					GRN = { transfer_state = 111 }
+					add_compliance = 60
+				}
+			}
+			146 = {
+				if = {
+					limit = { is_owned_by = FIN }
+					add_claim_by = GRN
+					GRN = { transfer_state = 146 }
+					add_compliance = 60
+				}
+			}
+			add_political_power = 60
+			add_war_support = 0.05
+			add_stability = 0.05
+			set_global_flag = greenland_sca_annexed
+			
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			
+			}
+		}
+	}
+
+#The Winter Army
+	focus = {
+		id = GRN_the_winter_army
+		icon = GFX_goal_generic_military_sphere
+		x = 5
+		y = 6 
+		#relative_position_id = AST_empower_the_workers
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		}
+		
+		
+		cost = 10
+		prerequisite = { 
+			focus = GRN_annex_iceland 
+		}
+		prerequisite = { 
+			focus = GRN_annex_scandinavia 
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			#idea
+			add_ideas = { 
+				the_winter_army_idea
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			
+			}
+		}
+	}
+
+#The Arctic Kingdom 
+	focus = {
+		id = GRN_the_arctic_kingdom
+		icon = GFX_goal_continuous_increase_nu
+		x = 6
+		y = 7 
+		#relative_position_id = AST_empower_the_workers
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		}
+		
+		
+		cost = 30
+		prerequisite = { 
+			focus = GRN_the_winter_army
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			#cores on sweden, iceland, and norway
+			#ice
+			100 = {
+				if = {
+					limit = { is_owned_by = GRN }
+					add_core_of = GRN
+				}
+			}
+			
+			#swe
+			138 = {
+				if = {
+					limit = { is_owned_by = GRN }
+					add_core_of = GRN
+				}
+			}
+			140 = {
+				if = {
+					limit = { is_owned_by = GRN }
+					add_core_of = GRN
+				}
+			}
+			139 = {
+				if = {
+					limit = { is_owned_by = GRN }
+					add_core_of = GRN
+				}
+			}
+			124 = {
+				if = {
+					limit = { is_owned_by = GRN }
+					add_core_of = GRN
+				}
+			}
+			141 = {
+				if = {
+					limit = { is_owned_by = GRN }
+					add_core_of = GRN
+				}
+			}
+			38 = {
+				if = {
+					limit = { is_owned_by = GRN }
+					add_core_of = GRN
+				}
+			}
+			666 = {
+				if = {
+					limit = { is_owned_by = GRN }
+					add_core_of = GRN
+				}
+			}
+			
+			#nor
+			110 = {
+				if = {
+					limit = { is_owned_by = GRN }
+					add_core_of = GRN
+				}
+			}
+			144 = {
+				if = {
+					limit = { is_owned_by = GRN }
+					add_core_of = GRN
+				}
+			}
+			142 = {
+				if = {
+					limit = { is_owned_by = GRN }
+					add_core_of = GRN
+				}
+			}
+			143 = {
+				if = {
+					limit = { is_owned_by = GRN }
+					add_core_of = GRN
+				}
+			}
+			
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			
+			}
+		}
+	}
+
+
+
+##inbetween focuses########
+
+#Raise Monarchism in the Arctic
+	focus = {
+		id = GRN_raise_monarchism_in_the_arctic
+		icon = GFX_focus_rom_royal_dictatorship 
+		x = 7
+		y = 3 
+		#relative_position_id = AST_empower_the_workers
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		}
+		
+		
+		cost = 10
+		prerequisite = { 
+			focus = GRN_restore_the_danish_monarchy
+			focus = GRN_the_santa_monarchy
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			#ideas for arctic nations
+			NUN = {
+					add_timed_idea = { idea = support_for_monarchism days = 350 }
+			}
+			NTN = {
+					add_timed_idea = { idea = support_for_monarchism days = 350 }
+			}
+			YTY = {
+					add_timed_idea = { idea = support_for_monarchism days = 350 }
+			}
+			AKA = {
+					add_timed_idea = { idea = support_for_monarchism days = 350 }
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			
+			}
+		}
+	}
+	
+#Establish our Place
+	focus = {
+		id = GRN_establish_our_place
+		icon = GFX_goal_generic_propaganda 
+		x = 7
+		y = 4 
+		#relative_position_id = AST_empower_the_workers
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		}
+		
+		
+		cost = 20
+		prerequisite = { 
+			focus = GRN_raise_monarchism_in_the_arctic
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			#2 random wargoals 
+			random_neighbor_country = {
+			limit = {
+				not = {
+					is_guaranteed_by = ROOT
+					is_in_faction_with = ROOT
+					has_non_aggression_pact_with = ROOT
+					is_subject_of = ROOT
+				}
+			}
+			ROOT = {
+				create_wargoal= {
+					target = PREV
+					type = annex_everything
+					}
+				}
+			}
+			random_neighbor_country = {
+			limit = {
+				not = {
+					is_guaranteed_by = ROOT
+					is_in_faction_with = ROOT
+					has_non_aggression_pact_with = ROOT
+					is_subject_of = ROOT
+				}
+			}
+			ROOT = {
+				create_wargoal= {
+					target = PREV
+					type = annex_everything
+					}
+				}
+			}
+			custom_effect_tooltip = GRN_annex_land_first			
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			
+			}
+		}
+	}
+
+#An Alliance with Florida
+	focus = {
+		id = GRN_an_alliance_with_florida
+		icon = GFX_goal_tripartite_pact
+		x = 7
+		y = 6 
+		#relative_position_id = AST_empower_the_workers
+		
+		available = {
+			FLF = {
+				has_government = neutrality
+			}
+		}
+		bypass = {
+		
+		}
+		
+		
+		cost = 10
+		prerequisite = { 
+			focus = GRN_annex_iceland
+			focus = GRN_recruit_the_elves
+		}
+		prerequisite = { 
+			focus = GRN_annex_scandinavia
+			focus = GRN_toys_in_new_york
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			#faction with monarchist florida
+			create_faction = GRN_FLF_FACTION
+			GRN = { add_to_faction = FLF }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			
+			}
+		}
+	}	
+
+	
+
+##The Santa Monarchy##
+	focus = {
+		id = GRN_the_santa_monarchy
+		icon = GFX_goal_molotov_ribbentrop_pact
+		x = 8
+		y = 2
+		#relative_position_id = AST_empower_the_workers
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		}
+		
+		cost = 10
+		prerequisite = { 
+			focus = GRN_the_kingdom_of_greenland
+		}
+		mutually_exclusive = { focus = GRN_restore_the_danish_monarchy }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			#leader becomes santa and cosmetic tag
+			create_country_leader = {
+				name = "Santa Claus"
+				desc = ""
+				picture = "Portrait_GRN_Santa_Claus.dds"
+				expire = "1965.1.1"
+				ideology = despotism
+				traits = {
+					popular_figurehead economic_reformer
+				}
+			}
+			set_cosmetic_tag = SAN_GRN 
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			
+			}
+		}
+	}	
+	
+#Annex Rhode Island and Delaware
+	focus = {
+		id = GRN_annex_rhode_island_and_delaware
+		icon = GFX_goal_generic_territory_or_war
+		x = 9
+		y = 3
+		#relative_position_id = AST_empower_the_workers
+		
+		available = {
+		 
+		} 
+		bypass = {
+		
+		}
+		 
+		cost = 10
+		prerequisite = {  
+			focus = GRN_the_santa_monarchy
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			#annexes rhode island and delaware, no event
+			1078 = {
+				if = {
+					limit = { is_owned_by = DED }
+					add_claim_by = GRN
+					add_compliance = 60
+				}
+			}
+			1079 = {
+				if = {
+					limit = { is_owned_by = DED }
+					add_claim_by = GRN
+					add_compliance = 60
+				}
+			}
+			1080 = {
+				if = {
+					limit = { is_owned_by = DED }
+					add_claim_by = GRN
+					add_compliance = 60
+				}
+			}
+			annex_country = { target = DED transfer_troops = yes }
+			1097 = {
+				if = { 
+					limit = { is_owned_by = RIR }
+					add_claim_by = GRN
+					add_compliance = 60
+				}
+			}
+			annex_country = { target = RIR transfer_troops = yes }
+			add_political_power = 50
+			add_war_support = 0.05
+			add_stability = 0.03
+			set_global_flag = greenland_rhode_island_delaware_annexed
+			
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			
+			}
+		}
+	}
+
+#Construct Toy Factories
+	focus = {
+		id = GRN_construct_toy_factories
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 9
+		y = 4
+		#relative_position_id = AST_empower_the_workers
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		}
+		
+		
+		cost = 15
+		prerequisite = { focus = GRN_annex_rhode_island_and_delaware }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			1078 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			1080 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			1097 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			
+			}
+		}
+	}
+
+#Recruit the Elves
+	focus = {
+		id = GRN_recruit_the_elves
+		icon = GFX_focus_generic_support_the_left_right
+		x = 10
+		y = 5
+		#relative_position_id = AST_empower_the_workers
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		}
+		
+		
+		cost = 10
+		prerequisite = { focus = GRN_construct_toy_factories }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = { 
+				elf_recruitment
+			}
+			1078 = {
+				if = {
+					limit = { is_owned_by = GRN }
+					add_core_of = GRN
+				}
+			}
+			1079 = {
+				if = {
+					limit = { is_owned_by = GRN }
+					add_core_of = GRN
+				}
+			}
+			1080 = {
+				if = {
+					limit = { is_owned_by = GRN }
+					add_core_of = GRN
+				}
+			}
+			1097 = {
+				if = { 
+					limit = { is_owned_by = GRN }
+					add_core_of = GRN
+				}
+			}
+			
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			
+			}
+		}
+	}
+
+#Toys in New York
+	focus = {
+		id = GRN_toys_in_new_york
+		icon = GFX_goal_generic_demand_territory
+		x = 8
+		y = 5
+		#relative_position_id = AST_empower_the_workers
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		}
+		
+		
+		cost = 20
+		prerequisite = { focus = GRN_construct_toy_factories }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			#annexes nyc with claim, and gives factory
+			1084 = {
+				if = {
+					limit = { is_owned_by = NYN }
+					add_claim_by = GRN
+					GRN = { transfer_state = 1084 }
+					add_compliance = 60
+				}
+			}
+			1085 = {
+				if = {
+					limit = { is_owned_by = NYN }
+					add_claim_by = GRN
+					GRN = { transfer_state = 1085 }
+					add_compliance = 60
+				}
+			}
+			
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			
+			}
+		}
+	}
+
+#The Christmas Expansion
+	focus = {
+		id = GRN_the_christmas_expansion
+		icon = GFX_goal_generic_demand_territory
+		x = 9
+		y = 6
+		#relative_position_id = AST_empower_the_workers
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		}
+		
+		
+		cost = 16
+		prerequisite = { focus = GRN_toys_in_new_york }
+		prerequisite = { focus = GRN_recruit_the_elves }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			#annex parts of the coast dela-rhode and core nyc
+			1084 = {
+				if = {
+					limit = { is_owned_by = GRN }
+					add_core_of = GRN
+				}
+			}
+			1085 = {
+				if = {
+					limit = { is_owned_by = GRN }
+					add_core_of = GRN
+				}
+			}
+			
+			1067 = {
+				if = {
+					limit = { is_owned_by = MDM }
+					add_claim_by = GRN
+					GRN = { transfer_state = 1067 }
+					add_compliance = 60
+				}
+			}
+			
+			1082 = {
+				if = {
+					limit = { is_owned_by = NJN }
+					add_claim_by = PAP
+					PAP = { transfer_state = 1082 }
+					add_compliance = 60
+				}
+			}
+			annex_country = { target = NJN transfer_troops = yes }
+			1081 = {
+				if = {
+					limit = { is_owned_by = NJN }
+					add_claim_by = GRN
+					GRN = { transfer_state = 1081 }
+					add_compliance = 60
+				}
+			}
+			1083 = {
+				if = {
+					limit = { is_owned_by = NJN }
+					add_claim_by = GRN
+					GRN = { transfer_state = 1083 }
+					add_compliance = 60
+				}
+			}
+			359 = {
+				if = {
+					limit = { is_owned_by = NJN }
+					add_claim_by = GRN
+					GRN = { transfer_state = 359 }
+					add_compliance = 60
+				}
+			}
+			
+			1077 = {
+				if = {
+					limit = { is_owned_by = PAP }
+					add_claim_by = GRN
+					GRN = { transfer_state = 1077 }
+					add_compliance = 60
+				}
+			}
+			
+			1094 = {
+				if = {
+					limit = { is_owned_by = CTC }
+					add_claim_by = GRN
+					GRN = { transfer_state = 1094 }
+					add_compliance = 60
+				}
+			}
+			1095 = {
+				if = {
+					limit = { is_owned_by = CTC }
+					add_claim_by = GRN
+					GRN = { transfer_state = 1095 }
+					add_compliance = 60
+				}
+			}
+			1096 = {
+				if = {
+					limit = { is_owned_by = CTC }
+					add_claim_by = GRN
+					GRN = { transfer_state = 1096 }
+					add_compliance = 60
+				}
+			}
+			 
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			
+			}
+		}
+	}
+
+#Annex Bosnia
+	focus = {
+		id = GRN_annex_bosnia
+		icon = GFX_focus_YUG_safeguard_bosnia
+		x = 11
+		y = 6
+		#relative_position_id = AST_empower_the_workers
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		}
+		
+		
+		cost = 22
+		prerequisite = { focus = GRN_recruit_the_elves }
+		prerequisite = { focus = GRN_toys_in_new_york }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			#annexes bosnia with core
+			104 = {
+					add_claim_by = GRN
+					GRN = { transfer_state = 104 }
+					add_compliance = 90
+			}
+			105 = {
+					add_claim_by = GRN
+					GRN = { transfer_state = 105 }
+					add_compliance = 70
+			}
+			
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			
+			}
+		}
+	}
+
+#War with California
+	focus = {
+		id = GRN_war_with_california
+		icon = GFX_goal_california_war
+		x = 10
+		y = 7
+		#relative_position_id = AST_empower_the_workers
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		}
+		
+		
+		cost = 10
+		prerequisite = { focus = GRN_annex_bosnia }
+		prerequisite = { focus = GRN_the_christmas_expansion }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			#cali wargoal
+			create_wargoal = {
+			type = annex_everything
+			target = CAC
+			}
+			
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			
+			}
+		}
+	}
+
+#Santa in the South
+	focus = {
+		id = GRN_santa_in_the_south 
+		icon = GFX_goal_generic_major_war
+		x = 8
+		y = 7
+		#relative_position_id = AST_empower_the_workers
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		}
+		
+		
+		cost = 20
+		prerequisite = { focus = GRN_annex_bosnia }
+		prerequisite = { focus = GRN_the_christmas_expansion }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			#wargoals on the south, virginia, nc, sc, ga
+			create_wargoal = {
+			type = annex_everything
+			target = VAV
+			}
+			create_wargoal = {
+			type = annex_everything
+			target = NCN
+			}
+			create_wargoal = {
+			type = annex_everything
+			target = SCS
+			}
+			create_wargoal = {
+			type = annex_everything
+			target = GAG
+			}
+			
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			
+			}
+		}
+	}	
+	
+	
+	
+#Democratic Greenland Path
+#The Republic of Greenland
+	focus = {
+		id = GRN_the_republic_of_greenland
+		icon = GFX_goal_support_democracy
+		x = 15
+		y = 1
+		#relative_position_id = AST_empower_the_workers
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		}
+		mutually_exclusive = { 
+			focus = GRN_the_polar_bears_rise_up
+		}
+		mutually_exclusive = { 
+			focus = GRN_the_greenland_empire
+		}
+		mutually_exclusive = { 
+			focus = GRN_the_kingdom_of_greenland 
+		}
+		
+		cost = 10
+		prerequisite = { focus = GRN_a_new_greenland }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+          add_popularity = {
+            ideology = democratic
+            popularity = 0.10
+          }
+          add_stability = 0.2
+		}
+		
+		ai_will_do = {
+			factor = 15
+			modifier = {
+			
+			}
+		}
+	}
+	
+#Hold Elections
+	focus = {
+		id = GRN_hold_elections
+		icon = GFX_goal_generic_major_alliance
+		x = 15
+		y = 2
+		#relative_position_id = AST_empower_the_workers
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		}
+		
+		cost = 5
+		prerequisite = { focus = GRN_the_republic_of_greenland }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+          #election event
+		  GRN = {
+					country_event = greenland.17
+			}
+		}
+		
+		ai_will_do = {
+			factor = 4
+			modifier = {
+			
+			}
+		}
+	}
+	
+
+##Historical Path##
+#The Council Wins!
+	focus = {
+		id = GRN_the_council_wins
+		icon = GFX_goal_generic_national_unity
+		x = 14
+		y = 3
+		#relative_position_id = AST_empower_the_workers
+		
+		available = {
+		has_global_flag = GRN_election_council 
+		}
+		bypass = {
+		
+		}
+		mutually_exclusive = { 
+			focus = GRN_the_polar_bears_somehow_win
+		}
+		
+		cost = 1
+		prerequisite = { focus = GRN_hold_elections }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+          #completed by election event
+		  add_political_power = 70
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			
+			}
+		}
+	}
+	
+#Pro-Democratic Propaganda
+	focus = {
+		id = GRN_prodemocratic_propaganda 
+		icon = GFX_goal_generic_dangerous_deal
+		x = 13
+		y = 4
+		#relative_position_id = AST_empower_the_workers
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		}
+		mutually_exclusive = { 
+			
+		}
+		
+		cost = 10
+		prerequisite = { focus = GRN_the_council_wins }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+          #democratic_propaganda idea
+		  add_timed_idea = {
+				idea = democratic_propaganda
+				days = 150
+			}
+		  
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			
+			}
+		}
+	}	
+	
+#An Alliance with our Neighbors
+	focus = {
+		id = GRN_an_alliance_with_our_neighbors
+		icon = GFX_goal_tripartite_pact
+		x = 11
+		y = 4
+		#relative_position_id = AST_empower_the_workers
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		}
+		mutually_exclusive = { 
+			
+		}
+		
+		cost = 10
+		prerequisite = { focus = GRN_the_council_wins }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+          #alliance with neighbors, canada nations, events
+		  create_faction = GRN_NORTHERN_ALLIANCE
+		  set_global_flag = greenland_northern_alliance
+			LAB = {
+				if = {
+					limit = { has_government = democratic }
+					country_event = greenland.18
+				}
+			}
+			NLN = {
+				if = {
+					limit = { has_government = democratic }
+					country_event = greenland.18
+				}
+			}
+			NSN = {
+				if = {
+					limit = { has_government = democratic }
+					country_event = greenland.18
+				}
+			}
+			PEP = {
+				if = {
+					limit = { has_government = democratic }
+					country_event = greenland.18
+				}
+			}
+			NBN = {
+				if = {
+					limit = { has_government = democratic }
+					country_event = greenland.18
+				}
+			}
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			
+			}
+		}
+	}
+
+#The Republic of Greenland Rises
+	focus = {
+		id = GRN_the_republic_of_greenland_rises
+		icon = GFX_goal_republic_greenland
+		x = 13
+		y = 5
+		#relative_position_id = AST_empower_the_workers
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		}
+		mutually_exclusive = { 
+			
+		}
+		
+		cost = 10
+		prerequisite = { 
+			focus = GRN_an_alliance_with_our_neighbors 
+		}
+		prerequisite = { 
+			focus = GRN_prodemocratic_propaganda 
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+          #idea?
+		  add_ideas = { 
+				greenland_republic
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			
+			}
+		}
+	}
+
+#Defense of the Greenlanders
+	focus = {
+		id = GRN_defense_of_the_greenlanders
+		icon = GFX_goal_generic_small_arms
+		x = 13
+		y = 6
+		#relative_position_id = AST_empower_the_workers
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		}
+		mutually_exclusive = { 
+			
+		}
+		
+		cost = 10
+		prerequisite = { 
+			focus = GRN_the_republic_of_greenland_rises
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+          #idea with defense buff
+			add_ideas = { 
+				defense_greenlander
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			
+			}
+		}
+	}	
+	
+	
+##Shared stuff##
+
+#Proposals of a Union 
+	focus = {
+		id = GRN_proposals_of_a_union
+		icon = GFX_goal_generic_improve_relations
+		x = 15
+		y = 4
+		#relative_position_id = AST_empower_the_workers
+		
+		available = {
+		is_in_faction = yes
+			OR = {
+				has_idea = greenland_republic
+				has_idea = polar_bear_citizenship
+			}
+		}
+		bypass = {
+		
+		}
+		mutually_exclusive = { 
+			
+		}
+		
+		cost = 10
+		prerequisite = { 
+			focus = GRN_the_council_wins
+			focus = GRN_the_polar_bears_somehow_win
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+          #event, proposes union with alliance members
+			if = {
+				limit = { 
+					has_global_flag = greenland_northern_alliance
+				}
+				LAB = {
+					if = {
+						limit = { is_in_faction = yes }
+						country_event = greenland.20
+					}
+				}
+				NLN = {
+					if = {
+						limit = { is_in_faction = yes }
+						country_event = greenland.20
+					}
+				}
+				NSN = {
+					if = {
+						limit = { is_in_faction = yes }
+						country_event = greenland.20
+					}
+				}
+				PEP = {
+					if = {
+						limit = { is_in_faction = yes }
+						country_event = greenland.20
+					}
+				}
+				NBN = {
+					if = {
+						limit = { is_in_faction = yes }
+						country_event = greenland.20
+					}
+				}	
+			}
+			if = {
+				limit = { 
+					has_global_flag = greenland_arctic_alliance
+				}
+				NUN = {
+					if = {
+						limit = { is_in_faction = yes }
+						country_event = greenland.23
+					}
+				}
+				NTN = {
+					if = {
+						limit = { is_in_faction = yes }
+						country_event = greenland.23
+					}
+				}
+				YTY = {
+					if = {
+						limit = { is_in_faction = yes }
+						country_event = greenland.23
+					}
+				}
+				AKA = {
+					if = {
+						limit = { is_in_faction = yes }
+						country_event = greenland.23
+					}
+				}
+				
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			
+			}
+		}
+	}
+	
+#Establish the Union 
+	focus = {
+		id = GRN_establish_the_union
+		icon = GFX_goal_continuous_increase_nu
+		x = 15
+		y = 5
+		#relative_position_id = AST_empower_the_workers
+		
+		available = {
+		} 
+		bypass = {
+		
+		}
+		mutually_exclusive = { 
+			
+		}
+		
+		cost = 10
+		prerequisite = { 
+			focus = GRN_proposals_of_a_union
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+          #makes union, gives cores on members that accepted (flags0
+			if = {
+				limit = { 
+					has_global_flag = greenland_northern_alliance
+				}
+				set_cosmetic_tag = NORTHERN_GRN
+				if = {
+					limit = { 
+						has_global_flag = LAB_UNION
+					}
+					332 = {
+						if = {
+							limit = { is_owned_by = LAB }
+							add_core_of = GRN
+						}	
+					}
+					1142 = {
+						if = {
+							limit = { is_owned_by = LAB }
+							add_core_of = GRN
+						}
+					}
+					1143 = {
+						if = {
+							limit = { is_owned_by = LAB }
+							add_core_of = GRN
+						}	
+					}
+					1144 = {
+						if = {
+							limit = { is_owned_by = LAB }
+							add_core_of = GRN
+						}
+					}
+					LAB = {
+						every_unit_leader = {
+							set_nationality = GRN
+						}
+					}
+					annex_country = { target = LAB transfer_troops = yes }
+				}
+				if = {
+					limit = { 
+						has_global_flag = NLN_UNION
+					}
+					331 = {
+						if = {
+							limit = { is_owned_by = NLN }
+							add_core_of = GRN
+						}	
+					}
+					730 = {
+						if = {
+							limit = { is_owned_by = NLN }
+							add_core_of = GRN
+						}
+					}
+					1145 = {
+						if = {
+							limit = { is_owned_by = NLN }
+							add_core_of = GRN
+						}	
+					}
+					1146 = {
+						if = {
+							limit = { is_owned_by = NLN }
+							add_core_of = GRN
+						}
+					}
+					NLN = {
+						every_unit_leader = {
+							set_nationality = GRN
+						}
+					}
+					annex_country = { target = NLN transfer_troops = yes }
+				}
+				if = {
+					limit = { 
+						has_global_flag = NSN_UNION
+					}
+					1127 = {
+						if = {
+							limit = { is_owned_by = NSN }
+							add_core_of = GRN
+						}	
+					}
+					1131 = {
+						if = {
+							limit = { is_owned_by = NSN }
+							add_core_of = GRN
+						}	
+					}
+					1130 = {
+						if = {
+							limit = { is_owned_by = NSN }
+							add_core_of = GRN
+						}	
+					}
+					1129 = {
+						if = {
+							limit = { is_owned_by = NSN }
+							add_core_of = GRN
+						}	
+					}
+					1128 = {
+						if = {
+							limit = { is_owned_by = NSN }
+							add_core_of = GRN
+						}
+					}
+					1132 = {
+						if = {
+							limit = { is_owned_by = NSN }
+							add_core_of = GRN
+						}	
+					}
+					464 = {
+						if = {
+							limit = { is_owned_by = NSN }
+							add_core_of = GRN
+						}
+					}
+					NSN = {
+						every_unit_leader = {
+							set_nationality = GRN
+						}
+					}
+					annex_country = { target = NSN transfer_troops = yes }
+				}
+				if = {
+					limit = { 
+						has_global_flag = PEP_UNION
+					}
+					1126 = {
+						if = {
+							limit = { is_owned_by = PEP }
+							add_core_of = GRN
+						}
+					}
+					PEP = {
+						every_unit_leader = {
+							set_nationality = GRN
+						}
+					}
+					annex_country = { target = PEP transfer_troops = yes }
+				}
+				if = {
+					limit = { 
+						has_global_flag = NBN_UNION
+					}
+					465 = {
+						if = {
+							limit = { is_owned_by = NBN }
+							add_core_of = GRN
+						}	
+					}
+					1121 = {
+						if = {
+							limit = { is_owned_by = NBN }
+							add_core_of = GRN
+						}	
+					}
+					1122 = {
+						if = {
+							limit = { is_owned_by = NBN }
+							add_core_of = GRN
+						}	
+					}
+					1123 = {
+						if = {
+							limit = { is_owned_by = NBN }
+							add_core_of = GRN
+						}
+					}
+					1124 = {
+						if = {
+							limit = { is_owned_by = NBN }
+							add_core_of = GRN
+						}	
+					}
+					1125 = {
+						if = {
+							limit = { is_owned_by = NBN }
+							add_core_of = GRN
+						}
+					}
+					NBN = {
+						every_unit_leader = {
+							set_nationality = GRN
+						}
+					}
+					annex_country = { target = NBN transfer_troops = yes }
+				}
+			}
+			if = {
+				limit = { 
+					has_global_flag = greenland_arctic_alliance
+				}
+				set_cosmetic_tag = ARCTIC_GRN
+				if = {
+					limit = { 
+						has_global_flag = NUN_UNION
+					}
+					950 = {
+						if = {
+							limit = { is_owned_by = NUN }
+							add_core_of = GRN
+						}	
+					}
+					683 = {
+						if = {
+							limit = { is_owned_by = NUN }
+							add_core_of = GRN
+						}
+					}
+					NUN = {
+						every_unit_leader = {
+							set_nationality = GRN
+						}
+					}
+					annex_country = { target = NUN transfer_troops = yes }
+				}
+				if = {
+					limit = { 
+						has_global_flag = NTN_UNION
+					}
+					472 = {
+						if = {
+							limit = { is_owned_by = NTN }
+							add_core_of = GRN
+						}	
+					}
+					839 = {
+						if = {
+							limit = { is_owned_by = NTN }
+							add_core_of = GRN
+						}	
+					}
+					840 = {
+						if = {
+							limit = { is_owned_by = NTN }
+							add_core_of = GRN
+						}
+					}
+					841 = {
+						if = {
+							limit = { is_owned_by = NTN }
+							add_core_of = GRN
+						}	
+					}
+					842 = {
+						if = {
+							limit = { is_owned_by = NTN }
+							add_core_of = GRN
+						}
+					}
+					NTN = {
+						every_unit_leader = {
+							set_nationality = GRN
+						}
+					}
+					annex_country = { target = NTN transfer_troops = yes }
+				}
+				if = {
+					limit = { 
+						has_global_flag = YTY_UNION
+					}
+					471 = {
+						if = {
+							limit = { is_owned_by = YTY }
+							add_core_of = GRN
+						}	
+					}
+					836 = {
+						if = {
+							limit = { is_owned_by = YTY }
+							add_core_of = GRN
+						}	
+					}
+					837 = {
+						if = {
+							limit = { is_owned_by = YTY }
+							add_core_of = GRN
+						}
+					}
+					838 = {
+						if = {
+							limit = { is_owned_by = YTY }
+							add_core_of = GRN
+						}	
+					}
+					1151 = {
+						if = {
+							limit = { is_owned_by = YTY }
+							add_core_of = GRN
+						}
+					}
+					YTY = {
+						every_unit_leader = {
+							set_nationality = GRN
+						}
+					}
+					annex_country = { target = YTY transfer_troops = yes }
+				}
+				if = {
+					limit = { 
+						has_global_flag = AKA_UNION
+					}
+					463 = {
+						if = {
+							limit = { is_owned_by = AKA }
+							add_core_of = GRN
+						}	
+					}
+					830 = {
+						if = {
+							limit = { is_owned_by = AKA }
+							add_core_of = GRN
+						}	
+					}
+					831 = {
+						if = {
+							limit = { is_owned_by = AKA }
+							add_core_of = GRN
+						}	
+					}
+					832 = {
+						if = {
+							limit = { is_owned_by = AKA }
+							add_core_of = GRN
+						}	
+					}
+					833 = {
+						if = {
+							limit = { is_owned_by = AKA }
+							add_core_of = GRN
+						}
+					}
+					834 = {
+						if = {
+							limit = { is_owned_by = AKA }
+							add_core_of = GRN
+						}	
+					}
+					835 = {
+						if = {
+							limit = { is_owned_by = AKA }
+							add_core_of = GRN
+						}
+					}
+					AKA = {
+						every_unit_leader = {
+							set_nationality = GRN
+						}
+					}
+					annex_country = { target = AKA transfer_troops = yes }
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			
+			}
+		}
+	}	
+	
+	
+#Building up Industry
+	focus = {
+		id = GRN_building_up_industry
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 15
+		y = 6
+		#relative_position_id = AST_empower_the_workers
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		}
+		
+		
+		cost = 10
+		prerequisite = { 
+			focus = GRN_establish_the_polar_bear_republic 
+			focus = GRN_the_republic_of_greenland_rises 
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			
+			}
+		}
+	}
+
+#Liberate Democracy
+	focus = {
+		id = GRN_liberate_democracy
+		icon = GFX_goal_support_democracy
+		x = 15
+		y = 7
+		#relative_position_id = AST_empower_the_workers
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		}
+		mutually_exclusive = { 
+			
+		}
+		
+		cost = 10
+		prerequisite = { 
+			focus = GRN_defense_of_the_greenlanders
+			focus = GRN_prepare_the_polar_bears
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			#idea that justfiy
+			add_ideas = { 
+				liberate_democracy 
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			
+			}
+		}
+	}	
+		
+	
+##Polar Bear Path##
+#The Polar Bears somehow win?
+	focus = {
+		id = GRN_the_polar_bears_somehow_win
+		icon = GFX_goal_generic_more_territorial_claims
+		x = 16
+		y = 3
+		#relative_position_id = AST_empower_the_workers
+		
+		available = {
+		has_global_flag = GRN_election_polar_bears
+		}
+		bypass = {
+		
+		}
+		mutually_exclusive = { 
+			focus = GRN_the_council_wins
+		}
+		
+		cost = 1
+		prerequisite = { focus = GRN_hold_elections }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+          #completed by election event
+		  add_political_power = 70
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			
+			} 
+		}
+	}
+
+#Polar Bear Citizenship
+	focus = {
+		id = GRN_polar_bear_citizenship
+		icon = GFX_goal_generic_major_alliance
+		x = 17
+		y = 4
+		#relative_position_id = AST_empower_the_workers
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		}
+		mutually_exclusive = { 
+			
+		}
+		
+		cost = 10
+		prerequisite = { focus = GRN_the_polar_bears_somehow_win }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+          #add polar_bear_citizenship
+		  add_ideas = { 
+				polar_bear_citizenship
+			}
+		  
+		} 
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			
+			}
+		}
+	}	
+	
+#The Polar Bear Alliance
+	focus = {
+		id = GRN_the_polar_bear_alliance
+		icon = GFX_goal_generic_intelligence_exchange
+		x = 19
+		y = 4
+		#relative_position_id = AST_empower_the_workers
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		}
+		mutually_exclusive = { 
+			
+		}
+		
+		cost = 10
+		prerequisite = { focus = GRN_the_polar_bears_somehow_win }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+          #alliance with arctic nations
+		  create_faction = GRN_ARCTIC_ALLIANCE
+		  set_global_flag = greenland_arctic_alliance
+			NUN = {
+				if = {
+					limit = { has_government = democratic }
+					country_event = greenland.19
+				}
+			}
+			NTN = {
+				if = {
+					limit = { has_government = democratic }
+					country_event = greenland.19
+				}
+			}
+			YTY = {
+				if = {
+					limit = { has_government = democratic }
+					country_event = greenland.19
+				}
+			}
+			AKA = {
+				if = {
+					limit = { has_government = democratic }
+					country_event = greenland.19
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			
+			}
+		}
+	}
+
+#Establish the Polar Bear Republic
+	focus = { 
+		id = GRN_establish_the_polar_bear_republic
+		icon = GFX_goal_generic_attack_allies
+		x = 17
+		y = 5
+		#relative_position_id = AST_empower_the_workers
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		}
+		mutually_exclusive = { 
+			
+		}
+		
+		cost = 10
+		prerequisite = { 
+			focus = GRN_polar_bear_citizenship
+		}
+		prerequisite = { 
+			focus = GRN_the_polar_bear_alliance
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+          #idea and tag change
+		  add_ideas = { 
+				polar_bear_republic
+			}
+			set_cosmetic_tag = POL_GRN 
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			
+			}
+		}
+	}
+
+#Prepare the Polar Bears
+	focus = {
+		id = GRN_prepare_the_polar_bears
+		icon = GFX_goal_generic_air_doctrine
+		x = 17
+		y = 6
+		#relative_position_id = AST_empower_the_workers 
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		}
+		mutually_exclusive = { 
+			
+		}
+		
+		cost = 10
+		prerequisite = { 
+			focus = GRN_establish_the_polar_bear_republic
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+          #idea with attack buff
+			add_ideas = { 
+				attack_polar_bears
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			
+			}
+		}
+	}	
+	
+	
+	
+#Communist Greenland Path
+#The Polar Bears Rise Up!
+	focus = {
+		id = GRN_the_polar_bears_rise_up
+		icon = GFX_goal_support_communism
+		x = 20
+		y = 1
+		#relative_position_id = AST_empower_the_workers
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		}
+		mutually_exclusive = { 
+			focus = GRN_the_kingdom_of_greenland 
+		}
+		mutually_exclusive = { 
+			focus = GRN_the_republic_of_greenland 
+		}
+		mutually_exclusive = { 
+			focus = GRN_the_greenland_empire
+		}
+		
+		
+		cost = 10
+		prerequisite = { focus = GRN_a_new_greenland }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+          set_politics = {
+            ruling_party = communism
+            elections_allowed = no
+          }
+          add_popularity = {
+            ideology = communism
+            popularity = 0.35
+          }
+		  create_country_leader = {
+				name = "Communist Polar Bear"
+				desc = ""
+				picture = "Portrait_GRN_Commie_Bear.dds"
+				expire = "1965.1.1"
+				ideology = stalinism
+				traits = {
+					staunch_stalinist
+				}
+			}
+          add_stability = -0.55
+		  remove_ideas = home_of_the_free
+		  
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			
+			}
+		}
+	}
+	
+#The Military Speech
+	focus = {
+		id = GRN_the_military_speech
+		icon = GFX_goal_continuous_armor_production 
+		x = 23
+		y = 2
+		#relative_position_id = AST_empower_the_workers
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		}
+		
+		cost = 12
+		prerequisite = { focus = GRN_the_polar_bears_rise_up }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+          add_stability = 0.15
+		  add_war_support = 0.1
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			
+			}
+		}
+	}
+
+#Polar Bear Propaganda
+	focus = {
+		id = GRN_polar_bear_propaganda
+		icon = GFX_goal_generic_forceful_treaty
+		x = 21
+		y = 2
+		#relative_position_id = AST_empower_the_workers
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		}
+		
+		cost = 8
+		prerequisite = { focus = GRN_the_polar_bears_rise_up }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+          #timed idea that increases communist support
+			add_timed_idea = {
+				idea = polar_bear_propaganda
+				days = 150
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			
+			}
+		}
+	}
+
+#Purge the Officers
+	focus = {
+		id = GRN_purge_the_officers
+		icon = GFX_focus_RAJ_lions_of_the_great_war
+		x = 19
+		y = 2
+		#relative_position_id = AST_empower_the_workers
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		}
+		
+		cost = 7
+		prerequisite = { focus = GRN_the_polar_bears_rise_up }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+          #timed idea, gives negative buffs, polar bear union gives buff to make it worth
+			add_timed_idea = {
+				idea = purged_the_officers
+				days = 365
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			
+			}
+		}
+	}
+
+#Recruit our Brothers
+	focus = {
+		id = GRN_recruit_our_brothers
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 17
+		y = 2
+		#relative_position_id = AST_empower_the_workers
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		}
+		
+		cost = 10
+		prerequisite = { focus = GRN_the_polar_bears_rise_up }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+          #recruitment idea
+			add_ideas = {
+				recruit_our_brothers_idea
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			
+			}
+		}
+	}
+
+#State Schools
+	focus = {
+		id = GRN_state_schools
+		icon = GFX_goal_generic_scientific_exchange
+		x = 22
+		y = 3
+		#relative_position_id = AST_empower_the_workers
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		}
+		
+		cost = 10
+		prerequisite = { focus = GRN_polar_bear_propaganda }
+		prerequisite = { focus = GRN_the_military_speech }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+		  #research slot
+		  add_research_slot = 1
+		  add_stability = 0.05
+		  
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			
+			}
+		}
+	}
+
+#The Bears' Army
+	focus = {
+		id = GRN_the_bears_army
+		icon = GFX_focus_YUG_pan_slavic_congress
+		x = 20 
+		y = 3
+		#relative_position_id = AST_empower_the_workers
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		}
+		
+		cost = 10
+		prerequisite = { focus = GRN_purge_the_officers }
+		prerequisite = { focus = GRN_recruit_our_brothers }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+		  #adds idea with better attack, defence, org
+		  add_ideas = {
+			army_of_bears
+		  }
+		  add_stability = 0.05
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			
+			}
+		}
+	}
+
+#The Polar Bear Union
+	focus = {
+		id = GRN_the_polar_bear_union
+		icon = GFX_Generic_Workers_Democracy
+		x = 21 
+		y = 4
+		#relative_position_id = AST_empower_the_workers
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		}
+		
+		cost = 10
+		prerequisite = { focus = GRN_the_bears_army }
+		prerequisite = { focus = GRN_state_schools }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+		  #adds idea with buffs, cosmetic tags
+		  add_ideas = {
+			polar_bear_revolution
+		  }
+		  set_cosmetic_tag = POL_GRN 
+		  
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			
+			}
+		}
+	}
+
+#Go with Trotsky
+	focus = {
+		id = GRN_go_with_trotsky
+		icon = GFX_Generic_Trotsky 
+		x = 20 
+		y = 5
+		#relative_position_id = AST_empower_the_workers
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		}
+		
+		cost = 10
+		prerequisite = { focus = GRN_the_polar_bear_union }
+		mutually_exclusive = { 
+			focus = GRN_go_with_stalin
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+		  #adds idea 
+		  add_ideas = {
+			greenland_trotskyism
+		  }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			
+			}
+		}
+	}
+
+#Go with Stalin
+	focus = {
+		id = GRN_go_with_stalin
+		icon = GFX_Focus_Stalin
+		x = 22 
+		y = 5
+		#relative_position_id = AST_empower_the_workers
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		}
+		
+		cost = 10
+		prerequisite = { focus = GRN_the_polar_bear_union }
+		mutually_exclusive = { 
+			focus = GRN_go_with_trotsky
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+		  #adds idea 
+		  add_ideas = {
+			greenland_stalinism
+		  }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			
+			}
+		}
+	}
+
+#The Arctic Revolution
+	focus = {
+		id = GRN_the_arctic_revolution
+		icon = GFX_focus_por_workers_of_iberia
+		x = 21 
+		y = 6
+		#relative_position_id = AST_empower_the_workers
+		 
+		available = {
+		
+		}
+		bypass = {
+		
+		}
+		
+		cost = 10
+		prerequisite = { focus = GRN_go_with_stalin focus = GRN_go_with_trotsky }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+		  #adds communist support idea for arctic nations support_for_arctic_communism
+		  NUN = {
+					add_timed_idea = { idea = support_for_arctic_communism days = 350 }
+			}
+			NTN = {
+					add_timed_idea = { idea = support_for_arctic_communism days = 350 }
+			}
+			YTY = {
+					add_timed_idea = { idea = support_for_arctic_communism days = 350 }
+			}
+			AKA = {
+					add_timed_idea = { idea = support_for_arctic_communism days = 350 }
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			
+			}
+		}
+	}
+
+#Liberate them into the Union
+	focus = {
+		id = GRN_liberate_them_into_the_union
+		icon = GFX_Focus_Down_in_Flames
+		x = 19 
+		y = 6
+		#relative_position_id = AST_empower_the_workers
+		 
+		available = {
+		
+		}
+		bypass = {
+		
+		}
+		
+		cost = 10
+		prerequisite = { focus = GRN_go_with_trotsky }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+		  #gives wargoals to annex the arctic
+			create_wargoal = {
+				type = annex_everything
+				target = NUN
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = NTN
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = YTY
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = AKA
+			}
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			
+			}
+		}
+	}
+
+#Integrate the Polar Bears
+	focus = {
+		id = GRN_integrate_the_polar_bears
+		icon = GFX_FLF_focus_Focus_On_The_Unions
+		x = 19 
+		y = 7
+		#relative_position_id = AST_empower_the_workers
+		 
+		available = {
+			has_full_control_of_state = 683
+			has_full_control_of_state = 841
+			has_full_control_of_state = 838
+			has_full_control_of_state = 834
+			has_full_control_of_state = 833
+		
+		}
+		bypass = {
+		
+		}
+		
+		cost = 17
+		prerequisite = { focus = GRN_liberate_them_into_the_union }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+		  #gives cores on arctic, need to own states
+			683 = {
+				if = {
+					limit = { is_owned_by = GRN }
+					add_core_of = GRN
+				}
+			}
+			950 = {
+				if = {
+					limit = { is_owned_by = GRN }
+					add_core_of = GRN
+				}
+			}
+			472 = {
+				if = {
+					limit = { is_owned_by = GRN }
+					add_core_of = GRN
+				}	
+			}
+			839 = {
+				if = {
+					limit = { is_owned_by = GRN }
+					add_core_of = GRN
+				}	
+			}
+			840 = {
+				if = {
+					limit = { is_owned_by = GRN }
+					add_core_of = GRN
+				}
+			}
+			841 = {
+				if = {
+					limit = { is_owned_by = GRN }
+					add_core_of = GRN
+				}	
+			}
+			842 = {
+				if = {
+					limit = { is_owned_by = GRN }
+					add_core_of = GRN
+				}
+			}
+			471 = {
+				if = {
+					limit = { is_owned_by = GRN }
+					add_core_of = GRN
+				}	
+			}
+			836 = {
+				if = {
+					limit = { is_owned_by = GRN }
+							add_core_of = GRN
+				}	
+			}
+			837 = {
+				if = {
+					limit = { is_owned_by = GRN }
+					add_core_of = GRN
+					}
+				}
+			838 = {
+				if = {
+					limit = { is_owned_by = GRN }
+					add_core_of = GRN
+				}	
+			}
+			1151 = {
+				if = {
+					limit = { is_owned_by = GRN }
+					add_core_of = GRN
+				}
+			}
+			463 = {
+				if = {
+					limit = { is_owned_by = GRN }
+					add_core_of = GRN
+				}	
+			}
+			830 = {
+				if = {
+					limit = { is_owned_by = GRN }
+					add_core_of = GRN
+				}	
+			}
+			831 = {
+				if = {
+					limit = { is_owned_by = GRN }
+					add_core_of = GRN
+				}	
+			}
+			832 = {
+				if = {
+					limit = { is_owned_by = GRN }
+					add_core_of = GRN
+				}	
+			}
+			833 = {
+				if = {
+					limit = { is_owned_by = GRN }
+					add_core_of = GRN
+				}
+			}
+			834 = {
+				if = {
+					limit = { is_owned_by = GRN }
+					add_core_of = GRN
+				}	
+			}
+			835 = {
+				if = {
+					limit = { is_owned_by = GRN }
+					add_core_of = GRN
+				}
+			}			
+			
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			
+			}
+		}
+	}
+
+#Puppet the Arctic
+	focus = {
+		id = GRN_puppet_the_arctic
+		icon = GFX_goal_bolshevik_skull 
+		x = 23  
+		y = 6
+		#relative_position_id = AST_empower_the_workers
+		 
+		available = {
+		
+		}
+		bypass = {
+		
+		}
+		
+		cost = 10
+		prerequisite = { focus = GRN_go_with_stalin }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+		  #gives wargoals to puppet the arctic
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = NUN
+			}
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = NTN
+			}
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = YTY
+			}
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = AKA
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			
+			}
+		}
+	}
+
+#Start a coup in Quebec
+	focus = {
+		id = GRN_start_a_coup_in_quebec
+		icon = GFX_goal_tfv_can_forced_quebec_conscription
+		x = 23 
+		y = 7
+		#relative_position_id = AST_empower_the_workers
+		 
+		available = {
+		
+		}
+		bypass = {
+		
+		}
+		
+		cost = 17
+		prerequisite = { focus = GRN_puppet_the_arctic }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+		  #starts civil war in quebec
+		  QBC = {
+				start_civil_war = {
+					ideology = communism
+					size = 0.5
+					capital = 1133
+					states = { 
+						466 1133 1134
+					}
+					keep_political_leader = yes
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			
+			}
+		}
+	}
+
+#Liberate the Polar Bears of the World!
+	focus = {
+		id = GRN_liberate_the_polar_bears_of_the_world
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		x = 21 
+		y = 7 
+		#relative_position_id = AST_empower_the_workers
+		 
+		available = {
+		
+		}
+		bypass = {
+		
+		}
+		
+		cost = 10
+		prerequisite = { focus = GRN_puppet_the_arctic focus = GRN_liberate_them_into_the_union }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+		  #idea that reduces war goal justfiy time
+			add_ideas = {
+				liberator_of_the_polar_bears
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			
+			}
+		}
+	}	
+	
+	
+	
+#Industry Path
+#Investments in Greenland
+	focus = { 
+		id = GRN_investments_in_greenland
+		icon = GFX_focus_usa_reestablish_the_gold_standard
+		x = 11
+		y = 2
+		#relative_position_id = AST_empower_the_workers
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		}
+		
+		
+		cost = 9
+		prerequisite = { focus = GRN_a_new_greenland }
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+	
+		completion_reward = {
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			
+			}
+		}
+	}
+
+
+
+#Greenland's Industry
+	focus = {
+		id = GRN_greenland_industry
+		icon = GFX_goal_generic_production
+		x = 27
+		y = 0
+		#relative_position_id = AST_empower_the_workers
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		}
+		
+		
+		cost = 8
+		#prerequisite = { focus = GRN_a_new_greenland }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+         add_tech_bonus = {
+			bonus = 1
+			uses = 2
+			category = industry
+		 }
+		}
+		
+		ai_will_do = {
+			factor = 8
+			modifier = {
+			
+			}
+		}
+	}
+	
+#Danish Factories
+	focus = {
+		id = GRN_danish_factories
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 25
+		y = 1
+		#relative_position_id = AST_empower_the_workers
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		}
+		
+		
+		cost = 5
+		prerequisite = { focus = GRN_greenland_industry }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			
+			}
+		}
+	}
+	
+#Nuuk Railways
+	focus = {
+		id = GRN_nuuk_railways
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 27
+		y = 1
+		#relative_position_id = AST_empower_the_workers
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		}
+		
+		
+		cost = 7
+		prerequisite = { focus = GRN_greenland_industry }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			1188 = {
+				set_building_level = {
+					type = infrastructure
+					level = 6
+					instant_build = yes
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			
+			}
+		}
+	}
+	
+#Inuit Factories
+	focus = {
+		id = GRN_inuit_factories
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 29
+		y = 1
+		#relative_position_id = AST_empower_the_workers
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		}
+		
+		
+		cost = 5
+		prerequisite = { focus = GRN_greenland_industry }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			
+			}
+		}
+	}
+	
+#Improving Nuuk Factories
+	focus = {
+		id = GRN_improving_nuuk_factories
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 26
+		y = 2
+		#relative_position_id = AST_empower_the_workers
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		}
+		
+		
+		cost = 7
+		prerequisite = { 
+			focus = GRN_danish_factories 
+		}
+		prerequisite = { 
+			focus = GRN_inuit_factories 
+		}
+		mutually_exclusive = { focus = GRN_nuuk_ports }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			1188 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			
+			}
+		}
+	}
+	
+#Nuuk Ports
+	focus = {
+		id = GRN_nuuk_ports
+		icon = GFX_goal_generic_construct_naval_dockyard
+		x = 28
+		y = 2
+		#relative_position_id = AST_empower_the_workers
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		}
+		
+		
+		cost = 7
+		prerequisite = { 
+			focus = GRN_danish_factories 
+		}
+		prerequisite = { 
+			focus = GRN_inuit_factories 
+		}
+		mutually_exclusive = { focus = GRN_improving_nuuk_factories }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			1188 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+				set_building_level = {
+					type = naval_base
+					level = 3
+					province = 15434
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			
+			}
+		}
+	}
+	
+#Nuuk Tank Research
+	focus = {
+		id = GRN_nuuk_tank_research
+		icon = GFX_goal_generic_army_tanks
+		x = 25
+		y = 3
+		#relative_position_id = AST_empower_the_workers
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		}
+		
+		
+		cost = 10
+		prerequisite = { focus = GRN_improving_nuuk_factories }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+         add_tech_bonus = {
+			bonus = 1
+			uses = 1
+			category = cat_light_armor
+		 }
+		 add_tech_bonus = {
+			bonus = 1.3
+			uses = 1
+			category = cat_medium_armor
+		 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			
+			}
+		}
+	}
+	
+#Nuuk Naval Research
+	focus = {
+		id = GRN_nuuk_naval_research
+		icon = GFX_goal_generic_navy_battleship
+		x = 29
+		y = 3
+		#relative_position_id = AST_empower_the_workers
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		}
+		
+		
+		cost = 10
+		prerequisite = { focus = GRN_nuuk_ports }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+         add_tech_bonus = {
+			bonus = 1
+			uses = 2
+			category = naval_equipment
+		 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			
+			}
+		}
+	}
+	
+#Industrial Advances
+	focus = {
+		id = GRN_industrial_advances
+		icon = GFX_goal_generic_production
+		x = 27
+		y = 3
+		#relative_position_id = AST_empower_the_workers
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		}
+		
+		
+		cost = 10
+		prerequisite = { 
+			focus = GRN_improving_nuuk_factories 
+			focus = GRN_nuuk_ports 
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+         add_tech_bonus = {
+			bonus = 1
+			uses = 2
+			category = industry
+		 }
+		 add_tech_bonus = {
+			bonus = 0.6
+			uses = 1
+			category = electronics
+		 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			
+			}
+		}
+	}
+	
+#Civilian Shops
+	focus = {
+		id = GRN_civilian_shops
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 26
+		y = 4
+		#relative_position_id = AST_empower_the_workers
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		}
+		
+		
+		cost = 10
+		prerequisite = { focus = GRN_industrial_advances }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			
+			}
+		}
+	}	
+	
+#Military Silos
+	focus = {
+		id = GRN_military_silos
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 28
+		y = 4
+		#relative_position_id = AST_empower_the_workers
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		}
+		
+		
+		cost = 10
+		prerequisite = { focus = GRN_industrial_advances }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			
+			}
+		}
+	}	
+	
+#Harvest our Resources
+	focus = {
+		id = GRN_harvest_our_resources
+		icon = GFX_goal_generic_positive_trade_relations
+		x = 27
+		y = 5
+		#relative_position_id = AST_empower_the_workers
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		}
+		
+		
+		cost = 10
+		prerequisite = { focus = GRN_industrial_advances }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			1188 = {
+				add_resource = {
+					type = oil
+					amount = 10
+				}
+			}
+			101 = {
+				add_resource = {
+					type = steel
+					amount = 19
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			
+			}
+		}
+	}	
+	
+	
+	
+#Military Path 
+#Greenland's Military
+	focus = {
+		id = GRN_greenland_military
+		icon = GFX_goal_generic_military_sphere
+		x = 37
+		y = 0
+		#relative_position_id = AST_empower_the_workers
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		}
+		
+		
+		cost = 8
+		#prerequisite = { focus = GRN_a_new_greenland }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 100
+			army_experience = 10
+			navy_experience = 10
+			air_experience = 10
+			add_manpower = 1000
+        
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			
+			}
+		}
+	}
+	
+#The Arctic Empire/Republic/Commune/Kingdom
+	focus = {
+		id = GRN_the_arctic_final
+		icon = GFX_focus_generic_little_entente
+		x = 37  
+		y = 6
+		#relative_position_id = AST_empower_the_workers
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		} 
+		
+		
+		cost = 10
+		prerequisite = { focus = GRN_the_arctic_fleet }
+		prerequisite = { focus = GRN_the_arctic_army }
+		prerequisite = { focus = GRN_the_arctic_sky }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = { 
+				the_greenlandic_military
+			}
+        
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			
+			}
+		}
+	}	
+	
+	
+	
+#Navy Path
+#The Navy
+	focus = {
+		id = GRN_the_navy
+		icon = GFX_goal_generic_navy_battleship
+		x = 32
+		y = 1
+		#relative_position_id = AST_empower_the_workers
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		}
+		
+		
+		cost = 10
+		prerequisite = { focus = GRN_greenland_military }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 10
+			navy_experience = 15
+			add_tech_bonus = {
+			 bonus = 0.5
+			 uses = 1
+			 category = naval_doctrine
+		    }
+			add_manpower = 2069
+        
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			
+			}
+		}
+	}
+	
+#Construct Convoys
+	focus = {
+		id = GRN_construct_convoys
+		icon = GFX_goal_generic_navy_cruiser
+		x = 31
+		y = 2
+		#relative_position_id = AST_empower_the_workers
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		}
+		
+		
+		cost = 8
+		prerequisite = { focus = GRN_the_navy }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = convoy
+				amount = 100
+			}
+        
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			
+			}
+		}
+	}
+
+#Buy ships from the Danish
+	focus = {
+		id = GRN_buy_ships_from_the_danish
+		icon = GFX_focus_generic_navy_battleship2
+		x = 33
+		y = 2
+		#relative_position_id = AST_empower_the_workers
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		} 
+		
+		
+		cost = 8
+		prerequisite = { focus = GRN_the_navy }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = destroyer
+				amount = 2
+				producer = DEN
+			}
+			add_equipment_to_stockpile = {
+				type = ship_hull_submarine
+				amount = 3
+				producer = DEN
+			}
+        
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			
+			}
+		}
+	}
+
+#Coastal Dockyards
+	focus = {
+		id = GRN_coastal_dockyards
+		icon = GFX_goal_generic_construct_naval_dockyard
+		x = 32
+		y = 3
+		#relative_position_id = AST_empower_the_workers
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		} 
+		
+		
+		cost = 10
+		prerequisite = { focus = GRN_buy_ships_from_the_danish
+		focus = GRN_construct_convoys }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			101 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+			
+        
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			
+			}
+		}
+	}
+
+#Build up Ships
+	focus = {
+		id = GRN_build_up_ships
+		icon = GFX_goal_generic_navy_submarine
+		x = 31
+		y = 4
+		#relative_position_id = AST_empower_the_workers
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		} 
+		
+		
+		cost = 10
+		prerequisite = { focus = GRN_coastal_dockyards }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = destroyer
+				amount = 3
+			}
+			add_equipment_to_stockpile = {
+				type = ship_hull_submarine
+				amount = 2
+			}
+        
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			
+			}
+		}
+	}
+
+#Naval Research
+	focus = {
+		id = GRN_naval_research
+		icon = GFX_goal_generic_navy_cruiser
+		x = 33
+		y = 4
+		#relative_position_id = AST_empower_the_workers
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		} 
+		
+		
+		cost = 10
+		prerequisite = { focus = GRN_coastal_dockyards }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+			 bonus = 1
+			 uses = 1
+			 category = naval_equipment
+		    }
+			add_tech_bonus = {
+			 bonus = 1
+			 uses = 1
+			 category = marine_tech
+		    }
+        
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			
+			}
+		}
+	}
+
+#The Arctic Fleet
+	focus = {
+		id = GRN_the_arctic_fleet
+		icon = GFX_goal_generic_amphibious_assault
+		x = 32
+		y = 5
+		#relative_position_id = AST_empower_the_workers
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		} 
+		
+		
+		cost = 10
+		prerequisite = { focus = GRN_build_up_ships }
+		prerequisite = { focus = GRN_naval_research }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = { 
+				the_greenlandic_navy
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			
+			}
+		}
+	}	
+	
+	
+	
+#Army Path
+#The Army
+	focus = {
+		id = GRN_the_army
+		icon = GFX_goal_generic_army_artillery2
+		x = 37
+		y = 1
+		#relative_position_id = AST_empower_the_workers
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		}
+		
+		
+		cost = 10
+		prerequisite = { focus = GRN_greenland_military }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 10
+			army_experience = 15
+			add_tech_bonus = {
+			 bonus = 0.5
+			 uses = 1
+			 category = land_doctrine
+		    }
+			add_manpower = 2069
+        
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			
+			}
+		}
+	}
+
+#Infantry Side	
+#Infantry Focus
+	focus = {
+		id = GRN_infantry_focus
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 36
+		y = 2
+		#relative_position_id = AST_empower_the_workers
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		}
+		
+		
+		cost = 8
+		prerequisite = { focus = GRN_the_army }
+		mutually_exclusive = { focus = GRN_mechanized_focus }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = { 
+				infantry_production
+			}
+        
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			
+			}
+		}
+	}
+	
+#Buy Rifles
+	focus = {
+		id = GRN_buy_rifles
+		icon = GFX_focus_mex_caudillo_private_armies
+		x = 35
+		y = 3
+		#relative_position_id = AST_empower_the_workers
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		}
+		
+		
+		cost = 10
+		prerequisite = { focus = GRN_infantry_focus }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 2000
+			}
+        
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			
+			}
+		}
+	}
+
+#Infantry Research
+	focus = {
+		id = GRN_infantry_research
+		icon = GFX_focus_prc_infiltration
+		x = 36
+		y = 4
+		#relative_position_id = AST_empower_the_workers
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		}
+		
+		
+		cost = 10
+		prerequisite = { focus = GRN_buy_rifles }
+		prerequisite = { focus = GRN_expand_greenlandic_recruitment }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+			 bonus = 1
+			 uses = 2
+			 category = infantry_weapons
+		    }
+        
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			
+			}
+		}
+	}	
+	
+#Shared
+#Expand Greenlandic Recruitment
+	focus = {
+		id = GRN_expand_greenlandic_recruitment
+		icon = GFX_focus_generic_military_mission
+		x = 37
+		y = 3
+		#relative_position_id = AST_empower_the_workers
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		}
+		
+		
+		cost = 10
+		prerequisite = { focus = GRN_infantry_focus
+						 focus = GRN_mechanized_focus }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = { 
+				expanded_greenlandic_recruitment
+			}
+        
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			
+			}
+		}
+	}
+	
+	
+#Mechanized Side
+#Mechanized Focus 
+	focus = {
+		id = GRN_mechanized_focus
+		icon = GFX_goal_generic_army_motorized
+		x = 38
+		y = 2
+		#relative_position_id = AST_empower_the_workers
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		}
+		
+		
+		cost = 8
+		prerequisite = { focus = GRN_the_army }
+		mutually_exclusive = { focus = GRN_infantry_focus }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = { 
+				mechanized_production
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			
+			}
+		}
+	}
+
+#Build up Tanks
+	focus = {
+		id = GRN_build_up_tanks
+		icon = GFX_focus_generic_army_tanks2
+		x = 39
+		y = 3
+		#relative_position_id = AST_empower_the_workers
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		}
+		
+		
+		cost = 10
+		prerequisite = { focus = GRN_mechanized_focus }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = light_tank_chassis
+				amount = 500
+			}
+        
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			
+			}
+		}
+	}
+
+#Motorized Research
+	focus = {
+		id = GRN_motorized_research
+		icon = GFX_focus_generic_tank_production
+		x = 38
+		y = 4
+		#relative_position_id = AST_empower_the_workers
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		}
+		
+		
+		cost = 10
+		prerequisite = { focus = GRN_build_up_tanks }
+		prerequisite = { focus = GRN_expand_greenlandic_recruitment }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+			 bonus = 1
+			 uses = 2
+			 category = motorized_equipment
+		    }
+        
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			
+			}
+		}
+	}
+
+#The Arctic Army
+	focus = {
+		id = GRN_the_arctic_army
+		icon = GFX_goal_generic_wolf_pack
+		x = 37
+		y = 5
+		#relative_position_id = AST_empower_the_workers
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		} 
+		
+		
+		cost = 10
+		prerequisite = { focus = GRN_motorized_research focus = GRN_infantry_research }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = { 
+				the_greenlandic_army
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			
+			}
+		}
+	}	
+	
+	
+	
+#Airforce Path
+#The Airforce
+	focus = {
+		id = GRN_the_airforce
+		icon = GFX_goal_generic_air_fighter2
+		x = 42
+		y = 1
+		#relative_position_id = AST_empower_the_workers
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		}
+		
+		
+		cost = 10
+		prerequisite = { focus = GRN_greenland_military }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 10
+			air_experience = 15
+			add_tech_bonus = {
+			 bonus = 0.5
+			 uses = 1
+			 category = air_doctrine
+		    }
+			add_manpower = 2069
+        
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			
+			}
+		}
+	}
+	
+#Greenlandic Built Planes
+	focus = {
+		id = GRN_greenlandic_built_planes
+		icon = GFX_goal_generic_air_fighter
+		x = 41
+		y = 2
+		#relative_position_id = AST_empower_the_workers
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		}
+		
+		
+		cost = 8
+		prerequisite = { focus = GRN_the_airforce }
+		mutually_exclusive = { focus = GRN_buy_planes_from_quebec }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = fighter_equipment
+				amount = 200
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			
+			}
+		}
+	}
+	
+#Buy Planes from Quebec
+	focus = {
+		id = GRN_buy_planes_from_quebec
+		icon = GFX_goal_generic_air_bomber
+		x = 43
+		y = 2
+		#relative_position_id = AST_empower_the_workers
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		}
+		
+		
+		cost = 8
+		prerequisite = { focus = GRN_the_airforce }
+		mutually_exclusive = { focus = GRN_greenlandic_built_planes }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = CAS_equipment
+				amount = 150
+				producer = QBC
+			}
+			add_equipment_to_stockpile = {
+				type = tac_bomber_equipment
+				amount = 80
+				producer = QBC
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			
+			}
+		}
+	}
+
+#Nuuk Airfields
+	focus = {
+		id = GRN_nuuk_airfields
+		icon = GFX_goal_generic_build_airforce
+		x = 42
+		y = 3
+		#relative_position_id = AST_empower_the_workers
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		}
+		
+		
+		cost = 10
+		prerequisite = { focus = GRN_greenlandic_built_planes focus = GRN_buy_planes_from_quebec  }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			1188 = {
+				add_building_construction = {
+					type = air_base
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			
+			}
+		}
+	}
+
+#Aviation Research
+	focus = {
+		id = GRN_aviation_research
+		icon = GFX_goal_continuous_air_production
+		x = 41
+		y = 4
+		#relative_position_id = AST_empower_the_workers
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		}
+		
+		
+		cost = 10
+		prerequisite = { focus = GRN_nuuk_airfields }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+			 bonus = 1
+			 uses = 1
+			 category = light_fighter
+		    }
+			add_tech_bonus = {
+			 bonus = 1
+			 uses = 1
+			 category = tactical_bomber
+		    }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			
+			}
+		}
+	}
+
+#Build up Planes
+	focus = {
+		id = GRN_build_up_planes
+		icon = GFX_goal_generic_CAS
+		x = 43
+		y = 4
+		#relative_position_id = AST_empower_the_workers
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		}
+		
+		
+		cost = 10
+		prerequisite = { focus = GRN_nuuk_airfields }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = cv_fighter_equipment
+				amount = 200
+			}
+			add_equipment_to_stockpile = {
+				type = nav_bomber_equipment
+				amount = 150
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			
+			}
+		}
+	}
+
+#The Arctic Sky
+	focus = {
+		id = GRN_the_arctic_sky
+		icon = GFX_focus_generic_paratrooper
+		x = 42
+		y = 5
+		#relative_position_id = AST_empower_the_workers
+		
+		available = {
+		
+		}
+		bypass = {
+		
+		} 
+		 
+		
+		cost = 10
+		prerequisite = { focus = GRN_aviation_research } 
+		prerequisite = { focus = GRN_build_up_planes }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = { 
+				the_greenlandic_airforce 
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			
+			}
+		}
+	}	
+	
+}		

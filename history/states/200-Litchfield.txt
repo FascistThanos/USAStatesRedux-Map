@@ -1,0 +1,18 @@
+state={
+	id=200
+	name="Litchfield"
+	history={
+		owner = CTC
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = CTC
+	}
+	provinces={
+		5251 10969 11004 11005 
+	}
+	manpower=192741
+	state_category = city
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

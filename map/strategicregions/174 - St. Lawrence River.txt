@@ -1,0 +1,10 @@
+
+strategic_region={
+	id=174
+	name="St. Lawrence River"
+	provinces={
+		11583 11584 11585 11588 11586 11589 11587 11590 11591 11592 11571 11570 11569 11564 11565 6516
+	}
+	weather={
+	}
+}

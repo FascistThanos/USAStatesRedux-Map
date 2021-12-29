@@ -1,17 +1,20 @@
+
 state={
 	id=21
-	name="Rhode Island"
+	name="Kent"
 	history={
 		owner = RIR
 		buildings = {
 			infrastructure = 1
+
 		}
 		add_core_of = RIR
 	}
-	manpower=1
-	state_category=wasteland
 	provinces={
-		1652 
+		1652 11456 
 	}
-	
+	manpower=109762
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	local_supplies=0.000
 }

@@ -1,0 +1,18 @@
+state={
+	id=190
+	name="West Springfield"
+	history={
+		owner = MAM
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = MAM
+	}
+	provinces={
+		11019 11029 
+	}
+	manpower=106429
+	state_category = large_town 
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

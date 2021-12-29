@@ -1,0 +1,706 @@
+ideas = {
+
+	country = {
+		#Recruit the Polar Bears
+		recruit_the_polar_bears_idea = {
+			picture = ast_volunteer_defence_corps
+			
+			allowed = {
+				tag = GRN
+			}
+			
+			available = {
+			}
+			
+			cancel = {
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				conscription_factor = 0.1
+				conscription = 0.02
+				weekly_manpower = 150
+			}
+		}
+		
+		#Militarized the Ice
+		militarized_the_ice = {
+			picture = eng_imperial_conscription
+			
+			allowed = {
+				tag = GRN
+			}
+			
+			available = {
+			}
+			
+			cancel = {
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				conscription_factor = 0.10
+				conscription = 0.03
+				weekly_manpower = 200
+			}
+		}
+		
+		#The Pride of Greenland
+		the_pride_of_greenland = {
+			picture = the_pride_of_greenland
+			
+			allowed = {
+				tag = GRN
+			}
+			
+			available = {
+			}
+			
+			cancel = {
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				conscription_factor = 0.05
+				conscription = 0.1
+				weekly_manpower = 420
+				stability_factor = 0.10
+				winter_attrition = -0.5
+				army_speed_factor = 0.5
+			}
+		}
+		
+		#Support for Monarchism
+		support_for_monarchism = {
+
+			allowed = {
+				
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				stability_weekly = 0.01
+				neutrality_drift = 0.1
+			}
+
+			picture = ast_abandon_the_westminster_system
+			
+			removal_cost = -1
+		}
+		
+		#The Winter Army
+		the_winter_army_idea = {
+
+			allowed = {
+				
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+			weekly_manpower = 300
+			stability_factor = 0.05
+			war_support_factor = 0.05
+			consumer_goods_factor = 0.02
+			non_core_manpower = 0.03
+				
+			}
+
+			picture = generic_armor
+			
+			removal_cost = -1
+		}
+		
+		#Elf Recruitment
+		elf_recruitment = {
+
+			allowed = {
+				
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+			weekly_manpower = 300
+			conscription = 0.05
+				
+			}
+
+			picture = generic_manpower_bonus
+			
+			removal_cost = -1
+		}
+		
+		#Democratic Propaganda
+		democratic_propaganda = {
+
+			allowed = {
+				
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+			drift_defence_factor = 0.5
+			democratic_drift = 0.10
+			war_support_weekly = 0.005
+				
+			}
+
+			picture = generic_democratic_drift_bonus
+			
+			removal_cost = -1
+		}
+		
+		#Polar Bear Citizenship
+		polar_bear_citizenship = {
+
+			allowed = {
+				
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				stability_factor = 0.05
+				conscription = 0.01
+				weekly_manpower = 100
+				
+			}
+
+			picture = ast_volunteer_defence_corps
+			
+			removal_cost = -1
+		}
+		
+		#The Republic of Greenland
+		greenland_republic = {
+
+			allowed = {
+				
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+			war_support_factor = 0.05
+			political_power_gain = 0.7
+				
+			}
+
+			picture = greenland_republic
+			
+			removal_cost = -1
+		}
+		
+		#The Polar Bear Republic
+		polar_bear_republic = {
+
+			allowed = {
+				
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+			war_support_factor = 0.05
+			consumer_goods_factor = -0.05
+				
+			}
+
+			picture = polar_bear_republic
+			
+			removal_cost = -1
+		}
+		
+		#Defense of the Greenlanders
+		defense_greenlander = {
+
+			allowed = {
+				
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+			army_org = 5
+			defence = 0.1
+			
+			}
+
+			picture = generic_war_preparation
+			
+			removal_cost = -1
+		}
+		
+		#Attack of the Polar Bears
+		attack_polar_bears = {
+
+			allowed = {
+				
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+			army_org = 5
+			offence = 0.1
+				
+			}
+
+			picture = FRA_army_of_aggression_focus
+			
+			removal_cost = -1
+		}
+		
+		#Liberate Democracy
+		liberate_democracy = {
+
+			picture = generic_victors_of_ww1
+
+			allowed = {
+			
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				justify_war_goal_time = -0.30
+				generate_wargoal_tension = -1.00
+				army_defence_factor = 0.02
+				army_attack_factor = 0.02
+				resistance_damage_to_garrison_on_our_occupied_states = 0.25
+				political_power_gain = 1
+			}
+		}
+		
+		#Expanded Greenlandic Recruitment
+		expanded_greenlandic_recruitment = {
+			picture = eng_imperial_conscription
+			
+			allowed = {
+			}
+			
+			available = {
+			}
+			
+			cancel = {
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				conscription_factor = 0.05
+				conscription = 0.1
+				war_support_factor = 0.05
+				consumer_goods_factor = 0.03
+			}
+		}
+		
+		#Mechanized Production
+		mechanized_production = {
+			picture = generic_acquire_tanks
+		allowed = {
+		
+		}
+		allowed_civil_war = {
+			always = yes
+		}
+		removal_cost = -1
+			equipment_bonus = {
+				armor = {
+					build_cost_ic = -0.10
+					reliability = 0.05
+					maximum_speed = 0.05
+					breakthrough = 0.05
+				}
+				mechanized = {
+					build_cost_ic = -0.10
+					reliability = 0.05
+					maximum_speed = 0.05
+					breakthrough = 0.05
+				}
+			}
+		}
+		
+		#Infantry Production
+		infantry_production = {
+			picture = generic_infantry_bonus
+		allowed = {
+		
+		}
+		allowed_civil_war = {
+			always = yes
+		}
+		removal_cost = -1
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.10
+					reliability = 0.05
+					soft_attack = 0.15
+				}
+				artillery = {
+					build_cost_ic = -0.10
+					reliability = 0.05
+					hard_attack = 0.15
+				}
+			}
+		}
+		
+		#The Greenlandic Navy
+		the_greenlandic_navy = {
+
+			allowed = {
+				
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+			defence = 0.15
+				
+			}
+
+			picture = generic_sea_focused_navy
+			
+			removal_cost = -1
+		}
+		
+		#The Greenlandic Army
+		the_greenlandic_army = {
+
+			allowed = {
+				
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+			offence = 0.15
+				
+			}
+
+			picture = hol_expand_the_colonial_army
+			
+			removal_cost = -1
+		}
+		
+		#The Greenlandic Airforce
+		the_greenlandic_airforce = {
+
+			allowed = {
+				
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+			army_org = 10
+				
+			}
+
+			picture = air_support_focus
+			
+			removal_cost = -1
+		}
+		
+		#The Greenlandic Military
+		the_greenlandic_military = {
+
+			allowed = {
+				
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+			army_org = 10
+			war_support_factor = 0.1
+			offence = 0.2
+			defence = 0.2
+			consumer_goods_factor = 0.05
+				
+			}
+
+			picture = tur_arctic_wolves
+			
+			removal_cost = -1
+		}
+		
+		#Polar Bear Propaganda
+		polar_bear_propaganda = {
+
+			allowed = {
+				
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+			drift_defence_factor = 0.5
+			communism_drift = 0.10
+				
+			}
+
+			picture = generic_communism_drift_bonus
+			
+			removal_cost = -1
+		}
+		
+		#Recruit our Brothers
+		recruit_our_brothers_idea = {
+			picture = ast_volunteer_defence_corps
+			
+			allowed = {
+
+			}
+			
+			available = {
+			}
+			
+			cancel = {
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				conscription_factor = 0.1
+				conscription = 0.05
+				stability_factor = 0.1
+			}
+		}
+		
+		#Purged the Officers
+		purged_the_officers = {
+			picture = officers_purged
+			
+			allowed = {
+
+			}
+			
+			available = {
+			}
+			
+			cancel = {
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.1
+				army_org_factor = -0.15
+				army_attack_factor -0.1
+				army_defence_factor = -0.1
+				training_time_factor = 0.2
+				industrial_capacity_factory = -0.1
+			}
+		}
+		
+		#Army of Bears
+		army_of_bears = {
+			picture = tur_ottoman_spirit
+			
+			allowed = {
+
+			}
+			
+			available = {
+			}
+			
+			cancel = {
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_org_factor = 0.05
+				army_attack_factor = 0.15
+				army_defence_factor = 0.15
+			}
+		}
+		
+		#Polar Bear Revolution
+		polar_bear_revolution = {
+			picture = home_of_revolution
+			
+			allowed = {
+
+			}
+			
+			available = {
+			}
+			
+			cancel = {
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.15
+				training_time_factor = -0.1
+				industrial_capacity_factory = 0.2
+				consumer_goods_factor = -0.04
+				communism_drift = 0.05
+				justify_war_goal_time = -0.1
+				war_support_factor = 0.1
+			}
+		}
+		
+		#Go with Trotsky
+		greenland_trotskyism = {
+
+			picture = fourth_international
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				foreign_subversive_activites = -0.20
+				subversive_activites_upkeep = -0.25
+			}
+		}
+		
+		#Go with Stalin
+		greenland_stalinism = {
+
+			picture = hol_haven_of_tolerance
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				justify_war_goal_time = -0.25
+				puppet_cost_factor = -0.50
+				annex_cost_factor = 0.90
+			}
+		}
+		
+		#Support for Arctic Communism
+		support_for_arctic_communism = {
+
+			allowed = {
+				
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				stability_weekly = 0.01
+				communism_drift = 0.2
+			}
+
+			picture = por_iberian_workers_united
+			
+			removal_cost = -1
+		}
+		
+		#Liberator of the Polar Bears
+		liberator_of_the_polar_bears = {
+
+			picture = FRA_scw_intervention_republicans_focus
+
+			allowed = {
+			
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				justify_war_goal_time = -0.5
+				consumer_goods_factor = -0.04
+				army_org_factor = 0.15
+				conscription = 0.05
+				political_power_gain = 0.5
+				
+			}
+		}
+	
+}

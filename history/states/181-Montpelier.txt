@@ -1,17 +1,23 @@
+
 state={
 	id=181
 	name="Montpelier"
+
 	history={
 		owner = VTV
 		buildings = {
-			infrastructure = 8
+			infrastructure = 4
+
 		}
 		add_core_of = VTV
+
 	}
+
 	provinces={
-		10319
+		11157 11158 11163 11164 11169 
 	}
 	manpower=150001
 	buildings_max_level_factor=1.000
-	state_category = city
+	state_category=city
+	local_supplies=0.000
 }

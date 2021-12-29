@@ -1,2 +1,46 @@
-﻿From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
--1;-1;;-1;-1;-1;-1;-1;-1
+#Panama Canal
+adjacency_rule = {
+	name = "PANAMA_CANAL"
+
+	contested =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	enemy =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	friend =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	neutral =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = yes
+	}
+	
+	required_provinces = { 11372 10332 10328 10325 10326 }
+
+	is_disabled = {
+		OR = {
+			has_global_flag = PANAMA_CANAL_BLOCKED
+			has_country_flag = PANAMA_CANAL_BLOCKED_FOR_COUNTRY
+		}
+		tooltip = disable_canal_tt
+	}
+		
+	icon = 7617
+	offset = { 0 0 0 }
+}

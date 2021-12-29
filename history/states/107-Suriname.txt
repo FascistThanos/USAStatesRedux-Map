@@ -1,16 +1,23 @@
+
 state={
 	id=107
 	name="Suriname"
+
 	history={
 		owner = SUR
 		buildings = {
 			infrastructure = 1
+
 		}
 		add_core_of = SUR
+
+	}
+
+	provinces={
+		1084 2213 2458 3554 3904 7811 10317 10318 10319 11371 
 	}
 	manpower=1
+	buildings_max_level_factor=1.000
 	state_category=wasteland
-	provinces={
-		1084 2213 2458 3554 3904 7811
-	}
+	local_supplies=0.000
 }

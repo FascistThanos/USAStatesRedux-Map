@@ -1,8 +1,9 @@
+
 strategic_region={
 	id=85
 	name="Tlaxcala"
 	provinces={
-		7526 
+		7526 10382 10383 10384 10385 10386 
 	}
 	weather={
 	}

@@ -9,6 +9,8 @@ autonomy_state = {
 	manpower_influence = 0.9
 	
 	rule = {
+		desc = "RULE_DESC_IS_A_SUBJECT"
+		
 		can_not_declare_war = yes
 		can_decline_call_to_war = no
 		can_be_spymaster = no
@@ -35,6 +37,13 @@ autonomy_state = {
 
 	ai_overlord_wants_garrison = {
 		always = no
+	}
+
+	allowed = {
+		if = {
+			limit = { has_dlc = "Death or Dishonor" }
+			NOT = { has_government = fascism }
+		}
 	}
 
 	#ROOT is puppet - FROM is potential OVERLORD

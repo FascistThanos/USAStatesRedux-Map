@@ -1,7 +1,6 @@
-
 state={
 	id=20
-	name="Massachusetts"
+	name="Northeast Massachusetts"
 
 	history={
 		owner = MAM
@@ -14,9 +13,10 @@ state={
 	}
 
 	provinces={
-		1721 2780 3015 3718 4224 5136 5168 5176 5206 8140 8141 
+		1721 5136 
 	}
-	manpower=1
+	manpower=203172
 	buildings_max_level_factor=1.000
-	state_category=wasteland
+	state_category=city
+	local_supplies=0.000
 }

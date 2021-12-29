@@ -1,8 +1,9 @@
+
 strategic_region={
 	id=26
 	name="Delaware"
 	provinces={
-		3695 5584 5645 
+		3695 5584 5645 10849 10851 10861 10862 
 	}
 	weather={
 	}

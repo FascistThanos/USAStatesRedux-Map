@@ -1,0 +1,18 @@
+state={
+	id=189
+	name="East Springfield"
+	history={
+		owner = MAM
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = MAM
+	}
+	provinces={
+		11020 11021 11032 11033 11042 
+	}
+	manpower=425717
+	state_category = metropolis
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

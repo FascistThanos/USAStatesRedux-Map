@@ -1,17 +1,23 @@
+
 state={
 	id=182
 	name="Burlington"
+
 	history={
 		owner = VTV
 		buildings = {
-			infrastructure = 6
+			infrastructure = 3
+
 		}
 		add_core_of = VTV
+
 	}
+
 	provinces={
-		10320
+		11167 11170 11171 11177 11179 
 	}
 	manpower=150001
 	buildings_max_level_factor=1.000
-	state_category = city
+	state_category=city
+	local_supplies=0.000
 }

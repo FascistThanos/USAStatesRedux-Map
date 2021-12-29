@@ -152,5 +152,3 @@ BRM = "countries/Bermuda.txt"
 TCI = "countries/Turks and Caicos Islands.txt"
 CYM = "countries/Cayman Islands.txt"
 AZO = "countries/Azores.txt"
-###Developer
-AAA = "countries/Wastes.txt"

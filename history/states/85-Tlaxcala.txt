@@ -1,17 +1,23 @@
+
 state={
 	id=85
 	name="Tlaxcala"
+
 	history={
 		owner = TLA
 		buildings = {
 			infrastructure = 1
+
 		}
 		add_core_of = TLA
+
+	}
+
+	provinces={
+		7526 10382 10383 10384 10385 10386 
 	}
 	manpower=1
+	buildings_max_level_factor=1.000
 	state_category=wasteland
-	provinces={
-		7526 
-	}
-	
+	local_supplies=0.000
 }

@@ -1,0 +1,18 @@
+state={
+	id=184
+	name="Boston Metro"
+	history={
+		owner = MAM
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = MAM
+	}
+	provinces={
+		3015 11016 11027 11030 11034 11039 11040 11045 11046 11047 11051 
+	}
+	manpower=2081754
+	state_category = megalopolis
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

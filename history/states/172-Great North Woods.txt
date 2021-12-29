@@ -1,17 +1,23 @@
+
 state={
 	id=172
 	name="Great North Woods"
+
 	history={
 		owner = NHN
 		buildings = {
 			infrastructure = 2
+
 		}
 		add_core_of = NHN
+
 	}
+
 	provinces={
-		1233 
+		1233 11071 11178 11191 
 	}
 	manpower=15982
 	buildings_max_level_factor=1.000
-	state_category = pastoral
+	state_category=pastoral
+	local_supplies=0.000
 }

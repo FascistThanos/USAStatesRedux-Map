@@ -1,2 +1,3 @@
-From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
+#From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
+8820;9300;sea;11372;-1;-1;-1;-1;PANAMA_CANAL;Panama
 -1;-1;;-1;-1;-1;-1;-1;-1
