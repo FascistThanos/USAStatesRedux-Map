@@ -1,0 +1,369 @@
+characters={
+
+
+### POLITICAL ADVISORS ###
+
+	WYW_fascist_guy={
+		advisor={
+			slot = political_advisor
+			idea_token = WYW_fascist_guy
+			allowed  = { original_tag  = WYW }
+				traits  = { fascist_demagogue }
+				do_effect  = { not  = { has_government  = fascism } }
+				ai_will_do  = { factor  = 0.000 }
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={ army={ small="GFX_idea_generic_political_advisor_europe_2" } }
+	}
+
+	WYW_communist_guy={
+		advisor={
+			slot = political_advisor
+			idea_token = WYW_communist_guy
+			allowed  = { original_tag  = WYW }
+				traits  = { communist_revolutionary }
+				do_effect  = { not  = { has_government  = communism } }
+				ai_will_do  = { factor  = 0.000 }
+		}
+
+		portraits={ army={ small="GFX_idea_generic_political_advisor_europe_3" } }
+	}
+
+	WYW_democratic_guy={
+		advisor={
+			slot = political_advisor
+			idea_token = WYW_democratic_guy
+			allowed  = { original_tag  = WYW }
+				traits  = { democratic_reformer }
+				do_effect  = { not  = { has_government  = democratic } }
+				ai_will_do  = {	factor  = 0.000	}
+		}
+
+		portraits={ army={	small="GFX_idea_generic_political_advisor_europe_1" } }
+	}
+
+	WYW_coi={
+		advisor={
+			slot = political_advisor
+			idea_token = WYW_coi
+			allowed  = { original_tag  = WYW }
+				traits  = { captain_of_industry }
+		}
+
+		portraits={ army={ small="GFX_idea_generic_political_advisor_europe_1" } }
+	}
+
+	WYW_fe={
+		advisor={
+			slot = political_advisor
+			idea_token = WYW_fe
+			allowed  = { original_tag  = WYW }
+				traits  = { fortification_engineer }
+		}
+
+		portraits={ army={ small="GFX_idea_generic_political_advisor_europe_3" } }
+	}
+
+	WYW_wi={
+		advisor={
+			slot = political_advisor
+			idea_token = WYW_wi
+			allowed  = { original_tag  = WYW }
+				traits  = { war_industrialist }
+		}
+
+		portraits={ army={ small="GFX_idea_generic_war_industrialist" } }
+	}
+
+	WYW_stc={
+		advisor={
+			slot = political_advisor
+			idea_token = WYW_stc
+			allowed  = { original_tag  = WYW }
+				traits  = {	smooth_talking_charmer 	}
+		}
+
+		portraits={	army={	small="GFX_idea_generic_political_advisor_europe_3"	}	}
+	}
+
+	WYW_pot={
+		advisor={
+			slot = political_advisor
+			idea_token = WYW_pot
+			allowed  = { original_tag  = WYW }
+				traits  = { prince_of_terror }
+		}
+
+		portraits={	army={	small="GFX_idea_generic_political_advisor_europe_2"	} }
+	}
+
+### MILITRARY HIGH COMMAND ###
+
+
+
+	WYW_acd2={
+		advisor={
+			slot = army_chief
+			idea_token = WYW_acd2
+			allowed  = { original_tag  = WYW }
+				traits  = { army_chief_defensive_2 }
+				ai_will_do  = { factor  = 1.000 }
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={ army={ small="GFX_idea_generic_army_europe_5" } }
+	}
+	WYW_ncs={
+		advisor={
+			slot = high_command
+			idea_token = WYW_ncs
+			ledger  = navy 
+				allowed  = { original_tag  = WYW }
+				traits  = { navy_capital_ship_2 }
+				ai_will_do  = { factor  = 1.000 }
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={ army={ small="GFX_idea_generic_navy_europe_2" } }
+	}
+	WYW_nccr={
+		advisor={
+			slot = navy_chief
+			idea_token = WYW_nccr
+			allowed  = { original_tag  = WYW }
+				traits  = { navy_chief_commerce_raiding_2 }
+				ai_will_do  = { factor  = 1.000 }
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={ small="GFX_idea_generic_navy_europe_2" } }
+	}
+	WYW_aco2={
+		advisor={
+			slot = army_chief
+			idea_token = WYW_aco2
+			allowed  = {
+					original_tag  = WYW
+				}
+				traits  = {
+					army_chief_organizational_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_4"
+			}
+		}
+	}
+	WYW_ai2={
+		advisor={
+			slot = high_command
+			idea_token = WYW_ai2
+			ledger  = army 
+				allowed  = {
+					original_tag  = WYW
+				}
+				traits  = {
+					army_infantry_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_3"
+			}
+		}
+	}
+	WYW_ar={
+		advisor={
+			slot = high_command
+			idea_token = WYW_ar
+			ledger  = army 
+				allowed  = {
+					original_tag  = WYW
+				}
+				traits  = {
+					army_regrouping_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_1"
+			}
+		}
+	}
+	WYW_acas={
+		advisor={
+			slot = high_command
+			idea_token = WYW_acas
+			ledger  = air 
+				allowed  = {
+					original_tag  = WYW
+				}
+				traits  = {
+					air_close_air_support_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_air_europe_2"
+			}
+		}
+	}
+	WYW_aa2={
+		advisor={
+			slot = high_command
+			idea_token = WYW_aa2
+			ledger  = army 
+				allowed  = {
+					original_tag  = WYW
+				}
+				traits  = {
+					army_armored_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_2"
+			}
+		}
+	}
+
+	WYW_mt={
+		advisor={
+			slot = theorist
+			idea_token = WYW_mt
+			ledger  = army 
+				allowed  = {
+					original_tag  = WYW
+				}
+				traits  = {
+					military_theorist 
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_2"
+			}
+		}
+	}
+	WYW_acr={
+		advisor={
+			slot = air_chief
+			idea_token = WYW_acr
+			allowed  = {
+					original_tag  = WYW
+				}
+				traits  = {
+					air_chief_reform_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_air_europe_3"
+			}
+		}
+	}
+	WYW_acgs={
+		advisor={
+			slot = air_chief
+			idea_token = WYW_acgs
+			allowed  = {
+					original_tag  = WYW
+				}
+				traits  = {
+					air_chief_ground_support_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_air_europe_3"
+			}
+		}
+	}
+	WYW_awt={
+		advisor={
+			slot = theorist
+			idea_token = WYW_awt
+			ledger  = air 
+				allowed  = {
+					original_tag  = WYW
+				}
+				traits  = {
+					air_warfare_theorist 
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_air_europe_2"
+			}
+		}
+	}
+	WYW_ncm={
+		advisor={
+			slot = navy_chief
+			idea_token = WYW_ncm
+			allowed  = {
+					original_tag  = WYW
+				}
+				traits  = {
+					navy_chief_maneuver_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_europe_3"
+			}
+		}
+	}
+	WYW_nt={
+		advisor={
+			slot = theorist
+			idea_token = WYW_nt
+			ledger  = navy 
+				allowed  = {
+					original_tag  = WYW
+				}
+				traits  = {
+					naval_theorist 
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_europe_3"
+			}
+		}
+	}
+}

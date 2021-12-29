@@ -1,4 +1,4 @@
-﻿capital = 56
+﻿capital = 65
 
 oob = "BCA_1936"
 
@@ -64,15 +64,6 @@ set_popularities = {
 	democratic = 80
 	communism = 10
 	fascism = 10
-}
-create_country_leader = {
-	name = "Nels H. Smith"
-	desc = "POLITICS_NELS_H_SMITH_DESC"
-	picture = "Portrait_WYW_Nels_H_Smith.dds"
-	expire = "1965.1.1"
-	ideology = liberalism
-	traits = {
-	}
 }
 
 ### Ship Variants ###

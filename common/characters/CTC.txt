@@ -1,0 +1,369 @@
+characters={
+
+
+### POLITICAL ADVISORS ###
+
+	CTC_fascist_guy={
+		advisor={
+			slot = political_advisor
+			idea_token = CTC_fascist_guy
+			allowed  = { original_tag  = CTC }
+				traits  = { fascist_demagogue }
+				do_effect  = { not  = { has_government  = fascism } }
+				ai_will_do  = { factor  = 0.000 }
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={ army={ small="GFX_idea_generic_political_advisor_europe_2" } }
+	}
+
+	CTC_communist_guy={
+		advisor={
+			slot = political_advisor
+			idea_token = CTC_communist_guy
+			allowed  = { original_tag  = CTC }
+				traits  = { communist_revolutionary }
+				do_effect  = { not  = { has_government  = communism } }
+				ai_will_do  = { factor  = 0.000 }
+		}
+
+		portraits={ army={ small="GFX_idea_generic_political_advisor_europe_3" } }
+	}
+
+	CTC_democratic_guy={
+		advisor={
+			slot = political_advisor
+			idea_token = CTC_democratic_guy
+			allowed  = { original_tag  = CTC }
+				traits  = { democratic_reformer }
+				do_effect  = { not  = { has_government  = democratic } }
+				ai_will_do  = {	factor  = 0.000	}
+		}
+
+		portraits={ army={	small="GFX_idea_generic_political_advisor_europe_1" } }
+	}
+
+	CTC_coi={
+		advisor={
+			slot = political_advisor
+			idea_token = CTC_coi
+			allowed  = { original_tag  = CTC }
+				traits  = { captain_of_industry }
+		}
+
+		portraits={ army={ small="GFX_idea_generic_political_advisor_europe_1" } }
+	}
+
+	CTC_fe={
+		advisor={
+			slot = political_advisor
+			idea_token = CTC_fe
+			allowed  = { original_tag  = CTC }
+				traits  = { fortification_engineer }
+		}
+
+		portraits={ army={ small="GFX_idea_generic_political_advisor_europe_3" } }
+	}
+
+	CTC_wi={
+		advisor={
+			slot = political_advisor
+			idea_token = CTC_wi
+			allowed  = { original_tag  = CTC }
+				traits  = { war_industrialist }
+		}
+
+		portraits={ army={ small="GFX_idea_generic_war_industrialist" } }
+	}
+
+	CTC_stc={
+		advisor={
+			slot = political_advisor
+			idea_token = CTC_stc
+			allowed  = { original_tag  = CTC }
+				traits  = {	smooth_talking_charmer 	}
+		}
+
+		portraits={	army={	small="GFX_idea_generic_political_advisor_europe_3"	}	}
+	}
+
+	CTC_pot={
+		advisor={
+			slot = political_advisor
+			idea_token = CTC_pot
+			allowed  = { original_tag  = CTC }
+				traits  = { prince_of_terror }
+		}
+
+		portraits={	army={	small="GFX_idea_generic_political_advisor_europe_2"	} }
+	}
+
+### MILITRARY HIGH COMMAND ###
+
+
+
+	CTC_acd2={
+		advisor={
+			slot = army_chief
+			idea_token = CTC_acd2
+			allowed  = { original_tag  = CTC }
+				traits  = { army_chief_defensive_2 }
+				ai_will_do  = { factor  = 1.000 }
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={ army={ small="GFX_idea_generic_army_europe_5" } }
+	}
+	CTC_ncs={
+		advisor={
+			slot = high_command
+			idea_token = CTC_ncs
+			ledger  = navy 
+				allowed  = { original_tag  = CTC }
+				traits  = { navy_capital_ship_2 }
+				ai_will_do  = { factor  = 1.000 }
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={ army={ small="GFX_idea_generic_navy_europe_2" } }
+	}
+	CTC_nccr={
+		advisor={
+			slot = navy_chief
+			idea_token = CTC_nccr
+			allowed  = { original_tag  = CTC }
+				traits  = { navy_chief_commerce_raiding_2 }
+				ai_will_do  = { factor  = 1.000 }
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={ small="GFX_idea_generic_navy_europe_2" } }
+	}
+	CTC_aco2={
+		advisor={
+			slot = army_chief
+			idea_token = CTC_aco2
+			allowed  = {
+					original_tag  = CTC
+				}
+				traits  = {
+					army_chief_organizational_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_4"
+			}
+		}
+	}
+	CTC_ai2={
+		advisor={
+			slot = high_command
+			idea_token = CTC_ai2
+			ledger  = army 
+				allowed  = {
+					original_tag  = CTC
+				}
+				traits  = {
+					army_infantry_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_3"
+			}
+		}
+	}
+	CTC_ar={
+		advisor={
+			slot = high_command
+			idea_token = CTC_ar
+			ledger  = army 
+				allowed  = {
+					original_tag  = CTC
+				}
+				traits  = {
+					army_regrouping_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_1"
+			}
+		}
+	}
+	CTC_acas={
+		advisor={
+			slot = high_command
+			idea_token = CTC_acas
+			ledger  = air 
+				allowed  = {
+					original_tag  = CTC
+				}
+				traits  = {
+					air_close_air_support_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_air_europe_2"
+			}
+		}
+	}
+	CTC_aa2={
+		advisor={
+			slot = high_command
+			idea_token = CTC_aa2
+			ledger  = army 
+				allowed  = {
+					original_tag  = CTC
+				}
+				traits  = {
+					army_armored_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_2"
+			}
+		}
+	}
+
+	CTC_mt={
+		advisor={
+			slot = theorist
+			idea_token = CTC_mt
+			ledger  = army 
+				allowed  = {
+					original_tag  = CTC
+				}
+				traits  = {
+					military_theorist 
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_2"
+			}
+		}
+	}
+	CTC_acr={
+		advisor={
+			slot = air_chief
+			idea_token = CTC_acr
+			allowed  = {
+					original_tag  = CTC
+				}
+				traits  = {
+					air_chief_reform_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_air_europe_3"
+			}
+		}
+	}
+	CTC_acgs={
+		advisor={
+			slot = air_chief
+			idea_token = CTC_acgs
+			allowed  = {
+					original_tag  = CTC
+				}
+				traits  = {
+					air_chief_ground_support_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_air_europe_3"
+			}
+		}
+	}
+	CTC_awt={
+		advisor={
+			slot = theorist
+			idea_token = CTC_awt
+			ledger  = air 
+				allowed  = {
+					original_tag  = CTC
+				}
+				traits  = {
+					air_warfare_theorist 
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_air_europe_2"
+			}
+		}
+	}
+	CTC_ncm={
+		advisor={
+			slot = navy_chief
+			idea_token = CTC_ncm
+			allowed  = {
+					original_tag  = CTC
+				}
+				traits  = {
+					navy_chief_maneuver_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_europe_3"
+			}
+		}
+	}
+	CTC_nt={
+		advisor={
+			slot = theorist
+			idea_token = CTC_nt
+			ledger  = navy 
+				allowed  = {
+					original_tag  = CTC
+				}
+				traits  = {
+					naval_theorist 
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_europe_3"
+			}
+		}
+	}
+}

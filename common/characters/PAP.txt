@@ -1,0 +1,369 @@
+characters={
+
+
+### POLITICAL ADVISORS ###
+
+	PAP_fascist_guy={
+		advisor={
+			slot = political_advisor
+			idea_token = PAP_fascist_guy
+			allowed  = { original_tag  = PAP }
+				traits  = { fascist_demagogue }
+				do_effect  = { not  = { has_government  = fascism } }
+				ai_will_do  = { factor  = 0.000 }
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={ army={ small="GFX_idea_generic_political_advisor_europe_2" } }
+	}
+
+	PAP_communist_guy={
+		advisor={
+			slot = political_advisor
+			idea_token = PAP_communist_guy
+			allowed  = { original_tag  = PAP }
+				traits  = { communist_revolutionary }
+				do_effect  = { not  = { has_government  = communism } }
+				ai_will_do  = { factor  = 0.000 }
+		}
+
+		portraits={ army={ small="GFX_idea_generic_political_advisor_europe_3" } }
+	}
+
+	PAP_democratic_guy={
+		advisor={
+			slot = political_advisor
+			idea_token = PAP_democratic_guy
+			allowed  = { original_tag  = PAP }
+				traits  = { democratic_reformer }
+				do_effect  = { not  = { has_government  = democratic } }
+				ai_will_do  = {	factor  = 0.000	}
+		}
+
+		portraits={ army={	small="GFX_idea_generic_political_advisor_europe_1" } }
+	}
+
+	PAP_coi={
+		advisor={
+			slot = political_advisor
+			idea_token = PAP_coi
+			allowed  = { original_tag  = PAP }
+				traits  = { captain_of_industry }
+		}
+
+		portraits={ army={ small="GFX_idea_generic_political_advisor_europe_1" } }
+	}
+
+	PAP_fe={
+		advisor={
+			slot = political_advisor
+			idea_token = PAP_fe
+			allowed  = { original_tag  = PAP }
+				traits  = { fortification_engineer }
+		}
+
+		portraits={ army={ small="GFX_idea_generic_political_advisor_europe_3" } }
+	}
+
+	PAP_wi={
+		advisor={
+			slot = political_advisor
+			idea_token = PAP_wi
+			allowed  = { original_tag  = PAP }
+				traits  = { war_industrialist }
+		}
+
+		portraits={ army={ small="GFX_idea_generic_war_industrialist" } }
+	}
+
+	PAP_stc={
+		advisor={
+			slot = political_advisor
+			idea_token = PAP_stc
+			allowed  = { original_tag  = PAP }
+				traits  = {	smooth_talking_charmer 	}
+		}
+
+		portraits={	army={	small="GFX_idea_generic_political_advisor_europe_3"	}	}
+	}
+
+	PAP_pot={
+		advisor={
+			slot = political_advisor
+			idea_token = PAP_pot
+			allowed  = { original_tag  = PAP }
+				traits  = { prince_of_terror }
+		}
+
+		portraits={	army={	small="GFX_idea_generic_political_advisor_europe_2"	} }
+	}
+
+### MILITRARY HIGH COMMAND ###
+
+
+
+	PAP_acd2={
+		advisor={
+			slot = army_chief
+			idea_token = PAP_acd2
+			allowed  = { original_tag  = PAP }
+				traits  = { army_chief_defensive_2 }
+				ai_will_do  = { factor  = 1.000 }
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={ army={ small="GFX_idea_generic_army_europe_5" } }
+	}
+	PAP_ncs={
+		advisor={
+			slot = high_command
+			idea_token = PAP_ncs
+			ledger  = navy 
+				allowed  = { original_tag  = PAP }
+				traits  = { navy_capital_ship_2 }
+				ai_will_do  = { factor  = 1.000 }
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={ army={ small="GFX_idea_generic_navy_europe_2" } }
+	}
+	PAP_nccr={
+		advisor={
+			slot = navy_chief
+			idea_token = PAP_nccr
+			allowed  = { original_tag  = PAP }
+				traits  = { navy_chief_commerce_raiding_2 }
+				ai_will_do  = { factor  = 1.000 }
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={ small="GFX_idea_generic_navy_europe_2" } }
+	}
+	PAP_aco2={
+		advisor={
+			slot = army_chief
+			idea_token = PAP_aco2
+			allowed  = {
+					original_tag  = PAP
+				}
+				traits  = {
+					army_chief_organizational_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_4"
+			}
+		}
+	}
+	PAP_ai2={
+		advisor={
+			slot = high_command
+			idea_token = PAP_ai2
+			ledger  = army 
+				allowed  = {
+					original_tag  = PAP
+				}
+				traits  = {
+					army_infantry_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_3"
+			}
+		}
+	}
+	PAP_ar={
+		advisor={
+			slot = high_command
+			idea_token = PAP_ar
+			ledger  = army 
+				allowed  = {
+					original_tag  = PAP
+				}
+				traits  = {
+					army_regrouping_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_1"
+			}
+		}
+	}
+	PAP_acas={
+		advisor={
+			slot = high_command
+			idea_token = PAP_acas
+			ledger  = air 
+				allowed  = {
+					original_tag  = PAP
+				}
+				traits  = {
+					air_close_air_support_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_air_europe_2"
+			}
+		}
+	}
+	PAP_aa2={
+		advisor={
+			slot = high_command
+			idea_token = PAP_aa2
+			ledger  = army 
+				allowed  = {
+					original_tag  = PAP
+				}
+				traits  = {
+					army_armored_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_2"
+			}
+		}
+	}
+
+	PAP_mt={
+		advisor={
+			slot = theorist
+			idea_token = PAP_mt
+			ledger  = army 
+				allowed  = {
+					original_tag  = PAP
+				}
+				traits  = {
+					military_theorist 
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_2"
+			}
+		}
+	}
+	PAP_acr={
+		advisor={
+			slot = air_chief
+			idea_token = PAP_acr
+			allowed  = {
+					original_tag  = PAP
+				}
+				traits  = {
+					air_chief_reform_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_air_europe_3"
+			}
+		}
+	}
+	PAP_acgs={
+		advisor={
+			slot = air_chief
+			idea_token = PAP_acgs
+			allowed  = {
+					original_tag  = PAP
+				}
+				traits  = {
+					air_chief_ground_support_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_air_europe_3"
+			}
+		}
+	}
+	PAP_awt={
+		advisor={
+			slot = theorist
+			idea_token = PAP_awt
+			ledger  = air 
+				allowed  = {
+					original_tag  = PAP
+				}
+				traits  = {
+					air_warfare_theorist 
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_air_europe_2"
+			}
+		}
+	}
+	PAP_ncm={
+		advisor={
+			slot = navy_chief
+			idea_token = PAP_ncm
+			allowed  = {
+					original_tag  = PAP
+				}
+				traits  = {
+					navy_chief_maneuver_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_europe_3"
+			}
+		}
+	}
+	PAP_nt={
+		advisor={
+			slot = theorist
+			idea_token = PAP_nt
+			ledger  = navy 
+				allowed  = {
+					original_tag  = PAP
+				}
+				traits  = {
+					naval_theorist 
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_europe_3"
+			}
+		}
+	}
+}

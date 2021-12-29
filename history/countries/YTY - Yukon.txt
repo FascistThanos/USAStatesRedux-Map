@@ -1,9 +1,11 @@
 ﻿capital = 14
 
-# oob = "YTY_1936"
+oob = "YTY_1936"
 
 set_research_slots = 3
 set_country_flag = monroe_doctrine
+
+
 
 # Starting tech
 set_technology = {
@@ -44,7 +46,7 @@ set_technology = {
 		#laws
 		volunteer_only
 		low_economic_mobilisation
-		home_of_the_free
+		
 	}
 
 
@@ -99,10 +101,7 @@ set_politics = {
 	election_frequency = 60
 	elections_allowed = yes
 }
-add_ideas = {
-		#laws
-		home_of_the_free
-	}
+
 set_popularities = {
 	democratic = 98
 	communism = 1

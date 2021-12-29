@@ -133,9 +133,7 @@ set_politics = {
 	election_frequency = 48
 	elections_allowed = yes
 }
-add_ideas = {
-	home_of_the_free
-}
+
 set_popularities = {
 	democratic = 85
 	communism = 10

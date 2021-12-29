@@ -2,14 +2,9 @@
 
 oob = "WAW_1936"
 
-if = {	limit = { has_dlc = "Man the Guns" }
-		set_naval_oob = "WAW_naval_mtg"
-	else = {
-		set_naval_oob = "WAW_naval_legacy"
-	}
-}
-
 set_research_slots = 3
+
+
 
 # Starting tech
 set_technology = {
@@ -141,7 +136,7 @@ set_politics = {
 	elections_allowed = yes
 }
 add_ideas = {
-
+	
 }
 set_popularities = {
 	democratic = 70

@@ -50,6 +50,8 @@ set_technology = {
 	fighter1 = 1
 }
 
+
+
 1939.1.1 = {
 
 	add_political_power = 1199
@@ -134,9 +136,7 @@ set_politics = {
 	election_frequency = 48
 	elections_allowed = yes
 }
-add_ideas = {
-	home_of_the_free
-}
+
 set_popularities = {
 	democratic = 76
 	communism = 4

@@ -1,6 +1,6 @@
 ﻿capital = 15
 
-# oob = "AKA_1936"
+oob = "AKA_1936"
 
 set_research_slots = 3
 
@@ -49,6 +49,9 @@ set_technology = {
 	base_strike = 1
 	fighter1 = 1
 }
+
+
+
 
 1939.1.1 = {
 
@@ -135,9 +138,6 @@ set_politics = {
 	elections_allowed = yes
 }
 
-add_ideas = {
-	home_of_the_free
-}
 set_popularities = {
 	democratic = 98
 	communism = 1

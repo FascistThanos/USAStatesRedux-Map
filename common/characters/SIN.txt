@@ -1,0 +1,369 @@
+characters={
+
+
+### POLITICAL ADVISORS ###
+
+	SIN_fascist_guy={
+		advisor={
+			slot = political_advisor
+			idea_token = SIN_fascist_guy
+			allowed  = { original_tag  = SIN }
+				traits  = { fascist_demagogue }
+				do_effect  = { not  = { has_government  = fascism } }
+				ai_will_do  = { factor  = 0.000 }
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={ army={ small="GFX_idea_generic_political_advisor_europe_2" } }
+	}
+
+	SIN_communist_guy={
+		advisor={
+			slot = political_advisor
+			idea_token = SIN_communist_guy
+			allowed  = { original_tag  = SIN }
+				traits  = { communist_revolutionary }
+				do_effect  = { not  = { has_government  = communism } }
+				ai_will_do  = { factor  = 0.000 }
+		}
+
+		portraits={ army={ small="GFX_idea_generic_political_advisor_europe_3" } }
+	}
+
+	SIN_democratic_guy={
+		advisor={
+			slot = political_advisor
+			idea_token = SIN_democratic_guy
+			allowed  = { original_tag  = SIN }
+				traits  = { democratic_reformer }
+				do_effect  = { not  = { has_government  = democratic } }
+				ai_will_do  = {	factor  = 0.000	}
+		}
+
+		portraits={ army={	small="GFX_idea_generic_political_advisor_europe_1" } }
+	}
+
+	SIN_coi={
+		advisor={
+			slot = political_advisor
+			idea_token = SIN_coi
+			allowed  = { original_tag  = SIN }
+				traits  = { captain_of_industry }
+		}
+
+		portraits={ army={ small="GFX_idea_generic_political_advisor_europe_1" } }
+	}
+
+	SIN_fe={
+		advisor={
+			slot = political_advisor
+			idea_token = SIN_fe
+			allowed  = { original_tag  = SIN }
+				traits  = { fortification_engineer }
+		}
+
+		portraits={ army={ small="GFX_idea_generic_political_advisor_europe_3" } }
+	}
+
+	SIN_wi={
+		advisor={
+			slot = political_advisor
+			idea_token = SIN_wi
+			allowed  = { original_tag  = SIN }
+				traits  = { war_industrialist }
+		}
+
+		portraits={ army={ small="GFX_idea_generic_war_industrialist" } }
+	}
+
+	SIN_stc={
+		advisor={
+			slot = political_advisor
+			idea_token = SIN_stc
+			allowed  = { original_tag  = SIN }
+				traits  = {	smooth_talking_charmer 	}
+		}
+
+		portraits={	army={	small="GFX_idea_generic_political_advisor_europe_3"	}	}
+	}
+
+	SIN_pot={
+		advisor={
+			slot = political_advisor
+			idea_token = SIN_pot
+			allowed  = { original_tag  = SIN }
+				traits  = { prince_of_terror }
+		}
+
+		portraits={	army={	small="GFX_idea_generic_political_advisor_europe_2"	} }
+	}
+
+### MILITRARY HIGH COMMAND ###
+
+
+
+	SIN_acd2={
+		advisor={
+			slot = army_chief
+			idea_token = SIN_acd2
+			allowed  = { original_tag  = SIN }
+				traits  = { army_chief_defensive_2 }
+				ai_will_do  = { factor  = 1.000 }
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={ army={ small="GFX_idea_generic_army_europe_5" } }
+	}
+	SIN_ncs={
+		advisor={
+			slot = high_command
+			idea_token = SIN_ncs
+			ledger  = navy 
+				allowed  = { original_tag  = SIN }
+				traits  = { navy_capital_ship_2 }
+				ai_will_do  = { factor  = 1.000 }
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={ army={ small="GFX_idea_generic_navy_europe_2" } }
+	}
+	SIN_nccr={
+		advisor={
+			slot = navy_chief
+			idea_token = SIN_nccr
+			allowed  = { original_tag  = SIN }
+				traits  = { navy_chief_commerce_raiding_2 }
+				ai_will_do  = { factor  = 1.000 }
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={ small="GFX_idea_generic_navy_europe_2" } }
+	}
+	SIN_aco2={
+		advisor={
+			slot = army_chief
+			idea_token = SIN_aco2
+			allowed  = {
+					original_tag  = SIN
+				}
+				traits  = {
+					army_chief_organizational_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_4"
+			}
+		}
+	}
+	SIN_ai2={
+		advisor={
+			slot = high_command
+			idea_token = SIN_ai2
+			ledger  = army 
+				allowed  = {
+					original_tag  = SIN
+				}
+				traits  = {
+					army_infantry_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_3"
+			}
+		}
+	}
+	SIN_ar={
+		advisor={
+			slot = high_command
+			idea_token = SIN_ar
+			ledger  = army 
+				allowed  = {
+					original_tag  = SIN
+				}
+				traits  = {
+					army_regrouping_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_1"
+			}
+		}
+	}
+	SIN_acas={
+		advisor={
+			slot = high_command
+			idea_token = SIN_acas
+			ledger  = air 
+				allowed  = {
+					original_tag  = SIN
+				}
+				traits  = {
+					air_close_air_support_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_air_europe_2"
+			}
+		}
+	}
+	SIN_aa2={
+		advisor={
+			slot = high_command
+			idea_token = SIN_aa2
+			ledger  = army 
+				allowed  = {
+					original_tag  = SIN
+				}
+				traits  = {
+					army_armored_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_2"
+			}
+		}
+	}
+
+	SIN_mt={
+		advisor={
+			slot = theorist
+			idea_token = SIN_mt
+			ledger  = army 
+				allowed  = {
+					original_tag  = SIN
+				}
+				traits  = {
+					military_theorist 
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_2"
+			}
+		}
+	}
+	SIN_acr={
+		advisor={
+			slot = air_chief
+			idea_token = SIN_acr
+			allowed  = {
+					original_tag  = SIN
+				}
+				traits  = {
+					air_chief_reform_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_air_europe_3"
+			}
+		}
+	}
+	SIN_acgs={
+		advisor={
+			slot = air_chief
+			idea_token = SIN_acgs
+			allowed  = {
+					original_tag  = SIN
+				}
+				traits  = {
+					air_chief_ground_support_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_air_europe_3"
+			}
+		}
+	}
+	SIN_awt={
+		advisor={
+			slot = theorist
+			idea_token = SIN_awt
+			ledger  = air 
+				allowed  = {
+					original_tag  = SIN
+				}
+				traits  = {
+					air_warfare_theorist 
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_air_europe_2"
+			}
+		}
+	}
+	SIN_ncm={
+		advisor={
+			slot = navy_chief
+			idea_token = SIN_ncm
+			allowed  = {
+					original_tag  = SIN
+				}
+				traits  = {
+					navy_chief_maneuver_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_europe_3"
+			}
+		}
+	}
+	SIN_nt={
+		advisor={
+			slot = theorist
+			idea_token = SIN_nt
+			ledger  = navy 
+				allowed  = {
+					original_tag  = SIN
+				}
+				traits  = {
+					naval_theorist 
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_europe_3"
+			}
+		}
+	}
+}

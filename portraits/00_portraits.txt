@@ -1,0 +1,903 @@
+continent = {
+	name = new_england
+	army = {
+		male = {
+			"GFX_Portrait_Europe_Generic_land_1"
+			"GFX_Portrait_Europe_Generic_land_2"
+			"GFX_Portrait_Europe_Generic_land_3"
+			"GFX_Portrait_Europe_Generic_land_4"
+			"GFX_Portrait_Europe_Generic_land_5"
+			"GFX_portrait_europe_generic_land_13"
+		}
+	}
+	
+	navy = {
+		male = {
+			"GFX_Portrait_Europe_Generic_navy_1"
+			"GFX_Portrait_Europe_Generic_navy_2"
+			"GFX_Portrait_Europe_Generic_navy_3"
+		}
+	}
+	political = {
+		communism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_1"
+			}
+		}
+		democratic = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_2" 
+			}
+		}
+		fascism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		neutrality = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+	}
+}
+continent = {
+	name = northeast
+	army = {
+		male = {
+			"GFX_Portrait_Europe_Generic_land_1"
+			"GFX_Portrait_Europe_Generic_land_2"
+			"GFX_Portrait_Europe_Generic_land_3"
+			"GFX_Portrait_Europe_Generic_land_4"
+			"GFX_Portrait_Europe_Generic_land_5"
+			"GFX_portrait_europe_generic_land_13"
+		}
+	}
+	
+	navy = {
+		male = {
+			"GFX_Portrait_Europe_Generic_navy_1"
+			"GFX_Portrait_Europe_Generic_navy_2"
+			"GFX_Portrait_Europe_Generic_navy_3"
+		}
+	}
+	political = {
+		communism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_1"
+			}
+		}
+		democratic = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_2" 
+			}
+		}
+		fascism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		neutrality = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+	}
+}
+continent = {
+	name = southeast
+	army = {
+		male = {
+			"GFX_Portrait_Europe_Generic_land_1"
+			"GFX_Portrait_Europe_Generic_land_2"
+			"GFX_Portrait_Europe_Generic_land_3"
+			"GFX_Portrait_Europe_Generic_land_4"
+			"GFX_Portrait_Europe_Generic_land_5"
+			"GFX_portrait_europe_generic_land_13"
+		}
+	}
+	
+	navy = {
+		male = {
+			"GFX_Portrait_Europe_Generic_navy_1"
+			"GFX_Portrait_Europe_Generic_navy_2"
+			"GFX_Portrait_Europe_Generic_navy_3"
+		}
+	}
+	political = {
+		communism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_1"
+			}
+		}
+		democratic = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_2" 
+			}
+		}
+		fascism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		neutrality = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+	}
+}
+continent = {
+	name = south
+	army = {
+		male = {
+			"GFX_Portrait_Europe_Generic_land_1"
+			"GFX_Portrait_Europe_Generic_land_2"
+			"GFX_Portrait_Europe_Generic_land_3"
+			"GFX_Portrait_Europe_Generic_land_4"
+			"GFX_Portrait_Europe_Generic_land_5"
+			"GFX_portrait_europe_generic_land_13"
+		}
+	}
+	
+	navy = {
+		male = {
+			"GFX_Portrait_Europe_Generic_navy_1"
+			"GFX_Portrait_Europe_Generic_navy_2"
+			"GFX_Portrait_Europe_Generic_navy_3"
+		}
+	}
+	political = {
+		communism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_1"
+			}
+		}
+		democratic = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_2" 
+			}
+		}
+		fascism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		neutrality = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+	}
+}
+continent = {
+	name = midwest
+	army = {
+		male = {
+			"GFX_Portrait_Europe_Generic_land_1"
+			"GFX_Portrait_Europe_Generic_land_2"
+			"GFX_Portrait_Europe_Generic_land_3"
+			"GFX_Portrait_Europe_Generic_land_4"
+			"GFX_Portrait_Europe_Generic_land_5"
+			"GFX_portrait_europe_generic_land_13"
+		}
+	}
+	
+	navy = {
+		male = {
+			"GFX_Portrait_Europe_Generic_navy_1"
+			"GFX_Portrait_Europe_Generic_navy_2"
+			"GFX_Portrait_Europe_Generic_navy_3"
+		}
+	}
+	political = {
+		communism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_1"
+			}
+		}
+		democratic = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_2" 
+			}
+		}
+		fascism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		neutrality = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+	}
+}
+continent = {
+	name = rocky_mountain
+	army = {
+		male = {
+			"GFX_Portrait_Europe_Generic_land_1"
+			"GFX_Portrait_Europe_Generic_land_2"
+			"GFX_Portrait_Europe_Generic_land_3"
+			"GFX_Portrait_Europe_Generic_land_4"
+			"GFX_Portrait_Europe_Generic_land_5"
+			"GFX_portrait_europe_generic_land_13"
+		}
+	}
+	
+	navy = {
+		male = {
+			"GFX_Portrait_Europe_Generic_navy_1"
+			"GFX_Portrait_Europe_Generic_navy_2"
+			"GFX_Portrait_Europe_Generic_navy_3"
+		}
+	}
+	political = {
+		communism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_1"
+			}
+		}
+		democratic = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_2" 
+			}
+		}
+		fascism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		neutrality = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+	}
+}
+continent = {
+	name = west_coast
+	army = {
+		male = {
+			"GFX_Portrait_Europe_Generic_land_1"
+			"GFX_Portrait_Europe_Generic_land_2"
+			"GFX_Portrait_Europe_Generic_land_3"
+			"GFX_Portrait_Europe_Generic_land_4"
+			"GFX_Portrait_Europe_Generic_land_5"
+			"GFX_portrait_europe_generic_land_13"
+		}
+	}
+	
+	navy = {
+		male = {
+			"GFX_Portrait_Europe_Generic_navy_1"
+			"GFX_Portrait_Europe_Generic_navy_2"
+			"GFX_Portrait_Europe_Generic_navy_3"
+		}
+	}
+	political = {
+		communism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_1"
+			}
+		}
+		democratic = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_2" 
+			}
+		}
+		fascism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		neutrality = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+	}
+}
+continent = {
+	name = northern_territories
+	army = {
+		male = {
+			"GFX_Portrait_Europe_Generic_land_1"
+			"GFX_Portrait_Europe_Generic_land_2"
+			"GFX_Portrait_Europe_Generic_land_3"
+			"GFX_Portrait_Europe_Generic_land_4"
+			"GFX_Portrait_Europe_Generic_land_5"
+			"GFX_portrait_europe_generic_land_13"
+		}
+	}
+	
+	navy = {
+		male = {
+			"GFX_Portrait_Europe_Generic_navy_1"
+			"GFX_Portrait_Europe_Generic_navy_2"
+			"GFX_Portrait_Europe_Generic_navy_3"
+		}
+	}
+	political = {
+		communism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_1"
+			}
+		}
+		democratic = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_2" 
+			}
+		}
+		fascism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		neutrality = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+	}
+}
+continent = {
+	name = prairie_provinces
+	army = {
+		male = {
+			"GFX_Portrait_Europe_Generic_land_1"
+			"GFX_Portrait_Europe_Generic_land_2"
+			"GFX_Portrait_Europe_Generic_land_3"
+			"GFX_Portrait_Europe_Generic_land_4"
+			"GFX_Portrait_Europe_Generic_land_5"
+			"GFX_portrait_europe_generic_land_13"
+		}
+	}
+	
+	navy = {
+		male = {
+			"GFX_Portrait_Europe_Generic_navy_1"
+			"GFX_Portrait_Europe_Generic_navy_2"
+			"GFX_Portrait_Europe_Generic_navy_3"
+		}
+	}
+	political = {
+		communism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_1"
+			}
+		}
+		democratic = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_2" 
+			}
+		}
+		fascism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		neutrality = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+	}
+}
+continent = {
+	name = central_canada
+	army = {
+		male = {
+			"GFX_Portrait_Europe_Generic_land_1"
+			"GFX_Portrait_Europe_Generic_land_2"
+			"GFX_Portrait_Europe_Generic_land_3"
+			"GFX_Portrait_Europe_Generic_land_4"
+			"GFX_Portrait_Europe_Generic_land_5"
+			"GFX_portrait_europe_generic_land_13"
+		}
+	}
+	
+	navy = {
+		male = {
+			"GFX_Portrait_Europe_Generic_navy_1"
+			"GFX_Portrait_Europe_Generic_navy_2"
+			"GFX_Portrait_Europe_Generic_navy_3"
+		}
+	}
+	political = {
+		communism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_1"
+			}
+		}
+		democratic = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_2" 
+			}
+		}
+		fascism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		neutrality = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+	}
+}
+continent = {
+	name = atlantic_region
+	army = {
+		male = {
+			"GFX_Portrait_Europe_Generic_land_1"
+			"GFX_Portrait_Europe_Generic_land_2"
+			"GFX_Portrait_Europe_Generic_land_3"
+			"GFX_Portrait_Europe_Generic_land_4"
+			"GFX_Portrait_Europe_Generic_land_5"
+			"GFX_portrait_europe_generic_land_13"
+		}
+	}
+	
+	navy = {
+		male = {
+			"GFX_Portrait_Europe_Generic_navy_1"
+			"GFX_Portrait_Europe_Generic_navy_2"
+			"GFX_Portrait_Europe_Generic_navy_3"
+		}
+	}
+	political = {
+		communism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_1"
+			}
+		}
+		democratic = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_2" 
+			}
+		}
+		fascism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		neutrality = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+	}
+}
+continent = {
+	name = great_lakes
+	army = {
+		male = {
+			"GFX_Portrait_Europe_Generic_land_1"
+			"GFX_Portrait_Europe_Generic_land_2"
+			"GFX_Portrait_Europe_Generic_land_3"
+			"GFX_Portrait_Europe_Generic_land_4"
+			"GFX_Portrait_Europe_Generic_land_5"
+			"GFX_portrait_europe_generic_land_13"
+		}
+	}
+	
+	navy = {
+		male = {
+			"GFX_Portrait_Europe_Generic_navy_1"
+			"GFX_Portrait_Europe_Generic_navy_2"
+			"GFX_Portrait_Europe_Generic_navy_3"
+		}
+	}
+	political = {
+		communism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_1"
+			}
+		}
+		democratic = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_2" 
+			}
+		}
+		fascism = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+		neutrality = {
+				male = { 
+					"GFX_Portrait_Europe_Generic_3" 
+			}
+		}
+	}
+}
+continent = {
+	name = south_america
+	army = {
+		male = {
+			"GFX_Portrait_South_America_Generic_land_1"
+			"GFX_Portrait_South_America_Generic_land_2"
+			"GFX_Portrait_South_America_Generic_land_3"
+			"GFX_Portrait_South_America_Generic_land_4"
+			"GFX_Portrait_South_America_Generic_land_5"
+		}
+	}
+	
+	navy = {
+		male = {
+			"GFX_Portrait_South_America_Generic_navy_1"
+			"GFX_Portrait_South_America_Generic_navy_2"
+			"GFX_Portrait_South_America_Generic_navy_3"
+		}
+	}
+	
+	political = {
+		communism = {
+				male = { 
+					"GFX_Portrait_South_America_Generic_1"
+			}
+		}
+		democratic = {
+				male = { 
+					"GFX_Portrait_South_America_Generic_2" 
+			}
+		}
+		fascism = {
+				male = { 
+					"GFX_Portrait_South_America_Generic_3" 
+			}
+		}
+		neutrality = {
+				male = { 
+					"GFX_Portrait_South_America_Generic_3" 
+			}
+		}
+	}
+}
+continent = {
+	name = noroeste
+	army = {
+		male = {
+			"GFX_Portrait_South_America_Generic_land_1"
+			"GFX_Portrait_South_America_Generic_land_2"
+			"GFX_Portrait_South_America_Generic_land_3"
+			"GFX_Portrait_South_America_Generic_land_4"
+			"GFX_Portrait_South_America_Generic_land_5"
+		}
+	}
+	
+	navy = {
+		male = {
+			"GFX_Portrait_South_America_Generic_navy_1"
+			"GFX_Portrait_South_America_Generic_navy_2"
+			"GFX_Portrait_South_America_Generic_navy_3"
+		}
+	}
+	
+	political = {
+		communism = {
+				male = { 
+					"GFX_Portrait_South_America_Generic_1"
+			}
+		}
+		democratic = {
+				male = { 
+					"GFX_Portrait_South_America_Generic_2" 
+			}
+		}
+		fascism = {
+				male = { 
+					"GFX_Portrait_South_America_Generic_3" 
+			}
+		}
+		neutrality = {
+				male = { 
+					"GFX_Portrait_South_America_Generic_3" 
+			}
+		}
+	}
+}
+continent = {
+	name = occidente
+	army = {
+		male = {
+			"GFX_Portrait_South_America_Generic_land_1"
+			"GFX_Portrait_South_America_Generic_land_2"
+			"GFX_Portrait_South_America_Generic_land_3"
+			"GFX_Portrait_South_America_Generic_land_4"
+			"GFX_Portrait_South_America_Generic_land_5"
+		}
+	}
+	
+	navy = {
+		male = {
+			"GFX_Portrait_South_America_Generic_navy_1"
+			"GFX_Portrait_South_America_Generic_navy_2"
+			"GFX_Portrait_South_America_Generic_navy_3"
+		}
+	}
+	
+	political = {
+		communism = {
+				male = { 
+					"GFX_Portrait_South_America_Generic_1"
+			}
+		}
+		democratic = {
+				male = { 
+					"GFX_Portrait_South_America_Generic_2" 
+			}
+		}
+		fascism = {
+				male = { 
+					"GFX_Portrait_South_America_Generic_3" 
+			}
+		}
+		neutrality = {
+				male = { 
+					"GFX_Portrait_South_America_Generic_3" 
+			}
+		}
+	}
+}
+continent = {
+	name = noreste
+	army = {
+		male = {
+			"GFX_Portrait_South_America_Generic_land_1"
+			"GFX_Portrait_South_America_Generic_land_2"
+			"GFX_Portrait_South_America_Generic_land_3"
+			"GFX_Portrait_South_America_Generic_land_4"
+			"GFX_Portrait_South_America_Generic_land_5"
+		}
+	}
+	
+	navy = {
+		male = {
+			"GFX_Portrait_South_America_Generic_navy_1"
+			"GFX_Portrait_South_America_Generic_navy_2"
+			"GFX_Portrait_South_America_Generic_navy_3"
+		}
+	}
+	
+	political = {
+		communism = {
+				male = { 
+					"GFX_Portrait_South_America_Generic_1"
+			}
+		}
+		democratic = {
+				male = { 
+					"GFX_Portrait_South_America_Generic_2" 
+			}
+		}
+		fascism = {
+				male = { 
+					"GFX_Portrait_South_America_Generic_3" 
+			}
+		}
+		neutrality = {
+				male = { 
+					"GFX_Portrait_South_America_Generic_3" 
+			}
+		}
+	}
+}
+continent = {
+	name = sureste
+	army = {
+		male = {
+			"GFX_Portrait_South_America_Generic_land_1"
+			"GFX_Portrait_South_America_Generic_land_2"
+			"GFX_Portrait_South_America_Generic_land_3"
+			"GFX_Portrait_South_America_Generic_land_4"
+			"GFX_Portrait_South_America_Generic_land_5"
+		}
+	}
+	
+	navy = {
+		male = {
+			"GFX_Portrait_South_America_Generic_navy_1"
+			"GFX_Portrait_South_America_Generic_navy_2"
+			"GFX_Portrait_South_America_Generic_navy_3"
+		}
+	}
+	
+	political = {
+		communism = {
+				male = { 
+					"GFX_Portrait_South_America_Generic_1"
+			}
+		}
+		democratic = {
+				male = { 
+					"GFX_Portrait_South_America_Generic_2" 
+			}
+		}
+		fascism = {
+				male = { 
+					"GFX_Portrait_South_America_Generic_3" 
+			}
+		}
+		neutrality = {
+				male = { 
+					"GFX_Portrait_South_America_Generic_3" 
+			}
+		}
+	}
+}
+continent = {
+	name = centro
+	army = {
+		male = {
+			"GFX_Portrait_South_America_Generic_land_1"
+			"GFX_Portrait_South_America_Generic_land_2"
+			"GFX_Portrait_South_America_Generic_land_3"
+			"GFX_Portrait_South_America_Generic_land_4"
+			"GFX_Portrait_South_America_Generic_land_5"
+		}
+	}
+	
+	navy = {
+		male = {
+			"GFX_Portrait_South_America_Generic_navy_1"
+			"GFX_Portrait_South_America_Generic_navy_2"
+			"GFX_Portrait_South_America_Generic_navy_3"
+		}
+	}
+	
+	political = {
+		communism = {
+				male = { 
+					"GFX_Portrait_South_America_Generic_1"
+			}
+		}
+		democratic = {
+				male = { 
+					"GFX_Portrait_South_America_Generic_2" 
+			}
+		}
+		fascism = {
+				male = { 
+					"GFX_Portrait_South_America_Generic_3" 
+			}
+		}
+		neutrality = {
+				male = { 
+					"GFX_Portrait_South_America_Generic_3" 
+			}
+		}
+	}
+}
+continent = {
+	name = sur
+	army = {
+		male = {
+			"GFX_Portrait_South_America_Generic_land_1"
+			"GFX_Portrait_South_America_Generic_land_2"
+			"GFX_Portrait_South_America_Generic_land_3"
+			"GFX_Portrait_South_America_Generic_land_4"
+			"GFX_Portrait_South_America_Generic_land_5"
+		}
+	}
+	
+	navy = {
+		male = {
+			"GFX_Portrait_South_America_Generic_navy_1"
+			"GFX_Portrait_South_America_Generic_navy_2"
+			"GFX_Portrait_South_America_Generic_navy_3"
+		}
+	}
+	
+	political = {
+		communism = {
+				male = { 
+					"GFX_Portrait_South_America_Generic_1"
+			}
+		}
+		democratic = {
+				male = { 
+					"GFX_Portrait_South_America_Generic_2" 
+			}
+		}
+		fascism = {
+				male = { 
+					"GFX_Portrait_South_America_Generic_3" 
+			}
+		}
+		neutrality = {
+				male = { 
+					"GFX_Portrait_South_America_Generic_3" 
+			}
+		}
+	}
+}
+continent = {
+	name = caribbean
+	army = {
+		male = {
+			"GFX_Portrait_South_America_Generic_land_1"
+			"GFX_Portrait_South_America_Generic_land_2"
+			"GFX_Portrait_South_America_Generic_land_3"
+			"GFX_Portrait_South_America_Generic_land_4"
+			"GFX_Portrait_South_America_Generic_land_5"
+		}
+	}
+	
+	navy = {
+		male = {
+			"GFX_Portrait_South_America_Generic_navy_1"
+			"GFX_Portrait_South_America_Generic_navy_2"
+			"GFX_Portrait_South_America_Generic_navy_3"
+		}
+	}
+	
+	political = {
+		communism = {
+				male = { 
+					"GFX_Portrait_South_America_Generic_1"
+			}
+		}
+		democratic = {
+				male = { 
+					"GFX_Portrait_South_America_Generic_2" 
+			}
+		}
+		fascism = {
+				male = { 
+					"GFX_Portrait_South_America_Generic_3" 
+			}
+		}
+		neutrality = {
+				male = { 
+					"GFX_Portrait_South_America_Generic_3" 
+			}
+		}
+	}
+}
+continent = {
+	name = central_america
+	army = {
+		male = {
+			"GFX_Portrait_South_America_Generic_land_1"
+			"GFX_Portrait_South_America_Generic_land_2"
+			"GFX_Portrait_South_America_Generic_land_3"
+			"GFX_Portrait_South_America_Generic_land_4"
+			"GFX_Portrait_South_America_Generic_land_5"
+		}
+	}
+	
+	navy = {
+		male = {
+			"GFX_Portrait_South_America_Generic_navy_1"
+			"GFX_Portrait_South_America_Generic_navy_2"
+			"GFX_Portrait_South_America_Generic_navy_3"
+		}
+	}
+	
+	political = {
+		communism = {
+				male = { 
+					"GFX_Portrait_South_America_Generic_1"
+			}
+		}
+		democratic = {
+				male = { 
+					"GFX_Portrait_South_America_Generic_2" 
+			}
+		}
+		fascism = {
+				male = { 
+					"GFX_Portrait_South_America_Generic_3" 
+			}
+		}
+		neutrality = {
+				male = { 
+					"GFX_Portrait_South_America_Generic_3" 
+			}
+		}
+	}
+}

@@ -1,15 +1,14 @@
-﻿capital = 16
+﻿capital = 152
 
-# oob = "GRN_1936"
+oob = "GRN_1936"
 
 set_research_slots = 4
-set_country_flag = monroe_doctrine
 
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
-	tech_support = 1
+	tech_support = 1		
 	tech_engineers = 1
 	tech_recon = 1
 	gw_artillery = 1
@@ -30,7 +29,7 @@ set_convoys = 100
 1939.1.1 = {
 
 	add_political_power = 1198
-
+	
 	#generic focuses
 	complete_national_focus = army_effort
 	complete_national_focus = equipment_effort
@@ -45,11 +44,11 @@ set_convoys = 100
 	add_ideas = {
 		#laws
 		volunteer_only
-		low_economic_mobilisation
+		low_economic_mobilisation	
 		home_of_the_free
 	}
 
-
+	
 	oob = "ABA_1939"
 	set_technology = {
 		fighter1 = 1
@@ -96,7 +95,7 @@ set_convoys = 100
 
 set_politics = {
 
-
+	
 	ruling_party = democratic
 	last_election = "1935.10.14"
 	election_frequency = 60
@@ -107,10 +106,7 @@ set_popularities = {
 	communism = 1
 	fascism = 1
 }
-add_ideas = {
-		#laws
-		home_of_the_free
-	}
+
 
 set_stability = 0.9
 
@@ -118,7 +114,7 @@ set_stability = 0.9
 set_stability = 0.9
 	set_politics = {
 
-
+		
 		ruling_party = democratic
 		last_election = "1935.10.14"
 		election_frequency = 60

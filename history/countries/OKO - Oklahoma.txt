@@ -4,6 +4,7 @@ oob = "OKO_1936"
 
 set_research_slots = 4
 
+
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
@@ -133,9 +134,7 @@ set_politics = {
 	election_frequency = 48
 	elections_allowed = yes
 }
-add_ideas = {
-	home_of_the_free
-}
+
 set_popularities = {
 	democratic = 98
 	communism = 1

@@ -1,4 +1,4 @@
-﻿capital = 65
+﻿capital = 64
 
 oob = "CAC_1936"
 
@@ -134,7 +134,6 @@ set_stability = 0.6
 
 set_politics = {
 
-
 	ruling_party = democratic
 	last_election = "1932.11.8"
 	election_frequency = 48
@@ -152,6 +151,7 @@ set_popularities = {
 	communism = 19
 	fascism = 10
 }
+
 create_country_leader = {
 	name = "Frank Merriam"
 	desc = "POLITICS_FRANK_MERRIAM_DESC"
@@ -162,38 +162,6 @@ create_country_leader = {
 		foundingfatherofcalifornia
 	}
 }
-
-create_country_leader = {
-	name = "Upton Sinclair"
-	desc = "POLITICS_UPTON_SINCLAIR_DESC"
-	picture = "Portrait_CAC_Upton_Sinclair.dds"
-	expire = "1965.1.1"
-	ideology = marxism
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "James E. Davis"
-	desc = "POLITICS_JAMESE_DAVIS_DESC"
-	picture = "Portrait_CAC_James E Davis.dds"
-	expire = "1965.1.1"
-	ideology = rexism
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "George S. Patton"
-	desc = "POLITICS_GEORGES_PATTON_DESC"
-	picture = "Portrait_CAC_GeorgePatton.dds"
-	expire = "1965.1.1"
-	ideology = centrism
-	traits = {
-		great_war_hero
-	}
-}
-
 create_field_marshal = {
 	name = "General George S. Patton"
 	picture = "Portrait_USA_George_S_Patton.dds"

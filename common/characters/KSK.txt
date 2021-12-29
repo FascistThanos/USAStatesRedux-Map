@@ -1,0 +1,369 @@
+characters={
+
+
+### POLITICAL ADVISORS ###
+
+	KSK_fascist_guy={
+		advisor={
+			slot = political_advisor
+			idea_token = KSK_fascist_guy
+			allowed  = { original_tag  = KSK }
+				traits  = { fascist_demagogue }
+				do_effect  = { not  = { has_government  = fascism } }
+				ai_will_do  = { factor  = 0.000 }
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={ army={ small="GFX_idea_generic_political_advisor_europe_2" } }
+	}
+
+	KSK_communist_guy={
+		advisor={
+			slot = political_advisor
+			idea_token = KSK_communist_guy
+			allowed  = { original_tag  = KSK }
+				traits  = { communist_revolutionary }
+				do_effect  = { not  = { has_government  = communism } }
+				ai_will_do  = { factor  = 0.000 }
+		}
+
+		portraits={ army={ small="GFX_idea_generic_political_advisor_europe_3" } }
+	}
+
+	KSK_democratic_guy={
+		advisor={
+			slot = political_advisor
+			idea_token = KSK_democratic_guy
+			allowed  = { original_tag  = KSK }
+				traits  = { democratic_reformer }
+				do_effect  = { not  = { has_government  = democratic } }
+				ai_will_do  = {	factor  = 0.000	}
+		}
+
+		portraits={ army={	small="GFX_idea_generic_political_advisor_europe_1" } }
+	}
+
+	KSK_coi={
+		advisor={
+			slot = political_advisor
+			idea_token = KSK_coi
+			allowed  = { original_tag  = KSK }
+				traits  = { captain_of_industry }
+		}
+
+		portraits={ army={ small="GFX_idea_generic_political_advisor_europe_1" } }
+	}
+
+	KSK_fe={
+		advisor={
+			slot = political_advisor
+			idea_token = KSK_fe
+			allowed  = { original_tag  = KSK }
+				traits  = { fortification_engineer }
+		}
+
+		portraits={ army={ small="GFX_idea_generic_political_advisor_europe_3" } }
+	}
+
+	KSK_wi={
+		advisor={
+			slot = political_advisor
+			idea_token = KSK_wi
+			allowed  = { original_tag  = KSK }
+				traits  = { war_industrialist }
+		}
+
+		portraits={ army={ small="GFX_idea_generic_war_industrialist" } }
+	}
+
+	KSK_stc={
+		advisor={
+			slot = political_advisor
+			idea_token = KSK_stc
+			allowed  = { original_tag  = KSK }
+				traits  = {	smooth_talking_charmer 	}
+		}
+
+		portraits={	army={	small="GFX_idea_generic_political_advisor_europe_3"	}	}
+	}
+
+	KSK_pot={
+		advisor={
+			slot = political_advisor
+			idea_token = KSK_pot
+			allowed  = { original_tag  = KSK }
+				traits  = { prince_of_terror }
+		}
+
+		portraits={	army={	small="GFX_idea_generic_political_advisor_europe_2"	} }
+	}
+
+### MILITRARY HIGH COMMAND ###
+
+
+
+	KSK_acd2={
+		advisor={
+			slot = army_chief
+			idea_token = KSK_acd2
+			allowed  = { original_tag  = KSK }
+				traits  = { army_chief_defensive_2 }
+				ai_will_do  = { factor  = 1.000 }
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={ army={ small="GFX_idea_generic_army_europe_5" } }
+	}
+	KSK_ncs={
+		advisor={
+			slot = high_command
+			idea_token = KSK_ncs
+			ledger  = navy 
+				allowed  = { original_tag  = KSK }
+				traits  = { navy_capital_ship_2 }
+				ai_will_do  = { factor  = 1.000 }
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={ army={ small="GFX_idea_generic_navy_europe_2" } }
+	}
+	KSK_nccr={
+		advisor={
+			slot = navy_chief
+			idea_token = KSK_nccr
+			allowed  = { original_tag  = KSK }
+				traits  = { navy_chief_commerce_raiding_2 }
+				ai_will_do  = { factor  = 1.000 }
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={ small="GFX_idea_generic_navy_europe_2" } }
+	}
+	KSK_aco2={
+		advisor={
+			slot = army_chief
+			idea_token = KSK_aco2
+			allowed  = {
+					original_tag  = KSK
+				}
+				traits  = {
+					army_chief_organizational_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_4"
+			}
+		}
+	}
+	KSK_ai2={
+		advisor={
+			slot = high_command
+			idea_token = KSK_ai2
+			ledger  = army 
+				allowed  = {
+					original_tag  = KSK
+				}
+				traits  = {
+					army_infantry_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_3"
+			}
+		}
+	}
+	KSK_ar={
+		advisor={
+			slot = high_command
+			idea_token = KSK_ar
+			ledger  = army 
+				allowed  = {
+					original_tag  = KSK
+				}
+				traits  = {
+					army_regrouping_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_1"
+			}
+		}
+	}
+	KSK_acas={
+		advisor={
+			slot = high_command
+			idea_token = KSK_acas
+			ledger  = air 
+				allowed  = {
+					original_tag  = KSK
+				}
+				traits  = {
+					air_close_air_support_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_air_europe_2"
+			}
+		}
+	}
+	KSK_aa2={
+		advisor={
+			slot = high_command
+			idea_token = KSK_aa2
+			ledger  = army 
+				allowed  = {
+					original_tag  = KSK
+				}
+				traits  = {
+					army_armored_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_2"
+			}
+		}
+	}
+
+	KSK_mt={
+		advisor={
+			slot = theorist
+			idea_token = KSK_mt
+			ledger  = army 
+				allowed  = {
+					original_tag  = KSK
+				}
+				traits  = {
+					military_theorist 
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_2"
+			}
+		}
+	}
+	KSK_acr={
+		advisor={
+			slot = air_chief
+			idea_token = KSK_acr
+			allowed  = {
+					original_tag  = KSK
+				}
+				traits  = {
+					air_chief_reform_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_air_europe_3"
+			}
+		}
+	}
+	KSK_acgs={
+		advisor={
+			slot = air_chief
+			idea_token = KSK_acgs
+			allowed  = {
+					original_tag  = KSK
+				}
+				traits  = {
+					air_chief_ground_support_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_air_europe_3"
+			}
+		}
+	}
+	KSK_awt={
+		advisor={
+			slot = theorist
+			idea_token = KSK_awt
+			ledger  = air 
+				allowed  = {
+					original_tag  = KSK
+				}
+				traits  = {
+					air_warfare_theorist 
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_air_europe_2"
+			}
+		}
+	}
+	KSK_ncm={
+		advisor={
+			slot = navy_chief
+			idea_token = KSK_ncm
+			allowed  = {
+					original_tag  = KSK
+				}
+				traits  = {
+					navy_chief_maneuver_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_europe_3"
+			}
+		}
+	}
+	KSK_nt={
+		advisor={
+			slot = theorist
+			idea_token = KSK_nt
+			ledger  = navy 
+				allowed  = {
+					original_tag  = KSK
+				}
+				traits  = {
+					naval_theorist 
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_europe_3"
+			}
+		}
+	}
+}

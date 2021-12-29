@@ -1,4 +1,4 @@
-﻿capital = 727
+﻿capital = 1
 
 oob = "LIL_1936"
 
@@ -118,9 +118,7 @@ set_politics = {
 	election_frequency = 48
 	elections_allowed = yes
 }
-add_ideas = {
-	home_of_the_free
-}
+
 set_popularities = {
 	democratic = 98
 	communism = 1
