@@ -1,6 +1,6 @@
 state={
 	id=183
-	name="Cape Cod"
+	name="183"
 
 	history={
 		owner = MAM
@@ -15,5 +15,6 @@ state={
 	manpower=137125
 	buildings_max_level_factor=1.000
 	state_category=large_town
-	local_supplies=0.000
+	
+	local_supplies=1.000
 }

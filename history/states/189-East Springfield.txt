@@ -1,6 +1,6 @@
 state={
 	id=189
-	name="East Springfield"
+	name="STATE_189"
 	history={
 		owner = MAM
 		buildings = {
@@ -14,5 +14,6 @@ state={
 	manpower=425717
 	state_category = metropolis
 	buildings_max_level_factor=1.000
-	local_supplies=0.000
+	
+	local_supplies=1.000
 }

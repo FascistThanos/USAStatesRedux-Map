@@ -1,6 +1,6 @@
 state={
 	id=186
-	name="Greater Merrimack Valley"
+	name="STATE_186"
 	history={
 		owner = MAM
 		buildings = {
@@ -14,5 +14,6 @@ state={
 	manpower=157945
 	state_category = city
 	buildings_max_level_factor=1.000
-	local_supplies=0.000
+	
+	local_supplies=1.000
 }

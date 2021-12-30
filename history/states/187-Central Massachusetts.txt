@@ -1,6 +1,6 @@
 state={
 	id=187
-	name="Central Massachusetts"
+	name="STATE_187"
 	history={
 		owner = MAM
 		buildings = {
@@ -14,5 +14,6 @@ state={
 	manpower=275365
 	state_category = large_city
 	buildings_max_level_factor=1.000
-	local_supplies=0.000
+	
+	local_supplies=1.000
 }

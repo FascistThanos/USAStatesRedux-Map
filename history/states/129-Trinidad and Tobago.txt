@@ -14,4 +14,5 @@ state={
 		1914 7767 8230
 	}
 
+	local_supplies=1.000
 }

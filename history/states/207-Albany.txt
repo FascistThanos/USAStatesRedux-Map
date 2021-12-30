@@ -1,0 +1,18 @@
+state={
+	id=207
+	name="Albany"
+	history={
+		owner = NYN
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = NYN
+	}
+	provinces={
+		11052 11060 11061 11064 11065 11066 11067 11074 11077 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=1.000
+	state_category = wasteland
+}

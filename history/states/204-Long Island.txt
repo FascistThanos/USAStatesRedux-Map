@@ -1,0 +1,19 @@
+state={
+	id=204
+	name="Long Island"
+	history={
+		owner = NYN
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = NYN
+	}
+
+	provinces={
+		3383 5344 5360 10905 10913 10920 10921 10923 10928 10934 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	state_category = wasteland
+	local_supplies=12.000
+}
