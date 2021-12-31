@@ -1,0 +1,23 @@
+
+state={
+	id=276
+	name="Erie Coast"
+
+	history={
+		owner = OHO
+		buildings = {
+			infrastructure = 4
+
+		}
+		add_core_of = OHO
+
+	}
+
+	provinces={
+		1134 2676 2686 3906 5273 5301 
+	}
+	manpower=565237
+	buildings_max_level_factor=1.000
+	state_category=large_city
+	local_supplies=5.000
+}

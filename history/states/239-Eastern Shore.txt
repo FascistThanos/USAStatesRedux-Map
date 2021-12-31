@@ -1,0 +1,20 @@
+state={
+	id=239
+	name="Eastern Shore"
+	history={
+		owner = MDM
+		buildings = {
+			infrastructure = 4
+
+		}
+		add_core_of = MDM
+
+	}
+	provinces={
+		1311 5690 5696 5748 5758 
+	}
+	manpower=171140
+	buildings_max_level_factor=1.000
+	local_supplies=5.000
+	state_category = city
+}

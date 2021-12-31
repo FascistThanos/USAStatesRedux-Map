@@ -1,0 +1,20 @@
+state={
+	id=248
+	name="Newport News"
+	history={
+		owner = VAV
+		buildings = {
+			infrastructure = 3
+
+		}
+		add_core_of = VAV
+
+	}
+	provinces={
+		1514 10718 10719 10722 
+	}
+	manpower=105742
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = large_town
+}

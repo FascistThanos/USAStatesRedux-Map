@@ -1,0 +1,20 @@
+state={
+	id=249
+	name="Piedmont"
+	history={
+		owner = VAV
+		buildings = {
+			infrastructure = 3
+
+		}
+		add_core_of = VAV
+
+	}
+	provinces={
+		767 3640 3898 5757 5778 
+	}
+	manpower=96157
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = town
+}

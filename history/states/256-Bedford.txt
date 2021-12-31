@@ -1,0 +1,20 @@
+state={
+	id=256
+	name="Bedford"
+	history={
+		owner = VAV
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = VAV
+
+	}
+	provinces={
+		2229 4194 10262 
+	}
+	manpower=29794
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = rural
+}

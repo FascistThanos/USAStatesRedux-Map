@@ -1,0 +1,20 @@
+state={
+	id=271
+	name="Cleveland-Akron Metropolitan Area"
+	history={
+		owner = OHO
+		buildings = {
+			infrastructure = 5
+
+		}
+		add_core_of = OHO
+
+	}
+	provinces={
+		5250 5274 10947 10948 10952 10958 10959 10967 
+	}
+	manpower=1801214
+	buildings_max_level_factor=1.000
+	local_supplies=15.000
+	state_category = megalopolis
+}

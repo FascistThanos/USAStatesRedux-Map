@@ -1,0 +1,20 @@
+state={
+	id=268
+	name="Morgantown"
+	history={
+		owner = WVW
+		buildings = {
+			infrastructure = 3
+
+		}
+		add_core_of = WVW
+
+	}
+	provinces={
+		10844 10845 10854 10855 10856 
+	}
+	manpower=138709
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = large_town
+}

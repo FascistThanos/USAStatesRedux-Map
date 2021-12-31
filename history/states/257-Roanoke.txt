@@ -1,0 +1,20 @@
+state={
+	id=257
+	name="Roanoke"
+	history={
+		owner = VAV
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = VAV
+
+	}
+	provinces={
+		10721 10723 10726 10732 11427 
+	}
+	manpower=39093
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = rural
+}

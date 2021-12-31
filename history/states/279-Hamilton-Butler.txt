@@ -1,0 +1,20 @@
+state={
+	id=279
+	name="Hamilton-Butler"
+	history={
+		owner = OHO
+		buildings = {
+			infrastructure = 4
+
+		}
+		add_core_of = OHO
+
+	}
+	provinces={
+		733 1688 2789 5493 5546 5592 
+	}
+	manpower=152287
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = city
+}

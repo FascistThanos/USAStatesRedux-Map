@@ -1,0 +1,20 @@
+state={
+	id=272
+	name="Columbus"
+	history={
+		owner = OHO
+		buildings = {
+			infrastructure = 4
+
+		}
+		add_core_of = OHO
+
+	}
+	provinces={
+		10860 10864 10866 10868 10871 10875 
+	}
+	manpower=373904
+	buildings_max_level_factor=1.000
+	local_supplies=5.000
+	state_category = large_city
+}

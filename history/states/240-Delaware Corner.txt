@@ -1,0 +1,20 @@
+state={
+	id=240
+	name="Delaware Corner"
+	history={
+		owner = MDM
+		buildings = {
+			infrastructure = 3
+
+		}
+		add_core_of = MDM
+
+	}
+	provinces={
+		5553 5590 5616 
+	}
+	manpower=57142
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = town
+}

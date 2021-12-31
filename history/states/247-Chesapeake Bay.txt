@@ -1,0 +1,20 @@
+state={
+	id=247
+	name="Chesapeake Bay"
+	history={
+		owner = VAV
+		buildings = {
+			infrastructure = 4
+
+		}
+		add_core_of = VAV
+
+	}
+	provinces={
+		1742 3245 5747 5785 5830 11426 
+	}
+	manpower=167423
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = city
+}

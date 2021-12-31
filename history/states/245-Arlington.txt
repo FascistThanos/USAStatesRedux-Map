@@ -1,0 +1,20 @@
+state={
+	id=245
+	name="Alexandria-Arlington"
+	history={
+		owner = VAV
+		buildings = {
+			infrastructure = 4
+
+		}
+		add_core_of = VAV
+
+	}
+	provinces={
+		4121 10797 10803 10810 
+	}
+	manpower=120664
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = large_town
+}

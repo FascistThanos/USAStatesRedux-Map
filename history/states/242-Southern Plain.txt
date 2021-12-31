@@ -1,0 +1,20 @@
+state={
+	id=242
+	name="Southern Plain"
+	history={
+		owner = MDM
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = MDM
+
+	}
+	provinces={
+		2317 5654 5709 
+	}
+	manpower=42105
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = rural
+}

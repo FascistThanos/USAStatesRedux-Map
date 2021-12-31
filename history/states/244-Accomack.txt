@@ -1,0 +1,20 @@
+state={
+	id=244
+	name="Accomack"
+	history={
+		owner = VAV
+		buildings = {
+			infrastructure = 3
+
+		}
+		add_core_of = VAV
+
+	}
+	provinces={
+		3333 5862 
+	}
+	manpower=52523
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = town
+}

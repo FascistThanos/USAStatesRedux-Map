@@ -1,0 +1,20 @@
+state={
+	id=266
+	name="Mid-Ohio Valley"
+	history={
+		owner = WVW
+		buildings = {
+			infrastructure = 4
+
+		}
+		add_core_of = WVW
+
+	}
+	provinces={
+		2190 2816 5596 5644 5658 
+	}
+	manpower=231470
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = city
+}

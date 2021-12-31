@@ -1,0 +1,20 @@
+state={
+	id=260
+	name="Potomac Highlands"
+	history={
+		owner = WVW
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = WVW
+
+	}
+	provinces={
+		189 3789 5695 5751 
+	}
+	manpower=17421
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = pastoral
+}

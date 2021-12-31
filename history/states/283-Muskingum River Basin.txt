@@ -1,0 +1,20 @@
+state={
+	id=283
+	name="Muskingum River Basin"
+	history={
+		owner = OHO
+		buildings = {
+			infrastructure = 4
+
+		}
+		add_core_of = OHO
+
+	}
+	provinces={
+		2333 3389 4282 5366 5371 5389 5401 5425 
+	}
+	manpower=397651
+	buildings_max_level_factor=1.000
+	local_supplies=5.000
+	state_category = large_city
+}

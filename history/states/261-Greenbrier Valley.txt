@@ -1,0 +1,20 @@
+state={
+	id=261
+	name="Greenbrier Valley"
+	history={
+		owner = WVW
+		buildings = {
+			infrastructure = 3
+
+		}
+		add_core_of = WVW
+
+	}
+	provinces={
+		807 5764 5799 5809 5814 5850 
+	}
+	manpower=52147
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = town
+}

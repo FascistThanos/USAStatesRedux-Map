@@ -11,7 +11,6 @@ characters={
 				do_effect  = { not  = { has_government  = fascism } }
 				ai_will_do  = { factor  = 0.000 }
 		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
 		portraits={ army={ small="GFX_idea_generic_political_advisor_europe_2" } }
 	}
 
@@ -100,7 +99,6 @@ characters={
 				traits  = { army_chief_defensive_2 }
 				ai_will_do  = { factor  = 1.000 }
 		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
 		portraits={ army={ small="GFX_idea_generic_army_europe_5" } }
 	}
 	GEN_ncs={
@@ -112,7 +110,6 @@ characters={
 				traits  = { navy_capital_ship_2 }
 				ai_will_do  = { factor  = 1.000 }
 		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
 		portraits={ army={ small="GFX_idea_generic_navy_europe_2" } }
 	}
 	GEN_nccr={
@@ -122,7 +119,6 @@ characters={
 				traits  = { navy_chief_commerce_raiding_2 }
 				ai_will_do  = { factor  = 1.000 }
 		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
 		portraits={
 			army={ small="GFX_idea_generic_navy_europe_2" } }
 	}
@@ -140,7 +136,6 @@ characters={
 					factor  = 1.000
 				}
 		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
 		portraits={
 			army={
 				small="GFX_idea_generic_army_europe_4"
@@ -162,7 +157,6 @@ characters={
 					factor  = 1.000
 				}
 		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
 		portraits={
 			army={
 				small="GFX_idea_generic_army_europe_3"
@@ -184,7 +178,30 @@ characters={
 					factor  = 1.000
 				}
 		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_1"
+			}
+		}
+	}
+	GEN_infantryguy={
+		advisor={
+			
+			
+			slot = high_command
+			idea_token = GEN_infantryguy
+			ledger = army
+				allowed = {
+					original_tag = LUX
+				}
+				traits = {
+					army_infantry_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
 		portraits={
 			army={
 				small="GFX_idea_generic_army_europe_1"
@@ -206,7 +223,6 @@ characters={
 					factor  = 1.000
 				}
 		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
 		portraits={
 			army={
 				small="GFX_idea_generic_air_europe_2"
@@ -228,7 +244,6 @@ characters={
 					factor  = 1.000
 				}
 		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
 		portraits={
 			army={
 				small="GFX_idea_generic_army_europe_2"
@@ -248,7 +263,6 @@ characters={
 					military_theorist 
 				}
 		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
 		portraits={
 			army={
 				small="GFX_idea_generic_army_europe_2"
@@ -269,7 +283,6 @@ characters={
 					factor  = 1.000
 				}
 		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
 		portraits={
 			army={
 				small="GFX_idea_generic_air_europe_3"
@@ -290,7 +303,6 @@ characters={
 					factor  = 1.000
 				}
 		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
 		portraits={
 			army={
 				small="GFX_idea_generic_air_europe_3"
@@ -309,7 +321,6 @@ characters={
 					air_warfare_theorist 
 				}
 		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
 		portraits={
 			army={
 				small="GFX_idea_generic_air_europe_2"
@@ -330,7 +341,6 @@ characters={
 					factor  = 1.000
 				}
 		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
 		portraits={
 			army={
 				small="GFX_idea_generic_navy_europe_3"
@@ -349,7 +359,6 @@ characters={
 					naval_theorist 
 				}
 		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
 		portraits={
 			army={
 				small="GFX_idea_generic_navy_europe_3"

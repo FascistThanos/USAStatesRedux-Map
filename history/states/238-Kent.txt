@@ -1,14 +1,12 @@
 state={
 	id=238
-	name="Kent"
+	name="Dover"
 	history={
 		owner = DED
 		buildings = {
 			infrastructure = 2
-
 		}
 		add_core_of = DED
-
 	}
 	provinces={
 		5584 

@@ -1,0 +1,20 @@
+state={
+	id=267
+	name="Parkersburg"
+	history={
+		owner = WVW
+		buildings = {
+			infrastructure = 3
+
+		}
+		add_core_of = WVW
+
+	}
+	provinces={
+		10818 10822 10826 10827 10832 
+	}
+	manpower=92082
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = town
+}
