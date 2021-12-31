@@ -1,0 +1,20 @@
+state={
+	id=237
+	name="Wilmington City"
+	history={
+		owner = DED
+		buildings = {
+			infrastructure = 4
+
+		}
+		add_core_of = DED
+
+	}
+	provinces={
+		10849 10851 10861 10862 
+	}
+	manpower=170297
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = city
+}

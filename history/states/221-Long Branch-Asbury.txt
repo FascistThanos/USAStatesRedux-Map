@@ -1,0 +1,20 @@
+state={
+	id=221
+	name="Long Branch-Asbury"
+	history={
+		owner = NJN
+		buildings = {
+			infrastructure = 3
+
+		}
+		add_core_of = NJN
+
+	}
+	provinces={
+		10755 10877 10878 
+	}
+	manpower=54217
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = town
+}

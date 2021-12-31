@@ -1,0 +1,20 @@
+state={
+	id=234
+	name="Greater Pittsburgh"
+	history={
+		owner = PAP
+		buildings = {
+			infrastructure = 4
+
+		}
+		add_core_of = PAP
+
+	}
+	provinces={
+		1146 2227 2494 
+	}
+	manpower=354120
+	buildings_max_level_factor=1.000
+	local_supplies=5.000
+	state_category = large_city
+}

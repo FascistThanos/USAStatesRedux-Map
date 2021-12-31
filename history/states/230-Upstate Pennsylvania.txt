@@ -1,0 +1,20 @@
+state={
+	id=230
+	name="Upstate Pennsylvania"
+	history={
+		owner = PAP
+		buildings = {
+			infrastructure = 3
+
+		}
+		add_core_of = PAP
+
+	}
+	provinces={
+		1944 3211 5226 5266 5302 5307 5339 
+	}
+	manpower=53684
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = town
+}

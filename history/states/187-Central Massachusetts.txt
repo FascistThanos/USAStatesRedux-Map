@@ -1,6 +1,6 @@
 state={
 	id=187
-	name="STATE_187"
+	name="Central Massachusetts"
 	history={
 		owner = MAM
 		buildings = {

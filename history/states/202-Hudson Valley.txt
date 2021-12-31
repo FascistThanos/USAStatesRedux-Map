@@ -1,19 +1,23 @@
+
 state={
 	id=202
 	name="Hudson Valley"
+
 	history={
 		owner = NYN
 		buildings = {
-			infrastructure = 1
+			infrastructure = 4
+
 		}
 		add_core_of = NYN
+
 	}
+
 	provinces={
-		2483 2836 5217 10927 10937 10944 10953 10984 10988 
+		2483 2836 5217 10937 10944 10953 10984 10988 
 	}
-	manpower=1
+	manpower=153711
 	buildings_max_level_factor=1.000
-	
-	state_category = wasteland
-	local_supplies=1.000
+	state_category=city
+	local_supplies=5.000
 }

@@ -1,0 +1,20 @@
+state={
+	id=212
+	name="Central New York"
+	history={
+		owner = NYN
+		buildings = {
+			infrastructure = 3
+
+		}
+		add_core_of = NYN
+
+	}
+	provinces={
+		3309 5048 5088 5135 10245 
+	}
+	manpower=51247
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = town
+}

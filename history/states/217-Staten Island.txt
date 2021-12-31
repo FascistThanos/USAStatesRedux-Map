@@ -1,0 +1,20 @@
+state={
+	id=217
+	name="Staten Island"
+	history={
+		owner = NYN
+		buildings = {
+			infrastructure = 4
+
+		}
+		add_core_of = NYN
+
+	}
+	provinces={
+		8143 
+	}
+	manpower=166394
+	buildings_max_level_factor=1.000
+	local_supplies=5.000
+	state_category = city
+}

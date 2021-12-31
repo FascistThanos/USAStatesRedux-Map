@@ -1,0 +1,21 @@
+state={
+	id=214
+	name="Finger Lakes"
+	history={
+		owner = NYN
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = NYN
+
+	}
+
+	provinces={
+		52 398 1694 5083 5175 5195 10246 10247 10248 10249 
+	}
+	manpower=25847
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = rural
+}

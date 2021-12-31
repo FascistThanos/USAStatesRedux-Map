@@ -1,0 +1,20 @@
+state={
+	id=219
+	name="Skylands"
+	history={
+		owner = NJN
+		buildings = {
+			infrastructure = 4
+
+		}
+		add_core_of = NJN
+
+	}
+	provinces={
+		3583 3984 5393 
+	}
+	manpower=694125
+	buildings_max_level_factor=1.000
+	local_supplies=10.000
+	state_category = metropolis
+}

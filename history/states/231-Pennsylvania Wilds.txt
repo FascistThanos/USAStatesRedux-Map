@@ -1,0 +1,20 @@
+state={
+	id=231
+	name="Pennsylvania Wilds"
+	history={
+		owner = PAP
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = PAP
+
+	}
+	provinces={
+		802 1159 1836 2689 5234 5280 5292 
+	}
+	manpower=19854
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = pastoral
+}

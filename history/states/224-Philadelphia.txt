@@ -1,0 +1,20 @@
+state={
+	id=224
+	name="Philadelphia"
+	history={
+		owner = PAP
+		buildings = {
+			infrastructure = 5
+
+		}
+		add_core_of = PAP
+
+	}
+	provinces={
+		5479 10869 10874 10876 10879 10881 
+	}
+	manpower=3128693
+	buildings_max_level_factor=1.000
+	local_supplies=15.000
+	state_category = megalopolis
+}

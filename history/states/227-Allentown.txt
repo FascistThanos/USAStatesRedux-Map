@@ -1,0 +1,20 @@
+state={
+	id=227
+	name="Allentown"
+	history={
+		owner = PAP
+		buildings = {
+			infrastructure = 4
+
+		}
+		add_core_of = PAP
+
+	}
+	provinces={
+		10714 10910 10924 10925 10926 11452 
+	}
+	manpower=396673
+	buildings_max_level_factor=1.000
+	local_supplies=5.000
+	state_category = large_city
+}

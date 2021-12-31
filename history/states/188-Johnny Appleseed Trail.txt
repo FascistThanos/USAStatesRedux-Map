@@ -1,6 +1,6 @@
 state={
 	id=188
-	name="STATE_188"
+	name="Johnny Appleseed Trail"
 	history={
 		owner = MAM
 		buildings = {

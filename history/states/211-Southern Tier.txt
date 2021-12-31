@@ -1,0 +1,20 @@
+state={
+	id=211
+	name="Southern Tier"
+	history={
+		owner = NYN
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = NYN
+
+	}
+	provinces={
+		580 3541 4122 4165 5100 5205 
+	}
+	manpower=15510
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = pastoral
+}

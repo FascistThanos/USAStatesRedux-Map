@@ -1,0 +1,21 @@
+state={
+	id=215
+	name="Rochester"
+	history={
+		owner = NYN
+		buildings = {
+			infrastructure = 4
+
+		}
+		add_core_of = NYN
+
+	}
+
+	provinces={
+		11091 11092 11097 11101 11107 11108 11111 11113 
+	}
+	manpower=326554
+	buildings_max_level_factor=1.000
+	local_supplies=7.000
+	state_category = large_city
+}

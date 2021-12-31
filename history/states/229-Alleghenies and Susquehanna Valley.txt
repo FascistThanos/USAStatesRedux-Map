@@ -1,0 +1,20 @@
+state={
+	id=229
+	name="Alleghenies & Susquehanna Valley"
+	history={
+		owner = PAP
+		buildings = {
+			infrastructure = 3
+
+		}
+		add_core_of = PAP
+
+	}
+	provinces={
+		1676 1704 1961 2933 3184 3733 4107 5336 5359 5375 5429 5487 
+	}
+	manpower=106215
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = large_town
+}

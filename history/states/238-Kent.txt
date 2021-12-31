@@ -1,0 +1,20 @@
+state={
+	id=238
+	name="Kent"
+	history={
+		owner = DED
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = DED
+
+	}
+	provinces={
+		5584 
+	}
+	manpower=43215
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = rural
+}
