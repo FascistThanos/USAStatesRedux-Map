@@ -1,7 +1,7 @@
 
 state={
-	id=40
-	name="South Florida"
+	id=436
+	name="Treasure Coast"
 
 	history={
 		owner = FLF
@@ -14,10 +14,10 @@ state={
 	}
 
 	provinces={
-		3094 4362 7219 7241 7259 7261 10453 
+		26 1550 2216 7104 7124 7131 7145 7151 10294 
 	}
 	manpower=1
 	buildings_max_level_factor=1.000
 	state_category=wasteland
-	local_supplies=1.000
+	local_supplies=0.000
 }

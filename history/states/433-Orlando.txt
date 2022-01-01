@@ -1,8 +1,6 @@
-
 state={
-	id=40
-	name="South Florida"
-
+	id=433
+	name="Orlando"
 	history={
 		owner = FLF
 		buildings = {
@@ -12,12 +10,11 @@ state={
 		add_core_of = FLF
 
 	}
-
 	provinces={
-		3094 4362 7219 7241 7259 7261 10453 
+		4160 10291 10451 10454 10455 11378 
 	}
 	manpower=1
 	buildings_max_level_factor=1.000
-	state_category=wasteland
-	local_supplies=1.000
+	local_supplies=0.000
+	state_category = wasteland
 }
