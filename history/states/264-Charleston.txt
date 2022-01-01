@@ -1,6 +1,6 @@
 state={
 	id=264
-	name="Charleston"
+	name="Charleston_WV"
 	history={
 		owner = WVW
 		buildings = {

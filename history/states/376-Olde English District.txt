@@ -1,0 +1,20 @@
+state={
+	id=376
+	name="Olde English District"
+	history={
+		owner = SCS
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = SCS
+
+	}
+	provinces={
+		507 3012 6246 6298 6321 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}

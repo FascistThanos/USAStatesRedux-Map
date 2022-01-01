@@ -1,0 +1,20 @@
+state={
+	id=377
+	name="Columbia"
+	history={
+		owner = SCS
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = SCS
+
+	}
+	provinces={
+		6376 10623 10624 10626 10633 10635 10636 10641 11412 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}
