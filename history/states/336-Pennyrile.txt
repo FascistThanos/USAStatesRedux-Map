@@ -1,7 +1,7 @@
 
 state={
-	id=33
-	name="Kentucky"
+	id=336
+	name="Pennyrile"
 
 	history={
 		owner = KYK
@@ -14,10 +14,10 @@ state={
 	}
 
 	provinces={
-		362 2444 3712 3818 5643 5685 5686 5727 5777 5808 5823 5857 5895 
+		480 770 2000 5849 5893 10532 
 	}
 	manpower=1
 	buildings_max_level_factor=1.000
 	state_category=wasteland
-	local_supplies=1.000
+	local_supplies=0.000
 }
