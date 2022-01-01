@@ -1,0 +1,20 @@
+state={
+	id=315
+	name="Manitawoc"
+	history={
+		owner = WIW
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = WIW
+
+	}
+	provinces={
+		1815 3023 3745 4200 11176 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}

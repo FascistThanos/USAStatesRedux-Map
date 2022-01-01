@@ -1,0 +1,20 @@
+state={
+	id=316
+	name="Green Bay"
+	history={
+		owner = WIW
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = WIW
+
+	}
+	provinces={
+		10503 11174 11175 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}

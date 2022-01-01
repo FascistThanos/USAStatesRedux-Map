@@ -1,0 +1,20 @@
+state={
+	id=313
+	name="Grant-Lafayette"
+	history={
+		owner = WIW
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = WIW
+
+	}
+	provinces={
+		5098 5127 5152 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}
