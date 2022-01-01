@@ -1,8 +1,6 @@
-
 state={
-	id=32
-	name="Southern Indiana"
-
+	id=292
+	name="Bluffton Till Plain"
 	history={
 		owner = INI
 		buildings = {
@@ -12,12 +10,11 @@ state={
 		add_core_of = INI
 
 	}
-
 	provinces={
-		1438 2188 3772 3918 5632 5730 5740 5741 
+		1119 2001 3617 3719 5441 5469 5523 5582 
 	}
 	manpower=1
 	buildings_max_level_factor=1.000
-	state_category=wasteland
-	local_supplies=1.000
+	local_supplies=0.000
+	state_category = wasteland
 }
