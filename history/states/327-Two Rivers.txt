@@ -1,0 +1,20 @@
+state={
+	id=327
+	name="Two Rivers"
+	history={
+		owner = ILI
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = ILI
+
+	}
+	provinces={
+		1831 3833 3892 4258 5422 5452 5462 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}

@@ -1,0 +1,20 @@
+state={
+	id=325
+	name="Blackhawk"
+	history={
+		owner = ILI
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = ILI
+
+	}
+	provinces={
+		71 1391 4206 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}

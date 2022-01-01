@@ -1,0 +1,18 @@
+state={
+	id=321
+	name="Chicago"
+	history={
+		owner = ILI
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = ILI
+	}
+	provinces={
+		5248 10461 10473 10501 10508 10780 10782 10966 10972 10990 10991 11007 11010 11028 11043 11459 11498 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}

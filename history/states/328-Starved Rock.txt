@@ -1,0 +1,20 @@
+state={
+	id=328
+	name="Starved Rock"
+	history={
+		owner = ILI
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = ILI
+
+	}
+	provinces={
+		60 1636 2726 4211 5364 5395 5412 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}
