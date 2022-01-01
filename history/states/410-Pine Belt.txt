@@ -1,0 +1,20 @@
+state={
+	id=410
+	name="Pine Belt"
+	history={
+		owner = MSM
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = MSM
+
+	}
+	provinces={
+		2186 2659 2764 3158 3713 6658 6659 6700 6729 6753 10518 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}

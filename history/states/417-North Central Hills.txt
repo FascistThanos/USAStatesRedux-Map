@@ -1,0 +1,20 @@
+state={
+	id=417
+	name="North Central Hills"
+	history={
+		owner = MSM
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = MSM
+
+	}
+	provinces={
+		1021 2849 2875 3051 3284 3767 4113 6235 6283 6323 6331 6365 6385 6433 6444 6475 6520 6558 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}
