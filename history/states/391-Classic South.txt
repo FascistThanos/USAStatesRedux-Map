@@ -1,0 +1,23 @@
+
+state={
+	id=391
+	name="Classic South"
+
+	history={
+		owner = GAG
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = GAG
+
+	}
+
+	provinces={
+		1401 1838 2791 4102 6418 6424 6452 6468 6500 10274 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=0.000
+}

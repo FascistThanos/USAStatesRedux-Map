@@ -1,0 +1,23 @@
+
+state={
+	id=385
+	name="Northeast Georgia Mountains"
+
+	history={
+		owner = GAG
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = GAG
+
+	}
+
+	provinces={
+		617 1354 1986 2775 3174 6278 6334 6349 10271 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=0.000
+}
