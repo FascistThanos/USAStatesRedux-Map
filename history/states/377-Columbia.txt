@@ -1,6 +1,6 @@
 state={
 	id=377
-	name="Columbia"
+	name="Columbia_SC"
 	history={
 		owner = SCS
 		buildings = {

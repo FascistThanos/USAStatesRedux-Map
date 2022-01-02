@@ -1,7 +1,7 @@
 
 state={
-	id=45
-	name="North Platte"
+	id=462
+	name="St. Louis"
 
 	history={
 		owner = MOM
@@ -14,10 +14,10 @@ state={
 	}
 
 	provinces={
-		1708 2459 2815 3750 3835 3958 5400 5407 5411 5432 5466 5520 5558 
+		5664 10789 10795 10796 10804 11439 11441 
 	}
 	manpower=1
 	buildings_max_level_factor=1.000
 	state_category=wasteland
-	local_supplies=1.000
+	local_supplies=0.000
 }

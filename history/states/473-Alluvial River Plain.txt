@@ -1,8 +1,6 @@
-
 state={
-	id=45
-	name="North Platte"
-
+	id=473
+	name="Alluvial River Plain"
 	history={
 		owner = MOM
 		buildings = {
@@ -12,12 +10,11 @@ state={
 		add_core_of = MOM
 
 	}
-
 	provinces={
-		1708 2459 2815 3750 3835 3958 5400 5407 5411 5432 5466 5520 5558 
+		1140 1940 2373 2560 2977 3220 5492 5581 5613 5630 5638 5653 
 	}
 	manpower=1
 	buildings_max_level_factor=1.000
-	state_category=wasteland
-	local_supplies=1.000
+	local_supplies=0.000
+	state_category = wasteland
 }
