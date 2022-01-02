@@ -1,0 +1,20 @@
+state={
+	id=482
+	name="Black Hawk"
+	history={
+		owner = IAI
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = IAI
+
+	}
+	provinces={
+		599 1633 2126 2698 5140 5185 5214 5224 5241 5249 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}

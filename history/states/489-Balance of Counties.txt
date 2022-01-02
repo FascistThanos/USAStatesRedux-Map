@@ -1,0 +1,23 @@
+
+state={
+	id=489
+	name="Balance of Counties"
+
+	history={
+		owner = IAI
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = IAI
+
+	}
+
+	provinces={
+		809 1913 5276 5287 5291 5322 5348 5370 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=0.000
+}

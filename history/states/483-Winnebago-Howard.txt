@@ -1,0 +1,20 @@
+state={
+	id=483
+	name="Winnebago-Howard"
+	history={
+		owner = IAI
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = IAI
+
+	}
+	provinces={
+		935 1712 1953 5056 5067 5082 5097 5119 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}
