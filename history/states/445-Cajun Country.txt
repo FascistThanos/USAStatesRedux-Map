@@ -1,8 +1,6 @@
-
 state={
-	id=47
-	name="Sportsman's Paradise"
-
+	id=445
+	name="Cajun Country"
 	history={
 		owner = LAL
 		buildings = {
@@ -12,12 +10,11 @@ state={
 		add_core_of = LAL
 
 	}
-
 	provinces={
-		2092 2127 2957 3482 3605 3630 3932 6531 6607 6617 6637 6653 8156 
+		1044 2937 4238 6877 6896 6912 6952 6953 6983 
 	}
 	manpower=1
 	buildings_max_level_factor=1.000
-	state_category=wasteland
-	local_supplies=1.000
+	local_supplies=0.000
+	state_category = wasteland
 }
