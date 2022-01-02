@@ -1,0 +1,20 @@
+state={
+	id=453
+	name="Ouachitas"
+	history={
+		owner = ARA
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = ARA
+
+	}
+	provinces={
+		2207 2247 2395 3221 3825 4007 6153 6181 6214 6243 6258 6273 6322 6330 6370 6371 6416 11415 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}
