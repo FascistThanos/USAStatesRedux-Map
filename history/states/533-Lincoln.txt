@@ -1,0 +1,20 @@
+state={
+	id=533
+	name="Lincoln"
+	history={
+		owner = NEN
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = NEN
+
+	}
+	provinces={
+		10917 10918 11534 11562 11563 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}
