@@ -1,0 +1,20 @@
+state={
+	id=432
+	name="Tampa Bay"
+	history={
+		owner = FLF
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = FLF
+
+	}
+	provinces={
+		2132 2948 7073 7092 10442 10443 10446 10447 11376 11377 11508 11509 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}

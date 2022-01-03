@@ -1,0 +1,20 @@
+state={
+	id=418
+	name="Southaven"
+	history={
+		owner = MSM
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = MSM
+
+	}
+	provinces={
+		10646 11414 11526 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}

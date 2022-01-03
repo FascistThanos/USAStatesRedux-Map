@@ -1,0 +1,20 @@
+state={
+	id=409
+	name="Choctaw"
+	history={
+		owner = ALA
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = ALA
+
+	}
+	provinces={
+		1590 3621 4261 6633 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}

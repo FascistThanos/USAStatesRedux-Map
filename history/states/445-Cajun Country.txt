@@ -1,0 +1,20 @@
+state={
+	id=445
+	name="Cajun Country"
+	history={
+		owner = LAL
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = LAL
+
+	}
+	provinces={
+		1044 2937 4238 6877 6896 6912 6952 6953 6983 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}

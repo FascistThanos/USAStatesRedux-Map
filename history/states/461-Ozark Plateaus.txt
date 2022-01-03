@@ -1,0 +1,20 @@
+state={
+	id=461
+	name="Ozark Plateaus"
+	history={
+		owner = ARA
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = ARA
+
+	}
+	provinces={
+		1819 2403 2516 2706 4141 5986 6005 6063 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}

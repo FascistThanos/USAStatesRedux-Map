@@ -1,0 +1,20 @@
+state={
+	id=384
+	name="North Atlanta Metro"
+	history={
+		owner = GAG
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = GAG
+
+	}
+	provinces={
+		2650 10627 10632 10637 11410 11411 11413 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}

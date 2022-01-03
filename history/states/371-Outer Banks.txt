@@ -1,0 +1,20 @@
+state={
+	id=371
+	name="Outer Banks"
+	history={
+		owner = NCN
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = NCN
+
+	}
+	provinces={
+		2585 3275 3381 3629 6008 6049 6086 6114 6142 6149 8144 8145 8146 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}

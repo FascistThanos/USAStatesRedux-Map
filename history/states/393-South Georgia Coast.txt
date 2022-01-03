@@ -1,0 +1,20 @@
+state={
+	id=393
+	name="South Georgia Coast"
+	history={
+		owner = GAG
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = GAG
+
+	}
+	provinces={
+		2168 2197 3114 6730 6755 6769 6797 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}

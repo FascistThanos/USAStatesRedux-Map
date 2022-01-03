@@ -1,0 +1,20 @@
+state={
+	id=450
+	name="Alexandria"
+	history={
+		owner = LAL
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = LAL
+
+	}
+	provinces={
+		664 2496 3239 3722 6696 6735 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}

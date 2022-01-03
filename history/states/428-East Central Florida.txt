@@ -1,0 +1,20 @@
+state={
+	id=428
+	name="East Central Florida"
+	history={
+		owner = FLF
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = FLF
+
+	}
+	provinces={
+		2869 6917 6968 10289 10484 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}

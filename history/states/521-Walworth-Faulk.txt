@@ -1,0 +1,20 @@
+state={
+	id=521
+	name="Walworth-Faulk"
+	history={
+		owner = SDS
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = SDS
+
+	}
+	provinces={
+		1082 1803 1918 2339 2614 4339 4842 4860 4881 4882 4966 10219 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}

@@ -1,0 +1,20 @@
+state={
+	id=443
+	name="Lafourche"
+	history={
+		owner = LAL
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = LAL
+
+	}
+	provinces={
+		2540 2583 2731 6897 8158 8159 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}

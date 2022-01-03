@@ -1,6 +1,6 @@
 state={
 	id=215
-	name="Rochester"
+	name="Rochester_NY"
 	history={
 		owner = NYN
 		buildings = {

@@ -1,0 +1,20 @@
+state={
+	id=368
+	name="Raleigh"
+	history={
+		owner = NCN
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = NCN
+
+	}
+	provinces={
+		10677 10678 10679 10682 10684 10685 10687 10688 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}

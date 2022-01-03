@@ -1,0 +1,20 @@
+state={
+	id=529
+	name="Prairie Lakes"
+	history={
+		owner = NEN
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = NEN
+
+	}
+	provinces={
+		405 2623 2753 2784 3780 4264 5347 5376 5387 5431 5447 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}

@@ -1,6 +1,6 @@
 state={
 	id=272
-	name="Columbus"
+	name="Columbus_OH"
 	history={
 		owner = OHO
 		buildings = {

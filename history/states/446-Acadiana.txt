@@ -1,0 +1,20 @@
+state={
+	id=446
+	name="Acadiana"
+	history={
+		owner = LAL
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = LAL
+
+	}
+	provinces={
+		972 1598 3077 3522 3702 3734 3792 4053 6808 6819 6859 6882 6890 6916 6924 6929 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}

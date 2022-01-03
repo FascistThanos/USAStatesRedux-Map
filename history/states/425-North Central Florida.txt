@@ -1,0 +1,20 @@
+state={
+	id=425
+	name="North Central Florida"
+	history={
+		owner = FLF
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = FLF
+
+	}
+	provinces={
+		4136 6855 6861 6883 6904 6921 6956 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}

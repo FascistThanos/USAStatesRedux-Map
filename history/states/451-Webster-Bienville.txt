@@ -1,0 +1,20 @@
+state={
+	id=451
+	name="Webster-Bienville"
+	history={
+		owner = LAL
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = LAL
+
+	}
+	provinces={
+		1211 2027 6557 6616 6632 6670 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}

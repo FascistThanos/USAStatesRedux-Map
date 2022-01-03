@@ -1,0 +1,20 @@
+state={
+	id=531
+	name="Republican Valley"
+	history={
+		owner = NEN
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = NEN
+
+	}
+	provinces={
+		59 906 3047 3552 3731 5390 5405 5406 5440 5450 5461 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}

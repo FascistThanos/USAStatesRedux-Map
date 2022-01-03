@@ -1,0 +1,20 @@
+state={
+	id=535
+	name="Loess Hills Region"
+	history={
+		owner = NEN
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = NEN
+
+	}
+	provinces={
+		206 738 2365 3830 5296 5326 5369 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}

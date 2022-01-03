@@ -1,0 +1,20 @@
+state={
+	id=387
+	name="Historic Heartland"
+	history={
+		owner = GAG
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = GAG
+
+	}
+	provinces={
+		495 974 1900 4061 6423 6431 6461 6479 6523 6594 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}

@@ -1,0 +1,20 @@
+state={
+	id=500
+	name="Duluth"
+	history={
+		owner = MNM
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = MNM
+
+	}
+	provinces={
+		10604 11242 11243 11248 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}

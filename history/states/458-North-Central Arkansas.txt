@@ -1,0 +1,20 @@
+state={
+	id=458
+	name="North-Central Arkansas"
+	history={
+		owner = ARA
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = ARA
+
+	}
+	provinces={
+		322 1023 2463 3282 3486 3627 4251 4296 6030 6098 6109 6127 6154 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}

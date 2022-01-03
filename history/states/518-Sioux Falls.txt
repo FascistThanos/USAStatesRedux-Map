@@ -1,0 +1,20 @@
+state={
+	id=518
+	name="Sioux Falls"
+	history={
+		owner = SDS
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = SDS
+
+	}
+	provinces={
+		11131 11139 11148 11473 11474 11477 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}

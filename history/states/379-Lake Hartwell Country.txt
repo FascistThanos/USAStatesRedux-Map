@@ -1,0 +1,20 @@
+state={
+	id=379
+	name="Lake Hartwell Country"
+	history={
+		owner = SCS
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = SCS
+
+	}
+	provinces={
+		3847 4311 6274 10270 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}

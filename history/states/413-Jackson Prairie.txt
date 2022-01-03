@@ -1,0 +1,20 @@
+state={
+	id=413
+	name="Jackson Prarie"
+	history={
+		owner = MSM
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = MSM
+
+	}
+	provinces={
+		2923 3393 6592 6638 6654 6687 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}

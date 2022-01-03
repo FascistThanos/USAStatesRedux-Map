@@ -1,0 +1,20 @@
+state={
+	id=513
+	name="Roosevelt-Custer"
+	history={
+		owner = NDN
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = NDN
+
+	}
+	provinces={
+		1221 1324 3437 3741 4722 4731 4827 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}
