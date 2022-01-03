@@ -4,7 +4,7 @@ state={
 	history={
 		owner = INI
 		buildings = {
-			infrastructure = 1
+			infrastructure = 3
 
 		}
 		add_core_of = INI
@@ -14,8 +14,8 @@ state={
 	provinces={
 		10930 10932 10933 10935 10940 
 	}
-	manpower=1
+	manpower=300743	
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
-	state_category = wasteland
+	state_category = City
 }

@@ -4,7 +4,7 @@ state={
 	history={
 		owner = ILI
 		buildings = {
-			infrastructure = 1
+			infrastructure = 3
 
 		}
 		add_core_of = ILI
@@ -13,8 +13,8 @@ state={
 	provinces={
 		1891 1978 2979 5527 5563 5589 5671 
 	}
-	manpower=1
+	manpower=141232
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
-	state_category = wasteland
+	state_category =Large_Town
 }

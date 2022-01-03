@@ -6,8 +6,7 @@ state={
 	history={
 		owner = MIM
 		buildings = {
-			infrastructure = 1
-
+			infrastructure = 4
 		}
 		add_core_of = MIM
 
@@ -16,8 +15,8 @@ state={
 	provinces={
 		366 1029 1546 1761 2400 2848 2891 2910 2946 4911 4940 4999 
 	}
-	manpower=1
+	manpower=206359
 	buildings_max_level_factor=1.000
-	state_category=wasteland
+	state_category=Town
 	local_supplies=1.000
 }

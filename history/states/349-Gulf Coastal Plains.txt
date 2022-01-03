@@ -6,7 +6,7 @@ state={
 	history={
 		owner = TNT
 		buildings = {
-			infrastructure = 1
+			infrastructure = 4
 
 		}
 		add_core_of = TNT
@@ -16,8 +16,8 @@ state={
 	provinces={
 		1440 1834 2741 2965 5998 6036 6042 6058 6079 6080 6106 10279 
 	}
-	manpower=1
+	manpower=301231
 	buildings_max_level_factor=1.000
-	state_category=wasteland
-	local_supplies=0.000
+	state_category=Large_City
+	local_supplies=5.000
 }

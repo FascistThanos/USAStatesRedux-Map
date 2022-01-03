@@ -1,10 +1,10 @@
 state={
 	id=294
-	name="Indianapolis"
+	name="Marion"
 	history={
 		owner = INI
 		buildings = {
-			infrastructure = 1
+			infrastructure = 5
 
 		}
 		add_core_of = INI
@@ -14,8 +14,8 @@ state={
 	provinces={
 		10485 10487 10841 10847 10852 10858 11447 
 	}
-	manpower=1
+	manpower=736000
 	buildings_max_level_factor=1.000
-	local_supplies=0.000
-	state_category = wasteland
+	local_supplies=10.000
+	state_category = Metropolis
 }

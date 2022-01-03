@@ -4,7 +4,7 @@ state={
 	history={
 		owner = WIW
 		buildings = {
-			infrastructure = 1
+			infrastructure = 3
 
 		}
 		add_core_of = WIW
@@ -13,8 +13,8 @@ state={
 	provinces={
 		359 2406 2671 4043 4297 4866 4875 4907 4945 4952 4973 
 	}
-	manpower=1
+	manpower=100641
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
-	state_category = wasteland
+	state_category = Town
 }

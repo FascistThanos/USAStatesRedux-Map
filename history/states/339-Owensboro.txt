@@ -4,15 +4,15 @@ state={
 	history={
 		owner = KYK
 		buildings = {
-			infrastructure = 1
+			infrastructure = 2
 		}
 		add_core_of = KYK
 	}
 	provinces={
 		10742 10743 10749 10750 10751 
 	}
-	manpower=1
+	manpower=100377
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
-	state_category = wasteland
+	state_category = Rural
 }

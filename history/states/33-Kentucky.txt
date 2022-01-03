@@ -1,12 +1,12 @@
 
 state={
 	id=33
-	name="Kentucky"
+	name="Big Sandy Basin"
 
 	history={
 		owner = KYK
 		buildings = {
-			infrastructure = 1
+			infrastructure = 4
 
 		}
 		add_core_of = KYK
@@ -16,8 +16,8 @@ state={
 	provinces={
 		362 2444 3712 3818 5643 5685 5686 5727 5777 5808 5823 5857 5895 
 	}
-	manpower=1
+	manpower=167421
 	buildings_max_level_factor=1.000
-	state_category=wasteland
+	state_category=City 
 	local_supplies=1.000
 }

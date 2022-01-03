@@ -5,14 +5,14 @@ state={
 		owner = MIM
 		add_core_of = MIM
 		buildings = {
-			infrastructure = 1
+			infrastructure = 3
 		}
 	}
 	provinces={
 		699 971 1924 2206 4959 5002 5025 
 	}
-	manpower=1
+	manpower=206359
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
-	state_category = wasteland
+	state_category = Town
 }
