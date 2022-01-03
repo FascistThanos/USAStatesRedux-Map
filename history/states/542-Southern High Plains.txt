@@ -1,0 +1,20 @@
+state={
+	id=542
+	name="Southern High Plains"
+	history={
+		owner = KSK
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = KSK
+
+	}
+	provinces={
+		1883 2305 5796 5804 5820 5840 5845 5854 5860 5870 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}

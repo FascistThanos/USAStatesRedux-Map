@@ -1,0 +1,20 @@
+state={
+	id=547
+	name="Northern High Plains"
+	history={
+		owner = KSK
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = KSK
+
+	}
+	provinces={
+		877 1642 1777 2071 2503 3081 3439 3540 4301 4313 5471 5500 5506 5542 5566 5591 5606 5652 5689 5728 5755 5769 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}

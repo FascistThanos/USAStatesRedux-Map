@@ -1,0 +1,20 @@
+state={
+	id=540
+	name="Glaciated Region"
+	history={
+		owner = KSK
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = KSK
+
+	}
+	provinces={
+		324 709 1227 2990 3033 3253 3286 3979 5472 5478 5481 5491 5501 5519 5538 5544 5567 5580 10523 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}

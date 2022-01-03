@@ -1,0 +1,20 @@
+state={
+	id=550
+	name="Flint Hills Uplands"
+	history={
+		owner = KSK
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = KSK
+
+	}
+	provinces={
+		644 1272 1634 2152 4356 5612 5637 5669 5683 5700 5738 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}

@@ -1,0 +1,20 @@
+state={
+	id=551
+	name="Arkansas River Lowlands"
+	history={
+		owner = KSK
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = KSK
+
+	}
+	provinces={
+		142 929 1313 2039 4283 5749 5806 5841 5846 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}
