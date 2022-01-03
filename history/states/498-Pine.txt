@@ -4,7 +4,7 @@ state={
 	history={
 		owner = MNM
 		buildings = {
-			infrastructure = 1
+			infrastructure = 4
 
 		}
 		add_core_of = MNM
@@ -13,8 +13,8 @@ state={
 	provinces={
 		806 2955 3000 4843 10221 
 	}
-	manpower=1
+	manpower=155211
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
-	state_category = wasteland
+	state_category = City
 }

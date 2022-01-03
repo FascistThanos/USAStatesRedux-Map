@@ -4,7 +4,7 @@ state={
 	history={
 		owner = MOM
 		buildings = {
-			infrastructure = 1
+			infrastructure = 3
 
 		}
 		add_core_of = MOM
@@ -13,8 +13,8 @@ state={
 	provinces={
 		1467 2625 3011 3372 3449 4312 5876 
 	}
-	manpower=1
+	manpower=138512
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
-	state_category = wasteland
+	state_category = Large_Town
 }

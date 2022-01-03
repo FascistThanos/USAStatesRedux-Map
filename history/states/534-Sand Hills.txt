@@ -4,7 +4,7 @@ state={
 	history={
 		owner = NEN
 		buildings = {
-			infrastructure = 1
+			infrastructure = 3
 
 		}
 		add_core_of = NEN
@@ -13,8 +13,8 @@ state={
 	provinces={
 		657 1941 2049 2887 2938 2963 3005 3206 3380 3689 4164 5118 5139 5157 5161 5209 5236 5239 5252 5285 5299 5321 
 	}
-	manpower=1
+	manpower=108123
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
-	state_category = wasteland
+	state_category = Large_Town
 }

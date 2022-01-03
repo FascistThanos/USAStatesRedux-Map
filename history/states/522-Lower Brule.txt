@@ -4,7 +4,7 @@ state={
 	history={
 		owner = SDS
 		buildings = {
-			infrastructure = 1
+			infrastructure = 2
 
 		}
 		add_core_of = SDS
@@ -13,8 +13,8 @@ state={
 	provinces={
 		1198 1881 2471 2921 3865 4989 5019 5054 5072 5090 
 	}
-	manpower=1
+	manpower=42341
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
-	state_category = wasteland
+	state_category = Rural
 }
