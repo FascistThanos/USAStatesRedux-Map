@@ -1,0 +1,20 @@
+state={
+	id=494
+	name="STATE_494"
+	history={
+		owner = MNM
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = MNM
+
+	}
+	provinces={
+		144 1925 2008 3208 4980 5009 5016 5038 5041 5042 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}
