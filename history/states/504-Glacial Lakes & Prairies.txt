@@ -1,0 +1,20 @@
+state={
+	id=504
+	name="Glacial Lakes & Prairies"
+	history={
+		owner = NDN
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = NDN
+
+	}
+	provinces={
+		133 532 705 1246 1852 2733 4673 4698 4706 4709 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}

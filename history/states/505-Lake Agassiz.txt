@@ -1,0 +1,20 @@
+state={
+	id=505
+	name="Lake Agassiz"
+	history={
+		owner = NDN
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = NDN
+
+	}
+	provinces={
+		751 1325 1746 1850 2811 3963 4785 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}

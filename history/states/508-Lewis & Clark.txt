@@ -1,0 +1,20 @@
+state={
+	id=508
+	name="Lewis & Clark"
+	history={
+		owner = NDN
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = NDN
+
+	}
+	provinces={
+		687 728 1132 2961 4735 4756 4758 4781 4817 4829 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}
