@@ -1,8 +1,6 @@
-
 state={
-	id=52
-	name="Butte"
-
+	id=520
+	name="Missouri River Valley"
 	history={
 		owner = SDS
 		buildings = {
@@ -12,12 +10,11 @@ state={
 		add_core_of = SDS
 
 	}
-
 	provinces={
-		202 2592 2631 2725 3262 3464 4095 4325 4909 
+		883 1491 2041 2929 4947 5012 5061 5076 5093 10238 
 	}
 	manpower=1
 	buildings_max_level_factor=1.000
-	state_category=wasteland
-	local_supplies=1.000
+	local_supplies=0.000
+	state_category = wasteland
 }

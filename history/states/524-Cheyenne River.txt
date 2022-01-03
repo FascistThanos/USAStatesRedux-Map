@@ -1,8 +1,6 @@
-
 state={
-	id=52
-	name="Butte"
-
+	id=524
+	name="Cheyenne River"
 	history={
 		owner = SDS
 		buildings = {
@@ -12,12 +10,11 @@ state={
 		add_core_of = SDS
 
 	}
-
 	provinces={
-		202 2592 2631 2725 3262 3464 4095 4325 4909 
+		237 388 561 836 2536 3065 3412 4890 4906 4941 
 	}
 	manpower=1
 	buildings_max_level_factor=1.000
-	state_category=wasteland
-	local_supplies=1.000
+	local_supplies=0.000
+	state_category = wasteland
 }
