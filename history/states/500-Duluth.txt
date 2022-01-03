@@ -1,6 +1,6 @@
 state={
 	id=500
-	name="STATE_500"
+	name="Duluth"
 	history={
 		owner = MNM
 		buildings = {

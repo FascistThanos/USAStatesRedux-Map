@@ -1,6 +1,6 @@
 state={
 	id=499
-	name="STATE_499"
+	name="Head of the Lakes"
 	history={
 		owner = MNM
 		buildings = {

@@ -1,7 +1,6 @@
-
 state={
 	id=503
-	name="STATE_503"
+	name="Forest and Mining District"
 
 	history={
 		owner = MNM

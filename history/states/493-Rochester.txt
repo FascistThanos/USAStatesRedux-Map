@@ -1,6 +1,6 @@
 state={
 	id=493
-	name="STATE_493"
+	name="Rochester_MN"
 	history={
 		owner = MNM
 		buildings = {

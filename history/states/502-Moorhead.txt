@@ -1,6 +1,6 @@
 state={
 	id=502
-	name="STATE_502"
+	name="Moorhead"
 	history={
 		owner = MNM
 		buildings = {

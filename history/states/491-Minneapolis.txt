@@ -1,6 +1,6 @@
 state={
 	id=491
-	name="STATE_491"
+	name="Minneapolis"
 	history={
 		owner = MNM
 		buildings = {

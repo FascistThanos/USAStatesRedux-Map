@@ -1,6 +1,6 @@
 state={
 	id=495
-	name="STATE_495"
+	name="Mankato"
 	history={
 		owner = MNM
 		buildings = {

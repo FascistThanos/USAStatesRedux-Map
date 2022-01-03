@@ -1,6 +1,6 @@
 state={
 	id=498
-	name="STATE_498"
+	name="Pine"
 	history={
 		owner = MNM
 		buildings = {

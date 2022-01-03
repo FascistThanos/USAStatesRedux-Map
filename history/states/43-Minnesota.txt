@@ -1,7 +1,7 @@
 
 state={
 	id=43
-	name="Minnesota"
+	name="International Falls"
 
 	history={
 		owner = MNM

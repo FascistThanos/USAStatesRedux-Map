@@ -1,6 +1,6 @@
 state={
 	id=492
-	name="STATE_492"
+	name="St. Paul"
 	history={
 		owner = MNM
 		buildings = {

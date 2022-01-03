@@ -1,6 +1,6 @@
 state={
 	id=490
-	name="STATE_490"
+	name="Twin Cities Metro"
 	history={
 		owner = MNM
 		buildings = {
