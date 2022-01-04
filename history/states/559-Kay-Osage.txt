@@ -4,7 +4,7 @@ state={
 	history={
 		owner = OKO
 		buildings = {
-			infrastructure = 1
+			infrastructure = 4
 
 		}
 		add_core_of = OKO
@@ -13,8 +13,8 @@ state={
 	provinces={
 		1304 5916 5941 5972 6009 6011 6047 
 	}
-	manpower=1
+	manpower=324445
 	buildings_max_level_factor=1.000
-	local_supplies=0.000
-	state_category = wasteland
+	local_supplies=5.000
+	state_category = Large_City
 }
