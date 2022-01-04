@@ -1,0 +1,20 @@
+state={
+	id=553
+	name="Red Carpet Country"
+	history={
+		owner = OKO
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = OKO
+
+	}
+	provinces={
+		327 334 1647 1952 2119 2431 2512 4019 4223 5905 5939 5940 5965 5985 5987 6004 6041 6062 6081 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}

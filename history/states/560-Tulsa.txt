@@ -1,0 +1,20 @@
+state={
+	id=560
+	name="Tulsa"
+	history={
+		owner = OKO
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = OKO
+
+	}
+	provinces={
+		10683 10686 10689 11529 11530 11531 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}
