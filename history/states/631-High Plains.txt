@@ -1,0 +1,20 @@
+state={
+	id=631
+	name="High_Plains_CO"
+	history={
+		owner = COC
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = COC
+
+	}
+	provinces={
+		3188 3594 5341 5355 5357 5394 5399 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}

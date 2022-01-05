@@ -1,0 +1,20 @@
+state={
+	id=632
+	name="Fort Collins"
+	history={
+		owner = COC
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = COC
+
+	}
+	provinces={
+		10329 10895 10901 10907 10915 11451 11453 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}

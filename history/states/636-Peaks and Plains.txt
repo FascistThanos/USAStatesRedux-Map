@@ -1,0 +1,20 @@
+state={
+	id=636
+	name="Peaks and Plains"
+	history={
+		owner = COC
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = COC
+
+	}
+	provinces={
+		90 1665 3444 4347 5562 5605 5680 5714 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}

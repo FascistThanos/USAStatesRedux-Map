@@ -1,7 +1,7 @@
 
 state={
 	id=563
-	name="High Plains"
+	name="High_Plains_TX"
 
 	history={
 		owner = TXT
