@@ -1,6 +1,8 @@
+
 state={
 	id=548
 	name="Smoky Hills"
+
 	history={
 		owner = KSK
 		buildings = {
@@ -10,11 +12,12 @@ state={
 		add_core_of = KSK
 
 	}
+
 	provinces={
-		180 459 1016 1251 1310 1956 2439 2475 2608 2658 3156 3676 4220 4369 5490 5507 5533 5534 5543 5570 5607 5633 5636 5677 5681 5682 5729 5776 
+		180 1016 1251 1310 2439 2475 2608 2658 3156 3676 4220 4369 5490 5507 5534 5543 5570 5607 5633 5636 5677 5681 5682 5729 5776 
 	}
 	manpower=103134
 	buildings_max_level_factor=1.000
+	state_category=town
 	local_supplies=0.000
-	state_category = Town
 }
