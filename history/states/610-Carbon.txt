@@ -1,0 +1,20 @@
+state={
+	id=610
+	name="Carbon"
+	history={
+		owner = WYW
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = WYW
+
+	}
+	provinces={
+		1022 1747 3176 5222 5325 10253 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}

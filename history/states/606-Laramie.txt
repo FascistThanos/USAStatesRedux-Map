@@ -1,0 +1,20 @@
+state={
+	id=606
+	name="Laramie"
+	history={
+		owner = WYW
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = WYW
+
+	}
+	provinces={
+		10956 10961 10962 10963 11575 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}

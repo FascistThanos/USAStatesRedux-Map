@@ -1,0 +1,20 @@
+state={
+	id=615
+	name="Sweetwater"
+	history={
+		owner = WYW
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = WYW
+
+	}
+	provinces={
+		1493 1500 1690 2681 2809 2818 3796 4094 5245 5267 5297 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}
