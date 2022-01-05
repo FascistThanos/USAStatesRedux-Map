@@ -1,8 +1,6 @@
-
 state={
-	id=201
-	name="Lower New York City"
-
+	id=586
+	name="Upper New York City"
 	history={
 		owner = NYN
 		buildings = {
@@ -12,12 +10,11 @@ state={
 		add_core_of = NYN
 
 	}
-
 	provinces={
-		10893 10899 10904 
+		10927 
 	}
-	manpower=3817724
+	manpower=3208603
 	buildings_max_level_factor=1.000
-	state_category=megalopolis
 	local_supplies=15.000
+	state_category = megalopolis
 }
