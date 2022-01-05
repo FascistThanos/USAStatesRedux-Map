@@ -1,0 +1,20 @@
+state={
+	id=647
+	name="Clayton"
+	history={
+		owner = NMN
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = NMN
+
+	}
+	provinces={
+		587 840 997 1447 3152 3420 3934 3951 5915 5938 5971 5982 5984 6028 6068 6108 6122 6158 6164 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}

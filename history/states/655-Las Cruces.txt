@@ -1,0 +1,20 @@
+state={
+	id=655
+	name="Las Cruces"
+	history={
+		owner = NMN
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = NMN
+
+	}
+	provinces={
+		10535 10536 10537 10546 11396 11549 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}

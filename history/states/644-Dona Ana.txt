@@ -1,0 +1,23 @@
+
+state={
+	id=644
+	name="Dona Ana"
+
+	history={
+		owner = NMN
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = NMN
+
+	}
+
+	provinces={
+		187 2104 2493 4014 6624 6661 6665 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=0.000
+}

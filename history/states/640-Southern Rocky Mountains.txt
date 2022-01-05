@@ -1,0 +1,20 @@
+state={
+	id=640
+	name="Southern Rocky Mountains"
+	history={
+		owner = NMN
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = NMN
+
+	}
+	provinces={
+		966 3927 4214 5926 5970 6003 6061 6089 6095 6129 6152 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}

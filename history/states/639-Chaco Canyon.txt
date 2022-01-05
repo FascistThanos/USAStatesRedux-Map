@@ -1,0 +1,20 @@
+state={
+	id=639
+	name="Chaco Canyon"
+	history={
+		owner = NMN
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = NMN
+
+	}
+	provinces={
+		761 1017 1808 1932 1987 2819 3362 3948 4092 5899 5919 5937 5969 6025 6045 6057 6093 6094 6118 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}
