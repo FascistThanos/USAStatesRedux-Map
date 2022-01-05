@@ -1,0 +1,20 @@
+state={
+	id=590
+	name="Missoula"
+	history={
+		owner = MTM
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = MTM
+
+	}
+	provinces={
+		11237 11238 11240 11245 11489 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}

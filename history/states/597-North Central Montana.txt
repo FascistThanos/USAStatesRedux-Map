@@ -1,0 +1,20 @@
+state={
+	id=597
+	name="North Central Montana"
+	history={
+		owner = MTM
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = MTM
+
+	}
+	provinces={
+		574 1700 3209 4680 4717 
+	}
+	manpower=01
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}

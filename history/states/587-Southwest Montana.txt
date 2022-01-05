@@ -1,0 +1,20 @@
+state={
+	id=587
+	name="Southwest Montana"
+	history={
+		owner = MTM
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = MTM
+
+	}
+	provinces={
+		870 1056 1572 3003 3864 4076 4811 4885 4899 4908 4938 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}

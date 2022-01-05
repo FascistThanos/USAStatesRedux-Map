@@ -1,0 +1,23 @@
+
+state={
+	id=598
+	name="Central Montana"
+
+	history={
+		owner = MTM
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = MTM
+
+	}
+
+	provinces={
+		267 911 986 1253 1809 1933 2692 2752 3129 3499 3633 4750 4755 4766 4774 4779 4840 4858 10208 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=0.000
+}
