@@ -1,0 +1,20 @@
+state={
+	id=730
+	name="Sacramento Valley"
+	history={
+		owner = CAC
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = CAC
+
+	}
+	provinces={
+		3224 5679 5704 5743 5791 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}

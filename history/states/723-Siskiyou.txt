@@ -1,0 +1,20 @@
+state={
+	id=723
+	name="Siskiyou"
+	history={
+		owner = CAC
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = CAC
+
+	}
+	provinces={
+		1671 2602 2680 3997 5275 5328 10256 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}

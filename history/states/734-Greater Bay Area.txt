@@ -1,0 +1,20 @@
+state={
+	id=734
+	name="Greater Bay Area"
+	history={
+		owner = CAC
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = CAC
+
+	}
+	provinces={
+		475 1417 1488 3373 5759 5858 5865 5908 5927 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}

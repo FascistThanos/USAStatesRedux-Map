@@ -1,0 +1,20 @@
+state={
+	id=748
+	name="Southern California"
+	history={
+		owner = CAC
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = CAC
+
+	}
+	provinces={
+		630 1663 1947 3838 6350 6398 6439 6455 6518 
+	}
+	manpower=01
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}
