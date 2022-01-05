@@ -1,0 +1,18 @@
+state={
+	id=578
+	name="Edward's Plateau"
+	history = {
+		owner = TXT
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = TXT
+	}
+	provinces={
+		11 419 1009 1147 1498 1612 1866 1871 1966 2371 2756 2823 2855 2951 3048 3157 3172 3474 3504 3524 3759 4038 4175 6487 6534 6556 6567 6578 6605 6631 6662 6666 6667 6674 6692 6693 6705 6716 6726 6741 6750 6756 6766 6767 6783 6786 6793 6801 6815 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}

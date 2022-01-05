@@ -1,0 +1,18 @@
+state={
+	id=574
+	name="Galveston"
+	history = {
+		owner = TXT
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = TXT
+	}
+	provinces={
+		8157 10456 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}

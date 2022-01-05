@@ -1,0 +1,23 @@
+
+state={
+	id=565
+	name="Lakes Trail Region"
+
+	history={
+		owner = TXT
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = TXT
+
+	}
+
+	provinces={
+		420 558 2401 3115 3143 3215 3384 3396 3452 4034 4068 4314 6404 6436 6448 6449 6457 6483 6494 6537 6548 6573 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=0.000
+}

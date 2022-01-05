@@ -1,0 +1,18 @@
+state={
+	id=584
+	name="San Antonio"
+	history = {
+		owner = TXT
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = TXT
+	}
+	provinces={
+		10460 10464 10466 11511 11512 11513 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}

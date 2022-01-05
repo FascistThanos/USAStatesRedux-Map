@@ -1,0 +1,18 @@
+state={
+	id=569
+	name="Piney Woods"
+	history = {
+		owner = TXT
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = TXT
+	}
+	provinces={
+		774 893 1475 2224 6614 6652 6657 6698 6699 6712 6727 6728 6751 6768 6804 6823 10281 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}

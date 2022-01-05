@@ -1,0 +1,18 @@
+state={
+	id=567
+	name="Cross Timbers & Prairies"
+	history = {
+		owner = TXT
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = TXT
+	}
+	provinces={
+		860 1265 1394 1644 2294 2428 2581 3670 3686 3809 4035 4062 6603 6642 6694 6711 6770 6773 6784 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}

@@ -1,0 +1,18 @@
+state={
+	id=576
+	name="Dallas"
+	history = {
+		owner = TXT
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = TXT
+	}
+	provinces={
+		10561 10566 10568 10576 10581 11519 11523 11524 11525 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}

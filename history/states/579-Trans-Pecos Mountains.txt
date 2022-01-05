@@ -1,0 +1,18 @@
+state={
+	id=579
+	name="Trans-Pecos Mountains"
+	history = {
+		owner = TXT
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = TXT
+	}
+	provinces={
+		263 855 1255 1389 1738 1877 1917 2356 2410 2723 2794 2976 2989 3021 3124 3180 3382 3385 3416 3461 3645 3692 3753 3977 4028 4126 4232 4331 6673 6685 6691 6713 6733 6740 6745 6749 6776 6777 6792 6800 6811 6812 6822 6843 6875 6888 6914 6915 6927 6951 6954 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}

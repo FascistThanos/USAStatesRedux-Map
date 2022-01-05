@@ -1,0 +1,18 @@
+state={
+	id=577
+	name="Fort Worth"
+	history = {
+		owner = TXT
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = TXT
+	}
+	provinces={
+		10552 10553 10573 11402 11520 11521 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}

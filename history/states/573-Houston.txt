@@ -1,0 +1,18 @@
+state={
+	id=573
+	name="Houston"
+	history = {
+		owner = TXT
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = TXT
+	}
+	provinces={
+		6934 6970 10459 10465 10468 10469 10474 10615 11380 11381 11382 11510 11514 11515 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}

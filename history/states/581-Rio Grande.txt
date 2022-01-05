@@ -1,0 +1,18 @@
+state={
+	id=581
+	name="Rio Grande"
+	history = {
+		owner = TXT
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = TXT
+	}
+	provinces={
+		931 1069 1398 1588 2044 2548 2737 3231 3476 3967 4077 4110 6831 6858 6867 6933 6948 6991 7020 7062 7071 7080 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}

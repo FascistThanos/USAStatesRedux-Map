@@ -1,0 +1,18 @@
+state={
+	id=585
+	name="Hill Country"
+	history = {
+		owner = TXT
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = TXT
+	}
+	provinces={
+		1460 1970 2004 2420 2567 2837 2941 3929 4149 6841 6844 6845 6869 6876 6881 6900 6920 6935 6961 6963 6978 6996 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}
