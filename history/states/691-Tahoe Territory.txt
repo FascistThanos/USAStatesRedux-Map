@@ -1,0 +1,20 @@
+state={
+	id=691
+	name="Tahoe Territory"
+	history={
+		owner = NVN
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = NVN
+
+	}
+	provinces={
+		1750 1899 2611 2732 5460 5524 10259 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}
