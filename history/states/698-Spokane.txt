@@ -1,8 +1,6 @@
-
 state={
-	id=63
-	name="Olympic Region"
-
+	id=698
+	name="Spokane"
 	history={
 		owner = WAW
 		buildings = {
@@ -12,12 +10,11 @@ state={
 		add_core_of = WAW
 
 	}
-
 	provinces={
-		1910 2012 3738 3850 3999 4714 4716 10193 
+		11275 11277 11279 11280 11495 
 	}
-	manpower=1
+	manpower=01
 	buildings_max_level_factor=1.000
-	state_category=wasteland
-	local_supplies=1.000
+	local_supplies=0.000
+	state_category = wasteland
 }
