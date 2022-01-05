@@ -1,0 +1,20 @@
+state={
+	id=677
+	name="Garfield-Kane"
+	history={
+		owner = UTU
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = UTU
+
+	}
+	provinces={
+		14 23 128 1653 1731 1741 2497 2810 5719 5768 5772 5816 5818 5868 5880 10261 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}
