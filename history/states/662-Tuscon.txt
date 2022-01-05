@@ -1,0 +1,20 @@
+state={
+	id=662
+	name="Tuscon"
+	history={
+		owner = AZA
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = AZA
+
+	}
+	provinces={
+		10571 10572 10577 10578 10580 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}

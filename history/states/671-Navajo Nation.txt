@@ -1,0 +1,20 @@
+state={
+	id=671
+	name="Navajo Nation"
+	history={
+		owner = AZA
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = AZA
+
+	}
+	provinces={
+		908 1552 2075 2514 2720 2943 3159 3438 3526 3756 3842 3891 3903 4265 5910 5924 5925 5933 5934 5968 5981 5994 6015 6019 6044 6060 6067 6092 6132 6135 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}

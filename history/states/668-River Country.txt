@@ -1,0 +1,20 @@
+state={
+	id=668
+	name="River Country"
+	history={
+		owner = AZA
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = AZA
+
+	}
+	provinces={
+		839 1289 1662 2137 2701 3343 4052 6072 6121 6126 6131 6162 6178 6218 6224 6237 6280 6285 6296 6305 6312 6326 6336 10267 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}

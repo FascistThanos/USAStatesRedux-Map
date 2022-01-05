@@ -1,0 +1,20 @@
+state={
+	id=663
+	name="Pima"
+	history={
+		owner = AZA
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = AZA
+
+	}
+	provinces={
+		712 1489 2143 2630 2682 3737 3915 6526 6541 6542 6551 6563 6580 6587 6601 6615 6635 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}

@@ -1,0 +1,20 @@
+state={
+	id=659
+	name="Cochise"
+	history={
+		owner = AZA
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = AZA
+
+	}
+	provinces={
+		6636 6649 6664 6677 6683 6703 6709 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}
