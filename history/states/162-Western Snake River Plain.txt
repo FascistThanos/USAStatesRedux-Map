@@ -18,10 +18,6 @@ state={
 	}
 	manpower=25678
 	buildings_max_level_factor=1.000
-<<<<<<< Updated upstream
-	state_category=large_town
-=======
 	state_category = pastoral
->>>>>>> Stashed changes
 	local_supplies=1.000
 }

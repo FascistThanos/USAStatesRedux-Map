@@ -4,7 +4,7 @@ state={
 	history={
 		owner = IDI
 		buildings = {
-			infrastructure = 1
+			infrastructure = 2
 
 		}
 		add_core_of = IDI
@@ -13,8 +13,8 @@ state={
 	provinces={
 		11114 11120 11122 11126 11127 
 	}
-	manpower=1
+	manpower=13429
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
-	state_category = wasteland
+	state_category = Pastoral
 }
