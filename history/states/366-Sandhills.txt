@@ -6,7 +6,7 @@ state={
 	history={
 		owner = NCN
 		buildings = {
-			infrastructure = 1
+			infrastructure = 3
 
 		}
 		add_core_of = NCN
@@ -16,8 +16,8 @@ state={
 	provinces={
 		1400 2714 3122 3357 6157 6172 6203 6236 6253 6295 
 	}
-	manpower=1
+	manpower=190554
 	buildings_max_level_factor=1.000
-	state_category=wasteland
+	state_category=Large_Town
 	local_supplies=0.000
 }

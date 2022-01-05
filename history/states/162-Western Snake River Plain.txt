@@ -6,7 +6,7 @@ state={
 	history={
 		owner = IDI
 		buildings = {
-			infrastructure = 4
+			infrastructure = 2
 
 		}
 		add_core_of = IDI
@@ -16,8 +16,12 @@ state={
 	provinces={
 		397 993 1259 2125 2490 2649 3312 3852 5059 5074 5106 
 	}
-	manpower=60231
+	manpower=25678
 	buildings_max_level_factor=1.000
+<<<<<<< Updated upstream
 	state_category=large_town
+=======
+	state_category = pastoral
+>>>>>>> Stashed changes
 	local_supplies=1.000
 }

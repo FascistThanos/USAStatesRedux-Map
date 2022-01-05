@@ -4,7 +4,7 @@ state={
 	history={
 		owner = MTM
 		buildings = {
-			infrastructure = 1
+			infrastructure = 2
 
 		}
 		add_core_of = MTM
@@ -13,8 +13,8 @@ state={
 	provinces={
 		156 203 457 1767 2095 2566 3161 4665 4684 4720 4728 
 	}
-	manpower=1
+	manpower=24665
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
-	state_category = wasteland
+	state_category = pastoral
 }
