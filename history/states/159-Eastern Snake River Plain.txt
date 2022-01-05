@@ -14,11 +14,10 @@ state={
 	}
 
 	provinces={
-		1484 2511 2922 3204 3559 5063 5085 5112 10244 11114 11120 11122 11126 11127 
+		1484 2511 2922 3204 3559 5063 5085 5112 10244 
 	}
 	manpower=42583
 	buildings_max_level_factor=1.000
 	state_category=town
-	
 	local_supplies=1.000
 }

@@ -1,7 +1,7 @@
 
 state={
 	id=60
-	name="Ada"
+	name="Canyon Country"
 
 	history={
 		owner = IDI
@@ -14,11 +14,10 @@ state={
 	}
 
 	provinces={
-		817 2470 2539 3496 11133 11134 11135 11138 11142 11143 11146 11147 11149 11151 
+		817 2470 2539 3496 
 	}
 	manpower=179413
 	buildings_max_level_factor=1.000
 	state_category=city
-	
 	local_supplies=1.000
 }
