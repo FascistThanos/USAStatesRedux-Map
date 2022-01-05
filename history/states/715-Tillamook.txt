@@ -1,0 +1,20 @@
+state={
+	id=715
+	name="Tillamook"
+	history={
+		owner = ORO
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = ORO
+
+	}
+	provinces={
+		1037 2594 2835 3251 4901 4917 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}

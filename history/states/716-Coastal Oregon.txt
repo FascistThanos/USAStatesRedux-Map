@@ -1,0 +1,20 @@
+state={
+	id=716
+	name="Coastal Oregon"
+	history={
+		owner = ORO
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = ORO
+
+	}
+	provinces={
+		716 760 1949 2321 2743 3066 3953 3978 4987 5051 5052 5058 5081 5084 5101 5129 5141 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}

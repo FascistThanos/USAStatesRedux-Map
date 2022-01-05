@@ -1,0 +1,20 @@
+state={
+	id=710
+	name="Gresham"
+	history={
+		owner = ORO
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = ORO
+
+	}
+	provinces={
+		11212 11484 11486 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}

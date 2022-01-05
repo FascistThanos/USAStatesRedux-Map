@@ -1,7 +1,7 @@
 
 state={
 	id=171
-	name="Portland"
+	name="Portland_ME"
 
 	history={
 		owner = MEM

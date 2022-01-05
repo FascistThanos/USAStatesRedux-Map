@@ -1,0 +1,23 @@
+
+state={
+	id=711
+	name="Willamette Valley"
+
+	history={
+		owner = ORO
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = ORO
+
+	}
+
+	provinces={
+		867 959 1115 1261 1926 3106 3418 3894 4879 4889 4915 4921 4946 4950 4961 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=0.000
+}

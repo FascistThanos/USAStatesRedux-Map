@@ -1,0 +1,20 @@
+state={
+	id=719
+	name="Klamath"
+	history={
+		owner = ORO
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = ORO
+
+	}
+	provinces={
+		1380 1848 5218 
+	}
+	manpower=01
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}

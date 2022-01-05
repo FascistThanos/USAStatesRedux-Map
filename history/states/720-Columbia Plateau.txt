@@ -1,0 +1,20 @@
+state={
+	id=720
+	name="Columbia Plateau"
+	history={
+		owner = ORO
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = ORO
+
+	}
+	provinces={
+		197 851 863 1188 1492 1547 1977 2250 2532 2599 2892 3595 3634 3723 4084 4208 4872 4888 4976 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}
