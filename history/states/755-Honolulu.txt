@@ -1,8 +1,6 @@
-
 state={
-	id=134
-	name="Hawaii"
-
+	id=755
+	name="Honolulu"
 	history={
 		owner = HIH
 		buildings = {
@@ -12,12 +10,11 @@ state={
 		add_core_of = HIH
 
 	}
-
 	provinces={
-		897 1786 1929 4172 7504 7529 7540 7548 7557 
+		10419 10420 10421 
 	}
-	manpower=1
+	manpower=01
 	buildings_max_level_factor=1.000
-	state_category=wasteland
-	local_supplies=1.000
+	local_supplies=0.000
+	state_category = wasteland
 }
