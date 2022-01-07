@@ -1,6 +1,6 @@
 state={
 	id=705
-	name="Pacific Cascade"
+	name="Ocean Shores"
 	history={
 		owner = WAW
 		buildings = {
