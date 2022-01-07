@@ -1,6 +1,6 @@
 state={
 	id=716
-	name="Coastal Oregon"
+	name="Coos Bay"
 	history={
 		owner = ORO
 		buildings = {
