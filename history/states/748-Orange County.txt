@@ -1,6 +1,6 @@
 state={
 	id=748
-	name="Southern California"
+	name="Orange County"
 	history={
 		owner = CAC
 		buildings = {
