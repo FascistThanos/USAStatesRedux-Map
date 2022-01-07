@@ -1,8 +1,6 @@
-
 state={
-	id=150
-	name="Alaskan Panhandle"
-
+	id=776
+	name="Eastern Aleutian Islands"
 	history={
 		owner = AKA
 		buildings = {
@@ -12,12 +10,11 @@ state={
 		add_core_of = AKA
 
 	}
-
 	provinces={
-		78 717 1167 1413 4060 4496 
+		1237 3247 8036 8040 8041 8043 8044 8045 8046 8050 8054 
 	}
 	manpower=1
 	buildings_max_level_factor=1.000
-	state_category=wasteland
-	local_supplies=1.000
+	local_supplies=0.000
+	state_category = wasteland
 }

@@ -1,7 +1,7 @@
 
 state={
 	id=149
-	name="Alaskan Panhandle Islands"
+	name="Chichagof Island"
 
 	history={
 		owner = AKA
@@ -14,7 +14,7 @@ state={
 	}
 
 	provinces={
-		315 1099 1450 4506 4512 8005 8012 8027 8034 8035 8038 8042 
+		315 
 	}
 	manpower=1
 	buildings_max_level_factor=1.000

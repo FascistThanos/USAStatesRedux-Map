@@ -1,0 +1,20 @@
+state={
+	id=784
+	name="Northwest Arctic"
+	history={
+		owner = AKA
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = AKA
+
+	}
+	provinces={
+		209 284 309 373 393 571 670 744 818 875 1094 1174 1208 1245 1407 1462 1478 2245 2860 3604 3618 3708 4083 4446 4448 4455 4457 9897 9906 9917 9967 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}
