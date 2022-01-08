@@ -1,8 +1,6 @@
-
 state={
-	id=5
-	name="Shelburne-Yarmouth"
-
+	id=792
+	name="Halifax Metro"
 	history={
 		owner = NSN
 		buildings = {
@@ -12,12 +10,11 @@ state={
 		add_core_of = NSN
 
 	}
-
 	provinces={
-		1906 3163 3306 3530 5035 8138 10234 
+		11593 11594 11595 11596 11597 
 	}
 	manpower=1
 	buildings_max_level_factor=1.000
-	state_category=wasteland
-	local_supplies=1.000
+	local_supplies=0.000
+	state_category = wasteland
 }
