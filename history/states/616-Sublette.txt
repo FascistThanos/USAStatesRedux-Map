@@ -1,6 +1,8 @@
+
 state={
 	id=616
 	name="Sublette"
+
 	history={
 		owner = WYW
 		buildings = {
@@ -10,11 +12,12 @@ state={
 		add_core_of = WYW
 
 	}
+
 	provinces={
-		2032 2387 2724 3599 4075 5092 5126 5137 5143 5197 
+		1493 2032 2724 3599 4075 4094 5092 5126 5137 5143 5197 
 	}
 	manpower=1
 	buildings_max_level_factor=1.000
+	state_category=wasteland
 	local_supplies=0.000
-	state_category = wasteland
 }

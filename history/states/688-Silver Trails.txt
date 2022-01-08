@@ -1,6 +1,8 @@
+
 state={
 	id=688
 	name="Silver Trails"
+
 	history={
 		owner = NVN
 		buildings = {
@@ -10,11 +12,12 @@ state={
 		add_core_of = NVN
 
 	}
+
 	provinces={
-		47 562 1192 1373 1506 1625 1826 2015 2066 2134 2958 3099 3111 3126 3226 3248 3560 3678 3868 4142 5675 5676 5687 5691 5698 5705 5711 5718 5734 5746 5774 5775 5792 5815 5825 5826 5851 5867 5872 
+		47 562 1506 1625 1826 2015 2134 2958 3099 3111 3126 3226 3560 3678 4142 5675 5687 5691 5698 5705 5711 5718 5734 5746 5774 5775 5792 5815 5825 5872 
 	}
 	manpower=1
 	buildings_max_level_factor=1.000
+	state_category=wasteland
 	local_supplies=0.000
-	state_category = wasteland
 }

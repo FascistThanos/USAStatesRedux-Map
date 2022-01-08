@@ -1,0 +1,20 @@
+state={
+	id=790
+	name="Crysal Springs"
+	history={
+		owner = NVN
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = NVN
+
+	}
+	provinces={
+		1192 1373 2066 3248 3868 5676 5826 5851 5867 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}
