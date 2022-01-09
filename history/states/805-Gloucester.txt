@@ -1,8 +1,6 @@
-
 state={
-	id=6
-	name="Madawaska"
-
+	id=805
+	name="Gloucester"
 	history={
 		owner = NBN
 		buildings = {
@@ -12,12 +10,11 @@ state={
 		add_core_of = NBN
 
 	}
-
 	provinces={
-		989 4715 4730 4762 
+		2045 2772 3523 4733 4759 
 	}
 	manpower=1
 	buildings_max_level_factor=1.000
-	state_category=wasteland
-	local_supplies=1.000
+	local_supplies=0.000
+	state_category = wasteland
 }

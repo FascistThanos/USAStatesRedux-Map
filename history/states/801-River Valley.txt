@@ -1,8 +1,6 @@
-
 state={
-	id=6
-	name="Madawaska"
-
+	id=801
+	name="River Valley"
 	history={
 		owner = NBN
 		buildings = {
@@ -14,10 +12,10 @@ state={
 	}
 
 	provinces={
-		989 4715 4730 4762 
+		522 886 1062 3969 4796 4839 10224 
 	}
 	manpower=1
 	buildings_max_level_factor=1.000
-	state_category=wasteland
-	local_supplies=1.000
+	local_supplies=0.000
+	state_category = wasteland
 }
