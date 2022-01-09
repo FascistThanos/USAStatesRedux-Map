@@ -1,0 +1,20 @@
+state={
+	id=812
+	name="Saint Alban's"
+	history={
+		owner = NLN
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = NLN
+
+	}
+	provinces={
+		44 688 3064 4710 4734 10197 10200 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}

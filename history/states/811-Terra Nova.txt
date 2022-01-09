@@ -1,0 +1,20 @@
+state={
+	id=811
+	name="Terra Nova"
+	history={
+		owner = NLN
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = NLN
+
+	}
+	provinces={
+		3410 4310 4354 4661 4685 4703 4719 8106 8107 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}

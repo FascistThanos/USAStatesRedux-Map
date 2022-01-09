@@ -1,0 +1,23 @@
+
+state={
+	id=814
+	name="North Shore Forest"
+
+	history={
+		owner = NLN
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = NLN
+
+	}
+
+	provinces={
+		2638 2880 3597 4664 8108 10184 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=0.000
+}

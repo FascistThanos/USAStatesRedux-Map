@@ -1,0 +1,23 @@
+
+state={
+	id=1
+	name="Straight of Belle Isle Barrens"
+
+	history={
+		owner = NLN
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = NLN
+
+	}
+
+	provinces={
+		439 752 2175 4628 4637 4657 10191 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=1.000
+}
