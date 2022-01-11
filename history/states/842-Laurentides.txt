@@ -1,0 +1,20 @@
+state={
+	id=842
+	name="Laurentides"
+	history={
+		owner = QBC
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = QBC
+
+	}
+	provinces={
+		3684 4675 4678 4726 10207 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}

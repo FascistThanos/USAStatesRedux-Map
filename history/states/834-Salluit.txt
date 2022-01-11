@@ -1,0 +1,20 @@
+state={
+	id=834
+	name="Salluit"
+	history={
+		owner = QBC
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = QBC
+
+	}
+	provinces={
+		302 476 1117 1477 1668 1895 1951 2028 2472 2766 3659 4490 10048 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}

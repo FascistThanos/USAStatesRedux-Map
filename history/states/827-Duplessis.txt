@@ -1,0 +1,23 @@
+
+state={
+	id=827
+	name="Duplessis"
+
+	history={
+		owner = QBC
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = QBC
+
+	}
+
+	provinces={
+		266 803 990 1107 1121 1772 2776 3283 3531 3593 4602 4618 4619 4623 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=0.000
+}

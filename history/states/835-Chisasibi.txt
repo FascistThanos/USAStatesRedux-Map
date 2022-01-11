@@ -1,0 +1,23 @@
+
+state={
+	id=835
+	name="Chisasibi"
+
+	history={
+		owner = QBC
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = QBC
+
+	}
+
+	provinces={
+		65 1568 1774 1912 2148 2183 10086 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=0.000
+}

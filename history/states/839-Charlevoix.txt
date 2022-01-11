@@ -1,0 +1,20 @@
+state={
+	id=839
+	name="Charlevoix"
+	history={
+		owner = QBC
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = QBC
+
+	}
+	provinces={
+		18 1365 1384 1840 3355 4022 4355 4609 4677 10151 10164 10190 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}

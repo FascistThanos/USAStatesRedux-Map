@@ -1,0 +1,23 @@
+
+state={
+	id=840
+	name="Mauricie"
+
+	history={
+		owner = QBC
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = QBC
+
+	}
+
+	provinces={
+		1 190 292 505 695 890 1193 1258 1518 1563 1602 1735 1905 2372 3219 3546 3589 3895 4246 4603 4635 4658 4672 9748 9810 10139 10146 10147 10150 10155 10156 10160 10162 10165 10168 10170 10171 10172 10174 10179 10182 10183 10189 10194 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=0.000
+}

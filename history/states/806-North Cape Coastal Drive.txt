@@ -2,12 +2,12 @@ state={
 	id=806
 	name="North Cape Coastal Drive"
 	history={
-		owner = NBN
+		owner = PEP
 		buildings = {
 			infrastructure = 1
 
 		}
-		add_core_of = NBN
+		add_core_of = PEP
 
 	}
 	provinces={

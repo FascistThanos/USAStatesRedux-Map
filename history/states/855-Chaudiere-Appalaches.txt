@@ -1,0 +1,20 @@
+state={
+	id=855
+	name="Chaudière-Appalaches"
+	history={
+		owner = QBC
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = QBC
+
+	}
+	provinces={
+		323 697 1456 2047 4078 4802 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}

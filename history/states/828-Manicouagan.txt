@@ -1,0 +1,23 @@
+
+state={
+	id=828
+	name="Manicouagan"
+
+	history={
+		owner = QBC
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = QBC
+
+	}
+
+	provinces={
+		131 496 497 622 995 1012 1183 1296 1580 1594 1825 2025 2352 2598 2832 3165 3817 4564 4582 4600 4615 4633 8065 9778 10087 10133 10134 10177 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=0.000
+}
