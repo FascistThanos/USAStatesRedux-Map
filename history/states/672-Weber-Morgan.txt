@@ -4,7 +4,7 @@ state={
 	history={
 		owner = UTU
 		buildings = {
-			infrastructure = 1
+			infrastructure = 3
 
 		}
 		add_core_of = UTU
@@ -13,8 +13,8 @@ state={
 	provinces={
 		4 62 1844 2221 5309 5313 5340 10252 
 	}
-	manpower=1
+	manpower=50362
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
-	state_category = wasteland
+	state_category = town
 }

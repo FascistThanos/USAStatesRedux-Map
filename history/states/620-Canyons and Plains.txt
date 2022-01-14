@@ -4,7 +4,7 @@ state={
 	history={
 		owner = COC
 		buildings = {
-			infrastructure = 1
+			infrastructure = 2
 
 		}
 		add_core_of = COC
@@ -13,8 +13,8 @@ state={
 	provinces={
 		1116 1218 1810 2114 2538 3128 3447 4106 5736 5737 5780 5781 5787 5788 5795 5819 5831 5852 5853 5869 5873 5884 5885 
 	}
-	manpower=1
+	manpower=105000
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
-	state_category = wasteland
+	state_category = large_town
 }

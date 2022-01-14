@@ -4,7 +4,7 @@ state={
 	history={
 		owner = NMN
 		buildings = {
-			infrastructure = 1
+			infrastructure = 2
 
 		}
 		add_core_of = NMN
@@ -13,8 +13,8 @@ state={
 	provinces={
 		210 321 1527 1799 2787 2790 2838 3336 3693 3946 3957 6174 6198 6226 6238 6249 6300 6352 
 	}
-	manpower=1
+	manpower=29529
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
-	state_category = wasteland
+	state_category = rural
 }

@@ -6,7 +6,7 @@ state={
 	history={
 		owner = WYW
 		buildings = {
-			infrastructure = 1
+			infrastructure = 2
 
 		}
 		add_core_of = WYW
@@ -16,8 +16,9 @@ state={
 	provinces={
 		1284 1551 2387 2617 4055 5107 5144 5189 10251 
 	}
-	manpower=1
+	manpower=2
 	buildings_max_level_factor=1.000
-	state_category=wasteland
+	state_category=pastoral
 	local_supplies=0.000
+
 }
