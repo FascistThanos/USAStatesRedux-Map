@@ -4,7 +4,7 @@ state={
 	history={
 		owner = AZA
 		buildings = {
-			infrastructure = 1
+			infrastructure = 2
 
 		}
 		add_core_of = AZA
@@ -13,8 +13,8 @@ state={
 	provinces={
 		1008 1209 1672 1743 2354 2368 2590 2705 2768 3490 3660 6056 6088 6107 6117 6143 6188 6196 6247 6318 
 	}
-	manpower=1
+	manpower=12746
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
-	state_category = wasteland
+	state_category = pastoral
 }

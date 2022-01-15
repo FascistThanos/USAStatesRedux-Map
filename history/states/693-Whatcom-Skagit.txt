@@ -4,17 +4,17 @@ state={
 	history={
 		owner = WAW
 		buildings = {
-			infrastructure = 1
+			infrastructure = 4
 
 		}
 		add_core_of = WAW
 
 	}
 	provinces={
-		482 3831 3834 
+		482 3831 3834 4714
 	}
-	manpower=1
+	manpower=116163
 	buildings_max_level_factor=1.000
-	local_supplies=0.000
-	state_category = wasteland
+	local_supplies=4.000
+	state_category = large_town
 }

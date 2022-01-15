@@ -13,8 +13,8 @@ state={
 	provinces={
 		1380 1848 5218 
 	}
-	manpower=01
+	manpower=63672
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
-	state_category = wasteland
+	state_category = town
 }

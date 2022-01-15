@@ -4,7 +4,7 @@ state={
 	history={
 		owner = NVN
 		buildings = {
-			infrastructure = 1
+			infrastructure = 2
 
 		}
 		add_core_of = NVN
@@ -13,8 +13,8 @@ state={
 	provinces={
 		10820 10823 10830 10834 10835 10837 10838 10839 10840 
 	}
-	manpower=1
+	manpower=20125
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
-	state_category = wasteland
+	state_category = pastoral
 }

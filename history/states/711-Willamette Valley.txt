@@ -6,7 +6,7 @@ state={
 	history={
 		owner = ORO
 		buildings = {
-			infrastructure = 1
+			infrastructure = 3
 
 		}
 		add_core_of = ORO
@@ -16,8 +16,8 @@ state={
 	provinces={
 		867 959 1115 1261 1926 3106 3418 3894 4879 4889 4915 4921 4946 4950 4961 
 	}
-	manpower=1
+	manpower=100672
 	buildings_max_level_factor=1.000
-	state_category=wasteland
+	state_category=town
 	local_supplies=0.000
 }
