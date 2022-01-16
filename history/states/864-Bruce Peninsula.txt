@@ -1,0 +1,20 @@
+state={
+	id=864
+	name="Bruce Peninsula"
+	history={
+		owner = ONO
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = ONO
+
+	}
+	provinces={
+		3881 3962 4934 5000 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}

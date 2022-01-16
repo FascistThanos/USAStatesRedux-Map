@@ -1,0 +1,23 @@
+
+state={
+	id=888
+	name="Polar Bear Provincial Park"
+
+	history={
+		owner = ONO
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = ONO
+
+	}
+
+	provinces={
+		1089 1157 1805 2765 3027 3042 3423 4533 4545 10131 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=0.000
+}

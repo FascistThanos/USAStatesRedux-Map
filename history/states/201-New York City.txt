@@ -1,7 +1,7 @@
 
 state={
 	id=201
-	name="Lower New York City"
+	name="Lower New York city"
 
 	history={
 		owner = NYN

@@ -1,6 +1,6 @@
 state={
 	id=838
-	name="Québec City"
+	name="Québec city"
 	history={
 		owner = QBC
 		buildings = {

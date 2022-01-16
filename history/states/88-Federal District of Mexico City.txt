@@ -1,7 +1,7 @@
 
 state={
 	id=88
-	name="Federal District of Mexico City"
+	name="Federal District of Mexico city"
 
 	history={
 		owner = DFD

@@ -1,0 +1,20 @@
+state={
+	id=869
+	name="Durham-Simcoe"
+	history={
+		owner = ONO
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = ONO
+
+	}
+	provinces={
+		1224 4957 4986 5020 10231 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}

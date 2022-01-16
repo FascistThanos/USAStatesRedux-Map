@@ -1,6 +1,6 @@
 state={
 	id=674
-	name="Salt Lake City Metro"
+	name="Salt Lake city Metro"
 	history={
 		owner = UTU
 		buildings = {

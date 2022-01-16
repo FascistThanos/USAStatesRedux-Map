@@ -1,6 +1,6 @@
 state={
 	id=690
-	name="Carson City-Reno"
+	name="Carson city-Reno"
 	history={
 		owner = NVN
 		buildings = {

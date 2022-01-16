@@ -1,6 +1,6 @@
 state={
 	id=237
-	name="Wilmington City"
+	name="Wilmington city"
 	history={
 		owner = DED
 		buildings = {

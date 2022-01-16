@@ -1,6 +1,6 @@
 state={
 	id=449
-	name="Bossier City"
+	name="Bossier city"
 	history={
 		owner = LAL
 		buildings = {

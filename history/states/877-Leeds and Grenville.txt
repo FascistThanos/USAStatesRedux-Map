@@ -1,0 +1,20 @@
+state={
+	id=877
+	name="Leeds and Grenville"
+	history={
+		owner = ONO
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = ONO
+
+	}
+	provinces={
+		460 1494 1715 2729 4927 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}

@@ -1,7 +1,7 @@
 
 state={
 	id=464
-	name="Kansas City"
+	name="Kansas city"
 
 	history={
 		owner = MOM
@@ -18,6 +18,6 @@ state={
 	}
 	manpower=502454
 	buildings_max_level_factor=1.000
-	state_category=Metropolis
+	state_category=metropolis
 	local_supplies=10.000
 }

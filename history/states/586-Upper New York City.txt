@@ -1,6 +1,6 @@
 state={
 	id=586
-	name="Upper New York City"
+	name="Upper New York city"
 	history={
 		owner = NYN
 		buildings = {

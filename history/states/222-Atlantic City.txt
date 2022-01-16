@@ -1,7 +1,7 @@
 
 state={
 	id=222
-	name="Atlantic City-Jersey Shore"
+	name="Atlantic city-Jersey Shore"
 
 	history={
 		owner = NJN

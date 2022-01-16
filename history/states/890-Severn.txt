@@ -1,0 +1,20 @@
+state={
+	id=890
+	name="Severn"
+	history={
+		owner = ONO
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = ONO
+
+	}
+	provinces={
+		454 665 816 1618 3304 4153 4517 4552 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}

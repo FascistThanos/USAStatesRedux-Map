@@ -1,0 +1,23 @@
+
+state={
+	id=892
+	name="Nagagamisis Provincial Park"
+
+	history={
+		owner = ONO
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = ONO
+
+	}
+
+	provinces={
+		433 659 1356 1358 1470 2093 2657 4583 4590 4626 4655 10148 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=0.000
+}

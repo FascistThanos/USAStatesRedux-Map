@@ -1,6 +1,6 @@
 state={
 	id=822
-	name="Labrador City"
+	name="Labrador city"
 	history={
 		owner = LAB
 		buildings = {
