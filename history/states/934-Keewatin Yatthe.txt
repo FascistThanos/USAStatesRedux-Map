@@ -1,7 +1,7 @@
 
 state={
-	id=9
-	name="Athabasca Health Authority"
+	id=934
+	name="Keewatin Yatthé"
 
 	history={
 		owner = SKS
@@ -14,10 +14,10 @@ state={
 	}
 
 	provinces={
-		1262 3579 10010 10013 10019 10033 10073 10101 
+		629 638 1078 1165 1503 1638 1919 2537 4492 4502 8010 9689 9751 10028 10029 10040 10061 10063 10078 
 	}
 	manpower=1
 	buildings_max_level_factor=1.000
 	state_category=wasteland
-	local_supplies=1.000
+	local_supplies=0.000
 }

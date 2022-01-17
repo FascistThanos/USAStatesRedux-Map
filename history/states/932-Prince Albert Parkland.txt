@@ -1,17 +1,17 @@
 state={
-	id=434
-	name="Heartland_FL"
+	id=932
+	name="Prince Albert Parkland"
 	history={
-		owner = FLF
+		owner = SKS
 		buildings = {
 			infrastructure = 1
 
 		}
-		add_core_of = FLF
+		add_core_of = SKS
 
 	}
 	provinces={
-		3264 4167 7045 7063 7065 7075 7088 7098 10293 
+		1114 1968 2269 3339 3399 9692 10062 10066 10067 10083 10093 
 	}
 	manpower=1
 	buildings_max_level_factor=1.000

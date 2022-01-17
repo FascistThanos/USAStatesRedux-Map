@@ -1,7 +1,7 @@
 
 state={
-	id=9
-	name="Athabasca Health Authority"
+	id=936
+	name="North Saskatchewan Administrative District"
 
 	history={
 		owner = SKS
@@ -14,10 +14,10 @@ state={
 	}
 
 	provinces={
-		1262 3579 10010 10013 10019 10033 10073 10101 
+		248 250 4503 8011 8015 9741 9757 9764 9805 10031 10036 10064 
 	}
 	manpower=1
 	buildings_max_level_factor=1.000
 	state_category=wasteland
-	local_supplies=1.000
+	local_supplies=0.000
 }

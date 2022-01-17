@@ -1,17 +1,17 @@
 state={
-	id=434
-	name="Heartland_FL"
+	id=929
+	name="Qu'Appelle"
 	history={
-		owner = FLF
+		owner = SKS
 		buildings = {
 			infrastructure = 1
 
 		}
-		add_core_of = FLF
+		add_core_of = SKS
 
 	}
 	provinces={
-		3264 4167 7045 7063 7065 7075 7088 7098 10293 
+		93 765 1954 2396 3061 3187 3876 4277 4596 4598 
 	}
 	manpower=1
 	buildings_max_level_factor=1.000
