@@ -1,0 +1,23 @@
+
+state={
+	id=914
+	name="Interlake"
+
+	history={
+		owner = MBM
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = MBM
+
+	}
+
+	provinces={
+		912 1152 1315 4103 4577 4612 10137 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=0.000
+}

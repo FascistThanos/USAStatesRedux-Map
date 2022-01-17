@@ -1,0 +1,20 @@
+state={
+	id=913
+	name="Lake Winnipeg"
+	history={
+		owner = MBM
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = MBM
+
+	}
+	provinces={
+		8078 8096 8097 9676 9708 9709 9711 9782 9809 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}

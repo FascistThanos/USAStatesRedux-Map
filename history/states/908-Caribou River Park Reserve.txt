@@ -1,0 +1,20 @@
+state={
+	id=908
+	name="Caribou River Park Reserve"
+	history={
+		owner = MBM
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = MBM
+
+	}
+	provinces={
+		437 477 1390 3196 4495 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}

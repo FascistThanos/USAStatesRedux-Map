@@ -1,0 +1,20 @@
+state={
+	id=910
+	name="Norman"
+	history={
+		owner = MBM
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = MBM
+
+	}
+	provinces={
+		299 387 434 937 1066 1604 2080 2517 3493 4541 4551 9695 10043 10045 10056 10076 10095 10097 10102 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}
