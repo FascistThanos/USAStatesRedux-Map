@@ -1,8 +1,6 @@
-
 state={
-	id=10
-	name="Lake Claire"
-
+	id=946
+	name="Vermillion River"
 	history={
 		owner = ABA
 		buildings = {
@@ -12,12 +10,11 @@ state={
 		add_core_of = ABA
 
 	}
-
 	provinces={
-		804 1223 3019 4316 4501 4509 9777 
+		374 1865 1965 2074 2595 3044 4536 
 	}
 	manpower=1
 	buildings_max_level_factor=1.000
-	state_category=wasteland
-	local_supplies=1.000
+	local_supplies=0.000
+	state_category = wasteland
 }

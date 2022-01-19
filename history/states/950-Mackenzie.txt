@@ -1,8 +1,6 @@
-
 state={
-	id=10
-	name="Lake Claire"
-
+	id=950
+	name="Mackenzie"
 	history={
 		owner = ABA
 		buildings = {
@@ -12,12 +10,11 @@ state={
 		add_core_of = ABA
 
 	}
-
 	provinces={
-		804 1223 3019 4316 4501 4509 9777 
+		85 104 834 938 1793 2327 2669 4513 
 	}
 	manpower=1
 	buildings_max_level_factor=1.000
-	state_category=wasteland
-	local_supplies=1.000
+	local_supplies=0.000
+	state_category = wasteland
 }
