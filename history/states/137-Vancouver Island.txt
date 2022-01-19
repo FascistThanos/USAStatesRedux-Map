@@ -1,7 +1,7 @@
 
 state={
 	id=137
-	name="Vancouver Island"
+	name="Port McNell"
 
 	history={
 		owner = BCB
@@ -14,11 +14,10 @@ state={
 	}
 
 	provinces={
-		1855 2232 2413 2678 3141 3435 3751 4183 4351 4620 4653 4660 11284 11285 11286 
+		2413 2678 3141 3751 4351 4653 
 	}
 	manpower=1
 	buildings_max_level_factor=1.000
 	state_category=wasteland
-	
 	local_supplies=1.000
 }

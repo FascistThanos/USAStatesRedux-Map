@@ -1,8 +1,6 @@
-
 state={
-	id=11
-	name="North Shore"
-
+	id=975
+	name="Iskut"
 	history={
 		owner = BCB
 		buildings = {
@@ -12,12 +10,11 @@ state={
 		add_core_of = BCB
 
 	}
-
 	provinces={
-		1053 1382 1616 2480 4560 8074 10007 10059 10176 
+		537 1204 1322 1408 2479 3302 4548 
 	}
 	manpower=1
 	buildings_max_level_factor=1.000
-	state_category=wasteland
-	local_supplies=1.000
+	local_supplies=0.000
+	state_category = wasteland
 }
