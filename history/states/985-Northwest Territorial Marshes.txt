@@ -1,7 +1,7 @@
 
 state={
-	id=13
-	name="Beufort-Delta Region"
+	id=985
+	name="Northwest Territorial Marshes"
 
 	history={
 		owner = NTN
@@ -14,10 +14,10 @@ state={
 	}
 
 	provinces={
-		38 172 229 879 1479 1664 1886 3083 3366 4429 4435 4443 7960 9874 9881 9907 9909 9913 9965 
+		871 987 1244 1678 1780 2313 3758 7987 9804 9966 9974 9976 9978 9982 9985 9997 
 	}
 	manpower=1
 	buildings_max_level_factor=1.000
 	state_category=wasteland
-	local_supplies=1.000
+	local_supplies=0.000
 }

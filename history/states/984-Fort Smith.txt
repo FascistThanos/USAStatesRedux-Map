@@ -1,7 +1,7 @@
 
 state={
-	id=13
-	name="Beufort-Delta Region"
+	id=984
+	name="Fort_Smith_NT"
 
 	history={
 		owner = NTN
@@ -14,10 +14,10 @@ state={
 	}
 
 	provinces={
-		38 172 229 879 1479 1664 1886 3083 3366 4429 4435 4443 7960 9874 9881 9907 9909 9913 9965 
+		77 98 378 569 662 830 1104 1861 3025 4259 4485 
 	}
 	manpower=1
 	buildings_max_level_factor=1.000
 	state_category=wasteland
-	local_supplies=1.000
+	local_supplies=0.000
 }

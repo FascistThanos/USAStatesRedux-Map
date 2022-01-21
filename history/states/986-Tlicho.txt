@@ -1,17 +1,17 @@
 state={
-	id=456
-	name="Fort_Smith_AR"
+	id=986
+	name="Tlicho"
 	history={
-		owner = ARA
+		owner = NTN
 		buildings = {
 			infrastructure = 1
 
 		}
-		add_core_of = ARA
+		add_core_of = NTN
 
 	}
 	provinces={
-		6191 10654 10660 10669 10672 10673 
+		159 432 758 910 1921 4456 4468 
 	}
 	manpower=1
 	buildings_max_level_factor=1.000
