@@ -1,8 +1,6 @@
-
 state={
-	id=14
-	name="Yukon Wilderness"
-
+	id=1006
+	name="Liard Region"
 	history={
 		owner = YTY
 		buildings = {
@@ -12,12 +10,11 @@ state={
 		add_core_of = YTY
 
 	}
-
 	provinces={
-		22 36 173 356 3271 3349 4447 
+		286 1379 2279 4473 4481 
 	}
 	manpower=1
 	buildings_max_level_factor=1.000
-	state_category=wasteland
-	local_supplies=1.000
+	local_supplies=0.000
+	state_category = wasteland
 }
