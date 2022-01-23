@@ -1,6 +1,8 @@
+
 state={
 	id=909
 	name="Brochet"
+
 	history={
 		owner = MBM
 		buildings = {
@@ -10,11 +12,12 @@ state={
 		add_core_of = MBM
 
 	}
+
 	provinces={
-		379 678 1321 1677 2040 2296 3533 4497 4510 4520 7998 8014 9768 10022 10032 10041 10049 
+		379 678 1321 1677 2040 2296 3533 4497 4510 4520 7998 8014 10022 10032 10041 10049 
 	}
 	manpower=1
 	buildings_max_level_factor=1.000
+	state_category=wasteland
 	local_supplies=0.000
-	state_category = wasteland
 }

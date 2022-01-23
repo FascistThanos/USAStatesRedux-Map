@@ -1,0 +1,20 @@
+state={
+	id=1015
+	name="Umingmaktok"
+	history={
+		owner = NUN
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = NUN
+
+	}
+	provinces={
+		83 364 708 833 1081 1102 1515 1520 2586 4445 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}

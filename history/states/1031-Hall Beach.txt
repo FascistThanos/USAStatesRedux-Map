@@ -1,0 +1,11 @@
+state={
+	id=1031
+	name="Hall Beach"
+	provinces={
+		7926 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}

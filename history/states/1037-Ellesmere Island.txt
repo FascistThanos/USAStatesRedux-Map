@@ -1,0 +1,23 @@
+
+state={
+	id=1037
+	name="Ellesmere Island"
+
+	history={
+		owner = NUN
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = NUN
+
+	}
+
+	provinces={
+		2 5 9 19 53 100 117 121 130 153 262 343 344 363 382 478 513 515 521 555 583 619 692 703 768 799 913 1038 1047 1129 1154 1234 1263 1293 1364 1628 1710 1974 2005 2218 2695 2934 3017 3075 3090 3424 3843 4374 4375 4379 4380 4383 4386 4387 4398 7824 7831 7842 7845 7846 7850 7855 7857 9841 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=0.000
+}
