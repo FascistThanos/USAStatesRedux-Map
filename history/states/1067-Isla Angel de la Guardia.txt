@@ -1,0 +1,20 @@
+state={
+	id=1067
+	name="Isla Ángel de la Guardia"
+	history={
+		owner = BCA
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = BCA
+
+	}
+	provinces={
+		3691 6979 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}

@@ -1,0 +1,20 @@
+state={
+	id=1071
+	name="Tecate"
+	history={
+		owner = BCA
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = BCA
+
+	}
+	provinces={
+		1474 1713 2535 4359 6595 6608 6620 6688 6702 6739 6775 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}

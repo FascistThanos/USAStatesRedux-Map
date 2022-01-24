@@ -1,0 +1,20 @@
+state={
+	id=1070
+	name="Mexicali"
+	history={
+		owner = BCA
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = BCA
+
+	}
+	provinces={
+		1057 1791 2144 2641 2983 3222 4015 4111 4306 4361 6609 6648 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}
