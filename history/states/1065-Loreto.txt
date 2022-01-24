@@ -1,0 +1,20 @@
+state={
+	id=1065
+	name="Loreto"
+	history={
+		owner = BCS
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = BCS
+
+	}
+	provinces={
+		2210 3147 3448 7171 7184 7201 7226 7234 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}
