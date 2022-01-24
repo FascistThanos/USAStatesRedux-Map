@@ -1,0 +1,23 @@
+
+state={
+	id=1079
+	name="Hermosito"
+
+	history={
+		owner = SON
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = SON
+
+	}
+
+	provinces={
+		636 702 2022 2402 2597 3668 6885 6908 6919 6941 6958 6974 6994 7012 7036 7058 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=0.000
+}
