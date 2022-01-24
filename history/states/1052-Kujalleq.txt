@@ -1,0 +1,20 @@
+state={
+	id=1052
+	name="Kujalleq Islands"
+	history={
+		owner = GRN
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = GRN
+
+	}
+	provinces={
+		7985 7986 7988 7989 7992 7996 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}

@@ -1,0 +1,20 @@
+state={
+	id=1057
+	name="Aasiaat"
+	history={
+		owner = GRN
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = GRN
+
+	}
+	provinces={
+		151 310 329 503 819 820 967 1007 2146 2739 3569 3945 4411 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}

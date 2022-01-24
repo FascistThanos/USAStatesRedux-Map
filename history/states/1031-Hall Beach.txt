@@ -1,6 +1,15 @@
 state={
 	id=1031
 	name="Hall Beach"
+	history={
+		owner = NUN
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = NUN
+
+	}
 	provinces={
 		7926 
 	}

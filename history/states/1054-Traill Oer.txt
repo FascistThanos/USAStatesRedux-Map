@@ -1,0 +1,23 @@
+
+state={
+	id=1054
+	name="Traill Øer"
+
+	history={
+		owner = GRN
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = GRN
+
+	}
+
+	provinces={
+		984 7876 7877 7885 7889 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=0.000
+}
