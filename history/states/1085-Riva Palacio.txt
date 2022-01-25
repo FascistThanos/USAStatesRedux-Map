@@ -1,0 +1,20 @@
+state={
+	id=1085
+	name="Riva Palacio"
+	history={
+		owner = CIA
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = CIA
+
+	}
+	provinces={
+		389 3432 7121 7126 7138 7143 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}

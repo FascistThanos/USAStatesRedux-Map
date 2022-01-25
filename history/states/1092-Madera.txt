@@ -1,0 +1,20 @@
+state={
+	id=1092
+	name="Madera"
+	history={
+		owner = CIA
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = CIA
+
+	}
+	provinces={
+		2128 2426 6872 6895 6913 6946 6966 6975 6984 6999 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}

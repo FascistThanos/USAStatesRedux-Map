@@ -1,0 +1,20 @@
+state={
+	id=1087
+	name="Camargo"
+	history={
+		owner = CIA
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = CIA
+
+	}
+	provinces={
+		279 1519 1867 7085 7089 7112 7114 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}
