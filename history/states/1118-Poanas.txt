@@ -1,0 +1,20 @@
+state={
+	id=1118
+	name="Poanas"
+	history={
+		owner = DUR
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = DUR
+
+	}
+	provinces={
+		1317 1558 1770 2314 2618 4192 7279 7311 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}

@@ -1,0 +1,20 @@
+state={
+	id=1111
+	name="Cuencamé"
+	history={
+		owner = DUR
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = DUR
+
+	}
+	provinces={
+		3069 7285 7287 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}
