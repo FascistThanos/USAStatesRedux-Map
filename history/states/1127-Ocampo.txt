@@ -1,17 +1,17 @@
 state={
-	id=1036
-	name="Prince_of_Wales_Island_NU"
+	id=1127
+	name="Ocampo_COA"
 	history={
-		owner = NUN
+		owner = COA
 		buildings = {
 			infrastructure = 1
 
 		}
-		add_core_of = NUN
+		add_core_of = COA
 
 	}
 	provinces={
-		446 611 2523 4101 4270 7870 7873 
+		808 1669 2364 2966 7037 7038 7055 7061 7079 7100 
 	}
 	manpower=1
 	buildings_max_level_factor=1.000

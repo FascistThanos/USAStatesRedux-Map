@@ -1,17 +1,18 @@
 state={
-	id=1036
-	name="Prince_of_Wales_Island_NU"
+	id=1129
+	name="Francisco Madero"
 	history={
-		owner = NUN
+		owner = COA
 		buildings = {
 			infrastructure = 1
 
 		}
-		add_core_of = NUN
+		add_core_of = COA
 
 	}
+
 	provinces={
-		446 611 2523 4101 4270 7870 7873 
+		1316 3534 4292 7119 7139 7150 7164 7182 
 	}
 	manpower=1
 	buildings_max_level_factor=1.000

@@ -1,17 +1,17 @@
 state={
-	id=1036
-	name="Prince_of_Wales_Island_NU"
+	id=1126
+	name="Mzquiz"
 	history={
-		owner = NUN
+		owner = COA
 		buildings = {
 			infrastructure = 1
 
 		}
-		add_core_of = NUN
+		add_core_of = COA
 
 	}
 	provinces={
-		446 611 2523 4101 4270 7870 7873 
+		661 810 2852 3261 4328 6986 7013 7026 7048 7056 7059 7066 7086 
 	}
 	manpower=1
 	buildings_max_level_factor=1.000

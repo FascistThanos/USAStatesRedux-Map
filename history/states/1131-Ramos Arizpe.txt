@@ -1,17 +1,17 @@
 state={
-	id=1036
-	name="Prince_of_Wales_Island_NU"
+	id=1131
+	name="Ramos Arizpe"
 	history={
-		owner = NUN
+		owner = COA
 		buildings = {
 			infrastructure = 1
 
 		}
-		add_core_of = NUN
+		add_core_of = COA
 
 	}
 	provinces={
-		446 611 2523 4101 4270 7870 7873 
+		626 1804 2118 3961 7180 7199 7209 7230 7246 7258 
 	}
 	manpower=1
 	buildings_max_level_factor=1.000

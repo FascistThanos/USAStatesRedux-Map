@@ -1,17 +1,17 @@
 state={
-	id=1036
-	name="Prince_of_Wales_Island_NU"
+	id=1128
+	name="Cuatroeiénegas"
 	history={
-		owner = NUN
+		owner = COA
 		buildings = {
 			infrastructure = 1
 
 		}
-		add_core_of = NUN
+		add_core_of = COA
 
 	}
 	provinces={
-		446 611 2523 4101 4270 7870 7873 
+		241 535 1487 1557 2051 3391 3683 3785 4271 7107 7109 7120 7122 7135 7140 7160 7165 
 	}
 	manpower=1
 	buildings_max_level_factor=1.000
