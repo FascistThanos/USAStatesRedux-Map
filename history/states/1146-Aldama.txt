@@ -1,17 +1,17 @@
 state={
-	id=1022
-	name="Long_Island_NU"
+	id=1146
+	name="Aldama"
 	history={
-		owner = NUN
+		owner = TAM
 		buildings = {
 			infrastructure = 1
 
 		}
-		add_core_of = NUN
+		add_core_of = TAM
 
 	}
 	provinces={
-		8049 
+		3150 3613 7350 7378 7402 
 	}
 	manpower=1
 	buildings_max_level_factor=1.000

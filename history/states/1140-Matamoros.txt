@@ -1,17 +1,17 @@
 state={
-	id=1022
-	name="Long_Island_NU"
+	id=1140
+	name="Matamoros_TAM"
 	history={
-		owner = NUN
+		owner = TAM
 		buildings = {
 			infrastructure = 1
 
 		}
-		add_core_of = NUN
+		add_core_of = TAM
 
 	}
 	provinces={
-		8049 
+		1858 3029 4021 7207 7223 7231 7251 
 	}
 	manpower=1
 	buildings_max_level_factor=1.000

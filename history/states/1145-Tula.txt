@@ -1,17 +1,17 @@
 state={
-	id=1022
-	name="Long_Island_NU"
+	id=1145
+	name="Tula"
 	history={
-		owner = NUN
+		owner = TAM
 		buildings = {
 			infrastructure = 1
 
 		}
-		add_core_of = NUN
+		add_core_of = TAM
 
 	}
 	provinces={
-		8049 
+		2950 3908 7339 7349 7353 7376 
 	}
 	manpower=1
 	buildings_max_level_factor=1.000
