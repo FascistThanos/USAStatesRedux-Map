@@ -1,8 +1,6 @@
-
 state={
-	id=74
-	name="Rosamorada"
-
+	id=1122
+	name="Acaponeta"
 	history={
 		owner = NAY
 		buildings = {
@@ -12,12 +10,11 @@ state={
 		add_core_of = NAY
 
 	}
-
 	provinces={
-		2628 7394 7422 7427 
+		3109 7391 
 	}
 	manpower=1
 	buildings_max_level_factor=1.000
-	state_category=wasteland
-	local_supplies=1.000
+	local_supplies=0.000
+	state_category = wasteland
 }
