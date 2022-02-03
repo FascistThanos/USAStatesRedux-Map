@@ -31,7 +31,7 @@ NMapMode = {
 	PLAYER_MAPMODE_NOT_SELECTED_COUNTRY_TRANSPARENCY = 0.15,						-- How much is the country colors faded out, for countries that are not occupied by the any player.
 	SELECTED_COUNTRY_HIGHLIGHT_THICKNESS_MULT = 1.5,								-- When a country is selected (blinking/highlighted) it's borders becomes a bit thicker, to make stand out even more. 1.0 is default thickness.
 	STRATEGIC_MODE_COUNTRY_COLOR_STRIPES_TRANSP = 0.0,
-	STRATEGIC_MODE_ENEMY_STRIPES_COLOR = { 0.827, 0.172, 0.184, 0.0 },
+	STRATEGIC_MODE_ENEMY_STRIPES_COLOR = { 0.1195, 0.172, 0.184, 0.0 },
 	STRATEGIC_MODE_OUR_STRIPES_COLOR = { 0.427, 0.619, 0.858, 0.0 },
 	STRATEGIC_MODE_ALLY_STRIPES_COLOR = { 0.427, 0.619, 0.858, 0.0 },
 	RADAR_RANGE_STRIPES_COLOR = { 1.0, 1.0, 0.0, 0.14 },
@@ -775,8 +775,8 @@ NGraphics = {
 	COUNTRY_FLAG_MEDIUM_TEX_HEIGHT = 26,
 	COUNTRY_FLAG_SMALL_TEX_WIDTH = 10,
 	COUNTRY_FLAG_SMALL_TEX_HEIGHT = 7,
-	COUNTRY_FLAG_TEX_MAX_SIZE = 256, -- Tweak dependly on amount of countries. Must be power of 2. No more then 2048.
-	COUNTRY_FLAG_SMALL_TEX_MAX_SIZE = 64, -- Tweak dependly on amount of countries. Must be power of 2. No more then 2048.
+	COUNTRY_FLAG_TEX_MAX_SIZE = 512, -- Tweak dependly on amount of countries. Must be power of 2. No more then 2048.
+	COUNTRY_FLAG_SMALL_TEX_MAX_SIZE = 2048, -- Tweak dependly on amount of countries. Must be power of 2. No more then 2048.
 	COUNTRY_FLAG_STRIPE_TEX_MAX_WIDTH = 10,
 	COUNTRY_FLAG_STRIPE_TEX_MAX_HEIGHT = 4096,
 	COUNTRY_FLAG_LARGE_STRIPE_MAX_WIDTH = 41,
@@ -1249,6 +1249,8 @@ NInterface = {
 	-- When selecting a module in the tank designer, for each role the module forbids a role icon may be displayed.
 	EQUIPMENT_DESIGNER_SHOW_MODULE_FORBIDS_BASE_ROLE_ICON = 0, -- If this is set to 0 no icon will be displayed if the main tank role is forbidden. If set to 1 the icon will be displayed as normal.
 	EQUIPMENT_DESIGNER_SHOW_MODULE_FORBIDS_SPECIALIZED_ROLE_ICON = 0, -- If this is set to 0 no icons will be displayed for any forbidden specialized roles. If set to 1 the icons will be displayed as normal.
+
+	SLOW_INTERFACE_THRESHOLD = 5000, -- Show warning "SLOW INTERFACE" in debug when interface refresh takes more that this (in microseconds)
 },
 
 
