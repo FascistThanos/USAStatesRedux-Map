@@ -1,0 +1,20 @@
+state={
+	id=1156
+	name="Concepción del Oro"
+	history={
+		owner = ZAC
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = ZAC
+
+	}
+	provinces={
+		1879 1920 3259 7288 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}

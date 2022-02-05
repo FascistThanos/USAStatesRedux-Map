@@ -1,0 +1,20 @@
+state={
+	id=1153
+	name="Saín Alto"
+	history={
+		owner = ZAC
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = ZAC
+
+	}
+	provinces={
+		1657 3137 7317 7327 7337 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}

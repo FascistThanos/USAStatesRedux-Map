@@ -1,0 +1,20 @@
+state={
+	id=1155
+	name="Mazapil"
+	history={
+		owner = ZAC
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = ZAC
+
+	}
+	provinces={
+		2974 7304 7323 7325 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}

@@ -1,18 +1,23 @@
+
 state={
 	id=75
-	name="Zacatecas"
+	name="Melchor Ocampo"
+
 	history={
 		owner = ZAC
 		buildings = {
 			infrastructure = 1
+
 		}
 		add_core_of = ZAC
+
+	}
+
+	provinces={
+		2448 7269 7276 7296 
 	}
 	manpower=1
+	buildings_max_level_factor=1.000
 	state_category=wasteland
-	provinces={
-		498 1431 1657 1879 1920 2226 2448 2547 2868 2953 2974 3092 3137 3259 4045 4234 7269 7276 7288 7296 7301 7303 7304 7312 7317 7320 7323 7325 7327 7337 7347 7348 7352 7366 7380 7386 7388 7392 7395 7430 
-	}
-	
 	local_supplies=1.000
 }
