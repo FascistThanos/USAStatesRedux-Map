@@ -1,8 +1,6 @@
-
 state={
-	id=80
-	name="Colima"
-
+	id=1178
+	name="Isla Socorro"
 	history={
 		owner = CLA
 		buildings = {
@@ -12,12 +10,11 @@ state={
 		add_core_of = CLA
 
 	}
-
 	provinces={
-		1614 2755 7553 
+		8205 
 	}
 	manpower=1
 	buildings_max_level_factor=1.000
-	state_category=wasteland
-	local_supplies=1.000
+	local_supplies=0.000
+	state_category = wasteland
 }
