@@ -1,7 +1,7 @@
 
 state={
-	id=86
-	name="Temascaltepec de González"
+	id=1221
+	name="Texcoco"
 
 	history={
 		owner = EME
@@ -14,10 +14,10 @@ state={
 	}
 
 	provinces={
-		4260 4279 7538 
+		672 7532 10396 
 	}
 	manpower=1
 	buildings_max_level_factor=1.000
 	state_category=wasteland
-	local_supplies=1.000
+	local_supplies=0.000
 }

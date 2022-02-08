@@ -1,8 +1,6 @@
-
 state={
-	id=88
-	name="Federal District of Mexico city"
-
+	id=1222
+	name="Azcapotzalco"
 	history={
 		owner = DFD
 		buildings = {
@@ -12,12 +10,11 @@ state={
 		add_core_of = DFD
 
 	}
-
 	provinces={
-		7545 10387 10388 10389 10390 10391 10393 11567 
+		10394 10395 10397 
 	}
 	manpower=1
 	buildings_max_level_factor=1.000
-	state_category=wasteland
-	local_supplies=1.000
+	local_supplies=0.000
+	state_category = wasteland
 }
