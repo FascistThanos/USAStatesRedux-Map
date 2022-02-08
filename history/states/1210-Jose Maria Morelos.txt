@@ -1,0 +1,20 @@
+state={
+	id=1210
+	name="José María Morelos"
+	history={
+		owner = QRO
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = QRO
+
+	}
+	provinces={
+		3991 7505 7519 7536 7539 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}
