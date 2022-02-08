@@ -1,18 +1,23 @@
+
 state={
 	id=87
-	name="Puebla"
+	name="Piaxtla"
+
 	history={
 		owner = PUE
 		buildings = {
 			infrastructure = 1
+
 		}
 		add_core_of = PUE
+
+	}
+
+	provinces={
+		3307 7611 
 	}
 	manpower=1
+	buildings_max_level_factor=1.000
 	state_category=wasteland
-	provinces={
-		3098 3307 3539 4041 7503 7506 7550 7558 7562 7573 7582 7611 
-	}
-	
 	local_supplies=1.000
 }
