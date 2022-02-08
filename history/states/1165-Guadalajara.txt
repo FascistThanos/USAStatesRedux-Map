@@ -1,8 +1,6 @@
-
 state={
-	id=76
-	name="Casimiro Castillo"
-
+	id=1165
+	name="Guadalajara"
 	history={
 		owner = JAL
 		buildings = {
@@ -12,12 +10,11 @@ state={
 		add_core_of = JAL
 
 	}
-
 	provinces={
-		183 1443 2019 7521 
+		10398 10399 10400 10401 10402 10403 10406 
 	}
 	manpower=1
 	buildings_max_level_factor=1.000
-	state_category=wasteland
-	local_supplies=1.000
+	local_supplies=0.000
+	state_category = wasteland
 }
