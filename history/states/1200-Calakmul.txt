@@ -1,0 +1,20 @@
+state={
+	id=1200
+	name="Calakmul"
+	history={
+		owner = CMP
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = CMP
+
+	}
+	provinces={
+		1248 1835 1936 3641 7628 7630 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}
