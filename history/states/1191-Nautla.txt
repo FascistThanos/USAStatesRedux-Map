@@ -1,8 +1,6 @@
-
 state={
-	id=84
-	name="San Andres Tuxtla"
-
+	id=1191
+	name="Nautla"
 	history={
 		owner = VER
 		buildings = {
@@ -12,12 +10,11 @@ state={
 		add_core_of = VER
 
 	}
-
 	provinces={
-		674 1964 3624 7609 7625 7637 
+		1034 3996 4119 7515 7533 
 	}
 	manpower=1
 	buildings_max_level_factor=1.000
-	state_category=wasteland
-	local_supplies=1.000
+	local_supplies=0.000
+	state_category = wasteland
 }
