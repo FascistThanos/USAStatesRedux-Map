@@ -1,8 +1,6 @@
-
 state={
-	id=183
-	name="Cape Cod"
-
+	id=1214
+	name="Martha's Vineyard"
 	history={
 		owner = MAM
 		buildings = {
@@ -12,12 +10,11 @@ state={
 		add_core_of = MAM
 
 	}
-
 	provinces={
-		5238 5271 8141 
+		8140 
 	}
-	manpower=120964
+	manpower=9591
 	buildings_max_level_factor=1.000
-	state_category=large_town
-	local_supplies=1.000
+	local_supplies=0.000
+	state_category = small_island
 }
