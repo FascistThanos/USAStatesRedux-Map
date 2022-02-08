@@ -1,8 +1,6 @@
-
 state={
-	id=95
-	name="Valladolid"
-
+	id=1206
+	name="Dzemul"
 	history={
 		owner = YUC
 		buildings = {
@@ -12,12 +10,11 @@ state={
 		add_core_of = YUC
 
 	}
-
 	provinces={
-		218 1752 7434 7448 7454 7466 7473 
+		1509 7442 7445 
 	}
 	manpower=1
 	buildings_max_level_factor=1.000
-	state_category=wasteland
-	local_supplies=1.000
+	local_supplies=0.000
+	state_category = wasteland
 }
