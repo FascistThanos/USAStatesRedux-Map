@@ -1,6 +1,6 @@
 state={
-	id=81
-	name="Indaparapeo"
+	id=1227
+	name="Mugica"
 	history={
 		owner = MIC
 		buildings = {
@@ -8,12 +8,13 @@ state={
 
 		}
 		add_core_of = MIC
+
 	}
 	provinces={
-		926 2998 3233 7514 
+		4286 7544 7560 7575 7581 
 	}
 	manpower=1
 	buildings_max_level_factor=1.000
-	state_category=wasteland
-	local_supplies=1.000
+	local_supplies=0.000
+	state_category = wasteland
 }
