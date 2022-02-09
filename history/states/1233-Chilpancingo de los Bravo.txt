@@ -1,17 +1,17 @@
 state={
-	id=1227
-	name="Múgica"
+	id=1233
+	name="Chilpancingo de los Bravo"
 	history={
-		owner = MIC
+		owner = GUE
 		buildings = {
 			infrastructure = 1
 
 		}
-		add_core_of = MIC
+		add_core_of = GUE
 
 	}
 	provinces={
-		4286 7544 7560 7575 7581 
+		545 1441 1957 2357 3663 7639 7648 7658 
 	}
 	manpower=1
 	buildings_max_level_factor=1.000

@@ -1,17 +1,17 @@
 state={
-	id=1227
-	name="Múgica"
+	id=1234
+	name="Tlacoachistlahuaca"
 	history={
-		owner = MIC
+		owner = GUE
 		buildings = {
 			infrastructure = 1
 
 		}
-		add_core_of = MIC
+		add_core_of = GUE
 
 	}
 	provinces={
-		4286 7544 7560 7575 7581 
+		3658 7631 7666 7669 7676 
 	}
 	manpower=1
 	buildings_max_level_factor=1.000

@@ -1,17 +1,17 @@
 state={
-	id=1227
-	name="Múgica"
+	id=1232
+	name="Zihuatanejo de Azueta"
 	history={
-		owner = MIC
+		owner = GUE
 		buildings = {
 			infrastructure = 1
 
 		}
-		add_core_of = MIC
+		add_core_of = GUE
 
 	}
 	provinces={
-		4286 7544 7560 7575 7581 
+		1445 7622 7623 
 	}
 	manpower=1
 	buildings_max_level_factor=1.000
