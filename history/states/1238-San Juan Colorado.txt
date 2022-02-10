@@ -1,0 +1,20 @@
+state={
+	id=1238
+	name="San Juan Colorado"
+	history={
+		owner = OAX
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = OAX
+
+	}
+	provinces={
+		2827 3334 4193 7686 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}

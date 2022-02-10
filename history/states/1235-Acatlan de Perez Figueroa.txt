@@ -1,0 +1,20 @@
+state={
+	id=1235
+	name="Acatlán de Pérez Figueroa"
+	history={
+		owner = OAX
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = OAX
+
+	}
+	provinces={
+		1526 3971 7632 7634 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}

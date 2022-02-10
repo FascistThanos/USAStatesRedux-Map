@@ -1,0 +1,20 @@
+state={
+	id=1237
+	name="San Andrés Ixtalhuaca"
+	history={
+		owner = OAX
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = OAX
+
+	}
+	provinces={
+		3142 4176 4291 7664 7680 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}
