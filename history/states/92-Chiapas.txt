@@ -1,18 +1,23 @@
+
 state={
 	id=92
-	name="Chiapas"
+	name="Salto de Agua"
+
 	history={
 		owner = CAP
 		buildings = {
 			infrastructure = 1
+
 		}
 		add_core_of = CAP
+
+	}
+
+	provinces={
+		1635 3401 7672 
 	}
 	manpower=1
+	buildings_max_level_factor=1.000
 	state_category=wasteland
-	provinces={
-		1635 1882 1999 2007 2129 3036 3401 3512 3525 3764 3878 3952 4247 4308 7638 7650 7665 7670 7672 7677 7679 7682 7684 7689 7698 7701 7708 7714 10305 10306 
-	}
-	
 	local_supplies=1.000
 }

@@ -1,0 +1,20 @@
+state={
+	id=1248
+	name="Marqués de Comillas"
+	history={
+		owner = CAP
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = CAP
+
+	}
+	provinces={
+		3952 7679 7684 7689 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}
