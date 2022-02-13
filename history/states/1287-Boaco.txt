@@ -1,8 +1,6 @@
-
 state={
-	id=101
-	name="Managua"
-
+	id=1287
+	name="Boaco"
 	history={
 		owner = NIC
 		buildings = {
@@ -12,12 +10,11 @@ state={
 		add_core_of = NIC
 
 	}
-
 	provinces={
-		10343 10345 10346 10347 11374 
+		2615 7746 7747 7750 
 	}
 	manpower=1
 	buildings_max_level_factor=1.000
-	state_category=wasteland
-	local_supplies=1.000
+	local_supplies=0.000
+	state_category = wasteland
 }
