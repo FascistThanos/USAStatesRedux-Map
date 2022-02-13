@@ -1,8 +1,6 @@
-
 state={
-	id=97
-	name="Guatemala"
-
+	id=1251
+	name="Escuintla"
 	history={
 		owner = GUA
 		buildings = {
@@ -12,12 +10,11 @@ state={
 		add_core_of = GUA
 
 	}
-
 	provinces={
-		10359 10360 10361 10363 10364 11375 
+		586 2234 3937 7729 7732 
 	}
 	manpower=1
 	buildings_max_level_factor=1.000
-	state_category=wasteland
-	local_supplies=1.000
+	local_supplies=0.000
+	state_category = wasteland
 }
