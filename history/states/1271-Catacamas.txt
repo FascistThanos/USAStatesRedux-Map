@@ -1,0 +1,20 @@
+state={
+	id=1271
+	name="Catacamas"
+	history={
+		owner = HON
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = HON
+
+	}
+	provinces={
+		528 3458 7712 7718 7726 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}

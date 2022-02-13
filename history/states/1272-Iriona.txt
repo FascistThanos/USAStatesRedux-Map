@@ -1,0 +1,20 @@
+state={
+	id=1272
+	name="Iriona"
+	history={
+		owner = HON
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = HON
+
+	}
+	provinces={
+		3519 7691 7693 7696 7705 7707 7711 7720 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}
