@@ -1,6 +1,6 @@
 state={
 	id=1260
-	name="Stann Creek"
+	name="Stann Creek"
 	history={
 		owner = BLZ
 		buildings = {
