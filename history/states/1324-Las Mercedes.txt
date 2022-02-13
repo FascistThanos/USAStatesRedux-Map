@@ -1,0 +1,20 @@
+state={
+	id=1324
+	name="Las Mercedes"
+	history={
+		owner = VEN
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = VEN
+
+	}
+	provinces={
+		458 1268 1347 2259 2949 3870 4064 7776 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}

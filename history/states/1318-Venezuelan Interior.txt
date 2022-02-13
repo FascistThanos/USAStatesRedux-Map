@@ -1,0 +1,21 @@
+state={
+	id=1318
+	name="Venezuelan Interior"
+	history={
+		owner = VEN
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = VEN
+
+	}
+	provinces={
+		196 526 739 793 1849 2423 2570 3625 3638 3866 7808 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+	impassable = yes
+}

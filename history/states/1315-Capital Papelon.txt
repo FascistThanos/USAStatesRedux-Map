@@ -1,0 +1,20 @@
+state={
+	id=1315
+	name="Capital Papelón"
+	history={
+		owner = VEN
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = VEN
+
+	}
+	provinces={
+		346 1068 1308 2083 7781 7782 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}

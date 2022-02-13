@@ -1,0 +1,20 @@
+state={
+	id=1325
+	name="Paez"
+	history={
+		owner = VEN
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = VEN
+
+	}
+	provinces={
+		642 1100 1307 2643 4177 7768 7772 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}
