@@ -1,8 +1,6 @@
-
 state={
-	id=117
-	name="Saint Croix"
-
+	id=1339
+	name="Saint Thomas"
 	history={
 		owner = UVU
 		buildings = {
@@ -12,12 +10,11 @@ state={
 		add_core_of = UVU
 
 	}
-
 	provinces={
-		8209 8211 
+		8207 
 	}
 	manpower=1
 	buildings_max_level_factor=1.000
-	state_category=wasteland
-	local_supplies=1.000
+	local_supplies=0.000
+	state_category = wasteland
 }
