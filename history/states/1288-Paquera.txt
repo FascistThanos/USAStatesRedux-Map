@@ -1,0 +1,20 @@
+state={
+	id=1288
+	name="Paquera"
+	history={
+		owner = COS
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = COS
+
+	}
+	provinces={
+		3680 4273 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}
