@@ -1,20 +1,20 @@
 state={
-	id=638
-	name="San_Juan_NMN"
+	id=1343
+	name="San_Juan_PRP"
 	history={
-		owner = NMN
+		owner = PRP
 		buildings = {
 			infrastructure = 1
 
 		}
-		add_core_of = NMN
+		add_core_of = PRP
 
 	}
 	provinces={
-		5914 
+		10365 10366 10367 10368 
 	}
-	manpower=5231
+	manpower=1
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
-	state_category = pastoral
+	state_category = wasteland
 }
