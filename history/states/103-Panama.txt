@@ -1,7 +1,7 @@
 
 state={
 	id=103
-	name="Panama"
+	name="Cémaco"
 
 	history={
 		owner = PAN
@@ -14,11 +14,10 @@ state={
 	}
 
 	provinces={
-		164 289 499 1524 1796 2931 3020 3198 3328 3989 7771 7775 7780 7789 7796 7797 7798 8233 8235 8236 10325 10326 10327 10328 10330 10331 10332 11372 
+		499 2931 7789 7797 
 	}
 	manpower=1
 	buildings_max_level_factor=1.000
 	state_category=wasteland
-	
 	local_supplies=1.000
 }

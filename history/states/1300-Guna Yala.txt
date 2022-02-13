@@ -1,17 +1,17 @@
 state={
-	id=1290
-	name="Jimenez_COS"
+	id=1300
+	name="Guna Yala"
 	history={
-		owner = COS
+		owner = PAN
 		buildings = {
 			infrastructure = 1
 
 		}
-		add_core_of = COS
+		add_core_of = PAN
 
 	}
 	provinces={
-		2353 2626 
+		1796 3198 7771 
 	}
 	manpower=1
 	buildings_max_level_factor=1.000
