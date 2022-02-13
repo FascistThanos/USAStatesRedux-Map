@@ -1,0 +1,20 @@
+state={
+	id=1305
+	name="Arcataca"
+	history={
+		owner = COL
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = COL
+
+	}
+	provinces={
+		375 559 812 2534 3555 7761 7764 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}
