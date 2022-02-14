@@ -1,17 +1,17 @@
 state={
-	id=1328
-	name="Pedernales_VEN"
+	id=1347
+	name="Higuey"
 	history={
-		owner = VEN
+		owner = DOM
 		buildings = {
 			infrastructure = 1
 
 		}
-		add_core_of = VEN
+		add_core_of = DOM
 
 	}
 	provinces={
-		2391 2691 2920 4025 7774 7784 
+		3744 7563 7572 7585 7587 7591 7608 
 	}
 	manpower=1
 	buildings_max_level_factor=1.000

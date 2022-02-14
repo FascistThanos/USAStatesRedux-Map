@@ -1,17 +1,17 @@
 state={
-	id=1328
-	name="Pedernales_VEN"
+	id=1353
+	name="Puerto Plata"
 	history={
-		owner = VEN
+		owner = DOM
 		buildings = {
 			infrastructure = 1
 
 		}
-		add_core_of = VEN
+		add_core_of = DOM
 
 	}
 	provinces={
-		2391 2691 2920 4025 7774 7784 
+		2069 4125 7547 
 	}
 	manpower=1
 	buildings_max_level_factor=1.000
