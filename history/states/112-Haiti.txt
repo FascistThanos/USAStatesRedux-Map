@@ -1,7 +1,7 @@
 
 state={
 	id=112
-	name="Haiti"
+	name="Nord-Ouest Department"
 
 	history={
 		owner = HAI
@@ -14,11 +14,10 @@ state={
 	}
 
 	provinces={
-		579 2031 2593 2639 2822 3483 3912 4072 7516 7520 7524 7541 7542 7568 7569 7590 7594 7612 8203 10372 10374 10377 10379 10380 10381 
+		2822 7516 7520 
 	}
 	manpower=1
 	buildings_max_level_factor=1.000
 	state_category=wasteland
-	
 	local_supplies=1.000
 }

@@ -1,0 +1,20 @@
+state={
+	id=1354
+	name="Nippes"
+	history={
+		owner = HAI
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = HAI
+
+	}
+	provinces={
+		2639 7590 7594 7612 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}
