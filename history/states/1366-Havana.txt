@@ -1,0 +1,20 @@
+state={
+	id=1366
+	name="Havana"
+	history={
+		owner = CUB
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = CUB
+
+	}
+	provinces={
+		7359 10425 10426 10427 10428 10429 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}

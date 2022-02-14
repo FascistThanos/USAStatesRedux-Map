@@ -1,0 +1,20 @@
+state={
+	id=1373
+	name="Granma"
+	history={
+		owner = CUB
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = CUB
+
+	}
+	provinces={
+		4040 7494 7509 7511 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}

@@ -1,0 +1,20 @@
+state={
+	id=1370
+	name="Cienfuegos"
+	history={
+		owner = CUB
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = CUB
+
+	}
+	provinces={
+		3643 3682 3933 7372 7379 7389 7398 7400 7408 7413 7418 7420 7432 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = wasteland
+}
