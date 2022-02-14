@@ -1,7 +1,7 @@
 
 state={
 	id=59
-	name="Utah"
+	name="Wasatch"
 
 	history={
 		owner = UTU
@@ -14,7 +14,7 @@ state={
 	}
 
 	provinces={
-		1239 2411 3079 3341 3711 4112 5379 5446 5499 10882 
+		62 1239 2411 3079 3341 3711 4112 5340 5379 5446 5499 10882 
 	}
 	manpower=54362
 	buildings_max_level_factor=1.000

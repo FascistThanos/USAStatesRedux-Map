@@ -1,3 +1,4 @@
+
 state={
 	id=503
 	name="Forest and Mining District"
@@ -13,7 +14,7 @@ state={
 	}
 
 	provinces={
-		49 589 1302 2079 3966 4718 4723 10201 10213 10471 11496 
+		49 589 1302 2079 3966 4718 4723 10201 10213 
 	}
 	manpower=1040123
 	buildings_max_level_factor=1.000

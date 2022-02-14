@@ -1,8 +1,6 @@
-
 state={
-	id=716
-	name="Coos Bay"
-
+	id=1346
+	name="Umatilla"
 	history={
 		owner = ORO
 		buildings = {
@@ -12,12 +10,11 @@ state={
 		add_core_of = ORO
 
 	}
-
 	provinces={
-		716 2743 3953 5051 5081 
+		863 1492 1547 2892 3634 4872 
 	}
-	manpower=100561
+	manpower=41442
 	buildings_max_level_factor=1.000
-	state_category=town
 	local_supplies=0.000
+	state_category = rural
 }

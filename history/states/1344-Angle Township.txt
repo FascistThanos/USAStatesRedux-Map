@@ -1,23 +1,20 @@
-
 state={
-	id=716
-	name="Coos Bay"
-
+	id=1344
+	name="Angle Township"
 	history={
-		owner = ORO
+		owner = MNM
 		buildings = {
 			infrastructure = 3
 
 		}
-		add_core_of = ORO
+		add_core_of = MNM
 
 	}
-
 	provinces={
-		716 2743 3953 5051 5081 
+		10471 
 	}
-	manpower=100561
+	manpower=100
 	buildings_max_level_factor=1.000
-	state_category=town
 	local_supplies=0.000
+	state_category = rural
 }

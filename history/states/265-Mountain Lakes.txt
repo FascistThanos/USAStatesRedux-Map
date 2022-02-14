@@ -1,6 +1,8 @@
+
 state={
 	id=265
 	name="Mountain Lakes"
+
 	history={
 		owner = WVW
 		buildings = {
@@ -10,11 +12,12 @@ state={
 		add_core_of = WVW
 
 	}
+
 	provinces={
-		925 1579 3131 5597 5674 5694 5722 
+		925 1579 3131 3427 5597 5674 5694 5722 
 	}
 	manpower=29843
 	buildings_max_level_factor=1.000
+	state_category=rural
 	local_supplies=0.000
-	state_category = rural
 }

@@ -1,6 +1,8 @@
+
 state={
 	id=715
 	name="Tillamook"
+
 	history={
 		owner = ORO
 		buildings = {
@@ -10,11 +12,12 @@ state={
 		add_core_of = ORO
 
 	}
+
 	provinces={
-		1037 2594 2835 3251 4901 4917 
+		1037 2321 2594 2835 3251 4901 4917 4987 
 	}
 	manpower=101672
 	buildings_max_level_factor=1.000
+	state_category=town
 	local_supplies=0.000
-	state_category = town
 }

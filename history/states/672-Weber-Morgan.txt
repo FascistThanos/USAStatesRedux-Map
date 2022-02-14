@@ -1,6 +1,8 @@
+
 state={
 	id=672
 	name="Weber-Morgan"
+
 	history={
 		owner = UTU
 		buildings = {
@@ -10,11 +12,12 @@ state={
 		add_core_of = UTU
 
 	}
+
 	provinces={
-		4 62 1844 2221 5309 5313 5340 10252 
+		4 1844 2221 5309 5313 10252 
 	}
 	manpower=50362
 	buildings_max_level_factor=1.000
+	state_category=town
 	local_supplies=0.000
-	state_category = town
 }
