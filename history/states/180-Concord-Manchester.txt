@@ -18,7 +18,7 @@ state={
 	}
 	manpower=104793
 	buildings_max_level_factor=1.000
-	state_category=large_town
+	state_category=small_city
 	
 	local_supplies=1.000
 }
