@@ -1,0 +1,20 @@
+state={
+	id=1393
+	name="Flathead National Forest"
+	history={
+		owner = MTM
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = MTM
+
+	}
+	provinces={
+		1166 1368 4705 
+	}
+	manpower=2141
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = pastoral
+}

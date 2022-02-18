@@ -1,6 +1,8 @@
+
 state={
 	id=974
 	name="Kitimat"
+
 	history={
 		owner = BCB
 		buildings = {
@@ -10,11 +12,12 @@ state={
 		add_core_of = BCB
 
 	}
+
 	provinces={
-		245 869 1235 1839 2123 2375 3454 4500 4534 
+		869 1235 1839 2123 2375 3454 4500 
 	}
 	manpower=1
 	buildings_max_level_factor=1.000
+	state_category=wasteland
 	local_supplies=0.000
-	state_category = wasteland
 }

@@ -1,0 +1,20 @@
+state={
+	id=1389
+	name="Sublette"
+	history={
+		owner = WYW
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = WYW
+
+	}
+	provinces={
+		2724 3599 4075 5126 5143 5197 
+	}
+	manpower=7438
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = pastoral
+}

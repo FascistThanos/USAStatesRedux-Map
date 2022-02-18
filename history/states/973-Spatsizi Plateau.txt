@@ -1,6 +1,8 @@
+
 state={
 	id=973
 	name="Spatsizi Plateau"
+
 	history={
 		owner = BCB
 		buildings = {
@@ -10,11 +12,12 @@ state={
 		add_core_of = BCB
 
 	}
+
 	provinces={
-		217 917 4519 
+		217 537 917 1322 3302 4519 
 	}
 	manpower=1
 	buildings_max_level_factor=1.000
+	state_category=wasteland
 	local_supplies=0.000
-	state_category = wasteland
 }

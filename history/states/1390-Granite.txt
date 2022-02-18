@@ -1,0 +1,20 @@
+state={
+	id=1390
+	name="Granite County"
+	history={
+		owner = MTM
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = MTM
+
+	}
+	provinces={
+		870 3003 4811 
+	}
+	manpower=5424
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = pastoral
+}

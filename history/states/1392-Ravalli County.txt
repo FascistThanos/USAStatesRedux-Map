@@ -1,0 +1,20 @@
+state={
+	id=1392
+	name="Ravalli County"
+	history={
+		owner = MTM
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = MTM
+
+	}
+	provinces={
+		230 2646 2647 4742 
+	}
+	manpower=4792
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = pastoral
+}

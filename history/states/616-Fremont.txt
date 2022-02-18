@@ -1,0 +1,23 @@
+
+state={
+	id=616
+	name="Fremont"
+
+	history={
+		owner = WYW
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = WYW
+
+	}
+
+	provinces={
+		1493 2032 4094 5092 5137 
+	}
+	manpower=10704
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

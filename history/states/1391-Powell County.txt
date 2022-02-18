@@ -1,0 +1,20 @@
+state={
+	id=1391
+	name="Powell County"
+	history={
+		owner = MTM
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = MTM
+
+	}
+	provinces={
+		865 4777 4849 
+	}
+	manpower=15213
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = pastoral
+}

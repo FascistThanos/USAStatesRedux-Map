@@ -1,6 +1,8 @@
+
 state={
 	id=522
 	name="Lower Brule"
+
 	history={
 		owner = SDS
 		buildings = {
@@ -10,11 +12,12 @@ state={
 		add_core_of = SDS
 
 	}
+
 	provinces={
-		1198 1881 2471 2921 3865 4989 5019 5054 5072 5090 
+		1198 1881 2471 2921 3865 5019 5054 5072 5090 
 	}
 	manpower=42341
 	buildings_max_level_factor=1.000
+	state_category=rural
 	local_supplies=0.000
-	state_category = rural
 }

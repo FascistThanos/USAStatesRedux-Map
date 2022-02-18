@@ -1,0 +1,20 @@
+state={
+	id=1388
+	name="Bridger-Tenton National Forest"
+	history={
+		owner = WYW
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = WYW
+
+	}
+	provinces={
+		1916 4298 5032 5040 
+	}
+	manpower=15867
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+	state_category = pastoral
+}

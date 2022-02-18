@@ -1,6 +1,8 @@
+
 state={
 	id=523
 	name="Rosebud"
+
 	history={
 		owner = SDS
 		buildings = {
@@ -10,11 +12,12 @@ state={
 		add_core_of = SDS
 
 	}
+
 	provinces={
-		1236 1623 1626 2462 3112 4998 5018 5071 5079 
+		1236 1623 1626 2462 3112 4989 4998 5018 5071 5079 
 	}
 	manpower=45981
 	buildings_max_level_factor=1.000
+	state_category=rural
 	local_supplies=0.000
-	state_category = rural
 }
