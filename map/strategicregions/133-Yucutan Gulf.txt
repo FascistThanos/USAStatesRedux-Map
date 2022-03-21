@@ -3,7 +3,7 @@ strategic_region={
 	id=133
 	name="Yucutan Gulf"
 	provinces={
-		8564 8574 9107 9262 9413 9453 
+		8202 8216 8217 8564 8574 9107 9139 9262 9413 9453 9622 
 	}
 	naval_terrain=water_shallow_sea
 	weather={

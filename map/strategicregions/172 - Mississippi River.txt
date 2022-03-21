@@ -1,9 +1,11 @@
+
 strategic_region={
 	id=172
 	name="Lower Mississippi River"
 	provinces={
-		11541 11542 11543 11544 11546 11545 11547 11548 11550 11551 11552 11554
+		11541 11542 11543 11544 11545 11546 11547 11548 11550 11551 11552 11554 
 	}
+	naval_terrain=water_fjords
 	weather={
 	}
 }

@@ -1,9 +1,11 @@
+
 strategic_region={
 	id=173
 	name="Upper Mississippi River"
 	provinces={
-		11555 11556 11557 11558
+		11555 11556 11557 11558 
 	}
+	naval_terrain=water_fjords
 	weather={
 	}
 }

@@ -3,7 +3,7 @@ strategic_region={
 	id=129
 	name="Trinidad and Tobago"
 	provinces={
-		1914 7767 8230 8747 8853 9372 
+		1914 7767 8230 8747 8853 9372 11615 11616 11617 11618 11619 11620 11622 
 	}
 	naval_terrain=water_shallow_sea
 	weather={
