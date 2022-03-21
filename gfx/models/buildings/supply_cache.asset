@@ -1,0 +1,4 @@
+entity = {
+	name = "supply_cache_entity"
+	pdxmesh = "supply_cache_mesh"
+}
