@@ -1,19 +1,23 @@
+
 state={
 	id=195
 	name="Norwich-New London"
+
 	history={
 		owner = CTC
 		buildings = {
 			infrastructure = 1
+
 		}
 		add_core_of = CTC
+
 	}
+
 	provinces={
-		4207 5282 10955 
+		4207 5282 10955 11741 11742 11743 11752 11753 11754 11765 11768 
 	}
 	manpower=50214
-	state_category = town
 	buildings_max_level_factor=1.000
-	
+	state_category=town
 	local_supplies=1.000
 }

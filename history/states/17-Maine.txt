@@ -7,12 +7,14 @@ state={
 		owner = MEM
 		buildings = {
 			infrastructure = 4
+
 		}
 		add_core_of = MEM
+
 	}
 
 	provinces={
-		2491 3040 5053 10237 
+		2491 3040 5053 10237 11894 11901 11904 
 	}
 	manpower=151032
 	buildings_max_level_factor=1.000

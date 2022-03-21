@@ -1,6 +1,8 @@
+
 state={
 	id=665
 	name="Maricopa"
+
 	history={
 		owner = AZA
 		buildings = {
@@ -10,11 +12,12 @@ state={
 		add_core_of = AZA
 
 	}
+
 	provinces={
-		1465 2817 3054 3403 4024 4305 4366 6341 6351 6362 6373 6419 6427 6464 6465 6470 6504 6513 
+		1465 2817 3054 3403 4024 4305 4366 6341 6351 6362 6373 6419 6464 6465 6470 6504 6513 
 	}
 	manpower=23851
 	buildings_max_level_factor=1.000
+	state_category=rural
 	local_supplies=0.000
-	state_category = rural
 }

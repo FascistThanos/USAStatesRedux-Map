@@ -1,6 +1,8 @@
+
 state={
 	id=862
 	name="Halimand-Oxford"
+
 	history={
 		owner = ONO
 		buildings = {
@@ -10,11 +12,12 @@ state={
 		add_core_of = ONO
 
 	}
+
 	provinces={
-		1331 3516 5099 5114 5115 5133 
+		1331 3516 5099 5114 5115 5133 11850 
 	}
 	manpower=1
 	buildings_max_level_factor=1.000
+	state_category=wasteland
 	local_supplies=0.000
-	state_category = wasteland
 }

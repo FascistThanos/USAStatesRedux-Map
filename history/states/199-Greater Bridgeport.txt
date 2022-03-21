@@ -1,19 +1,23 @@
+
 state={
 	id=199
 	name="Greater Bridgeport"
+
 	history={
 		owner = CTC
 		buildings = {
 			infrastructure = 1
+
 		}
 		add_core_of = CTC
+
 	}
+
 	provinces={
-		3173 10938 10942 
+		3173 10938 10942 11734 11736 11737 
 	}
 	manpower=415258
-	state_category = metropolis
 	buildings_max_level_factor=1.000
-	
+	state_category=metropolis
 	local_supplies=1.000
 }

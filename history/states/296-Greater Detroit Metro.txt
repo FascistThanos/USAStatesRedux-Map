@@ -1,18 +1,23 @@
+
 state={
 	id=296
 	name="Greater Detroit Metro"
-	history = {
+
+	history={
 		owner = MIM
 		add_core_of = MIM
 		buildings = {
 			infrastructure = 5
+
 		}
+
 	}
+
 	provinces={
-		884 2751 5132 5154 5242 
+		884 2751 5132 5154 5242 11788 11797 11800 11802 11814 11822 11840 11841 11852 
 	}
 	manpower=1081615
 	buildings_max_level_factor=1.000
+	state_category=metropolis
 	local_supplies=10.000
-	state_category = metropolis
 }

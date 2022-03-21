@@ -1,8 +1,6 @@
-
 state={
-	id=236
-	name="Erie"
-
+	id=1397
+	name="upper_erie"
 	history={
 		owner = PAP
 		buildings = {
@@ -12,12 +10,11 @@ state={
 		add_core_of = PAP
 
 	}
-
 	provinces={
-		5216 11008 11014 
+		11803 11804 11805 11806 
 	}
-	manpower=198601
+	manpower=81120
 	buildings_max_level_factor=1.000
-	state_category=large_city
-	local_supplies=5.000
+	local_supplies=0.000
+	state_category = small_city
 }

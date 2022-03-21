@@ -1,6 +1,8 @@
+
 state={
 	id=687
 	name="Las Vegas"
+
 	history={
 		owner = NVN
 		buildings = {
@@ -10,11 +12,12 @@ state={
 		add_core_of = NVN
 
 	}
+
 	provinces={
-		6018 10692 10694 10695 10700 10702 10704 10705 10706 10709 10710 10711 10712 
+		6018 10692 10694 10695 10700 10702 10704 10705 10706 10709 10710 10711 10712 11674 11675 
 	}
 	manpower=5165
 	buildings_max_level_factor=1.000
+	state_category=small_city
 	local_supplies=0.000
-	state_category = small_city
 }

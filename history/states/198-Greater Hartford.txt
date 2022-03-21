@@ -1,19 +1,23 @@
+
 state={
 	id=198
 	name="Greater Hartford"
+
 	history={
 		owner = CTC
 		buildings = {
 			infrastructure = 1
+
 		}
 		add_core_of = CTC
+
 	}
+
 	provinces={
-		5243 10985 
+		5243 10985 11739 11740 11770 11789 
 	}
 	manpower=241520
-	state_category = city
 	buildings_max_level_factor=1.000
-	
+	state_category=city
 	local_supplies=1.000
 }

@@ -1,6 +1,8 @@
+
 state={
 	id=232
 	name="Laurel Highlands"
+
 	history={
 		owner = PAP
 		buildings = {
@@ -10,11 +12,12 @@ state={
 		add_core_of = PAP
 
 	}
+
 	provinces={
-		2484 4178 5434 
+		2484 11701 11702 11704 11706 
 	}
-	manpower=107845
+	manpower=51703
 	buildings_max_level_factor=1.000
+	state_category=large_town
 	local_supplies=0.000
-	state_category = large_town
 }

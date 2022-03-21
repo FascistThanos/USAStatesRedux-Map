@@ -1,6 +1,8 @@
+
 state={
 	id=1331
 	name="Demerara-Berbice"
+
 	history={
 		owner = GYA
 		buildings = {
@@ -10,11 +12,12 @@ state={
 		add_core_of = GYA
 
 	}
+
 	provinces={
-		1544 3166 3213 4086 7816 
+		1544 3166 3213 4086 7816 11609 11610 11611 11612 
 	}
 	manpower=1
 	buildings_max_level_factor=1.000
+	state_category=wasteland
 	local_supplies=0.000
-	state_category = wasteland
 }

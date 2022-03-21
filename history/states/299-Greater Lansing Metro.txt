@@ -1,18 +1,23 @@
+
 state={
 	id=299
 	name="Greater Lansing Metro"
-	history = {
+
+	history={
 		owner = MIM
 		add_core_of = MIM
 		buildings = {
 			infrastructure = 3
+
 		}
+
 	}
+
 	provinces={
-		1655 3548 5116 
+		1655 3548 5116 11848 11851 
 	}
 	manpower=103092
 	buildings_max_level_factor=1.000
+	state_category=town
 	local_supplies=0.000
-	state_category = town
 }

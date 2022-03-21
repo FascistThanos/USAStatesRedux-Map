@@ -1,3 +1,4 @@
+
 state={
 	id=20
 	name="Northeast Massachusetts"
@@ -13,11 +14,10 @@ state={
 	}
 
 	provinces={
-		1721 5136 
+		1721 5136 11844 11845 11855 
 	}
 	manpower=203172
 	buildings_max_level_factor=1.000
 	state_category=city
-	
 	local_supplies=1.000
 }

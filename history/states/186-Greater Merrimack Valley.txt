@@ -1,19 +1,23 @@
+
 state={
 	id=186
 	name="Greater Merrimack Valley"
+
 	history={
 		owner = MAM
 		buildings = {
 			infrastructure = 1
+
 		}
 		add_core_of = MAM
+
 	}
+
 	provinces={
-		5168 11044 
+		5168 11044 11835 11843 11849 
 	}
 	manpower=157945
-	state_category = city
 	buildings_max_level_factor=1.000
-	
+	state_category=city
 	local_supplies=1.000
 }

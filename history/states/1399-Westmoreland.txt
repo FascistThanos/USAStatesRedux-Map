@@ -1,23 +1,20 @@
-
 state={
-	id=291
-	name="Boone"
-
+	id=1399
+	name="Westmoreland"
 	history={
-		owner = INI
+		owner = PAP
 		buildings = {
 			infrastructure = 3
 
 		}
-		add_core_of = INI
+		add_core_of = PAP
 
 	}
-
 	provinces={
-		1481 3765 5564 5601 5631 11688 
+		4178 5434 
 	}
-	manpower=96458
+	manpower=56142
 	buildings_max_level_factor=1.000
-	state_category=town
 	local_supplies=0.000
+	state_category = town
 }

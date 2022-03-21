@@ -1,4 +1,19 @@
 ﻿l_english:
  VICTORY_POINTS_TOOLTIP:0 "§G$NAME$§! victory points = §Y$POINTS$§!"
- VICTORY_POINTS_11132:0 "Portland"
- 
+ VICTORY_POINTS_:0 ""
+####################
+#######Canada#######
+####################
+###Labrador
+#St. John's
+ VICTORY_POINTS_10791:0 "Saint John's"
+ VICTORY_POINTS_11273:0 "Torbay"
+ VICTORY_POINTS_10362:0 "East End"
+ VICTORY_POINTS_11262:0 "Churchill Park"
+ VICTORY_POINTS_11264:0 "Mount Pearl"
+ VICTORY_POINTS_11494:0 "Conception Bay South"
+#The Rest
+ VICTORY_POINTS_270:0 "Corner Brook"
+ VICTORY_POINTS_8124:0 "Saint-Pierre"
+ VICTORY_POINTS_3747:0 "Channel-Port aux Basques"
+ VICTORY_POINTS_4664:0 "Grand Falls-Windsor"

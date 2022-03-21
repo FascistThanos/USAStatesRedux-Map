@@ -1,6 +1,8 @@
+
 state={
 	id=693
 	name="Whatcom-Skagit"
+
 	history={
 		owner = WAW
 		buildings = {
@@ -10,11 +12,12 @@ state={
 		add_core_of = WAW
 
 	}
+
 	provinces={
-		482 3831 3834 4714
+		482 3831 3834 4714 11966 11971 11974 
 	}
 	manpower=116163
 	buildings_max_level_factor=1.000
+	state_category=large_town
 	local_supplies=4.000
-	state_category = large_town
 }

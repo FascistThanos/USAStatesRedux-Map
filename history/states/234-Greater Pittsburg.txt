@@ -1,6 +1,8 @@
+
 state={
 	id=234
 	name="Greater Pittsburgh"
+
 	history={
 		owner = PAP
 		buildings = {
@@ -10,11 +12,12 @@ state={
 		add_core_of = PAP
 
 	}
+
 	provinces={
-		1146 2227 2494 
+		1146 2227 2494 11713 11718 11721 11722 11723 11725 11733 
 	}
 	manpower=354120
 	buildings_max_level_factor=1.000
+	state_category=large_city
 	local_supplies=5.000
-	state_category = large_city
 }

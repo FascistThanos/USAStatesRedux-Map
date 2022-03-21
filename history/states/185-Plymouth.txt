@@ -1,19 +1,23 @@
+
 state={
 	id=185
 	name="Plymouth"
+
 	history={
 		owner = MAM
 		buildings = {
 			infrastructure = 1
+
 		}
 		add_core_of = MAM
+
 	}
+
 	provinces={
-		2780 5206 11458 
+		2780 5206 11458 11755 11777 11781 
 	}
 	manpower=497012
-	state_category = metropolis
 	buildings_max_level_factor=1.000
-	
+	state_category=metropolis
 	local_supplies=1.000
 }

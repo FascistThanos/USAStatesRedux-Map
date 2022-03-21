@@ -1,17 +1,17 @@
 state={
-	id=1395
-	name="nisga_nation"
+	id=1396
+	name="San_Jose_COS"
 	history={
-		owner = BCB
+		owner = COS
 		buildings = {
 			infrastructure = 1
 
 		}
-		add_core_of = BCB
+		add_core_of = COS
 
 	}
 	provinces={
-		245 4534 
+		10333 10334 10335 10336 11373 
 	}
 	manpower=1
 	buildings_max_level_factor=1.000

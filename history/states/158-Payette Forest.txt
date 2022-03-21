@@ -2,19 +2,22 @@
 state={
 	id=158
 	name="Payette Forest"
-	history = {
+
+	history={
 		owner = IDI
 		buildings = {
 			infrastructure = 2
 
 		}
 		add_core_of = IDI
+
 	}
+
 	provinces={
-		975 996 4929 4951 4964 4983 4985 5015 
+		975 996 4929 4951 4964 4983 4985 5015 11932 
 	}
 	manpower=23168
 	buildings_max_level_factor=1.000
-	state_category = pastoral
+	state_category=pastoral
 	local_supplies=1.000
 }

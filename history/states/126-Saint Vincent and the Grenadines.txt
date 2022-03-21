@@ -1,18 +1,23 @@
+
 state={
 	id=126
 	name="Saint Vincent and the Grenadines"
+
 	history={
 		owner = SVG
 		buildings = {
 			infrastructure = 1
+
 		}
 		add_core_of = SVG
-	}
-	manpower=1
-	state_category=wasteland
-	provinces={
-		8222
+
 	}
 
+	provinces={
+		8222 11629 11631 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	state_category=wasteland
 	local_supplies=1.000
 }

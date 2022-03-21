@@ -1,19 +1,23 @@
+
 state={
 	id=192
 	name="The Berkshires"
+
 	history={
 		owner = MAM
 		buildings = {
 			infrastructure = 1
+
 		}
 		add_core_of = MAM
+
 	}
+
 	provinces={
-		5176 11050 
+		5176 11050 11820 11821 11829 
 	}
 	manpower=72412
-	state_category = town
 	buildings_max_level_factor=1.000
-	
+	state_category=town
 	local_supplies=1.000
 }

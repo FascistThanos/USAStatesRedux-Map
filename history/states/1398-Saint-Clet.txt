@@ -1,17 +1,17 @@
 state={
-	id=392
-	name="Magnolia Midlands"
+	id=1398
+	name="Saint-Clet"
 	history={
-		owner = GAG
+		owner = QBC
 		buildings = {
-			infrastructure = 1
+			infrastructure = 4
 
 		}
-		add_core_of = GAG
+		add_core_of = QBC
 
 	}
 	provinces={
-		3018 3308 6629 6719 
+		11931
 	}
 	manpower=1
 	buildings_max_level_factor=1.000

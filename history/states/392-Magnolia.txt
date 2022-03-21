@@ -1,17 +1,17 @@
 state={
-	id=1395
-	name="nisga_nation"
+	id=392
+	name="Magnolia"
 	history={
-		owner = BCB
+		owner = GAG
 		buildings = {
 			infrastructure = 1
 
 		}
-		add_core_of = BCB
+		add_core_of = GAG
 
 	}
 	provinces={
-		245 4534 
+		3018 3308 6629 6719 
 	}
 	manpower=1
 	buildings_max_level_factor=1.000

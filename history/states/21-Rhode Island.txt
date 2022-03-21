@@ -2,6 +2,7 @@
 state={
 	id=21
 	name="Kent"
+
 	history={
 		owner = RIR
 		buildings = {
@@ -9,13 +10,14 @@ state={
 
 		}
 		add_core_of = RIR
+
 	}
+
 	provinces={
-		1652 11456 
+		1652 11456 11747 11749 
 	}
 	manpower=109762
 	buildings_max_level_factor=1.000
 	state_category=large_town
-	
 	local_supplies=1.000
 }
