@@ -3,11 +3,11 @@ characters={
 
 ### POLITICAL ADVISORS ###
 
-	QBC_fascist_guy={
+	QCQ_fascist_guy={
 		advisor={
 			slot = political_advisor
-			idea_token = QBC_fascist_guy
-			allowed  = { original_tag  = QBC }
+			idea_token = QCQ_fascist_guy
+			allowed  = { original_tag  = QCQ }
 				traits  = { fascist_demagogue }
 				do_effect  = { not  = { has_government  = fascism } }
 				ai_will_do  = { factor  = 0.000 }
@@ -16,11 +16,11 @@ characters={
 		portraits={ army={ small="GFX_idea_generic_political_advisor_europe_2" } }
 	}
 
-	QBC_communist_guy={
+	QCQ_communist_guy={
 		advisor={
 			slot = political_advisor
-			idea_token = QBC_communist_guy
-			allowed  = { original_tag  = QBC }
+			idea_token = QCQ_communist_guy
+			allowed  = { original_tag  = QCQ }
 				traits  = { communist_revolutionary }
 				do_effect  = { not  = { has_government  = communism } }
 				ai_will_do  = { factor  = 0.000 }
@@ -29,11 +29,11 @@ characters={
 		portraits={ army={ small="GFX_idea_generic_political_advisor_europe_3" } }
 	}
 
-	QBC_democratic_guy={
+	QCQ_democratic_guy={
 		advisor={
 			slot = political_advisor
-			idea_token = QBC_democratic_guy
-			allowed  = { original_tag  = QBC }
+			idea_token = QCQ_democratic_guy
+			allowed  = { original_tag  = QCQ }
 				traits  = { democratic_reformer }
 				do_effect  = { not  = { has_government  = democratic } }
 				ai_will_do  = {	factor  = 0.000	}
@@ -42,55 +42,55 @@ characters={
 		portraits={ army={	small="GFX_idea_generic_political_advisor_europe_1" } }
 	}
 
-	QBC_coi={
+	QCQ_coi={
 		advisor={
 			slot = political_advisor
-			idea_token = QBC_coi
-			allowed  = { original_tag  = QBC }
+			idea_token = QCQ_coi
+			allowed  = { original_tag  = QCQ }
 				traits  = { captain_of_industry }
 		}
 
 		portraits={ army={ small="GFX_idea_generic_political_advisor_europe_1" } }
 	}
 
-	QBC_fe={
+	QCQ_fe={
 		advisor={
 			slot = political_advisor
-			idea_token = QBC_fe
-			allowed  = { original_tag  = QBC }
+			idea_token = QCQ_fe
+			allowed  = { original_tag  = QCQ }
 				traits  = { fortification_engineer }
 		}
 
 		portraits={ army={ small="GFX_idea_generic_political_advisor_europe_3" } }
 	}
 
-	QBC_wi={
+	QCQ_wi={
 		advisor={
 			slot = political_advisor
-			idea_token = QBC_wi
-			allowed  = { original_tag  = QBC }
+			idea_token = QCQ_wi
+			allowed  = { original_tag  = QCQ }
 				traits  = { war_industrialist }
 		}
 
 		portraits={ army={ small="GFX_idea_generic_war_industrialist" } }
 	}
 
-	QBC_stc={
+	QCQ_stc={
 		advisor={
 			slot = political_advisor
-			idea_token = QBC_stc
-			allowed  = { original_tag  = QBC }
+			idea_token = QCQ_stc
+			allowed  = { original_tag  = QCQ }
 				traits  = {	smooth_talking_charmer 	}
 		}
 
 		portraits={	army={	small="GFX_idea_generic_political_advisor_europe_3"	}	}
 	}
 
-	QBC_pot={
+	QCQ_pot={
 		advisor={
 			slot = political_advisor
-			idea_token = QBC_pot
-			allowed  = { original_tag  = QBC }
+			idea_token = QCQ_pot
+			allowed  = { original_tag  = QCQ }
 				traits  = { prince_of_terror }
 		}
 
@@ -101,34 +101,34 @@ characters={
 
 
 
-	QBC_acd2={
+	QCQ_acd2={
 		advisor={
 			slot = army_chief
-			idea_token = QBC_acd2
-			allowed  = { original_tag  = QBC }
+			idea_token = QCQ_acd2
+			allowed  = { original_tag  = QCQ }
 				traits  = { army_chief_defensive_2 }
 				ai_will_do  = { factor  = 1.000 }
 		}
 # TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
 		portraits={ army={ small="GFX_idea_generic_army_europe_5" } }
 	}
-	QBC_ncs={
+	QCQ_ncs={
 		advisor={
 			slot = high_command
-			idea_token = QBC_ncs
+			idea_token = QCQ_ncs
 			ledger  = navy 
-				allowed  = { original_tag  = QBC }
+				allowed  = { original_tag  = QCQ }
 				traits  = { navy_capital_ship_2 }
 				ai_will_do  = { factor  = 1.000 }
 		}
 # TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
 		portraits={ army={ small="GFX_idea_generic_navy_europe_2" } }
 	}
-	QBC_nccr={
+	QCQ_nccr={
 		advisor={
 			slot = navy_chief
-			idea_token = QBC_nccr
-			allowed  = { original_tag  = QBC }
+			idea_token = QCQ_nccr
+			allowed  = { original_tag  = QCQ }
 				traits  = { navy_chief_commerce_raiding_2 }
 				ai_will_do  = { factor  = 1.000 }
 		}
@@ -136,12 +136,12 @@ characters={
 		portraits={
 			army={ small="GFX_idea_generic_navy_europe_2" } }
 	}
-	QBC_aco2={
+	QCQ_aco2={
 		advisor={
 			slot = army_chief
-			idea_token = QBC_aco2
+			idea_token = QCQ_aco2
 			allowed  = {
-					original_tag  = QBC
+					original_tag  = QCQ
 				}
 				traits  = {
 					army_chief_organizational_2 
@@ -157,13 +157,13 @@ characters={
 			}
 		}
 	}
-	QBC_ai2={
+	QCQ_ai2={
 		advisor={
 			slot = high_command
-			idea_token = QBC_ai2
+			idea_token = QCQ_ai2
 			ledger  = army 
 				allowed  = {
-					original_tag  = QBC
+					original_tag  = QCQ
 				}
 				traits  = {
 					army_infantry_2 
@@ -179,13 +179,13 @@ characters={
 			}
 		}
 	}
-	QBC_ar={
+	QCQ_ar={
 		advisor={
 			slot = high_command
-			idea_token = QBC_ar
+			idea_token = QCQ_ar
 			ledger  = army 
 				allowed  = {
-					original_tag  = QBC
+					original_tag  = QCQ
 				}
 				traits  = {
 					army_regrouping_2 
@@ -201,13 +201,13 @@ characters={
 			}
 		}
 	}
-	QBC_acas={
+	QCQ_acas={
 		advisor={
 			slot = high_command
-			idea_token = QBC_acas
+			idea_token = QCQ_acas
 			ledger  = air 
 				allowed  = {
-					original_tag  = QBC
+					original_tag  = QCQ
 				}
 				traits  = {
 					air_close_air_support_2 
@@ -223,13 +223,13 @@ characters={
 			}
 		}
 	}
-	QBC_aa2={
+	QCQ_aa2={
 		advisor={
 			slot = high_command
-			idea_token = QBC_aa2
+			idea_token = QCQ_aa2
 			ledger  = army 
 				allowed  = {
-					original_tag  = QBC
+					original_tag  = QCQ
 				}
 				traits  = {
 					army_armored_2 
@@ -246,13 +246,13 @@ characters={
 		}
 	}
 
-	QBC_mt={
+	QCQ_mt={
 		advisor={
 			slot = theorist
-			idea_token = QBC_mt
+			idea_token = QCQ_mt
 			ledger  = army 
 				allowed  = {
-					original_tag  = QBC
+					original_tag  = QCQ
 				}
 				traits  = {
 					military_theorist 
@@ -265,12 +265,12 @@ characters={
 			}
 		}
 	}
-	QBC_acr={
+	QCQ_acr={
 		advisor={
 			slot = air_chief
-			idea_token = QBC_acr
+			idea_token = QCQ_acr
 			allowed  = {
-					original_tag  = QBC
+					original_tag  = QCQ
 				}
 				traits  = {
 					air_chief_reform_2 
@@ -286,12 +286,12 @@ characters={
 			}
 		}
 	}
-	QBC_acgs={
+	QCQ_acgs={
 		advisor={
 			slot = air_chief
-			idea_token = QBC_acgs
+			idea_token = QCQ_acgs
 			allowed  = {
-					original_tag  = QBC
+					original_tag  = QCQ
 				}
 				traits  = {
 					air_chief_ground_support_2 
@@ -307,13 +307,13 @@ characters={
 			}
 		}
 	}
-	QBC_awt={
+	QCQ_awt={
 		advisor={
 			slot = theorist
-			idea_token = QBC_awt
+			idea_token = QCQ_awt
 			ledger  = air 
 				allowed  = {
-					original_tag  = QBC
+					original_tag  = QCQ
 				}
 				traits  = {
 					air_warfare_theorist 
@@ -326,12 +326,12 @@ characters={
 			}
 		}
 	}
-	QBC_ncm={
+	QCQ_ncm={
 		advisor={
 			slot = navy_chief
-			idea_token = QBC_ncm
+			idea_token = QCQ_ncm
 			allowed  = {
-					original_tag  = QBC
+					original_tag  = QCQ
 				}
 				traits  = {
 					navy_chief_maneuver_2 
@@ -347,13 +347,13 @@ characters={
 			}
 		}
 	}
-	QBC_nt={
+	QCQ_nt={
 		advisor={
 			slot = theorist
-			idea_token = QBC_nt
+			idea_token = QCQ_nt
 			ledger  = navy 
 				allowed  = {
-					original_tag  = QBC
+					original_tag  = QCQ
 				}
 				traits  = {
 					naval_theorist 

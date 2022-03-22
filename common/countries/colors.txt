@@ -256,7 +256,7 @@ ONO = {
 	color_ui = rgb { 140 48 39 }
 }
 
-QBC = {
+QCQ = {
 	color = rgb { 74 57 173 }
 	color_ui = rgb { 74 57 173 }
 }

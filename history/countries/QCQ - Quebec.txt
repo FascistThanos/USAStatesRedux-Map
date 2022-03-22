@@ -1,6 +1,6 @@
 ﻿capital = 3
 
-oob = "QBC_1936"
+oob = "QCQ_1936"
 
 set_research_slots = 4
 
@@ -132,7 +132,7 @@ set_stability = 0.9
 
 create_country_leader = {
 	name = "Adelard Godbout"
-	picture = "gfx/leaders/QBC/Portrait_QBC_AdelardGodbout.dds"
+	picture = "gfx/leaders/QCQ/Portrait_QCQ_AdelardGodbout.dds"
 	expire = "1965.1.1"
 	ideology = liberalism
 	traits = {
@@ -142,7 +142,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Adrien Arcand"
 	desc = ""
-	picture = "gfx/leaders/QBC/Portrait_QBC_AdrienArcand.dds"
+	picture = "gfx/leaders/QCQ/Portrait_QCQ_AdrienArcand.dds"
 	expire = "1965.1.1"
 	ideology = nazism
 	traits = {
@@ -154,7 +154,7 @@ create_country_leader = {
 
 create_country_leader = {
 	name = "Maurice Duplessis"
-	picture = "gfx/leaders/QBC/Portrait_QBC_mauriceDuplessis.dds"
+	picture = "gfx/leaders/QCQ/Portrait_QCQ_mauriceDuplessis.dds"
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
@@ -163,7 +163,7 @@ create_country_leader = {
 }
 create_country_leader = {
 	name = "Annie Buller"
-	picture = "gfx/leaders/QBC/Portrait_QBC_anniebuller.dds"
+	picture = "gfx/leaders/QCQ/Portrait_QCQ_anniebuller.dds"
 	expire = "1965.1.1"
 	ideology = marxism
 	traits = {
