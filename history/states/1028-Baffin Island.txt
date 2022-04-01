@@ -9,6 +9,9 @@ state={
 			infrastructure = 1
 
 		}
+		victory_points = {
+			4289 10
+		}
 		add_core_of = NUN
 
 	}

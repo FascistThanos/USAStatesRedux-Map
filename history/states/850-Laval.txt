@@ -2,12 +2,15 @@ state={
 	id=850
 	name="Laval"
 	history={
-		owner = QBC
+		owner = QCQ
 		buildings = {
 			infrastructure = 1
 
 		}
-		add_core_of = QBC
+		victory_points = {
+			8132 10
+		}
+		add_core_of = QCQ
 
 	}
 	provinces={

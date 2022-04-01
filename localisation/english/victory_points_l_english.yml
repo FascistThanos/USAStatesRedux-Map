@@ -4,7 +4,7 @@
 ####################
 #######Canada#######
 ####################
-###Labrador
+###Newfoundland
 #St. John's
  VICTORY_POINTS_10791:0 "Saint John's"
  VICTORY_POINTS_11273:0 "Torbay"
@@ -17,3 +17,182 @@
  VICTORY_POINTS_8124:0 "Saint-Pierre"
  VICTORY_POINTS_3747:0 "Channel-Port aux Basques"
  VICTORY_POINTS_4664:0 "Grand Falls-Windsor"
+ VICTORY_POINTS_469:0 "Saint Anthony"
+##Labrador
+ VICTORY_POINTS_2277:0 "Cartwright"
+ VICTORY_POINTS_2077:0 "Happy Valley-Goose Bay"
+ VICTORY_POINTS_4532:0 "Rigolet"
+ VICTORY_POINTS_4013:0 "Hopedale"
+#Labrador City
+ VICTORY_POINTS_11328:0 "Labrador City"
+ VICTORY_POINTS_11327:0 "Wabush"
+##Québec
+#Quebec City
+ VICTORY_POINTS_11246:0 "Québec City"
+ VICTORY_POINTS_11244:0 "Sainte-Foy"
+ VICTORY_POINTS_11249:0 "L'Ancienne-Lorette"
+ VICTORY_POINTS_10605:0 "Beauport"
+ VICTORY_POINTS_11250:0 "Loretteville"
+#Montreal
+ VICTORY_POINTS_11208:0 "Montréal"
+ VICTORY_POINTS_8132:0 "Laval"
+ VICTORY_POINTS_11206:0 "Longueuil"
+ VICTORY_POINTS_11201:0 "Saint-Lambert"
+ VICTORY_POINTS_8133:0 "Montréal-Est"
+ VICTORY_POINTS_11205:0 "Dorval"
+ VICTORY_POINTS_11220:0 "Boisbriand"
+ VICTORY_POINTS_11213:0 "Saint-Eustache"
+ VICTORY_POINTS_11219:0 "Blainville"
+#Gatineau
+ VICTORY_POINTS_11202:0 "Gatineau"
+ VICTORY_POINTS_11200:0 "Île de Hull"
+ VICTORY_POINTS_11204:0 "District de L'Oree"
+ VICTORY_POINTS_11207:0 "District des Riverains"
+#The Rest
+ VICTORY_POINTS_1456:0 "Sherbrooke"
+ VICTORY_POINTS_4078:0 "Victoriaville"
+ VICTORY_POINTS_4707:0 "Saguenay"
+ VICTORY_POINTS_331:0 "Trois-Rivières"
+##Ontario
+#Ottowa
+ VICTORY_POINTS_11196:0 "Ottowa"
+ VICTORY_POINTS_11194:0 "Kanata"
+ VICTORY_POINTS_11195:0 "Nepean"
+ VICTORY_POINTS_10505:0 "Bayshore"
+ VICTORY_POINTS_11197:0 "Gloucester"
+#Toronto
+ VICTORY_POINTS_11476:0 "Toronto"
+ VICTORY_POINTS_11144:0 "Vaughan"
+ VICTORY_POINTS_11150:0 "Richmond Hill"
+ VICTORY_POINTS_11140:0 "Scarborough"
+ VICTORY_POINTS_5050:0 "Oshawa"
+#Mississauga
+ VICTORY_POINTS_11129:0 "Mississauga"
+ VICTORY_POINTS_11125:0 "Oakville"
+ VICTORY_POINTS_11136:0 "Brampton"
+ VICTORY_POINTS_11137:0 "Etobicoke"
+ VICTORY_POINTS_11899:0 "Burlington"
+#The Rest
+ VICTORY_POINTS_2672:0 "Hamilton"
+ VICTORY_POINTS_11886:0 "Niagara Falls"
+ VICTORY_POINTS_11880:0 "Saint Catharines"
+ VICTORY_POINTS_3516:0 "Kitchener"
+ VICTORY_POINTS_750:0 "London"
+ VICTORY_POINTS_4986:0 "Barrie"
+ VICTORY_POINTS_2304:0 "Kingston"
+ VICTORY_POINTS_4818:0 "Sudbury"
+##Manitoba
+#Winnipeg
+ VICTORY_POINTS_11299:0 "Winnipeg"
+ VICTORY_POINTS_11297:0 "Saint James Industrial"
+#Grant Park
+ VICTORY_POINTS_11295:0 "Grant Park"
+ VICTORY_POINTS_11298:0 "Boniface"
+ VICTORY_POINTS_11294:0 "Linden Park"
+#Brandon
+ VICTORY_POINTS_11303:0 "Brandon"
+ VICTORY_POINTS_11304:0 "Green Acres"
+ VICTORY_POINTS_11300:0 "Richmond Park"
+ VICTORY_POINTS_11302:0 "Trinity Park"
+ VICTORY_POINTS_10656:0 "Parkdale Heights"
+ VICTORY_POINTS_11305:0 "Centennial"
+ VICTORY_POINTS_11306:0 "Valleyview"
+#The Rest
+ VICTORY_POINTS_912:0 "Selkirk"
+ VICTORY_POINTS_4103:0 "Peguis"
+ VICTORY_POINTS_2362:0 "Portage la Prairie"
+ VICTORY_POINTS_4605:0 "Dauphin"
+##Saskatchewan
+#Regina
+ VICTORY_POINTS_11310:0 "Regina"
+ VICTORY_POINTS_11311:0 "North Central"
+ VICTORY_POINTS_11307:0 "Whitmore Park"
+ VICTORY_POINTS_11309:0 "Arcola"
+ VICTORY_POINTS_11312:0 "Tuxedo Park"
+#Saskatoon
+ VICTORY_POINTS_11323:0 "Saskatoon"
+ VICTORY_POINTS_11325:0 "Lawson Heights"
+ VICTORY_POINTS_11326:0 "North Industrial"
+ VICTORY_POINTS_11324:0 "Macnab Park"
+ VICTORY_POINTS_11321:0 "Riversdale"
+ VICTORY_POINTS_11320:0 "Nutana"
+ VICTORY_POINTS_11322:0 "Holliston"
+#The Rest
+ VICTORY_POINTS_385:0 "Estevan"
+ VICTORY_POINTS_4632:0 "Weyburn"
+ VICTORY_POINTS_4613:0 "Moose Jaw"
+ VICTORY_POINTS_2228:0 "Swift Current"
+ VICTORY_POINTS_2507:0 "Kindersley"
+ VICTORY_POINTS_3073:0 "Maple Creek"
+##Alberta
+#Calgary
+ VICTORY_POINTS_11316:0 "Calgary"
+ VICTORY_POINTS_11317:0 "Brentwood"
+ VICTORY_POINTS_11313:0 "Glengarry"
+ VICTORY_POINTS_11314:0 "Alyth"
+ VICTORY_POINTS_11315:0 "Inglewood"
+ VICTORY_POINTS_11318:0 "Marlborough"
+ VICTORY_POINTS_11319:0 "Huntington Hills"
+#Edmonton
+ VICTORY_POINTS_11335:0 "Edmonton"
+ VICTORY_POINTS_11332:0 "Calgary Trail South"
+ VICTORY_POINTS_11333:0 "Larkspur"
+ VICTORY_POINTS_11337:0 "Belvedere"
+ VICTORY_POINTS_11499:0 "Eaux Claires"
+ VICTORY_POINTS_11336:0 "Saint Albert"
+ VICTORY_POINTS_11334:0 "Place Larue"
+#The Rest
+ VICTORY_POINTS_4139:0 "Medicine Hat"
+ VICTORY_POINTS_3746:0 "Lethbridge"
+ VICTORY_POINTS_1430:0 "Brooks"
+ VICTORY_POINTS_4580:0 "Canmore"
+ VICTORY_POINTS_258:0 "Red Deer"
+##British Columbia
+#Victoria
+ VICTORY_POINTS_11285:0 "Victoria"
+ VICTORY_POINTS_11284:0 "Oak Bay"
+ VICTORY_POINTS_11286:0 "Sidney"
+#Vancouver
+ VICTORY_POINTS_11290:0 "Vancouver"
+ VICTORY_POINTS_11292:0 "West Vancouver"
+ VICTORY_POINTS_11293:0 "Coquitlam"
+ VICTORY_POINTS_11288:0 "Richmond"
+ VICTORY_POINTS_11291:0 "Surrey"
+ VICTORY_POINTS_11289:0 "White Rock"
+#The Rest
+ VICTORY_POINTS_11965:0 "Langford"
+ VICTORY_POINTS_11976:0 "Nanaimo"
+ VICTORY_POINTS_3607:0 "Kamloops"
+##Nunavut
+#Iqaluit
+ VICTORY_POINTS_11365:0 "Iqaluit"
+ VICTORY_POINTS_11367:0 "Apex"
+#The Rest
+ VICTORY_POINTS_4289:0 "Cape Dorset"
+ VICTORY_POINTS_2246:0 "Coral Harbour"
+ VICTORY_POINTS_11359:0 "Rankin Inlet"
+ VICTORY_POINTS_4480:0 "Arviat"
+##Northwest Territories
+#Yellowknife
+ VICTORY_POINTS_11364:0 "Yellowknife"
+ VICTORY_POINTS_11362:0 "Con Mine Park"
+ VICTORY_POINTS_11363:0 "Giant Mine"
+ VICTORY_POINTS_11361:0 "Dettah"
+#The Rest
+ VICTORY_POINTS_2544:0 "Fort Provindence"
+ VICTORY_POINTS_2181:0 "Behchoko"
+ VICTORY_POINTS_553:0 "Fort Smith"
+ VICTORY_POINTS_894:0 "Hay River"
+##Yukon
+#Whitehorse
+ VICTORY_POINTS_11346:0 "Whitehorse"
+ VICTORY_POINTS_11343:0 "Riverdale"
+ VICTORY_POINTS_11347:0 "Downtown Whitehorse"
+ VICTORY_POINTS_11345:0 "Copper Ridge"
+ VICTORY_POINTS_11348:0 "Valleyview"
+ VICTORY_POINTS_11344:0 "Canyon Crescent"
+#The Rest
+ VICTORY_POINTS_39:0 "Dezadeash"
+ VICTORY_POINTS_755:0 "Teslin"
+ VICTORY_POINTS_3195:0 "Watson Lake"
+ VICTORY_POINTS_843:0 "Beaver Creek"

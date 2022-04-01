@@ -2,12 +2,18 @@ state={
 	id=852
 	name="Longueuil"
 	history={
-		owner = QBC
+		owner = QCQ
 		buildings = {
 			infrastructure = 1
 
 		}
-		add_core_of = QBC
+		victory_points = {
+			11206 10
+		}
+		victory_points = {
+			11201 5
+		}
+		add_core_of = QCQ
 
 	}
 	provinces={

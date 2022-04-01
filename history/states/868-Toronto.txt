@@ -5,7 +5,21 @@ state={
 		owner = ONO
 		buildings = {
 			infrastructure = 1
-
+		}
+		victory_points = {
+			11476 30
+		}
+		victory_points = {
+			11144 10
+		}
+		victory_points = {
+			11150 5
+		}
+		victory_points = {
+			11140 5
+		}
+		victory_points = {
+			5050 10
 		}
 		add_core_of = ONO
 

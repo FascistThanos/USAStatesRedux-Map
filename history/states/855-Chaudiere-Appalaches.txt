@@ -2,12 +2,18 @@ state={
 	id=855
 	name="Chaudière-Appalaches"
 	history={
-		owner = QBC
+		owner = QCQ
 		buildings = {
 			infrastructure = 1
 
 		}
-		add_core_of = QBC
+		victory_points = {
+			1456 10
+		}
+		victory_points = {
+			4078 5
+		}
+		add_core_of = QCQ
 
 	}
 	provinces={

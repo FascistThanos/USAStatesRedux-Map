@@ -2,12 +2,27 @@ state={
 	id=838
 	name="Québec city"
 	history={
-		owner = QBC
+		owner = QCQ
 		buildings = {
 			infrastructure = 1
 
 		}
-		add_core_of = QBC
+		victory_points = {
+			11246 30
+		}
+		victory_points = {
+			11244 10
+		}
+		victory_points = {
+			11249 10
+		}
+		victory_points = {
+			10605 5
+		}
+		victory_points = {
+			11250 5
+		}
+		add_core_of = QCQ
 
 	}
 	provinces={

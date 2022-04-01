@@ -2,12 +2,12 @@ state={
 	id=825
 	name="Anticosti Island"
 	history={
-		owner = QBC
+		owner = QCQ
 		buildings = {
 			infrastructure = 1
 
 		}
-		add_core_of = QBC
+		add_core_of = QCQ
 
 	}
 	provinces={

@@ -7,6 +7,9 @@ state={
 			infrastructure = 1
 
 		}
+		victory_points = {
+			4818 10
+		}
 		add_core_of = ONO
 
 	}

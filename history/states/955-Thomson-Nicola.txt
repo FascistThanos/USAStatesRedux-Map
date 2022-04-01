@@ -7,6 +7,9 @@ state={
 			infrastructure = 1
 
 		}
+		victory_points = {
+			3607 10
+		}
 		add_core_of = BCB
 
 	}

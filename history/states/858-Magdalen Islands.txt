@@ -2,12 +2,12 @@ state={
 	id=858
 	name="Magdalen Islands"
 	history={
-		owner = QBC
+		owner = QCQ
 		buildings = {
 			infrastructure = 1
 
 		}
-		add_core_of = QBC
+		add_core_of = QCQ
 
 	}
 	provinces={

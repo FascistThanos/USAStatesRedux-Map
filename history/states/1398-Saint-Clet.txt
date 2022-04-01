@@ -2,12 +2,12 @@ state={
 	id=1398
 	name="Saint-Clet"
 	history={
-		owner = QBC
+		owner = QCQ
 		buildings = {
 			infrastructure = 4
 
 		}
-		add_core_of = QBC
+		add_core_of = QCQ
 
 	}
 	provinces={

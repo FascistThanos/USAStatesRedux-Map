@@ -4,12 +4,15 @@ state={
 	name="Capitale-Nationale"
 
 	history={
-		owner = QBC
+		owner = QCQ
 		buildings = {
 			infrastructure = 1
 
 		}
-		add_core_of = QBC
+		victory_points = {
+			4707 10
+		}
+		add_core_of = QCQ
 
 	}
 

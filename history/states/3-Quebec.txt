@@ -4,12 +4,12 @@ state={
 	name="Gaspésie-Iles-de-la-Madeleine"
 
 	history={
-		owner = QBC
+		owner = QCQ
 		buildings = {
 			infrastructure = 1
 
 		}
-		add_core_of = QBC
+		add_core_of = QCQ
 
 	}
 

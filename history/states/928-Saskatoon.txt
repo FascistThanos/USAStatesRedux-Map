@@ -7,6 +7,21 @@ state={
 			infrastructure = 1
 
 		}
+		victory_points = {
+			11323 20
+		}
+		victory_points = {
+			11325 5
+		}
+		victory_points = {
+			11326 5
+		}
+		victory_points = {
+			11324 5
+		}
+		victory_points = {
+			11321 5
+		}
 		add_core_of = SKS
 
 	}

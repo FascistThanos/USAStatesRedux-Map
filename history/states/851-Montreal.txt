@@ -2,12 +2,21 @@ state={
 	id=851
 	name="Montreal"
 	history={
-		owner = QBC
+		owner = QCQ
 		buildings = {
 			infrastructure = 1
 
 		}
-		add_core_of = QBC
+		victory_points = {
+			11208 30
+		}
+		victory_points = {
+			8133 5
+		}
+		victory_points = {
+			11205 10
+		}
+		add_core_of = QCQ
 
 	}
 	provinces={

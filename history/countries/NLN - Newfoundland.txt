@@ -1,9 +1,8 @@
-﻿capital = 1
+﻿capital = 809
 
 oob = "NLN_1936"
 
 set_research_slots = 3
-set_country_flag = monroe_doctrine
 
 # Starting tech
 set_technology = {
