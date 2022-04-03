@@ -7,6 +7,21 @@ state={
 			infrastructure = 2
 
 		}
+		victory_points = {
+			11120 15
+		}
+		victory_points = {
+			11122 10
+		}
+		victory_points = {
+			11127 10
+		}
+		victory_points = {
+			11126 5
+		}
+		victory_points = {
+			11114 5
+		}
 		add_core_of = IDI
 
 	}

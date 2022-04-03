@@ -7,6 +7,21 @@ state={
 			infrastructure = 3
 
 		}
+		victory_points = {
+			11275 15
+		}
+		victory_points = {
+			11495 10
+		}
+		victory_points = {
+			11277 5
+		}
+		victory_points = {
+			11280 5
+		}
+		victory_points = {
+			11279 10
+		}
 		add_core_of = WAW
 
 	}

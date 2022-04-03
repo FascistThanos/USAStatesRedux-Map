@@ -7,6 +7,9 @@ state={
 			infrastructure = 1
 
 		}
+		victory_points = {
+			5186 5
+		}
 		add_core_of = ORO
 
 	}

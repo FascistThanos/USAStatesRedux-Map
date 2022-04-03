@@ -7,6 +7,9 @@ state={
 			infrastructure = 3
 
 		}
+		victory_points = {
+			1026 10
+		}
 		add_core_of = IDI
 	}
 	provinces={
