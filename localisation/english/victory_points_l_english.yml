@@ -198,6 +198,7 @@
  VICTORY_POINTS_843:0 "Beaver Creek"
 ##Oregon
 #Salem
+#PLACEMENT NOTE salem needs to move slightly west so it stradels the Willamette River so that west salem is on the west bank and the rest is on the east bank
 VICTORY_POINTS_11483:0 "Salem"
 VICTORY_POINTS_11189:0 "Four Corners"
 VICTORY_POINTS_11192:0 "Keizer"
@@ -260,6 +261,7 @@ VICTORY_POINTS_11274:0 "Bothell"
 VICTORY_POINTS_11276:0 "Edmonds"
 VICTORY_POINTS_11278:0 "Everett"
 #Spokane
+#PLACEMENT NOTE needs to move slightly north so it stradles the Spokane River Hazelwwod and Spokane need to be on south side millwood should stradel it and NIne MIle Falls and Fairwwod on the north side
 VICTORY_POINTS_11275:0 "Spokane"
 VICTORY_POINTS_11495:0 "Millwood"
 VICTORY_POINTS_11277:0 "Hazelwood"
@@ -300,3 +302,46 @@ VICTORY_POINTS_3666:0 "Twin Falls"
 VICTORY_POINTS_533:0 "Salmon"
 VICTORY_POINTS_780:0 "Grangeville"
 VICTORY_POINTS_397:0 "Stanley"
+##Montana
+#Missoula
+#PLACEMENT NOTE needs to move very slightly south unto the clark fork river
+VICTORY_POINTS_11245:0 "Missoula"
+VICTORY_POINTS_11238:0 "University"
+VICTORY_POINTS_11489:0 "Bonner Junction"
+VICTORY_POINTS_11237:0 "Orchard Homes"
+VICTORY_POINTS_11240:0 "De Smet"
+#Helena
+VICTORY_POINTS_11234:0 "Helena"
+VICTORY_POINTS_11233:0 "Unionville"
+VICTORY_POINTS_11232:0 "Loiusville"
+VICTORY_POINTS_11235:0 "Silver City"
+VICTORY_POINTS_11236:0 "Lake Helena"
+#Bozeman
+VICTORY_POINTS_11487:0 "Bozeman"
+VICTORY_POINTS_11218:0 "Chestnut"
+VICTORY_POINTS_11229:0 "Saddle Peak"
+VICTORY_POINTS_11488:0 "Bridger"
+VICTORY_POINTS_11224:0 "Camona"
+VICTORY_POINTS_11217:0 "Four Corners"
+#Billings
+#PLACEMENT NOTE needs to move north unto the north bank of the yellowstone river pictograph cave and Briarwood should be on the south side the rest should be northside
+VICTORY_POINTS_11228:0 "Billings"
+VICTORY_POINTS_10483:0 "Lockwood"
+VICTORY_POINTS_11230:0 "Hesper"
+VICTORY_POINTS_11222:0 "Laurel"
+VICTORY_POINTS_11231:0 "Billings Municipal Airport"
+VICTORY_POINTS_11223:0 "Pictograph Cave"
+VICTORY_POINTS_11215:0 "Briarwood"
+#Great Falls
+VICTORY_POINTS_11072:0 "Black Eagle Falls"
+VICTORY_POINTS_11261:0 "Great Falls"
+VICTORY_POINTS_10724:0 "Great Falls Municipal Airport"
+VICTORY_POINTS_11265:0 "Black Eagle"
+VICTORY_POINTS_11266:0 "Sun Prarie"
+VICTORY_POINTS_11269:0 "Great Falls Industrial Complex"
+#State
+VICTORY_POINTS_1067:0 "Shelby"
+VICTORY_POINTS_4665:0 "Chinook"
+VICTORY_POINTS_941:0 "Fort Peck"
+VICTORY_POINTS_2145:0 "Miles City"
+VICTORY_POINTS_3784:0 "Troy"

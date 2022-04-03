@@ -7,6 +7,21 @@ state={
 			infrastructure = 2
 
 		}
+		victory_points = {
+			11245 15
+		}
+		victory_points = {
+			11238 5
+		}
+		victory_points = {
+			11489 10
+		}
+		victory_points = {
+			11237 5
+		}
+		victory_points = {
+			11240 10
+		}
 		add_core_of = MTM
 
 	}
