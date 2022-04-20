@@ -4,7 +4,7 @@ state={
 	history={
 		owner = CAC
 		buildings = {
-			infrastructure = 1
+			infrastructure = 3
 
 		}
 		add_core_of = CAC
@@ -13,8 +13,8 @@ state={
 	provinces={
 		10715 10774 10775 10778 10779 10783 10784 
 	}
-	manpower=1
+	manpower=105958
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
-	state_category = wasteland
+	state_category = Large_Town
 }
