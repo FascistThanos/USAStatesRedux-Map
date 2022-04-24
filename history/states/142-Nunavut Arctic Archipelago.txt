@@ -16,7 +16,7 @@ state={
 	provinces={
 		271 500 508 531 590 1073 1181 1404 1583 1683 1727 2087 2182 2845 4388 4397 4406 7826 7835 7841 7844 7851 7853 7858 7859 7860 7861 7862 7863 7868 7869 9859 
 	}
-	manpower=1
+	manpower=1551
 	buildings_max_level_factor=1.000
 	state_category=wasteland
 	local_supplies=1.000
