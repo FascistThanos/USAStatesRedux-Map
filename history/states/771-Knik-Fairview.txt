@@ -4,7 +4,7 @@ state={
 	history={
 		owner = AKA
 		buildings = {
-			infrastructure = 1
+			infrastructure = 2
 
 		}
 		add_core_of = AKA
@@ -13,8 +13,8 @@ state={
 	provinces={
 		11354 11357 11358 
 	}
-	manpower=1
+	manpower=9312
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
-	state_category = wasteland
+	state_category = pastoral
 }
