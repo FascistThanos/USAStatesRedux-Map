@@ -18,6 +18,6 @@ state={
 	}
 	manpower=1238048
 	buildings_max_level_factor=1.000
-	state_category=Megalopolis
+	state_category=megalopolis
 	local_supplies=15.000
 }
