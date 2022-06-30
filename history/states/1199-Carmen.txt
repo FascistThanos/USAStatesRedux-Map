@@ -3,6 +3,7 @@ state={
 	name="Carmen"
 	resources = {
 		oil = 12
+		rubber = 24
 	}
 	history={
 		owner = CMP

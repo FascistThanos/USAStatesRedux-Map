@@ -1,6 +1,9 @@
 state={
 	id=1271
 	name="Catacamas"
+	resources = {
+		rubber = 32
+	}
 	history={
 		owner = HON
 		buildings = {

@@ -1,6 +1,9 @@
 state={
 	id=1264
 	name="Quimistán"
+	resources = {
+		rubber = 7
+	}
 	history={
 		owner = HON
 		buildings = {

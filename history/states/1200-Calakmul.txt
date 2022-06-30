@@ -1,6 +1,9 @@
 state={
 	id=1200
 	name="Calakmul"
+	resources = {
+		rubber = 31
+	}
 	history={
 		owner = CMP
 		buildings = {

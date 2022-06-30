@@ -3,6 +3,7 @@ state={
 	name="Nautla"
 	resources = {
 		oil = 5
+		rubber = 15
 	}
 	history={
 		owner = VER

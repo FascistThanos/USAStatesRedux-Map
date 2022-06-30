@@ -1,6 +1,9 @@
 state={
 	id=1210
 	name="José María Morelos"
+	resources = {
+		rubber = 19
+	}
 	history={
 		owner = QRO
 		buildings = {

@@ -1,6 +1,9 @@
 state={
 	id=756
 	name="Oahu"
+	resources = {
+		rubber = 36
+	}
 	history={
 		owner = HIH
 		buildings = {

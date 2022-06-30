@@ -2,7 +2,9 @@
 state={
 	id=1270
 	name="Esparta"
-
+	resources = {
+		rubber = 20
+	}
 	history={
 		owner = HON
 		buildings = {

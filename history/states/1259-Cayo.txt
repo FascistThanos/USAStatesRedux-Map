@@ -1,6 +1,9 @@
 state={
 	id=1259
 	name="Cayo"
+	resources = {
+		rubber = 26
+	}
 	history={
 		owner = BLZ
 		buildings = {

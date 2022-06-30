@@ -3,6 +3,7 @@ state={
 	name="Açores"
 	resources = {
 		aluminium = 1920
+		rubber = 690
 	}
 	history={
 		owner = AZO

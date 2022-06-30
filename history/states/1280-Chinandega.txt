@@ -1,6 +1,9 @@
 state={
 	id=1280
 	name="Chinandega"
+	resources = {
+		rubber = 21
+	}
 	history={
 		owner = NIC
 		buildings = {

@@ -4,6 +4,7 @@ state={
 	name="Jalapa"
 	resources = {
 		oil = 9
+		rubber = 8
 	}
 	history={
 		owner = TAB

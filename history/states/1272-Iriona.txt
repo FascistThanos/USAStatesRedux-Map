@@ -1,6 +1,9 @@
 state={
 	id=1272
 	name="Iriona"
+	resources = {
+		rubber = 29
+	}
 	history={
 		owner = HON
 		buildings = {

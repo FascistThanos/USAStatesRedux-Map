@@ -1,6 +1,9 @@
 state={
 	id=1281
 	name="Carazo"
+	resources = {
+		rubber = 6
+	}
 	history={
 		owner = NIC
 		buildings = {

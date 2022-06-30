@@ -1,6 +1,9 @@
 state={
 	id=1193
 	name="Tlalixcoyan"
+	resources = {
+		rubber = 14
+	}
 	history={
 		owner = VER
 		buildings = {

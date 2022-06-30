@@ -1,6 +1,9 @@
 state={
 	id=1195
 	name="Balancán"
+	resources = {
+		rubber = 12
+	}
 	history={
 		owner = TAB
 		buildings = {

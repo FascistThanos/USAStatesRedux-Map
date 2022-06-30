@@ -1,0 +1,19 @@
+state = {
+	id = 1401
+	name = "Tegucigalpa"
+	history = {
+		owner = HON
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = HON
+	}
+	provinces = {
+		10353 10354 10355 10356 10357 10358
+	}
+	manpower = 1
+	buildings_max_level_factor = 1
+	state_category = wasteland
+	local_supplies = 0
+}

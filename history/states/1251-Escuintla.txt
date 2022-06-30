@@ -1,6 +1,9 @@
 state={
 	id=1251
 	name="Escuintla"
+	resources = {
+		rubber = 24
+	}
 	history={
 		owner = GUA
 		buildings = {

@@ -1,6 +1,9 @@
 state={
 	id=1289
-	name="Florencia "
+	name="Florencia"
+	resources = {
+		rubber = 24
+	}
 	history={
 		owner = COS
 		buildings = {

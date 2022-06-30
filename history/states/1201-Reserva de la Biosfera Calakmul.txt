@@ -1,6 +1,9 @@
 state={
 	id=1201
 	name="Reserva de la Biósfera Calakmul"
+	resources = {
+		rubber = 23
+	}
 	history={
 		owner = CMP
 		buildings = {

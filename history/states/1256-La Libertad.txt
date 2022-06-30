@@ -3,6 +3,7 @@ state={
 	name="La Libertad"
 	resources = {
 		oil = 2
+		rubber = 24
 	}
 	history={
 		owner = GUA

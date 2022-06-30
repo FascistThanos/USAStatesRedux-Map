@@ -1,6 +1,9 @@
 state={
 	id=1277
 	name="North Caribbean Coast Autonomous Region"
+	resources = {
+		rubber = 22
+	}
 	history={
 		owner = NIC
 		buildings = {

@@ -1,6 +1,9 @@
 state={
 	id=1208
 	name="Othó P. Blanco"
+	resources = {
+		rubber = 22
+	}
 	history={
 		owner = QRO
 		buildings = {

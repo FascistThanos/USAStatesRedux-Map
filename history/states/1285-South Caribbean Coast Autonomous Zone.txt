@@ -1,6 +1,9 @@
 state={
 	id=1285
 	name="South Caribbean Autonomous Zone"
+	resources = {
+		rubber = 12
+	}
 	history={
 		owner = NIC
 		buildings = {

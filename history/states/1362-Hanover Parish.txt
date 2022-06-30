@@ -3,6 +3,7 @@ state={
 	name="Hanover Parish"
 	resources = {
 		aluminium = 74
+		rubber = 22
 	}
 	history={
 		owner = JAM

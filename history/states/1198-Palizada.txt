@@ -3,6 +3,7 @@ state={
 	name="Palizada"
 	resources = {
 		oil = 21
+		rubber = 4
 	}
 	history={
 		owner = CMP

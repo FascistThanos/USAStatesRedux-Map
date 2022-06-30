@@ -2,7 +2,9 @@
 state={
 	id=100
 	name="Wampusirpi"
-
+	resources = {
+		rubber = 23
+	}
 	history={
 		owner = HON
 		buildings = {
@@ -14,7 +16,7 @@ state={
 	}
 
 	provinces={
-		1002 1427 3498 3590 7697 7703 7717 10353 10354 10355 10356 10357 10358 
+		1002 1427 3498 3590 7697 7703 7717 
 	}
 	manpower=1
 	buildings_max_level_factor=1.000

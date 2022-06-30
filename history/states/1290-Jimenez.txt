@@ -1,6 +1,9 @@
 state={
 	id=1290
 	name="Jimenez_COS"
+	resources = {
+		rubber = 19
+	}
 	history={
 		owner = COS
 		buildings = {

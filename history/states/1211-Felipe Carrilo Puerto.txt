@@ -1,6 +1,9 @@
 state={
 	id=1211
 	name="Felipe Carrilo Puerto"
+	resources = {
+		rubber = 13
+	}
 	history={
 		owner = QRO
 		buildings = {

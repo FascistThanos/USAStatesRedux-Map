@@ -2,7 +2,9 @@
 state={
 	id=1261
 	name="La Unión"
-
+	resources = {
+	rubber = 32
+	}
 	history={
 		owner = ELS
 		buildings = {

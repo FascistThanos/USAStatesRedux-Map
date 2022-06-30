@@ -1,6 +1,9 @@
 state={
 	id=1284
 	name="Central Caribbean Coast Autonomous Region"
+	resources = {
+		rubber = 18
+	}
 	history={
 		owner = NIC
 		buildings = {

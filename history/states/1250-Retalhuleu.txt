@@ -1,6 +1,9 @@
 state={
 	id=1250
 	name="Retalhuleu"
+	resources = {
+		rubber = 3
+	}
 	history={
 		owner = GUA
 		buildings = {

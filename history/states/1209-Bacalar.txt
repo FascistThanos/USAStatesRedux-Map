@@ -1,6 +1,9 @@
 state={
 	id=1209
 	name="Bacalar"
+	resources = {
+		rubber = 7
+	}
 	history={
 		owner = QRO
 		buildings = {

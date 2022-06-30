@@ -4,6 +4,7 @@ state={
 	name="Saint Catherine Parish"
 	resources = {
 		aluminium = 79
+		rubber = 24
 	}
 	history={
 		owner = JAM

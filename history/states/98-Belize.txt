@@ -2,7 +2,9 @@
 state={
 	id=98
 	name="Toledo District"
-
+	resources = {
+		rubber = 19
+	}
 	history={
 		owner = BLZ
 		buildings = {

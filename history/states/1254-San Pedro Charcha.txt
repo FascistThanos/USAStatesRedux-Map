@@ -1,6 +1,9 @@
 state={
 	id=1254
 	name="San Pedro Carchá"
+	resources = {
+		rubber = 21
+	}
 	history={
 		owner = GUA
 		buildings = {

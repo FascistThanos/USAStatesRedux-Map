@@ -1,6 +1,9 @@
 state={
 	id=1253
 	name="Livingston"
+	resources = {
+		rubber = 3
+	}
 	history={
 		owner = GUA
 		buildings = {
