@@ -9,6 +9,21 @@ state={
 			infrastructure = 4
 
 		}
+		victory_points = {
+			11040 50
+		}
+		victory_points = {
+			11046 10
+		}
+		victory_points = {
+			11030 15
+		}
+		victory_points = {
+			11047 5
+		}
+		victory_points = {
+			11016 15
+		}
 		add_core_of = MAM
 
 	}

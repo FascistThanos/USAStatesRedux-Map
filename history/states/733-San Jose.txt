@@ -34,5 +34,5 @@
 	manpower=111782
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
-	state_category = Large_Town
+	state_category = large_town
 }
