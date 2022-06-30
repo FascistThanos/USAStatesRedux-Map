@@ -1,11 +1,31 @@
+
 state={
 	id=733
 	name="San_Jose_CAC"
+
 	history={
 		owner = CAC
 		buildings = {
 			infrastructure = 3
 
+		}
+		victory_points = {
+			10727 5
+		}
+		victory_points = {
+			10729 10
+		}
+		victory_points = {
+			10735 10
+		}
+		victory_points = {
+			10736 15
+		}
+		victory_points = {
+			10746 10
+		}
+		victory_points = {
+			10753 15
 		}
 		add_core_of = CAC
 

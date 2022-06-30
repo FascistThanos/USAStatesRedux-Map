@@ -9,6 +9,24 @@ state={
 			infrastructure = 5
 
 		}
+		victory_points = {
+			5839 5
+		}
+		victory_points = {
+			10728 10
+		}
+		victory_points = {
+			10737 5
+		}
+		victory_points = {
+			10738 15
+		}
+		victory_points = {
+			10748 20
+		}
+		victory_points = {
+			11430 10
+		}
 		add_core_of = CAC
 
 	}
