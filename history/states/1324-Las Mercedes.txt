@@ -1,6 +1,9 @@
 state={
 	id=1324
 	name="Las Mercedes"
+	resources = {
+		oil = 78
+	}
 	history={
 		owner = VEN
 		buildings = {

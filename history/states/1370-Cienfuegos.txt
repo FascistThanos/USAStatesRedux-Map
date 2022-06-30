@@ -1,6 +1,9 @@
 state={
 	id=1370
 	name="Cienfuegos"
+	resources = {
+		oil = 8
+	}
 	history={
 		owner = CUB
 		buildings = {

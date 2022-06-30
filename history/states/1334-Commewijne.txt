@@ -2,7 +2,9 @@
 state={
 	id=1334
 	name="Commewijne"
-
+	resources = {
+		oil = 4
+	}
 	history={
 		owner = SUR
 		buildings = {

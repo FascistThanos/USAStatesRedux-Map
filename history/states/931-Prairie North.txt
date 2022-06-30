@@ -1,6 +1,9 @@
 state={
 	id=931
 	name="Prairie North"
+	resources = {
+		oil = 57
+	}
 	history={
 		owner = SKS
 		buildings = {

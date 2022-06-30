@@ -1,6 +1,9 @@
 state={
 	id=445
 	name="Cajun Country"
+	resources = {
+		oil = 17
+	}
 	history={
 		owner = LAL
 		buildings = {

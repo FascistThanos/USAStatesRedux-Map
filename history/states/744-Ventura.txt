@@ -1,6 +1,9 @@
 state={
 	id=744
 	name="Ventura"
+	resources = {
+		oil = 108
+	}
 	history={
 		owner = CAC
 		buildings = {

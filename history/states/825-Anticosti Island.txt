@@ -1,6 +1,9 @@
 state={
 	id=825
 	name="Anticosti Island"
+	resources = {
+		oil = 22
+	}
 	history={
 		owner = QCQ
 		buildings = {

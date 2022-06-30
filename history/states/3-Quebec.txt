@@ -1,8 +1,9 @@
-
 state={
 	id=3
 	name="Gaspésie-Iles-de-la-Madeleine"
-
+	resources = {
+		oil = 16
+	}
 	history={
 		owner = QCQ
 		buildings = {

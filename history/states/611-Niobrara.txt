@@ -1,6 +1,9 @@
 state={
 	id=611
 	name="Niobrara"
+	resources = {
+		oil = 20
+	}
 	history={
 		owner = WYW
 		buildings = {

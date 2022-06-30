@@ -3,6 +3,7 @@ state={
 	name="San Bernadino"
 	resources = {
 		tungsten = 149
+		oil = 254
 	}
 	history={
 		owner = CAC

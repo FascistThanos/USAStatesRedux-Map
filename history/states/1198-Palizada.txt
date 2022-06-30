@@ -1,6 +1,9 @@
 state={
 	id=1198
 	name="Palizada"
+	resources = {
+		oil = 21
+	}
 	history={
 		owner = CMP
 		buildings = {

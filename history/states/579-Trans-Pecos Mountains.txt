@@ -3,6 +3,7 @@ state={
 	name="Trans-Pecos Mountains"
 	resources = {
 		tungsten = 10
+		oil = 38
 	}
 	history = {
 		owner = TXT

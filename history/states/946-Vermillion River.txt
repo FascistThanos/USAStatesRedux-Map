@@ -2,7 +2,9 @@
 state={
 	id=946
 	name="Vermillion River"
-
+	resources = {
+		oil = 58
+	}
 	history={
 		owner = ABA
 		buildings = {

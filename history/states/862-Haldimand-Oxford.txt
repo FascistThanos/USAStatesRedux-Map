@@ -2,7 +2,9 @@
 state={
 	id=862
 	name="Halimand-Oxford"
-
+	resources = {
+		oil = 34
+	}
 	history={
 		owner = ONO
 		buildings = {

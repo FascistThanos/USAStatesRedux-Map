@@ -2,7 +2,9 @@
 state={
 	id=848
 	name="Trois-Rivières"
-
+	resources = {
+		oil = 34
+	}
 	history={
 		owner = QCQ
 		buildings = {

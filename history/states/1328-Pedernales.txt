@@ -1,6 +1,9 @@
 state={
 	id=1328
 	name="Pedernales_VEN"
+	resources = {
+		oil = 65
+	}
 	history={
 		owner = VEN
 		buildings = {

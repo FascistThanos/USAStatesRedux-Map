@@ -1,6 +1,9 @@
 state={
 	id=558
 	name="Frontier Country"
+	resources = {
+		oil = 216
+	}
 	history={
 		owner = OKO
 		buildings = {

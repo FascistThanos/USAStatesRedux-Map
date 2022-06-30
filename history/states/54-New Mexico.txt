@@ -1,8 +1,6 @@
-
 state={
 	id=54
 	name="Low Plains"
-
 	history={
 		owner = NMN
 		buildings = {

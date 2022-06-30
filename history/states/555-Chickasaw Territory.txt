@@ -1,6 +1,9 @@
 state={
 	id=555
 	name="Chickasaw Territory"
+	resources = {
+		oil = 104
+	}
 	history={
 		owner = OKO
 		buildings = {

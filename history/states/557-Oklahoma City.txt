@@ -1,6 +1,9 @@
 state={
 	id=557
-	name="Oklahoma city"
+	name="Oklahoma City"
+	resources = {
+		oil = 166
+	}
 	history={
 		owner = OKO
 		buildings = {

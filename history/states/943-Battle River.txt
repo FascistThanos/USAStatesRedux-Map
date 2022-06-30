@@ -1,6 +1,9 @@
 state={
 	id=943
 	name="Battle River"
+	resources = {
+		oil = 8
+	}
 	history={
 		owner = ABA
 		buildings = {

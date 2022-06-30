@@ -3,6 +3,7 @@ state={
 	name="Kern"
 	resources = {
 		tungsten = 141
+		oil = 136
 	}
 	history={
 		owner = CAC

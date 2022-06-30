@@ -1,6 +1,9 @@
 state={
 	id=949
 	name="Opportunity"
+	resources = {
+		oil = 19
+	}
 	history={
 		owner = ABA
 		buildings = {

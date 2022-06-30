@@ -1,6 +1,9 @@
 state={
 	id=443
 	name="Lafourche"
+	resources = {
+		oil = 23
+	}
 	history={
 		owner = LAL
 		buildings = {

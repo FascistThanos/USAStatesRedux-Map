@@ -1,6 +1,9 @@
 state={
 	id=1310
 	name="Tacopí"
+	resources = {
+		oil = 139
+	}
 	history={
 		owner = COL
 		buildings = {

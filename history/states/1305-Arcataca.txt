@@ -1,6 +1,9 @@
 state={
 	id=1305
 	name="Arcataca"
+	resources = {
+		oil = 48
+	}
 	history={
 		owner = COL
 		buildings = {

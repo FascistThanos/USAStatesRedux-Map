@@ -1,6 +1,9 @@
 state={
 	id=951
 	name="Lower Athabasca"
+	resources = {
+		oil = 10
+	}
 	history={
 		owner = ABA
 		buildings = {

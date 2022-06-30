@@ -1,6 +1,9 @@
 state={
 	id=560
 	name="Tulsa"
+	resources = {
+		oil = 103
+	}
 	history={
 		owner = OKO
 		buildings = {

@@ -1,6 +1,9 @@
 state={
 	id=1256
 	name="La Libertad"
+	resources = {
+		oil = 2
+	}
 	history={
 		owner = GUA
 		buildings = {

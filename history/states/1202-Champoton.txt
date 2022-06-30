@@ -1,6 +1,9 @@
 state={
 	id=1202
 	name="Champoton"
+	resources = {
+		oil = 7
+	}
 	history={
 		owner = CMP
 		buildings = {

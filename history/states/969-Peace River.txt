@@ -1,6 +1,9 @@
 state={
 	id=969
 	name="Peace River"
+	resources = {
+		oil = 3
+	}
 	history={
 		owner = BCB
 		buildings = {

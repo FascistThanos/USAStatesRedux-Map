@@ -1,8 +1,9 @@
-
 state={
 	id=593
 	name="Yellowstone Country"
-
+	resources = {
+		oil = 8
+	}
 	history={
 		owner = MTM
 		buildings = {

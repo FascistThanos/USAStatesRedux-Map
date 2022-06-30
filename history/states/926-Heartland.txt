@@ -1,8 +1,9 @@
-
 state={
 	id=926
 	name="Heartland_SK"
-
+	resources = {
+		oil = 54
+	}
 	history={
 		owner = SKS
 		buildings = {
