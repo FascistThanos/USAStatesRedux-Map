@@ -9,6 +9,12 @@ state={
 			infrastructure = 1
 
 		}
+		victory_points = {
+			11739 20
+		}
+		victory_points = {
+			11770 5
+		}
 		add_core_of = CTC
 
 	}

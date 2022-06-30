@@ -1,0 +1,77 @@
+﻿l_english:
+###Connecticut
+#Greater Bridgeport
+ VICTORY_POINTS_10938:0 "Stamford"
+ VICTORY_POINTS_11734:0 "Norwalk"
+ VICTORY_POINTS_11736:0 "Bridgeport"
+ VICTORY_POINTS_3173:0 "Danbury"
+ VICTORY_POINTS_11737:0 "Devil's Den"
+ VICTORY_POINTS_10942:0 "Newton"
+#Greater Hartford
+ VICTORY_POINTS_11739:0 "New Haven"
+ VICTORY_POINTS_11770:0 "Bristol"
+#Litchfield
+ VICTORY_POINTS_11763:0 "Waterbury"
+ VICTORY_POINTS_11783:0 "Torrington"
+#West Hartford
+ VICTORY_POINTS_10981:0 "Hartford"
+ VICTORY_POINTS_10977:0 "New Britain"
+ VICTORY_POINTS_10970:0 "Middletown"
+ VICTORY_POINTS_10997:0 "Windsor"
+#East Hartford
+ VICTORY_POINTS_10982:0 "East Hartford"
+ VICTORY_POINTS_10968:0 "Pratt & Whitney HQ"
+ VICTORY_POINTS_10983:0 "Manchester"
+ VICTORY_POINTS_10993:0 "South Windsor"
+#Norwich-New London
+ VICTORY_POINTS_11742:0 "New London"
+ VICTORY_POINTS_11765:0 "Norwich"
+#Windham
+ VICTORY_POINTS_11784:0 "Willimantic"
+
+###Rhode Island
+#Providence
+ VICTORY_POINTS_11006:0 "Providence"
+ VICTORY_POINTS_10999:0 "East Providence"
+ VICTORY_POINTS_11011:0 "Pawtucket"
+ VICTORY_POINTS_11009:0 "North Providence"
+ VICTORY_POINTS_10998:0 "Cranston"
+#Greater Providence
+ VICTORY_POINTS_11772:0 "Warwick"
+ VICTORY_POINTS_11013:0 "Woonsocket"
+#Kent
+ VICTORY_POINTS_11747:0 "Westerly"
+
+###Massachusetts
+#Boston Metro
+ VICTORY_POINTS_11040:0 "Boston"
+ VICTORY_POINTS_11046:0 "Lynn"
+ VICTORY_POINTS_11030:0 "Quincy"
+ VICTORY_POINTS_11039:0 "Lexington"
+ VICTORY_POINTS_11051:0 "Lowell"
+ VICTORY_POINTS_11016:0 "Brockton"
+#Plymouth
+ VICTORY_POINTS_2780:0 "New Bedford"
+ VICTORY_POINTS_11777:0 "Fall River"
+#Cape Codd
+ VICTORY_POINTS_5238:0 "Plymouth"
+#Northeast Massachusetts
+ VICTORY_POINTS_1721:0 "Lawrence"
+ VICTORY_POINTS_5136:0 "Salem"
+#Greater Merrimack Valley
+ VICTORY_POINTS_11044:0 "Lowell"
+#Central Massachusetts
+ VICTORY_POINTS_11827:0 "Worcester"
+ VICTORY_POINTS_11022:0 "Palmer"
+#Johnny Appleseed Trail
+ VICTORY_POINTS_11837:0 "Gardner"
+#East Springfield
+ VICTORY_POINTS_11032:0 "Springfield"
+ VICTORY_POINTS_11042:0 "Westover Air Reserve Base"
+ VICTORY_POINTS_11020:0 "Longmeadow"
+ VICTORY_POINTS_11033:0 "Springfield Plain"
+#West Springfield
+ VICTORY_POINTS_11029:0 "West Springfield"
+ VICTORY_POINTS_11019:0 "Agawam"
+#The Berkshires
+ VICTORY_POINTS_5176:0 "Pittsfield"

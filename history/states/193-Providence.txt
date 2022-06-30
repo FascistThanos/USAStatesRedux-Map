@@ -6,6 +6,21 @@ state={
 		buildings = {
 			infrastructure = 1
 		}
+		victory_points = {
+			11006 40
+		}
+		victory_points = {
+			10999 5
+		}
+		victory_points = {
+			11011 10
+		}
+		victory_points = {
+			11009 5
+		}
+		victory_points = {
+			10998 15
+		}
 		add_core_of = RIR
 	}
 	provinces={
