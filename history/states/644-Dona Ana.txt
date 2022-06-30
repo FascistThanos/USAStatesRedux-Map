@@ -2,7 +2,9 @@
 state={
 	id=644
 	name="Dona Ana"
-
+	resources = {
+		tungsten = 34
+	}
 	history={
 		owner = NMN
 		buildings = {

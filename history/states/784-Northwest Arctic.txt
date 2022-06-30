@@ -1,6 +1,9 @@
 state={
 	id=784
 	name="Northwest Arctic"
+	resources = {
+		tungsten = 41
+	}
 	history={
 		owner = AKA
 		buildings = {

@@ -1,6 +1,9 @@
 state={
 	id=1070
 	name="Mexicali"
+	resources = {
+		tungsten = 41
+	}
 	history={
 		owner = BCA
 		buildings = {

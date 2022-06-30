@@ -1,6 +1,9 @@
 state={
 	id=643
 	name="Black Range"
+	resources = {
+		tungsten = 71
+	}
 	history={
 		owner = NMN
 		buildings = {

@@ -1,6 +1,9 @@
 state={
 	id=625
 	name="Pikes Peak Wonders"
+	resources = {
+		tungsten = 32
+	}
 	history={
 		owner = COC
 		buildings = {

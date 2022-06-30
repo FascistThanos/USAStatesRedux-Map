@@ -1,6 +1,9 @@
 state={
 	id=736
 	name="Sierra Nevada"
+	resources = {
+		tungsten = 109
+	}
 	history={
 		owner = CAC
 		buildings = {

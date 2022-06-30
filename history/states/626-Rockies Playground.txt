@@ -1,6 +1,9 @@
 state={
 	id=626
 	name="Rockies Playground"
+	resources = {
+		tungsten = 95
+	}
 	history={
 		owner = COC
 		buildings = {

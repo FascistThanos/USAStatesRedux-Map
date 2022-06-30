@@ -1,6 +1,9 @@
 state={
 	id=683
 	name="Custer"
+	resources = {
+		tungsten = 97
+	}
 	history={
 		owner = IDI
 		buildings = {

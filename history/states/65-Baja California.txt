@@ -1,8 +1,9 @@
-
 state={
 	id=65
 	name="Ensenada"
-
+	resources = {
+		tungsten = 16
+	}
 	history={
 		owner = BCA
 		buildings = {

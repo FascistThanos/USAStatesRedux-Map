@@ -1,8 +1,9 @@
-
 state={
 	id=162
 	name="Magic Valley"
-
+	resources = {
+		tungsten = 74
+	}
 	history={
 		owner = IDI
 		buildings = {

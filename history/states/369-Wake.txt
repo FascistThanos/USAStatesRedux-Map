@@ -1,6 +1,9 @@
 state={
 	id=369
 	name="Wake"
+	resources = {
+		tungsten = 30
+	}
 	history={
 		owner = NCN
 		buildings = {

@@ -1,8 +1,9 @@
-
 state={
 	id=777
 	name="Bristol Bay"
-
+	resources = {
+		tungsten = 34
+	}
 	history={
 		owner = AKA
 		buildings = {

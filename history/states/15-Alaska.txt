@@ -1,8 +1,9 @@
-
 state={
 	id=15
 	name="Athabasca Interior"
-
+	resources = {
+		tungsten = 7
+	}
 	history={
 		owner = AKA
 		buildings = {

@@ -1,8 +1,9 @@
-
 state={
 	id=645
 	name="Socorro"
-
+	resources = {
+		tungsten = 146
+	}
 	history={
 		owner = NMN
 		buildings = {

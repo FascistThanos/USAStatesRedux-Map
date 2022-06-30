@@ -2,7 +2,9 @@
 state={
 	id=686
 	name="Moapa Valley"
-
+	resources = {
+		tungsten = 21
+	}
 	history={
 		owner = NVN
 		buildings = {

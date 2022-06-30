@@ -1,6 +1,9 @@
 state={
 	id=1076
 	name="Agua Prieta"
+	resources = {
+		tungsten = 55
+	}
 	history={
 		owner = SON
 		buildings = {

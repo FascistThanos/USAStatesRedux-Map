@@ -1,6 +1,9 @@
 state={
 	id=789
 	name="Elko"
+	resources = {
+		tungsten = 194
+	}
 	history={
 		owner = NVN
 		buildings = {

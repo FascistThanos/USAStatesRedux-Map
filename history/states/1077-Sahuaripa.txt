@@ -1,6 +1,9 @@
 state={
 	id=1077
 	name="Sahuaripa"
+	resources = {
+		tungsten = 68
+	}
 	history={
 		owner = SON
 		buildings = {

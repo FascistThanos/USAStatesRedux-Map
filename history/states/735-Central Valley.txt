@@ -1,8 +1,9 @@
-
 state={
 	id=735
 	name="Central Valley"
-
+	resources = {
+		tungsten = 85
+	}
 	history={
 		owner = CAC
 		buildings = {

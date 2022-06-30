@@ -1,6 +1,9 @@
 state={
 	id=790
 	name="Crystal Springs"
+	resources = {
+		tungsten = 54
+	}
 	history={
 		owner = NVN
 		buildings = {

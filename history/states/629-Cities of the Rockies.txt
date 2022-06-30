@@ -1,6 +1,9 @@
 state={
 	id=629
 	name="Cities of the Rockies"
+	resources = {
+		tungsten = 64
+	}
 	history={
 		owner = COC
 		buildings = {

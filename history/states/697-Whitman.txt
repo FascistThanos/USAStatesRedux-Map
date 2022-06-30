@@ -1,6 +1,9 @@
 state={
 	id=697
 	name="Whitman"
+	resources = {
+		tungsten = 10
+	}
 	history={
 		owner = WAW
 		buildings = {

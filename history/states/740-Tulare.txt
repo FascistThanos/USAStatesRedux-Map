@@ -1,6 +1,9 @@
 state={
 	id=740
 	name="Tulare"
+	resources = {
+		tungsten = 103
+	}
 	history={
 		owner = CAC
 		buildings = {

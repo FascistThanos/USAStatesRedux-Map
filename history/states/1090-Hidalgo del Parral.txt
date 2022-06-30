@@ -1,6 +1,9 @@
 state={
 	id=1090
 	name="Hidalgo del Parral"
+	resources = {
+		tungsten = 9
+	}
 	history={
 		owner = CIA
 		buildings = {

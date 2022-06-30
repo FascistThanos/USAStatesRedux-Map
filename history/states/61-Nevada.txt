@@ -1,8 +1,9 @@
-
 state={
 	id=61
 	name="Cowboy Country"
-
+	resources = {
+		tungsten = 87
+	}
 	history={
 		owner = NVN
 		buildings = {

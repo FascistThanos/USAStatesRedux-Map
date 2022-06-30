@@ -1,8 +1,9 @@
-
 state={
 	id=157
 	name="Lemhi"
-
+	resources = {
+		tungsten = 107
+	}
 	history={
 		owner = IDI
 		buildings = {

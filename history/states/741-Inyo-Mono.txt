@@ -1,6 +1,9 @@
 state={
 	id=741
 	name="Inyo-Mono"
+	resources = {
+		tungsten = 66
+	}
 	history={
 		owner = CAC
 		buildings = {

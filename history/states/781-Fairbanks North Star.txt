@@ -1,6 +1,9 @@
 state={
 	id=781
 	name="Fairbanks North Star"
+	resources = {
+		tungsten = 22
+	}
 	history={
 		owner = AKA
 		buildings = {
