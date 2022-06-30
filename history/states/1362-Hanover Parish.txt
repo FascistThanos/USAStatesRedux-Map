@@ -1,6 +1,9 @@
 state={
 	id=1362
 	name="Hanover Parish"
+	resources = {
+		aluminium = 74
+	}
 	history={
 		owner = JAM
 		buildings = {

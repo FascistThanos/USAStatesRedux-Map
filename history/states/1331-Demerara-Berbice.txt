@@ -2,7 +2,9 @@
 state={
 	id=1331
 	name="Demerara-Berbice"
-
+	resources = {
+		aluminium = 47
+	}
 	history={
 		owner = GYA
 		buildings = {

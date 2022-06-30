@@ -1,6 +1,6 @@
 state={
 	id=189
-	name="STATE_189"
+	name="East Springfield"
 	history={
 		owner = MAM
 		buildings = {

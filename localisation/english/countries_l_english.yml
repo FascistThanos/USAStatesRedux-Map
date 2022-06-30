@@ -2406,3 +2406,16 @@
  AAB:0 "Antigua and Barbuda"
  AAB_DEF:0 "Antigua and Barbuda"
  AAB_ADJ:0 "Antiguan Barbudan"
+
+#MISC
+ AZO:0 "Açores"
+ AZO_DEF:0 "the Açores"
+ AZO_ADJ:0 "Macronesian"
+ AZO_democratic:0 "Old World Trading Post"
+ AZO_fascism:0 "Old World Trading Post"
+ AZO_communism:0 "Old World Trading Post"
+ AZO_democratic_DEF:0 "the Old World Trading Post"
+ AZO_communism_DEF:0 "the Old World Trading Post"
+ AZO_fascism_DEF:0 "the Old World Trading Post"
+ AZO_DEF:0 "the Açores"
+ AZO_ADJ:0 "Macronesian"

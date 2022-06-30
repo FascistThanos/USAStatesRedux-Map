@@ -1,6 +1,9 @@
 state={
 	id=1361
 	name="Portland Parish"
+	resources = {
+		aluminium = 57
+	}
 	history={
 		owner = JAM
 		buildings = {

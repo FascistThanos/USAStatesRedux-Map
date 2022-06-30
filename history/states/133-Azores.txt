@@ -1,6 +1,9 @@
 state={
 	id=133
 	name="Açores"
+	resources = {
+		aluminium = 1920
+	}
 	history={
 		owner = AZO
 		buildings = {

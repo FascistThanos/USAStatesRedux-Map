@@ -2,7 +2,9 @@
 state={
 	id=114
 	name="Saint Catherine Parish"
-
+	resources = {
+		aluminium = 79
+	}
 	history={
 		owner = JAM
 		buildings = {

@@ -183,19 +183,14 @@
 
 		trigger = {
 			AND = {
-				original_tag = AAA
-				date > 1940.1.1
+				original_tag = AZO
+				date > 1942.1.1
 			}
 		}
 
 		option = {
 			name = disunitedstates.14.a
-			AZO = {
-				transfer_state = 116
-				add_ideas = MLT_idea_tradenation
-				add_ideas = free_trade
-			}
-			116 = {
+			133 = {
 				add_resource = {
 					type = oil
 					amount = 10000

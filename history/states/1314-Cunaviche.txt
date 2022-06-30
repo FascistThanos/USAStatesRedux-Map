@@ -1,6 +1,9 @@
 state={
 	id=1314
 	name="Cunaviche"
+	resources = {
+		aluminium = 137
+	}
 	history={
 		owner = VEN
 		buildings = {
