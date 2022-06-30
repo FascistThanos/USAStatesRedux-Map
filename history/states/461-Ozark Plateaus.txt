@@ -4,7 +4,7 @@ state={
 	history={
 		owner = ARA
 		buildings = {
-			infrastructure = 1
+			infrastructure = 4
 
 		}
 		add_core_of = ARA
@@ -13,8 +13,8 @@ state={
 	provinces={
 		1819 2403 2516 2706 4141 5986 6005 6063 
 	}
-	manpower=1
+	manpower=164752
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
-	state_category = wasteland
+	state_category = city
 }
