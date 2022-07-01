@@ -1,6 +1,9 @@
 state={
 	id=357
 	name="Chattanooga"
+	resources = {
+		steel = 25
+	}
 	history={
 		owner = TNT
 		buildings = {

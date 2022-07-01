@@ -1,6 +1,9 @@
 state={
 	id=165
 	name="Aroostook"
+	resources = {
+		steel = 20
+	}
 	history={
 		owner = MEM
 		buildings = {

@@ -1,6 +1,9 @@
 state={
 	id=499
 	name="Head of the Lakes"
+	resources = {
+		steel = 36
+	}
 	history={
 		owner = MNM
 		buildings = {

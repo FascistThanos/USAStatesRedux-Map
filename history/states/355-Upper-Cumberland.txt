@@ -1,6 +1,9 @@
 state={
 	id=355
 	name="Upper-Cumberland"
+	resources = {
+		steel = 84
+	}
 	history={
 		owner = TNT
 		buildings = {

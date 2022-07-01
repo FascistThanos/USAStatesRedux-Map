@@ -2,7 +2,9 @@
 state={
 	id=194
 	name="Greater Providence"
-
+	resources = {
+		steel = 17
+	}
 	history={
 		owner = RIR
 		buildings = {

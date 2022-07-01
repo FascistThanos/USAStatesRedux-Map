@@ -3,6 +3,7 @@ state={
 	name="Elko"
 	resources = {
 		tungsten = 194
+		steel = 25
 	}
 	history={
 		owner = NVN

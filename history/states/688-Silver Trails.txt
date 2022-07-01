@@ -3,6 +3,7 @@ state={
 	name="Silver Trails"
 	resources = {
 		tungsten = 94
+		steel = 32
 	}
 	history={
 		owner = NVN

@@ -1,6 +1,9 @@
 state={
 	id=209
 	name="Thousand Islands"
+	resources = {
+		steel = 33
+	}
 	history={
 		owner = NYN
 		buildings = {

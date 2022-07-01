@@ -1,6 +1,9 @@
 state={
 	id=490
 	name="Twin Cities Metro"
+	resources = {
+		steel = 46
+	}
 	history={
 		owner = MNM
 		buildings = {

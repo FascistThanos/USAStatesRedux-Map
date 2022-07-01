@@ -1,6 +1,9 @@
 state={
 	id=317
 	name="New North"
+	resources = {
+		steel = 17
+	}
 	history={
 		owner = WIW
 		buildings = {

@@ -1,6 +1,9 @@
 state={
 	id=203
 	name="The Catskills"
+	resources = {
+		steel = 66
+	}
 	history={
 		owner = NYN
 		buildings = {

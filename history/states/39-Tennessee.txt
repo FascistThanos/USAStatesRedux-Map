@@ -1,7 +1,9 @@
 state={
 	id=39
 	name="Unaka Mountains"
-
+	resources = {
+		steel = 14
+	}
 	history={
 		owner = TNT
 		buildings = {

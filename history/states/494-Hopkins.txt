@@ -2,7 +2,9 @@
 state={
 	id=494
 	name="Hopkins"
-
+	resources = {
+		steel = 24
+	}
 	history={
 		owner = MNM
 		buildings = {

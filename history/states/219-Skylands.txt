@@ -1,6 +1,9 @@
 state={
 	id=219
 	name="Skylands"
+	resources = {
+		steel = 99
+	}
 	history={
 		owner = NJN
 		buildings = {

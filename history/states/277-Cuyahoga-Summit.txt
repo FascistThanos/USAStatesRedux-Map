@@ -1,6 +1,9 @@
 state={
 	id=277
 	name="Cuyahoga-Summit"
+	resources = {
+		steel = 17
+	}
 	history={
 		owner = OHO
 		buildings = {

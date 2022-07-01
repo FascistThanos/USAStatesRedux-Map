@@ -1,6 +1,9 @@
 state={
 	id=351
 	name="Highland Rim"
+	resources = {
+		steel = 26
+	}
 	history={
 		owner = TNT
 		buildings = {

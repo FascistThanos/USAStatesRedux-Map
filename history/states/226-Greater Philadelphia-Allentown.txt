@@ -1,6 +1,9 @@
 state={
 	id=226
 	name="Greater Philadelphia-Allentown"
+	resources = {
+		steel = 34
+	}
 	history={
 		owner = PAP
 		buildings = {

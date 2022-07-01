@@ -1,6 +1,9 @@
 state={
 	id=792
 	name="Halifax Metro"
+	resources = {
+		steel = 53
+	}
 	history={
 		owner = NSN
 		buildings = {

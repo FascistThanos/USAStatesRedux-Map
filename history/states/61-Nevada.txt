@@ -3,6 +3,7 @@ state={
 	name="Cowboy Country"
 	resources = {
 		tungsten = 87
+		steel = 30
 	}
 	history={
 		owner = NVN

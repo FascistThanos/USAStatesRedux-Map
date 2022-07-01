@@ -1,6 +1,9 @@
 state={
 	id=501
 	name="Central Lakes"
+	resources = {
+		steel = 22
+	}
 	history={
 		owner = MNM
 		buildings = {

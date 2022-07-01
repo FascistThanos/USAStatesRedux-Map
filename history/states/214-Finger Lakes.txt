@@ -2,7 +2,9 @@
 state={
 	id=214
 	name="Finger Lakes"
-
+	resources = {
+		steel = 37
+	}
 	history={
 		owner = NYN
 		buildings = {

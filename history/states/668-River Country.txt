@@ -3,6 +3,7 @@ state={
 	name="River Country"
 	resources = {
 		tungsten = 10
+		steel = 30
 	}
 	history={
 		owner = AZA

@@ -1,6 +1,9 @@
 state={
 	id=1179
 	name="León"
+	resources = {
+		steel = 17
+	}
 	history={
 		owner = GAJ
 		buildings = {

@@ -1,6 +1,9 @@
 state={
 	id=670
 	name="Yavapai"
+	resources = {
+		steel = 53
+	}
 	history={
 		owner = AZA
 		buildings = {

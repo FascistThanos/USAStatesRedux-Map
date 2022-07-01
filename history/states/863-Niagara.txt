@@ -4,6 +4,7 @@ state={
 	name="Niagara"
 	resources = {
 		oil = 41
+		steel = 12
 	}
 	history={
 		owner = ONO
