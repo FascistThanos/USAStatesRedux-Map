@@ -9,6 +9,18 @@ state={
 			infrastructure = 4
 
 		}
+		victory_points = {
+			11163 20
+		}
+		victory_points = {
+			11158 10
+		}
+		victory_points = {
+			11164 5
+		}
+		victory_points = {
+			11157 5
+		}
 		add_core_of = VTV
 
 	}

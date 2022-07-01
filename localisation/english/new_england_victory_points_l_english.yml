@@ -75,3 +75,61 @@
  VICTORY_POINTS_11019:0 "Agawam"
 #The Berkshires
  VICTORY_POINTS_5176:0 "Pittsfield"
+
+###Vermont
+#Burlington
+ VICTORY_POINTS_11177:0 "Burlington"
+ VICTORY_POINTS_11170:0 "South End"
+ VICTORY_POINTS_11171:0 "Williston"
+ VICTORY_POINTS_11179:0 "Essex"
+#Montpelier
+ VICTORY_POINTS_11163:0 "Montpelier"
+ VICTORY_POINTS_11158:0 "Barre"
+ VICTORY_POINTS_11164:0 "East Montpelier"
+ VICTORY_POINTS_11157:0 "Northfield"
+#Champlain Valley
+ VICTORY_POINTS_11188:0 "St. Albans"
+ VICTORY_POINTS_11577:0 "Middlebury"
+#Rutland-Windsor
+ VICTORY_POINTS_11909:0 "Rutland"
+#Bennington-Windham
+ VICTORY_POINTS_11856:0 "Bennington"
+ VICTORY_POINTS_11870:0 "Brattleboro"
+#Essex
+ VICTORY_POINTS_11187:0 "Newport"
+
+###New Hampshire
+#Concord-Manchester
+ VICTORY_POINTS_11118:0 "Concord"
+ VICTORY_POINTS_11109:0 "Manchester"
+ VICTORY_POINTS_11116:0 "Hooksett"
+ VICTORY_POINTS_11099:0 "Derry"
+ VICTORY_POINTS_11119:0 "Bear Brook"
+#Greater Concord-Manchester
+ VICTORY_POINTS_2196:0 "Portsmouth"
+ VICTORY_POINTS_11893:0 "Dover"
+#Monadock
+ VICTORY_POINTS_11467:0 "Nashua"
+ VICTORY_POINTS_11881:0 "Keene"
+#Dartmouth-Sunapee
+ VICTORY_POINTS_5031:0 "Lebanon"
+#Great North Woods
+ VICTORY_POINTS_11178:0 "Berlin"
+
+###Maine
+#Portland
+ VICTORY_POINTS_11132:0 "Portland"
+ VICTORY_POINTS_11130:0 "Scarborough"
+ VICTORY_POINTS_11145:0 "Falmouth"
+#Oxford
+ VICTORY_POINTS_2999:0 "Augusta"
+#Greater Portland
+ VICTORY_POINTS_2491:0 "Brunswick"
+ VICTORY_POINTS_3040:0 "Lewiston"
+ VICTORY_POINTS_11901:0 "Biddeford"
+#Midcoast
+ VICTORY_POINTS_3655:0 "Bangor"  
+#Aroostook
+ VICTORY_POINTS_2896:0 "Presque Isle"
+#Downeast & Acadia
+ VICTORY_POINTS_3479:0 "Eastport"

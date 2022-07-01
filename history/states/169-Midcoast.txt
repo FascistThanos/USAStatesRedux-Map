@@ -6,6 +6,9 @@ state={
 		buildings = {
 			infrastructure = 3
 		}
+		victory_points = {
+			3655 15
+		}
 		add_core_of = MEM
 	}
 	provinces={
