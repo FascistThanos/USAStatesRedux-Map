@@ -3,6 +3,7 @@ state={
 	name="Cienfuegos"
 	resources = {
 		oil = 8
+		chromium = 56
 	}
 	history={
 		owner = CUB

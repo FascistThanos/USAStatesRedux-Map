@@ -1,6 +1,9 @@
 state={
 	id=1369
 	name="Matanzas"
+	resources = {
+		chromium = 44
+	}
 	history={
 		owner = CUB
 		buildings = {

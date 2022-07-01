@@ -1,6 +1,9 @@
 state={
 	id=1376
 	name="Songo-La Maya"
+	resources = {
+		chromium = 39
+	}
 	history={
 		owner = CUB
 		buildings = {

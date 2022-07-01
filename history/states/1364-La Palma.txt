@@ -1,6 +1,9 @@
 state={
 	id=1364
 	name="La Palma"
+	resources = {
+		chromium = 32
+	}
 	history={
 		owner = CUB
 		buildings = {
