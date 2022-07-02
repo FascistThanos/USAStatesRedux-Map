@@ -6,6 +6,9 @@ state={
 		buildings = {
 			infrastructure = 1
 			dockyard = 2
+			10429 = {
+				naval_base = 10
+			}
 		}
 		add_core_of = CUB
 

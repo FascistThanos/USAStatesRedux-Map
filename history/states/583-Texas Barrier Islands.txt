@@ -8,6 +8,12 @@ state={
 		owner = TXT
 		buildings = {
 			infrastructure = 1
+			8166 = {
+				naval_base = 1
+			}
+			2308 = {
+				naval_base = 4
+			}
 		}
 		add_core_of = TXT
 	}

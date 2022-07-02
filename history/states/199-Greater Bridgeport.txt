@@ -7,7 +7,9 @@ state={
 		owner = CTC
 		buildings = {
 			infrastructure = 1
-
+			11736 = {
+				naval_base = 8
+			}
 		}
 		victory_points = {
 			10938 10

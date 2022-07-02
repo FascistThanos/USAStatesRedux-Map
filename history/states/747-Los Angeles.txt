@@ -9,6 +9,9 @@ state={
 		buildings = {
 			infrastructure = 5
 			dockyard = 1
+			6413 = {
+				naval_base = 10
+			}
 		}
 		add_core_of = CAC
 

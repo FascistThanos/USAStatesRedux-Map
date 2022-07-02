@@ -5,6 +5,9 @@ state={
 		owner = BRM
 		buildings = {
 			infrastructure = 1
+			8155 = {
+				naval_base = 2
+			}
 		}
 		add_core_of = BRM
 	}

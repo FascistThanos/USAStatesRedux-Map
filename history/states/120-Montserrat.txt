@@ -5,6 +5,9 @@ state={
 		owner = MNT
 		buildings = {
 			infrastructure = 1
+			8215 = {
+				naval_base = 3
+			}
 		}
 		add_core_of = MNT
 	}

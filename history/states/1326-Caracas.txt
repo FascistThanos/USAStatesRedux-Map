@@ -5,7 +5,9 @@ state={
 		owner = VEN
 		buildings = {
 			infrastructure = 1
-
+			10340 = {
+				naval_base = 6
+			}
 		}
 		add_core_of = VEN
 

@@ -5,7 +5,9 @@ state={
 		owner = NJN
 		buildings = {
 			infrastructure = 3
-
+			10878 = {
+				naval_base = 4
+			}
 		}
 		add_core_of = NJN
 

@@ -8,7 +8,9 @@ state={
 		owner = COS
 		buildings = {
 			infrastructure = 1
-
+			2316 = {
+				naval_base = 4
+			}
 		}
 		add_core_of = COS
 

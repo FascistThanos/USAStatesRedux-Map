@@ -10,7 +10,9 @@ state={
 		owner = JAM
 		buildings = {
 			infrastructure = 1
-
+			7615 = {
+				naval_base = 6
+			}
 		}
 		add_core_of = JAM
 

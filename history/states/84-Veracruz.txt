@@ -10,7 +10,9 @@ state={
 		owner = VER
 		buildings = {
 			infrastructure = 1
-
+			674 = {
+				naval_base = 4
+			}
 		}
 		add_core_of = VER
 

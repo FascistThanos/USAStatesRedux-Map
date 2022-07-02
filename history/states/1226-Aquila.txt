@@ -5,7 +5,9 @@ state={
 		owner = MIC
 		buildings = {
 			infrastructure = 1
-
+			152 = {
+				naval_base = 6
+			}
 		}
 		add_core_of = MIC
 

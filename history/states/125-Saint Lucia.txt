@@ -7,7 +7,9 @@ state={
 		owner = STL
 		buildings = {
 			infrastructure = 1
-
+			11641 = {
+				naval_base = 3
+			}
 		}
 		add_core_of = STL
 

@@ -5,7 +5,9 @@ state={
 		owner = GAG
 		buildings = {
 			infrastructure = 1
-
+			11395 = {
+				naval_base = 4
+			}
 		}
 		add_core_of = GAG
 

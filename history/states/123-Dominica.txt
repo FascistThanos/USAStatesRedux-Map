@@ -7,7 +7,9 @@ state={
 		owner = DMC
 		buildings = {
 			infrastructure = 1
-
+			11648 = {
+				naval_base = 3
+			}
 		}
 		add_core_of = DMC
 

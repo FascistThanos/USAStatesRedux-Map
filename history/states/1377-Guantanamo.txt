@@ -5,7 +5,9 @@ state={
 		owner = CUB
 		buildings = {
 			infrastructure = 1
-
+			3581 = {
+				naval_base = 10
+			}
 		}
 		add_core_of = CUB
 

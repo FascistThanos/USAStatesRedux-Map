@@ -5,6 +5,9 @@ state={
 		owner = RIR
 		buildings = {
 			infrastructure = 1
+			11006 = {
+				naval_base = 8
+			}
 		}
 		victory_points = {
 			11006 25

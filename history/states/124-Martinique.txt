@@ -7,7 +7,9 @@ state={
 		owner = MTQ
 		buildings = {
 			infrastructure = 1
-
+			11645 = {
+				naval_base = 4
+			}
 		}
 		add_core_of = MTQ
 

@@ -69,22 +69,23 @@ buildings = {
 		always_shown = yes
 		infrastructure_construction_effect = yes
 	}	
-	ammunitions_cache = {
-		show_on_map = 1
-		base_cost = 5000
-		provincial = yes
-		disabled_in_dmz = yes
-		icon_frame = 17
-		max_level = 1
-		centered = yes
-		supply_node = yes
-		damage_factor = 0.20
-		allied_build = yes
-		always_shown = yes
-		local_supplies_for_controller = 0.5
-
-		infrastructure_construction_effect = yes
-	}
+	#ammunitions_cache = {
+	#	show_on_map = 1
+	#	base_cost = 5000
+	#	provincial = no
+	#	disabled_in_dmz = yes
+	#	icon_frame = 17
+	#	max_level = 1
+	#	centered = yes
+	#	#supply_node = yes
+	#	shares_slots = no
+	#	damage_factor = 0.20
+	#	allied_build = yes
+	#	always_shown = yes
+	#	local_supplies_for_controller = 0.5
+#
+	#	infrastructure_construction_effect = yes
+	#}
 	rail_way = {
 		base_cost = 170
 		per_level_extra_cost = 130
@@ -137,24 +138,6 @@ buildings = {
 		max_level = 10
 		value = 1
 		infrastructure_construction_effect = yes
-	}
-
-	natural_harbor = {
-		show_on_map = 0
-		show_on_map_meshes = 0
-		always_shown = no
-		base_cost = 500000
-		per_level_extra_cost = 100000
-		provincial = yes
-		only_costal = yes
-		is_port = yes
-		damage_factor = 0
-		icon_frame = 18
-		max_level = 1
-		value = 0
-		local_supplies_for_controller = 0.5
-
-		infrastructure_construction_effect = no
 	}
 
 	dockyard = {

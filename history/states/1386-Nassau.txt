@@ -5,7 +5,9 @@ state={
 		owner = BAH
 		buildings = {
 			infrastructure = 1
-
+			8175 = {
+				naval_base = 4
+			}
 		}
 		add_core_of = BAH
 

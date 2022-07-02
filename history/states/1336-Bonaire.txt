@@ -7,7 +7,9 @@ state={
 		owner = CRC
 		buildings = {
 			infrastructure = 1
-
+			8227 = {
+				naval_base = 2
+			}
 		}
 		add_core_of = CRC
 

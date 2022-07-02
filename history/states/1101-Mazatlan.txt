@@ -5,7 +5,9 @@ state={
 		owner = SIN
 		buildings = {
 			infrastructure = 1
-
+			7351 = {
+				naval_base = 4
+			}
 		}
 		add_core_of = SIN
 

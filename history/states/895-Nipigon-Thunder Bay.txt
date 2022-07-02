@@ -6,9 +6,14 @@ state={
 		buildings = {
 			infrastructure = 1
 			dockyard = 2
+			3210 = {
+				naval_base = 3
+			}
 		}
 		add_core_of = ONO
-
+		victory_points = {
+			3210 10
+		}
 	}
 	provinces={
 		907 1806 2024 2699 3210 4304 4674 4686 4695 4701 10186 

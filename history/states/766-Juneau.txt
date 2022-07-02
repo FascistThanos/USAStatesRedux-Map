@@ -5,7 +5,9 @@ state={
 		owner = AKA
 		buildings = {
 			infrastructure = 2
-
+			11338 = {
+				naval_base = 2
+			}
 		}
 		add_core_of = AKA
 

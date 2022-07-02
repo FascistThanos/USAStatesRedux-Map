@@ -5,7 +5,15 @@ state={
 		owner = CAC
 		buildings = {
 			infrastructure = 1
-
+			8152 = {
+				naval_base = 1
+			}
+			8153 = {
+				naval_base = 1
+			}
+			8154 = {
+				naval_base = 1
+			}
 		}
 		add_core_of = CAC
 
