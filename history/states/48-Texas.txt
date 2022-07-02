@@ -9,6 +9,15 @@ state={
 			infrastructure = 1
 
 		}
+		victory_points = {
+			2486 5
+		}
+		victory_points = {
+			2308 20
+		}
+		victory_points = {
+			7023 5
+		}
 		add_core_of = TXT
 
 	}

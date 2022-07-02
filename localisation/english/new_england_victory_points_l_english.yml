@@ -133,3 +133,91 @@
  VICTORY_POINTS_2896:0 "Presque Isle"
 #Downeast & Acadia
  VICTORY_POINTS_3479:0 "Eastport"
+
+###Texas
+#Austin
+ VICTORY_POINTS_10491:0 "Austin"
+ VICTORY_POINTS_10494:0 "Round Rock"
+ VICTORY_POINTS_10490:0 "Lake Travis"
+ VICTORY_POINTS_10493:0 "Leander"
+ VICTORY_POINTS_10499:0 "Georgetown"
+ VICTORY_POINTS_10495:0 "Pflugerville"
+#Gulf Coast
+ VICTORY_POINTS_2486:0 "San Marcos"
+ VICTORY_POINTS_2308:0 "Corpus Christi"
+ VICTORY_POINTS_7023:0 "Victoria"
+#San Antonio
+ VICTORY_POINTS_11512:0 "San Antonio"
+ VICTORY_POINTS_10464:0 "New Braunfels"
+ VICTORY_POINTS_10466:0 "Forth Sam Houston"
+ VICTORY_POINTS_11513:0 "Northwest Side"
+ VICTORY_POINTS_11511:0 "Southwest Side"
+ VICTORY_POINTS_10460:0 "Brooks Field"
+#Hill Country
+ VICTORY_POINTS_2004:0 "Boerne"
+ VICTORY_POINTS_3929:0 "Fredericksburg"
+#Cross Timbers & Prairies
+ VICTORY_POINTS_1644:0 "Waco"
+#Rio Grande
+ VICTORY_POINTS_4110:0 "Laredo"
+ VICTORY_POINTS_6933:0 "Del Rio"
+#Hildalgo-Starr
+ VICTORY_POINTS_3494:0 "Brownsville"
+ VICTORY_POINTS_1734:0 "McAllen"
+#Texas Panhandle
+ VICTORY_POINTS_1201:0 "Amarillo"
+#High Plains
+ VICTORY_POINTS_3609:0 "Lubbock"
+#Forts Trail Region
+ VICTORY_POINTS_2043:0 "Abilene"
+#Lakes Trail Region
+ VICTORY_POINTS_6548:0 "Denton"
+ VICTORY_POINTS_3215:0 "Wichita Falls"
+#Lamar-Bowie
+ VICTORY_POINTS_6507:0 "Texarkana"
+ VICTORY_POINTS_6467:0 "Paris"
+ VICTORY_POINTS_6569:0 "Longview"
+#Dallas
+ VICTORY_POINTS_10568:0 "Dallas"
+ VICTORY_POINTS_11523:0 "Irving"
+ VICTORY_POINTS_10576:0 "Plano"
+ VICTORY_POINTS_11519:0 "Cedar Hill"
+ VICTORY_POINTS_10561:0 "Lancaster"
+ VICTORY_POINTS_10566:0 "Mesquite"
+ VICTORY_POINTS_11524:0 "Garland"
+ VICTORY_POINTS_11525:0 "Frisco"
+ VICTORY_POINTS_10581:0 "Lewisville"
+#Fort Worth
+ VICTORY_POINTS_11520:0 "Fort Worth"
+ VICTORY_POINTS_11402:0 "Arlington"
+ VICTORY_POINTS_10553:0 "Mansfield"
+ VICTORY_POINTS_10552:0 "Burleson"
+ VICTORY_POINTS_11521:0 "Hicks Field"
+ VICTORY_POINTS_10573:0 "Grapevine"
+#Blackland Prairie
+ VICTORY_POINTS_2565:0 "Tyler"
+ VICTORY_POINTS_6832:0 "Bryan-College Station"
+#Piney Woods
+ VICTORY_POINTS_6712:0 "Nacogdoches"
+#Gulf Coast Prairie & Marshes
+ VICTORY_POINTS_6884:0 "Beaumont"
+#Houston
+ VICTORY_POINTS_11380:0 "Houston"
+ VICTORY_POINTS_10469:0 "Port of Houston"
+ VICTORY_POINTS_10468:0 "Pasedena"
+ VICTORY_POINTS_11515:0 "Southwest Houston"
+ VICTORY_POINTS_10615:0 "Texas City"
+ VICTORY_POINTS_10465:0 "League City"
+ VICTORY_POINTS_11382:0 "North Houston"
+ VICTORY_POINTS_6934:0 "Baytown"
+#Greater Houston
+ VICTORY_POINTS_1995:0 "Conroe"
+ VICTORY_POINTS_2668:0 "Freeport"
+#Galveston
+ VICTORY_POINTS_8157:0 "Galveston"
+#Edward's Plateau
+ VICTORY_POINTS_6667:0 "Midland-Odessa"
+#El Paso
+ VICTORY_POINTS_10524:0 "El Paso"
+ VICTORY_POINTS_10528:0 "Franklin Mountains"
+ VICTORY_POINTS_10529:0 "Fort Bliss"

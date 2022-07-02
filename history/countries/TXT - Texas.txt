@@ -1,4 +1,4 @@
-﻿capital = 48
+﻿capital = 575
 
 oob = "TXT_1936"
 if = {

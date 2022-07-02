@@ -6,6 +6,24 @@ state={
 		buildings = {
 			infrastructure = 1
 		}
+		victory_points = {
+			11520 20
+		}
+		victory_points = {
+			11402 10
+		}
+		victory_points = {
+			10553 5
+		}
+		victory_points = {
+			10552 5
+		}
+		victory_points = {
+			11521 5
+		}
+		victory_points = {
+			10573 5
+		}
 		add_core_of = TXT
 	}
 	provinces={
