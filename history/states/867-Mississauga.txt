@@ -8,7 +8,7 @@ state={
 		owner = ONO
 		buildings = {
 			infrastructure = 1
-
+			dockyard = 1
 		}
 		victory_points = {
 			11129 20

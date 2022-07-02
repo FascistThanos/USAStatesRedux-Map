@@ -5,7 +5,10 @@ state={
 		owner = CAC
 		buildings = {
 			infrastructure = 4
-
+			dockyard = 2
+			5742 = {
+				naval_base = 5
+			}
 		}
 		victory_points = {
 			3419 15

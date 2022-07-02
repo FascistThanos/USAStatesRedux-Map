@@ -5,7 +5,7 @@ state={
 		owner = HAI
 		buildings = {
 			infrastructure = 1
-
+			dockyard = 1
 		}
 		add_core_of = HAI
 

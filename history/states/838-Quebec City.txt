@@ -8,7 +8,7 @@ state={
 		owner = QCQ
 		buildings = {
 			infrastructure = 1
-
+			dockyard = 2
 		}
 		victory_points = {
 			11246 30

@@ -5,7 +5,7 @@ state={
 		owner = MDM
 		buildings = {
 			infrastructure = 5
-
+			dockyard = 2
 		}
 		add_core_of = MDM
 

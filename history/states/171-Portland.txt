@@ -5,6 +5,10 @@ state={
 
 	history={
 		owner = MEM
+		buildings = {
+			infrastructure = 4
+			dockyard = 1
+		}
 		victory_points = {
 			11132 20
 		}
@@ -13,10 +17,6 @@ state={
 		}
 		victory_points = {
 			11145 5
-		}
-		buildings = {
-			infrastructure = 4
-
 		}
 		add_core_of = MEM
 

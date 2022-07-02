@@ -7,7 +7,7 @@ state={
 		owner = ORO
 		buildings = {
 			infrastructure = 3
-
+			dockyard = 1
 		}
 		victory_points = {
 			4901 5

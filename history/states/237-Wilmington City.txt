@@ -5,7 +5,7 @@ state={
 		owner = DED
 		buildings = {
 			infrastructure = 4
-
+			dockyard = 1
 		}
 		add_core_of = DED
 

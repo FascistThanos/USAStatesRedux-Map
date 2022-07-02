@@ -5,7 +5,7 @@ state={
 		owner = WAW
 		buildings = {
 			infrastructure = 4
-
+			dockyard = 3
 		}
 		victory_points = {
 			11271 20

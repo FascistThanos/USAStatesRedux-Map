@@ -5,7 +5,10 @@ state={
 		owner = HIH
 		buildings = {
 			infrastructure = 1
-
+			dockyard = 4
+			10420 = {
+				naval_base = 6
+			}
 		}
 		add_core_of = HIH
 

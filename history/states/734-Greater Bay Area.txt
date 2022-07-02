@@ -5,7 +5,7 @@ state={
 		owner = CAC
 		buildings = {
 			infrastructure = 4
-
+			dockyard = 4
 		}
 		add_core_of = CAC
 
