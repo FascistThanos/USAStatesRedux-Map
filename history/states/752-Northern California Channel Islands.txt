@@ -18,6 +18,18 @@ state={
 				naval_base = 1
 			}
 		}
+		victory_points = {
+			8148 1
+		}
+		victory_points = {
+			8149 1
+		}
+		victory_points = {
+			8150 1
+		}
+		victory_points = {
+			8151 1
+		}
 		add_core_of = CAC
 
 	}
