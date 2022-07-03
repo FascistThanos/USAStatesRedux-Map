@@ -7,6 +7,7 @@ state={
 		owner = CRC
 		buildings = {
 			infrastructure = 1
+			industrial_complex = 1
 			8226 = {
 				naval_base = 2
 			}

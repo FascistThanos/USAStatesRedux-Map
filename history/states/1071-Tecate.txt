@@ -8,6 +8,7 @@ state={
 		owner = BCA
 		buildings = {
 			infrastructure = 1
+			industrial_complex = 1
 			6620 = {
 				naval_base = 4
 			}

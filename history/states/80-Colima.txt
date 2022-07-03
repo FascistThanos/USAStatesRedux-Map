@@ -7,6 +7,8 @@ state={
 		owner = CLA
 		buildings = {
 			infrastructure = 1
+			industrial_complex = 2
+			arms_factory = 1
 			7553 = {
 				naval_base = 6
 			}

@@ -5,6 +5,7 @@ state={
 		owner = CYM
 		buildings = {
 			infrastructure = 1
+			industrial_complex = 1
 			8204 = {
 				naval_base = 3
 			}

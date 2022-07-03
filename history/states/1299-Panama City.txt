@@ -5,6 +5,8 @@ state={
 		owner = PAN
 		buildings = {
 			infrastructure = 1
+			industrial_complex = 3
+			arms_factory = 1
 			10327 = {
 				naval_base = 4
 			}

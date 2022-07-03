@@ -10,6 +10,8 @@ state={
 		owner = VER
 		buildings = {
 			infrastructure = 1
+			industrial_complex = 2
+			arms_factory = 1
 			674 = {
 				naval_base = 4
 			}
