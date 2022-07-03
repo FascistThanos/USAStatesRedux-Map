@@ -4,7 +4,7 @@ state={
 	history={
 		owner = NSN
 		buildings = {
-			infrastructure = 1
+			infrastructure = 3
 
 		}
 		add_core_of = NSN
@@ -13,8 +13,8 @@ state={
 	provinces={
 		82 391 2409 4798 4816 4832 4836 4857 8127 
 	}
-	manpower=1
+	manpower=138596
 	buildings_max_level_factor=1.000
-	local_supplies=0.000
-	state_category = wasteland
+	local_supplies=5.000
+	state_category = large_town
 }
