@@ -566,7 +566,7 @@ ideas = {
       }
       available = {
         if = {
-          has_completed_focus = KSK_fascist9
+          #has_completed_focus = KSK_fascist9
         }
       }
 
@@ -601,7 +601,7 @@ ideas = {
 			}
 			available = {
 				if = {
-					has_completed_focus = KSK_steel_plant
+					#has_completed_focus = KSK_steel_plant
 				}
 			}
 

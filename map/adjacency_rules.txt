@@ -25,13 +25,13 @@ adjacency_rule = {
 	}
 	neutral =
 	{
-		army = no
-		navy = no
-		submarine = no
+		army = yes
+		navy = yes
+		submarine = yes
 		trade = yes
 	}
 	
-	required_provinces = { 11372 10332 10328 10325 10326 }
+	required_provinces = { 11372 10328 10325 10326 }
 
 	is_disabled = {
 		OR = {
@@ -41,6 +41,328 @@ adjacency_rule = {
 		tooltip = disable_canal_tt
 	}
 		
-	icon = 7617
+	icon = 10326
+	offset = { 0 0 0 }
+}
+#Gatun Locks
+adjacency_rule = {
+	name = "GATUN_LOCKS"
+
+	contested =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	enemy =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	friend =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	neutral =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	
+	required_provinces = { 10332 }
+
+	is_disabled = {
+		OR = {
+			has_global_flag = PANAMA_CANAL_BLOCKED
+			has_country_flag = PANAMA_CANAL_BLOCKED_FOR_COUNTRY
+		}
+		tooltip = disable_canal_tt
+	}
+		
+	icon = 10332
+	offset = { 0 0 0 }
+}
+#Tablazo Strait
+adjacency_rule = {
+	name = "TABLAZO_STRAIT"
+
+	contested =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	enemy =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	friend =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	neutral =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = yes
+	}
+	
+	required_provinces = { 1674 1316 }
+
+	is_disabled = {
+		OR = {
+			has_global_flag = TABLAZO_STRAIT_BLOCKED
+			has_country_flag = TABLAZO_STRAIT_BLOCKED_FOR_COUNTRY
+		}
+		tooltip = disable_canal_tt
+	}
+		
+	icon = 1674
+	offset = { 0 0 0 }
+}
+#New Orleans
+adjacency_rule = {
+	name = "NEW_ORLEANS"
+
+	contested =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	enemy =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	friend =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	neutral =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	
+	required_provinces = { 6906 2731 }
+
+	is_disabled = {
+		OR = {
+			has_global_flag = NEW_ORLEANS_BLOCKED
+			has_country_flag = NEW_ORLEANS_BLOCKED_FOR_COUNTRY
+		}
+		tooltip = disable_canal_tt
+	}
+		
+	icon = 9606
+	offset = { 0 0 0 }
+}
+#Saint Lawrence
+adjacency_rule = {
+	name = "SAINT_LAWRENCE"
+
+	contested =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	enemy =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	friend =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	neutral =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	
+	required_provinces = { 8123 }
+
+	is_disabled = {
+		OR = {
+			has_global_flag = SAINT_LAWRENCEBLOCKED
+			has_country_flag = SAINT_LAWRENCE_BLOCKED_FOR_COUNTRY
+		}
+		tooltip = disable_canal_tt
+	}
+		
+	icon = 8123
+	offset = { 0 0 0 }
+}
+#Niagara
+adjacency_rule = {
+	name = "NIAGARA"
+
+	contested =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	enemy =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	friend =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	neutral =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	
+	required_provinces = { 8139 }
+
+	is_disabled = {
+		OR = {
+			has_global_flag = NIAGARA_BLOCKED
+			has_country_flag = NIAGARA_BLOCKED_FOR_COUNTRY
+		}
+		tooltip = disable_canal_tt
+	}
+		
+	icon = 8139
+	offset = { 0 0 0 }
+}
+#Detroit River
+adjacency_rule = {
+	name = "DETROIT_RIVER"
+
+	contested =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	enemy =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	friend =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	neutral =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	
+	required_provinces = { 759 10504 }
+
+	is_disabled = {
+		OR = {
+			has_global_flag = DETROIT_RIVER_BLOCKED
+			has_country_flag = DETROIT_RIVER_BLOCKED_FOR_COUNTRY
+		}
+		tooltip = disable_canal_tt
+	}
+		
+	icon = 759
+	offset = { 0 0 0 }
+}
+#St. Clair River
+adjacency_rule = {
+	name = "ST_CLAIR_RIVER"
+
+	contested =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	enemy =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	friend =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	neutral =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	
+	required_provinces = { 3776 5163 }
+
+	is_disabled = {
+		OR = {
+			has_global_flag = ST_CLAIRE_RIVERBLOCKED
+			has_country_flag = ST_CLAIRE_RIVER_BLOCKED_FOR_COUNTRY
+		}
+		tooltip = disable_canal_tt
+	}
+		
+	icon = 3776
 	offset = { 0 0 0 }
 }

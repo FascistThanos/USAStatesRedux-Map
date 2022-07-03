@@ -1,0 +1,10 @@
+strategic_region={
+	id=175
+	name="Gatún Lake"
+	provinces={
+		10312
+	}
+	naval_terrain=water_fjords
+	weather={
+	}
+}

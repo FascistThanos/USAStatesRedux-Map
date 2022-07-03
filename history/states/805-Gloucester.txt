@@ -4,7 +4,7 @@ state={
 	history={
 		owner = NBN
 		buildings = {
-			infrastructure = 1
+			infrastructure = 2
 
 		}
 		add_core_of = NBN
@@ -13,8 +13,8 @@ state={
 	provinces={
 		2045 2772 3523 4733 4759 
 	}
-	manpower=1
+	manpower=46191
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
-	state_category = wasteland
+	state_category = rural
 }

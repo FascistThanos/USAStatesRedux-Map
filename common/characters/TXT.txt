@@ -1,368 +1,892 @@
-characters={
-
-
-### POLITICAL ADVISORS ###
-
-	TXT_fascist_guy={
-		advisor={
-			slot = political_advisor
-			idea_token = TXT_fascist_guy
-			allowed  = { original_tag  = TXT }
-				traits  = { fascist_demagogue }
-				do_effect  = { not  = { has_government  = fascism } }
-				ai_will_do  = { factor  = 0.000 }
+characters = {
+#Generals
+	TXT_alexander_patch={
+		name="Alexander Patch"
+		portraits={
+			army={
+				large="gfx/leaders/USA/Portrait_USA_Alexander_Patch.dds"
+				small="gfx/interface/ideas/idea_USA_alexander_patch.dds"
+			}
 		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		portraits={ army={ small="GFX_idea_generic_political_advisor_europe_2" } }
-	}
-
-	TXT_communist_guy={
-		advisor={
-			slot = political_advisor
-			idea_token = TXT_communist_guy
-			allowed  = { original_tag  = TXT }
-				traits  = { communist_revolutionary }
-				do_effect  = { not  = { has_government  = communism } }
-				ai_will_do  = { factor  = 0.000 }
+		corps_commander={
+			traits={ infantry_officer commando }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=211911
 		}
-
-		portraits={ army={ small="GFX_idea_generic_political_advisor_europe_3" } }
 	}
-
-	TXT_democratic_guy={
-		advisor={
-			slot = political_advisor
-			idea_token = TXT_democratic_guy
-			allowed  = { original_tag  = TXT }
-				traits  = { democratic_reformer }
-				do_effect  = { not  = { has_government  = democratic } }
-				ai_will_do  = {	factor  = 0.000	}
+	TXT_lucian_truscott={
+		name="Lucian Truscott"
+		portraits={
+			army={
+				large="gfx/leaders/USA/Portrait_USA_Lucian_Truscott.dds"
+				small="gfx/interface/ideas/idea_USA_lucian_truscott.dds"
+			}
 		}
-
-		portraits={ army={	small="GFX_idea_generic_political_advisor_europe_1" } }
-	}
-
-	TXT_coi={
-		advisor={
-			slot = political_advisor
-			idea_token = TXT_coi
-			allowed  = { original_tag  = TXT }
-				traits  = { captain_of_industry }
+		corps_commander={
+			traits={ cavalry_officer trait_engineer commando }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=211912
 		}
-
-		portraits={ army={ small="GFX_idea_generic_political_advisor_europe_1" } }
 	}
-
-	TXT_fe={
-		advisor={
-			slot = political_advisor
-			idea_token = TXT_fe
-			allowed  = { original_tag  = TXT }
-				traits  = { fortification_engineer }
+	TXT_william_simpson={
+		name="William Simpson"
+		portraits={
+			army={
+				large="gfx/leaders/USA/Portrait_USA_William_Hood_Simpson.dds"
+				small="gfx/interface/ideas/idea_USA_william_hood_simpson.dds"
+			}
 		}
-
-		portraits={ army={ small="GFX_idea_generic_political_advisor_europe_3" } }
-	}
-
-	TXT_wi={
-		advisor={
-			slot = political_advisor
-			idea_token = TXT_wi
-			allowed  = { original_tag  = TXT }
-				traits  = { war_industrialist }
+		corps_commander={
+			traits={ infantry_officer }
+			skill=3
+			attack_skill=1
+			defense_skill=4
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=211913
 		}
-
-		portraits={ army={ small="GFX_idea_generic_war_industrialist" } }
 	}
-
-	TXT_stc={
-		advisor={
-			slot = political_advisor
-			idea_token = TXT_stc
-			allowed  = { original_tag  = TXT }
-				traits  = {	smooth_talking_charmer 	}
+	TXT_james_rudder={
+		name="James Earl Rudder"
+		portraits={
+			army={
+				large="gfx/leaders/TXT/Portrait_TXT_James_Earl_Rudder.dds"
+				small="gfx/interface/ideas/idea_USA_william_hood_simpson.dds"
+			}
 		}
-
-		portraits={	army={	small="GFX_idea_generic_political_advisor_europe_3"	}	}
-	}
-
-	TXT_pot={
-		advisor={
-			slot = political_advisor
-			idea_token = TXT_pot
-			allowed  = { original_tag  = TXT }
-				traits  = { prince_of_terror }
+		corps_commander={
+			traits={ ambusher scavenger }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 1
+			logistics_skill = 4
+			legacy_id=211914
 		}
-
-		portraits={	army={	small="GFX_idea_generic_political_advisor_europe_2"	} }
 	}
-
-### MILITRARY HIGH COMMAND ###
-
-
-
-	TXT_acd2={
-		advisor={
-			slot = army_chief
-			idea_token = TXT_acd2
-			allowed  = { original_tag  = TXT }
-				traits  = { army_chief_defensive_2 }
-				ai_will_do  = { factor  = 1.000 }
+	TXT_walton_walker={
+		name="Walton Walker"
+		portraits={
+			army={
+				large="gfx/leaders/TXT/Portrait_TXT_Walton_Walker.dds"
+				small="GFX_idea_generic_army_europe_2"
+			}
 		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		portraits={ army={ small="GFX_idea_generic_army_europe_5" } }
-	}
-	TXT_ncs={
-		advisor={
-			slot = high_command
-			idea_token = TXT_ncs
-			ledger  = navy 
-				allowed  = { original_tag  = TXT }
-				traits  = { navy_capital_ship_2 }
-				ai_will_do  = { factor  = 1.000 }
+		corps_commander={
+			traits={ panzer_leader }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id=211915
 		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		portraits={ army={ small="GFX_idea_generic_navy_europe_2" } }
 	}
-	TXT_nccr={
+	TXT_john_pierce={
+		name="John L. Pierce"
+		portraits={
+			army={
+				large="gfx/leaders/TXT/Portrait_TXT_John_Leonard.dds"
+				small="GFX_idea_generic_army_europe_2"
+			}
+		}
+		corps_commander={
+			traits={ panzer_leader }
+			skill = 5
+			attack_skill = 5
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id=211916
+			visible = {
+				if = {
+					limit = {
+						OR = {
+							has_government = democratic
+							has_government = communism
+						}
+					}
+					#has_completed_focus = TXT_expand_military_bases
+				}
+				else_if = {
+					limit = {
+						has_government = fascism
+					}
+					#has_completed_focus = TXT_recognize_new_talent
+				}
+			}
+		}
+	}
+	TXT_edwin_walker={
+		name="Edwin Walker"
+		portraits={
+			army={
+				large="gfx/leaders/TXT/Portrait_TXT_Edwin_Walker.dds"
+				small="GFX_idea_generic_army_europe_2"
+			}
+		}
+		corps_commander={
+			traits={  }
+			skill = 2
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+			legacy_id=211917
+		}
+	}
+	TXT_oveta_c_hobby={
+		name="Oveta Culp Hobby"
+		portraits={
+			army={
+				large="gfx/leaders/TXT/Portrait_TXT_Oveta_Hobby.dds"
+				small="GFX_idea_generic_army_europe_2"
+			}
+		}
+		corps_commander={
+			traits={ brilliant_strategist }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id=211918
+			visible = {
+				if = {
+					limit = {
+						OR = {
+							has_government = democratic
+							has_government = communism
+						}
+					}
+					#has_completed_focus = TXT_expand_military_bases
+				}
+				else_if = {
+					limit = {
+						has_government = fascism
+					}
+					#has_completed_focus = TXT_recognize_new_talent
+				}
+			}
+		}
+	}
+#Admirals
+	TXT_chester_w_nimitz={
+		name="Chester W. Nimitz"
+		portraits={
+			army={
+				large="gfx/leaders/USA/Portrait_USA_Chester_W_Nimitz.dds"
+			}
+			army={
+				small="GFX_idea_chester_nimitz"
+			}
+		}
 		advisor={
 			slot = navy_chief
-			idea_token = TXT_nccr
-			allowed  = { original_tag  = TXT }
-				traits  = { navy_chief_commerce_raiding_2 }
-				ai_will_do  = { factor  = 1.000 }
+			idea_token = chester_nimitz
+			allowed = {
+				original_tag = TXT
+			}
+			traits = {
+				navy_chief_commerce_raiding_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
 		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		portraits={
-			army={ small="GFX_idea_generic_navy_europe_2" } }
+		
+		navy_leader={
+			traits={ gentlemanly naval_lineage superior_tactician spotter blue_water_expert }
+			skill=5
+			attack_skill=3
+			defense_skill=3
+			maneuvering_skill=5
+			coordination_skill=5
+			legacy_id=0
+		}
 	}
-	TXT_aco2={
+#####Army Chiefs######
+	TXT_army_chief_1 = {
 		advisor={
 			slot = army_chief
-			idea_token = TXT_aco2
-			allowed  = {
-					original_tag  = TXT
-				}
-				traits  = {
-					army_chief_organizational_2 
-				}
-				ai_will_do  = {
-					factor  = 1.000
-				}
-		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		portraits={
-			army={
-				small="GFX_idea_generic_army_europe_4"
+			idea_token = TXT_army_chief_1
+			allowed = {
+				
+			}
+			traits = {
+				army_entrenchment_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
 			}
 		}
 	}
-	TXT_ai2={
+	TXT_army_chief_2 = {
 		advisor={
-			slot = high_command
-			idea_token = TXT_ai2
-			ledger  = army 
-				allowed  = {
-					original_tag  = TXT
-				}
-				traits  = {
-					army_infantry_2 
-				}
-				ai_will_do  = {
-					factor  = 1.000
-				}
+			slot = army_chief
+			idea_token = TXT_army_chief_2
+			allowed = {
+				
+			}
+			traits = {
+				army_chief_defensive_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
 		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
 		portraits={
 			army={
-				small="GFX_idea_generic_army_europe_3"
+				small="GFX_idea_generic_army_europe_2"
 			}
 		}
 	}
-	TXT_ar={
+	TXT_army_chief_3 = {
 		advisor={
-			slot = high_command
-			idea_token = TXT_ar
-			ledger  = army 
-				allowed  = {
-					original_tag  = TXT
-				}
-				traits  = {
-					army_regrouping_2 
-				}
-				ai_will_do  = {
-					factor  = 1.000
-				}
+			slot = army_chief
+			idea_token = TXT_army_chief_3
+			allowed = {
+				
+			}
+			traits = {
+				army_chief_offensive_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
 		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
 		portraits={
 			army={
 				small="GFX_idea_generic_army_europe_1"
 			}
 		}
 	}
-	TXT_acas={
+	TXT_army_chief_4 = {
 		advisor={
-			slot = high_command
-			idea_token = TXT_acas
-			ledger  = air 
-				allowed  = {
-					original_tag  = TXT
-				}
-				traits  = {
-					air_close_air_support_2 
-				}
-				ai_will_do  = {
-					factor  = 1.000
-				}
+			slot = army_chief
+			idea_token = TXT_army_chief_4
+			allowed = {
+				
+			}
+			traits = {
+				army_chief_maneuver_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
 		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
 		portraits={
 			army={
-				small="GFX_idea_generic_air_europe_2"
+				small="GFX_idea_generic_army_europe_1"
 			}
 		}
 	}
-	TXT_aa2={
-		advisor={
-			slot = high_command
-			idea_token = TXT_aa2
-			ledger  = army 
-				allowed  = {
-					original_tag  = TXT
-				}
-				traits  = {
-					army_armored_2 
-				}
-				ai_will_do  = {
-					factor  = 1.000
-				}
-		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		portraits={
-			army={
-				small="GFX_idea_generic_army_europe_2"
-			}
-		}
-	}
-
-	TXT_mt={
-		advisor={
-			slot = theorist
-			idea_token = TXT_mt
-			ledger  = army 
-				allowed  = {
-					original_tag  = TXT
-				}
-				traits  = {
-					military_theorist 
-				}
-		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		portraits={
-			army={
-				small="GFX_idea_generic_army_europe_2"
-			}
-		}
-	}
-	TXT_acr={
-		advisor={
-			slot = air_chief
-			idea_token = TXT_acr
-			allowed  = {
-					original_tag  = TXT
-				}
-				traits  = {
-					air_chief_reform_2 
-				}
-				ai_will_do  = {
-					factor  = 1.000
-				}
-		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		portraits={
-			army={
-				small="GFX_idea_generic_air_europe_3"
-			}
-		}
-	}
-	TXT_acgs={
-		advisor={
-			slot = air_chief
-			idea_token = TXT_acgs
-			allowed  = {
-					original_tag  = TXT
-				}
-				traits  = {
-					air_chief_ground_support_2 
-				}
-				ai_will_do  = {
-					factor  = 1.000
-				}
-		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		portraits={
-			army={
-				small="GFX_idea_generic_air_europe_3"
-			}
-		}
-	}
-	TXT_awt={
-		advisor={
-			slot = theorist
-			idea_token = TXT_awt
-			ledger  = air 
-				allowed  = {
-					original_tag  = TXT
-				}
-				traits  = {
-					air_warfare_theorist 
-				}
-		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		portraits={
-			army={
-				small="GFX_idea_generic_air_europe_2"
-			}
-		}
-	}
-	TXT_ncm={
+####Navy Chiefs#####
+	TXT_navy_chief_1 = {
 		advisor={
 			slot = navy_chief
-			idea_token = TXT_ncm
-			allowed  = {
-					original_tag  = TXT
-				}
-				traits  = {
-					navy_chief_maneuver_2 
-				}
-				ai_will_do  = {
-					factor  = 1.000
-				}
+			idea_token = TXT_navy_chief_1
+			allowed = {
+			
+			}
+			traits = {
+				navy_chief_commerce_raiding_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
 		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_europe_2"
+			}
+		}
+	}
+	TXT_navy_chief_2 = {
+		advisor={
+			slot = navy_chief
+			idea_token = TXT_navy_chief_2
+			allowed = {
+			}
+			traits = {
+				navy_chief_reform_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_europe_1"
+			}
+		}
+	}
+	TXT_navy_chief_3 = {
+		advisor={
+			slot = navy_chief
+			idea_token = TXT_navy_chief_3
+			allowed = {
+			
+			}
+			traits = {
+				navy_chief_decisive_battle_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_europe_2"
+			}
+		}
+	}
+	TXT_navy_chief_4 = {
+		advisor={
+			slot = navy_chief
+			idea_token = TXT_navy_chief_4
+			allowed = {
+			
+			}
+			traits = {
+				navy_chief_naval_aviation_1
+			}
+			cost =  100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_europe_2"
+			}
+		}
+	}
+#####Air Chiefs#####
+	TXT_air_chief_1 = {
+		advisor={
+			slot = air_chief
+			idea_token = TXT_air_chief_1
+			allowed = {
+				
+			}
+			traits = {
+				air_chief_all_weather_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		portraits={
+			army={
+				small="GFX_idea_generic_air_europe_4"
+			}
+		}
+	}
+	TXT_air_chief_2 = {
+		advisor={
+			slot = air_chief
+			idea_token = TXT_air_chief_2
+			allowed = {
+				
+			}
+			traits = {
+				air_chief_ground_support_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		portraits={
+			army={
+				small="GFX_idea_generic_air_europe_3"
+			}
+		}
+	}
+	TXT_air_chief_3 = {
+		advisor={
+			slot = air_chief
+			idea_token = TXT_air_chief_3
+			allowed = {
+			
+			}
+			traits = {
+				air_chief_reform_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		portraits={
+			army={
+				small="GFX_idea_generic_air_europe_2"
+			}
+		}
+
+	}
+	TXT_air_chief_4 = {
+		advisor={
+			slot = air_chief
+			idea_token = NOR_hjalmar_riiser_larsen
+			allowed = {
+				
+			}
+			traits = {
+				air_chief_all_weather_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		portraits={
+			army={
+				small="GFX_idea_generic_air_europe_1"
+			}
+		}
+
+	}
+#####Theorists###
+	TXT_army_theorist = {
+		advisor={
+			cost = 100
+			
+			slot = theorist
+			idea_token = TXT_army_theorist
+			ledger = army
+			allowed = {
+				
+			}
+			traits = {
+				military_theorist
+			}
+		}
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_2"
+			}
+		}
+	}
+	TXT_navy_theorist = {
+		advisor={
+			cost = 100	
+			slot = theorist
+			idea_token = TXT_navy_theorist
+			ledger = navy
+			allowed = {
+				
+			}
+			
+			traits = {
+				naval_theorist
+			}
+		}
 		portraits={
 			army={
 				small="GFX_idea_generic_navy_europe_3"
 			}
 		}
 	}
-	TXT_nt={
+	TXT_air_theorist = {
 		advisor={
+			cost = 100
 			slot = theorist
-			idea_token = TXT_nt
-			ledger  = navy 
-				allowed  = {
-					original_tag  = TXT
-				}
-				traits  = {
-					naval_theorist 
-				}
+			idea_token = TXT_air_theorist
+			ledger = air
+			allowed = {
+				
+			}
+			
+			traits = {
+				air_warfare_theorist
+			}
 		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
 		portraits={
 			army={
-				small="GFX_idea_generic_navy_europe_3"
+				small="GFX_idea_generic_air_europe_1"
+			}
+		}
+	}
+#####Military High Command
+	TXT_military_high_command_1 = {
+		advisor={
+			slot = high_command
+			idea_token = TXT_military_high_command_1
+			ledger = army
+			allowed = {
+				
+			}
+			traits = {
+				army_concealment_2
+			}
+			cost = 200
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_2"
+			}
+		}
+
+	}
+	TXT_military_high_command_2 = {
+		advisor={
+			slot = high_command
+			idea_token = TXT_military_high_command_2
+			ledger = navy
+			allowed = {
+				
+			}
+			traits = {
+				navy_chief_naval_aviation_2
+			}
+			cost = 200
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_europe_1"
+			}
+		}
+	}
+	TXT_military_high_command_3 = {
+		advisor={
+			slot = high_command
+			idea_token = TXT_military_high_command_3
+			ledger = army
+			allowed = {
+				
+			}
+			traits = {
+				army_commando_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_3"
+			}
+		}
+
+	}
+	TXT_military_high_command_4 = {
+		advisor={
+			slot = high_command
+			idea_token = TXT_military_high_command_4
+			ledger = army
+			allowed = {
+				
+			}
+			traits = {
+				army_infantry_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_3"
+			}
+		}
+
+	}
+	TXT_military_high_command_5 = {
+		advisor={
+			slot = high_command
+			idea_token = TXT_military_high_command_5
+			ledger = army
+				allowed = {
+					
+				}
+				traits = {
+					army_logistics_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_5"
+			}
+		}
+
+	}
+	TXT_military_high_command_6 = {
+		advisor={
+			slot = high_command
+			idea_token = TXT_military_high_command_6
+			ledger = navy
+				allowed = {
+					
+				}
+				traits = {
+					navy_naval_air_defense_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_europe_2"
+			}
+		}
+	}
+	TXT_military_high_command_7 = {
+		advisor={
+			slot = high_command
+			idea_token = TXT_military_high_command_7
+			ledger = air
+				allowed = {
+					
+				}
+				traits = {
+					air_air_combat_training_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		portraits={
+			army={
+				small="GFX_idea_generic_air_europe_3"
+			}
+		}
+
+	}
+	TXT_military_high_command_8 = {
+		advisor={
+			slot = high_command
+			idea_token = TXT_military_high_command_8
+			ledger = army
+			allowed = {
+				
+			}
+			traits = {
+				army_artillery_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_1"
+			}
+		}
+	}
+#####Political Advisors#####
+	TXT_captain_of_industry={
+		advisor={
+			slot = political_advisor
+			idea_token = TXT_captain_of_industry
+			allowed  = {
+				
+			}
+			traits  = {
+				captain_of_industry 
+			}
+		}
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_3"
+			}
+		}
+	}
+	TXT_compassionalte_gentleman={
+		advisor={
+			slot = political_advisor
+			idea_token = TXT_compassionalte_gentleman
+			allowed  = {
+
+			}
+			traits  = {
+				compassionate_gentleman 
+			}
+		}
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_5"
+			}
+		}
+	}
+	TXT_silent_workhorse={
+		advisor={
+			slot = political_advisor
+			idea_token = TXT_silent_workhorse
+			allowed  = {
+				
+			}
+			traits  = {
+				silent_workhorse 
+			}
+		}
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_2"
+			}
+		}
+	}
+	TXT_prince_of_terror = {
+		advisor={
+			slot = political_advisor
+			idea_token = TXT_prince_of_terror
+			allowed  = {
+				has_government = fascism
+			}
+			traits  = {
+				prince_of_terror 
+			}
+			on_add  = {
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_5"
+			}
+		}
+	}
+	TXT_backroom_backstabber = {
+		advisor={
+			slot = political_advisor
+			idea_token = TXT_backroom_backstabber
+			allowed  = {
+				
+			}
+			traits  = {
+				backroom_backstabber 
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_1"
+			}
+		}
+	}
+	TXT_smooth_talking_charmer = {
+		advisor={
+			slot = political_advisor
+			idea_token = TXT_smooth_talking_charmer
+			allowed  = {
+				
+			}
+			traits  = {
+				smooth_talking_charmer 
+			}
+			on_add  = {
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_3"
+			}
+		}
+	}
+	TXT_ideological_crusader = {
+		advisor={
+			slot = political_advisor
+			idea_token = TXT_ideological_crusader
+			allowed  = {
+				
+			}
+			traits  = {
+				ideological_crusader 
+			}
+			on_add  = {
+			}
+			ai_will_do  = {
+				factor  = 0.500
+			}
+		}
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_1"
+			}
+		}
+	}
+	TXT_war_industrialist = {
+		advisor={
+			slot = political_advisor
+			idea_token = TXT_war_industrialist
+			allowed  = {
+				
+			}
+			traits  = {
+				war_industrialist 
+			}
+			on_add  = {
+			}
+			ai_will_do  = {
+				factor  = 3.000
+			}
+		}
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_2"
+			}
+		}
+	}
+	TXT_armaments_organizer = {
+		advisor={
+			slot = political_advisor
+			idea_token = TXT_armaments_organizer
+			allowed  = {
+				
+			}
+			traits  = {
+				armaments_organizer 
+			}
+			on_add  = {
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_2"
 			}
 		}
 	}

@@ -10,6 +10,8 @@ state={
 		owner = JAM
 		buildings = {
 			infrastructure = 1
+			industrial_complex = 2
+			arms_factory = 1
 			7615 = {
 				naval_base = 6
 			}

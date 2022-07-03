@@ -1,3 +1,31 @@
 #From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
-8820;9300;sea;11372;-1;-1;-1;-1;PANAMA_CANAL;Panama
+#Canals
+8820;10312;sea;;-1;-1;-1;-1;GATUN_LOCKS;Gatun Locks
+10312;9300;sea;11372;-1;-1;-1;-1;PANAMA_CANAL;Panama
+
+##Straits
+9048;9273;sea;;-1;-1;-1;-1;TABLAZO_STRAIT;Tablazo Strait
+9290;11541;sea;;-1;-1;-1;-1;NEW_ORLEANS;New Orleans
+6516;11564;sea;;-1;-1;-1;-1;SAINT_LAWRENCE;Saint Lawrence North
+6516;11565;sea;;-1;-1;-1;-1;SAINT_LAWRENCE;Saint Lawrence South
+9833;9712;sea;;-1;-1;-1;-1;NIAGARA;Niagara
+9761;9744;sea;;-1;-1;-1;-1;DETROIT_RIVER;Detroit River
+9744;9836;sea;;-1;-1;-1;-1;ST_CLAIR_RIVER;ST. Clair River
+
+##Over-Sea Land Crossings
+2731;6906;sea;11541;-1;-1;-1;-1;;New Orleans Bridge
+11516;6865;sea;9290;-1;-1;-1;-1;;New Orleans Bridge 2
+2540;1829;sea;11541;-1;-1;-1;-1;;New Orleans Bridge 3
+6877;10492;sea;11542;-1;-1;-1;-1;;Baton Rouge Bridge
+6696;6717;sea;11547;-1;-1;-1;-1;;Natchez Bridge
+3605;2985;sea;11548;-1;-1;-1;-1;;Vicksburg Bridge
+6473;2930;sea;11552;-1;-1;-1;-1;;Arkansas Bridge
+6306;1202;sea;11555;-1;-1;-1;-1;;Arkansas Bridge 2
+1444;10657;sea;11555;-1;-1;-1;-1;;Memphis Bridge
+5988;2965;sea;11557;-1;-1;-1;-1;;Missouri Bridge
+8151;8148;sea;9590;-1;-1;-1;-1;;Channel Island Bridge 1
+8151;8149;sea;8266;-1;-1;-1;-1;;Channel Island Bridge 2
+8149;8150;sea;8266;-1;-1;-1;-1;;Channel Island Bridge 3
+4831;4803;sea;8367;-1;-1;-1;-1;;PEI Bridge
+
 -1;-1;;-1;-1;-1;-1;-1;-1

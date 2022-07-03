@@ -7,7 +7,7 @@ state={
 	history={
 		owner = ONO
 		buildings = {
-			infrastructure = 1
+			infrastructure = 2
 
 		}
 		add_core_of = ONO
@@ -16,8 +16,8 @@ state={
 	provinces={
 		1279 2978 3056 3887 4790 
 	}
-	manpower=1
+	manpower=31973
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
-	state_category = wasteland
+	state_category = rural
 }

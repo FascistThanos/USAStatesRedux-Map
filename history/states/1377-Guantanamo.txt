@@ -5,6 +5,7 @@ state={
 		owner = CUB
 		buildings = {
 			infrastructure = 1
+			arms_factory = 2
 			3581 = {
 				naval_base = 10
 			}

@@ -4,7 +4,7 @@ state={
 	history={
 		owner = ONO
 		buildings = {
-			infrastructure = 1
+			infrastructure = 2
 			dockyard = 2
 			3210 = {
 				naval_base = 3
@@ -18,8 +18,8 @@ state={
 	provinces={
 		907 1806 2024 2699 3210 4304 4674 4686 4695 4701 10186 
 	}
-	manpower=1
+	manpower=39187
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
-	state_category = wasteland
+	state_category = rural
 }

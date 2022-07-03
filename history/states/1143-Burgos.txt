@@ -5,7 +5,7 @@ state={
 		owner = TAM
 		buildings = {
 			infrastructure = 1
-
+			industrial_complex = 3
 		}
 		add_core_of = TAM
 

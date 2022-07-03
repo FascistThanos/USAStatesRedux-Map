@@ -5,6 +5,7 @@ state={
 		owner = YUC
 		buildings = {
 			infrastructure = 1
+			industrial_complex = 1
 			4287 = {
 				naval_base = 4
 			}
