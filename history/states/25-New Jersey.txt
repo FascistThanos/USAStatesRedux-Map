@@ -9,6 +9,9 @@ state={
 			infrastructure = 5
 			dockyard = 1
 		}
+		victory_points = {
+			2485 5
+		}
 		add_core_of = NJN
 
 	}

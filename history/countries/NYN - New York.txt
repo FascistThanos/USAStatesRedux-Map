@@ -1,4 +1,4 @@
-﻿capital = 23
+﻿capital = 207
 
 oob = "NYN_1936"
 

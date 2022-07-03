@@ -9,6 +9,15 @@ state={
 				naval_base = 4
 			}
 		}
+		victory_points = {
+			10878 10
+		}
+		victory_points = {
+			10755 10
+		}
+		victory_points = {
+			10877 5
+		}
 		add_core_of = NJN
 
 	}

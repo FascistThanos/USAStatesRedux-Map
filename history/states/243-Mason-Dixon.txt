@@ -7,6 +7,9 @@ state={
 			infrastructure = 5
 
 		}
+		victory_points = {
+			2285 5
+		}
 		add_core_of = MDM
 
 	}

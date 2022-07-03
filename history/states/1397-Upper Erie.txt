@@ -9,6 +9,15 @@ state={
 				naval_base = 5
 			}
 		}
+		victory_points = {
+			11804 20
+		}
+		victory_points = {
+			11806 5
+		}
+		victory_points = {
+			11803 5
+		}
 		add_core_of = PAP
 
 	}

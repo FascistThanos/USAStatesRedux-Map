@@ -10,6 +10,21 @@ state={
 				naval_base = 8
 			}
 		}
+		victory_points = {
+			10833 30
+		}
+		victory_points = {
+			10836 5
+		}
+		victory_points = {
+			10829 5
+		}
+		victory_points = {
+			10819 5
+		}
+		victory_points = {
+			11445 5
+		}
 		add_core_of = MDM
 
 	}

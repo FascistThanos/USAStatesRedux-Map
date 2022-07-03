@@ -1,13 +1,19 @@
 
 state={
 	id=154
-	name="Washington District Columbia"
+	name="Washington DC"
 
 	history={
 		owner = DCD
 		buildings = {
 			infrastructure = 5
 
+		}
+		victory_points = {
+			10811 40
+		}
+		victory_points = {
+			10667 10
 		}
 		add_core_of = DCD
 

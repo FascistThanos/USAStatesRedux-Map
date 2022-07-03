@@ -10,6 +10,9 @@ state={
 			infrastructure = 4
 
 		}
+		victory_points = {
+			5393 25
+		}
 		add_core_of = NJN
 
 	}

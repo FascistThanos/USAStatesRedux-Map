@@ -9,6 +9,27 @@ state={
 				naval_base = 5
 			}
 		}
+		victory_points = {
+			11101 20
+		}
+		victory_points = {
+			11107 10
+		}
+		victory_points = {
+			11113 5
+		}
+		victory_points = {
+			11111 10
+		}
+		victory_points = {
+			11091 5
+		}
+		victory_points = {
+			11092 5
+		}
+		victory_points = {
+			11097 5
+		}
 		add_core_of = NYN
 
 	}

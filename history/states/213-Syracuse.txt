@@ -7,6 +7,24 @@ state={
 			infrastructure = 4
 
 		}
+		victory_points = {
+			11087 20
+		}
+		victory_points = {
+			11093 5
+		}
+		victory_points = {
+			11098 5
+		}
+		victory_points = {
+			11086 5
+		}
+		victory_points = {
+			11079 5
+		}
+		victory_points = {
+			11082 5
+		}
 		add_core_of = NYN
 
 	}

@@ -6,8 +6,12 @@ state={
 		buildings = {
 			infrastructure = 2
 		}
+		victory_points = {
+			5584 25
+		}
 		add_core_of = DED
 	}
+	
 	provinces={
 		5584 
 	}

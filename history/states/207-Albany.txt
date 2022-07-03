@@ -6,6 +6,21 @@ state={
 		buildings = {
 			infrastructure = 3
 		}
+		victory_points = {
+			11065 25
+		}
+		victory_points = {
+			11066 10
+		}
+		victory_points = {
+			11074 5
+		}
+		victory_points = {
+			11060 5
+		}
+		victory_points = {
+			11064 5
+		}
 		add_core_of = NYN
 	}
 	provinces={

@@ -221,3 +221,169 @@
  VICTORY_POINTS_10524:0 "El Paso"
  VICTORY_POINTS_10528:0 "Franklin Mountains"
  VICTORY_POINTS_10529:0 "Fort Bliss"
+
+###New York
+#Lower NYC
+ VICTORY_POINTS_10904:0 "Manhattan"
+ VICTORY_POINTS_10893:0 "Brooklyn"
+ VICTORY_POINTS_11711:0 "Queens"
+ VICTORY_POINTS_10899:0 "Glen Cove"
+ VICTORY_POINTS_11708:0 "Hempstead"
+#Upper NYC
+ VICTORY_POINTS_10927:0 "The Bronx"
+#Staten Island
+ VICTORY_POINTS_8143:0 "Staten Island"
+#Long Island
+ VICTORY_POINTS_10905:0 "Islip"
+ VICTORY_POINTS_10921:0 "Brookhaven"
+ VICTORY_POINTS_10928:0 "Montauk"
+ VICTORY_POINTS_1473:0 "Babylon"
+#Hudson Valley
+ VICTORY_POINTS_10937:0 "White Plains"
+ VICTORY_POINTS_10984:0 "Poughkeepsie"
+#The Catskills
+ VICTORY_POINTS_10951:0 "Middletown"
+#Albany
+ VICTORY_POINTS_11065:0 "Albany"
+ VICTORY_POINTS_11066:0 "Troy"
+ VICTORY_POINTS_11074:0 "Cohoes"
+ VICTORY_POINTS_11060:0 "Rensselaer"
+ VICTORY_POINTS_11064:0 "Albany Airport"
+#Mohawk Valley
+ VICTORY_POINTS_5134:0 "Schenectady"
+#Southern Tier
+ VICTORY_POINTS_5100:0 "Utica"
+ VICTORY_POINTS_4165:0 "Binghampton"
+#Capitol Region
+ VICTORY_POINTS_5064:0 "Ticonderoga"
+#Ariondack High Peaks
+ VICTORY_POINTS_3665:0 "Glen Falls"
+#Syracuse
+ VICTORY_POINTS_11087:0 "Syracuse"
+ VICTORY_POINTS_11093:0 "Cicero"
+ VICTORY_POINTS_11098:0 "Clay"
+ VICTORY_POINTS_11086:0 "Fairmount"
+ VICTORY_POINTS_11079:0 "DeWitt"
+ VICTORY_POINTS_11082:0 "Manlius"
+#Central New York
+ VICTORY_POINTS_5048:0 "Oswego"
+#Finger Lakes
+ VICTORY_POINTS_11811:0 "Elmira"
+#Rochester
+ VICTORY_POINTS_11101:0 "Rochester"
+ VICTORY_POINTS_11107:0 "Irondequoit"
+ VICTORY_POINTS_11113:0 "Charlotte"
+ VICTORY_POINTS_11111:0 "Greece"
+ VICTORY_POINTS_11091:0 "Brighton"
+ VICTORY_POINTS_11092:0 "East Rochester"
+ VICTORY_POINTS_11097:0 "Rochester Municipal Airport"
+#Western New York
+ VICTORY_POINTS_11807:0 "Jamestown"
+#Buffalo
+ VICTORY_POINTS_11076:0 "Buffalo"
+ VICTORY_POINTS_11100:0 "Niagara, NY"
+ VICTORY_POINTS_11084:0 "Ken-Ton"
+ VICTORY_POINTS_8139:0 "Grand Isle"
+ VICTORY_POINTS_11068:0 "Lackawanna"
+ VICTORY_POINTS_11468:0 "Cheektowaga"
+ VICTORY_POINTS_11089:0 "Amherst"
+
+###New Jersey
+#Delaware River
+ VICTORY_POINTS_2485:0 "Camden"
+#Newark Metro
+ VICTORY_POINTS_2577:0 "Newark"
+ VICTORY_POINTS_10922:0 "Jersey City"
+ VICTORY_POINTS_10931:0 "Paterson"
+ VICTORY_POINTS_10903:0 "Elizabeth"
+ VICTORY_POINTS_10936:0 "Hackensack"
+ VICTORY_POINTS_10898:0 "Woodbridge Township"
+ VICTORY_POINTS_10912:0 "Union"
+#Skylands
+ VICTORY_POINTS_5393:0 "Trenton"
+#Long Beach - Asbury
+ VICTORY_POINTS_10878:0 "Asbury Park"
+ VICTORY_POINTS_10755:0 "Long Beach"
+ VICTORY_POINTS_10877:0 "Ocean Township"
+#Atlantic City-Jersey Shore
+ VICTORY_POINTS_5549:0 "Atlantic City"
+#South Jersey Shore
+ VICTORY_POINTS_4063:0 "Cape May"
+
+###Delaware
+#Dover
+ VICTORY_POINTS_5584:0 "Dover"
+#Wilmington
+ VICTORY_POINTS_10851:0 "Wilmington"
+ VICTORY_POINTS_10849:0 "Newark"
+ VICTORY_POINTS_10861:0 "Hockessin"
+ VICTORY_POINTS_10862:0 "Claymont"
+
+###Pennsylvania
+#Philadelphia
+ VICTORY_POINTS_5479:0 "Philadelphia"
+ VICTORY_POINTS_10869:0 "Philadelphia Navy Yard"
+ VICTORY_POINTS_10876:0 "Upper Darby"
+ VICTORY_POINTS_10879:0 "North Philadelphia"
+ VICTORY_POINTS_10881:0 "Levittown"
+ VICTORY_POINTS_:0 "Northeast Philadelphia"
+#Dutch Country
+ VICTORY_POINTS_2262:0 "Harrisburg"
+ VICTORY_POINTS_5464:0 "Lancaster"
+#Greater Philadelphia-Allentown
+ VICTORY_POINTS_3300:0 "Reading"
+#Allentown
+ VICTORY_POINTS_11452:0 "Allentown"
+ VICTORY_POINTS_10925:0 "Fullerton"
+ VICTORY_POINTS_10910:0 "Bethleham"
+ VICTORY_POINTS_10926:0 "Easton"
+ VICTORY_POINTS_10714:0 "Trexlertown"
+#Poconos and Endless Mountains
+ VICTORY_POINTS_5281:0 "Scranton & Wilkes-Barre"
+#Alleghenies and Susquehanna Valley
+ VICTORY_POINTS_4107:0 "York"
+ VICTORY_POINTS_5375:0 "Altoona"
+#Upstate Pennsylvania
+ VICTORY_POINTS_3211:0 "Williamsport"
+#Laurel Highlands
+ VICTORY_POINTS_2484:0 "Washington"
+#Allegheny Plateau
+ VICTORY_POINTS_585:0 "Indiana"
+#Pittsburgh
+ VICTORY_POINTS_10886:0 "Pittsburgh"
+ VICTORY_POINTS_10889:0 "Edgar Thomson Steel Works"
+ VICTORY_POINTS_10888:0 "North Shore"
+ VICTORY_POINTS_5374:0 "Ross Township"
+ VICTORY_POINTS_10900:0 "Cranberry Township"
+ VICTORY_POINTS_10909:0 "New Kensington"
+#Alleghenies and Susquehanna Valley
+ VICTORY_POINTS_11725:0 "New Castle"
+ VICTORY_POINTS_11722:0 "Butler"
+#Lower Erie
+ VICTORY_POINTS_11008:0 "Edinboro"
+#Upper Erie
+ VICTORY_POINTS_11804:0 "Erie"
+ VICTORY_POINTS_11806:0 "North East"
+ VICTORY_POINTS_11803:0 "Griswold Field"
+
+###Maryland
+#Ridge and Valley
+ VICTORY_POINTS_1776:0 "Cumberland"
+ VICTORY_POINTS_4203:0 "Hagerstown"
+#Mason-Dixon
+ VICTORY_POINTS_2285:0 "Frederick"
+#Eastern Shore
+ VICTORY_POINTS_1311:0 "Salisbury"
+#Baltimore
+ VICTORY_POINTS_10833:0 "Baltimore"
+ VICTORY_POINTS_10836:0 "Owings Mills"
+ VICTORY_POINTS_10829:0 "Catonsville"
+ VICTORY_POINTS_10819:0 "Brooklyn Park"
+ VICTORY_POINTS_11445:0 "Glen Burnie"
+#Southern Plain
+ VICTORY_POINTS_5654:0 "Annapolis"
+
+###Washington DC
+ VICTORY_POINTS_10811:0 "Washington"
+ VICTORY_POINTS_10667:0 "Capitol Hill"
+

@@ -7,6 +7,21 @@ state={
 			infrastructure = 4
 
 		}
+		victory_points = {
+			11452 20
+		}
+		victory_points = {
+			10925 5
+		}
+		victory_points = {
+			10910 10
+		}
+		victory_points = {
+			10926 10
+		}
+		victory_points = {
+			10714 5
+		}
 		add_core_of = PAP
 
 	}
