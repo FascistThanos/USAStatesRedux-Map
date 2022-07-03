@@ -4,7 +4,7 @@ state={
 	history={
 		owner = QCQ
 		buildings = {
-			infrastructure = 1
+			infrastructure = 5
 
 		}
 		victory_points = {
@@ -19,8 +19,8 @@ state={
 	provinces={
 		323 697 1456 2047 4078 4802 
 	}
-	manpower=1
+	manpower=433639
 	buildings_max_level_factor=1.000
-	local_supplies=0.000
-	state_category = wasteland
+	local_supplies=12.000
+	state_category = metropolis
 }

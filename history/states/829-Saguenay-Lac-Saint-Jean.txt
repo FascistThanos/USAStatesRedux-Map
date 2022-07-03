@@ -6,7 +6,7 @@ state={
 	history={
 		owner = QCQ
 		buildings = {
-			infrastructure = 1
+			infrastructure = 2
 
 		}
 		add_core_of = QCQ
@@ -16,8 +16,8 @@ state={
 	provinces={
 		138 441 1184 1792 2388 2404 2416 2418 2555 2569 2908 4241 4574 4591 4650 4683 4713 8098 10135 10149 10154 10173 10178 10180 10181 
 	}
-	manpower=1
+	manpower=73312
 	buildings_max_level_factor=1.000
-	state_category=wasteland
-	local_supplies=0.000
+	state_category=town
+	local_supplies=3.000
 }

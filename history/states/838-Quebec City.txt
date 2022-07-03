@@ -7,7 +7,7 @@ state={
 	history={
 		owner = QCQ
 		buildings = {
-			infrastructure = 1
+			infrastructure = 5
 			dockyard = 2
 			11246 = {
 				naval_base = 8
@@ -34,8 +34,8 @@ state={
 	provinces={
 		10605 11244 11246 11249 11250 
 	}
-	manpower=1
+	manpower=186658
 	buildings_max_level_factor=1.000
-	local_supplies=0.000
-	state_category = wasteland
+	local_supplies=8.000
+	state_category = city
 }
