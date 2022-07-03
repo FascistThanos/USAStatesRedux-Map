@@ -4,7 +4,7 @@ state={
 	history={
 		owner = ONO
 		buildings = {
-			infrastructure = 1
+			infrastructure = 4
 
 		}
 		victory_points = {
@@ -16,8 +16,8 @@ state={
 	provinces={
 		750 1060 5068 5095 5172 
 	}
-	manpower=1
+	manpower=218793
 	buildings_max_level_factor=1.000
-	local_supplies=0.000
-	state_category = wasteland
+	local_supplies=8.000
+	state_category = city
 }
