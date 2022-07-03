@@ -8,6 +8,7 @@ state={
 		owner = NIC
 		buildings = {
 			infrastructure = 1
+			industrial_complex = 1
 			2215 = {
 				naval_base = 4
 			}

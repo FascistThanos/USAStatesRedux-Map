@@ -10310,7 +10310,7 @@
 10309;78;31;30;lake;false;plains;19
 10310;1;5;142;lake;false;plains;19
 10311;115;10;12;lake;false;forest;20
-10312;65;0;50;lake;true;forest;19
+10312;65;0;50;sea;true;forest;19
 10313;36;49;52;lake;false;plains;20
 10314;94;23;27;lake;false;plains;20
 10315;32;29;75;lake;false;forest;20
@@ -10326,7 +10326,7 @@
 10325;30;98;30;land;true;forest;19
 10326;29;88;29;land;true;plains;19
 10327;226;21;21;land;true;forest;19
-10328;32;104;32;land;false;forest;19
+10328;32;104;32;land;true;forest;19
 10329;0;140;0;land;false;desert;6
 10330;182;28;28;land;false;forest;19
 10331;157;32;32;land;true;forest;19

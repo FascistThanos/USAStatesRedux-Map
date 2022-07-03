@@ -7,6 +7,8 @@ state={
 		owner = BAH
 		buildings = {
 			infrastructure = 1
+			industrial_complex = 1
+			arms_factory = 1
 			7315 = {
 				naval_base = 2
 			}

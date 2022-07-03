@@ -5,6 +5,8 @@ state={
 		owner = TAM
 		buildings = {
 			infrastructure = 1
+			industrial_complex = 2
+			arms_factory = 1
 			7402 = {
 				naval_base = 4
 			}

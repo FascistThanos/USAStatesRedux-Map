@@ -7,6 +7,7 @@ state={
 		owner = MTQ
 		buildings = {
 			infrastructure = 1
+			industrial_complex = 1
 			11645 = {
 				naval_base = 4
 			}

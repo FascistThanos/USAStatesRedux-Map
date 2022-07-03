@@ -475,10 +475,10 @@ country_event = {
 					original_tag = TXT
 					has_government = democratic
 				}
-        load_focus_tree = {
-          tree = texas_focus
-          keep_completed = no
-        }
+        #load_focus_tree = {
+        #  tree = texas_focus
+        #  keep_completed = no
+        #}
         complete_national_focus = TXT_texaswillagainraiseitshead
         complete_national_focus = TXT_theoldrepublic
         complete_national_focus = TXT_democratic_coalition

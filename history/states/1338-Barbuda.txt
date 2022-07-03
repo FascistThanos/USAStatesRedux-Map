@@ -5,6 +5,7 @@ state={
 		owner = AAB
 		buildings = {
 			infrastructure = 1
+			industrial_complex = 1
 			8212 = {
 				naval_base = 2
 			}

@@ -1279,7 +1279,7 @@ ideas = {
 		texaco = {
 
 			available = {
-				has_completed_focus = TXT_backtexaco
+				#has_completed_focus = TXT_backtexaco
 				NOT = {
 					has_government = communism
 				}
@@ -1305,7 +1305,7 @@ ideas = {
 		kbr_construction = {
 
 			available = {
-				has_completed_focus = TXT_backkbr
+				#has_completed_focus = TXT_backkbr
 				NOT = {
 					has_government = communism
 				}

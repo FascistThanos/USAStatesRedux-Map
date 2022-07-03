@@ -5,6 +5,7 @@ state={
 		owner = SKN
 		buildings = {
 			infrastructure = 1
+			industrial_complex = 1
 			8213 = {
 				naval_base = 3
 			}

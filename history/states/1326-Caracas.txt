@@ -5,6 +5,8 @@ state={
 		owner = VEN
 		buildings = {
 			infrastructure = 1
+			industrial_complex = 5
+			arms_factory = 3
 			10340 = {
 				naval_base = 6
 			}
