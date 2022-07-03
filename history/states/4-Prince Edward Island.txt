@@ -6,7 +6,7 @@ state={
 	history={
 		owner = PEP
 		buildings = {
-			infrastructure = 1
+			infrastructure = 3
 			11602 = {
 				naval_base = 4
 			}
@@ -18,8 +18,8 @@ state={
 	provinces={
 		11602 11603 11604 11605 
 	}
-	manpower=1
+	manpower=25482
 	buildings_max_level_factor=1.000
-	state_category=wasteland
-	local_supplies=1.000
+	state_category=small_city
+	local_supplies=8.000
 }
