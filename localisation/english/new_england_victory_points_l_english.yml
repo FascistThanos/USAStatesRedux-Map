@@ -326,7 +326,7 @@
  VICTORY_POINTS_10876:0 "Upper Darby"
  VICTORY_POINTS_10879:0 "North Philadelphia"
  VICTORY_POINTS_10881:0 "Levittown"
- VICTORY_POINTS_:0 "Northeast Philadelphia"
+ VICTORY_POINTS_10874:0 "Northeast Philadelphia"
 #Dutch Country
  VICTORY_POINTS_2262:0 "Harrisburg"
  VICTORY_POINTS_5464:0 "Lancaster"
@@ -386,4 +386,55 @@
 ###Washington DC
  VICTORY_POINTS_10811:0 "Washington"
  VICTORY_POINTS_10667:0 "Capitol Hill"
+
+###Virginia
+#Arlington
+ VICTORY_POINTS_10810:0 "Arlington"
+ VICTORY_POINTS_10803:0 "Alexandria"
+ VICTORY_POINTS_11689:0 "Leesburg"
+ VICTORY_POINTS_10797:0 "Springfield"
+ VICTORY_POINTS_11686:0 "Mt. Vernon"
+ VICTORY_POINTS_4121:0 "Woodbridge"
+#Northern Virginia
+ VICTORY_POINTS_5717:0 "Fredericksburg"
+ VICTORY_POINTS_5579:0 "Winchester"
+#Chesapeake Bay
+ VICTORY_POINTS_5747:0 "Dahlgren Naval Proving Ground"
+#Newport News
+ VICTORY_POINTS_5717:0 "Newport News"
+ VICTORY_POINTS_10722:0 "Langley Field"
+ VICTORY_POINTS_10719:0 "Fort Eustis"
+ VICTORY_POINTS_1514:0 "Williamsburg"
+#Piedmont
+ VICTORY_POINTS_3640:0 "Charlottesville"
+#Shenandoah Valley
+ VICTORY_POINTS_4087:0 "Harrisonburg"
+#Richmond
+ VICTORY_POINTS_11432:0 "Richmond"
+ VICTORY_POINTS_11431:0 "The Fan"
+ VICTORY_POINTS_11582:0 "Short Pump"
+ VICTORY_POINTS_10752:0 "Glen Allen"
+ VICTORY_POINTS_11433:0 "Mechanicsville"
+ VICTORY_POINTS_10638:0 "East End"
+#Crownlands
+ VICTORY_POINTS_5883:0 "Petersburg"
+ VICTORY_POINTS_11429:0 "Manchester"
+#Hampton Roads
+ VICTORY_POINTS_5958:0 "Suffolk"
+#Norfolk
+ VICTORY_POINTS_11424:0 "Norfolk"
+ VICTORY_POINTS_10713:0 "Portsmouth"
+ VICTORY_POINTS_10716:0 "Virginia Beach"
+ VICTORY_POINTS_11425:0 "Ocean View"
+ VICTORY_POINTS_5923:0 "Chesapeake"
+#Hampton Roads
+ VICTORY_POINTS_5958:0 "Suffolk"
+#Roanoke
+ VICTORY_POINTS_10726:0 "Roanoke"
+ VICTORY_POINTS_10721:0 "Southwest County"
+ VICTORY_POINTS_10732:0 "Salem"
+ VICTORY_POINTS_11427:0 "North County"
+ VICTORY_POINTS_10723:0 "Vinton"
+
+
 
