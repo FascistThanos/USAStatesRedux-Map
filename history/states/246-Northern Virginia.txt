@@ -7,6 +7,12 @@ state={
 			infrastructure = 4
 
 		}
+		victory_points = {
+			5717 15
+		}
+		victory_points = {
+			5579 5
+		}
 		add_core_of = VAV
 
 	}
