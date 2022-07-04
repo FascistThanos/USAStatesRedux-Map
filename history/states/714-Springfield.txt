@@ -5,7 +5,7 @@ state={
 		owner = ORO
 		buildings = {
 			infrastructure = 2
-
+			industrial_complex = 3
 		}
 		victory_points = {
 			11478 15
