@@ -1,17 +1,18 @@
 state={
 	id=674
-	name="Salt Lake city Metro"
+	name="Salt Lake City Metro"
 	history={
 		owner = UTU
 		buildings = {
 			infrastructure = 3
-
+			industrial_complex = 4
+			arms_factory = 2
 		}
 		add_core_of = UTU
 
 	}
 	provinces={
-		8142 9767 10740 10744 10883 10884 10885 10887 10890 10891 10894 10906 10914 
+		8142 10740 10744 10883 10884 10885 10887 10890 10891 10894 10906 10914 
 	}
 	manpower=100102
 	buildings_max_level_factor=1.000
