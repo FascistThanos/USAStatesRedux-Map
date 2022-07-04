@@ -5,7 +5,8 @@ state={
 		owner = MTM
 		buildings = {
 			infrastructure = 2
-
+			industrial_complex = 2
+			arms_factory = 2
 		}
 		victory_points = {
 			11487 10
@@ -33,6 +34,6 @@ state={
 	}
 	manpower=7855
 	buildings_max_level_factor=1.000
-	local_supplies=0.000
+	local_supplies=8.000
 	state_category = small_city
 }

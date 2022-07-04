@@ -7,6 +7,21 @@ state={
 			infrastructure = 1
 
 		}
+		victory_points = {
+			10594 20
+		}
+		victory_points = {
+			10591 5
+		}
+		victory_points = {
+			10592 5
+		}
+		victory_points = {
+			11404 5
+		}
+		victory_points = {
+			10597 5
+		}
 		add_core_of = ALA
 
 	}

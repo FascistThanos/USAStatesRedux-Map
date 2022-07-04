@@ -334,7 +334,7 @@
 333;186;166;159;land;true;mountain;8
 334;151;252;219;land;false;plains;4
 335;246;179;183;land;false;forest;10
-336;191;239;162;land;true;hills;7
+336;191;239;162;land;false;hills;7
 337;75;240;218;land;false;forest;10
 338;55;242;215;land;true;mountain;8
 339;86;216;254;land;false;marsh;8

@@ -4,8 +4,8 @@ state={
 	history={
 		owner = WAW
 		buildings = {
-			infrastructure = 2
-
+			infrastructure = 3
+			industrial_complex = 4
 		}
 		victory_points = {
 			10745 15

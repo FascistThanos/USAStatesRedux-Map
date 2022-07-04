@@ -7,9 +7,9 @@ state={
 	history={
 		owner = COL
 		buildings = {
-			infrastructure = 1
+			infrastructure = 5
 			industrial_complex = 6
-			arms_factory = 2
+			arms_factory = 3
 		}
 		add_core_of = COL
 
@@ -17,8 +17,8 @@ state={
 	provinces={
 		519 943 1230 1928 2281 2379 2909 7787 7802 
 	}
-	manpower=1
+	manpower=3391981
 	buildings_max_level_factor=1.000
-	local_supplies=0.000
-	state_category = wasteland
+	local_supplies=15.000
+	state_category = megalopolis
 }

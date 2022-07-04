@@ -6,6 +6,8 @@ state={
 		buildings = {
 			infrastructure = 1
 			dockyard = 4
+			industrial_complex = 2
+			arms_factory = 2
 			10420 = {
 				naval_base = 6
 			}
@@ -16,8 +18,8 @@ state={
 	provinces={
 		10419 10420 10421 
 	}
-	manpower=01
+	manpower=74186
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
-	state_category = wasteland
+	state_category = small_city
 }

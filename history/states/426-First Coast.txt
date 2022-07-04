@@ -10,6 +10,15 @@ state={
 				naval_base = 4
 			}
 		}
+		victory_points = {
+			11517 20
+		}
+		victory_points = {
+			10482 5
+		}
+		victory_points = {
+			10489 5
+		}
 		add_core_of = FLF
 
 	}

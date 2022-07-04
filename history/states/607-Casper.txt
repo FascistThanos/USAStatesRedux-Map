@@ -5,7 +5,7 @@ state={
 		owner = WYW
 		buildings = {
 			infrastructure = 2
-
+			industrial_complex = 1
 		}
 		victory_points = {
 			11083 10
@@ -33,6 +33,6 @@ state={
 	}
 	manpower=16619
 	buildings_max_level_factor=1.000
-	local_supplies=0.000
+	local_supplies=8.000
 	state_category = small_city
 }

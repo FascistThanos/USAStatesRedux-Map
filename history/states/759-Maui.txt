@@ -7,7 +7,9 @@ state={
 	history={
 		owner = HIH
 		buildings = {
-			infrastructure = 1
+			infrastructure = 3
+			industrial_complex = 3
+			arms_factory = 2
 			7461 = {
 				naval_base = 4
 			}
@@ -21,8 +23,8 @@ state={
 	provinces={
 		7461 7464 8201 
 	}
-	manpower=1
+	manpower=107446
 	buildings_max_level_factor=1.000
-	local_supplies=0.000
-	state_category = wasteland
+	local_supplies=5.000
+	state_category = large_town
 }

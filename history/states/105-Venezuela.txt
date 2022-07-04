@@ -8,8 +8,8 @@ state={
 	history={
 		owner = VEN
 		buildings = {
-			infrastructure = 1
-			industrial_complex = 2
+			infrastructure = 3
+			industrial_complex = 1
 			7766 = {
 				naval_base = 2
 			}
@@ -21,8 +21,8 @@ state={
 	provinces={
 		165 1283 1345 1795 1798 3207 7763 7766 7783 
 	}
-	manpower=1
+	manpower=114782
 	buildings_max_level_factor=1.000
-	state_category=wasteland
-	local_supplies=1.000
+	state_category=large_town
+	local_supplies=5.000
 }

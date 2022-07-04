@@ -7,7 +7,8 @@ state={
 		owner = NVN
 		buildings = {
 			infrastructure = 2
-
+			industrial_complex = 4
+			arms_factory = 2
 		}
 		victory_points = {
 			10700 15
@@ -64,5 +65,5 @@ state={
 	manpower=5165
 	buildings_max_level_factor=1.000
 	state_category=small_city
-	local_supplies=0.000
+	local_supplies=8.000
 }

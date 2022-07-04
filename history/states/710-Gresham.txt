@@ -5,7 +5,8 @@ state={
 		owner = ORO
 		buildings = {
 			infrastructure = 2
-
+			industrial_complex = 3
+			arms_factory = 2
 		}
 		victory_points = {
 			11212 10
@@ -24,6 +25,6 @@ state={
 	}
 	manpower=1635
 	buildings_max_level_factor=1.000
-	local_supplies=0.000
+	local_supplies=8.000
 	state_category = small_city
 }

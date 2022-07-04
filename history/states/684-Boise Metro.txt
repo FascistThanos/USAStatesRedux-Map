@@ -5,7 +5,8 @@ state={
 		owner = IDI
 		buildings = {
 			infrastructure = 3
-
+			industrial_complex = 4
+			arms_factory = 2
 		}
 		victory_points = {
 			11143 20

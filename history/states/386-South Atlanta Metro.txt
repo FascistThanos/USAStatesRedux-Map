@@ -7,6 +7,18 @@ state={
 			infrastructure = 4
 
 		}
+		victory_points = {
+			10621 30
+		}
+		victory_points = {
+			10618 5
+		}
+		victory_points = {
+			10628 5
+		}
+		victory_points = {
+			10634 5
+		}
 		add_core_of = GAG
 
 	}

@@ -244,10 +244,10 @@
 #The Catskills
  VICTORY_POINTS_10951:0 "Middletown"
 #Albany
- VICTORY_POINTS_11065:0 "Albany"
+ VICTORY_POINTS_11074:0 "Albany"
  VICTORY_POINTS_11066:0 "Troy"
- VICTORY_POINTS_11074:0 "Cohoes"
- VICTORY_POINTS_11060:0 "Rensselaer"
+ VICTORY_POINTS_11067:0 "Cohoes"
+ VICTORY_POINTS_11061:0 "Rensselaer"
  VICTORY_POINTS_11064:0 "Albany Airport"
 #Mohawk Valley
  VICTORY_POINTS_5134:0 "Schenectady"
@@ -509,4 +509,194 @@
 #Wilmington Region
  VICTORY_POINTS_3197:0 "Jacksonville"
 
+###South Carolina
+#Lowcountry & Resort Islands
+ VICTORY_POINTS_2842:0 "Beaufort"
+#Myrtle Beach
+ VICTORY_POINTS_614:0 "Conway" #Myrtle Beach didn't exist until 1938 lol
+#Santee Cooper Country
+ VICTORY_POINTS_6462:0 "Sumter"
+ VICTORY_POINTS_2456:0 "Florence"
+#Pee Dee Country
+ VICTORY_POINTS_3875:0 "Camden"
+#Olde English District
+ VICTORY_POINTS_3012:0 "Rock Hill"
+#Columbia
+ VICTORY_POINTS_10633:0 "Columbia"
+ VICTORY_POINTS_10626:0 "West Columbia"
+ VICTORY_POINTS_10623:0 "Cayce"
+ VICTORY_POINTS_10635:0 "St. Andrews"
+ VICTORY_POINTS_10641:0 "Irmo"
+ VICTORY_POINTS_11412:0 "Dentsville"
+ VICTORY_POINTS_10636:0 "Fort Jackson"
+#Charleston
+ VICTORY_POINTS_10587:0 "Charleston"
+ VICTORY_POINTS_10590:0 "North Charleston"
+ VICTORY_POINTS_10589:0 "Mt. Pleasant"
+ VICTORY_POINTS_10585:0 "James Island"
+ VICTORY_POINTS_10588:0 "Charleston Airport"
+ VICTORY_POINTS_10337:0 "Goose Creek"
+#Lake Hartwell Country
+ VICTORY_POINTS_4311:0 "Anderson"
+#Santee Cooper Country
+ VICTORY_POINTS_2202:0 "Spartanburg"
+ VICTORY_POINTS_3869:0 "Greenville"
+#Thoroughbred Country
+ VICTORY_POINTS_6392:0 "Aiken"
+
+###Georgia
+#Altamaha
+ VICTORY_POINTS_4229:0 "Statesboro"
+#Historic High Country
+ VICTORY_POINTS_6266:0 "Dalton"
+ VICTORY_POINTS_6360:0 "Rome"
+#Coosa
+ VICTORY_POINTS_3327:0 "Carrollton"
+#North Metro Atlanta
+ VICTORY_POINTS_10632:0 "Marietta"
+ VICTORY_POINTS_10627:0 "Smyrna"
+ VICTORY_POINTS_11411:0 "Mableton"
+ VICTORY_POINTS_11410:0 "Douglasville"
+ VICTORY_POINTS_11413:0 "Kennesaw"
+ VICTORY_POINTS_10637:0 "Alpharetta"
+#Northeast Georgia Mountains
+ VICTORY_POINTS_1354:0 "Gainesville"
+#South Metro Atlanta
+ VICTORY_POINTS_10621:0 "Atlanta"
+ VICTORY_POINTS_10618:0 "East Point"
+ VICTORY_POINTS_10628:0 "Sandy Springs"
+ VICTORY_POINTS_10634:0 "Lawrenceville"
+#Historic Heartland
+ VICTORY_POINTS_6523:0 "Macon"
+#Presidential Pathways
+ VICTORY_POINTS_3024:0 "LaGrange"
+#Columbus
+ VICTORY_POINTS_11401:0 "Columbus"
+ VICTORY_POINTS_11503:0 "Fort Benning"
+ VICTORY_POINTS_11403:0 "Bibb City"
+ VICTORY_POINTS_6583:0 "East Columbus"
+#Plantation Trace
+ VICTORY_POINTS_6724:0 "Albany"
+ VICTORY_POINTS_4263:0 "Valdosta"
+#Classic South
+ VICTORY_POINTS_2791:0 "Athens"
+#South Georgia Coast
+ VICTORY_POINTS_2168:0 "Brunswick"
+#Savannah
+ VICTORY_POINTS_11395:0 "Savannah"
+ VICTORY_POINTS_11394:0 "Georgetown"
+ VICTORY_POINTS_11518:0 "Pooler"
+ VICTORY_POINTS_10525:0 "Thomas Square"
+ VICTORY_POINTS_6690:0 "Garden City"
+#Greater Savannah
+ VICTORY_POINTS_6704:0 "Hinesville"
+#Augusta
+ VICTORY_POINTS_11407:0 "Augusta"
+ VICTORY_POINTS_11409:0 "Martinez"
+ VICTORY_POINTS_11408:0 "Evans"
+ VICTORY_POINTS_11406:0 "Grovetown"
+ VICTORY_POINTS_11405:0 "South Augusta"
+ VICTORY_POINTS_6453:0 "East Augusta"
+
+###Florida
+#Florida Panhandle
+ VICTORY_POINTS_6853:0 "Pensacola"
+#Tallahassee
+ VICTORY_POINTS_11389:0 "Tallahassee"
+ VICTORY_POINTS_11387:0 "Woodville"
+ VICTORY_POINTS_10502:0 "Dale Mabry Field"
+ VICTORY_POINTS_11391:0 "Havana"
+ VICTORY_POINTS_10511:0 "Bradfordville"
+#Big Bend
+ VICTORY_POINTS_427:0 "Crawfordville"
+#North Central Florida
+ VICTORY_POINTS_6904:0 "Perry"
+#First Coast
+ VICTORY_POINTS_11517:0 "Jacksonville"
+ VICTORY_POINTS_10482:0 "Northeast Jacksonville"
+ VICTORY_POINTS_10489:0 "Southwest Jacksonville"
+#Lower Jacksonville
+ VICTORY_POINTS_6891:0 "Southbank"
+ VICTORY_POINTS_11384:0 "Arlington"
+ VICTORY_POINTS_11502:0 "Windy Hill"
+ VICTORY_POINTS_11501:0 "Mandarin"
+#East Central Florida
+ VICTORY_POINTS_6968:0 "St. Augustine"
+#North Suncoast
+ VICTORY_POINTS_7002:0 "Ocala"
+#East Florida Coast
+ VICTORY_POINTS_7024:0 "Cape Canaveral"
+#Tampa Bay
+ VICTORY_POINTS_10447:0 "Tampa"
+ VICTORY_POINTS_11376:0 "St. Petersburg"
+ VICTORY_POINTS_10446:0 "Clearwater"
+ VICTORY_POINTS_2948:0 "Bradenton"
+ VICTORY_POINTS_2132:0 "Spring Hill"
+ VICTORY_POINTS_7073:0 "Town 'N' Country"
+#Orlando
+ VICTORY_POINTS_4160:0 "Orlando"
+ VICTORY_POINTS_10455:0 "Deltona"
+ VICTORY_POINTS_10451:0 "St. Cloud"
+ VICTORY_POINTS_11378:0 "Winter Garden"
+ VICTORY_POINTS_10454:0 "Clermont"
+#Heartland
+ VICTORY_POINTS_7088:0 "Lakeland"
+#Myakka
+ VICTORY_POINTS_2734:0 "Venice"
+ VICTORY_POINTS_3636:0 "Cape Coral"
+#Treasure Coast
+ VICTORY_POINTS_26:0 "Fort Pierce"
+#Calusa
+ VICTORY_POINTS_3614:0 "Belle Glade"
+#Southwest Florida
+ VICTORY_POINTS_2323:0 "Fort Myers"
+#Palm Beach
+ VICTORY_POINTS_10392:0 "Palm Beach"
+ VICTORY_POINTS_10441:0 "Jupiter"
+ VICTORY_POINTS_10440:0 "Boca Raton"
+ VICTORY_POINTS_4322:0 "Boynton Beach"
+ VICTORY_POINTS_10439:0 "Coral Springs"
+ VICTORY_POINTS_7220:0 "Pompano Beach"
+#Miami
+ VICTORY_POINTS_10436:0 "Miami"
+ VICTORY_POINTS_10438:0 "Fort Lauderdale"
+ VICTORY_POINTS_10437:0 "Davie"
+ VICTORY_POINTS_10435:0 "Hialeah"
+ VICTORY_POINTS_7239:0 "Homestead"
+
+###Alabama
+#Alabama
+ VICTORY_POINTS_3528:0 "Montgomery"
+#Lauderdale-Limestone
+ VICTORY_POINTS_4182:0 "Florence"
+#Madison-Jackson
+ VICTORY_POINTS_6308:0 "Scottsboro"
+#Huntsville
+ VICTORY_POINTS_10642:0 "Huntsville"
+ VICTORY_POINTS_10486:0 "Madison"
+ VICTORY_POINTS_10643:0 "Harvest"
+ VICTORY_POINTS_10644:0 "Meridianville"
+#Dekalb
+ VICTORY_POINTS_754:0 "Fort Payne"
+#Northwestern Alabama
+ VICTORY_POINTS_4198:0 "Decatur"
+#Birmingham
+ VICTORY_POINTS_10594:0 "Birmingham"
+ VICTORY_POINTS_10591:0 "Bessemer"
+ VICTORY_POINTS_10592:0 "Hoover"
+ VICTORY_POINTS_11404:0 "Trussville"
+ VICTORY_POINTS_10597:0 "Center Point"
+#Tuscaloosa
+ VICTORY_POINTS_2727:0 "Tuscaloosa"
+ VICTORY_POINTS_6618:0 "Selma"
+#East Central Alabama
+ VICTORY_POINTS_6533:0 "Anniston-Oxford"
+#Black Belt
+ VICTORY_POINTS_3773:0 "Dothan"
+#Mobile
+ VICTORY_POINTS_10514:0 "Mobile"
+ VICTORY_POINTS_10513:0 "Tillmans Corner"
+ VICTORY_POINTS_10515:0 "East Mobile"
+ VICTORY_POINTS_10517:0 "Saraland"
+ VICTORY_POINTS_10516:0 "Prichard"
 

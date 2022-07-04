@@ -8,7 +8,8 @@ state={
 	history={
 		owner = HIH
 		buildings = {
-			infrastructure = 1
+			infrastructure = 3
+			industrial_complex = 2
 			1786 = {
 				naval_base = 2
 			}
@@ -20,8 +21,8 @@ state={
 	provinces={
 		897 1786 1929 4172 7504 7529 7540 7548 7557 
 	}
-	manpower=1
+	manpower=77101
 	buildings_max_level_factor=1.000
-	state_category=wasteland
-	local_supplies=1.000
+	state_category=town
+	local_supplies=3.000
 }

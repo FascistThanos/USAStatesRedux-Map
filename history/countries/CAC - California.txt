@@ -1,4 +1,4 @@
-﻿capital = 64
+﻿capital = 731
 
 oob = "CAC_1936"
 

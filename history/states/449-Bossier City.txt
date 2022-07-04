@@ -4,7 +4,7 @@ state={
 	history={
 		owner = LAL
 		buildings = {
-			infrastructure = 1
+			infrastructure = 2
 
 		}
 		add_core_of = LAL
@@ -13,8 +13,8 @@ state={
 	provinces={
 		6598 10547 10558 10563 11398 
 	}
-	manpower=1
+	manpower=4003
 	buildings_max_level_factor=1.000
-	local_supplies=0.000
-	state_category = wasteland
+	local_supplies=8.000
+	state_category = small_city
 }
