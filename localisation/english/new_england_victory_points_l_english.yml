@@ -907,7 +907,7 @@
  VICTORY_POINTS_11062:0 "Racine"
  VICTORY_POINTS_10481:0 "Oak Creek"
  VICTORY_POINTS_5128:0 "Burlington"
-#Kenosha
+#Milwaukee
  VICTORY_POINTS_11110:0 "Milwaukee"
  VICTORY_POINTS_11497:0 "South Milwaukee"
  VICTORY_POINTS_11102:0 "West Allis"
@@ -915,6 +915,31 @@
  VICTORY_POINTS_11123:0 "Shorewood"
  VICTORY_POINTS_11472:0 "Port Washington"
  VICTORY_POINTS_11128:0 "Menomonee Falls"
-
-
+#Madison Region
+ VICTORY_POINTS_5123:0 "Beloit"
+ VICTORY_POINTS_11876:0 "Janesville"
+ VICTORY_POINTS_3387:0 "Fond du Lac"
+#Centergy
+ VICTORY_POINTS_5014:0 "Oshkosh"
+#Madison
+ VICTORY_POINTS_11117:0 "Madison"
+ VICTORY_POINTS_10764:0 "Fitchburg"
+ VICTORY_POINTS_11115:0 "Monona"
+ VICTORY_POINTS_10531:0 "Burke"
+ VICTORY_POINTS_10764:0 "Waunakee"
+#Seven Rivers
+ VICTORY_POINTS_11121:0 "Middleton"
+ VICTORY_POINTS_3781:0 "Prairie du Chien"
+ VICTORY_POINTS_4981:0 "La Crosse"
+#Manitawoc
+ VICTORY_POINTS_4200:0 "Sheboygan"
+ VICTORY_POINTS_1815:0 "Manitawoc"
+#Green Bay
+ VICTORY_POINTS_11175:0 "Green Bay"
+ VICTORY_POINTS_11174:0 "Ashwaubenon"
+ VICTORY_POINTS_10503:0 "Howard"
+#New North
+ VICTORY_POINTS_4973:0 "Appleton"
+#Northwoods
+ VICTORY_POINTS_4910:0 "Eau Claire"
 

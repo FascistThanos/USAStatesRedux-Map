@@ -1,4 +1,4 @@
-﻿capital = 35
+﻿capital = 312
 
 oob = "WIW_1936"
 
