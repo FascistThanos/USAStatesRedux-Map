@@ -8,7 +8,7 @@ state={
 		owner = PAP
 		buildings = {
 			infrastructure = 3
-
+			industrial_complex = 3
 		}
 		victory_points = {
 			4107 5
