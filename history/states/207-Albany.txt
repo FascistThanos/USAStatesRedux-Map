@@ -10,21 +10,16 @@ state={
 			11074 25
 		}
 		victory_points = {
-			11066 10
-		}
-		victory_points = {
 			11067 5
 		}
-		victory_points = {
-			11061 5
-		}
+		
 		victory_points = {
 			11064 5
 		}
 		add_core_of = NYN
 	}
 	provinces={
-		11052 11060 11061 11064 11065 11066 11067 11074 11077 
+		11052 11054 11060 11064 11065 11067 11074 
 	}
 	manpower=216634
 	buildings_max_level_factor=1.000

@@ -12,7 +12,7 @@ state={
 		add_core_of = NYN
 	}
 	provinces={
-		1670 1692 5134 5183 11054 11057 
+		1670 1692 5134 5183 11057 
 	}
 	manpower=25697
 	buildings_max_level_factor=1.000
