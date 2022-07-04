@@ -14,7 +14,18 @@ state={
 			}
 		}
 		add_core_of = PEP
-
+		victory_points = {
+			11602 15
+		}
+		victory_points = {
+			11603 5
+		}
+		victory_points = {
+			11604 5
+		}
+		victory_points = {
+			11605 5
+		}
 	}
 
 	provinces={

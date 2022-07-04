@@ -16,7 +16,21 @@ state={
 			}
 		}
 		add_core_of = NSN
-
+		victory_points = {
+			11595 20
+		}
+		victory_points = {
+			11593 5
+		}
+		victory_points = {
+			11594 5
+		}
+		victory_points = {
+			11596 10
+		}
+		victory_points = {
+			11597 5
+		}
 	}
 	provinces={
 		11593 11594 11595 11596 11597 

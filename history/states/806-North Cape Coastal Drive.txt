@@ -8,7 +8,9 @@ state={
 
 		}
 		add_core_of = PEP
-
+		victory_points = {
+			4803 5
+		}
 	}
 	provinces={
 		4772 4803 
