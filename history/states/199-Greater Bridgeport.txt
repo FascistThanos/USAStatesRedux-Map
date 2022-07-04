@@ -1,4 +1,3 @@
-
 state={
 	id=199
 	name="Greater Bridgeport"
@@ -6,7 +5,9 @@ state={
 	history={
 		owner = CTC
 		buildings = {
-			infrastructure = 1
+			infrastructure = 5
+			industrial_complex = 3
+			arms_factory = 4
 			11736 = {
 				naval_base = 8
 			}
@@ -39,5 +40,5 @@ state={
 	manpower=415258
 	buildings_max_level_factor=1.000
 	state_category=metropolis
-	local_supplies=1.000
+	local_supplies=12.000
 }

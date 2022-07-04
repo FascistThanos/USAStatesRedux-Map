@@ -4,8 +4,8 @@ state={
 	history={
 		owner = SCS
 		buildings = {
-			infrastructure = 2
-
+			infrastructure = 3
+			industrial_complex = 3
 		}
 		victory_points = {
 			10633 25

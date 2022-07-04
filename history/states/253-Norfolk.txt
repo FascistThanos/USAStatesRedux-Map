@@ -6,6 +6,7 @@ state={
 		buildings = {
 			infrastructure = 5
 			dockyard = 2
+			industrial_complex = 4
 			10716 = {
 				naval_base = 6
 			}
@@ -33,6 +34,6 @@ state={
 	}
 	manpower=457407
 	buildings_max_level_factor=1.000
-	local_supplies=10.000
+	local_supplies=12.000
 	state_category = metropolis
 }

@@ -5,7 +5,8 @@ state={
 		owner = NJN
 		buildings = {
 			infrastructure = 5
-
+			industrial_complex = 10
+			arms_factory = 3
 		}
 		add_core_of = NJN
 
@@ -15,6 +16,6 @@ state={
 	}
 	manpower=473214
 	buildings_max_level_factor=1.000
-	local_supplies=10.000
+	local_supplies=12.000
 	state_category = metropolis
 }

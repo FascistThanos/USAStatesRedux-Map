@@ -6,7 +6,9 @@ state={
 	history={
 		owner = NHN
 		buildings = {
-			infrastructure = 1
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 1
 			2196 = {
 				naval_base = 5
 			}
@@ -27,5 +29,5 @@ state={
 	manpower=101231
 	buildings_max_level_factor=1.000
 	state_category=large_town
-	local_supplies=1.000
+	local_supplies=5.000
 }

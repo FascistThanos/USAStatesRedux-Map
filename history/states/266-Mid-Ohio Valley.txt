@@ -5,7 +5,8 @@ state={
 		owner = WVW
 		buildings = {
 			infrastructure = 4
-
+			industrial_complex = 2
+			arms_factory = 1
 		}
 		add_core_of = WVW
 
@@ -15,6 +16,6 @@ state={
 	}
 	manpower=231470
 	buildings_max_level_factor=1.000
-	local_supplies=0.000
+	local_supplies=8.000
 	state_category = city
 }

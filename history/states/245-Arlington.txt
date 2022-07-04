@@ -7,7 +7,7 @@ state={
 		owner = VAV
 		buildings = {
 			infrastructure = 4
-
+			industrial_complex = 3
 		}
 		victory_points = {
 			10810 20
@@ -37,5 +37,5 @@ state={
 	manpower=120664
 	buildings_max_level_factor=1.000
 	state_category=large_town
-	local_supplies=0.000
+	local_supplies=5.000
 }

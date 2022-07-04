@@ -4,7 +4,8 @@ state={
 	history={
 		owner = CTC
 		buildings = {
-			infrastructure = 1
+			infrastructure = 4
+			industrial_complex = 10
 		}
 		victory_points = {
 			10982 10
@@ -26,6 +27,5 @@ state={
 	manpower=345007
 	state_category = large_city
 	buildings_max_level_factor=1.000
-	
-	local_supplies=1.000
+	local_supplies=10.000
 }

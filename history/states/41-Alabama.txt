@@ -7,7 +7,7 @@ state={
 		owner = ALA
 		buildings = {
 			infrastructure = 1
-
+			industrial_complex = 2
 		}
 		victory_points = {
 			3528 25

@@ -5,7 +5,8 @@ state={
 		owner = GAG
 		buildings = {
 			infrastructure = 4
-
+			industrial_complex = 3
+			arms_factory = 1
 		}
 		victory_points = {
 			10632 15

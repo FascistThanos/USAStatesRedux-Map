@@ -8,8 +8,6 @@ state={
 		owner = HIH
 		buildings = {
 			infrastructure = 3
-			industrial_complex = 3
-			arms_factory = 2
 			7461 = {
 				naval_base = 4
 			}

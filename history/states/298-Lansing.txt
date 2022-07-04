@@ -6,6 +6,8 @@ state={
 		add_core_of = MIM
 		buildings = {
 			infrastructure = 3
+			industrial_complex = 4
+			arms_factory = 2
 		}
 		victory_points = {
 			10593 25
@@ -34,6 +36,6 @@ state={
 	}
 	manpower=78397	
 	buildings_max_level_factor=1.000
-	local_supplies=0.000
+	local_supplies=8.000
 	state_category = small_city
 }
