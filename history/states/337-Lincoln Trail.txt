@@ -5,6 +5,7 @@ state={
 		owner = KYK
 		buildings = {
 			infrastructure = 3
+			industrial_complex = 2
 		}
 		add_core_of = KYK
 	}
@@ -13,6 +14,6 @@ state={
 	}
 	manpower=142117
 	buildings_max_level_factor=1.000
-	local_supplies=0.000
+	local_supplies=5.000
 	state_category = large_town
 }
