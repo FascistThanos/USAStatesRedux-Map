@@ -1,11 +1,32 @@
 state={
 	id=294
-	name="Marion"
+	name="Indianapolis"
 	history={
 		owner = INI
 		buildings = {
 			infrastructure = 5
 
+		}
+		victory_points = {
+			11447 25
+		}
+		victory_points = {
+			10485 5
+		}
+		victory_points = {
+			10487 5
+		}
+		victory_points = {
+			10858 5
+		}
+		victory_points = {
+			10852 5
+		}
+		victory_points = {
+			10847 5
+		}
+		victory_points = {
+			10841 5
 		}
 		add_core_of = INI
 

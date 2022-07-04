@@ -9,6 +9,12 @@ state={
 			infrastructure = 4
 
 		}
+		victory_points = {
+			4144 10
+		}
+		victory_points = {
+			1480 5
+		}
 		add_core_of = INI
 
 	}
