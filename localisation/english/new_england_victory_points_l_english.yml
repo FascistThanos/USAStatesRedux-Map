@@ -436,5 +436,35 @@
  VICTORY_POINTS_11427:0 "North County"
  VICTORY_POINTS_10723:0 "Vinton"
 
+###West Virginia
+#Northern Panhandle
+ VICTORY_POINTS_11700:0 "Wheeling"
+#Eastern Panhandle
+ VICTORY_POINTS_4048:0 "Martinsburg"
+#Mountaineer Country
+ VICTORY_POINTS_3314:0 "Camp Dawson"
+#Mountaineer Country
+ VICTORY_POINTS_5814:0 "Beckley"
+#Huntington
+ VICTORY_POINTS_10776:0 "Huntington"
+ VICTORY_POINTS_10777:0 "Barboursville"
+ VICTORY_POINTS_10781:0 "Wilson"
+#Charleston
+ VICTORY_POINTS_10770:0 "Charleston"
+ VICTORY_POINTS_10772:0 "Dunbar"
+ VICTORY_POINTS_10773:0 "Cross Lanes"
+ VICTORY_POINTS_10769:0 "Kanawha City"
+#Mountaineer Country
+ VICTORY_POINTS_3427:0 "Fairmont"
+#Parkersburg
+ VICTORY_POINTS_10826:0 "Parkersburg"
+ VICTORY_POINTS_10832:0 "Vienna"
+ VICTORY_POINTS_10827:0 "Williamstown"
+ VICTORY_POINTS_10822:0 "Washington Works"
+#Morgantown
+ VICTORY_POINTS_10826:0 "Morgantown"
+ VICTORY_POINTS_10832:0 "Cheat Lake"
+ VICTORY_POINTS_10827:0 "Star City"
+ VICTORY_POINTS_10844:0 "Westover"
 
 
