@@ -10,6 +10,24 @@ state={
 				naval_base = 4
 			}
 		}
+		victory_points = {
+			10587 20
+		}
+		victory_points = {
+			10590 5
+		}
+		victory_points = {
+			10589 5
+		}
+		victory_points = {
+			10585 5
+		}
+		victory_points = {
+			10588 5
+		}
+		victory_points = {
+			10337 5
+		}
 		add_core_of = SCS
 
 	}

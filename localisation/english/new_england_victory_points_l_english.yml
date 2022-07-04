@@ -509,4 +509,40 @@
 #Wilmington Region
  VICTORY_POINTS_3197:0 "Jacksonville"
 
+###South Carolina
+#Lowcountry & Resort Islands
+ VICTORY_POINTS_2842:0 "Beaufort"
+#Myrtle Beach
+ VICTORY_POINTS_614:0 "Conway" #Myrtle Beach didn't exist until 1938 lol
+#Santee Cooper Country
+ VICTORY_POINTS_6462:0 "Sumter"
+ VICTORY_POINTS_2456:0 "Florence"
+#Pee Dee Country
+ VICTORY_POINTS_3875:0 "Camden"
+#Olde English District
+ VICTORY_POINTS_3012:0 "Rock Hill"
+#Columbia
+ VICTORY_POINTS_10633:0 "Columbia"
+ VICTORY_POINTS_10626:0 "West Columbia"
+ VICTORY_POINTS_10623:0 "Cayce"
+ VICTORY_POINTS_10635:0 "St. Andrews"
+ VICTORY_POINTS_10641:0 "Irmo"
+ VICTORY_POINTS_11412:0 "Dentsville"
+ VICTORY_POINTS_10636:0 "Fort Jackson"
+#Charleston
+ VICTORY_POINTS_10587:0 "Charleston"
+ VICTORY_POINTS_10590:0 "North Charleston"
+ VICTORY_POINTS_10589:0 "Mt. Pleasant"
+ VICTORY_POINTS_10585:0 "James Island"
+ VICTORY_POINTS_10588:0 "Charleston Airport"
+ VICTORY_POINTS_10337:0 "Goose Creek"
+#Lake Hartwell Country
+ VICTORY_POINTS_4311:0 "Anderson"
+#Santee Cooper Country
+ VICTORY_POINTS_2202:0 "Spartanburg"
+ VICTORY_POINTS_3869:0 "Greenville"
+#Thoroughbred Country
+ VICTORY_POINTS_6392:0 "Aiken"
+
+
 
