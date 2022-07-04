@@ -4,7 +4,8 @@ state={
 	history={
 		owner = MAM
 		buildings = {
-			infrastructure = 1
+			infrastructure = 5
+			industrial_complex = 9
 		}
 		victory_points = {
 			11032 25
@@ -27,5 +28,5 @@ state={
 	state_category = metropolis
 	buildings_max_level_factor=1.000
 	
-	local_supplies=1.000
+	local_supplies=12.000
 }
