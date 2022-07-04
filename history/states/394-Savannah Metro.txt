@@ -1,10 +1,10 @@
 state={
 	id=394
-	name="Savannah Metro"
+	name="Savannah"
 	history={
 		owner = GAG
 		buildings = {
-			infrastructure = 1
+			infrastructure = 2
 			11395 = {
 				naval_base = 4
 			}
@@ -15,8 +15,8 @@ state={
 	provinces={
 		6690 10525 11394 11395 11518 
 	}
-	manpower=1
+	manpower=119689
 	buildings_max_level_factor=1.000
-	local_supplies=0.000
-	state_category = wasteland
+	local_supplies=8.000
+	state_category = small_city
 }

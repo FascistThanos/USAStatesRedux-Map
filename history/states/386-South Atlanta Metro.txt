@@ -1,10 +1,10 @@
 state={
 	id=386
-	name="South Atlanta Metro"
+	name="South Metro Atlanta"
 	history={
 		owner = GAG
 		buildings = {
-			infrastructure = 1
+			infrastructure = 4
 
 		}
 		add_core_of = GAG
@@ -13,8 +13,8 @@ state={
 	provinces={
 		10618 10621 10628 10634 
 	}
-	manpower=1
+	manpower=280934
 	buildings_max_level_factor=1.000
-	local_supplies=0.000
-	state_category = wasteland
+	local_supplies=10.000
+	state_category = large_city
 }
