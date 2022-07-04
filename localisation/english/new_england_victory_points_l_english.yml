@@ -899,5 +899,22 @@
  VICTORY_POINTS_2205:0 "Marion"
  VICTORY_POINTS_3632:0 "Cairo"
 
+#Wisconsin
+#North Wisconsin
+ VICTORY_POINTS_3801:0 "Superior"
+#Kenosha
+ VICTORY_POINTS_11053:0 "Kenosha"
+ VICTORY_POINTS_11062:0 "Racine"
+ VICTORY_POINTS_10481:0 "Oak Creek"
+ VICTORY_POINTS_5128:0 "Burlington"
+#Kenosha
+ VICTORY_POINTS_11110:0 "Milwaukee"
+ VICTORY_POINTS_11497:0 "South Milwaukee"
+ VICTORY_POINTS_11102:0 "West Allis"
+ VICTORY_POINTS_10720:0 "Waukesha"
+ VICTORY_POINTS_11123:0 "Shorewood"
+ VICTORY_POINTS_11472:0 "Port Washington"
+ VICTORY_POINTS_11128:0 "Menomonee Falls"
+
 
 

@@ -8,6 +8,18 @@ state={
 			industrial_complex = 3
 			arms_factory = 2
 		}
+		victory_points = {
+			11053 20
+		}
+		victory_points = {
+			11062 10
+		}
+		victory_points = {
+			10481 5
+		}
+		victory_points = {
+			5128 5
+		}
 		add_core_of = WIW
 
 	}
