@@ -5,6 +5,8 @@ state={
 		owner = ILI
 		buildings = {
 			infrastructure = 5
+			industrial_complex = 12
+			arms_factory = 2
 		}
 		add_core_of = ILI
 	}
