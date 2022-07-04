@@ -6,7 +6,7 @@ state={
 	history={
 		owner = SKS
 		buildings = {
-			infrastructure = 1
+			infrastructure = 2
 
 		}
 		add_core_of = SKS
@@ -16,8 +16,8 @@ state={
 	provinces={
 		347 12002 12003 
 	}
-	manpower=1
+	manpower=16016
 	buildings_max_level_factor=1.000
-	state_category=wasteland
+	state_category=pastoral
 	local_supplies=0.000
 }

@@ -4,7 +4,7 @@ state={
 	history={
 		owner = SKS
 		buildings = {
-			infrastructure = 1
+			infrastructure = 3
 
 		}
 		victory_points = {
@@ -19,8 +19,8 @@ state={
 	provinces={
 		11320 11322 
 	}
-	manpower=1
+	manpower=29402
 	buildings_max_level_factor=1.000
-	local_supplies=0.000
-	state_category = wasteland
+	local_supplies=8.000
+	state_category = small_city
 }
