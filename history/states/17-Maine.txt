@@ -8,6 +8,8 @@ state={
 		buildings = {
 			infrastructure = 4
 			dockyard = 2
+			industrial_complex = 2
+			arms_factory = 2
 		}
 		victory_points = {
 			2491 5
@@ -28,5 +30,5 @@ state={
 	manpower=151032
 	buildings_max_level_factor=1.000
 	state_category=city
-	local_supplies=1.000
+	local_supplies=8.000
 }

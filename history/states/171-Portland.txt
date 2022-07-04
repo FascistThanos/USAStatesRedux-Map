@@ -8,6 +8,8 @@ state={
 		buildings = {
 			infrastructure = 4
 			dockyard = 1
+			industrial_complex = 3
+			arms_factory = 2
 			11132 = {
 				naval_base = 7
 			}
@@ -32,5 +34,5 @@ state={
 	buildings_max_level_factor=1.000
 	state_category=city
 	
-	local_supplies=1.000
+	local_supplies=8.000
 }
