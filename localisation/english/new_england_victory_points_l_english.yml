@@ -793,3 +793,53 @@
 #Eastern Upper Peninsula
  VICTORY_POINTS_3060:0 "Sault Ste. Marie"
 
+###Indiana
+#Southern Indiana
+ VICTORY_POINTS_11682:0 "Tell City"
+#LaPorte
+ VICTORY_POINTS_11757:0 "Gary"
+ VICTORY_POINTS_11764:0 "East Chicago"
+ VICTORY_POINTS_11751:0 "Hammond"
+ VICTORY_POINTS_11748:0 "Merrillville"
+ VICTORY_POINTS_11750:0 "Valparaiso"
+ VICTORY_POINTS_11760:0 "Portage"
+ VICTORY_POINTS_11758:0 "Duneland"
+ VICTORY_POINTS_5269:0 "Michigan City"
+ VICTORY_POINTS_5277:0 "LaPorte"
+#Southbend
+ VICTORY_POINTS_4144:0 "South Bend"
+ VICTORY_POINTS_1480:0 "Elkhart"
+#Fort Wayne
+ VICTORY_POINTS_10935:0 "Fort Wayne"
+ VICTORY_POINTS_10930:0 "South Fort Wayne"
+ VICTORY_POINTS_10933:0 "Ellisville"
+ VICTORY_POINTS_10940:0 "Huntertown"
+ VICTORY_POINTS_10932:0 "New Haven"
+#Monon
+ VICTORY_POINTS_5365:0 "Logansport"
+#Wabash
+ VICTORY_POINTS_1684:0 "Kokomo"
+#Wabash Valley
+ VICTORY_POINTS_5448:0 "Lafayette"
+#Boone
+ VICTORY_POINTS_5601:0 "Bloomington"
+#Bluffton Till Plain
+ VICTORY_POINTS_5441:0 "Muncie"
+#Evansville
+ VICTORY_POINTS_5601:0 "Evansville"
+ VICTORY_POINTS_10761:0 "Westside"
+ VICTORY_POINTS_10448:0 "Jacobsville"
+ VICTORY_POINTS_11436:0 "Melody Hill"
+ VICTORY_POINTS_10758:0 "University of Evansville"
+ VICTORY_POINTS_10445:0 "Newburgh"
+#Indianapolis
+ VICTORY_POINTS_11447:0 "Indianapolis"
+ VICTORY_POINTS_10485:0 "Mooresville"
+ VICTORY_POINTS_10487:0 "Speedway"
+ VICTORY_POINTS_10858:0 "Carmel"
+ VICTORY_POINTS_10852:0 "Fishers"
+ VICTORY_POINTS_10847:0 "Lawrence"
+ VICTORY_POINTS_10841:0 "Greenwood"
+
+
+
