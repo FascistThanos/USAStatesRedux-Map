@@ -9,7 +9,8 @@ state={
 		owner = NYN
 		buildings = {
 			infrastructure = 4
-
+			industrial_complex = 7
+			arms_factory = 3
 		}
 		victory_points = {
 			10937 5
