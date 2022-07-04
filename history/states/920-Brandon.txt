@@ -4,7 +4,7 @@ state={
 	history={
 		owner = MBM
 		buildings = {
-			infrastructure = 1
+			infrastructure = 3
 
 		}
 		victory_points = {
@@ -34,8 +34,8 @@ state={
 	provinces={
 		10565 11300 11302 11303 11304 11305 11306 
 	}
-	manpower=1
+	manpower=16876
 	buildings_max_level_factor=1.000
-	local_supplies=0.000
-	state_category = wasteland
+	local_supplies=8.000
+	state_category = small_city
 }
