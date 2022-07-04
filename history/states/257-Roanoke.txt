@@ -4,8 +4,9 @@ state={
 	history={
 		owner = VAV
 		buildings = {
-			infrastructure = 2
-
+			infrastructure = 3
+			industrial_complex = 3
+			arms_factory = 1
 		}
 		victory_points = {
 			10726 20
@@ -30,6 +31,6 @@ state={
 	}
 	manpower=39093
 	buildings_max_level_factor=1.000
-	local_supplies=0.000
+	local_supplies=8.000
 	state_category = small_city
 }
