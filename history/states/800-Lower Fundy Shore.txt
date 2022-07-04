@@ -8,7 +8,12 @@ state={
 
 		}
 		add_core_of = NBN
-
+		victory_points = {
+			8 5
+		}
+		victory_points = {
+			1286 10
+		}
 	}
 
 	provinces={
