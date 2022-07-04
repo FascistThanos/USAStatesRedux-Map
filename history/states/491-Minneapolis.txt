@@ -5,7 +5,7 @@ state={
 		owner = MNM
 		buildings = {
 			infrastructure = 5
-
+			industrial_complex = 4
 		}
 		add_core_of = MNM
 
@@ -15,6 +15,6 @@ state={
 	}
 	manpower=464356
 	buildings_max_level_factor=1.000
-	local_supplies=10.000
+	local_supplies=12.000
 	state_category = metropolis
 }

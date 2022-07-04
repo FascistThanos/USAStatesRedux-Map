@@ -1,13 +1,12 @@
-
 state={
 	id=492
 	name="St. Paul"
-
 	history={
 		owner = MNM
 		buildings = {
 			infrastructure = 4
-
+			industrial_complex = 2
+			arms_factory = 1
 		}
 		add_core_of = MNM
 
@@ -19,5 +18,5 @@ state={
 	manpower=271606
 	buildings_max_level_factor=1.000
 	state_category=large_city
-	local_supplies=5.000
+	local_supplies=10.000
 }
