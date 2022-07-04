@@ -7,6 +7,24 @@ state={
 			infrastructure = 1
 
 		}
+		victory_points = {
+			10392 20
+		}
+		victory_points = {
+			10441 5
+		}
+		victory_points = {
+			10440 10
+		}
+		victory_points = {
+			4322 5
+		}
+		victory_points = {
+			10439 5
+		}
+		victory_points = {
+			7220 5
+		}
 		add_core_of = FLF
 
 	}
