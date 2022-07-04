@@ -5,7 +5,8 @@ state={
 		owner = FLF
 		buildings = {
 			infrastructure = 1
-			industrial_complex = 4
+			industrial_complex = 3
+			arms_factory = 2
 		}
 		victory_points = {
 			11389 25
