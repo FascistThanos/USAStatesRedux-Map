@@ -6,7 +6,7 @@ state={
 	history={
 		owner = BCB
 		buildings = {
-			infrastructure = 1
+			infrastructure = 2
 
 		}
 		add_core_of = BCB
@@ -16,8 +16,8 @@ state={
 	provinces={
 		1855 2232 4620 4660 11979 11980 11988 11989 
 	}
-	manpower=1
+	manpower=12474
 	buildings_max_level_factor=1.000
-	state_category=wasteland
+	state_category=pastoral
 	local_supplies=0.000
 }
