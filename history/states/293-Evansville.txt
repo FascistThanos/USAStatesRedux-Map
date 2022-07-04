@@ -8,7 +8,7 @@ state={
 		}
 		add_core_of = INI
 		victory_points = {
-			5601 20
+			10762 20
 		}
 		victory_points = {
 			10761 5
