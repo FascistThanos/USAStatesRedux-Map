@@ -1,4 +1,4 @@
-﻿capital = 30
+﻿capital = 272
 
 oob = "OHO_1936"
 

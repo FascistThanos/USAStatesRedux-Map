@@ -466,7 +466,7 @@
  VICTORY_POINTS_10827:0 "Williamstown"
  VICTORY_POINTS_10822:0 "Washington Works"
 #Morgantown
- VICTORY_POINTS_10826:0 "Morgantown"
+ VICTORY_POINTS_10845:0 "Morgantown"
  VICTORY_POINTS_10832:0 "Cheat Lake"
  VICTORY_POINTS_10827:0 "Star City"
  VICTORY_POINTS_10844:0 "Westover"
@@ -699,4 +699,97 @@
  VICTORY_POINTS_10515:0 "East Mobile"
  VICTORY_POINTS_10517:0 "Saraland"
  VICTORY_POINTS_10516:0 "Prichard"
+
+###Ohio
+#Toledo
+ VICTORY_POINTS_10992:0 "Toledo"
+ VICTORY_POINTS_10973:0 "Maumee"
+ VICTORY_POINTS_10974:0 "Perrysburg"
+ VICTORY_POINTS_10975:0 "East Toledo"
+ VICTORY_POINTS_10976:0 "Oregon"
+#Cleveland-Akron
+ VICTORY_POINTS_10967:0 "Cleveland"
+ VICTORY_POINTS_10948:0 "Akron"
+ VICTORY_POINTS_10958:0 "Lakewood"
+ VICTORY_POINTS_5274:0 "Rocky River"
+ VICTORY_POINTS_10952:0 "Cuyahoga Falls"
+ VICTORY_POINTS_5250:0 "Cleveland Heights"
+#Columbus
+ VICTORY_POINTS_10866:0 "Columbus"
+ VICTORY_POINTS_10860:0 "South Side"
+ VICTORY_POINTS_10864:0 "Grove City"
+ VICTORY_POINTS_10871:0 "Upper Arlington"
+ VICTORY_POINTS_10875:0 "Dublin"
+ VICTORY_POINTS_11703:0 "Delaware"
+ VICTORY_POINTS_10868:0 "Gahanna"
+#Dayton
+ VICTORY_POINTS_10848:0 "Dayton"
+ VICTORY_POINTS_10842:0 "Miamisburg"
+ VICTORY_POINTS_10859:0 "Englewood"
+ VICTORY_POINTS_10853:0 "Fairborn"
+ VICTORY_POINTS_10843:0 "Kettering"
+#Cincinnati
+ VICTORY_POINTS_10816:0 "Cincinnati"
+ VICTORY_POINTS_10821:0 "Delhi"
+ VICTORY_POINTS_10824:0 "Pleasant Hill"
+ VICTORY_POINTS_10831:0 "Sharonville"
+ VICTORY_POINTS_10825:0 "Blue Ash"
+ VICTORY_POINTS_10817:0 "Norwood"
+#Hamilton-Butler
+ VICTORY_POINTS_11693:0 "Hamilton"
+ VICTORY_POINTS_1688:0 "Springfield"
+#Lima-Grand Lake
+ VICTORY_POINTS_4226:0 "Lima"
+#Erie Coast
+ VICTORY_POINTS_5301:0 "Lorain"
+#Cuyahoga-Summit
+ VICTORY_POINTS_5367:0 "Canton"
+ VICTORY_POINTS_5323:0 "Youngstown"
+#Clermont
+ VICTORY_POINTS_5578:0 "Chillicothe"
+#Muskingum River Basin
+ VICTORY_POINTS_4282:0 "Mansfield"
+
+###Michigan
+#Northern Michigan
+ VICTORY_POINTS_2891:0 "Traverse City"
+#Detroit
+ VICTORY_POINTS_10538:0 "Detroit"
+ VICTORY_POINTS_10504:0 "Downriver"
+ VICTORY_POINTS_11037:0 "Dearborn"
+ VICTORY_POINTS_11049:0 "Livonia"
+ VICTORY_POINTS_10344:0 "Royal Oak"
+ VICTORY_POINTS_5171:0 "St. Clair Shores"
+ VICTORY_POINTS_11059:0 "New Baltimore"
+#Greater Detroit Metro
+ VICTORY_POINTS_5154:0 "Ann Arbor"
+ VICTORY_POINTS_11814:0 "Jackson"
+#Saginaw
+ VICTORY_POINTS_2369:0 "Flint"
+#Lansing
+ VICTORY_POINTS_10593:0 "Lansing"
+ VICTORY_POINTS_11058:0 "Old Everett"
+ VICTORY_POINTS_11464:0 "Lansing Factories"
+ VICTORY_POINTS_11465:0 "Waverly"
+ VICTORY_POINTS_11070:0 "Edgemont Park"
+ VICTORY_POINTS_11507:0 "Lake Lansing"
+ VICTORY_POINTS_11063:0 "East Lansing"
+#Kalamazoo
+ VICTORY_POINTS_2257:0 "Kalamazoo"
+ VICTORY_POINTS_11825:0 "Battle Creek"
+#Grand Rapids
+ VICTORY_POINTS_11095:0 "Grand Rapids"
+ VICTORY_POINTS_11469:0 "Grandville"
+ VICTORY_POINTS_11103:0 "West Grand Rapids"
+ VICTORY_POINTS_11104:0 "Plainfield Township"
+ VICTORY_POINTS_11096:0 "East Grand Rapids"
+ VICTORY_POINTS_11470:0 "Wyoming"
+#Grand
+ VICTORY_POINTS_2160:0 "Muskegon"
+#Michigan Bay Area
+ VICTORY_POINTS_971:0 "Saginaw"
+#Superior
+ VICTORY_POINTS_4783:0 "Marquette"
+#Eastern Upper Peninsula
+ VICTORY_POINTS_3060:0 "Sault Ste. Marie"
 
