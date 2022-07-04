@@ -7,6 +7,12 @@ state={
 			infrastructure = 3
 			industrial_complex = 1
 		}
+		victory_points = {
+			4200 5
+		}
+		victory_points = {
+			1815 5
+		}
 		add_core_of = WIW
 
 	}

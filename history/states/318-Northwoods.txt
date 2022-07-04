@@ -7,6 +7,9 @@ state={
 			infrastructure = 4
 
 		}
+		victory_points = {
+			4910 10
+		}
 		add_core_of = WIW
 
 	}
