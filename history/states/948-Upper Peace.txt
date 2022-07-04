@@ -4,7 +4,7 @@ state={
 	history={
 		owner = ABA
 		buildings = {
-			infrastructure = 1
+			infrastructure = 2
 
 		}
 		add_core_of = ABA
@@ -13,8 +13,8 @@ state={
 	provinces={
 		243 429 474 1064 1151 3102 3489 4542 
 	}
-	manpower=1
+	manpower=15939
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
-	state_category = wasteland
+	state_category = pastoral
 }

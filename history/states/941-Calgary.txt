@@ -4,7 +4,7 @@ state={
 	history={
 		owner = ABA
 		buildings = {
-			infrastructure = 1
+			infrastructure = 4
 
 		}
 		victory_points = {
@@ -28,8 +28,8 @@ state={
 	provinces={
 		11313 11314 11315 11316 11317 
 	}
-	manpower=01
+	manpower=50444
 	buildings_max_level_factor=1.000
-	local_supplies=0.000
-	state_category = wasteland
+	local_supplies=8.000
+	state_category = small_city
 }
