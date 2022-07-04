@@ -4,7 +4,7 @@ state={
 	history={
 		owner = SCS
 		buildings = {
-			infrastructure = 1
+			infrastructure = 4
 
 		}
 		add_core_of = SCS
@@ -13,8 +13,8 @@ state={
 	provinces={
 		1039 2202 3869 6252 6304 6372 6406 
 	}
-	manpower=1
+	manpower=271092
 	buildings_max_level_factor=1.000
-	local_supplies=0.000
-	state_category = wasteland
+	local_supplies=10.000
+	state_category = large_city
 }
