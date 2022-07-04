@@ -8,6 +8,7 @@ state={
 		owner = TXT
 		buildings = {
 			infrastructure = 1
+			industrial_complex = 2
 			8157 = {
 				naval_base = 2
 			}
