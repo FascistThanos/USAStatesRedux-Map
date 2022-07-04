@@ -7,6 +7,9 @@ state={
 			infrastructure = 4
 
 		}
+		victory_points = {
+			2261 15
+		}
 		add_core_of = ILI
 
 	}
