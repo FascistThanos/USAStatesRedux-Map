@@ -7,7 +7,8 @@ state={
 		owner = WVW
 		buildings = {
 			infrastructure = 4
-
+			industrial_complex = 1
+			arms_factory = 2
 		}
 		victory_points = {
 			4048 5
