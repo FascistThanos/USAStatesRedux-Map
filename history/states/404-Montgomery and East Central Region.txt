@@ -1,11 +1,14 @@
 state={
 	id=404
-	name="Montgomery and East Central Region"
+	name="East Central Alabama"
 	history={
 		owner = ALA
 		buildings = {
 			infrastructure = 1
 
+		}
+		victory_points = {
+			6533 10
 		}
 		add_core_of = ALA
 

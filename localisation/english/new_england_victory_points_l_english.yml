@@ -664,3 +664,39 @@
  VICTORY_POINTS_10435:0 "Hialeah"
  VICTORY_POINTS_7239:0 "Homestead"
 
+###Alabama
+#Alabama
+ VICTORY_POINTS_3528:0 "Montgomery"
+#Lauderdale-Limestone
+ VICTORY_POINTS_4182:0 "Florence"
+#Madison-Jackson
+ VICTORY_POINTS_6308:0 "Scottsboro"
+#Huntsville
+ VICTORY_POINTS_10642:0 "Huntsville"
+ VICTORY_POINTS_10486:0 "Madison"
+ VICTORY_POINTS_10643:0 "Harvest"
+ VICTORY_POINTS_10644:0 "Meridianville"
+#Dekalb
+ VICTORY_POINTS_754:0 "Fort Payne"
+#Northwestern Alabama
+ VICTORY_POINTS_4198:0 "Decatur"
+#Birmingham
+ VICTORY_POINTS_10594:0 "Birmingham"
+ VICTORY_POINTS_10591:0 "Bessemer"
+ VICTORY_POINTS_10592:0 "Hoover"
+ VICTORY_POINTS_11404:0 "Trussville"
+ VICTORY_POINTS_10597:0 "Center Point"
+#Tuscaloosa
+ VICTORY_POINTS_2727:0 "Tuscaloosa"
+ VICTORY_POINTS_6618:0 "Selma"
+#East Central Alabama
+ VICTORY_POINTS_6533:0 "Anniston-Oxford"
+#Black Belt
+ VICTORY_POINTS_3773:0 "Dothan"
+#Mobile
+ VICTORY_POINTS_10514:0 "Mobile"
+ VICTORY_POINTS_10513:0 "Tillmans Corner"
+ VICTORY_POINTS_10515:0 "East Mobile"
+ VICTORY_POINTS_10517:0 "Saraland"
+ VICTORY_POINTS_10516:0 "Prichard"
+
