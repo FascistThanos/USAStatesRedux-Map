@@ -8,7 +8,8 @@ state={
 		owner = NJN
 		buildings = {
 			infrastructure = 4
-
+			industrial_complex = 9
+			arms_factory = 4
 		}
 		victory_points = {
 			5393 25
@@ -21,6 +22,6 @@ state={
 	}
 	manpower=694125
 	buildings_max_level_factor=1.000
-	local_supplies=10.000
+	local_supplies=12.000
 	state_category = metropolis
 }
