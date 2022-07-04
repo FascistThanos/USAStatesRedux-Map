@@ -7,7 +7,6 @@ state={
 		owner = IDI
 		buildings = {
 			infrastructure = 3
-			industrial_complex = 2
 			arms_factory = 1
 		}
 		add_core_of = IDI
@@ -20,5 +19,5 @@ state={
 	manpower=64134
 	buildings_max_level_factor=1.000
 	state_category=town
-	local_supplies=1.000
+	local_supplies=3.000
 }
