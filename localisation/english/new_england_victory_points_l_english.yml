@@ -544,5 +544,58 @@
 #Thoroughbred Country
  VICTORY_POINTS_6392:0 "Aiken"
 
+###Georgia
+#Altamaha
+ VICTORY_POINTS_4229:0 "Statesboro"
+#Historic High Country
+ VICTORY_POINTS_6266:0 "Dalton"
+ VICTORY_POINTS_6360:0 "Rome"
+#Coosa
+ VICTORY_POINTS_3327:0 "Carrollton"
+#North Metro Atlanta
+ VICTORY_POINTS_10632:0 "Marietta"
+ VICTORY_POINTS_10627:0 "Smyrna"
+ VICTORY_POINTS_11411:0 "Mableton"
+ VICTORY_POINTS_11410:0 "Douglasville"
+ VICTORY_POINTS_11413:0 "Kennesaw"
+ VICTORY_POINTS_10637:0 "Alpharetta"
+#Northeast Georgia Mountains
+ VICTORY_POINTS_1354:0 "Gainesville"
+#South Metro Atlanta
+ VICTORY_POINTS_10621:0 "Atlanta"
+ VICTORY_POINTS_10618:0 "East Point"
+ VICTORY_POINTS_10628:0 "Sandy Springs"
+ VICTORY_POINTS_10634:0 "Lawrenceville"
+#Historic Heartland
+ VICTORY_POINTS_6523:0 "Macon"
+#Presidential Pathways
+ VICTORY_POINTS_3024:0 "LaGrange"
+#Columbus
+ VICTORY_POINTS_11401:0 "Columbus"
+ VICTORY_POINTS_11503:0 "Fort Benning"
+ VICTORY_POINTS_11403:0 "Bibb City"
+ VICTORY_POINTS_6583:0 "East Columbus"
+#Plantation Trace
+ VICTORY_POINTS_6724:0 "Albany"
+ VICTORY_POINTS_4263:0 "Valdosta"
+#Classic South
+ VICTORY_POINTS_2791:0 "Athens"
+#South Georgia Coast
+ VICTORY_POINTS_2168:0 "Brunswick"
+#Savannah
+ VICTORY_POINTS_11395:0 "Savannah"
+ VICTORY_POINTS_11394:0 "Georgetown"
+ VICTORY_POINTS_11518:0 "Pooler"
+ VICTORY_POINTS_10525:0 "Thomas Square"
+ VICTORY_POINTS_6690:0 "Garden City"
+#Greater Savannah
+ VICTORY_POINTS_6704:0 "Hinesville"
+#Augusta
+ VICTORY_POINTS_11407:0 "Augusta"
+ VICTORY_POINTS_11409:0 "Martinez"
+ VICTORY_POINTS_11408:0 "Evans"
+ VICTORY_POINTS_11406:0 "Grovetown"
+ VICTORY_POINTS_11405:0 "South Augusta"
+ VICTORY_POINTS_6453:0 "East Augusta"
 
 

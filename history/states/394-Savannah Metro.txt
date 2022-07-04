@@ -9,6 +9,21 @@ state={
 				naval_base = 4
 			}
 		}
+		victory_points = {
+			11395 20
+		}
+		victory_points = {
+			11394 5
+		}
+		victory_points = {
+			11518 5
+		}
+		victory_points = {
+			10525 5
+		}
+		victory_points = {
+			6690 5
+		}
 		add_core_of = GAG
 
 	}
