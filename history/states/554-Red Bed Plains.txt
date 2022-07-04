@@ -5,7 +5,7 @@ state={
 		owner = OKO
 		buildings = {
 			infrastructure = 4
-
+			industrial_complex = 2
 		}
 		add_core_of = OKO
 
@@ -15,6 +15,6 @@ state={
 	}
 	manpower=189779
 	buildings_max_level_factor=1.000
-	local_supplies=0.000
+	local_supplies=8.000
 	state_category = city
 }
