@@ -4,7 +4,8 @@ state={
 	history={
 		owner = LAL
 		buildings = {
-			infrastructure = 1
+			infrastructure = 3
+			industrial_complex = 2
 			11385 = {
 				naval_base = 4
 			}
@@ -16,8 +17,8 @@ state={
 	provinces={
 		10488 10492 10496 10500 10512 11385 11388 11392 
 	}
-	manpower=1
+	manpower=79141
 	buildings_max_level_factor=1.000
-	local_supplies=0.000
-	state_category = wasteland
+	local_supplies=8.000
+	state_category = small_city
 }
