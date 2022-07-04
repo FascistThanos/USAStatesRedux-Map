@@ -5,7 +5,7 @@ state={
 		owner = CAC
 		buildings = {
 			infrastructure = 3
-
+			industrial_complex = 4
 		}
 		victory_points = {
 			2505 5
