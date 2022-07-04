@@ -7,6 +7,33 @@ state={
 			infrastructure = 2
 
 		}
+		victory_points = {
+			10830 20
+		}
+		victory_points = {
+			10838 15
+		}
+		victory_points = {
+			10834 5
+		}
+		victory_points = {
+			10820 5 
+		}
+		victory_points = {
+			10837 5
+		}
+		victory_points = {
+			10823 5
+		}
+		victory_points = {
+			10835 5
+		}
+		victory_points = {
+			10837 5
+		}
+		victory_points = {
+			10840 5
+		}
 		add_core_of = NVN
 
 	}

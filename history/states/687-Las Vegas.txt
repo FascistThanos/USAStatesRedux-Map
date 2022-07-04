@@ -9,6 +9,51 @@ state={
 			infrastructure = 2
 
 		}
+		victory_points = {
+			10700 15
+		}
+		victory_points = {
+			6018 10
+		}
+		victory_points = {
+			10694 10
+		}
+		victory_points = {
+			10692 5
+		}
+		victory_points = {
+			10695 5
+		}
+		victory_points = {
+			10702 5
+		}
+		victory_points = {
+			10704 1
+		}
+		victory_points = {
+			10705 5
+		}
+		victory_points = {
+			10706 1
+		}
+		victory_points = {
+			10709 1
+		}
+		victory_points = {
+			10710 1
+		}
+		victory_points = {
+			10711 1
+		}
+		victory_points = {
+			10712 1
+		}
+		victory_points = {
+			11674 1
+		}
+		victory_points = {
+			11675 1
+		}
 		add_core_of = NVN
 
 	}
