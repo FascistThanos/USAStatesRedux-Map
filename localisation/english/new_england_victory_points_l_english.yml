@@ -429,6 +429,10 @@
  VICTORY_POINTS_5923:0 "Chesapeake"
 #Hampton Roads
  VICTORY_POINTS_5958:0 "Suffolk"
+#Blue Ridge Highlands
+ VICTORY_POINTS_5935:0 "Danville"
+#Bedford
+ VICTORY_POINTS_2229:0 "Lynchburg"
 #Roanoke
  VICTORY_POINTS_10726:0 "Roanoke"
  VICTORY_POINTS_10721:0 "Southwest County"
@@ -466,5 +470,43 @@
  VICTORY_POINTS_10832:0 "Cheat Lake"
  VICTORY_POINTS_10827:0 "Star City"
  VICTORY_POINTS_10844:0 "Westover"
+
+###North Carolina
+#Southeast North Carolina
+ VICTORY_POINTS_4081:0 "Wilmington"
+#North Carolina Mountains
+ VICTORY_POINTS_6112:0 "Asheville"
+ VICTORY_POINTS_6085:0 "Hickory"
+#Greater Charlotte
+ VICTORY_POINTS_6102:0 "Salisbury"
+ VICTORY_POINTS_919:0 "Gastonia"
+#Charlotte
+ VICTORY_POINTS_10662:0 "Charlotte"
+ VICTORY_POINTS_10661:0 "Belmont"
+ VICTORY_POINTS_10674:0 "Huntersville"
+ VICTORY_POINTS_11580:0 "Concord"
+ VICTORY_POINTS_10658:0 "Matthews"
+#Greensboro
+ VICTORY_POINTS_2642:0 "Greensboro"
+ VICTORY_POINTS_6021:0 "Winston-Salem"
+#Sandhills
+ VICTORY_POINTS_6203:0 "Fayetteville"
+#Triangle
+ VICTORY_POINTS_6082:0 "Burlington"
+#Raleigh
+ VICTORY_POINTS_10679:0 "Raleigh"
+ VICTORY_POINTS_10685:0 "Durham"
+ VICTORY_POINTS_10677:0 "Chapel Hill"
+ VICTORY_POINTS_10678:0 "Cary"
+ VICTORY_POINTS_10684:0 "Millbrook"
+ VICTORY_POINTS_10688:0 "Butner"
+#Wake
+ VICTORY_POINTS_6141:0 "Wilson"
+#Northeast Carolina
+ VICTORY_POINTS_777:0 "Roanoke Rapids"
+#Outer Banks
+ VICTORY_POINTS_6049:0 "Elizabeth City"
+#Wilmington Region
+ VICTORY_POINTS_3197:0 "Jacksonville"
 
 
