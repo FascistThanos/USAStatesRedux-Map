@@ -5,7 +5,8 @@ state={
 		owner = SKS
 		buildings = {
 			infrastructure = 4
-
+			industrial_complex = 1
+			arms_factory = 1
 		}
 		victory_points = {
 			11310 20
