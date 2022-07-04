@@ -4,8 +4,8 @@ state={
 	history={
 		owner = SUR
 		buildings = {
-			infrastructure = 1
-
+			infrastructure = 2
+			industrial_complex = 2
 		}
 		add_core_of = SUR
 
@@ -13,8 +13,8 @@ state={
 	provinces={
 		2213 2458 3904 
 	}
-	manpower=1
+	manpower=35359
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
-	state_category = wasteland
+	state_category = rural
 }

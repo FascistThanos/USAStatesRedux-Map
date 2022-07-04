@@ -4,9 +4,9 @@ state={
 	history={
 		owner = SUR
 		buildings = {
-			infrastructure = 1
-			industrial_complex = 1
-			arms_factory = 1
+			infrastructure = 4
+			industrial_complex = 7
+			arms_factory = 4
 			11371 = {
 				naval_base = 1
 			}
@@ -18,8 +18,8 @@ state={
 	provinces={
 		10317 10318 10319 11371 
 	}
-	manpower=1
+	manpower=292141
 	buildings_max_level_factor=1.000
-	state_category=wasteland
-	local_supplies=1.000
+	state_category=large_city
+	local_supplies=10.000
 }

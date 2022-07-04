@@ -4,8 +4,8 @@ state={
 	history={
 		owner = VEN
 		buildings = {
-			infrastructure = 1
-
+			infrastructure = 4
+			industrial_complex = 1
 		}
 		add_core_of = VEN
 
@@ -13,8 +13,8 @@ state={
 	provinces={
 		771 1463 1573 2018 2076 3656 3669 7756 7762 
 	}
-	manpower=1
+	manpower=326005
 	buildings_max_level_factor=1.000
-	local_supplies=0.000
-	state_category = wasteland
+	local_supplies=10.000
+	state_category = large_city
 }
