@@ -10,6 +10,12 @@ state={
 			infrastructure = 2
 
 		}
+		victory_points = {
+			3323 15
+		}
+		victory_points = {
+			3944 10
+		}
 		add_core_of = UTU
 
 	}

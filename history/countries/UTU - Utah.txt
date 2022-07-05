@@ -1,4 +1,4 @@
-﻿capital = 59
+﻿capital = 674
 
 oob = "UTU_1936"
 

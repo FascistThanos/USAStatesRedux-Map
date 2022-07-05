@@ -8,6 +8,42 @@ state={
 			industrial_complex = 3
 			arms_factory = 1
 		}
+		victory_points = {
+			10914 25
+		}
+		victory_points = {
+			8142 1
+		}
+		victory_points = {
+			10740 10
+		}
+		victory_points = {
+			10890 10
+		}
+		victory_points = {
+			10906 10
+		}
+		victory_points = {
+			10894 10
+		}
+		victory_points = {
+			10744 20
+		}
+		victory_points = {
+			10891 5
+		}
+		victory_points = {
+			10884 5
+		}
+		victory_points = {
+			10887 5
+		}
+		victory_points = {
+			10883 5
+		}
+		victory_points = {
+			10885 5
+		}
 		add_core_of = UTU
 
 	}
