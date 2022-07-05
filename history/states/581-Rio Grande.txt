@@ -4,7 +4,7 @@ state={
 	history = {
 		owner = TXT
 		buildings = {
-			infrastructure = 1
+			infrastructure = 3
 		}
 		victory_points = {
 			4110 15
@@ -17,8 +17,8 @@ state={
 	provinces={
 		931 1069 1398 1588 2044 2548 2737 3231 3476 3967 4077 4110 6831 6858 6867 6933 6948 6991 7020 7062 7071 7080 
 	}
-	manpower=1
+	manpower=115285
 	buildings_max_level_factor=1.000
-	local_supplies=0.000
-	state_category = wasteland
+	local_supplies=5.000
+	state_category = large_town
 }

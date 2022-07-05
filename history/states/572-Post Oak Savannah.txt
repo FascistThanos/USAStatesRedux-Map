@@ -4,7 +4,7 @@ state={
 	history = {
 		owner = TXT
 		buildings = {
-			infrastructure = 1
+			infrastructure = 4
 			industrial_complex = 1
 		}
 		add_core_of = TXT
@@ -12,8 +12,8 @@ state={
 	provinces={
 		1010 1560 1725 3088 3553 3954 4002 4109 4162 6807 6836 6848 6889 6969 7008 
 	}
-	manpower=1
+	manpower=218793
 	buildings_max_level_factor=1.000
-	local_supplies=0.000
-	state_category = wasteland
+	local_supplies=8.000
+	state_category = city
 }
