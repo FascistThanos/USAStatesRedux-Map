@@ -6,8 +6,9 @@ state={
 	history={
 		owner = NHN
 		buildings = {
-			infrastructure = 2
-
+			infrastructure = 3
+			industrial_complex = 3
+			arms_factory = 1
 		}
 		victory_points = {
 			11118 30
@@ -34,6 +35,5 @@ state={
 	manpower=104793
 	buildings_max_level_factor=1.000
 	state_category=small_city
-	
-	local_supplies=1.000
+	local_supplies=8.000
 }

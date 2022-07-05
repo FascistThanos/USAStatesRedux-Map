@@ -4,7 +4,9 @@ state={
 	history={
 		owner = RIR
 		buildings = {
-			infrastructure = 1
+			infrastructure = 5
+			industrial_complex = 7
+			arms_factory = 3
 			11006 = {
 				naval_base = 8
 			}
@@ -33,5 +35,5 @@ state={
 	state_category= metropolis
 	buildings_max_level_factor=1.000
 	
-	local_supplies=1.000
+	local_supplies=12.000
 }

@@ -7,12 +7,25 @@ state={
 		owner = PEP
 		buildings = {
 			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 1
 			11602 = {
 				naval_base = 4
 			}
 		}
 		add_core_of = PEP
-
+		victory_points = {
+			11602 15
+		}
+		victory_points = {
+			11603 5
+		}
+		victory_points = {
+			11604 5
+		}
+		victory_points = {
+			11605 5
+		}
 	}
 
 	provinces={

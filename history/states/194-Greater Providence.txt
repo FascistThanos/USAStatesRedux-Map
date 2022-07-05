@@ -1,4 +1,3 @@
-
 state={
 	id=194
 	name="Greater Providence"
@@ -8,8 +7,8 @@ state={
 	history={
 		owner = RIR
 		buildings = {
-			infrastructure = 1
-
+			infrastructure = 2
+			industrial_complex = 3
 		}
 		victory_points = {
 			11772 10

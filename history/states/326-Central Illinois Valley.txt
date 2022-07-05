@@ -8,6 +8,9 @@ state={
 			industrial_complex = 6
 			arms_factory = 4
 		}
+		victory_points = {
+			488 15
+		}
 		add_core_of = ILI
 
 	}

@@ -5,7 +5,8 @@ state={
 		owner = ABA
 		buildings = {
 			infrastructure = 3
-
+			industrial_complex = 6
+			arms_factory = 2
 		}
 		victory_points = {
 			11335 20

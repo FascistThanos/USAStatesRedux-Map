@@ -5,7 +5,8 @@ state={
 		owner = LAB
 		buildings = {
 			infrastructure = 1
-
+			industrial_complex = 2
+			arms_factory = 1
 		}
 		victory_points = {
 			11328 30
@@ -19,8 +20,8 @@ state={
 	provinces={
 		11327 11328 11329 11330 11331 
 	}
-	manpower=1
+	manpower=2451
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
-	state_category = wasteland
+	state_category = small_city
 }

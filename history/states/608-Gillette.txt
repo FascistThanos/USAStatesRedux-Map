@@ -5,7 +5,6 @@ state={
 		owner = WYW
 		buildings = {
 			infrastructure = 2
-			industrial_complex = 2
 		}
 		victory_points = {
 			11572 10

@@ -6,7 +6,7 @@ state={
 	history={
 		owner = QCQ
 		buildings = {
-			infrastructure = 2
+			infrastructure = 1
 
 		}
 		add_core_of = QCQ
@@ -18,6 +18,6 @@ state={
 	}
 	manpower=5684
 	buildings_max_level_factor=1.000
-	state_category=pastoral
+	state_category=wasteland
 	local_supplies=0.000
 }

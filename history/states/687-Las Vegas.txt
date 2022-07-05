@@ -7,8 +7,7 @@ state={
 		owner = NVN
 		buildings = {
 			infrastructure = 2
-			industrial_complex = 4
-			arms_factory = 2
+			industrial_complex = 1
 		}
 		victory_points = {
 			10700 15

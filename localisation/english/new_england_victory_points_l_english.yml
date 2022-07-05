@@ -841,5 +841,105 @@
  VICTORY_POINTS_10847:0 "Lawrence"
  VICTORY_POINTS_10841:0 "Greenwood"
 
+#Illinois
+#Chicago
+ VICTORY_POINTS_11007:0 "Chicago"
+ VICTORY_POINTS_10991:0 "Hyde Park"
+ VICTORY_POINTS_11498:0 "South Chicago"
+ VICTORY_POINTS_5248:0 "Calumet City"
+ VICTORY_POINTS_10966:0 "Blue Island"
+ VICTORY_POINTS_10972:0 "Oak Lawn"
+ VICTORY_POINTS_10990:0 "Brighton Park"
+ VICTORY_POINTS_11459:0 "Cicero"
+ VICTORY_POINTS_10461:0 "Lincoln Park"
+ VICTORY_POINTS_11010:0 "Elmhurst"
+ VICTORY_POINTS_10782:0 "Evanston"
+ VICTORY_POINTS_10473:0 "Des Plaines"
+ VICTORY_POINTS_10501:0 "Highland Park"
+ VICTORY_POINTS_11028:0 "Buffalo Grove"
+ VICTORY_POINTS_10780:0 "North Chicago"
+ VICTORY_POINTS_11043:0 "Mundelein"
+ VICTORY_POINTS_10508:0 "Waukegan"
+#Naperville
+ VICTORY_POINTS_10522:0 "Aurora"
+ VICTORY_POINTS_11000:0 "Naperville"
+ VICTORY_POINTS_10651:0 "Carol Stream"
+ VICTORY_POINTS_11460:0 "Schaumburg"
+ VICTORY_POINTS_198:0 "Joliet"
+#Chicagoland
+ VICTORY_POINTS_11726:0 "Kankakee"
+ VICTORY_POINTS_11738:0 "Ottawa"
+#Rockford
+ VICTORY_POINTS_2261:0 "Rockford"
+#Blackhawk
+ VICTORY_POINTS_1391:0 "Rock Island-Moline"
+#Central Illinois Valley
+ VICTORY_POINTS_488:0 "Peoria"
+#Two Rivers
+ VICTORY_POINTS_1831:0 "Quincy"
+#Starved Rock
+ VICTORY_POINTS_60:0 "Bloomington-Normal"
+#Corn Belt
+ VICTORY_POINTS_3133:0 "Champaign"
+ VICTORY_POINTS_5468:0 "Danville"
+#Abe Lincoln
+ VICTORY_POINTS_5526:0 "Decatur"
+#Springfield
+ VICTORY_POINTS_10873:0 "Springfield"
+ VICTORY_POINTS_11505:0 "Southern View"
+ VICTORY_POINTS_10872:0 "Jerome"
+ VICTORY_POINTS_10569:0 "Oak Ridge"
+ VICTORY_POINTS_11450:0 "Grandview"
+ VICTORY_POINTS_10870:0 "Toronto"
+#Edwardsville
+ VICTORY_POINTS_950:0 "Edwardsville"
+#Kaskaskia
+ VICTORY_POINTS_5657:0 "Belleville"
+#Shawnee
+ VICTORY_POINTS_2205:0 "Marion"
+ VICTORY_POINTS_3632:0 "Cairo"
 
+#Wisconsin
+#North Wisconsin
+ VICTORY_POINTS_3801:0 "Superior"
+#Kenosha
+ VICTORY_POINTS_11053:0 "Kenosha"
+ VICTORY_POINTS_11062:0 "Racine"
+ VICTORY_POINTS_10481:0 "Oak Creek"
+ VICTORY_POINTS_5128:0 "Burlington"
+#Milwaukee
+ VICTORY_POINTS_11110:0 "Milwaukee"
+ VICTORY_POINTS_11497:0 "South Milwaukee"
+ VICTORY_POINTS_11102:0 "West Allis"
+ VICTORY_POINTS_10720:0 "Waukesha"
+ VICTORY_POINTS_11123:0 "Shorewood"
+ VICTORY_POINTS_11472:0 "Port Washington"
+ VICTORY_POINTS_11128:0 "Menomonee Falls"
+#Madison Region
+ VICTORY_POINTS_5123:0 "Beloit"
+ VICTORY_POINTS_11876:0 "Janesville"
+ VICTORY_POINTS_3387:0 "Fond du Lac"
+#Centergy
+ VICTORY_POINTS_5014:0 "Oshkosh"
+#Madison
+ VICTORY_POINTS_11117:0 "Madison"
+ VICTORY_POINTS_10764:0 "Fitchburg"
+ VICTORY_POINTS_11115:0 "Monona"
+ VICTORY_POINTS_10531:0 "Burke"
+ VICTORY_POINTS_10764:0 "Waunakee"
+#Seven Rivers
+ VICTORY_POINTS_11121:0 "Middleton"
+ VICTORY_POINTS_3781:0 "Prairie du Chien"
+ VICTORY_POINTS_4981:0 "La Crosse"
+#Manitawoc
+ VICTORY_POINTS_4200:0 "Sheboygan"
+ VICTORY_POINTS_1815:0 "Manitawoc"
+#Green Bay
+ VICTORY_POINTS_11175:0 "Green Bay"
+ VICTORY_POINTS_11174:0 "Ashwaubenon"
+ VICTORY_POINTS_10503:0 "Howard"
+#New North
+ VICTORY_POINTS_4973:0 "Appleton"
+#Northwoods
+ VICTORY_POINTS_4910:0 "Eau Claire"
 

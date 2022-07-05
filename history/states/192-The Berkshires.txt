@@ -6,8 +6,8 @@ state={
 	history={
 		owner = MAM
 		buildings = {
-			infrastructure = 1
-
+			infrastructure = 3
+			arms_factory = 1
 		}
 		victory_points = {
 			5176 5
@@ -22,5 +22,5 @@ state={
 	manpower=72412
 	buildings_max_level_factor=1.000
 	state_category=town
-	local_supplies=1.000
+	local_supplies=3.000
 }

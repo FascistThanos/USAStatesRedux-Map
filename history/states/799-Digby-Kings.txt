@@ -8,7 +8,9 @@ state={
 
 		}
 		add_core_of = NSN
-
+		victory_points = {
+			4931 5
+		}
 	}
 	provinces={
 		471 4931 4975 8137 

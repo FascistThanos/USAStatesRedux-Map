@@ -16,5 +16,5 @@ state={
 	manpower=3787
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
-	state_category = pastoral
+	state_category = wasteland
 }

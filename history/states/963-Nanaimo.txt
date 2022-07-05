@@ -5,8 +5,8 @@ state={
 	history={
 		owner = BCB
 		buildings = {
-			infrastructure = 1
-
+			infrastructure = 3
+			industrial_complex = 2
 		}
 		victory_points = {
 			11965 5
@@ -21,8 +21,8 @@ state={
 	provinces={
 		3435 4183 11965 11967 11968 11969 11970 11972 11973 11975 11976 11977 11978 11981 11982 
 	}
-	manpower=1
+	manpower=76411
 	buildings_max_level_factor=1.000
-	state_category=wasteland
-	local_supplies=0.000
+	state_category=town
+	local_supplies=3.000
 }

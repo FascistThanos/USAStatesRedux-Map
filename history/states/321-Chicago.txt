@@ -8,6 +8,57 @@ state={
 			industrial_complex = 12
 			arms_factory = 2
 		}
+		victory_points = {
+			11007 40
+		}
+		victory_points = {
+			10991 5
+		}
+		victory_points = {
+			11498 5
+		}
+		victory_points = {
+			5248 5
+		}
+		victory_points = {
+			10966 5
+		}
+		victory_points = {
+			10972 5
+		}
+		victory_points = {
+			10990 5
+		}
+		victory_points = {
+			11459 5
+		}
+		victory_points = {
+			10461 5
+		}
+		victory_points = {
+			11010 5
+		}
+		victory_points = {
+			10782 5
+		}
+		victory_points = {
+			10473 10
+		}
+		victory_points = {
+			10501 5
+		}
+		victory_points = {
+			11028 5
+		}
+		victory_points = {
+			10780 5
+		}
+		victory_points = {
+			11043 5
+		}
+		victory_points = {
+			10508 5
+		}
 		add_core_of = ILI
 	}
 	provinces={

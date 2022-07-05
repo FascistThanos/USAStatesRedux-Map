@@ -5,8 +5,8 @@ state={
 		owner = IDI
 		buildings = {
 			infrastructure = 3
-			industrial_complex = 4
-			arms_factory = 2
+			industrial_complex = 2
+			arms_factory = 1
 		}
 		victory_points = {
 			11143 20
@@ -46,6 +46,6 @@ state={
 	}
 	manpower=97224
 	buildings_max_level_factor=1.000
-	local_supplies=0.000
+	local_supplies=8.000
 	state_category = small_city
 }

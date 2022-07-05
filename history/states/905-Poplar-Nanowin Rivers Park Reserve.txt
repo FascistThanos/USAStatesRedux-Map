@@ -4,7 +4,7 @@ state={
 	history={
 		owner = MBM
 		buildings = {
-			infrastructure = 2
+			infrastructure = 1
 
 		}
 		add_core_of = MBM
@@ -16,5 +16,5 @@ state={
 	manpower=3787
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
-	state_category = pastoral
+	state_category = wasteland
 }
