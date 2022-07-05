@@ -5,8 +5,28 @@ state={
 		owner = COC
 		buildings = {
 			infrastructure = 2
-			industrial_complex = 1
-			industrial_complex = 2
+
+		}
+		victory_points = {
+			10915 20 
+		}
+		victory_points = {
+			10901 10 
+		}
+		victory_points = {
+			11451 15 
+		}
+		victory_points = {
+			10907 10 
+		}
+		victory_points = {
+			10895 15 
+		}
+		victory_points = {
+			10329 5 
+		}
+		victory_points = {
+			11453 5 
 		}
 		add_core_of = COC
 
@@ -16,6 +36,6 @@ state={
 	}
 	manpower=11489
 	buildings_max_level_factor=1.000
-	local_supplies=8.000
+	local_supplies=0.000
 	state_category = small_city
 }

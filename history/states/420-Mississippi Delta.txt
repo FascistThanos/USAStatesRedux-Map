@@ -7,6 +7,12 @@ state={
 			infrastructure = 1
 
 		}
+		victory_points = {
+			2985 15
+		}
+		victory_points = {
+			6517 10
+		}
 		add_core_of = MSM
 
 	}

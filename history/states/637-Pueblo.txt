@@ -5,7 +5,10 @@ state={
 		owner = COC
 		buildings = {
 			infrastructure = 2
-			industrial_complex = 3
+
+		}
+		victory_points = {
+			5668 15 
 		}
 		add_core_of = COC
 
@@ -15,6 +18,6 @@ state={
 	}
 	manpower=109000
 	buildings_max_level_factor=1.000
-	local_supplies=5.000
+	local_supplies=0.000
 	state_category = large_town
 }

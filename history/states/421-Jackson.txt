@@ -5,8 +5,31 @@ state={
 		owner = MSM
 		buildings = {
 			infrastructure = 1
-			industrial_complex = 1
-			arms_factory = 1
+
+		}
+		victory_points = {
+			11399 25 
+		}
+		victory_points = {
+			10559 15
+		}
+		victory_points = {
+			10548 5
+		}
+		victory_points = {
+			10539 10
+		}
+		victory_points = {
+			10540 10
+		}
+		victory_points = {
+			11397 15
+		}
+		victory_points = {
+			10550 15
+		}
+		victory_points = {
+			10562 15
 		}
 		add_core_of = MSM
 
