@@ -8,6 +8,12 @@ state={
 		buildings = {
 			infrastructure = 2
 		}
+		victory_points = {
+			11672 10
+		}
+		victory_points = {
+			6587 5
+		}
 		add_core_of = AZA
 
 	}

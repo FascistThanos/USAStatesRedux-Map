@@ -7,6 +7,21 @@ state={
 			infrastructure = 2
 			industrial_complex = 1
 		}
+		victory_points = {
+			10580 15
+		}
+		victory_points = {
+			10578 5
+		}
+		victory_points = {
+			10572 5
+		}
+		victory_points = {
+			10571 5
+		}
+		victory_points = {
+			10577 5
+		}
 		add_core_of = AZA
 
 	}
