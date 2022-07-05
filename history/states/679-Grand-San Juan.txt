@@ -10,6 +10,9 @@ state={
 		victory_points = {
 			5688 15
 		}
+		victory_points = {
+			5801 5
+		}
 		add_core_of = UTU
 
 	}
