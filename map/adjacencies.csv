@@ -13,6 +13,7 @@
 9744;9836;sea;;-1;-1;-1;-1;ST_CLAIR_RIVER;ST. Clair River
 
 ##Over-Sea Land Crossings
+#From;To;Type;Over
 2731;6906;sea;11541;-1;-1;-1;-1;;New Orleans Bridge
 11516;6865;sea;9290;-1;-1;-1;-1;;New Orleans Bridge 2
 2540;1829;sea;11541;-1;-1;-1;-1;;New Orleans Bridge 3
@@ -28,5 +29,13 @@
 8149;8150;sea;8266;-1;-1;-1;-1;;Channel Island Bridge 3
 4831;4803;sea;8367;-1;-1;-1;-1;;PEI Bridge
 4894;82;sea;9586;-1;-1;-1;-1;;NS Bridge
-
+10605;8123;sea;11564;-1;-1;-1;-1;;Pont de Ile
+11246;2047;sea;11569;-1;-1;-1;-1;;Pont de Quebec
+11208;3654;sea;11587;-1;-1;-1;-1;;Saint-Laurent Railway Bridge
+8133;11206;sea;11587;-1;-1;-1;-1;;Victoria Bridge
+11208;8132;sea;11590;-1;-1;-1;-1;;Pont Lachapelle
+8132;3654;sea;11213;-1;-1;-1;-1;;Pont Gédéon-Ouimet
+11863;11076;sea;9712;-1;-1;-1;-1;;Peace Bridge
+8139;11084;sea;9712;-1;-1;-1;-1;;South Grand Island Bridge
+759;10504;sea;9744;-1;-1;-1;-1;;Ambassador Bridge
 -1;-1;;-1;-1;-1;-1;-1;-1
