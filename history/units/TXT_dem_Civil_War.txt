@@ -1,0 +1,245 @@
+division_template = {
+	name = "Civilian Militia"
+	is_locked = yes
+	regiments = {
+		infantry = {
+			x = 0
+			y = 0
+		}
+		infantry = {
+			x = 1
+			y = 0
+		}
+		infantry = {
+			x = 2
+			y = 0
+		}
+	}
+}
+
+units = {
+	division = {
+		name = "Civilian Militia Dallas"
+		location = 10568
+		division_template = "Civilian Militia"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "Civilian Militia Dallas"
+		location = 10568
+		division_template = "Civilian Militia"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "Civilian Militia Dallas"
+		location = 10568
+		division_template = "Civilian Militia"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "Civilian Militia Dallas"
+		location = 10568
+		division_template = "Civilian Militia"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "Civilian Militia Dallas"
+		location = 10568
+		division_template = "Civilian Militia"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "Civilian Militia Dallas"
+		location = 10568
+		division_template = "Civilian Militia"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "Civilian Militia Dallas"
+		location = 10568
+		division_template = "Civilian Militia"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "Civilian Militia Dallas"
+		location = 10568
+		division_template = "Civilian Militia"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "Civilian Militia Fort Worth"
+		location = 11520
+		division_template = "Civilian Militia"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "Civilian Militia Fort Worth"
+		location = 11520
+		division_template = "Civilian Militia"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "Civilian Militia Fort Worth"
+		location = 11520
+		division_template = "Civilian Militia"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "Civilian Militia Fort Worth"
+		location = 11520
+		division_template = "Civilian Militia"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "Civilian Militia Fort Worth"
+		location = 11520
+		division_template = "Civilian Militia"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "Civilian Militia Fort Worth"
+		location = 11520
+		division_template = "Civilian Militia"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "Civilian Militia Fort Worth"
+		location = 11520
+		division_template = "Civilian Militia"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "Civilian Militia Fort Worth"
+		location = 11520
+		division_template = "Civilian Militia"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "Civilian Militia Texarkana"
+		location = 6507
+		division_template = "Civilian Militia"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "Civilian Militia Texarkana"
+		location = 6507
+		division_template = "Civilian Militia"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "Civilian Militia Abilene"
+		location = 2043
+		division_template = "Civilian Militia"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "Civilian Militia Abilene"
+		location = 2043
+		division_template = "Civilian Militia"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "Civilian Militia Tyler"
+		location = 2565
+		division_template = "Civilian Militia"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "Civilian Militia Nacogdoches"
+		location = 6712
+		division_template = "Civilian Militia"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "Civilian Militia Wichita Falls"
+		location = 3215
+		division_template = "Civilian Militia"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "Civilian Militia Wichita Falls"
+		location = 3215
+		division_template = "Civilian Militia"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "Civilian Militia Amarillo"
+		location = 1201
+		division_template = "Civilian Militia"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "Civilian Militia Amarillo"
+		location = 1201
+		division_template = "Civilian Militia"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "Civilian Militia Amarillo"
+		location = 3609
+		division_template = "Civilian Militia"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "Civilian Militia Amarillo"
+		location = 3609
+		division_template = "Civilian Militia"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "Civilian Militia Amarillo"
+		location = 3609
+		division_template = "Civilian Militia"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "Civilian Militia Amarillo"
+		location = 3609
+		division_template = "Civilian Militia"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "Civilian Militia Amarillo"
+		location = 3609
+		division_template = "Civilian Militia"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "Civilian Militia Amarillo"
+		location = 3609
+		division_template = "Civilian Militia"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.5
+	}
+}

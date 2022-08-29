@@ -49,3 +49,55 @@ division_template = {
 	}
 	priority = 0
 }
+units = {
+	# I Army Corps #
+	division= {			
+		name = "1st Illinoisian National Guard"		
+		location = 11007
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	division= {			
+		name = "2nd Illinoisian National Guard"		
+		location = 11498
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	division= {			
+		name = "3rd Illinoisian National Guard"		
+		location = 5248
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	division= {			
+		name = "4th Illinoisian National Guard"		
+		location = 2088
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	division= {			
+		name = "5th Illinoisian National Guard"		
+		location = 10508
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	division= {			
+		name = "6th Illinoisian National Guard"		
+		location = 5173
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	division= {			
+		name = "7th Illinoisian National Guard"		
+		location = 10873
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+}

@@ -49,3 +49,49 @@ division_template = {
 	}
 	priority = 0
 }
+units = {
+	### 1st Army -- note: Armies only paper organizations in 1936 ###
+	# I Army Corps #
+	division= {			
+		name = "1st Arizonan National Guard"		
+		location = 10611
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	division={
+		name = "2nd Arizonan National Guard"		
+		location = 10613
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	division={
+		name = "3rd Arizonan National Guard"		
+		location = 10580
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	division={
+		name = "4th Arizonan National Guard"		
+		location = 10572
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	division={
+		name = "Navajo Code Talkers"		
+		location = 5934
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	division={
+		name = "Navajo Code Talkers"		
+		location = 5934
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+}

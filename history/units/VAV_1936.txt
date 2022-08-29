@@ -49,3 +49,47 @@ division_template = {
 	}
 	priority = 0
 }
+units = {
+	division= {
+		name = "1st Virginian National Guard"
+		location = 11424
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	division= {
+		name = "2nd Virginian National Guard"
+		location = 10718
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	division= {
+		name = "3rd Virginian National Guard"
+		location = 10810
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	division= {
+		name = "4th Virginian National Guard"
+		location = 10726
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	division= {
+		name = "5th Virginian National Guard"
+		location = 11432
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	division= {
+		name = "6th Virginian National Guard"
+		location = 5935
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+}

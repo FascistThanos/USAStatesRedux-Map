@@ -49,3 +49,27 @@ division_template = {
 	}
 	priority = 0
 }
+units = {
+	# I Army Corps #
+	division= {			
+		name = "1st North Carolinian National Guard"		
+		location = 10679
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	division= {			
+		name = "2nd North Carolinian National Guard"		
+		location = 10662
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	division= {			
+		name = "3rd North Carolinian National Guard"		
+		location = 6202
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+}

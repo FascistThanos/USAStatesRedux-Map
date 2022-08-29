@@ -49,3 +49,34 @@ division_template = {
 	}
 	priority = 0
 }
+units = {
+	# I Army Corps #
+	division= {			
+		name = "1st National Guard"		
+		location = 2336
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}			
+	division= {			
+		name = "2nd National Guard"		
+		location = 2610
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	division= {			
+		name = "3rd National Guard"		
+		location = 7620
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	division= {			
+		name = "4th National Guard"		
+		location = 591
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+}

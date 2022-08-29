@@ -49,3 +49,63 @@ division_template = {
 	}
 	priority = 0
 }
+units = {
+	### 1st Florida's Army ###
+	# First Defense Corps #
+	division= {
+		name = "1st Floridian National Guard"
+		location = 11391
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.6
+	}
+	division= {
+		name = "2nd Floridian National Guard"
+		location = 10511
+		division_template = "Infantry Division"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "3rd Floridian National Guard"
+		location = 10506
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.6
+	}
+	division = {
+		name = "4th Floridian National Guard"
+		location = 6817
+		division_template = "Infantry Division"
+		start_experience_factor = 0.45
+		start_equipment_factor = 0.6
+	}
+	division = {
+		name = "5th Floridian National Guard"
+		location = 6862
+		division_template = "Infantry Division"
+		start_experience_factor = 0.45
+		start_equipment_factor = 0.6
+	}
+	division = {
+		name = "6th Floridian National Guard"
+		location = 6805
+		division_template = "Infantry Division"
+		start_experience_factor = 0.45
+		start_equipment_factor = 0.6
+	}
+	division = {
+		name = "7th Floridian National Guard"
+		location = 6853
+		division_template = "Infantry Division"
+		start_experience_factor = 0.45
+		start_equipment_factor = 0.6
+	}
+	division = {
+		name = "8th Floridian National Guard"
+		location = 155
+		division_template = "Infantry Division"
+		start_experience_factor = 0.45
+		start_equipment_factor = 0.6
+	}
+}

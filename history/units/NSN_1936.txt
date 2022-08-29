@@ -49,3 +49,14 @@ division_template = {
 	}
 	priority = 0
 }
+units = {
+	## 6th Miltary District ##
+	division= {	
+		name = "1st District Militia"
+		location = 11595  # Halifax
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+}	

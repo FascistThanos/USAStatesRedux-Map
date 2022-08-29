@@ -49,3 +49,145 @@ division_template = {
 	}
 	priority = 0
 }
+units = {
+	### 1st Army -- note: Armies only paper organizations in 1936 ###
+	# I Army Corps #
+	division= {
+		name = "1st Californian National Guard"
+		location = 10778
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {
+		name = "2nd Californian National Guard"
+		location = 10715
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+	}
+	division= {
+		name = "3rd Californian National Guard"
+		location = 10779
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {
+		name = "4th Californian National Guard"
+		location = 10748
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division= {
+		name = "5th Californian National Guard"
+		location = 10619
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division= {
+		name = "6th Californian National Guard"
+		location = 10629
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division= {
+		name = "7th Californian National Guard"
+		location = 6413
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division= {
+		name = "8th Californian National Guard"
+		location = 10729
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division= {
+		name = "9th Californian National Guard"
+		location = 6560
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division= {
+		name = "Californian 1st Infantry Divison"
+		location = 10570
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.6
+	}
+	division= {
+		name = "Californian 2nd Infantry Divison"
+		location = 6555
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+	}
+}
+air_wings = {
+	### I. Airwing -- Fresno ###
+	738 = {
+		# Jagdgeschwader 232
+		fighter_equipment_0 =  {		# He 51
+			owner = "CAC"
+			amount = 70
+		}
+	}
+}
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "CAC"
+		}
+		requested_factories = 4
+		progress = 0.1
+		efficiency = 5
+	}
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "CAC"
+		}
+		requested_factories = 2
+		progress = 0.3
+		efficiency = 5
+	}
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+			creator = "CAC"
+		}
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 5
+	}
+	add_equipment_production = {
+		equipment = {
+			type = fighter_equipment_1
+			creator = "CAC"
+		}
+		requested_factories = 1
+		progress = 0.15
+		efficiency = 5
+	}
+	add_equipment_production = {
+		equipment = {
+			type = CAS_equipment_1
+			creator = "CAC"
+		}
+		requested_factories = 1
+		progress = 0.2
+		efficiency = 5
+	}
+}

@@ -49,3 +49,33 @@ division_template = {
 	}
 	priority = 0
 }
+units = {
+	division= {
+		name = "1st Washingtonian National Guard"
+		location = 11271
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	division= {
+		name = "2nd Washingtonian National Guard"
+		location = 11251
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	division= {
+		name = "3rd Washingtonian National Guard"
+		location = 11259
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	division= {
+		name = "4th Washingtonian National Guard"
+		location = 10745
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+}

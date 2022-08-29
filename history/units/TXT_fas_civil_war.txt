@@ -1,0 +1,245 @@
+division_template = {
+	name = "Civilian Militia"
+	is_locked = yes
+	regiments = {
+		infantry = {
+			x = 0
+			y = 0
+		}
+		infantry = {
+			x = 1
+			y = 0
+		}
+		infantry = {
+			x = 2
+			y = 0
+		}
+	}
+}
+
+units = {
+	division = {
+		name = "Civilian Militia El Paso"
+		location = 10524
+		division_template = "Civilian Militia"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "Civilian Militia El Paso"
+		location = 10528
+		division_template = "Civilian Militia"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "Civilian El Paso"
+		location = 10529
+		division_template = "Civilian Militia"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "Civilian El Paso"
+		location = 10530
+		division_template = "Civilian Militia"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "Civilian Militia El Paso"
+		location = 10526
+		division_template = "Civilian Militia"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "Civilian Militia Del Rio"
+		location = 6933
+		division_template = "Civilian Militia"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "Civilian Laredo"
+		location = 4110
+		division_template = "Civilian Militia"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "Civilian McAllen"
+		location = 1734
+		division_template = "Civilian Militia"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "Civilian Militia Brownsville"
+		location = 3494
+		division_template = "Civilian Militia"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "Civilian Militia Corpus Christi"
+		location = 2308
+		division_template = "Civilian Militia"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "Civilian Militia Corpus Christi"
+		location = 2308
+		division_template = "Civilian Militia"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "Civilian Militia San Antonio"
+		location = 11512
+		division_template = "Civilian Militia"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "Civilian Militia San Antonio"
+		location = 11513
+		division_template = "Civilian Militia"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "Civilian Militia San Antonio"
+		location = 10466
+		division_template = "Civilian Militia"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "Civilian Militia San Antonio"
+		location = 10464
+		division_template = "Civilian Militia"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "Civilian Militia San Antonio"
+		location = 10460
+		division_template = "Civilian Militia"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "Civilian Militia Austin"
+		location = 10491
+		division_template = "Civilian Militia"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "Civilian Militia Austin"
+		location = 10490
+		division_template = "Civilian Militia"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "Civilian Militia Austin"
+		location = 10494
+		division_template = "Civilian Militia"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "Civilian Militia Austin"
+		location = 10495
+		division_template = "Civilian Militia"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "Civilian Militia Austin"
+		location = 10493
+		division_template = "Civilian Militia"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "Civilian Militia Austin"
+		location = 10499
+		division_template = "Civilian Militia"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "Civilian Militia San Marcos"
+		location = 2486
+		division_template = "Civilian Militia"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "Civilian Militia Fredericksburg"
+		location = 3929
+		division_template = "Civilian Militia"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "Civilian Militia Houston"
+		location = 11380
+		division_template = "Civilian Militia"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "Civilian Militia Houston"
+		location = 11382
+		division_template = "Civilian Militia"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "Civilian Militia Houston"
+		location = 11515
+		division_template = "Civilian Militia"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "Civilian Militia Houston"
+		location = 10469
+		division_template = "Civilian Militia"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "Civilian Militia Houston"
+		location = 10468
+		division_template = "Civilian Militia"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "Civilian Militia Houston"
+		location = 10465
+		division_template = "Civilian Militia"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "Civilian Militia Houston"
+		location = 10615
+		division_template = "Civilian Militia"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "Civilian Militia Houston"
+		location = 6934
+		division_template = "Civilian Militia"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.5
+	}
+}

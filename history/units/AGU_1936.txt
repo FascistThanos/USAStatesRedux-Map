@@ -49,3 +49,12 @@ division_template = {
 	}
 	priority = 0
 }
+units = {
+	division= {	
+		name = "Capitol Garrison"
+		location = 462
+		division_template = "Garrison Brigade" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}			
+}

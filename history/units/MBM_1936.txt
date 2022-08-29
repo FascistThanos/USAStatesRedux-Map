@@ -49,3 +49,20 @@ division_template = {
 	}
 	priority = 0
 }
+units = {
+	## 10th Miltary District ##
+	division= {	
+		name = "1st District Militia"
+		location = 11299  # Winnepeg
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	division= {	
+		name = "1st District Cavalry"
+		location = 11303  # Winnepeg
+		division_template = "Cavalry Division" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}			
+}

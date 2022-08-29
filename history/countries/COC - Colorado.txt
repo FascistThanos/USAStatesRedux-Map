@@ -1,4 +1,4 @@
-﻿capital = 55
+﻿capital = 634
 
 oob = "COC_1936"
 

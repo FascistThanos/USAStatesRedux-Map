@@ -49,3 +49,15 @@ division_template = {
 	}
 	priority = 0
 }
+units = {
+	##### Royal Canadian Army #####
+	## 7th Miltary District ##
+	division= {	
+		name = "1st District Militia"
+		location = 1062 # St Johns
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}				
+}

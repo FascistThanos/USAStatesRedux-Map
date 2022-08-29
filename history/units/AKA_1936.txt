@@ -49,3 +49,22 @@ division_template = {
 	}
 	priority = 0
 }
+units = {
+	### Alaska Defense Command ###
+	division = {
+		name = "Alaska Defense Command"
+		location = 11338
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.15
+
+	}
+	division= {
+		name = "Juneau Defense Command"
+		location = 11353
+		division_template = "Garrison Brigade"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.15
+
+	}
+}

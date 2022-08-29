@@ -1,0 +1,59 @@
+﻿division_template = {
+	name = "Civilian Militia"
+	is_locked = yes
+	regiments = {
+		infantry = {
+			x = 0
+			y = 0
+		}
+	  	infantry = {
+			x = 1
+			y = 0
+	  	}
+	  	infantry = {
+			x = 0
+			y = 1
+	 	}
+	  	infantry = {
+			x = 1
+			y = 1
+	  	}
+	}
+}
+units = {
+	division = {
+		name = "Civilian Conscript"
+		location = 11449
+		division_template = "Civilian Militia"
+	}
+	division = {
+		name = "Civilian Conscript"
+		location = 10857
+		division_template = "Civilian Militia"
+	}
+	division = {
+		name = "Civilian Conscript"
+		location = 10814
+		division_template = "Civilian Militia"
+	}
+	division = {
+		name = "Civilian Conscript"
+		location = 10808
+		division_template = "Civilian Militia"
+	}
+	division = {
+		name = "Civilian Conscript"
+		location = 5680
+		division_template = "Civilian Militia"
+	}
+	division = {
+		name = "Civilian Conscript"
+		location = 5802
+		division_template = "Civilian Militia"
+	}
+	division = {
+		name = "Civilian Conscript"
+		location = 5668
+		division_template = "Civilian Militia"
+	}
+}

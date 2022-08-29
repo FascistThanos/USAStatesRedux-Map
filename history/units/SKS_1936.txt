@@ -49,3 +49,13 @@ division_template = {
 	}
 	priority = 0
 }
+units = {
+	##### Royal Canadian Army #####
+	division= {	
+		name = "1st District Cavalry"
+		location = 11310  # Regina SASK
+		division_template = "Cavalry Division" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}			
+}

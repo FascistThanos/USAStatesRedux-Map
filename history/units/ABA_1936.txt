@@ -49,3 +49,15 @@ division_template = {
 	}
 	priority = 0
 }
+units = {
+	##### Royal Canadian Army #####
+	## 1st Miltary District ##
+	division= {	
+		name = "1st District Cavalry"
+		location = 11335  # Calgary ALB
+		division_template = "Cavalry Division" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}			
+}
