@@ -4,8 +4,7 @@ state={
 	history={
 		owner = ALA
 		buildings = {
-			infrastructure = 1
-
+			infrastructure = 4
 		}
 		victory_points = {
 			3773 5
@@ -16,8 +15,8 @@ state={
 	provinces={
 		940 1894 3096 3760 3773 4225 6628 6656 6697 6736 
 	}
-	manpower=1
+	manpower=191224
 	buildings_max_level_factor=1.000
-	local_supplies=0.000
-	state_category = wasteland
+	local_supplies=8.000
+	state_category = city
 }
