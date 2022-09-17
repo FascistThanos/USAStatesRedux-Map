@@ -4,10 +4,12 @@ state={
 	history={
 		owner = MSM
 		buildings = {
-			infrastructure = 1
+			infrastructure = 3
 			11386 = {
 				naval_base = 4
 			}
+			industrial_complex = 2
+			arms_factory = 2
 		}
 		victory_points = {
 			10470 15
@@ -36,8 +38,8 @@ state={
 	provinces={
 		10458 10470 10497 10498 10507 11386 11390 
 	}
-	manpower=1
+	manpower=115221
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
-	state_category = wasteland
+	state_category = small_city
 }
