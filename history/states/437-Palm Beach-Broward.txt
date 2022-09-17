@@ -4,7 +4,7 @@ state={
 	history={
 		owner = FLF
 		buildings = {
-			infrastructure = 1
+			infrastructure = 3
 			industrial_complex = 2
 			arms_factory = 1
 		}
@@ -32,8 +32,8 @@ state={
 	provinces={
 		4322 7220 10392 10439 10440 10441 
 	}
-	manpower=1
+	manpower=79989
 	buildings_max_level_factor=1.000
-	local_supplies=0.000
-	state_category = wasteland
+	local_supplies=8.000
+	state_category = small_city
 }

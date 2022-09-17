@@ -6,8 +6,7 @@ state={
 	history={
 		owner = FLF
 		buildings = {
-			infrastructure = 1
-
+			infrastructure = 3
 		}
 		victory_points = {
 			26 5
@@ -19,8 +18,8 @@ state={
 	provinces={
 		26 1550 2216 7104 7124 7131 7145 7151 10294 
 	}
-	manpower=1
+	manpower=62114
 	buildings_max_level_factor=1.000
-	state_category=wasteland
-	local_supplies=0.000
+	state_category=town
+	local_supplies=3.000
 }
