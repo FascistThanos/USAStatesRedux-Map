@@ -4,18 +4,17 @@ state={
 	history={
 		owner = SON
 		buildings = {
-			infrastructure = 1
-			industrial_complex = 3
-			arms_factory = 2
+			infrastructure = 3
+			industrial_complex = 1
+			arms_factory = 1
 		}
 		add_core_of = SON
-
 	}
 	provinces={
 		1128 2467 2801 2935 3194 3728 3907 3924 6910 6923 6931 6988 7011 7014 7034 
 	}
-	manpower=1
+	manpower=103254
 	buildings_max_level_factor=1.000
-	local_supplies=0.000
-	state_category = wasteland
+	local_supplies=5.000
+	state_category = large_town
 }

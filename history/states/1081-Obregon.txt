@@ -4,9 +4,8 @@ state={
 	history={
 		owner = SON
 		buildings = {
-			infrastructure = 1
-			industrial_complex = 2
-			arms_factory = 1
+			infrastructure = 2
+			industrial_complex = 1
 			3755 = {
 				naval_base = 4
 			}
@@ -17,8 +16,8 @@ state={
 	provinces={
 		1247 3755 3936 4212 7035 7041 7053 7060 7077 7087 7105 7111 
 	}
-	manpower=1
+	manpower=36451
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
-	state_category = wasteland
+	state_category = rural
 }
