@@ -282,7 +282,7 @@ equipments = {
 
 		#Misc Abilities
 		maximum_speed = 12
-
+		reliability = 0.8
 		#Defensive Abilities
 		defense = 5
 		breakthrough = 36
@@ -312,7 +312,7 @@ equipments = {
 
 		#Misc Abilities
 		maximum_speed = 14
-
+		reliability = 0.8
 		#Defensive Abilities
 		defense = 6
 		breakthrough = 46
@@ -389,7 +389,7 @@ equipments = {
 		
 		#Misc Abilities
 		maximum_speed = 12
-
+		reliability = 0.8
 		#Defensive Abilities
 		defense = 5
 		breakthrough = 2.5
@@ -422,7 +422,7 @@ equipments = {
 		
 		#Misc Abilities
 		maximum_speed = 14
-
+		reliability = 0.8
 		#Defensive Abilities
 		defense = 7
 		breakthrough = 3.5
@@ -496,7 +496,7 @@ equipments = {
 		
 		#Misc Abilities
 		maximum_speed = 12
-
+		reliability = 0.8
 
 		#Defensive Abilities
 		defense = 5
@@ -531,7 +531,7 @@ equipments = {
 
 		#Misc Abilities
 		maximum_speed = 14
-
+		reliability = 0.8
 		#Defensive Abilities
 		defense = 7
 		breakthrough = 1.8
@@ -605,7 +605,7 @@ equipments = {
 		
 		#Misc Abilities
 		maximum_speed = 12
-
+		reliability = 0.8
 		#Defensive Abilities
 		defense = 2.5
 		breakthrough = 2.5
@@ -626,7 +626,7 @@ equipments = {
 
 	light_tank_aa_equipment_3 = {
 		year = 1941
-
+		reliability = 0.8
 		archetype = light_tank_aa_chassis
 		parent = light_tank_aa_equipment_2
 #		family = light_tank_equipment_3
@@ -712,7 +712,7 @@ equipments = {
 						
 		#Misc Abilities
 		maximum_speed = 9
-
+		reliability = 0.8
 		#Defensive Abilities
 		defense = 7
 		breakthrough = 51
@@ -744,7 +744,7 @@ equipments = {
 		
 		#Misc Abilities
 		maximum_speed = 10
-
+		reliability = 0.8
 		#Defensive Abilities
 		defense = 9
 		breakthrough = 66
@@ -821,7 +821,7 @@ equipments = {
 
 		#Misc Abilities
 		maximum_speed = 9
-
+		reliability = 0.8
 		#Defensive Abilities
 		defense = 6
 		breakthrough = 3
@@ -855,7 +855,7 @@ equipments = {
 
 		#Misc Abilities
 		maximum_speed = 10
-
+		reliability = 0.8
 		#Defensive Abilities
 		defense = 7
 		breakthrough = 4
@@ -932,7 +932,7 @@ equipments = {
 
 		#Misc Abilities
 		maximum_speed = 9
-
+		reliability = 0.8
 		#Defensive Abilities
 		defense = 6
 		breakthrough = 1.5
@@ -968,7 +968,7 @@ equipments = {
 
 		#Misc Abilities
 		maximum_speed = 10
-
+		reliability = 0.8
 		#Defensive Abilities
 		defense = 7
 		breakthrough = 1.8
@@ -1045,7 +1045,7 @@ equipments = {
 
 		#Misc Abilities
 		maximum_speed = 9
-		
+		reliability = 0.8		
 		#Defensive Abilities
 		defense = 3
 		breakthrough = 3
@@ -1081,7 +1081,7 @@ equipments = {
 		
 		#Misc Abilities
 		maximum_speed = 10
-		
+		reliability = 0.8		
 		#Defensive Abilities
 		defense = 3.5
 		breakthrough = 3.5
@@ -1159,7 +1159,7 @@ equipments = {
 		
 		#Misc Abilities
 		maximum_speed = 6
-
+		reliability = 0.8
 		#Defensive Abilities
 		defense = 8
 		breakthrough = 52
@@ -1190,7 +1190,7 @@ equipments = {
 
 		#Misc Abilities
 		maximum_speed = 6
-
+		reliability = 0.8
 		#Defensive Abilities
 		defense = 9
 		breakthrough = 67
@@ -1265,7 +1265,7 @@ equipments = {
 
 		#Misc Abilities
 		maximum_speed = 6
-
+		reliability = 0.8
 		#Defensive Abilities
 		defense = 6
 		breakthrough = 3
@@ -1298,7 +1298,7 @@ equipments = {
 
 		#Misc Abilities
 		maximum_speed = 6
-
+		reliability = 0.8
 		#Defensive Abilities
 		defense = 7
 		breakthrough = 3.5
@@ -1371,7 +1371,7 @@ equipments = {
 
 		#Misc Abilities
 		maximum_speed = 6
-
+		reliability = 0.8
 		#Defensive Abilities
 		defense = 6
 		breakthrough = 1.5
@@ -1406,7 +1406,7 @@ equipments = {
 		
 		#Misc Abilities
 		maximum_speed = 6
-
+		reliability = 0.8
 		#Defensive Abilities
 		defense = 7
 		breakthrough = 1.8
@@ -1482,7 +1482,7 @@ equipments = {
 
 		#Misc Abilities
 		maximum_speed = 6
-
+		reliability = 0.8
 		#Defensive Abilities
 		defense = 3
 		breakthrough = 3
@@ -1927,7 +1927,7 @@ equipments = {
 
 		#Misc Abilities
 		maximum_speed = 8
-
+		reliability = 0.8
 		#Defensive Abilities
 		defense = 5
 		breakthrough = 36
