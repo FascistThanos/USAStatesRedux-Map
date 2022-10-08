@@ -55,7 +55,7 @@ units = {
 	division= {			
 		name = "1st Idahoan National Guard"		
 		location = 11143
-		division_template = "National Guard Division"
+		division_template = "Infantry Division"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
 	}

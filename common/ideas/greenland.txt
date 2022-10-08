@@ -356,7 +356,7 @@ ideas = {
 					maximum_speed = 0.05
 					breakthrough = 0.05
 				}
-				mechanized = {
+				mechanized_equipment = {
 					build_cost_ic = -0.10
 					reliability = 0.05
 					maximum_speed = 0.05
