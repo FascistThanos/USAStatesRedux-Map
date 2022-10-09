@@ -130,16 +130,6 @@ units = {
 		start_equipment_factor = 0.9
 	}
 }
-air_wings = {
-	### I. Airwing -- Fresno ###
-	738 = {
-		# Jagdgeschwader 232
-		fighter_equipment_0 =  {		# He 51
-			owner = "CAC"
-			amount = 70
-		}
-	}
-}
 
 #########################
 ## STARTING PRODUCTION ##

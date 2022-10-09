@@ -35,18 +35,10 @@ units = {
 	  task_force = {
 		location = 10579 # San Diego
 		ship = { name = "NCS Lexington" definition = carrier equipment = { carrier_1 = { amount = 1 owner = USA } }
-		  air_wings = {
-			cv_fighter_equipment_0 =  { owner = "USA" amount = 8 } # historical: 16
-			cv_CAS_equipment_1 =  { owner = "USA" amount = 14 } # historical: 30
-			cv_nav_bomber_equipment_1 =  { owner = "USA" amount = 8 } # historical: 12
-		  }
+		  
 		}
 		ship = { name = "NCS Saratoga" definition = carrier equipment = { carrier_1 = { amount = 1 owner = USA } }
-		  air_wings = {
-			cv_fighter_equipment_0 =  { owner = "USA" amount = 8 } # historical: 16
-			cv_CAS_equipment_1 =  { owner = "USA" amount = 14 } # historical: 30
-			cv_nav_bomber_equipment_1 =  { owner = "USA" amount = 8 } # historical: 12
-		  }
+		  
 		}
 	  }
 	}

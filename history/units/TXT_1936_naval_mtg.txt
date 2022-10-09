@@ -16,16 +16,6 @@ units = {
 						version_name = "Houston Class"
 					}
 				}
-				air_wings = {
-					cv_fighter_equipment_1 = {
-						owner = "USA"
-						amount = 22
-					}
-					cv_nav_bomber_equipment_1 = {
-						owner = "USA"
-						amount = 16
-					}
-				}
 			}
 			ship = {
 				name = "TXS Archer"
@@ -38,16 +28,7 @@ units = {
 						version_name = "Houston Class"
 					}
 				}
-				air_wings = {
-					cv_fighter_equipment_1 = {
-						owner = "USA"
-						amount = 25
-					}
-					cv_nav_bomber_equipment_1 = {
-						owner = "USA"
-						amount = 12
-					}
-				}
+				
 			}
 			ship = {
 				name = "TXS Invincible"

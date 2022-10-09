@@ -11,16 +11,6 @@ navy = {
 				owner = TXT
 			}
 		}
-		air_wings = {
-			cv_fighter_equipment_0 = {
-				owner = "TXT"
-				amount = 9
-			}
-			cv_nav_bomber_equipment_1 = {
-				owner = "TXT"
-				amount = 24
-			}
-		}
 	}
 	ship = {
 		name = "TXS Dallas"
