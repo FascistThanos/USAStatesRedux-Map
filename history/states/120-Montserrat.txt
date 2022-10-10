@@ -4,7 +4,7 @@ state={
 	history={
 		owner = MNT
 		buildings = {
-			infrastructure = 1
+			infrastructure = 2
 			industrial_complex = 1
 			8215 = {
 				naval_base = 3
@@ -12,11 +12,11 @@ state={
 		}
 		add_core_of = MNT
 	}
-	manpower=1
-	state_category=wasteland
+	manpower=12716
+	state_category=pastoral
 	provinces={
 		8215
 	}
 
-	local_supplies=1.000
+	local_supplies=0.000
 }
