@@ -6,7 +6,7 @@ state={
 	history={
 		owner = BAH
 		buildings = {
-			infrastructure = 1
+			infrastructure = 3
 			industrial_complex = 2
 			arms_factory = 1
 			1627 = {
@@ -20,8 +20,8 @@ state={
 	provinces={
 		1627 7282 7283 7299 7300 11663 11664 11665 11666 11667 11668 11669 11670 11671 
 	}
-	manpower=1
+	manpower=64337
 	buildings_max_level_factor=1.000
-	state_category=wasteland
-	local_supplies=1.000
+	state_category=town
+	local_supplies=3.000
 }
