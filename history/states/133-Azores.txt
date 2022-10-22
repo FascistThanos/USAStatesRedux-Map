@@ -10,16 +10,16 @@ state={
 	history={
 		owner = AZO
 		buildings = {
-			infrastructure = 1
+			infrastructure = 4
 		}
 		add_core_of = AZO
 	}
-	manpower=1
-	state_category=wasteland
+	manpower=270394
+	state_category=large_city
 	provinces={
 		3181 7017 7039 7052 7068 7082 7094 8164 8167
 	}
 
 	buildings_max_level_factor=1.000
-	local_supplies=1.000
+	local_supplies=10.000
 }
