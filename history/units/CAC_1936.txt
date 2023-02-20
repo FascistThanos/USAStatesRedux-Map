@@ -162,22 +162,22 @@ instant_effect = {
 		progress = 0.3
 		efficiency = 5
 	}
-	add_equipment_production = {
-		equipment = {
-			type = fighter_equipment_1
-			creator = "CAC"
-		}
-		requested_factories = 1
-		progress = 0.15
-		efficiency = 5
-	}
-	add_equipment_production = {
-		equipment = {
-			type = CAS_equipment_1
-			creator = "CAC"
-		}
-		requested_factories = 1
-		progress = 0.2
-		efficiency = 5
-	}
+	#add_equipment_production = {
+	#	equipment = {
+	#		type = fighter_equipment_1
+	#		creator = "CAC"
+	#	}
+	#	requested_factories = 1
+	#	progress = 0.15
+	#	efficiency = 5
+	#}
+	#add_equipment_production = {
+	#	equipment = {
+	#		type = CAS_equipment_1
+	#		creator = "CAC"
+	#	}
+	#	requested_factories = 1
+	#	progress = 0.2
+	#	efficiency = 5
+	#}
 }
