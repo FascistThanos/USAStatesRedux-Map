@@ -49,3 +49,97 @@ division_template = {
 	}
 	priority = 0
 }
+units = {
+	### 1st Army -- note: Armies only paper organizations in 1936 ###
+	# I Army Corps
+	division= {
+		name = "1st Alabama National Guard"
+		location = 3528
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	division= {
+		name = "2nd Alabama National Guard"
+		location = 3528
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	division= {
+		name = "3rd Alabama National Guard"
+		location = 10516
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	division= {
+		name = "4th Alabama National Guard"
+		location = 10594
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	division= {
+		name = "Reserve Garrison"
+		location = 10594
+		division_template = "Garrison Brigade"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	division= {
+		name = "Reserve Garrison"
+		location = 10642
+		division_template = "Garrison Brigade"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	division= {
+		name = "Cavalry Division"
+		location = 10514
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+}
+#########################
+## STARTING PRODUCTION ##
+#########################
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "ALA"
+		}
+		requested_factories = 1
+		progress = 0.1
+		efficiency = 5
+	}
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "ALA"
+		}
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 5
+	}
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+			creator = "ALA"
+		}
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 5
+	}
+	add_equipment_production = {
+		equipment = {
+			type = fighter_equipment_1
+			creator = "ALA"
+		}
+		requested_factories = 1
+		progress = 0.15
+		efficiency = 5
+	}
+}

@@ -49,3 +49,48 @@ division_template = {
 	}
 	priority = 0
 }
+units = {
+	# I Army Corps #
+	division= {
+		name = "1st New Jersey National Unit"
+		location = 2577
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	division= {
+		name = "2nd New Jersey National Unit"
+		location = 10936
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	division= {
+		name = "3rd New Jersey National Unit"
+		location = 5393
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	division= {
+		name = "4th New Jersey National Unit"
+		location = 10939
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	division= {
+		name = "5th New Jersey National Unit"
+		location = 3984
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	division= {
+		name = "6th New Jersey National Unit"
+		location = 3583
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+}

@@ -49,3 +49,12 @@ division_template = {
 	}
 	priority = 0
 }
+units = {
+	division= {
+		name = "1st Newfoundland Cavalry Brigade"
+		location = 6882
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+}

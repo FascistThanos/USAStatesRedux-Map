@@ -49,3 +49,37 @@ division_template = {
 	}
 	priority = 0
 }
+units = {
+	##### Royal Canadian Army #####
+	## 1st Miltary District ##
+	division= {	
+		name = "1st District Militia"
+		location = 11476
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	## 2nd Miltary District ##
+	division= {	
+		name = "2nd District Militia"
+		location = 11129
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	division= {	
+		name = "2nd District Cavalry"
+		location = 11196
+		division_template = "Cavalry Division" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	## 3rd Miltary District ##
+	division= {	
+		name = "3rd District Militia"
+		location = 11197
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+}

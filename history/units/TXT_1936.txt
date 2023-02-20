@@ -49,3 +49,111 @@ division_template = {
 	}
 	priority = 0
 }
+units = {
+	### 1st Army -- note: Armies only paper organizations in 1936 ###
+	# I Army Corps #
+	division= {
+		name = "1st Texan National Guard"
+		location = 10528
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	division= {
+		name = "2nd Texan National Guard"
+		location = 10524
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	division= {
+		name = "3rd Texan National Guard"
+		location = 11512
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	division= {
+		name = "4th Texan National Guard"
+		location = 11380
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	division= {
+		name = "5th Texan National Guard"
+		location = 10568
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	division= {
+		name = "6th Texan National Guard"
+		location = 11520
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	division= {
+		name = "1st 'Indianhead' Division"
+		location = 2308
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	division= {
+		name = "1st Cavalry 'The 1st Team' Division"
+		location = 10491
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.3
+	}
+}
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "TXT"
+		}
+		requested_factories = 3
+		progress = 0
+		efficiency = 35
+	}
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+			creator = "TXT"
+		}
+		requested_factories = 1
+		progress = 0
+		efficiency = 15
+	}
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "TXT"
+		}
+		requested_factories = 1
+		progress = 0
+		efficiency = 30
+	}
+	add_equipment_production = {
+		equipment = {
+			type = motorized_equipment_1
+			creator = "TXT"
+		}
+		requested_factories = 1
+		progress = 0
+		efficiency = 47
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_carrier_1
+			creator = "TXT"
+			version_name = "Houston Class"
+		}
+		requested_factories = 5
+		progress = 0.23
+		efficiency = 5
+	}
+}

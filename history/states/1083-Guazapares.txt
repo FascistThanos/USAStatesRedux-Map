@@ -4,17 +4,15 @@ state={
 	history={
 		owner = CIA
 		buildings = {
-			infrastructure = 1
-
+			infrastructure = 2
 		}
 		add_core_of = CIA
-
 	}
 	provinces={
 		7195 7217 
 	}
-	manpower=1
+	manpower=12314
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
-	state_category = wasteland
+	state_category = pastoral
 }

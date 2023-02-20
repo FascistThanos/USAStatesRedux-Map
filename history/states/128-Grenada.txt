@@ -6,7 +6,7 @@ state={
 	history={
 		owner = GND
 		buildings = {
-			infrastructure = 1
+			infrastructure = 3
 			industrial_complex = 1
 			8228 = {
 				naval_base = 3
@@ -19,8 +19,8 @@ state={
 	provinces={
 		8228 11623 
 	}
-	manpower=1
+	manpower=69344
 	buildings_max_level_factor=1.000
-	state_category=wasteland
-	local_supplies=1.000
+	state_category=town
+	local_supplies=3.000
 }

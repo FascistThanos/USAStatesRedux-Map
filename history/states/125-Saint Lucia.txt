@@ -6,7 +6,7 @@ state={
 	history={
 		owner = STL
 		buildings = {
-			infrastructure = 1
+			infrastructure = 3
 			industrial_complex = 1
 			11641 = {
 				naval_base = 3
@@ -19,8 +19,8 @@ state={
 	provinces={
 		8221 11638 11639 11641 
 	}
-	manpower=1
+	manpower=60809
 	buildings_max_level_factor=1.000
-	state_category=wasteland
-	local_supplies=1.000
+	state_category=town
+	local_supplies=3.000
 }

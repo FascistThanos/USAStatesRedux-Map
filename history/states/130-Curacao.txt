@@ -6,7 +6,7 @@ state={
 	history={
 		owner = CRC
 		buildings = {
-			infrastructure = 1
+			infrastructure = 3
 			industrial_complex = 1
 			8226 = {
 				naval_base = 2
@@ -19,8 +19,8 @@ state={
 	provinces={
 		8226 11624 11625 
 	}
-	manpower=1
+	manpower=83200
 	buildings_max_level_factor=1.000
-	state_category=wasteland
-	local_supplies=1.000
+	state_category=town
+	local_supplies=3.000
 }

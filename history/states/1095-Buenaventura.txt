@@ -1,23 +1,19 @@
-
 state={
 	id=1095
 	name="Buenaventura"
-
 	history={
 		owner = CIA
 		buildings = {
-			infrastructure = 1
-
+			infrastructure = 2
 		}
 		add_core_of = CIA
-
 	}
 
 	provinces={
 		445 1639 3001 4008 6791 6839 6851 6886 
 	}
-	manpower=1
+	manpower=36512
 	buildings_max_level_factor=1.000
-	state_category=wasteland
+	state_category=rural
 	local_supplies=0.000
 }

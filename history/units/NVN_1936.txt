@@ -49,3 +49,37 @@ division_template = {
 	}
 	priority = 0
 }
+units = {
+	division= {
+		name = "1st Guard of Nevada"
+		location = 10700
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	division= {
+		name = "2nd Guard of Nevada"
+		location = 10706
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	division= {
+		name = "3rd Guard of Nevada"
+		location = 10830
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	division= {
+		name =  "4th Guard of Nevada"
+		location = 10838
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+}

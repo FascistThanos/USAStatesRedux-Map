@@ -6,8 +6,7 @@ state={
 	history={
 		owner = MSM
 		buildings = {
-			infrastructure = 1
-
+			infrastructure = 3
 		}
 		victory_points = {
 			3840 10
@@ -19,8 +18,8 @@ state={
 	provinces={
 		277 605 1985 3570 3840 6627 6717 6718 6720 6757 6758 6761 
 	}
-	manpower=1
+	manpower=92554
 	buildings_max_level_factor=1.000
-	state_category=wasteland
-	local_supplies=1.000
+	state_category=town
+	local_supplies=3.000
 }

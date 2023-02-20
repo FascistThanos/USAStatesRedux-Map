@@ -1,6 +1,6 @@
 ﻿capital = 84
 
-oob = "VEC_1936"
+oob = "VER_1936"
 
 # Starting tech
 set_technology = {

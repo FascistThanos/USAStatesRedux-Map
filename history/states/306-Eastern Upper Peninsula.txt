@@ -6,6 +6,9 @@ state={
 		add_core_of = MIM
 		buildings = {
 			infrastructure = 2
+			3060 = {
+				naval_base = 1
+			}
 		}
 		victory_points = {
 			3060 5

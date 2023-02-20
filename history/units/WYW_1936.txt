@@ -49,3 +49,12 @@ division_template = {
 	}
 	priority = 0
 }
+units = {
+	division= {			
+		name = "1st Wyomingite National Guard"		
+		location = 11454
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+}

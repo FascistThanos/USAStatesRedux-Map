@@ -7,7 +7,9 @@ state={
 		owner = TXT
 		buildings = {
 			infrastructure = 5
-
+			2308 = {
+				naval_base = 4
+			}
 		}
 		victory_points = {
 			2486 5

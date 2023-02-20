@@ -7,7 +7,7 @@ state={
 	history={
 		owner = BCA
 		buildings = {
-			infrastructure = 1
+			infrastructure = 2
 			industrial_complex = 1
 			6620 = {
 				naval_base = 4
@@ -19,8 +19,8 @@ state={
 	provinces={
 		1474 1713 2535 4359 6595 6608 6620 6688 6702 6739 6775 
 	}
-	manpower=1
+	manpower=12410
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
-	state_category = wasteland
+	state_category = pastoral
 }

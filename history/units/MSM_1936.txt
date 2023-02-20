@@ -49,3 +49,13 @@ division_template = {
 	}
 	priority = 0
 }
+units = {
+	# I Army Corps #
+	division= {			
+		name = "1st Mississippian National Guard"		
+		location = 11399
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+}

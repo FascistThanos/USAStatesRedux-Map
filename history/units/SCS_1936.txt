@@ -49,3 +49,21 @@ division_template = {
 	}
 	priority = 0
 }
+units = {
+	### 1st Army -- note: Armies only paper organizations in 1936 ###
+	# I Army Corps #
+	division= {			
+		name = "1st South Carolinian National Guard"		
+		location = 2889
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	division= {			
+		name = "2nd South Carolinian National Guard"		
+		location = 3012
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+}

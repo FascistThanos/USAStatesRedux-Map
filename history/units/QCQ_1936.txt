@@ -49,3 +49,36 @@ division_template = {
 	}
 	priority = 0
 }
+units = {
+	##### Royal Canadian Army #####
+	## 4th Miltary District ##
+	division= {	
+		name = "1st Guard"
+		location = 11208 # Montreal
+		division_template = "Infantry Division" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	division= {	
+		name = "1st Régiment"
+		location = 11200 # Montreal
+		division_template = "Cavalry Division" 
+		start_experience_factor = 1.0
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "32nd Régiment"
+		location = 11202 # Montreal
+		division_template = "Cavalry Division" 
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.2
+	}
+	## 5th Miltary District ##
+	division= {	
+		name = "Les Fusiliers de Montreal"
+		location = 3654 # Quebec City
+		division_template = "Infantry Division" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+}

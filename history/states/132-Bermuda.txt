@@ -4,7 +4,7 @@ state={
 	history={
 		owner = BRM
 		buildings = {
-			infrastructure = 1
+			infrastructure = 2
 			industrial_complex = 1
 			8155 = {
 				naval_base = 2
@@ -12,12 +12,12 @@ state={
 		}
 		add_core_of = BRM
 	}
-	manpower=1
-	state_category=wasteland
+	manpower=29301
+	state_category=rural
 	provinces={
 		8155
 	}
 	
 	buildings_max_level_factor=1.000
-	local_supplies=1.000
+	local_supplies=0.000
 }

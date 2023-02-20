@@ -49,3 +49,28 @@ division_template = {
 	}
 	priority = 0
 }
+units = {
+	### 1st Army -- note: Armies only paper organizations in 1936 ###
+	# I Army Corps #
+	division= {			
+		name = "1st Oregonian National Guard"		
+		location = 11483
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	division= {			
+		name = "2nd Oregonian National Guard"		
+		location = 11211
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	division= {			
+		name = "3rd Oregonian National Guard"		
+		location = 11154
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+}

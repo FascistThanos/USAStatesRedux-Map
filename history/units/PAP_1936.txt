@@ -49,3 +49,70 @@ division_template = {
 	}
 	priority = 0
 }
+units = {
+	### 1st Army -- note: Armies only paper organizations in 1936 ###
+	# I Army Corps #
+	division= {			
+		name = "1st Pennsylvanian National Guard"		
+		location = 10869
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	division= {			
+		name = "2nd Pennsylvanian National Guard"		
+		location = 5479
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	division= {			
+		name = "3rd Pennsylvanian National Guard"		
+		location = 10874
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	division= {			
+		name = "4th Pennsylvanian National Guard"		
+		location = 10881
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	division= {			
+		name = "5th Pennsylvanian National Guard"		
+		location = 91
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	division= {			
+		name = "6th Pennsylvanian National Guard"		
+		location = 1146
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	division= {			
+		name = "7th Pennsylvanian National Guard"		
+		location = 11725
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	division= {			
+		name = "8th Pennsylvanian National Guard"		
+		location = 5306
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	division= {			
+		name = "9th Pennsylvanian National Guard"		
+		location = 5232
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+}

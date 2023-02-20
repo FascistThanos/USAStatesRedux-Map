@@ -49,3 +49,56 @@ division_template = {
 	}
 	priority = 0
 }
+units = {
+	### 1st Army -- note: Armies only paper organizations in 1936 ###
+	# I Army Corps #
+	division= {			
+		name = "1st Ohioan National Guard"		
+		location = 10816
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	division= {			
+		name = "2nd Ohioan National Guard"		
+		location = 10848
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	division= {			
+		name = "3rd Ohioan National Guard"		
+		location = 10992
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	division= {			
+		name = "4th Ohioan National Guard"		
+		location = 11767
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	division= {			
+		name = "5th Ohioan National Guard"		
+		location = 5270
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	division= {			
+		name = "6th Ohioan National Guard"		
+		location = 11766
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	division= {			
+		name = "7th Ohioan National Guard"		
+		location = 10967
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+}
