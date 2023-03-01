@@ -80,26 +80,6 @@ ideas = {
 				army_core_defence_factor = 0.15
 			}
 		}
-		TXT_idea_broken_morale = {
-
-			picture = prc_low_popular_support3
-
-			allowed = {
-				always = no
-			}
-			allowed_civil_war = {
-				always = no
-			}
-
-			removal_cost = -1
-
-			modifier = {
-				army_morale_factor = -0.1
-				army_defence_factor = -0.1
-				army_attack_factor = -0.1
-				political_power_gain = -0.5
-			}
-		}
 		TXT_idea_lowered_morale = {
 
 			picture = prc_low_popular_support2
@@ -118,26 +98,6 @@ ideas = {
 				army_defence_factor = -0.05
 				army_attack_factor = -0.075
 				political_power_gain = -0
-			}
-		}
-		TXT_idea_reconstruction = {
-
-			picture = generic_foreign_capital
-
-			allowed = {
-				always = no
-			}
-			allowed_civil_war = {
-				always = no
-			}
-
-			removal_cost = -1
-
-			modifier = {
-				production_speed_industrial_complex_factor = 0.25
-				production_speed_infrastructure_factor = 0.25
-				production_speed_bunker_factor = 0.3
-				production_speed_air_base_factor = 0.15
 			}
 		}
 		TXT_idea_rangers = {
@@ -430,8 +390,7 @@ ideas = {
 
 			modifier = {
 				army_morale_factor = 0.05
-				army_core_defence_factor = 0.10
-				democratic_drift = 0.1
+				army_core_defence_factor = 0.15
 				drift_defence_factor = 0.1
 			}
 		}
@@ -682,9 +641,26 @@ ideas = {
 				democratic_drift = 0.01
 			}
 		}
+		TXT_political_paranoia = {
+			name = "Political Paranoia"
+			picture = GFX_idea_home_of_revolution
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				democratic_drift = -0.05
+				stability_factor = -0.05
+			}
+		}
 		TXT_idea_proletarian_diplomacy = {
 
-			picture = home_of_the_revolution
+			picture = GFX_idea_home_of_revolution
 
 			allowed = {
 				always = no
@@ -923,6 +899,7 @@ ideas = {
 				infantry_equipment = {
 					build_cost_ic = -0.10
 					reliability = -0.05
+					instant = yes
 				}
 			}
 		}
@@ -1115,14 +1092,14 @@ ideas = {
 				always = no
 			}
 			allowed_civil_war = {
-				always = no
+				always = yes
 			}
 
 			removal_cost = -1
 
 			modifier = {
-				industrial_capacity_factory = 0.15
-				industrial_capacity_dockyard = 0.15
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.10
 				line_change_production_efficiency_factor = 0.2
 				industry_air_damage_factor = 0.15
 			}
@@ -1203,78 +1180,82 @@ ideas = {
 				special_forces_attack_factor = 0.15
 			}
 		}
+		##Civil War Ideas
+		TXT_idea_reconstruction = {
+
+			picture = generic_foreign_capital
+
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				production_speed_industrial_complex_factor = 0.25
+				production_speed_infrastructure_factor = 0.25
+				production_speed_bunker_factor = 0.3
+				production_speed_air_base_factor = 0.15
+			}
+		}
+		TXT_idea_broken_morale = {
+
+			picture = prc_low_popular_support3
+
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				army_morale_factor = -0.1
+				army_defence_factor = -0.1
+				army_attack_factor = -0.1
+				political_power_gain = -0.5
+			}
+		}
+		TXT_idea_license_payments = {
+			picture = idea_generic_license_production
+
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				civilian_factory_use = 2
+			}
+		}
+		TXT_idea_outsource_production = {
+			picture = idea_generic_license_production
+
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				civilian_factory_use = 3
+			}
+		}
+		
 	}
-##########Political Advisors###############
-	political_advisor = {
-		robert_bobbitt = {
-			picture = idea_robert_bobbitt
-			allowed = {
-				original_tag = TXT
-			}
-			available = {
-				if = {
-					NOT = {
-						has_autonomy_state = autonomy_supervised_state
-					}
-				}
-			}
 
-
-
-			traits = { war_industrialist }
-
-			ai_will_do = {
-			factor = 0
-			}
-
-		}
-		TXT_James_Gully= {
-
-			picture = generic_political_advisor_europe_1
-
-			allowed = {
-				original_tag = TXT
-			}
-
-			traits = { silent_workhorse }
-		}
-
-		TXT_John_Rodriguez = {
-
-			picture = generic_political_advisor_europe_2
-
-			allowed = {
-				original_tag = TXT
-			}
-
-			traits = { compassionate_gentleman }
-		}
-
-		TXT_William_Williams = {
-
-			picture = generic_army_europe_3
-
-			allowed = {
-				original_tag = TXT
-			}
-
-			traits = { war_industrialist }
-		}
-
-		TXT_ernst_wetter = {
-
-			picture = generic_political_advisor_europe_3
-
-			allowed = {
-				original_tag = TXT
-			}
-
-			traits = { backroom_backstabber }
-			ai_will_do = {
-				factor = 0
-			}
-		}
-	}
 	industrial_concern = {
 		texaco = {
 
@@ -1328,244 +1309,4 @@ ideas = {
 			}
 		}
 	}
-	theorist = {
-
-		TXT_Matthew_Ochrym = {
-
-
-			allowed = {
-				original_tag = TXT
-			}
-
-			ledger = army
-
-			picture = generic_army_europe_2
-
-			research_bonus = {
-				land_doctrine = 0.07
-			}
-
-			traits = { military_theorist }
-		}
-
-		TXT_Charles_Gills = {
-
-
-			allowed = {
-				original_tag = TXT
-			}
-
-			ledger = air
-
-			picture = generic_air_europe_1
-
-			research_bonus = {
-				air_doctrine = 0.07
-			}
-
-			traits = { air_warfare_theorist }
-		}
-	}
-	# MILITARY
-	army_chief = {
-
-		TXT_johann_august_sutter = {
-
-			picture = generic_army_europe_1
-
-			allowed = {
-				original_tag = TXT
-			}
-
-			ledger = army
-
-			traits = { army_chief_defensive_2 }
-
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		TXT_Ruth_Harvill = {
-
-			picture = generic_army_europe_1
-
-			allowed = {
-				original_tag = TXT
-			}
-
-			ledger = army
-
-			traits = { army_chief_organizational_2 }
-
-			ai_will_do = {
-				factor = 1
-			}
-		}
-	}
-
-	air_chief = {
-
-
-		TXT_carl_jacobs = {
-
-			picture = generic_air_europe_3
-
-			allowed = {
-				original_tag = TXT
-			}
-
-			ledger = air
-
-			traits = { air_chief_ground_support_2 }
-
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		TXT_James_Caver = {
-
-			picture = generic_air_europe_2
-
-			allowed = {
-				original_tag = TXT
-			}
-
-			ledger = air
-
-			traits = { air_chief_safety_2 }
-
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-	}
-
-	navy_chief = {
-
-		TXT_Jeff_von_Shao = {
-
-			picture = generic_navy_europe_2
-
-			allowed = {
-				original_tag = TXT
-			}
-
-			ledger = navy
-
-			traits = { navy_naval_air_defense_2 }
-
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		TXT_peter_Ivan = {
-
-			picture = generic_navy_europe_1
-
-			allowed = {
-				original_tag = TXT
-			}
-
-			ledger = navy
-
-			traits = { navy_chief_decisive_battle_2 }
-
-			ai_will_do = {
-				factor = 1
-			}
-		}
-	}
-
-	high_command = {
-
-		TXT_hermann_hessel = {
-
-			picture = generic_navy_europe_1
-
-			allowed = {
-				original_tag = TXT
-			}
-
-			ledger = navy
-
-			traits = { navy_amphibious_assault_2 }
-
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		TXT_Paul_Miller = {
-
-			picture = generic_army_europe_1
-
-			allowed = {
-				original_tag = TXT
-			}
-
-			ledger = army
-
-			traits = { army_artillery_2 }
-
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		TXT_Eugen_Wilson = {
-
-			picture = generic_army_europe_2
-
-			allowed = {
-				original_tag = TXT
-			}
-
-			ledger = army
-
-			traits = { army_armored_2 }
-
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		TXT_Frank_prett = {
-
-			picture = generic_air_europe_2
-
-			allowed = {
-				original_tag = TXT
-			}
-
-			ledger = air
-
-			traits = { air_air_superiority_2 }
-
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		TXT_David_Garcia = {
-
-			picture = generic_navy_europe_2
-
-			allowed = {
-				original_tag = TXT
-			}
-
-			ledger = navy
-
-			traits = { navy_capital_ship_2 }
-
-			ai_will_do = {
-				factor = 1
-			}
-		}
-	}
-
-	}
+}

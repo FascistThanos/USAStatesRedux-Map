@@ -47,6 +47,8 @@ set_popularities = {
 #Required
 ### VARIANTS ###
 # 1936 Start #
+### VARIANTS ###
+# 1936 Start #
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
 	### Ship Variants ###
@@ -172,6 +174,7 @@ if = {
 		icon = "gfx/interface/technologies/USA_basic_light_tank.dds"
 	}
 }
+
 if = {
 	limit = { has_dlc = "Man the Guns" }
 	# Submarines #
@@ -234,7 +237,7 @@ if = {
 		name_group = USA_DD_HISTORICAL
 		parent_version = 0
 		modules = {
-			fixed_ship_battery_slot = ship_light_battery_2
+			fixed_ship_battery_slot = dp_light_battery_1
 			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = ship_sonar_1
@@ -247,7 +250,7 @@ if = {
 	# Light Cruisers #
 	create_equipment_variant = {
 		name = "Omaha Class"
-		type = ship_hull_cruiser_1
+		type = ship_hull_cruiser_2
 		name_group = USA_CL_HISTORICAL
 		parent_version = 0
 		modules = {
@@ -255,7 +258,7 @@ if = {
 			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_engine_slot = cruiser_ship_engine_2
 			fixed_ship_armor_slot = ship_armor_cruiser_1
 			mid_1_custom_slot = empty
 			mid_2_custom_slot = empty
@@ -275,7 +278,7 @@ if = {
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = cruiser_ship_engine_2
 			fixed_ship_armor_slot = ship_armor_cruiser_3
-			fixed_ship_secondaries_slot = ship_secondaries_1
+			fixed_ship_secondaries_slot = dp_ship_secondaries_1
 			front_1_custom_slot = ship_light_medium_battery_2
 			mid_1_custom_slot = ship_airplane_launcher_1
 			mid_2_custom_slot = ship_anti_air_1
@@ -288,7 +291,7 @@ if = {
 		name_group = USA_MINELAYERS_HISTORICAL
 		parent_version = 0
 		modules = {
-			fixed_ship_battery_slot = ship_light_medium_battery_1
+			fixed_ship_battery_slot = dp_light_battery_1
 			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
@@ -310,7 +313,7 @@ if = {
 			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_engine_slot = cruiser_ship_engine_2
 			fixed_ship_secondaries_slot = ship_secondaries_1
 			fixed_ship_armor_slot = ship_armor_cruiser_1
 			mid_1_custom_slot = ship_medium_battery_1
@@ -329,7 +332,7 @@ if = {
 			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_engine_slot = cruiser_ship_engine_2
 			fixed_ship_secondaries_slot = ship_secondaries_1
 			fixed_ship_armor_slot = ship_armor_cruiser_2
 			mid_1_custom_slot = ship_airplane_launcher_1
@@ -369,6 +372,7 @@ if = {
 				fixed_ship_radar_slot = empty
 				fixed_ship_engine_slot = cruiser_ship_engine_2
 				fixed_ship_armor_slot = ship_armor_cruiser_3
+				fixed_ship_secondaries_slot = dp_ship_secondaries_1
 				mid_1_custom_slot = ship_airplane_launcher_1
 				mid_2_custom_slot = ship_anti_air_1
 				rear_1_custom_slot = ship_medium_battery_2
@@ -445,7 +449,7 @@ if = {
 			fixed_ship_deck_slot_2 = ship_deck_space
 			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = heavy_ship_engine_1
+			fixed_ship_engine_slot = heavy_ship_engine_2
 			fixed_ship_secondaries_slot = ship_secondaries_1
 			mid_1_custom_slot = ship_deck_space
 		}

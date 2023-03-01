@@ -131,28 +131,30 @@ create_country_leader = {
 ### Ship Variants ###
 
 create_equipment_variant = {
-	name = "Barracuda Class"
-	type = submarine_1
-	upgrades = {
-		ship_reliability_upgrade = 1
-		sub_engine_upgrade = 1
-		sub_stealth_upgrade = 1
-		sub_torpedo_upgrade = 1
+		name = "Barracuda Class"			# represents Barracuda, Dolphin, Cachalot classes
+		type = ship_hull_submarine_2
+		name_group = USA_SS_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_engine_slot = sub_ship_engine_1
+			rear_1_custom_slot = empty
+		}
+		obsolete = yes
 	}
-	obsolete = yes
-}
 
 
 create_equipment_variant = {
-	name = "Portland Class"
-	type = heavy_cruiser_1
-	upgrades = {
-		ship_reliability_upgrade = 2
-		ship_engine_upgrade = 2
-		ship_armor_upgrade = 2
-		ship_gun_upgrade = 2
+		name = "Porpoise Class"				# represents Porpoise, Shark, and Perch classes
+		type = ship_hull_submarine_2
+		name_group = USA_SS_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_engine_slot = sub_ship_engine_2
+			rear_1_custom_slot = empty
+		}
 	}
-}
 
 create_equipment_variant = {
 	name = "Pennsylvania Class"

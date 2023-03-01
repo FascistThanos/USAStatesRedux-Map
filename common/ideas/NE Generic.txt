@@ -1,0 +1,1419 @@
+ideas = {
+
+	
+	country = {
+		
+		NEG_neinitiative = {
+			picture = NEG_neinitiative
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				planning_speed = 0.2
+				ai_focus_aggressive_factor = 1
+				ai_focus_war_production_factor = 1
+				ai_join_ally_desire_factor = -10000
+				puppet_cost_factor = 3
+				weekly_manpower = 750
+			}
+		}
+		
+		NEG_neinitiative_resistance = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				required_garrison_factor = -0.5
+			}
+		}
+		
+		NEG_ne_waradj = {
+		
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = -0.15
+			}
+		}
+		
+		NEG_ne_national_pride = {
+		
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				army_core_defence_factor = 0.1
+				army_core_attack_factor = 0.1
+				political_power_gain = 0.2
+			}
+		}
+		
+		NEG_resource_extraction = {
+			picture = GFX_idea_generic_exploit_mines
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+      
+			removal_cost = -1
+			
+			modifier = {
+				local_resources_factor = 0.15
+			}
+		}
+		
+		NEG_better_space_1 = {
+			#picture = GFX_idea_generic_exploit_mines
+			name = NEG_better_space
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+      
+			removal_cost = -1
+			
+			modifier = {
+				global_building_slots_factor = 0.25
+			}
+		}
+		
+		NEG_better_space_2 = {
+			#picture = GFX_idea_generic_exploit_mines
+			name = NEG_better_space
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+      
+			removal_cost = -1
+			
+			modifier = {
+				global_building_slots_factor = 0.25
+				production_factory_efficiency_gain_factor = 0.01
+				production_factory_max_efficiency_factor = 0.1
+			}
+		}
+		
+		NEG_supply_hub = {
+			#picture = GFX_idea_generic_exploit_mines
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+      
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_supply_node_factor = 0.20
+			}
+		}
+		
+		
+		NEG_better_army_1 = {
+			#picture = GFX_idea_generic_exploit_mines
+			name = NEG_better_army
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+      
+			removal_cost = -1
+			
+			modifier = {
+				army_leader_cost_factor = -0.25
+				army_leader_start_level = 1 
+			}
+		}
+		
+		NEG_better_army_2 = {
+			#picture = GFX_idea_generic_exploit_mines
+			name = NEG_better_army
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+      
+			removal_cost = -1
+			
+			modifier = {
+				army_leader_cost_factor = -0.25
+				army_leader_start_level = 1 
+				experience_loss_factor = -0.25
+			}
+		}
+		
+		NEG_speedytanks = {
+			#picture = GFX_idea_generic_exploit_mines
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+      
+			removal_cost = -1
+			
+			modifier = {
+				army_armor_speed_factor = 0.15
+			}
+		}
+		
+		NEG_powerfultanks = {
+			#picture = GFX_idea_generic_exploit_mines
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+      
+			removal_cost = -1
+			
+			modifier = {
+				army_armor_attack_factor = 0.15
+			}
+		}
+		
+		NEG_quality_1 = {
+			#picture = GFX_idea_generic_exploit_mines
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+      
+			removal_cost = -1
+			
+			modifier = {
+				army_infantry_attack_factor = 0.1
+			}
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = 0.05 instant = yes
+					}
+			}
+		}
+		
+		NEG_quantity_1 = {
+			#picture = GFX_idea_generic_exploit_mines
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+      
+			removal_cost = -1
+			
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.08 instant = yes
+				}
+			}	
+		}
+		
+		NEG_aces = {
+			#picture = GFX_idea_generic_exploit_mines
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+      
+			removal_cost = -1
+			
+			modifier = {
+				air_ace_generation_chance_factor = 0.2
+			}
+		}
+		
+		NEG_tank_initiative1 = {
+			#picture = GFX_idea_generic_exploit_mines
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+      
+			removal_cost = -1
+			
+			modifier = {
+				army_fuel_consumption_factor = -0.2
+				breakthrough_factor = 0.3
+			}
+		}
+		
+		NEG_material_initiative = {
+			#picture = GFX_idea_generic_exploit_mines
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+      
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_factory = 0.3
+				industrial_capacity_dockyard = 0.3
+			}
+		}
+		
+		NEG_military_initiative = {
+			#picture = GFX_idea_generic_exploit_mines
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+      
+			removal_cost = -1
+			
+			modifier = {
+				army_morale_factor = 0.2
+				army_org_factor = 0.10
+			}
+		}
+
+
+		NEG_res_initiative = {
+			#picture = GFX_idea_generic_exploit_mines
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+      
+			removal_cost = -1
+			
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.1
+				production_factory_max_efficiency_factor = 0.1
+				local_resources_factor = 0.25
+				trade_opinion_factor = 0.3
+			}
+		}
+		
+		NEG_industry_initiative = {
+			#picture = GFX_idea_generic_exploit_mines
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+      
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_buildings_factor = 0.3
+			}
+		}
+		
+		NEG_research_initiative = {
+			#picture = GFX_idea_generic_exploit_mines
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+      
+			removal_cost = -1
+			
+			modifier = {
+				research_speed_factor = 0.2
+			}
+		}
+		
+		NEG_eco_initiative = {
+			#picture = GFX_idea_generic_exploit_mines
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+      
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.10
+			}
+		}
+
+		
+		NEG_air_initiative = {
+			#picture = GFX_idea_generic_exploit_mines
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+      
+			removal_cost = -1
+			
+			modifier = {
+				air_accidents_factor = -0.75
+				air_agility_factor = 0.2
+				air_attack_factor = 0.2
+				air_defence_factor = 0.2
+			}
+		}
+		
+		NEG_navy_initiative = {
+			#picture = GFX_idea_generic_exploit_mines
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+      
+			removal_cost = -1
+			
+			modifier = {
+				invasion_preparation = -0.5
+				naval_coordination = 0.3
+				naval_damage_factor = 0.2
+				naval_defense_factor = 0.2
+			}
+		}
+		
+		NEG_neg_relations_boost_minor = {
+			#picture = GFX_idea_generic_exploit_mines
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+      
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_infrastructure_factor = 0.1
+				consumer_goods_factor = -0.03
+			}
+		}
+		
+		NEG_neg_relations_boost_major = {
+			#picture = GFX_idea_generic_exploit_mines
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+      
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_infrastructure_factor = 0.2
+				consumer_goods_factor = -0.05
+			}
+		}
+		
+		NEG_improved_govt_1 = {
+			name = NEG_improved_govt
+			#picture = GFX_idea_generic_exploit_mines
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+      
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.1
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		
+		NEG_improved_govt_2 = {
+			name = NEG_improved_govt
+			#picture = GFX_idea_generic_exploit_mines
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+      
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.1
+				production_speed_buildings_factor = 0.05
+				political_advisor_cost_factor = -0.15
+				party_popularity_stability_factor = 0.15
+			}
+		}
+		
+		NEG_improved_govt_3 = {
+			name = NEG_improved_govt
+			#picture = GFX_idea_generic_exploit_mines
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+      
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.1
+				production_speed_buildings_factor = 0.05
+				political_advisor_cost_factor = -0.15
+				party_popularity_stability_factor = 0.15
+				army_core_defence_factor = 0.10
+			}
+		}
+		
+		NEG_defense_fund_idea = {
+			#picture = GFX_idea_generic_exploit_mines
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+      
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.05
+			}
+		}
+		
+		NEG_political_flex_idea = {
+			#picture = GFX_idea_generic_exploit_mines
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+      
+			removal_cost = -1
+			
+			modifier = {
+				drift_defence_factor = -0.25
+				stability_weekly = 0.01
+			}
+		}
+		
+		NEG_democratic_bedrock_idea = {
+			#picture = GFX_idea_generic_exploit_mines
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+      
+			removal_cost = -1
+			
+			modifier = {
+				democratic_drift = 0.05
+				stability_factor = 0.05
+			}
+		}
+		
+		NEG_better_rail = {
+			#picture = GFX_idea_generic_exploit_mines
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+      
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_rail_way_factor = 0.1
+				production_speed_infrastructure_factor = 0.1
+			}
+		}
+		
+		NEG_expansionism_idea = {
+			#picture = GFX_idea_generic_exploit_mines
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+      
+			removal_cost = -1
+			
+			modifier = {
+				justify_war_goal_time = -0.2
+			}
+		}
+		
+		NEG_start_minor_nation = { #THE ONE ON ALL NE NATIONS AT GAME START
+			name = NEG_minor_nation
+			picture = NEG_minor_nation_idea
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+      
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = -0.4
+				consumer_goods_factor = 0.05
+				production_speed_bunker_factor = 0.15
+				production_speed_coastal_bunker_factor = 0.15
+			}
+		}
+		
+		NEG_start_minor_nation_1A = { # A IS EMBRACE THE TRUTH
+			name = NEG_minor_nation
+			picture = NEG_minor_nation_idea
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+      
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.1
+				war_support_factor = -0.4
+				consumer_goods_factor = 0.05
+				production_speed_bunker_factor = 0.15
+				production_speed_coastal_bunker_factor = 0.15
+			}
+		}
+		
+		NEG_start_minor_nation_2A1 = { 
+			name = NEG_minor_nation
+			picture = NEG_minor_nation_idea
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+      
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.1
+				war_support_factor = -0.4
+				consumer_goods_factor = 0.05
+				production_speed_bunker_factor = 0.15
+				production_speed_coastal_bunker_factor = 0.15
+				research_speed_factor = 0.08
+			}
+		}
+		
+		NEG_start_minor_nation_3A1 = { 
+			name = NEG_minor_nation
+			picture = NEG_minor_nation_idea
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+      
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.1
+				war_support_factor = -0.2
+				consumer_goods_factor = 0.05
+				production_speed_bunker_factor = 0.15
+				production_speed_coastal_bunker_factor = 0.15
+				research_speed_factor = 0.08
+			}
+		}
+		
+		
+		NEG_start_minor_nation_2A2 = { 
+			name = NEG_minor_nation
+			picture = NEG_minor_nation_idea
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+      
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.1
+				war_support_factor = -0.4
+				consumer_goods_factor = 0.05
+				production_speed_bunker_factor = 0.15
+				production_speed_coastal_bunker_factor = 0.15
+				monthly_population = 0.25
+			}
+		}
+		
+		NEG_start_minor_nation_3A2 = { 
+			name = NEG_minor_nation
+			picture = NEG_minor_nation_idea
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+      
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.1
+				war_support_factor = -0.2
+				consumer_goods_factor = 0.05
+				production_speed_bunker_factor = 0.15
+				production_speed_coastal_bunker_factor = 0.15
+				monthly_population = 0.25
+			}
+		}
+		
+		
+		
+		
+		NEG_start_minor_nation_1B = { # B IS DREAM OUTWARDS
+			name = NEG_minor_nation
+			picture = NEG_minor_nation_idea
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+      
+			removal_cost = -1
+			
+			modifier = {
+				war_support_factor = -0.4
+				consumer_goods_factor = 0.05
+				production_speed_bunker_factor = 0.15
+				production_speed_coastal_bunker_factor = 0.15
+			}
+		}
+		
+		NEG_new_nation = {
+			name = NEG_new_nation
+			picture = GFX_idea_generic_exploit_mines
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+      
+			removal_cost = -1
+			
+			modifier = {
+				war_support_factor = -0.4
+				surrender_limit = 0.05
+				consumer_goods_factor = 0.02
+				army_core_attack_factor = 0.08
+				army_core_defence_factor = 0.08
+			}
+		}
+		
+		NEG_new_nation_1 = {
+			name = NEG_new_nation
+			picture = GFX_idea_generic_exploit_mines
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+      
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.1
+				war_support_factor = -0.4
+				surrender_limit = 0.05
+				consumer_goods_factor = 0.02
+				army_core_attack_factor = 0.08
+				army_core_defence_factor = 0.08
+			}
+		}
+		
+		NEG_not_minor_nation_3A1 = { 
+			picture = GFX_idea_generic_exploit_mines
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+      
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.15
+				production_speed_bunker_factor = 0.15
+				production_speed_coastal_bunker_factor = 0.15
+				research_speed_factor = 0.08
+			}
+		}
+	
+		NEG_not_minor_nation_3A2 = { 
+			picture = GFX_idea_generic_exploit_mines
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+      
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.15
+				production_speed_bunker_factor = 0.15
+				production_speed_coastal_bunker_factor = 0.15
+				monthly_population = 0.25
+			}
+		}
+		
+		NEG_new_nation_2 = {
+			name = NEG_new_nation
+			picture = GFX_idea_generic_exploit_mines
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+      
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.1
+				war_support_factor = -0.2
+				surrender_limit = 0.05
+				army_core_attack_factor = 0.08
+				army_core_defence_factor = 0.08
+			}
+		}
+		
+		NEG_anti_fascist = {
+			name = NEG_anti_fascist
+			picture = GFX_idea_generic_exploit_mines
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+      
+			removal_cost = -1
+			
+			modifier = {
+				fascism_drift = -0.06
+				stability_weekly = -0.02
+			}
+		}	
+		
+		NEG_anti_fascist_1 = {
+			name = NEG_anti_fascist
+			picture = GFX_idea_generic_exploit_mines
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+      
+			removal_cost = -1
+			
+			modifier = {
+				fascism_drift = -0.03
+				stability_weekly = -0.005
+			}
+		}	
+		
+		NEG_anti_fascist_2 = { #ACTUALLY PRO FASCIST 4 THE PEOPLE
+			picture = GFX_idea_generic_exploit_mines
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+      
+			removal_cost = -1
+			
+			modifier = {
+				fascism_drift = 0.04
+			}
+		}	
+		
+		NEG_fascist_spy_idea = {
+			name = NEG_fascist_spy_idea
+			picture = GFX_idea_generic_exploit_mines
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+      
+			removal_cost = -1
+			
+			modifier = {
+				decryption = 0.75
+				operative_slot = 1
+			}
+		}	
+		NEG_fascist_spy_idea_1 = {
+			name = NEG_fascist_spy_idea
+			picture = GFX_idea_generic_exploit_mines
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+      
+			removal_cost = -1
+			
+			modifier = {
+				decryption = 0.75
+				operative_slot = 1
+				decryption_power = 15
+			}
+		}	
+		
+		NEG_national_unity = {
+			picture = GFX_idea_generic_exploit_mines
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+      
+			removal_cost = -1
+			
+			modifier = {
+				drift_defence_factor = 0.25
+				stability_factor = 0.05
+			}
+		}	
+		
+		NEG_national_men_idea = {
+			name = NEG_national_men_idea
+			picture = GFX_idea_generic_exploit_mines
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+      
+			removal_cost = -1
+			
+			modifier = {
+				conscription = 0.025
+			}
+		}	
+		
+		NEG_national_men_idea_1 = {
+			name = NEG_national_men_idea
+			picture = GFX_idea_generic_exploit_mines
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+      
+			removal_cost = -1
+			
+			modifier = {
+				conscription = 0.04
+				monthly_population = 0.15
+				
+			}
+		}	
+		
+		NEG_national_economics_idea = {
+			picture = GFX_idea_generic_exploit_mines
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+      
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_buildings_factor = 0.08
+			}
+		}	
+		
+		NEG_national_banks = {
+			picture = GFX_idea_generic_exploit_mines
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+      
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.05
+			}
+		}	
+		
+		NEG_anti_communism = {
+			name = NEG_anti_communism
+			picture = GFX_idea_generic_exploit_mines
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+      
+			removal_cost = -1
+			
+			modifier = {
+				communism_drift = -0.05
+				stability_factor = -0.2
+				party_popularity_stability_factor = -4
+				political_power_gain = -1.0
+			}
+		}	
+		
+		#Brutal Opresssion
+		NEG_anti_communism_1a = { 
+			name = NEG_anti_communism
+			picture = GFX_idea_generic_exploit_mines
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+      
+			removal_cost = -1
+			
+			modifier = {
+				communism_drift = -0.02
+				stability_factor = -0.30
+				party_popularity_stability_factor = -4
+				political_power_gain = -0.6
+			}
+		}	
+		
+		#Cooperation
+		NEG_anti_communism_1b = { 
+			name = NEG_anti_communism
+			picture = GFX_idea_generic_exploit_mines
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+      
+			removal_cost = -1
+			
+			modifier = {
+				communism_drift = -0.05
+				stability_factor = -0.1
+				party_popularity_stability_factor = -1.5
+				political_power_gain = -0.8
+			}
+		}	
+		
+		#Cooperation + Revamped Economy
+		NEG_anti_communism_2ba = { 
+			name = NEG_anti_communism
+			picture = GFX_idea_generic_exploit_mines
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+      
+			removal_cost = -1
+			
+			modifier = {
+				party_popularity_stability_factor = -1.0
+				political_power_gain = -0.3
+				production_speed_buildings_factor = 0.05
+			}
+		}
+
+		#Cooperation + State Economy
+		NEG_anti_communism_2bb = { 
+			name = NEG_anti_communism
+			picture = GFX_idea_generic_exploit_mines
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+      
+			removal_cost = -1
+			
+			modifier = {
+				communism_drift = -0.01
+				stability_factor = -0.05
+				party_popularity_stability_factor = -1.2
+				political_power_gain = -0.2
+				line_change_production_efficiency_factor = 0.2
+				production_factory_efficiency_gain_factor = 0.15
+				
+			}
+		}	
+		
+		#Brutal Opression + Revamped Economy
+		NEG_anti_communism_1aa = { 
+			name = NEG_anti_communism
+			picture = GFX_idea_generic_exploit_mines
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+      
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.30
+				party_popularity_stability_factor = -4
+				political_power_gain = -0.4
+				production_speed_buildings_factor = 0.1
+			}
+		}	
+		
+		#Brutal Opression + State Economy
+		NEG_anti_communism_1ab = { 
+			name = NEG_anti_communism
+			picture = GFX_idea_generic_exploit_mines
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+      
+			removal_cost = -1
+			
+			modifier = {
+				communism_drift = 0.02
+				stability_factor = -0.15
+				party_popularity_stability_factor = -3
+				political_power_gain = -0.6
+				line_change_production_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.2
+			}
+		}	
+		
+		
+		NEG_appease_doctrine = {
+			picture = GFX_idea_generic_exploit_mines
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+      
+			removal_cost = -1
+			
+			modifier = {
+				land_doctrine_cost_factor = 1
+			}
+		}	
+		
+		NEG_appease_army = {
+			picture = GFX_idea_generic_exploit_mines
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+      
+			removal_cost = -1
+			
+			modifier = {
+				offence = -0.15
+				defence = -0.15
+				command_power_gain = -0.2
+			}
+		}	
+		
+		NEG_appease_economy = {
+			picture = GFX_idea_generic_exploit_mines
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+      
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.08
+			}
+		}	
+		
+		NEG_appease_political = {
+			picture = GFX_idea_generic_exploit_mines
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+      
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = -1.0
+			}
+		}
+		
+		NEG_communist_soldiers_idea = {
+			picture = GFX_idea_generic_exploit_mines
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+      
+			removal_cost = -1
+			
+			modifier = {
+				conscription = 0.015
+			}
+		}
+		
+		NEG_increased_gov_power = {
+			picture = GFX_idea_generic_exploit_mines
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+      
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 1
+			}
+		}
+		
+		NEG_new_com_gov = {
+			name = NEG_new_com_gov
+			picture = GFX_idea_generic_exploit_mines
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+      
+			removal_cost = -1
+			
+			modifier = {
+				communism_drift = 0.15
+			}
+		}
+		
+		NEG_new_com_gov_1 = {
+			name = NEG_new_com_gov
+			picture = GFX_idea_generic_exploit_mines
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+      
+			removal_cost = -1
+			
+			modifier = {
+				communism_drift = 0.15
+				army_core_attack_factor = 0.12
+				army_core_defence_factor = 0.12
+				
+			}
+		}
+		
+		NEG_new_com_gov_2 = {
+			name = NEG_new_com_gov
+			picture = GFX_idea_generic_exploit_mines
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+      
+			removal_cost = -1
+			
+			modifier = {
+				communism_drift = 0.15
+				army_core_attack_factor = 0.12
+				army_core_defence_factor = 0.12
+				send_volunteer_size = 2
+				send_volunteers_tension = -0.1
+			}
+		}
+		
+		NEG_communist_defense = {
+			picture = GFX_idea_generic_exploit_mines
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+      
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_bunker_factor = 0.2
+				production_speed_coastal_bunker_factor = 0.2
+				conscription = 0.02
+			}
+		}
+		
+		NEG_com_militants = {
+			picture = GFX_idea_generic_exploit_mines
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+      
+			removal_cost = -1
+			
+			modifier = {
+				conscription = 0.012
+			}
+		}
+		
+		NEG_communist_spy_idea = {
+			picture = GFX_idea_generic_exploit_mines
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+      
+			removal_cost = -1
+			
+			modifier = {
+				decryption = 0.75
+				operative_slot = 1
+			}
+		}	
+		
+		NEG_communist_puppets = {
+			picture = GFX_idea_generic_exploit_mines
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+      
+			removal_cost = -1
+			
+			modifier = {
+				puppet_cost_factor = -0.1
+				mic_to_overlord_factor = 0.1
+				cic_to_overlord_factor = 0.1
+			}
+		}	
+		
+		NEG_communist_loves_compliance = {
+			picture = GFX_idea_generic_exploit_mines
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+      
+			removal_cost = -1
+			
+			modifier = {
+				compliance_gain = 0.1
+				stability_factor = 0.1
+			}
+		}	
+		
+		
+	}
+	
+
+
+
+	

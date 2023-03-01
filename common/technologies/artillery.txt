@@ -580,19 +580,6 @@ technologies = {
 			factor = 1
 
 			modifier = {
-				factor = 0.5
-
-				OR = {
-					tag = CHI
-					tag = PRC
-					tag = XSM
-					tag = SIK
-					tag = GXC
-					tag = SHX
-					tag = YUN
-				}
-			}
-			modifier = {
 				factor = 2
 				date > "1937.1.1"
 			}
@@ -891,30 +878,6 @@ technologies = {
 
 		ai_will_do = {
 			factor = 1
-
-			modifier = {
-				factor = 0.2
-
-				OR = {
-					tag = CHI
-					tag = PRC
-					tag = XSM
-					tag = SIK
-					tag = GXC
-					tag = SHX
-					tag = YUN
-				}
-			}
-			modifier = {
-				tag = JAP
-				not = {
-					OR = {
-						has_War_with = SOV
-						has_war_with = USA
-					}
-				}
-				factor = 0.5
-			}
 			modifier = {
 				factor = 2
 				date > "1937.1.1"

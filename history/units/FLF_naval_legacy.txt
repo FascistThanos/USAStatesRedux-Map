@@ -40,7 +40,7 @@ units = {
 	}
 	fleet = {
 		name = "Gulf Cruiser Flotilla"
-		base = 6853
+		naval_base = 6853
 		task_force = {
 			location = 6853 # Miami
 			ship = { name = "FSS New Orleans" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = USA version_name = "Portland Class" } } }

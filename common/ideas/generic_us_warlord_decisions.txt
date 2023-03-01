@@ -1,0 +1,30 @@
+ideas = {
+
+	country = {
+		#Gun Buy-back Payments
+		us_anarchy_gunbuyback_payments = {
+			picture = MEX_callistas
+			
+			allowed = {
+				
+			}
+			
+			available = {
+			}
+			
+			cancel = {
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.025
+			}
+		}
+
+	}
+}

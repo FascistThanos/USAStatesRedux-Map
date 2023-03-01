@@ -1,0 +1,1683 @@
+ideas = {
+	country = {
+		COC_themightyrockies = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = generic_rockies
+			
+			modifier = {
+				political_power_factor = 0.10
+				acclimatization_cold_climate_gain_factor = 0.25
+			}
+		}
+		COC_nationalizedrockymountains = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = generic_rockies
+			
+			modifier = {
+				monthly_population = 0.05
+				political_power_factor = 0.20
+				acclimatization_cold_climate_gain_factor = 0.25
+				army_attack_factor = 0.05
+			}
+		}
+		COC_greatercolorado = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = air_war_plans_division_focus
+			
+			modifier = {
+				political_power_factor = 0.25
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+				max_surrender_limit_offset = 0.1
+			}
+		}
+		COC_thecoloradospringssocialists = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = trotskyite_plot_purged
+			
+			modifier = {
+				communism_drift = 0.01
+				stability_weekly = -0.001
+			}
+		}
+		COC_ourstruggle = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = generic_volunteer_expedition_bonus
+			
+			modifier = {
+				fascism_drift = 0.01
+				fascism_acceptance = 50
+			}
+		}
+		COC_nil_sine_numine = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = air_support_focus
+			
+			modifier = {
+				political_power_gain = 0.25
+				democratic_drift = 0.01
+				democratic_acceptance = 50
+			}
+		}
+		COC_social_democracy = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = FRA_scw_intervention_republicans_focus
+			
+			modifier = {
+				political_power_gain = 0.15
+				monthly_population = 0.10
+				consumer_goods_factor = 0.02
+				communism_drift = 0.01
+			}
+		}
+		COC_liberalism_elect = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = generic_democratic_drift_bonus
+			
+			modifier = {
+				political_power_gain = 0.05
+				consumer_goods_factor = -0.02
+				drift_defence_factor = 0.25
+				resistance_damage_to_garrison_on_our_occupied_states = 0.1
+			}
+		}
+		COC_conservatism_elect = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = FRA_scw_intervention_nationalists_focus
+			
+			modifier = {
+				political_power_gain = 0.10
+				consumer_goods_factor = -0.02
+				stability_weekly = 0.001
+				resistance_damage_to_garrison_on_our_occupied_states = 0.1
+			}
+		}
+		COC_free_markets = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = SOV_scientist_defect
+			
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.1
+				production_factory_max_efficiency_factor = 0.3
+				local_resources_factor = 0.065
+				consumer_goods_factor = -0.05
+			}
+		}
+		COC_mixed_markets = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = SOV_scientist_defect
+			
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_max_efficiency_factor = 0.10
+				consumer_goods_factor = -0.01
+				local_resources_factor = 0.025
+			}
+		}
+		COC_regulated_markets = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = SOV_scientist_defect
+			
+			modifier = {
+				research_speed_factor = 0.10
+				production_factory_efficiency_gain_factor = 0.15
+				production_factory_max_efficiency_factor = 0.05
+				production_speed_industrial_complex_factor = 0.15
+			}
+		}
+		COC_free_healthcare = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = generic_research_bonus
+			
+			modifier = {
+				monthly_population = 0.10
+				consumer_goods_factor = 0.05
+			}
+		}
+		COC_fiveyearsplan = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				monthly_population = 0.05
+				consumer_goods_factor = -0.05
+				local_resources_factor = 0.10
+				production_speed_buildings_factor = 0.10
+			}
+		}
+		COC_thrivingcannabisindustry = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = can_wartime_prices_and_trade_board
+			
+			modifier = {
+				research_speed_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_max_efficiency_factor = 0.1
+				conscription = -0.0025
+				monthly_population = 0.1
+				local_resources_factor = 0.15
+			}
+		}
+		COC_legalcannabis = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = generic_agrarian_society
+			
+			modifier = {
+				consumer_goods_factor = -0.05
+				monthly_population = 0.025
+			}
+		}
+		COC_warondrugs = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = state_economy
+			
+			modifier = {
+				stability_factor = 0.05
+				political_power_gain = 0.10
+				research_speed_factor = 0.0125
+				conscription = -0.00125
+				monthly_population = -0.01
+			}
+		}
+		COC_forge_a_great_army = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = generic_infantry_bonus
+			
+			modifier = {
+				conscription = 0.0250
+				training_time_factor = 0.05
+			}
+		}
+		COC_state_secularism = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = anti_soviet_pact
+			
+			modifier = {
+				research_speed_factor = 0.05
+				political_power_gain = 0.1
+			}
+		}
+		COC_state_evangelicalism = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = soviet_german_friendship
+			
+			modifier = {
+				monthly_population = 0.20
+				political_power_gain = -0.1
+			}
+		}
+		COC_cheap_western_lands = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = generic_trade
+			
+			modifier = {
+				civilian_factory_use = 1
+				monthly_population = 0.30
+				political_power_gain = 0.15
+				stability_factor = -0.05
+			}
+		}
+		COC_denver_space_administration = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = combined_bomber_offensive
+			
+			modifier = {
+				civilian_factory_use = 2
+				political_power_gain = 0.1
+				stability_factor = 0.05
+				research_speed_factor = 0.1
+			}
+		}
+		COC_outside_investments = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				civilian_factory_use = 3
+				political_power_gain = 0.1
+			}
+		}
+		COC_industrial_sector_preparing = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				civilian_factory_use = 5
+				consumer_goods_factor = 0.1
+			}
+		}
+		COC_coloradan_determination = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = CZE_planning_bonus
+			
+			modifier = {
+				political_power_factor = 0.05
+				consumer_goods_factor = -0.05
+				offence = 0.05
+				defence = 0.05
+				army_speed_factor = 0.05
+			}
+		}
+		COC_the_coloradan_miracle = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = soviet_german_friendship
+			
+			modifier = {
+				monthly_population = 0.25
+				research_speed_factor = 0.15
+				consumer_goods_factor = -0.1
+				production_speed_buildings_factor = 0.1
+				political_power_factor = 0.25
+				stability_factor = 0.05
+			}
+		}
+		COC_denver_patriotism = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = soviet_german_friendship
+			
+			modifier = {
+				consumer_goods_factor = -0.05
+				army_core_attack_factor = 0.10
+				army_core_defence_factor = 0.15
+				forced_surrender_limit = 1
+			}
+		}
+		COC_skeletonized_equipment = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = ast_volunteer_defence_corps
+			
+			modifier = {
+				consumer_goods_factor = -0.005
+				offence = 0.05
+				defence = -0.025
+				army_speed_factor = 0.5
+			}
+		}
+		COC_true_mobility = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = FRA_scw_intervention_nationalists_focus
+			
+			modifier = {
+				army_speed_factor = 0.1
+			}
+		}
+		COC_true_quality = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = FRA_scw_intervention_nationalists_focus
+			
+			modifier = {
+				offence = 0.1
+				defence = 0.1
+			}
+		}
+		COC_true_planning = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = FRA_scw_intervention_nationalists_focus
+			
+			modifier = {
+				planning_speed = 0.1
+				max_planning = 1
+			}
+		}
+		COC_true_numerosity = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = FRA_scw_intervention_nationalists_focus
+			
+			modifier = {
+				conscription = 0.15
+				offence = -0.05
+				defence = -0.05
+			}
+		}
+		COC_air_force_growth = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = office_of_strategic_services
+			
+			modifier = {
+				air_agility_factor = 0.05
+				air_attack_factor = 0.05
+				air_defence_factor = 0.05
+				ai_focus_aviation_factor = 0.5
+			}
+		}
+		COC_the_coloradan_army = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = country_focus_army
+			
+			modifier = {
+				offence = 0.05
+				defence = 0.05
+				conscription = 0.025
+				ai_focus_war_production_factor = 0.5
+			}
+		}
+		COC_rule_coloradia = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = air_war_plans_division_focus
+			
+			modifier = {
+				air_agility_factor = 0.2	
+				air_attack_factor = 0.2
+				air_defence_factor = 0.2
+				ai_focus_aviation_factor = 0.5
+			}
+		}
+		COC_rule_terra = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = can_send_in_the_zombies
+			
+			modifier = {	
+				offence = 0.15
+				defence = 0.15
+				conscription = 0.01
+				planning_speed = 0.05
+				max_planning = 0.25
+				army_speed_factor = 0.05
+				ai_focus_war_production_factor = 0.5
+			}
+		}
+		COC_quality_equipment = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = country_focus_efficency
+			
+			modifier = {	
+				offence = 0.05
+				defence = 0.05
+				consumer_goods_factor = 0.025
+			}
+		}
+		COC_warplans_division = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = office_of_strategic_services
+			
+			modifier = {	
+				planning_speed = 0.05
+				max_planning = 0.25
+			}
+		}
+		COC_hold_the_line = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = FRA_fortification_focus
+			
+			modifier = {	
+				defence = 0.25
+				max_planning = 0.25
+			}
+		}
+		###Ideas added by FascistThanos
+		COC_war_reps_receiver = {
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = spr_seize_the_gold_reserves
+
+			modifier = {
+				consumer_goods_factor = -0.10
+			}
+		}
+		COC_war_reps_sender = {
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = spr_relocate_the_gold_reserves
+
+			modifier = {
+				consumer_goods_factor = 0.10
+			}
+		}
+		COC_war_reps_receiver1 = {
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = spr_seize_the_gold_reserves
+
+			modifier = {
+				consumer_goods_factor = -0.05
+			}
+		}
+		COC_war_reps_sender1 = {
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = spr_relocate_the_gold_reserves
+
+			modifier = {
+				consumer_goods_factor = 0.05
+			}
+		}
+		COC_war_reps_receiver2 = {
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = spr_seize_the_gold_reserves
+
+			modifier = {
+				consumer_goods_factor = -0.15
+			}
+		}
+		COC_war_reps_sender2 = {
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = spr_relocate_the_gold_reserves
+
+			modifier = {
+				consumer_goods_factor = 0.15
+			}
+		}
+		COC_war_reps_receiver3 = {
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = spr_seize_the_gold_reserves
+
+			modifier = {
+				consumer_goods_factor = -0.20
+			}
+		}
+		COC_war_reps_sender3 = {
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = spr_relocate_the_gold_reserves
+
+			modifier = {
+				consumer_goods_factor = 0.20
+			}
+		}
+		COC_busting_unions = {
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				NOT = {
+					has_government = communism
+				}
+			}
+			removal_cost = -1
+			picture = FRA_scw_intervention_republicans_focus
+
+			modifier = {
+				production_speed_buildings_factor = -0.10
+				industrial_capacity_factory = -0.10
+				industry_free_repair_factor = 0.5
+			}
+		}
+		COC_legalized_unions = {
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = idea_por_iberian_workers_united
+
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				industrial_capacity_factory = 0.05
+				consumer_goods_factor = 0.03
+			}
+		}
+		COC_battle_for_the_nation = {
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				has_government = communism
+			}
+			removal_cost = -1
+			picture = idea_mex_revolutionary_army
+
+			modifier = {
+				army_core_attack_factor = 0.05
+				army_core_defence_factor = 0.1
+			}
+		}
+		COC_communist_spirit = {
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				has_government = communism
+			}
+			removal_cost = -1
+			picture = FRA_scw_intervention_republicans_focus
+
+			modifier = {
+				communism_drift = 0.01
+				stability_weekly = 0.005
+			}
+		}
+		COC_gender_equality_idea = {
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = generic_manpower_bonus
+
+			modifier = {
+				conscription = 0.02
+			}
+		}
+		COC_silenced_opposition = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = generic_disjointed_gov
+			
+			modifier = {
+				stability_factor = 0.10
+				communism_drift = -0.01
+				democratic_drift = -0.01
+				neutrality_drift = -0.01
+			}
+		}
+		COC_political_chaos = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = generic_disjointed_gov
+			
+			modifier = {
+				stability_factor = -0.05
+				communism_drift = -0.01
+				democratic_drift = -0.01
+				neutrality_drift = -0.01
+			}
+		}
+		COC_fascist_schools = {
+			allowed = {
+				has_government = fascism
+			}
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			removal_cost = -1
+
+			picture = generic_fascism_drift_bonus
+
+			modifier = {
+				fascism_drift = 0.01
+				research_speed_factor = 0.05
+			}
+		}
+		COC_military_schools = {
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+			picture = generic_manpower_bonus
+
+			modifier = {
+				training_time_factor = -0.10
+				resistance_damage_to_garrison = 0.15
+			}
+		}
+		COC_paramilitaries_idea = {
+			allowed = {
+				has_government = fascism
+			}
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+
+			modifier = {
+				army_core_attack_factor = 0.10
+				fascism_acceptance = 50
+				fascism_drift = 0.03
+			}
+		}
+		COC_cult_of_domesticity_idea = {
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			removal_cost = -1
+
+			picture = idea_saf_ossewabrandwag_2
+
+			modifier = {
+				monthly_population = 0.10
+				stability_weekly = 0.001
+			}
+		}
+		COC_crown_jewel_idea = {
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			removal_cost = -1
+
+			picture = generic_fascism_drift_bonus
+
+			modifier = {
+				fascism_drift = 0.01
+				drift_defence_factor = 0.50
+				max_surrender_limit_offset = 0.10
+				political_power_factor = 0.50
+				war_support_factor = 0.10
+				army_core_attack_factor = 0.15
+				army_core_defence_factor = 0.15
+			}
+		}
+		COC_dustbowl_4 = {
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = CAC_dust_bowl_migration
+			
+			modifier = {	
+				consumer_goods_factor = 0.25
+				monthly_population = -0.35
+				production_speed_buildings_factor = -0.5
+			}
+		}
+		COC_dustbowl_3 = {
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = CAC_dust_bowl_migration
+			
+			modifier = {	
+				consumer_goods_factor = 0.20
+				monthly_population = -0.30
+				production_speed_buildings_factor = -0.45
+			}
+		}
+		COC_dustbowl_2 = {
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = CAC_dust_bowl_migration
+			
+			modifier = {	
+				consumer_goods_factor = 0.15
+				monthly_population = -0.25
+				production_speed_buildings_factor = -0.40
+			}
+		}
+		COC_dustbowl_1 = {
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = CAC_dust_bowl_migration
+			
+			modifier = {	
+				consumer_goods_factor = 0.10
+				monthly_population = -0.20
+				production_speed_buildings_factor = -0.30
+			}
+		}
+		COC_dustbowl_0 = {
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = CAC_dust_bowl_migration
+			
+			modifier = {	
+				consumer_goods_factor = 0.05
+				monthly_population = -0.15
+				production_speed_buildings_factor = -0.25
+			}
+		}
+		COC_state_forestry = {
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = COC_Soil_idea
+
+			modifier = {
+				consumer_goods_factor = 0.02
+				industry_repair_factor = 0.3
+			}
+		}
+		COC_legacy_of_telluride_idea = {
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_exploit_mines
+
+			modifier = {
+				local_resources_factor = 0.10
+			}
+		}
+		COC_investing_telluride = {
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_local_self_management
+
+			modifier = {
+				civilian_factory_use = 2
+			}
+		}
+		COC_telluride_complete_idea = {
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_economic_increase
+
+			modifier = {
+				consumer_goods_factor = -0.05
+				production_speed_buildings_factor = 0.10
+				local_resources_factor = 0.05
+			}
+		}
+		COC_telluride_investment_redirected = {
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_economic_increase
+			
+			modifier = {
+				consumer_goods_factor = -0.03
+				production_speed_buildings_factor = 0.05
+				local_resources_factor = 0.05
+			}
+		}
+		COC_improved_bomber_training = {
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = man_five_year_plan_air
+
+			modifier = {
+				air_strategic_bomber_bombing_factor = 0.05
+				air_strategic_bomber_night_penalty = -0.25
+				strategic_bomb_visibility = -0.10
+			}
+			equipment_bonus = {
+				strat_bomber_equipment = {
+					air_agility = 0.25
+          			air_range = 0.15
+					air_bombing = 0.15
+				}
+			}
+		}
+		COC_expanded_bomber_training = {
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_bomber_production_diverted
+
+			modifier = {
+				air_paradrop_agility_factor = 0.25
+				air_paradrop_defence_factor = 0.25
+				out_of_supply_factor = -0.25
+			}
+		}
+		COC_shield_our_troops = {
+			allowed = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_acquire_tanks
+
+			equipment_bonus = {
+				motorized_equipment = {
+					build_cost_ic = -0.10
+					reliability = 0.05
+					armor_value = 0.10
+				}
+				armor = {
+					build_cost_ic = -0.10
+					reliability = 0.05
+					armor_value = 0.10
+				}
+			}
+		}
+		COC_serve_country_idea = {
+			allowed = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_manpower_bonus
+
+			modifier = {
+				conscription = 0.025
+			}
+		}
+		COC_strategic_capture_initiative = {
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = air_war_plans_division_focus
+
+			modifier = {
+				air_paradrop_agility_factor = 0.25
+				air_paradrop_defence_factor = 0.25
+				out_of_supply_factor = -0.25
+			}
+		}
+		COC_artillery_bonus = {
+			allowed = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_artillery_regiments
+
+			equipment_bonus = {
+				artillery = {
+					soft_attack = 0.10
+					breakthrough = 0.05
+				}
+			}
+		}
+		###Denver International Airport Ideas
+		COC_building_dia = {
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_build_infrastructure
+
+			modifier = {
+				civilian_factory_use = 5
+				political_power_gain = -0.5
+			}
+		}
+		COC_dia_over_budget = {
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = chi_hyper_inflation
+
+			modifier = {
+				civilian_factory_use = 10
+				political_power_gain = -0.75
+			}
+		}
+		COC_dia_massively_over_budget = {
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = chi_hyper_inflation2
+
+			modifier = {
+				civilian_factory_use = 15
+				political_power_gain = -1
+			}
+		}
+		COC_denver_international_airport = {
+			
+			allowed = {
+				controls_state = 879
+			}
+
+			allowed_civil_war = {
+				controls_state = 879
+			}
+
+			removal_cost = -1
+			
+			picture = CZE_planning_bonus
+			
+			modifier = {
+				political_power_factor = 0.5
+				monthly_population = 0.20
+				consumer_goods_factor = 0.05
+			}
+		}
+		COC_dia_training = {
+			allowed = {
+				controls_state = 879
+			}
+			allowed_civil_war = {
+				controls_state = 879
+			}
+
+			removal_cost = -1
+
+			picture = fra_sncaso
+
+			modifier = {
+				air_ace_generation_chance_factor = 0.10
+				air_agility_factor = 0.10
+				air_attack_factor = 0.10
+				air_defence_factor = 0.10
+				hidden_modifier = {
+					ai_focus_aviation_factor = 0.5
+				}
+			}
+		}
+		COC_dia_deployment = {
+			allowed = {
+				controls_state = 879
+			}
+			allowed_civil_war = {
+				controls_state = 879
+			}
+
+			removal_cost = -1
+
+			picture = fra_sncan
+
+			modifier = {
+				air_accidents_factor = -0.20
+				air_mission_efficiency = 0.10
+				air_night_penalty = -0.20
+				air_mission_xp_gain_factor = 0.05
+				hidden_modifier = {
+					ai_focus_aviation_factor = 0.5
+				}
+			}
+		}
+		COC_dia_trade = {
+			allowed = {
+				controls_state = 879
+			}
+			allowed_civil_war = {
+				controls_state = 879
+			}
+
+			removal_cost = -1
+
+			picture = can_wartime_prices_and_trade_board
+
+			modifier = {
+				trade_opinion_factor = 0.15
+				consumer_goods_factor = -0.10
+			}
+		}
+		COC_dia_migrants = {
+			allowed = {
+				controls_state = 879
+			}
+			allowed_civil_war = {
+				controls_state = 879
+			}
+
+			removal_cost = -1
+
+			picture = generic_manpower_bonus
+
+			modifier = {
+				monthly_population = 0.10
+				consumer_goods_factor = -0.05
+				research_speed_factor = 0.05
+			}
+		}
+		we_strikes_1 = {
+			
+			allowed = {
+				has_war = yes
+				OR = {
+					check_variable = {
+						COC.war_exhaustion_var > 0.75
+					}
+					check_variable = {
+						TXT.war_exhaustion_var > 0.65
+					}
+				}
+			}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			picture = generic_production_bonus
+			
+			modifier = {
+				consumer_goods_factor = 0.2
+				local_resources_factor = -0.2
+				industrial_capacity_factory = -0.2
+				industrial_capacity_dockyard = -0.2
+			}
+		}
+		we_strikes_2 = {
+			
+			allowed = {
+				has_war = yes
+				OR = {
+					check_variable = {
+						COC.war_exhaustion_var > 0.99
+					}
+					check_variable = {
+						TXT.war_exhaustion_var > 0.95
+					}
+				}
+			}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			picture = generic_production_bonus
+			
+			modifier = {
+				consumer_goods_factor = 0.5
+				local_resources_factor = -0.5
+				industrial_capacity_factory = -0.5
+				industrial_capacity_dockyard = -0.5
+			}
+		}
+		we_mutiny_1 = {
+			
+			allowed = {
+				has_war = yes
+				OR = {
+					check_variable = {
+						COC.war_exhaustion_var > 0.75
+					}
+					check_variable = {
+						TXT.war_exhaustion_var > 0.65
+					}
+				}
+			}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			picture = generic_army_problems
+			
+			modifier = {
+				army_morale_factor = -0.2
+				training_time_factor = 0.2
+				army_attack_factor = -0.25
+				experience_gain_army = -0.1
+				army_org_factor = -0.1
+			}
+		}
+		we_mutiny_2 = {
+			
+			allowed = {
+				has_war = yes
+				OR = {
+					check_variable = {
+						COC.war_exhaustion_var > 0.99
+					}
+					check_variable = {
+						TXT.war_exhaustion_var > 0.95
+					}
+				}
+			}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			picture = generic_army_problems
+			
+			modifier = {
+				army_morale_factor = -0.5
+				training_time_factor = 0.5
+				army_attack_factor = -0.75
+				experience_gain_army = -0.3
+				army_org_factor = -0.5
+			}
+		}
+	}
+}
