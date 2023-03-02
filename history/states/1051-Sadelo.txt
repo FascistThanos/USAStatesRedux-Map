@@ -5,7 +5,6 @@ state={
 		owner = GRN
 		buildings = {
 			infrastructure = 1
-
 		}
 		add_core_of = GRN
 
@@ -13,7 +12,7 @@ state={
 	provinces={
 		7955 7956 7957 
 	}
-	manpower=1
+	manpower=956
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
 	state_category = wasteland

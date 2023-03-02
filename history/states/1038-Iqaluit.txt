@@ -1,6 +1,6 @@
 state={
 	id=1038
-	name="Iqluit"
+	name="Iqaluit"
 	history={
 		owner = NUN
 		buildings = {
@@ -17,7 +17,7 @@ state={
 	provinces={
 		11365 11366 11367 
 	}
-	manpower=1
+	manpower=2050
 	buildings_max_level_factor=1.000
 	local_supplies=8.000
 	state_category = small_city

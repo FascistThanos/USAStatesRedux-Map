@@ -7,14 +7,13 @@ state={
 		owner = LAB
 		buildings = {
 			infrastructure = 1
-
 		}
 		add_core_of = LAB
 
 	}
 
 	provinces={
-		211 961 3578 4219 8000 8008 8019 8026 8030 10088 10124 
+		211 961 3578 4219 8000 8008 8019 8026 8030 
 	}
 	manpower=54
 	buildings_max_level_factor=1.000
