@@ -6,7 +6,7 @@ state={
 	history={
 		owner = DUR
 		buildings = {
-			infrastructure = 1
+			infrastructure = 3
 			industrial_complex = 2
 			arms_factory = 1
 		}
@@ -17,8 +17,8 @@ state={
 	provinces={
 		1442 2960 7272 7275 7292 
 	}
-	manpower=1
+	manpower=136442
 	buildings_max_level_factor=1.000
-	state_category=wasteland
-	local_supplies=1.000
+	state_category=large_town
+	local_supplies=5.000
 }
