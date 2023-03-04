@@ -4,8 +4,7 @@ state={
 	history={
 		owner = SIN
 		buildings = {
-			infrastructure = 1
-
+			infrastructure = 4
 		}
 		add_core_of = SIN
 
@@ -13,8 +12,8 @@ state={
 	provinces={
 		735 1141 3266 7298 7302 7306 7307 7316 7332 
 	}
-	manpower=1
+	manpower=191506
 	buildings_max_level_factor=1.000
-	local_supplies=0.000
-	state_category = wasteland
+	local_supplies=8.000
+	state_category = city
 }
