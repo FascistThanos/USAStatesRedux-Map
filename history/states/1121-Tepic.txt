@@ -4,7 +4,7 @@ state={
 	history={
 		owner = NAY
 		buildings = {
-			infrastructure = 1
+			infrastructure = 4
 			industrial_complex = 1
 		}
 		add_core_of = NAY
@@ -13,8 +13,8 @@ state={
 	provinces={
 		3045 7387 7419 7429 
 	}
-	manpower=1
+	manpower=154230
 	buildings_max_level_factor=1.000
-	local_supplies=0.000
-	state_category = wasteland
+	local_supplies=8.000
+	state_category = city
 }
