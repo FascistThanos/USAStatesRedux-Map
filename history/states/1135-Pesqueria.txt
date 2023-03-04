@@ -4,7 +4,7 @@ state={
 	history={
 		owner = NEL
 		buildings = {
-			infrastructure = 1
+			infrastructure = 3
 			industrial_complex = 2
 		}
 		add_core_of = NEL
@@ -13,8 +13,8 @@ state={
 	provinces={
 		160 2740 3290 3674 3853 7205 7206 7225 7243 7255 7263 
 	}
-	manpower=1
+	manpower=106241
 	buildings_max_level_factor=1.000
-	local_supplies=0.000
-	state_category = wasteland
+	local_supplies=5.000
+	state_category = large_town
 }
