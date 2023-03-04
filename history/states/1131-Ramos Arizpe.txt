@@ -4,7 +4,7 @@ state={
 	history={
 		owner = COA
 		buildings = {
-			infrastructure = 1
+			infrastructure = 4
 			industrial_complex = 1
 			arms_factory = 1
 		}
@@ -14,8 +14,8 @@ state={
 	provinces={
 		626 1804 2118 3961 7180 7199 7209 7230 7246 7258 
 	}
-	manpower=1
+	manpower=191456
 	buildings_max_level_factor=1.000
-	local_supplies=0.000
-	state_category = wasteland
+	local_supplies=8.000
+	state_category = city
 }

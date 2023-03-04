@@ -4,7 +4,7 @@ state={
 	history={
 		owner = COA
 		buildings = {
-			infrastructure = 1
+			infrastructure = 2
 
 		}
 		add_core_of = COA
@@ -13,8 +13,8 @@ state={
 	provinces={
 		661 810 2852 3261 4328 6986 7013 7026 7048 7056 7059 7066 7086 
 	}
-	manpower=1
+	manpower=16214
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
-	state_category = wasteland
+	state_category = pastoral
 }
