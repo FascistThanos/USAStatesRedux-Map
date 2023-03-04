@@ -8,6 +8,18 @@ state={
 			industrial_complex = 3
 		}
 		add_core_of = KYK
+		victory_points = {
+			10750 20
+		}
+		victory_points = {
+			10751 5
+		}
+		victory_points = {
+			10743 5
+		}
+		victory_points = {
+			10749 5
+		}
 	}
 	provinces={
 		10742 10743 10749 10750 10751 

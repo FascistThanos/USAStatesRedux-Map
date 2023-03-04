@@ -9,6 +9,9 @@ state={
 			arms_factory = 1
 		}
 		add_core_of = KYK
+		victory_points = {
+			3272 10
+		}
 	}
 	provinces={
 		3272 3931 5725 5836 

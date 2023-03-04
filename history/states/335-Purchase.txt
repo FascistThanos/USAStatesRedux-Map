@@ -7,6 +7,9 @@ state={
 			infrastructure = 3
 		}
 		add_core_of = KYK
+		victory_points = {
+			5889 5
+		}
 	}
 	provinces={
 		2478 5889 5944 5973 

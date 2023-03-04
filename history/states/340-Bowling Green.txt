@@ -7,12 +7,24 @@ state={
 			infrastructure = 2
 		}
 		add_core_of = KYK
+		victory_points = {
+			10479 20
+		}
+		victory_points = {
+			10477 5
+		}
+		victory_points = {
+			5894 5
+		}
+		victory_points = {
+			10717 5
+		}
 	}
 	provinces={
 		5894 10320 10477 10479 10717 11532 
 	}
 	manpower=120364
 	buildings_max_level_factor=1.000
-	local_supplies=0.000
+	local_supplies=8.000
 	state_category = small_city
 }
