@@ -4,7 +4,7 @@ state={
 	history={
 		owner = TAM
 		buildings = {
-			infrastructure = 1
+			infrastructure = 3
 			industrial_complex = 2
 			arms_factory = 1
 			7402 = {
@@ -20,8 +20,8 @@ state={
 	provinces={
 		3150 3613 7350 7378 7402 
 	}
-	manpower=1
+	manpower=66921
 	buildings_max_level_factor=1.000
-	local_supplies=0.000
-	state_category = wasteland
+	local_supplies=3.000
+	state_category = town
 }

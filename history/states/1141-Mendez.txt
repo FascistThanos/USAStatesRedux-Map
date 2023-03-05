@@ -4,8 +4,7 @@ state={
 	history={
 		owner = TAM
 		buildings = {
-			infrastructure = 1
-
+			infrastructure = 2
 		}
 		add_core_of = TAM
 
@@ -13,8 +12,8 @@ state={
 	provinces={
 		1386 3806 7281 
 	}
-	manpower=1
+	manpower=33652
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
-	state_category = wasteland
+	state_category = rural
 }
