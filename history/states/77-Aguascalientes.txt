@@ -4,17 +4,16 @@ state={
 	history={
 		owner = AGU
 		buildings = {
-			infrastructure = 1
+			infrastructure = 4
 			industrial_complex = 3
 			arms_factory = 1
 		}
 		add_core_of = AGU
 	}
-	manpower=1
-	state_category=wasteland
 	provinces={
 		462 7405 
 	}
-	
-	local_supplies=1.000
+	manpower=147297
+	state_category=city
+	local_supplies=8.000
 }
