@@ -1,13 +1,10 @@
-
 state={
 	id=75
 	name="Melchor Ocampo"
-
 	history={
 		owner = ZAC
 		buildings = {
-			infrastructure = 1
-
+			infrastructure = 2
 		}
 		add_core_of = ZAC
 
@@ -16,8 +13,8 @@ state={
 	provinces={
 		2448 7269 7276 7296 
 	}
-	manpower=1
+	manpower=14064
 	buildings_max_level_factor=1.000
-	state_category=wasteland
-	local_supplies=1.000
+	state_category=pastoral
+	local_supplies=0.000
 }
