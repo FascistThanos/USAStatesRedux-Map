@@ -6,7 +6,7 @@ state={
 	history={
 		owner = GAJ
 		buildings = {
-			infrastructure = 1
+			infrastructure = 4
 			industrial_complex = 1
 		}
 		add_core_of = GAJ
@@ -16,8 +16,8 @@ state={
 	provinces={
 		7462 7465 7481 
 	}
-	manpower=1
+	manpower=164288
 	buildings_max_level_factor=1.000
-	state_category=wasteland
-	local_supplies=1.000
+	state_category=city
+	local_supplies=8.000
 }
