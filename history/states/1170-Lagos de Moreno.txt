@@ -4,8 +4,7 @@ state={
 	history={
 		owner = JAL
 		buildings = {
-			infrastructure = 1
-
+			infrastructure = 2
 		}
 		add_core_of = JAL
 
@@ -13,8 +12,8 @@ state={
 	provinces={
 		1843 2549 3223 7414 7437 
 	}
-	manpower=1
+	manpower=46821
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
-	state_category = wasteland
+	state_category = rural
 }
