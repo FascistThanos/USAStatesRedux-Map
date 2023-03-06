@@ -6,7 +6,7 @@ state={
 	history={
 		owner = SLP
 		buildings = {
-			infrastructure = 1
+			infrastructure = 3
 			industrial_complex = 2
 		}
 		add_core_of = SLP
@@ -16,8 +16,8 @@ state={
 	provinces={
 		81 1529 3082 3135 7412 7425 
 	}
-	manpower=1
+	manpower=56029
 	buildings_max_level_factor=1.000
-	state_category=wasteland
-	local_supplies=1.000
+	state_category=town
+	local_supplies=3.000
 }
