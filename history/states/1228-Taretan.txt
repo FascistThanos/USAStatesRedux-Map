@@ -4,7 +4,7 @@ state={
 	history={
 		owner = MIC
 		buildings = {
-			infrastructure = 1
+			infrastructure = 5
 
 		}
 		add_core_of = MIC
@@ -13,8 +13,8 @@ state={
 	provinces={
 		2154 3647 7507 7518 7537 
 	}
-	manpower=1
+	manpower=474136
 	buildings_max_level_factor=1.000
-	local_supplies=0.000
+	local_supplies=12.000
 	state_category = wasteland
 }
