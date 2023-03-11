@@ -53,7 +53,7 @@ units = {
 	# I Army Corps #
 	division= {			
 		name = "1st National Guard"		
-		location = 7533
+		location = 1614
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3

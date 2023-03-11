@@ -6,7 +6,7 @@ state={
 	history={
 		owner = GUE
 		buildings = {
-			infrastructure = 1
+			infrastructure = 4
 			dockyard = 1
 			industrial_complex = 2
 			arms_factory = 1
@@ -18,8 +18,8 @@ state={
 	provinces={
 		1256 4143 7641 7649 7651 7659 7661 
 	}
-	manpower=1
+	manpower=261452
 	buildings_max_level_factor=1.000
-	state_category=wasteland
-	local_supplies=1.000
+	state_category=large_city
+	local_supplies=10.000
 }
