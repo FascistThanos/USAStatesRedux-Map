@@ -4,17 +4,16 @@ state={
 	history={
 		owner = MOR
 		buildings = {
-			infrastructure = 1
+			infrastructure = 4
 			industrial_complex = 1
 			arms_factory = 1
 		}
 		add_core_of = MOR
 	}
-	manpower=1
-	state_category=wasteland
 	provinces={
 		3803 7561 
 	}
-	
-	local_supplies=1.000
+	manpower=157390
+	state_category=city
+	local_supplies=8.000
 }
