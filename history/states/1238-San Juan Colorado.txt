@@ -4,7 +4,7 @@ state={
 	history={
 		owner = OAX
 		buildings = {
-			infrastructure = 1
+			infrastructure = 3
 
 		}
 		add_core_of = OAX
@@ -13,8 +13,8 @@ state={
 	provinces={
 		2827 3334 4193 7686 
 	}
-	manpower=1
+	manpower=95883
 	buildings_max_level_factor=1.000
-	local_supplies=0.000
-	state_category = wasteland
+	local_supplies=3.000
+	state_category = town
 }
