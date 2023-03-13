@@ -6,7 +6,7 @@ state={
 	history={
 		owner = CMP
 		buildings = {
-			infrastructure = 1
+			infrastructure = 2
 			industrial_complex = 3
 		}
 		add_core_of = CMP
@@ -16,8 +16,8 @@ state={
 	provinces={
 		2063 2336 2610 7493 7522 7535 
 	}
-	manpower=1
+	manpower=11206
 	buildings_max_level_factor=1.000
-	state_category=wasteland
+	state_category=pastoral
 	local_supplies=1.000
 }
