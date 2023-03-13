@@ -4,7 +4,7 @@ state={
 	history={
 		owner = GUA
 		buildings = {
-			infrastructure = 1
+			infrastructure = 3
 
 		}
 		add_core_of = GUA
@@ -13,8 +13,8 @@ state={
 	provinces={
 		3053 7653 7656 7663 
 	}
-	manpower=1
+	manpower=52164
 	buildings_max_level_factor=1.000
-	local_supplies=0.000
-	state_category = wasteland
+	local_supplies=3.000
+	state_category = town
 }

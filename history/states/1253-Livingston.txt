@@ -7,7 +7,7 @@ state={
 	history={
 		owner = GUA
 		buildings = {
-			infrastructure = 1
+			infrastructure = 4
 			976 = {
 				naval_base = 2
 			}
@@ -18,8 +18,8 @@ state={
 	provinces={
 		976 7702 7709 
 	}
-	manpower=1
+	manpower=196451
 	buildings_max_level_factor=1.000
-	local_supplies=0.000
-	state_category = wasteland
+	local_supplies=8.000
+	state_category = city
 }
