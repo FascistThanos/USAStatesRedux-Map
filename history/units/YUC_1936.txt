@@ -139,11 +139,4 @@ units = {
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
 	}
-	division = {
-		name = "3rd National Guard"
-		location = 3167
-		division_template = "Infantry Division"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
-	}
 }
