@@ -4,7 +4,7 @@ state={
 	history={
 		owner = YUC
 		buildings = {
-			infrastructure = 1
+			infrastructure = 3
 			industrial_complex = 1
 			4287 = {
 				naval_base = 4
@@ -16,8 +16,8 @@ state={
 	provinces={
 		1080 2750 4287 7469 7472 7484 
 	}
-	manpower=1
+	manpower=56012
 	buildings_max_level_factor=1.000
-	local_supplies=0.000
-	state_category = wasteland
+	local_supplies=3.000
+	state_category = town
 }
