@@ -1,6 +1,6 @@
 ﻿capital = 88
 
-oob = "CAP_1936"
+oob = "DFD_1936"
 
 set_research_slots = 4
 
