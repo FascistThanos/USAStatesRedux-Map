@@ -8,7 +8,7 @@ state={
 	history={
 		owner = ELS
 		buildings = {
-			infrastructure = 1
+			infrastructure = 5
 			industrial_complex = 1
 		}
 		add_core_of = ELS
@@ -18,8 +18,8 @@ state={
 	provinces={
 		2905 7736 10309 11634 11640 
 	}
-	manpower=1
+	manpower=462112
 	buildings_max_level_factor=1.000
-	state_category=wasteland
-	local_supplies=1.000
+	state_category=metropolis
+	local_supplies=12.000
 }
