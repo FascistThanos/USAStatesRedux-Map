@@ -7,7 +7,7 @@ state={
 	history={
 		owner = NIC
 		buildings = {
-			infrastructure = 1
+			infrastructure = 2
 
 		}
 		add_core_of = NIC
@@ -16,8 +16,8 @@ state={
 	provinces={
 		570 7754 7759 
 	}
-	manpower=1
+	manpower=39514
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
-	state_category = wasteland
+	state_category = rural
 }
