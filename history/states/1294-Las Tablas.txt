@@ -4,7 +4,7 @@ state={
 	history={
 		owner = PAN
 		buildings = {
-			infrastructure = 1
+			infrastructure = 2
 			industrial_complex = 1
 		}
 		add_core_of = PAN
@@ -13,8 +13,8 @@ state={
 	provinces={
 		164 3328 7796 7798 
 	}
-	manpower=1
+	manpower=32645
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
-	state_category = wasteland
+	state_category = rural
 }
