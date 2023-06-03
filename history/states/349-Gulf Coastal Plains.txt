@@ -10,7 +10,9 @@ state={
 
 		}
 		add_core_of = TNT
-
+		victory_points = {
+			2965 10 #Dyersburg
+		}
 	}
 
 	provinces={

@@ -11,7 +11,9 @@ state={
 
 		}
 		add_core_of = TNT
-
+		victory_points = {
+			11419 5 #Ridgeside
+		}
 	}
 	provinces={
 		1086 1610 3667 6100 6201 11419 

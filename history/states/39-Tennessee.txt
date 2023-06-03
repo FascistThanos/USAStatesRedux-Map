@@ -11,7 +11,9 @@ state={
 
 		}
 		add_core_of = TNT
-
+		victory_points = {
+			4218 5 #Johnson City
+		}
 	}
 
 	provinces={

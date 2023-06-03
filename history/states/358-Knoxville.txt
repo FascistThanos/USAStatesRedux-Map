@@ -9,7 +9,18 @@ state={
 			industrial_complex = 2
 		}
 		add_core_of = TNT
-
+		victory_points = {
+			10698 25 #Knoxville
+		}
+		victory_points = {
+			10457 5 #Belle Morris
+		}
+		victory_points = {
+			10467 10 #Asbury
+		}
+		victory_points = {
+			11422 5 #Marble City
+		}
 	}
 	provinces={
 		10457 10467 10698 11422 

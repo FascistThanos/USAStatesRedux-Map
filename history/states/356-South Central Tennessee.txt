@@ -8,10 +8,12 @@ state={
 			industrial_complex = 2
 		}
 		add_core_of = TNT
-
+		victory_points = {
+			3113 5 #McMinnville
+		}
 	}
 	provinces={
-		648 3008 3113 3411 3415 6099 6146 6192 6193 
+		648 3008 3113 3411 3415 6064 6099 6146 6192 6193 
 	}
 	manpower=107811
 	buildings_max_level_factor=1.000

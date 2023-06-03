@@ -11,7 +11,9 @@ state={
 
 		}
 		add_core_of = TNT
-
+		victory_points = {
+			6075 5 #Crossville
+		}
 	}
 	provinces={
 		720 1724 2016 2884 5983 5999 6031 6032 6037 6075 6124 

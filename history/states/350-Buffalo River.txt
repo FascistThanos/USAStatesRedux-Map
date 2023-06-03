@@ -8,7 +8,12 @@ state={
 
 		}
 		add_core_of = TNT
-
+		victory_points = {
+			6210 5 #Pulaski
+		}
+		victory_points = {
+			6160 5 #Shelbyville
+		}
 	}
 	provinces={
 		1195 6111 6119 6156 6160 6167 6182 6210 6221 

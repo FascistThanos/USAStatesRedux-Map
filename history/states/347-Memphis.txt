@@ -8,7 +8,24 @@ state={
 			industrial_complex = 3
 		}
 		add_core_of = TNT
-
+		victory_points = {
+			10657 20
+		}
+		victory_points = {
+			10574 5
+		}
+		victory_points = {
+			11416 10
+		}
+		victory_points = {
+			10670 10
+		}
+		victory_points = {
+			10675 5
+		}
+		victory_points = {
+			6155 5
+		}
 	}
 	provinces={
 		6155 10574 10657 10670 10675 11416 

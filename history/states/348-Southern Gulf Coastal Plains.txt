@@ -10,7 +10,12 @@ state={
 
 		}
 		add_core_of = TNT
-
+		victory_points = {
+			1092 5 #Collierville
+		}
+		victory_points = {
+			838 5 #Jackson
+		}
 	}
 
 	provinces={

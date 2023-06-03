@@ -9,7 +9,15 @@ state={
 			arms_factory = 1
 		}
 		add_core_of = TNT
-
+		victory_points = {
+			10462 5 #Lockeland Springs
+		}
+		victory_points = {
+			10463 5 #Talbot's Corner
+		}
+		victory_points = {
+			10703 5 #Haynes Area
+		}
 	}
 	provinces={
 		10462 10463 10582 10703 

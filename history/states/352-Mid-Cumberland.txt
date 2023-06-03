@@ -8,7 +8,9 @@ state={
 
 		}
 		add_core_of = TNT
-
+		victory_points = {
+			3164 5 #Clarksville
+		}
 	}
 	provinces={
 		1199 1718 3164 3368 4010 5966 6007 6012 6017 
