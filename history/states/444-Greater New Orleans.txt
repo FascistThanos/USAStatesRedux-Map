@@ -12,7 +12,24 @@ state={
 			}
 		}
 		add_core_of = LAL
-
+		victory_points = {
+			6906 25 #New Orleans
+		}
+		victory_points = {
+			10475 5 #Jefferson
+		}
+		victory_points = {
+			6944 5 #Chalmette
+		}
+		victory_points = {
+			10476 5 #Metairie
+		}
+		victory_points = {
+			10472 5 #Gentilly
+		}
+		victory_points = {
+			10478 5 #Kenner
+		}
 	}
 	provinces={
 		6902 6906 6944 10472 10475 10476 10478 10480 11383 11516 

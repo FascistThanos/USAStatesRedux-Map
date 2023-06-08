@@ -8,7 +8,9 @@ state={
 
 		}
 		add_core_of = MOM
-
+		victory_points = {
+			5451 5 #Kirksville
+		}
 	}
 	provinces={
 		726 1205 2021 2149 3315 3317 3463 5433 5451 5482 

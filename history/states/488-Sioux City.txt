@@ -9,7 +9,15 @@ state={
 			arms_factory = 1
 		}
 		add_core_of = IAI
-
+		victory_points = {
+			11463 20 #Sioux City
+		}
+		victory_points = {
+			11056 5 #James
+		}
+		victory_points = {
+			10601 5 #Lawton
+		}
 	}
 	provinces={
 		10601 11056 11462 11463 

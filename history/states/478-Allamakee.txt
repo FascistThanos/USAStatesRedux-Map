@@ -8,7 +8,9 @@ state={
 
 		}
 		add_core_of = IAI
-
+		victory_points = {
+			5131 10 #Waterloo
+		}
 	}
 	provinces={
 		2329 2498 3367 5057 5094 5122 5131 

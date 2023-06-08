@@ -8,7 +8,24 @@ state={
 			industrial_complex = 3
 		}
 		add_core_of = IAI
-
+		victory_points = {
+			11025 20 #Cedar Rapids
+		}
+		victory_points = {
+			11036 5 #Hiawatha
+		}
+		victory_points = {
+			11035 5 #Marion
+		}
+		victory_points = {
+			11026 5 #Bertram
+		}
+		victory_points = {
+			11031 5 #Covington
+		}
+		victory_points = {
+			11461 5 #Lincolnway Village
+		}
 	}
 	provinces={
 		11025 11026 11031 11035 11036 11461 

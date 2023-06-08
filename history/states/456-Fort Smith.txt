@@ -9,7 +9,18 @@ state={
 			arms_factory = 2
 		}
 		add_core_of = ARA
-
+		victory_points = {
+			10672 20 #Fort Smith
+		}
+		victory_points = {
+			10660 5 #Arkoma
+		}
+		victory_points = {
+			10669 5 #Barling
+		}
+		victory_points = {
+			10673 5 #Central City
+		}
 	}
 	provinces={
 		6191 10654 10660 10669 10672 10673 

@@ -8,7 +8,12 @@ state={
 
 		}
 		add_core_of = ARA
-
+		victory_points = {
+			6458 5 #Hope
+		}
+		victory_points = {
+			6390 5 #Ashtown
+		}
 	}
 	provinces={
 		4191 4350 6375 6390 6437 6450 6458 

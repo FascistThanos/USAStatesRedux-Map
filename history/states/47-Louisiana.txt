@@ -10,11 +10,13 @@ state={
 
 		}
 		add_core_of = LAL
-
+		victory_points = {
+			6607 5 #Monroe
+		}
 	}
 
 	provinces={
-		2092 2127 2957 3482 3605 3630 3932 6531 6607 6617 6637 6653 8156 
+		2092 2127 2957 3482 3605 3630 3932 6531 6607 6617 6637 6653 
 	}
 	manpower=293707
 	buildings_max_level_factor=1.000

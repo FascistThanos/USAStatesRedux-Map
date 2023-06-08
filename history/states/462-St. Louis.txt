@@ -9,7 +9,27 @@ state={
 			arms_factory = 2
 		}
 		add_core_of = MOM
-
+		victory_points = {
+			10789 30 #St. Louis
+		}
+		victory_points = {
+			11439 10 #Lemay
+		}
+		victory_points = {
+			5664 5 #Kirkwood
+		}
+		victory_points = {
+			11441 5 #University City
+		}
+		victory_points = {
+			10795 5 #Overland
+		}
+		victory_points = {
+			10796 5 #Jennings
+		}
+		victory_points = {
+			10804 5 #Florissant
+		}
 	}
 
 	provinces={

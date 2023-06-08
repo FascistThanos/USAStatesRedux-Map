@@ -1,4 +1,4 @@
-﻿capital = 33
+﻿capital = 345
 
 oob = "KYK_1936"
 

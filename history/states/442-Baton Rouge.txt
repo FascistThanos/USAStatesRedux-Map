@@ -9,10 +9,29 @@ state={
 			11385 = {
 				naval_base = 4
 			}
-			
 		}
 		add_core_of = LAL
-
+		victory_points = {
+			11385 25 #Baton Rouge
+		}
+		victory_points = {
+			10492 5 #Perkins
+		}
+		victory_points = {
+			10496 5 #Inniswold
+		}
+		victory_points = {
+			10488 5 #St Gabriel
+		}
+		victory_points = {
+			11388 5 #Woodale
+		}
+		victory_points = {
+			10500 5 #Denham Springs
+		}
+		victory_points = {
+			11392 5 #Scotlandville
+		}
 	}
 	provinces={
 		10488 10492 10496 10500 10512 11385 11388 11392 

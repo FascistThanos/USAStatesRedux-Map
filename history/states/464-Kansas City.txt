@@ -10,7 +10,24 @@ state={
 			arms_factory = 2
 		}
 		add_core_of = MOM
-
+		victory_points = {
+			10806 25 #Kansas City
+		}
+		victory_points = {
+			11443 5 #Grandview
+		}
+		victory_points = {
+			10785 5 #Belton
+		}
+		victory_points = {
+			10793 5 #Raytown
+		}
+		victory_points = {
+			10807 5 #Independence
+		}
+		victory_points = {
+			11466 5 #Gladstone
+		}
 	}
 
 	provinces={

@@ -8,10 +8,12 @@ state={
 
 		}
 		add_core_of = LAL
-
+		victory_points = {
+			6735 15 #Alexandria
+		}
 	}
 	provinces={
-		664 2496 3239 3722 6696 6735 
+		664 2496 3239 3722 6696 6735 8156
 	}
 	manpower=66772
 	buildings_max_level_factor=1.000

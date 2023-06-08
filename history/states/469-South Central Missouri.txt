@@ -8,7 +8,9 @@ state={
 			industrial_complex = 1
 		}
 		add_core_of = MOM
-
+		victory_points = {
+			5876 5 #Ozark
+		}
 	}
 	provinces={
 		1467 2625 3011 3372 3449 4312 5876 

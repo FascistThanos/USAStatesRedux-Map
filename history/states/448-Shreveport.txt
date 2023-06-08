@@ -9,7 +9,18 @@ state={
 			arms_factory = 2
 		}
 		add_core_of = LAL
-
+		victory_points = {
+			10545 20 #Shreveport
+		}
+		victory_points = {
+			10534 5 #Cedar Grove
+		}
+		victory_points = {
+			10533 5 #Queensboro
+		}
+		victory_points = {
+			10544 5 #Allendale
+		}
 	}
 	provinces={
 		10533 10534 10544 10545 10557 

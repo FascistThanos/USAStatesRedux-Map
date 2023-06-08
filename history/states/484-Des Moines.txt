@@ -9,7 +9,18 @@ state={
 			arms_factory = 2
 		}
 		add_core_of = IAI
-
+		victory_points = {
+			10908 25 #Des Moines
+		}
+		victory_points = {
+			10995 5 #Avon
+		}
+		victory_points = {
+			10986 5 #Scotch Ridge
+		}
+		victory_points = {
+			11015 5 #Marquisville
+		}
 	}
 	provinces={
 		10908 10986 10995 11015 

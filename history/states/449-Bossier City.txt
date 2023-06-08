@@ -8,7 +8,15 @@ state={
 			arms_factory = 2
 		}
 		add_core_of = LAL
-
+		victory_points = {
+			10547 15 #Bossier City
+		}
+		victory_points = {
+			11398 5 #Barksdale AFB
+		}
+		victory_points = {
+			10558 5 #Red Chute
+		}
 	}
 	provinces={
 		6598 10547 10558 10563 11398 

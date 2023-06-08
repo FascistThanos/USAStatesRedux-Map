@@ -8,7 +8,24 @@ state={
 			industrial_complex = 1
 		}
 		add_core_of = ARA
-
+		victory_points = {
+			10697 20 #Fayetteville
+		}
+		victory_points = {
+			11581 5 #Fayette Junction
+		}
+		victory_points = {
+			10696 5 #Farmington
+		}
+		victory_points = {
+			10701 5 #Johnson
+		}
+		victory_points = {
+			10708 5 #Shady Grove
+		}
+		victory_points = {
+			11423 5 #Tontitown
+		}
 	}
 	provinces={
 		10696 10697 10701 10707 10708 11423 11581 

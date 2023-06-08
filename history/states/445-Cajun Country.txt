@@ -11,7 +11,12 @@ state={
 
 		}
 		add_core_of = LAL
-
+		victory_points = {
+			6912 5 #Broussard
+		}
+		victory_points = {
+			6953 5 #Morgan City
+		}
 	}
 	provinces={
 		1044 2937 4238 6877 6896 6912 6952 6953 6983 

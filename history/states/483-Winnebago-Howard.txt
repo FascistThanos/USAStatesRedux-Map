@@ -8,7 +8,9 @@ state={
 
 		}
 		add_core_of = IAI
-
+		victory_points = {
+			5119 5 #Fort Dodge
+		}
 	}
 	provinces={
 		935 1712 1953 5056 5067 5082 5097 5119 

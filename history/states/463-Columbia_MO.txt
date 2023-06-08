@@ -9,7 +9,18 @@ state={
 			arms_factory = 1
 		}
 		add_core_of = MOM
-
+		victory_points = {
+			11442 20 #Columbia
+		}
+		victory_points = {
+			10794 10 #North Central Columbia
+		}
+		victory_points = {
+			11440 5 #Quarry Heights
+		}
+		victory_points = {
+			10786 5 #Pierpont
+		}
 	}
 	provinces={
 		10786 10794 10802 11440 11442 

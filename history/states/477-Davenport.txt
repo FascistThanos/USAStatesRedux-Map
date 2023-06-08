@@ -8,7 +8,18 @@ state={
 			industrial_complex = 2
 		}
 		add_core_of = IAI
-
+		victory_points = {
+			10965 20 #Davenport
+		}
+		victory_points = {
+			11457 10 #Bettendorf
+		}
+		victory_points = {
+			10964 5 #West Davenport
+		}
+		victory_points = {
+			10980 5 #Argo
+		}
 	}
 	provinces={
 		10964 10965 10979 10980 11457 

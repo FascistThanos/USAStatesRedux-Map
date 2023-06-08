@@ -8,7 +8,9 @@ state={
 
 		}
 		add_core_of = ARA
-
+		victory_points = {
+			2783 10 #Pine Bluff
+		}
 	}
 	provinces={
 		2783 2862 2916 3429 3704 6301 6347 6430 6459 6473 6478 6484 6495 6496 

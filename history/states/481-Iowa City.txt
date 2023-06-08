@@ -8,7 +8,18 @@ state={
 			industrial_complex = 2
 		}
 		add_core_of = IAI
-
+		victory_points = {
+			10987 30 #Iowa City
+		}
+		victory_points = {
+			10971 5 #North Liberty
+		}
+		victory_points = {
+			10996 5 #Lemme
+		}
+		victory_points = {
+			11003 5 #Coralville
+		}
 	}
 	provinces={
 		10971 10987 10996 11003 

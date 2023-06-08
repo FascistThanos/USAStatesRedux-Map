@@ -8,7 +8,12 @@ state={
 			industrial_complex = 1
 		}
 		add_core_of = ARA
-
+		victory_points = {
+			322 5 #Harrison
+		}
+		victory_points = {
+			2463 5 #Mountain View
+		}
 	}
 	provinces={
 		322 1023 2463 3282 3486 3627 4251 4296 6030 6098 6109 6127 6154 

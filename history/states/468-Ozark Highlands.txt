@@ -10,7 +10,12 @@ state={
 
 		}
 		add_core_of = MOM
-
+		victory_points = {
+			5756 25 #Jefferson City
+		}
+		victory_points = {
+			2758 5 #Rolla
+		}
 	}
 
 	provinces={

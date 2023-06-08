@@ -8,7 +8,9 @@ state={
 
 		}
 		add_core_of = MOM
-
+		victory_points = {
+			1381 5 #Cape Girardeau
+		}
 	}
 	provinces={
 		1381 1828 3883 5765 5790 5812 5833 5848 5871 5882 5892 5900 5952 5955 

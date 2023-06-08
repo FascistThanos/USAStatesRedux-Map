@@ -9,7 +9,24 @@ state={
 			arms_factory = 2
 		}
 		add_core_of = MOM
-
+		victory_points = {
+			10733 20 #Springfield
+		}
+		victory_points = {
+			10725 5 #Nixa
+		}
+		victory_points = {
+			10730 5 #Battlefield
+		}
+		victory_points = {
+			10731 5 #Turners
+		}
+		victory_points = {
+			10739 5 #Ebenezer
+		}
+		victory_points = {
+			10741 5 #Willard
+		}
 	}
 	provinces={
 		10725 10730 10731 10733 10739 10741 

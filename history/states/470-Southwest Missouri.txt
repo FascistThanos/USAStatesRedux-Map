@@ -8,7 +8,12 @@ state={
 			industrial_complex = 2
 		}
 		add_core_of = MOM
-
+		victory_points = {
+			5824 10 #Joplin
+		}
+		victory_points = {
+			5978 5 #Branson
+		}
 	}
 	provinces={
 		620 2385 3810 5770 5771 5782 5821 5824 5847 5875 5921 5954 5977 5978 
