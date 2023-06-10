@@ -3,6 +3,18 @@ state={
 	name="Albuquerque"
 	history={
 		owner = NMN
+		victory_points = {
+			10659 15 # Albuquerque
+		}
+		victory_points = {
+			10668 10 # Los Ranchos De Albuquerque
+		}
+		victory_points = {
+			10648 5 # South Valley
+		}
+		victory_points = {
+			10650 5 # International District
+		}
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1

@@ -3,6 +3,18 @@ state={
 	name="Santa Fe"
 	history={
 		owner = NMN
+		victory_points = {
+			10681 25 # Santa Fe
+		}
+		victory_points = {
+			10680 5 # ???
+		}
+		victory_points = {
+			11421 5 # ???
+		}
+		victory_points = {
+			10676 5 # Aqua Fria
+		}
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1

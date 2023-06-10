@@ -3,6 +3,18 @@ state={
 	name="Rio Rancho"
 	history={
 		owner = NMN
+		victory_points = {
+			10653 10 # Rio Rancho
+		}
+		victory_points = {
+			10652 5 # Taylor Ranch
+		}
+		victory_points = {
+			10647 5 # Pajarito Mesa
+		}
+		victory_points = {
+			10664 5 # Chamiza Estates
+		}
 		buildings = {
 			infrastructure = 2
 		}

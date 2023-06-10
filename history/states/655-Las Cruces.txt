@@ -3,6 +3,24 @@ state={
 	name="Las Cruces"
 	history={
 		owner = NMN
+		victory_points = {
+			10535 10 # Las Cruces
+		}
+		victory_points = {
+			10546 5 # Jornada South
+		}
+		victory_points = {
+			10537 5 # San Ysidro
+		}
+		victory_points = {
+			11396 5 # Fairacres
+		}
+		victory_points = {
+			11549 5 # Mesilla
+		}
+		victory_points = {
+			11421 5 # ???
+		}
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 3
