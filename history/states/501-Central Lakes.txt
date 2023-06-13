@@ -11,7 +11,9 @@ state={
 
 		}
 		add_core_of = MNM
-
+		victory_points = {
+		2131 5 #Walker
+		}
 	}
 	provinces={
 		769 2068 2131 2318 4833 10214 

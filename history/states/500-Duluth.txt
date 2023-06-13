@@ -8,7 +8,18 @@ state={
 			industrial_complex = 2
 		}
 		add_core_of = MNM
-
+		victory_points = {
+			11243 20 #Duluth
+		}
+		victory_points = {
+			11242 5 #Hermantown
+		}
+		victory_points = {
+			11248 5 #Arnold
+		}
+		victory_points = {
+			10604 5 #Proctor
+		}
 	}
 	provinces={
 		10604 11242 11243 11248 

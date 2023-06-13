@@ -12,7 +12,18 @@ state={
 			arms_factory = 4
 		}
 		add_core_of = MNM
-
+		victory_points = {
+			11075 5 #Sunfish Lake
+		}
+		victory_points = {
+			11482 5 #Eagan
+		}
+		victory_points = {
+			11181 5 #Innergrove Heights
+		}
+		victory_points = {
+			11182 5 #Hastings
+		}
 	}
 	provinces={
 		11075 11152 11181 11182 11482 

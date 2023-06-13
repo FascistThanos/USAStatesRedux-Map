@@ -8,7 +8,9 @@ state={
 
 		}
 		add_core_of = MNM
-
+		victory_points = {
+			3742 5 #St. Cloud
+		}
 	}
 	provinces={
 		504 679 795 2407 2501 3742 4869 4893 4919 4967 

@@ -9,7 +9,18 @@ state={
 			arms_factory = 2
 		}
 		add_core_of = MNM
-
+		victory_points = {
+			11479 10 #Rochester
+		}
+		victory_points = {
+			11166 5 #Lowertown
+		}
+		victory_points = {
+			11161 5 #Apple Hill
+		}
+		victory_points = {
+			11480 5 #Lincolnshire
+		}
 	}
 	provinces={
 		11161 11166 11479 11480 

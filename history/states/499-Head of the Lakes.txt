@@ -11,7 +11,9 @@ state={
 
 		}
 		add_core_of = MNM
-
+		victory_points = {
+			4749 5 #Hibbing
+		}
 	}
 	provinces={
 		108 1581 1764 2609 2656 2710 3959 4132 4732 4744 4749 4751 

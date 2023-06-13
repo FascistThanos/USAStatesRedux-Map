@@ -8,7 +8,9 @@ state={
 
 		}
 		add_core_of = MNM
-
+		victory_points = {
+			694 5 #Marshall
+		}
 	}
 	provinces={
 		694 1773 4942 5013 5037 

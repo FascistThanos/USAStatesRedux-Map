@@ -8,7 +8,15 @@ state={
 			industrial_complex = 4
 		}
 		add_core_of = MNM
-
+		victory_points = {
+			11185 25 #Minneapolis
+		}
+		victory_points = {
+			3488 5 #Plymouth
+		}
+		victory_points = {
+			4933 5 #Excelsior
+		}
 	}
 	provinces={
 		3488 4933 11185 

@@ -9,7 +9,24 @@ state={
 			arms_factory = 1
 		}
 		add_core_of = MNM
-
+		victory_points = {
+			11186 20 #St Paul
+		}
+		victory_points = {
+			10617 5 #Woodbury
+		}
+		victory_points = {
+			11926 5 #Pine Grove
+		}
+		victory_points = {
+			11190 5 #Lauderdale
+		}
+		victory_points = {
+			11928 5 #Arden Hills
+		}
+		victory_points = {
+			11929 5 #Fridley
+		}
 	}
 
 	provinces={

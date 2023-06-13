@@ -1,945 +1,945 @@
 ﻿l_english:
 ###Connecticut
 #Greater Bridgeport
- VICTORY_POINTS_10938:0 "Stamford"
- VICTORY_POINTS_11734:0 "Norwalk"
- VICTORY_POINTS_11736:0 "Bridgeport"
- VICTORY_POINTS_3173:0 "Danbury"
- VICTORY_POINTS_11737:0 "Devil's Den"
- VICTORY_POINTS_10942:0 "Newton"
-#Greater Hartford
- VICTORY_POINTS_11739:0 "New Haven"
- VICTORY_POINTS_11770:0 "Bristol"
-#Litchfield
- VICTORY_POINTS_11763:0 "Waterbury"
- VICTORY_POINTS_11783:0 "Torrington"
-#West Hartford
- VICTORY_POINTS_10981:0 "Hartford"
- VICTORY_POINTS_10977:0 "New Britain"
- VICTORY_POINTS_10970:0 "Middletown"
- VICTORY_POINTS_10997:0 "Windsor"
-#East Hartford
- VICTORY_POINTS_10982:0 "East Hartford"
- VICTORY_POINTS_10968:0 "Pratt & Whitney HQ"
- VICTORY_POINTS_10983:0 "Manchester"
- VICTORY_POINTS_10993:0 "South Windsor"
-#Norwich-New London
- VICTORY_POINTS_11742:0 "New London"
- VICTORY_POINTS_11765:0 "Norwich"
-#Windham
- VICTORY_POINTS_11784:0 "Willimantic"
-
-###Rhode Island
-#Providence
- VICTORY_POINTS_11006:0 "Providence"
- VICTORY_POINTS_10999:0 "East Providence"
- VICTORY_POINTS_11011:0 "Pawtucket"
- VICTORY_POINTS_11009:0 "North Providence"
- VICTORY_POINTS_10998:0 "Cranston"
-#Greater Providence
- VICTORY_POINTS_11772:0 "Warwick"
- VICTORY_POINTS_11013:0 "Woonsocket"
-#Kent
- VICTORY_POINTS_11747:0 "Westerly"
-
-###Massachusetts
-#Boston Metro
- VICTORY_POINTS_11040:0 "Boston"
- VICTORY_POINTS_11046:0 "Lynn"
- VICTORY_POINTS_11030:0 "Quincy"
- VICTORY_POINTS_11039:0 "Lexington"
- VICTORY_POINTS_11051:0 "Lowell"
- VICTORY_POINTS_11016:0 "Brockton"
-#Plymouth
- VICTORY_POINTS_2780:0 "New Bedford"
- VICTORY_POINTS_11777:0 "Fall River"
-#Cape Codd
- VICTORY_POINTS_5238:0 "Plymouth"
-#Northeast Massachusetts
- VICTORY_POINTS_1721:0 "Lawrence"
- VICTORY_POINTS_5136:0 "Salem"
-#Greater Merrimack Valley
- VICTORY_POINTS_11044:0 "Lowell"
-#Central Massachusetts
- VICTORY_POINTS_11827:0 "Worcester"
- VICTORY_POINTS_11022:0 "Palmer"
-#Johnny Appleseed Trail
- VICTORY_POINTS_11837:0 "Gardner"
-#East Springfield
- VICTORY_POINTS_11032:0 "Springfield"
- VICTORY_POINTS_11042:0 "Westover Air Reserve Base"
- VICTORY_POINTS_11020:0 "Longmeadow"
- VICTORY_POINTS_11033:0 "Springfield Plain"
-#West Springfield
- VICTORY_POINTS_11029:0 "West Springfield"
- VICTORY_POINTS_11019:0 "Agawam"
-#The Berkshires
- VICTORY_POINTS_5176:0 "Pittsfield"
-
-###Vermont
-#Burlington
- VICTORY_POINTS_11177:0 "Burlington"
- VICTORY_POINTS_11170:0 "South End"
- VICTORY_POINTS_11171:0 "Williston"
- VICTORY_POINTS_11179:0 "Essex"
-#Montpelier
- VICTORY_POINTS_11163:0 "Montpelier"
- VICTORY_POINTS_11158:0 "Barre"
- VICTORY_POINTS_11164:0 "East Montpelier"
- VICTORY_POINTS_11157:0 "Northfield"
-#Champlain Valley
- VICTORY_POINTS_11188:0 "St. Albans"
- VICTORY_POINTS_11577:0 "Middlebury"
-#Rutland-Windsor
- VICTORY_POINTS_11909:0 "Rutland"
-#Bennington-Windham
- VICTORY_POINTS_11856:0 "Bennington"
- VICTORY_POINTS_11870:0 "Brattleboro"
-#Essex
- VICTORY_POINTS_11187:0 "Newport"
-
-###New Hampshire
-#Concord-Manchester
- VICTORY_POINTS_11118:0 "Concord"
- VICTORY_POINTS_11109:0 "Manchester"
- VICTORY_POINTS_11116:0 "Hooksett"
- VICTORY_POINTS_11099:0 "Derry"
- VICTORY_POINTS_11119:0 "Bear Brook"
-#Greater Concord-Manchester
- VICTORY_POINTS_2196:0 "Portsmouth"
- VICTORY_POINTS_11893:0 "Dover"
-#Monadock
- VICTORY_POINTS_11467:0 "Nashua"
- VICTORY_POINTS_11881:0 "Keene"
-#Dartmouth-Sunapee
- VICTORY_POINTS_5031:0 "Lebanon"
-#Great North Woods
- VICTORY_POINTS_11178:0 "Berlin"
-
-###Maine
-#Portland
- VICTORY_POINTS_11132:0 "Portland"
- VICTORY_POINTS_11130:0 "Scarborough"
- VICTORY_POINTS_11145:0 "Falmouth"
-#Oxford
- VICTORY_POINTS_2999:0 "Augusta"
-#Greater Portland
- VICTORY_POINTS_2491:0 "Brunswick"
- VICTORY_POINTS_3040:0 "Lewiston"
- VICTORY_POINTS_11901:0 "Biddeford"
-#Midcoast
- VICTORY_POINTS_3655:0 "Bangor"  
-#Aroostook
- VICTORY_POINTS_2896:0 "Presque Isle"
-#Downeast & Acadia
- VICTORY_POINTS_3479:0 "Eastport"
-
-###Texas
-#Austin
- VICTORY_POINTS_10491:0 "Austin"
- VICTORY_POINTS_10494:0 "Round Rock"
- VICTORY_POINTS_10490:0 "Lake Travis"
- VICTORY_POINTS_10493:0 "Leander"
- VICTORY_POINTS_10499:0 "Georgetown"
- VICTORY_POINTS_10495:0 "Pflugerville"
-#Gulf Coast
- VICTORY_POINTS_2486:0 "San Marcos"
- VICTORY_POINTS_2308:0 "Corpus Christi"
- VICTORY_POINTS_7023:0 "Victoria"
-#San Antonio
- VICTORY_POINTS_11512:0 "San Antonio"
- VICTORY_POINTS_10464:0 "New Braunfels"
- VICTORY_POINTS_10466:0 "Forth Sam Houston"
- VICTORY_POINTS_11513:0 "Northwest Side"
- VICTORY_POINTS_11511:0 "Southwest Side"
- VICTORY_POINTS_10460:0 "Brooks Field"
-#Hill Country
- VICTORY_POINTS_2004:0 "Boerne"
- VICTORY_POINTS_3929:0 "Fredericksburg"
-#Cross Timbers & Prairies
- VICTORY_POINTS_1644:0 "Waco"
-#Rio Grande
- VICTORY_POINTS_4110:0 "Laredo"
- VICTORY_POINTS_6933:0 "Del Rio"
-#Hildalgo-Starr
- VICTORY_POINTS_3494:0 "Brownsville"
- VICTORY_POINTS_1734:0 "McAllen"
-#Texas Panhandle
- VICTORY_POINTS_1201:0 "Amarillo"
-#High Plains
- VICTORY_POINTS_3609:0 "Lubbock"
-#Forts Trail Region
- VICTORY_POINTS_2043:0 "Abilene"
-#Lakes Trail Region
- VICTORY_POINTS_6548:0 "Denton"
- VICTORY_POINTS_3215:0 "Wichita Falls"
-#Lamar-Bowie
- VICTORY_POINTS_6507:0 "Texarkana"
- VICTORY_POINTS_6467:0 "Paris"
- VICTORY_POINTS_6569:0 "Longview"
-#Dallas
- VICTORY_POINTS_10568:0 "Dallas"
- VICTORY_POINTS_11523:0 "Irving"
- VICTORY_POINTS_10576:0 "Plano"
- VICTORY_POINTS_11519:0 "Cedar Hill"
- VICTORY_POINTS_10561:0 "Lancaster"
- VICTORY_POINTS_10566:0 "Mesquite"
- VICTORY_POINTS_11524:0 "Garland"
- VICTORY_POINTS_11525:0 "Frisco"
- VICTORY_POINTS_10581:0 "Lewisville"
-#Fort Worth
- VICTORY_POINTS_11520:0 "Fort Worth"
- VICTORY_POINTS_11402:0 "Arlington"
- VICTORY_POINTS_10553:0 "Mansfield"
- VICTORY_POINTS_10552:0 "Burleson"
- VICTORY_POINTS_11521:0 "Hicks Field"
- VICTORY_POINTS_10573:0 "Grapevine"
-#Blackland Prairie
- VICTORY_POINTS_2565:0 "Tyler"
- VICTORY_POINTS_6832:0 "Bryan-College Station"
-#Piney Woods
- VICTORY_POINTS_6712:0 "Nacogdoches"
-#Gulf Coast Prairie & Marshes
- VICTORY_POINTS_6884:0 "Beaumont"
-#Houston
- VICTORY_POINTS_11380:0 "Houston"
- VICTORY_POINTS_10469:0 "Port of Houston"
- VICTORY_POINTS_10468:0 "Pasedena"
- VICTORY_POINTS_11515:0 "Southwest Houston"
- VICTORY_POINTS_10615:0 "Texas City"
- VICTORY_POINTS_10465:0 "League City"
- VICTORY_POINTS_11382:0 "North Houston"
- VICTORY_POINTS_6934:0 "Baytown"
-#Greater Houston
- VICTORY_POINTS_1995:0 "Conroe"
- VICTORY_POINTS_2668:0 "Freeport"
-#Galveston
- VICTORY_POINTS_8157:0 "Galveston"
-#Edward's Plateau
- VICTORY_POINTS_6667:0 "Midland-Odessa"
-#El Paso
- VICTORY_POINTS_10524:0 "El Paso"
- VICTORY_POINTS_10528:0 "Franklin Mountains"
- VICTORY_POINTS_10529:0 "Fort Bliss"
-
-###New York
-#Lower NYC
- VICTORY_POINTS_10904:0 "Manhattan"
- VICTORY_POINTS_10893:0 "Brooklyn"
- VICTORY_POINTS_11711:0 "Queens"
- VICTORY_POINTS_10899:0 "Glen Cove"
- VICTORY_POINTS_11708:0 "Hempstead"
-#Upper NYC
- VICTORY_POINTS_10927:0 "The Bronx"
-#Staten Island
- VICTORY_POINTS_8143:0 "Staten Island"
-#Long Island
- VICTORY_POINTS_10905:0 "Islip"
- VICTORY_POINTS_10921:0 "Brookhaven"
- VICTORY_POINTS_10928:0 "Montauk"
- VICTORY_POINTS_1473:0 "Babylon"
-#Hudson Valley
- VICTORY_POINTS_10937:0 "White Plains"
- VICTORY_POINTS_10984:0 "Poughkeepsie"
-#The Catskills
- VICTORY_POINTS_10951:0 "Middletown"
-#Albany
- VICTORY_POINTS_11074:0 "Albany"
- VICTORY_POINTS_11066:0 "Troy"
- VICTORY_POINTS_11067:0 "Cohoes"
- VICTORY_POINTS_11061:0 "Rensselaer"
- VICTORY_POINTS_11064:0 "Albany Airport"
-#Mohawk Valley
- VICTORY_POINTS_5134:0 "Schenectady"
-#Southern Tier
- VICTORY_POINTS_5100:0 "Utica"
- VICTORY_POINTS_4165:0 "Binghampton"
-#Capitol Region
- VICTORY_POINTS_5064:0 "Ticonderoga"
-#Ariondack High Peaks
- VICTORY_POINTS_3665:0 "Glen Falls"
-#Syracuse
- VICTORY_POINTS_11087:0 "Syracuse"
- VICTORY_POINTS_11093:0 "Cicero"
- VICTORY_POINTS_11098:0 "Clay"
- VICTORY_POINTS_11086:0 "Fairmount"
- VICTORY_POINTS_11079:0 "DeWitt"
- VICTORY_POINTS_11082:0 "Manlius"
-#Central New York
- VICTORY_POINTS_5048:0 "Oswego"
-#Finger Lakes
- VICTORY_POINTS_11811:0 "Elmira"
-#Rochester
- VICTORY_POINTS_11101:0 "Rochester"
- VICTORY_POINTS_11107:0 "Irondequoit"
- VICTORY_POINTS_11113:0 "Charlotte"
- VICTORY_POINTS_11111:0 "Greece"
- VICTORY_POINTS_11091:0 "Brighton"
- VICTORY_POINTS_11092:0 "East Rochester"
- VICTORY_POINTS_11097:0 "Rochester Municipal Airport"
-#Western New York
- VICTORY_POINTS_11807:0 "Jamestown"
-#Buffalo
- VICTORY_POINTS_11076:0 "Buffalo"
- VICTORY_POINTS_11100:0 "Niagara, NY"
- VICTORY_POINTS_11084:0 "Ken-Ton"
- VICTORY_POINTS_8139:0 "Grand Isle"
- VICTORY_POINTS_11068:0 "Lackawanna"
- VICTORY_POINTS_11468:0 "Cheektowaga"
- VICTORY_POINTS_11089:0 "Amherst"
-
-###New Jersey
-#Delaware River
- VICTORY_POINTS_2485:0 "Camden"
-#Newark Metro
- VICTORY_POINTS_2577:0 "Newark"
- VICTORY_POINTS_10922:0 "Jersey City"
- VICTORY_POINTS_10931:0 "Paterson"
- VICTORY_POINTS_10903:0 "Elizabeth"
- VICTORY_POINTS_10936:0 "Hackensack"
- VICTORY_POINTS_10898:0 "Woodbridge Township"
- VICTORY_POINTS_10912:0 "Union"
-#Skylands
- VICTORY_POINTS_5393:0 "Trenton"
-#Long Beach - Asbury
- VICTORY_POINTS_10878:0 "Asbury Park"
- VICTORY_POINTS_10755:0 "Long Beach"
- VICTORY_POINTS_10877:0 "Ocean Township"
-#Atlantic City-Jersey Shore
- VICTORY_POINTS_5549:0 "Atlantic City"
-#South Jersey Shore
- VICTORY_POINTS_4063:0 "Cape May"
-
-###Delaware
-#Dover
- VICTORY_POINTS_5584:0 "Dover"
-#Wilmington
- VICTORY_POINTS_10851:0 "Wilmington"
- VICTORY_POINTS_10849:0 "Newark"
- VICTORY_POINTS_10861:0 "Hockessin"
- VICTORY_POINTS_10862:0 "Claymont"
-
-###Pennsylvania
-#Philadelphia
- VICTORY_POINTS_5479:0 "Philadelphia"
- VICTORY_POINTS_10869:0 "Philadelphia Navy Yard"
- VICTORY_POINTS_10876:0 "Upper Darby"
- VICTORY_POINTS_10879:0 "North Philadelphia"
- VICTORY_POINTS_10881:0 "Levittown"
- VICTORY_POINTS_10874:0 "Northeast Philadelphia"
-#Dutch Country
- VICTORY_POINTS_2262:0 "Harrisburg"
- VICTORY_POINTS_5464:0 "Lancaster"
-#Greater Philadelphia-Allentown
- VICTORY_POINTS_3300:0 "Reading"
-#Allentown
- VICTORY_POINTS_11452:0 "Allentown"
- VICTORY_POINTS_10925:0 "Fullerton"
- VICTORY_POINTS_10910:0 "Bethleham"
- VICTORY_POINTS_10926:0 "Easton"
- VICTORY_POINTS_10714:0 "Trexlertown"
-#Poconos and Endless Mountains
- VICTORY_POINTS_5281:0 "Scranton & Wilkes-Barre"
-#Alleghenies and Susquehanna Valley
- VICTORY_POINTS_4107:0 "York"
- VICTORY_POINTS_5375:0 "Altoona"
-#Upstate Pennsylvania
- VICTORY_POINTS_3211:0 "Williamsport"
-#Laurel Highlands
- VICTORY_POINTS_2484:0 "Washington"
-#Allegheny Plateau
- VICTORY_POINTS_585:0 "Indiana"
-#Pittsburgh
- VICTORY_POINTS_10886:0 "Pittsburgh"
- VICTORY_POINTS_10889:0 "Edgar Thomson Steel Works"
- VICTORY_POINTS_10888:0 "North Shore"
- VICTORY_POINTS_5374:0 "Ross Township"
- VICTORY_POINTS_10900:0 "Cranberry Township"
- VICTORY_POINTS_10909:0 "New Kensington"
-#Alleghenies and Susquehanna Valley
- VICTORY_POINTS_11725:0 "New Castle"
- VICTORY_POINTS_11722:0 "Butler"
-#Lower Erie
- VICTORY_POINTS_11008:0 "Edinboro"
-#Upper Erie
- VICTORY_POINTS_11804:0 "Erie"
- VICTORY_POINTS_11806:0 "North East"
- VICTORY_POINTS_11803:0 "Griswold Field"
-
-###Maryland
-#Ridge and Valley
- VICTORY_POINTS_1776:0 "Cumberland"
- VICTORY_POINTS_4203:0 "Hagerstown"
-#Mason-Dixon
- VICTORY_POINTS_2285:0 "Frederick"
-#Eastern Shore
- VICTORY_POINTS_1311:0 "Salisbury"
-#Baltimore
- VICTORY_POINTS_10833:0 "Baltimore"
- VICTORY_POINTS_10836:0 "Owings Mills"
- VICTORY_POINTS_10829:0 "Catonsville"
- VICTORY_POINTS_10819:0 "Brooklyn Park"
- VICTORY_POINTS_11445:0 "Glen Burnie"
-#Southern Plain
- VICTORY_POINTS_5654:0 "Annapolis"
-
-###Washington DC
- VICTORY_POINTS_10811:0 "Washington"
- VICTORY_POINTS_10667:0 "Capitol Hill"
-
-###Virginia
-#Arlington
- VICTORY_POINTS_10810:0 "Arlington"
- VICTORY_POINTS_10803:0 "Alexandria"
- VICTORY_POINTS_11689:0 "Leesburg"
- VICTORY_POINTS_10797:0 "Springfield"
- VICTORY_POINTS_11686:0 "Mt. Vernon"
- VICTORY_POINTS_4121:0 "Woodbridge"
-#Northern Virginia
- VICTORY_POINTS_5717:0 "Fredericksburg"
- VICTORY_POINTS_5579:0 "Winchester"
-#Chesapeake Bay
- VICTORY_POINTS_5747:0 "Dahlgren Naval Proving Ground"
-#Newport News
- VICTORY_POINTS_5717:0 "Newport News"
- VICTORY_POINTS_10722:0 "Langley Field"
- VICTORY_POINTS_10719:0 "Fort Eustis"
- VICTORY_POINTS_1514:0 "Williamsburg"
-#Piedmont
- VICTORY_POINTS_3640:0 "Charlottesville"
-#Shenandoah Valley
- VICTORY_POINTS_4087:0 "Harrisonburg"
-#Richmond
- VICTORY_POINTS_11432:0 "Richmond"
- VICTORY_POINTS_11431:0 "The Fan"
- VICTORY_POINTS_11582:0 "Short Pump"
- VICTORY_POINTS_10752:0 "Glen Allen"
- VICTORY_POINTS_11433:0 "Mechanicsville"
- VICTORY_POINTS_10638:0 "East End"
-#Crownlands
- VICTORY_POINTS_5883:0 "Petersburg"
- VICTORY_POINTS_11429:0 "Manchester"
-#Hampton Roads
- VICTORY_POINTS_5958:0 "Suffolk"
-#Norfolk
- VICTORY_POINTS_11424:0 "Norfolk"
- VICTORY_POINTS_10713:0 "Portsmouth"
- VICTORY_POINTS_10716:0 "Virginia Beach"
- VICTORY_POINTS_11425:0 "Ocean View"
- VICTORY_POINTS_5923:0 "Chesapeake"
-#Hampton Roads
- VICTORY_POINTS_5958:0 "Suffolk"
-#Blue Ridge Highlands
- VICTORY_POINTS_5935:0 "Danville"
-#Bedford
- VICTORY_POINTS_2229:0 "Lynchburg"
-#Roanoke
- VICTORY_POINTS_10726:0 "Roanoke"
- VICTORY_POINTS_10721:0 "Southwest County"
- VICTORY_POINTS_10732:0 "Salem"
- VICTORY_POINTS_11427:0 "North County"
- VICTORY_POINTS_10723:0 "Vinton"
-
-###West Virginia
-#Northern Panhandle
- VICTORY_POINTS_11700:0 "Wheeling"
-#Eastern Panhandle
- VICTORY_POINTS_4048:0 "Martinsburg"
-#Mountaineer Country
- VICTORY_POINTS_3314:0 "Camp Dawson"
-#Mountaineer Country
- VICTORY_POINTS_5814:0 "Beckley"
-#Huntington
- VICTORY_POINTS_10776:0 "Huntington"
- VICTORY_POINTS_10777:0 "Barboursville"
- VICTORY_POINTS_10781:0 "Wilson"
-#Charleston
- VICTORY_POINTS_10770:0 "Charleston"
- VICTORY_POINTS_10772:0 "Dunbar"
- VICTORY_POINTS_10773:0 "Cross Lanes"
- VICTORY_POINTS_10769:0 "Kanawha City"
-#Mountaineer Country
- VICTORY_POINTS_3427:0 "Fairmont"
-#Parkersburg
- VICTORY_POINTS_10826:0 "Parkersburg"
- VICTORY_POINTS_10832:0 "Vienna"
- VICTORY_POINTS_10827:0 "Williamstown"
- VICTORY_POINTS_10822:0 "Washington Works"
-#Morgantown
- VICTORY_POINTS_10845:0 "Morgantown"
- VICTORY_POINTS_10832:0 "Cheat Lake"
- VICTORY_POINTS_10827:0 "Star City"
- VICTORY_POINTS_10844:0 "Westover"
-
-###North Carolina
-#Southeast North Carolina
- VICTORY_POINTS_4081:0 "Wilmington"
-#North Carolina Mountains
- VICTORY_POINTS_6112:0 "Asheville"
- VICTORY_POINTS_6085:0 "Hickory"
-#Greater Charlotte
- VICTORY_POINTS_6102:0 "Salisbury"
- VICTORY_POINTS_919:0 "Gastonia"
-#Charlotte
- VICTORY_POINTS_10662:0 "Charlotte"
- VICTORY_POINTS_10661:0 "Belmont"
- VICTORY_POINTS_10674:0 "Huntersville"
- VICTORY_POINTS_11580:0 "Concord"
- VICTORY_POINTS_10658:0 "Matthews"
-#Greensboro
- VICTORY_POINTS_2642:0 "Greensboro"
- VICTORY_POINTS_6021:0 "Winston-Salem"
-#Sandhills
- VICTORY_POINTS_6203:0 "Fayetteville"
-#Triangle
- VICTORY_POINTS_6082:0 "Burlington"
-#Raleigh
- VICTORY_POINTS_10679:0 "Raleigh"
- VICTORY_POINTS_10685:0 "Durham"
- VICTORY_POINTS_10677:0 "Chapel Hill"
- VICTORY_POINTS_10678:0 "Cary"
- VICTORY_POINTS_10684:0 "Millbrook"
- VICTORY_POINTS_10688:0 "Butner"
-#Wake
- VICTORY_POINTS_6141:0 "Wilson"
-#Northeast Carolina
- VICTORY_POINTS_777:0 "Roanoke Rapids"
-#Outer Banks
- VICTORY_POINTS_6049:0 "Elizabeth City"
-#Wilmington Region
- VICTORY_POINTS_3197:0 "Jacksonville"
-
-###South Carolina
-#Lowcountry & Resort Islands
- VICTORY_POINTS_2842:0 "Beaufort"
-#Myrtle Beach
- VICTORY_POINTS_614:0 "Conway" #Myrtle Beach didn't exist until 1938 lol
-#Santee Cooper Country
- VICTORY_POINTS_6462:0 "Sumter"
- VICTORY_POINTS_2456:0 "Florence"
-#Pee Dee Country
- VICTORY_POINTS_3875:0 "Camden"
-#Olde English District
- VICTORY_POINTS_3012:0 "Rock Hill"
-#Columbia
- VICTORY_POINTS_10633:0 "Columbia"
- VICTORY_POINTS_10626:0 "West Columbia"
- VICTORY_POINTS_10623:0 "Cayce"
- VICTORY_POINTS_10635:0 "St. Andrews"
- VICTORY_POINTS_10641:0 "Irmo"
- VICTORY_POINTS_11412:0 "Dentsville"
- VICTORY_POINTS_10636:0 "Fort Jackson"
-#Charleston
- VICTORY_POINTS_10587:0 "Charleston"
- VICTORY_POINTS_10590:0 "North Charleston"
- VICTORY_POINTS_10589:0 "Mt. Pleasant"
- VICTORY_POINTS_10585:0 "James Island"
- VICTORY_POINTS_10588:0 "Charleston Airport"
- VICTORY_POINTS_10337:0 "Goose Creek"
-#Lake Hartwell Country
- VICTORY_POINTS_4311:0 "Anderson"
-#Santee Cooper Country
- VICTORY_POINTS_2202:0 "Spartanburg"
- VICTORY_POINTS_3869:0 "Greenville"
-#Thoroughbred Country
- VICTORY_POINTS_6392:0 "Aiken"
-
-###Georgia
-#Altamaha
- VICTORY_POINTS_4229:0 "Statesboro"
-#Historic High Country
- VICTORY_POINTS_6266:0 "Dalton"
- VICTORY_POINTS_6360:0 "Rome"
-#Coosa
- VICTORY_POINTS_3327:0 "Carrollton"
-#North Metro Atlanta
- VICTORY_POINTS_10632:0 "Marietta"
- VICTORY_POINTS_10627:0 "Smyrna"
- VICTORY_POINTS_11411:0 "Mableton"
- VICTORY_POINTS_11410:0 "Douglasville"
- VICTORY_POINTS_11413:0 "Kennesaw"
- VICTORY_POINTS_10637:0 "Alpharetta"
-#Northeast Georgia Mountains
- VICTORY_POINTS_1354:0 "Gainesville"
-#South Metro Atlanta
- VICTORY_POINTS_10621:0 "Atlanta"
- VICTORY_POINTS_10618:0 "East Point"
- VICTORY_POINTS_10628:0 "Sandy Springs"
- VICTORY_POINTS_10634:0 "Lawrenceville"
-#Historic Heartland
- VICTORY_POINTS_6523:0 "Macon"
-#Presidential Pathways
- VICTORY_POINTS_3024:0 "LaGrange"
-#Columbus
- VICTORY_POINTS_11401:0 "Columbus"
- VICTORY_POINTS_11503:0 "Fort Benning"
- VICTORY_POINTS_11403:0 "Bibb City"
- VICTORY_POINTS_6583:0 "East Columbus"
-#Plantation Trace
- VICTORY_POINTS_6724:0 "Albany"
- VICTORY_POINTS_4263:0 "Valdosta"
-#Classic South
- VICTORY_POINTS_2791:0 "Athens"
-#South Georgia Coast
- VICTORY_POINTS_2168:0 "Brunswick"
-#Savannah
- VICTORY_POINTS_11395:0 "Savannah"
- VICTORY_POINTS_11394:0 "Georgetown"
- VICTORY_POINTS_11518:0 "Pooler"
- VICTORY_POINTS_10525:0 "Thomas Square"
- VICTORY_POINTS_6690:0 "Garden City"
-#Greater Savannah
- VICTORY_POINTS_6704:0 "Hinesville"
-#Augusta
- VICTORY_POINTS_11407:0 "Augusta"
- VICTORY_POINTS_11409:0 "Martinez"
- VICTORY_POINTS_11408:0 "Evans"
- VICTORY_POINTS_11406:0 "Grovetown"
- VICTORY_POINTS_11405:0 "South Augusta"
- VICTORY_POINTS_6453:0 "East Augusta"
-
-###Florida
-#Florida Panhandle
- VICTORY_POINTS_6853:0 "Pensacola"
-#Tallahassee
- VICTORY_POINTS_11389:0 "Tallahassee"
- VICTORY_POINTS_11387:0 "Woodville"
- VICTORY_POINTS_10502:0 "Dale Mabry Field"
- VICTORY_POINTS_11391:0 "Havana"
- VICTORY_POINTS_10511:0 "Bradfordville"
-#Big Bend
- VICTORY_POINTS_427:0 "Crawfordville"
-#North Central Florida
- VICTORY_POINTS_6904:0 "Perry"
-#First Coast
- VICTORY_POINTS_11517:0 "Jacksonville"
- VICTORY_POINTS_10482:0 "Northeast Jacksonville"
- VICTORY_POINTS_10489:0 "Southwest Jacksonville"
-#Lower Jacksonville
- VICTORY_POINTS_6891:0 "Southbank"
- VICTORY_POINTS_11384:0 "Arlington"
- VICTORY_POINTS_11502:0 "Windy Hill"
- VICTORY_POINTS_11501:0 "Mandarin"
-#East Central Florida
- VICTORY_POINTS_6968:0 "St. Augustine"
-#North Suncoast
- VICTORY_POINTS_7002:0 "Ocala"
-#East Florida Coast
- VICTORY_POINTS_7024:0 "Cape Canaveral"
-#Tampa Bay
- VICTORY_POINTS_10447:0 "Tampa"
- VICTORY_POINTS_11376:0 "St. Petersburg"
- VICTORY_POINTS_10446:0 "Clearwater"
- VICTORY_POINTS_2948:0 "Bradenton"
- VICTORY_POINTS_2132:0 "Spring Hill"
- VICTORY_POINTS_7073:0 "Town 'N' Country"
-#Orlando
- VICTORY_POINTS_4160:0 "Orlando"
- VICTORY_POINTS_10455:0 "Deltona"
- VICTORY_POINTS_10451:0 "St. Cloud"
- VICTORY_POINTS_11378:0 "Winter Garden"
- VICTORY_POINTS_10454:0 "Clermont"
-#Heartland
- VICTORY_POINTS_7088:0 "Lakeland"
-#Myakka
- VICTORY_POINTS_2734:0 "Venice"
- VICTORY_POINTS_3636:0 "Cape Coral"
-#Treasure Coast
- VICTORY_POINTS_26:0 "Fort Pierce"
-#Calusa
- VICTORY_POINTS_3614:0 "Belle Glade"
-#Southwest Florida
- VICTORY_POINTS_2323:0 "Fort Myers"
-#Palm Beach
- VICTORY_POINTS_10392:0 "Palm Beach"
- VICTORY_POINTS_10441:0 "Jupiter"
- VICTORY_POINTS_10440:0 "Boca Raton"
- VICTORY_POINTS_4322:0 "Boynton Beach"
- VICTORY_POINTS_10439:0 "Coral Springs"
- VICTORY_POINTS_7220:0 "Pompano Beach"
-#Miami
- VICTORY_POINTS_10436:0 "Miami"
- VICTORY_POINTS_10438:0 "Fort Lauderdale"
- VICTORY_POINTS_10437:0 "Davie"
- VICTORY_POINTS_10435:0 "Hialeah"
- VICTORY_POINTS_7239:0 "Homestead"
-
-###Alabama
-#Alabama
- VICTORY_POINTS_3528:0 "Montgomery"
-#Lauderdale-Limestone
- VICTORY_POINTS_4182:0 "Florence"
-#Madison-Jackson
- VICTORY_POINTS_6308:0 "Scottsboro"
-#Huntsville
- VICTORY_POINTS_10642:0 "Huntsville"
- VICTORY_POINTS_10486:0 "Madison"
- VICTORY_POINTS_10643:0 "Harvest"
- VICTORY_POINTS_10644:0 "Meridianville"
-#Dekalb
- VICTORY_POINTS_754:0 "Fort Payne"
-#Northwestern Alabama
- VICTORY_POINTS_4198:0 "Decatur"
-#Birmingham
- VICTORY_POINTS_10594:0 "Birmingham"
- VICTORY_POINTS_10591:0 "Bessemer"
- VICTORY_POINTS_10592:0 "Hoover"
- VICTORY_POINTS_11404:0 "Trussville"
- VICTORY_POINTS_10597:0 "Center Point"
-#Tuscaloosa
- VICTORY_POINTS_2727:0 "Tuscaloosa"
- VICTORY_POINTS_6618:0 "Selma"
-#East Central Alabama
- VICTORY_POINTS_6533:0 "Anniston-Oxford"
-#Black Belt
- VICTORY_POINTS_3773:0 "Dothan"
-#Mobile
- VICTORY_POINTS_10514:0 "Mobile"
- VICTORY_POINTS_10513:0 "Tillmans Corner"
- VICTORY_POINTS_10515:0 "East Mobile"
- VICTORY_POINTS_10517:0 "Saraland"
- VICTORY_POINTS_10516:0 "Prichard"
-
-###Ohio
-#Toledo
- VICTORY_POINTS_10992:0 "Toledo"
- VICTORY_POINTS_10973:0 "Maumee"
- VICTORY_POINTS_10974:0 "Perrysburg"
- VICTORY_POINTS_10975:0 "East Toledo"
- VICTORY_POINTS_10976:0 "Oregon"
-#Cleveland-Akron
- VICTORY_POINTS_10967:0 "Cleveland"
- VICTORY_POINTS_10948:0 "Akron"
- VICTORY_POINTS_10958:0 "Lakewood"
- VICTORY_POINTS_5274:0 "Rocky River"
- VICTORY_POINTS_10952:0 "Cuyahoga Falls"
- VICTORY_POINTS_5250:0 "Cleveland Heights"
-#Columbus
- VICTORY_POINTS_10866:0 "Columbus"
- VICTORY_POINTS_10860:0 "South Side"
- VICTORY_POINTS_10864:0 "Grove City"
- VICTORY_POINTS_10871:0 "Upper Arlington"
- VICTORY_POINTS_10875:0 "Dublin"
- VICTORY_POINTS_11703:0 "Delaware"
- VICTORY_POINTS_10868:0 "Gahanna"
-#Dayton
- VICTORY_POINTS_10848:0 "Dayton"
- VICTORY_POINTS_10842:0 "Miamisburg"
- VICTORY_POINTS_10859:0 "Englewood"
- VICTORY_POINTS_10853:0 "Fairborn"
- VICTORY_POINTS_10843:0 "Kettering"
-#Cincinnati
- VICTORY_POINTS_10816:0 "Cincinnati"
- VICTORY_POINTS_10821:0 "Delhi"
- VICTORY_POINTS_10824:0 "Pleasant Hill"
- VICTORY_POINTS_10831:0 "Sharonville"
- VICTORY_POINTS_10825:0 "Blue Ash"
- VICTORY_POINTS_10817:0 "Norwood"
-#Hamilton-Butler
- VICTORY_POINTS_11693:0 "Hamilton"
- VICTORY_POINTS_1688:0 "Springfield"
-#Lima-Grand Lake
- VICTORY_POINTS_4226:0 "Lima"
-#Erie Coast
- VICTORY_POINTS_5301:0 "Lorain"
-#Cuyahoga-Summit
- VICTORY_POINTS_5367:0 "Canton"
- VICTORY_POINTS_5323:0 "Youngstown"
-#Clermont
- VICTORY_POINTS_5578:0 "Chillicothe"
-#Muskingum River Basin
- VICTORY_POINTS_4282:0 "Mansfield"
-
-###Michigan
-#Northern Michigan
- VICTORY_POINTS_2891:0 "Traverse City"
-#Detroit
- VICTORY_POINTS_10538:0 "Detroit"
- VICTORY_POINTS_10504:0 "Downriver"
- VICTORY_POINTS_11037:0 "Dearborn"
- VICTORY_POINTS_11049:0 "Livonia"
- VICTORY_POINTS_10344:0 "Royal Oak"
- VICTORY_POINTS_5171:0 "St. Clair Shores"
- VICTORY_POINTS_11059:0 "New Baltimore"
-#Greater Detroit Metro
- VICTORY_POINTS_5154:0 "Ann Arbor"
- VICTORY_POINTS_11814:0 "Jackson"
-#Saginaw
- VICTORY_POINTS_2369:0 "Flint"
-#Lansing
- VICTORY_POINTS_10593:0 "Lansing"
- VICTORY_POINTS_11058:0 "Old Everett"
- VICTORY_POINTS_11464:0 "Lansing Factories"
- VICTORY_POINTS_11465:0 "Waverly"
- VICTORY_POINTS_11070:0 "Edgemont Park"
- VICTORY_POINTS_11507:0 "Lake Lansing"
- VICTORY_POINTS_11063:0 "East Lansing"
-#Kalamazoo
- VICTORY_POINTS_2257:0 "Kalamazoo"
- VICTORY_POINTS_11825:0 "Battle Creek"
-#Grand Rapids
- VICTORY_POINTS_11095:0 "Grand Rapids"
- VICTORY_POINTS_11469:0 "Grandville"
- VICTORY_POINTS_11103:0 "West Grand Rapids"
- VICTORY_POINTS_11104:0 "Plainfield Township"
- VICTORY_POINTS_11096:0 "East Grand Rapids"
- VICTORY_POINTS_11470:0 "Wyoming"
-#Grand
- VICTORY_POINTS_2160:0 "Muskegon"
-#Michigan Bay Area
- VICTORY_POINTS_971:0 "Saginaw"
-#Superior
- VICTORY_POINTS_4783:0 "Marquette"
-#Eastern Upper Peninsula
- VICTORY_POINTS_3060:0 "Sault Ste. Marie"
-
-###Indiana
-#Southern Indiana
- VICTORY_POINTS_11682:0 "Tell City"
-#LaPorte
- VICTORY_POINTS_11757:0 "Gary"
- VICTORY_POINTS_11764:0 "East Chicago"
- VICTORY_POINTS_11751:0 "Hammond"
- VICTORY_POINTS_11748:0 "Merrillville"
- VICTORY_POINTS_11750:0 "Valparaiso"
- VICTORY_POINTS_11760:0 "Portage"
- VICTORY_POINTS_11758:0 "Duneland"
- VICTORY_POINTS_5269:0 "Michigan City"
- VICTORY_POINTS_5277:0 "LaPorte"
-#Southbend
- VICTORY_POINTS_4144:0 "South Bend"
- VICTORY_POINTS_1480:0 "Elkhart"
-#Fort Wayne
- VICTORY_POINTS_10935:0 "Fort Wayne"
- VICTORY_POINTS_10930:0 "South Fort Wayne"
- VICTORY_POINTS_10933:0 "Ellisville"
- VICTORY_POINTS_10940:0 "Huntertown"
- VICTORY_POINTS_10932:0 "New Haven"
-#Monon
- VICTORY_POINTS_5365:0 "Logansport"
-#Wabash
- VICTORY_POINTS_1684:0 "Kokomo"
-#Wabash Valley
- VICTORY_POINTS_5448:0 "Lafayette"
-#Boone
- VICTORY_POINTS_5601:0 "Bloomington"
-#Bluffton Till Plain
- VICTORY_POINTS_5441:0 "Muncie"
-#Evansville
- VICTORY_POINTS_5601:0 "Evansville"
- VICTORY_POINTS_10761:0 "Westside"
- VICTORY_POINTS_10448:0 "Jacobsville"
- VICTORY_POINTS_11436:0 "Melody Hill"
- VICTORY_POINTS_10758:0 "University of Evansville"
- VICTORY_POINTS_10445:0 "Newburgh"
-#Indianapolis
- VICTORY_POINTS_11447:0 "Indianapolis"
- VICTORY_POINTS_10485:0 "Mooresville"
- VICTORY_POINTS_10487:0 "Speedway"
- VICTORY_POINTS_10858:0 "Carmel"
- VICTORY_POINTS_10852:0 "Fishers"
- VICTORY_POINTS_10847:0 "Lawrence"
- VICTORY_POINTS_10841:0 "Greenwood"
-
-#Illinois
-#Chicago
- VICTORY_POINTS_11007:0 "Chicago"
- VICTORY_POINTS_10991:0 "Hyde Park"
- VICTORY_POINTS_11498:0 "South Chicago"
- VICTORY_POINTS_5248:0 "Calumet City"
- VICTORY_POINTS_10966:0 "Blue Island"
- VICTORY_POINTS_10972:0 "Oak Lawn"
- VICTORY_POINTS_10990:0 "Brighton Park"
- VICTORY_POINTS_11459:0 "Cicero"
- VICTORY_POINTS_10461:0 "Lincoln Park"
- VICTORY_POINTS_11010:0 "Elmhurst"
- VICTORY_POINTS_10782:0 "Evanston"
- VICTORY_POINTS_10473:0 "Des Plaines"
- VICTORY_POINTS_10501:0 "Highland Park"
- VICTORY_POINTS_11028:0 "Buffalo Grove"
- VICTORY_POINTS_10780:0 "North Chicago"
- VICTORY_POINTS_11043:0 "Mundelein"
- VICTORY_POINTS_10508:0 "Waukegan"
-#Naperville
- VICTORY_POINTS_10522:0 "Aurora"
- VICTORY_POINTS_11000:0 "Naperville"
- VICTORY_POINTS_10651:0 "Carol Stream"
- VICTORY_POINTS_11460:0 "Schaumburg"
- VICTORY_POINTS_198:0 "Joliet"
-#Chicagoland
- VICTORY_POINTS_11726:0 "Kankakee"
- VICTORY_POINTS_11738:0 "Ottawa"
-#Rockford
- VICTORY_POINTS_2261:0 "Rockford"
-#Blackhawk
- VICTORY_POINTS_1391:0 "Rock Island-Moline"
-#Central Illinois Valley
- VICTORY_POINTS_488:0 "Peoria"
-#Two Rivers
- VICTORY_POINTS_1831:0 "Quincy"
-#Starved Rock
- VICTORY_POINTS_60:0 "Bloomington-Normal"
-#Corn Belt
- VICTORY_POINTS_3133:0 "Champaign"
- VICTORY_POINTS_5468:0 "Danville"
-#Abe Lincoln
- VICTORY_POINTS_5526:0 "Decatur"
-#Springfield
- VICTORY_POINTS_10873:0 "Springfield"
- VICTORY_POINTS_11505:0 "Southern View"
- VICTORY_POINTS_10872:0 "Jerome"
- VICTORY_POINTS_10569:0 "Oak Ridge"
- VICTORY_POINTS_11450:0 "Grandview"
- VICTORY_POINTS_10870:0 "Toronto"
-#Edwardsville
- VICTORY_POINTS_950:0 "Edwardsville"
-#Kaskaskia
- VICTORY_POINTS_5657:0 "Belleville"
-#Shawnee
- VICTORY_POINTS_2205:0 "Marion"
- VICTORY_POINTS_3632:0 "Cairo"
-
-#Wisconsin
-#North Wisconsin
- VICTORY_POINTS_3801:0 "Superior"
-#Kenosha
- VICTORY_POINTS_11053:0 "Kenosha"
- VICTORY_POINTS_11062:0 "Racine"
- VICTORY_POINTS_10481:0 "Oak Creek"
- VICTORY_POINTS_5128:0 "Burlington"
-#Milwaukee
- VICTORY_POINTS_11110:0 "Milwaukee"
- VICTORY_POINTS_11497:0 "South Milwaukee"
- VICTORY_POINTS_11102:0 "West Allis"
- VICTORY_POINTS_10720:0 "Waukesha"
- VICTORY_POINTS_11123:0 "Shorewood"
- VICTORY_POINTS_11472:0 "Port Washington"
- VICTORY_POINTS_11128:0 "Menomonee Falls"
-#Madison Region
- VICTORY_POINTS_5123:0 "Beloit"
- VICTORY_POINTS_11876:0 "Janesville"
- VICTORY_POINTS_3387:0 "Fond du Lac"
-#Centergy
- VICTORY_POINTS_5014:0 "Oshkosh"
-#Madison
- VICTORY_POINTS_11117:0 "Madison"
- VICTORY_POINTS_10764:0 "Fitchburg"
- VICTORY_POINTS_11115:0 "Monona"
- VICTORY_POINTS_10531:0 "Burke"
- VICTORY_POINTS_10764:0 "Waunakee"
-#Seven Rivers
- VICTORY_POINTS_11121:0 "Middleton"
- VICTORY_POINTS_3781:0 "Prairie du Chien"
- VICTORY_POINTS_4981:0 "La Crosse"
-#Manitawoc
- VICTORY_POINTS_4200:0 "Sheboygan"
- VICTORY_POINTS_1815:0 "Manitawoc"
-#Green Bay
- VICTORY_POINTS_11175:0 "Green Bay"
- VICTORY_POINTS_11174:0 "Ashwaubenon"
- VICTORY_POINTS_10503:0 "Howard"
-#New North
- VICTORY_POINTS_4973:0 "Appleton"
-#Northwoods
- VICTORY_POINTS_4910:0 "Eau Claire"
-
+# VICTORY_POINTS_10938:0 "Stamford"
+# VICTORY_POINTS_11734:0 "Norwalk"
+# VICTORY_POINTS_11736:0 "Bridgeport"
+# VICTORY_POINTS_3173:0 "Danbury"
+# VICTORY_POINTS_11737:0 "Devil's Den"
+# VICTORY_POINTS_10942:0 "Newton"
+##Greater Hartford
+# VICTORY_POINTS_11739:0 "New Haven"
+# VICTORY_POINTS_11770:0 "Bristol"
+##Litchfield
+# VICTORY_POINTS_11763:0 "Waterbury"
+# VICTORY_POINTS_11783:0 "Torrington"
+##West Hartford
+# VICTORY_POINTS_10981:0 "Hartford"
+# VICTORY_POINTS_10977:0 "New Britain"
+# VICTORY_POINTS_10970:0 "Middletown"
+# VICTORY_POINTS_10997:0 "Windsor"
+##East Hartford
+# VICTORY_POINTS_10982:0 "East Hartford"
+# VICTORY_POINTS_10968:0 "Pratt & Whitney HQ"
+# VICTORY_POINTS_10983:0 "Manchester"
+# VICTORY_POINTS_10993:0 "South Windsor"
+##Norwich-New London
+# VICTORY_POINTS_11742:0 "New London"
+# VICTORY_POINTS_11765:0 "Norwich"
+##Windham
+# VICTORY_POINTS_11784:0 "Willimantic"
+#
+####Rhode Island
+##Providence
+# VICTORY_POINTS_11006:0 "Providence"
+# VICTORY_POINTS_10999:0 "East Providence"
+# VICTORY_POINTS_11011:0 "Pawtucket"
+# VICTORY_POINTS_11009:0 "North Providence"
+# VICTORY_POINTS_10998:0 "Cranston"
+##Greater Providence
+# VICTORY_POINTS_11772:0 "Warwick"
+# VICTORY_POINTS_11013:0 "Woonsocket"
+##Kent
+# VICTORY_POINTS_11747:0 "Westerly"
+#
+####Massachusetts
+##Boston Metro
+# VICTORY_POINTS_11040:0 "Boston"
+# VICTORY_POINTS_11046:0 "Lynn"
+# VICTORY_POINTS_11030:0 "Quincy"
+# VICTORY_POINTS_11039:0 "Lexington"
+# VICTORY_POINTS_11051:0 "Lowell"
+# VICTORY_POINTS_11016:0 "Brockton"
+##Plymouth
+# VICTORY_POINTS_2780:0 "New Bedford"
+# VICTORY_POINTS_11777:0 "Fall River"
+##Cape Codd
+# VICTORY_POINTS_5238:0 "Plymouth"
+##Northeast Massachusetts
+# VICTORY_POINTS_1721:0 "Lawrence"
+# VICTORY_POINTS_5136:0 "Salem"
+##Greater Merrimack Valley
+# VICTORY_POINTS_11044:0 "Lowell"
+##Central Massachusetts
+# VICTORY_POINTS_11827:0 "Worcester"
+# VICTORY_POINTS_11022:0 "Palmer"
+##Johnny Appleseed Trail
+# VICTORY_POINTS_11837:0 "Gardner"
+##East Springfield
+# VICTORY_POINTS_11032:0 "Springfield"
+# VICTORY_POINTS_11042:0 "Westover Air Reserve Base"
+# VICTORY_POINTS_11020:0 "Longmeadow"
+# VICTORY_POINTS_11033:0 "Springfield Plain"
+##West Springfield
+# VICTORY_POINTS_11029:0 "West Springfield"
+# VICTORY_POINTS_11019:0 "Agawam"
+##The Berkshires
+# VICTORY_POINTS_5176:0 "Pittsfield"
+#
+####Vermont
+##Burlington
+# VICTORY_POINTS_11177:0 "Burlington"
+# VICTORY_POINTS_11170:0 "South End"
+# VICTORY_POINTS_11171:0 "Williston"
+# VICTORY_POINTS_11179:0 "Essex"
+##Montpelier
+# VICTORY_POINTS_11163:0 "Montpelier"
+# VICTORY_POINTS_11158:0 "Barre"
+# VICTORY_POINTS_11164:0 "East Montpelier"
+# VICTORY_POINTS_11157:0 "Northfield"
+##Champlain Valley
+# VICTORY_POINTS_11188:0 "St. Albans"
+# VICTORY_POINTS_11577:0 "Middlebury"
+##Rutland-Windsor
+# VICTORY_POINTS_11909:0 "Rutland"
+##Bennington-Windham
+# VICTORY_POINTS_11856:0 "Bennington"
+# VICTORY_POINTS_11870:0 "Brattleboro"
+##Essex
+# VICTORY_POINTS_11187:0 "Newport"
+#
+####New Hampshire
+##Concord-Manchester
+# VICTORY_POINTS_11118:0 "Concord"
+# VICTORY_POINTS_11109:0 "Manchester"
+# VICTORY_POINTS_11116:0 "Hooksett"
+# VICTORY_POINTS_11099:0 "Derry"
+# VICTORY_POINTS_11119:0 "Bear Brook"
+##Greater Concord-Manchester
+# VICTORY_POINTS_2196:0 "Portsmouth"
+# VICTORY_POINTS_11893:0 "Dover"
+##Monadock
+# VICTORY_POINTS_11467:0 "Nashua"
+# VICTORY_POINTS_11881:0 "Keene"
+##Dartmouth-Sunapee
+# VICTORY_POINTS_5031:0 "Lebanon"
+##Great North Woods
+# VICTORY_POINTS_11178:0 "Berlin"
+#
+####Maine
+##Portland
+# VICTORY_POINTS_11132:0 "Portland"
+# VICTORY_POINTS_11130:0 "Scarborough"
+# VICTORY_POINTS_11145:0 "Falmouth"
+##Oxford
+# VICTORY_POINTS_2999:0 "Augusta"
+##Greater Portland
+# VICTORY_POINTS_2491:0 "Brunswick"
+# VICTORY_POINTS_3040:0 "Lewiston"
+# VICTORY_POINTS_11901:0 "Biddeford"
+##Midcoast
+# VICTORY_POINTS_3655:0 "Bangor"  
+##Aroostook
+# VICTORY_POINTS_2896:0 "Presque Isle"
+##Downeast & Acadia
+# VICTORY_POINTS_3479:0 "Eastport"
+#
+####Texas
+##Austin
+# VICTORY_POINTS_10491:0 "Austin"
+# VICTORY_POINTS_10494:0 "Round Rock"
+# VICTORY_POINTS_10490:0 "Lake Travis"
+# VICTORY_POINTS_10493:0 "Leander"
+# VICTORY_POINTS_10499:0 "Georgetown"
+# VICTORY_POINTS_10495:0 "Pflugerville"
+##Gulf Coast
+# VICTORY_POINTS_2486:0 "San Marcos"
+# VICTORY_POINTS_2308:0 "Corpus Christi"
+# VICTORY_POINTS_7023:0 "Victoria"
+##San Antonio
+# VICTORY_POINTS_11512:0 "San Antonio"
+# VICTORY_POINTS_10464:0 "New Braunfels"
+# VICTORY_POINTS_10466:0 "Forth Sam Houston"
+# VICTORY_POINTS_11513:0 "Northwest Side"
+# VICTORY_POINTS_11511:0 "Southwest Side"
+# VICTORY_POINTS_10460:0 "Brooks Field"
+##Hill Country
+# VICTORY_POINTS_2004:0 "Boerne"
+# VICTORY_POINTS_3929:0 "Fredericksburg"
+##Cross Timbers & Prairies
+# VICTORY_POINTS_1644:0 "Waco"
+##Rio Grande
+# VICTORY_POINTS_4110:0 "Laredo"
+# VICTORY_POINTS_6933:0 "Del Rio"
+##Hildalgo-Starr
+# VICTORY_POINTS_3494:0 "Brownsville"
+# VICTORY_POINTS_1734:0 "McAllen"
+##Texas Panhandle
+# VICTORY_POINTS_1201:0 "Amarillo"
+##High Plains
+# VICTORY_POINTS_3609:0 "Lubbock"
+##Forts Trail Region
+# VICTORY_POINTS_2043:0 "Abilene"
+##Lakes Trail Region
+# VICTORY_POINTS_6548:0 "Denton"
+# VICTORY_POINTS_3215:0 "Wichita Falls"
+##Lamar-Bowie
+# VICTORY_POINTS_6507:0 "Texarkana"
+# VICTORY_POINTS_6467:0 "Paris"
+# VICTORY_POINTS_6569:0 "Longview"
+##Dallas
+# VICTORY_POINTS_10568:0 "Dallas"
+# VICTORY_POINTS_11523:0 "Irving"
+# VICTORY_POINTS_10576:0 "Plano"
+# VICTORY_POINTS_11519:0 "Cedar Hill"
+# VICTORY_POINTS_10561:0 "Lancaster"
+# VICTORY_POINTS_10566:0 "Mesquite"
+# VICTORY_POINTS_11524:0 "Garland"
+# VICTORY_POINTS_11525:0 "Frisco"
+# VICTORY_POINTS_10581:0 "Lewisville"
+##Fort Worth
+# VICTORY_POINTS_11520:0 "Fort Worth"
+# VICTORY_POINTS_11402:0 "Arlington"
+# VICTORY_POINTS_10553:0 "Mansfield"
+# VICTORY_POINTS_10552:0 "Burleson"
+# VICTORY_POINTS_11521:0 "Hicks Field"
+# VICTORY_POINTS_10573:0 "Grapevine"
+##Blackland Prairie
+# VICTORY_POINTS_2565:0 "Tyler"
+# VICTORY_POINTS_6832:0 "Bryan-College Station"
+##Piney Woods
+# VICTORY_POINTS_6712:0 "Nacogdoches"
+##Gulf Coast Prairie & Marshes
+# VICTORY_POINTS_6884:0 "Beaumont"
+##Houston
+# VICTORY_POINTS_11380:0 "Houston"
+# VICTORY_POINTS_10469:0 "Port of Houston"
+# VICTORY_POINTS_10468:0 "Pasedena"
+# VICTORY_POINTS_11515:0 "Southwest Houston"
+# VICTORY_POINTS_10615:0 "Texas City"
+# VICTORY_POINTS_10465:0 "League City"
+# VICTORY_POINTS_11382:0 "North Houston"
+# VICTORY_POINTS_6934:0 "Baytown"
+##Greater Houston
+# VICTORY_POINTS_1995:0 "Conroe"
+# VICTORY_POINTS_2668:0 "Freeport"
+##Galveston
+# VICTORY_POINTS_8157:0 "Galveston"
+##Edward's Plateau
+# VICTORY_POINTS_6667:0 "Midland-Odessa"
+##El Paso
+# VICTORY_POINTS_10524:0 "El Paso"
+# VICTORY_POINTS_10528:0 "Franklin Mountains"
+# VICTORY_POINTS_10529:0 "Fort Bliss"
+#
+####New York
+##Lower NYC
+# VICTORY_POINTS_10904:0 "Manhattan"
+# VICTORY_POINTS_10893:0 "Brooklyn"
+# VICTORY_POINTS_11711:0 "Queens"
+# VICTORY_POINTS_10899:0 "Glen Cove"
+# VICTORY_POINTS_11708:0 "Hempstead"
+##Upper NYC
+# VICTORY_POINTS_10927:0 "The Bronx"
+##Staten Island
+# VICTORY_POINTS_8143:0 "Staten Island"
+##Long Island
+# VICTORY_POINTS_10905:0 "Islip"
+# VICTORY_POINTS_10921:0 "Brookhaven"
+# VICTORY_POINTS_10928:0 "Montauk"
+# VICTORY_POINTS_1473:0 "Babylon"
+##Hudson Valley
+# VICTORY_POINTS_10937:0 "White Plains"
+# VICTORY_POINTS_10984:0 "Poughkeepsie"
+##The Catskills
+# VICTORY_POINTS_10951:0 "Middletown"
+##Albany
+# VICTORY_POINTS_11074:0 "Albany"
+# VICTORY_POINTS_11066:0 "Troy"
+# VICTORY_POINTS_11067:0 "Cohoes"
+# VICTORY_POINTS_11061:0 "Rensselaer"
+# VICTORY_POINTS_11064:0 "Albany Airport"
+##Mohawk Valley
+# VICTORY_POINTS_5134:0 "Schenectady"
+##Southern Tier
+# VICTORY_POINTS_5100:0 "Utica"
+# VICTORY_POINTS_4165:0 "Binghampton"
+##Capitol Region
+# VICTORY_POINTS_5064:0 "Ticonderoga"
+##Ariondack High Peaks
+# VICTORY_POINTS_3665:0 "Glen Falls"
+##Syracuse
+# VICTORY_POINTS_11087:0 "Syracuse"
+# VICTORY_POINTS_11093:0 "Cicero"
+# VICTORY_POINTS_11098:0 "Clay"
+# VICTORY_POINTS_11086:0 "Fairmount"
+# VICTORY_POINTS_11079:0 "DeWitt"
+# VICTORY_POINTS_11082:0 "Manlius"
+##Central New York
+# VICTORY_POINTS_5048:0 "Oswego"
+##Finger Lakes
+# VICTORY_POINTS_11811:0 "Elmira"
+##Rochester
+# VICTORY_POINTS_11101:0 "Rochester"
+# VICTORY_POINTS_11107:0 "Irondequoit"
+# VICTORY_POINTS_11113:0 "Charlotte"
+# VICTORY_POINTS_11111:0 "Greece"
+# VICTORY_POINTS_11091:0 "Brighton"
+# VICTORY_POINTS_11092:0 "East Rochester"
+# VICTORY_POINTS_11097:0 "Rochester Municipal Airport"
+##Western New York
+# VICTORY_POINTS_11807:0 "Jamestown"
+##Buffalo
+# VICTORY_POINTS_11076:0 "Buffalo"
+# VICTORY_POINTS_11100:0 "Niagara, NY"
+# VICTORY_POINTS_11084:0 "Ken-Ton"
+# VICTORY_POINTS_8139:0 "Grand Isle"
+# VICTORY_POINTS_11068:0 "Lackawanna"
+# VICTORY_POINTS_11468:0 "Cheektowaga"
+# VICTORY_POINTS_11089:0 "Amherst"
+#
+####New Jersey
+##Delaware River
+# VICTORY_POINTS_2485:0 "Camden"
+##Newark Metro
+# VICTORY_POINTS_2577:0 "Newark"
+# VICTORY_POINTS_10922:0 "Jersey City"
+# VICTORY_POINTS_10931:0 "Paterson"
+# VICTORY_POINTS_10903:0 "Elizabeth"
+# VICTORY_POINTS_10936:0 "Hackensack"
+# VICTORY_POINTS_10898:0 "Woodbridge Township"
+# VICTORY_POINTS_10912:0 "Union"
+##Skylands
+# VICTORY_POINTS_5393:0 "Trenton"
+##Long Beach - Asbury
+# VICTORY_POINTS_10878:0 "Asbury Park"
+# VICTORY_POINTS_10755:0 "Long Beach"
+# VICTORY_POINTS_10877:0 "Ocean Township"
+##Atlantic City-Jersey Shore
+# VICTORY_POINTS_5549:0 "Atlantic City"
+##South Jersey Shore
+# VICTORY_POINTS_4063:0 "Cape May"
+#
+####Delaware
+##Dover
+# VICTORY_POINTS_5584:0 "Dover"
+##Wilmington
+# VICTORY_POINTS_10851:0 "Wilmington"
+# VICTORY_POINTS_10849:0 "Newark"
+# VICTORY_POINTS_10861:0 "Hockessin"
+# VICTORY_POINTS_10862:0 "Claymont"
+#
+####Pennsylvania
+##Philadelphia
+# VICTORY_POINTS_5479:0 "Philadelphia"
+# VICTORY_POINTS_10869:0 "Philadelphia Navy Yard"
+# VICTORY_POINTS_10876:0 "Upper Darby"
+# VICTORY_POINTS_10879:0 "North Philadelphia"
+# VICTORY_POINTS_10881:0 "Levittown"
+# VICTORY_POINTS_10874:0 "Northeast Philadelphia"
+##Dutch Country
+# VICTORY_POINTS_2262:0 "Harrisburg"
+# VICTORY_POINTS_5464:0 "Lancaster"
+##Greater Philadelphia-Allentown
+# VICTORY_POINTS_3300:0 "Reading"
+##Allentown
+# VICTORY_POINTS_11452:0 "Allentown"
+# VICTORY_POINTS_10925:0 "Fullerton"
+# VICTORY_POINTS_10910:0 "Bethleham"
+# VICTORY_POINTS_10926:0 "Easton"
+# VICTORY_POINTS_10714:0 "Trexlertown"
+##Poconos and Endless Mountains
+# VICTORY_POINTS_5281:0 "Scranton & Wilkes-Barre"
+##Alleghenies and Susquehanna Valley
+# VICTORY_POINTS_4107:0 "York"
+# VICTORY_POINTS_5375:0 "Altoona"
+##Upstate Pennsylvania
+# VICTORY_POINTS_3211:0 "Williamsport"
+##Laurel Highlands
+# VICTORY_POINTS_2484:0 "Washington"
+##Allegheny Plateau
+# VICTORY_POINTS_585:0 "Indiana"
+##Pittsburgh
+# VICTORY_POINTS_10886:0 "Pittsburgh"
+# VICTORY_POINTS_10889:0 "Edgar Thomson Steel Works"
+# VICTORY_POINTS_10888:0 "North Shore"
+# VICTORY_POINTS_5374:0 "Ross Township"
+# VICTORY_POINTS_10900:0 "Cranberry Township"
+# VICTORY_POINTS_10909:0 "New Kensington"
+##Alleghenies and Susquehanna Valley
+# VICTORY_POINTS_11725:0 "New Castle"
+# VICTORY_POINTS_11722:0 "Butler"
+##Lower Erie
+# VICTORY_POINTS_11008:0 "Edinboro"
+##Upper Erie
+# VICTORY_POINTS_11804:0 "Erie"
+# VICTORY_POINTS_11806:0 "North East"
+# VICTORY_POINTS_11803:0 "Griswold Field"
+#
+####Maryland
+##Ridge and Valley
+# VICTORY_POINTS_1776:0 "Cumberland"
+# VICTORY_POINTS_4203:0 "Hagerstown"
+##Mason-Dixon
+# VICTORY_POINTS_2285:0 "Frederick"
+##Eastern Shore
+# VICTORY_POINTS_1311:0 "Salisbury"
+##Baltimore
+# VICTORY_POINTS_10833:0 "Baltimore"
+# VICTORY_POINTS_10836:0 "Owings Mills"
+# VICTORY_POINTS_10829:0 "Catonsville"
+# VICTORY_POINTS_10819:0 "Brooklyn Park"
+# VICTORY_POINTS_11445:0 "Glen Burnie"
+##Southern Plain
+# VICTORY_POINTS_5654:0 "Annapolis"
+#
+####Washington DC
+# VICTORY_POINTS_10811:0 "Washington"
+# VICTORY_POINTS_10667:0 "Capitol Hill"
+#
+####Virginia
+##Arlington
+# VICTORY_POINTS_10810:0 "Arlington"
+# VICTORY_POINTS_10803:0 "Alexandria"
+# VICTORY_POINTS_11689:0 "Leesburg"
+# VICTORY_POINTS_10797:0 "Springfield"
+# VICTORY_POINTS_11686:0 "Mt. Vernon"
+# VICTORY_POINTS_4121:0 "Woodbridge"
+##Northern Virginia
+# VICTORY_POINTS_5717:0 "Fredericksburg"
+# VICTORY_POINTS_5579:0 "Winchester"
+##Chesapeake Bay
+# VICTORY_POINTS_5747:0 "Dahlgren Naval Proving Ground"
+##Newport News
+# VICTORY_POINTS_5717:0 "Newport News"
+# VICTORY_POINTS_10722:0 "Langley Field"
+# VICTORY_POINTS_10719:0 "Fort Eustis"
+# VICTORY_POINTS_1514:0 "Williamsburg"
+##Piedmont
+# VICTORY_POINTS_3640:0 "Charlottesville"
+##Shenandoah Valley
+# VICTORY_POINTS_4087:0 "Harrisonburg"
+##Richmond
+# VICTORY_POINTS_11432:0 "Richmond"
+# VICTORY_POINTS_11431:0 "The Fan"
+# VICTORY_POINTS_11582:0 "Short Pump"
+# VICTORY_POINTS_10752:0 "Glen Allen"
+# VICTORY_POINTS_11433:0 "Mechanicsville"
+# VICTORY_POINTS_10638:0 "East End"
+##Crownlands
+# VICTORY_POINTS_5883:0 "Petersburg"
+# VICTORY_POINTS_11429:0 "Manchester"
+##Hampton Roads
+# VICTORY_POINTS_5958:0 "Suffolk"
+##Norfolk
+# VICTORY_POINTS_11424:0 "Norfolk"
+# VICTORY_POINTS_10713:0 "Portsmouth"
+# VICTORY_POINTS_10716:0 "Virginia Beach"
+# VICTORY_POINTS_11425:0 "Ocean View"
+# VICTORY_POINTS_5923:0 "Chesapeake"
+##Hampton Roads
+# VICTORY_POINTS_5958:0 "Suffolk"
+##Blue Ridge Highlands
+# VICTORY_POINTS_5935:0 "Danville"
+##Bedford
+# VICTORY_POINTS_2229:0 "Lynchburg"
+##Roanoke
+# VICTORY_POINTS_10726:0 "Roanoke"
+# VICTORY_POINTS_10721:0 "Southwest County"
+# VICTORY_POINTS_10732:0 "Salem"
+# VICTORY_POINTS_11427:0 "North County"
+# VICTORY_POINTS_10723:0 "Vinton"
+#
+####West Virginia
+##Northern Panhandle
+# VICTORY_POINTS_11700:0 "Wheeling"
+##Eastern Panhandle
+# VICTORY_POINTS_4048:0 "Martinsburg"
+##Mountaineer Country
+# VICTORY_POINTS_3314:0 "Camp Dawson"
+##Mountaineer Country
+# VICTORY_POINTS_5814:0 "Beckley"
+##Huntington
+# VICTORY_POINTS_10776:0 "Huntington"
+# VICTORY_POINTS_10777:0 "Barboursville"
+# VICTORY_POINTS_10781:0 "Wilson"
+##Charleston
+# VICTORY_POINTS_10770:0 "Charleston"
+# VICTORY_POINTS_10772:0 "Dunbar"
+# VICTORY_POINTS_10773:0 "Cross Lanes"
+# VICTORY_POINTS_10769:0 "Kanawha City"
+##Mountaineer Country
+# VICTORY_POINTS_3427:0 "Fairmont"
+##Parkersburg
+# VICTORY_POINTS_10826:0 "Parkersburg"
+# VICTORY_POINTS_10832:0 "Vienna"
+# VICTORY_POINTS_10827:0 "Williamstown"
+# VICTORY_POINTS_10822:0 "Washington Works"
+##Morgantown
+# VICTORY_POINTS_10845:0 "Morgantown"
+# VICTORY_POINTS_10832:0 "Cheat Lake"
+# VICTORY_POINTS_10827:0 "Star City"
+# VICTORY_POINTS_10844:0 "Westover"
+#
+####North Carolina
+##Southeast North Carolina
+# VICTORY_POINTS_4081:0 "Wilmington"
+##North Carolina Mountains
+# VICTORY_POINTS_6112:0 "Asheville"
+# VICTORY_POINTS_6085:0 "Hickory"
+##Greater Charlotte
+# VICTORY_POINTS_6102:0 "Salisbury"
+# VICTORY_POINTS_919:0 "Gastonia"
+##Charlotte
+# VICTORY_POINTS_10662:0 "Charlotte"
+# VICTORY_POINTS_10661:0 "Belmont"
+# VICTORY_POINTS_10674:0 "Huntersville"
+# VICTORY_POINTS_11580:0 "Concord"
+# VICTORY_POINTS_10658:0 "Matthews"
+##Greensboro
+# VICTORY_POINTS_2642:0 "Greensboro"
+# VICTORY_POINTS_6021:0 "Winston-Salem"
+##Sandhills
+# VICTORY_POINTS_6203:0 "Fayetteville"
+##Triangle
+# VICTORY_POINTS_6082:0 "Burlington"
+##Raleigh
+# VICTORY_POINTS_10679:0 "Raleigh"
+# VICTORY_POINTS_10685:0 "Durham"
+# VICTORY_POINTS_10677:0 "Chapel Hill"
+# VICTORY_POINTS_10678:0 "Cary"
+# VICTORY_POINTS_10684:0 "Millbrook"
+# VICTORY_POINTS_10688:0 "Butner"
+##Wake
+# VICTORY_POINTS_6141:0 "Wilson"
+##Northeast Carolina
+# VICTORY_POINTS_777:0 "Roanoke Rapids"
+##Outer Banks
+# VICTORY_POINTS_6049:0 "Elizabeth City"
+##Wilmington Region
+# VICTORY_POINTS_3197:0 "Jacksonville"
+#
+####South Carolina
+##Lowcountry & Resort Islands
+# VICTORY_POINTS_2842:0 "Beaufort"
+##Myrtle Beach
+# VICTORY_POINTS_614:0 "Conway" #Myrtle Beach didn't exist until 1938 lol
+##Santee Cooper Country
+# VICTORY_POINTS_6462:0 "Sumter"
+# VICTORY_POINTS_2456:0 "Florence"
+##Pee Dee Country
+# VICTORY_POINTS_3875:0 "Camden"
+##Olde English District
+# VICTORY_POINTS_3012:0 "Rock Hill"
+##Columbia
+# VICTORY_POINTS_10633:0 "Columbia"
+# VICTORY_POINTS_10626:0 "West Columbia"
+# VICTORY_POINTS_10623:0 "Cayce"
+# VICTORY_POINTS_10635:0 "St. Andrews"
+# VICTORY_POINTS_10641:0 "Irmo"
+# VICTORY_POINTS_11412:0 "Dentsville"
+# VICTORY_POINTS_10636:0 "Fort Jackson"
+##Charleston
+# VICTORY_POINTS_10587:0 "Charleston"
+# VICTORY_POINTS_10590:0 "North Charleston"
+# VICTORY_POINTS_10589:0 "Mt. Pleasant"
+# VICTORY_POINTS_10585:0 "James Island"
+# VICTORY_POINTS_10588:0 "Charleston Airport"
+# VICTORY_POINTS_10337:0 "Goose Creek"
+##Lake Hartwell Country
+# VICTORY_POINTS_4311:0 "Anderson"
+##Santee Cooper Country
+# VICTORY_POINTS_2202:0 "Spartanburg"
+# VICTORY_POINTS_3869:0 "Greenville"
+##Thoroughbred Country
+# VICTORY_POINTS_6392:0 "Aiken"
+#
+####Georgia
+##Altamaha
+# VICTORY_POINTS_4229:0 "Statesboro"
+##Historic High Country
+# VICTORY_POINTS_6266:0 "Dalton"
+# VICTORY_POINTS_6360:0 "Rome"
+##Coosa
+# VICTORY_POINTS_3327:0 "Carrollton"
+##North Metro Atlanta
+# VICTORY_POINTS_10632:0 "Marietta"
+# VICTORY_POINTS_10627:0 "Smyrna"
+# VICTORY_POINTS_11411:0 "Mableton"
+# VICTORY_POINTS_11410:0 "Douglasville"
+# VICTORY_POINTS_11413:0 "Kennesaw"
+# VICTORY_POINTS_10637:0 "Alpharetta"
+##Northeast Georgia Mountains
+# VICTORY_POINTS_1354:0 "Gainesville"
+##South Metro Atlanta
+# VICTORY_POINTS_10621:0 "Atlanta"
+# VICTORY_POINTS_10618:0 "East Point"
+# VICTORY_POINTS_10628:0 "Sandy Springs"
+# VICTORY_POINTS_10634:0 "Lawrenceville"
+##Historic Heartland
+# VICTORY_POINTS_6523:0 "Macon"
+##Presidential Pathways
+# VICTORY_POINTS_3024:0 "LaGrange"
+##Columbus
+# VICTORY_POINTS_11401:0 "Columbus"
+# VICTORY_POINTS_11503:0 "Fort Benning"
+# VICTORY_POINTS_11403:0 "Bibb City"
+# VICTORY_POINTS_6583:0 "East Columbus"
+##Plantation Trace
+# VICTORY_POINTS_6724:0 "Albany"
+# VICTORY_POINTS_4263:0 "Valdosta"
+##Classic South
+# VICTORY_POINTS_2791:0 "Athens"
+##South Georgia Coast
+# VICTORY_POINTS_2168:0 "Brunswick"
+##Savannah
+# VICTORY_POINTS_11395:0 "Savannah"
+# VICTORY_POINTS_11394:0 "Georgetown"
+# VICTORY_POINTS_11518:0 "Pooler"
+# VICTORY_POINTS_10525:0 "Thomas Square"
+# VICTORY_POINTS_6690:0 "Garden City"
+##Greater Savannah
+# VICTORY_POINTS_6704:0 "Hinesville"
+##Augusta
+# VICTORY_POINTS_11407:0 "Augusta"
+# VICTORY_POINTS_11409:0 "Martinez"
+# VICTORY_POINTS_11408:0 "Evans"
+# VICTORY_POINTS_11406:0 "Grovetown"
+# VICTORY_POINTS_11405:0 "South Augusta"
+# VICTORY_POINTS_6453:0 "East Augusta"
+#
+####Florida
+##Florida Panhandle
+# VICTORY_POINTS_6853:0 "Pensacola"
+##Tallahassee
+# VICTORY_POINTS_11389:0 "Tallahassee"
+# VICTORY_POINTS_11387:0 "Woodville"
+# VICTORY_POINTS_10502:0 "Dale Mabry Field"
+# VICTORY_POINTS_11391:0 "Havana"
+# VICTORY_POINTS_10511:0 "Bradfordville"
+##Big Bend
+# VICTORY_POINTS_427:0 "Crawfordville"
+##North Central Florida
+# VICTORY_POINTS_6904:0 "Perry"
+##First Coast
+# VICTORY_POINTS_11517:0 "Jacksonville"
+# VICTORY_POINTS_10482:0 "Northeast Jacksonville"
+# VICTORY_POINTS_10489:0 "Southwest Jacksonville"
+##Lower Jacksonville
+# VICTORY_POINTS_6891:0 "Southbank"
+# VICTORY_POINTS_11384:0 "Arlington"
+# VICTORY_POINTS_11502:0 "Windy Hill"
+# VICTORY_POINTS_11501:0 "Mandarin"
+##East Central Florida
+# VICTORY_POINTS_6968:0 "St. Augustine"
+##North Suncoast
+# VICTORY_POINTS_7002:0 "Ocala"
+##East Florida Coast
+# VICTORY_POINTS_7024:0 "Cape Canaveral"
+##Tampa Bay
+# VICTORY_POINTS_10447:0 "Tampa"
+# VICTORY_POINTS_11376:0 "St. Petersburg"
+# VICTORY_POINTS_10446:0 "Clearwater"
+# VICTORY_POINTS_2948:0 "Bradenton"
+# VICTORY_POINTS_2132:0 "Spring Hill"
+# VICTORY_POINTS_7073:0 "Town 'N' Country"
+##Orlando
+# VICTORY_POINTS_4160:0 "Orlando"
+# VICTORY_POINTS_10455:0 "Deltona"
+# VICTORY_POINTS_10451:0 "St. Cloud"
+# VICTORY_POINTS_11378:0 "Winter Garden"
+# VICTORY_POINTS_10454:0 "Clermont"
+##Heartland
+# VICTORY_POINTS_7088:0 "Lakeland"
+##Myakka
+# VICTORY_POINTS_2734:0 "Venice"
+# VICTORY_POINTS_3636:0 "Cape Coral"
+##Treasure Coast
+# VICTORY_POINTS_26:0 "Fort Pierce"
+##Calusa
+# VICTORY_POINTS_3614:0 "Belle Glade"
+##Southwest Florida
+# VICTORY_POINTS_2323:0 "Fort Myers"
+##Palm Beach
+# VICTORY_POINTS_10392:0 "Palm Beach"
+# VICTORY_POINTS_10441:0 "Jupiter"
+# VICTORY_POINTS_10440:0 "Boca Raton"
+# VICTORY_POINTS_4322:0 "Boynton Beach"
+# VICTORY_POINTS_10439:0 "Coral Springs"
+# VICTORY_POINTS_7220:0 "Pompano Beach"
+##Miami
+# VICTORY_POINTS_10436:0 "Miami"
+# VICTORY_POINTS_10438:0 "Fort Lauderdale"
+# VICTORY_POINTS_10437:0 "Davie"
+# VICTORY_POINTS_10435:0 "Hialeah"
+# VICTORY_POINTS_7239:0 "Homestead"
+#
+####Alabama
+##Alabama
+# VICTORY_POINTS_3528:0 "Montgomery"
+##Lauderdale-Limestone
+# VICTORY_POINTS_4182:0 "Florence"
+##Madison-Jackson
+# VICTORY_POINTS_6308:0 "Scottsboro"
+##Huntsville
+# VICTORY_POINTS_10642:0 "Huntsville"
+# VICTORY_POINTS_10486:0 "Madison"
+# VICTORY_POINTS_10643:0 "Harvest"
+# VICTORY_POINTS_10644:0 "Meridianville"
+##Dekalb
+# VICTORY_POINTS_754:0 "Fort Payne"
+##Northwestern Alabama
+# VICTORY_POINTS_4198:0 "Decatur"
+##Birmingham
+# VICTORY_POINTS_10594:0 "Birmingham"
+# VICTORY_POINTS_10591:0 "Bessemer"
+# VICTORY_POINTS_10592:0 "Hoover"
+# VICTORY_POINTS_11404:0 "Trussville"
+# VICTORY_POINTS_10597:0 "Center Point"
+##Tuscaloosa
+# VICTORY_POINTS_2727:0 "Tuscaloosa"
+# VICTORY_POINTS_6618:0 "Selma"
+##East Central Alabama
+# VICTORY_POINTS_6533:0 "Anniston-Oxford"
+##Black Belt
+# VICTORY_POINTS_3773:0 "Dothan"
+##Mobile
+# VICTORY_POINTS_10514:0 "Mobile"
+# VICTORY_POINTS_10513:0 "Tillmans Corner"
+# VICTORY_POINTS_10515:0 "East Mobile"
+# VICTORY_POINTS_10517:0 "Saraland"
+# VICTORY_POINTS_10516:0 "Prichard"
+#
+####Ohio
+##Toledo
+# VICTORY_POINTS_10992:0 "Toledo"
+# VICTORY_POINTS_10973:0 "Maumee"
+# VICTORY_POINTS_10974:0 "Perrysburg"
+# VICTORY_POINTS_10975:0 "East Toledo"
+# VICTORY_POINTS_10976:0 "Oregon"
+##Cleveland-Akron
+# VICTORY_POINTS_10967:0 "Cleveland"
+# VICTORY_POINTS_10948:0 "Akron"
+# VICTORY_POINTS_10958:0 "Lakewood"
+# VICTORY_POINTS_5274:0 "Rocky River"
+# VICTORY_POINTS_10952:0 "Cuyahoga Falls"
+# VICTORY_POINTS_5250:0 "Cleveland Heights"
+##Columbus
+# VICTORY_POINTS_10866:0 "Columbus"
+# VICTORY_POINTS_10860:0 "South Side"
+# VICTORY_POINTS_10864:0 "Grove City"
+# VICTORY_POINTS_10871:0 "Upper Arlington"
+# VICTORY_POINTS_10875:0 "Dublin"
+# VICTORY_POINTS_11703:0 "Delaware"
+# VICTORY_POINTS_10868:0 "Gahanna"
+##Dayton
+# VICTORY_POINTS_10848:0 "Dayton"
+# VICTORY_POINTS_10842:0 "Miamisburg"
+# VICTORY_POINTS_10859:0 "Englewood"
+# VICTORY_POINTS_10853:0 "Fairborn"
+# VICTORY_POINTS_10843:0 "Kettering"
+##Cincinnati
+# VICTORY_POINTS_10816:0 "Cincinnati"
+# VICTORY_POINTS_10821:0 "Delhi"
+# VICTORY_POINTS_10824:0 "Pleasant Hill"
+# VICTORY_POINTS_10831:0 "Sharonville"
+# VICTORY_POINTS_10825:0 "Blue Ash"
+# VICTORY_POINTS_10817:0 "Norwood"
+##Hamilton-Butler
+# VICTORY_POINTS_11693:0 "Hamilton"
+# VICTORY_POINTS_1688:0 "Springfield"
+##Lima-Grand Lake
+# VICTORY_POINTS_4226:0 "Lima"
+##Erie Coast
+# VICTORY_POINTS_5301:0 "Lorain"
+##Cuyahoga-Summit
+# VICTORY_POINTS_5367:0 "Canton"
+# VICTORY_POINTS_5323:0 "Youngstown"
+##Clermont
+# VICTORY_POINTS_5578:0 "Chillicothe"
+##Muskingum River Basin
+# VICTORY_POINTS_4282:0 "Mansfield"
+#
+####Michigan
+##Northern Michigan
+# VICTORY_POINTS_2891:0 "Traverse City"
+##Detroit
+# VICTORY_POINTS_10538:0 "Detroit"
+# VICTORY_POINTS_10504:0 "Downriver"
+# VICTORY_POINTS_11037:0 "Dearborn"
+# VICTORY_POINTS_11049:0 "Livonia"
+# VICTORY_POINTS_10344:0 "Royal Oak"
+# VICTORY_POINTS_5171:0 "St. Clair Shores"
+# VICTORY_POINTS_11059:0 "New Baltimore"
+##Greater Detroit Metro
+# VICTORY_POINTS_5154:0 "Ann Arbor"
+# VICTORY_POINTS_11814:0 "Jackson"
+##Saginaw
+# VICTORY_POINTS_2369:0 "Flint"
+##Lansing
+# VICTORY_POINTS_10593:0 "Lansing"
+# VICTORY_POINTS_11058:0 "Old Everett"
+# VICTORY_POINTS_11464:0 "Lansing Factories"
+# VICTORY_POINTS_11465:0 "Waverly"
+# VICTORY_POINTS_11070:0 "Edgemont Park"
+# VICTORY_POINTS_11507:0 "Lake Lansing"
+# VICTORY_POINTS_11063:0 "East Lansing"
+##Kalamazoo
+# VICTORY_POINTS_2257:0 "Kalamazoo"
+# VICTORY_POINTS_11825:0 "Battle Creek"
+##Grand Rapids
+# VICTORY_POINTS_11095:0 "Grand Rapids"
+# VICTORY_POINTS_11469:0 "Grandville"
+# VICTORY_POINTS_11103:0 "West Grand Rapids"
+# VICTORY_POINTS_11104:0 "Plainfield Township"
+# VICTORY_POINTS_11096:0 "East Grand Rapids"
+# VICTORY_POINTS_11470:0 "Wyoming"
+##Grand
+# VICTORY_POINTS_2160:0 "Muskegon"
+##Michigan Bay Area
+# VICTORY_POINTS_971:0 "Saginaw"
+##Superior
+# VICTORY_POINTS_4783:0 "Marquette"
+##Eastern Upper Peninsula
+# VICTORY_POINTS_3060:0 "Sault Ste. Marie"
+#
+####Indiana
+##Southern Indiana
+# VICTORY_POINTS_11682:0 "Tell City"
+##LaPorte
+# VICTORY_POINTS_11757:0 "Gary"
+# VICTORY_POINTS_11764:0 "East Chicago"
+# VICTORY_POINTS_11751:0 "Hammond"
+# VICTORY_POINTS_11748:0 "Merrillville"
+# VICTORY_POINTS_11750:0 "Valparaiso"
+# VICTORY_POINTS_11760:0 "Portage"
+# VICTORY_POINTS_11758:0 "Duneland"
+# VICTORY_POINTS_5269:0 "Michigan City"
+# VICTORY_POINTS_5277:0 "LaPorte"
+##Southbend
+# VICTORY_POINTS_4144:0 "South Bend"
+# VICTORY_POINTS_1480:0 "Elkhart"
+##Fort Wayne
+# VICTORY_POINTS_10935:0 "Fort Wayne"
+# VICTORY_POINTS_10930:0 "South Fort Wayne"
+# VICTORY_POINTS_10933:0 "Ellisville"
+# VICTORY_POINTS_10940:0 "Huntertown"
+# VICTORY_POINTS_10932:0 "New Haven"
+##Monon
+# VICTORY_POINTS_5365:0 "Logansport"
+##Wabash
+# VICTORY_POINTS_1684:0 "Kokomo"
+##Wabash Valley
+# VICTORY_POINTS_5448:0 "Lafayette"
+##Boone
+# VICTORY_POINTS_5601:0 "Bloomington"
+##Bluffton Till Plain
+# VICTORY_POINTS_5441:0 "Muncie"
+##Evansville
+# VICTORY_POINTS_5601:0 "Evansville"
+# VICTORY_POINTS_10761:0 "Westside"
+# VICTORY_POINTS_10448:0 "Jacobsville"
+# VICTORY_POINTS_11436:0 "Melody Hill"
+# VICTORY_POINTS_10758:0 "University of Evansville"
+# VICTORY_POINTS_10445:0 "Newburgh"
+##Indianapolis
+# VICTORY_POINTS_11447:0 "Indianapolis"
+# VICTORY_POINTS_10485:0 "Mooresville"
+# VICTORY_POINTS_10487:0 "Speedway"
+# VICTORY_POINTS_10858:0 "Carmel"
+# VICTORY_POINTS_10852:0 "Fishers"
+# VICTORY_POINTS_10847:0 "Lawrence"
+# VICTORY_POINTS_10841:0 "Greenwood"
+#
+##Illinois
+##Chicago
+# VICTORY_POINTS_11007:0 "Chicago"
+# VICTORY_POINTS_10991:0 "Hyde Park"
+# VICTORY_POINTS_11498:0 "South Chicago"
+# VICTORY_POINTS_5248:0 "Calumet City"
+# VICTORY_POINTS_10966:0 "Blue Island"
+# VICTORY_POINTS_10972:0 "Oak Lawn"
+# VICTORY_POINTS_10990:0 "Brighton Park"
+# VICTORY_POINTS_11459:0 "Cicero"
+# VICTORY_POINTS_10461:0 "Lincoln Park"
+# VICTORY_POINTS_11010:0 "Elmhurst"
+# VICTORY_POINTS_10782:0 "Evanston"
+# VICTORY_POINTS_10473:0 "Des Plaines"
+# VICTORY_POINTS_10501:0 "Highland Park"
+# VICTORY_POINTS_11028:0 "Buffalo Grove"
+# VICTORY_POINTS_10780:0 "North Chicago"
+# VICTORY_POINTS_11043:0 "Mundelein"
+# VICTORY_POINTS_10508:0 "Waukegan"
+##Naperville
+# VICTORY_POINTS_10522:0 "Aurora"
+# VICTORY_POINTS_11000:0 "Naperville"
+# VICTORY_POINTS_10651:0 "Carol Stream"
+# VICTORY_POINTS_11460:0 "Schaumburg"
+# VICTORY_POINTS_198:0 "Joliet"
+##Chicagoland
+# VICTORY_POINTS_11726:0 "Kankakee"
+# VICTORY_POINTS_11738:0 "Ottawa"
+##Rockford
+# VICTORY_POINTS_2261:0 "Rockford"
+##Blackhawk
+# VICTORY_POINTS_1391:0 "Rock Island-Moline"
+##Central Illinois Valley
+# VICTORY_POINTS_488:0 "Peoria"
+##Two Rivers
+# VICTORY_POINTS_1831:0 "Quincy"
+##Starved Rock
+# VICTORY_POINTS_60:0 "Bloomington-Normal"
+##Corn Belt
+# VICTORY_POINTS_3133:0 "Champaign"
+# VICTORY_POINTS_5468:0 "Danville"
+##Abe Lincoln
+# VICTORY_POINTS_5526:0 "Decatur"
+##Springfield
+# VICTORY_POINTS_10873:0 "Springfield"
+# VICTORY_POINTS_11505:0 "Southern View"
+# VICTORY_POINTS_10872:0 "Jerome"
+# VICTORY_POINTS_10569:0 "Oak Ridge"
+# VICTORY_POINTS_11450:0 "Grandview"
+# VICTORY_POINTS_10870:0 "Toronto"
+##Edwardsville
+# VICTORY_POINTS_950:0 "Edwardsville"
+##Kaskaskia
+# VICTORY_POINTS_5657:0 "Belleville"
+##Shawnee
+# VICTORY_POINTS_2205:0 "Marion"
+# VICTORY_POINTS_3632:0 "Cairo"
+#
+##Wisconsin
+##North Wisconsin
+# VICTORY_POINTS_3801:0 "Superior"
+##Kenosha
+# VICTORY_POINTS_11053:0 "Kenosha"
+# VICTORY_POINTS_11062:0 "Racine"
+# VICTORY_POINTS_10481:0 "Oak Creek"
+# VICTORY_POINTS_5128:0 "Burlington"
+##Milwaukee
+# VICTORY_POINTS_11110:0 "Milwaukee"
+# VICTORY_POINTS_11497:0 "South Milwaukee"
+# VICTORY_POINTS_11102:0 "West Allis"
+# VICTORY_POINTS_10720:0 "Waukesha"
+# VICTORY_POINTS_11123:0 "Shorewood"
+# VICTORY_POINTS_11472:0 "Port Washington"
+# VICTORY_POINTS_11128:0 "Menomonee Falls"
+##Madison Region
+# VICTORY_POINTS_5123:0 "Beloit"
+# VICTORY_POINTS_11876:0 "Janesville"
+# VICTORY_POINTS_3387:0 "Fond du Lac"
+##Centergy
+# VICTORY_POINTS_5014:0 "Oshkosh"
+##Madison
+# VICTORY_POINTS_11117:0 "Madison"
+# VICTORY_POINTS_10764:0 "Fitchburg"
+# VICTORY_POINTS_11115:0 "Monona"
+# VICTORY_POINTS_10531:0 "Burke"
+# VICTORY_POINTS_10764:0 "Waunakee"
+##Seven Rivers
+# VICTORY_POINTS_11121:0 "Middleton"
+# VICTORY_POINTS_3781:0 "Prairie du Chien"
+# VICTORY_POINTS_4981:0 "La Crosse"
+##Manitawoc
+# VICTORY_POINTS_4200:0 "Sheboygan"
+# VICTORY_POINTS_1815:0 "Manitawoc"
+##Green Bay
+# VICTORY_POINTS_11175:0 "Green Bay"
+# VICTORY_POINTS_11174:0 "Ashwaubenon"
+# VICTORY_POINTS_10503:0 "Howard"
+##New North
+# VICTORY_POINTS_4973:0 "Appleton"
+##Northwoods
+# VICTORY_POINTS_4910:0 "Eau Claire"
+#
