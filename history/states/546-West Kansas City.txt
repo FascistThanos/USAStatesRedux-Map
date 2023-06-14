@@ -8,7 +8,21 @@ state={
 			industrial_complex = 2
 		}
 		add_core_of = KSK
-
+		victory_points = {
+			10792 20 #Overland Park
+		}
+		victory_points = {
+			11444 10 #Shawnee
+		}
+		victory_points = {
+			10788 5 #Lenexa
+		}
+		victory_points = {
+			10787 10 #Olathe
+		}
+		victory_points = {
+			10799 5 #De Soto
+		}
 	}
 	provinces={
 		10555 10787 10788 10792 10799 11444 

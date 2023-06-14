@@ -8,7 +8,9 @@ state={
 			industrial_complex = 2
 		}
 		add_core_of = KSK
-
+		victory_points = {
+			142 5 #Emporia
+		}
 	}
 	provinces={
 		142 929 1313 2039 4283 5749 5806 5841 5846 

@@ -12,7 +12,24 @@ state={
 			arms_factory = 3
 		}
 		add_core_of = OKO
-
+		victory_points = {
+			10671 25 #Oklahoma City
+		}
+		victory_points = {
+			11527 10 #Moore
+		}
+		victory_points = {
+			10666 10 #Del City
+		}
+		victory_points = {
+			11528 10 #Forest Park
+		}
+		victory_points = {
+			10542 10 #The Village
+		}
+		victory_points = {
+			10665 10 #Mustang
+		}
 	}
 	provinces={
 		10542 10665 10666 10671 11527 11528 

@@ -8,7 +8,12 @@ state={
 			industrial_complex = 2
 		}
 		add_core_of = OKO
-
+		victory_points = {
+			1982 10 #Elk City
+		}
+		victory_points = {
+			3127 10 #Lawton
+		}
 	}
 	provinces={
 		1569 1982 2179 2222 2307 2482 2711 3127 3872 4146 6199 6220 6263 6281 6338 

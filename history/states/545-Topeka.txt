@@ -9,7 +9,21 @@ state={
 			arms_factory = 2
 		}
 		add_core_of = KSK
-
+		victory_points = {
+			10809 20 #Topeka
+		}
+		victory_points = {
+			10798 5 #Washburn University
+		}
+		victory_points = {
+			10800 5 #Monroe
+		}
+		victory_points = {
+			10790 10 #Pauline
+		}
+		victory_points = {
+			11560 10 #Watson
+		}
 	}
 	provinces={
 		10790 10798 10800 10809 11560 

@@ -10,7 +10,12 @@ state={
 
 		}
 		add_core_of = KSK
-
+		victory_points = {
+			5845 5 #Liberal
+		}
+		victory_points = {
+			5820 5 #Ulysses
+		}
 	}
 
 	provinces={

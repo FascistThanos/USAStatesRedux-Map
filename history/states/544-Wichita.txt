@@ -9,7 +9,24 @@ state={
 			arms_factory = 2
 		}
 		add_core_of = KSK
-
+		victory_points = {
+			10757 20 #Wichita
+		}
+		victory_points = {
+			10754 10 #Derby
+		}
+		victory_points = {
+			11559 10 #Eastborough
+		}
+		victory_points = {
+			10763 5 #Chisholm Creek
+		}
+		victory_points = {
+			11435 5 #Orchard Breeze
+		}
+		victory_points = {
+			10767 5 #Benjamin Hills
+		}
 	}
 	provinces={
 		10754 10757 10763 10767 11435 11559 

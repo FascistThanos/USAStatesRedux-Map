@@ -10,7 +10,15 @@ state={
 			industrial_complex = 2
 		}
 		add_core_of = OKO
-
+		victory_points = {
+			10690 20 #Tulsa
+		}
+		victory_points = {
+			2928 10 #Broken Arrow
+		}
+		victory_points = {
+			5960 5 #Bartlesville
+		}
 	}
 
 	provinces={

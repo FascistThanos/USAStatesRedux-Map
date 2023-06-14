@@ -10,7 +10,18 @@ state={
 
 		}
 		add_core_of = KSK
-
+		victory_points = {
+			3081 10 #Garden City
+		}
+		victory_points = {
+			2071 5 #Scott City
+		}
+		victory_points = {
+			1777 5 #Oakley
+		}
+		victory_points = {
+			5542 5 #Goodland
+		}
 	}
 
 	provinces={

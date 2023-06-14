@@ -11,7 +11,9 @@ state={
 			industrial_complex = 2
 		}
 		add_core_of = OKO
-
+		victory_points = {
+			6292 15 #Norman
+		}
 	}
 	provinces={
 		524 2219 2389 4180 6242 6272 6282 6292 6315 6319 6329 6356 6380 6409 10273 

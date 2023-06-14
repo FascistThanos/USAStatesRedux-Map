@@ -8,7 +8,15 @@ state={
 			industrial_complex = 1
 		}
 		add_core_of = KSK
-
+		victory_points = {
+			4356 10 #Manhattan
+		}
+		victory_points = {
+			5612 10 #Salina
+		}
+		victory_points = {
+			5683 10 #Hutchinson
+		}
 	}
 	provinces={
 		644 1272 1634 2152 4356 5612 5637 5669 5683 5700 5738 

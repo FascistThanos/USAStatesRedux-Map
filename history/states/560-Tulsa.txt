@@ -1,6 +1,6 @@
 state={
 	id=560
-	name="Tulsa"
+	name="Greater Tulsa"
 	resources = {
 		oil = 103
 	}
@@ -12,7 +12,24 @@ state={
 			arms_factory = 2
 		}
 		add_core_of = OKO
-
+		victory_points = {
+			11530 10 #Jenks
+		}
+		victory_points = {
+			11531 10 #Berryhill
+		}
+		victory_points = {
+			10689 5 #Prattville
+		}
+		victory_points = {
+			10686 5 #Sapulpa
+		}
+		victory_points = {
+			10683 5 #Glenpool
+		}
+		victory_points = {
+			11529 5 #Bixby
+		}
 	}
 	provinces={
 		10683 10686 10689 11529 11530 11531 

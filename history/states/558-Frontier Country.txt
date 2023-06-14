@@ -12,7 +12,9 @@ state={
 			arms_factory = 1
 		}
 		add_core_of = OKO
-
+		victory_points = {
+			72 5 #Muskogee
+		}
 	}
 	provinces={
 		72 1617 1785 3162 3301 3405 3794 4151 6069 6083 6105 6123 6138 6159 6166 6228 6229 

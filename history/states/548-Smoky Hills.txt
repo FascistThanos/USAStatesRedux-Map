@@ -10,7 +10,18 @@ state={
 
 		}
 		add_core_of = KSK
-
+		victory_points = {
+			5682 5 #Great Bend
+		}
+		victory_points = {
+			5607 5 #Hays
+		}
+		victory_points = {
+			2475 5 #WaKeeney
+		}
+		victory_points = {
+			5776 10 #Dodge City
+		}
 	}
 
 	provinces={
