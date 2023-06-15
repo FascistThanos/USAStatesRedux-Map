@@ -9,7 +9,21 @@ state={
 			arms_factory = 2
 		}
 		add_core_of = NEN
-
+		victory_points = {
+			11534 20 #Lincoln
+		}
+		victory_points = {
+			10918 5 #The Preserve
+		}
+		victory_points = {
+			10917 5 #Porter Ridge
+		}
+		victory_points = {
+			11562 5 #Arnold Heights
+		}
+		victory_points = {
+			11563 5 #Norwood Park
+		}
 	}
 	provinces={
 		10917 10918 11534 11562 11563 

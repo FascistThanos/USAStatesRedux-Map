@@ -9,7 +9,18 @@ state={
 			arms_factory = 1
 		}
 		add_core_of = NEN
-
+		victory_points = {
+			11561 15 #Grand Island
+		}
+		victory_points = {
+			11535 5 #Uptown
+		}
+		victory_points = {
+			10916 10 #Alda
+		}
+		victory_points = {
+			10929 10 #Abbott
+		}
 	}
 	provinces={
 		10916 10929 11535 11536 11561 

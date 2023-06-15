@@ -1,47 +1,4 @@
 ﻿l_english:
-###Connecticut
-#Greater Bridgeport
-# VICTORY_POINTS_10938:0 "Stamford"
-# VICTORY_POINTS_11734:0 "Norwalk"
-# VICTORY_POINTS_11736:0 "Bridgeport"
-# VICTORY_POINTS_3173:0 "Danbury"
-# VICTORY_POINTS_11737:0 "Devil's Den"
-# VICTORY_POINTS_10942:0 "Newton"
-##Greater Hartford
-# VICTORY_POINTS_11739:0 "New Haven"
-# VICTORY_POINTS_11770:0 "Bristol"
-##Litchfield
-# VICTORY_POINTS_11763:0 "Waterbury"
-# VICTORY_POINTS_11783:0 "Torrington"
-##West Hartford
-# VICTORY_POINTS_10981:0 "Hartford"
-# VICTORY_POINTS_10977:0 "New Britain"
-# VICTORY_POINTS_10970:0 "Middletown"
-# VICTORY_POINTS_10997:0 "Windsor"
-##East Hartford
-# VICTORY_POINTS_10982:0 "East Hartford"
-# VICTORY_POINTS_10968:0 "Pratt & Whitney HQ"
-# VICTORY_POINTS_10983:0 "Manchester"
-# VICTORY_POINTS_10993:0 "South Windsor"
-##Norwich-New London
-# VICTORY_POINTS_11742:0 "New London"
-# VICTORY_POINTS_11765:0 "Norwich"
-##Windham
-# VICTORY_POINTS_11784:0 "Willimantic"
-#
-####Rhode Island
-##Providence
-# VICTORY_POINTS_11006:0 "Providence"
-# VICTORY_POINTS_10999:0 "East Providence"
-# VICTORY_POINTS_11011:0 "Pawtucket"
-# VICTORY_POINTS_11009:0 "North Providence"
-# VICTORY_POINTS_10998:0 "Cranston"
-##Greater Providence
-# VICTORY_POINTS_11772:0 "Warwick"
-# VICTORY_POINTS_11013:0 "Woonsocket"
-##Kent
-# VICTORY_POINTS_11747:0 "Westerly"
-#
 ####Massachusetts
 ##Boston Metro
 # VICTORY_POINTS_11040:0 "Boston"

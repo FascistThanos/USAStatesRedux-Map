@@ -8,7 +8,9 @@ state={
 
 		}
 		add_core_of = NEN
-
+		victory_points = {
+			5327 10 #Ogallala
+		}
 	}
 	provinces={
 		1574 1763 2065 5180 5258 5320 5327 

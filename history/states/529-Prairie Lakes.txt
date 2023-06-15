@@ -8,7 +8,9 @@ state={
 
 		}
 		add_core_of = NEN
-
+		victory_points = {
+			2753 5 #McCook
+		}
 	}
 	provinces={
 		405 2623 2753 2784 3780 4264 5347 5376 5387 5431 5447 

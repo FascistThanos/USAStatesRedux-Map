@@ -8,7 +8,12 @@ state={
 
 		}
 		add_core_of = NEN
-
+		victory_points = {
+			5212 10 #Scottsbluff
+		}
+		victory_points = {
+			5181 5 #Alliance
+		}
 	}
 	provinces={
 		852 924 2244 2397 2813 2882 3028 3297 3390 3477 4326 5108 5138 5156 5181 5190 5212 5259 5298 

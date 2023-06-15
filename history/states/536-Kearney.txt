@@ -8,7 +8,15 @@ state={
 			industrial_complex = 2
 		}
 		add_core_of = NEN
-
+		victory_points = {
+			10892 15 #Kearney
+		}
+		victory_points = {
+			10897 10 #Buda
+		}
+		victory_points = {
+			10902 10 #Glenwood
+		}
 	}
 	provinces={
 		10892 10896 10897 10902 

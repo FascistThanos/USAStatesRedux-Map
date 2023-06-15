@@ -8,10 +8,15 @@ state={
 
 		}
 		add_core_of = NEN
-
+		victory_points = {
+			5161 5 #O'Neill
+		}
+		victory_points = {
+			5219 5 #Norfolk
+		}
 	}
 	provinces={
-		1426 1622 2469 3860 4295 5145 5150 5191 5210 5219 5286 
+		1426 1622 2469 3206 3860 4295 5145 5150 5161 5191 5210 5219 5286 
 	}
 	manpower=109331
 	buildings_max_level_factor=1.000

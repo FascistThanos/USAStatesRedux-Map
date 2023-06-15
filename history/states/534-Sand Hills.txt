@@ -8,10 +8,21 @@ state={
 
 		}
 		add_core_of = NEN
-
+		victory_points = {
+			2049 5 #Gothenburg
+		}
+		victory_points = {
+			2938 5 #North Platte
+		}
+		victory_points = {
+			5118 5 #Valentine
+		}
+		victory_points = {
+			3689 5 #Ainsworth
+		}
 	}
 	provinces={
-		657 1941 2049 2887 2938 2963 3005 3206 3380 3689 4164 5118 5139 5157 5161 5209 5236 5239 5252 5285 5299 5321 
+		657 1941 2049 2887 2938 2963 3005 3380 3689 4164 5118 5139 5157 5209 5236 5239 5252 5285 5299 5321 
 	}
 	manpower=108123
 	buildings_max_level_factor=1.000

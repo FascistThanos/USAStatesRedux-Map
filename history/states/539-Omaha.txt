@@ -9,7 +9,24 @@ state={
 			arms_factory = 1
 		}
 		add_core_of = NEN
-
+		victory_points = {
+			10954 25 #Omaha
+		}
+		victory_points = {
+			10957 10 #Carter Lake
+		}
+		victory_points = {
+			10946 10 #Bellevue
+		}
+		victory_points = {
+			11537 5 #Aksarben
+		}
+		victory_points = {
+			10945 5 #Millard
+		}
+		victory_points = {
+			11574 5 #Diamond Head
+		}
 	}
 	provinces={
 		10945 10946 10954 10957 11537 11574 
