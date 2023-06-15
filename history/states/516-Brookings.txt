@@ -7,7 +7,15 @@ state={
 			infrastructure = 3
 		}
 		add_core_of = SDS
-
+		victory_points = {
+			11183 15 #Brookings
+		}
+		victory_points = {
+			11180 5 #Aurora
+		}
+		victory_points = {
+			11566 5 #Volga
+		}
 	}
 	provinces={
 		11180 11183 11184 11566 

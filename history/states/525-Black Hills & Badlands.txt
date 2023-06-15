@@ -8,7 +8,12 @@ state={
 
 		}
 		add_core_of = SDS
-
+		victory_points = {
+			5029 5 #Wall
+		}
+		victory_points = {
+			3216 5 #Custer
+		}
 	}
 	provinces={
 		307 1723 3216 3889 5028 5029 

@@ -8,7 +8,9 @@ state={
 
 		}
 		add_core_of = SDS
-
+		victory_points = {
+			4240 5 #Watertown
+		}
 	}
 	provinces={
 		1303 2604 3031 3269 3913 4240 4905 4939 4948 

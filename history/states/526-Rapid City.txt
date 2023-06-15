@@ -9,7 +9,18 @@ state={
 			arms_factory = 1
 		}
 		add_core_of = SDS
-
+		victory_points = {
+			11160 25 #Rapid City
+		}
+		victory_points = {
+			10610 10 #Rapid Valley
+		}
+		victory_points = {
+			11162 10 #Box Elder
+		}
+		victory_points = {
+			11165 10 #Black Hawk
+		}
 	}
 	provinces={
 		10610 11160 11162 11165 

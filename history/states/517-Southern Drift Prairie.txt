@@ -8,7 +8,12 @@ state={
 
 		}
 		add_core_of = SDS
-
+		victory_points = {
+			5008 5 #Mitchell
+		}
+		victory_points = {
+			4993 5 #Madison
+		}
 	}
 	provinces={
 		353 2231 3026 3055 4993 5008 

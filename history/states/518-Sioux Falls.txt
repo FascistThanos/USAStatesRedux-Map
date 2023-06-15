@@ -9,7 +9,21 @@ state={
 			arms_factory = 1
 		}
 		add_core_of = SDS
-
+		victory_points = {
+			11139 20 #Sioux Falls
+		}
+		victory_points = {
+			11474 5 #Ellis
+		}
+		victory_points = {
+			11473 5 #Harrisburg
+		}
+		victory_points = {
+			11477 5 #Rowena
+		}
+		victory_points = {
+			11478 5 #Bufallo Ridge
+		}
 	}
 	provinces={
 		11131 11139 11148 11473 11474 11477 

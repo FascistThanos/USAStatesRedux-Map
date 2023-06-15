@@ -5,10 +5,20 @@ state={
 		owner = SDS
 		buildings = {
 			infrastructure = 2
-
 		}
 		add_core_of = SDS
-
+		victory_points = {
+			11199 15 #Aberdeen
+		}
+		victory_points = {
+			11155 5 #Ordway
+		}
+		victory_points = {
+			11198 5 #Stratford
+		}
+		victory_points = {
+			11203 5 #Bath
+		}
 	}
 	provinces={
 		11155 11198 11199 11203 

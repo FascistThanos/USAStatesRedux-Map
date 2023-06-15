@@ -8,7 +8,9 @@ state={
 
 		}
 		add_core_of = SDS
-
+		victory_points = {
+			4302 5 #Yankton
+		}
 	}
 	provinces={
 		4302 5055 

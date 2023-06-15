@@ -8,7 +8,9 @@ state={
 
 		}
 		add_core_of = SDS
-
+		victory_points = {
+			5012 5 #Chamberlain
+		}
 	}
 	provinces={
 		883 1491 2041 2929 4947 5012 5061 5076 5093 10238 

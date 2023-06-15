@@ -8,7 +8,12 @@ state={
 
 		}
 		add_core_of = SDS
-
+		victory_points = {
+			4881 5 #Mobridge
+		}
+		victory_points = {
+			2614 25 #Pierre
+		}
 	}
 	provinces={
 		1082 1803 1918 2339 2614 4339 4842 4860 4881 4882 4966 10219 
