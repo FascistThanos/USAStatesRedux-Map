@@ -17,7 +17,6 @@ characters = {
 				original_tag = PAP
 			}
 			available = {
-				#has_completed_focus = USA_war_plans_division
 			}
 			traits = {
 				army_chief_planning_2
