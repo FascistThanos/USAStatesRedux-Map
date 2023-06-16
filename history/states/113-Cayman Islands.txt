@@ -12,8 +12,8 @@ state={
 		}
 		add_core_of = CYM
 	}
-	manpower=1
-	state_category=wasteland
+	manpower=6912
+	state_category=rural
 	provinces={
 		8204
 	}

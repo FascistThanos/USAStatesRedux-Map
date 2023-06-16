@@ -124,7 +124,7 @@ instant_effect = {
 			type = artillery_equipment_1
 			creator = "TXT"
 		}
-		requested_factories = 1
+		requested_factories = 2
 		progress = 0
 		efficiency = 15
 	}
@@ -133,18 +133,27 @@ instant_effect = {
 			type = support_equipment_1
 			creator = "TXT"
 		}
-		requested_factories = 1
+		requested_factories = 2
 		progress = 0
 		efficiency = 30
 	}
 	add_equipment_production = {
 		equipment = {
-			type = motorized_equipment
+			type = motorized_equipment_1
+			creator = "TXT"
+		}
+		requested_factories = 2
+		progress = 0
+		efficiency = 47
+	}
+	add_equipment_production = {
+		equipment = { 
+			type = fighter_equipment_1
 			creator = "TXT"
 		}
 		requested_factories = 1
-		progress = 0
-		efficiency = 47
+		progress = 0.53
+		efficiency = 30
 	}
 	add_equipment_production = {
 		equipment = {

@@ -1,31 +1,98 @@
 units = {
 	fleet = {
-	name = "First Pacific Fleet"
-	naval_base = 10579
+		name = "First Pacific Fleet"
+		naval_base = 10579
+		task_force = {
+	  		name = "Battleships, Battle Force"
+	  		location = 10579 # San Diego
+	  		### Battleship Division 1 ###
+	  		ship = { 
+				name = "CAS Nevada" 
+				definition = battleship 
+				start_experience_factor = 0.25 
+				equipment = { 
+					ship_hull_heavy_1 = { 
+						amount = 1 
+						owner = CAC 
+						version_name = "Pennsylvania Class" 
+					} 
+				} 
+			}
+			ship = { 
+				name = "CAS Arizona" 
+				definition = battleship 
+				start_experience_factor = 0.25 
+				equipment = { 
+					ship_hull_heavy_1 = { 
+						amount = 1 
+						owner = CAC 
+						version_name = "Pennsylvania Class" 
+					} 
+				} 
+			}
+	  		ship = { 
+				name = "CAS Merriam" 
+				pride_of_the_fleet = yes 
+				definition = battleship 
+				start_experience_factor = 0.25 
+				equipment = { 
+					ship_hull_heavy_1 = { 
+						amount = 1 
+						owner = CAC 
+						version_name = "Pennsylvania Class" 
+					} 
+				} 
+			}
+	  	}
+	  	task_force = {
+			name = "Cruisers, Battle Force"
+			location = 10579 # San Diego
+			# Cruiser Division 2 #
+			ship = { 
+				name = "CAS Omaha" 
+				definition = light_cruiser 
+				start_experience_factor = 0.25 
+				equipment = { 
+					ship_hull_cruiser_2 = { 
+						amount = 1 
+						owner = CAC 
+						version_name = "Omaha Class" 
+					} 
+				} 
+			}
+			ship = { name = "CAS Milwaukee" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = CAC version_name = "Omaha Class" } } }
+			# Cruiser Division 6 #
+			ship = { name = "CAS Indianapolis" definition = heavy_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = CAC version_name = "Portland Class" } } }
+	  	}
 	  task_force = {
-	  name = "Battleships, Battle Force"
-	  location = 10579 # San Diego
-	  ### Battleship Division 1 ###
-	  ship = { name = "CAS Nevada" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = CAC version_name = "Pennsylvania Class" } } }
-	  ship = { name = "CAS Arizona" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = CAC version_name = "Pennsylvania Class" } } }
-	  ship = { name = "CAS Merriam" pride_of_the_fleet = yes definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = CAC version_name = "Pennsylvania Class" } } }
-	  }
-	  task_force = {
-		name = "Cruisers, Battle Force"
-		location = 10579 # San Diego
-		# Cruiser Division 2 #
-		ship = { name = "CAS Omaha" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = CAC version_name = "Omaha Class" } } }
-		ship = { name = "CAS Milwaukee" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = CAC version_name = "Omaha Class" } } }
-		# Cruiser Division 6 #
-		ship = { name = "CAS Indianapolis" definition = heavy_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = CAC version_name = "Portland Class" } } }
-	  }
-	  task_force = {
-			  name = "Destroyer Flotilla 1"
-			  location = 10579 # San Diego
-			  ship = { name = "CAS Raleigh" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = CAC version_name = "Omaha Class" } } }
+			name = "Destroyer Flotilla 1"
+			location = 10579 # San Diego
+			ship = { 
+				name = "CAS Raleigh" 
+				definition = light_cruiser 
+				start_experience_factor = 0.25 
+				equipment = { 
+					ship_hull_cruiser_2 = { 
+						amount = 1 
+						owner = CAC 
+						version_name = "Omaha Class" 
+					} 
+				} 
+			}
 			  ### Destroyer Squadron 1 ###
 			  # 1st Destroyer Division
-			  ship = { name = "CAS Dewey" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = CAC version_name = "Farragut Class" } } }
+			ship = { 
+				name = "CAS Dewey" 
+				definition = destroyer 
+				start_experience_factor = 0.25 
+				equipment = { 
+					ship_hull_light_1 = { 
+						amount = 1 
+						owner = CAC 
+						version_name = "Farragut Class" 
+					} 
+				} 
+			}
 			  ship = { name = "CAS Hull" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = CAC version_name = "Farragut Class" } } }
 			  ship = { name = "CAS MacDonough" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = CAC version_name = "Farragut Class" } } }
 			  ship = { name = "CAS Worden" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = CAC version_name = "Farragut Class" } } }
@@ -89,7 +156,7 @@ units = {
 			  name = "Cruisers, Battle Force"
 			  location = 6413 # Los Angeles
 			  # Cruiser Division 2 #
-			  ship = { name = "CAS Cincinnati" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = CAC version_name = "Omaha Class" } } }
+			  ship = { name = "CAS Cincinnati" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = CAC version_name = "Omaha Class" } } }
 			  # Cruiser Division 6 #
 			  ship = { name = "CAS Bakersfield" definition = heavy_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = CAC version_name = "New Orleans Class" } } }
 			  ship = { name = "CAS Minneapolis" definition = heavy_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = CAC version_name = "New Orleans Class" } } }
@@ -97,7 +164,7 @@ units = {
 	  task_force = {
 			  name = "Destroyer Flotilla 2"
 			  location = 6413 # Los Angeles
-			  ship = { name = "CAS Detroit" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = CAC version_name = "Omaha Class" } } }
+			  ship = { name = "CAS Detroit" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = CAC version_name = "Omaha Class" } } }
 			  ### Destroyer Squadron 7 ###
 			  # 24th Destroyer Division
 			  ship = { name = "CAS Zane" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CAC version_name = "Farragut Class" } } }

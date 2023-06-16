@@ -71,19 +71,19 @@ units = {
 		task_force = {
 			name = "Strike Force Alpha"
 			location = 10420 # HIH
-			ship = { name = "HIS 1" pride_of_the_fleet = yes definition = battleship equipment = { battleship_1 = { amount = 1 owner = HIH version_name = "New Mexico Class" } } }
-			ship = { name = "HIS 1a" definition = battleship equipment = { battleship_1 = { amount = 1 owner = HIH version_name = "New Mexico Class" } } }
-			ship = { name = "HIS 1b" definition = battleship equipment = { battleship_1 = { amount = 1 owner = HIH version_name = "New Mexico Class" } } }
-			ship = { name = "HIS 2" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = HIH version_name = "Portland Class" } } }
-			ship = { name = "HIS 3" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = HIH version_name = "Portland Class" } } }
-			ship = { name = "HIS 4" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = HIH version_name = "Portland Class" } } }
-			ship = { name = "HIS 2a" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = HIH version_name = "Portland Class" } } }
-			ship = { name = "HIS 3b" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = HIH version_name = "Portland Class" } } }
-			ship = { name = "HIS 4c" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = HIH version_name = "Portland Class" } } }
-			ship = { name = "HIS Borie" pride_of_the_fleet = yes definition = battleship equipment = { battleship_1 = { amount = 1 owner = HIH version_name = "New Mexico Class" } } }
-			ship = { name = "HIS Breckinridge" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = HIH version_name = "Portland Class" } } }
-			ship = { name = "HIS Barney" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = HIH version_name = "Portland Class" } } }
-			ship = { name = "HIS Blakley" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = HIH version_name = "Portland Class" } } }
+			ship = { name = "HIS 1" pride_of_the_fleet = yes definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = HIH version_name = "Pennsylvania Class" } } }
+			ship = { name = "HIS 1a" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = HIH version_name = "Pennsylvania Class" } } }
+			ship = { name = "HIS 1b" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = HIH version_name = "Pennsylvania Class" } } }
+			ship = { name = "HIS 2" definition = heavy_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = HIH version_name = "Portland Class" } } }
+			ship = { name = "HIS 3" definition = heavy_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = HIH version_name = "Portland Class" } } }
+			ship = { name = "HIS 4" definition = heavy_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = HIH version_name = "Portland Class" } } }
+			ship = { name = "HIS 2a" definition = heavy_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = HIH version_name = "Portland Class" } } }
+			ship = { name = "HIS 3b" definition = heavy_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = HIH version_name = "Portland Class" } } }
+			ship = { name = "HIS 4c" definition = heavy_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = HIH version_name = "Portland Class" } } }
+			ship = { name = "HIS Borie" pride_of_the_fleet = yes definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = HIH version_name = "Pennsylvania Class" } } }
+			ship = { name = "HIS Breckinridge" definition = heavy_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = HIH version_name = "Portland Class" } } }
+			ship = { name = "HIS Barney" definition = heavy_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = HIH version_name = "Portland Class" } } }
+			ship = { name = "HIS Blakley" definition = heavy_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = HIH version_name = "Portland Class" } } }
 			ship = { name = "HIS Franklin" definition = submarine equipment = { submarine_1 = { amount = 1 owner = HIH } } }
 		}
 		task_force = {
