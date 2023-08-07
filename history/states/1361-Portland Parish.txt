@@ -7,7 +7,7 @@ state={
 	history={
 		owner = JAM
 		buildings = {
-			infrastructure = 1
+			infrastructure = 5
 			industrial_complex = 1
 		}
 		add_core_of = JAM
@@ -16,8 +16,8 @@ state={
 	provinces={
 		2975 7616 
 	}
-	manpower=1
+	manpower=559138
 	buildings_max_level_factor=1.000
-	local_supplies=0.000
-	state_category = wasteland
+	local_supplies=12.000
+	state_category = metropolis
 }

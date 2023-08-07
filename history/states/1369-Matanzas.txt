@@ -7,7 +7,7 @@ state={
 	history={
 		owner = CUB
 		buildings = {
-			infrastructure = 1
+			infrastructure = 4
 			arms_factory = 1
 		}
 		add_core_of = CUB
@@ -16,8 +16,8 @@ state={
 	provinces={
 		945 2792 7362 7365 7367 7384 
 	}
-	manpower=1
+	manpower=347019
 	buildings_max_level_factor=1.000
-	local_supplies=0.000
-	state_category = wasteland
+	local_supplies=10.000
+	state_category = large_city
 }

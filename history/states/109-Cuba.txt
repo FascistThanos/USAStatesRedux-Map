@@ -8,7 +8,7 @@ state={
 	history={
 		owner = CUB
 		buildings = {
-			infrastructure = 5
+			infrastructure = 3
 			industrial_complex = 2
 			arms_factory = 1
 		}
@@ -19,8 +19,8 @@ state={
 	provinces={
 		2495 7480 7495 
 	}
-	manpower=4370436
+	manpower=176441
 	buildings_max_level_factor=1.000
-	state_category=megalopolis
-	local_supplies=15.000
+	state_category=large_town
+	local_supplies=5.000
 }
