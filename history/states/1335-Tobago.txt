@@ -6,7 +6,7 @@ state={
 	history={
 		owner = TAT
 		buildings = {
-			infrastructure = 1
+			infrastructure = 3
 			11622 = {
 				naval_base = 2
 			}
@@ -18,8 +18,8 @@ state={
 	provinces={
 		8230 11622 
 	}
-	manpower=1
+	manpower=54084
 	buildings_max_level_factor=1.000
-	state_category=wasteland
-	local_supplies=0.000
+	state_category=town
+	local_supplies=3.000
 }

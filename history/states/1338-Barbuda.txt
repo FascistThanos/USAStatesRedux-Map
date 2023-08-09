@@ -16,8 +16,8 @@ state={
 	provinces={
 		8212 
 	}
-	manpower=1
+	manpower=1297
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
-	state_category = wasteland
+	state_category = small_island
 }

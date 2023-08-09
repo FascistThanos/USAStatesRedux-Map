@@ -13,7 +13,7 @@ state={
 		add_core_of = ANG
 	}
 	manpower=4600
-	state_category=tiny_island
+	state_category=small_city
 	provinces={
 		8210
 	}

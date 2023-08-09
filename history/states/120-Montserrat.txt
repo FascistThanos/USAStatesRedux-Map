@@ -13,7 +13,7 @@ state={
 		add_core_of = MNT
 	}
 	manpower=12716
-	state_category=pastoral
+	state_category=small_city
 	provinces={
 		8215
 	}
