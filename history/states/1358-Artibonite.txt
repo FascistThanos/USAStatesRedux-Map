@@ -4,7 +4,7 @@ state={
 	history={
 		owner = HAI
 		buildings = {
-			infrastructure = 1
+			infrastructure = 5
 			industrial_complex = 1
 		}
 		add_core_of = HAI
@@ -13,8 +13,8 @@ state={
 	provinces={
 		4072 7568 7569 
 	}
-	manpower=1
+	manpower=576011
 	buildings_max_level_factor=1.000
-	local_supplies=0.000
-	state_category = wasteland
+	local_supplies=12.000
+	state_category = metropolis
 }

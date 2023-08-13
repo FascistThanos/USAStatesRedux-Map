@@ -4,7 +4,7 @@ state={
 	history={
 		owner = DOM
 		buildings = {
-			infrastructure = 1
+			infrastructure = 4
 			industrial_complex = 1
 		}
 		add_core_of = DOM
@@ -13,8 +13,8 @@ state={
 	provinces={
 		2398 3374 7584 7600 7603 
 	}
-	manpower=1
+	manpower=336129
 	buildings_max_level_factor=1.000
-	local_supplies=0.000
-	state_category = wasteland
+	local_supplies=10.000
+	state_category = large_city
 }
