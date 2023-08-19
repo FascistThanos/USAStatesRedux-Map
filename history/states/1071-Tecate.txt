@@ -13,8 +13,13 @@ state={
 				naval_base = 4
 			}
 		}
+		victory_points = {
+			6688 10 #Ensenada
+		}
+		victory_points = {
+			2535 5 #San Quintin
+		}
 		add_core_of = BCA
-
 	}
 	provinces={
 		1474 1713 2535 4359 6595 6608 6620 6688 6702 6739 6775 

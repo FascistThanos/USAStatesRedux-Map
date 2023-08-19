@@ -12,8 +12,10 @@ state={
 				naval_base = 1
 			}
 		}
+		victory_points = {
+			6993 5 #Bahia de los Angeles
+		}
 		add_core_of = BCA
-
 	}
 
 	provinces={

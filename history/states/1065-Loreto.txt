@@ -5,10 +5,11 @@ state={
 		owner = BCS
 		buildings = {
 			infrastructure = 1
-
+		}
+		victory_points = {
+			3448 5 #Loreto
 		}
 		add_core_of = BCS
-
 	}
 	provinces={
 		2210 3147 3448 7171 7184 7201 7226 7234 

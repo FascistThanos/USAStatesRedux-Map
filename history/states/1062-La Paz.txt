@@ -8,11 +8,13 @@ state={
 			industrial_complex = 1
 			arms_factory = 1
 		}
+		victory_points = {
+			7324 20 #La Paz
+		}
 		add_core_of = BCS
-
 	}
 	provinces={
-		615 2557 2870 3433 7305 7310 7314 7321 7324 
+		615 2870 3433 7305 7310 7314 7321 7324 
 	}
 	manpower=20114
 	buildings_max_level_factor=1.000

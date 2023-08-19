@@ -9,8 +9,10 @@ state={
 		buildings = {
 			infrastructure = 2
 		}
+		victory_points = {
+			6609 20 #Mexicali
+		}
 		add_core_of = BCA
-
 	}
 	provinces={
 		1057 1791 2144 2641 2983 3222 4015 4111 4306 4361 6609 6648 

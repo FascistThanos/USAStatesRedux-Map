@@ -10,8 +10,16 @@ state={
 		buildings = {
 			infrastructure = 2
 		}
+		victory_points = {
+			7076 5 #Guerrero Negro
+		}
+		victory_points = {
+			7095 5 #Bahia Tortugas
+		}
+		victory_points = {
+			7149 10 #Mulege
+		}
 		add_core_of = BCS
-
 	}
 
 	provinces={

@@ -7,11 +7,19 @@ state={
 			infrastructure = 2
 			industrial_complex = 1
 		}
+		victory_points = {
+			7328 5 #Los Barriles
+		}
+		victory_points = {
+			7373 10 #Cabo San Lucas
+		}
+		victory_points = {
+			2557 10 #Todos Santos
+		}
 		add_core_of = BCS
-
 	}
 	provinces={
-		7328 7341 7342 7355 7358 7373 
+		2557 7328 7341 7342 7355 7358 7373 
 	}
 	manpower=10226
 	buildings_max_level_factor=1.000

@@ -8,8 +8,10 @@ state={
 			industrial_complex = 1
 			arms_factory = 1
 		}
+		victory_points = {
+			7286 5 #San Carlos
+		}
 		add_core_of = BCS
-
 	}
 	provinces={
 		143 969 3788 7212 7233 7244 7274 7286 
