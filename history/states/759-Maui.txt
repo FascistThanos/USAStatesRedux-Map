@@ -15,8 +15,13 @@ state={
 				naval_base = 1
 			}
 		}
+		victory_points = {
+			7464 5 #Hana
+		}
+		victory_points = {
+			7461 5 #Lahaina
+		}
 		add_core_of = HIH
-
 	}
 	provinces={
 		7461 7464 8201 

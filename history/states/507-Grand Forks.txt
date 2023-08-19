@@ -7,8 +7,16 @@ state={
 			infrastructure = 3
 			industrial_complex = 1
 		}
+		victory_points = {
+			11282 20
+		}
+		victory_points = {
+			11281 5
+		}
+		victory_points = {
+			11573 5
+		}
 		add_core_of = NDN
-
 	}
 	provinces={
 		11281 11282 11283 11573 

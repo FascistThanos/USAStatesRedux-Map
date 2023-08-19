@@ -11,8 +11,22 @@ state={
 				naval_base = 3
 			}
 		}
+		victory_points = {
+			11353 20 #Anchorage
+		}
+		victory_points = {
+			11355 5 #Mountain View
+		}
+		victory_points = {
+			11351 5 #North Star
+		}
+		victory_points = {
+			11350 5 #Midtown
+		}
+		victory_points = {
+			11352 5 #Basher
+		}
 		add_core_of = AKA
-
 	}
 	provinces={
 		11350 11351 11352 11353 11355 11356 

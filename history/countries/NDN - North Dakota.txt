@@ -1,4 +1,4 @@
-﻿capital = 53
+﻿capital = 511
 
 oob = "NDN_1936"
 

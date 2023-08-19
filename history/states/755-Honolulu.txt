@@ -12,8 +12,10 @@ state={
 				naval_base = 6
 			}
 		}
+		victory_points = {
+			10420 20 #Honolulu
+		}
 		add_core_of = HIH
-
 	}
 	provinces={
 		10419 10420 10421 

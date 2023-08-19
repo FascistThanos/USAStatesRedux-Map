@@ -10,8 +10,19 @@ state={
 				naval_base = 2
 			}
 		}
+		victory_points = {
+			11338 20 #Juneau
+		}
+		victory_points = {
+			11339 10 #Thane
+		}
+		victory_points = {
+			11340 5 #Lemon Creek
+		}
+		victory_points = {
+			11341 5 #Mendenhall Valley
+		}
 		add_core_of = AKA
-
 	}
 	provinces={
 		11338 11339 11340 11341 11342 

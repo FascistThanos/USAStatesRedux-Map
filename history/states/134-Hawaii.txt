@@ -14,8 +14,16 @@ state={
 				naval_base = 2
 			}
 		}
+		victory_points = {
+			4172 10 #Hilo
+		}
+		victory_points = {
+			897 10 #Kailua-Hona
+		}
+		victory_points = {
+			7557 5 #Ocean View
+		}
 		add_core_of = HIH
-
 	}
 
 	provinces={

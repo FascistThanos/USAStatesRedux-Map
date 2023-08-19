@@ -6,8 +6,16 @@ state={
 		buildings = {
 			infrastructure = 3
 		}
+		victory_points = {
+			11357 15 #Knik-Fairview
+		}
+		victory_points = {
+			11354 10 #Point MacKenzie
+		}
+		victory_points = {
+			11358 10 #Wasilla
+		}
 		add_core_of = AKA
-
 	}
 	provinces={
 		11354 11357 11358 

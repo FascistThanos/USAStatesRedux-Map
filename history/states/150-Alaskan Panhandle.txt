@@ -8,10 +8,14 @@ state={
 		owner = AKA
 		buildings = {
 			infrastructure = 1
-
+		}
+		victory_points = {
+			1167 5 #Wrangell
+		}
+		victory_points = {
+			78 5 #Skagway
 		}
 		add_core_of = AKA
-
 	}
 
 	provinces={

@@ -10,8 +10,16 @@ state={
 			infrastructure = 3
 			industrial_complex = 2
 		}
+		victory_points = {
+			7439 10 #Ewa Beach
+		}
+		victory_points = {
+			7428 5 #Maili
+		}
+		victory_points = {
+			10424 5 #Kawela Bay
+		}
 		add_core_of = HIH
-
 	}
 	provinces={
 		7428 7439 10422 10423 10424 

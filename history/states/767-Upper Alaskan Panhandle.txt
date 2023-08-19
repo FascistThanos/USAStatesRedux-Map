@@ -5,10 +5,11 @@ state={
 		owner = AKA
 		buildings = {
 			infrastructure = 1
-
+		}
+		victory_points = {
+			641 5 #Yakutat
 		}
 		add_core_of = AKA
-
 	}
 	provinces={
 		641 2121 2380 3186 

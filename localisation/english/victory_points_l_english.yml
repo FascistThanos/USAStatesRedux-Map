@@ -808,6 +808,30 @@ VICTORY_POINTS_5960:0 "Bartlesville"
 ###################################
 ##### A L P H A B E T I Z E D #####
 ###################################
+#####Alaska
+#Juneau
+VICTORY_POINTS_11338:0 "Juneau"
+VICTORY_POINTS_11339:0 "Thane"
+VICTORY_POINTS_11340:0 "Lemon Creek"
+VICTORY_POINTS_11341:0 "Mendenhall Valley"
+#Anchorage
+VICTORY_POINTS_11353:0 "Anchorage"
+VICTORY_POINTS_11355:0 "Mountain View"
+VICTORY_POINTS_11351:0 "North Star"
+VICTORY_POINTS_11350:0 "Midtown"
+VICTORY_POINTS_11352:0 "Basher"
+#Knik-Fairview
+VICTORY_POINTS_11357:0 "Knik-Fairview"
+VICTORY_POINTS_11354:0 "Point MacKenzie"
+VICTORY_POINTS_11358:0 "Wasilla"
+#The Rest of Alaska
+VICTORY_POINTS_1167:0 "Wrangell"
+VICTORY_POINTS_78:0 "Skagway"
+VICTORY_POINTS_641:0 "Yakutat"
+VICTORY_POINTS_3255:0 "Katalla"
+VICTORY_POINTS_1203:0 "Cordova"
+VICTORY_POINTS_3800:0 "Homer"
+VICTORY_POINTS_179:0 "Glacier View"
 
 #####Connecticut
 #Hartford
@@ -932,7 +956,20 @@ VICTORY_POINTS_5960:0 "Bartlesville"
  VICTORY_POINTS_4236:0 "Valdosta"
  VICTORY_POINTS_2791:0 "Athens"
  VICTORY_POINTS_2168:0 "Brunswick"
-
+#####Hawaii
+#Honolulu
+VICTORY_POINTS_10420:0 "Honolulu"
+VICTORY_POINTS_7439:0 "Ewa Beach"
+VICTORY_POINTS_7428:0 "Maili"
+VICTORY_POINTS_10424:0 "Kawela Bay"
+#The Rest of Hawaii
+VICTORY_POINTS_4172:0 "Hilo"
+VICTORY_POINTS_897:0 "Kailua-Kona"
+VICTORY_POINTS_7557:0 "Ocean View"
+VICTORY_POINTS_7464:0 "Hana"
+VICTORY_POINTS_7461:0 "Lahaina"
+VICTORY_POINTS_7409:0 "Kapa'a"
+VICTORY_POINTS_3671:0 "Lihue"
 #####Kansas
 #Kansas City, KS
 VICTORY_POINTS_10792:0 "Overland Park"
@@ -1110,6 +1147,30 @@ VICTORY_POINTS_3665:0 "Glen Falls"
 VICTORY_POINTS_10937:0 "White Plains"
 VICTORY_POINTS_10984:0 "Poughkeepsie"
 VICTORY_POINTS_10951:0 "Middletown"
+#####North Dakota
+#Fargo
+VICTORY_POINTS_10608:0 "Fargo"
+VICTORY_POINTS_11492:0 "Brunsdale"
+VICTORY_POINTS_11256:0 "West Fargo"
+VICTORY_POINTS_11258:0 "North River"
+#Grand Forks
+VICTORY_POINTS_11282:0 "Grand Forks"
+VICTORY_POINTS_11281:0 "Powell"
+VICTORY_POINTS_11573:0 "Columbia Heights"
+#Bismarck
+VICTORY_POINTS_11490:0 "Bismarck"
+VICTORY_POINTS_11241:0 "Arnold"
+#Mandan
+VICTORY_POINTS_11491:0 "Mandan"
+#The Rest of North Dakota
+VICTORY_POINTS_1246:0 "Grafton"
+VICTORY_POINTS_4706:0 "Rugby"
+VICTORY_POINTS_4785:0 "Valley City"
+VICTORY_POINTS_3963:0 "Carrington"
+VICTORY_POINTS_11945:0 "Fort Yates"
+VICTORY_POINTS_4767:0 "Dickinson"
+VICTORY_POINTS_1221:0 "Bowman"
+VICTORY_POINTS_3741:0 "Medora"
 
 #####Rhode Island
 #Providence

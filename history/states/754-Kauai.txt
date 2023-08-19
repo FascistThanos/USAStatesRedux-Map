@@ -15,8 +15,13 @@ state={
 				naval_base = 4
 			}
 		}
+		victory_points = {
+			7409 5 #Kapa'a
+		}
+		victory_points = {
+			3671 5 #Lihue
+		}
 		add_core_of = HIH
-
 	}
 	provinces={
 		3671 7409 8192 

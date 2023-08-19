@@ -5,10 +5,14 @@ state={
 		owner = NDN
 		buildings = {
 			infrastructure = 3
-
+		}
+		victory_points = {
+			1221 5
+		}
+		victory_points = {
+			3741 5
 		}
 		add_core_of = NDN
-
 	}
 	provinces={
 		1221 1324 3437 3741 4722 4731 4827 
