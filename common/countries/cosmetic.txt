@@ -203,3 +203,44 @@ CNY = {
   color = rgb { 119 52 235 }
   color_ui = rgb { 120 60 255 }
 }
+NAU = {
+	color = rgb { 40 79 143 }
+	color_ui = rgb { 40 79 143 }
+}
+EDT = {
+	color = rgb { 182 255 0 }
+	color_ui = rgb { 182 255 0 }
+}
+  CST = {
+	color = rgb { 0 38 186 }
+	color_ui = rgb { 0 38 186 }
+}
+  MST = {
+	color = rgb { 255 106 0 }
+	color_ui = rgb { 255 106 0 }
+}
+PST = {
+	color = rgb { 255 0 0 }
+	color_ui = rgb { 255 0 0 }
+}
+AKST = {
+	color = rgb { 113 64 58  }
+	color_ui = rgb { 113 64 58 }
+}
+ALST = {
+	color = rgb { 116 55 135 }
+	color_ui = rgb { 116 55 135 }
+}
+NST = {
+	color = rgb { 0 160 21 }
+	color_ui = rgb { 0 160 21 }
+}
+  
+REP = {
+	color = rgb { 232 55 39 }
+	color_ui = rgb { 232 55 39 }
+}
+DEM = {
+	color = rgb { 55 109 191 }
+	color_ui = rgb { 55 109 191 }
+}

@@ -1,0 +1,212 @@
+spriteTypes = {
+
+### MISC INTERFACE GRAPHICS ###
+
+	spriteType = {
+		name = "GFX_button_open"
+		textureFile = "/gfx/interface/scripted_gui_graphics/button_open.dds"
+	}
+	spriteType = {
+		name = "GFX_formables_map"
+		textureFile = "/gfx/interface/scripted_gui_graphics/formables_splashpage.dds"
+	}
+	spriteType = {
+		name = "GFX_template_header_bg"
+		textureFile = "/gfx/interface/scripted_gui_graphics/template_header_bg.dds"
+	}
+	SpriteType = {
+		name = "form_nation_button_shine"
+		texturefile = "gfx/interface/goals/focus_generic_treaty.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/focus_generic_treaty.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = yes
+			animationtime = 2
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/focus_generic_treaty.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = yes
+			animationtime = 2
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+### HELP MENU GRAPHICS ###
+	spriteType = {
+		name = "GFX_form_button_help_outline"
+		textureFile = "/gfx/interface/scripted_gui_graphics/help_form_button_outline.dds"
+	}
+	spriteType = {
+		name = "GFX_formable_desc_help_outline"
+		textureFile = "/gfx/interface/scripted_gui_graphics/help_formable_desc_outline.dds"
+	}
+	spriteType = {
+		name = "GFX_help_formable_cities_outline"
+		textureFile = "/gfx/interface/scripted_gui_graphics/help_formable_cities_outline.dds"
+	}
+
+### All FORMABLES FROM A-Z ###
+
+	spriteType = {
+		name = "GFX_aca_highlight"
+		textureFile = "/gfx/interface/scripted_gui_graphics/ACA_form.dds"
+	}
+	spriteType = {
+		name = "GFX_ATC_pic"
+		textureFile = "/gfx/interface/scripted_gui_graphics/alta_cali.dds"
+	}
+	spriteType = {
+		name = "GFX_aus_highlight"
+		textureFile = "/gfx/interface/scripted_gui_graphics/AUS_form.dds"
+	}
+	spriteType = {
+		name = "GFX_APP_pic"
+		textureFile = "/gfx/interface/scripted_gui_graphics/APP_form.dds"
+	}
+	spriteType = {
+		name = "GFX_AZT_pic"
+		textureFile = "/gfx/interface/scripted_gui_graphics/aztec.dds"
+	}
+	spriteType = {
+		name = "GFX_CAN_pic"
+		textureFile = "/gfx/interface/scripted_gui_graphics/CAN_form.dds"
+	}
+	spriteType = {
+		name = "GFX_CRB_pic"
+		textureFile = "/gfx/interface/scripted_gui_graphics/Caribean_Fed.dds"
+	}
+	spriteType = {
+		name = "GFX_CAS_pic"
+		textureFile = "/gfx/interface/scripted_gui_graphics/CAS_form.dds"
+	}
+	spriteType = {
+		name = "GFX_CGE_pic"
+		textureFile = "/gfx/interface/scripted_gui_graphics/CGE_form.dds"
+	}
+	spriteType = {
+		name = "GFX_CNY_pic"
+		textureFile = "/gfx/interface/scripted_gui_graphics/CNY_form.dds"
+	}
+	spriteType = {
+		name = "GFX_SYA_pic"
+		textureFile = "/gfx/interface/scripted_gui_graphics/Combined_Symdicates.dds"
+	}
+	spriteType = {
+		name = "GFX_CSA_pic"
+		textureFile = "/gfx/interface/scripted_gui_graphics/CSA_form.dds"
+	}
+	spriteType = {
+		name = "GFX_DES_pic"
+		textureFile = "/gfx/interface/scripted_gui_graphics/DES_form.dds"
+	}
+	spriteType = {
+		name = "GFX_EAC_pic"
+		textureFile = "/gfx/interface/scripted_gui_graphics/EAC_form.dds"
+	}
+	spriteType = {
+		name = "GFX_ECC_pic"
+		textureFile = "/gfx/interface/scripted_gui_graphics/EEC_form.dds"
+	}
+	spriteType = {
+		name = "GFX_GCA_pic"
+		textureFile = "/gfx/interface/scripted_gui_graphics/GCA_form.dds"
+	}
+	spriteType = {
+		name = "GFX_GNE_pic"
+		textureFile = "/gfx/interface/scripted_gui_graphics/GNE_form.dds"
+	}
+	spriteType = {
+		name = "GFX_GPN_pic"
+		textureFile = "/gfx/interface/scripted_gui_graphics/GPN_form.dds"
+	}
+	spriteType = {
+		name = "GFX_GRL_pic"
+		textureFile = "/gfx/interface/scripted_gui_graphics/GRL_form.dds"
+	}
+	spriteType = {
+		name = "GFX_GRV_pic"
+		textureFile = "/gfx/interface/scripted_gui_graphics/GRV_form.dds"
+	}
+	spriteType = {
+		name = "GFX_MES_pic"
+		textureFile = "/gfx/interface/scripted_gui_graphics/mesoamerica.dds"
+	}
+	spriteType = {
+		name = "GFX_MEX_pic"
+		textureFile = "/gfx/interface/scripted_gui_graphics/MEX_form.dds"
+	}
+	spriteType = {
+		name = "GFX_MTZ_pic"
+		textureFile = "/gfx/interface/scripted_gui_graphics/MTZ_form.dds"
+	}
+	spriteType = {
+		name = "GFX_NAU_pic"
+		textureFile = "/gfx/interface/scripted_gui_graphics/na_union.dds"
+	}
+	spriteType = {
+		name = "GFX_NEC_pic"
+		textureFile = "/gfx/interface/scripted_gui_graphics/NEC_form.dds"
+	}
+	spriteType = {
+		name = "GFX_NWC_pic"
+		textureFile = "/gfx/interface/scripted_gui_graphics/nw_confederacy.dds"
+	}
+	spriteType = {
+		name = "GFX_POF_pic"
+		textureFile = "/gfx/interface/scripted_gui_graphics/POF_form.dds"
+	}
+	spriteType = {
+		name = "GFX_PSA_pic"
+		textureFile = "/gfx/interface/scripted_gui_graphics/PSA_form.dds"
+	}
+	spriteType = {
+		name = "GFX_ROL_pic"
+		textureFile = "/gfx/interface/scripted_gui_graphics/ROL_form.dds"
+	}
+	spriteType = {
+		name = "GFX_FME_pic"
+		textureFile = "/gfx/interface/scripted_gui_graphics/mex_empire.dds"
+	}
+	spriteType = {
+		name = "GFX_TGC_pic"
+		textureFile = "/gfx/interface/scripted_gui_graphics/golden_cir.dds"
+	}
+	spriteType = {
+		name = "GFX_TLH_pic"
+		textureFile = "/gfx/interface/scripted_gui_graphics/TLH_form.dds"
+	}
+	spriteType = {
+		name = "GFX_TTC_pic"
+		textureFile = "/gfx/interface/scripted_gui_graphics/TTC_form.dds"
+	}
+	spriteType = {
+		name = "GFX_UDU_pic"
+		textureFile = "/gfx/interface/scripted_gui_graphics/UDU_form.dds"
+	}
+	spriteType = {
+		name = "GFX_UOS_pic"
+		textureFile = "/gfx/interface/scripted_gui_graphics/UOS_form.dds"
+	}
+	spriteType = {
+		name = "GFX_USA_pic"
+		textureFile = "/gfx/interface/scripted_gui_graphics/USA_form.dds"
+	}
+	spriteType = {
+		name = "GFX_VNS_pic"
+		textureFile = "/gfx/interface/scripted_gui_graphics/vice_spain.dds"
+	}
+}

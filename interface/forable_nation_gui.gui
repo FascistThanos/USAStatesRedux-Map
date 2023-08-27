@@ -1,0 +1,859 @@
+guiTypes = {
+
+	
+	#Hide Formable List Opener
+	containerWindowType = {
+		name = "hide_formable_button"
+		position = { x = 0 y = 0 }
+		size = { width = 19 height = 19 }
+		origo = center
+		fade_time = 0
+		moveable = no
+		click_to_front = yes
+		clipping = no
+
+		buttonType = {
+			name = "toggle_formable_selector"
+			spriteType = "GFX_formable_list_selector"
+			shortcut = "shift+c"
+			position = { x = 0 y = 1070 }
+		}
+	}
+	#Button to Open the Gui
+	containerWindowType = {
+		name = "open_formable_tab"
+		position = { x = 0 y = 0 }
+		size = { width = 19 height = 19 }
+		origo = center
+		fade_time = 100
+		moveable = yes
+		fade_type = linear
+		click_to_front = yes
+		clipping = no
+		buttonType ={
+			name ="open_formable_tab_window"
+			spriteType = "GFX_button_open"
+			position = { x = 1080 y = 9 }
+			Orientation = "UPPER_RIGHT"
+		}
+		buttonType ={
+			name ="close_formable_tab_window"
+			spriteType = "GFX_button_open"
+			position = { x = 1080 y = 9 }
+			Orientation = "UPPER_RIGHT"
+		}
+
+		instantTextboxType = {
+			name = "open_formable"
+			position = { x = 1155 y = 14 }
+			font = "hoi_24header"
+			borderSize = {x = 0 y = 0}
+			text = "open_formable_window"
+			maxWidth = 150
+			maxHeight = 20
+			fixedsize = yes
+		}
+	}
+
+
+	### FORMABLE NATIONS GUI ###
+
+
+	containerWindowType = {
+
+		name = "formables_tab"
+		position = { x = -606 y = 78 }
+		show_position = { x = -6 y = 78 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 300
+		size = { width = 550 height = 100%% }
+		moveable = no
+
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_plain_bg"
+		}
+
+		iconType ={
+			name ="production_header_bg"
+			spriteType = "GFX_header_bg"
+			position = { x= 5 y = 07 }
+			Orientation = "UPPER_LEFT"
+		}
+
+		buttonType = {
+			name = "formables_close_button"
+			position = { x = -42 y = 9 }
+			quadTextureSprite ="GFX_closebutton"
+			buttonFont = "Main_14_black"
+			shortcut = "ESCAPE"
+			Orientation = "UPPER_RIGHT"
+			clicksound = click_close
+			pdx_tooltip = "CLOSE"
+		}
+
+		instantTextboxType = {
+			name = "map_title"
+			position = { x = 45 y = 8 }
+			font = "hoi_36header"
+			borderSize = {x = 0 y = 0}
+			text = "Form a Nation"
+			maxWidth = 400
+			maxHeight = 20
+			fixedsize = yes
+		}
+		### FORMABLE MAP AND DISCRIPTION ###
+
+		containerWindowType = {
+
+			name = "map_view"
+			position = {x = 0 y = 200}
+			size = { width = 100%% height = 100%% }
+
+			background = {
+					name = "Background"		
+					quadTextureSprite ="GFX_tiled_window2_1b_border"
+				}
+
+			iconType = {
+				name = "formables_map"
+				spriteType = "GFX_aus_highlight"
+				position = { x = 13 y = 13 }
+				#image width must be 512
+
+			}
+
+			iconType = {
+				name = "form_nation_button_backgrd"
+				spriteType = "GFX_technology_infantry_folder_small_unavailable_item_bg"
+				position = { x = 440 y = 290 }
+
+			}
+
+			iconType = {
+				name = "form_nation_button"
+				spriteType = "GFX_focus_generic_treaty"
+				position = { x = 425 y = 280 }
+			}
+			buttonType = {
+				name = "form_nation_button_glow"
+				spriteType = "form_nation_button_shine"
+				position = { x = 425 y = 280 }
+				pdx_tooltip = "FORM NATION"
+			}
+			containerWindowType = {
+
+				name = "map_desc"
+				position = {x = 10 y = 370}
+				size = { width = 96%% height = 99%% }
+
+					background = {
+							name = "Background"		
+							quadTextureSprite ="GFX_tiled_paper_bg"
+						}
+
+						iconType ={
+							name ="map_desc_header"
+							spriteType = "GFX_category_header"
+							position = { x= 4 y = 8 }
+							Orientation = "UPPER_LEFT"
+						}
+
+					instantTextboxType = {
+						name = "map_desc_title"
+						position = { x = 40 y = 20 }
+						font = "hoi_18mbs"
+						text = "formable_nation_title"
+						format = centre
+						maxWidth = 450
+						maxHeight = 500
+						fixedsize = yes
+						}
+
+
+					instantTextboxType = {
+						name = "map_desc_paragraph"
+						position = { x = 5 y = 50 }
+						font = "hoi_18mbs"
+						text = "formable_nation_desc"
+						format = centre
+						maxWidth = 510
+						maxHeight = 370
+						fixedsize = yes
+						}
+
+				}
+		}
+
+		containerWindowType = {
+
+			name = "map_info"
+			position = {x = 0 y = 45 }
+			size = { width = 100%% height = 160 }
+
+			background = {
+					name = "Background"		
+					quadTextureSprite ="GFX_tiled_window_1b_border"
+				}
+
+			iconType = {
+					name = "prereq_title"
+					spriteType = "GFX_trade_header"
+					position = { x = 11 y = 11 }
+				}
+
+			instantTextboxType = {
+				name = "political_title"
+				position = { x = 30 y = 18 }
+				textureFile = ""
+				font = "hoi_18mbs"
+				text = "Prerequisites"
+				maxWidth = 110
+				maxHeight = 5
+				fixedsize = yes
+			}
+
+			checkboxType = {
+				name = "test_box"
+				position = { x = 30 y = 18 }
+				font = "hoi_18mbs"
+				text = "Prerequisites"
+			}
+
+			instantTextboxType = {
+				name = "map_prereqs"
+				position = { x = 80 y = 40 }
+				font = "hoi_18mbs"
+				text = "formable_nation_cities"
+				format = centre
+				maxWidth = 400
+				maxHeight = 100
+				fixedsize = yes
+				}
+
+		} 
+		### HELP MENU PIECES ###
+		buttonType = {
+			name = "formables_menu_help_button"
+			position = {
+				x = -80
+				y = 13
+			}
+			quadTextureSprite = "GFX_help_button"
+			orientation = "UPPER_RIGHT"
+			pdx_tooltip = "help_formable_tt"
+		}
+		iconType = {
+			name = "formable_button_help_outline"
+			spriteType = "GFX_form_button_help_outline"
+			position = {
+				x = 420
+				y = 475
+			}
+			pdx_tooltip = "formable_button_help_tt"
+		}
+		iconType = {
+			name = "formable_desc_help_outline"
+			spriteType = "GFX_formable_desc_help_outline"
+			position = {
+				x = 16
+				y = 620
+			}
+			pdx_tooltip = "formable_desc_help_outline_tt"
+		}
+		iconType = {
+			name = "help_formable_cities_outline"
+			spriteType = "GFX_help_formable_cities_outline"
+			position = {
+				x = 13
+				y = 83
+			}
+			pdx_tooltip = "help_formable_cities_outline_tt"
+		}
+	}
+
+	### THE TAB FOR THE FORMABLES ###
+
+	containerWindowType = {
+		name = "formables_list_tab"
+		position = { x = -606 y = 80 }
+		show_position = { x = 538 y = 80 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 300
+		size = { width = 300 height = 1000 } 
+		moveable = no
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_window_1b_border"
+		}
+		iconType = {
+			name = "formable_list_title"
+			spriteType = "GFX_template_header_bg"
+			position = { x = 0 y = -2 }
+		}
+		instantTextboxType = {
+			name = "map_title"
+			position = { x = 50 y = 5 }
+			font = "hoi_36header"
+			borderSize = {x = 0 y = 0}
+			text = "Countries"
+			maxWidth = 200
+			maxHeight = 20
+			fixedsize = yes
+			Orientation = "UPPER_LEFT"
+			format = centre
+		}
+		instantTextboxType = {
+			name = "scoll_bar_desc"
+			position = { x = 50 y = 50 }
+			font = "hoi_36header"
+			borderSize = {x = 0 y = 0}
+			text = "A to Z"
+			maxWidth = 200
+			maxHeight = 20
+			fixedsize = yes
+			Orientation = "UPPER_LEFT"
+			format = centre
+		}
+		### THE SCROLL BAR & NATION BUTTONS ###
+		containerWindowType = {				
+			name = "formables_list_tab"
+			position = { x = 0 y = 100 }
+			size = { width = 300 height = 890 }
+			verticalScrollbar = "right_vertical_slider"
+			moveable = no
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_window_transparent"
+			}
+			#Acadian Union
+			buttonType = {
+				name = "ACA_desc_button"
+				spriteType = "GFX_button_open"
+				position = { x = 14 y = 12 }
+			}
+			instantTextboxType = {
+				name = "formable_list_ACA_text"
+				position = { x = 45 y = 20 }
+				font = "hoi_18mbs"
+				text = "Acadian Union"
+				format = centre
+				fixedsize = yes
+			}
+			#Alta California
+			buttonType = {
+				name = "ATC_desc_button"
+				spriteType = "GFX_button_open"
+				position = { x = 14 y = 48 }
+			}
+			instantTextboxType = {
+				name = "formable_list_ATC_text"
+				position = { x = 45 y = 56 }
+				font = "hoi_18mbs"
+				text = "Alta California"
+				format = centre
+				fixedsize = yes
+			}
+			#American Union State Button
+			buttonType = {
+				name = "AUS_desc_button"
+				spriteType = "GFX_button_open"
+				position = { x = 14 y = 84 }
+			}
+			instantTextboxType = {
+				name = "formable_list_AUS_text"
+				position = { x = 70 y = 92 }
+				font = "hoi_18mbs"
+				text = "form_aus_text"
+				maxWidth = 150
+				maxHeight = 20
+				fixedsize = yes
+			}
+			#Appalachia
+			buttonType = {
+				name = "APP_desc_button"
+				spriteType = "GFX_button_open"
+				position = { x = 14 y = 120 }
+			}		
+			instantTextboxType = {
+				name = "formable_list_APP_text"
+				position = { x = 45 y = 128 }
+				font = "hoi_18mbs"
+				text = "Appalachia"
+				format = centre
+				fixedsize = yes
+			}
+			#Aztec Empire
+			buttonType = {
+				name = "AZT_desc_button"
+				spriteType = "GFX_button_open"
+				position = { x = 14 y = 156 }
+			}		
+			instantTextboxType = {
+				name = "formable_list_AZT_text"
+				position = { x = 45 y = 164 }
+				font = "hoi_18mbs"
+				text = "Aztec Empire"
+				format = centre
+				fixedsize = yes
+			}
+			#Canada
+			buttonType = {
+				name = "CAN_desc_button"
+				spriteType = "GFX_button_open"
+				position = { x = 14 y = 192 }
+			}		
+			instantTextboxType = {
+				name = "formable_list_CAN_text"
+				position = { x = 45 y = 200 }
+				font = "hoi_18mbs"
+				text = "Canada"
+				format = centre
+				fixedsize = yes
+			}
+			#Caribbean Federation
+			buttonType = {
+				name = "CRB_desc_button"
+				spriteType = "GFX_button_open"
+				position = { x = 14 y = 228 }
+			}		
+			instantTextboxType = {
+				name = "formable_list_CRB_text"
+				position = { x = 45 y = 236 }
+				font = "hoi_18mbs"
+				text = "Caribbean Federation"
+				format = centre
+				fixedsize = yes
+			}
+			#Cascadia
+			buttonType = {
+				name = "CAS_desc_button"
+				spriteType = "GFX_button_open"
+				position = { x = 14 y = 264 }
+			}		
+			instantTextboxType = {
+				name = "formable_list_CAS_text"
+				position = { x = 45 y = 272 }
+				font = "hoi_18mbs"
+				text = "Cascadia"
+				format = centre
+				fixedsize = yes
+			}
+			#Colonial Carolina		
+			buttonType = {
+				name = "ECC_desc_button"
+				spriteType = "GFX_button_open"
+				position = { x = 14 y = 300 }
+			}
+			instantTextboxType = {
+				name = "formable_list_ECC_text"
+				position = { x = 45 y = 308 }
+				font = "hoi_18mbs"
+				text = "Colonial Carolina"
+				format = centre
+				fixedsize = yes
+			}
+			#Colonial Georgia
+			buttonType = {
+				name = "CGE_desc_button"
+				spriteType = "GFX_button_open"
+				position = { x = 14 y = 336 }
+			}	
+			instantTextboxType = {
+				name = "formable_list_CGE_text"
+				position = { x = 45 y = 342 }
+				font = "hoi_18mbs"
+				text = "Colonial Georgia"
+				format = centre
+				fixedsize = yes
+			}
+			#Colonial Louisiana
+			buttonType = {
+				name = "GRL_desc_button"
+				spriteType = "GFX_button_open"
+				position = { x = 14 y = 372 }
+			}
+			instantTextboxType = {
+				name = "formable_list_GRL_text"
+				position = { x = 45 y = 380 }
+				font = "hoi_18mbs"
+				text = "Colonial Louisiana"
+				format = centre
+				fixedsize = yes
+			}
+			#Colonial New York
+			buttonType = {
+				name = "CNY_desc_button"
+				spriteType = "GFX_button_open"
+				position = { x = 14 y = 408 }
+			}
+			instantTextboxType = {
+				name = "formable_list_CNY_text"
+				position = { x = 45 y = 416 }
+				font = "hoi_18mbs"
+				text = "Colonial New York"
+				format = centre
+				fixedsize = yes
+			}
+			#Combined Syndicates of America
+			buttonType = {
+				name = "SYA_desc_button"
+				spriteType = "GFX_button_open"
+				position = { x = 14 y = 444 }
+			}
+			instantTextboxType = {
+				name = "formable_list_SYA_text"
+				position = { x = 35 y = 452 }
+				maxWidth = 220
+				maxHeight = 20
+				font = "hoi_18mbs"
+				text = "Combined Syndicates of America"
+				format = centre
+				fixedsize = no
+			}
+			#Confederate States of America
+			buttonType = {
+				name = "CSA_desc_button"
+				spriteType = "GFX_button_open"
+				position = { x = 14 y = 480 }
+			}
+			instantTextboxType = {
+				name = "formable_list_CSA_text"
+				position = { x = 35 y = 488 }
+				maxWidth = 220
+				maxHeight = 20
+				font = "hoi_18mbs"
+				text = "Confederate States of America"
+				format = centre
+				fixedsize = no
+			}
+			#Deseret
+			buttonType = {
+				name = "DES_desc_button"
+				spriteType = "GFX_button_open"
+				position = { x = 14 y = 516 }
+			}
+			instantTextboxType = {
+				name = "formable_list_DES_text"
+				position = { x = 35 y = 524 }
+				maxWidth = 220
+				maxHeight = 20
+				font = "hoi_18mbs"
+				text = "Deseret"
+				format = centre
+				fixedsize = no
+			}
+			#East Coast Union
+			buttonType = {
+				name = "EAC_desc_button"
+				spriteType = "GFX_button_open"
+				position = { x = 14 y = 552 }
+			}
+			instantTextboxType = {
+				name = "formable_list_EAC_text"
+				position = { x = 45 y = 560 }
+				font = "hoi_18mbs"
+				text = "East Coast Union"
+				format = centre
+				fixedsize = yes
+			}
+			#Four Corners
+			buttonType = {
+				name = "POF_desc_button"
+				spriteType = "GFX_button_open"
+				position = { x = 14 y = 588 }
+			}
+			instantTextboxType = {
+				name = "formable_list_POF_text"
+				position = { x = 45 y = 596 }
+				font = "hoi_18mbs"
+				text = "Four Corners"
+				format = centre
+				fixedsize = yes
+			}
+			#Great Lakes Nation
+			buttonType = {
+				name = "UOS_desc_button"
+				spriteType = "GFX_button_open"
+				position = { x = 14 y = 624 }
+			}
+			instantTextboxType = {
+				name = "formable_list_UOS_text"
+				position = { x = 45 y = 632 }
+				font = "hoi_18mbs"
+				text = "Great Lakes Nation"
+				format = centre
+				fixedsize = yes
+			}
+			#Greater Canada
+			buttonType = {
+				name = "GCA_desc_button"
+				spriteType = "GFX_button_open"
+				position = { x = 14 y = 660 }
+			}
+			instantTextboxType = {
+				name = "formable_list_GCA_text"
+				position = { x = 45 y = 668 }
+				font = "hoi_18mbs"
+				text = "Greater Canada"
+				format = centre
+				fixedsize = yes
+			}
+			#Greater New England
+			buttonType = {
+				name = "GNE_desc_button"
+				spriteType = "GFX_button_open"
+				position = { x = 14 y = 696 }
+			}	
+			instantTextboxType = {
+				name = "formable_list_GNE_text"
+				position = { x = 45 y = 704 }
+				font = "hoi_18mbs"
+				text = "Greater New England"
+				format = centre
+				fixedsize = yes
+			}	
+			#Greater Virginia
+			buttonType = {
+				name = "GRV_desc_button"
+				spriteType = "GFX_button_open"
+				position = { x = 14 y = 732 }
+			}
+			instantTextboxType = {
+				name = "formable_list_GRV_text"
+				position = { x = 45 y = 740 }
+				font = "hoi_18mbs"
+				text = "Greater Virginia"
+				format = centre
+				fixedsize = yes
+			}
+			#Lakota
+			buttonType = {
+				name = "ROL_desc_button"
+				spriteType = "GFX_button_open"
+				position = { x = 14 y = 768 }
+			}
+			instantTextboxType = {
+				name = "formable_list_ROL_text"
+				position = { x = 45 y = 776 }
+				font = "hoi_18mbs"
+				text = "Lakotah"
+				format = centre
+				fixedsize = yes
+			}
+			#Mesoamerica
+			buttonType = {
+				name = "MES_desc_button"
+				spriteType = "GFX_button_open"
+				position = { x = 14 y = 804 }
+			}
+			instantTextboxType = {
+				name = "formable_list_MES_text"
+				position = { x = 45 y = 812 }
+				font = "hoi_18mbs"
+				text = "Mesoamerica"
+				format = centre
+				fixedsize = yes
+			}
+			#Mexico
+			buttonType = {
+				name = "MEX_desc_button"
+				spriteType = "GFX_button_open"
+				position = { x = 14 y = 840 }
+			}
+			instantTextboxType = {
+				name = "formable_list_MEX_text"
+				position = { x = 45 y = 848 }
+				font = "hoi_18mbs"
+				text = "Mexico"
+				format = centre
+				fixedsize = yes
+			}
+			#Montezuma
+			buttonType = {
+				name = "MTZ_desc_button"
+				spriteType = "GFX_button_open"
+				position = { x = 14 y = 876 }
+			}
+			instantTextboxType = {
+				name = "formable_list_MTZ_text"
+				position = { x = 45 y = 884 }
+				font = "hoi_18mbs"
+				text = "Montezuma"
+				format = centre
+				fixedsize = yes
+			}
+			#Great Plains Nation
+			buttonType = {
+				name = "GPL_desc_button"
+				spriteType = "GFX_button_open"
+				position = { x = 14 y = 912 }
+			}
+			instantTextboxType = {
+				name = "formable_list_GPL_text"
+				position = { x = 45 y = 920 }
+				font = "hoi_18mbs"
+				text = "Great Plains Nation"
+				format = centre
+				fixedsize = yes
+			}
+			#New England
+			buttonType = {
+				name = "NEC_desc_button"
+				spriteType = "GFX_button_open"
+				position = { x = 14 y = 948 }
+			}	
+			instantTextboxType = {
+				name = "formable_list_NEC_text"
+				position = { x = 45 y = 956 }
+				font = "hoi_18mbs"
+				text = "New England"
+				format = centre
+				fixedsize = yes
+			}
+			#North American Union
+			buttonType = {
+				name = "NAU_desc_button"
+				spriteType = "GFX_button_open"
+				position = { x = 14 y = 984 }
+			}	
+			instantTextboxType = {
+				name = "formable_list_NAU_text"
+				position = { x = 45 y = 992 }
+				font = "hoi_18mbs"
+				text = "North American Union"
+				format = centre
+				fixedsize = yes
+			}
+			#Northwestern Confederacy
+			buttonType = {
+				name = "NWC_desc_button"
+				spriteType = "GFX_button_open"
+				position = { x = 14 y = 1020 }
+			}	
+			instantTextboxType = {
+				name = "formable_list_NWC_text"
+				position = { x = 45 y = 1028 }
+				font = "hoi_18mbs"
+				text = "Northwestern Confederacy"
+				format = centre
+				fixedsize = yes
+			}
+			#Pacific States of America
+			buttonType = {
+				name = "PSA_desc_button"
+				spriteType = "GFX_button_open"
+				position = { x = 14 y = 1056 }
+			}	
+			instantTextboxType = {
+				name = "formable_list_PSA_text"
+				position = { x = 45 y = 1064 }
+				font = "hoi_18mbs"
+				text = "Pacific States of America"
+				format = centre
+				fixedsize = yes
+			}
+			#Texlahoma
+			buttonType = {
+				name = "TLH_desc_button"
+				spriteType = "GFX_button_open"
+				position = { x = 14 y = 1092 }
+			}	
+			instantTextboxType = {
+				name = "formable_list_TLH_text"
+				position = { x = 45 y = 1100 }
+				font = "hoi_18mbs"
+				text = "Texlahoma"
+				format = centre
+				fixedsize = yes
+			}
+			#The First Mexican Empire
+			buttonType = {
+				name = "FME_desc_button"
+				spriteType = "GFX_button_open"
+				position = { x = 14 y = 1128 }
+			}	
+			instantTextboxType = {
+				name = "formable_list_FME_text"
+				position = { x = 45 y = 1136 }
+				font = "hoi_18mbs"
+				text = "The First Mexican Empire"
+				format = centre
+				fixedsize = yes
+			}
+			#The Golden Circle
+			buttonType = {
+				name = "TGC_desc_button"
+				spriteType = "GFX_button_open"
+				position = { x = 14 y = 1164 }
+			}	
+			instantTextboxType = {
+				name = "formable_list_TGC_text"
+				position = { x = 45 y = 1172 }
+				font = "hoi_18mbs"
+				text = "The Golden Circle"
+				format = centre
+				fixedsize = yes
+			}
+			#The Thirteen Colonies
+			buttonType = {
+				name = "TTC_desc_button"
+				spriteType = "GFX_button_open"
+				position = { x = 14 y = 1200 }
+			}
+			instantTextboxType = {
+				name = "formable_list_TTC_text"
+				position = { x = 45 y = 1208 }
+				font = "hoi_18mbs"
+				text = "The Thirteen Colonies"
+				format = centre
+				fixedsize = yes
+			}
+			#United Dakota
+			buttonType = {
+				name = "UDU_desc_button"
+				spriteType = "GFX_button_open"
+				position = { x = 14 y = 1236 }
+			}	
+			instantTextboxType = {
+				name = "formable_list_UDU_text"
+				position = { x = 45 y = 1244 }
+				font = "hoi_18mbs"
+				text = "United Dakota"
+				format = centre
+				fixedsize = yes
+			}
+			#United States
+			buttonType = {
+				name = "USA_desc_button"
+				spriteType = "GFX_button_open"
+				position = { x = 14 y = 1272 }
+			}	
+			instantTextboxType = {
+				name = "formable_list_USA_text"
+				position = { x = 45 y = 1280 }
+				font = "hoi_18mbs"
+				text = "United States of America"
+				format = centre
+				fixedsize = yes
+			}
+			#Viceroyalty of New Spain
+			buttonType = {
+				name = "VNS_desc_button"
+				spriteType = "GFX_button_open"
+				position = { x = 14 y = 1308 }
+			}	
+			instantTextboxType = {
+				name = "formable_list_VNS_text"
+				position = { x = 45 y = 1316 }
+				font = "hoi_18mbs"
+				text = "Viceroyalty of New Spain"
+				format = centre
+				fixedsize = yes
+			}
+		}
+	}
+}
