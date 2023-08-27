@@ -1,0 +1,5899 @@
+scripted_gui = {
+	formables_tab = {
+		window_name = "formables_tab"
+		context_type = player_context
+		parent_window_token = top_bar
+
+		visible = {	has_country_flag = formable_menu }
+
+		effects = {
+			formables_close_button_click = { 
+				clr_country_flag = formable_menu
+
+				clr_country_flag = AUS_desc
+				clr_country_flag = ATC_desc
+				clr_country_flag = ACA_desc
+				clr_country_flag = APP_desc
+				clr_country_flag = AZT_desc
+				clr_country_flag = CAN_desc
+				clr_country_flag = CRB_desc
+				clr_country_flag = CAS_desc
+				clr_country_flag = ECC_desc
+				clr_country_flag = CGE_desc
+				clr_country_flag = GRL_desc
+				clr_country_flag = CNY_desc
+				clr_country_flag = SYA_desc
+				clr_country_flag = CSA_desc
+				clr_country_flag = DES_desc
+				clr_country_flag = EAC_desc
+				clr_country_flag = POF_desc
+				clr_country_flag = UOS_desc
+				clr_country_flag = GCA_desc
+				clr_country_flag = GNE_desc
+				clr_country_flag = GRV_desc
+				clr_country_flag = ROL_desc
+				clr_country_flag = MES_desc
+				clr_country_flag = MEX_desc
+				clr_country_flag = MTZ_desc
+				clr_country_flag = GPL_desc
+				clr_country_flag = NEC_desc
+				clr_country_flag = NAU_desc
+				clr_country_flag = NWC_desc
+				clr_country_flag = PSA_desc
+				clr_country_flag = FME_desc
+				clr_country_flag = TGC_desc
+				clr_country_flag = TTC_desc
+				clr_country_flag = UDU_desc
+				clr_country_flag = VNS_desc
+			} 
+			formables_menu_help_button_click = {
+				if = {
+					limit = {
+						has_country_flag = formables_help_cf
+					}
+					clr_country_flag = formables_help_cf
+				}
+				else = {
+					set_country_flag = formables_help_cf
+				}
+			}
+			form_nation_button_glow_click = {
+				if = { #Acadian Union
+					limit = {
+						has_country_flag = ACA_desc
+					}
+					set_cosmetic_tag = ACA
+					set_capital = {
+						state = 803
+					}
+					add_stability = 0.05
+					set_country_flag = formed_ACA
+					hidden_effect = {
+						core_nova_scotia_effect = yes
+						core_prince_edward_island_effect = yes
+						core_new_brunswick_effect = yes
+					}
+					take_cores_from_puppets = yes
+				}
+				if = { #Alta California
+					limit = {
+						has_country_flag = ATC_desc
+					}
+					set_cosmetic_tag = ATC
+					set_country_flag = formed_ATC
+					set_capital = {
+						state = 731
+					}
+					add_stability = 0.05
+					core_california_effect = yes
+					core_nevada_effect = yes
+					core_utah_effect = yes
+					617 = {
+						add_core_of = ROOT
+					}
+					669 = {
+						add_core_of = ROOT
+					}
+					668 = {
+						add_core_of = ROOT
+					}
+					670 = {
+						add_core_of = ROOT
+					}
+					671 = {
+						add_core_of = ROOT
+					}
+					58 = {
+						add_core_of = ROOT
+					}
+					664 = {
+						add_core_of = ROOT
+					}
+					666 = {
+						add_core_of = ROOT
+					}
+					665 = {
+						add_core_of = ROOT
+					}
+					667 = {
+						add_core_of = ROOT
+					}
+					every_state = {
+						limit = {
+							is_core_of = ROOT
+							controls_or_subject_of = yes
+						}
+						transfer_state_to = ROOT
+					}
+				}
+				if = { #American Union State
+					limit = {
+						has_country_flag = AUS_desc
+					}
+					set_capital = {
+						state = 444
+					}
+					set_country_flag = formed_AUS
+					set_cosmetic_tag = ASU
+					add_stability = 0.05
+					core_alabama_effect = yes
+					core_arkansas_effect = yes
+					core_florida_effect = yes
+					core_georgia_effect = yes
+					core_louisiana_effect = yes
+					core_mississippi_effect = yes
+					core_north_carolina_effect = yes
+					core_south_carolina_effect = yes
+					take_cores_from_puppets = yes
+				}
+				if = { #Appalachia
+					limit = {
+						has_country_flag = APP_desc
+					}
+					set_country_flag = formed_APP
+					set_cosmetic_tag = APP
+					add_stability = 0.05
+					core_west_virginia_effect = yes
+					hidden_effect = {
+						ROOT = {
+							add_state_core = 24
+							add_state_core = 27
+							add_state_core = 28
+							add_state_core = 30
+							add_state_core = 33
+							add_state_core = 39
+							add_state_core = 229
+							add_state_core = 230
+							add_state_core = 231
+							add_state_core = 232
+							add_state_core = 233
+							add_state_core = 234
+							add_state_core = 235
+							add_state_core = 236
+							add_state_core = 250
+							add_state_core = 255
+							add_state_core = 256
+							add_state_core = 257
+							add_state_core = 271
+							add_state_core = 277
+							add_state_core = 280
+							add_state_core = 281
+							add_state_core = 282
+							add_state_core = 343
+							add_state_core = 344
+							add_state_core = 350
+							add_state_core = 355
+							add_state_core = 356
+							add_state_core = 357
+							add_state_core = 358
+							add_state_core = 359
+							add_state_core = 360
+							add_state_core = 361
+							add_state_core = 362
+							add_state_core = 363
+							add_state_core = 364
+							add_state_core = 365
+							add_state_core = 376
+							add_state_core = 379
+							add_state_core = 380
+							add_state_core = 385
+							add_state_core = 384
+							add_state_core = 383
+							add_state_core = 382
+							add_state_core = 397
+							add_state_core = 398
+							add_state_core = 399
+							add_state_core = 400
+							add_state_core = 401
+							add_state_core = 402
+							add_state_core = 403
+							add_state_core = 404
+							add_state_core = 415
+							add_state_core = 416
+							add_state_core = 417
+							add_state_core = 900
+							add_state_core = 1379
+							add_state_core = 1399
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = ROOT
+							controls_or_subject_of = yes
+						}
+						transfer_state_to = ROOT
+					}
+				}
+				if = { #Aztec
+					limit = {
+						has_country_flag = AZT_desc
+					}
+					set_country_flag = formed_AZT
+					set_capital = {
+						state = 88
+					}
+					add_stability = 0.05
+					core_federal_district_of_mexico_effect = yes
+					core_hidalgo_effect = yes
+					core_morelos_effect = yes
+					core_puebla_effect = yes
+					core_queretaro_effect = yes
+					core_state_of_mexico_effect = yes
+					core_tlaxcala_effect = yes
+					ROOT = {
+						add_state_core = 79
+						add_state_core = 81
+						add_state_core = 1163
+						add_state_core = 1164
+						add_state_core = 1182
+						add_state_core = 1188
+						add_state_core = 1189
+						add_state_core = 1190
+						add_state_core = 1191
+						add_state_core = 1192
+						add_state_core = 1193
+						add_state_core = 1229
+						add_state_core = 1230
+						add_state_core = 1231
+						add_state_core = 1232
+						add_state_core = 1233
+						add_state_core = 1236
+					}
+					take_cores_from_puppets = yes
+				}
+				if = { #Canada
+					limit = {
+						has_country_flag = CAN_desc
+					}
+					set_cosmetic_tag = CAN
+					add_stability = 0.10
+					set_capital = {
+						state = 875
+					}
+					core_alberta_effect = yes
+					core_british_columbia_effect = yes
+					core_labrador_effect = yes
+					core_manitoba_effect = yes
+					core_new_brunswick_effect = yes
+					core_newfoundland_effect = yes
+					core_nova_scotia_effect = yes
+					core_northwest_territories_effect = yes
+					core_nunavut_effect = yes
+					core_ontario_effect = yes
+					core_prince_edward_island_effect = yes
+					core_quebec_effect = yes
+					core_saskatchewan_effect = yes
+					core_yukon_effect = yes
+					take_cores_from_puppets = yes
+				}
+				if = { #Caribbean Federation
+					limit = {
+						has_country_flag = CRB_desc
+					}
+					set_cosmetic_tag = CRB
+					add_stability = 0.05
+					set_country_flag = formed_CRB
+					set_capital = {
+						state = 1366
+					}
+					core_anguilla_effect = yes
+					core_antigua_and_barbuda_effect = yes
+					core_aruba_effect = yes
+					core_bahamas_effect = yes
+					core_barbados_effect = yes
+					core_cayman_islands_effect = yes
+					core_cuba_effect = yes
+					core_curacao_effect = yes
+					core_dominica_effect = yes
+					core_dominican_republic_effect = yes
+					core_grenada_effect = yes
+					core_guadalupe_effect = yes
+					core_haiti_effect = yes
+					core_jamaica_effect = yes
+					core_martinique_effect = yes
+					core_montserrat_effect = yes
+					core_puerto_rico_effect = yes
+					core_saint_kitts_and_nevis_effect = yes
+					core_saint_lucia_effect = yes
+					core_saint_vincent_effect = yes
+					core_trinidad_and_tobago = yes
+					core_turks_and_caicos_effect = yes
+					core_virgin_islands_effect = yes
+					take_cores_from_puppets = yes
+				}
+				if = { #Cascadia
+					limit = {
+						has_country_flag = CAS_desc
+					}
+					set_cosmetic_tag = CAS
+					set_country_flag = formed_CAS
+					add_stability = 0.20
+					core_british_columbia_effect = yes
+					core_oregon_effect = yes
+					core_washington_effect = yes
+					take_cores_from_puppets = yes
+				}
+				if = { #Colonial Carolina
+					limit = {
+						has_country_flag = ECC_desc
+					}
+					set_cosmetic_tag = ECC
+					set_country_flag = formed_ECC
+  					set_capital = {
+				  		state = 364
+					}
+					core_south_carolina_effect = yes
+					core_south_carolina_effect = yes
+					core_tennessee_effect = yes
+					core_georgia_effect = yes
+					core_alabama_effect = yes
+					core_mississippi_effect = yes
+					add_state_core = 426
+					add_state_core = 429
+					add_state_core = 425
+					add_state_core = 424
+					add_state_core = 423
+					add_state_core = 422
+  					add_stability = 0.05
+  					
+					take_cores_from_puppets = yes
+				}
+				if = { #Colonial Georgia
+					limit = {
+						has_country_flag = CGE_desc
+					}
+					set_cosmetic_tag = CGE
+					set_country_flag = formed_CGE
+					add_stability = 0.10
+					core_mississippi_effect = yes
+					core_alabama_effect = yes
+					remove_state_core = 407
+					remove_state_core = 408
+					remove_state_core = 412
+					remove_state_core = 411
+					take_cores_from_puppets = yes
+				}
+				if = { #Greater Louisiana
+					limit = { 
+						has_country_flag = GRL_desc
+					}
+					set_cosmetic_tag = GRL
+					set_country_flag = formed_GRL
+  					add_stability = 0.10
+					core_arkansas_effect = yes
+					core_oklahoma_effect = yes
+					core_kansas_effect = yes
+					core_missouri_effect = yes
+					core_iowa_effect = yes
+					core_nebraska_effect = yes
+					core_south_dakota_effect = yes
+					core_montana_effect = yes
+					remove_state_core = 1390
+					remove_state_core =590
+					remove_state_core = 1392
+					remove_state_core = 588
+					remove_state_core = 1393
+					add_state_core = 55
+					add_state_core = 56
+					add_state_core = 53
+					add_state_core = 490
+					add_state_core = 491
+					add_state_core = 493
+					add_state_core = 494
+					add_state_core = 495
+					add_state_core = 496
+					add_state_core = 497
+					add_state_core = 501
+					add_state_core = 508
+					add_state_core = 511
+					add_state_core = 512
+					add_state_core = 513
+					add_state_core = 566
+					add_state_core = 565
+					add_state_core = 562
+					add_state_core = 561
+					add_state_core = 604
+					add_state_core = 605
+					add_state_core = 606
+					add_state_core = 607
+					add_state_core = 608
+					add_state_core = 609
+					add_state_core = 610
+					add_state_core = 611
+					add_state_core = 612
+					add_state_core = 613
+					add_state_core = 614
+					add_state_core = 619
+					add_state_core = 620
+					add_state_core = 628
+					add_state_core = 629
+					add_state_core = 630
+					add_state_core = 631
+					add_state_core = 632
+					add_state_core = 633
+					add_state_core = 634
+					add_state_core = 635
+					add_state_core = 636
+					add_state_core = 637
+					add_state_core = 647
+					take_cores_from_puppets = yes
+				}
+				if = { #Colonial New York
+					limit = {
+						has_country_flag = CNY_desc
+					}
+					set_cosmetic_tag = CNY
+					set_country_flag = formed_CNY
+  					add_stability = 0.10
+					core_new_jersey_effect = yes
+					core_delaware_effect = yes
+					core_vermont_effect = yes
+					core_ohio_effect = yes
+					core_indiana_effect = yes
+					core_illinois_effect = yes
+					core_west_virginia_effect = yes
+					core_kentucky_effect = yes
+					core_tennessee_effect = yes
+					add_state_core = 24
+					add_state_core = 190
+					add_state_core = 191
+					add_state_core = 192
+					add_state_core = 197
+					add_state_core = 198
+					add_state_core = 199
+					add_state_core = 200
+					add_state_core = 236
+					add_state_core = 397
+					add_state_core = 398
+					add_state_core = 399
+					add_state_core = 1397
+					remove_state_core = 324
+					remove_state_core = 326
+					remove_state_core = 325
+					remove_state_core = 327
+					remove_state_core = 258
+					remove_state_core = 335
+					remove_state_core = 349
+					remove_state_core = 348
+					remove_state_core = 347
+					remove_state_core = 358
+					remove_state_core = 359
+					remove_state_core = 39
+					remove_state_core = 360
+					take_cores_from_puppets = yes
+				}
+				if = { #Combined Syndicates of America
+					limit = {
+						has_country_flag = SYA_desc
+					}
+					set_cosmetic_tag = SYA
+					set_country_flag = formed_SYA
+					set_capital = {
+						state = 224
+					}
+					add_stability = 0.05
+					core_ohio_effect = yes
+					core_indiana_effect = yes
+					core_pennsylvania_effect = yes
+					core_new_jersey_effect = yes
+					core_michigan_effect = yes
+					core_wisconsin_effect = yes
+					core_illinois_effect = yes
+					core_new_york_effect = yes
+					take_cores_from_puppets = yes
+				}
+				if = { #Confederate States of America
+					limit = {
+						has_country_flag = CSA_desc
+					}
+					set_country_flag = formed_CSA
+					set_capital = {
+						state = 251
+					}
+					set_cosmetic_tag = CSA
+					add_stability = 0.15
+					core_virginia_effect = yes
+					core_north_carolina_effect = yes
+					core_tennessee_effect = yes
+					core_south_carolina_effect = yes
+					core_georgia_effect = yes
+					core_florida_effect = yes
+					core_alabama_effect = yes
+					core_mississippi_effect = yes
+					core_arkansas_effect = yes
+					core_louisiana_effect = yes
+					core_texas_effect = yes
+					#Claims
+					core_maryland_effect = yes
+					core_kentucky_effect = yes
+					core_missouri_effect = yes
+					core_oklahoma_effect = yes
+					#NM South
+					add_state_core = 54
+					add_state_core = 643
+					add_state_core = 644
+					add_state_core = 645
+					add_state_core = 653
+					add_state_core = 654
+					add_state_core = 655
+					add_state_core = 656
+					add_state_core = 657
+					#AZ South
+					add_state_core = 658
+					add_state_core = 659
+					add_state_core = 660
+					add_state_core = 661
+					add_state_core = 662
+					add_state_core = 663
+					add_state_core = 664
+					add_state_core = 665
+					add_state_core = 666
+					add_state_core = 667
+					#CA South
+					add_state_core = 64
+					add_state_core = 742
+					add_state_core = 743
+					add_state_core = 744
+					add_state_core = 745
+					add_state_core = 746
+					add_state_core = 747
+					add_state_core = 748
+					add_state_core = 749
+					add_state_core = 750
+					add_state_core = 751
+					add_state_core = 752
+					add_state_core = 753
+					take_cores_from_puppets = yes
+				}
+				if = { #Deseret
+					limit = {
+						has_country_flag = DES_desc
+					}
+					set_cosmetic_tag = DES
+					set_country_flag = formed_DES
+					add_stability = 0.05
+					core_nevada_effect = yes
+					add_state_core = 617
+					add_state_core = 624
+					add_state_core = 621
+					add_state_core = 622
+					add_state_core = 639
+					add_state_core = 640
+					#Arizona
+					core_arizona_effect = yes
+					remove_state_core = 659
+					remove_state_core = 658
+					remove_state_core = 660
+					remove_state_core = 661
+					remove_state_core = 662
+					remove_state_core = 663
+					#California
+					add_state_core = 64
+					add_state_core = 736
+					add_state_core = 740
+					add_state_core = 741
+					add_state_core = 745
+					add_state_core = 746
+					add_state_core = 747
+					add_state_core = 748
+					add_state_core = 749
+					add_state_core = 750
+					add_state_core = 751
+					add_state_core = 752
+					add_state_core = 753
+					take_cores_from_puppets = yes
+				}
+				if = { #East Coast Union
+					limit = {
+						has_country_flag = EAC_desc
+					}
+					set_cosmetic_tag = EAC
+					set_capital = {
+						state = 201
+					}
+					add_stability = 0.05
+					set_country_flag = formed_EAC
+			  		core_maine_effect = yes
+					core_new_hampshire_effect = yes
+					core_vermont_effect = yes
+					core_massachusetts_effect = yes
+					core_rhode_island_effect = yes
+					core_connecticut_effect = yes
+					core_new_york_effect = yes
+					core_pennsylvania_effect = yes
+					core_new_jersey_effect = yes
+					core_maryland_effect = yes
+					core_washington_dc_effect = yes
+					core_virginia_effect = yes
+					core_west_virginia_effect = yes
+					core_north_carolina_effect = yes
+					core_south_carolina_effect = yes
+					core_georgia_effect = yes
+					core_florida_effect = yes
+					take_cores_from_puppets = yes
+				}
+				if = { #Four Corners Nation
+					limit = {
+						has_country_flag = POF_desc
+					}
+					set_country_flag = formed_POF
+					set_cosmetic_tag = POF
+					add_stability = 0.05
+					core_arizona_effect = yes
+					core_colorado_effect = yes
+					core_new_mexico_effect = yes
+					core_utah_effect = yes
+					take_cores_from_puppets = yes
+				}
+				if = { #Great Lakes Nation
+					limit = {
+						has_country_flag = UOS_desc
+					}
+					set_cosmetic_tag = UOS
+					set_country_flag = formed_UOS
+					add_stability = 0.05
+				  	core_ontario_effect = yes
+					core_ohio_effect = yes
+					core_michigan_effect = yes
+					core_indiana_effect = yes
+					core_illinois_effect = yes
+					core_wisconsin_effect = yes
+					core_minnesota_effect = yes
+					#Claims
+					core_new_york_effect = yes
+					core_pennsylvania_effect = yes
+				}
+				if = { #Greater Canada
+					limit = {
+						has_country_flag = GCA_desc
+					}
+					set_cosmetic_tag = GCA
+					set_country_flag = formed_GCA
+        			add_stability = 0.05
+					core_alaska_effect = yes
+					core_maine_effect = yes
+					core_new_hampshire_effect = yes
+					core_vermont_effect = yes
+					core_massachusetts_effect = yes
+					core_rhode_island_effect = yes
+					core_connecticut_effect = yes
+					#Claims
+					core_new_york_effect = yes
+					core_michigan_effect = yes
+					core_wisconsin_effect = yes
+					core_minnesota_effect = yes
+					core_north_dakota_effect = yes
+					core_south_dakota_effect = yes
+					core_montana_effect = yes
+					core_idaho_effect = yes
+					core_washington_effect = yes
+					core_oregon_effect = yes
+				}
+				if = { #Greater New England
+					limit = {
+						has_country_flag = GNE_desc
+					}
+					set_country_flag = formed_GNE
+					add_stability = 0.10
+					core_new_brunswick_effect = yes
+					core_nova_scotia_effect = yes
+					core_prince_edward_island_effect = yes
+					core_new_york_effect = yes
+					core_new_jersey_effect = yes
+					#Claims
+					core_pennsylvania_effect = yes
+					core_delaware_effect = yes
+					add_state_core = 240
+					add_state_core = 239
+					add_state_core = 244
+					add_state_core = 853
+					add_state_core = 852
+					add_state_core = 854
+					add_state_core = 855
+					add_state_core = 856
+					add_state_core = 3
+					add_state_core = 825
+					add_state_core = 858
+					take_cores_from_puppets = yes
+				}
+				if = { #Greater Virginia
+					limit = {
+						has_country_flag = GRV_desc
+					}
+					set_country_flag = formed_GRV
+					add_stability = 0.10
+					set_cosmetic_tag = GRV
+				  	core_west_virginia_effect = yes
+					core_virginia_effect = yes
+					take_cores_from_puppets = yes
+				}
+				if = { #Republic of Lakotah
+					limit = {
+						has_country_flag = ROL_desc
+					}
+					set_cosmetic_tag = ROL
+					set_country_flag = formed_ROL
+					add_stability = 0.05
+					core_nebraska_effect = yes
+					core_iowa_effect = yes
+					core_minnesota_effect = yes
+					core_south_dakota_effect = yes
+					core_north_dakota_effect = yes
+					core_wyoming_effect = yes
+					core_montana_effect = yes
+					core_idaho_effect = yes
+					take_cores_from_puppets = yes
+				}
+				if = { #Mesoamerica
+					limit = {
+						has_country_flag = MES_desc
+					}
+					set_country_flag = formed_MES
+					set_capital = {
+						state = 88
+					}
+					set_cosmetic_tag = MES
+					add_stability = 0.10
+					core_panama_effect = yes
+					core_costa_rica_effect = yes
+					core_honduras_effect = yes
+					core_nicaragua_effect = yes
+					core_el_salvador_effect = yes
+					core_guatemala_effect = yes
+					core_belize_effect = yes
+					core_quintana_roo_effect = yes
+					core_yucatan_effect = yes
+					core_campeche_effect = yes
+					core_chiapas_effect = yes
+					core_tabasco_effect = yes
+					core_oaxaca_effect = yes
+					core_veracruz_effect = yes
+					core_guerrero_effect = yes
+					core_puebla_effect = yes
+					core_morelos_effect = yes
+					core_tlaxcala_effect = yes
+					core_federal_district_of_mexico_effect = yes
+					core_state_of_mexico_effect = yes
+					core_hidalgo_effect = yes
+					core_michoacan_effect = yes
+					core_queretaro_effect = yes
+					core_colima_effect = yes
+					core_jalisco_effect = yes
+					core_aguascalientes_effect = yes
+					core_nayarit_effect = yes
+					core_sinaloa_effect = yes
+					core_san_luis_potosi_effect = yes
+					core_tlaxcala_effect = yes
+					core_guanajuato_effect = yes
+					add_state_core = 1112
+					add_state_core = 1113
+					add_state_core = 1117
+					add_state_core = 1148
+					add_state_core = 1149
+					add_state_core = 1150
+					take_cores_from_puppets = yes
+				}
+				if = { #Mexico
+					limit = {
+						has_country_flag = MEX_desc
+					}
+					set_country_flag = formed_MEX
+					add_stability = 0.10
+					set_capital = {
+						state = 88
+					}
+					set_cosmetic_tag = MEX
+					core_quintana_roo_effect = yes
+					core_yucatan_effect = yes
+					core_campeche_effect = yes
+					core_chiapas_effect = yes
+					core_tabasco_effect = yes
+					core_oaxaca_effect = yes
+					core_veracruz_effect = yes
+					core_guerrero_effect = yes
+					core_puebla_effect = yes
+					core_morelos_effect = yes
+					core_tlaxcala_effect = yes
+					core_federal_district_of_mexico_effect = yes
+					core_state_of_mexico_effect = yes
+					core_hidalgo_effect = yes
+					core_michoacan_effect = yes
+					core_queretaro_effect = yes
+					core_colima_effect = yes
+					core_jalisco_effect = yes
+					core_aguascalientes_effect = yes
+					core_nayarit_effect = yes
+					core_sinaloa_effect = yes
+					core_san_luis_potosi_effect = yes
+					core_zacatecas_effect = yes
+					core_durango_effect = yes
+					core_tamaulipas_effect = yes
+					core_nuevo_leon_effect = yes
+					core_coahuila_effect = yes
+					core_chihuahua_effect = yes
+					core_sonora_effect = yes
+					core_baja_california_effect = yes
+					core_baja_california_sur_effect = yes
+					core_tlaxcala_effect = yes
+					core_guanajuato_effect = yes
+					take_cores_from_puppets = yes
+				}
+				if = { #Montezuma
+					limit = {
+						has_country_flag = MTZ_desc
+					}
+					add_stability = 0.20
+					set_cosmetic_tag = MTZ
+					set_country_flag = formed_MTZ
+					core_arizona_effect = yes
+					core_new_mexico_effect = yes
+					take_cores_from_puppets = yes
+				}
+				if = { #Great Plains Nation
+					limit = {
+						has_country_flag = GPL_desc
+					}
+					set_country_flag = formed_GPL
+					set_cosmetic_tag = GPN
+					add_stability = 0.05
+					core_oklahoma_effect = yes
+					core_kansas_effect = yes
+					core_nebraska_effect = yes
+					core_south_dakota_effect = yes
+					core_north_dakota_effect = yes
+					core_iowa_effect = yes
+					#Texas
+					core_texas_effect = yes
+					remove_state_core = 579
+					remove_state_core = 580
+					#Colorado
+					add_state_core = 55
+					add_state_core = 630
+					add_state_core = 637
+					add_state_core = 631
+					#Missouri
+					core_missouri_effect = yes
+					remove_state_core = 470
+					remove_state_core = 471
+					remove_state_core = 469
+					remove_state_core = 468
+					remove_state_core = 465
+					remove_state_core = 466
+					remove_state_core = 467
+					remove_state_core = 462
+					#Minnesota
+					remove_state_core = 499
+					remove_state_core = 500
+					remove_state_core = 503
+					remove_state_core = 1344
+					core_minnesota_effect = yes
+					#Wyoming
+					add_state_core = 611
+					add_state_core = 612
+					add_state_core = 608
+					add_state_core = 614
+					#Montana
+					core_montana_effect = yes
+					remove_state_core = 587
+					remove_state_core = 1390
+					take_cores_from_puppets = yes
+				}
+				if = { #New England
+					limit = {
+						has_country_flag = NEC_desc
+					}
+					set_country_flag = formed_NEC
+					set_cosmetic_tag = NEC
+					add_stability = 0.10
+					core_maine_effect = yes
+					core_new_hampshire_effect = yes
+					core_vermont_effect = yes
+					core_massachusetts_effect = yes
+					core_connecticut_effect = yes
+					core_rhode_island_effect = yes
+					core_new_york_effect = yes
+					core_new_jersey_effect = yes
+					take_cores_from_puppets = yes
+				}
+				if = { #North American Union
+					limit = {
+						has_country_flag = NAU_desc
+					}
+					set_country_flag = formed_NAU
+					set_cosmetic_tag = NAU
+					set_capital = {
+						state = 154
+					}
+					add_stability = 0.10
+					#Canada
+					core_alberta_effect = yes
+					core_british_columbia_effect = yes
+					core_labrador_effect = yes
+					core_manitoba_effect = yes
+					core_new_brunswick_effect = yes
+					core_newfoundland_effect = yes
+					core_nova_scotia_effect = yes
+					core_northwest_territories_effect = yes
+					core_nunavut_effect = yes
+					core_ontario_effect = yes
+					core_prince_edward_island_effect = yes
+					core_quebec_effect = yes
+					core_saskatchewan_effect = yes
+					core_yukon_effect = yes
+					#United States
+					core_alabama_effect = yes
+					core_alaska_effect = yes
+					core_arizona_effect = yes
+					core_arkansas_effect = yes
+					core_california_effect = yes
+					core_colorado_effect = yes
+					core_connecticut_effect = yes
+					core_delaware_effect = yes
+					core_florida_effect = yes
+					core_georgia_effect = yes
+					core_hawaii_effect = yes
+					core_idaho_effect = yes
+					core_illinois_effect = yes
+					core_indiana_effect = yes
+					core_iowa_effect = yes
+					core_kansas_effect = yes
+					core_kentucky_effect = yes
+					core_louisiana_effect = yes
+					core_maine_effect = yes
+					core_maryland_effect = yes
+					core_massachusetts_effect = yes
+					core_michigan_effect = yes
+					core_minnesota_effect = yes
+					core_mississippi_effect = yes
+					core_missouri_effect = yes
+					core_montana_effect = yes
+					core_nebraska_effect = yes
+					core_nevada_effect = yes
+					core_new_hampshire_effect = yes
+					core_new_jersey_effect = yes
+					core_new_mexico_effect = yes
+					core_new_york_effect = yes
+					core_north_carolina_effect = yes
+					core_north_dakota_effect = yes
+					core_ohio_effect = yes
+					core_oklahoma_effect = yes
+					core_oregon_effect = yes
+					core_pennsylvania_effect = yes
+					core_rhode_island_effect = yes
+					core_south_carolina_effect = yes
+					core_south_dakota_effect = yes
+					core_tennessee_effect = yes
+					core_texas_effect = yes
+					core_utah_effect = yes
+					core_vermont_effect = yes
+					core_virginia_effect = yes
+					core_washington_effect = yes
+					core_washington_dc_effect = yes
+					core_west_virginia_effect = yes
+					core_wisconsin_effect = yes
+					core_wyoming_effect = yes
+					#Mexico
+					core_quintana_roo_effect = yes
+					core_yucatan_effect = yes
+					core_campeche_effect = yes
+					core_chiapas_effect = yes
+					core_tabasco_effect = yes
+					core_oaxaca_effect = yes
+					core_veracruz_effect = yes
+					core_guerrero_effect = yes
+					core_puebla_effect = yes
+					core_morelos_effect = yes
+					core_tlaxcala_effect = yes
+					core_federal_district_of_mexico_effect = yes
+					core_state_of_mexico_effect = yes
+					core_hidalgo_effect = yes
+					core_michoacan_effect = yes
+					core_queretaro_effect = yes
+					core_colima_effect = yes
+					core_jalisco_effect = yes
+					core_aguascalientes_effect = yes
+					core_nayarit_effect = yes
+					core_sinaloa_effect = yes
+					core_san_luis_potosi_effect = yes
+					core_zacatecas_effect = yes
+					core_durango_effect = yes
+					core_tamaulipas_effect = yes
+					core_nuevo_leon_effect = yes
+					core_coahuila_effect = yes
+					core_chihuahua_effect = yes
+					core_sonora_effect = yes
+					core_baja_california_effect = yes
+					core_baja_california_sur_effect = yes
+					core_tlaxcala_effect = yes
+					core_guanajuato_effect = yes
+					take_cores_from_puppets = yes
+				}
+				if = { #Northwest Confederacy
+					limit = {
+						has_country_flag = NWC_desc
+					}
+					set_country_flag = formed_NWC
+					set_cosmetic_tag = NWC
+					add_stability = 0.20
+					set_capital = {
+						state = 272
+					}
+					core_ohio_effect = yes
+					core_michigan_effect = yes
+					core_indiana_effect = yes
+					core_illinois_effect = yes
+					core_wisconsin_effect = yes
+					add_state_core = 492
+					add_state_core = 498
+					add_state_core = 499
+					add_state_core = 500
+					take_cores_from_puppets = yes
+				}
+				if = { #Pacific States of America
+					limit = {
+						has_country_flag = PSA_desc
+					}
+					set_country_flag = formed_PSA
+					set_cosmetic_tag = PSA
+					set_capital = {
+						state = 732
+					}
+					add_stability = 0.5
+					core_california_effect = yes
+					core_oregon_effect = yes
+					core_washington_effect = yes
+					core_british_columbia_effect = yes
+					core_alaska_effect = yes
+					take_cores_from_puppets = yes
+				}
+				if = { #Texlahoma
+					limit = {
+						has_country_flag = TLH_desc
+					}
+					set_country_flag = formed_TLH
+					add_stability = 0.05
+					set_cosmetic_tag = TLH
+					core_texas_effect = yes
+				}
+				if = { #First Mexican Empire
+					limit = {
+						has_country_flag = FME_desc
+					}
+					set_country_flag = formed_FME
+					add_stability = 0.10
+					set_cosmetic_tag = FME
+					core_texas_effect = yes
+					core_new_mexico_effect = yes
+					core_arizona_effect = yes
+					core_california_effect = yes
+					core_utah_effect = yes
+					core_nevada_effect = yes
+					#Colorado
+					add_state_core = 624
+					add_state_core = 623
+					add_state_core = 622
+					add_state_core = 621
+					add_state_core = 627
+					add_state_core = 626
+					add_state_core = 625
+					add_state_core = 620
+					add_state_core = 642
+					#Oklahoma
+					add_state_core = 552
+					#Wyoming
+					add_state_core = 615
+					add_state_core = 617
+					add_state_core = 610
+					take_cores_from_puppets = yes
+				}
+				if = { #The Golden Circle
+					limit = {
+						has_country_flag = TGC_desc
+					}
+					set_country_flag = formed_TGC
+					add_stability = 0.10
+					set_cosmetic_tag = TGC
+					#United States
+					core_alabama_effect = yes
+					core_alaska_effect = yes
+					core_arizona_effect = yes
+					core_arkansas_effect = yes
+					core_california_effect = yes
+					core_colorado_effect = yes
+					core_connecticut_effect = yes
+					core_delaware_effect = yes
+					core_florida_effect = yes
+					core_georgia_effect = yes
+					core_hawaii_effect = yes
+					core_idaho_effect = yes
+					core_illinois_effect = yes
+					core_indiana_effect = yes
+					core_iowa_effect = yes
+					core_kansas_effect = yes
+					core_kentucky_effect = yes
+					core_louisiana_effect = yes
+					core_maine_effect = yes
+					core_maryland_effect = yes
+					core_massachusetts_effect = yes
+					core_michigan_effect = yes
+					core_minnesota_effect = yes
+					core_mississippi_effect = yes
+					core_missouri_effect = yes
+					core_montana_effect = yes
+					core_nebraska_effect = yes
+					core_nevada_effect = yes
+					core_new_hampshire_effect = yes
+					core_new_jersey_effect = yes
+					core_new_mexico_effect = yes
+					core_new_york_effect = yes
+					core_north_carolina_effect = yes
+					core_north_dakota_effect = yes
+					core_ohio_effect = yes
+					core_oklahoma_effect = yes
+					core_oregon_effect = yes
+					core_pennsylvania_effect = yes
+					core_rhode_island_effect = yes
+					core_south_carolina_effect = yes
+					core_south_dakota_effect = yes
+					core_tennessee_effect = yes
+					core_texas_effect = yes
+					core_utah_effect = yes
+					core_vermont_effect = yes
+					core_virginia_effect = yes
+					core_washington_effect = yes
+					core_washington_dc_effect = yes
+					core_west_virginia_effect = yes
+					core_wisconsin_effect = yes
+					core_wyoming_effect = yes
+					core_quintana_roo_effect = yes
+					core_yucatan_effect = yes
+					core_campeche_effect = yes
+					core_chiapas_effect = yes
+					core_tabasco_effect = yes
+					core_oaxaca_effect = yes
+					core_veracruz_effect = yes
+					core_guerrero_effect = yes
+					core_puebla_effect = yes
+					core_morelos_effect = yes
+					core_tlaxcala_effect = yes
+					core_federal_district_of_mexico_effect = yes
+					core_state_of_mexico_effect = yes
+					core_hidalgo_effect = yes
+					core_michoacan_effect = yes
+					core_queretaro_effect = yes
+					core_colima_effect = yes
+					core_jalisco_effect = yes
+					core_aguascalientes_effect = yes
+					core_nayarit_effect = yes
+					core_sinaloa_effect = yes
+					core_san_luis_potosi_effect = yes
+					core_zacatecas_effect = yes
+					core_durango_effect = yes
+					core_tamaulipas_effect = yes
+					core_nuevo_leon_effect = yes
+					core_coahuila_effect = yes
+					core_chihuahua_effect = yes
+					core_sonora_effect = yes
+					core_baja_california_effect = yes
+					core_baja_california_sur_effect = yes
+					core_tlaxcala_effect = yes
+					core_guanajuato_effect = yes
+					core_anguilla_effect = yes
+					core_antigua_and_barbuda_effect = yes
+					core_aruba_effect = yes
+					core_bahamas_effect = yes
+					core_barbados_effect = yes
+					core_cayman_islands_effect = yes
+					core_cuba_effect = yes
+					core_curacao_effect = yes
+					core_dominica_effect = yes
+					core_dominican_republic_effect = yes
+					core_grenada_effect = yes
+					core_guadalupe_effect = yes
+					core_haiti_effect = yes
+					core_jamaica_effect = yes
+					core_martinique_effect = yes
+					core_montserrat_effect = yes
+					core_puerto_rico_effect = yes
+					core_saint_kitts_and_nevis_effect = yes
+					core_saint_lucia_effect = yes
+					core_saint_vincent_effect = yes
+					core_trinidad_and_tobago = yes
+					core_turks_and_caicos_effect = yes
+					core_virgin_islands_effect = yes
+					core_panama_effect = yes
+					core_costa_rica_effect = yes
+					core_honduras_effect = yes
+					core_nicaragua_effect = yes
+					core_el_salvador_effect = yes
+					core_guatemala_effect = yes
+					core_belize_effect = yes
+					#South America
+					add_state_core = 1302
+					add_state_core = 1307
+					add_state_core = 1306
+					add_state_core = 1305
+					add_state_core = 1304
+					add_state_core = 1311
+					add_state_core = 1313
+					add_state_core = 1316
+					add_state_core = 1323
+					add_state_core = 1317
+					take_cores_from_puppets = yes
+				}
+				if = { #The Thirteen Colonies
+					limit = {
+						has_country_flag = TTC_desc
+					}
+					set_country_flag = formed_TTC
+					set_cosmetic_tag = TTC
+					set_capital = {
+						state = 154
+					}
+					add_stability = 0.05
+					core_maine_effect = yes
+					core_new_hampshire_effect = yes
+					core_vermont_effect = yes
+					core_massachusetts_effect = yes
+					core_rhode_island_effect = yes
+					core_connecticut_effect = yes
+					core_new_york_effect = yes
+					core_pennsylvania_effect = yes
+					core_new_jersey_effect = yes
+					core_maryland_effect = yes
+					core_washington_dc_effect = yes
+					core_virginia_effect = yes
+					core_west_virginia_effect = yes
+					core_north_carolina_effect = yes
+					core_south_carolina_effect = yes
+					core_georgia_effect = yes
+					core_florida_effect = yes
+					core_alabama_effect = yes
+					core_mississippi_effect = yes
+					core_tennessee_effect = yes
+					core_kentucky_effect = yes
+					core_ohio_effect = yes
+					core_michigan_effect = yes
+					core_indiana_effect = yes
+					core_illinois_effect = yes
+					core_wisconsin_effect = yes
+					take_cores_from_puppets = yes
+				}
+				if = { #United Dakota
+					limit = {
+						has_country_flag = UDU_desc
+					}
+					set_country_flag = formed_UDU
+					set_cosmetic_tag = UDU
+					add_stability = 0.10
+					core_north_dakota_effect = yes
+					core_south_dakota_effect = yes
+					take_cores_from_puppets = yes
+				}
+				if = { #United States
+					limit = {
+						has_country_flag = USA_desc
+					}
+					set_country_flag = formed_USA
+					set_cosmetic_tag = USA
+        			set_capital = {
+						state = 154
+					}
+        			add_stability = 0.15
+					#United States
+					core_alabama_effect = yes
+					core_alaska_effect = yes
+					core_arizona_effect = yes
+					core_arkansas_effect = yes
+					core_california_effect = yes
+					core_colorado_effect = yes
+					core_connecticut_effect = yes
+					core_delaware_effect = yes
+					core_florida_effect = yes
+					core_georgia_effect = yes
+					core_hawaii_effect = yes
+					core_idaho_effect = yes
+					core_illinois_effect = yes
+					core_indiana_effect = yes
+					core_iowa_effect = yes
+					core_kansas_effect = yes
+					core_kentucky_effect = yes
+					core_louisiana_effect = yes
+					core_maine_effect = yes
+					core_maryland_effect = yes
+					core_massachusetts_effect = yes
+					core_michigan_effect = yes
+					core_minnesota_effect = yes
+					core_mississippi_effect = yes
+					core_missouri_effect = yes
+					core_montana_effect = yes
+					core_nebraska_effect = yes
+					core_nevada_effect = yes
+					core_new_hampshire_effect = yes
+					core_new_jersey_effect = yes
+					core_new_mexico_effect = yes
+					core_new_york_effect = yes
+					core_north_carolina_effect = yes
+					core_north_dakota_effect = yes
+					core_ohio_effect = yes
+					core_oklahoma_effect = yes
+					core_oregon_effect = yes
+					core_pennsylvania_effect = yes
+					core_rhode_island_effect = yes
+					core_south_carolina_effect = yes
+					core_south_dakota_effect = yes
+					core_tennessee_effect = yes
+					core_texas_effect = yes
+					core_utah_effect = yes
+					core_vermont_effect = yes
+					core_virginia_effect = yes
+					core_washington_effect = yes
+					core_washington_dc_effect = yes
+					core_west_virginia_effect = yes
+					core_wisconsin_effect = yes
+					core_wyoming_effect = yes
+					take_cores_from_puppets = yes
+				}
+				if = { #Viceroyalty of New Spain
+					limit = {
+						has_country_flag = VNS_desc
+					}
+					set_country_flag = formed_VNS
+					set_cosmetic_tag = VNS
+					set_capital = {
+						state = 88
+					}
+					core_texas_effect = yes
+					core_new_mexico_effect = yes
+					core_arizona_effect = yes
+					core_california_effect = yes
+					core_utah_effect = yes
+					core_nevada_effect = yes
+					core_arkansas_effect = yes
+					core_oklahoma_effect = yes
+					core_kansas_effect = yes
+					core_missouri_effect = yes
+					core_iowa_effect = yes
+					core_nebraska_effect = yes
+					core_south_dakota_effect = yes
+					core_montana_effect = yes
+					core_florida_effect = yes
+					core_cuba_effect = yes
+					core_dominican_republic_effect = yes
+					core_puerto_rico_effect = yes
+					remove_state_core = 1390
+					remove_state_core =590
+					remove_state_core = 1392
+					remove_state_core = 588
+					remove_state_core = 1393
+					add_state_core = 55
+					add_state_core = 56
+					add_state_core = 53
+					add_state_core = 490
+					add_state_core = 491
+					add_state_core = 493
+					add_state_core = 494
+					add_state_core = 495
+					add_state_core = 496
+					add_state_core = 497
+					add_state_core = 501
+					add_state_core = 508
+					add_state_core = 511
+					add_state_core = 512
+					add_state_core = 513
+					add_state_core = 566
+					add_state_core = 565
+					add_state_core = 562
+					add_state_core = 561
+					add_state_core = 604
+					add_state_core = 605
+					add_state_core = 606
+					add_state_core = 607
+					add_state_core = 608
+					add_state_core = 609
+					add_state_core = 610
+					add_state_core = 611
+					add_state_core = 612
+					add_state_core = 613
+					add_state_core = 614
+					add_state_core = 619
+					add_state_core = 620
+					add_state_core = 628
+					add_state_core = 629
+					add_state_core = 630
+					add_state_core = 631
+					add_state_core = 632
+					add_state_core = 633
+					add_state_core = 634
+					add_state_core = 635
+					add_state_core = 636
+					add_state_core = 637
+					add_state_core = 647
+					add_state_core = 412
+					add_state_core = 411
+					add_state_core = 407
+					add_state_core = 408
+					take_cores_from_puppets = yes
+				}
+			}
+		}
+		triggers = {
+			formable_button_help_outline_visible = {
+				has_country_flag = formables_help_cf
+				has_country_flag = formable_menu
+			}
+			formable_desc_help_outline_visible = {
+				has_country_flag = formables_help_cf
+				has_country_flag = formable_menu
+			}
+			help_formable_cities_outline_visible = {
+				has_country_flag = formables_help_cf
+				has_country_flag = formable_menu
+			}
+			form_nation_button_backgrd_visible = { #Should Match "form_nation_button_visible"
+				if = { #ACA
+					limit = {
+						has_country_flag = ACA_desc
+					}
+					NOT = {
+						has_country_flag = formed_ACA
+					}
+					OR = {
+						original_tag = NBN
+						original_tag = NSN
+						original_tag = PEP
+					}
+				}
+				if = { #ATC
+					limit = {
+						has_country_flag = ATC_desc
+					}
+					NOT = {
+						has_country_flag = formed_ATC
+					}
+					original_tag = CAC
+				}
+				if = { #AUS
+					limit = {
+						has_country_flag = AUS_desc
+					}
+					NOT = {
+						has_country_flag = formed_AUS
+					}
+					OR = {
+						original_tag = SCS
+						original_tag = NCN
+						original_tag = TNT
+						original_tag = GAG
+						original_tag = ALA
+						original_tag = MSM
+						original_tag = FLF
+						original_tag = ARA
+						original_tag = LAL
+					}
+				}
+				if = { #APP
+					limit = {
+						has_country_flag = APP_desc
+					}
+					NOT = {
+						has_country_flag = formed_APP
+					}
+					original_tag = WVW
+				}
+				if = { #AZT
+					limit = {
+						has_country_flag = AZT_desc
+					}
+					NOT = {
+						has_country_flag = formed_AZT
+					}
+					OR = {
+						original_tag = PUE
+						original_tag = MOR
+						original_tag = EME
+						original_tag = DFD
+						original_tag = HID
+					}
+				}
+				if = { #CAN
+					limit = {
+						has_country_flag = CAN_desc
+					}
+					NOT = {
+						has_country_flag = formed_CAN
+					}
+					OR = {
+						original_tag = NHN
+						original_tag = VTV
+						original_tag = MEM
+						original_tag = NBN
+						original_tag = NSN
+						original_tag = PEP
+						original_tag = QBC
+						original_tag = NLN
+						original_tag = ONO
+						original_tag = NUN
+						original_tag = MBM
+						original_tag = SKS
+						original_tag = ABA
+						original_tag = BCB
+						original_tag = YTY
+						original_tag = NTN
+					}
+				}
+				if = { #CRB
+					limit = {
+						has_country_flag = CRB_desc
+					}
+					NOT = {
+						has_country_flag = formed_CRB
+					}
+					OR = {
+						original_tag = CUB
+						original_tag = HAI
+						original_tag = DOM
+						original_tag = JAM
+						original_tag = BAH
+						original_tag = PRP
+					}
+				}
+				if = { #CAS
+					limit = {
+						has_country_flag = CAS_desc
+					}
+					NOT = {
+						has_country_flag = formed_CAS
+					}
+					OR = {
+						original_tag = ORO
+						original_tag = WAW
+						original_tag = BCB
+					}
+				}
+				if = { #ECC
+					limit = {
+						has_country_flag = ECC_desc
+					}
+					NOT = {
+						has_country_flag = formed_ECC
+					}
+					OR = {
+						original_tag = NCN
+						original_tag = SCS
+					}
+				}
+				if = { #CGE
+					limit = {
+						has_country_flag = CGE_desc
+					}
+					NOT = {
+						has_country_flag = formed_CGE
+					}
+					original_tag = GAG
+				}
+				if = { #GRL
+					limit = {
+						has_country_flag = GRL_desc
+					}
+					NOT = {
+						has_country_flag = formed_GRL
+					}
+					original_tag = LAL
+				}
+				if = { #CNY
+					limit = {
+						has_country_flag = CNY_desc
+					}
+					NOT = {
+						has_country_flag = formed_CNY
+					}
+					original_tag = NYN
+				}
+				if = { #SYA
+					limit = {
+						has_country_flag = SYA_desc
+					}
+					NOT = {
+						has_country_flag = formed_SYA
+					}
+					OR = {
+						original_tag = WIW
+						original_tag = MIM
+						original_tag = ILI
+						original_tag = INI
+						original_tag = ILI
+						original_tag = OHO
+						original_tag = WVW
+						original_tag = PAP
+					}			  
+				}
+				if = { #CSA
+					limit = {
+						has_country_flag = CSA_desc
+					}
+					NOT = {
+						has_country_flag = formed_CSA
+					}
+					OR = {
+						original_tag = SCS
+						original_tag = NCN
+						original_tag = TNT
+						original_tag = VAV
+						original_tag = TXT
+						original_tag = GAG
+						original_tag = ALA
+						original_tag = MSM
+						original_tag = ARA
+						original_tag = LAL
+						has_completed_focus = FLF_anothercsa
+					}
+				}
+				if = { #DES
+					limit = {
+						has_country_flag = DES_desc
+					}
+					NOT = {
+						has_country_flag = formed_DES
+					}
+					original_tag = UTU
+				}
+				if = { #EAC
+					limit = {
+						has_country_flag = EAC_desc
+					}
+					NOT = {
+						has_country_flag = formed_EAC
+					}
+					OR = {
+						original_tag = VAV
+						original_tag = WVW
+						original_tag = MDM
+						original_tag = DED
+						original_tag = NJN
+						original_tag = PAP
+						original_tag = NCN
+						original_tag = SCS
+						original_tag = GAG
+						original_tag = NYN
+						original_tag = RIR
+						original_tag = MAM
+						original_tag = CTC
+						original_tag = VTV
+						original_tag = NHN
+						original_tag = MEM
+						original_tag = FLF
+					}
+				}
+				if = { #POF
+					limit = {
+						has_country_flag = POF_desc
+					}
+					NOT = {
+						has_country_flag = formed_POF
+					}
+					OR = {
+						original_tag = COC
+						original_tag = UTU
+						original_tag = NMN
+						original_tag = AZA
+					}
+				}
+				if = { #UOS
+					limit = {
+						has_country_flag = UOS_desc
+					}
+					NOT = {
+						has_country_flag = formed_UOS
+					}
+					OR = {
+						original_tag = OHO
+						original_tag = IDI
+						original_tag = MIM
+						original_tag = ILI
+						original_tag = WIW
+						original_tag = MNM
+						original_tag = ONO
+					}
+				}
+				if = { #GCA
+					limit = {
+						has_country_flag = GCA_desc
+					}
+					NOT = {
+						has_country_flag = formed_GCA
+					}
+					OR = {
+						original_tag = CAN
+						has_cosmetic_tag = CAN
+					}
+				}
+				if = { #GNE
+					limit = {
+						has_country_flag = GNE_desc
+					}
+					NOT = {
+						has_country_flag = formed_GNE
+					}
+					has_cosmetic_tag = NEC
+				}
+				if = { #GRV
+					limit = {
+						has_country_flag = GRV_desc
+					}
+					NOT = {
+						has_country_flag = formed_GRV
+					}
+					OR = {
+						original_tag = VAV
+						original_tag = WVW
+					}
+				}
+				if = { #ROL
+					limit = {
+						has_country_flag = ROL_desc
+					}
+					NOT = {
+						has_country_flag = formed_ROL
+					}
+					OR = {
+						original_tag = WYW
+						original_tag = SDS
+						original_tag = NEN
+					}
+				}
+				if = { #MES
+					limit = {
+						has_country_flag = MES_desc
+					}
+					NOT = {
+						has_country_flag = formed_MES
+					}
+					OR = {
+						original_tag = PAN
+						original_tag = COS
+						original_tag = NIC
+						original_tag = HON
+						original_tag = ELS
+						original_tag = GUA
+						original_tag = BLZ
+						original_tag = QRO
+						original_tag = YUC
+						original_tag = CMP
+						original_tag = CAP
+						original_tag = TAB
+						original_tag = OAX
+						original_tag = VER
+						original_tag = PUE
+						original_tag = GUE
+						original_tag = MOR
+						original_tag = TLA
+						original_tag = EME
+						original_tag = DFD
+						original_tag = HID
+						original_tag = QUE
+						original_tag = GAJ
+						original_tag = MIC
+						original_tag = CLA
+						original_tag = JAL
+						original_tag = NAY
+						original_tag = SIN
+						original_tag = ZAC
+						original_tag = SLP
+					}
+				}
+				if = { #MEX
+					limit = {
+						has_country_flag = MEX_desc
+					}
+					NOT = {
+						has_country_flag = formed_MEX
+					}
+					OR = {
+						original_tag = BCS
+						original_tag = BCA
+						original_tag = SON
+						original_tag = CIA
+						original_tag = COA
+						original_tag = SIN
+						original_tag = DUR
+						original_tag = NEL
+						original_tag = TAM
+						original_tag = NAY
+						original_tag = ZAC
+						original_tag = SLP
+						original_tag = AGU
+						original_tag = JAL
+						original_tag = CLA
+						original_tag = MIC
+						original_tag = GAJ
+						original_tag = QUE
+						original_tag = HID
+						original_tag = EME
+						original_tag = DFD
+						original_tag = TLA
+						original_tag = VER
+						original_tag = PUE
+						original_tag = MOR
+						original_tag = GUE
+						original_tag = OAX
+						original_tag = CAP
+						original_tag = TAB
+						original_tag = CMP
+						original_tag = YUC
+						original_tag = QRO
+					}
+				}
+				if = { #MTZ
+					limit = {
+						has_country_flag = MTZ_desc
+					}
+					NOT = {
+						has_country_flag = formed_MTZ
+					}
+					OR = {
+						original_tag = AZA
+						original_tag = NMN
+					}
+				}
+				if = { #GPL
+					limit = {
+						has_country_flag = GPL_desc
+					}
+					NOT = {
+						has_country_flag = formed_GPL
+					}
+					OR = {
+						original_tag = OKO
+						original_tag = KSK
+						original_tag = NEN
+						original_tag = COC
+						original_tag = WYW
+						original_tag = MTM
+						original_tag = NDN
+						original_tag = SDS
+						original_tag = MNM
+						original_tag = IAI
+						original_tag = MOM
+					}
+				}
+				if = { #NEC
+					limit = {
+						has_country_flag = NEC_desc
+					}
+					NOT = {
+						has_country_flag = formed_NEC
+					}
+					OR = {
+						original_tag = NHN
+						original_tag = RIR
+						original_tag = CTC
+						original_tag = MEM
+						original_tag = VTV
+						original_tag = MAM
+					}
+				}
+				if = { #NAU
+					limit = {
+						has_country_flag = NAU_desc
+					}
+					NOT = {
+						has_country_flag = formed_NAU
+					}
+					capital_scope = {
+						NOT = {
+							OR = {
+								is_on_continent = south_america
+								is_on_continent = caribbean
+							}
+						}
+					}
+				}
+				if = { #NWC
+					limit = {
+						has_country_flag = NWC_desc
+					}
+					NOT = {
+						has_country_flag = formed_NWC
+					}
+					OR = {
+						original_tag = OHO
+						original_tag = INI
+						original_tag = ILI
+						original_tag = WIW
+						original_tag = MIM
+					}
+				}
+				if = { #PSA
+					limit = {
+						has_country_flag = PSA_desc
+					}
+					NOT = {
+						has_country_flag = formed_PSA
+					}
+					OR = {
+						original_tag = ORO
+						original_tag = WAW
+						original_tag = CAC
+						original_tag = HIH
+						original_tag = AKA
+					}
+				}
+				if = { #TLH
+					limit = {
+						has_country_flag = TLH_desc
+					}
+					NOT = {
+						has_country_flag = formed_TLH
+					}
+					OR = {
+						original_tag = TXT
+						original_tag = OKO
+					}
+				}
+				if = { #FME
+					limit = {
+						has_country_flag = FME_desc
+					}
+					NOT = {
+						has_country_flag = formed_FME
+					}
+					has_cosmetic_tag = MEX
+				}
+				if = { #TGC
+					limit = {
+						has_country_flag = TGC_desc
+					}
+					NOT = {
+						has_country_flag = formed_TGC
+					}
+					OR = {
+						has_cosmetic_tag = CSA
+						has_cosmetic_tag = MEX
+						has_cosmetic_tag = FME
+						has_cosmetic_tag = CRB
+					}
+				}
+				if = { #TTC
+					limit = {
+						has_country_flag = TTC_desc
+					}
+					NOT = {
+						has_country_flag = formed_TTC
+					}
+					OR = {
+						original_tag = VAV
+						original_tag = WVW
+						original_tag = MDM
+						original_tag = DED
+						original_tag = NJN
+						original_tag = PAP
+						original_tag = NCN
+						original_tag = SCS
+						original_tag = GAG
+						original_tag = NYN
+						original_tag = RIR
+						original_tag = MAM
+						original_tag = CTC
+						original_tag = VTV
+						original_tag = NHN
+						original_tag = MEM
+					}
+				}
+				if = { #UDU
+					limit = {
+						has_country_flag = UDU_desc
+					}
+					NOT = {
+						has_country_flag = formed_UDU
+					}
+					OR = {
+						original_tag = SDS
+						original_tag = NDN
+					}
+				}
+				if = { #USA
+					limit = {
+						has_country_flag = USA_desc
+					}
+					NOT = {
+						has_country_flag = formed_USA
+					}
+					OR = {
+						original_tag = ALA
+						original_tag = AKA
+						original_tag = AZA
+						original_tag = ARA
+						original_tag = CAC
+						original_tag = COC
+						original_tag = CTC
+						original_tag = DED
+						original_tag = DCD
+						original_tag = FLF
+						original_tag = GAG
+						original_tag = HIH
+						original_tag = IDI
+						original_tag = ILI
+						original_tag = INI
+						original_tag = IAI
+						original_tag = KSK
+						original_tag = KYK
+						original_tag = LAL
+						original_tag = MEM
+						original_tag = MDM
+						original_tag = MAM
+						original_tag = MIM
+						original_tag = MNM
+						original_tag = MSM
+						original_tag = MOM
+						original_tag = MTM
+						original_tag = NEN
+						original_tag = NVN
+						original_tag = NHN
+						original_tag = NJN
+						original_tag = NMN
+						original_tag = NYN
+						original_tag = NCN
+						original_tag = NCN
+						original_tag = NDN
+						original_tag = OHO
+						original_tag = OKO
+						original_tag = ORO
+						original_tag = PAP
+						original_tag = RIR
+						original_tag = SCS
+						original_tag = TNT
+						original_tag = TXT
+						original_tag = VTV
+						original_tag = VAV
+						original_tag = WAW
+						original_tag = WVW
+						original_tag = WIW
+						original_tag = WYW
+						original_tag = UTU
+					}
+				}
+				if = { #VNS
+					limit = {
+						has_country_flag = VNS_desc
+					}
+					NOT = {
+						has_country_flag = formed_VNS
+					}
+					OR = {
+						has_cosmetic_tag = MEX
+						original_tag = MEX
+						has_cosmetic_tag = FME
+					}
+				}
+				else_if = {
+					limit = {
+						has_country_flag = formable_menu
+						AND = {
+							NOT = {
+								OR = {
+									has_country_flag = MES_desc
+									has_country_flag = AUS_desc
+									has_country_flag = ATC_desc
+									has_country_flag = ACA_desc
+									has_country_flag = APP_desc
+									has_country_flag = AZT_desc
+									has_country_flag = CAN_desc
+									has_country_flag = CRB_desc
+									has_country_flag = CAS_desc
+									has_country_flag = ECC_desc
+									has_country_flag = CGE_desc
+									has_country_flag = GRL_desc
+									has_country_flag = CNY_desc
+									has_country_flag = SYA_desc
+									has_country_flag = CSA_desc
+									has_country_flag = DES_desc
+									has_country_flag = EAC_desc
+									has_country_flag = POF_desc
+									has_country_flag = UOS_desc
+									has_country_flag = GCA_desc
+									has_country_flag = GNE_desc
+									has_country_flag = GRV_desc
+									has_country_flag = ROL_desc
+									has_country_flag = MEX_desc
+									has_country_flag = MTZ_desc
+									has_country_flag = GPL_desc
+									has_country_flag = NEC_desc
+									has_country_flag = NAU_desc
+									has_country_flag = NWC_desc
+									has_country_flag = PSA_desc
+									has_country_flag = FME_desc
+									has_country_flag = TGC_desc
+									has_country_flag = TTC_desc
+									has_country_flag = UDU_desc
+									has_country_flag = VNS_desc
+									has_country_flag = USA_desc
+									has_country_flag = TLH_desc
+								}
+							}
+						}
+					}
+					always = no		
+				}
+			}
+			form_nation_button_visible = { #Should Match "form_nation_button_backgrd_visible"
+				if = { #ACA
+					limit = {
+						has_country_flag = ACA_desc
+					}
+					NOT = {
+						has_country_flag = formed_ACA
+					}
+					OR = {
+						original_tag = NBN
+						original_tag = NSN
+						original_tag = PEP
+					}
+				}
+				if = { #ATC
+					limit = {
+						has_country_flag = ATC_desc
+					}
+					NOT = {
+						has_country_flag = formed_ATC
+					}
+					original_tag = CAC
+				}
+				if = { #AUS
+					limit = {
+						has_country_flag = AUS_desc
+					}
+					NOT = {
+						has_country_flag = formed_AUS
+					}
+					OR = {
+						original_tag = SCS
+						original_tag = NCN
+						original_tag = TNT
+						original_tag = GAG
+						original_tag = ALA
+						original_tag = MSM
+						original_tag = FLF
+						original_tag = ARA
+						original_tag = LAL
+					}
+				}
+				if = { #APP
+					limit = {
+						has_country_flag = APP_desc
+					}
+					NOT = {
+						has_country_flag = formed_APP
+					}
+					original_tag = WVW
+				}
+				if = { #AZT
+					limit = {
+						has_country_flag = AZT_desc
+					}
+					NOT = {
+						has_country_flag = formed_AZT
+					}
+					OR = {
+						original_tag = PUE
+						original_tag = MOR
+						original_tag = EME
+						original_tag = DFD
+						original_tag = HID
+					}
+				}
+				if = { #CAN
+					limit = {
+						has_country_flag = CAN_desc
+					}
+					NOT = {
+						has_country_flag = formed_CAN
+					}
+					OR = {
+						original_tag = NHN
+						original_tag = VTV
+						original_tag = MEM
+						original_tag = NBN
+						original_tag = NSN
+						original_tag = PEP
+						original_tag = QBC
+						original_tag = NLN
+						original_tag = ONO
+						original_tag = NUN
+						original_tag = MBM
+						original_tag = SKS
+						original_tag = ABA
+						original_tag = BCB
+						original_tag = YTY
+						original_tag = NTN
+					}
+				}
+				if = { #CRB
+					limit = {
+						has_country_flag = CRB_desc
+					}
+					NOT = {
+						has_country_flag = formed_CRB
+					}
+					OR = {
+						original_tag = CUB
+						original_tag = HAI
+						original_tag = DOM
+						original_tag = JAM
+						original_tag = BAH
+						original_tag = PRP
+					}
+				}
+				if = { #CAS
+					limit = {
+						has_country_flag = CAS_desc
+					}
+					NOT = {
+						has_country_flag = formed_CAS
+					}
+					OR = {
+						original_tag = ORO
+						original_tag = WAW
+						original_tag = BCB
+					}
+				}
+				if = { #ECC
+					limit = {
+						has_country_flag = ECC_desc
+					}
+					NOT = {
+						has_country_flag = formed_ECC
+					}
+					OR = {
+						original_tag = NCN
+						original_tag = SCS
+					}
+				}
+				if = { #CGE
+					limit = {
+						has_country_flag = CGE_desc
+					}
+					NOT = {
+						has_country_flag = formed_CGE
+					}
+					original_tag = GAG
+				}
+				if = { #GRL
+					limit = {
+						has_country_flag = GRL_desc
+					}
+					NOT = {
+						has_country_flag = formed_GRL
+					}
+					original_tag = LAL
+				}
+				if = { #CNY
+					limit = {
+						has_country_flag = CNY_desc
+					}
+					NOT = {
+						has_country_flag = formed_CNY
+					}
+					original_tag = NYN
+				}
+				if = { #SYA
+					limit = {
+						has_country_flag = SYA_desc
+					}
+					NOT = {
+						has_country_flag = formed_SYA
+					}
+					OR = {
+						original_tag = WIW
+						original_tag = MIM
+						original_tag = ILI
+						original_tag = INI
+						original_tag = ILI
+						original_tag = OHO
+						original_tag = WVW
+						original_tag = PAP
+					}			  
+				}
+				if = { #CSA
+					limit = {
+						has_country_flag = CSA_desc
+					}
+					NOT = {
+						has_country_flag = formed_CSA
+					}
+					OR = {
+						original_tag = SCS
+						original_tag = NCN
+						original_tag = TNT
+						original_tag = VAV
+						original_tag = TXT
+						original_tag = GAG
+						original_tag = ALA
+						original_tag = MSM
+						original_tag = ARA
+						original_tag = LAL
+						has_completed_focus = FLF_anothercsa
+					}
+				}
+				if = { #DES
+					limit = {
+						has_country_flag = DES_desc
+					}
+					NOT = {
+						has_country_flag = formed_DES
+					}
+					original_tag = UTU
+				}
+				if = { #EAC
+					limit = {
+						has_country_flag = EAC_desc
+					}
+					NOT = {
+						has_country_flag = formed_EAC
+					}
+					OR = {
+						original_tag = VAV
+						original_tag = WVW
+						original_tag = MDM
+						original_tag = DED
+						original_tag = NJN
+						original_tag = PAP
+						original_tag = NCN
+						original_tag = SCS
+						original_tag = GAG
+						original_tag = NYN
+						original_tag = RIR
+						original_tag = MAM
+						original_tag = CTC
+						original_tag = VTV
+						original_tag = NHN
+						original_tag = MEM
+						original_tag = FLF
+					}
+				}
+				if = { #POF
+					limit = {
+						has_country_flag = POF_desc
+					}
+					NOT = {
+						has_country_flag = formed_POF
+					}
+					OR = {
+						original_tag = COC
+						original_tag = UTU
+						original_tag = NMN
+						original_tag = AZA
+					}
+				}
+				if = { #UOS
+					limit = {
+						has_country_flag = UOS_desc
+					}
+					NOT = {
+						has_country_flag = formed_UOS
+					}
+					OR = {
+						original_tag = OHO
+						original_tag = IDI
+						original_tag = MIM
+						original_tag = ILI
+						original_tag = WIW
+						original_tag = MNM
+						original_tag = ONO
+					}
+				}
+				if = { #GCA
+					limit = {
+						has_country_flag = GCA_desc
+					}
+					NOT = {
+						has_country_flag = formed_GCA
+					}
+					OR = {
+						original_tag = CAN
+						has_cosmetic_tag = CAN
+					}
+				}
+				if = { #GNE
+					limit = {
+						has_country_flag = GNE_desc
+					}
+					NOT = {
+						has_country_flag = formed_GNE
+					}
+					has_cosmetic_tag = NEC
+				}
+				if = { #GRV
+					limit = {
+						has_country_flag = GRV_desc
+					}
+					NOT = {
+						has_country_flag = formed_GRV
+					}
+					OR = {
+						original_tag = VAV
+						original_tag = WVW
+					}
+				}
+				if = { #ROL
+					limit = {
+						has_country_flag = ROL_desc
+					}
+					NOT = {
+						has_country_flag = formed_ROL
+					}
+					OR = {
+						original_tag = WYW
+						original_tag = SDS
+						original_tag = NEN
+					}
+				}
+				if = { #MES
+					limit = {
+						has_country_flag = MES_desc
+					}
+					NOT = {
+						has_country_flag = formed_MES
+					}
+					OR = {
+						original_tag = PAN
+						original_tag = COS
+						original_tag = NIC
+						original_tag = HON
+						original_tag = ELS
+						original_tag = GUA
+						original_tag = BLZ
+						original_tag = QRO
+						original_tag = YUC
+						original_tag = CMP
+						original_tag = CAP
+						original_tag = TAB
+						original_tag = OAX
+						original_tag = VER
+						original_tag = PUE
+						original_tag = GUE
+						original_tag = MOR
+						original_tag = TLA
+						original_tag = EME
+						original_tag = DFD
+						original_tag = HID
+						original_tag = QUE
+						original_tag = GAJ
+						original_tag = MIC
+						original_tag = CLA
+						original_tag = JAL
+						original_tag = NAY
+						original_tag = SIN
+						original_tag = ZAC
+						original_tag = SLP
+					}
+				}
+				if = { #Mexico
+					limit = {
+						has_country_flag = MEX_desc
+					}
+					NOT = {
+						has_country_flag = formed_MEX
+					}
+					OR = {
+						original_tag = BCS
+						original_tag = BCA
+						original_tag = SON
+						original_tag = CIA
+						original_tag = COA
+						original_tag = SIN
+						original_tag = DUR
+						original_tag = NEL
+						original_tag = TAM
+						original_tag = NAY
+						original_tag = ZAC
+						original_tag = SLP
+						original_tag = AGU
+						original_tag = JAL
+						original_tag = CLA
+						original_tag = MIC
+						original_tag = GAJ
+						original_tag = QUE
+						original_tag = HID
+						original_tag = EME
+						original_tag = DFD
+						original_tag = TLA
+						original_tag = VER
+						original_tag = PUE
+						original_tag = MOR
+						original_tag = GUE
+						original_tag = OAX
+						original_tag = CAP
+						original_tag = TAB
+						original_tag = CMP
+						original_tag = YUC
+						original_tag = QRO
+					}
+				}
+				if = { #MTZ
+					limit = {
+						has_country_flag = MTZ_desc
+					}
+					NOT = {
+						has_country_flag = formed_MTZ
+					}
+					OR = {
+						original_tag = AZA
+						original_tag = NMN
+					}
+				}
+				if = { #GPL
+					limit = {
+						has_country_flag = GPL_desc
+					}
+					NOT = {
+						has_country_flag = formed_GPL
+					}
+					OR = {
+						original_tag = OKO
+						original_tag = KSK
+						original_tag = NEN
+						original_tag = COC
+						original_tag = WYW
+						original_tag = MTM
+						original_tag = NDN
+						original_tag = SDS
+						original_tag = MNM
+						original_tag = IAI
+						original_tag = MOM
+					}
+				}
+				if = { #NEC
+					limit = {
+						has_country_flag = NEC_desc
+					}
+					NOT = {
+						has_country_flag = formed_NEC
+					}
+					OR = {
+						original_tag = NHN
+						original_tag = RIR
+						original_tag = CTC
+						original_tag = MEM
+						original_tag = VTV
+						original_tag = MAM
+					}
+				}
+				if = { #NAU
+					limit = {
+						has_country_flag = NAU_desc
+					}
+					NOT = {
+						has_country_flag = formed_NAU
+					}
+					capital_scope = {
+						NOT = {
+							OR = {
+								is_on_continent = south_america
+								is_on_continent = caribbean
+							}
+						}
+					}
+				}
+				if = { #NWC
+					limit = {
+						has_country_flag = NWC_desc
+					}
+					NOT = {
+						has_country_flag = formed_NWC
+					}
+					OR = {
+						original_tag = OHO
+						original_tag = INI
+						original_tag = ILI
+						original_tag = WIW
+						original_tag = MIM
+					}
+				}
+				if = { #PSA
+					limit = {
+						has_country_flag = PSA_desc
+					}
+					NOT = {
+						has_country_flag = formed_PSA
+					}
+					OR = {
+						original_tag = ORO
+						original_tag = WAW
+						original_tag = CAC
+						original_tag = HIH
+						original_tag = AKA
+					}
+				}
+				if = { #TLH
+					limit = {
+						has_country_flag = TLH_desc
+					}
+					NOT = {
+						has_country_flag = formed_TLH
+					}
+					OR = {
+						original_tag = TXT
+						original_tag = OKO
+					}
+				}
+				if = { #FME
+					limit = {
+						has_country_flag = FME_desc
+					}
+					NOT = {
+						has_country_flag = formed_FME
+					}
+					has_cosmetic_tag = MEX
+				}
+				if = { #TGC
+					limit = {
+						has_country_flag = TGC_desc
+					}
+					NOT = {
+						has_country_flag = formed_TGC
+					}
+					OR = {
+						has_cosmetic_tag = CSA
+						has_cosmetic_tag = MEX
+						has_cosmetic_tag = FME
+						has_cosmetic_tag = CRB
+					}
+				}
+				if = { #TTC
+					limit = {
+						has_country_flag = TTC_desc
+					}
+					NOT = {
+						has_country_flag = formed_TTC
+					}
+					OR = {
+						original_tag = VAV
+						original_tag = WVW
+						original_tag = MDM
+						original_tag = DED
+						original_tag = NJN
+						original_tag = PAP
+						original_tag = NCN
+						original_tag = SCS
+						original_tag = GAG
+						original_tag = NYN
+						original_tag = RIR
+						original_tag = MAM
+						original_tag = CTC
+						original_tag = VTV
+						original_tag = NHN
+						original_tag = MEM
+					}
+				}
+				if = { #UDU
+					limit = {
+						has_country_flag = UDU_desc
+					}
+					NOT = {
+						has_country_flag = formed_UDU
+					}
+					OR = {
+						original_tag = SDS
+						original_tag = NDN
+					}
+				}
+				if = { #USA
+					limit = {
+						has_country_flag = USA_desc
+					}
+					NOT = {
+						has_country_flag = formed_USA
+					}
+					OR = {
+						original_tag = ALA
+						original_tag = AKA
+						original_tag = AZA
+						original_tag = ARA
+						original_tag = CAC
+						original_tag = COC
+						original_tag = CTC
+						original_tag = DED
+						original_tag = DCD
+						original_tag = FLF
+						original_tag = GAG
+						original_tag = HIH
+						original_tag = IDI
+						original_tag = ILI
+						original_tag = INI
+						original_tag = IAI
+						original_tag = KSK
+						original_tag = KYK
+						original_tag = LAL
+						original_tag = MEM
+						original_tag = MDM
+						original_tag = MAM
+						original_tag = MIM
+						original_tag = MNM
+						original_tag = MSM
+						original_tag = MOM
+						original_tag = MTM
+						original_tag = NEN
+						original_tag = NVN
+						original_tag = NHN
+						original_tag = NJN
+						original_tag = NMN
+						original_tag = NYN
+						original_tag = NCN
+						original_tag = NCN
+						original_tag = NDN
+						original_tag = OHO
+						original_tag = OKO
+						original_tag = ORO
+						original_tag = PAP
+						original_tag = RIR
+						original_tag = SCS
+						original_tag = TNT
+						original_tag = TXT
+						original_tag = VTV
+						original_tag = VAV
+						original_tag = WAW
+						original_tag = WVW
+						original_tag = WIW
+						original_tag = WYW
+						original_tag = UTU
+					}
+				}
+				if = { #VNS
+					limit = {
+						has_country_flag = VNS_desc
+					}
+					NOT = {
+						has_country_flag = formed_VNS
+					}
+					OR = {
+						has_cosmetic_tag = MEX
+						original_tag = MEX
+						has_cosmetic_tag = FME
+					}
+				}
+				else_if = {
+					limit = {
+						has_country_flag = formable_menu
+						AND = {
+							NOT = {
+								OR = {
+									has_country_flag = MES_desc
+									has_country_flag = AUS_desc
+									has_country_flag = ATC_desc
+									has_country_flag = ACA_desc
+									has_country_flag = APP_desc
+									has_country_flag = AZT_desc
+									has_country_flag = CAN_desc
+									has_country_flag = CRB_desc
+									has_country_flag = CAS_desc
+									has_country_flag = ECC_desc
+									has_country_flag = CGE_desc
+									has_country_flag = GRL_desc
+									has_country_flag = CNY_desc
+									has_country_flag = SYA_desc
+									has_country_flag = CSA_desc
+									has_country_flag = DES_desc
+									has_country_flag = EAC_desc
+									has_country_flag = POF_desc
+									has_country_flag = UOS_desc
+									has_country_flag = GCA_desc
+									has_country_flag = GNE_desc
+									has_country_flag = GRV_desc
+									has_country_flag = ROL_desc
+									has_country_flag = MEX_desc
+									has_country_flag = MTZ_desc
+									has_country_flag = GPL_desc
+									has_country_flag = NEC_desc
+									has_country_flag = NAU_desc
+									has_country_flag = NWC_desc
+									has_country_flag = PSA_desc
+									has_country_flag = FME_desc
+									has_country_flag = TGC_desc
+									has_country_flag = TTC_desc
+									has_country_flag = UDU_desc
+									has_country_flag = VNS_desc
+									has_country_flag = USA_desc
+									has_country_flag = TLH_desc
+								}
+							}
+						}
+					}
+					always = no		
+				}
+			}
+			form_nation_button_glow_visible = {
+				if = { #ACA
+					limit = {
+						has_country_flag = ACA_desc
+					}
+					NOT = {
+						has_country_flag = formed_ACA
+					}
+					OR = {
+						original_tag = NBN
+						original_tag = NSN
+						original_tag = PEP
+					}
+					792 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					4 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					803 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+				}
+				if = { #ATC
+					limit = {
+						has_country_flag = ATC_desc
+					}
+					NOT = {
+						has_country_flag = formed_ATC
+					}
+					original_tag = CAC
+					749 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					747 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					732 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					731 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					690 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					687 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					674 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+				}
+				if = { #American Union State
+					limit = {
+						has_country_flag = AUS_desc
+					}
+					NOT = {
+						has_country_flag = formed_AUS
+					}
+					OR = {
+						original_tag = SCS
+						original_tag = NCN
+						original_tag = TNT
+						original_tag = GAG
+						original_tag = ALA
+						original_tag = MSM
+						original_tag = FLF
+						original_tag = ARA
+						original_tag = LAL
+					}
+					444 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					402 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					411 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					1400 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					384 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					394 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					433 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					377 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					368 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+				}
+				if = { #APP
+					limit = {
+						has_country_flag = APP_desc
+					}
+					NOT = {
+						has_country_flag = formed_APP
+					}
+					original_tag = WVW
+					264 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					267 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					268 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					235 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+				}
+				if = { #AZT
+					limit = {
+						has_country_flag = AZT_desc
+					}
+					NOT = {
+						has_country_flag = formed_AZT
+					}
+					OR = {
+						original_tag = PUE
+						original_tag = MOR
+						original_tag = EME
+						original_tag = DFD
+						original_tag = HID
+					}
+					1220 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					88 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+				}
+				if = { #CAN
+					limit = {
+						has_country_flag = CAN_desc
+					}
+					NOT = {
+						has_country_flag = formed_CAN
+					}
+					OR = {
+						original_tag = NBN
+						original_tag = NSN
+						original_tag = PEP
+						original_tag = QBC
+						original_tag = NLN
+						original_tag = ONO
+						original_tag = NUN
+						original_tag = MBM
+						original_tag = SKS
+						original_tag = ABA
+						original_tag = BCB
+						original_tag = YTY
+						original_tag = NTN
+					}
+					809 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					822 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					792 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					4 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					803 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					851 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					875 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					868 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					915 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					922 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					947 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					958 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					1038 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					990 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					1000 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+				}
+				if = { #CRB
+					limit = {
+						has_country_flag = CRB_desc
+					}
+					NOT = {
+						has_country_flag = formed_CRB
+					}
+					OR = {
+						original_tag = CUB
+						original_tag = HAI
+						original_tag = DOM
+						original_tag = JAM
+						original_tag = BAH
+						original_tag = PRP
+						original_tag = CYM
+						original_tag = TCI
+						original_tag = UVU
+						original_tag = ANG
+						original_tag = SKN
+						original_tag = AAB
+						original_tag = MNT
+						original_tag = GDL
+						original_tag = DMC
+						original_tag = MTQ
+						original_tag = STL
+						original_tag = BRB
+						original_tag = SVG
+						original_tag = GND
+						original_tag = TAT
+						original_tag = CRC
+						original_tag = ARB
+					}
+					1361 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					1386 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					1366 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					1357 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					1348 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+				}
+				if = { #CAS
+					limit = {
+						has_country_flag = CAS_desc
+					}
+					NOT = {
+						has_country_flag = formed_CAS
+					}
+					OR = {
+						original_tag = ORO
+						original_tag = WAW
+						original_tag = BCB
+					}
+					712 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					709 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					707 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					706 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					958 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					964 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+				}
+				if = { #ECC
+					limit = {
+						has_country_flag = ECC_desc
+					}
+					NOT = {
+						has_country_flag = formed_ECC
+					}
+					OR = {
+						original_tag = NCN
+						original_tag = SCS
+					}
+					368 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					364 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					377 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					378 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					354 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					347 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+				}
+				if = { #CGE
+					limit = {
+						has_country_flag = CGE_desc
+					}
+					NOT = {
+						has_country_flag = formed_CGE
+					}
+					original_tag = GAG
+					386 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					402 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					421 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+				}
+				if = { #GRL
+					limit = {
+						has_country_flag = GRL_desc
+					}
+					NOT = {
+						has_country_flag = formed_GRL
+					}
+					original_tag = LAL
+					1400 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					557 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					463 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					545 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					634 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					484 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					533 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					518 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					511 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					592 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					605 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+				}
+				if = { #CNY
+					limit = {
+						has_country_flag = CNY_desc
+					}
+					NOT = {
+						has_country_flag = formed_CNY
+					}
+					original_tag = NYN
+					218 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					238 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+				}
+				if = { #SYA
+					limit = {
+						has_country_flag = SYA_desc
+					}
+					NOT = {
+						has_country_flag = formed_SYA
+					}
+					OR = {
+						original_tag = WIW
+						original_tag = MIM
+						original_tag = ILI
+						original_tag = INI
+						original_tag = ILI
+						original_tag = OHO
+						original_tag = WVW
+						original_tag = PAP
+					}
+					272 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					271 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					295 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					321 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					235 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					218 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					294 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					309 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+				}
+				if = { #CSA
+					limit = {
+						has_country_flag = CSA_desc
+					}
+					NOT = {
+						has_country_flag = formed_CSA
+					}
+					OR = {
+						original_tag = SCS
+						original_tag = NCN
+						original_tag = TNT
+						original_tag = VAV
+						original_tag = TXT
+						original_tag = GAG
+						original_tag = ALA
+						original_tag = MSM
+						original_tag = ARA
+						original_tag = LAL
+						has_completed_focus = FLF_anothercsa
+					}
+					575 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					442 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					1400 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					421 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					402 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					423 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					354 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					386 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					377 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					368 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					251 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					666 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+				}
+				if = { #DES
+					limit = {
+						has_country_flag = DES_desc
+					}
+					NOT = {
+						has_country_flag = formed_DES
+					}
+					original_tag = UTU
+					687 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					690 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+				}
+				if = { #EAC
+					limit = {
+						has_country_flag = EAC_desc
+					}
+					NOT = {
+						has_country_flag = formed_EAC
+					}
+					OR = {
+						original_tag = VAV
+						original_tag = WVW
+						original_tag = MDM
+						original_tag = DED
+						original_tag = NJN
+						original_tag = PAP
+						original_tag = NCN
+						original_tag = SCS
+						original_tag = GAG
+						original_tag = NYN
+						original_tag = RIR
+						original_tag = MAM
+						original_tag = CTC
+						original_tag = VTV
+						original_tag = NHN
+						original_tag = MEM
+						original_tag = FLF
+					}
+					181 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					201 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					224 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					218 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					251 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					264 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					368 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					377 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					386 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					423 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					426 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					378 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					364 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+				}
+				if = { #POF
+					limit = {
+						has_country_flag = POF_desc
+					}
+					NOT = {
+						has_country_flag = formed_POF
+					}
+					OR = {
+						original_tag = COC
+						original_tag = UTU
+						original_tag = NMN
+						original_tag = AZA
+					}
+					651 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					666 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					674 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					634 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+				}
+				if = { #UOS
+					limit = {
+						has_country_flag = UOS_desc
+					}
+					NOT = {
+						has_country_flag = formed_UOS
+					}
+					OR = {
+						original_tag = OHO
+						original_tag = IDI
+						original_tag = MIM
+						original_tag = ILI
+						original_tag = WIW
+						original_tag = MNM
+						original_tag = ONO
+					}
+					491 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					309 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					321 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					294 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					298 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					272 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					868 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+				}
+				if = { #GCA
+					limit = {
+						has_country_flag = GCA_desc
+					}
+					NOT = {
+						has_country_flag = formed_GCA
+					}
+					OR = {
+						has_cosmetic_tag = CAN
+					}
+					171 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					180 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					181 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					184 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					193 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					197 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					766 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+				}
+				if = { #GNE
+					limit = {
+						has_country_flag = GNE_desc
+					}
+					NOT = {
+						has_country_flag = formed_GNE
+					}
+					has_cosmetic_tag = NEC
+					218 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					201 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					803 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					792 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					4 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+				}
+				if = { #GRV
+					limit = {
+						has_country_flag = GRV_desc
+					}
+					NOT = {
+						has_country_flag = formed_GRV
+					}
+					OR = {
+						original_tag = VAV
+						original_tag = WVW
+					}
+					251 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					264 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+				}
+				if = { #ROL
+					limit = {
+						has_country_flag = ROL_desc
+					}
+					NOT = {
+						has_country_flag = formed_ROL
+					}
+					OR = {
+						original_tag = WYW
+						original_tag = SDS
+						original_tag = NEN
+					}
+					518 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					607 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					511 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					603 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+				}
+				if = { #MES
+					limit = {
+						has_country_flag = MES_desc
+					}
+					NOT = {
+						has_country_flag = formed_MES
+					}
+					OR = {
+						original_tag = PAN
+						original_tag = COS
+						original_tag = NIC
+						original_tag = HON
+						original_tag = ELS
+						original_tag = GUA
+						original_tag = BLZ
+						original_tag = QRO
+						original_tag = YUC
+						original_tag = CMP
+						original_tag = CAP
+						original_tag = TAB
+						original_tag = OAX
+						original_tag = VER
+						original_tag = PUE
+						original_tag = GUE
+						original_tag = MOR
+						original_tag = TLA
+						original_tag = EME
+						original_tag = DFD
+						original_tag = HID
+						original_tag = QUE
+						original_tag = GAJ
+						original_tag = MIC
+						original_tag = CLA
+						original_tag = JAL
+						original_tag = NAY
+						original_tag = SIN
+						original_tag = ZAC
+						original_tag = SLP
+					}
+					1165 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					1179 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					88 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					1220 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					1205 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					97 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					1263 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					1401 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					101 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					1396 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					1299 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+				}
+				if = { #Mexico
+					limit = {
+						has_country_flag = MEX_desc
+					}
+					NOT = {
+						has_country_flag = formed_MEX
+					}
+					OR = {
+						original_tag = BCS
+						original_tag = BCA
+						original_tag = SON
+						original_tag = CIA
+						original_tag = COA
+						original_tag = SIN
+						original_tag = DUR
+						original_tag = NEL
+						original_tag = TAM
+						original_tag = NAY
+						original_tag = ZAC
+						original_tag = SLP
+						original_tag = AGU
+						original_tag = JAL
+						original_tag = CLA
+						original_tag = MIC
+						original_tag = GAJ
+						original_tag = QUE
+						original_tag = HID
+						original_tag = EME
+						original_tag = DFD
+						original_tag = TLA
+						original_tag = VER
+						original_tag = PUE
+						original_tag = MOR
+						original_tag = GUE
+						original_tag = OAX
+						original_tag = CAP
+						original_tag = TAB
+						original_tag = CMP
+						original_tag = YUC
+						original_tag = QRO
+					}
+					1205 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					1220 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					88 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					1222 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					1165 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					1179 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					1132 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					1082 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					1069 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+				}
+				if = { #MTZ
+					limit = {
+						has_country_flag = MTZ_desc
+					}
+					NOT = {
+						has_country_flag = formed_MTZ
+					}
+					OR = {
+						original_tag = AZA
+						original_tag = NMN
+					}
+					666 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					662 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					651 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					650 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+				}
+				if = { #GPL
+					limit = {
+						has_country_flag = GPL_desc
+					}
+					NOT = {
+						has_country_flag = formed_GPL
+					}
+					OR = {
+						original_tag = OKO
+						original_tag = KSK
+						original_tag = NEN
+						original_tag = COC
+						original_tag = WYW
+						original_tag = MTM
+						original_tag = NDN
+						original_tag = SDS
+						original_tag = MNM
+						original_tag = IAI
+						original_tag = MOM
+					}
+					545 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					544 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					557 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					560 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					533 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					539 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					526 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					506 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+				}
+				if = { #NEC
+					limit = {
+						has_country_flag = NEC_desc
+					}
+					NOT = {
+						has_country_flag = formed_NEC
+					}
+					OR = {
+						original_tag = NHN
+						original_tag = RIR
+						original_tag = CTC
+						original_tag = MEM
+						original_tag = VTV
+						original_tag = MAM
+					}
+					171 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					180 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					184 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					193 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					197 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					181 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+				}
+				if = { #NAU
+					limit = {
+						has_country_flag = NAU_desc
+					}
+					NOT = {
+						has_country_flag = formed_NAU
+					}
+					capital_scope = {
+						NOT = {
+							OR = {
+								is_on_continent = south_america
+								is_on_continent = caribbean
+							}
+						}
+					}
+					838 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					868 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					915 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					922 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					947 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					958 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					154 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					201 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					423 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					573 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					747 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					88 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					1165 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					1132 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+				}
+				if = { #NWC
+					limit = {
+						has_country_flag = NWC_desc
+					}
+					NOT = {
+						has_country_flag = formed_NWC
+					}
+					OR = {
+						original_tag = OHO
+						original_tag = INI
+						original_tag = ILI
+						original_tag = WIW
+						original_tag = MIM
+					}
+					272 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					295 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					294 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					321 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					309 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					492 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+				}
+				if = { #PSA
+					limit = {
+						has_country_flag = PSA_desc
+					}
+					NOT = {
+						has_country_flag = formed_PSA
+					}
+					OR = {
+						original_tag = ORO
+						original_tag = WAW
+						original_tag = CAC
+						original_tag = HIH
+						original_tag = AKA
+					}
+					732 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					709 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					706 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					770 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+				}
+				if = { #TLH
+					limit = {
+						has_country_flag = TLH_desc
+					}
+					NOT = {
+						has_country_flag = formed_TLH
+					}
+					OR = {
+						original_tag = TXT
+						original_tag = OKO
+					}
+					575 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					573 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					584 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					576 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					557 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					560 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+				}
+				if = { #FME
+					limit = {
+						has_country_flag = FME_desc
+					}
+					NOT = {
+						has_country_flag = formed_FME
+					}
+					has_cosmetic_tag = MEX
+					575 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					650 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					666 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					674 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					747 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					687 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+				}
+				if = { #TGC
+					limit = {
+						has_country_flag = TGC_desc
+					}
+					NOT = {
+						has_country_flag = formed_TGC
+					}
+					OR = {
+						has_cosmetic_tag = CSA
+						has_cosmetic_tag = MEX
+						has_cosmetic_tag = FME
+						has_cosmetic_tag = CRB
+					}
+					423 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					386 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					377 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					368 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					251 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					41 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					421 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					442 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					575 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					666 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					468 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					1400 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					345 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					1366 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					1357 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					1348 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					88 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					1069 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					1205 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+				}
+				if = { #TTC
+					limit = {
+						has_country_flag = TTC_desc
+					}
+					NOT = {
+						has_country_flag = formed_TTC
+					}
+					OR = {
+						original_tag = VAV
+						original_tag = WVW
+						original_tag = MDM
+						original_tag = DED
+						original_tag = NJN
+						original_tag = PAP
+						original_tag = NCN
+						original_tag = SCS
+						original_tag = GAG
+						original_tag = NYN
+						original_tag = RIR
+						original_tag = MAM
+						original_tag = CTC
+						original_tag = VTV
+						original_tag = NHN
+						original_tag = MEM
+					}
+					386 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					377 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					368 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					251 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					154 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					241 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					224 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					219 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					207 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					197 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					193 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					184 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					180 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					170 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+				}
+				if = { #UDU
+					limit = {
+						has_country_flag = UDU_desc
+					}
+					NOT = {
+						has_country_flag = formed_UDU
+					}
+					OR = {
+						original_tag = SDS
+						original_tag = NDN
+					}
+					518 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					511 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+				}
+				if = { #USA
+					limit = {
+						has_country_flag = USA_desc
+					}
+					NOT = {
+						has_country_flag = formed_USA
+					}
+					OR = {
+						original_tag = ALA
+						original_tag = AKA
+						original_tag = AZA
+						original_tag = ARA
+						original_tag = CAC
+						original_tag = COC
+						original_tag = CTC
+						original_tag = DED
+						original_tag = DCD
+						original_tag = FLF
+						original_tag = GAG
+						original_tag = HIH
+						original_tag = IDI
+						original_tag = ILI
+						original_tag = INI
+						original_tag = IAI
+						original_tag = KSK
+						original_tag = KYK
+						original_tag = LAL
+						original_tag = MEM
+						original_tag = MDM
+						original_tag = MAM
+						original_tag = MIM
+						original_tag = MNM
+						original_tag = MSM
+						original_tag = MOM
+						original_tag = MTM
+						original_tag = NEN
+						original_tag = NVN
+						original_tag = NHN
+						original_tag = NJN
+						original_tag = NMN
+						original_tag = NYN
+						original_tag = NCN
+						original_tag = NCN
+						original_tag = NDN
+						original_tag = OHO
+						original_tag = OKO
+						original_tag = ORO
+						original_tag = PAP
+						original_tag = RIR
+						original_tag = SCS
+						original_tag = TNT
+						original_tag = TXT
+						original_tag = VTV
+						original_tag = VAV
+						original_tag = WAW
+						original_tag = WVW
+						original_tag = WIW
+						original_tag = WYW
+						original_tag = UTU
+					}
+					1113 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					1108 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					1105 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					1102 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					1097 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					1094 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					1090 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					1083 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					1077 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					1078 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					1066 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					1070 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					362 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					816 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					1048 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					1037 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					1030 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					1022 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					1004 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					965 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					1001 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					369 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					261 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					1012 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					995 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					1017 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					992 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+				}
+				if = { #VNS
+					limit = {
+						has_country_flag = VNS_desc
+					}
+					NOT = {
+						has_country_flag = formed_VNS
+					}
+					OR = {
+						has_cosmetic_tag = MEX
+						has_cosmetic_tag = FME
+					}
+					575 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					650 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					666 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					674 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					747 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+					687 = {
+						is_controlled_by_ROOT_or_subject = yes
+					}
+				}
+				else_if = {
+					limit = {
+						has_country_flag = formable_menu
+						AND = {
+							NOT = {
+								OR = {
+									has_country_flag = MES_desc
+									has_country_flag = AUS_desc
+									has_country_flag = ATC_desc
+									has_country_flag = ACA_desc
+									has_country_flag = APP_desc
+									has_country_flag = AZT_desc
+									has_country_flag = CAN_desc
+									has_country_flag = CRB_desc
+									has_country_flag = CAS_desc
+									has_country_flag = ECC_desc
+									has_country_flag = CGE_desc
+									has_country_flag = GRL_desc
+									has_country_flag = CNY_desc
+									has_country_flag = SYA_desc
+									has_country_flag = CSA_desc
+									has_country_flag = DES_desc
+									has_country_flag = EAC_desc
+									has_country_flag = POF_desc
+									has_country_flag = UOS_desc
+									has_country_flag = GCA_desc
+									has_country_flag = GNE_desc
+									has_country_flag = GRV_desc
+									has_country_flag = ROL_desc
+									has_country_flag = MEX_desc
+									has_country_flag = MTZ_desc
+									has_country_flag = GPL_desc
+									has_country_flag = NEC_desc
+									has_country_flag = NAU_desc
+									has_country_flag = NWC_desc
+									has_country_flag = PSA_desc
+									has_country_flag = FME_desc
+									has_country_flag = TGC_desc
+									has_country_flag = TTC_desc
+									has_country_flag = UDU_desc
+									has_country_flag = VNS_desc
+									has_country_flag = USA_desc
+									has_country_flag = TLH_desc
+								}
+							}
+						}
+					}
+					always = no		
+				}
+			}
+		}
+		properties = {
+			formables_map = { image = "[get_map_image]" }
+		}
+
+	}
+  	open_formable_tab = {
+  		window_name = "open_formable_tab"
+  		context_type = player_context
+		parent_window_token = top_bar
+
+  		visible = { 
+			has_country_flag = formable_tab_visible
+		}
+
+  		effects = {	
+			open_formable_tab_window_click = { 
+				set_country_flag = formable_menu 
+			}
+			close_formable_tab_window_click = {
+				clr_country_flag = formable_menu
+
+				clr_country_flag = AUS_desc
+				clr_country_flag = ATC_desc
+				clr_country_flag = ACA_desc
+				clr_country_flag = APP_desc
+				clr_country_flag = AZT_desc
+				clr_country_flag = CAN_desc
+				clr_country_flag = CRB_desc
+				clr_country_flag = CAS_desc
+				clr_country_flag = ECC_desc
+				clr_country_flag = CGE_desc
+				clr_country_flag = GRL_desc
+				clr_country_flag = CNY_desc
+				clr_country_flag = SYA_desc
+				clr_country_flag = CSA_desc
+				clr_country_flag = DES_desc
+				clr_country_flag = EAC_desc
+				clr_country_flag = POF_desc
+				clr_country_flag = UOS_desc
+				clr_country_flag = GCA_desc
+				clr_country_flag = GNE_desc
+				clr_country_flag = GRV_desc
+				clr_country_flag = ROL_desc
+				clr_country_flag = MES_desc
+				clr_country_flag = MEX_desc
+				clr_country_flag = MTZ_desc
+				clr_country_flag = GPL_desc
+				clr_country_flag = NEC_desc
+				clr_country_flag = NAU_desc
+				clr_country_flag = NWC_desc
+				clr_country_flag = PSA_desc
+				clr_country_flag = TLH_desc
+				clr_country_flag = FME_desc
+				clr_country_flag = TGC_desc
+				clr_country_flag = TTC_desc
+				clr_country_flag = UDU_desc
+				clr_country_flag = USA_desc
+				clr_country_flag = VNS_desc
+			}
+  		}
+		  triggers = {
+			close_formable_tab_window_visible = {
+				has_country_flag = formable_menu
+			}
+		  }
+  	}
+	  hide_formable_button = {
+		window_name = "hide_formable_button"
+		context_type = player_context
+		visible = {
+			always = yes
+		}
+		effects = {
+			toggle_formable_selector_click = {
+				if = {
+					limit = {
+						has_country_flag = formable_tab_visible
+					}
+					clr_country_flag = formable_tab_visible
+				}
+				else = {
+					set_country_flag = formable_tab_visible
+				}
+			}
+		}
+	}
+	formable_list_tab = {
+		window_name = "formables_list_tab"
+		context_type = player_context
+
+		visible = { has_country_flag = formable_menu }
+
+		effects = {
+			ACA_desc_button_click = {
+				set_country_flag = ACA_desc
+				clr_country_flag = AUS_desc
+				clr_country_flag = ATC_desc
+				clr_country_flag = APP_desc
+				clr_country_flag = AZT_desc
+				clr_country_flag = CAN_desc
+				clr_country_flag = CRB_desc
+				clr_country_flag = CAS_desc
+				clr_country_flag = ECC_desc
+				clr_country_flag = CGE_desc
+				clr_country_flag = GRL_desc
+				clr_country_flag = CNY_desc
+				clr_country_flag = SYA_desc
+				clr_country_flag = CSA_desc
+				clr_country_flag = DES_desc
+				clr_country_flag = EAC_desc
+				clr_country_flag = POF_desc
+				clr_country_flag = UOS_desc
+				clr_country_flag = GCA_desc
+				clr_country_flag = GNE_desc
+				clr_country_flag = GRV_desc
+				clr_country_flag = ROL_desc
+				clr_country_flag = MES_desc
+				clr_country_flag = MEX_desc
+				clr_country_flag = MTZ_desc
+				clr_country_flag = GPL_desc
+				clr_country_flag = NEC_desc
+				clr_country_flag = NAU_desc
+				clr_country_flag = NWC_desc
+				clr_country_flag = PSA_desc
+				clr_country_flag = FME_desc
+				clr_country_flag = TGC_desc
+				clr_country_flag = TTC_desc
+				clr_country_flag = UDU_desc
+				clr_country_flag = VNS_desc
+				clr_country_flag = USA_desc
+				clr_country_flag = TLH_desc
+			}
+			ATC_desc_button_click = {
+				set_country_flag = ATC_desc
+				clr_country_flag = AUS_desc
+				clr_country_flag = ACA_desc
+				clr_country_flag = APP_desc
+				clr_country_flag = AZT_desc
+				clr_country_flag = CAN_desc
+				clr_country_flag = CRB_desc
+				clr_country_flag = CAS_desc
+				clr_country_flag = ECC_desc
+				clr_country_flag = CGE_desc
+				clr_country_flag = GRL_desc
+				clr_country_flag = CNY_desc
+				clr_country_flag = SYA_desc
+				clr_country_flag = CSA_desc
+				clr_country_flag = DES_desc
+				clr_country_flag = EAC_desc
+				clr_country_flag = POF_desc
+				clr_country_flag = UOS_desc
+				clr_country_flag = GCA_desc
+				clr_country_flag = GNE_desc
+				clr_country_flag = GRV_desc
+				clr_country_flag = ROL_desc
+				clr_country_flag = MES_desc
+				clr_country_flag = MEX_desc
+				clr_country_flag = MTZ_desc
+				clr_country_flag = GPL_desc
+				clr_country_flag = NEC_desc
+				clr_country_flag = NAU_desc
+				clr_country_flag = NWC_desc
+				clr_country_flag = PSA_desc
+				clr_country_flag = FME_desc
+				clr_country_flag = TGC_desc
+				clr_country_flag = TTC_desc
+				clr_country_flag = UDU_desc
+				clr_country_flag = VNS_desc
+				clr_country_flag = USA_desc
+				clr_country_flag = TLH_desc
+			}
+			AUS_desc_button_click = {
+				set_country_flag = AUS_desc
+				clr_country_flag = ATC_desc
+				clr_country_flag = ACA_desc
+				clr_country_flag = APP_desc
+				clr_country_flag = AZT_desc
+				clr_country_flag = CAN_desc
+				clr_country_flag = CRB_desc
+				clr_country_flag = CAS_desc
+				clr_country_flag = ECC_desc
+				clr_country_flag = CGE_desc
+				clr_country_flag = GRL_desc
+				clr_country_flag = CNY_desc
+				clr_country_flag = SYA_desc
+				clr_country_flag = CSA_desc
+				clr_country_flag = DES_desc
+				clr_country_flag = EAC_desc
+				clr_country_flag = POF_desc
+				clr_country_flag = UOS_desc
+				clr_country_flag = GCA_desc
+				clr_country_flag = GNE_desc
+				clr_country_flag = GRV_desc
+				clr_country_flag = ROL_desc
+				clr_country_flag = MES_desc
+				clr_country_flag = MEX_desc
+				clr_country_flag = MTZ_desc
+				clr_country_flag = GPL_desc
+				clr_country_flag = NEC_desc
+				clr_country_flag = NAU_desc
+				clr_country_flag = NWC_desc
+				clr_country_flag = PSA_desc
+				clr_country_flag = FME_desc
+				clr_country_flag = TGC_desc
+				clr_country_flag = TTC_desc
+				clr_country_flag = UDU_desc
+				clr_country_flag = VNS_desc
+				clr_country_flag = USA_desc
+				clr_country_flag = TLH_desc
+			}
+			APP_desc_button_click = {
+				set_country_flag = APP_desc
+				clr_country_flag = AUS_desc
+				clr_country_flag = ATC_desc
+				clr_country_flag = ACA_desc
+				clr_country_flag = AZT_desc
+				clr_country_flag = CAN_desc
+				clr_country_flag = CRB_desc
+				clr_country_flag = CAS_desc
+				clr_country_flag = ECC_desc
+				clr_country_flag = CGE_desc
+				clr_country_flag = GRL_desc
+				clr_country_flag = CNY_desc
+				clr_country_flag = SYA_desc
+				clr_country_flag = CSA_desc
+				clr_country_flag = DES_desc
+				clr_country_flag = EAC_desc
+				clr_country_flag = POF_desc
+				clr_country_flag = UOS_desc
+				clr_country_flag = GCA_desc
+				clr_country_flag = GNE_desc
+				clr_country_flag = GRV_desc
+				clr_country_flag = ROL_desc
+				clr_country_flag = MES_desc
+				clr_country_flag = MEX_desc
+				clr_country_flag = MTZ_desc
+				clr_country_flag = GPL_desc
+				clr_country_flag = NEC_desc
+				clr_country_flag = NAU_desc
+				clr_country_flag = NWC_desc
+				clr_country_flag = PSA_desc
+				clr_country_flag = FME_desc
+				clr_country_flag = TGC_desc
+				clr_country_flag = TTC_desc
+				clr_country_flag = UDU_desc
+				clr_country_flag = VNS_desc
+				clr_country_flag = USA_desc
+				clr_country_flag = TLH_desc
+			}
+			AZT_desc_button_click = {
+				set_country_flag = AZT_desc
+				clr_country_flag = AUS_desc
+				clr_country_flag = ATC_desc
+				clr_country_flag = ACA_desc
+				clr_country_flag = APP_desc
+				clr_country_flag = CAN_desc
+				clr_country_flag = CRB_desc
+				clr_country_flag = CAS_desc
+				clr_country_flag = ECC_desc
+				clr_country_flag = CGE_desc
+				clr_country_flag = GRL_desc
+				clr_country_flag = CNY_desc
+				clr_country_flag = SYA_desc
+				clr_country_flag = CSA_desc
+				clr_country_flag = DES_desc
+				clr_country_flag = EAC_desc
+				clr_country_flag = POF_desc
+				clr_country_flag = UOS_desc
+				clr_country_flag = GCA_desc
+				clr_country_flag = GNE_desc
+				clr_country_flag = GRV_desc
+				clr_country_flag = ROL_desc
+				clr_country_flag = MES_desc
+				clr_country_flag = MEX_desc
+				clr_country_flag = MTZ_desc
+				clr_country_flag = GPL_desc
+				clr_country_flag = NEC_desc
+				clr_country_flag = NAU_desc
+				clr_country_flag = NWC_desc
+				clr_country_flag = PSA_desc
+				clr_country_flag = FME_desc
+				clr_country_flag = TGC_desc
+				clr_country_flag = TTC_desc
+				clr_country_flag = UDU_desc
+				clr_country_flag = VNS_desc
+				clr_country_flag = USA_desc
+				clr_country_flag = TLH_desc
+			}
+			CAN_desc_button_click = {
+				set_country_flag = CAN_desc
+				clr_country_flag = AUS_desc
+				clr_country_flag = ATC_desc
+				clr_country_flag = ACA_desc
+				clr_country_flag = APP_desc
+				clr_country_flag = AZT_desc
+				clr_country_flag = CRB_desc
+				clr_country_flag = CAS_desc
+				clr_country_flag = ECC_desc
+				clr_country_flag = CGE_desc
+				clr_country_flag = GRL_desc
+				clr_country_flag = CNY_desc
+				clr_country_flag = SYA_desc
+				clr_country_flag = CSA_desc
+				clr_country_flag = DES_desc
+				clr_country_flag = EAC_desc
+				clr_country_flag = POF_desc
+				clr_country_flag = UOS_desc
+				clr_country_flag = GCA_desc
+				clr_country_flag = GNE_desc
+				clr_country_flag = GRV_desc
+				clr_country_flag = ROL_desc
+				clr_country_flag = MES_desc
+				clr_country_flag = MEX_desc
+				clr_country_flag = MTZ_desc
+				clr_country_flag = GPL_desc
+				clr_country_flag = NEC_desc
+				clr_country_flag = NAU_desc
+				clr_country_flag = NWC_desc
+				clr_country_flag = PSA_desc
+				clr_country_flag = FME_desc
+				clr_country_flag = TGC_desc
+				clr_country_flag = TTC_desc
+				clr_country_flag = UDU_desc
+				clr_country_flag = VNS_desc
+				clr_country_flag = USA_desc
+				clr_country_flag = TLH_desc
+			}
+			CRB_desc_button_click = {
+				set_country_flag = CRB_desc
+				clr_country_flag = AUS_desc
+				clr_country_flag = ATC_desc
+				clr_country_flag = ACA_desc
+				clr_country_flag = APP_desc
+				clr_country_flag = AZT_desc
+				clr_country_flag = CAN_desc
+				clr_country_flag = CAS_desc
+				clr_country_flag = ECC_desc
+				clr_country_flag = CGE_desc
+				clr_country_flag = GRL_desc
+				clr_country_flag = CNY_desc
+				clr_country_flag = SYA_desc
+				clr_country_flag = CSA_desc
+				clr_country_flag = DES_desc
+				clr_country_flag = EAC_desc
+				clr_country_flag = POF_desc
+				clr_country_flag = UOS_desc
+				clr_country_flag = GCA_desc
+				clr_country_flag = GNE_desc
+				clr_country_flag = GRV_desc
+				clr_country_flag = ROL_desc
+				clr_country_flag = MES_desc
+				clr_country_flag = MEX_desc
+				clr_country_flag = MTZ_desc
+				clr_country_flag = GPL_desc
+				clr_country_flag = NEC_desc
+				clr_country_flag = NAU_desc
+				clr_country_flag = NWC_desc
+				clr_country_flag = PSA_desc
+				clr_country_flag = FME_desc
+				clr_country_flag = TGC_desc
+				clr_country_flag = TTC_desc
+				clr_country_flag = UDU_desc
+				clr_country_flag = VNS_desc
+				clr_country_flag = USA_desc
+				clr_country_flag = TLH_desc
+			}
+			CAS_desc_button_click = {
+				set_country_flag = CAS_desc
+				clr_country_flag = AUS_desc
+				clr_country_flag = ATC_desc
+				clr_country_flag = ACA_desc
+				clr_country_flag = APP_desc
+				clr_country_flag = AZT_desc
+				clr_country_flag = CAN_desc
+				clr_country_flag = CRB_desc
+				clr_country_flag = ECC_desc
+				clr_country_flag = CGE_desc
+				clr_country_flag = GRL_desc
+				clr_country_flag = CNY_desc
+				clr_country_flag = SYA_desc
+				clr_country_flag = CSA_desc
+				clr_country_flag = DES_desc
+				clr_country_flag = EAC_desc
+				clr_country_flag = POF_desc
+				clr_country_flag = UOS_desc
+				clr_country_flag = GCA_desc
+				clr_country_flag = GNE_desc
+				clr_country_flag = GRV_desc
+				clr_country_flag = ROL_desc
+				clr_country_flag = MES_desc
+				clr_country_flag = MEX_desc
+				clr_country_flag = MTZ_desc
+				clr_country_flag = GPL_desc
+				clr_country_flag = NEC_desc
+				clr_country_flag = NAU_desc
+				clr_country_flag = NWC_desc
+				clr_country_flag = PSA_desc
+				clr_country_flag = FME_desc
+				clr_country_flag = TGC_desc
+				clr_country_flag = TTC_desc
+				clr_country_flag = UDU_desc
+				clr_country_flag = VNS_desc
+				clr_country_flag = USA_desc
+				clr_country_flag = TLH_desc
+			}
+			ECC_desc_button_click = {
+				set_country_flag = ECC_desc
+				clr_country_flag = AUS_desc
+				clr_country_flag = ATC_desc
+				clr_country_flag = ACA_desc
+				clr_country_flag = APP_desc
+				clr_country_flag = AZT_desc
+				clr_country_flag = CAN_desc
+				clr_country_flag = CRB_desc
+				clr_country_flag = CAS_desc
+				clr_country_flag = CGE_desc
+				clr_country_flag = GRL_desc
+				clr_country_flag = CNY_desc
+				clr_country_flag = SYA_desc
+				clr_country_flag = CSA_desc
+				clr_country_flag = DES_desc
+				clr_country_flag = EAC_desc
+				clr_country_flag = POF_desc
+				clr_country_flag = UOS_desc
+				clr_country_flag = GCA_desc
+				clr_country_flag = GNE_desc
+				clr_country_flag = GRV_desc
+				clr_country_flag = ROL_desc
+				clr_country_flag = MES_desc
+				clr_country_flag = MEX_desc
+				clr_country_flag = MTZ_desc
+				clr_country_flag = GPL_desc
+				clr_country_flag = NEC_desc
+				clr_country_flag = NAU_desc
+				clr_country_flag = NWC_desc
+				clr_country_flag = PSA_desc
+				clr_country_flag = FME_desc
+				clr_country_flag = TGC_desc
+				clr_country_flag = TTC_desc
+				clr_country_flag = UDU_desc
+				clr_country_flag = VNS_desc
+				clr_country_flag = USA_desc
+				clr_country_flag = TLH_desc
+			}
+			CGE_desc_button_click = {
+				set_country_flag = CGE_desc
+				clr_country_flag = AUS_desc
+				clr_country_flag = ATC_desc
+				clr_country_flag = ACA_desc
+				clr_country_flag = APP_desc
+				clr_country_flag = AZT_desc
+				clr_country_flag = CAN_desc
+				clr_country_flag = CRB_desc
+				clr_country_flag = CAS_desc
+				clr_country_flag = ECC_desc
+				clr_country_flag = GRL_desc
+				clr_country_flag = CNY_desc
+				clr_country_flag = SYA_desc
+				clr_country_flag = CSA_desc
+				clr_country_flag = DES_desc
+				clr_country_flag = EAC_desc
+				clr_country_flag = POF_desc
+				clr_country_flag = UOS_desc
+				clr_country_flag = GCA_desc
+				clr_country_flag = GNE_desc
+				clr_country_flag = GRV_desc
+				clr_country_flag = ROL_desc
+				clr_country_flag = MES_desc
+				clr_country_flag = MEX_desc
+				clr_country_flag = MTZ_desc
+				clr_country_flag = GPL_desc
+				clr_country_flag = NEC_desc
+				clr_country_flag = NAU_desc
+				clr_country_flag = NWC_desc
+				clr_country_flag = PSA_desc
+				clr_country_flag = FME_desc
+				clr_country_flag = TGC_desc
+				clr_country_flag = TTC_desc
+				clr_country_flag = UDU_desc
+				clr_country_flag = VNS_desc
+				clr_country_flag = USA_desc
+				clr_country_flag = TLH_desc
+			}
+			GRL_desc_button_click = {
+				set_country_flag = GRL_desc
+				clr_country_flag = AUS_desc
+				clr_country_flag = ATC_desc
+				clr_country_flag = ACA_desc
+				clr_country_flag = APP_desc
+				clr_country_flag = AZT_desc
+				clr_country_flag = CAN_desc
+				clr_country_flag = CRB_desc
+				clr_country_flag = CAS_desc
+				clr_country_flag = ECC_desc
+				clr_country_flag = CGE_desc
+				clr_country_flag = CNY_desc
+				clr_country_flag = SYA_desc
+				clr_country_flag = CSA_desc
+				clr_country_flag = DES_desc
+				clr_country_flag = EAC_desc
+				clr_country_flag = POF_desc
+				clr_country_flag = UOS_desc
+				clr_country_flag = GCA_desc
+				clr_country_flag = GNE_desc
+				clr_country_flag = GRV_desc
+				clr_country_flag = ROL_desc
+				clr_country_flag = MES_desc
+				clr_country_flag = MEX_desc
+				clr_country_flag = MTZ_desc
+				clr_country_flag = GPL_desc
+				clr_country_flag = NEC_desc
+				clr_country_flag = NAU_desc
+				clr_country_flag = NWC_desc
+				clr_country_flag = PSA_desc
+				clr_country_flag = FME_desc
+				clr_country_flag = TGC_desc
+				clr_country_flag = TTC_desc
+				clr_country_flag = UDU_desc
+				clr_country_flag = VNS_desc
+				clr_country_flag = USA_desc
+				clr_country_flag = TLH_desc
+			}
+			CNY_desc_button_click = {
+				set_country_flag = CNY_desc
+				clr_country_flag = AUS_desc
+				clr_country_flag = ATC_desc
+				clr_country_flag = ACA_desc
+				clr_country_flag = APP_desc
+				clr_country_flag = AZT_desc
+				clr_country_flag = CAN_desc
+				clr_country_flag = CRB_desc
+				clr_country_flag = CAS_desc
+				clr_country_flag = ECC_desc
+				clr_country_flag = CGE_desc
+				clr_country_flag = GRL_desc
+				clr_country_flag = SYA_desc
+				clr_country_flag = CSA_desc
+				clr_country_flag = DES_desc
+				clr_country_flag = EAC_desc
+				clr_country_flag = POF_desc
+				clr_country_flag = UOS_desc
+				clr_country_flag = GCA_desc
+				clr_country_flag = GNE_desc
+				clr_country_flag = GRV_desc
+				clr_country_flag = ROL_desc
+				clr_country_flag = MES_desc
+				clr_country_flag = MEX_desc
+				clr_country_flag = MTZ_desc
+				clr_country_flag = GPL_desc
+				clr_country_flag = NEC_desc
+				clr_country_flag = NAU_desc
+				clr_country_flag = NWC_desc
+				clr_country_flag = PSA_desc
+				clr_country_flag = FME_desc
+				clr_country_flag = TGC_desc
+				clr_country_flag = TTC_desc
+				clr_country_flag = UDU_desc
+				clr_country_flag = VNS_desc
+				clr_country_flag = USA_desc
+				clr_country_flag = TLH_desc
+			}
+			SYA_desc_button_click = {
+				set_country_flag = SYA_desc
+				clr_country_flag = AUS_desc
+				clr_country_flag = ATC_desc
+				clr_country_flag = ACA_desc
+				clr_country_flag = APP_desc
+				clr_country_flag = AZT_desc
+				clr_country_flag = CAN_desc
+				clr_country_flag = CRB_desc
+				clr_country_flag = CAS_desc
+				clr_country_flag = ECC_desc
+				clr_country_flag = CGE_desc
+				clr_country_flag = GRL_desc
+				clr_country_flag = CNY_desc
+				clr_country_flag = CSA_desc
+				clr_country_flag = DES_desc
+				clr_country_flag = EAC_desc
+				clr_country_flag = POF_desc
+				clr_country_flag = UOS_desc
+				clr_country_flag = GCA_desc
+				clr_country_flag = GNE_desc
+				clr_country_flag = GRV_desc
+				clr_country_flag = ROL_desc
+				clr_country_flag = MES_desc
+				clr_country_flag = MEX_desc
+				clr_country_flag = MTZ_desc
+				clr_country_flag = GPL_desc
+				clr_country_flag = NEC_desc
+				clr_country_flag = NAU_desc
+				clr_country_flag = NWC_desc
+				clr_country_flag = PSA_desc
+				clr_country_flag = FME_desc
+				clr_country_flag = TGC_desc
+				clr_country_flag = TTC_desc
+				clr_country_flag = UDU_desc
+				clr_country_flag = VNS_desc
+				clr_country_flag = USA_desc
+				clr_country_flag = TLH_desc
+			}
+			CSA_desc_button_click = {
+				set_country_flag = CSA_desc
+				clr_country_flag = AUS_desc
+				clr_country_flag = ATC_desc
+				clr_country_flag = ACA_desc
+				clr_country_flag = APP_desc
+				clr_country_flag = AZT_desc
+				clr_country_flag = CAN_desc
+				clr_country_flag = CRB_desc
+				clr_country_flag = CAS_desc
+				clr_country_flag = ECC_desc
+				clr_country_flag = CGE_desc
+				clr_country_flag = GRL_desc
+				clr_country_flag = CNY_desc
+				clr_country_flag = SYA_desc
+				clr_country_flag = DES_desc
+				clr_country_flag = EAC_desc
+				clr_country_flag = POF_desc
+				clr_country_flag = UOS_desc
+				clr_country_flag = GCA_desc
+				clr_country_flag = GNE_desc
+				clr_country_flag = GRV_desc
+				clr_country_flag = ROL_desc
+				clr_country_flag = MES_desc
+				clr_country_flag = MEX_desc
+				clr_country_flag = MTZ_desc
+				clr_country_flag = GPL_desc
+				clr_country_flag = NEC_desc
+				clr_country_flag = NAU_desc
+				clr_country_flag = NWC_desc
+				clr_country_flag = PSA_desc
+				clr_country_flag = FME_desc
+				clr_country_flag = TGC_desc
+				clr_country_flag = TTC_desc
+				clr_country_flag = UDU_desc
+				clr_country_flag = VNS_desc
+				clr_country_flag = USA_desc
+				clr_country_flag = TLH_desc
+			}
+			DES_desc_button_click = {
+				set_country_flag = DES_desc
+				clr_country_flag = AUS_desc
+				clr_country_flag = ATC_desc
+				clr_country_flag = ACA_desc
+				clr_country_flag = APP_desc
+				clr_country_flag = AZT_desc
+				clr_country_flag = CAN_desc
+				clr_country_flag = CRB_desc
+				clr_country_flag = CAS_desc
+				clr_country_flag = ECC_desc
+				clr_country_flag = CGE_desc
+				clr_country_flag = GRL_desc
+				clr_country_flag = CNY_desc
+				clr_country_flag = SYA_desc
+				clr_country_flag = CSA_desc
+				clr_country_flag = EAC_desc
+				clr_country_flag = POF_desc
+				clr_country_flag = UOS_desc
+				clr_country_flag = GCA_desc
+				clr_country_flag = GNE_desc
+				clr_country_flag = GRV_desc
+				clr_country_flag = ROL_desc
+				clr_country_flag = MES_desc
+				clr_country_flag = MEX_desc
+				clr_country_flag = MTZ_desc
+				clr_country_flag = GPL_desc
+				clr_country_flag = NEC_desc
+				clr_country_flag = NAU_desc
+				clr_country_flag = NWC_desc
+				clr_country_flag = PSA_desc
+				clr_country_flag = FME_desc
+				clr_country_flag = TGC_desc
+				clr_country_flag = TTC_desc
+				clr_country_flag = UDU_desc
+				clr_country_flag = VNS_desc
+				clr_country_flag = USA_desc
+				clr_country_flag = TLH_desc
+			}
+			EAC_desc_button_click = {
+				set_country_flag = EAC_desc
+				clr_country_flag = AUS_desc
+				clr_country_flag = ATC_desc
+				clr_country_flag = ACA_desc
+				clr_country_flag = APP_desc
+				clr_country_flag = AZT_desc
+				clr_country_flag = CAN_desc
+				clr_country_flag = CRB_desc
+				clr_country_flag = CAS_desc
+				clr_country_flag = ECC_desc
+				clr_country_flag = CGE_desc
+				clr_country_flag = GRL_desc
+				clr_country_flag = CNY_desc
+				clr_country_flag = SYA_desc
+				clr_country_flag = CSA_desc
+				clr_country_flag = DES_desc
+				clr_country_flag = POF_desc
+				clr_country_flag = UOS_desc
+				clr_country_flag = GCA_desc
+				clr_country_flag = GNE_desc
+				clr_country_flag = GRV_desc
+				clr_country_flag = ROL_desc
+				clr_country_flag = MES_desc
+				clr_country_flag = MEX_desc
+				clr_country_flag = MTZ_desc
+				clr_country_flag = GPL_desc
+				clr_country_flag = NEC_desc
+				clr_country_flag = NAU_desc
+				clr_country_flag = NWC_desc
+				clr_country_flag = PSA_desc
+				clr_country_flag = FME_desc
+				clr_country_flag = TGC_desc
+				clr_country_flag = TTC_desc
+				clr_country_flag = UDU_desc
+				clr_country_flag = VNS_desc
+				clr_country_flag = USA_desc
+				clr_country_flag = TLH_desc
+			}
+			POF_desc_button_click = {
+				set_country_flag = POF_desc
+				clr_country_flag = AUS_desc
+				clr_country_flag = ATC_desc
+				clr_country_flag = ACA_desc
+				clr_country_flag = APP_desc
+				clr_country_flag = AZT_desc
+				clr_country_flag = CAN_desc
+				clr_country_flag = CRB_desc
+				clr_country_flag = CAS_desc
+				clr_country_flag = ECC_desc
+				clr_country_flag = CGE_desc
+				clr_country_flag = GRL_desc
+				clr_country_flag = CNY_desc
+				clr_country_flag = SYA_desc
+				clr_country_flag = CSA_desc
+				clr_country_flag = DES_desc
+				clr_country_flag = EAC_desc
+				clr_country_flag = UOS_desc
+				clr_country_flag = GCA_desc
+				clr_country_flag = GNE_desc
+				clr_country_flag = GRV_desc
+				clr_country_flag = ROL_desc
+				clr_country_flag = MES_desc
+				clr_country_flag = MEX_desc
+				clr_country_flag = MTZ_desc
+				clr_country_flag = GPL_desc
+				clr_country_flag = NEC_desc
+				clr_country_flag = NAU_desc
+				clr_country_flag = NWC_desc
+				clr_country_flag = PSA_desc
+				clr_country_flag = FME_desc
+				clr_country_flag = TGC_desc
+				clr_country_flag = TTC_desc
+				clr_country_flag = UDU_desc
+				clr_country_flag = VNS_desc
+				clr_country_flag = USA_desc
+				clr_country_flag = TLH_desc
+			}
+			UOS_desc_button_click = {
+				set_country_flag = UOS_desc
+				clr_country_flag = AUS_desc
+				clr_country_flag = ATC_desc
+				clr_country_flag = ACA_desc
+				clr_country_flag = APP_desc
+				clr_country_flag = AZT_desc
+				clr_country_flag = CAN_desc
+				clr_country_flag = CRB_desc
+				clr_country_flag = CAS_desc
+				clr_country_flag = ECC_desc
+				clr_country_flag = CGE_desc
+				clr_country_flag = GRL_desc
+				clr_country_flag = CNY_desc
+				clr_country_flag = SYA_desc
+				clr_country_flag = CSA_desc
+				clr_country_flag = DES_desc
+				clr_country_flag = EAC_desc
+				clr_country_flag = POF_desc
+				clr_country_flag = GCA_desc
+				clr_country_flag = GNE_desc
+				clr_country_flag = GRV_desc
+				clr_country_flag = ROL_desc
+				clr_country_flag = MES_desc
+				clr_country_flag = MEX_desc
+				clr_country_flag = MTZ_desc
+				clr_country_flag = GPL_desc
+				clr_country_flag = NEC_desc
+				clr_country_flag = NAU_desc
+				clr_country_flag = NWC_desc
+				clr_country_flag = PSA_desc
+				clr_country_flag = FME_desc
+				clr_country_flag = TGC_desc
+				clr_country_flag = TTC_desc
+				clr_country_flag = UDU_desc
+				clr_country_flag = VNS_desc
+				clr_country_flag = USA_desc
+				clr_country_flag = TLH_desc
+			}
+			GCA_desc_button_click = {
+				set_country_flag = GCA_desc
+				clr_country_flag = AUS_desc
+				clr_country_flag = ATC_desc
+				clr_country_flag = ACA_desc
+				clr_country_flag = APP_desc
+				clr_country_flag = AZT_desc
+				clr_country_flag = CAN_desc
+				clr_country_flag = CRB_desc
+				clr_country_flag = CAS_desc
+				clr_country_flag = ECC_desc
+				clr_country_flag = CGE_desc
+				clr_country_flag = GRL_desc
+				clr_country_flag = CNY_desc
+				clr_country_flag = SYA_desc
+				clr_country_flag = CSA_desc
+				clr_country_flag = DES_desc
+				clr_country_flag = EAC_desc
+				clr_country_flag = POF_desc
+				clr_country_flag = UOS_desc
+				clr_country_flag = GNE_desc
+				clr_country_flag = GRV_desc
+				clr_country_flag = ROL_desc
+				clr_country_flag = MES_desc
+				clr_country_flag = MEX_desc
+				clr_country_flag = MTZ_desc
+				clr_country_flag = GPL_desc
+				clr_country_flag = NEC_desc
+				clr_country_flag = NAU_desc
+				clr_country_flag = NWC_desc
+				clr_country_flag = PSA_desc
+				clr_country_flag = FME_desc
+				clr_country_flag = TGC_desc
+				clr_country_flag = TTC_desc
+				clr_country_flag = UDU_desc
+				clr_country_flag = VNS_desc
+				clr_country_flag = USA_desc
+				clr_country_flag = TLH_desc
+			}
+			GNE_desc_button_click = {
+				set_country_flag = GNE_desc
+				clr_country_flag = AUS_desc
+				clr_country_flag = ATC_desc
+				clr_country_flag = ACA_desc
+				clr_country_flag = APP_desc
+				clr_country_flag = AZT_desc
+				clr_country_flag = CAN_desc
+				clr_country_flag = CRB_desc
+				clr_country_flag = CAS_desc
+				clr_country_flag = ECC_desc
+				clr_country_flag = CGE_desc
+				clr_country_flag = GRL_desc
+				clr_country_flag = CNY_desc
+				clr_country_flag = SYA_desc
+				clr_country_flag = CSA_desc
+				clr_country_flag = DES_desc
+				clr_country_flag = EAC_desc
+				clr_country_flag = POF_desc
+				clr_country_flag = UOS_desc
+				clr_country_flag = GCA_desc
+				clr_country_flag = GRV_desc
+				clr_country_flag = ROL_desc
+				clr_country_flag = MES_desc
+				clr_country_flag = MEX_desc
+				clr_country_flag = MTZ_desc
+				clr_country_flag = GPL_desc
+				clr_country_flag = NEC_desc
+				clr_country_flag = NAU_desc
+				clr_country_flag = NWC_desc
+				clr_country_flag = PSA_desc
+				clr_country_flag = FME_desc
+				clr_country_flag = TGC_desc
+				clr_country_flag = TTC_desc
+				clr_country_flag = UDU_desc
+				clr_country_flag = VNS_desc
+				clr_country_flag = USA_desc
+				clr_country_flag = TLH_desc
+			}
+			GRV_desc_button_click = {
+				set_country_flag = GRV_desc
+				clr_country_flag = AUS_desc
+				clr_country_flag = ATC_desc
+				clr_country_flag = ACA_desc
+				clr_country_flag = APP_desc
+				clr_country_flag = AZT_desc
+				clr_country_flag = CAN_desc
+				clr_country_flag = CRB_desc
+				clr_country_flag = CAS_desc
+				clr_country_flag = ECC_desc
+				clr_country_flag = CGE_desc
+				clr_country_flag = GRL_desc
+				clr_country_flag = CNY_desc
+				clr_country_flag = SYA_desc
+				clr_country_flag = CSA_desc
+				clr_country_flag = DES_desc
+				clr_country_flag = EAC_desc
+				clr_country_flag = POF_desc
+				clr_country_flag = UOS_desc
+				clr_country_flag = GCA_desc
+				clr_country_flag = GNE_desc
+				clr_country_flag = ROL_desc
+				clr_country_flag = MES_desc
+				clr_country_flag = MEX_desc
+				clr_country_flag = MTZ_desc
+				clr_country_flag = GPL_desc
+				clr_country_flag = NEC_desc
+				clr_country_flag = NAU_desc
+				clr_country_flag = NWC_desc
+				clr_country_flag = PSA_desc
+				clr_country_flag = FME_desc
+				clr_country_flag = TGC_desc
+				clr_country_flag = TTC_desc
+				clr_country_flag = UDU_desc
+				clr_country_flag = VNS_desc
+				clr_country_flag = USA_desc
+				clr_country_flag = TLH_desc
+			}
+			ROL_desc_button_click = {
+				set_country_flag = ROL_desc
+				clr_country_flag = AUS_desc
+				clr_country_flag = ATC_desc
+				clr_country_flag = ACA_desc
+				clr_country_flag = APP_desc
+				clr_country_flag = AZT_desc
+				clr_country_flag = CAN_desc
+				clr_country_flag = CRB_desc
+				clr_country_flag = CAS_desc
+				clr_country_flag = ECC_desc
+				clr_country_flag = CGE_desc
+				clr_country_flag = GRL_desc
+				clr_country_flag = CNY_desc
+				clr_country_flag = SYA_desc
+				clr_country_flag = CSA_desc
+				clr_country_flag = DES_desc
+				clr_country_flag = EAC_desc
+				clr_country_flag = POF_desc
+				clr_country_flag = UOS_desc
+				clr_country_flag = GCA_desc
+				clr_country_flag = GNE_desc
+				clr_country_flag = GRV_desc
+				clr_country_flag = MES_desc
+				clr_country_flag = MEX_desc
+				clr_country_flag = MTZ_desc
+				clr_country_flag = GPL_desc
+				clr_country_flag = NEC_desc
+				clr_country_flag = NAU_desc
+				clr_country_flag = NWC_desc
+				clr_country_flag = PSA_desc
+				clr_country_flag = FME_desc
+				clr_country_flag = TGC_desc
+				clr_country_flag = TTC_desc
+				clr_country_flag = UDU_desc
+				clr_country_flag = VNS_desc
+				clr_country_flag = USA_desc
+				clr_country_flag = TLH_desc
+			}
+			MES_desc_button_click = {
+				set_country_flag = MES_desc
+				clr_country_flag = AUS_desc
+				clr_country_flag = ATC_desc
+				clr_country_flag = ACA_desc
+				clr_country_flag = APP_desc
+				clr_country_flag = AZT_desc
+				clr_country_flag = CAN_desc
+				clr_country_flag = CRB_desc
+				clr_country_flag = CAS_desc
+				clr_country_flag = ECC_desc
+				clr_country_flag = CGE_desc
+				clr_country_flag = GRL_desc
+				clr_country_flag = CNY_desc
+				clr_country_flag = SYA_desc
+				clr_country_flag = CSA_desc
+				clr_country_flag = DES_desc
+				clr_country_flag = EAC_desc
+				clr_country_flag = POF_desc
+				clr_country_flag = UOS_desc
+				clr_country_flag = GCA_desc
+				clr_country_flag = GNE_desc
+				clr_country_flag = GRV_desc
+				clr_country_flag = ROL_desc
+				clr_country_flag = MEX_desc
+				clr_country_flag = MTZ_desc
+				clr_country_flag = GPL_desc
+				clr_country_flag = NEC_desc
+				clr_country_flag = NAU_desc
+				clr_country_flag = NWC_desc
+				clr_country_flag = PSA_desc
+				clr_country_flag = FME_desc
+				clr_country_flag = TGC_desc
+				clr_country_flag = TTC_desc
+				clr_country_flag = UDU_desc
+				clr_country_flag = VNS_desc
+				clr_country_flag = USA_desc
+				clr_country_flag = TLH_desc
+			}
+			MEX_desc_button_click = {
+				set_country_flag = MEX_desc
+				clr_country_flag = AUS_desc
+				clr_country_flag = ATC_desc
+				clr_country_flag = ACA_desc
+				clr_country_flag = APP_desc
+				clr_country_flag = AZT_desc
+				clr_country_flag = CAN_desc
+				clr_country_flag = CRB_desc
+				clr_country_flag = CAS_desc
+				clr_country_flag = ECC_desc
+				clr_country_flag = CGE_desc
+				clr_country_flag = GRL_desc
+				clr_country_flag = CNY_desc
+				clr_country_flag = SYA_desc
+				clr_country_flag = CSA_desc
+				clr_country_flag = DES_desc
+				clr_country_flag = EAC_desc
+				clr_country_flag = POF_desc
+				clr_country_flag = UOS_desc
+				clr_country_flag = GCA_desc
+				clr_country_flag = GNE_desc
+				clr_country_flag = GRV_desc
+				clr_country_flag = ROL_desc
+				clr_country_flag = MES_desc
+				clr_country_flag = MTZ_desc
+				clr_country_flag = GPL_desc
+				clr_country_flag = NEC_desc
+				clr_country_flag = NAU_desc
+				clr_country_flag = NWC_desc
+				clr_country_flag = PSA_desc
+				clr_country_flag = FME_desc
+				clr_country_flag = TGC_desc
+				clr_country_flag = TTC_desc
+				clr_country_flag = UDU_desc
+				clr_country_flag = VNS_desc
+				clr_country_flag = USA_desc
+				clr_country_flag = TLH_desc
+			}
+			MTZ_desc_button_click = {
+				set_country_flag = MTZ_desc
+				clr_country_flag = AUS_desc
+				clr_country_flag = ATC_desc
+				clr_country_flag = ACA_desc
+				clr_country_flag = APP_desc
+				clr_country_flag = AZT_desc
+				clr_country_flag = CAN_desc
+				clr_country_flag = CRB_desc
+				clr_country_flag = CAS_desc
+				clr_country_flag = ECC_desc
+				clr_country_flag = CGE_desc
+				clr_country_flag = GRL_desc
+				clr_country_flag = CNY_desc
+				clr_country_flag = SYA_desc
+				clr_country_flag = CSA_desc
+				clr_country_flag = DES_desc
+				clr_country_flag = EAC_desc
+				clr_country_flag = POF_desc
+				clr_country_flag = UOS_desc
+				clr_country_flag = GCA_desc
+				clr_country_flag = GNE_desc
+				clr_country_flag = GRV_desc
+				clr_country_flag = ROL_desc
+				clr_country_flag = MES_desc
+				clr_country_flag = MEX_desc
+				clr_country_flag = GPL_desc
+				clr_country_flag = NEC_desc
+				clr_country_flag = NAU_desc
+				clr_country_flag = NWC_desc
+				clr_country_flag = PSA_desc
+				clr_country_flag = FME_desc
+				clr_country_flag = TGC_desc
+				clr_country_flag = TTC_desc
+				clr_country_flag = UDU_desc
+				clr_country_flag = VNS_desc
+				clr_country_flag = USA_desc
+				clr_country_flag = TLH_desc
+			}
+			GPL_desc_button_click = {
+				set_country_flag = GPL_desc
+				clr_country_flag = AUS_desc
+				clr_country_flag = ATC_desc
+				clr_country_flag = ACA_desc
+				clr_country_flag = APP_desc
+				clr_country_flag = AZT_desc
+				clr_country_flag = CAN_desc
+				clr_country_flag = CRB_desc
+				clr_country_flag = CAS_desc
+				clr_country_flag = ECC_desc
+				clr_country_flag = CGE_desc
+				clr_country_flag = GRL_desc
+				clr_country_flag = CNY_desc
+				clr_country_flag = SYA_desc
+				clr_country_flag = CSA_desc
+				clr_country_flag = DES_desc
+				clr_country_flag = EAC_desc
+				clr_country_flag = POF_desc
+				clr_country_flag = UOS_desc
+				clr_country_flag = GCA_desc
+				clr_country_flag = GNE_desc
+				clr_country_flag = GRV_desc
+				clr_country_flag = ROL_desc
+				clr_country_flag = MES_desc
+				clr_country_flag = MEX_desc
+				clr_country_flag = MTZ_desc
+				clr_country_flag = NEC_desc
+				clr_country_flag = NAU_desc
+				clr_country_flag = NWC_desc
+				clr_country_flag = PSA_desc
+				clr_country_flag = FME_desc
+				clr_country_flag = TGC_desc
+				clr_country_flag = TTC_desc
+				clr_country_flag = UDU_desc
+				clr_country_flag = VNS_desc
+				clr_country_flag = USA_desc
+				clr_country_flag = TLH_desc
+			}
+			NEC_desc_button_click = {
+				set_country_flag = NEC_desc
+				clr_country_flag = AUS_desc
+				clr_country_flag = ATC_desc
+				clr_country_flag = ACA_desc
+				clr_country_flag = APP_desc
+				clr_country_flag = AZT_desc
+				clr_country_flag = CAN_desc
+				clr_country_flag = CRB_desc
+				clr_country_flag = CAS_desc
+				clr_country_flag = ECC_desc
+				clr_country_flag = CGE_desc
+				clr_country_flag = GRL_desc
+				clr_country_flag = CNY_desc
+				clr_country_flag = SYA_desc
+				clr_country_flag = CSA_desc
+				clr_country_flag = DES_desc
+				clr_country_flag = EAC_desc
+				clr_country_flag = POF_desc
+				clr_country_flag = UOS_desc
+				clr_country_flag = GCA_desc
+				clr_country_flag = GNE_desc
+				clr_country_flag = GRV_desc
+				clr_country_flag = ROL_desc
+				clr_country_flag = MES_desc
+				clr_country_flag = MEX_desc
+				clr_country_flag = MTZ_desc
+				clr_country_flag = GPL_desc
+				clr_country_flag = NAU_desc
+				clr_country_flag = NWC_desc
+				clr_country_flag = PSA_desc
+				clr_country_flag = FME_desc
+				clr_country_flag = TGC_desc
+				clr_country_flag = TTC_desc
+				clr_country_flag = UDU_desc
+				clr_country_flag = VNS_desc
+				clr_country_flag = USA_desc
+				clr_country_flag = TLH_desc
+			}
+			NAU_desc_button_click = {
+				set_country_flag = NAU_desc
+				clr_country_flag = AUS_desc
+				clr_country_flag = ATC_desc
+				clr_country_flag = ACA_desc
+				clr_country_flag = APP_desc
+				clr_country_flag = AZT_desc
+				clr_country_flag = CAN_desc
+				clr_country_flag = CRB_desc
+				clr_country_flag = CAS_desc
+				clr_country_flag = ECC_desc
+				clr_country_flag = CGE_desc
+				clr_country_flag = GRL_desc
+				clr_country_flag = CNY_desc
+				clr_country_flag = SYA_desc
+				clr_country_flag = CSA_desc
+				clr_country_flag = DES_desc
+				clr_country_flag = EAC_desc
+				clr_country_flag = POF_desc
+				clr_country_flag = UOS_desc
+				clr_country_flag = GCA_desc
+				clr_country_flag = GNE_desc
+				clr_country_flag = GRV_desc
+				clr_country_flag = ROL_desc
+				clr_country_flag = MES_desc
+				clr_country_flag = MEX_desc
+				clr_country_flag = MTZ_desc
+				clr_country_flag = GPL_desc
+				clr_country_flag = NEC_desc
+				clr_country_flag = NWC_desc
+				clr_country_flag = PSA_desc
+				clr_country_flag = FME_desc
+				clr_country_flag = TGC_desc
+				clr_country_flag = TTC_desc
+				clr_country_flag = UDU_desc
+				clr_country_flag = VNS_desc
+				clr_country_flag = USA_desc
+				clr_country_flag = TLH_desc
+			}
+			NWC_desc_button_click = {
+				set_country_flag = NWC_desc
+				clr_country_flag = AUS_desc
+				clr_country_flag = ATC_desc
+				clr_country_flag = ACA_desc
+				clr_country_flag = APP_desc
+				clr_country_flag = AZT_desc
+				clr_country_flag = CAN_desc
+				clr_country_flag = CRB_desc
+				clr_country_flag = CAS_desc
+				clr_country_flag = ECC_desc
+				clr_country_flag = CGE_desc
+				clr_country_flag = GRL_desc
+				clr_country_flag = CNY_desc
+				clr_country_flag = SYA_desc
+				clr_country_flag = CSA_desc
+				clr_country_flag = DES_desc
+				clr_country_flag = EAC_desc
+				clr_country_flag = POF_desc
+				clr_country_flag = UOS_desc
+				clr_country_flag = GCA_desc
+				clr_country_flag = GNE_desc
+				clr_country_flag = GRV_desc
+				clr_country_flag = ROL_desc
+				clr_country_flag = MES_desc
+				clr_country_flag = MEX_desc
+				clr_country_flag = MTZ_desc
+				clr_country_flag = GPL_desc
+				clr_country_flag = NEC_desc
+				clr_country_flag = NAU_desc
+				clr_country_flag = PSA_desc
+				clr_country_flag = FME_desc
+				clr_country_flag = TGC_desc
+				clr_country_flag = TTC_desc
+				clr_country_flag = UDU_desc
+				clr_country_flag = VNS_desc
+				clr_country_flag = USA_desc
+				clr_country_flag = TLH_desc
+			}
+			PSA_desc_button_click = {
+				set_country_flag = PSA_desc
+				clr_country_flag = AUS_desc
+				clr_country_flag = ATC_desc
+				clr_country_flag = ACA_desc
+				clr_country_flag = APP_desc
+				clr_country_flag = AZT_desc
+				clr_country_flag = CAN_desc
+				clr_country_flag = CRB_desc
+				clr_country_flag = CAS_desc
+				clr_country_flag = ECC_desc
+				clr_country_flag = CGE_desc
+				clr_country_flag = GRL_desc
+				clr_country_flag = CNY_desc
+				clr_country_flag = SYA_desc
+				clr_country_flag = CSA_desc
+				clr_country_flag = DES_desc
+				clr_country_flag = EAC_desc
+				clr_country_flag = POF_desc
+				clr_country_flag = UOS_desc
+				clr_country_flag = GCA_desc
+				clr_country_flag = GNE_desc
+				clr_country_flag = GRV_desc
+				clr_country_flag = ROL_desc
+				clr_country_flag = MES_desc
+				clr_country_flag = MEX_desc
+				clr_country_flag = MTZ_desc
+				clr_country_flag = GPL_desc
+				clr_country_flag = NEC_desc
+				clr_country_flag = NAU_desc
+				clr_country_flag = NWC_desc
+				clr_country_flag = FME_desc
+				clr_country_flag = TGC_desc
+				clr_country_flag = TTC_desc
+				clr_country_flag = UDU_desc
+				clr_country_flag = VNS_desc
+				clr_country_flag = USA_desc
+				clr_country_flag = TLH_desc
+			}
+			TLH_desc_button_click = {
+				set_country_flag = TLH_desc
+				clr_country_flag = PSA_desc
+				clr_country_flag = AUS_desc
+				clr_country_flag = ATC_desc
+				clr_country_flag = ACA_desc
+				clr_country_flag = APP_desc
+				clr_country_flag = AZT_desc
+				clr_country_flag = CAN_desc
+				clr_country_flag = CRB_desc
+				clr_country_flag = CAS_desc
+				clr_country_flag = ECC_desc
+				clr_country_flag = CGE_desc
+				clr_country_flag = GRL_desc
+				clr_country_flag = CNY_desc
+				clr_country_flag = SYA_desc
+				clr_country_flag = CSA_desc
+				clr_country_flag = DES_desc
+				clr_country_flag = EAC_desc
+				clr_country_flag = POF_desc
+				clr_country_flag = UOS_desc
+				clr_country_flag = GCA_desc
+				clr_country_flag = GNE_desc
+				clr_country_flag = GRV_desc
+				clr_country_flag = ROL_desc
+				clr_country_flag = MES_desc
+				clr_country_flag = MEX_desc
+				clr_country_flag = MTZ_desc
+				clr_country_flag = GPL_desc
+				clr_country_flag = NEC_desc
+				clr_country_flag = NAU_desc
+				clr_country_flag = NWC_desc
+				clr_country_flag = FME_desc
+				clr_country_flag = TGC_desc
+				clr_country_flag = TTC_desc
+				clr_country_flag = UDU_desc
+				clr_country_flag = VNS_desc
+				clr_country_flag = USA_desc
+			}
+			FME_desc_button_click = {
+				set_country_flag = FME_desc
+				clr_country_flag = AUS_desc
+				clr_country_flag = ATC_desc
+				clr_country_flag = ACA_desc
+				clr_country_flag = APP_desc
+				clr_country_flag = AZT_desc
+				clr_country_flag = CAN_desc
+				clr_country_flag = CRB_desc
+				clr_country_flag = CAS_desc
+				clr_country_flag = ECC_desc
+				clr_country_flag = CGE_desc
+				clr_country_flag = GRL_desc
+				clr_country_flag = CNY_desc
+				clr_country_flag = SYA_desc
+				clr_country_flag = CSA_desc
+				clr_country_flag = DES_desc
+				clr_country_flag = EAC_desc
+				clr_country_flag = POF_desc
+				clr_country_flag = UOS_desc
+				clr_country_flag = GCA_desc
+				clr_country_flag = GNE_desc
+				clr_country_flag = GRV_desc
+				clr_country_flag = ROL_desc
+				clr_country_flag = MES_desc
+				clr_country_flag = MEX_desc
+				clr_country_flag = MTZ_desc
+				clr_country_flag = GPL_desc
+				clr_country_flag = NEC_desc
+				clr_country_flag = NAU_desc
+				clr_country_flag = NWC_desc
+				clr_country_flag = PSA_desc
+				clr_country_flag = TGC_desc
+				clr_country_flag = TTC_desc
+				clr_country_flag = UDU_desc
+				clr_country_flag = VNS_desc
+				clr_country_flag = USA_desc
+				clr_country_flag = TLH_desc
+			}
+			TGC_desc_button_click = {
+				set_country_flag = TGC_desc
+				clr_country_flag = AUS_desc
+				clr_country_flag = ATC_desc
+				clr_country_flag = ACA_desc
+				clr_country_flag = APP_desc
+				clr_country_flag = AZT_desc
+				clr_country_flag = CAN_desc
+				clr_country_flag = CRB_desc
+				clr_country_flag = CAS_desc
+				clr_country_flag = ECC_desc
+				clr_country_flag = CGE_desc
+				clr_country_flag = GRL_desc
+				clr_country_flag = CNY_desc
+				clr_country_flag = SYA_desc
+				clr_country_flag = CSA_desc
+				clr_country_flag = DES_desc
+				clr_country_flag = EAC_desc
+				clr_country_flag = POF_desc
+				clr_country_flag = UOS_desc
+				clr_country_flag = GCA_desc
+				clr_country_flag = GNE_desc
+				clr_country_flag = GRV_desc
+				clr_country_flag = ROL_desc
+				clr_country_flag = MES_desc
+				clr_country_flag = MEX_desc
+				clr_country_flag = MTZ_desc
+				clr_country_flag = GPL_desc
+				clr_country_flag = NEC_desc
+				clr_country_flag = NAU_desc
+				clr_country_flag = NWC_desc
+				clr_country_flag = PSA_desc
+				clr_country_flag = FME_desc
+				clr_country_flag = TTC_desc
+				clr_country_flag = UDU_desc
+				clr_country_flag = VNS_desc
+				clr_country_flag = USA_desc
+				clr_country_flag = TLH_desc
+			}
+			TTC_desc_button_click = {
+				set_country_flag = TTC_desc
+				clr_country_flag = AUS_desc
+				clr_country_flag = ATC_desc
+				clr_country_flag = ACA_desc
+				clr_country_flag = APP_desc
+				clr_country_flag = AZT_desc
+				clr_country_flag = CAN_desc
+				clr_country_flag = CRB_desc
+				clr_country_flag = CAS_desc
+				clr_country_flag = ECC_desc
+				clr_country_flag = CGE_desc
+				clr_country_flag = GRL_desc
+				clr_country_flag = CNY_desc
+				clr_country_flag = SYA_desc
+				clr_country_flag = CSA_desc
+				clr_country_flag = DES_desc
+				clr_country_flag = EAC_desc
+				clr_country_flag = POF_desc
+				clr_country_flag = UOS_desc
+				clr_country_flag = GCA_desc
+				clr_country_flag = GNE_desc
+				clr_country_flag = GRV_desc
+				clr_country_flag = ROL_desc
+				clr_country_flag = MES_desc
+				clr_country_flag = MEX_desc
+				clr_country_flag = MTZ_desc
+				clr_country_flag = GPL_desc
+				clr_country_flag = NEC_desc
+				clr_country_flag = NAU_desc
+				clr_country_flag = NWC_desc
+				clr_country_flag = PSA_desc
+				clr_country_flag = FME_desc
+				clr_country_flag = TGC_desc
+				clr_country_flag = UDU_desc
+				clr_country_flag = VNS_desc
+				clr_country_flag = USA_desc
+				clr_country_flag = TLH_desc
+			}
+			UDU_desc_button_click = {
+				set_country_flag = UDU_desc
+				clr_country_flag = AUS_desc
+				clr_country_flag = ATC_desc
+				clr_country_flag = ACA_desc
+				clr_country_flag = APP_desc
+				clr_country_flag = AZT_desc
+				clr_country_flag = CAN_desc
+				clr_country_flag = CRB_desc
+				clr_country_flag = CAS_desc
+				clr_country_flag = ECC_desc
+				clr_country_flag = CGE_desc
+				clr_country_flag = GRL_desc
+				clr_country_flag = CNY_desc
+				clr_country_flag = SYA_desc
+				clr_country_flag = CSA_desc
+				clr_country_flag = DES_desc
+				clr_country_flag = EAC_desc
+				clr_country_flag = POF_desc
+				clr_country_flag = UOS_desc
+				clr_country_flag = GCA_desc
+				clr_country_flag = GNE_desc
+				clr_country_flag = GRV_desc
+				clr_country_flag = ROL_desc
+				clr_country_flag = MES_desc
+				clr_country_flag = MEX_desc
+				clr_country_flag = MTZ_desc
+				clr_country_flag = GPL_desc
+				clr_country_flag = NEC_desc
+				clr_country_flag = NAU_desc
+				clr_country_flag = NWC_desc
+				clr_country_flag = PSA_desc
+				clr_country_flag = FME_desc
+				clr_country_flag = TGC_desc
+				clr_country_flag = TTC_desc
+				clr_country_flag = VNS_desc
+				clr_country_flag = USA_desc
+				clr_country_flag = TLH_desc
+			}
+			USA_desc_button_click = {
+				set_country_flag = USA_desc
+				clr_country_flag = TLH_desc
+				clr_country_flag = PSA_desc
+				clr_country_flag = AUS_desc
+				clr_country_flag = ATC_desc
+				clr_country_flag = ACA_desc
+				clr_country_flag = APP_desc
+				clr_country_flag = AZT_desc
+				clr_country_flag = CAN_desc
+				clr_country_flag = CRB_desc
+				clr_country_flag = CAS_desc
+				clr_country_flag = ECC_desc
+				clr_country_flag = CGE_desc
+				clr_country_flag = GRL_desc
+				clr_country_flag = CNY_desc
+				clr_country_flag = SYA_desc
+				clr_country_flag = CSA_desc
+				clr_country_flag = DES_desc
+				clr_country_flag = EAC_desc
+				clr_country_flag = POF_desc
+				clr_country_flag = UOS_desc
+				clr_country_flag = GCA_desc
+				clr_country_flag = GNE_desc
+				clr_country_flag = GRV_desc
+				clr_country_flag = ROL_desc
+				clr_country_flag = MES_desc
+				clr_country_flag = MEX_desc
+				clr_country_flag = MTZ_desc
+				clr_country_flag = GPL_desc
+				clr_country_flag = NEC_desc
+				clr_country_flag = NAU_desc
+				clr_country_flag = NWC_desc
+				clr_country_flag = FME_desc
+				clr_country_flag = TGC_desc
+				clr_country_flag = TTC_desc
+				clr_country_flag = UDU_desc
+				clr_country_flag = VNS_desc
+			}
+			VNS_desc_button_click = {
+				set_country_flag = VNS_desc
+				clr_country_flag = AUS_desc
+				clr_country_flag = ATC_desc
+				clr_country_flag = ACA_desc
+				clr_country_flag = APP_desc
+				clr_country_flag = AZT_desc
+				clr_country_flag = CAN_desc
+				clr_country_flag = CRB_desc
+				clr_country_flag = CAS_desc
+				clr_country_flag = ECC_desc
+				clr_country_flag = CGE_desc
+				clr_country_flag = GRL_desc
+				clr_country_flag = CNY_desc
+				clr_country_flag = SYA_desc
+				clr_country_flag = CSA_desc
+				clr_country_flag = DES_desc
+				clr_country_flag = EAC_desc
+				clr_country_flag = POF_desc
+				clr_country_flag = UOS_desc
+				clr_country_flag = GCA_desc
+				clr_country_flag = GNE_desc
+				clr_country_flag = GRV_desc
+				clr_country_flag = ROL_desc
+				clr_country_flag = MES_desc
+				clr_country_flag = MEX_desc
+				clr_country_flag = MTZ_desc
+				clr_country_flag = GPL_desc
+				clr_country_flag = NEC_desc
+				clr_country_flag = NAU_desc
+				clr_country_flag = NWC_desc
+				clr_country_flag = PSA_desc
+				clr_country_flag = FME_desc
+				clr_country_flag = TGC_desc
+				clr_country_flag = TTC_desc
+				clr_country_flag = UDU_desc
+				clr_country_flag = USA_desc
+				clr_country_flag = TLH_desc
+			}
+		}
+	}
+}

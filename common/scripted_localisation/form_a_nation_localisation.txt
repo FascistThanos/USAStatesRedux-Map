@@ -1,0 +1,920 @@
+###The Description
+defined_text = { 
+
+	name = get_nation_description
+
+	text = {
+		trigger = {
+			has_country_flag = ACA_desc
+		}
+		localization_key = form_the_aca_desc
+	}
+	text = {
+		trigger = {
+			has_country_flag = ATC_desc
+		}
+		localization_key = form_the_ATC_desc
+	}
+	text = {
+		trigger = {
+			has_country_flag = AUS_desc
+		}
+		localization_key = form_the_aus_desc
+	}
+	text = {
+		trigger = {
+			has_country_flag = APP_desc
+		}
+		localization_key = form_the_APP_desc
+	}
+	text = {
+		trigger = {
+			has_country_flag = AZT_desc
+		}
+		localization_key = form_the_AZT_desc
+	}
+	text = {
+		trigger = {
+			has_country_flag = CAN_desc
+		}
+		localization_key = form_the_CAN_desc
+	}
+	text = {
+		trigger = {
+			has_country_flag = CRB_desc
+		}
+		localization_key = form_the_CRB_desc
+	}
+	text = {
+		trigger = {
+			has_country_flag = CAS_desc
+		}
+		localization_key = form_the_CAS_desc
+	}
+	text = {
+		trigger = {
+			has_country_flag = ECC_desc
+		}
+		localization_key = form_the_ECC_desc
+	}
+	text = {
+		trigger = {
+			has_country_flag = CGE_desc
+		}
+		localization_key = form_the_CGE_desc
+	}
+	text = {
+		trigger = {
+			has_country_flag = GRL_desc
+		}
+		localization_key = form_the_GRL_desc
+	}
+	text = {
+		trigger = {
+			has_country_flag = CNY_desc
+		}
+		localization_key = form_the_CNY_desc
+	}
+	text = {
+		trigger = {
+			has_country_flag = SYA_desc
+		}
+		localization_key = form_the_SYA_desc
+	}
+	text = {
+		trigger = {
+			has_country_flag = CSA_desc
+		}
+		localization_key = form_the_CSA_desc
+	}
+	text = {
+		trigger = {
+			has_country_flag = DES_desc
+		}
+		localization_key = form_the_DES_desc
+	}
+	text = {
+		trigger = {
+			has_country_flag = EAC_desc
+		}
+		localization_key = form_the_EAC_desc
+	}
+	text = {
+		trigger = {
+			has_country_flag = POF_desc
+		}
+		localization_key = form_the_POF_desc
+	}
+	text = {
+		trigger = {
+			has_country_flag = UOS_desc
+		}
+		localization_key = form_the_UOS_desc
+	}
+	text = {
+		trigger = {
+			has_country_flag = GCA_desc
+		}
+		localization_key = form_the_GCA_desc
+	}
+	text = {
+		trigger = {
+			has_country_flag = GNE_desc
+		}
+		localization_key = form_the_GNE_desc
+	}
+	text = {
+		trigger = {
+			has_country_flag = GRV_desc
+		}
+		localization_key = form_the_GRV_desc
+	}
+	text = {
+		trigger = {
+			has_country_flag = ROL_desc
+		}
+		localization_key = form_the_ROL_desc
+	}
+	text = {
+		trigger = {
+			has_country_flag = MES_desc
+		}
+		localization_key = form_the_MES_desc
+	}
+	text = {
+		trigger = {
+			has_country_flag = MEX_desc
+		}
+		localization_key = form_the_MEX_desc
+	}
+	text = {
+		trigger = {
+			has_country_flag = MTZ_desc
+		}
+		localization_key = form_the_MTZ_desc
+	}
+	text = {
+		trigger = {
+			has_country_flag = GPL_desc
+		}
+		localization_key = form_the_GPL_desc
+	}
+	text = {
+		trigger = {
+			has_country_flag = NEC_desc
+		}
+		localization_key = form_the_NEC_desc
+	}
+	text = {
+		trigger = {
+			has_country_flag = NAU_desc
+		}
+		localization_key = form_the_NAU_desc
+	}
+	text = {
+		trigger = {
+			has_country_flag = NWC_desc
+		}
+		localization_key = form_the_NWC_desc
+	}
+	text = {
+		trigger = {
+			has_country_flag = PSA_desc
+		}
+		localization_key = form_the_PSA_desc
+	}
+	text = {
+		trigger = {
+			has_country_flag = FME_desc
+		}
+		localization_key = form_the_FME_desc
+	}
+	text = {
+		trigger = {
+			has_country_flag = TGC_desc
+		}
+		localization_key = form_the_TGC_desc
+	}
+	text = {
+		trigger = {
+			has_country_flag = TTC_desc
+		}
+		localization_key = form_the_TTC_desc
+	}
+	text = {
+		trigger = {
+			has_country_flag = UDU_desc
+		}
+		localization_key = form_the_UDU_desc
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_desc
+		}
+		localization_key = form_the_USA_desc
+	}
+	text = {
+		trigger = {
+			has_country_flag = VNS_desc
+		}
+		localization_key = form_the_VNS_desc
+	}
+#No Formable Selected
+	text = {
+		localization_key = formable_desc_text
+	}
+}
+######The Cities
+defined_text = { 
+
+	name = get_nation_cities
+	text = {
+		trigger = {
+			has_country_flag = ACA_desc
+		}
+		localization_key = form_the_aca_cities
+	}
+	text = {
+		trigger = {
+			has_country_flag = ATC_desc
+		}
+		localization_key = form_the_ATC_cities
+	}
+	text = {
+		trigger = {
+			has_country_flag = AUS_desc
+		}
+		localization_key = form_the_aus_cities
+	}
+	text = {
+		trigger = {
+			has_country_flag = APP_desc
+		}
+		localization_key = form_the_APP_cities
+	}
+	text = {
+		trigger = {
+			has_country_flag = AZT_desc
+		}
+		localization_key = form_the_AZT_cities
+	}
+	text = {
+		trigger = {
+			has_country_flag = CAN_desc
+		}
+		localization_key = form_the_CAN_cities
+	}
+	text = {
+		trigger = {
+			has_country_flag = CRB_desc
+		}
+		localization_key = form_the_CRB_cities
+	}
+	text = {
+		trigger = {
+			has_country_flag = CAS_desc
+		}
+		localization_key = form_the_CAS_cities
+	}
+	text = {
+		trigger = {
+			has_country_flag = ECC_desc
+		}
+		localization_key = form_the_ECC_cities
+	}
+	text = {
+		trigger = {
+			has_country_flag = CGE_desc
+		}
+		localization_key = form_the_CGE_cities
+	}
+	text = {
+		trigger = {
+			has_country_flag = GRL_desc
+		}
+		localization_key = form_the_GRL_cities
+	}
+	text = {
+		trigger = {
+			has_country_flag = CNY_desc
+		}
+		localization_key = form_the_CNY_cities
+	}
+	text = {
+		trigger = {
+			has_country_flag = SYA_desc
+		}
+		localization_key = form_the_SYA_cities
+	}
+	text = {
+		trigger = {
+			has_country_flag = CSA_desc
+		}
+		localization_key = form_the_CSA_cities
+	}
+	text = {
+		trigger = {
+			has_country_flag = DES_desc
+		}
+		localization_key = form_the_DES_cities
+	}
+	text = {
+		trigger = {
+			has_country_flag = EAC_desc
+		}
+		localization_key = form_the_EAC_cities
+	}
+	text = {
+		trigger = {
+			has_country_flag = POF_desc
+		}
+		localization_key = form_the_POF_cities
+	}
+	text = {
+		trigger = {
+			has_country_flag = UOS_desc
+		}
+		localization_key = form_the_UOS_cities
+	}
+	text = {
+		trigger = {
+			has_country_flag = GCA_desc
+		}
+		localization_key = form_the_GCA_cities
+	}
+	text = {
+		trigger = {
+			has_country_flag = GNE_desc
+		}
+		localization_key = form_the_GNE_cities
+	}
+	text = {
+		trigger = {
+			has_country_flag = GRV_desc
+		}
+		localization_key = form_the_GRV_cities
+	}
+	text = {
+		trigger = {
+			has_country_flag = ROL_desc
+		}
+		localization_key = form_the_ROL_cities
+	}
+	text = {
+		trigger = {
+			has_country_flag = MES_desc
+		}
+		localization_key = form_the_MES_cities
+	}
+	text = {
+		trigger = {
+			has_country_flag = MEX_desc
+		}
+		localization_key = form_the_MEX_cities
+	}
+	text = {
+		trigger = {
+			has_country_flag = MTZ_desc
+		}
+		localization_key = form_the_MTZ_cities
+	}
+	text = {
+		trigger = {
+			has_country_flag = GPL_desc
+		}
+		localization_key = form_the_GPL_cities
+	}
+	text = {
+		trigger = {
+			has_country_flag = NEC_desc
+		}
+		localization_key = form_the_NEC_cities
+	}
+	text = {
+		trigger = {
+			has_country_flag = NAU_desc
+		}
+		localization_key = form_the_NAU_cities
+	}
+	text = {
+		trigger = {
+			has_country_flag = NWC_desc
+		}
+		localization_key = form_the_NWC_cities
+	}
+	text = {
+		trigger = {
+			has_country_flag = PSA_desc
+		}
+		localization_key = form_the_PSA_cities
+	}
+	text = {
+		trigger = {
+			has_country_flag = TLH_desc
+		}
+		localization_key = form_the_TLH_cities
+	}
+	text = {
+		trigger = {
+			has_country_flag = FME_desc
+		}
+		localization_key = form_the_FME_cities
+	}
+	text = {
+		trigger = {
+			has_country_flag = TGC_desc
+		}
+		localization_key = form_the_TGC_cities
+	}
+	text = {
+		trigger = {
+			has_country_flag = TTC_desc
+		}
+		localization_key = form_the_TTC_cities
+	}
+	text = {
+		trigger = {
+			has_country_flag = UDU_desc
+		}
+		localization_key = form_the_UDU_cities
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_desc
+		}
+		localization_key = form_the_USA_cities
+	}
+	text = {
+		trigger = {
+			has_country_flag = VNS_desc
+		}
+		localization_key = form_the_VNS_cities
+	}
+#No Formable Selected
+	text = {
+		localization_key = formable_desc_cities
+	}
+}
+##Title
+defined_text = { 
+
+	name = get_nation_title
+	text = {
+		trigger = {
+			has_country_flag = ACA_desc
+		}
+		localization_key = form_ACA_title
+	}
+	text = {
+		trigger = {
+			has_country_flag = ATC_desc
+		}
+		localization_key = form_ATC_title
+	}
+	text = {
+		trigger = {
+			has_country_flag = AUS_desc
+		}
+		localization_key = form_aus_title
+	}
+	text = {
+		trigger = {
+			has_country_flag = APP_desc
+		}
+		localization_key = form_APP_title
+	}
+	text = {
+		trigger = {
+			has_country_flag = AZT_desc
+		}
+		localization_key = form_AZT_title
+	}
+	text = {
+		trigger = {
+			has_country_flag = CAN_desc
+		}
+		localization_key = form_CAN_title
+	}
+	text = {
+		trigger = {
+			has_country_flag = CRB_desc
+		}
+		localization_key = form_CRB_title
+	}
+	text = {
+		trigger = {
+			has_country_flag = CAS_desc
+		}
+		localization_key = form_CAS_title
+	}
+	text = {
+		trigger = {
+			has_country_flag = ECC_desc
+		}
+		localization_key = form_ECC_title
+	}
+	text = {
+		trigger = {
+			has_country_flag = CGE_desc
+		}
+		localization_key = form_CGE_title
+	}
+	text = {
+		trigger = {
+			has_country_flag = GRL_desc
+		}
+		localization_key = form_GRL_title
+	}
+	text = {
+		trigger = {
+			has_country_flag = CNY_desc
+		}
+		localization_key = form_CNY_title
+	}
+	text = {
+		trigger = {
+			has_country_flag = SYA_desc
+		}
+		localization_key = form_SYA_title
+	}
+	text = {
+		trigger = {
+			has_country_flag = CSA_desc
+		}
+		localization_key = form_CSA_title
+	}
+	text = {
+		trigger = {
+			has_country_flag = DES_desc
+		}
+		localization_key = form_DES_title
+	}
+	text = {
+		trigger = {
+			has_country_flag = EAC_desc
+		}
+		localization_key = form_EAC_title
+	}
+	text = {
+		trigger = {
+			has_country_flag = POF_desc
+		}
+		localization_key = form_POF_title
+	}
+	text = {
+		trigger = {
+			has_country_flag = UOS_desc
+		}
+		localization_key = form_UOS_title
+	}
+	text = {
+		trigger = {
+			has_country_flag = GCA_desc
+		}
+		localization_key = form_GCA_title
+	}
+	text = {
+		trigger = {
+			has_country_flag = GNE_desc
+		}
+		localization_key = form_GNE_title
+	}
+	text = {
+		trigger = {
+			has_country_flag = GRV_desc
+		}
+		localization_key = form_GRV_title
+	}
+	text = {
+		trigger = {
+			has_country_flag = ROL_desc
+		}
+		localization_key = form_ROL_title
+	}
+	text = {
+		trigger = {
+			has_country_flag = MES_desc
+		}
+		localization_key = form_MES_title
+	}
+	text = {
+		trigger = {
+			has_country_flag = MEX_desc
+		}
+		localization_key = form_MEX_title
+	}
+	text = {
+		trigger = {
+			has_country_flag = MTZ_desc
+		}
+		localization_key = form_MTZ_title
+	}
+	text = {
+		trigger = {
+			has_country_flag = GPL_desc
+		}
+		localization_key = form_GPL_title
+	}
+	text = {
+		trigger = {
+			has_country_flag = NEC_desc
+		}
+		localization_key = form_NEC_title
+	}
+	text = {
+		trigger = {
+			has_country_flag = NAU_desc
+		}
+		localization_key = form_NAU_title
+	}
+	text = {
+		trigger = {
+			has_country_flag = NWC_desc
+		}
+		localization_key = form_NWC_title
+	}
+	text = {
+		trigger = {
+			has_country_flag = PSA_desc
+		}
+		localization_key = form_PSA_title
+	}
+	text = {
+		trigger = {
+			has_country_flag = TLH_desc
+		}
+		localization_key = form_TLH_title
+	}
+	text = {
+		trigger = {
+			has_country_flag = FME_desc
+		}
+		localization_key = form_FME_title
+	}
+	text = {
+		trigger = {
+			has_country_flag = TGC_desc
+		}
+		localization_key = form_TGC_title
+	}
+	text = {
+		trigger = {
+			has_country_flag = TTC_desc
+		}
+		localization_key = form_TTC_title
+	}
+	text = {
+		trigger = {
+			has_country_flag = UDU_desc
+		}
+		localization_key = form_UDU_title
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_desc
+		}
+		localization_key = form_USA_title
+	}
+	text = {
+		trigger = {
+			has_country_flag = VNS_desc
+		}
+		localization_key = form_VNS_title
+	}
+#No Formable Selected
+	text = {
+		localization_key = formable_desc_title
+	}
+}
+
+######The Image
+defined_text = { 
+
+	name = get_map_image
+	text = {
+		trigger = {
+			has_country_flag = ACA_desc
+		}
+		localization_key = "GFX_aca_highlight"
+	}
+	text = {
+		trigger = {
+			has_country_flag = ATC_desc
+		}
+		localization_key = "GFX_ATC_pic"
+	}
+	text = {
+		trigger = {
+			has_country_flag = AUS_desc
+		}
+		localization_key = "GFX_aus_highlight"
+	}
+	text = {
+		trigger = {
+			has_country_flag = APP_desc
+		}
+		localization_key = "GFX_APP_pic"
+	}
+	text = {
+		trigger = {
+			has_country_flag = AZT_desc
+		}
+		localization_key = "GFX_AZT_pic"
+	}
+	text = {
+		trigger = {
+			has_country_flag = CAN_desc
+		}
+		localization_key = "GFX_CAN_pic"
+	}
+	text = {
+		trigger = {
+			has_country_flag = CRB_desc
+		}
+		localization_key = "GFX_CRB_pic"
+	}
+	text = {
+		trigger = {
+			has_country_flag = CAS_desc
+		}
+		localization_key = "GFX_CAS_pic"
+	}
+	text = {
+		trigger = {
+			has_country_flag = ECC_desc
+		}
+		localization_key = "GFX_ECC_pic"
+	}
+	text = {
+		trigger = {
+			has_country_flag = CGE_desc
+		}
+		localization_key = "GFX_CGE_pic"
+	}
+	text = {
+		trigger = {
+			has_country_flag = GRL_desc
+		}
+		localization_key = "GFX_GRL_pic"
+	}
+	text = {
+		trigger = {
+			has_country_flag = CNY_desc
+		}
+		localization_key = "GFX_CNY_pic"
+	}
+	text = {
+		trigger = {
+			has_country_flag = SYA_desc
+		}
+		localization_key = "GFX_SYA_pic"
+	}
+	text = {
+		trigger = {
+			has_country_flag = CSA_desc
+		}
+		localization_key = "GFX_CSA_pic"
+	}
+	text = {
+		trigger = {
+			has_country_flag = DES_desc
+		}
+		localization_key = "GFX_DES_pic"
+	}
+	text = {
+		trigger = {
+			has_country_flag = EAC_desc
+		}
+		localization_key = "GFX_EAC_pic"
+	}
+	text = {
+		trigger = {
+			has_country_flag = POF_desc
+		}
+		localization_key = "GFX_POF_pic"
+	}
+	text = {
+		trigger = {
+			has_country_flag = UOS_desc
+		}
+		localization_key = "GFX_UOS_pic"
+	}
+	text = {
+		trigger = {
+			has_country_flag = GCA_desc
+		}
+		localization_key = "GFX_GCA_pic"
+	}
+	text = {
+		trigger = {
+			has_country_flag = GNE_desc
+		}
+		localization_key = "GFX_GNE_pic"
+	}
+	text = {
+		trigger = {
+			has_country_flag = GRV_desc
+		}
+		localization_key = "GFX_GRV_pic"
+	}
+	text = {
+		trigger = {
+			has_country_flag = ROL_desc
+		}
+		localization_key = "GFX_ROL_pic"
+	}
+	text = {
+		trigger = {
+			has_country_flag = MES_desc
+		}
+		localization_key = "GFX_MES_pic"
+	}
+	text = {
+		trigger = {
+			has_country_flag = MEX_desc
+		}
+		localization_key = "GFX_MEX_pic"
+	}
+	text = {
+		trigger = {
+			has_country_flag = MTZ_desc
+		}
+		localization_key = "GFX_MTZ_pic"
+	}
+	text = {
+		trigger = {
+			has_country_flag = GPL_desc
+		}
+		localization_key = "GFX_GPN_pic"
+	}
+	text = {
+		trigger = {
+			has_country_flag = NEC_desc
+		}
+		localization_key = "GFX_NEC_pic"
+	}
+	text = {
+		trigger = {
+			has_country_flag = NAU_desc
+		}
+		localization_key = "GFX_NAU_pic"
+	}
+	text = {
+		trigger = {
+			has_country_flag = NWC_desc
+		}
+		localization_key = "GFX_NWC_pic"
+	}
+	text = {
+		trigger = {
+			has_country_flag = PSA_desc
+		}
+		localization_key = "GFX_PSA_pic"
+	}
+	text = {
+		trigger = {
+			has_country_flag = TLH_desc
+		}
+		localization_key = "GFX_TLH_pic"
+	}
+	text = {
+		trigger = {
+			has_country_flag = FME_desc
+		}
+		localization_key = "GFX_FME_pic"
+	}
+	text = {
+		trigger = {
+			has_country_flag = TGC_desc
+		}
+		localization_key = "GFX_TGC_pic"
+	}
+	text = {
+		trigger = {
+			has_country_flag = TTC_desc
+		}
+		localization_key = "GFX_TTC_pic"
+	}
+	text = {
+		trigger = {
+			has_country_flag = UDU_desc
+		}
+		localization_key = "GFX_UDU_pic"
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_desc
+		}
+		localization_key = "GFX_USA_pic"
+	}
+	text = {
+		trigger = {
+			has_country_flag = VNS_desc
+		}
+		localization_key = "GFX_VNS_pic"
+	}
+#No Formable Selected
+	text = {
+		localization_key = "GFX_formables_map"
+	}
+}
