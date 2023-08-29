@@ -41,6 +41,7 @@ ideas = {
         resistance_target = -1
         compliance_gain = -1
         min_export = 0.19
+        embargo_cost_factor = 100
       }
     }
     ALL_ai_stuff = {
