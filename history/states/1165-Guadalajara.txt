@@ -8,8 +8,22 @@ state={
 			industrial_complex = 3
 			arms_factory = 2
 		}
+		victory_points = {
+			10406 25 #Guadalajara
+		}
+		victory_points = {
+			10403 20 #Tonala
+		}
+		victory_points = {
+			10401 5 #Puente Grande
+		}
+		victory_points = {
+			10402 10 #Granja
+		}
+		victory_points = {
+			10400 5 #Tlaquepaque
+		}
 		add_core_of = JAL
-
 	}
 	provinces={
 		10398 10399 10400 10401 10402 10403 10406 

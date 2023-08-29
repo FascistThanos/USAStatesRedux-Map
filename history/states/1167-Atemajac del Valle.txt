@@ -6,8 +6,16 @@ state={
 		buildings = {
 			infrastructure = 3
 		}
+		victory_points = {
+			10408 5 #Atemajac del Valle
+		}
+		victory_points = {
+			10407 10 #Puerta de Hierro Guadalajara
+		}
+		victory_points = {
+			3681 5 #Las Canadas
+		}
 		add_core_of = JAL
-
 	}
 	provinces={
 		3681 10405 10407 10408 

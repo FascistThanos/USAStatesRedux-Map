@@ -6,8 +6,10 @@ state={
 		buildings = {
 			infrastructure = 2
 		}
+		victory_points = {
+			1879 5 #Mazapil
+		}
 		add_core_of = ZAC
-
 	}
 	provinces={
 		1879 1920 3259 7288 

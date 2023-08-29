@@ -5,10 +5,11 @@ state={
 		owner = JAL
 		buildings = {
 			infrastructure = 3
-
+		}
+		victory_points = {
+			7459 15 #Tepatitlan de Morelos
 		}
 		add_core_of = JAL
-
 	}
 	provinces={
 		1649 2992 3565 7440 7451 7459 7474 

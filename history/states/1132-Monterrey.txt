@@ -11,8 +11,22 @@ state={
 			industrial_complex = 4
 			arms_factory = 3
 		}
+		victory_points = {
+			10430 20 #Monterrey
+		}
+		victory_points = {
+			10431 5 #Los Encinos
+		}
+		victory_points = {
+			10432 5 #Los Puertos
+		}
+		victory_points = {
+			10434 5 #Santa Rosa
+		}
+		victory_points = {
+			10433 5 #Colonia Buena Vista
+		}
 		add_core_of = NEL
-
 	}
 	provinces={
 		10430 10431 10432 10433 10434 

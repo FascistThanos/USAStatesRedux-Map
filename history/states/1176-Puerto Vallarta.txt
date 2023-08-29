@@ -5,10 +5,14 @@ state={
 		owner = JAL
 		buildings = {
 			infrastructure = 3
-
+			4004 = {
+				naval_base = 5
+			}
+		}
+		victory_points = {
+			4004 20 #Puerto Vallarta
 		}
 		add_core_of = JAL
-
 	}
 	provinces={
 		2629 4004 7488 

@@ -8,8 +8,10 @@ state={
 			industrial_complex = 3
 			arms_factory = 2
 		}
+		victory_points = {
+			2953 15 #Fresnillo
+		}
 		add_core_of = ZAC
-
 	}
 	provinces={
 		2547 2868 2953 7348 7352 7380 

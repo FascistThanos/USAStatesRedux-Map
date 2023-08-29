@@ -5,10 +5,11 @@ state={
 		owner = NEL
 		buildings = {
 			infrastructure = 3
-
+		}
+		victory_points = {
+			4348 5 #Linares
 		}
 		add_core_of = NEL
-
 	}
 	provinces={
 		2861 4348 7247 7250 

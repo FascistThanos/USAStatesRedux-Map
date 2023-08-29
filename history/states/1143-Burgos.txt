@@ -7,8 +7,10 @@ state={
 			infrastructure = 3
 			industrial_complex = 3
 		}
+		victory_points = {
+			3409 20
+		}
 		add_core_of = TAM
-
 	}
 	provinces={
 		1561 2360 2545 3409 7278 7293 7319 

@@ -6,8 +6,10 @@ state={
 		buildings = {
 			infrastructure = 3
 		}
+		victory_points = {
+			2140 15 #Tlajomulco de Zuniga
+		}
 		add_core_of = JAL
-
 	}
 	provinces={
 		2140 2254 7496 

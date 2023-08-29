@@ -14,8 +14,10 @@ state={
 				naval_base = 6
 			}
 		}
+		victory_points = {
+			7402 20 #Tampico
+		}
 		add_core_of = TAM
-
 	}
 	provinces={
 		3150 3613 7350 7378 7402 

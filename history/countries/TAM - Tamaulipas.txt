@@ -1,4 +1,4 @@
-﻿capital = 71
+﻿capital = 1143
 
 oob = "TAM_1936"
 

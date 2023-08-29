@@ -8,8 +8,10 @@ state={
 			industrial_complex = 1
 			arms_factory = 1
 		}
+		victory_points = {
+			2721 5 #Sabinas Hidalgo
+		}
 		add_core_of = NEL
-
 	}
 	provinces={
 		2345 2721 3880 7176 7192 7204 

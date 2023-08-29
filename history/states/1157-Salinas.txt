@@ -5,10 +5,11 @@ state={
 		owner = SLP
 		buildings = {
 			infrastructure = 3
-
+		}
+		victory_points = {
+			7381 5 #Salinas de Hidalgo
 		}
 		add_core_of = SLP
-
 	}
 	provinces={
 		2052 3063 7368 7381 7382 

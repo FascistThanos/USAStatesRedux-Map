@@ -7,8 +7,10 @@ state={
 			infrastructure = 3
 			industrial_complex = 2
 		}
+		victory_points = {
+			7225 15 #Ciénega de Flores
+		}
 		add_core_of = NEL
-
 	}
 	provinces={
 		160 2740 3290 3674 3853 7205 7206 7225 7243 7255 7263 

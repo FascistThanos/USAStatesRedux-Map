@@ -1,4 +1,4 @@
-﻿capital = 76
+﻿capital = 1165
 
 oob = "JAL_1936"
 

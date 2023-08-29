@@ -7,8 +7,10 @@ state={
 			infrastructure = 2
 			industrial_complex = 1
 		}
+		victory_points = {
+			7421 5 #Villa de Reyes
+		}
 		add_core_of = SLP
-
 	}
 	provinces={
 		3791 7421 7423 

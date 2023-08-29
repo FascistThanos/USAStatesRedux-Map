@@ -5,10 +5,11 @@ state={
 		owner = JAL
 		buildings = {
 			infrastructure = 3
-
+		}
+		victory_points = {
+			7471 5 #Ameca
 		}
 		add_core_of = JAL
-
 	}
 	provinces={
 		3322 7471 7489 

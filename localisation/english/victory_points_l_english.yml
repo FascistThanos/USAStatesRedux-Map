@@ -1934,7 +1934,8 @@ VICTORY_POINTS_4133:0 "Wind River Reservation"
 #######################
 ##### M E X I C O #####
 #######################
-
+#####Aguascalientes
+VICTORY_POINTS_7405:0 "Aguascalientes"
 #####Baja California
 #Tijuana
 VICTORY_POINTS_11400:0 "Tijuana"
@@ -1985,6 +1986,46 @@ VICTORY_POINTS_7267:0 "Cuencamé"
 VICTORY_POINTS_4066:0 "San Francisco del Mezquital"
 VICTORY_POINTS_7257:0 "Nuevo Ideal"
 VICTORY_POINTS_3203:0 "Santiago Papasquiaro"
+#####Jalisco
+#Guadalajara
+VICTORY_POINTS_10406:0 "Guadalajara"
+VICTORY_POINTS_10403:0 "Tonalá"
+VICTORY_POINTS_10401:0 "Puente Grande"
+VICTORY_POINTS_10402:0 "Granja"
+VICTORY_POINTS_10400:0 "Tlaquepaque"
+#Atemajac del Valle
+VICTORY_POINTS_10408:0 "Atemajac del Valle"
+VICTORY_POINTS_10407:0 "Puerta de Hierro Guadalajara"
+VICTORY_POINTS_3681:0 "Las Cañadas"
+#The Rest of Jalisco
+VICTORY_POINTS_2348:0 "Colotlán"
+VICTORY_POINTS_4004:0 "Puerto Vallarta"
+VICTORY_POINTS_2140:0 "Tlajomulco de Zúñiga"
+VICTORY_POINTS_7459:0 "Tepatitlán de Morelos"
+VICTORY_POINTS_7471:0 "Ameca"
+VICTORY_POINTS_7510:0 "Mazamitla"
+VICTORY_POINTS_7437:0 "Lagos de Moreno"
+#####Nayarit
+VICTORY_POINTS_3109:0 "Acaponeta"
+VICTORY_POINTS_7429:0 "Tepic"
+VICTORY_POINTS_7457:0 "Sayulita"
+#####Nuevo Leon
+#Monterrey
+VICTORY_POINTS_10430:0 "Monterrey"
+VICTORY_POINTS_10431:0 "Los Encinos"
+VICTORY_POINTS_10432:0 "Los Puertos"
+VICTORY_POINTS_10434:0 "Santa Rosa"
+VICTORY_POINTS_10433:0 "Colonia Buena Vista"
+#The Rest of Nuevo Leon
+VICTORY_POINTS_2721:0 "Sabinas Hidalgo"
+VICTORY_POINTS_4348:0 "Linares"
+VICTORY_POINTS_7225:0 "Ciénega de Flores"
+#####San Luis Potosi
+VICTORY_POINTS_7421:0 "Villa de Reyes"
+VICTORY_POINTS_7381:0 "Salinas de Hidalgo"
+VICTORY_POINTS_4269:0 "Ciudad Valles"
+VICTORY_POINTS_7326:0 "Matehuala"
+VICTORY_POINTS_7393:0 "San Luis Potosí"
 #####Sinaloa
 VICTORY_POINTS_1141:0 "Culiacán"
 VICTORY_POINTS_7332:0 "La Cruz"
@@ -2001,3 +2042,17 @@ VICTORY_POINTS_1439:0 "Puerto Peñasco"
 VICTORY_POINTS_6856:0 "Santa Ana"
 VICTORY_POINTS_7105:0 "Ciudad Obregón"
 VICTORY_POINTS_7130:0 "Navojoa"
+#####Tamaulipas
+VICTORY_POINTS_3409:0 "Ciudad Victoria"
+VICTORY_POINTS_1862:0 "Soto la Marina"
+VICTORY_POINTS_4005:0 "Ciudad Mante"
+VICTORY_POINTS_7402:0 "Tampico"
+VICTORY_POINTS_7223:0 "Reynosa"
+VICTORY_POINTS_7231:0 "Matamoros"
+VICTORY_POINTS_2187:0 "Nuevo Laredo"
+#####Zacatecas
+VICTORY_POINTS_1879:0 "Mazapil"
+VICTORY_POINTS_7366:0 "Valaparaíso"
+VICTORY_POINTS_7337:0 "Río Grande"
+VICTORY_POINTS_7388:0 "Zacatecas"
+VICTORY_POINTS_2953:0 "Fresnillo"

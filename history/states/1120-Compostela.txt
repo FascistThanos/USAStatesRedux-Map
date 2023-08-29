@@ -6,8 +6,10 @@ state={
 		buildings = {
 			infrastructure = 2
 		}
+		victory_points = {
+			7457 15 #Sayulita
+		}
 		add_core_of = NAY
-
 	}
 	provinces={
 		1336 1800 7457 

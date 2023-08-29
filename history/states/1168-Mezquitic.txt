@@ -5,10 +5,11 @@ state={
 		owner = JAL
 		buildings = {
 			infrastructure = 2
-
+		}
+		victory_points = {
+			2348 5 #Colotlan
 		}
 		add_core_of = JAL
-
 	}
 	provinces={
 		1680 2348 3038 7401 7404 

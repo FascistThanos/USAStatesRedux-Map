@@ -6,8 +6,10 @@ state={
 		buildings = {
 			infrastructure = 2
 		}
+		victory_points = {
+			7337 15 #Rio Grande
+		}
 		add_core_of = ZAC
-
 	}
 	provinces={
 		1657 3137 7317 7327 7337 

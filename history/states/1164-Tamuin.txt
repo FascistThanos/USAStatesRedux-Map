@@ -6,8 +6,10 @@ state={
 		buildings = {
 			infrastructure = 2
 		}
+		victory_points = {
+			4269 10 #Ciudad Valles
+		}
 		add_core_of = SLP
-
 	}
 	provinces={
 		4269 7411 7426 

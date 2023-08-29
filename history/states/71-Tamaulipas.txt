@@ -1,16 +1,16 @@
-
 state={
 	id=71
 	name="El Mante"
-
 	history={
 		owner = TAM
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 2
 		}
+		victory_points = {
+			4005 10 #Ciudad Mante
+		}
 		add_core_of = TAM
-
 	}
 
 	provinces={

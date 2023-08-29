@@ -6,8 +6,10 @@ state={
 		buildings = {
 			infrastructure = 3
 		}
+		victory_points = {
+			1862 10 #Soto la Marina
+		}
 		add_core_of = TAM
-
 	}
 	provinces={
 		1862 2184 7308 7336 

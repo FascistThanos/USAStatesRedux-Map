@@ -6,8 +6,13 @@ state={
 		buildings = {
 			infrastructure = 2
 		}
+		victory_points = {
+			7223 20 #Reynosa
+		}
+		victory_points = {
+			7231 20 #Matamoros
+		}
 		add_core_of = TAM
-
 	}
 	provinces={
 		1858 3029 4021 7207 7223 7231 7251 

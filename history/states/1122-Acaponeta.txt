@@ -5,10 +5,11 @@ state={
 		owner = NAY
 		buildings = {
 			infrastructure = 2
-
+		}
+		victory_points = {
+			3109 5 #Acaponeta
 		}
 		add_core_of = NAY
-
 	}
 	provinces={
 		3109 7391 
