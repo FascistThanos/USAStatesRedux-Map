@@ -6,6 +6,9 @@ state={
 		buildings = {
 			infrastructure = 2
 		}
+		victory_points = {
+			6926 10 #Ojinaga
+		}
 		add_core_of = CIA
 	}
 	provinces={

@@ -8,8 +8,10 @@ state={
 			industrial_complex = 2
 			arms_factory = 2
 		}
+		victory_points = {
+			7267 5 #Cuencame
+		}
 		add_core_of = DUR
-
 	}
 	provinces={
 		1136 1702 2687 3457 3993 4285 7208 7213 7228 7232 7254 7267 7268 

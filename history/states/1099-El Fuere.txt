@@ -14,8 +14,10 @@ state={
 				naval_base = 4
 			}
 		}
+		victory_points = {
+			7211 20 #Los Mochis
+		}
 		add_core_of = SIN
-
 	}
 
 	provinces={

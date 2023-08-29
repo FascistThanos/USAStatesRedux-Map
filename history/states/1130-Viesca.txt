@@ -7,8 +7,10 @@ state={
 			infrastructure = 3
 			industrial_complex = 1
 		}
+		victory_points = {
+			7229 20 #Torreon
+		}
 		add_core_of = COA
-
 	}
 
 	provinces={

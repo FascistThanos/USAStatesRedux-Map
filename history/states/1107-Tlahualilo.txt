@@ -5,10 +5,11 @@ state={
 		owner = DUR
 		buildings = {
 			infrastructure = 2
-
+		}
+		victory_points = {
+			7218 10 #Mapimi
 		}
 		add_core_of = DUR
-
 	}
 	provinces={
 		2319 4209 7173 7181 7198 7218 7222 

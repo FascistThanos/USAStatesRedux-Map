@@ -6,6 +6,9 @@ state={
 		buildings = {
 			infrastructure = 1
 		}
+		victory_points = {
+			1112 10 #Parral
+		}
 		add_core_of = CIA
 	}
 	provinces={

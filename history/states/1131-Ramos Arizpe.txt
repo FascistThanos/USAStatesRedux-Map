@@ -8,8 +8,10 @@ state={
 			industrial_complex = 1
 			arms_factory = 1
 		}
+		victory_points = {
+			1804 5 #Parras de la Fuente
+		}
 		add_core_of = COA
-
 	}
 	provinces={
 		626 1804 2118 3961 7180 7199 7209 7230 7246 7258 

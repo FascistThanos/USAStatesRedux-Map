@@ -6,8 +6,10 @@ state={
 		buildings = {
 			infrastructure = 2
 		}
+		victory_points = {
+			2237 10 #Piedras Negras
+		}
 		add_core_of = COA
-
 	}
 	provinces={
 		176 2237 2994 3771 6942 6977 6981 7001 

@@ -5,10 +5,11 @@ state={
 		owner = DUR
 		buildings = {
 			infrastructure = 2
-
+		}
+		victory_points = {
+			7257 5 #Nuevo Ideal
 		}
 		add_core_of = DUR
-
 	}
 	provinces={
 		7238 7257 

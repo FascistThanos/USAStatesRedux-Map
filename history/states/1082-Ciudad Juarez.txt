@@ -8,8 +8,22 @@ state={
 			industrial_complex = 1
 			arms_factory = 1
 		}
+		victory_points = {
+			10521 25 #Ciudad Juarez
+		}
+		victory_points = {
+			10519 10 #Nuevo Hipodromo
+		}
+		victory_points = {
+			10527 5 #Centro
+		}
+		victory_points = {
+			10520 5 #San Isidro
+		}
+		victory_points = {
+			11568 5 #Rancho Tres Palmas
+		}
 		add_core_of = CIA
-
 	}
 	provinces={
 		10519 10520 10521 10527 11568 

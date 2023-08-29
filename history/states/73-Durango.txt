@@ -1,8 +1,6 @@
-
 state={
 	id=73
 	name="Durango"
-
 	history={
 		owner = DUR
 		buildings = {
@@ -10,8 +8,10 @@ state={
 			industrial_complex = 2
 			arms_factory = 1
 		}
+		victory_points = {
+			7292 20 #Durango
+		}
 		add_core_of = DUR
-
 	}
 
 	provinces={

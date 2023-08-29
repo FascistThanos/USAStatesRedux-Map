@@ -5,10 +5,11 @@ state={
 		owner = COA
 		buildings = {
 			infrastructure = 2
-
+		}
+		victory_points = {
+			3261 5 #Sabinas
 		}
 		add_core_of = COA
-
 	}
 	provinces={
 		661 810 2852 3261 4328 6986 7013 7026 7048 7056 7059 7066 7086 

@@ -10,8 +10,10 @@ state={
 				naval_base = 4
 			}
 		}
+		victory_points = {
+			7105 20 #Ciudad Obregon
+		}
 		add_core_of = SON
-
 	}
 	provinces={
 		1247 3755 3936 4212 7035 7041 7053 7060 7077 7087 7105 7111 

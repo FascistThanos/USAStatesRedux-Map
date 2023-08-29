@@ -1,4 +1,4 @@
-﻿capital = 72
+﻿capital = 1102
 
 oob = "SIN_1936"
 

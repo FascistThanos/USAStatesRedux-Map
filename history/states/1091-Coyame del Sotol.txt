@@ -6,8 +6,10 @@ state={
 		buildings = {
 			infrastructure = 3
 		}
+		victory_points = {
+			7044 20 #Delicias
+		}
 		add_core_of = CIA
-
 	}
 	provinces={
 		1383 2335 2499 3120 4020 7044 7050 7070 7084 7097 7103 7118 7123 

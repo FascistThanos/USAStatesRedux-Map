@@ -10,8 +10,10 @@ state={
 			industrial_complex = 3
 			arms_factory = 2
 		}
+		victory_points = {
+			3100 20 #Saltillo
+		}
 		add_core_of = COA
-
 	}
 
 	provinces={

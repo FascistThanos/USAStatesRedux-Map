@@ -7,8 +7,10 @@ state={
 			infrastructure = 2
 			industrial_complex = 2
 		}
+		victory_points = {
+			7242 15 #Guasave
+		}
 		add_core_of = SIN
-
 	}
 	provinces={
 		7235 7242 7256 7262 

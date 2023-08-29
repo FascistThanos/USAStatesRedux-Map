@@ -8,8 +8,16 @@ state={
 			industrial_complex = 1
 			arms_factory = 1
 		}
+		victory_points = {
+			1141 20 #Culiacan
+		}
+		victory_points = {
+			7332 5 #La Cruz
+		}
+		victory_points = {
+			7298 5 #Cosala
+		}
 		add_core_of = SIN
-
 	}
 	provinces={
 		735 1141 3266 7298 7302 7306 7307 7316 7332 

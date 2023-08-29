@@ -9,8 +9,10 @@ state={
 				naval_base = 4
 			}
 		}
+		victory_points = {
+			7351 20 #Mazatlan
+		}
 		add_core_of = SIN
-
 	}
 	provinces={
 		417 797 1577 7331 7344 7351 

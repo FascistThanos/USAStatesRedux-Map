@@ -9,8 +9,10 @@ state={
 		buildings = {
 			infrastructure = 2
 		}
+		victory_points = {
+			7130 15 #Navojoa
+		}
 		add_core_of = SON
-
 	}
 
 	provinces={
