@@ -1,21 +1,19 @@
 #US States
 core_alabama_effect = {
-	ROOT = {
-		add_state_core = 41
-		add_state_core = 397
-		add_state_core = 398
-		add_state_core = 399
-		add_state_core = 400
-		add_state_core = 401
-		add_state_core = 402
-		add_state_core = 403
-		add_state_core = 404
-		add_state_core = 405
-		add_state_core = 406
-		add_state_core = 407
-		add_state_core = 408
-		add_state_core = 409
-	} 
+	add_state_core = 41
+	add_state_core = 397
+	add_state_core = 398
+	add_state_core = 399
+	add_state_core = 400
+	add_state_core = 401
+	add_state_core = 402
+	add_state_core = 403
+	add_state_core = 404
+	add_state_core = 405
+	add_state_core = 406
+	add_state_core = 407
+	add_state_core = 408
+	add_state_core = 409
 }
 core_alaska_effect = {
 	add_state_core = 15
@@ -71,20 +69,18 @@ core_arizona_effect = {
 	add_state_core = 671
 }
 core_arkansas_effect = {
-	ROOT = {
-		add_state_core = 46
-		add_state_core = 452
-		add_state_core = 453
-		add_state_core = 454
-		add_state_core = 455
-		add_state_core = 456
-		add_state_core = 457
-		add_state_core = 458
-		add_state_core = 459
-		add_state_core = 460
-		add_state_core = 461
-		add_state_core = 1400
-	}
+	add_state_core = 46
+	add_state_core = 452
+	add_state_core = 453
+	add_state_core = 454
+	add_state_core = 455
+	add_state_core = 456
+	add_state_core = 457
+	add_state_core = 458
+	add_state_core = 459
+	add_state_core = 460
+	add_state_core = 461
+	add_state_core = 1400
 }
 core_california_effect = {
 	add_state_core = 64
@@ -158,49 +154,46 @@ core_delaware_effect = {
 	add_state_core = 238
 }
 core_florida_effect = {
-	ROOT = {
-		add_state_core = 40
-		add_state_core = 136
-		add_state_core = 422
-		add_state_core = 423
-		add_state_core = 424
-		add_state_core = 425
-		add_state_core = 426
-		add_state_core = 427
-		add_state_core = 428
-		add_state_core = 429
-		add_state_core = 430
-		add_state_core = 431
-		add_state_core = 432
-		add_state_core = 433
-		add_state_core = 434
-		add_state_core = 435
-		add_state_core = 436
-		add_state_core = 437
-		add_state_core = 438
-		add_state_core = 439
-		add_state_core = 440
-	}
+	add_state_core = 40
+	add_state_core = 136
+	add_state_core = 422
+	add_state_core = 423
+	add_state_core = 424
+	add_state_core = 425
+	add_state_core = 426
+	add_state_core = 427
+	add_state_core = 428
+	add_state_core = 429
+	add_state_core = 430
+	add_state_core = 431
+	add_state_core = 432
+	add_state_core = 433
+	add_state_core = 434
+	add_state_core = 435
+	add_state_core = 436
+	add_state_core = 437
+	add_state_core = 438
+	add_state_core = 439
+	add_state_core = 440
+
 }
 core_georgia_effect = {
-	ROOT = {
-		add_state_core = 38
-		add_state_core = 382
-		add_state_core = 383
-		add_state_core = 384
-		add_state_core = 385
-		add_state_core = 386
-		add_state_core = 387
-		add_state_core = 388
-		add_state_core = 389
-		add_state_core = 390
-		add_state_core = 391
-		add_state_core = 392
-		add_state_core = 393
-		add_state_core = 394
-		add_state_core = 395
-		add_state_core = 396
-	}
+	add_state_core = 38
+	add_state_core = 382
+	add_state_core = 383
+	add_state_core = 384
+	add_state_core = 385
+	add_state_core = 386
+	add_state_core = 387
+	add_state_core = 388
+	add_state_core = 389
+	add_state_core = 390
+	add_state_core = 391
+	add_state_core = 392
+	add_state_core = 393
+	add_state_core = 394
+	add_state_core = 395
+	add_state_core = 396
 }
 core_hawaii_effect = {
 	add_state_core = 134
@@ -306,20 +299,18 @@ core_kentucky_effect = {
 	add_state_core = 346
 }
 core_louisiana_effect = {
-	ROOT = {
-		add_state_core = 47
-		add_state_core = 441
-		add_state_core = 442
-		add_state_core = 443
-		add_state_core = 444
-		add_state_core = 445
-		add_state_core = 446
-		add_state_core = 447
-		add_state_core = 448
-		add_state_core = 449
-		add_state_core = 450
-		add_state_core = 451
-	}
+	add_state_core = 47
+	add_state_core = 441
+	add_state_core = 442
+	add_state_core = 443
+	add_state_core = 444
+	add_state_core = 445
+	add_state_core = 446
+	add_state_core = 447
+	add_state_core = 448
+	add_state_core = 449
+	add_state_core = 450
+	add_state_core = 451
 }
 core_maine_effect = {
 	add_state_core = 17
@@ -391,21 +382,19 @@ core_minnesota_effect = {
 	add_state_core = 1344
 }
 core_mississippi_effect = {
-	ROOT = {
-		add_state_core = 42
-		add_state_core = 410
-		add_state_core = 411
-		add_state_core = 412
-		add_state_core = 413
-		add_state_core = 414
-		add_state_core = 415
-		add_state_core = 416
-		add_state_core = 417
-		add_state_core = 418
-		add_state_core = 419
-		add_state_core = 420
-		add_state_core = 421
-	}
+	add_state_core = 42
+	add_state_core = 410
+	add_state_core = 411
+	add_state_core = 412
+	add_state_core = 413
+	add_state_core = 414
+	add_state_core = 415
+	add_state_core = 416
+	add_state_core = 417
+	add_state_core = 418
+	add_state_core = 419
+	add_state_core = 420
+	add_state_core = 421
 }
 core_missouri_effect = {
 	add_state_core = 45
@@ -539,21 +528,19 @@ core_new_york_effect = {
 	add_state_core = 586
 }
 core_north_carolina_effect = {
-	ROOT = {
-		add_state_core = 36
-		add_state_core = 361
-		add_state_core = 362
-		add_state_core = 363
-		add_state_core = 364
-		add_state_core = 365
-		add_state_core = 366
-		add_state_core = 367
-		add_state_core = 368
-		add_state_core = 369
-		add_state_core = 370
-		add_state_core = 371
-		add_state_core = 372
-	}
+	add_state_core = 36
+	add_state_core = 361
+	add_state_core = 362
+	add_state_core = 363
+	add_state_core = 364
+	add_state_core = 365
+	add_state_core = 366
+	add_state_core = 367
+	add_state_core = 368
+	add_state_core = 369
+	add_state_core = 370
+	add_state_core = 371
+	add_state_core = 372
 }
 core_north_dakota_effect = {
 	add_state_core = 53
@@ -639,18 +626,16 @@ core_rhode_island_effect = {
 	add_state_core = 194
 }
 core_south_carolina_effect = {
-	ROOT = {
-		add_state_core = 37
-		add_state_core = 373
-		add_state_core = 374
-		add_state_core = 375
-		add_state_core = 376
-		add_state_core = 377
-		add_state_core = 378
-		add_state_core = 379
-		add_state_core = 380
-		add_state_core = 381
-	}
+	add_state_core = 37
+	add_state_core = 373
+	add_state_core = 374
+	add_state_core = 375
+	add_state_core = 376
+	add_state_core = 377
+	add_state_core = 378
+	add_state_core = 379
+	add_state_core = 380
+	add_state_core = 381
 }
 core_south_dakota_effect = {
 	add_state_core = 52
@@ -780,20 +765,18 @@ core_washington_dc_effect = {
 	add_state_core = 154
 }
 core_west_virginia_effect = {
-	ROOT = {
-		add_state_core = 29
-		add_state_core = 258
-		add_state_core = 259
-		add_state_core = 260
-		add_state_core = 261
-		add_state_core = 262
-		add_state_core = 263
-		add_state_core = 264
-		add_state_core = 265
-		add_state_core = 266
-		add_state_core = 267
-		add_state_core = 268
-	}
+	add_state_core = 29
+	add_state_core = 258
+	add_state_core = 259
+	add_state_core = 260
+	add_state_core = 261
+	add_state_core = 262
+	add_state_core = 263
+	add_state_core = 264
+	add_state_core = 265
+	add_state_core = 266
+	add_state_core = 267
+	add_state_core = 268
 }
 core_wisconsin_effect = {
 	add_state_core = 35
@@ -888,15 +871,13 @@ core_british_columbia_effect = {
 	add_state_core = 1395
 }
 core_labrador_effect = {
-	ROOT = {
-		add_state_core = 2
-		add_state_core = 819
-		add_state_core = 820
-		add_state_core = 821
-		add_state_core = 822
-		add_state_core = 823
-		add_state_core = 824
-	}
+	add_state_core = 2
+	add_state_core = 819
+	add_state_core = 820
+	add_state_core = 821
+	add_state_core = 822
+	add_state_core = 823
+	add_state_core = 824
 }
 core_manitoba_effect = {
 	add_state_core = 8
@@ -922,43 +903,37 @@ core_manitoba_effect = {
 	add_state_core = 920
 }
 core_new_brunswick_effect = {
-	ROOT = {
-		add_state_core = 6
-		add_state_core = 800
-		add_state_core = 801
-		add_state_core = 802
-		add_state_core = 803
-		add_state_core = 804
-		add_state_core = 805
-	}
+	add_state_core = 6
+	add_state_core = 800
+	add_state_core = 801
+	add_state_core = 802
+	add_state_core = 803
+	add_state_core = 804
+	add_state_core = 805
 }
 core_newfoundland_effect = {
-	ROOT = {
-		add_state_core = 1
-		add_state_core = 808
-		add_state_core = 809
-		add_state_core = 810
-		add_state_core = 811
-		add_state_core = 812
-		add_state_core = 813
-		add_state_core = 814
-		add_state_core = 815
-		add_state_core = 816
-		add_state_core = 817
-	}
+	add_state_core = 1
+	add_state_core = 808
+	add_state_core = 809
+	add_state_core = 810
+	add_state_core = 811
+	add_state_core = 812
+	add_state_core = 813
+	add_state_core = 814
+	add_state_core = 815
+	add_state_core = 816
+	add_state_core = 817
 }
 core_nova_scotia_effect = {
-	ROOT = {
-		add_state_core = 5
-		add_state_core = 792
-		add_state_core = 793
-		add_state_core = 794
-		add_state_core = 795
-		add_state_core = 796
-		add_state_core = 797
-		add_state_core = 798
-		add_state_core = 799
-	}
+	add_state_core = 5
+	add_state_core = 792
+	add_state_core = 793
+	add_state_core = 794
+	add_state_core = 795
+	add_state_core = 796
+	add_state_core = 797
+	add_state_core = 798
+	add_state_core = 799
 }
 core_northwest_territories_effect = {
 	add_state_core = 13
@@ -1066,53 +1041,49 @@ core_ontario_effect = {
 	add_state_core = 899
 }
 core_prince_edward_island_effect = {
-	ROOT = {
-		add_state_core = 4
-		add_state_core = 806
-		add_state_core = 807
-		add_state_core = 818
-	}
+	add_state_core = 4
+	add_state_core = 806
+	add_state_core = 807
+	add_state_core = 818
 }
 core_quebec_effect = {
-	ROOT = {
-		add_state_core = 3
-		add_state_core = 825
-		add_state_core = 826
-		add_state_core = 827
-		add_state_core = 828
-		add_state_core = 829
-		add_state_core = 830
-		add_state_core = 831
-		add_state_core = 832
-		add_state_core = 833
-		add_state_core = 834
-		add_state_core = 835
-		add_state_core = 836
-		add_state_core = 837
-		add_state_core = 838
-		add_state_core = 839
-		add_state_core = 840
-		add_state_core = 841
-		add_state_core = 842
-		add_state_core = 843
-		add_state_core = 844
-		add_state_core = 845
-		add_state_core = 846
-		add_state_core = 847
-		add_state_core = 848
-		add_state_core = 849
-		add_state_core = 850
-		add_state_core = 851
-		add_state_core = 852
-		add_state_core = 853
-		add_state_core = 854
-		add_state_core = 855
-		add_state_core = 856
-		add_state_core = 857
-		add_state_core = 858
-		add_state_core = 859
-		add_state_core = 1398
-	}
+	add_state_core = 3
+	add_state_core = 825
+	add_state_core = 826
+	add_state_core = 827
+	add_state_core = 828
+	add_state_core = 829
+	add_state_core = 830
+	add_state_core = 831
+	add_state_core = 832
+	add_state_core = 833
+	add_state_core = 834
+	add_state_core = 835
+	add_state_core = 836
+	add_state_core = 837
+	add_state_core = 838
+	add_state_core = 839
+	add_state_core = 840
+	add_state_core = 841
+	add_state_core = 842
+	add_state_core = 843
+	add_state_core = 844
+	add_state_core = 845
+	add_state_core = 846
+	add_state_core = 847
+	add_state_core = 848
+	add_state_core = 849
+	add_state_core = 850
+	add_state_core = 851
+	add_state_core = 852
+	add_state_core = 853
+	add_state_core = 854
+	add_state_core = 855
+	add_state_core = 856
+	add_state_core = 857
+	add_state_core = 858
+	add_state_core = 859
+	add_state_core = 1398
 }
 core_saskatchewan_effect = {
 	add_state_core = 9
@@ -1258,10 +1229,8 @@ core_durango_effect = {
 	add_state_core = 1118
 }
 core_federal_district_of_mexico_effect = {
-	ROOT = {
-		add_state_core = 88
-		add_state_core = 1222
-	}
+	add_state_core = 88
+	add_state_core = 1222
 }
 core_guanajuato_effect ={
 	add_state_core = 78
@@ -1279,13 +1248,11 @@ core_guerrero_effect = {
 	add_state_core = 1234
 }
 core_hidalgo_effect = {
-	ROOT = {
-		add_state_core = 82
-		add_state_core = 1184
-		add_state_core = 1185
-		add_state_core = 1186
-		add_state_core = 1187
-	}
+	add_state_core = 82
+	add_state_core = 1184
+	add_state_core = 1185
+	add_state_core = 1186
+	add_state_core = 1187
 }
 core_jalisco_effect = {
 	add_state_core = 76
@@ -1313,9 +1280,7 @@ core_michoacan_effect = {
 	add_state_core = 1229
 }
 core_morelos_effect = {
-	ROOT = {
-		add_state_core = 89
-	}
+	add_state_core = 89
 }
 core_nayarit_effect = {
 	add_state_core = 74
@@ -1347,14 +1312,12 @@ core_oaxaca_effect = {
 	add_state_core = 1243
 }
 core_puebla_effect = {
-	ROOT = {
-		add_state_core = 87
-		add_state_core = 1216
-		add_state_core = 1217
-		add_state_core = 1218
-		add_state_core = 1219
-		add_state_core = 1220
-	}
+	add_state_core = 87
+	add_state_core = 1216
+	add_state_core = 1217
+	add_state_core = 1218
+	add_state_core = 1219
+	add_state_core = 1220
 }
 core_queretaro_effect = {
 	add_state_core = 83
@@ -1405,11 +1368,9 @@ core_sonora_effect = {
 	add_state_core = 1081
 }
 core_state_of_mexico_effect = {
-	ROOT = {
-		add_state_core = 86
-		add_state_core = 1221
-		add_state_core = 1223
-	}
+	add_state_core = 86
+	add_state_core = 1221
+	add_state_core = 1223
 }
 core_tabasco_effect = {
 	add_state_core = 93
@@ -1430,9 +1391,7 @@ core_tamaulipas_effect = {
 	add_state_core = 1147
 }
 core_tlaxcala_effect = {
-	ROOT = {
-		add_state_core = 85
-	}
+	add_state_core = 85
 }
 core_veracruz_effect = {
 	add_state_core = 84

@@ -630,6 +630,7 @@ scripted_gui = {
 					core_south_carolina_effect = yes
 					core_georgia_effect = yes
 					core_florida_effect = yes
+					core_delaware_effect = yes
 					take_cores_from_puppets = yes
 				}
 				if = { #Four Corners Nation
@@ -1058,7 +1059,7 @@ scripted_gui = {
 					set_capital = {
 						state = 732
 					}
-					add_stability = 0.5
+					add_stability = 0.05
 					core_california_effect = yes
 					core_oregon_effect = yes
 					core_washington_effect = yes
@@ -1074,6 +1075,7 @@ scripted_gui = {
 					add_stability = 0.05
 					set_cosmetic_tag = TLH
 					core_texas_effect = yes
+					core_oklahoma_effect = yes
 				}
 				if = { #First Mexican Empire
 					limit = {

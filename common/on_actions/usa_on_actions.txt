@@ -1,0 +1,3981 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			every_country = {
+				set_country_flag = formable_tab_visible
+			}
+			##Greenland Focus Tree
+			#if = {
+			#	limit = {
+			#		has_game_rule = {
+			#			rule = greenland_focus
+			#			option = GRNTREE
+			#		}
+			#	}
+			#	GRN = {
+			#		load_focus_tree = greenland_focus
+			#	}
+			#}
+			#CSA v. Union
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = csa_versus_union
+						option = CENTRALIZED_CSAUNION
+					}
+				}
+				SCS = {
+					set_capital = {
+						state = 251
+					}
+					set_cosmetic_tag = CSA
+					annex_country = {
+						target = LAL
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = ARA
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = ARA
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = MSM
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = ALA
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = FLF
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = GAG
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = TXT
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = TNT
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = NCN
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = VAV
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = OKO
+						transfer_troops = yes
+					}
+					#NM South
+					add_state_core = 54
+					add_state_core = 643
+					add_state_core = 644
+					add_state_core = 645
+					add_state_core = 653
+					add_state_core = 654
+					add_state_core = 655
+					add_state_core = 656
+					add_state_core = 657
+					#AZ South
+					add_state_core = 658
+					add_state_core = 659
+					add_state_core = 660
+					add_state_core = 661
+					add_state_core = 662
+					add_state_core = 663
+					add_state_core = 664
+					add_state_core = 665
+					add_state_core = 666
+					add_state_core = 667
+					#CA South
+					add_state_core = 64
+					add_state_core = 742
+					add_state_core = 743
+					add_state_core = 744
+					add_state_core = 745
+					add_state_core = 746
+					add_state_core = 747
+					add_state_core = 748
+					add_state_core = 749
+					add_state_core = 750
+					add_state_core = 751
+					add_state_core = 752
+					add_state_core = 753
+					every_state = {
+						limit = {
+							is_core_of = SCS
+						}
+						set_state_owner_to = SCS
+						set_state_controller_to = SCS
+					}
+					every_controlled_state = {
+						add_core_of = SCS
+					}
+				}
+				DCD = {
+					set_cosmetic_tag = USA
+					annex_country = {
+						target = MEM
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = NHN
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = VTV
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = MAM
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = RIR
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = CTC
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = KSK
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = OHO
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = PAP
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = NJN
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = INI
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = ILI
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = MIM
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = WIW
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = MNM
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = IAI
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = CAC
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = NVN
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = ORO
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = MDM
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = DED
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = WVW
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = KYK
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = MOM
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = NYN
+						transfer_troops = yes
+					}
+					set_capital = { state = 154 }
+					every_controlled_state = {
+						add_core_of = DCD
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = csa_versus_union
+						option = DECENTRALIZED_CSAUNION
+					}
+				}
+				DCD = {
+					create_faction = union
+					add_to_faction = MEM
+					add_to_faction = NHN
+					add_to_faction = VTV
+					add_to_faction = MAM
+					add_to_faction = RIR
+					add_to_faction = CTC
+					add_to_faction = KSK
+					add_to_faction = OHO
+					add_to_faction = PAP
+					add_to_faction = NJN
+					add_to_faction = INI
+					add_to_faction = ILI
+					add_to_faction = MIM
+					add_to_faction = WIW
+					add_to_faction = MNM
+					add_to_faction = IAI
+					add_to_faction = CAC
+					add_to_faction = NVN
+					add_to_faction = ORO
+					add_to_faction = MDM
+					add_to_faction = DED
+					add_to_faction = WVW
+					add_to_faction = KYK
+					add_to_faction = MOM
+					add_to_faction = NYN
+				}
+				VAV = {
+					create_faction = confederacy
+					add_to_faction = NCN
+					add_to_faction = SCS
+					add_to_faction = GAG
+					add_to_faction = FLF
+					add_to_faction = TNT
+					add_to_faction = ALA
+					add_to_faction = MSM
+					add_to_faction = ARA
+					add_to_faction = LAL
+					add_to_faction = TXT
+				}
+			}
+			
+			#Time Zone Split
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = time_zones_split
+						option = CONTINENTAL_US_TIMEZONES
+					}
+				}
+				#EST
+				NYN = {
+					set_cosmetic_tag = EDT
+					annex_country = {
+						target = MEM
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = NHN
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = VTV
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = MAM
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = RIR
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = CTC
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = NJN
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = PAP
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = MDM
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = DCD
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = DED
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = VAV
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = WVW
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = NCN
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = SCS
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = GAG
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = OHO
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = MIM
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = FLF
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = INI
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = TNT
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = SDS
+						transfer_troops = yes
+					}
+					transfer_state = 360
+					transfer_state = 39
+					transfer_state = 358
+					transfer_state = 355
+					transfer_state = 359
+					transfer_state = 33
+					transfer_state = 346
+					transfer_state = 345
+					transfer_state = 344
+					transfer_state = 343
+					transfer_state = 342
+					transfer_state = 341
+					every_owned_state = {
+						add_core_of = NYN
+					}
+				}
+				#CST
+				ILI = {
+					set_cosmetic_tag = CST
+					annex_country = {
+						target = WIW
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = MNM
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = MOM
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = IAI
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = ARA
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = LAL
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = MSM
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = ALA
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = OKO
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = TXT
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = KSK
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = NDN
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = NEN
+						transfer_troops = yes
+					}
+					set_capital = { state = 321 }
+					transfer_state = 335
+					transfer_state = 336
+					transfer_state = 337
+					transfer_state = 339
+					transfer_state = 338
+					transfer_state = 340
+					transfer_state = 422
+					every_owned_state = {
+						add_core_of = ILI
+					}
+				}
+				#MST
+				COC = {
+					set_cosmetic_tag = MST
+					annex_country = {
+						target = UTU
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = AZA
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = NMN
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = WYW
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = MTM
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = IDI
+						transfer_troops = yes
+					}
+					transfer_state = 513
+					transfer_state = 53
+					transfer_state = 524
+					transfer_state = 523
+					transfer_state = 525
+					transfer_state = 526
+					transfer_state = 52
+					every_owned_state = {
+						add_core_of = COC
+					}
+				}
+				#PST
+				CAC = {
+					set_cosmetic_tag = PST
+					annex_country = {
+						target = NVN
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = WAW
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = ORO
+						transfer_troops = yes
+					}
+					transfer_state = 588
+					transfer_state = 164
+					transfer_state = 155
+					transfer_state = 156
+					every_owned_state = {
+						add_core_of = CAC
+					}
+				}
+			}
+			#All of North America Timezones
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = time_zones_split
+						option = NA_TIMEZONES
+					}
+				}
+				#AKST
+				AKA = {
+					set_cosmetic_tag = AKST
+				}	
+				#ALST			
+				NBN = {
+					every_state = {
+						limit = {
+							OR = {	
+								is_owned_by = NSN
+								is_owned_by = PEP
+								is_owned_by = LAB
+							}
+						}
+						add_core_of = NBN
+					}
+					set_cosmetic_tag = ALST
+					annex_country = {
+						target = NSN
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = PEP
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = LAB
+						transfer_troops = yes
+					}
+				}
+				#NST
+				NLN = {
+					set_cosmetic_tag = NST
+				}
+				#EST
+				NYN = {
+					every_state = {
+						limit = {
+							OR = {
+								is_owned_by = MEM
+								is_owned_by = NHN
+								is_owned_by = VTV
+								is_owned_by = MAM
+								is_owned_by = RIR
+								is_owned_by = CTC
+								is_owned_by = NJN
+								is_owned_by = PAP
+								is_owned_by = MDM
+								is_owned_by = DCD
+								is_owned_by = DED
+								is_owned_by = VAV
+								is_owned_by = WVW
+								is_owned_by = NCN
+								is_owned_by = SCS
+								is_owned_by = GAG
+								is_owned_by = PAP
+								is_owned_by = OHO
+								is_owned_by = MIM
+								is_owned_by = FLF
+								is_owned_by = INI
+								is_owned_by = ONO
+								is_owned_by = QBC
+								is_owned_by = PAN
+								is_owned_by = PCP
+							}
+						}
+						add_core_of = NYN
+					}
+					set_cosmetic_tag = EDT
+					annex_country = {
+						target = MEM
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = NHN
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = VTV
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = MAM
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = RIR
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = CTC
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = NJN
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = PAP
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = MDM
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = DCD
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = DED
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = VAV
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = WVW
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = NCN
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = SCS
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = GAG
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = OHO
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = MIM
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = FLF
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = INI
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = ONO
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = QCQ
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = PAN
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = PCP
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = QRO
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = NUN
+						transfer_troops = yes
+					}
+					transfer_state = 360
+					transfer_state = 39
+					transfer_state = 358
+					transfer_state = 355
+					transfer_state = 359
+					transfer_state = 33
+					transfer_state = 346
+					transfer_state = 345
+					transfer_state = 344
+					transfer_state = 343
+					transfer_state = 342
+					transfer_state = 341
+					every_controlled_state = {
+						add_core_of = NYN
+					}
+					set_capital = {
+						state = 201
+					}
+				}
+				#CST
+				ILI = {
+					set_cosmetic_tag = CST
+					annex_country = {
+						target = WIW
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = MNM
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = MOM
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = IAI
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = ARA
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = LAL
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = MSM
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = ALA
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = OKO
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = TXT
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = KSK
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = NDN
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = NEN
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = SKS
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = MBM
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = GUA
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = HON
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = ELS
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = NIC
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = COS
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = COA
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = NAY
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = TAM
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = NEL
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = EME
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = TLA
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = MOR
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = DFD
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = QUE
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = VER
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = OAX
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = CMP
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = TAB
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = YUC
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = CMP
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = MIC
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = CLA
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = CAP
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = BLZ
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = GUE
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = PUE
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = JAL
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = GAJ
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = HID
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = SLP
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = AGU
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = ZAC
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = DUR
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = SDS
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = TNT
+						transfer_troops = yes
+					}
+					set_capital = { state = 321 }
+					transfer_state = 335
+					transfer_state = 336
+					transfer_state = 337
+					transfer_state = 339
+					transfer_state = 338
+					transfer_state = 340
+					transfer_state = 422
+					transfer_state = 1011
+					transfer_state = 1018
+					transfer_state = 12
+					transfer_state = 142
+					transfer_state = 1031
+					every_owned_state = {
+						add_core_of = ILI
+					}
+				}
+				#MST
+				COC = {
+					set_cosmetic_tag = MST
+					annex_country = {
+						target = UTU
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = AZA
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = NMN
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = WYW
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = MTM
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = IDI
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = ABA
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = NTN
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = YTY
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = SON
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = CIA
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = SIN
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = BCS
+						transfer_troops = yes
+					}
+					transfer_state = 513
+					transfer_state = 53
+					transfer_state = 524
+					transfer_state = 523
+					transfer_state = 525
+					transfer_state = 526
+					transfer_state = 52
+					transfer_state = 1015
+					transfer_state = 1016
+					transfer_state = 1032
+					transfer_state = 1034
+					transfer_state = 1041
+					transfer_state = 1036
+					transfer_state = 1039
+					transfer_state = 1035
+					transfer_state = 1014
+					transfer_state = 1017
+					transfer_state = 1040
+					every_owned_state = {
+						add_core_of = COC
+					}
+				}
+				#PST
+				CAC = {
+					set_cosmetic_tag = PST
+					annex_country = {
+						target = NVN
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = WAW
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = ORO
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = BCB
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = BCA
+						transfer_troops = yes
+					}
+					transfer_state = 588
+					transfer_state = 164
+					transfer_state = 155
+					transfer_state = 156
+					every_owned_state = {
+						add_core_of = CAC
+					}
+				}
+			}
+			
+			###Presidental Elections
+			#1936
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = presidental_election
+						option = PRESIDENTAL_ELECTION_1936
+					}
+				}
+				DCD = {
+					set_cosmetic_tag = DEM
+					create_country_leader = {
+						name = "Franklin Delano Roosevelt"
+						desc = ""
+						picture = "gfx/leaders/Presidents/Portrait_FDR.dds"
+						expire = "1965.1.1"
+						ideology = liberalism
+						traits = {
+						}
+					}
+					annex_country = {
+						target = LAL
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = ARA
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = MSM
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = ALA
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = FLF
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = GAG
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = TXT
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = TNT
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = NCN
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = VAV
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = OKO
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = NHN
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = MAM
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = RIR
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = CTC
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = KSK
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = OHO
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = PAP
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = NJN
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = INI
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = ILI
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = MIM
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = WIW
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = MNM
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = IAI
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = CAC
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = NVN
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = ORO
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = MDM
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = DED
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = WVW
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = KYK
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = MOM
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = NYN
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = SCS
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = NMN
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = AZA
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = COC
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = UTU
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = NEN
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = SDS
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = NDN
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = WYW
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = IDI
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = MTM
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = WAW
+						transfer_troops = yes
+					}
+					every_controlled_state = {
+						add_core_of = DCD
+						add_core_of = MEM
+					}
+				}
+				MEM = {
+					set_cosmetic_tag = REP
+					create_country_leader = {
+						name = "Alf Landon"
+						desc = ""
+						picture = "gfx/leaders/Presidents/Portrait_Alf_Landon.dds"
+						expire = "1965.1.1"
+						ideology = conservatism
+						traits = {
+						}
+					}
+					annex_country = {
+						target = VTV
+						transfer_troops = yes
+					}
+					every_controlled_state = {
+						add_core_of = MEM
+						add_core_of = DCD
+					}
+				}
+			}
+			#2016
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = presidental_election
+						option = PRESIDENTAL_ELECTION_2016
+					}
+				}
+				NYN = {
+					set_cosmetic_tag = DEM
+					create_country_leader = {
+						name = "Hillary Clinton"
+						desc = ""
+						picture = "gfx/leaders/Presidents/Portrait_Hillary_Clinton.dds"
+						expire = "1965.1.1"
+						ideology = conservatism
+						traits = {
+						}
+					}
+					annex_country = {
+						target = CAC
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = COC
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = CTC
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = DED
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = DCD
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = HIH
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = ILI
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = MEM
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = MDM
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = MAM
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = MNM
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = NVN
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = NHN
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = NJN
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = NMN
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = ORO
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = RIR
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = VTV
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = VAV
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = WAW
+						transfer_troops = yes
+					}
+					every_controlled_state = {
+						add_core_of = NYN
+						add_core_of = FLF
+					}
+				}
+				FLF = {
+					set_cosmetic_tag = REP
+					create_country_leader = {
+						name = "Donald J. Trump"
+						desc = ""
+						picture = "gfx/leaders/Presidents/Portrait_Donald_Trump.dds"
+						expire = "1965.1.1"
+						ideology = conservatism
+						traits = {
+						}
+					}
+					annex_country = {
+						target = ALA
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = AKA
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = AZA
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = ARA
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = GAG
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = IDI
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = INI
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = IAI
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = KSK
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = KYK
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = LAL
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = MIM
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = MSM
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = MOM
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = MTM
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = NEN
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = NCN
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = NDN
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = OHO
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = OKO
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = PAP
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = SCS
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = SDS
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = TNT
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = TXT
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = UTU
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = WVW
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = WIW
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = WYW
+						transfer_troops = yes
+					}
+					every_controlled_state = {
+						add_core_of = NYN
+						add_core_of = FLF
+					}
+				}
+
+			}
+			#2020
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = presidental_election
+						option = PRESIDENTAL_ELECTION_2020
+					}
+				}
+				DED = {
+					set_cosmetic_tag = DEM
+					create_country_leader = {
+						name = "Joe Biden"
+						desc = ""
+						picture = "gfx/leaders/Presidents/Portrait_Joe_Biden.dds"
+						expire = "1965.1.1"
+						ideology = conservatism
+						traits = {
+						}
+					}
+					annex_country = {
+						target = AZA
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = CAC
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = COC
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = CTC
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = DCD
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = GAG
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = HIH
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = ILI
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = MEM
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = MDM
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = MAM
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = MIM
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = MNM
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = NVN
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = NHN
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = NJN
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = NMN
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = NYN
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = ORO
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = PAP
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = RIR
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = VTV
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = VAV
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = WAW
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = WIW
+						transfer_troops = yes
+					}
+					every_controlled_state = {
+						add_core_of = DED
+						add_core_of = FLF
+					}
+				}
+				FLF = {
+					set_cosmetic_tag = REP
+					create_country_leader = {
+						name = "Donald J. Trump"
+						desc = ""
+						picture = "gfx/leaders/Presidents/Portrait_Donald_Trump.dds"
+						expire = "1965.1.1"
+						ideology = conservatism
+						traits = {
+						}
+					}
+					annex_country = {
+						target = ALA
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = AKA
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = ARA
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = IDI
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = INI
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = IAI
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = KSK
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = KYK
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = LAL
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = MSM
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = MOM
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = MTM
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = NEN
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = NCN
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = NDN
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = OHO
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = OKO
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = SCS
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = SDS
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = TNT
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = TXT
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = UTU
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = WVW
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = WYW
+						transfer_troops = yes
+					}
+					every_controlled_state = {
+						add_core_of = DED
+						add_core_of = FLF
+					}
+				}
+			}
+			
+			#Form the United States
+			if = {
+				limit = {
+					AND = {
+						has_game_rule = {
+							rule = formation_united_states
+							option = FORMED_USA
+						}
+						NOT = {
+							has_game_rule = {
+								rule = formation_confederate_states
+								option = FORMED_CSA
+							}
+						}
+					}
+				}
+				DCD = {
+					set_cosmetic_tag = USA
+					annex_country = {
+						target = LAL
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = ARA
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = ARA
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = MSM
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = ALA
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = FLF
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = GAG
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = TXT
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = TNT
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = NCN
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = VAV
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = OKO
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = MEM
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = NHN
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = VTV
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = MAM
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = RIR
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = CTC
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = KSK
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = OHO
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = PAP
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = NJN
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = INI
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = ILI
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = MIM
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = WIW
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = MNM
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = IAI
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = CAC
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = NVN
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = ORO
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = MDM
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = DED
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = WVW
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = KYK
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = MOM
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = NYN
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = SCS
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = NMN
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = AZA
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = COC
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = UTU
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = NEN
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = SDS
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = NDN
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = WYW
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = IDI
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = MTM
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = WAW
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = AKA
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = HIH
+						transfer_troops = yes
+					}
+					every_controlled_state = {
+						add_core_of = DCD
+					}
+				}
+			}
+			#Form the Confederate States
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = formation_confederate_states
+						option = FORMED_CSA
+					}
+				}
+				SCS = {
+					set_cosmetic_tag = CSA
+					annex_country = {
+						target = LAL
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = ARA
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = ARA
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = MSM
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = ALA
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = FLF
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = GAG
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = TXT
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = TNT
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = NCN
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = VAV
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = OKO
+						transfer_troops = yes
+					}
+					#NM South
+					transfer_state = 54
+					transfer_state = 643
+					transfer_state = 644
+					transfer_state = 645
+					transfer_state = 653
+					transfer_state = 654
+					transfer_state = 655
+					transfer_state = 656
+					transfer_state = 657
+					#AZ South
+					transfer_state = 658
+					transfer_state = 659
+					transfer_state = 660
+					transfer_state = 661
+					transfer_state = 662
+					transfer_state = 663
+					transfer_state = 664
+					transfer_state = 665
+					transfer_state = 666
+					transfer_state = 667
+					#CA South
+					transfer_state = 64
+					transfer_state = 742
+					transfer_state = 743
+					transfer_state = 744
+					transfer_state = 745
+					transfer_state = 746
+					transfer_state = 747
+					transfer_state = 748
+					transfer_state = 749
+					transfer_state = 750
+					transfer_state = 751
+					transfer_state = 752
+					transfer_state = 753
+					set_capital = {state = 251}
+					every_controlled_state = {
+						add_core_of = SCS
+					}
+				}
+			}
+			#Form the CSA and USA
+			if = {
+				limit = {
+					AND = {
+						has_game_rule = {
+							rule = formation_confederate_states
+							option = FORMED_CSA
+						}
+						has_game_rule = {
+							rule = formation_united_states
+							option = FORMED_USA
+						}
+					}
+				}
+				DCD = {
+					set_cosmetic_tag = USA
+					annex_country = {
+						target = MEM
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = NHN
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = VTV
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = MAM
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = RIR
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = CTC
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = KSK
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = OHO
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = PAP
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = NJN
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = INI
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = ILI
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = MIM
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = WIW
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = MNM
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = IAI
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = CAC
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = NVN
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = ORO
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = MDM
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = DED
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = WVW
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = KYK
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = MOM
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = NYN
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = MNM
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = IAI
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = CAC
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = NVN
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = ORO
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = MDM
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = DED
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = WVW
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = KYK
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = MOM
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = NYN
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = NMN
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = AZA
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = COC
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = UTU
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = NEN
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = SDS
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = NDN
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = WYW
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = IDI
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = MTM
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = WAW
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = AKA
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = HIH
+						transfer_troops = yes
+					}
+					set_capital = {state = 154}
+					every_controlled_state = {
+						add_core_of = DCD
+					}
+				}
+				SCS = {
+					set_cosmetic_tag = CSA
+					annex_country = {
+						target = LAL
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = ARA
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = ARA
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = MSM
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = ALA
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = FLF
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = GAG
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = TXT
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = TNT
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = NCN
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = VAV
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = OKO
+						transfer_troops = yes
+					}
+					#NM South
+					transfer_state = 54
+					transfer_state = 643
+					transfer_state = 644
+					transfer_state = 645
+					transfer_state = 653
+					transfer_state = 654
+					transfer_state = 655
+					transfer_state = 656
+					transfer_state = 657
+					#AZ South
+					transfer_state = 658
+					transfer_state = 659
+					transfer_state = 660
+					transfer_state = 661
+					transfer_state = 662
+					transfer_state = 663
+					transfer_state = 664
+					transfer_state = 665
+					transfer_state = 666
+					transfer_state = 667
+					set_capital = {state = 251}
+					every_controlled_state = {
+						add_core_of = SCS
+					}
+				}
+			}
+			#Form Acadia
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = formation_acadia
+						option = FORMED_ACA
+					}
+				}
+				NSN = {
+					set_cosmetic_tag = ACA
+					annex_country = {
+						target = PEP
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = NBN
+						transfer_troops = yes
+					}
+					set_capital = { state = 803 }
+					every_controlled_state = {
+						add_core_of = NSN
+					}
+				}
+			}
+			#Form the American Union State
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = formation_american_union_state
+						option = FORMED_AUS
+					}
+				}
+				LAL = {
+					set_cosmetic_tag = ASU
+					annex_country = {
+						target = ARA
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = MSM
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = ALA
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = FLF
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = GAG
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = NCN
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = SCS
+						transfer_troops = yes
+					}
+					every_controlled_state = {
+						add_core_of = LAL
+					}
+				}
+			}
+			#Form Appalachia
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = formation_appalachia
+						option = FORMED_APP
+					}
+				}
+				WVW = {
+					set_cosmetic_tag = APP
+					add_state_core = 24
+					add_state_core = 27
+					add_state_core = 28
+					add_state_core = 30
+					add_state_core = 33
+					add_state_core = 39
+					add_state_core = 229
+					add_state_core = 230
+					add_state_core = 231
+					add_state_core = 232
+					add_state_core = 233
+					add_state_core = 234
+					add_state_core = 235
+					add_state_core = 236
+					add_state_core = 250
+					add_state_core = 255
+					add_state_core = 256
+					add_state_core = 257
+					add_state_core = 271
+					add_state_core = 277
+					add_state_core = 280
+					add_state_core = 281
+					add_state_core = 282
+					add_state_core = 343
+					add_state_core = 344
+					add_state_core = 350
+					add_state_core = 355
+					add_state_core = 356
+					add_state_core = 357
+					add_state_core = 358
+					add_state_core = 359
+					add_state_core = 360
+					add_state_core = 361
+					add_state_core = 362
+					add_state_core = 363
+					add_state_core = 364
+					add_state_core = 365
+					add_state_core = 376
+					add_state_core = 379
+					add_state_core = 380
+					add_state_core = 385
+					add_state_core = 384
+					add_state_core = 383
+					add_state_core = 382
+					add_state_core = 397
+					add_state_core = 398
+					add_state_core = 399
+					add_state_core = 400
+					add_state_core = 401
+					add_state_core = 402
+					add_state_core = 403
+					add_state_core = 404
+					add_state_core = 415
+					add_state_core = 416
+					add_state_core = 417
+					add_state_core = 900
+					add_state_core = 1379
+					add_state_core = 1399
+					every_state = {
+						limit = {
+							is_core_of = WVW
+						}
+						set_state_owner_to = WVW
+						set_state_controller_to = WVW
+					}
+				}
+			}
+			#Form Canada
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = formation_canada
+						option = FORMED_CAN
+					}
+				}
+				ONO = {
+					set_cosmetic_tag = CAN
+					set_capital = { state = 875 }
+					core_alberta_effect = yes
+					core_british_columbia_effect = yes
+					core_labrador_effect = yes
+					core_manitoba_effect = yes
+					core_new_brunswick_effect = yes
+					core_newfoundland_effect = yes
+					core_nova_scotia_effect = yes
+					core_northwest_territories_effect = yes
+					core_nunavut_effect = yes
+					core_ontario_effect = yes
+					core_prince_edward_island_effect = yes
+					core_quebec_effect = yes
+					core_saskatchewan_effect = yes
+					core_yukon_effect = yes
+					every_state = {
+						limit = {
+							is_core_of = ONO
+						}
+						set_state_owner_to = ONO
+						set_state_controller_to = ONO
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = formation_canada
+						option = FORMED_GCA
+					}
+				}
+				ONO = {
+					core_alaska_effect = yes
+					core_maine_effect = yes
+					core_new_hampshire_effect = yes
+					core_vermont_effect = yes
+					core_massachusetts_effect = yes
+					core_rhode_island_effect = yes
+					core_connecticut_effect = yes
+					core_new_york_effect = yes
+					core_michigan_effect = yes
+					core_wisconsin_effect = yes
+					core_minnesota_effect = yes
+					core_north_dakota_effect = yes
+					core_south_dakota_effect = yes
+					core_montana_effect = yes
+					core_idaho_effect = yes
+					core_washington_effect = yes
+					core_oregon_effect = yes
+					set_cosmetic_tag = GCA
+					set_capital = { state = 875 }
+					every_state = {
+						limit = {
+							is_core_of = ONO
+						}
+						set_state_owner_to = ONO
+						set_state_controller_to = ONO
+					}
+				}
+			}
+			#Form Cascadia
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = formation_cascadia
+						option = FORMED_CAS
+					}
+				}
+				WAW = {
+					set_cosmetic_tag = CAS
+					core_british_columbia_effect = yes
+					core_oregon_effect = yes
+					core_washington_effect = yes
+					take_cores_from_puppets = yes
+					every_state = {
+						limit = {
+							is_core_of = WAW
+						}
+						set_state_owner_to = WAW
+						set_state_controller_to = WAW
+					}
+				}
+			}
+			#Form Colonial Carolina
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = formation_colonial_carolina
+						option = FORMED_ECC
+					}
+				}
+				NCN = {
+					set_cosmetic_tag = ECC
+					set_capital = {
+						state = 364
+				 	}
+				  	core_south_carolina_effect = yes
+				  	core_south_carolina_effect = yes
+				  	core_tennessee_effect = yes
+				  	core_georgia_effect = yes
+				  	core_alabama_effect = yes
+				  	core_mississippi_effect = yes
+				  	add_state_core = 426
+				  	add_state_core = 429
+				  	add_state_core = 425
+				  	add_state_core = 424
+				  	add_state_core = 423
+				  	add_state_core = 422
+					every_state = {
+						limit = {
+							is_core_of = NCN
+						}
+						set_state_owner_to = NCN
+						set_state_controller_to = NCN
+					}
+				}
+			}
+			#Form Colonial Georgia
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = formation_colonial_georgia
+						option = FORMED_CGE
+					}
+				}
+				GAG = {
+					set_cosmetic_tag = CGE
+					set_country_flag = formed_CGE
+					add_stability = 0.10
+					core_mississippi_effect = yes
+					core_alabama_effect = yes
+					remove_state_core = 407
+					remove_state_core = 408
+					remove_state_core = 412
+					remove_state_core = 411
+					every_state = {
+						limit = {
+							is_core_of = GAG
+						}
+						set_state_owner_to = GAG
+						set_state_controller_to = GAG
+					}
+				}
+			}
+			#Form Colonial Louisiana
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = formation_colonial_louisiana
+						option = FORMED_GRL
+					}
+				}
+				LAL = {
+					set_cosmetic_tag = GRL
+					set_country_flag = formed_GRL
+  					add_stability = 0.10
+					core_arkansas_effect = yes
+					core_oklahoma_effect = yes
+					core_kansas_effect = yes
+					core_missouri_effect = yes
+					core_iowa_effect = yes
+					core_nebraska_effect = yes
+					core_south_dakota_effect = yes
+					core_montana_effect = yes
+					remove_state_core = 1390
+					remove_state_core =590
+					remove_state_core = 1392
+					remove_state_core = 588
+					remove_state_core = 1393
+					add_state_core = 55
+					add_state_core = 56
+					add_state_core = 53
+					add_state_core = 490
+					add_state_core = 491
+					add_state_core = 493
+					add_state_core = 494
+					add_state_core = 495
+					add_state_core = 496
+					add_state_core = 497
+					add_state_core = 501
+					add_state_core = 508
+					add_state_core = 511
+					add_state_core = 512
+					add_state_core = 513
+					add_state_core = 566
+					add_state_core = 565
+					add_state_core = 562
+					add_state_core = 561
+					add_state_core = 604
+					add_state_core = 605
+					add_state_core = 606
+					add_state_core = 607
+					add_state_core = 608
+					add_state_core = 609
+					add_state_core = 610
+					add_state_core = 611
+					add_state_core = 612
+					add_state_core = 613
+					add_state_core = 614
+					add_state_core = 619
+					add_state_core = 620
+					add_state_core = 628
+					add_state_core = 629
+					add_state_core = 630
+					add_state_core = 631
+					add_state_core = 632
+					add_state_core = 633
+					add_state_core = 634
+					add_state_core = 635
+					add_state_core = 636
+					add_state_core = 637
+					add_state_core = 647
+					every_state = {
+						limit = {
+							is_core_of = LAL
+						}
+						set_state_owner_to = LAL
+						set_state_controller_to = LAL
+					}
+				}
+			}
+			#Form Colonial New York
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = formation_colonial_new_york
+						option = FORMED_CNY
+					}
+				}
+				NYN = {
+					set_cosmetic_tag = CNY
+					set_country_flag = formed_CNY
+  					add_stability = 0.10
+					core_new_jersey_effect = yes
+					core_delaware_effect = yes
+					core_vermont_effect = yes
+					core_ohio_effect = yes
+					core_indiana_effect = yes
+					core_illinois_effect = yes
+					core_west_virginia_effect = yes
+					core_kentucky_effect = yes
+					core_tennessee_effect = yes
+					add_state_core = 24
+					add_state_core = 190
+					add_state_core = 191
+					add_state_core = 192
+					add_state_core = 197
+					add_state_core = 198
+					add_state_core = 199
+					add_state_core = 200
+					add_state_core = 236
+					add_state_core = 397
+					add_state_core = 398
+					add_state_core = 399
+					add_state_core = 1397
+					remove_state_core = 324
+					remove_state_core = 326
+					remove_state_core = 325
+					remove_state_core = 327
+					remove_state_core = 258
+					remove_state_core = 335
+					remove_state_core = 349
+					remove_state_core = 348
+					remove_state_core = 347
+					remove_state_core = 358
+					remove_state_core = 359
+					remove_state_core = 39
+					remove_state_core = 360
+					every_state = {
+						limit = {
+							is_core_of = NYN
+						}
+						set_state_owner_to = NYN
+						set_state_controller_to = NYN
+					}
+				}
+			}
+			#Form Combined Syndicates of America
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = formation_combined_syndicates
+						option = FORMED_SYA
+					}
+				}
+				ILI = {
+					set_politics = {
+						ruling_party = communism
+						elections_allowed = no
+					}
+					add_popularity = {
+						ideology = communism
+						popularity = 0.5
+					}
+					annex_country = {
+						target = WIW
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = MIM
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = INI
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = OHO
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = PAP
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = WVW
+						transfer_troops = yes
+					}
+					set_cosmetic_tag = SYA
+	        		set_capital = {state = 224 }
+					every_state = {
+						limit = {
+							is_core_of = ILI
+						}
+						set_state_owner_to = ILI
+						set_state_controller_to = ILI
+					}
+				}
+			}
+			#Form Deseret
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = formation_deseret
+						option = FORMED_DES
+					}
+				}
+				UTU = {
+					set_cosmetic_tag = DES
+					set_country_flag = formed_DES
+					add_stability = 0.05
+					core_nevada_effect = yes
+					add_state_core = 617
+					add_state_core = 624
+					add_state_core = 621
+					add_state_core = 622
+					add_state_core = 639
+					add_state_core = 640
+					#Arizona
+					core_arizona_effect = yes
+					remove_state_core = 659
+					remove_state_core = 658
+					remove_state_core = 660
+					remove_state_core = 661
+					remove_state_core = 662
+					remove_state_core = 663
+					#California
+					add_state_core = 64
+					add_state_core = 736
+					add_state_core = 740
+					add_state_core = 741
+					add_state_core = 745
+					add_state_core = 746
+					add_state_core = 747
+					add_state_core = 748
+					add_state_core = 749
+					add_state_core = 750
+					add_state_core = 751
+					add_state_core = 752
+					add_state_core = 753
+					every_state = {
+						limit = {
+							is_core_of = UTU
+						}
+						set_state_owner_to = UTU
+						set_state_controller_to = UTU
+					}
+				}
+			}
+			#Form the East Coast Union
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = formation_east_coast_union
+						option = FORMED_EAC
+					}
+				}
+				NJN = {
+					set_cosmetic_tag = EAC
+					set_capital = {
+						state = 201
+					}
+					set_country_flag = formed_EAC
+			  		core_maine_effect = yes
+					core_new_hampshire_effect = yes
+					core_vermont_effect = yes
+					core_massachusetts_effect = yes
+					core_rhode_island_effect = yes
+					core_connecticut_effect = yes
+					core_new_york_effect = yes
+					core_pennsylvania_effect = yes
+					core_new_jersey_effect = yes
+					core_maryland_effect = yes
+					core_washington_dc_effect = yes
+					core_virginia_effect = yes
+					core_west_virginia_effect = yes
+					core_north_carolina_effect = yes
+					core_south_carolina_effect = yes
+					core_georgia_effect = yes
+					core_florida_effect = yes
+					core_delaware_effect = yes
+					every_state = {
+						limit = {
+							is_core_of = NJN
+						}
+						set_state_owner_to = NJN
+						set_state_controller_to = NJN
+					}
+				}
+			}
+			#Form the Pact of Four
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = formation_pact_of_four
+						option = FORMED_POF
+					}
+				}
+				COC = {
+					set_country_flag = formed_POF
+					set_cosmetic_tag = POF
+					core_arizona_effect = yes
+					core_colorado_effect = yes
+					core_new_mexico_effect = yes
+					core_utah_effect = yes
+					every_state = {
+						limit = {
+							is_core_of = COC
+						}
+						set_state_owner_to = COC
+						set_state_controller_to = COC
+					}
+				}
+			}
+			#Form the Great Lakes Nation
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = formation_great_lakes_nation
+						option = FORMED_UOS
+					}
+				}
+				OHO = {
+					annex_country = {
+						target = INI
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = ILI
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = MIM
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = WIW
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = MNM
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = ONO
+						transfer_troops = yes
+					}
+					set_cosmetic_tag = UOS
+					every_controlled_state = {
+						add_core_of = OHO
+					}
+				}
+			}
+			#Form Greater Virginia
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = formation_greater_virginia
+						option = FORMED_GRV
+					}
+				}
+				VAV = {
+					set_cosmetic_tag = GRV
+				  	core_west_virginia_effect = yes
+					core_virginia_effect = yes
+					every_state = {
+						limit = {
+							is_core_of = VAV
+						}
+						set_state_owner_to = VAV
+						set_state_controller_to = VAV
+					}
+				}
+			}
+			#Form Republic of Lakotah
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = formation_republic_of_lakotah
+						option = FORMED_ROL
+					}
+				}
+				NEN = {
+					core_nebraska_effect = yes
+					core_iowa_effect = yes
+					core_minnesota_effect = yes
+					core_south_dakota_effect = yes
+					core_north_dakota_effect = yes
+					core_wyoming_effect = yes
+					core_montana_effect = yes
+					core_idaho_effect = yes
+					set_cosmetic_tag = ROL
+					every_state = {
+						limit = {
+							is_core_of = NEN
+						}
+						set_state_owner_to = NEN
+						set_state_controller_to = NEN
+					}
+				}
+			}
+			#Form Montezuma
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = formation_montezuma
+						option = FORMED_MTZ
+					}
+				}
+				NMN = {
+					annex_country = {
+						target = AZA
+						transfer_troops = yes
+					}
+					set_cosmetic_tag = MTZ
+					every_controlled_state = {
+						add_core_of = NMN
+					}
+				}
+			}
+			#Form Mesoamerica
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = formation_mesoamerica
+						option = FORMED_MES
+					}
+				}
+				DFD = {
+					set_cosmetic_tag = MES
+					core_panama_effect = yes
+					core_costa_rica_effect = yes
+					core_honduras_effect = yes
+					core_nicaragua_effect = yes
+					core_el_salvador_effect = yes
+					core_guatemala_effect = yes
+					core_belize_effect = yes
+					core_quintana_roo_effect = yes
+					core_yucatan_effect = yes
+					core_campeche_effect = yes
+					core_chiapas_effect = yes
+					core_tabasco_effect = yes
+					core_oaxaca_effect = yes
+					core_veracruz_effect = yes
+					core_guerrero_effect = yes
+					core_puebla_effect = yes
+					core_morelos_effect = yes
+					core_tlaxcala_effect = yes
+					core_federal_district_of_mexico_effect = yes
+					core_state_of_mexico_effect = yes
+					core_hidalgo_effect = yes
+					core_michoacan_effect = yes
+					core_queretaro_effect = yes
+					core_colima_effect = yes
+					core_jalisco_effect = yes
+					core_aguascalientes_effect = yes
+					core_nayarit_effect = yes
+					core_sinaloa_effect = yes
+					core_san_luis_potosi_effect = yes
+					core_tlaxcala_effect = yes
+					core_guanajuato_effect = yes
+					add_state_core = 1112
+					add_state_core = 1113
+					add_state_core = 1117
+					add_state_core = 1148
+					add_state_core = 1149
+					add_state_core = 1150
+					every_state = {
+						limit = {
+							is_core_of = DFD
+						}
+						set_state_owner_to = DFD
+						set_state_controller_to = DFD
+					}
+				}
+			}
+			#Form Mexico
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = formation_mexico
+						option = FORMED_MEX
+					}
+				}
+				DFD = {
+					set_cosmetic_tag = MEX
+					core_quintana_roo_effect = yes
+					core_yucatan_effect = yes
+					core_campeche_effect = yes
+					core_chiapas_effect = yes
+					core_tabasco_effect = yes
+					core_oaxaca_effect = yes
+					core_veracruz_effect = yes
+					core_guerrero_effect = yes
+					core_puebla_effect = yes
+					core_morelos_effect = yes
+					core_tlaxcala_effect = yes
+					core_federal_district_of_mexico_effect = yes
+					core_state_of_mexico_effect = yes
+					core_hidalgo_effect = yes
+					core_michoacan_effect = yes
+					core_queretaro_effect = yes
+					core_colima_effect = yes
+					core_jalisco_effect = yes
+					core_aguascalientes_effect = yes
+					core_nayarit_effect = yes
+					core_sinaloa_effect = yes
+					core_san_luis_potosi_effect = yes
+					core_zacatecas_effect = yes
+					core_durango_effect = yes
+					core_tamaulipas_effect = yes
+					core_nuevo_leon_effect = yes
+					core_coahuila_effect = yes
+					core_chihuahua_effect = yes
+					core_sonora_effect = yes
+					core_baja_california_effect = yes
+					core_baja_california_sur_effect = yes
+					core_tlaxcala_effect = yes
+					core_guanajuato_effect = yes
+					every_state = {
+						limit = {
+							is_core_of = DFD
+						}
+						set_state_owner_to = DFD
+						set_state_controller_to = DFD
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = formation_mexico
+						option = FORMED_FME
+					}
+				}
+				DFD = {
+					set_cosmetic_tag = FME
+					core_texas_effect = yes
+					core_new_mexico_effect = yes
+					core_arizona_effect = yes
+					core_california_effect = yes
+					core_utah_effect = yes
+					core_nevada_effect = yes
+					#Colorado
+					add_state_core = 624
+					add_state_core = 623
+					add_state_core = 622
+					add_state_core = 621
+					add_state_core = 627
+					add_state_core = 626
+					add_state_core = 625
+					add_state_core = 620
+					add_state_core = 642
+					#Oklahoma
+					add_state_core = 552
+					#Wyoming
+					add_state_core = 615
+					add_state_core = 617
+					add_state_core = 610
+					core_quintana_roo_effect = yes
+					core_yucatan_effect = yes
+					core_campeche_effect = yes
+					core_chiapas_effect = yes
+					core_tabasco_effect = yes
+					core_oaxaca_effect = yes
+					core_veracruz_effect = yes
+					core_guerrero_effect = yes
+					core_puebla_effect = yes
+					core_morelos_effect = yes
+					core_tlaxcala_effect = yes
+					core_federal_district_of_mexico_effect = yes
+					core_state_of_mexico_effect = yes
+					core_hidalgo_effect = yes
+					core_michoacan_effect = yes
+					core_queretaro_effect = yes
+					core_colima_effect = yes
+					core_jalisco_effect = yes
+					core_aguascalientes_effect = yes
+					core_nayarit_effect = yes
+					core_sinaloa_effect = yes
+					core_san_luis_potosi_effect = yes
+					core_zacatecas_effect = yes
+					core_durango_effect = yes
+					core_tamaulipas_effect = yes
+					core_nuevo_leon_effect = yes
+					core_coahuila_effect = yes
+					core_chihuahua_effect = yes
+					core_sonora_effect = yes
+					core_baja_california_effect = yes
+					core_baja_california_sur_effect = yes
+					core_tlaxcala_effect = yes
+					core_guanajuato_effect = yes
+					every_state = {
+						limit = {
+							is_core_of = DFD
+						}
+						set_state_owner_to = DFD
+						set_state_controller_to = DFD
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = formation_mexico
+						option = FORMED_VNS
+					}
+				}
+				DFD = {
+					core_arkansas_effect = yes
+					core_oklahoma_effect = yes
+					core_kansas_effect = yes
+					core_missouri_effect = yes
+					core_iowa_effect = yes
+					core_nebraska_effect = yes
+					core_south_dakota_effect = yes
+					core_montana_effect = yes
+					core_florida_effect = yes
+					core_cuba_effect = yes
+					core_dominican_republic_effect = yes
+					core_puerto_rico_effect = yes
+					remove_state_core = 1390
+					remove_state_core =590
+					remove_state_core = 1392
+					remove_state_core = 588
+					remove_state_core = 1393
+					add_state_core = 55
+					add_state_core = 56
+					add_state_core = 53
+					add_state_core = 490
+					add_state_core = 491
+					add_state_core = 493
+					add_state_core = 494
+					add_state_core = 495
+					add_state_core = 496
+					add_state_core = 497
+					add_state_core = 501
+					add_state_core = 508
+					add_state_core = 511
+					add_state_core = 512
+					add_state_core = 513
+					add_state_core = 566
+					add_state_core = 565
+					add_state_core = 562
+					add_state_core = 561
+					add_state_core = 604
+					add_state_core = 605
+					add_state_core = 606
+					add_state_core = 607
+					add_state_core = 608
+					add_state_core = 609
+					add_state_core = 610
+					add_state_core = 611
+					add_state_core = 612
+					add_state_core = 613
+					add_state_core = 614
+					add_state_core = 619
+					add_state_core = 620
+					add_state_core = 628
+					add_state_core = 629
+					add_state_core = 630
+					add_state_core = 631
+					add_state_core = 632
+					add_state_core = 633
+					add_state_core = 634
+					add_state_core = 635
+					add_state_core = 636
+					add_state_core = 637
+					add_state_core = 647
+					add_state_core = 412
+					add_state_core = 411
+					add_state_core = 407
+					add_state_core = 408
+					core_texas_effect = yes
+					core_new_mexico_effect = yes
+					core_arizona_effect = yes
+					core_california_effect = yes
+					core_utah_effect = yes
+					core_nevada_effect = yes
+					#Colorado
+					add_state_core = 624
+					add_state_core = 623
+					add_state_core = 622
+					add_state_core = 621
+					add_state_core = 627
+					add_state_core = 626
+					add_state_core = 625
+					add_state_core = 620
+					add_state_core = 642
+					#Oklahoma
+					add_state_core = 552
+					#Wyoming
+					add_state_core = 615
+					add_state_core = 617
+					add_state_core = 610
+					core_quintana_roo_effect = yes
+					core_yucatan_effect = yes
+					core_campeche_effect = yes
+					core_chiapas_effect = yes
+					core_tabasco_effect = yes
+					core_oaxaca_effect = yes
+					core_veracruz_effect = yes
+					core_guerrero_effect = yes
+					core_puebla_effect = yes
+					core_morelos_effect = yes
+					core_tlaxcala_effect = yes
+					core_federal_district_of_mexico_effect = yes
+					core_state_of_mexico_effect = yes
+					core_hidalgo_effect = yes
+					core_michoacan_effect = yes
+					core_queretaro_effect = yes
+					core_colima_effect = yes
+					core_jalisco_effect = yes
+					core_aguascalientes_effect = yes
+					core_nayarit_effect = yes
+					core_sinaloa_effect = yes
+					core_san_luis_potosi_effect = yes
+					core_zacatecas_effect = yes
+					core_durango_effect = yes
+					core_tamaulipas_effect = yes
+					core_nuevo_leon_effect = yes
+					core_coahuila_effect = yes
+					core_chihuahua_effect = yes
+					core_sonora_effect = yes
+					core_baja_california_effect = yes
+					core_baja_california_sur_effect = yes
+					core_tlaxcala_effect = yes
+					core_guanajuato_effect = yes
+					every_state = {
+						limit = {
+							is_core_of = DFD
+						}
+						set_state_owner_to = DFD
+						set_state_controller_to = DFD
+					}
+				}
+			}
+			#Form the Great Plains Nation
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = formation_great_plains
+						option = FORMED_GPN
+					}
+				}
+				KSK = {
+					set_cosmetic_tag = GPN
+					core_oklahoma_effect = yes
+					core_kansas_effect = yes
+					core_nebraska_effect = yes
+					core_south_dakota_effect = yes
+					core_north_dakota_effect = yes
+					core_iowa_effect = yes
+					#Texas
+					core_texas_effect = yes
+					remove_state_core = 579
+					remove_state_core = 580
+					#Colorado
+					add_state_core = 55
+					add_state_core = 630
+					add_state_core = 637
+					add_state_core = 631
+					#Missouri
+					core_missouri_effect = yes
+					remove_state_core = 470
+					remove_state_core = 471
+					remove_state_core = 469
+					remove_state_core = 468
+					remove_state_core = 465
+					remove_state_core = 466
+					remove_state_core = 467
+					remove_state_core = 462
+					#Minnesota
+					remove_state_core = 499
+					remove_state_core = 500
+					remove_state_core = 503
+					remove_state_core = 1344
+					core_minnesota_effect = yes
+					#Wyoming
+					add_state_core = 611
+					add_state_core = 612
+					add_state_core = 608
+					add_state_core = 614
+					#Montana
+					core_montana_effect = yes
+					remove_state_core = 587
+					remove_state_core = 1390
+					every_state = {
+						limit = {
+							is_core_of = KSK
+						}
+						set_state_owner_to = KSK
+						set_state_controller_to = KSK
+					}
+				}
+			}
+			#Form New England
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = formation_new_england
+						option = FORMED_NEC
+					}
+				}
+				MAM = {
+					set_cosmetic_tag = NEC
+					add_stability = 0.10
+					core_maine_effect = yes
+					core_new_hampshire_effect = yes
+					core_vermont_effect = yes
+					core_massachusetts_effect = yes
+					core_connecticut_effect = yes
+					core_rhode_island_effect = yes
+					core_new_york_effect = yes
+					core_new_jersey_effect = yes
+					every_state = {
+						limit = {
+							is_core_of = MAM
+						}
+						set_state_owner_to = MAM
+						set_state_controller_to = MAM
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = formation_new_england
+						option = formed_GNE
+					}
+				}
+				set_cosmetic_tag = NEC
+				core_new_brunswick_effect = yes
+				core_nova_scotia_effect = yes
+				core_prince_edward_island_effect = yes
+				core_new_york_effect = yes
+				core_new_jersey_effect = yes
+				core_maine_effect = yes
+				core_new_hampshire_effect = yes
+				core_vermont_effect = yes
+				core_massachusetts_effect = yes
+				core_connecticut_effect = yes
+				core_rhode_island_effect = yes
+				core_new_york_effect = yes
+				core_new_jersey_effect = yes
+				every_state = {
+					limit = {
+						is_core_of = MAM
+					}
+					set_state_owner_to = MAM
+					set_state_controller_to = MAM
+				}
+			}
+			#North American Union
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = formation_north_american_union
+						option = FORMED_NAU
+					}
+				}
+				DCD = {
+					set_cosmetic_tag = NAU
+					set_capital = {
+						state = 154
+					}
+					#Canada
+					core_alberta_effect = yes
+					core_british_columbia_effect = yes
+					core_labrador_effect = yes
+					core_manitoba_effect = yes
+					core_new_brunswick_effect = yes
+					core_newfoundland_effect = yes
+					core_nova_scotia_effect = yes
+					core_northwest_territories_effect = yes
+					core_nunavut_effect = yes
+					core_ontario_effect = yes
+					core_prince_edward_island_effect = yes
+					core_quebec_effect = yes
+					core_saskatchewan_effect = yes
+					core_yukon_effect = yes
+					#United States
+					core_alabama_effect = yes
+					core_alaska_effect = yes
+					core_arizona_effect = yes
+					core_arkansas_effect = yes
+					core_california_effect = yes
+					core_colorado_effect = yes
+					core_connecticut_effect = yes
+					core_delaware_effect = yes
+					core_florida_effect = yes
+					core_georgia_effect = yes
+					core_hawaii_effect = yes
+					core_idaho_effect = yes
+					core_illinois_effect = yes
+					core_indiana_effect = yes
+					core_iowa_effect = yes
+					core_kansas_effect = yes
+					core_kentucky_effect = yes
+					core_louisiana_effect = yes
+					core_maine_effect = yes
+					core_maryland_effect = yes
+					core_massachusetts_effect = yes
+					core_michigan_effect = yes
+					core_minnesota_effect = yes
+					core_mississippi_effect = yes
+					core_missouri_effect = yes
+					core_montana_effect = yes
+					core_nebraska_effect = yes
+					core_nevada_effect = yes
+					core_new_hampshire_effect = yes
+					core_new_jersey_effect = yes
+					core_new_mexico_effect = yes
+					core_new_york_effect = yes
+					core_north_carolina_effect = yes
+					core_north_dakota_effect = yes
+					core_ohio_effect = yes
+					core_oklahoma_effect = yes
+					core_oregon_effect = yes
+					core_pennsylvania_effect = yes
+					core_rhode_island_effect = yes
+					core_south_carolina_effect = yes
+					core_south_dakota_effect = yes
+					core_tennessee_effect = yes
+					core_texas_effect = yes
+					core_utah_effect = yes
+					core_vermont_effect = yes
+					core_virginia_effect = yes
+					core_washington_effect = yes
+					core_washington_dc_effect = yes
+					core_west_virginia_effect = yes
+					core_wisconsin_effect = yes
+					core_wyoming_effect = yes
+					#Mexico
+					core_quintana_roo_effect = yes
+					core_yucatan_effect = yes
+					core_campeche_effect = yes
+					core_chiapas_effect = yes
+					core_tabasco_effect = yes
+					core_oaxaca_effect = yes
+					core_veracruz_effect = yes
+					core_guerrero_effect = yes
+					core_puebla_effect = yes
+					core_morelos_effect = yes
+					core_tlaxcala_effect = yes
+					core_federal_district_of_mexico_effect = yes
+					core_state_of_mexico_effect = yes
+					core_hidalgo_effect = yes
+					core_michoacan_effect = yes
+					core_queretaro_effect = yes
+					core_colima_effect = yes
+					core_jalisco_effect = yes
+					core_aguascalientes_effect = yes
+					core_nayarit_effect = yes
+					core_sinaloa_effect = yes
+					core_san_luis_potosi_effect = yes
+					core_zacatecas_effect = yes
+					core_durango_effect = yes
+					core_tamaulipas_effect = yes
+					core_nuevo_leon_effect = yes
+					core_coahuila_effect = yes
+					core_chihuahua_effect = yes
+					core_sonora_effect = yes
+					core_baja_california_effect = yes
+					core_baja_california_sur_effect = yes
+					core_tlaxcala_effect = yes
+					core_guanajuato_effect = yes
+					every_state = {
+						limit = {
+							is_core_of = DCD
+						}
+						set_state_owner_to = DCD
+						set_state_controller_to = DCD
+					}
+				}
+			}
+			#Form the Northwest Confederacy
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = formation_northwest_confederacy
+						option = FORMED_NWC
+					}
+				}
+				OHO = {
+					annex_country = {
+						target = MIM
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = INI
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = ILI
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = WIW
+						transfer_troops = yes
+					}
+					add_state_core = 492
+					add_state_core = 498
+					add_state_core = 499
+					add_state_core = 500
+					every_state = {
+						limit = {
+							is_core_of = OHO
+						}
+						set_state_owner_to = OHO
+						set_state_controller_to = OHO
+					}
+				}
+			}
+			#Form the Pacific States of America
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = formation_pacific_states
+						option = FORMED_PSA
+					}
+				}
+				CAC = {
+					set_cosmetic_tag = PSA
+					set_capital = {
+						state = 732
+					}
+					core_california_effect = yes
+					core_oregon_effect = yes
+					core_washington_effect = yes
+					core_british_columbia_effect = yes
+					core_alaska_effect = yes
+					every_state = {
+						limit = {
+							is_core_of = CAC
+						}
+						set_state_owner_to = CAC
+						set_state_controller_to = CAC
+					}
+				}
+			}
+			#Form Texlahoma
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = formation_texlahoma
+						option = FORMED_TLH
+					}
+				}
+				TXT = {
+					annex_country = {
+						target = OKO
+						transfer_troops = yes
+					}
+					set_cosmetic_tag = TLH
+					every_controlled_state = {
+						add_core_of = TXT
+					}
+				}
+			}
+			#Form The Golden Circle
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = formation_golden_circle
+						option = FORMED_TGC
+					}
+				}
+				SCS = {
+					set_country_flag = formed_TGC
+					set_cosmetic_tag = TGC
+					#United States
+					annex_country = {
+						target = LAL
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = ARA
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = ARA
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = MSM
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = ALA
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = FLF
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = GAG
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = TXT
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = TNT
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = NCN
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = VAV
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = OKO
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = MOM
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = KYK
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = WVW
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = MDM
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = DCD
+						transfer_troops = yes
+					}
+					#NM South
+					add_state_core = 54
+					add_state_core = 643
+					add_state_core = 644
+					add_state_core = 645
+					add_state_core = 653
+					add_state_core = 654
+					add_state_core = 655
+					add_state_core = 656
+					add_state_core = 657
+					#AZ South
+					add_state_core = 658
+					add_state_core = 659
+					add_state_core = 660
+					add_state_core = 661
+					add_state_core = 662
+					add_state_core = 663
+					add_state_core = 664
+					add_state_core = 665
+					add_state_core = 666
+					add_state_core = 667
+					core_quintana_roo_effect = yes
+					core_yucatan_effect = yes
+					core_campeche_effect = yes
+					core_chiapas_effect = yes
+					core_tabasco_effect = yes
+					core_oaxaca_effect = yes
+					core_veracruz_effect = yes
+					core_guerrero_effect = yes
+					core_puebla_effect = yes
+					core_morelos_effect = yes
+					core_tlaxcala_effect = yes
+					core_federal_district_of_mexico_effect = yes
+					core_state_of_mexico_effect = yes
+					core_hidalgo_effect = yes
+					core_michoacan_effect = yes
+					core_queretaro_effect = yes
+					core_colima_effect = yes
+					core_jalisco_effect = yes
+					core_aguascalientes_effect = yes
+					core_nayarit_effect = yes
+					core_sinaloa_effect = yes
+					core_san_luis_potosi_effect = yes
+					core_zacatecas_effect = yes
+					core_durango_effect = yes
+					core_tamaulipas_effect = yes
+					core_nuevo_leon_effect = yes
+					core_coahuila_effect = yes
+					core_chihuahua_effect = yes
+					core_sonora_effect = yes
+					core_baja_california_effect = yes
+					core_baja_california_sur_effect = yes
+					core_tlaxcala_effect = yes
+					core_guanajuato_effect = yes
+					core_anguilla_effect = yes
+					core_antigua_and_barbuda_effect = yes
+					core_aruba_effect = yes
+					core_bahamas_effect = yes
+					core_barbados_effect = yes
+					core_cayman_islands_effect = yes
+					core_cuba_effect = yes
+					core_curacao_effect = yes
+					core_dominica_effect = yes
+					core_dominican_republic_effect = yes
+					core_grenada_effect = yes
+					core_guadalupe_effect = yes
+					core_haiti_effect = yes
+					core_jamaica_effect = yes
+					core_martinique_effect = yes
+					core_montserrat_effect = yes
+					core_puerto_rico_effect = yes
+					core_saint_kitts_and_nevis_effect = yes
+					core_saint_lucia_effect = yes
+					core_saint_vincent_effect = yes
+					core_trinidad_and_tobago = yes
+					core_turks_and_caicos_effect = yes
+					core_virgin_islands_effect = yes
+					core_panama_effect = yes
+					core_costa_rica_effect = yes
+					core_honduras_effect = yes
+					core_nicaragua_effect = yes
+					core_el_salvador_effect = yes
+					core_guatemala_effect = yes
+					core_belize_effect = yes
+					#South America
+					add_state_core = 1302
+					add_state_core = 1307
+					add_state_core = 1306
+					add_state_core = 1305
+					add_state_core = 1304
+					add_state_core = 1311
+					add_state_core = 1313
+					add_state_core = 1316
+					add_state_core = 1323
+					add_state_core = 1317
+					every_state = {
+						limit = {
+							is_core_of = SCS
+						}
+						set_state_owner_to = SCS
+						set_state_controller_to = SCS
+					}
+				}
+			}
+			#Form the Thirteen Colonies
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = formation_thirteen_colonies
+						option = FORMED_TTC
+					}
+				}
+				PAP = {
+					set_cosmetic_tag = TTC
+					set_capital = {
+						state = 154
+					}
+					core_maine_effect = yes
+					core_new_hampshire_effect = yes
+					core_vermont_effect = yes
+					core_massachusetts_effect = yes
+					core_rhode_island_effect = yes
+					core_connecticut_effect = yes
+					core_new_york_effect = yes
+					core_pennsylvania_effect = yes
+					core_new_jersey_effect = yes
+					core_maryland_effect = yes
+					core_washington_dc_effect = yes
+					core_virginia_effect = yes
+					core_west_virginia_effect = yes
+					core_north_carolina_effect = yes
+					core_south_carolina_effect = yes
+					core_georgia_effect = yes
+					core_florida_effect = yes
+					core_alabama_effect = yes
+					core_mississippi_effect = yes
+					core_tennessee_effect = yes
+					core_kentucky_effect = yes
+					core_ohio_effect = yes
+					core_michigan_effect = yes
+					core_indiana_effect = yes
+					core_illinois_effect = yes
+					core_wisconsin_effect = yes
+					every_state = {
+						limit = {
+							is_core_of = PAP
+						}
+						set_state_owner_to = PAP
+						set_state_controller_to = PAP
+					}
+				}
+			}
+			#Form United Dakotah
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = formation_united_dakota
+						option = FORMED_UDU
+					}
+				}
+				NDN = {
+					annex_country = {
+						target = SDS
+						transfer_troops = yes
+					}
+					set_cosmetic_tag = UDU
+					every_controlled_state = {
+						add_core_of = NDN
+					}
+				}
+			}
+		}
+	}
+}
