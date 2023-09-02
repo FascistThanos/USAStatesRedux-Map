@@ -1,4 +1,17 @@
 ﻿l_english:
+GATHERING_STORM_NAME1:0 "The Great Collapse"
+#Strengthen [TAG]
+custom_diff_strong_cac:0 "@CAC Strengthen the New California Republic"
+custom_diff_strong_flf:0 "@FLF Strengthen the State of Florida"
+custom_diff_strong_nyn:0 "@NYN Strengthen the State of New York"
+custom_diff_strong_pap:0 "@PAP Strengthen the Commonwealth of Pennsylvania"
+custom_diff_strong_coc:0 "@COC Strengthen the State of Colorado"
+custom_diff_strong_ksk:0 "@KSK Strengthen the State of Kansas"
+custom_diff_strong_dcd:0 "@DCD Strengthen the Federal Government"
+custom_diff_strong_txt:0 "@TXT Strengthen the State of Texas"
+
+
+#[TAG] Description
 CAC_BOOKMARK_DESC:0 "California emerged as a regional power after the downfall of United States. The governor Frank Merriam with his cabinet immediately wrote the Californian Consitution in 1934. Frank Merriam then promised an emergency election to show the people that democracy had not yet died in North America. This gave him 1 year to stabilize California. The emergency term of Frank Merriam is coming to an end and the 1936 election is soon.. Will California die as the last bastion of democracy in America and fall to the ideals of fascism and communism? Or will Frank Merriam win the election once again and safeguard Californian democracy."
 TXT_BOOKMARK_DESC:0 "Texas is once again an independent nation. After the Great Collapse the flag that resides over Texas once again changes. 100 years ago Texas was in the same position. Now Texas stands stronger than when it was previously independent and can project power across the continent. Texas can follow democracy and restore order and stability in southern North America, create an empire to engulf the south, or follow the revolution and create a worker's union. With money coming in from oil exports and a patriotic people, Texas can choose it's path and rise to the occasion."
 KSK_BOOKMARK_DESC:0 "The Great Collapse has severed the chains of the federal government from the great State of Kansas. Although our economy heavily relied on agricultural exports to the greater nation, now is the time to diversify our economy and grow to a regional power. Alf Landon is holding the reigns of the nation and many trust that he will steer Kansas on the right course. There are others, however, that believe Alf Landon is not the man to entrust the nation to. With the forces of Reverend Winrod and Earl Browder scheming to come to power in the nation, only time will tell if the Kansan state will succeed or fall to the wayside like the federal government that fathered it."
