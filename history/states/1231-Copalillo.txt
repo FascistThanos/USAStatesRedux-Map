@@ -5,10 +5,11 @@ state={
 		owner = GUE
 		buildings = {
 			infrastructure = 2
-
+		}
+		victory_points = {
+			7606 5 #Taxco
 		}
 		add_core_of = GUE
-
 	}
 	provinces={
 		3465 4123 7606 

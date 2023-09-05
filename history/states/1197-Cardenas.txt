@@ -10,8 +10,10 @@ state={
 			infrastructure = 3
 			industrial_complex = 1
 		}
+		victory_points = {
+			7597 10 #Paraiso
+		}
 		add_core_of = TAB
-
 	}
 	provinces={
 		3436 7597 7627 

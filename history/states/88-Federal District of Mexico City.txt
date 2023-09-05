@@ -10,8 +10,25 @@ state={
 			industrial_complex = 4
 			arms_factory = 3
 		}
+		victory_points = {
+			11567 30 #Mexico City
+		}
+		victory_points = {
+			10390 5 #La Condensa
+		}
+		victory_points = {
+			10389 5 #Narvarte Poniente
+		}
+		victory_points = {
+			10388 5 #University City
+		}
+		victory_points = {
+			7545 5 #Coapa
+		}
+		victory_points = {
+			10391 5 #Santa Martha Acatitla
+		}
 		add_core_of = DFD
-
 	}
 
 	provinces={

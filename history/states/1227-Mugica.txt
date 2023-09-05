@@ -7,8 +7,10 @@ state={
 			infrastructure = 3
 
 		}
+		victory_points = {
+			7560 5 #Nueva Italia de Ruiz
+		}
 		add_core_of = MIC
-
 	}
 	provinces={
 		4286 7544 7560 7575 7581 

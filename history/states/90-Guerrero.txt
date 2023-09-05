@@ -11,8 +11,13 @@ state={
 			industrial_complex = 2
 			arms_factory = 1
 		}
+		victory_points = {
+			1256 25 #Chilpancingo
+		}
+		victory_points = {
+			7659 20 #Acapulco
+		}
 		add_core_of = GUE
-
 	}
 
 	provinces={

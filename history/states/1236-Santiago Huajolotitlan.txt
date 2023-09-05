@@ -5,10 +5,11 @@ state={
 		owner = OAX
 		buildings = {
 			infrastructure = 3
-
+		}
+		victory_points = {
+			7652 5 #Asuncion Nochixtlan
 		}
 		add_core_of = OAX
-
 	}
 	provinces={
 		1990 7636 7642 7643 7652 

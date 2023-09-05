@@ -11,8 +11,10 @@ state={
 			industrial_complex = 1
 			arms_factory = 1
 		}
+		victory_points = {
+			4065 5 #Champoton
+		}
 		add_core_of = CMP
-
 	}
 	provinces={
 		2449 4065 7534 7555 

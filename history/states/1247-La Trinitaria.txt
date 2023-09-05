@@ -5,10 +5,11 @@ state={
 		owner = CAP
 		buildings = {
 			infrastructure = 2
-
+		}
+		victory_points = {
+			7682 10 #Comitan
 		}
 		add_core_of = CAP
-
 	}
 	provinces={
 		1882 2007 3878 7682 

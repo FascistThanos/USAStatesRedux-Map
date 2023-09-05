@@ -9,8 +9,10 @@ state={
 			infrastructure = 4
 			industrial_complex = 1
 		}
+		victory_points = {
+			10396 20 #Texcoco
+		}
 		add_core_of = EME
-
 	}
 
 	provinces={

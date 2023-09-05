@@ -5,10 +5,11 @@ state={
 		owner = PUE
 		buildings = {
 			infrastructure = 4
-
+		}
+		victory_points = {
+			7562 5 #Tecamachalco
 		}
 		add_core_of = PUE
-
 	}
 	provinces={
 		7550 7558 7562 

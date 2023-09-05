@@ -9,8 +9,13 @@ state={
 			infrastructure = 5
 			industrial_complex = 1
 		}
+		victory_points = {
+			7538 15 #Toluca
+		}
+		victory_points = {
+			4279 5 #Tlatlaya
+		}
 		add_core_of = EME
-
 	}
 
 	provinces={

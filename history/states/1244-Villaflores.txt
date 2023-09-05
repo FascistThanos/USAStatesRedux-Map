@@ -8,8 +8,10 @@ state={
 			industrial_complex = 2
 			arms_factory = 1
 		}
+		victory_points = {
+			4308 10 #Tonala
+		}
 		add_core_of = CAP
-
 	}
 	provinces={
 		2129 4247 4308 7677 

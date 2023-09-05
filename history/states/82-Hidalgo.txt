@@ -10,8 +10,13 @@ state={
 			industrial_complex = 2
 			arms_factory = 1
 		}
+		victory_points = {
+			7500 15 #Pachuca
+		}
+		victory_points = {
+			7468 5 #Molango
+		}
 		add_core_of = HID
-
 	}
 
 	provinces={

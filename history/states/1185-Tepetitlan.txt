@@ -5,10 +5,11 @@ state={
 		owner = HID
 		buildings = {
 			infrastructure = 3
-
+		}
+		victory_points = {
+			3844 5 #Tecozautla
 		}
 		add_core_of = HID
-
 	}
 	provinces={
 		3844 7498 

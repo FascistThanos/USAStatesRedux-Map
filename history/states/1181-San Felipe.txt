@@ -7,8 +7,10 @@ state={
 			infrastructure = 4
 			industrial_complex = 1
 		}
+		victory_points = {
+			2578 15 #Guanajuato
+		}
 		add_core_of = GAJ
-
 	}
 	provinces={
 		2578 4128 7441 7447 

@@ -7,8 +7,10 @@ state={
 			infrastructure = 3
 			industrial_complex = 1
 		}
+		victory_points = {
+			1857 5 #Tulancingo
+		}
 		add_core_of = HID
-
 	}
 	provinces={
 		1857 

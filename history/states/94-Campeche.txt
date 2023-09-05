@@ -1,16 +1,16 @@
-
 state={
 	id=94
 	name="Hecelchakán"
-
 	history={
 		owner = CMP
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
 		}
+		victory_points = {
+			2063 10 #Campeche
+		}
 		add_core_of = CMP
-
 	}
 
 	provinces={

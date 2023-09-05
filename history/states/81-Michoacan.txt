@@ -5,7 +5,9 @@ state={
 		owner = MIC
 		buildings = {
 			infrastructure = 5
-
+		}
+		victory_points = {
+			7514 15 #Morelia
 		}
 		add_core_of = MIC
 	}

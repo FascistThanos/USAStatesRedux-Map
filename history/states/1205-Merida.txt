@@ -8,8 +8,22 @@ state={
 			industrial_complex = 2
 			arms_factory = 4
 		}
+		victory_points = {
+			10412 15 #Merida
+		}
+		victory_points = {
+			10414 5 #Francisco de Montejo
+		}
+		victory_points = {
+			10411 10 #Caucel
+		}
+		victory_points = {
+			10410 10 #Kanasin
+		}
+		victory_points = {
+			10413 10 #Cholul
+		}
 		add_core_of = YUC
-
 	}
 	provinces={
 		10409 10410 10411 10412 10413 10414 

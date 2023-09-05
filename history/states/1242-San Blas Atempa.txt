@@ -9,8 +9,10 @@ state={
 				naval_base = 4
 			}
 		}
+		victory_points = {
+			3456 15 #Salina Cruz
+		}
 		add_core_of = OAX
-
 	}
 	provinces={
 		3456 7668 7681 7688 

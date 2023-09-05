@@ -5,10 +5,11 @@ state={
 		owner = YUC
 		buildings = {
 			infrastructure = 2
-
+		}
+		victory_points = {
+			2172 5 #Ticul
 		}
 		add_core_of = YUC
-
 	}
 	provinces={
 		2056 2172 3167 7485 7501 

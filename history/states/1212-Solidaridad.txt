@@ -5,10 +5,11 @@ state={
 		owner = QRO
 		buildings = {
 			infrastructure = 1
-
+		}
+		victory_points = {
+			2443 5 #Tulum
 		}
 		add_core_of = QRO
-
 	}
 	provinces={
 		2443 2573 4250 

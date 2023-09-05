@@ -5,10 +5,11 @@ state={
 		owner = OAX
 		buildings = {
 			infrastructure = 3
-
+		}
+		victory_points = {
+			3334 10 #Pinotepa Nacional
 		}
 		add_core_of = OAX
-
 	}
 	provinces={
 		2827 3334 4193 7686 

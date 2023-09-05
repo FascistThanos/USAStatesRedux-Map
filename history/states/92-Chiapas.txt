@@ -1,16 +1,15 @@
-
 state={
 	id=92
 	name="Salto de Agua"
-
 	history={
 		owner = CAP
 		buildings = {
 			infrastructure = 2
-
+		}
+		victory_points = {
+			1635 5 #Palenque
 		}
 		add_core_of = CAP
-
 	}
 
 	provinces={

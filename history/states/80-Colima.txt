@@ -13,8 +13,13 @@ state={
 				naval_base = 6
 			}
 		}
+		victory_points = {
+			1614 15 #Colima
+		}
+		victory_points = {
+			7553 10 #Manzanillo
+		}
 		add_core_of = CLA
-
 	}
 
 	provinces={

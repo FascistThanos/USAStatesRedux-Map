@@ -8,8 +8,13 @@ state={
 			arms_factory = 1
 			industrial_complex = 2
 		}
+		victory_points = {
+			1441 15 #Zihuatanejo
+		}
+		victory_points = {
+			7658 5 #Atoyac de Alvarez
+		}
 		add_core_of = GUE
-
 	}
 	provinces={
 		545 1441 1957 2357 3663 7639 7648 7658 

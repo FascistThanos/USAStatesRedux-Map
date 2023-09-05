@@ -9,8 +9,13 @@ state={
 				naval_base = 6
 			}
 		}
+		victory_points = {
+			1748 5 #Maruata
+		}
+		victory_points = {
+			152 5 #Lazaro Cardenas
+		}
 		add_core_of = MIC
-
 	}
 	provinces={
 		152 1748 2060 3292 4188 7588 7610 

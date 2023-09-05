@@ -11,6 +11,18 @@ state={
 			industrial_complex = 3
 			arms_factory = 1
 		}
+		victory_points = {
+			10418 20 #Leon
+		}
+		victory_points = {
+			10417 5 #Plan de Ayala
+		}
+		victory_points = {
+			10415 5 #San Judas
+		}
+		victory_points = {
+			10416 10 #Heroes de Leon
+		}
 		add_core_of = GAJ
 
 	}

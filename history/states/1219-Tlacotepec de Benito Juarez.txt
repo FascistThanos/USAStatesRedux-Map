@@ -8,8 +8,10 @@ state={
 			industrial_complex = 1
 			arms_factory = 1
 		}
+		victory_points = {
+			3098 20 #Tehuacan
+		}
 		add_core_of = PUE
-
 	}
 	provinces={
 		3098 7582 

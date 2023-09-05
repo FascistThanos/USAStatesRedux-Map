@@ -14,8 +14,10 @@ state={
 				naval_base = 4
 			}
 		}
+		victory_points = {
+			7714 20 #Tapachula
+		}
 		add_core_of = CAP
-
 	}
 	provinces={
 		3512 3764 7698 7701 7708 7714 

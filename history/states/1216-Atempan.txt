@@ -5,10 +5,14 @@ state={
 		owner = PUE
 		buildings = {
 			infrastructure = 4
-
+		}
+		victory_points = {
+			4041 5 #Teziutlan
+		}
+		victory_points = {
+			7503 5 #Cuetzalan
 		}
 		add_core_of = PUE
-
 	}
 	provinces={
 		3539 4041 7503 7506 

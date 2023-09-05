@@ -5,10 +5,11 @@ state={
 		owner = GAJ
 		buildings = {
 			infrastructure = 4
-
+		}
+		victory_points = {
+			878 5 #San Luis de la Paz
 		}
 		add_core_of = GAJ
-
 	}
 	provinces={
 		878 2306 7452 

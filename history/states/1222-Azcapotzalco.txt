@@ -8,8 +8,13 @@ state={
 			industrial_complex = 4
 			arms_factory = 1
 		}
+		victory_points = {
+			10395 5 #Lindavista
+		}
+		victory_points = {
+			10394 5 #San Felipe de Jesus
+		}
 		add_core_of = DFD
-
 	}
 	provinces={
 		10394 10395 10397 

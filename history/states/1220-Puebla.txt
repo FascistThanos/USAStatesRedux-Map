@@ -8,8 +8,22 @@ state={
 			industrial_complex = 2
 			arms_factory = 1
 		}
+		victory_points = {
+			10386 20 #Puebla
+		}
+		victory_points = {
+			10383 5 #San Juan Cuautlancingo
+		}
+		victory_points = {
+			10384 5 #Tlaxcalancingo
+		}
+		victory_points = {
+			10385 5 #Chapulco
+		}
+		victory_points = {
+			10382 5 #La Cantera
+		}
 		add_core_of = PUE
-
 	}
 	provinces={
 		10382 10383 10384 10385 10386 

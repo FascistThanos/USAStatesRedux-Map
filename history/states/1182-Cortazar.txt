@@ -5,10 +5,11 @@ state={
 		owner = GAJ
 		buildings = {
 			infrastructure = 4
-
+		}
+		victory_points = {
+			7482 5 #Moroleon
 		}
 		add_core_of = GAJ
-
 	}
 	provinces={
 		1945 3535 4089 7482 7486 

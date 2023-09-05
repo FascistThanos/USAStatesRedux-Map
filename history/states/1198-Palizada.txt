@@ -9,10 +9,11 @@ state={
 		owner = CMP
 		buildings = {
 			infrastructure = 1
-
+		}
+		victory_points = {
+			7578 5 #Ciudad del Carmen
 		}
 		add_core_of = CMP
-
 	}
 	provinces={
 		7578 7602 7620 

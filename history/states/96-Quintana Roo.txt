@@ -8,8 +8,13 @@ state={
 		buildings = {
 			infrastructure = 1
 		}
+		victory_points = {
+			7443 10 #Cancun
+		}
+		victory_points = {
+			4368 5 #Puerto Morelos
+		}
 		add_core_of = QRO
-
 	}
 
 	provinces={

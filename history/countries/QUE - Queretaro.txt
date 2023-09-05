@@ -1,4 +1,4 @@
-﻿capital = 83
+﻿capital = 1183
 
 oob = "QUE_1936"
 

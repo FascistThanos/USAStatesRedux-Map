@@ -10,8 +10,13 @@ state={
 				naval_base = 4
 			}
 		}
+		victory_points = {
+			4287 10 #Progreso
+		}
+		victory_points = {
+			1080 5 #Celestun
+		}
 		add_core_of = YUC
-
 	}
 	provinces={
 		1080 2750 4287 7469 7472 7484 

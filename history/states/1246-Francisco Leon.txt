@@ -5,10 +5,17 @@ state={
 		owner = CAP
 		buildings = {
 			infrastructure = 3
-
+		}
+		victory_points = {
+			7670 20 #Tuxtla Gutierrez
+		}
+		victory_points = {
+			7665 15 #San Cristobal de las Casas
+		}
+		victory_points = {
+			7638 5 #Pichucalco
 		}
 		add_core_of = CAP
-
 	}
 	provinces={
 		1999 3036 3525 7638 7650 7665 7670 

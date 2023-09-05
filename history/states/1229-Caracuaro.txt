@@ -5,10 +5,11 @@ state={
 		owner = MIC
 		buildings = {
 			infrastructure = 3
-
+		}
+		victory_points = {
+			7564 5 #Huetamo
 		}
 		add_core_of = MIC
-
 	}
 	provinces={
 		1903 7564 7577 

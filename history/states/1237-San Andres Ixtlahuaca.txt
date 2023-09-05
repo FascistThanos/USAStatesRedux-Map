@@ -8,8 +8,10 @@ state={
 			industrial_complex = 2
 			arms_factory = 1
 		}
+		victory_points = {
+			4176 20 #Oaxaca
+		}
 		add_core_of = OAX
-
 	}
 	provinces={
 		3142 4176 4291 7664 7680 

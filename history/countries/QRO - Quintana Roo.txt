@@ -1,4 +1,4 @@
-﻿capital = 96
+﻿capital = 1209
 
 oob = "QRO_1936"
 

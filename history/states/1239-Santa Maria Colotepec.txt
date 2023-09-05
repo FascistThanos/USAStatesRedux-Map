@@ -7,8 +7,10 @@ state={
 			infrastructure = 3
 			arms_factory = 1
 		}
+		victory_points = {
+			7695 10 #Mazunte
+		}
 		add_core_of = OAX
-
 	}
 	provinces={
 		3052 7687 7695 

@@ -16,8 +16,13 @@ state={
 				naval_base = 4
 			}
 		}
+		victory_points = {
+			2666 10 #Villahermosa
+		}
+		victory_points = {
+			7619 5 #Macuspana
+		}
 		add_core_of = TAB
-
 	}
 
 	provinces={

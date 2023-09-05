@@ -8,6 +8,12 @@ state={
 			industrial_complex = 1
 			arms_factory = 1
 		}
+		victory_points = {
+			7561 15 #Cuernavaca
+		}
+		victory_points = {
+			3803 5 #Cuautla
+		}
 		add_core_of = MOR
 	}
 	provinces={

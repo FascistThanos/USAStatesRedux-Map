@@ -9,8 +9,13 @@ state={
 			infrastructure = 4
 			industrial_complex = 1
 		}
+		victory_points = {
+			7462 20 #Irapuato
+		}
+		victory_points = {
+			7481 5 #Pénjamo
+		}
 		add_core_of = GAJ
-
 	}
 
 	provinces={

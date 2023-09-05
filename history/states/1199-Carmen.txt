@@ -11,8 +11,10 @@ state={
 			infrastructure = 2
 			industrial_complex = 2
 		}
+		victory_points = {
+			2464 5 #Escarcega
+		}
 		add_core_of = CMP
-
 	}
 	provinces={
 		591 2464 3354 4148 7570 

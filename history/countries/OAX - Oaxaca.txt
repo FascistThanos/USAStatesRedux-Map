@@ -1,4 +1,4 @@
-﻿capital = 91
+﻿capital = 1237
 
 oob = "OAX_1936"
 

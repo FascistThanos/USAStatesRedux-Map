@@ -7,8 +7,10 @@ state={
 			infrastructure = 4
 			industrial_complex = 1
 		}
+		victory_points = {
+			7476 15 #Santiago de Queretaro
+		}
 		add_core_of = QUE
-
 	}
 	provinces={
 		7476 7490 
