@@ -1,18 +1,16 @@
-# For minor countries where advisors are not defined
-# Generate them from a generic template
-
 # Political advisors
+#Communist Revolutionary
 every_possible_country = {
 	limit = {
-		NOT = { OR = { tag = GER tag = ENG tag = SOV original_tag = FRA tag = ITA tag = JAP tag = USA tag = AST tag = RAJ tag = CAN tag = SAF tag = CZE tag = ROM tag = CHI tag = MAN tag = MEX tag = HOL original_tag = SPR original_tag = POL } }
+		NOT = { 
+			OR = { 
+				#taglist goes here
+			} 
+		}
 		# avoid generic advisors in temporary countries
 		is_dynamic_country = no
 		NOT = {
 			has_allowed_idea_with_traits = { idea = communist_revolutionary characters = yes }
-		}
-		if = {
-			limit = { has_dlc = "Battle for the Bosporus" }
-			NOT = { tag = TUR tag = GRE }
 		}
 	}
 	generate_character = {
@@ -35,17 +33,17 @@ every_possible_country = {
 		}
 	}
 }
-
+#Democratic Reformer
 every_possible_country = {
 	limit = {
-		NOT = { OR = { tag = GER tag = ENG tag = SOV original_tag = FRA tag = ITA tag = JAP tag = USA tag = AST tag = RAJ tag = CAN tag = SAF tag = CZE tag = PRC tag = CHI tag = MAN tag = MEX tag = HOL original_tag = SPR original_tag = POL } }
+		NOT = { 
+			OR = { 
+				#taglist goes here
+			} 
+		}
 		is_dynamic_country = no
 		NOT = {
 			has_allowed_idea_with_traits = { idea = democratic_reformer characters = yes }
-		}
-		if = {
-			limit = { has_dlc = "Battle for the Bosporus" }
-			NOT = { tag = TUR tag = GRE }
 		}
 	}
 	generate_character = {
@@ -68,17 +66,17 @@ every_possible_country = {
 		}
 	}
 }
-
+#Fascist Demogogue
 every_possible_country = {
 	limit = {
-		NOT = { OR = { tag = GER tag = ENG tag = SOV original_tag = FRA tag = ITA tag = JAP tag = USA tag = AST tag = RAJ tag = CAN tag = SAF tag = ROM tag = CZE tag = PRC tag = CHI tag = MAN tag = MEX tag = HOL original_tag = SPR original_tag = POR original_tag = POL original_tag=LAT } }
+		NOT = { 
+			OR = { 
+				#taglist goes here
+			} 
+		}
 		is_dynamic_country = no
 		NOT = {
 			has_allowed_idea_with_traits = { idea = fascist_demagogue characters = yes }
-		}
-		if = {
-			limit = { has_dlc = "Battle for the Bosporus" }
-			NOT = { tag = TUR tag = GRE }
 		}
 	}
 	generate_character = {
@@ -90,7 +88,7 @@ every_possible_country = {
 				if = {
 					limit = { has_dlc = "Man the Guns" }	
 					NOT = { has_autonomy_state = autonomy_supervised_state }
-				}				
+				}			
 			}
 			ai_will_do = {
 				factor = 0
@@ -101,12 +99,15 @@ every_possible_country = {
 		}
 	}
 }
-
+#Head of Intelligence
 every_possible_country = {
 	limit = {
+		NOT = { 
+			OR = { 
+				#taglist goes here
+			} 
+		}
 		has_dlc = "La Resistance"
-		# china gets a special one via focus
-		NOT = { original_tag = CHI }
 		NOT = {
 			has_allowed_idea_with_traits = { idea = head_of_intelligence characters = yes }
 		}
@@ -133,22 +134,322 @@ every_possible_country = {
 		}
 	}
 }
+#Captain of Industry
+every_possible_country = {
+	limit = {
+		NOT = { 
+			OR = { 
+				#taglist goes here
+			} 
+		}
+		is_dynamic_country = no
+		NOT = {
+			has_allowed_idea_with_traits = {
+				idea = captain_of_industry
+				characters = yes
+			}
+		}
+	}
+	generate_character = {
+		token_base = generic_captain_of_industry
+		advisor = {
+			slot = political_advisor
+			traits = {
+				captain_of_industry
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_political_advisor_europe_3"
+			}
+		}
+	}
+}
+#Compassionate Gentleman
+every_possible_country = {
+	limit = {
+		NOT = { 
+			OR = { 
+				#taglist goes here
+			} 
+		}
+		is_dynamic_country = no
+		NOT = {
+			has_allowed_idea_with_traits = {
+				idea = compassionate_gentleman
+				characters = yes
+			}
+		}
+	}
+	generate_character = {
+		token_base = generic_compassionate_gentleman
+		advisor = {
+			slot = political_advisor
+			traits = {
+				compassionate_gentleman
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_political_advisor_europe_5"
+			}
+		}
+	}
+}
+#Silent Workhorse
+every_possible_country = {
+	limit = {
+		NOT = { 
+			OR = { 
+				#taglist goes here
+			} 
+		}
+		is_dynamic_country = no
+		NOT = {
+			has_allowed_idea_with_traits = {
+				idea = silent_workhorse
+				characters = yes
+			}
+		}
+	}
+	generate_character = {
+		token_base = generic_silent_workhorse
+		advisor = {
+			slot = political_advisor
+			traits = {
+				silent_workhorse
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_political_advisor_europe_2"
+			}
+		}
+	}
+}
+#Prince of Terror
+every_possible_country = {
+	limit = {
+		NOT = { 
+			OR = { 
+				#taglist goes here
+			} 
+		}
+		is_dynamic_country = no
+		NOT = {
+			has_allowed_idea_with_traits = {
+				idea = prince_of_terror
+				characters = yes
+			}
+		}
+	}
+	generate_character = {
+		token_base = generic_prince_of_terror
+		advisor = {
+			slot = political_advisor
+			traits = {
+				prince_of_terror
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_political_advisor_europe_5"
+			}
+		}
+	}
+}
+#Backroom Backstabber
+every_possible_country = {
+	limit = {
+		NOT = { 
+			OR = { 
+				#taglist goes here
+			} 
+		}
+		is_dynamic_country = no
+		NOT = {
+			has_allowed_idea_with_traits = {
+				idea = backroom_backstabber
+				characters = yes
+			}
+		}
+	}
+	generate_character = {
+		token_base = generic_backroom_backstabber
+		advisor = {
+			slot = political_advisor
+			traits = {
+				backroom_backstabber
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_political_advisor_europe_1"
+			}
+		}
+	}
+}
+#Smooth Talking Charmer
+every_possible_country = {
+	limit = {
+		NOT = { 
+			OR = { 
+				#taglist goes here
+			} 
+		}
+		is_dynamic_country = no
+		NOT = {
+			has_allowed_idea_with_traits = {
+				idea = smooth_talking_charmer
+				characters = yes
+			}
+		}
+	}
+	generate_character = {
+		token_base = generic_smooth_talking_charmer
+		advisor = {
+			slot = political_advisor
+			traits = {
+				smooth_talking_charmer
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_political_advisor_europe_3"
+			}
+		}
+	}
+}
+#Ideological Crusader
+every_possible_country = {
+	limit = {
+		NOT = { 
+			OR = { 
+				#taglist goes here
+			} 
+		}
+		is_dynamic_country = no
+		NOT = {
+			has_allowed_idea_with_traits = {
+				idea = ideological_crusader
+				characters = yes
+			}
+		}
+	}
+	generate_character = {
+		token_base = generic_ideological_crusader
+		advisor = {
+			slot = political_advisor
+			traits = {
+				ideological_crusader
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_political_advisor_europe_1"
+			}
+		}
+	}
+}
+#War Industrialist
+every_possible_country = {
+	limit = {
+		NOT = { 
+			OR = { 
+				#taglist goes here
+			} 
+		}
+		is_dynamic_country = no
+		NOT = {
+			has_allowed_idea_with_traits = {
+				idea = war_industrialist
+				characters = yes
+			}
+		}
+	}
+	generate_character = {
+		token_base = generic_war_industrialist
+		advisor = {
+			slot = political_advisor
+			traits = {
+				war_industrialist
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_political_advisor_europe_2"
+			}
+		}
+	}
+}
+#Armaments Organizer
+every_possible_country = {
+	limit = {
+		NOT = { 
+			OR = { 
+				#taglist goes here
+			} 
+		}
+		is_dynamic_country = no
+		NOT = {
+			has_allowed_idea_with_traits = {
+				idea = armaments_organizer
+				characters = yes
+			}
+		}
+	}
+	generate_character = {
+		token_base = generic_armaments_organizer
+		advisor = {
+			slot = political_advisor
+			traits = {
+				armaments_organizer
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_political_advisor_europe_2"
+			}
+		}
+	}
+}
 
 # Military advisors
 every_possible_country = {
 	limit = {
-		OR = { original_tag = MOR original_tag = KOR original_tag = SER original_tag = ICE original_tag = SYR original_tag = LEB original_tag = EGY original_tag = JOR original_tag = CRO original_tag = LBA original_tag = INS original_tag = MAL original_tag = AZR original_tag = UKR original_tag = GEO original_tag = ARM original_tag = VIN original_tag = CAM original_tag = MNT original_tag = LIB original_tag = LAO original_tag = PAL original_tag = ALT original_tag = KAL original_tag = KAR original_tag = CRI original_tag = TAT original_tag = CIN original_tag = DAG original_tag = BYA original_tag = CKK original_tag = FER original_tag = YAK original_tag = VLA original_tag = KKP original_tag = YAM original_tag = TAY original_tag = OVO original_tag = NEN original_tag = KOM original_tag = ABK original_tag = KBK original_tag = NOA original_tag = VGE original_tag = BSK original_tag = KHI original_tag = BUK original_tag = UDM original_tag = CHU original_tag = MEL }
-	}
-	# generic political advisors
-	generate_character = {
-		token_base = generic_captain_of_industry # token will be TAG_token_base
-		advisor = {
-			slot = political_advisor
-			traits = { captain_of_industry }
+		NOT = { 
+			OR = { 
+				#taglist goes here
+			} 
 		}
-		portraits = { 
-			army = { small = GFX_idea_generic_captain_of_industry }
-		}
+		is_dynamic_country = no
 	}
 	generate_character = {
 		token_base = generic_fortification_engineer # token will be TAG_token_base
@@ -158,16 +459,6 @@ every_possible_country = {
 		}
 		portraits = { 
 			army = { small = GFX_idea_generic_fortification_engineer }
-		}
-	}
-	generate_character = {
-		token_base = generic_war_industrialist # token will be TAG_token_base
-		advisor = {
-			slot = political_advisor
-			traits = { war_industrialist }
-		}
-		portraits = { 
-			army = { small = GFX_idea_generic_war_industrialist }
 		}
 	}
 	# generic army chiefs
@@ -323,62 +614,6 @@ every_possible_country = {
 		}
 		portraits = { 
 			army = { small = GFX_idea_generic_air_warfare_theorist }
-		}
-	}
-}
-
-every_possible_country = {
-	limit = {
-		original_tag = MAN
-	}
-	generate_character = {
-		token_base = generic_captain_of_industry # token will be TAG_token_base
-		advisor = {
-			slot = political_advisor
-			traits = { captain_of_industry }
-		}
-		portraits = { 
-			army = { small = GFX_idea_generic_captain_of_industry }
-		}
-	}
-	generate_character = {
-		token_base = generic_fortification_engineer # token will be TAG_token_base
-		advisor = {
-			slot = political_advisor
-			traits = { fortification_engineer }
-		}
-		portraits = { 
-			army = { small = GFX_idea_generic_fortification_engineer }
-		}
-	}
-	generate_character = {
-		token_base = generic_war_industrialist # token will be TAG_token_base
-		advisor = {
-			slot = political_advisor
-			traits = { war_industrialist }
-		}
-		portraits = { 
-			army = { small = GFX_idea_generic_war_industrialist }
-		}
-	}
-	generate_character = { #Apparently MAN needs this to get an Illusive Gentleman with the new character sytem
-		token_base = generic_head_of_intelligence # token will be TAG_token_base
-		advisor = {
-			slot = political_advisor
-			traits = { head_of_intelligence }
-			available = {
-				has_intelligence_agency = yes
-			}
-			ai_will_do = {
-				factor = 1
-				modifier = {
-					has_intelligence_agency = no
-					factor = 0
-				}
-			}
-		}
-		portraits = { 
-			army = { small = GFX_idea_generic_head_of_intelligence }
 		}
 	}
 }
