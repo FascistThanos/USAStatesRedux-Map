@@ -53,6 +53,7 @@ characters={
 		portraits={
 			civilian={
 				large="gfx/leaders/CAC/Portrait_CAC_GeorgePatton.dds"
+				small = "GFX_idea_george_patton"
 			}
 		}
 		country_leader={
@@ -89,7 +90,7 @@ characters={
 		portraits={
 			army={
 				large="gfx/leaders/CAC/Portrait_USA_George_S_Patton.dds"
-				small="gfx/interface/ideas/idea_europe_generic_land_2.dds"
+				small=GFX_Portrait_leader_one_small
 			}
 		}
 		corps_commander={
@@ -125,7 +126,7 @@ characters={
 		portraits={
 			army={
 				large="gfx/leaders/CAC/Portrait_USA_Lloyd_Fredendall.dds"
-				small="gfx/interface/ideas/idea_europe_generic_land_2.dds"
+				small=GFX_Portrait_leader_two_small
 			}
 		}
 		corps_commander={
@@ -138,30 +139,12 @@ characters={
 			legacy_id=-1
 		}
 	}
-	CAC_charles_dailey={
-		name="Colonel Charles L. Dailey"
-		portraits={
-			army={
-				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
-				small="gfx/interface/ideas/idea_europe_generic_land_1.dds"
-			}
-		}
-		corps_commander={
-			traits={ inspirational_leader trickster }
-			skill = 1
-			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
-			legacy_id=-1
-		}
-	}
 	CAC_James_Keating={
-		name="General James J. Keating"
+		name=CAC_James_Keating
 		portraits={
 			army={
 				large="gfx/leaders/CAC/Portrait_CAC_JamesJKeating.dds"
-				small="gfx/interface/ideas/idea_europe_generic_land_2.dds"
+				small=GFX_Portrait_CAC_James_Keating_small
 			}
 		}
 		corps_commander={

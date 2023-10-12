@@ -1,0 +1,57 @@
+spriteTypes = {
+#Washington DC
+spriteType = {
+  name = "GFX_Portrait_DCD_William_Covell"
+  texturefile = "gfx/leaders/DCD/Portrait_WDC_William_Covell.dds"
+}
+spriteType = {
+  name = "GFX_Portrait_DCD_William_Covell_small"
+  texturefile = "gfx/interface/ideas/idea_DCD_William_Covell.dds"
+}
+spriteType = {
+  name = "GFX_Portrait_DCD_bruce_magruder"
+  texturefile = "gfx/leaders/DCD/Portrait_WDC_Bruce_Magruder.dds"
+}
+spriteType = {
+  name = "GFX_Portrait_DCD_bruce_magruder_small"
+  texturefile = "gfx/interface/ideas/idea_DCD_bruce_magruder.dds"
+}
+spriteType = {
+  name = "GFX_Portrait_DCD_vernon_prichard"
+  texturefile = "gfx/leaders/DCD/Portrait_WDC_Vernon_Prichard.dds"
+}
+spriteType = {
+  name = "GFX_Portrait_DCD_vernon_prichard_small"
+  texturefile = "gfx/interface/ideas/idea_DCD_vernon_prichard.dds"
+}
+#California
+spriteType = {
+  name = GFX_Portrait_CAC_James_Keating_small
+  texturefile = "gfx/interface/ideas/idea_CAC_james_keating.dds"
+}
+#Generic
+spriteType = {
+  name = GFX_Portrait_leader_one_small
+  texturefile = "gfx/interface/ideas/idea_generic_army_europe_1.dds"
+}
+spriteType = {
+  name = GFX_Portrait_leader_two_small
+  texturefile = "gfx/interface/ideas/idea_generic_army_europe_2.dds"
+}
+spriteType = {
+  name = GFX_Portrait_leader_three_small
+  texturefile = "gfx/interface/ideas/idea_generic_army_europe_3.dds"
+}
+spriteType = {
+  name = GFX_Portrait_leader_four_small
+  texturefile = "gfx/interface/ideas/idea_generic_army_europe_4.dds"
+}
+spriteType = {
+  name = GFX_Portrait_leader_five_small
+  texturefile = "gfx/interface/ideas/idea_generic_army_europe_5.dds"
+}
+spriteType = {
+  name = GFX_Portrait_leader_six_small
+  texturefile = "gfx/interface/ideas/idea_generic_army_europe_6.dds"
+}
+}

@@ -4,9 +4,7 @@ state={
 	history={
 		owner = BCS
 		buildings = {
-			infrastructure = 1
-			industrial_complex = 1
-			arms_factory = 1
+			infrastructure = 1		
 		}
 		victory_points = {
 			7286 5 #San Carlos

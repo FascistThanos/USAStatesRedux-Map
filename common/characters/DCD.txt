@@ -1,11 +1,11 @@
 characters = {
 #Generals
 	DCD_william_covell={
-		name="William E.R. Covell"
+		name=DCD_william_covell
 		portraits={
 			army={
-				large="gfx/leaders/DCD/Portrait_WDC_William_Covell.dds"
-				small="GFX_idea_generic_army_europe_2"
+				large="GFX_Portrait_DCD_William_Covell"
+				small=GFX_Portrait_DCD_William_Covell_small
 			}
 		}
 		corps_commander={
@@ -19,11 +19,11 @@ characters = {
 		}
 	}
 	DCD_bruce_magruder={
-		name="Bruce Magruder"
+		name=DCD_bruce_magruder
 		portraits={
 			army={
-				large="gfx/leaders/DCD/Portrait_WDC_Bruce_Magruder.dds"
-				small="GFX_idea_generic_army_europe_2"
+				large="GFX_Portrait_DCD_bruce_magruder"
+				small=GFX_Portrait_DCD_bruce_magruder_small
 			}
 		}
 		corps_commander={
@@ -37,11 +37,11 @@ characters = {
 		}
 	}
 	DCD_vernon_prichard={
-		name="Vernon Prichard"
+		name=DCD_vernon_prichard
 		portraits={
 			army={
-				large="gfx/leaders/DCD/Portrait_WDC_Vernon_Prichard.dds"
-				small="GFX_idea_generic_army_europe_2"
+				large=GFX_Portrait_DCD_vernon_prichard
+				small=GFX_Portrait_DCD_vernon_prichard_small
 			}
 		}
 		corps_commander={

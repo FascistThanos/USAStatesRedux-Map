@@ -1,0 +1,107 @@
+areas = {
+	new_england = {
+		continents = {
+			new_england
+		}
+	}
+	northeast = {
+		continents = {
+			northeast
+		}
+	}
+	southeast = {
+		continents = {
+			southeast
+		}
+	}
+	south = {
+		continents = {
+			south
+		}
+	}
+	midwest = {
+		continents = {
+			midwest
+		}
+	}
+	rocky_mountain = {
+		continents = {
+			rocky_mountain
+		}
+	}
+	west_coast = {
+		continents = {
+			west_coast
+		}
+	}
+	northern_territories = {
+		continents = {
+			northern_territories
+		}
+	}
+	prairie_provinces = {
+		continents = {
+			prairie_provinces
+		}
+	}
+	central_canada = {
+		continents = {
+			central_canada
+		}
+	}
+	atlantic_region = {
+		continents = {
+			atlantic_region
+		}
+	}
+	noroeste = {
+		continents = {
+			noroeste
+		}
+	}
+	occidente = {
+		continents = {
+			occidente
+		}
+	}
+	noreste = {
+		continents = {
+			noreste
+		}
+	}
+	sureste = {
+		continents = {
+			sureste
+		}
+	}
+	centro = {
+		continents = {
+			centro
+		}
+	}
+	sur = {
+		continents = {
+			sur
+		}
+	}
+	caribbean = {
+		continents = {
+			caribbean
+		}
+	}
+	central_america = {
+		continents = {
+			central_america
+		}
+	}
+	south_america = {
+		continents = {
+			south_america
+		}
+	}
+	great_lakes = {
+		continents = {
+			great_lakes
+		}
+	}
+}

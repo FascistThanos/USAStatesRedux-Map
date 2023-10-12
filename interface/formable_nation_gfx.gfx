@@ -14,6 +14,10 @@ spriteTypes = {
 		name = "GFX_template_header_bg"
 		textureFile = "/gfx/interface/scripted_gui_graphics/template_header_bg.dds"
 	}
+	spriteType = {
+		name = "GFX_formable_list_selector"
+		textureFile = "/gfx/interface/scripted_gui_graphics/formable_selector.dds"
+	}
 	SpriteType = {
 		name = "form_nation_button_shine"
 		texturefile = "gfx/interface/goals/focus_generic_treaty.dds"

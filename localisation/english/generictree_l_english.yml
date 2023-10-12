@@ -255,3 +255,12 @@
   GEN_airstrikebonus:0 "Naval Bomber Focus"
   GEN_battleshipbonus:0 "Battleship Effort"
   GEN_battlecruiserbonus:0 "Battlecruiser Effort"
+
+
+
+#####LEADERS
+#Washington D.C
+DCD_william_covell:0 "William E. R. Covell"
+DCD_bruce_magruder:0 "Bruce Magruder"
+DCD_vernon_prichard:0 "Vernon Prichard"
+CAC_James_Keating:0 "General James J. Keating"
