@@ -297,11 +297,11 @@ ideas = {
 			picture = generic_fighter_production_diverted
 			removal_cost = -1
 			equipment_bonus = {
-				fighter_equipment = {
+				fighter = {
 					build_cost_ic = -0.1
 					instant = yes
 				}
-				heavy_fighter_equipment = {
+				heavy_fighter = {
 					build_cost_ic = -0.1
 					instant = yes
 				}
@@ -317,11 +317,11 @@ ideas = {
 			picture = generic_air_research
 			removal_cost = -1
 			equipment_bonus = {
-				CAS_equipment = {
+				cas = {
 					build_cost_ic = -0.1
 					instant = yes
 				}
-				strat_bomber_equipment = {
+				strategic_bomber = {
 					build_cost_ic = -0.1
 					instant = yes
 				}

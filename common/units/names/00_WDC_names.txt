@@ -168,14 +168,14 @@
 		}	
 	}
 
-	cv_CAS_equipment = {
+	cas = {
 		prefix = ""
 		generic = { "VB" "VMB" "VS" "VMS" "VMSB" "VSB" }
 		generic_pattern = AIR_WING_NAME_USA_CARRIER
 		unique = {
 		}	
 	}
-	cv_nav_bomber_equipment = {
+	naval_bomber = {
 		prefix = ""
 		generic = { "VT" "VMTB" }
 		generic_pattern = AIR_WING_NAME_USA_CARRIER
@@ -183,17 +183,9 @@
 		}	
 	}
 
-	tac_bomber_equipment = {
+	tactical_bomber = {
 		prefix = ""
 		generic = { "Medium Bombardment Group" }
-		generic_pattern = AIR_WING_NAME_USA_GENERIC
-		unique = {
-		}	
-	}
-
-	jet_tac_bomber_equipment = {
-		prefix = ""
-		generic = { "Medium Bombardment Group" "Fast Strike Group"}
 		generic_pattern = AIR_WING_NAME_USA_GENERIC
 		unique = {
 		}	
@@ -207,7 +199,7 @@
 		}	
 	}
 
-	strat_bomber_equipment = {
+	strategic_bomber = {
 		prefix = ""
 		generic = { "Heavy Bombardment Group" }
 		generic_pattern = AIR_WING_NAME_USA_GENERIC
