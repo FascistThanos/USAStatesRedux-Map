@@ -26,8 +26,24 @@ spriteType = {
 }
 #California
 spriteType = {
-  name = GFX_Portrait_CAC_James_Keating_small
+  name = "GFX_Portrait_USA_Lloyd_Fredendall"
+  texturefile = "gfx/leaders/CAC/Portrait_USA_Lloyd_Fredendall.dds"
+}
+spriteType = {
+  name = "GFX_Portrait_CAC_James_Keating"
   texturefile = "gfx/interface/ideas/idea_CAC_james_keating.dds"
+}
+spriteType = {
+  name = "GFX_Portrait_CAC_James_Keating_small"
+  texturefile = "gfx/leaders/CAC/Portrait_CAC_JamesJKeating.dds"
+}
+spriteType = {
+  name = "GFX_Portrait_CAC_GeorgePatton"
+  texturefile = "gfx/leaders/CAC/Portrait_CAC_GeorgePatton.dds"
+}
+spriteType = {
+  name = "GFX_Portrait_CAC_GeorgePatton_small"
+  texturefile = "gfx/interface/ideas/idea_USA_george_s_patton.dds"
 }
 #Generic
 spriteType = {
