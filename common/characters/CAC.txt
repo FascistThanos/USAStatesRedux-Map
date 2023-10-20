@@ -1,8 +1,5 @@
 characters={
-
-
 ### LEADERS ###
-
 	CAC_frank_merriam={
 		name="Frank Merriam"
 		portraits={
@@ -17,7 +14,6 @@ characters={
 			id=-1
 		}
 	}
-
 	CAC_upton_sinclair={
 		name="Upton Sinclair"
 		portraits={
@@ -32,7 +28,6 @@ characters={
 			id=-1
 		}
 	}
-
 	CAC_james_e_davis={
 		name=CAC_james_e_davis
 		portraits={
@@ -47,7 +42,6 @@ characters={
 			id=-1
 		}
 	}
-
 	CAC_george_s_patton={
 		name=CAC_george_s_patton
 		portraits={
@@ -106,8 +100,8 @@ characters={
 		name="Major DeWitt 'Baker' Peck"
 		portraits={
 			army={
-				large="gfx/leaders/CAC/Portrait_CAC_DeWitt_Peck.dds"
-				small="gfx/interface/ideas/idea_europe_generic_land_2.dds"
+				large="GFX_Portrait_CAC_DeWitt_Peck"
+				small=GFX_Portrait_CAC_DeWitt_Peck_small
 			}
 		}
 		corps_commander={
@@ -142,8 +136,8 @@ characters={
 		name=CAC_James_Keating
 		portraits={
 			army={
-				large="gfx/leaders/CAC/Portrait_CAC_JamesJKeating.dds"
-				small=GFX_Portrait_CAC_James_Keating_small
+				large="GFX_Portrait_CAC_JamesJKeating"
+				small=GFX_Portrait_CAC_JamesJKeating_small
 			}
 		}
 		corps_commander={
@@ -160,8 +154,8 @@ characters={
 		name="Colonel Bertram 'Bert' Bone"
 		portraits={
 			army={
-				large="gfx/leaders/CAC/Portrait_CAC_BertramAllisonBone.dds"
-				small="gfx/interface/ideas/idea_europe_generic_land_2.dds"
+				large="GFX_Portrait_CAC_BertramAllisonBone"
+				small=GFX_Portrait_CAC_BertramAllisonBone_small
 			}
 		}
 		corps_commander={

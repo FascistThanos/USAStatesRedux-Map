@@ -26,24 +26,60 @@ spriteType = {
 }
 #California
 spriteType = {
-  name = "GFX_Portrait_USA_Lloyd_Fredendall"
-  texturefile = "gfx/leaders/CAC/Portrait_USA_Lloyd_Fredendall.dds"
-}
-spriteType = {
-  name = "GFX_Portrait_CAC_James_Keating"
-  texturefile = "gfx/interface/ideas/idea_CAC_james_keating.dds"
-}
-spriteType = {
-  name = "GFX_Portrait_CAC_James_Keating_small"
-  texturefile = "gfx/leaders/CAC/Portrait_CAC_JamesJKeating.dds"
-}
-spriteType = {
   name = "GFX_Portrait_CAC_GeorgePatton"
   texturefile = "gfx/leaders/CAC/Portrait_CAC_GeorgePatton.dds"
 }
 spriteType = {
   name = "GFX_Portrait_CAC_GeorgePatton_small"
-  texturefile = "gfx/interface/ideas/idea_USA_george_s_patton.dds"
+  texturefile = "gfx/interface/ideas/idea_CAC_george_s_patton.dds"
+}
+spriteType = {
+  name = "GFX_Portrait_CAC_DeWitt_Peck"
+  texturefile = "gfx/leaders/CAC/Portrait_CAC_GeorgePatton.dds"
+}
+spriteType = {
+  name = "GFX_Portrait_CAC_DeWitt_Peck_small"
+  texturefile = "gfx/interface/ideas/idea_CAC_DeWitt_Peck.dds"
+}
+spriteType = {
+  name = "GFX_Portrait_USA_Lloyd_Fredendall"
+  texturefile = "gfx/leaders/CAC/Portrait_USA_Lloyd_Fredendall.dds"
+}
+spriteType = {
+  name = "GFX_Portrait_CAC_Lloyd_Fredendall_small"
+  texturefile = "gfx/interface/ideas/idea_CAC_Lloyd_Fredendall.dds"
+}
+spriteType = {
+  name = "GFX_Portrait_CAC_JamesJKeating"
+  texturefile = "gfx/leaders/CAC/Portrait_CAC_JamesJKeating.dds"
+}
+spriteType = {
+  name = "GFX_Portrait_CAC_JamesJKeating_small"
+  texturefile = "gfx/interface/ideas/idea_CAC_JamesJKeating.dds"
+}
+spriteType = {
+  name = "GFX_Portrait_CAC_BertramAllisonBone"
+  texturefile = "gfx/leaders/CAC/Portrait_CAC_BertramAllisonBone.dds"
+}
+spriteType = {
+  name = "GFX_Portrait_CAC_BertramAllisonBone_small"
+  texturefile = "gfx/interface/ideas/idea_CAC_BertramAllisonBone_.dds"
+}
+spriteType = {
+  name = "GFX_Portrait_CAC_Charles_M_Cooke"
+  texturefile = "gfx/leaders/CAC/Portrait_USA_Charles_M_Cooke.dds"
+}
+spriteType = {
+  name = "GFX_Portrait_CAC_Charles_M_Cooke_small"
+  texturefile = "gfx/interface/ideas/idea_CAC_Charles_M_Cooke_.dds"
+}
+spriteType = {
+  name = "GFX_Portrait_CAC_Raymond_Spruance"
+  texturefile = "gfx/leaders/CAC/Portrait_CAC_Raymond_Spruance.dds"
+}
+spriteType = {
+  name = "GFX_Portrait_CAC_Raymond_Spruance_small"
+  texturefile = "gfx/interface/ideas/idea_CAC_Raymond_Spruance_.dds"
 }
 #Generic
 spriteType = {
