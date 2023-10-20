@@ -12,7 +12,9 @@ state={
 
 		}
 		add_core_of = HON
-
+		victory_points = {
+			7703 5 #Barra Patuca
+		}
 	}
 
 	provinces={

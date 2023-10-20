@@ -12,7 +12,9 @@ state={
 			industrial_complex = 1
 		}
 		add_core_of = ELS
-
+		victory_points = {
+			2905 15 #Santa Ana
+		}
 	}
 
 	provinces={

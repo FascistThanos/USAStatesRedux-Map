@@ -9,6 +9,21 @@ state = {
 			arms_factory = 2
 		}
 		add_core_of = HON
+		victory_points = {
+			10356 20 #Tegucigalpa
+		}
+		victory_points = {
+			10357 15 #Comayaguela
+		}
+		victory_points = {
+			10353 5 #El Tablon
+		}
+		victory_points = {
+			10354 5 #Las Tapias
+		}
+		victory_points = {
+			10358 5 #Carpintero
+		}
 	}
 	provinces = {
 		10353 10354 10355 10356 10357 10358

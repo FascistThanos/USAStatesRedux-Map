@@ -11,7 +11,10 @@ state={
 			industrial_complex = 1
 		}
 		add_core_of = GUA
-
+		victory_points = {
+			7713 20 #Quetzaltenango
+		}
+		
 	}
 	provinces={
 		7713 7719 7721 7724 7727 

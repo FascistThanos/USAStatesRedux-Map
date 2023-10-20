@@ -9,10 +9,14 @@ state={
 		owner = ELS
 		buildings = {
 			infrastructure = 4
-
 		}
 		add_core_of = ELS
-
+		victory_points = {
+			3901 15 #San Miguel
+		}
+		victory_points = {
+			3446 5 #Santa Rosa de Lima
+		}
 	}
 
 	provinces={

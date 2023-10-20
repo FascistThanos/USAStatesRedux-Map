@@ -8,7 +8,9 @@ state={
 
 		}
 		add_core_of = GUA
-
+		victory_points = {
+			7722 10 #Chiquimula
+		}
 	}
 	provinces={
 		7722 

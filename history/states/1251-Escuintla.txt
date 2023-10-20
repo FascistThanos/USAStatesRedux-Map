@@ -14,7 +14,9 @@ state={
 			}
 		}
 		add_core_of = GUA
-
+		victory_points = {
+			2234 10 #Antigua Guatemala
+		}
 	}
 	provinces={
 		586 2234 3937 7729 7732 

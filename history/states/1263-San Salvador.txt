@@ -9,7 +9,21 @@ state={
 			arms_factory = 2
 		}
 		add_core_of = ELS
-
+		victory_points = {
+			10352 20 #San Salvador
+		}
+		victory_points = {
+			10350 15 #Santa Tecla
+		}
+		victory_points = {
+			10349 5 #Nuevo Cuscatlan
+		}
+		victory_points = {
+			10348 5 #Santiago Texacuangos
+		}
+		victory_points = {
+			10351 5 #Soyapango
+		}
 	}
 	provinces={
 		10348 10349 10350 10351 10352 

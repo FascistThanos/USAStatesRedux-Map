@@ -8,10 +8,11 @@ state={
 		owner = BLZ
 		buildings = {
 			infrastructure = 2
-
 		}
 		add_core_of = BLZ
-
+		victory_points = {
+			7657 15 #Belmopan
+		}
 	}
 	provinces={
 		3797 4321 7629 7657 

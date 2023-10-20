@@ -8,7 +8,9 @@ state={
 
 		}
 		add_core_of = HON
-
+		victory_points = {
+			73 10 #Choluteca
+		}
 	}
 	provinces={
 		73 

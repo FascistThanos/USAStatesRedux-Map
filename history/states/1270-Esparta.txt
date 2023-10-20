@@ -12,7 +12,12 @@ state={
 			industrial_complex = 1
 		}
 		add_core_of = HON
-
+		victory_points = {
+			1864 15 #El Progreso
+		}
+		victory_points = {
+			2297 10 #La Ceiba
+		}
 	}
 
 	provinces={

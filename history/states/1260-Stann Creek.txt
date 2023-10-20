@@ -10,7 +10,12 @@ state={
 			}
 		}
 		add_core_of = BLZ
-
+		victory_points = {
+			7647 10 #Belize City
+		}
+		victory_points = {
+			7674 5 #Placenia
+		}
 	}
 	provinces={
 		7647 7660 7674 

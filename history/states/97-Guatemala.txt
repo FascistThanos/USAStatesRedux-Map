@@ -11,7 +11,18 @@ state={
 			arms_factory = 2
 		}
 		add_core_of = GUA
-
+		victory_points = {
+			10359 20 #Guatemala City
+		}
+		victory_points = {
+			10361 15 #Mixco
+		}
+		victory_points = {
+			10364 5 #Aldea La Laguneta
+		}
+		victory_points = {
+			10360 5 #Ciénaga Grande
+		}
 	}
 
 	provinces={

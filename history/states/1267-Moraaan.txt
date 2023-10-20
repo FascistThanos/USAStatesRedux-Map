@@ -14,7 +14,9 @@ state={
 			}
 		}
 		add_core_of = HON
-
+		victory_points = {
+			7706 20 #San Pedro Sula
+		}
 	}
 	provinces={
 		2270 7694 7706 7715 

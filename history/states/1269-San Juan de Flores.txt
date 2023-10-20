@@ -8,7 +8,9 @@ state={
 
 		}
 		add_core_of = HON
-
+		victory_points = {
+			3726 10 #Comayagua
+		}
 	}
 	provinces={
 		1760 3192 3726 7725 7734 

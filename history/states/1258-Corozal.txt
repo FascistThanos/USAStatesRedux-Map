@@ -5,10 +5,11 @@ state={
 		owner = BLZ
 		buildings = {
 			infrastructure = 1
-
 		}
 		add_core_of = BLZ
-
+		victory_points = {
+			7605 5 #Corozal
+		}
 	}
 	provinces={
 		3586 7605 7635 

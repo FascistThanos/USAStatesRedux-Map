@@ -9,10 +9,11 @@ state={
 		owner = GUA
 		buildings = {
 			infrastructure = 3
-
 		}
 		add_core_of = GUA
-
+		victory_points = {
+			228 5 #Flores
+		}
 	}
 	provinces={
 		228 598 2082 3202 3762 4032 7654 
