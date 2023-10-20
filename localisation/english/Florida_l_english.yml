@@ -166,3 +166,5 @@
   flfarm_ourselves:0 "Arm Ourslves"
   flfarm_ourselves_desc:0 "Arming ourselves with Florida Man!"
   flenforce_king:0 "Forceful Takeover"
+#Tooltips
+flf_allowed_to_form_csa_tt:0 "Unlocks the ability to §YForm the Confederate States of America§!"

@@ -251,7 +251,8 @@ ideas = {
 			picture = idea_usa_desegregation_1
 			modifier = {
 				justify_war_goal_time = -0.35
-				conscription_factor = 0.-
+				conscription_factor = 0.05
 			}
 		}
 	}
+}
