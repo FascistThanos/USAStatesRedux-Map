@@ -53,7 +53,6 @@ characters={
 		portraits={
 			civilian={
 				large="gfx/leaders/CAC/Portrait_CAC_GeorgePatton.dds"
-				small = "GFX_idea_george_patton"
 			}
 		}
 		country_leader={
@@ -89,8 +88,8 @@ characters={
 		name="General George S. Patton"
 		portraits={
 			army={
-				large="gfx/leaders/CAC/Portrait_USA_George_S_Patton.dds"
-				small=GFX_Portrait_leader_one_small
+				large="GFX_Portrait_CAC_GeorgePatton"
+				small=GFX_Portrait_CAC_GeorgePatton_small
 			}
 		}
 		corps_commander={
@@ -125,7 +124,7 @@ characters={
 		name="General Lloyd Fredendall"
 		portraits={
 			army={
-				large="gfx/leaders/CAC/Portrait_USA_Lloyd_Fredendall.dds"
+				large="GFX_Portrait_USA_Lloyd_Fredendall"
 				small=GFX_Portrait_leader_two_small
 			}
 		}
