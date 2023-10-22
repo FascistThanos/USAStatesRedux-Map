@@ -8,7 +8,9 @@ state={
 
 		}
 		add_core_of = NIC
-
+		victory_points = {
+			1817 10 #Esteli
+		}
 	}
 	provinces={
 		1679 1817 3190 7735 7738 

@@ -2173,6 +2173,16 @@ VICTORY_POINTS_7657:0 "Belmopan"
 VICTORY_POINTS_7647:0 "Belize City"
 VICTORY_POINTS_7674:0 "Placenia"
 VICTORY_POINTS_7605:0 "Corozal"
+#####Costa Rica
+VICTORY_POINTS_7770:0 "Puerto Viejo de Talamanca"
+VICTORY_POINTS_2316:0 "Jaco"
+VICTORY_POINTS_3680:0 "Liberia"
+#San Jose
+VICTORY_POINTS_2316:0 "San Jose"
+VICTORY_POINTS_10333:0 "Tres Rios"
+VICTORY_POINTS_10335:0 "San Isidro"
+VICTORY_POINTS_10373:0 "Heredia"
+VICTORY_POINTS_10336:0 "Alajuela"
 #####Guatemala
 VICTORY_POINTS_7713:0 "Quetzaltenango"
 VICTORY_POINTS_3343:0 "Cobán"
@@ -2207,6 +2217,27 @@ VICTORY_POINTS_10357:0 "Comayaguela"
 VICTORY_POINTS_10353:0 "El Tablón"
 VICTORY_POINTS_10354:0 "Las Tapias"
 VICTORY_POINTS_10358:0 "Carpintero"
+#####Nicaragua
+VICTORY_POINTS_7728:0 "Puerto Cabezas"
+VICTORY_POINTS_7747:0 "Matagalpa"
+VICTORY_POINTS_1817:0 "Esteli"
+VICTORY_POINTS_40:0 "León"
+#Managua
+VICTORY_POINTS_10346:0 "Managua"
+VICTORY_POINTS_10345:0 "Ciudad Sandino"
+VICTORY_POINTS_10343:0 "Esquipulas"
+VICTORY_POINTS_11374:0 "Masaya"
+VICTORY_POINTS_10347:0 "Tisma"
+#####Panama
+VICTORY_POINTS_1524:0 "David"
+VICTORY_POINTS_164:0 "Chitre"
+VICTORY_POINTS_7796:0 "Las Tablas"
+VICTORY_POINTS_3020:0 "La Chorrera"
+VICTORY_POINTS_10332:0 "Colón"
+#Panama City
+VICTORY_POINTS_10327:0 "Panama City"
+VICTORY_POINTS_10330:0 "San Miguelito"
+VICTORY_POINTS_10331:0 "Pacora"
 #############################
 ##### C A R I B B E A N #####
 #############################

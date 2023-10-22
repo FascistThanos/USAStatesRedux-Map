@@ -8,7 +8,9 @@ state={
 
 		}
 		add_core_of = COS
-
+		victory_points = {
+			3680 5 #Liberia
+		}
 	}
 	provinces={
 		3680 4273 

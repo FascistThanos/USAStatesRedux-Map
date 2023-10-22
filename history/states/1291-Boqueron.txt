@@ -8,7 +8,9 @@ state={
 			industrial_complex = 1
 		}
 		add_core_of = PAN
-
+		victory_points = {
+			1524 15 #David
+		}
 	}
 	provinces={
 		1524 3989 

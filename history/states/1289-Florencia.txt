@@ -14,7 +14,9 @@ state={
 			}
 		}
 		add_core_of = COS
-
+		victory_points = {
+			2316 10 #Jaco
+		}
 	}
 	provinces={
 		1532 2316 7765 

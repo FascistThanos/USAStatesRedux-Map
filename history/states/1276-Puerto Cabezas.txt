@@ -8,7 +8,9 @@ state={
 
 		}
 		add_core_of = NIC
-
+		victory_points = {
+			7728 5 #Puerto Cabezas
+		}
 	}
 	provinces={
 		7728 7731 7737 7739 7742 7743 

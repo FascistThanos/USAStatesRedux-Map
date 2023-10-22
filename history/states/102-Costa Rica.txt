@@ -10,7 +10,9 @@ state={
 
 		}
 		add_core_of = COS
-
+		victory_points = {
+			7770 5 #Puerto Viejo de Talamanca
+		}
 	}
 
 	provinces={

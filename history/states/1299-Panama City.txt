@@ -12,7 +12,15 @@ state={
 			}
 		}
 		add_core_of = PAN
-
+		victory_points = {
+			10327 20 #Panama City
+		}
+		victory_points = {
+			10330 5 #San Miguelito
+		}
+		victory_points = {
+			10331 5 #Pacora
+		}
 	}
 	provinces={
 		10327 10330 10331 

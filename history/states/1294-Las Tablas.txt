@@ -8,7 +8,12 @@ state={
 			industrial_complex = 1
 		}
 		add_core_of = PAN
-
+		victory_points = {
+			164 5 #Chitre
+		}
+		victory_points = {
+			7796 5 #Las Tablas
+		}
 	}
 	provinces={
 		164 3328 7796 7798 

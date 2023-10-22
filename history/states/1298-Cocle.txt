@@ -8,7 +8,9 @@ state={
 
 		}
 		add_core_of = PAN
-
+		victory_points = {
+			3020 10 #La Chorrera
+		}
 	}
 	provinces={
 		3020 7775 

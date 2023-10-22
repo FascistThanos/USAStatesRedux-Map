@@ -10,7 +10,21 @@ state={
 			industrial_complex = 2
 		}
 		add_core_of = NIC
-
+		victory_points = {
+			10346 20 #Managua
+		}
+		victory_points = {
+			10345 10 #Ciudad Sandino
+		}
+		victory_points = {
+			10343 5 #Esquipulas
+		}
+		victory_points = {
+			11374 15 #Masaya
+		}
+		victory_points = {
+			10347 5 #Tisma
+		}
 	}
 
 	provinces={

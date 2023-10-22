@@ -8,7 +8,9 @@ state={
 
 		}
 		add_core_of = PAN
-
+		victory_points = {
+			10332 20 #Colon
+		}
 	}
 	provinces={
 		10332 

@@ -8,7 +8,21 @@ state={
 
 		}
 		add_core_of = COS
-
+		victory_points = {
+			2316 20 #San Jose
+		}
+		victory_points = {
+			10333 5 #Tres Rios
+		}
+		victory_points = {
+			10335 5 #San Isidro
+		}
+		victory_points = {
+			10373 5 #Heredia
+		}
+		victory_points = {
+			10336 5 #Alajuela
+		}
 	}
 	provinces={
 		10333 10334 10335 10336 11373 
