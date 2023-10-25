@@ -13,7 +13,12 @@ state={
 			}
 		}
 		add_core_of = TAT
-
+		victory_points = {
+			1914 10 #Port of Spain
+		}
+		victory_points = {
+			7767 5 #San Fernando
+		}
 	}
 
 	provinces={

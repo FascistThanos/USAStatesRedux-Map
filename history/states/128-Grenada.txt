@@ -13,7 +13,9 @@ state={
 			}
 		}
 		add_core_of = GND
-
+		victory_points = {
+			11623 10 #Saint George's
+		}
 	}
 
 	provinces={

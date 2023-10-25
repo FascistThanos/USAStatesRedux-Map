@@ -14,7 +14,12 @@ state={
 			}
 		}
 		add_core_of = GDL
-
+		victory_points = {
+			11651 10 #Basse-Terre
+		}
+		victory_points = {
+			11657 5 #Port-Louis
+		}
 	}
 
 	provinces={

@@ -13,7 +13,9 @@ state={
 			}
 		}
 		add_core_of = SVG
-
+		victory_points = {
+			11629 10 #Kingstown
+		}
 	}
 
 	provinces={

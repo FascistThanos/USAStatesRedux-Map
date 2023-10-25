@@ -13,7 +13,9 @@ state={
 			}
 		}
 		add_core_of = DMC
-
+		victory_points = {
+			11648 10 #Roseau
+		}
 	}
 
 	provinces={

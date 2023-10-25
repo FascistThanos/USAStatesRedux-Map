@@ -12,7 +12,9 @@ state={
 			}
 		}
 		add_core_of = TAT
-
+		victory_points = {
+			11622 5 #Scarborough
+		}
 	}
 
 	provinces={

@@ -11,6 +11,9 @@ state={
 			}
 		}
 		add_core_of = MNT
+		victory_points = {
+			8215 5 #Plymouth
+		}
 	}
 	manpower=12716
 	state_category=small_city

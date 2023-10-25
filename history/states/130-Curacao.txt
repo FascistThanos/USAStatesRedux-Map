@@ -13,7 +13,9 @@ state={
 			}
 		}
 		add_core_of = CRC
-
+		victory_points = {
+			11625 10 #Willemstad
+		}
 	}
 
 	provinces={

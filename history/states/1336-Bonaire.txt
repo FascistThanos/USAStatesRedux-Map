@@ -12,7 +12,9 @@ state={
 			}
 		}
 		add_core_of = CRC
-
+		victory_points = {
+			11626 5 #Kralendijk
+		}
 	}
 
 	provinces={

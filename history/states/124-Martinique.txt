@@ -13,7 +13,9 @@ state={
 			}
 		}
 		add_core_of = MTQ
-
+		victory_points = {
+			11645 10 #Fort-de-France
+		}
 	}
 
 	provinces={

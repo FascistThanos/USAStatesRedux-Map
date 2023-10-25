@@ -2241,7 +2241,33 @@ VICTORY_POINTS_10331:0 "Pacora"
 #############################
 ##### C A R I B B E A N #####
 #############################
-
+#####Aruba
+VICTORY_POINTS_8224:0 "Oranjestad"
+#####Barbados
+VICTORY_POINTS_11628:0 "Bridgetown"
+#####Curacao
+VICTORY_POINTS_11625:0 "Willemstad"
+VICTORY_POINTS_11626:0 "Kralendijk"
+#####Dominica
+VICTORY_POINTS_11648:0 "Roseau"
+#####Grenada
+VICTORY_POINTS_11623:0 "Saint George's"
+#####Guadalupe
+VICTORY_POINTS_11651:0 "Basse-Terre"
+VICTORY_POINTS_11657:0 "Port-Louis"
+VICTORY_POINTS_8219:0 "Grand-Bourg"
+#####Martinique
+VICTORY_POINTS_11645:0 "Fort-de-France"
+#####Montserrat
+VICTORY_POINTS_8215:0 "Plymouth"
+#####Saint Lucia
+VICTORY_POINTS_11641:0 "Castries"
+#####Saint Vincent and the Grenadines
+VICTORY_POINTS_11629:0 "Kingstown"
+#####Trinidad and Tobago
+VICTORY_POINTS_1914:0 "Port of Spain"
+VICTORY_POINTS_7767:0 "San Fernando"
+VICTORY_POINTS_11622:0 "Scarborough"
 ####################################
 ##### S O U T H  A M E R I C A #####
 ####################################

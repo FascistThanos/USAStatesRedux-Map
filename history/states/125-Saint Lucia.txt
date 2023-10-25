@@ -13,7 +13,9 @@ state={
 			}
 		}
 		add_core_of = STL
-
+		victory_points = {
+			11641 10 #Castries
+		}
 	}
 
 	provinces={

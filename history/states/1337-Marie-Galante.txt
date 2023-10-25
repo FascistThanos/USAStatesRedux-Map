@@ -11,7 +11,9 @@ state={
 			}
 		}
 		add_core_of = GDL
-
+		victory_points = {
+			8219 5 #Grand-Bourg
+		}
 	}
 	provinces={
 		8219 

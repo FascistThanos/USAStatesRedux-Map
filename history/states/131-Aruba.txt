@@ -11,6 +11,9 @@ state={
 			}
 		}
 		add_core_of = ARB
+		victory_points = {
+			8224 10 #Oranjestad
+		}
 	}
 	manpower=21915
 	state_category=small_city

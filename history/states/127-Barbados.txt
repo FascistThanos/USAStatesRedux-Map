@@ -13,7 +13,9 @@ state={
 			}
 		}
 		add_core_of = BRB
-
+		victory_points = {
+			11628 10 #Bridgetown
+		}
 	}
 
 	provinces={
