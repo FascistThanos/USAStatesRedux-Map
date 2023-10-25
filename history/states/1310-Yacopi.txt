@@ -12,7 +12,12 @@ state={
 			arms_factory = 3
 		}
 		add_core_of = COL
-
+		victory_points = {
+			943 20 #Bogota
+		}
+		victory_points = {
+			2379 10 #Cucuta
+		}
 	}
 	provinces={
 		519 943 1230 1928 2281 2379 2909 7787 7802 

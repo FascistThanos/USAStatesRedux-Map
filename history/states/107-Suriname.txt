@@ -12,7 +12,15 @@ state={
 			}
 		}
 		add_core_of = SUR
-
+		victory_points = {
+			11371 20 #Paramaribo
+		}
+		victory_points = {
+			10317 5 #Hannaslust
+		}
+		victory_points = {
+			10318 5 #Meerzorg
+		}
 	}
 
 	provinces={

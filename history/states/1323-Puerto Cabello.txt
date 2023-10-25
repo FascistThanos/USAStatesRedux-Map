@@ -8,7 +8,12 @@ state={
 			industrial_complex = 1
 		}
 		add_core_of = VEN
-
+		victory_points = {
+			2018 10 #Coro
+		}
+		victory_points = {
+			3669 20 #Valencia
+		}
 	}
 	provinces={
 		771 1463 1573 2018 2076 3656 3669 7756 7762 

@@ -7,7 +7,9 @@ state={
 			infrastructure = 4
 		}
 		add_core_of = VEN
-
+		victory_points = {
+			7785 5 #Merida
+		}
 	}
 	provinces={
 		609 645 1366 1807 1811 7779 7785 7790 

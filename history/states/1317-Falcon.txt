@@ -7,7 +7,9 @@ state={
 			infrastructure = 2
 		}
 		add_core_of = VEN
-
+		victory_points = {
+			7751 5 #Punto Fijo
+		}
 	}
 	provinces={
 		7751 

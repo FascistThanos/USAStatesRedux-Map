@@ -12,7 +12,9 @@ state={
 			}
 		}
 		add_core_of = VEN
-
+		victory_points = {
+			1674 20 #Maracaibo
+		}
 	}
 	provinces={
 		231 610 1674 1675 2230 2367 7773 

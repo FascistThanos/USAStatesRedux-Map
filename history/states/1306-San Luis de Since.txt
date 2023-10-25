@@ -12,7 +12,12 @@ state={
 			air_base = 3
 		}
 		add_core_of = COL
-
+		victory_points = {
+			2331 20 #Barranquilla
+		}
+		victory_points = {
+			1207 15 #Cartagena
+		}
 	}
 	provinces={
 		633 1207 2331 2515 2867 3925 7769 7777 

@@ -10,7 +10,9 @@ state={
 			infrastructure = 4
 		}
 		add_core_of = VEN
-
+		victory_points = {
+			7774 5 #Maturin
+		}
 	}
 	provinces={
 		2391 2691 2920 4025 7774 7784 

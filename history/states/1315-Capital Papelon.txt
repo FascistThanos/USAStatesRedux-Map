@@ -7,7 +7,9 @@ state={
 			infrastructure = 4
 		}
 		add_core_of = VEN
-
+		victory_points = {
+			7781 5 #Barinas
+		}
 	}
 	provinces={
 		346 1068 1308 2083 7781 7782 

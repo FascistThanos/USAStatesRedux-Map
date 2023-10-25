@@ -8,7 +8,12 @@ state={
 			industrial_complex = 1
 		}
 		add_core_of = COL
-
+		victory_points = {
+			7812 20 #Cali
+		}
+		victory_points = {
+			1812 5 #Pasto
+		}
 	}
 	provinces={
 		1812 3587 7812 

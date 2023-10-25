@@ -13,7 +13,18 @@ state={
 			}
 		}
 		add_core_of = GYA
-
+		victory_points = {
+			10324 20 #Georgetown
+		}
+		victory_points = {
+			10332 5 #Triumph
+		}
+		victory_points = {
+			10323 5 #Parika
+		}
+		victory_points = {
+			10321 5 #Mocha Arcadia
+		}
 	}
 
 	provinces={

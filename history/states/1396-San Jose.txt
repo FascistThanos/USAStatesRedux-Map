@@ -9,7 +9,7 @@ state={
 		}
 		add_core_of = COS
 		victory_points = {
-			2316 20 #San Jose
+			10334 20 #San Jose
 		}
 		victory_points = {
 			10333 5 #Tres Rios

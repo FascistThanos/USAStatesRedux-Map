@@ -10,6 +10,9 @@ state={
 				naval_base = 1
 			}
 		}
+		victory_points = {
+			7815 20 #Cayenne
+		}
 		add_core_of = FGY
 	}
 	provinces={

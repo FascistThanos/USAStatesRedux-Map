@@ -2245,3 +2245,35 @@ VICTORY_POINTS_10331:0 "Pacora"
 ####################################
 ##### S O U T H  A M E R I C A #####
 ####################################
+#####Colombia
+VICTORY_POINTS_970:0 "Maícao"
+VICTORY_POINTS_3555:0 "Valledupar"
+VICTORY_POINTS_2331:0 "Barranquilla"
+VICTORY_POINTS_1207:0 "Cartagena"
+VICTORY_POINTS_7794:0 "Medellín"
+VICTORY_POINTS_7812:0 "Cali"
+VICTORY_POINTS_1812:0 "Pasto"
+VICTORY_POINTS_943:0 "Bogotá"
+VICTORY_POINTS_2379:0 "Cúcuta"
+#####Venezuela
+VICTORY_POINTS_7774:0 "Maturin"
+VICTORY_POINTS_1283:0 "Barcelona"
+VICTORY_POINTS_7751:0 "Punto Fijo"
+VICTORY_POINTS_2018:0 "Coro"
+VICTORY_POINTS_3669:0 "Valencia"
+VICTORY_POINTS_4029:0 "Barquisimeto"
+VICTORY_POINTS_7781:0 "Barinas"
+VICTORY_POINTS_7785:0 "Merida"
+VICTORY_POINTS_1674:0 "Maracaibo"
+#Caracas
+VICTORY_POINTS_10339:0 "Caracas"
+VICTORY_POINTS_10340:0 "Maiquetía"
+VICTORY_POINTS_10341:0 "Caraballeda"
+VICTORY_POINTS_10338:0 "El Junquito"
+VICTORY_POINTS_10342:0 "Catia La Mar"
+#####Guyana
+VICTORY_POINTS_11371:0 "Paramaribo"
+VICTORY_POINTS_10317:0 "Hannaslust"
+VICTORY_POINTS_10318:0 "Meerzorg"
+#French Guyana
+VICTORY_POINTS_7815:0 "Cayenne"

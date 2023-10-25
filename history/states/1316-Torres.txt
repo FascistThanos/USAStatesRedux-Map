@@ -8,7 +8,9 @@ state={
 			industrial_complex = 1
 		}
 		add_core_of = VEN
-
+		victory_points = {
+			4029 20 #Barquisimeto
+		}
 	}
 	provinces={
 		1621 2081 2363 3950 4029 7757 7760 

@@ -12,7 +12,21 @@ state={
 			}
 		}
 		add_core_of = VEN
-
+		victory_points = {
+			10339 25 #Caracas
+		}
+		victory_points = {
+			10340 15 #Maiquetia
+		}
+		victory_points = {
+			10341 10 #Caraballeda
+		}
+		victory_points = {
+			10338 5 #El Junquito
+		}
+		victory_points = {
+			10342 5 #Catia La Mar
+		}
 	}
 	provinces={
 		10338 10339 10340 10341 10342 

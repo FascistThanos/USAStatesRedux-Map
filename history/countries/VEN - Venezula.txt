@@ -1,4 +1,4 @@
-﻿capital = 105
+﻿capital = 1326
 
 oob = "VEN_1936"
 

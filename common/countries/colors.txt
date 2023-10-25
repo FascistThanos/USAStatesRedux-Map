@@ -581,3 +581,7 @@ HAI = {
 	color = rgb { 174 113 113 }
 	color_ui = rgb { 174 113 113 }
 }
+FGY = {
+	color = rgb { 57  113  228 }
+	color_ui = rgb { 57  113  228 }
+}
