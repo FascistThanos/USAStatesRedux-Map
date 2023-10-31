@@ -1,6 +1,6 @@
 ﻿add_namespace = missouri
 
-country_event = {
+country_event = { #Lose
   id = missouri.3
   title = missouri.3.t
   desc = missouri.3.d
