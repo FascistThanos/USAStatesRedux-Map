@@ -12,8 +12,22 @@ state={
 				naval_base = 8
 			}
 		}
+		victory_points = {
+			10377 20 #Port-au-Prince
+		}
+		victory_points = {
+			10372 15 #Carrefour
+		}
+		victory_points = {
+			10374 5 #Petion-Ville
+		}
+		victory_points = {
+			10379 5 #Digner
+		}
+		victory_points = {
+			10381 5 #Lafiteau
+		}
 		add_core_of = HAI
-
 	}
 	provinces={
 		10372 10374 10377 10379 10380 10381 

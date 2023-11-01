@@ -8,8 +8,10 @@ state={
 			infrastructure = 4
 
 		}
+		victory_points = {
+			2841 15 #Santiago de los Caballeros
+		}
 		add_core_of = DOM
-
 	}
 
 	provinces={

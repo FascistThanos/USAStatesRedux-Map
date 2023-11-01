@@ -7,10 +7,11 @@ state={
 		owner = HAI
 		buildings = {
 			infrastructure = 4
-
+		}
+		victory_points = {
+			7520 15 #Cap-Haitien
 		}
 		add_core_of = HAI
-
 	}
 
 	provinces={

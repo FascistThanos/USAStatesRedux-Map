@@ -9,8 +9,10 @@ state={
 				naval_base = 2
 			}
 		}
+		victory_points = {
+			8206 5 #Parham Town
+		}
 		add_core_of = UVU
-
 	}
 	provinces={
 		8206 

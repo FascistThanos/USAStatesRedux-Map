@@ -10,6 +10,9 @@ state={
 				naval_base = 3
 			}
 		}
+		victory_points = {
+			8210 10 #The Valley
+		}
 		add_core_of = ANG
 	}
 	manpower=4600

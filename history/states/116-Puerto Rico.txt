@@ -9,8 +9,10 @@ state={
 			infrastructure = 5
 			industrial_complex = 1
 		}
+		victory_points = {
+			1740 15 #Ponce
+		}
 		add_core_of = PRP
-
 	}
 
 	provinces={

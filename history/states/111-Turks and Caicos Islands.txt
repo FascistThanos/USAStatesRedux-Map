@@ -16,6 +16,9 @@ state={
 				naval_base = 1
 			}
 		}
+		victory_points = {
+			8195 10 #Cockburn Town
+		}
 		add_core_of = TCI
 	}
 	manpower=5830

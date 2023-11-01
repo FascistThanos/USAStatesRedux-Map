@@ -7,8 +7,10 @@ state={
 			infrastructure = 4
 			industrial_complex = 1
 		}
+		victory_points = {
+			7547 10 #La Vega
+		}
 		add_core_of = DOM
-
 	}
 	provinces={
 		2069 4125 7547 

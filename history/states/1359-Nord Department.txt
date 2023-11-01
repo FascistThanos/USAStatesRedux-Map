@@ -5,10 +5,14 @@ state={
 		owner = HAI
 		buildings = {
 			infrastructure = 4
-
+		}
+		victory_points = {
+			7524 5 #Fort Liberte
+		}
+		victory_points = {
+			3912 15 #Gonaives
 		}
 		add_core_of = HAI
-
 	}
 	provinces={
 		3912 7524 7541 7542 

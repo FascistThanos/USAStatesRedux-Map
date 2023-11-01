@@ -13,8 +13,10 @@ state={
 				naval_base = 2
 			}
 		}
+		victory_points = {
+			1627 5 #Red Bay
+		}
 		add_core_of = BAH
-
 	}
 
 	provinces={

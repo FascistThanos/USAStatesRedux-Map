@@ -13,8 +13,13 @@ state={
 				naval_base = 2
 			}
 		}
+		victory_points = {
+			7313 5 #Moxey Town
+		}
+		victory_points = {
+			7315 5 #The Bluff
+		}
 		add_core_of = BAH
-
 	}
 
 	provinces={

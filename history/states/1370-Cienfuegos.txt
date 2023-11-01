@@ -11,8 +11,16 @@ state={
 			infrastructure = 5
 			arms_factory = 2
 		}
+		victory_points = {
+			7413 15 #Cienfuegos
+		}
+		victory_points = {
+			7408 15 #Santa Clara
+		}
+		victory_points = {
+			7432 5 #Trinidad
+		}
 		add_core_of = CUB
-
 	}
 	provinces={
 		3643 3682 3933 7372 7379 7389 7398 7400 7408 7413 7418 7420 7432 

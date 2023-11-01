@@ -10,8 +10,10 @@ state={
 			infrastructure = 5
 			industrial_complex = 1
 		}
+		victory_points = {
+			7616 5 #Morant Bay
+		}
 		add_core_of = JAM
-
 	}
 	provinces={
 		2975 7616 

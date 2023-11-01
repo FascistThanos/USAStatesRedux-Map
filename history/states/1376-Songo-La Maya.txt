@@ -11,8 +11,10 @@ state={
 			industrial_complex = 4
 			arms_factory = 1
 		}
+		victory_points = {
+			7508 15 #Santiago de Cuba
+		}
 		add_core_of = CUB
-
 	}
 	provinces={
 		1148 4195 7492 7508 

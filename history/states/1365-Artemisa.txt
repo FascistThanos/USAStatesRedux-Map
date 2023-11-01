@@ -7,8 +7,10 @@ state={
 			infrastructure = 5
 			industrial_complex = 1
 		}
+		victory_points = {
+			7385 10 #Artemisa
+		}
 		add_core_of = CUB
-
 	}
 	provinces={
 		2116 7369 7370 7385 

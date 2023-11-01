@@ -10,8 +10,13 @@ state={
 			infrastructure = 4
 			arms_factory = 1
 		}
+		victory_points = {
+			7362 15 #Matanzas
+		}
+		victory_points = {
+			7365 5 #Varadero
+		}
 		add_core_of = CUB
-
 	}
 	provinces={
 		945 2792 7362 7365 7367 7384 

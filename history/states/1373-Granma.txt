@@ -5,10 +5,11 @@ state={
 		owner = CUB
 		buildings = {
 			infrastructure = 3
-
+		}
+		victory_points = {
+			7494 10 #Manzanillo
 		}
 		add_core_of = CUB
-
 	}
 	provinces={
 		4040 7494 7509 7511 

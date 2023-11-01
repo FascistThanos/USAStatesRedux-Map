@@ -9,8 +9,10 @@ state={
 				naval_base = 4
 			}
 		}
+		victory_points = {
+			8207 10 #Charlotte Amalie
+		}
 		add_core_of = UVU
-
 	}
 	provinces={
 		8207 

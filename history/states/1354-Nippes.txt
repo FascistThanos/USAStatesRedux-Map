@@ -5,10 +5,11 @@ state={
 		owner = HAI
 		buildings = {
 			infrastructure = 4
-
+		}
+		victory_points = {
+			7612 5 #Les Cayes
 		}
 		add_core_of = HAI
-
 	}
 	provinces={
 		2639 7590 7594 7612 

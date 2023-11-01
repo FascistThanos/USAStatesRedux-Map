@@ -10,6 +10,9 @@ state={
 				naval_base = 3
 			}
 		}
+		victory_points = {
+			8213 10 #Basseterre
+		}
 		add_core_of = SKN
 	}
 	manpower=37600

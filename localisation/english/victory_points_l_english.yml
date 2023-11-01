@@ -2241,25 +2241,95 @@ VICTORY_POINTS_10331:0 "Pacora"
 #############################
 ##### C A R I B B E A N #####
 #############################
+#####Anguilla
+VICTORY_POINTS_8210:0 "The Valley"
+#####Antigua and Barbuda
+VICTORY_POINTS_8214:0 "Saint John's"
+VICTORY_POINTS_8212:0 "Codrington"
 #####Aruba
 VICTORY_POINTS_8224:0 "Oranjestad"
+#####Bahamas
+VICTORY_POINTS_8175:0 "Nassau"
+VICTORY_POINTS_7313:0 "Moxey Town"
+VICTORY_POINTS_7315:0 "The Bluff"
+VICTORY_POINTS_1627:0 "Red Bay"
 #####Barbados
 VICTORY_POINTS_11628:0 "Bridgetown"
+#####Bermuda
+VICTORY_POINTS_8155:0 "Hamilton"
+#####Cayman Islands
+VICTORY_POINTS_8204:0 "George Town"
+#####Cuba
+VICTORY_POINTS_7480:0 "Baracoa"
+VICTORY_POINTS_7508:0 "Santiago de Cuba"
+VICTORY_POINTS_1241:0 "Holguin"
+VICTORY_POINTS_7494:0 "Manzanillo"
+VICTORY_POINTS_2421:0 "Camaguey"
+VICTORY_POINTS_7413:0 "Cienfuegos"
+VICTORY_POINTS_7408:0 "Santa Clara"
+VICTORY_POINTS_7432:0 "Trinidad"
+VICTORY_POINTS_7362:0 "Matanzas"
+VICTORY_POINTS_7365:0 "Varadero"
+VICTORY_POINTS_7385:0 "Artemisa"
+#Havana
+VICTORY_POINTS_10428:0 "Havana"
+VICTORY_POINTS_10427:0 "Miramar"
+VICTORY_POINTS_10425:0 "El Huego"
+VICTORY_POINTS_10426:0 "La Vibora"
+VICTORY_POINTS_10429:0 "Vedado"
+VICTORY_POINTS_7359:0 "Casablanca"
 #####Curacao
 VICTORY_POINTS_11625:0 "Willemstad"
 VICTORY_POINTS_11626:0 "Kralendijk"
 #####Dominica
 VICTORY_POINTS_11648:0 "Roseau"
+#####Dominican Republic
+VICTORY_POINTS_1820:0 "Barahona"
+VICTORY_POINTS_2841:0 "Santiago de los Caballeros"
+VICTORY_POINTS_7547:0 "La Vega"
+VICTORY_POINTS_7587:0 "La Romana"
+VICTORY_POINTS_7585:0 "Punta Cana"
+#Santo Domingo
+VICTORY_POINTS_10373:0 "Santo Domingo"
+VICTORY_POINTS_10370:0 "Santo Domingo Este"
+VICTORY_POINTS_10371:0 "El Carril"
+VICTORY_POINTS_10376:0 "Hato Nuevo"
+VICTORY_POINTS_10378:0 "Pantoja"
+VICTORY_POINTS_10369:0 "Bajos de Haina"
 #####Grenada
 VICTORY_POINTS_11623:0 "Saint George's"
 #####Guadalupe
 VICTORY_POINTS_11651:0 "Basse-Terre"
 VICTORY_POINTS_11657:0 "Port-Louis"
 VICTORY_POINTS_8219:0 "Grand-Bourg"
+#####Haiti
+VICTORY_POINTS_7524:0 "Fort Liberte"
+VICTORY_POINTS_3912:0 "Gonaives"
+VICTORY_POINTS_7612:0 "Les Cayes"
+VICTORY_POINTS_7520:0 "Cap-Haitien"
+#Port-au-Prince
+VICTORY_POINTS_10377:0 "Port-au-Prince"
+VICTORY_POINTS_10372:0 "Carrefour"
+VICTORY_POINTS_10374:0 "Petion-Ville"
+VICTORY_POINTS_10379:0 "Digner"
+VICTORY_POINTS_10381:0 "Lafiteau"
+#####Jamaica
+VICTORY_POINTS_7604:0 "Negril"
+VICTORY_POINTS_7616:0 "Morant Bay"
+VICTORY_POINTS_7615:0 "Kingston"
 #####Martinique
 VICTORY_POINTS_11645:0 "Fort-de-France"
 #####Montserrat
 VICTORY_POINTS_8215:0 "Plymouth"
+#####Puerto Rico
+VICTORY_POINTS_1740:0 "Ponce"
+#San Juan
+VICTORY_POINTS_10368:0 "San Juan"
+VICTORY_POINTS_10365:0 "Guaynabo"
+VICTORY_POINTS_10366:0 "Carolina"
+VICTORY_POINTS_10367:0 "Dorado"
+#####Saint Kitts and Nevis
+VICTORY_POINTS_8213:0 "Basseterre"
 #####Saint Lucia
 VICTORY_POINTS_11641:0 "Castries"
 #####Saint Vincent and the Grenadines
@@ -2268,6 +2338,12 @@ VICTORY_POINTS_11629:0 "Kingstown"
 VICTORY_POINTS_1914:0 "Port of Spain"
 VICTORY_POINTS_7767:0 "San Fernando"
 VICTORY_POINTS_11622:0 "Scarborough"
+#####Turks and Caicos
+VICTORY_POINTS_8195:0 "Cockburn Town"
+#####Virgin Islands
+VICTORY_POINTS_8207:0 "Charlotte Amalie"
+VICTORY_POINTS_8211:0 "Frederiksted"
+VICTORY_POINTS_8206:0 "Parham Town"
 ####################################
 ##### S O U T H  A M E R I C A #####
 ####################################

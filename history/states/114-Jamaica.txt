@@ -16,8 +16,10 @@ state={
 				naval_base = 6
 			}
 		}
+		victory_points = {
+			7615 20 #Kingston
+		}
 		add_core_of = JAM
-
 	}
 
 	provinces={

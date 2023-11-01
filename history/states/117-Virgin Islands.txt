@@ -12,8 +12,10 @@ state={
 				naval_base = 2
 			}
 		}
+		victory_points = {
+			8211 5 #Frederiksted
+		}
 		add_core_of = UVU
-
 	}
 
 	provinces={

@@ -12,8 +12,25 @@ state={
 				naval_base = 8
 			}
 		}
+		victory_points = {
+			10373 20 #Santo Domingo
+		}
+		victory_points = {
+			10370 10 #Santo Domingo Este
+		}
+		victory_points = {
+			10371 5 #El Carril
+		}
+		victory_points = {
+			10376 5 #Hato Nuevo
+		}
+		victory_points = {
+			10378 5 #Pantoja
+		}
+		victory_points = {
+			10369 5 #Bajos de Haina
+		}
 		add_core_of = DOM
-
 	}
 	provinces={
 		10369 10370 10371 10373 10375 10376 10378 

@@ -5,10 +5,14 @@ state={
 		owner = DOM
 		buildings = {
 			infrastructure = 4
-
+		}
+		victory_points = {
+			7587 10 #La Romana
+		}
+		victory_points = {
+			7585 10 #Punta Cana
 		}
 		add_core_of = DOM
-
 	}
 	provinces={
 		3744 7563 7572 7585 7587 7591 7608 

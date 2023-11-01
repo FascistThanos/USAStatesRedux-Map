@@ -11,8 +11,10 @@ state={
 			infrastructure = 1
 			industrial_complex = 1
 		}
+		victory_points = {
+			7604 5 #Negril
+		}
 		add_core_of = JAM
-
 	}
 	provinces={
 		7592 7604 7614 

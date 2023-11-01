@@ -10,8 +10,10 @@ state={
 			infrastructure = 4
 			arms_factory = 1
 		}
+		victory_points = {
+			2421 20 #Camaguey
+		}
 		add_core_of = CUB
-
 	}
 	provinces={
 		2421 2450 2552 3829 4082 7403 7431 7433 7444 7458 7470 7475 

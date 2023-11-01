@@ -12,8 +12,19 @@ state={
 				naval_base = 5
 			}
 		}
+		victory_points = {
+			10368 15 #San Juan
+		}
+		victory_points = {
+			10365 5 #Guaynabo
+		}
+		victory_points = {
+			10366 5 #Carolina
+		}
+		victory_points = {
+			10367 5 #Dorado
+		}
 		add_core_of = PRP
-
 	}
 	provinces={
 		10365 10366 10367 10368 

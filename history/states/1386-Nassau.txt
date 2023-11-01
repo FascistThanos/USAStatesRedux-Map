@@ -10,8 +10,10 @@ state={
 				naval_base = 4
 			}
 		}
+		victory_points = {
+			8175 20 #Nassau
+		}
 		add_core_of = BAH
-
 	}
 	provinces={
 		8175 

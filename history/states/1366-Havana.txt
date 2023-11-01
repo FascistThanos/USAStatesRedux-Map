@@ -12,8 +12,25 @@ state={
 				naval_base = 10
 			}
 		}
+		victory_points = {
+			10428 30 #Havana
+		}
+		victory_points = {
+			10427 5 #Miramar
+		}
+		victory_points = {
+			10425 5 #El Huego
+		}
+		victory_points = {
+			10426 5 #La Vibora
+		}
+		victory_points = {
+			10429 5 #Vedado
+		}
+		victory_points = {
+			7359 5 #Casablanca
+		}
 		add_core_of = CUB
-
 	}
 	provinces={
 		7359 10425 10426 10427 10428 10429 
