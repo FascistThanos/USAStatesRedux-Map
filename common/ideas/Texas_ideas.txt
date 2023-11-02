@@ -253,6 +253,7 @@ ideas = {
 
 			modifier = {
 				production_speed_infrastructure_factor = 0.15
+				production_speed_rail_way_factor = 0.15
 			}
 		}
 		TXT_idea_public_arrests = {
@@ -751,7 +752,7 @@ ideas = {
 			modifier = {
 				justify_war_goal_time = -0.25
 				puppet_cost_factor = -0.50
-				annex_cost_factor = 0.90
+				annex_cost_factor = 1
 			}
 		}
 		TXT_idea_expand_intel = {
@@ -1260,7 +1261,7 @@ ideas = {
 		texaco = {
 
 			available = {
-				#has_completed_focus = TXT_backtexaco
+				has_completed_focus = TXT_backtexaco
 				NOT = {
 					has_government = communism
 				}
@@ -1286,7 +1287,7 @@ ideas = {
 		kbr_construction = {
 
 			available = {
-				#has_completed_focus = TXT_backkbr
+				has_completed_focus = TXT_backkbr
 				NOT = {
 					has_government = communism
 				}

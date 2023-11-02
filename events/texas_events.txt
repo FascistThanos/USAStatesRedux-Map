@@ -12,7 +12,10 @@ country_event = {
   option = {
     name = tex.0.a
     TXT = {
-      transfer_state = 832
+      transfer_state = 552
+    }
+    hidden_effect = {
+      set_global_flag = TXT_stole_panhandle
     }
   }
 }
@@ -27,7 +30,7 @@ country_event = {
   option = {
     name = tex.1.a
     add_political_power = -50
-    add_stability = -0.05
+    add_stability = -0.10
   }
 }
 country_event = {
@@ -41,32 +44,43 @@ country_event = {
   option = {
     name = tex.0.a
     TXT = {
-      transfer_state = 893
-      transfer_state = 886
-      transfer_state = 892
-      transfer_state = 887
-      transfer_state = 891
-      transfer_state = 890
+      transfer_state = 54
+      transfer_state = 657
+      transfer_state = 656
+      transfer_state = 653
+      transfer_state = 654
+      transfer_state = 655
+      transfer_state = 649
+      transfer_state = 648
+      transfer_state = 647
+      transfer_state = 646
+      transfer_state = 650
+      transfer_state = 652
+      transfer_state = 651
+    }
+    hidden_effect = {
+      set_global_flag = TXT_stole_east_NM
     }
   }
 }
-country_event = {
-  id = tex.3
-  title = tex.3.t
-  desc = tex.3.d
-  picture = GFX_report_event_molotov_ribentrop_handshake
-
-  is_triggered_only = yes
-
-  option = {
-    name = tex.3.a
-    TXT = {
-      transfer_state = 884
-      transfer_state = 885
-      transfer_state = 883
-    }
-  }
-}
+#Depreciated due to CO Crisis
+#country_event = {
+#  id = tex.3
+#  title = tex.3.t
+#  desc = tex.3.d
+#  picture = GFX_report_event_molotov_ribentrop_handshake
+#
+#  is_triggered_only = yes
+#
+#  option = {
+#    name = tex.3.a
+#    TXT = {
+#      transfer_state = 1300
+#      transfer_state = 1301
+#      transfer_state = 1299
+#    }
+#  }
+#}
 country_event = {
 
 	id = tex.4
@@ -111,15 +125,22 @@ country_event = {
       }
     }
     TXT = {
-      transfer_state = 893
-      transfer_state = 886
-      transfer_state = 892
-      transfer_state = 887
-      transfer_state = 891
-      transfer_state = 890
+      transfer_state = 54
+      transfer_state = 657
+      transfer_state = 656
+      transfer_state = 653
+      transfer_state = 654
+      transfer_state = 655
+      transfer_state = 649
+      transfer_state = 648
+      transfer_state = 647
+      transfer_state = 646
+      transfer_state = 650
+      transfer_state = 652
+      transfer_state = 651
       give_guarantee = NMN
     }
-    889 = {
+    642 = {
       add_extra_state_shared_building_slots = 4
       add_building_construction = {
         type = industrial_complex
@@ -127,12 +148,15 @@ country_event = {
         instant_build = yes
       }
     }
-    894 = {
+    573 = {
       add_building_construction = {
         type = industrial_complex
         level = -4
         instant_build = yes
       }
+    }
+    hidden_effect = {
+      set_global_flag = NM_gave_up_east
     }
   }
   option = {
@@ -158,14 +182,14 @@ country_event = {
     start_border_war = {
 			change_state_after_war = no
 			attacker = {
-				state = 898
-				num_provinces = 2
+				state = 578
+				num_provinces = 5
 				on_win = tex.2
 				on_lose = tex.1
 			}
 			defender = {
-				state = 891
-				num_provinces = 2
+				state = 54
+				num_provinces = 6
 			}
 		}
   }
@@ -173,31 +197,32 @@ country_event = {
     name = tex.6.b
   }
 }
-country_event = {
-  id = tex.8
-  title = tex.8.t
-  desc = tex.8.d
-  picture = GFX_report_event_chinese_soldiers_01
-
-  is_triggered_only = yes
-
-  option = {
-    name = tex.8.a
-    start_border_war = {
-			change_state_after_war = no
-			attacker = {
-			  state = 893
-				num_provinces = 1
-				on_win = tex.3
-				on_lose = tex.1
-			}
-			defender = {
-				state = 885
-				num_provinces = 1
-			}
-		}
-  }
-}
+#Depreciated due to CO Crisis
+#country_event = {
+#  id = tex.8
+#  title = tex.8.t
+#  desc = tex.8.d
+#  picture = GFX_report_event_chinese_soldiers_01
+#
+#  is_triggered_only = yes
+#
+#  option = {
+#    name = tex.8.a
+#    start_border_war = {
+#			change_state_after_war = no
+#			attacker = {
+#			  state = 1309
+#				num_provinces = 1
+#				on_win = tex.3
+#				on_lose = tex.1
+#			}
+#			defender = {
+#				state = 1301
+#				num_provinces = 1
+#			}
+#		}
+#  }
+#}
 country_event = {
   id = tex.9
   title = tex.9.t
@@ -222,9 +247,9 @@ country_event = {
       }
     }
     TXT = {
-      transfer_state = 907
+      transfer_state = 552
     }
-    374 = {
+    557 = {
       add_extra_state_shared_building_slots = 4
       add_building_construction = {
         type = industrial_complex
@@ -232,16 +257,22 @@ country_event = {
         instant_build = yes
       }
     }
-    895 = {
+    576 = {
       add_building_construction = {
         type = industrial_complex
         level = -2
         instant_build = yes
       }
     }
+    hidden_effect = {
+      set_global_flag = OKO_gave_up_panhandle
+    }
   }
   option = {
     name = tex.9.b
+    ai_chance = {
+      base = 60
+    }
     TXT = {
       country_event = tex.10
     }
@@ -260,14 +291,14 @@ country_event = {
     start_border_war = {
 			change_state_after_war = no
 			attacker = {
-				state = 788
-				num_provinces = 2
+				state = 561
+				num_provinces = 7
 			  on_win = tex.0
 				on_lose = tex.1
 			}
 			defender = {
-				state = 898
-				num_provinces = 1
+				state = 552
+				num_provinces = 6
 			}
 		}
   }
@@ -296,7 +327,7 @@ country_event = {
       }
     }
     TXT = {
-      transfer_state = 381
+      transfer_state = 610
     }
   }
   option = {
@@ -319,14 +350,14 @@ country_event = {
     start_border_war = {
 			change_state_after_war = no
 			attacker = {
-				state = 803
-				num_provinces = 1
+				state = 627
+				num_provinces = 3
 			  on_win = tex.13
 				on_lose = tex.1
 			}
 			defender = {
-				state = 883
-				num_provinces = 1
+				state = 610
+				num_provinces = 3
 			}
 		}
   }
@@ -342,7 +373,7 @@ country_event = {
   option = {
     name = tex.13.a
     TXT = {
-      transfer_state = 381
+      transfer_state = 610
     }
   }
 }
@@ -370,7 +401,10 @@ country_event = {
       }
     }
     TXT = {
-      transfer_state = 919
+      transfer_state = 542
+    }
+    hidden_effect = {
+      set_global_flag = KSK_gave_up_SW_Kansas
     }
   }
   option = {
@@ -392,14 +426,14 @@ country_event = {
     start_border_war = {
 			change_state_after_war = no
 			attacker = {
-				state = 907
-				num_provinces = 1
+				state = 552
+				num_provinces = 4
 			  on_win = tex.16
 				on_lose = tex.1
 			}
 			defender = {
-				state = 919
-				num_provinces = 1
+				state = 542
+				num_provinces = 5
 			}
 		}
   }
@@ -415,7 +449,11 @@ country_event = {
   option = {
     name = tex.16.a
     TXT = {
-      transfer_state = 896
+      transfer_state = 919
+      transfer_state = 920
+    }
+    hidden_effect = {
+      set_global_flag = TXT_took_SW_Kansas
     }
   }
 }
@@ -461,40 +499,45 @@ country_event = {
 
   option = {
     name = tex.19.a
+    custom_effect_tooltip = TXT_civil_war_tt
     hidden_effect = {
       set_country_flag = TXT_fascistcivwar
       start_civil_war = {
         ideology = democratic
         size = 0.5
         states = {
-          896 905 906 895 899 900
+          561 562 563 564 567 565 568 577 576 566 569
         }
+        keep_unit_leaders = {
+          211915 211914 211913 211917
+        }
+        keep_political_leader = yes
       }
       random_other_country = {
 				limit = {
 					original_tag = TXT
 					has_government = democratic
 				}
-        #load_focus_tree = {
-        #  tree = texas_focus
-        #  keep_completed = no
-        #}
+        load_focus_tree = {
+          tree = texas_focus
+          keep_completed = no
+        }
         complete_national_focus = TXT_texaswillagainraiseitshead
         complete_national_focus = TXT_theoldrepublic
-        complete_national_focus = TXT_democratic_coalition
-        set_capital = {
-          state = 895
-        }
+        set_capital = {state = 576 }
+        set_country_flag = TXT_fascistcivwar
 				load_oob = "TXT_dem_Civil_War"
+        load_oob = "TXT_civil_war_recruitment"
 				set_equipment_fraction = 0.5
-				set_stability = 0.23
+				set_stability = 0.55
 				set_war_support = 0.8
 			}
       TXT = {
         load_oob = "TXT_fas_civil_war"
+        load_oob = "TXT_civil_war_recruitment"
         set_equipment_fraction = 0.5
-        set_stability = 0.23
-        set_war_support = 0.95
+        set_stability = 0.55
+        set_war_support = 0.53
         set_politics = {
   				ruling_party = fascism
   				elections_allowed = no
@@ -504,6 +547,10 @@ country_event = {
   				long_name = TXT_Fascism_party_ourown_long
   				name = TXT_fascism_party_ourown
   			}
+        TXT_edwin_walker = {
+          remove_unit_leader_role = yes
+        }
+        load_focus_tree = tex_civil_war_fascism
       }
     }
   }
@@ -528,8 +575,19 @@ country_event = {
     delete_unit_template_and_units = {
       division_template = "Civilian Militia"
     }
+    delete_unit_template_and_units = {
+      division_template = "Emergency Reserve Conscript"
+    }
+    delete_unit_template_and_units = {
+      division_template = "Emergency Armor Brigade"
+    }
     hidden_effect = {
       clr_country_flag = TXT_fascistcivwar
+      remove_ideas = TXT_idea_democratic_struggle
+      load_focus_tree = texas_focus
+      complete_national_focus = TXT_texaswillagainraiseitshead
+      complete_national_focus = TXT_lonestar
+      unlock_national_focus = TXT_forgeourownpath
     }
   }
 }
@@ -708,9 +766,10 @@ country_event = {
       name = tex.26.a
       random_country = {
         limit = {
-          controls_state = 885
-          controls_state = 884
-          controls_state = 883
+          controls_state = 620
+          controls_state = 625
+          controls_state = 626
+          controls_state = 627
           NOT = {
             has_country_flag = texan_demands
           }
@@ -721,6 +780,7 @@ country_event = {
     }
     option = { #Give Up
       name = tex.26.b
+      add_stability = -0.25
     }
   }
   country_event = { #COC gets demand
@@ -733,10 +793,14 @@ country_event = {
 
     option = { #COC folds
       name = tex.27.a
+      ai_chance = {
+        factor = 0
+      }
       TXT = {
-        transfer_state = 885
-        transfer_state = 884
-        transfer_state = 883
+        transfer_state = 620
+        transfer_state = 625
+        transfer_state = 626
+        transfer_state = 627
         give_guarantee = FROM
       }
       if = {
@@ -746,7 +810,8 @@ country_event = {
           }
         }
         UTU = {
-          transfer_state = 882
+          transfer_state = 623
+          transfer_state = 624
           give_guarantee = FROM
         }
       }
@@ -757,13 +822,17 @@ country_event = {
           }
         }
         NMN = {
-          transfer_state = 881
+          transfer_state = 621
+          transfer_state = 622
           give_guarantee = FROM
         }
       }
     }
     option = { #COC stands
       name = tex.27.b
+      ai_chance = {
+        factor = 100
+      }
       if = {
         limit = {
           TXT = {
@@ -781,19 +850,28 @@ country_event = {
         load_oob = COC_texcoalition
       }
       load_oob = COC_texcoalition
-      885 = {
+      620 = {
         add_claim_by = TXT
       }
-      884 = {
+      625 = {
         add_claim_by = TXT
       }
-      883 = {
+      626 = {
         add_claim_by = TXT
       }
-      882 = {
+      627 = {
+        add_claim_by = TXT
+      }
+      623 = {
         add_claim_by = UTU
       }
-      881 = {
+      624 = {
+        add_claim_by = UTU
+      }
+      622 = {
+        add_claim_by = NMN
+      }
+      621 = {
         add_claim_by = NMN
       }
       TXT = {
@@ -815,7 +893,7 @@ country_event = {
         type = take_state_focus
         target = FROM
         generator = {
-          885 884 883
+          620 625 626 627
         }
       }
       UTU = {
@@ -841,8 +919,8 @@ country_event = {
     }
     option = {
       name = tex.28.b
-      add_stability = -0.15
-      add_war_support = -0.10
+      add_stability = -0.30
+      add_war_support = -0.25
       add_opinion_modifier = {
         target = UTU
         modifier = large_decrease
@@ -870,7 +948,7 @@ country_event = {
           target = COC
           type = take_state_focus
           generator = {
-            882
+            623 624
           }
         }
       }
@@ -882,7 +960,7 @@ country_event = {
           target = COC
           type = take_state_focus
           generator = {
-            881
+            621 622
           }
         }
       }
@@ -912,162 +990,6 @@ country_event = {
       }
     }
   }
-  country_event = { #Signs treaty
-    id = tex.34
-    title = tex.30.t
-    desc = tex.30.d
-    picture = GFX_report_event_canada_treaty
-
-    is_triggered_only = yes
-
-    option = {
-      name = tex.30.a
-    }
-  }
-  country_event = { #Colorado chooses to surrender
-    id = tex.31
-    title = tex.31.t
-    desc = tex.31.d
-    picture = GFX_report_event_genericsoldiers4
-
-    fire_only_once = yes
-    trigger = {
-      COC = {
-        surrender_progress > 0.80
-      }
-      OR = {
-        AND = {
-          has_war_with = TXT
-          has_war_with = NMN
-          TXT = {
-            has_government = democratic
-          }
-        }
-        AND = {
-          has_war_with = TXT
-          has_war_with = UTU
-          TXT = {
-            has_government = democratic
-          }
-        }
-        AND = {
-          has_war_with = TXT
-          has_war_with = NMN
-          has_war_with = UTU
-          TXT = {
-            has_government = democratic
-          }
-        }
-      }
-    }
-
-    option = { #Surrender
-      name = tex.31.a
-      ai_chance = {
-        base = 90
-      }
-      TXT = {
-        country_event = tex.32
-      }
-    }
-    option = { #Die
-      name = tex.31.b
-      ai_chance = {
-        base = 10
-      }
-    }
-  }
-  country_event = { #Colorado Armistice
-    id = tex.32
-    title = tex.32.t
-    desc = tex.32.d
-    picture = GFX_report_event_generic_sign_treaty1
-
-    is_triggered_only = yes
-
-    option = {
-      name = tex.32.a
-      if = {
-        limit = {
-          COC = {
-            AND = {
-              has_war_with = TXT
-              has_war_with = UTU
-              NOT = {
-                has_war_with = NMN
-              }
-            }
-          }
-        }
-        COC = {
-          white_peace = TXT
-          white_peace = UTU
-        }
-        UTU = {
-          transfer_state = 882
-          transfer_state = 881
-        }
-        TXT = {
-          transfer_state = 885
-          transfer_state = 884
-          transfer_state = 883
-        }
-      }
-      else_if = {
-        limit = {
-          COC = {
-            AND = {
-              has_war_with = TXT
-              has_war_with = NMN
-              NOT = {
-                has_war_with = UTU
-              }
-            }
-          }
-        }
-        COC = {
-          white_peace = TXT
-          white_peace = NMN
-        }
-        NMN = {
-          transfer_state = 881
-          transfer_state = 882
-        }
-        TXT = {
-          transfer_state = 885
-          transfer_state = 884
-          transfer_state = 883
-        }
-      }
-      else_if = {
-        limit = {
-          COC = {
-            AND = {
-              has_war_with = TXT
-              has_war_with = NMN
-              has_war_with = UTU
-            }
-          }
-        }
-        COC = {
-          white_peace = TXT
-          white_peace = UTU
-          white_peace = NMN
-        }
-        UTU = {
-          transfer_state = 882
-        }
-        NMN = {
-          transfer_state = 881
-        }
-        TXT = {
-          transfer_state = 885
-          transfer_state = 884
-          transfer_state = 883
-        }
-      }
-    }
-  }
   country_event = { #Choose where to expand
     id = tex.33
     title = tex.33.t
@@ -1089,6 +1011,378 @@ country_event = {
       set_country_flag = TXT_expandwest
     }
   }
+  country_event = { #Signs treaty
+    id = tex.34
+    title = tex.30.t
+    desc = tex.30.d
+    picture = GFX_report_event_canada_treaty
+
+    is_triggered_only = yes
+
+    option = {
+      name = tex.30.a
+    }
+  }
+country_event = { #High amount of guns stolen
+  id = tex.35
+  title = tex.35.t
+  desc = tex.35.d
+  
+  is_triggered_only = yes
+
+  option = {
+    name = tex.35.a
+    add_equipment_to_stockpile = {
+      type = infantry_equipment
+      amount = 7000
+    }
+    if = {
+      limit = {
+        has_country_flag = sent_simpson
+      }
+      add_manpower = 1000
+      custom_effect_tooltip = TXT_general_has_returned
+      hidden_effect = {
+        clr_country_flag = sent_simpson
+        TXT_william_simpson = {
+          add_corps_commander_role = {
+            skill=3
+            attack_skill=2
+            defense_skill=4
+            planning_skill=2
+            logistics_skill=2
+          }
+        }
+      }
+    }
+    else_if = {
+      limit = {
+        has_country_flag = sent_rudder
+      }
+      add_manpower = 2500
+      custom_effect_tooltip = TXT_general_has_returned
+      hidden_effect = {
+        clr_country_flag = sent_rudder
+        TXT_james_rudder = {
+          add_corps_commander_role = {
+            skill = 3
+            attack_skill = 3
+            defense_skill = 3
+            planning_skill = 1
+            logistics_skill = 4
+          }
+        }
+      }
+    }
+    else_if = {
+      limit = {
+        has_country_flag = sent_walker
+      }
+      add_manpower = 4000
+      custom_effect_tooltip = TXT_general_has_returned
+      hidden_effect = {
+        clr_country_flag = sent_walker
+        TXT_walton_walker = {
+          add_corps_commander_role = {
+            skill = 4
+            attack_skill = 5
+            defense_skill = 3
+            planning_skill = 2
+            logistics_skill = 2
+          }
+        }
+      }
+    }
+  }
+}
+country_event = { #Medium amount of guns stolen
+  id = tex.36
+  title = tex.36.t
+  desc = tex.36.d
+  
+  is_triggered_only = yes
+
+  option = {
+    name = tex.36.a
+    add_equipment_to_stockpile = {
+      type = infantry_equipment
+      amount = 5000
+    }
+    if = {
+      limit = {
+        has_country_flag = sent_simpson
+      }
+      add_manpower = 1000
+      custom_effect_tooltip = TXT_general_has_returned
+      hidden_effect = {
+        clr_country_flag = sent_simpson
+        TXT_william_simpson = {
+          add_corps_commander_role = {
+            skill=3
+            attack_skill=1
+            defense_skill=4
+            planning_skill=2
+            logistics_skill=3
+          }
+        }
+      }
+    }
+    else_if = {
+      limit = {
+        has_country_flag = sent_rudder
+      }
+      add_manpower = 2500
+      custom_effect_tooltip = TXT_general_has_returned
+      hidden_effect = {
+        clr_country_flag = sent_rudder
+        TXT_james_rudder = {
+          add_corps_commander_role = {
+            skill = 3
+            attack_skill = 2
+            defense_skill = 3
+            planning_skill = 1
+            logistics_skill = 5
+          }
+        }
+      }
+    }
+    else_if = {
+      limit = {
+        has_country_flag = sent_walker
+      }
+      add_manpower = 4000
+      custom_effect_tooltip = TXT_general_has_returned
+      hidden_effect = {
+        clr_country_flag = sent_walker
+        TXT_walton_walker = {
+          add_corps_commander_role = {
+            skill = 4
+            attack_skill = 4
+            defense_skill = 3
+            planning_skill = 2
+            logistics_skill = 3
+          }
+        }
+      }
+    }
+  }
+}
+country_event = { #low amount of guns stolen
+  id = tex.37
+  title = tex.37.t
+  desc = tex.37.d
+  
+  is_triggered_only = yes
+
+  option = {
+    name = tex.37.a
+    add_equipment_to_stockpile = {
+      type = infantry_equipment
+      amount = 3000
+    }
+    if = {
+      limit = {
+        has_country_flag = sent_simpson
+      }
+      add_manpower = 1000
+      custom_effect_tooltip = TXT_general_has_returned
+      hidden_effect = {
+        clr_country_flag = sent_simpson
+        TXT_william_simpson = {
+          add_corps_commander_role = {
+            skill=3
+            attack_skill=1
+            defense_skill=5
+            planning_skill=2
+            logistics_skill=2
+          }
+        }
+      }
+    }
+    else_if = {
+      limit = {
+        has_country_flag = sent_rudder
+      }
+      add_manpower = 2500
+      custom_effect_tooltip = TXT_general_has_returned
+      hidden_effect = {
+        clr_country_flag = sent_rudder
+        TXT_james_rudder = {
+          add_corps_commander_role = {
+            skill = 3
+            attack_skill = 2
+            defense_skill = 4
+            planning_skill = 1
+            logistics_skill = 4
+          }
+        }
+      }
+    }
+    else_if = {
+      limit = {
+        has_country_flag = sent_walker
+      }
+      add_manpower = 4000
+      custom_effect_tooltip = TXT_general_has_returned
+      hidden_effect = {
+        clr_country_flag = sent_walker
+        TXT_walton_walker = {
+          add_corps_commander_role = {
+            skill = 4
+            attack_skill = 4
+            defense_skill = 4
+            planning_skill = 2
+            logistics_skill = 2
+          }
+        }
+      }
+    }
+  }
+}
+country_event = { #general and men captured
+  id = tex.38
+  title = tex.38.t
+  desc = tex.38.d
+  
+  is_triggered_only = yes
+
+  option = {
+    name = tex.38.a
+    custom_effect_tooltip = lost_men_and_general_tt
+    add_war_support = -0.10
+  }
+}
+country_event = { #Choose who to send
+  id = tex.39
+  title = tex.39.t
+  desc = tex.39.d
+    
+  is_triggered_only = yes
+
+  option = {
+    name = tex.39.a
+    add_manpower = -1000
+    custom_effect_tooltip = TXT_send_simpson_tt
+    hidden_effect = {
+      set_country_flag = sent_simpson
+      TXT_william_simpson = {
+        remove_unit_leader_role = yes
+      }
+      random_list = {
+        65 = {
+          country_event = { #low amount of guns
+            id = tex.37
+            days = 5
+            random_days = 10
+          }
+        }
+        20 = {
+          country_event = { #medium amount of guns
+            id = tex.36
+            days = 5
+            random_days = 10
+          }
+        }
+        10 = {
+          country_event = { #high amount of guns
+            id = tex.35
+            days = 5
+            random_days = 10
+          }
+        }
+        5 = {
+          country_event = { #lose all men
+            id = tex.38
+            days = 10
+            random_days = 10
+          }
+        }
+      }
+    }
+  }
+  option = {
+    name = tex.39.b
+    add_manpower = -2500
+    custom_effect_tooltip = TXT_send_rudder_tt
+    hidden_effect = {
+      set_country_flag = sent_rudder
+      TXT_james_rudder = {
+        remove_unit_leader_role = yes
+      }
+      random_list = {
+        15 = {
+          country_event = { #low amount of guns
+            id = tex.37
+            days = 5
+            random_days = 10
+          }
+        }
+        60 = {
+          country_event = { #medium amount of guns
+            id = tex.36
+            days = 5
+            random_days = 10
+          }
+        }
+        15 = {
+          country_event = { #high amount of guns
+            id = tex.35
+            days = 5
+            random_days = 10
+          }
+        }
+        10 = {
+          country_event = { #lose all men
+            id = tex.38
+            days = 10
+            random_days = 10
+          }
+        }
+      }
+    }
+  }
+  option = {
+    name = tex.39.c
+    add_manpower = -4000
+    custom_effect_tooltip = TXT_send_walker_tt
+    hidden_effect = {
+      set_country_flag = sent_walker
+      TXT_walton_walker = {
+        remove_unit_leader_role = yes
+      }
+      random_list = {
+        15 = {
+          country_event = { #low amount of guns
+            id = tex.37
+            days = 5
+            random_days = 10
+          }
+        }
+        15 = {
+          country_event = { #medium amount of guns
+            id = tex.36
+            days = 5
+            random_days = 10
+          }
+        }
+        45 = {
+          country_event = { #high amount of guns
+            id = tex.35
+            days = 5
+            random_days = 10
+          }
+        }
+        25 = {
+          country_event = { #lose all men
+            id = tex.38
+            days = 10
+            random_days = 10
+          }
+        }
+      }
+    }
+  }
+}
 
 ##### News Events
 news_event = {
