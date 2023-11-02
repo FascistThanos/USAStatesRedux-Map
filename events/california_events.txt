@@ -1,72 +1,85 @@
 ﻿add_namespace = california
 add_namespace = californiaarmy
-
 # Election Of California
 country_event = {
-    id = california.1
-    title = california.1.t
-    desc = california.1.d
-    picture = GFX_report_event_election_vote
-    is_triggered_only = yes
-
-    option = {
-		name = california.1.a
-		ai_chance = { base = 25 }
-
-      create_country_leader = {
-        name = "James E. Davis"
-          desc = ""
-          picture = "Portrait_CAC_James E Davis.dds"
-          expire = "1965.1.1"
-          ideology = rexism
-        }
-
+  id = california.1
+	title = california.1.t
+	desc = california.1.d
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+	option = {
+	  name = california.1.a
+		ai_chance = {
+		  base = 25
+		}
+		create_country_leader = {
+			name = "James E. Davis"
+			desc = ""
+			picture = "Portrait_CAC_James E Davis.dds"
+			expire = "1965.1.1"
+			ideology = rexism
+		}
 		set_politics = {
 			ruling_party = fascism
 			elections_allowed = no
-        }
-
-    add_ideas = { CAC_unstablepolitics }
-    add_ideas = { CAC_unloyalarmy}
-    remove_ideas = { CAC_aloyaldemocraticarmy}
-
-    add_popularity = {
-      ideology = fascism
-      popularity = 0.10
-      }
-    add_popularity = {
-      ideology = democratic
-      popularity = -0.10
-      }
-    }
-    option = {
+		}
+		add_ideas = {
+			CAC_unstablepolitics
+		}
+		add_ideas = {
+			CAC_unloyalarmy
+		}
+		remove_ideas = {
+			CAC_aloyaldemocraticarmy
+		}
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.1
+		}
+		add_popularity = {
+			ideology = democratic
+			popularity = -0.1
+		}
+	}
+	option = {
 		name = california.1.b
-		ai_chance = { base = 50 }
+		ai_chance = {
+			base = 50
+		}
 		add_political_power = 75
 		add_stability = 0.05
-		add_ideas = { CAC_republican }
-    }
-    option = {
+		add_ideas = {
+			CAC_republican
+		}
+	}
+	option = {
 		name = california.1.c
-		ai_chance = { base = 25 }
-		add_stability = -0.10
+		ai_chance = {
+			base = 25
+		}
+		add_stability = -0.1
 		add_political_power = -50
-
 		set_politics = {
 			ruling_party = communism
 			elections_allowed = no
 		}
-    add_ideas = { CAC_unstablepolitics }
-    add_ideas = { CAC_unloyalarmy }
-    remove_ideas = { CAC_aloyaldemocraticarmy}
-    add_popularity = {
-      ideology = communism
-      popularity = 0.05
-      }
-    add_popularity = {
-      ideology = democratic
-      popularity = -0.10
-      }
+		add_ideas = {
+			CAC_unstablepolitics
+		}
+		add_ideas = {
+			CAC_unloyalarmy
+		}
+		remove_ideas = {
+			CAC_aloyaldemocraticarmy
+		}
+		add_popularity = {
+			ideology = communism
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = democratic
+			popularity = -0.1
+		}
 		create_country_leader = {
 			name = "Upton Sinclair"
 			desc = ""
@@ -75,974 +88,944 @@ country_event = {
 			ideology = leninism
 			traits = {
 			}
-      }
-    }
-  }
+		}
+	}
+}
 
 ############# END OF ELECTIONS EVENT ################
-
 #Fort focus for either arizona and mexico border or nevada and oregon
 country_event = {
-  id = california.2
-  title = california.2.t
-  desc = california.2.d
-  picture = GFX_report_event_bunker_01
-  is_triggered_only = yes
-
-    option = {
-      name = california.2.a
-
-		801 = {
+	id = california.2
+	title = california.2.t
+	desc = california.2.d
+	picture = GFX_report_event_bunker_01
+	is_triggered_only = yes
+	option = {
+		name = california.2.a
+		1183 = {
 			add_building_construction = {
 				type = bunker
 				level = 3
 				instant_build = yes
-
 				province = {
 					all_provinces = yes
 					limit_to_border = yes
 				}
-      }
+			}
 		}
-    802 = {
-		add_building_construction = {
-			type = bunker
-        level = 3
-        instant_build = yes
-          province = {
-          all_provinces = yes
-          limit_to_border = yes
-          }
-      }
-    }
-  }
-
-    option = {
-      name = california.2.b
-
-		378 = {
+		1182 = {
 			add_building_construction = {
 				type = bunker
-                level = 2
-                instant_build = yes
-                province = {
+				level = 3
+				instant_build = yes
+				province = {
 					all_provinces = yes
 					limit_to_border = yes
 				}
 			}
 		}
-
-		797 = {
+	}
+	option = {
+		name = california.2.b
+		378 = {
 			add_building_construction = {
 				type = bunker
 				level = 2
 				instant_build = yes
-                province = {
-                    all_provinces = yes
-                    limit_to_border = yes
+				province = {
+					all_provinces = yes
+					limit_to_border = yes
 				}
 			}
 		}
-
-		799 = {
-            add_building_construction = {
+		1178 = {
+			add_building_construction = {
 				type = bunker
 				level = 2
 				instant_build = yes
-                province = {
+				province = {
 					all_provinces = yes
-                    limit_to_border = yes
+					limit_to_border = yes
 				}
 			}
 		}
-
-
-		804 = {
-            add_building_construction = {
-                type = bunker
-                level = 2
-                instant_build = yes
-                province = {
-                    all_provinces = yes
-                    limit_to_border = yes
-				}
-			}
-		}
-    }
+	}
 }
-
-
 
 #NCR vs Nevada Event
 #Will allow NCR to declare war on nevada if they go non democratic, if NCR is democratic
-
 country_event = {
-		id = california.3
-		title = california.3.t
-		desc = california.3.d
-		picture = GFX_report_event_generic_panzer_attack
-
-    is_triggered_only = no
-    fire_only_once = yes
-
-  trigger = {
+	id = california.3
+	title = california.3.t
+	desc = california.3.d
+	picture = GFX_report_event_generic_panzer_attack
+	is_triggered_only = no
+	fire_only_once = yes
+	trigger = {
 		tag = CAC
 		has_government = democratic
-    NVN = {
-      exists = yes
-    }
-    OR = {
-  		NVN = {
-    		has_government = fascism
-  		}
-  		NVN = {
-    		has_government = communism
-  		}
+		NVN = {
+			exists = yes
 		}
-  }
-
-  mean_time_to_happen = {
-    days = 120
-  }
-
-	option = {
-			name = california.3.a
-
-			declare_war_on = {
-				target = NVN
-        type = annex_everything
-      }
-        hidden_effect = {
-          CAC = {
-            add_ai_strategy = { type = conquer id = "NVN" value = 200}
-          }
-        }
-			add_war_support = 0.1
-		}
-	option = {
-			name = california.3.b
-			add_stability = 0.1
-			add_political_power = 25
-			add_war_support = -0.1
-		}
-}
-#Focus Tree "An Offer To Hawaii" Californian Offer To Hawaii Event
-
-	country_event = {
-		id = california.4
-		title = california.4.t
-		desc = california.4.d
-		picture = GFX_report_event_usa_heavy_cruiser
-
-		is_triggered_only = yes
-
-		option = {
-			name = california.4.a
-			add_political_power = 50
-			add_opinion_modifier = {
-				target = JAP
-				modifier = large_increase
+		OR = {
+			NVN = {
+				has_government = fascism
 			}
-		}
-
-		option = {
-			name = california.4.b
-			HIH = {
-				country_event = disunitedstates.6
+			NVN = {
+				has_government = communism
 			}
 		}
 	}
+	mean_time_to_happen = {
+		days = 120
+	}
+	option = {
+		name = california.3.a
+		declare_war_on = {
+			target = NVN
+			type = annex_everything
+		}
+		hidden_effect = {
+			CAC = {
+				add_ai_strategy = {
+					type = conquer
+					id = "NVN"
+					value = 200
+				}
+			}
+		}
+		add_war_support = 0.1
+	}
+	option = {
+		name = california.3.b
+		add_stability = 0.1
+		add_political_power = 25
+		add_war_support = -0.1
+	}
+}
 
-
+#Focus Tree "An Offer To Hawaii" Californian Offer To Hawaii Event
+country_event = {
+	id = california.4
+	title = california.4.t
+	desc = california.4.d
+	picture = GFX_report_event_usa_heavy_cruiser
+	is_triggered_only = yes
+	option = {
+		name = california.4.a
+		add_political_power = 50
+		add_opinion_modifier = {
+			target = JAP
+			modifier = large_increase
+		}
+	}
+	option = {
+		name = california.4.b
+		HIH = {
+			country_event = disunitedstates.6
+		}
+	}
+}
 
 #Hawaii Accepts
-	country_event = {
-		id = california.6
-		title = california.6.t
-		desc = california.6.d
-		picture = GFX_report_event_usa_destroyers
-
-		is_triggered_only = yes
-
-		option = {
-			name = california.6.a
-		}
+country_event = {
+	id = california.6
+	title = california.6.t
+	desc = california.6.d
+	picture = GFX_report_event_usa_destroyers
+	is_triggered_only = yes
+	option = {
+		name = california.6.a
 	}
+}
 
 #Hawaii Refuses
-	country_event = {
-		id = california.5
-		title = california.5.t
-		desc = california.5.d
-		picture = GFX_report_event_usa_destroyers
-
-		is_triggered_only = yes
-
-		option = {
-			name = california.5.a
-		}
-
-
-		option = {
-			name = california.5.b
-			declare_war_on = {
-				target = HIH
-				type = puppet_wargoal_focus
-			}
+country_event = {
+	id = california.5
+	title = california.5.t
+	desc = california.5.d
+	picture = GFX_report_event_usa_destroyers
+	is_triggered_only = yes
+	option = {
+		name = california.5.a
+	}
+	option = {
+		name = california.5.b
+		declare_war_on = {
+			target = HIH
+			type = puppet_wargoal_focus
 		}
 	}
-
-
+}
 
 #Beginning Of PSA
-  country_event = {
-    id = california.7
-    title = california.7.t
-    desc = california.7.d
-    picture = GFX_report_event_us_panay_demands
-
-    is_triggered_only = yes
-
-    option = {
-      name = california.7.a
-      add_political_power = 50
-      add_war_support = 0.05
-    }
-  }
-
+country_event = {
+	id = california.7
+	title = california.7.t
+	desc = california.7.d
+	picture = GFX_report_event_us_panay_demands
+	is_triggered_only = yes
+	option = {
+		name = california.7.a
+		add_political_power = 50
+		add_war_support = 0.05
+	}
+}
 
 #Oregon Meeting for PSA
-  country_event = {
-    id =  california.8
-    title = california.8.t
-    desc = california.8.d
-    picture = GFX_report_event_molotov_ribentrop_handshake
-
-    is_triggered_only = yes
-
-    option = {
-    name = california.8.a
-    add_political_power = -1
-    ORO = {
-      country_event = disunitedstates.7
-    }
-    }
-  }
-
+country_event = {
+	id = california.8
+	title = california.8.t
+	desc = california.8.d
+	picture = GFX_report_event_molotov_ribentrop_handshake
+	is_triggered_only = yes
+	option = {
+		name = california.8.a
+		add_political_power = -1
+		ORO = {
+			country_event = disunitedstates.7
+		}
+	}
+}
 
 #Oregon Says Yes
-  country_event = {
-    id = california.10
-    title = california.10.t
-    desc = california.10.d
-    picture = GFX_report_event_molotov_ribentrop_handshake
-
-    is_triggered_only = yes
-
-    option = {
-      name = california.10.a
-      add_political_power = 10
-    }
-  }
+country_event = {
+	id = california.10
+	title = california.10.t
+	desc = california.10.d
+	picture = GFX_report_event_molotov_ribentrop_handshake
+	is_triggered_only = yes
+	option = {
+		name = california.10.a
+		add_political_power = 10
+	}
+}
 
 #Oregon Refuses
-  country_event = {
-    id = california.11
-    title = california.11.t
-    desc = california.11.d
-    picture = GFX_report_event_molotov_ribentrop_handshake
-
-    is_triggered_only = yes
-
-    option = {
-      name = california.11.a
-      create_wargoal = {
-      type = annex_everything
-      target = ORO
-        }
-    }
-
-    option = {
-      name = california.11.b
-      add_political_power = -50
-    }
-  }
+country_event = {
+	id = california.11
+	title = california.11.t
+	desc = california.11.d
+	picture = GFX_report_event_molotov_ribentrop_handshake
+	is_triggered_only = yes
+	option = {
+		name = california.11.a
+		create_wargoal = {
+			type = annex_everything
+			target = ORO
+		}
+	}
+	option = {
+		name = california.11.b
+		add_political_power = -50
+	}
+}
 
 #Washington Meeting for PSA
 country_event = {
-  id = california.9
-  title = california.9.t
-  desc = california.9.d
-  picture = GFX_report_event_molotov_ribentrop_handshake
-
-  is_triggered_only = yes
-
-  option = {
-  name = california.9.a
-  WAW = {
-    country_event = disunitedstates.8
-  }
-  }
+	id = california.9
+	title = california.9.t
+	desc = california.9.d
+	picture = GFX_report_event_molotov_ribentrop_handshake
+	is_triggered_only = yes
+	option = {
+		name = california.9.a
+		WAW = {
+			country_event = disunitedstates.8
+		}
+	}
 }
 
 #Washington Accepts
-  country_event = {
-    id = california.12
-    title = california.12.t
-    desc = california.12.d
-    picture = GFX_report_event_molotov_ribentrop_handshake
-
-    is_triggered_only = yes
-
-    option = {
-      name = california.12.a
-      add_political_power = 10
-    }
-  }
-
+country_event = {
+	id = california.12
+	title = california.12.t
+	desc = california.12.d
+	picture = GFX_report_event_molotov_ribentrop_handshake
+	is_triggered_only = yes
+	option = {
+		name = california.12.a
+		add_political_power = 10
+	}
+}
 
 #Washington Refuses
-  country_event = {
-    id = california.13
-    title = california.13.t
-    desc = california.13.d
-    picture = GFX_report_event_molotov_ribentrop_handshake
-
-    is_triggered_only = yes
-
-    option = {
-      name = california.13.a
-      create_wargoal = {
-      type = annex_everything
-      target = WAW
-        }
-    }
-
-    option = {
-      name = california.13.b
-      add_political_power = -50
-    }
-  }
+country_event = {
+	id = california.13
+	title = california.13.t
+	desc = california.13.d
+	picture = GFX_report_event_molotov_ribentrop_handshake
+	is_triggered_only = yes
+	option = {
+		name = california.13.a
+		create_wargoal = {
+			type = annex_everything
+			target = WAW
+		}
+	}
+	option = {
+		name = california.13.b
+		add_political_power = -50
+	}
+}
 
 #Give The Police More Power
-  country_event = {
-    id = california.14
-    title = california.14.t
-    desc = california.14.d
-    picture = GFX_report_event_degaulle_inspect_troops
-
-    is_triggered_only = yes
-
-    option = {
-      name = california.14.a
-      add_ideas = CAC_policeforceempowered
-      set_technology = {
-        motorised_infantry = 1
-      }
-      load_oob = "CAC_Police_Units"
-    }
-  }
+country_event = {
+	id = california.14
+	title = california.14.t
+	desc = california.14.d
+	picture = GFX_report_event_degaulle_inspect_troops
+	is_triggered_only = yes
+	option = {
+		name = california.14.a
+		add_ideas = CAC_policeforceempowered
+		set_technology = {
+			motorised_infantry = 1
+		}
+		load_oob = "CAC_Police_Units"
+	}
+}
 
 #Army Debate
-  country_event = {
-    id = california.16
-    title = california.16.t
-    desc = california.16.d
-    picture = GFX_report_event_generic_military_parade
-
-    is_triggered_only = yes
-
-    option = {
-      name = california.16.a
-      custom_effect_tooltip = lloydsway
-      set_country_flag = lloydsway
-    }
-    option = {
-      name = california.16.b
-      custom_effect_tooltip = pattonsway
-      set_country_flag = pattonsway
-    }
-  }
-
-
+country_event = {
+	id = california.16
+	title = california.16.t
+	desc = california.16.d
+	picture = GFX_report_event_generic_military_parade
+	is_triggered_only = yes
+	option = {
+		name = california.16.a
+		custom_effect_tooltip = lloydsway
+		set_country_flag = lloydsway
+	}
+	option = {
+		name = california.16.b
+		custom_effect_tooltip = pattonsway
+		set_country_flag = pattonsway
+	}
+}
 
 #Alaska PSA offer
-  country_event = {
-    id = california.19
-    title = california.19.t
-    desc = california.19.d
-    picture = GFX_report_event_molotov_ribentrop_handshake
+country_event = {
+	id = california.19
+	title = california.19.t
+	desc = california.19.d
+	picture = GFX_report_event_molotov_ribentrop_handshake
+	is_triggered_only = yes
+	option = {
+		name = california.19.a
+		AKA = {
+			country_event = disunitedstates.13
+		}
+	}
+}
 
-    is_triggered_only = yes
+#Alaska accepts!
+country_event = {
+	id = california.20
+	title = california.20.t
+	desc = california.20.d
+	picture = GFX_report_event_molotov_ribentrop_handshake
+	is_triggered_only = yes
+	option = {
+		name = california.20.a
+		add_political_power = 10
+	}
+}
 
-    option = {
-      name = california.19.a
-      AKA = {
-        country_event = disunitedstates.13
-      }
-    }
-  }
-
-  #Alaska accepts!
-  country_event = {
-    id = california.20
-    title = california.20.t
-    desc = california.20.d
-    picture = GFX_report_event_molotov_ribentrop_handshake
-
-    is_triggered_only = yes
-
-    option = {
-      name = california.20.a
-      add_political_power = 10
-    }
-  }
-
-  #Alaska declines!
-  country_event = {
-    id = california.21
-    title = california.21.t
-    desc = california.21.d
-    picture = GFX_report_event_molotov_ribentrop_handshake
-
-    is_triggered_only = yes
-
-    option = {
-      name = california.21.a
-      create_wargoal = {
-      type = annex_everything
-      target = AKA
-        }
-    }
-
-    option = {
-      name = california.21.b
-      add_political_power = -50
-    }
-  }
-
+#Alaska declines!
+country_event = {
+	id = california.21
+	title = california.21.t
+	desc = california.21.d
+	picture = GFX_report_event_molotov_ribentrop_handshake
+	is_triggered_only = yes
+	option = {
+		name = california.21.a
+		create_wargoal = {
+			type = annex_everything
+			target = AKA
+		}
+	}
+	option = {
+		name = california.21.b
+		add_political_power = -50
+	}
+}
 
 #California Army Option Communist
 country_event = {
-  id = california.18
-  title = california.18.t
-  desc = california.18.d
-  picture = GFX_report_event_generic_military_parade
-
-  is_triggered_only = yes
-  fire_only_once = yes
-
-  option = {
-      name = california.18.a
-      hidden_effect = {
-        set_country_flag = CAC_citizenshipbyservice
-      }
-  }
-  option = {
-      name = california.18.b
-      hidden_effect = {
-        set_country_flag = CAC_aworkersarmytooltip
-      }
-  }
+	id = california.18
+	title = california.18.t
+	desc = california.18.d
+	picture = GFX_report_event_generic_military_parade
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = california.18.a
+		hidden_effect = {
+			set_country_flag = CAC_citizenshipbyservice
+		}
+	}
+	option = {
+		name = california.18.b
+		hidden_effect = {
+			set_country_flag = CAC_aworkersarmytooltip
+		}
+	}
 }
 
 #California communist spy
-
 country_event = {
-  id = california.22
-  title = california.22.t
-  desc = california.22.d
-  picture = GFX_report_event_generic_military_parade
-
-  is_triggered_only = yes
-  fire_only_once = yes
-
-  option = {
-      name = california.22.a
-      hidden_effect = {
-        set_country_flag = CAC_militapartisans
-      }
-  }
-  option = {
-      name = california.22.b
-      hidden_effect = {
-        set_country_flag = CAC_communistspys
-      }
-  }
+	id = california.22
+	title = california.22.t
+	desc = california.22.d
+	picture = GFX_report_event_generic_military_parade
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = california.22.a
+		hidden_effect = {
+			set_country_flag = CAC_militapartisans
+		}
+	}
+	option = {
+		name = california.22.b
+		hidden_effect = {
+			set_country_flag = CAC_communistspys
+		}
+	}
 }
+
 #Invite Arizona
 country_event = {
-  id = california.23
-  title = california.23.t
-  desc = california.23.d
-  picture = GFX_report_event_worried_french
-
-  is_triggered_only = yes
-
-  option = { #Country Accepts
-    name = california.23.a
-    ai_chance = {
-      factor = 30
-      modifier = {
-        factor = 40
-        has_government = communism
-      }
-      modifier = {
-        factor = 30
-        strength_ratio = {
-          tag = FROM ratio > 0.5
-        }
-      }
-    }
-    CAC = {
-      country_event = california.24
-      add_to_faction = AZA
-    }
-  }
-
-  option = { #Country Refuses
-    name = california.23.b
-    ai_chance = {
-      factor = 70
-      modifier = {
-        factor = 30
-        has_government = fascism
-      }
-    }
-    CAC = { country_event = california.25 }
-  }
+	id = california.23
+	title = california.23.t
+	desc = california.23.d
+	picture = GFX_report_event_worried_french
+	is_triggered_only = yes
+	option = {
+		#Country Accepts
+		name = california.23.a
+		ai_chance = {
+			factor = 30
+			modifier = {
+				factor = 40
+				has_government = communism
+			}
+			modifier = {
+				factor = 30
+				strength_ratio = {
+					tag = FROM
+					ratio > 0.5
+				}
+			}
+		}
+		CAC = {
+			country_event = california.24
+			add_to_faction = AZA
+		}
+	}
+	option = {
+		#Country Refuses
+		name = california.23.b
+		ai_chance = {
+			factor = 70
+			modifier = {
+				factor = 30
+				has_government = fascism
+			}
+		}
+		CAC = {
+			country_event = california.25
+		}
+	}
 }
+
 country_event = {
-  id = california.24
-  title = california.24.t
-  desc = california.24.d
-  picture = GFX_report_event_pla_in_beijing
-
-  is_triggered_only = yes
-
-  option = {
-    name = california.24.a
-  }
+	id = california.24
+	title = california.24.t
+	desc = california.24.d
+	picture = GFX_report_event_pla_in_beijing
+	is_triggered_only = yes
+	option = {
+		name = california.24.a
+	}
 }
+
 country_event = {
-  id = california.25
-  title = california.25.t
-  desc = california.25.d
-  picture = GFX_report_event_finnish_letter
-
-  is_triggered_only = yes
-
-  option = {
-    name = california.25.a
-    create_wargoal = {
-      type = puppet_wargoal_focus
-      target = AZA
-    }
-  }
+	id = california.25
+	title = california.25.t
+	desc = california.25.d
+	picture = GFX_report_event_finnish_letter
+	is_triggered_only = yes
+	option = {
+		name = california.25.a
+		create_wargoal = {
+			type = puppet_wargoal_focus
+			target = AZA
+		}
+	}
 }
+
 #Invite Nevada
 country_event = {
-  id = california.26
-  title = california.26.t
-  desc = california.26.d
-  picture = GFX_report_event_worried_french
-
-  is_triggered_only = yes
-
-  option = { #Country Accepts
-    name = california.26.a
-    ai_chance = {
-      factor = 30
-      modifier = {
-        factor = 40
-        has_government = communism
-      }
-      modifier = {
-        factor = 30
-        strength_ratio = {
-          tag = FROM ratio > 0.5
-        }
-      }
-    }
-    CAC = {
-      country_event = california.27
-      add_to_faction = NVN
-    }
-  }
-
-  option = { #Country Refuses
-    name = california.26.b
-    ai_chance = {
-      factor = 70
-    }
-    CAC = { country_event = california.28 }
-  }
+	id = california.26
+	title = california.26.t
+	desc = california.26.d
+	picture = GFX_report_event_worried_french
+	is_triggered_only = yes
+	option = {
+		#Country Accepts
+		name = california.26.a
+		ai_chance = {
+			factor = 30
+			modifier = {
+				factor = 40
+				has_government = communism
+			}
+			modifier = {
+				factor = 30
+				strength_ratio = {
+					tag = FROM
+					ratio > 0.5
+				}
+			}
+		}
+		CAC = {
+			country_event = california.27
+			add_to_faction = NVN
+		}
+	}
+	option = {
+		#Country Refuses
+		name = california.26.b
+		ai_chance = {
+			factor = 70
+		}
+		CAC = {
+			country_event = california.28
+		}
+	}
 }
+
 country_event = {
-  id = california.27
-  title = california.27.t
-  desc = california.27.d
-  picture = GFX_report_event_pla_in_beijing
-
-  is_triggered_only = yes
-
-  option = {
-    name = california.27.a
-  }
+	id = california.27
+	title = california.27.t
+	desc = california.27.d
+	picture = GFX_report_event_pla_in_beijing
+	is_triggered_only = yes
+	option = {
+		name = california.27.a
+	}
 }
+
 country_event = {
-  id = california.28
-  title = california.28.t
-  desc = california.28.d
-  picture = GFX_report_event_finnish_letter
-
-  is_triggered_only = yes
-
-  option = {
-    name = california.28.a
-    create_wargoal = {
-      type = puppet_wargoal_focus
-      target = NVN
-    }
-  }
+	id = california.28
+	title = california.28.t
+	desc = california.28.d
+	picture = GFX_report_event_finnish_letter
+	is_triggered_only = yes
+	option = {
+		name = california.28.a
+		create_wargoal = {
+			type = puppet_wargoal_focus
+			target = NVN
+		}
+	}
 }
+
 #Invite Oregon
 country_event = {
-  id = california.29
-  title = california.29.t
-  desc = california.29.d
-  picture = GFX_report_event_worried_french
-
-  is_triggered_only = yes
-
-  option = { #Country Accepts
-    name = california.29.a
-    ai_chance = {
-      factor = 30
-      modifier = {
-        factor = 40
-        has_government = communism
-      }
-      modifier = {
-        factor = 30
-        strength_ratio = {
-          tag = FROM ratio > 0.5
-        }
-      }
-    }
-    CAC = {
-      country_event = california.30
-      add_to_faction = ORO
-    }
-  }
-
-  option = { #Country Refuses
-    name = california.29.b
-    ai_chance = {
-      factor = 70
-    }
-    CAC = { country_event = california.31 }
-  }
+	id = california.29
+	title = california.29.t
+	desc = california.29.d
+	picture = GFX_report_event_worried_french
+	is_triggered_only = yes
+	option = {
+		#Country Accepts
+		name = california.29.a
+		ai_chance = {
+			factor = 30
+			modifier = {
+				factor = 40
+				has_government = communism
+			}
+			modifier = {
+				factor = 30
+				strength_ratio = {
+					tag = FROM
+					ratio > 0.5
+				}
+			}
+		}
+		CAC = {
+			country_event = california.30
+			add_to_faction = ORO
+		}
+	}
+	option = {
+		#Country Refuses
+		name = california.29.b
+		ai_chance = {
+			factor = 70
+		}
+		CAC = {
+			country_event = california.31
+		}
+	}
 }
-country_event = { #Oregon Event
-  id = california.30
-  title = california.30.t
-  desc = california.30.d
-  picture = GFX_report_event_pla_in_beijing
 
-  is_triggered_only = yes
-
-  option = {
-    name = california.30.a
-  }
+country_event = {
+	#Oregon Event
+	id = california.30
+	title = california.30.t
+	desc = california.30.d
+	picture = GFX_report_event_pla_in_beijing
+	is_triggered_only = yes
+	option = {
+		name = california.30.a
+	}
 }
-country_event = { #Oregon Event
-  id = california.31 
-  title = california.31.t
-  desc = california.31.d
-  picture = GFX_report_event_finnish_letter
-  is_triggered_only = yes
-  option = {
-    name = california.31.a
-    create_wargoal = {
-      type = puppet_wargoal_focus
-      target = ORO
-      }
-    }
-  }
-  country_event = { #Arizona gets deserters from cali
-    id = california.32
-    title = california.32.t
-    desc = california.32.d
-    picture = GFX_report_event_ANZAC_day
-    is_triggered_only = yes
-    option = {
-      name = california.32.a
-      add_manpower = 500
-      add_equipment_to_stockpile = {
-        type = infantry_equipment
-        amount = 120
-        producer = CAC
-      }
-      }
-    }
-  country_event = { #arizona skirmish victory
-    id = california.33
-    title = california.33.t
-    desc = california.33.d
-    picture = GFX_report_event_ANZAC_day
-    is_triggered_only = yes
-    option = {
-      name = california.33.a
-      add_manpower = -500
-      army_experience = 30
-      }
-    }
-  country_event = { #arizona skirmish defeat
-    id = california.34
-    title = california.34.t
-    desc = california.34.d
-    picture = GFX_report_event_ANZAC_day
-    is_triggered_only = yes
-    option = {
-      name = california.34.a
-      add_manpower = -500
-      army_experience = -15
-      }
-    }
-  country_event = { #california currency
-    id = california.35
-    title = california.35.t
-    desc = california.35.d
-    picture = GFX_report_event_finnish_letter
-    is_triggered_only = yes
-    option = { #Establish the Californian Dollar
-      name = california.35.a
-      add_political_power = 5
-      add_ideas = CAC_californiandollar
-      CAC = {
-        country_event = california.36
-      }
-      }
-    option = { #Maintain the United States Dollar
-      name = california.35.b
-      add_ideas = CAC_usdollar
-    }
-  }
-  country_event = { #california currency
-    id = california.36
-    title = california.36.t
-    desc = california.36.d
-    picture = GFX_report_event_finnish_letter
-    is_triggered_only = yes
-    option = { #Frank Merriam on the 1$
-      name = california.36.a
-      add_ideas = CAC_merriamdollar
-      add_popularity = {
-        ideology = democratic
-        popularity = 0.05
-        }
-      }
-    option = { #William B. Ide, the original founding father of the Californian Republic
-      name = california.36.b
-      add_ideas = CAC_williambidedollar
-    }
-    option = { #John Sutter The Founder of Sacremento
-      name = california.36.c
-      add_ideas = CAC_johnsutterdollar
-    }
-  }
+
+country_event = {
+	#Oregon Event
+	id = california.31
+	title = california.31.t
+	desc = california.31.d
+	picture = GFX_report_event_finnish_letter
+	is_triggered_only = yes
+	option = {
+		name = california.31.a
+		create_wargoal = {
+			type = puppet_wargoal_focus
+			target = ORO
+		}
+	}
+}
+
+country_event = {
+	#Arizona gets deserters from cali
+	id = california.32
+	title = california.32.t
+	desc = california.32.d
+	picture = GFX_report_event_ANZAC_day
+	is_triggered_only = yes
+	option = {
+		name = california.32.a
+		add_manpower = 500
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 120
+			producer = CAC
+		}
+	}
+}
+
+country_event = {
+	#arizona skirmish victory
+	id = california.33
+	title = california.33.t
+	desc = california.33.d
+	picture = GFX_report_event_ANZAC_day
+	is_triggered_only = yes
+	option = {
+		name = california.33.a
+		add_manpower = -500
+		army_experience = 30
+	}
+}
+
+country_event = {
+	#arizona skirmish defeat
+	id = california.34
+	title = california.34.t
+	desc = california.34.d
+	picture = GFX_report_event_ANZAC_day
+	is_triggered_only = yes
+	option = {
+		name = california.34.a
+		add_manpower = -500
+		army_experience = -15
+	}
+}
+
+country_event = {
+	#california currency
+	id = california.35
+	title = california.35.t
+	desc = california.35.d
+	picture = GFX_report_event_finnish_letter
+	is_triggered_only = yes
+	option = {
+		#Establish the Californian Dollar
+		name = california.35.a
+		add_political_power = 5
+		add_ideas = CAC_californiandollar
+		CAC = {
+			country_event = california.36
+		}
+	}
+	option = {
+		#Maintain the United States Dollar
+		name = california.35.b
+		add_ideas = CAC_usdollar
+	}
+}
+
+country_event = {
+	#california currency
+	id = california.36
+	title = california.36.t
+	desc = california.36.d
+	picture = GFX_report_event_finnish_letter
+	is_triggered_only = yes
+	option = {
+		#Frank Merriam on the 1$
+		name = california.36.a
+		add_ideas = CAC_merriamdollar
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.05
+		}
+	}
+	option = {
+		#William B. Ide, the original founding father of the Californian Republic
+		name = california.36.b
+		add_ideas = CAC_williambidedollar
+	}
+	option = {
+		#John Sutter The Founder of Sacremento
+		name = california.36.c
+		add_ideas = CAC_johnsutterdollar
+	}
+}
 
 #California Army Events Shit
-country_event = { #1st,2ndInf Divison Disappear, starts country flag
-  id = californiaarmy.1
-  immediate = { log = "[GetDateText]: [Root.GetName]: event californiaarmy.1" }
-  title = californiaarmy.1.t
-  desc = californiaarmy.1.d
-  picture = GFX_report_event_generic_panzer_attack
-  fire_only_once = yes
-  mean_time_to_happen = { days = 80}
-  trigger = {
+country_event = {
+	#1st,2ndInf Divison Disappear, starts country flag
+	id = californiaarmy.1
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event californiaarmy.1"
+	}
+	title = californiaarmy.1.t
+	desc = californiaarmy.1.d
+	picture = GFX_report_event_generic_panzer_attack
+	fire_only_once = yes
+	mean_time_to_happen = {
+		days = 80
+	}
+	trigger = {
 		tag = CAC
-    has_country_leader = {
-      name = "James E. Davis"
-      ruling_only = yes
-    }
-  }
-  option = {
-    name = californiaarmy.1.a
-    delete_unit_template_and_units = {
-      division_template = "Infantry Division"
-    }
-    add_popularity = {
-      ideology = neutrality
-      popularity = 0.01
-      }
-    hidden_effect = {
-      set_country_flag = CAC_armycivilwar1
-      country_event = {
-        id = californiaarmy.2
-        days = 35
-        random = 48
-    }
-    }
-  }
+		has_country_leader = {
+			name = "James E. Davis"
+			ruling_only = yes
+		}
+	}
+	option = {
+		name = californiaarmy.1.a
+		delete_unit_template_and_units = {
+			division_template = "Infantry Division"
+		}
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.01
+		}
+		hidden_effect = {
+			set_country_flag = CAC_armycivilwar1
+			country_event = {
+				id = californiaarmy.2
+				days = 35
+				random = 48
+			}
+		}
+	}
 }
-country_event = { #AZA Desertion
-  id = californiaarmy.2
-  immediate = { log = "[GetDateText]: [Root.GetName]: event californiaarmy.2" }
-  title = californiaarmy.2.t
-  desc = californiaarmy.2.d
-  picture = GFX_report_event_dead_soldiers
-  is_triggered_only = yes
-  option = {
-    name = californiaarmy.2.a
-    add_manpower = -500
-    add_popularity = {
-      ideology = neutrality
-      popularity = 0.01
-      }
-    add_equipment_to_stockpile = {
-      type = infantry_equipment
-      amount = -120
-      producer = CAC
-    }
-    AZA = {
-      country_event = {
-        id = california.32
-        days = 1
-        random = 1
-      }
-    }
-    #hidden_effect = {
-      #country_event = {
-        #id = californiaarmy.5
-        #days = 65
-        #random = 1
-      #}
-    #}
-  }
+
+country_event = {
+	#AZA Desertion
+	id = californiaarmy.2
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event californiaarmy.2"
+	}
+	title = californiaarmy.2.t
+	desc = californiaarmy.2.d
+	picture = GFX_report_event_dead_soldiers
+	is_triggered_only = yes
+	option = {
+		name = californiaarmy.2.a
+		add_manpower = -500
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.01
+		}
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = -120
+			producer = CAC
+		}
+		AZA = {
+			country_event = {
+				id = california.32
+				days = 1
+				random = 1
+			}
+		}
+		#hidden_effect = {
+		#country_event = {
+		#id = californiaarmy.5
+		#days = 65
+		#random = 1
+		#}
+		#}
+	}
 }
+
 #country_event = { #AZA Border Skirmish
-  #id = californiaarmy.5
-  #title = californiaarmy.5.t
-  #desc = californiaarmy.5.d
-  #picture = GFX_report_event_genericsoldiers3
-  #is_triggered_only = yes
-  #option = {
-    #name = californiaarmy.5.a
-    #start_border_war = {
-			#change_state_after_war = no
-				#attacker = {
-					#state = 866
-					#num_provinces = 2
-					#on_win = california.33
-					#on_lose = california.34
-				#}
-				#defender = {
-					#state = 801
-					#num_provinces = 3
-				#}
-			#}
-  #}
+#id = californiaarmy.5
+#title = californiaarmy.5.t
+#desc = californiaarmy.5.d
+#picture = GFX_report_event_genericsoldiers3
+#is_triggered_only = yes
+#option = {
+#name = californiaarmy.5.a
+#start_border_war = {
+#change_state_after_war = no
+#attacker = {
+#state = 866
+#num_provinces = 2
+#on_win = california.33
+#on_lose = california.34
 #}
-country_event = { #Riots in San Diego
-  id = californiaarmy.4
-  immediate = { log = "[GetDateText]: [Root.GetName]: event californiaarmy.4" }
-  title = californiaarmy.4.t
-  desc = californiaarmy.4.d
-  picture = GFX_report_event_crowd_in_prague
-  fire_only_once = yes
-  mean_time_to_happen = { days = 55}
-  trigger = {
+#defender = {
+#state = 801
+#num_provinces = 3
+#}
+#}
+#}
+#}
+country_event = {
+	#Riots in San Diego
+	id = californiaarmy.4
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event californiaarmy.4"
+	}
+	title = californiaarmy.4.t
+	desc = californiaarmy.4.d
+	picture = GFX_report_event_crowd_in_prague
+	fire_only_once = yes
+	mean_time_to_happen = {
+		days = 55
+	}
+	trigger = {
 		tag = CAC
-    has_country_leader = {
-      name = "James E. Davis"
-      ruling_only = yes
-    }
-    has_country_flag = CAC_armycivilwar1
-  }
-  option = {
-    name = californiaarmy.4.a #Allow the peaceful protest
-    add_stability = -0.05
-    hidden_effect = {
-      set_country_flag = californiaallowed1
-    }
-  }
-  option = {
-    name = californiaarmy.4.b #Send in law enforcement
-    add_stability = 0.01
-    add_political_power = -50
-    hidden_effect = {
-      random_list = {
-        80 = {
-          country_event = californiaarmy.6
-        }
-        20 = {
-          country_event = californiaarmy.7
-        }
-      }
-    }
-  }
+		has_country_leader = {
+			name = "James E. Davis"
+			ruling_only = yes
+		}
+		has_country_flag = CAC_armycivilwar1
+	}
+	option = {
+		name = californiaarmy.4.a		#Allow the peaceful protest
+		add_stability = -0.05
+		hidden_effect = {
+			set_country_flag = californiaallowed1
+		}
+	}
+	option = {
+		name = californiaarmy.4.b		#Send in law enforcement
+		add_stability = 0.01
+		add_political_power = -50
+		hidden_effect = {
+			random_list = {
+				80 = {
+					country_event = californiaarmy.6
+				}
+				20 = {
+					country_event = californiaarmy.7
+				}
+			}
+		}
+	}
 }
-country_event = { #Violence begets violence
-  id = californiaarmy.6
-  immediate = { log = "[GetDateText]: [Root.GetName]: event californiaarmy.6"}
-  title = californiaarmy.6.t
-  desc = californiaarmy.6.d
-  picture = GFX_report_event_iww_demonstration
-  is_triggered_only = yes
-  fire_only_once = yes
-  option = {
-    name = californiaarmy.6.a
-  }
+
+country_event = {
+	#Violence begets violence
+	id = californiaarmy.6
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event californiaarmy.6"
+	}
+	title = californiaarmy.6.t
+	desc = californiaarmy.6.d
+	picture = GFX_report_event_iww_demonstration
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = californiaarmy.6.a
+	}
 }
-country_event = { #Protestors dispersed
-  id = californiaarmy.7
-  immediate = { log = "[GetDateText]: [Root.GetName]: event californiaarmy.7"}
-  title = californiaarmy.7.t
-  desc = californiaarmy.7.d
-  picture = GFX_report_event_albanian_partisans
-  is_triggered_only = yes
-  fire_only_once = yes
-  option = {
-    name = californiaarmy.7.a
-  }
+
+country_event = {
+	#Protestors dispersed
+	id = californiaarmy.7
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event californiaarmy.7"
+	}
+	title = californiaarmy.7.t
+	desc = californiaarmy.7.d
+	picture = GFX_report_event_albanian_partisans
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = californiaarmy.7.a
+	}
 }
-country_event = { #Protest in Los Angeles (allowed peaceful protest in sandiego)
-  id = californiaarmy.8
-  immediate = { log = "[GetDateText]: [Root.GetName]: event californiaarmy.8"}
-  title = californiaarmy.8.t
-  desc = californiaarmy.8.d
-  picture = GFX_report_event_albanian_partisans
-  fire_only_once = yes
-  mean_time_to_happen = { days = 30}
-  trigger = {
-    tag = CAC
-    has_country_flag = californiaallowed1
-    has_country_leader = {
-      name = "James E. Davis"
-      ruling_only = yes
-    }
-  }
-  option = {
-    name = californiaarmy.8.a
-  }
+
+country_event = {
+	#Protest in Los Angeles (allowed peaceful protest in sandiego)
+	id = californiaarmy.8
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event californiaarmy.8"
+	}
+	title = californiaarmy.8.t
+	desc = californiaarmy.8.d
+	picture = GFX_report_event_albanian_partisans
+	fire_only_once = yes
+	mean_time_to_happen = {
+		days = 30
+	}
+	trigger = {
+		tag = CAC
+		has_country_flag = californiaallowed1
+		has_country_leader = {
+			name = "James E. Davis"
+			ruling_only = yes
+		}
+	}
+	option = {
+		name = californiaarmy.8.a
+	}
 }
+
 #The Patton Revolution, Civil War
 country_event = {
-  id = californiaarmy.3
-  immediate = { log = "[GetDateText]: [Root.GetName]: event californiaarmy.3" }
-  title = californiaarmy.3.t
-  desc = californiaarmy.3.d
-  picture = GFX_report_event_genericsoldiers6
-  is_triggered_only = yes
-  option = { #Davis support
-    name = californiaarmy.3.a
-  }
-  option = { #Play as CLFD [Military]
-    name = californiaarmy.3.b
-  }
+	id = californiaarmy.3
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event californiaarmy.3"
+	}
+	title = californiaarmy.3.t
+	desc = californiaarmy.3.d
+	picture = GFX_report_event_genericsoldiers6
+	is_triggered_only = yes
+	option = {
+		#Davis support
+		name = californiaarmy.3.a
+	}
+	option = {
+		#Play as CLFD [Military]
+		name = californiaarmy.3.b
+	}
 }
+
 #Notes
 #Need some more lead up events, work on the overall lore/detail of PGC

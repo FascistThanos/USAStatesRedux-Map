@@ -1,0 +1,110 @@
+﻿###########################
+# News Events
+###########################
+
+add_namespace = us_flavor_news
+add_namespace = us_nukes
+
+# 1936 cold wave
+news_event = {
+	id = us_flavor_news.1
+	title = us_flavor_news.1.t
+	desc = us_flavor_news.1.d
+	picture = GFX_news_event_cold_wave #replace
+	
+	major = yes
+	
+	trigger = {
+		date > 1936.2.15
+		NOT = { has_global_flag = cold_wave_1936 }
+	}
+	
+	mean_time_to_happen = {
+		days = 2 
+	}
+	
+	immediate = {
+		set_global_flag = cold_wave_1936
+	}
+	
+	option = {
+		name = us_flavor_news.1.a
+	}
+}
+
+# 1936 heat wave
+news_event = {
+	id = us_flavor_news.2
+	title = us_flavor_news.2.t
+	desc = us_flavor_news.2.d
+	picture = GFX_news_event_heat_wave #replace
+	
+	major = yes
+	
+	trigger = {
+		date > 1936.7.16
+		NOT = { has_global_flag = heat_wave_1936 }
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	immediate = {
+		set_global_flag = heat_wave_1936
+	}
+	
+	option = {
+		name = us_flavor_news.2.a
+	}
+}
+
+# pittsburgh flood
+news_event = {
+	id = us_flavor_news.3
+	title = us_flavor_news.3.t
+	desc = us_flavor_news.3.d
+	picture = GFX_news_event_pittsburgh_flood #replace
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = us_flavor_news.3.a
+		trigger = { 
+			NOT = { TAG = PAP }
+		}
+	}
+	
+	option = {
+		name = us_flavor_news.3.b
+		trigger = { TAG = PAP }
+	}
+}
+
+#Florida uses a nuke
+news_event = {
+	id = us_nukes.1
+	title = us_nukes.1.t
+	desc = us_nukes.1.d
+	picture = GFX_news_event_nuke
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = us_nukes.1.a
+		trigger = {
+			NOT = { TAG = FLF }
+		}
+	}
+	
+	option = {
+		name = us_nukes.1.b
+		trigger = {
+			TAG = FLF
+		}
+	}
+}
