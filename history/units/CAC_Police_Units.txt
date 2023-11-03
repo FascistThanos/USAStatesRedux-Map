@@ -82,39 +82,18 @@ units = {
     	start_experience_factor = 0.6
     	start_equipment_factor = 1
   	}
-  	division = {
-   		name = "Los Angeles Police Unit 3"
-   		location = 10619  # Los Angeles
-   		division_template = "Los Angeles Police Department"
-   		start_experience_factor = 0.6
-   		start_equipment_factor = 1
-  	}
 	division = {
-		name = "Sacremento Police Unit 1"
+		name = "Sacremento Police Unit"
 		location = 10778  # Sacremento
 		division_template = "Sacremento Police Department"
     	start_experience_factor = 0.6
     	start_equipment_factor = 1
 	}
   	division = {
-   		name = "Sacremento Police Unit 2"
-   		location = 10778  # Sacremento
-   		division_template = "Sacremento Police Department"
-   		start_experience_factor = 0.6
-   		start_equipment_factor = 1
-  	}
-  	division = {
-    	name = "San Francisco Police Unit 1"
+    	name = "San Francisco Police Unit"
     	location = 10748  # San Francisco
     	division_template = "San Francisco Police Department"
     	start_experience_factor = 0.6
     	start_equipment_factor = 1
-  	}
-  	division = {
-   		name = "San Francisco Police Unit 2"
-   		location = 10748  # San Francisco
-   		division_template = "San Francisco Police Department"
-   		start_experience_factor = 0.6
-   		start_equipment_factor = 1
   	}
 }

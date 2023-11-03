@@ -3836,11 +3836,13 @@ focus_tree = {
 		cost = 10
 
 		completion_reward = {
-			575 = {
-				if = {
-					limit = {
+			if = {
+				limit = {
+					575 = {
 						infrastructure < 5
 					}
+				}
+				575 = {
 					add_building_construction = {
 						type = infrastructure
 						level = 1
@@ -3851,11 +3853,13 @@ focus_tree = {
 					add_political_power = 20
 				}
 			}
-			580 = {
-				if = {
-					limit = {
+			if = {
+				limit = {
+					580 = {
 						infrastructure < 5
 					}
+				}
+				580 = {
 					add_building_construction = {
 						type = infrastructure
 						level = 1
@@ -3866,11 +3870,13 @@ focus_tree = {
 					add_political_power = 20
 				}
 			}
-			577 = {
-				if = {
-					limit = {
+			if = {
+				limit = {
+					577 = {
 						infrastructure < 5
 					}
+				}
+				577 = {
 					add_building_construction = {
 						type = infrastructure
 						level = 1
@@ -3881,11 +3887,13 @@ focus_tree = {
 					add_political_power = 20
 				}
 			}
-			576 = {
-				if = {
-					limit = {
+			if = {
+				limit = {
+					576 = {
 						infrastructure < 5
 					}
+				}
+				576 = {
 					add_building_construction = {
 						type = infrastructure
 						level = 1
@@ -3896,11 +3904,13 @@ focus_tree = {
 					add_political_power = 20
 				}
 			}
-			584 = {
-				if = {
-					limit = {
+			if = {
+				limit = {
+					584 = {
 						infrastructure < 5
 					}
+				}
+				584 = {
 					add_building_construction = {
 						type = infrastructure
 						level = 1
@@ -3911,11 +3921,13 @@ focus_tree = {
 					add_political_power = 20
 				}
 			}
-			573 = {
-				if = {
-					limit = {
+			if = {
+				limit = {
+					573 = {
 						infrastructure < 5
 					}
+				}
+				573 = {
 					add_building_construction = {
 						type = infrastructure
 						level = 1

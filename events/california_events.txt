@@ -91,7 +91,6 @@ country_event = {
 		}
 	}
 }
-
 ############# END OF ELECTIONS EVENT ################
 #Fort focus for either arizona and mexico border or nevada and oregon
 country_event = {
@@ -102,7 +101,7 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = california.2.a
-		1183 = {
+		749 = {
 			add_building_construction = {
 				type = bunker
 				level = 3
@@ -113,7 +112,40 @@ country_event = {
 				}
 			}
 		}
-		1182 = {
+		750 = {
+			add_building_construction = {
+				type = bunker
+				level = 3
+				instant_build = yes
+				province = {
+					all_provinces = yes
+					limit_to_border = yes
+				}
+			}
+		}
+		64 = {
+			add_building_construction = {
+				type = bunker
+				level = 3
+				instant_build = yes
+				province = {
+					all_provinces = yes
+					limit_to_border = yes
+				}
+			}
+		}
+		745 = {
+			add_building_construction = {
+				type = bunker
+				level = 3
+				instant_build = yes
+				province = {
+					all_provinces = yes
+					limit_to_border = yes
+				}
+			}
+		}
+		751 = {
 			add_building_construction = {
 				type = bunker
 				level = 3
@@ -127,7 +159,7 @@ country_event = {
 	}
 	option = {
 		name = california.2.b
-		378 = {
+		724 = {
 			add_building_construction = {
 				type = bunker
 				level = 2
@@ -138,7 +170,29 @@ country_event = {
 				}
 			}
 		}
-		1178 = {
+		721 = {
+			add_building_construction = {
+				type = bunker
+				level = 2
+				instant_build = yes
+				province = {
+					all_provinces = yes
+					limit_to_border = yes
+				}
+			}
+		}
+		722 = {
+			add_building_construction = {
+				type = bunker
+				level = 2
+				instant_build = yes
+				province = {
+					all_provinces = yes
+					limit_to_border = yes
+				}
+			}
+		}
+		729 = {
 			add_building_construction = {
 				type = bunker
 				level = 2
@@ -159,7 +213,6 @@ country_event = {
 	title = california.3.t
 	desc = california.3.d
 	picture = GFX_report_event_generic_panzer_attack
-	is_triggered_only = no
 	fire_only_once = yes
 	trigger = {
 		tag = CAC
@@ -183,16 +236,7 @@ country_event = {
 		name = california.3.a
 		declare_war_on = {
 			target = NVN
-			type = annex_everything
-		}
-		hidden_effect = {
-			CAC = {
-				add_ai_strategy = {
-					type = conquer
-					id = "NVN"
-					value = 200
-				}
-			}
+			type = puppet_wargoal_focus
 		}
 		add_war_support = 0.1
 	}
@@ -214,9 +258,11 @@ country_event = {
 	option = {
 		name = california.4.a
 		add_political_power = 50
-		add_opinion_modifier = {
-			target = JAP
-			modifier = large_increase
+		every_neighbor_country = {
+			add_opinion_modifier = {
+				target = CAC
+				modifier = large_increase
+			}
 		}
 	}
 	option = {

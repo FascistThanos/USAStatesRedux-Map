@@ -602,35 +602,35 @@ focus_tree = {
 		x = 5
 		y = 16
 		available = {
-					controls_state = 1280
-					controls_state = 377
+			controls_state = 666
+			controls_state = 662
+		}
+		completion_reward = {
+			666 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
 				}
-			completion_reward = {
-					1280 = {
-							add_extra_state_shared_building_slots = 3
-							add_building_construction = {
-									type = industrial_complex
-									level = 1
-									instant_build = yes
-								}
-						}
-					377 = {
-							add_extra_state_shared_building_slots = 3
-							add_building_construction = {
-									type = industrial_complex
-									level = 1
-									instant_build = yes
-								}
-						}
-					1279 = {
-							add_extra_state_shared_building_slots = 3
-							add_building_construction = {
-									type = industrial_complex
-									level = 1
-									instant_build = yes
-								}
-						}
+			}
+			662 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
 				}
+			}
+			670 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
 
 	}
 	focus = {
@@ -642,49 +642,48 @@ focus_tree = {
 		}
 		x = 8
 		y = 1
-			completion_reward = {
-					378 = {
-							add_extra_state_shared_building_slots = 2
-							add_building_construction = {
-									type = infrastructure
-									level = 1
-									instant_build = yes
-								}
-						}
-					1178 = {
-							add_extra_state_shared_building_slots = 1
-							add_building_construction = {
-									type = infrastructure
-									level = 1
-									instant_build = yes
-								}
-						}
-					1187 = {
-							add_extra_state_shared_building_slots = 2
-							add_building_construction = {
-									type = infrastructure
-									level = 1
-									instant_build = yes
-								}
-						}
-					1180 = {
-							add_extra_state_shared_building_slots = 1
-							add_building_construction = {
-									type = infrastructure
-									level = 1
-									instant_build = yes
-								}
-						}
-					1179 = {
-							add_extra_state_shared_building_slots = 2
-							add_building_construction = {
-									type = infrastructure
-									level = 1
-									instant_build = yes
-								}
-						}
+		completion_reward = {
+			378 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
 				}
-
+			}
+			1178 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			1187 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			1180 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			1179 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
 	}
 
 	focus = {
@@ -696,25 +695,24 @@ focus_tree = {
 		}
 		x = 8
 		y = 2
-			completion_reward = {
-					378 = {
-							add_extra_state_shared_building_slots = 1
-							add_building_construction = {
-									type = dockyard
-									level = 1
-									instant_build = yes
-								}
-						}
-					1181 = {
-							add_extra_state_shared_building_slots = 2
-							add_building_construction = {
-									type = dockyard
-									level = 2
-									instant_build = yes
-								}
-						}
+		completion_reward = {
+			733 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
 				}
-
+			}
+			732 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
 	}
 	focus = {
 		id = CAC_genericindustry8
@@ -726,46 +724,46 @@ focus_tree = {
 		}
 		x = 6
 		y = 2
-			completion_reward = {
-					1183 = {
-							add_building_construction = {
-									type = bunker
-									province = 13537
-									level = 2
-									instant_build = yes
-								}
-						}
-					1183 = {
-							add_building_construction = {
-									type = bunker
-									province = 13540
-									level = 2
-									instant_build = yes
-								}
-						}
-					1183 = {
-							add_building_construction = {
-									type = bunker
-									province = 13541
-									level = 2
-									instant_build = yes
-								}
-						}
-					1182 = {
-							add_building_construction = {
-									type = bunker
-									province = 7986
-									level = 2
-									instant_build = yes
-								}
-						}
+		completion_reward = {
+			749 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_border = yes
+					}
 				}
-
+			}
+			64 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_border = yes
+					}
+				}
+			}
+			750 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_border = yes
+					}
+				}
+			}
+		}
 	}
 	focus = {
 		id = CAC_genericindustry9
 		icon = GFX_focus_research
-		cost = 10.00
+		cost = 14.3
 		prerequisite = {
 			focus = CAC_genericindustry8
 		}
@@ -774,11 +772,10 @@ focus_tree = {
 		}
 		x = 7
 		y = 5
-			completion_reward = {
-					add_research_slot = 1
-					add_stability = 0.05
-				}
-
+		completion_reward = {
+			add_research_slot = 1
+			add_stability = 0.05
+		}
 	}
 	focus = {
 		id = CAC_relievenevada
@@ -789,49 +786,35 @@ focus_tree = {
 		}
 		x = 6
 		y = 15
-			available = {
-					controls_state = 1203
-					controls_state = 1206
+		available = {
+			controls_state = 687
+		}
+		completion_reward = {
+			687 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
 				}
-			completion_reward = {
-					1203 = {
-							add_extra_state_shared_building_slots = 3
-							add_building_construction = {
-									type = industrial_complex
-									level = 1
-									instant_build = yes
-								}
-						}
-					1206 = {
-							add_extra_state_shared_building_slots = 3
-							add_building_construction = {
-									type = industrial_complex
-									level = 1
-									instant_build = yes
-								}
-						}
-				}
-
+			}
+		}
 	}
 	focus = {
 		id = CAC_armypattonsway1
 		icon = GFX_CAC_patton
-		cost = 1.00
+		cost = 0
 		prerequisite = {
 			focus = CAC_army2
 		}
 		x = 8
 		y = 9
-			available = {
-					has_country_flag = pattonsway
-				}
-			bypass = {
-					has_country_flag = pattonsway
-				}
-			completion_reward = {
-					army_experience = 15
-				}
-
+		available = {
+			has_country_flag = pattonsway
+		}
+		completion_reward = {
+			army_experience = 15
+		}
 	}
 	focus = {
 		id = CAC_armypattonsway2
@@ -842,15 +825,14 @@ focus_tree = {
 		}
 		x = 7
 		y = 10
-			completion_reward = {
-					add_tech_bonus = {
-							name = motorized_bonus
-							bonus = 3.0
-							uses = 1
-							technology = motorised_infantry
-						}
-				}
-
+		completion_reward = {
+			add_tech_bonus = {
+				name = motorized_bonus
+				bonus = 3.0
+				uses = 1
+				technology = motorised_infantry
+			}
+		}
 	}
 	focus = {
 		id = CAC_armypattonsway3
@@ -861,14 +843,13 @@ focus_tree = {
 		}
 		x = 9
 		y = 10
-			completion_reward = {
-					add_tech_bonus = {
-							name = armor_bonus
-							bonus = 1.5
-							category = armor
-						}
-				}
-
+		completion_reward = {
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 1.5
+				category = armor
+			}
+		}
 	}
 	focus = {
 		id = CAC_armypattonsway4
@@ -888,7 +869,6 @@ focus_tree = {
 				category = cat_mobile_warfare
 			}
 		}
-
 	}
 	focus = {
 		id = CAC_armypattonsway5
@@ -899,10 +879,9 @@ focus_tree = {
 		}
 		x = 7
 		y = 12
-			completion_reward = {
-					add_ideas = CAC_combinedarms
-				}
-
+		completion_reward = {
+			add_ideas = CAC_combinedarms
+		}
 	}
 	focus = {
 		id = CAC_JamesEDavis
@@ -931,8 +910,8 @@ focus_tree = {
 		available_if_capitulated = yes
 		available = {
 			has_country_leader = {
-					ruling_only = yes
-					name = "James E. Davis"
+				ruling_only = yes
+				name = "James E. Davis"
 			}
 		}
 		completion_reward = {
@@ -948,17 +927,16 @@ focus_tree = {
 		}
 		x = 9
 		y = 3
-			completion_reward = {
-					1179 = {
-							add_extra_state_shared_building_slots = 2
-							add_building_construction = {
-									type = arms_factory
-									level = 2
-									instant_build = yes
-								}
-						}
+		completion_reward = {
+			731 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
 				}
-
+			}
+		}
 	}
 	focus = {
 		id = CAC_givethepolicemorepower
@@ -969,10 +947,9 @@ focus_tree = {
 		}
 		x = 9
 		y = 4
-			completion_reward = {
-					country_event = california.14
-				}
-
+		completion_reward = {
+			country_event = california.14
+		}
 	}
 	focus = {
 		id = CAC_incorporatethepolice
@@ -983,10 +960,9 @@ focus_tree = {
 		}
 		x = 9
 		y = 5
-			completion_reward = {
-					add_ideas = CAC_anewmp
-				}
-
+		completion_reward = {
+			add_ideas = CAC_anewmp
+		}
 	}
 	focus = {
 		id = CAC_armypattonsway6
@@ -997,10 +973,9 @@ focus_tree = {
 		}
 		x = 9
 		y = 12
-			completion_reward = {
-					add_ideas = CAC_combinedarmsproduction
-				}
-
+		completion_reward = {
+			add_ideas = CAC_combinedarmsproduction
+		}
 	}
 	focus = {
 		id = CAC_statecontrolledmedia
@@ -1011,13 +986,11 @@ focus_tree = {
 		}
 		x = 11
 		y = 3
-			completion_reward = {
-					add_ideas = CAC_fundrightwingnews
-					add_stability = 0.05
-				}
-
+		completion_reward = {
+			add_ideas = CAC_fundrightwingnews
+			add_stability = 0.05
+		}
 	}
-
 	focus = {
 		id = CAC_amilitarizedstate
 		icon = GFX_Generic_Secret_Police
@@ -1027,19 +1000,18 @@ focus_tree = {
 		}
 		x = 13
 		y = 3
-			completion_reward = {
-				1179 = {
-					add_extra_state_shared_building_slots = 3
-					add_building_construction = {
-							type = arms_factory
-							level = 3
-							instant_build = yes
-					}
+		completion_reward = {
+			731 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
 				}
-				add_ideas = CAC_policecorruption
 			}
+			add_ideas = CAC_policecorruption
+		}
 	}
-
 	focus = {
 		id = CAC_adailywellnesscheck
 		icon = GFX_Generic_Lookout
@@ -1052,11 +1024,10 @@ focus_tree = {
 		}
 		x = 13
 		y = 4
-			completion_reward = {
-				add_ideas = CAC_adailywellnesscheckidea
-			}
+		completion_reward = {
+			add_ideas = CAC_adailywellnesscheckidea
+		}
 	}
-
 	focus = {
 		id = CAC_encouragepolicecorruption
 		icon = GFX_Generic_Loadsamoney
@@ -1069,12 +1040,11 @@ focus_tree = {
 		}
 		x = 15
 		y = 4
-			completion_reward = {
-				add_ideas = CAC_encouragedpolicecorruption
-				remove_ideas = CAC_policecorruption
-			}
+		completion_reward = {
+			add_ideas = CAC_encouragedpolicecorruption
+			remove_ideas = CAC_policecorruption
+		}
 	}
-
 	focus = {
 		id = CAC_reformarmedforces
 		icon = GFX_goal_generic_small_arms
@@ -1084,10 +1054,9 @@ focus_tree = {
 		}
 		x = 14
 		y = 14
-			completion_reward = {
-					add_war_support = 0.1
-				}
-
+		completion_reward = {
+			add_war_support = 0.1
+		}
 	}
 	focus = {
 		id = CAC_researchartillery
@@ -1098,15 +1067,14 @@ focus_tree = {
 		}
 		x = 13
 		y = 15
-			completion_reward = {
-					army_experience = 10
-					add_tech_bonus = {
-							bonus = 1.0
-							uses = 1
-							category = artillery
-						}
-				}
-
+		completion_reward = {
+			army_experience = 10
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = artillery
+			}
+		}
 	}
 	focus = {
 		id = CAC_motorized_focus
@@ -1117,11 +1085,10 @@ focus_tree = {
 		}
 		x = 13
 		y = 16
-			completion_reward = {
-					army_experience = 5
-					add_ideas = FRA_motorized_focus
-				}
-
+		completion_reward = {
+			army_experience = 5
+			add_ideas = FRA_motorized_focus
+		}
 	}
 	focus = {
 		id = CAC_army_tactics
@@ -1149,25 +1116,24 @@ focus_tree = {
 		}
 		x = 15
 		y = 16
-			completion_reward = {
-					add_ideas = YUG_tank_licenses
-					add_equipment_to_stockpile = {
-							type = light_tank_aa_chassis
-							amount = 75
-							producer = USA
-						}
-					add_equipment_to_stockpile = {
-							type = light_tank_artillery_chassis
-							amount = 75
-							producer = ENG
-						}
-					add_equipment_to_stockpile = {
-							type = light_tank_destroyer_chassis
-							amount = 75
-							producer = FRA
-						}
-				}
-
+		completion_reward = {
+			add_ideas = YUG_tank_licenses
+			add_equipment_to_stockpile = {
+				type = light_tank_aa_chassis
+				amount = 75
+				producer = USA
+			}
+			add_equipment_to_stockpile = {
+				type = light_tank_artillery_chassis
+				amount = 75
+				producer = ENG
+			}
+			add_equipment_to_stockpile = {
+				type = light_tank_destroyer_chassis
+				amount = 75
+				producer = FRA
+			}
+		}
 	}
 	focus = {
 		id = CAC_frankmerriamsplans
@@ -1204,27 +1170,26 @@ focus_tree = {
 		completion_reward = {
 			add_stability = 0.05
 		}
-
 	}
 	focus = {
 		id = CAC_economic_initiative
 		icon = GFX_focus_generic_the_giant_wakes
-		cost = 10.00
+		cost = 7.2
 		prerequisite = {
 			focus = CAC_frankmerriamsplans
 		}
 		x = 17
 		y = 3
-			completion_reward = {
-					1183 = {
-							add_extra_state_shared_building_slots = 2
-							add_building_construction = {
-									type = industrial_complex
-									level = 2
-									instant_build = yes
-								}
-						}
+		completion_reward = {
+			749 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
 				}
+			}
+		}
 
 	}
 	focus = {
@@ -1240,17 +1205,16 @@ focus_tree = {
 			continue_if_invalid = no
 			available_if_capitulated = yes
 			completion_reward = {
-					add_ideas = CAC_lesscorptaxidea
-					1179 = {
-							add_extra_state_shared_building_slots = 2
-							add_building_construction = {
-									type = industrial_complex
-									level = 2
-									instant_build = yes
-								}
-						}
+				add_ideas = CAC_lesscorptaxidea
+				731 = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
 				}
-
+			}
 	}
 	focus = {
 		id = CAC_oilproduction
@@ -1261,25 +1225,24 @@ focus_tree = {
 		}
 		x = 17
 		y = 5
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = yes
-			completion_reward = {
-					every_state = {
-							limit = {
-									OR = {
-											state = 1182
-											state = 1186
-											state = 1179
-										}
-								}
-							add_resource = {
-									type = oil
-									amount = 8
-								}
-						}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+			every_state = {
+				limit = {
+					OR = {
+						state = 731
+						state = 744
+						state = 747
+					}
 				}
-
+				add_resource = {
+					type = oil
+					amount = 8
+				}
+			}
+		}
 	}
 	focus = {
 		id = CAC_newnavy
@@ -1290,10 +1253,9 @@ focus_tree = {
 		}
 		x = 19
 		y = 14
-			completion_reward = {
-					navy_experience = 25
-				}
-
+		completion_reward = {
+			navy_experience = 25
+		}
 	}
 	focus = {
 		id = CAC_navalrearmament
@@ -1304,17 +1266,16 @@ focus_tree = {
 		}
 		x = 18
 		y = 15
-			completion_reward = {
-					1184 = {
-							add_extra_state_shared_building_slots = 3
-							add_building_construction = {
-									type = dockyard
-									level = 3
-									instant_build = yes
-								}
-						}
+		completion_reward = {
+			747 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
 				}
-
+			}
+		}
 	}
 	focus = {
 		id = CAC_naval_doctrine
@@ -1333,7 +1294,6 @@ focus_tree = {
 				category = naval_doctrine
 			}
 		}
-
 	}
 	focus = {
 		id = CAC_militaryexpansionprogram
@@ -1344,17 +1304,16 @@ focus_tree = {
 		}
 		x = 19
 		y = 3
-			completion_reward = {
-					1179 = {
-							add_extra_state_shared_building_slots = 3
-							add_building_construction = {
-									type = arms_factory
-									level = 3
-									instant_build = yes
-								}
-						}
+		completion_reward = {
+			731 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
 				}
-
+			}
+		}
 	}
 	focus = {
 		id = CAC_defensiveprogram
@@ -1365,24 +1324,22 @@ focus_tree = {
 		}
 		x = 19
 		y = 4
-			completion_reward = {
-					country_event = california.2
-				}
-
+		completion_reward = {
+			country_event = california.2
+		}
 	}
 	focus = {
 		id = CAC_militaryrnd
 		icon = GFX_focus_research
-		cost = 10.00
+		cost = 14.3
 		prerequisite = {
 			focus = CAC_defensiveprogram
 		}
 		x = 19
 		y = 5
-			completion_reward = {
-					add_research_slot = 1
-				}
-
+		completion_reward = {
+			add_research_slot = 1
+		}
 	}
 	focus = {
 		id = CAC_destroyer_focus
@@ -1393,15 +1350,14 @@ focus_tree = {
 		}
 		x = 20
 		y = 15
-			completion_reward = {
-					add_tech_bonus = {
-							name = dd_bonus
-							bonus = 0.75
-							uses = 2
-							category = dd_tech
-						}
-				}
-
+		completion_reward = {
+			add_tech_bonus = {
+				name = dd_bonus
+				bonus = 0.75
+				uses = 2
+				category = dd_tech
+			}
+		}
 	}
 	focus = {
 		id = CAC_expand_the_refit_yards
@@ -1412,37 +1368,36 @@ focus_tree = {
 		}
 		x = 20
 		y = 16
-			complete_tooltip = {
-					every_state = {
-							add_extra_state_shared_building_slots = 1
-							add_building_construction = {
-									type = dockyard
-									level = 1
-									instant_build = yes
-								}
-						}
+		complete_tooltip = {
+			every_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
 				}
-			completion_reward = {
-					random_owned_controlled_state = {
-							limit = {
-									is_coastal = yes
-									free_building_slots = {
-											building = dockyard
-											size > 1
-											include_locked = yes
-										}
-									is_core_of = ROOT
-								}
-							add_extra_state_shared_building_slots = 1
-							add_building_construction = {
-									type = dockyard
-									level = 1
-									instant_build = yes
-								}
+			}
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_coastal = yes
+					free_building_slots = {
+							building = dockyard
+							size > 1
+							include_locked = yes
 						}
-					add_ideas = ENG_expand_the_repair_yards
+					is_core_of = ROOT
 				}
-
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_ideas = ENG_expand_the_repair_yards
+		}
 	}
 	focus = {
 		id = CAC_militarymodernization
@@ -1453,21 +1408,20 @@ focus_tree = {
 		}
 		x = 21
 		y = 3
-			completion_reward = {
-					add_tech_bonus = {
-							name = infantry_weapons
-							bonus = 0.25
-							uses = 1
-							category = infantry_weapons
-						}
-					add_tech_bonus = {
-							name = artillery
-							bonus = 0.25
-							uses = 1
-							category = artillery
-						}
-				}
-
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_weapons
+				bonus = 0.25
+				uses = 1
+				category = infantry_weapons
+			}
+			add_tech_bonus = {
+				name = artillery
+				bonus = 0.25
+				uses = 1
+				category = artillery
+			}
+		}
 	}
 	focus = {
 		id = CAC_dockyards1
@@ -1478,10 +1432,9 @@ focus_tree = {
 		}
 		x = 21
 		y = 4
-			completion_reward = {
-					add_ideas = CAC_spyidea
-				}
-
+		completion_reward = {
+			add_ideas = CAC_spyidea
+		}
 	}
 	focus = {
 		id = CAC_increasetradepower
@@ -1492,16 +1445,16 @@ focus_tree = {
 		}
 		x = 21
 		y = 5
-			completion_reward = {
-					add_ideas = { CAC_openrecruitmentcenters }
-				}
-
+		completion_reward = {
+			add_ideas = { 
+				CAC_openrecruitmentcenters 
+			}
+		}
 	}
-
 	focus = {
 		id = CAC_localsecurity
 		icon = GFX_Generic_Blue_Democracy
-		cost = 10.00
+		cost = 14.3
 		prerequisite = {
 			focus = CAC_oilproduction
 			focus = CAC_militaryrnd
@@ -1512,33 +1465,29 @@ focus_tree = {
 		ai_will_do = {
 			factor = 75
 		}
-
 		available = {
 			has_army_manpower = {
-				size > 95000
+				size > 70000
 			}
 			threat > 0.10
 		}
-
-
 		completion_reward = {
 			add_ideas = CAC_local_security
 			add_political_power = 120
 			set_rule = {
 				can_create_factions = yes
-				}
+			}
 			set_rule = {
 				can_send_volunteers = yes
-				}
-					create_faction = "california_democratic_faction"
-					hidden_effect = {
-						news_event = {
-							hours = 6
-							id = genericfocusnews.1
-							}
-						}
 			}
-
+			create_faction = "california_democratic_faction"
+			hidden_effect = {
+			news_event = {
+				hours = 6
+				id = genericfocusnews.1
+				}
+			}
+		}
 	}
 	focus = {
 		id = CAC_militaryexpansion1
@@ -1549,17 +1498,24 @@ focus_tree = {
 		}
 		x = 17
 		y = 7
-			completion_reward = {
-					1181 = {
-							add_extra_state_shared_building_slots = 3
-							add_building_construction = {
-									type = arms_factory
-									level = 3
-									instant_build = yes
-								}
-						}
+		completion_reward = {
+			733 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
 				}
-
+			}
+			732 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
 	}
 	focus = {
 		id = CAC_civilianexpansion1
@@ -1570,17 +1526,16 @@ focus_tree = {
 		}
 		x = 21
 		y = 7
-			completion_reward = {
-					1184 = {
-							add_extra_state_shared_building_slots = 3
-							add_building_construction = {
-									type = industrial_complex
-									level = 3
-									instant_build = yes
-								}
-						}
+		completion_reward = {
+			747 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
 				}
-
+			}
+		}
 	}
 	focus = {
 		id = CAC_preservehawaii
@@ -1591,11 +1546,10 @@ focus_tree = {
 		}
 		x = 19
 		y = 7
-			completion_reward = {
-					country_event = california.4
-				}
+		completion_reward = {
+			country_event = california.4
+		}
 	}
-
 	focus = {
 		id = CAC_buildhawaii2
 		icon = GFX_goal_generic_construct_naval_dockyard
@@ -1605,34 +1559,43 @@ focus_tree = {
 		}
 		x = 22
 		y = 8
-			available = {
-					any_country = {
-							original_tag = HIH
-							is_in_faction_with = ROOT
-						}
+		available = {
+			any_country = {
+				original_tag = HIH
+				is_in_faction_with = ROOT
+			}
+		}
+		completion_reward = {
+				756 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = dockyard
+						level = 2
+						instant_build = yes
+					}
 				}
-			completion_reward = {
-					629 = {
-							add_extra_state_shared_building_slots = 2
-							add_building_construction = {
-									type = dockyard
-									level = 2
-									instant_build = yes
-								}
+				134 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = dockyard
+						level = 2
+						instant_build = yes
+					}
+				}
+				if = {
+					limit = {
+						HIH = {
+							is_subject_of = CAC
 						}
-					1153 = {
-							add_extra_state_shared_building_slots = 2
-							add_building_construction = {
-									type = dockyard
-									level = 2
-									instant_build = yes
-								}
-						}
-					add_autonomy_score = {
-							value = -350
+					}
+					HIH = {
+						add_autonomy_score = {
+							value = -200
 							localization = AST_adopt_westminster
 						}
+					}
 				}
+			}
 
 	}
 	focus = {
@@ -1644,35 +1607,43 @@ focus_tree = {
 		}
 		x = 16
 		y = 8
-			available = {
-					any_country = {
-							original_tag = HIH
-							is_in_faction_with = ROOT
-						}
+		available = {
+			any_country = {
+				original_tag = HIH
+				is_in_faction_with = ROOT
+			}
+		}
+		completion_reward = {
+			759 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
 				}
-			completion_reward = {
-					629 = {
-							add_extra_state_shared_building_slots = 2
-							add_building_construction = {
-									type = industrial_complex
-									level = 2
-									instant_build = yes
-								}
-						}
-					629 = {
-							add_extra_state_shared_building_slots = 2
-							add_building_construction = {
-									type = arms_factory
-									level = 2
-									instant_build = yes
-								}
-						}
+			}
+			756 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			if = {
+				limit = {
+					HIH = {
+						is_subject_of = CAC
+					}
+				}
+				HIH = {
 					add_autonomy_score = {
-							value = -350
-							localization = AST_adopt_westminster
-						}
+						value = -200
+						localization = AST_adopt_westminster
+					}
 				}
-
+			}
+		}
 	}
 	focus = {
 		id = CAC_buildhawaii4
