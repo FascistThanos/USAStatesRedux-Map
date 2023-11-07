@@ -33,19 +33,19 @@ guiTypes = {
 		buttonType ={
 			name ="open_formable_tab_window"
 			spriteType = "GFX_button_open"
-			position = { x = 1080 y = 9 }
+			position = { x = 960 y = 10 }
 			Orientation = "UPPER_RIGHT"
 		}
 		buttonType ={
 			name ="close_formable_tab_window"
 			spriteType = "GFX_button_open"
-			position = { x = 1080 y = 9 }
+			position = { x = 960 y = 10 }
 			Orientation = "UPPER_RIGHT"
 		}
 
 		instantTextboxType = {
 			name = "open_formable"
-			position = { x = 1155 y = 14 }
+			position = { x = 1035 y = 14 }
 			font = "hoi_24header"
 			borderSize = {x = 0 y = 0}
 			text = "open_formable_window"
