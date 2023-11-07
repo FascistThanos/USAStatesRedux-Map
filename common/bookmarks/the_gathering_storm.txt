@@ -4,68 +4,88 @@ bookmarks = {
 		desc = "GATHERING_STORM_DESC1"
 		date = 1936.1.1.12
 		picture = GFX_select_date_1936
-		default_country = "CAC"
+		default_country = "COC"
 		default = yes
 
 		"TXT" = {
-			history = "TXT_GATHERING_STORM_DESC"
+			history = "TXT_BOOKMARK_DESC"
 			ideology = democratic
 			ideas = {
 
 			}
 			focuses = {
-				
+				TXT_our_new_empire
+				TXT_texaswillagainraiseitshead
+				TXT_pathofrevolution
 			}
 		}
 
 		"CAC" = {
-			history = "CAC_GATHERING_STORM_DESC"
+			history = "CAC_BOOKMARK_DESC"
 			ideology = democratic
 			ideas = {
-				
+				CAC_aloyaldemocraticarmy
+				CAC_dustbowlmigration
+				CAC_local_security
 			}
 			focuses = {
-				
+				CAC_politicalstate
+				CAC_genericindustry1
+				CAC_formationofpsa
 			}
 		}
 
 
 		"KSK"={
-			history = "KSK_GATHERING_STORM_DESC"
+			history = "KSK_BOOKMARK_DESC"
 			ideology = democratic
 			ideas = {
 				#
 			}
 			focuses = {
-				
+				KSK_bleeding_kansas
+				KSK_steel_plant
+				KSK_fascist5
 			}
 		}
 		"FLF"={
-			history = "FLF_GATHERING_STORM_DESC"
+			history = "FLF_BOOKMARK_DESC"
 			ideology = democratic
 			ideas = {
 				#
 			}
 			focuses = {
-				
+				FLF_southernpride
+				FLF_patrioticrestoration
+				FLF_alligatorbite
 			}
 		}
-
-		"---"={
-			history = "OTHER_GATHERING_STORM_DESC"
+		"COC" = {
+			history = "COC_BOOKMARK_DESC"
+			ideology = democratic
+			ideas = {
+				COC_dustbowl_4
+			}
+			focuses = {
+				COC_our_nation_in_crisis
+				COC_assassinate_RLC
+				COC_denver_space_administration
+			}
 		}
-		
-		# greenland ###
 		"GRN"={
-			minor = yes
-			history = "GRN_GATHERING_STORM_DESC"
+			history = "GRN_BOOKMARK_DESC"
 			ideology = democratic
 			ideas = {
 				the_pride_of_greenland
 			}
 			focuses = {
-				
+				GRN_the_greenland_empire
+				GRN_the_republic_of_greenland
+				GRN_the_polar_bears_rise_up
 			}
+		}
+		"---"={
+			history = "OTHER_GATHERING_STORM_DESC"
 		}
 
 		effect = {
