@@ -268,7 +268,45 @@ country_event = {
 	option = {
 		name = california.4.b
 		HIH = {
-			country_event = disunitedstates.6
+			country_event = california.40
+		}
+	}
+}
+#hawaii accepts or refuses from california
+country_event = {
+	id = california.40
+	title = disunitedstates.6.t
+	desc = disunitedstates.6.d
+	#picture =
+	is_triggered_only = yes
+	option = {
+		name = disunitedstates.6.a
+		ai_chance = {
+			base = 40
+			modifier = {
+				factor = 40
+				strength_ratio = {
+					tag = FROM
+					ratio > 0.4
+				}
+			}
+			modifier = {
+				factor = 70
+				has_government = democratic
+			}
+		}
+		CAC = {
+			country_event = california.6
+			puppet = HIH
+		}
+	}
+	option = {
+		name = disunitedstates.6.b
+		ai_chance = {
+			base = 60
+		}
+		CAC = {
+			country_event = california.5
 		}
 	}
 }
@@ -329,7 +367,51 @@ country_event = {
 		name = california.8.a
 		add_political_power = -1
 		ORO = {
-			country_event = disunitedstates.7
+			country_event = california.37
+		}
+	}
+}
+#oregon event with california
+
+country_event = {
+	id = california.37
+	title = disunitedstates.7.t
+	desc = disunitedstates.7.d
+	picture = GFX_report_event_molotov_ribentrop_handshake
+	is_triggered_only = yes
+
+	option = {
+		name = disunitedstates.7.a
+		ai_chance = {
+			base = 40
+			modifier = {
+				factor = 30
+				strength_ratio = {
+					tag = FROM
+					ratio > 0.5
+				}
+			}
+		}
+		CAC = {
+			annex_country = {
+				target = ROOT
+				transfer_troops = yes
+			}
+		}
+
+		CAC = {
+			country_event = california.10
+		}
+	}
+
+	option = {
+		name = disunitedstates.7.b
+		ai_chance = {
+			factor = 60
+		}
+		add_war_support = 0.15
+		CAC = {
+			country_Event = california.11
 		}
 	}
 }
@@ -377,7 +459,50 @@ country_event = {
 	option = {
 		name = california.9.a
 		WAW = {
-			country_event = disunitedstates.8
+			country_event = california.38
+		}
+	}
+}
+#washington event with california
+country_event = {
+	id = california.38
+	title = disunitedstates.8.t
+	desc = disunitedstates.8.d
+	picture = GFX_report_event_molotov_ribentrop_handshake
+	is_triggered_only = yes
+
+	option = {
+		name = disunitedstates.8.a
+		ai_chance = {
+			base = 60
+			modifier = {
+				factor = 30
+				strength_ratio = {
+					tag = FROM
+					ratio > 0.5
+				}
+			}
+		}
+		CAC = {
+			annex_country = {
+				target = ROOT
+				transfer_troops = yes
+			}
+		}
+		CAC = {
+			country_Event = california.12
+		}
+	}
+
+
+	option = {
+		name = disunitedstates.8.b
+		ai_chance = {
+			base = 40
+		}
+		add_war_support = 0.15
+		CAC = {
+			country_Event = california.13
 		}
 	}
 }
@@ -461,10 +586,53 @@ country_event = {
 	option = {
 		name = california.19.a
 		AKA = {
-			country_event = disunitedstates.13
+			country_event = california.39
 		}
 	}
 }
+	#alaska gets offer from california
+	country_event = {
+		id = california.39
+		title = disunitedstates.13.t
+		desc = disunitedstates.13.d
+		picture = GFX_report_event_molotov_ribentrop_handshake
+		is_triggered_only = yes
+
+		option = {
+			name = disunitedstates.13.a
+			ai_chance = {
+				factor = 60
+				modifier = {
+					factor = 30
+					strength_ratio = {
+						tag = FROM
+						ratio > 0.5
+					}
+				}
+			}
+			CAC = {
+				annex_country = {
+					target = ROOT
+					transfer_troops = yes
+				}
+			}
+			CAC = {
+				country_Event = california.20
+			}
+		}
+
+
+		option = {
+			name = disunitedstates.8.b
+			ai_chance = {
+				factor = 40
+			}
+			add_war_support = 0.15
+			CAC = {
+				country_Event = california.21
+			}
+		}
+	}
 
 #Alaska accepts!
 country_event = {
@@ -625,7 +793,7 @@ country_event = {
 		#Country Accepts
 		name = california.26.a
 		ai_chance = {
-			factor = 30
+			base = 30
 			modifier = {
 				factor = 40
 				has_government = communism
@@ -647,7 +815,7 @@ country_event = {
 		#Country Refuses
 		name = california.26.b
 		ai_chance = {
-			factor = 70
+			base = 70
 		}
 		CAC = {
 			country_event = california.28
@@ -692,7 +860,7 @@ country_event = {
 		#Country Accepts
 		name = california.29.a
 		ai_chance = {
-			factor = 30
+			base = 30
 			modifier = {
 				factor = 40
 				has_government = communism
@@ -714,7 +882,7 @@ country_event = {
 		#Country Refuses
 		name = california.29.b
 		ai_chance = {
-			factor = 70
+			base = 70
 		}
 		CAC = {
 			country_event = california.31
