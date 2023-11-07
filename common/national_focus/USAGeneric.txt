@@ -655,6 +655,12 @@ focus_tree = {
     prerequisite = {
       focus = GEN_mobilizeeconomy
     }
+    bypass = {
+      OR = {
+        has_idea = war_economy
+        has_idea = total_mobilization
+      }
+    }
     cost = 10
     x = 36
     y = 3

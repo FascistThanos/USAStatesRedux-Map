@@ -1,0 +1,16 @@
+﻿l_english:
+ #events
+ us_flavor_news.1.t:0 "1936 Cold Wave cripples North America!"
+ us_flavor_news.1.d:0 "As the winter dawned on the American states in the end of 1935, most states were expecting a normal winter. However, temperatures started dropping faster in November, and continued to January, where it just got worse. A large storm had covered the eastern half of the former United States by January 19th, producing heavy snow that had killed at least 100 people. The peaches of the South were destroyed, but February was the breaking point. The Northwest recorded their coldest temperatures on record, and all schools in the North were closed due to snow. Thankfully it appears the storm is finally retreating, but the economic consequences have yet to be seen, and could lead to the already divided area becoming even more divisive."
+ us_flavor_news.1.a:0 "This is not good."
+ us_flavor_news.2.t:0 "1936 Heat Wave cripples North America!"
+ us_flavor_news.2.d:0 "After the cold wave a few months earlier, everyone in North America thought that was it for the weather this year, and paid more attention to the rapidly changing political and economic state of the continent, with the rise of fascism and communism in North America. However, in late June, temperatures exceeded 100 degrees. Droughts settled in across the continent, from the Midwest to the South, causing unheard of crop failures across the nation. With July, it just got worse, with even higher temperatures. And many are saying that August will be a disaster. The former United States is falling into even more instability and political revolutions due to this extreme weather. The hope of a reunited United States fades further and further."
+ us_flavor_news.2.a:0 "This just makes things worse!"
+ us_flavor_news.3.t:0 "Pittsburgh Flooded!"
+ us_flavor_news.3.d:0 "Over the past two days, above normal temperatures and torrential rain followed the cold, dreary winter from before, causing all the snow and ice in the Allegheny and the Monongahela Rivers to rapidly melt. The rivers which were already over their banks continued to rise and flooded the city, peaking at 46 feet. Thousands of buildings have been destroyed, and Pittsburgh’s famous steel mills are also damaged. Combined with the current situation of the Americas, it’s clear Pennsylvania will be plagued with even more political issues from a divided continent."
+ us_flavor_news.3.a:0 "Sorry for them."
+ us_flavor_news.3.b:0 "Pittsburgh's flooded. The state is in political turmoil. Why?"
+ us_nukes.1.t:0 "Florida Has Nukes!"
+ us_nukes.1.d:0 "The unthinkable happened. [[FLF.GetNameDef]] has successfully used a nuclear weapon against all beliefs. No one thought Florida could make a nuclear weapon, or even research it at all. But the Florida Man finds a way. Given the chaos of the United States, this could lead to a nuclear winter in the South. And the end of the hope of a peaceful America."
+ us_nukes.1.a:0 "Aw no. This is terrible."
+ us_nukes.1.b:0 "Watch out for the Florida Man!"

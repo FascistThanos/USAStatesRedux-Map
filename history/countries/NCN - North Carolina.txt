@@ -49,6 +49,9 @@ set_technology = {
 	superior_firepower = 1
 	base_strike = 1
 	fighter1 = 1
+	tech_trucks = 1
+	motorised_infantry = 1
+	basic_train = 1
 }
 
 1939.1.1 = {
@@ -68,6 +71,9 @@ set_technology = {
 	oob = "NCN_1939"
 	set_technology = {
 		fighter1 = 1
+	tech_trucks = 1
+	motorised_infantry = 1
+	basic_train = 1
 		cv_fighter1 = 1
 		heavy_fighter1 = 1
 		tactical_bomber1 = 1

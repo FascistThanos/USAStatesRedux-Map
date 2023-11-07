@@ -50,6 +50,9 @@ set_technology = {
 	superior_firepower = 1
 	base_strike = 1
 	fighter1 = 1
+	tech_trucks = 1
+	motorised_infantry = 1
+	basic_train = 1
 }
 
 add_ideas = {
