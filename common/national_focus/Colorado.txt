@@ -1,0 +1,2364 @@
+#Colorado focus tree by aashIey
+#Redone by FascistThanos
+
+focus_tree = {
+	id = colorado_focus
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = COC
+		}
+	}
+	
+	default = no
+	
+	continuous_focus_position = { x = 100 y = 1600 }
+	
+	focus = {
+		id = COC_where_the_columbines_grow
+		icon = GFX_focus_GRE_a_land_of_mountains
+		x = 6
+		y = 0
+
+		cost = 2.9
+
+		ai_will_do = {
+			factor = 4000
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		
+		completion_reward = {
+			add_ideas = COC_themightyrockies
+		}
+	}
+#####Communism
+	focus = {
+		id = COC_the_colorado_springs_socialists
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		x = 0
+		y = 1
+
+		cost = 10
+		
+		prerequisite = { 
+			focus = COC_where_the_columbines_grow
+		}
+		
+		mutually_exclusive = { 
+			focus = COC_our_struggle
+			focus = COC_nil_sine_numine
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				has_game_rule = {
+					rule = COC_game_path_ai
+					option = COCCOMMUNIST
+				}
+				factor = 4000
+			}
+			
+		}
+
+		available = {
+			has_country_flag = COC_cracked_down_country_flag
+		}
+		
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.10
+			}
+			add_ideas = {
+				COC_thecoloradospringssocialists
+			}
+		}
+	}
+	focus = {
+		id = COC_secret_unions
+		icon = GFX_Generic_Liberatian_Socialism
+		x = -2
+		y = 2
+
+		cost = 4.3
+
+		prerequisite = {
+			focus = COC_the_colorado_springs_socialists
+		}
+
+		completion_reward = {
+			country_event = coc.23
+		}
+	}
+	focus = {
+		id = COC_crack_down_left_wing_teachers
+		icon = GFX_Generic_Autonomy
+		x = 2
+		y = 2
+
+		cost = 4.3
+
+		prerequisite = {
+			focus = COC_the_colorado_springs_socialists
+		}
+
+		completion_reward = {
+			add_stability = -0.10
+		}
+	}
+	focus = {
+		id = COC_deal_with_riots
+		icon = GFX_Generic_Molotov_Cocktail
+		x = 0
+		y = 2
+		available = {
+			has_completed_focus = COC_secret_unions
+			has_completed_focus = COC_crack_down_left_wing_teachers
+		}
+
+		cost = 10
+
+		prerequisite = {
+			focus = COC_the_colorado_springs_socialists
+		}
+
+		completion_reward = {
+			country_event = coc.29
+		}
+	}
+	focus = {
+		id = COC_our_nation_in_crisis
+		icon = GFX_Generic_Socialist_Revolution
+		prerequisite = {
+			focus = COC_deal_with_riots
+		}
+		available = {
+			has_country_flag = COC_civil_war
+		}
+		x = 0
+		y = 3
+		
+		cost = 4.3
+		
+		completion_reward = {
+			add_ideas = COC_battle_for_the_nation
+		}
+	}
+	focus = {
+		id = COC_clamp_down_fascism
+		icon = GFX_Generic_Arrests
+		prerequisite = {
+			focus = COC_our_nation_in_crisis
+		}
+		x = -2
+		y = 4
+
+		cost = 10
+
+		completion_reward = {
+			activate_decision = ban_fascist_party
+			activate_decision = ban_democratic_party
+		}
+	}
+	focus = {
+		id = COC_socialist_spirit_prevails
+		icon = GFX_Generic_Communist_Propaganda
+		prerequisite = {
+			focus = COC_clamp_down_fascism
+		}
+		x = -2
+		y = 5
+
+		cost = 7.2
+
+		completion_reward = {
+			add_timed_idea = {
+				idea = COC_communist_spirit
+				days = 500
+			}
+		}
+	}
+	focus = {
+		id = COC_blood_of_union
+		icon = GFX_Generic_Spy_Sabotage
+		prerequisite = {
+			focus = COC_our_nation_in_crisis
+		}
+		x = 2
+		y = 4
+
+		cost = 4.3
+
+		completion_reward = {
+			634 = {
+				damage_building = {
+					type = infrastructure
+					damage = 0.5
+				}
+				damage_building = {
+					type = arms_factory
+					damage = 0.5
+				}
+				damage_building = {
+					type = industrial_complex
+					damage = 0.25
+				}
+			}
+			632 = {
+				damage_building = {
+					type = infrastructure
+					damage = 0.5
+				}
+				damage_building = {
+					type = arms_factory
+					damage = 0.5
+				}
+				damage_building = {
+					type = industrial_complex
+					damage = 0.25
+				}
+			}
+		}
+	}
+	focus = {
+		id = COC_call_to_arms
+		icon = GFX_Generic_Socialist_Volunteers
+		prerequisite = {
+			focus = COC_blood_of_union
+		}
+		x = 2
+		y = 5
+
+		cost = 10
+
+		completion_reward = {
+			load_oob = "Remnants of the Underground Union"
+		}
+	}
+	focus = {
+		id = COC_donation_of_arms
+		icon = GFX_Generic_Machine_Gun
+		prerequisite = {
+			focus = COC_our_nation_in_crisis
+		}
+		x = 0
+		y = 4
+		
+		cost = 7.2
+
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 1500
+				producer = ROOT
+			}
+			add_stability = -0.10
+		}
+	}
+	focus = {
+		id = COC_gender_equality
+		icon = GFX_Generic_Revolutionary_Women
+		prerequisite = {
+			focus = COC_donation_of_arms
+		}
+		x = 0
+		y = 5
+
+		cost = 10
+
+		completion_reward = {
+			set_rule = {
+				can_generate_female_aces = yes
+			}
+			add_ideas = COC_gender_equality_idea
+		}
+	}
+	focus = {
+		id = COC_our_nation_at_rest
+		icon = GFX_Generic_Revolutionary_Government
+		prerequisite = {
+			focus = COC_gender_equality
+		}
+		prerequisite = {
+			focus = COC_socialist_spirit_prevails
+		}
+		prerequisite = {
+			focus = COC_call_to_arms
+		}
+		available = {
+			has_war = no
+		}
+		x = 0
+		y = 6
+
+		cost = 10
+
+		completion_reward = {
+			delete_unit_template_and_units = {
+				division_template = "Union Militants"
+			}
+			delete_unit_template_and_units = {
+				division_template = "Civilian Militia"
+			}
+			hidden_effect = {
+				clr_country_flag = COC_civil_war
+				remove_ideas = COC_battle_for_the_nation
+			}
+		}
+	}
+#Post-Civil War
+	focus = {
+		id = COC_free_healthcare_for_all
+		icon = GFX_goal_tfv_generic_tech_sharing
+		x = -1
+		y = 7
+
+		cost = 10
+		
+		prerequisite = { 
+			focus = COC_our_nation_at_rest
+		}
+		
+		mutually_exclusive = { 
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_ideas = {
+				COC_free_healthcare
+			}
+		}
+	}
+	focus = {
+		id = COC_the_five_years_plan
+		icon = GFX_focus_generic_tank_production
+		x = 1
+		y = 7
+
+		cost = 10
+		
+		prerequisite = { 
+			focus = COC_our_nation_at_rest
+		}
+		
+		mutually_exclusive = { 
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_timed_idea = {
+				idea = COC_fiveyearsplan
+				days = 1825
+			}
+		}
+	}
+	focus = {
+		id = COC_renew_the_five_years_plan
+		icon = GFX_focus_generic_tank_production
+		x = 2
+		y = 8
+
+		cost = 10
+		
+		prerequisite = { 
+			focus = COC_the_five_years_plan
+		}
+		
+		mutually_exclusive = { 
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			NOT = {
+				has_idea = COC_fiveyearsplan
+			}
+		}
+		
+		completion_reward = {
+			add_timed_idea = {
+				idea = COC_fiveyearsplan
+				days = 1825
+			}
+		}
+	}
+	focus = {
+		id = COC_mobilize_the_masses
+		icon = GFX_focus_focus_fra_maquis
+		x = 0
+		y = 8
+
+		cost = 10
+		
+		prerequisite = { 
+			focus = COC_free_healthcare_for_all
+		}
+		prerequisite = {
+			focus = COC_the_five_years_plan
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_ideas = {
+				militarism_focus
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = 0.1
+			}
+		}
+	}
+	focus = {
+		id = COC_ultimate_equality
+		icon = GFX_goal_generic_major_alliance
+		x = 0
+		y = 9
+
+		cost = 10
+		
+		prerequisite = { 
+			focus = COC_free_healthcare_for_all
+		}
+		
+		prerequisite = { 
+			focus = COC_the_five_years_plan
+		}
+		
+		prerequisite = { 
+			focus = COC_mobilize_the_masses
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			set_politics = {
+				ruling_party = communism
+			}
+		}
+	}
+#####Fascism
+	focus = {
+		id = COC_our_struggle
+		icon = GFX_focus_generic_support_the_left_right
+		x = 6
+		y = 1
+
+		cost = 10
+		
+		prerequisite = { 
+			focus = COC_where_the_columbines_grow
+		}
+		
+		mutually_exclusive = { 
+			focus = COC_the_colorado_springs_socialists
+			focus = COC_nil_sine_numine
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				has_game_rule = {
+					rule = COC_game_path_ai
+					option = COCFASCIST
+				}
+				factor = 4000
+			}
+			modifier = {
+				has_game_rule = {
+					rule = COC_game_path_ai
+					option = COCCOMMUNIST
+				}
+				factor = -4000
+			}
+		}
+		
+		completion_reward = {
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.10
+			}
+			add_ideas = {
+				COC_ourstruggle
+			}
+		}
+	}
+	focus = {
+		id = COC_assassinate_RLC
+		icon = GFX_Generic_Execute_Dissidents02
+		prerequisite = {
+			focus = COC_our_struggle
+		}
+		x = 6
+		y = 2
+		cost = 10
+
+		completion_reward = {
+			country_event = coc.32
+		}
+	}
+	focus = {
+		id = COC_silence_the_gaping_mouths
+		icon = GFX_Generic_Arrests
+		x = 4
+		y = 3
+
+		cost = 10
+		
+		prerequisite = { 
+			focus = COC_assassinate_RLC
+		}
+
+		completion_reward = {
+			add_ideas = {
+				COC_silenced_opposition
+			}
+		}
+	}
+	focus = {
+		id = COC_cleanse_the_nation
+		icon = GFX_Generic_Political_Killing
+		prerequisite = {
+			focus = COC_silence_the_gaping_mouths
+		}
+		x = 4
+		y = 4
+		cost = 10
+
+		completion_reward = {
+			add_timed_idea = {
+				idea = COC_political_chaos
+				days = 700
+			}
+		}
+	}
+	focus = {
+		id = COC_seep_into_education
+		icon = GFX_Generic_Autonomy
+		prerequisite = {
+			focus = COC_assassinate_RLC
+		}
+		x = 8
+		y = 3
+		cost = 10
+
+		completion_reward = {
+			add_research_slot = 1
+			add_ideas = COC_fascist_schools
+		}
+	}
+	focus = {
+		id = COC_mil_secondary_school
+		icon = GFX_Generic_Coalition_Army
+		prerequisite = {
+			focus = COC_seep_into_education
+		}
+		x = 8
+		y = 4
+		cost = 10
+
+		completion_reward = {
+			add_ideas = COC_military_schools
+		}
+	}
+	focus = {
+		id = COC_form_paramilitaries
+		icon = GFX_Generic_American_Soldier2
+		prerequisite = {
+			focus = COC_assassinate_RLC
+		}
+		available = {
+			has_completed_focus = COC_cleanse_the_nation
+			has_completed_focus = COC_mil_secondary_school
+		}
+		x = 6
+		y = 3
+		cost = 10
+
+		completion_reward = {
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.15
+			}
+		}
+	}
+	focus = {
+		id = COC_organize_paramilitaries
+		icon = GFX_Generic_Volunteer_Corps
+		prerequisite = {
+			focus = COC_form_paramilitaries
+		}
+		x = 6
+		y = 4
+		cost = 10
+
+		completion_reward = {
+			add_ideas = COC_paramilitaries_idea
+		}
+	}
+	focus = {
+		id = COC_glory_to_the_realm
+		icon = GFX_goal_tfv_saf_support_ossebrandwag
+		x = 6
+		y = 5
+
+		cost = 10
+		
+		prerequisite = { 
+			focus = COC_organize_paramilitaries
+		}
+		
+		mutually_exclusive = { 
+		}
+		
+		completion_reward = {
+			set_politics = {
+				ruling_party = fascism
+			}
+			add_stability = -0.20
+		}
+	}
+	focus = {
+		id = COC_forge_a_great_army
+		icon = GFX_focus_generic_military_mission
+		x = 7
+		y = 6
+
+		cost = 10
+		
+		prerequisite = { 
+			focus = COC_glory_to_the_realm
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_ideas = {
+				COC_forge_a_great_army
+			}
+			set_rule = { 
+				can_send_volunteers = yes 
+			}
+		}
+	}
+	focus = {
+		id = COC_pact_of_unity
+		icon = GFX_Generic_Mutual_Cooperation
+		prerequisite = {
+			focus = COC_forge_a_great_army
+		}
+		x = 7
+		y = 7
+
+		cost = 10
+
+		completion_reward = {
+			set_rule = {
+				can_create_factions = yes
+			}
+			create_faction = COC_pou
+		}
+	}
+	focus = {
+		id = COC_the_mighty_fasces
+		icon = GFX_focus_generic_air_defense
+		x = 5
+		y = 6
+
+		cost = 10
+		
+		prerequisite = {
+			focus = COC_glory_to_the_realm
+		}
+		
+		completion_reward = {
+			add_ideas = militarism_focus
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.1
+			}
+		}
+	}
+	focus = {
+		id = COC_cult_of_domesticity
+		icon = GFX_Generic_War_Propaganda02
+		x = 5
+		y = 7
+		prerequisite = {
+			focus = COC_the_mighty_fasces
+		}
+		cost = 10
+
+		completion_reward = {
+			add_ideas = COC_cult_of_domesticity_idea
+		}
+	}
+	focus = {
+		id = COC_crown_jewel
+		icon = GFX_Generic_Ultranationalist_Monarchy_shine
+		x = 6
+		y = 8
+		prerequisite = {
+			focus = COC_cult_of_domesticity
+		}
+		prerequisite = {
+			focus = COC_pact_of_unity
+		}
+		cost = 10
+
+		completion_reward = {
+			add_ideas = COC_crown_jewel_idea 
+		}
+	}
+	focus = {
+		id = COC_unite_the_mighty_rockies
+		icon = GFX_goal_generic_position_armies
+		x = 3
+		y = 6
+
+		cost = 10
+		
+		prerequisite = { 
+			focus = COC_glory_to_the_realm
+		}
+		
+		completion_reward = {
+			custom_effect_tooltip = COC_unite_the_mighty_rockies_tt
+			swap_ideas = {
+				remove_idea = COC_themightyrockies
+				add_idea = COC_nationalizedrockymountains
+			}
+		}
+	}
+#####Democracy
+	focus = {
+		id = COC_nil_sine_numine
+		icon = GFX_focus_hol_prepare_the_inundation_lines
+		x = 12
+		y = 1
+
+		cost = 10
+		
+		prerequisite = { 
+			focus = COC_where_the_columbines_grow
+		}
+		
+		mutually_exclusive = { 
+			focus = COC_the_colorado_springs_socialists
+			focus = COC_our_struggle
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				has_game_rule = {
+					rule = COC_game_path_ai
+					option = COCREPUBLIC
+				}
+				factor = 4000
+			}
+			modifier = {
+				has_game_rule = {
+					rule = COC_game_path_ai
+					option = COCCOMMUNIST
+				}
+				factor = -4000
+			}
+		}
+		
+		completion_reward = {
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.10
+			}
+			add_ideas = {
+				COC_nil_sine_numine
+			}
+		}
+	}
+	focus = {
+		id = COC_free_and_fair_elections
+		icon = GFX_focus_generic_treaty
+		x = 12
+		y = 2
+
+		cost = 1.43
+		
+		prerequisite = { 
+			focus = COC_nil_sine_numine
+		}
+		
+		mutually_exclusive = { 
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_political_power = -10
+		}
+	}
+	focus = {
+		id = COC_social_democracy
+		icon = GFX_focus_eng_crush_the_dream
+		x = 10
+		y = 3
+
+		cost = 1
+		
+		prerequisite = { 
+			focus = COC_free_and_fair_elections
+		}
+		
+		mutually_exclusive = { 
+			focus = COC_liberalism_elect
+			focus = COC_conservatism_elect
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_ideas = {
+				COC_social_democracy
+			}
+		}
+	}
+	focus = {
+		id = COC_liberalism_elect
+		icon = GFX_focus_generic_concessions
+		x = 12
+		y = 3
+
+		cost = 1
+		
+		prerequisite = { 
+			focus = COC_free_and_fair_elections
+		}
+		
+		mutually_exclusive = {
+			focus = COC_social_democracy
+			focus = COC_conservatism_elect
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_ideas = {
+				COC_liberalism_elect
+			}
+		}
+	}
+	focus = {
+		id = COC_conservatism_elect
+		icon = GFX_focus_generic_self_management
+		x = 14
+		y = 3
+
+		cost = 1
+		
+		prerequisite = { 
+			focus = COC_free_and_fair_elections
+		}
+		
+		mutually_exclusive = {
+			focus = COC_liberalism_elect
+			focus = COC_social_democracy
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_ideas = {
+				COC_conservatism_elect
+			}
+		}
+	}
+	focus = {
+		id = COC_free_the_markets
+		icon = GFX_focus_generic_industry_3
+		x = 10
+		y = 4
+
+		cost = 10
+		
+		prerequisite = { 
+			focus = COC_social_democracy
+		}
+
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability = -0.1
+			add_ideas = {
+				COC_free_markets
+			}
+		}
+	}
+	focus = {
+		id = COC_mix_the_markets
+		icon = GFX_focus_generic_industry_2
+		x = 12
+		y = 4
+
+		cost = 10
+		
+		prerequisite = { 
+			focus = COC_liberalism_elect
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			add_ideas = {
+				COC_mixed_markets
+			}
+		}
+	}
+	focus = {
+		id = COC_regulate_the_markets
+		icon = GFX_focus_generic_industry_1
+		x = 14
+		y = 4
+
+		cost = 10
+		
+		prerequisite = { 
+			focus = COC_conservatism_elect
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		
+		completion_reward = {
+			add_stability = 0.1
+			add_ideas = {
+				COC_regulated_markets
+			}
+		}
+	}
+	focus = {
+		id = COC_legalize_cannabis
+		icon = GFX_focus_focus_fra_liberte_egalite_solidarite
+		x = 13
+		y = 5
+
+		cost = 10
+		
+		prerequisite = {
+			focus = COC_free_the_markets
+			focus = COC_mix_the_markets
+			focus = COC_regulate_the_markets
+		}
+		
+		mutually_exclusive = { 
+			focus = COC_the_war_on_drugs
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_stability = -0.10
+			add_ideas = {
+				COC_legalcannabis
+			}
+		}
+	}
+	focus = {
+		id = COC_the_war_on_drugs
+		icon = GFX_focus_rom_parties_end
+		x = 15
+		y = 5
+
+		cost = 10
+		
+		prerequisite = { 
+			focus = COC_regulate_the_markets 
+			focus = COC_mix_the_markets
+		}
+		
+		mutually_exclusive = { 
+			focus = COC_legalize_cannabis
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_stability = 0.10
+			add_ideas = {
+				COC_warondrugs
+			}
+		}
+	}
+	focus = {
+		id = COC_state_secularism
+		icon = GFX_goal_generic_neutrality_focus
+		x = 13
+		y = 6
+
+		cost = 10
+		
+		prerequisite = { 
+			focus = COC_legalize_cannabis 
+			focus = COC_the_war_on_drugs
+		}
+		
+		mutually_exclusive = { 
+			focus = COC_state_evangelicalism
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_political_power = -15
+			add_ideas = {
+				COC_state_secularism
+			}
+		}
+	}
+	focus = {
+		id = COC_state_evangelicalism
+		icon = GFX_goal_generic_dangerous_deal
+		x = 15
+		y = 6
+
+		cost = 10
+		
+		prerequisite = { 
+			focus = COC_legalize_cannabis 
+			focus = COC_the_war_on_drugs
+		}
+		
+		mutually_exclusive = {
+			focus = COC_state_secularism
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_political_power = -15
+			add_ideas = {
+				COC_state_evangelicalism
+			}
+		}
+	}
+	focus = {
+		id = COC_strengthen_the_coloradan_state
+		icon = GFX_goal_generic_political_pressure
+		x = 3
+		y = 7
+
+		cost = 10
+		
+		prerequisite = { 
+			focus = COC_our_nation_at_rest
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_political_power = 25
+			custom_effect_tooltip = COC_strengthen_coloradan_state_tt
+		}
+	}
+	focus = {
+		id = COC_cheap_western_lands
+		icon = GFX_focus_generic_diplomatic_treaty
+		x = 14
+		y = 7
+
+		cost = 10
+		
+		prerequisite = { 
+			focus = COC_state_secularism 
+			focus = COC_state_evangelicalism
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_stability = 0.05
+			add_timed_idea = {
+				idea = COC_cheap_western_lands
+				days = 365
+			}
+		}
+	}
+	focus = {
+		id = COC_the_assistance_of_our_friends
+		icon = GFX_focus_eng_global_defense
+		x = 10
+		y = 5
+
+		cost = 7.2
+		
+		prerequisite = { 
+			focus = COC_free_the_markets
+			focus = COC_mix_the_markets
+			focus = COC_regulate_the_markets
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		bypass = {
+			has_idea = militarism_focus
+		}
+		
+		completion_reward = {
+			add_stability = 0.05
+			add_ideas = {
+				militarism_focus
+			}
+			add_ideas = GEN_foreign_intervention
+			set_rule = { can_send_volunteers = yes }
+		}
+	}
+	focus = {
+		id = COC_long_live_colorado
+		icon = GFX_focus_generic_support_the_left_right
+		x = 9
+		y = 6
+
+		cost = 7.2
+		
+		prerequisite = { 
+			focus = COC_the_assistance_of_our_friends
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		bypass = {
+			has_idea = why_we_fight_focus
+		}
+		
+		completion_reward = {
+			add_stability = 0.025
+			add_ideas = {
+				why_we_fight_focus
+			}
+			set_rule = { can_create_factions = yes }
+		}
+	}
+	focus = {
+		id = COC_denver_space_administration
+		icon = GFX_focus_rocketry
+		x = 11
+		y = 6
+
+		cost = 17.2
+		
+		prerequisite = { 
+			focus = COC_the_assistance_of_our_friends
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_research_slot = 1
+			add_stability = 0.15
+			add_ideas = {
+				COC_denver_space_administration
+			}
+		}
+	}
+	focus = {
+		id = COC_silicon_springs
+		icon = GFX_focus_wonderweapons
+		x = 10
+		y = 7
+
+		cost = 17.2
+		
+		prerequisite = { 
+			focus = COC_denver_space_administration
+		}
+		prerequisite = {
+			focus = COC_long_live_colorado
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			num_of_civilian_factories > 35
+		}
+		
+		completion_reward = {
+			add_stability = 0.05
+			add_tech_bonus = {
+				name = COC_silicon_springs
+				bonus = 1.5
+				uses = 1
+				category = nuclear
+			}
+			add_tech_bonus = {
+				name = COC_silicon_springs
+				bonus = 0.5
+				uses = 2
+				category = electronics
+			}
+			add_tech_bonus = {
+				name = COC_silicon_springs
+				bonus = 0.5
+				uses = 2
+				category = industry
+			}
+			add_victory_points = {
+				province = 11449
+				value = 5   
+			}
+			add_victory_points = {
+				province = 10863
+				value = 5
+			}
+		}
+	}
+	focus = {
+		id = COC_the_coloradan_miracle
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 12
+		y = 8
+
+		cost = 10
+		
+		prerequisite = { 
+			focus = COC_cheap_western_lands
+		}
+		prerequisite = {
+			focus = COC_silicon_springs
+		}
+		
+		mutually_exclusive = { 
+			
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			date > 1940.01.01
+			num_of_civilian_factories > 35
+			has_political_power > 100
+		}
+		
+		completion_reward = {
+			add_research_slot = 1
+			add_timed_idea = {
+				idea = COC_the_coloradan_miracle
+				days = 365
+			}
+			add_political_power = -100
+		}
+	}
+#Air Tree Redone by FascistThanos
+	focus = {
+		id = COC_repurpose_the_cang
+		icon = GFX_goal_generic_position_armies
+		x = 29
+		y = 0
+
+		cost = 4.3
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			army_experience = 30
+		}
+	}
+	focus = {
+		id = COC_war_plans
+		icon = GFX_Generic_Redraw_Borders
+		prerequisite = {
+			focus = COC_repurpose_the_cang
+		}
+
+		cost = 5.2
+
+		x = 26
+		y = 1
+
+		completion_reward = {
+			unlock_decision_category_tooltip = COC_war_plan_decisions
+		}
+	}
+	focus = {
+		id = COC_defend_against_tx
+		icon = GFX_Generic_Army_Focus_Red02
+		prerequisite = {
+			focus = COC_war_plans
+		}
+
+		cost = 10
+
+		x = 24
+		y = 2
+
+		completion_reward = {
+			unlock_decision_tooltip = COC_texas_defense
+		}
+	}
+	focus = {
+		id = COC_defend_against_ks
+		icon = GFX_Generic_Coalition_Army
+		prerequisite = {
+			focus = COC_war_plans
+		}
+
+		cost = 10
+
+		x = 28
+		y = 2
+
+		completion_reward = {
+			unlock_decision_tooltip = COC_kansas_defense
+		}
+	}
+	focus = {
+		id = COC_direction_of_airforce
+		icon = GFX_goal_generic_air_production
+		prerequisite = {
+			focus = COC_war_plans
+		}
+
+		cost = 4.3
+
+		x = 26
+		y = 2
+
+		completion_reward = {
+			air_experience = 50
+		}
+	}
+	focus = {
+		id = COC_air_destruction
+		icon = GFX_goal_generic_air_bomber
+		prerequisite = {
+			focus = COC_direction_of_airforce
+		}
+		mutually_exclusive = {
+			focus = COC_air_supremacy	
+		}
+		
+		cost = 4.3
+
+		x = 28
+		y = 3
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = bomber_bonus
+				bonus = 2
+				uses = 1
+				technology = strategic_bomber1
+				technology = strategic_bomber2
+				technology = strategic_bomber3
+				category = tactical_bomber
+			}
+		}
+	}
+	focus = {
+		id = COC_improved_bombers
+		icon = GFX_WAW_streamline_bomber_production
+		prerequisite = {
+			focus = COC_air_destruction
+		}
+		
+		cost = 10
+
+		x = 27
+		y = 4
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = bomber_bonus
+				bonus = 1.0
+				uses = 2
+				category = cat_strategic_bomber
+			}
+		}
+	}
+	focus = {
+		id = COC_improve_bomber_training
+		icon = GFX_Generic_Pilots
+		prerequisite = {
+			focus = COC_air_destruction
+		}
+
+		cost = 10
+
+		x = 29
+		y = 4
+
+		completion_reward = {
+			add_ideas = COC_improved_bomber_training
+		}
+	}
+	focus = {
+		id = COC_expand_ground_targeting
+		icon = GFX_CAC_SF
+		prerequisite = {
+			focus = COC_improve_bomber_training
+		}
+		prerequisite = {
+			focus = COC_improved_bombers
+		}
+
+		cost = 10
+
+		x = 28
+		y = 5
+
+		completion_reward = {
+			add_ideas = COC_expanded_bomber_training
+		}
+	}
+	focus = {
+		id = COC_air_supremacy
+		icon = GFX_goal_generic_air_fighter2
+		prerequisite = {
+			focus = COC_direction_of_airforce
+		}
+		mutually_exclusive = {
+			focus = COC_air_destruction
+		}
+
+		cost = 10
+
+		x = 24
+		y = 3
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 2.0
+				uses = 1
+				category = light_fighter
+			}
+		}
+	}
+	focus = {
+		id = COC_support_from_sky
+		icon = GFX_Generic_Bombs
+		prerequisite = {
+			focus = COC_air_supremacy
+		}
+
+		cost = 10
+
+		x = 23
+		y = 4
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = op_dest_bonus
+				bonus = 1.0
+				uses = 2
+				category = battlefield_support_tree
+			}
+			add_tech_bonus = {
+				name = bomber_bonus
+				bonus = 2
+				uses = 1
+				category = cas_bomber
+			}
+		}
+	}
+	focus = {
+		id = COC_keep_skies_clear
+		icon = GFX_goal_generic_air_fighter
+		prerequisite = {
+			focus = COC_air_supremacy
+		}
+
+		cost = 10
+
+		x = 25
+		y = 4
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 2
+				uses = 1
+				category = light_fighter
+			}
+		}
+	}
+	focus = {
+		id = COC_experimental_air
+		icon = GFX_Generic_Jet_Fighters
+		prerequisite = {
+			focus = COC_keep_skies_clear
+		}
+		prerequisite = {
+			focus = COC_support_from_sky
+		}
+
+		cost = 10
+
+		x = 24
+		y = 5
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 2
+				uses = 1
+				category = jet_technology
+			}
+		}
+	}
+	focus = {
+		id = COC_begin_DIA
+		icon = GFX_Generic_Construction
+		prerequisite = {
+			focus = COC_experimental_air
+			focus = COC_expand_ground_targeting
+		}
+
+		cost = 10
+		
+		x = 26
+		y = 6
+
+		completion_reward = {
+			add_ideas = COC_building_dia
+		}
+	}
+##Army Tree
+	focus = {
+		id = COC_tactics_of_the_army
+		icon = GFX_goal_generic_military_deal
+		prerequisite = {
+			focus = COC_repurpose_the_cang
+		}
+
+		x = 33
+		y = 1
+
+		cost = 2.9
+
+		completion_reward = {
+			army_experience = 20
+		}
+	}
+	focus = {
+		id = COC_combined_arms_effort
+		icon = GFX_goal_attack_and_war_stuff
+		prerequisite = {
+			focus = COC_tactics_of_the_army
+		}
+		mutually_exclusive = {
+			focus = COC_superior_firepower_effort
+		}
+
+		x = 31
+		y = 2
+
+		cost = 10
+
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 2
+				category = cat_mobile_warfare
+			}
+		}
+	}
+	focus = {
+		id = COC_mechanized_focus
+		icon = GFX_goal_generic_build_tank
+		prerequisite = {
+			focus = COC_combined_arms_effort
+		}
+
+		x = 30
+		y = 3
+
+		cost = 10
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 1.0
+				uses = 2
+				category = motorized_equipment
+			}
+		}
+	}
+	focus = {
+		id = COC_armored_focus
+		icon = GFX_Generic_Purchase_Tanks_Focus
+		prerequisite = {
+			focus = COC_combined_arms_effort
+		}
+
+		x = 32
+		y = 3
+
+		cost = 10
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 1.0
+				uses = 2
+				category = armor
+			}
+		}
+	}
+	focus = {
+		id = COC_protect_troops
+		icon = GFX_Generic_Tank_with_Flags
+		prerequisite = {
+			focus = COC_armored_focus
+		}
+		prerequisite = {
+			focus = COC_mechanized_focus
+		}
+
+		x = 31
+		y = 4
+
+		cost = 10
+
+		completion_reward = {
+			add_ideas = COC_shield_our_troops
+		}
+	}
+	focus = {
+		id = COC_superior_firepower_effort
+		icon = GFX_goal_generic_army_artillery
+		prerequisite = {
+			focus = COC_tactics_of_the_army
+		}
+		mutually_exclusive = {
+			focus = COC_combined_arms_effort
+		}
+
+		x = 35
+		y = 2
+
+		cost = 10
+
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 2
+				category = cat_superior_firepower
+			}
+		}
+	}
+	focus = {
+		id = COC_to_serve
+		icon = GFX_Generic_Colonial_Army
+		prerequisite = {
+			focus = COC_superior_firepower_effort
+		}
+
+		x = 34
+		y = 3
+
+		cost = 10
+
+		completion_reward = {
+			add_ideas = COC_serve_country_idea
+		}
+	}
+	focus = {
+		id = COC_artillery_buff
+		icon = GFX_goal_generic_army_artillery
+		prerequisite = {
+			focus = COC_superior_firepower_effort
+		}
+
+		x = 36
+		y = 3
+
+		cost = 10
+
+		completion_reward = {
+			add_ideas = COC_artillery_bonus
+			add_tech_bonus = {
+				name = "Advancing Suppresive Barage Tactics"
+				bonus = 2
+				uses = 1
+				category = artillery
+			}
+		}
+	}
+	focus = {
+		id = COC_paradroppers
+		icon = GFX_CAC_SF
+		prerequisite = {
+			focus = COC_to_serve
+		}
+		prerequisite = {
+			focus = COC_artillery_buff
+		}
+
+		x = 35
+		y = 4
+
+		cost = 10
+
+		completion_reward = {
+			add_ideas = COC_strategic_capture_initiative
+		}
+	}
+
+###Industry Trees redone by FascistThanos
+	focus = {
+		id = COC_the_looming_crisis
+		icon = GFX_goal_generic_construction2
+		cost = 4.3
+		x = 19
+		y = 0
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 1.0
+				uses = 1
+				category = industry
+			}
+		}
+	}
+	focus = {
+		id = COC_establish_SES
+		icon = GFX_COC_Soil
+		prerequisite = {
+			focus = COC_the_looming_crisis
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		cost = 10
+		x = 17
+		y = 1
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_idea = COC_dustbowl_4
+				}
+				swap_ideas = {
+					remove_idea = COC_dustbowl_4
+					add_idea = COC_dustbowl_3
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = COC_dustbowl_3
+				}
+				swap_ideas = {
+					remove_idea = COC_dustbowl_3
+					add_idea = COC_dustbowl_2
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = COC_dustbowl_2
+				}
+				swap_ideas = {
+					remove_idea = COC_dustbowl_2
+					add_idea = COC_dustbowl_1
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = COC_dustbowl_1
+				}
+				swap_ideas = {
+					remove_idea = COC_dustbowl_1
+					add_idea = COC_dustbowl_0
+				}
+			}
+			else = {
+				add_stability = 0.10
+				add_political_power = 100
+			}
+		}
+	}
+	focus = {
+		id = COC_state_forestry_act
+		icon = GFX_COC_Forestry2
+		prerequisite = {
+			focus = COC_establish_SES
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		cost = 7.2
+		x = 16
+		y = 2
+
+		completion_reward = {
+			add_ideas = COC_state_forestry
+		}
+	}
+	focus = {
+		id = COC_resettlement_committee
+		icon = GFX_Generic_Family
+		prerequisite = {
+			focus = COC_establish_SES
+		}
+		cost = 7.2
+		x = 18
+		y = 2
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			630 = {
+				add_manpower = -30211
+			}
+			55 = {
+				add_manpower = -20610
+			}
+			637 = {
+				add_manpower = -36728
+			}
+			624 = {
+				add_manpower = 87549
+				set_state_category = city
+			}
+		}
+	}
+	focus = {
+		id = COC_farming_practices
+		icon = GFX_Generic_Farming
+		prerequisite = {
+			focus = COC_resettlement_committee
+		}
+		prerequisite = {
+			focus = COC_state_forestry_act
+		}
+		cost = 10
+		x = 17
+		y = 3
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					has_idea = COC_dustbowl_4
+				}
+				swap_ideas = {
+					remove_idea = COC_dustbowl_4
+					add_idea = COC_dustbowl_3
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = COC_dustbowl_3
+				}
+				swap_ideas = {
+					remove_idea = COC_dustbowl_3
+					add_idea = COC_dustbowl_2
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = COC_dustbowl_2
+				}
+				swap_ideas = {
+					remove_idea = COC_dustbowl_2
+					add_idea = COC_dustbowl_1
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = COC_dustbowl_1
+				}
+				swap_ideas = {
+					remove_idea = COC_dustbowl_1
+					add_idea = COC_dustbowl_0
+				}
+			}
+			else = {
+				add_stability = 0.10
+				add_political_power = 100
+			}
+		}
+	}
+	focus = {
+		id = COC_river_project
+		icon = GFX_focus_hol_prepare_the_inundation_lines
+		prerequisite = {
+			focus = COC_the_looming_crisis
+		}
+		cost = 10
+		x = 21
+		y = 1
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					has_idea = COC_dustbowl_4
+				}
+				swap_ideas = {
+					remove_idea = COC_dustbowl_4
+					add_idea = COC_dustbowl_3
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = COC_dustbowl_3
+				}
+				swap_ideas = {
+					remove_idea = COC_dustbowl_3
+					add_idea = COC_dustbowl_2
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = COC_dustbowl_2
+				}
+				swap_ideas = {
+					remove_idea = COC_dustbowl_2
+					add_idea = COC_dustbowl_1
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = COC_dustbowl_1
+				}
+				swap_ideas = {
+					remove_idea = COC_dustbowl_1
+					add_idea = COC_dustbowl_0
+				}
+			}
+			else = {
+				add_stability = 0.10
+				add_political_power = 100
+			}
+		}
+	}
+	focus = {
+		id = COC_across_the_rockies
+		icon = GFX_Generic_Railroads
+		prerequisite = {
+			focus = COC_river_project
+		}
+		cost = 7.2
+		x = 20
+		y = 2
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			build_railway = {
+				level = 4
+				build_only_on_allied = yes
+				fallback = yes
+				start_province = 2606
+				target_province = 11449
+			}
+			624 = {
+				add_building_construction = {
+					type = supply_node
+					level = 1
+					province = 2606
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = COC_steel_production
+		icon = GFX_UTU_steel_mines
+		prerequisite = {
+			focus = COC_river_project
+		}
+		cost = 7.2
+		x = 22
+		y = 2
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			620 = {
+				add_resource = {
+					type = steel
+					amount = 30
+				}
+			}
+		}
+	}
+	focus = {
+		id = COC_rural_election
+		icon = GFX_Generic_Electrification
+		prerequisite = {
+			focus = COC_steel_production
+		}
+		prerequisite = {
+			focus = COC_across_the_rockies
+		}
+		cost = 10
+		x = 21
+		y = 3
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					has_idea = COC_dustbowl_4
+				}
+				swap_ideas = {
+					remove_idea = COC_dustbowl_4
+					add_idea = COC_dustbowl_3
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = COC_dustbowl_3
+				}
+				swap_ideas = {
+					remove_idea = COC_dustbowl_3
+					add_idea = COC_dustbowl_2
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = COC_dustbowl_2
+				}
+				swap_ideas = {
+					remove_idea = COC_dustbowl_2
+					add_idea = COC_dustbowl_1
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = COC_dustbowl_1
+				}
+				swap_ideas = {
+					remove_idea = COC_dustbowl_1
+					add_idea = COC_dustbowl_0
+				}
+			}
+			else = {
+				add_stability = 0.10
+				add_political_power = 100
+			}
+		}
+	}
+	focus = {
+		id = COC_dust_bowl_recovery
+		icon = GFX_Generic_Public_Works
+		prerequisite = {
+			focus = COC_farming_practices
+		}
+		prerequisite = {
+			focus = COC_rural_election
+		}
+		cost = 10
+		x = 19
+		y = 4
+		ai_will_do = {
+			factor = 4000
+		}
+		completion_reward = {
+			remove_ideas = COC_dustbowl_0
+		}
+	}
+	#Second Industry Tree
+	focus = {
+		id = COC_revitalize_telluride
+		icon = GFX_goal_generic_construction2
+		available = {
+			OR = {
+				AND = {
+					if = {
+						limit = {
+							has_idea = COC_dustbowl_4
+						}
+						NOT = {
+							has_idea = COC_dustbowl_4
+						}
+					}
+					if = {
+						limit = {
+							has_idea = COC_dustbowl_3
+						}
+						NOT = {
+							has_idea = COC_dustbowl_3
+						}
+					}
+					if = {
+						limit = {
+							has_idea = COC_dustbowl_2
+						}
+						NOT = {
+							has_idea = COC_dustbowl_2
+						}
+					}
+					if = {
+						limit = {
+							has_idea = COC_dustbowl_1
+						}
+						NOT = {
+							has_idea = COC_dustbowl_1
+						}
+					}
+					if = {
+						limit = {
+							has_idea = COC_dustbowl_0
+						}
+						NOT = {
+							has_idea = COC_dustbowl_0
+						}
+					}
+				}
+				date > 1941.1.1
+			}
+		}
+		cost = 10
+		x = 19
+		y = 5
+
+		completion_reward = {
+			country_event = coc.1
+		}
+	}
+	focus = {
+		id = COC_legacy_of_telluride
+		icon = GFX_Generic_Brain_Force_Plus
+		prerequisite = {
+			focus = COC_revitalize_telluride
+		}
+		x = 17
+		y = 6
+		cost = 10
+		completion_reward = {
+			add_ideas = COC_legacy_of_telluride_idea
+		}
+	}
+	focus = {
+		id = COC_modernize_pueblo
+		icon = GFX_Generic_Mining
+		prerequisite = {
+			focus = COC_legacy_of_telluride
+		}
+		x = 16
+		y = 7
+		cost = 10
+		completion_reward = {
+			637 = {
+				add_resource = {
+					type = tungsten
+					amount = 15
+				}
+				add_resource = {
+					type = steel
+					amount = 15
+				}
+				add_state_modifier = {
+					modifier = { local_resources_factor = 0.15 }
+				}
+			}
+		}
+	}
+	focus = {
+		id = COC_shale_prospecting
+		icon = GFX_Generic_Oil_Concern
+		prerequisite = {
+			focus = COC_legacy_of_telluride
+		}
+		x = 18
+		y = 7
+		cost = 7.2
+		completion_reward = {
+			623 = {
+				add_resource = {
+					type = oil
+					amount = 20
+				}
+			}
+		}
+	}
+	focus = {
+		id = COC_new_goldrush
+		icon = GFX_Focus_SOV_To_Get_Rich
+		prerequisite = {
+			focus = COC_modernize_pueblo
+		}
+		prerequisite = {
+			focus = COC_shale_prospecting
+		}
+		x = 17
+		y = 8
+		cost = 10
+		completion_reward = {
+			625 = {
+				add_state_modifier = {
+					modifier = { 
+						monthly_population = 0.15
+						local_building_slots = 2
+						local_resources = 0.3
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = COC_urban_investments
+		icon = GFX_Generic_Industry
+		prerequisite = {
+			focus = COC_revitalize_telluride
+		}
+		cost = 4.7
+		x = 21
+		y = 6
+		completion_reward = { 
+			add_stability = 0.05
+		}
+	}
+	focus = {
+		id = COC_invest_denver_consumer
+		icon = GFX_goal_generic_construct_civilian
+		prerequisite = {
+			focus = COC_urban_investments
+		}
+		cost = 10
+		x = 20
+		y = 7
+		completion_reward = {
+			634 = {
+				add_extra_state_shared_building_slots = 2
+				set_state_flag = COC_expanded_consumer
+			}
+		}
+	}
+	focus = {
+		id = COC_invest_the_west
+		icon = GFX_focus_generic_industry_1
+		prerequisite = {
+			focus = COC_urban_investments
+		}
+		cost = 10
+		x = 22
+		y = 7
+		completion_reward = {
+			624 = {
+				add_extra_state_shared_building_slots = 2
+				set_state_flag = COC_expanded_consumer
+			}
+			623 = {
+				add_extra_state_shared_building_slots = 2
+				set_state_flag = COC_expanded_consumer
+			}
+		}
+	}
+	focus = {
+		id = COC_invest_the_plains
+		icon = GFX_focus_generic_industry_2
+		prerequisite = {
+			focus = COC_urban_investments
+		}
+		cost = 10
+		x = 21
+		y = 8
+		completion_reward = {
+			630 = {
+				add_extra_state_shared_building_slots = 2
+				set_state_flag = COC_expanded_consumer
+			}
+			55 = {
+				add_extra_state_shared_building_slots = 2
+				set_state_flag = COC_expanded_consumer
+			}
+			637 = {
+				add_extra_state_shared_building_slots = 2
+				set_state_flag = COC_expanded_consumer
+			}
+		}
+	}
+	focus = {
+		id = COC_reap_the_benefits
+		icon = GFX_focus_generic_industry_3
+		prerequisite = {
+			focus = COC_invest_denver_consumer
+			focus = COC_invest_the_plains
+			focus = COC_invest_the_west
+		}
+		cost = 10
+		x = 21
+		y = 9
+		completion_reward = {
+			custom_effect_tooltip = FRA_industrial_expansion_effect_tt
+			every_owned_state = {
+				limit = {
+					is_controlled_by = ROOT
+					has_state_flag = COC_expanded_consumer
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+
+		}
+	}
+}

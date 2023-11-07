@@ -58,7 +58,10 @@ set_technology = {
 	fighter1 = 1
 }
 
-
+set_variable = {
+	var = TXT.war_exhaustion_var
+	value = 0
+}
 
 
 set_convoys = 100

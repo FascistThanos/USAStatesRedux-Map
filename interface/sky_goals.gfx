@@ -1,0 +1,193 @@
+spriteTypes = {	
+
+	#### icons
+	SpriteType = {
+		name = "GFX_goal_america_conscription"
+		texturefile = "gfx/interface/goals/america_conscription.dds"	
+	}
+	
+	
+	SpriteType = {
+		name = "GFX_goal_army_power"
+		texturefile = "gfx/interface/goals/army_power.dds"	
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_assasinate1"
+		texturefile = "gfx/interface/goals/assasinate1.dds"	
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_assasinate2"
+		texturefile = "gfx/interface/goals/assasinate2.dds"	
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_ataturk"
+		texturefile = "gfx/interface/goals/ataturk.dds"	
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_bear_of_the_east_russia"
+		texturefile = "gfx/interface/goals/bear_of_the_east_russia.dds"	
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_cavalry_stuff"
+		texturefile = "gfx/interface/goals/cavalry_stuff.dds"	
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_chiang_kai_shek"
+		texturefile = "gfx/interface/goals/chiang_kai_shek.dds"	
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_churcill"
+		texturefile = "gfx/interface/goals/churcill.dds"	
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_edward"
+		texturefile = "gfx/interface/goals/edward.dds"	
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_king_micheal"
+		texturefile = "gfx/interface/goals/king_micheal.dds"	
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_mao"
+		texturefile = "gfx/interface/goals/mao.dds"	
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_napoleon_legacy_stuff"
+		texturefile = "gfx/interface/goals/napoleon_legacy_stuff.dds"	
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_spy_1"
+		texturefile = "gfx/interface/goals/spy_1.dds"	
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_spy_2"
+		texturefile = "gfx/interface/goals/spy_2.dds"	
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_spy_3"
+		texturefile = "gfx/interface/goals/spy_3.dds"	
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_stalin"
+		texturefile = "gfx/interface/goals/stalin.dds"	
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_washington"
+		texturefile = "gfx/interface/goals/washington.dds"	
+	}
+	
+	
+	
+	SpriteType = {
+		name = "GFX_goal_anti_nazi"
+		texturefile = "gfx/interface/goals/anti_nazi.dds"	
+	}
+	
+	
+	SpriteType = {
+		name = "GFX_goal_attack_and_war_stuff"
+		texturefile = "gfx/interface/goals/attack_and_war_stuff.dds"	
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_ban_quran"
+		texturefile = "gfx/interface/goals/ban_quran.dds"	
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_book_ban"
+		texturefile = "gfx/interface/goals/book_ban.dds"	
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_civilian_factory"
+		texturefile = "gfx/interface/goals/civilian_factory.dds"	
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_dissolve_parliament"
+		texturefile = "gfx/interface/goals/dissolve_parliament.dds"	
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_elections1"
+		texturefile = "gfx/interface/goals/elections1.dds"	
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_elections2"
+		texturefile = "gfx/interface/goals/elections2.dds"	
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_hospital_stuff"
+		texturefile = "gfx/interface/goals/hospital_stuff.dds"	
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_military_factory"
+		texturefile = "gfx/interface/goals/military_factory.dds"	
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_mobilization"
+		texturefile = "gfx/interface/goals/mobilization.dds"	
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_mussolini_icon"
+		texturefile = "gfx/interface/goals/mussolini_icon.dds"	
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_new_world_order"
+		texturefile = "gfx/interface/goals/new_world_order.dds"	
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_nuclear_stuff"
+		texturefile = "gfx/interface/goals/nuclear_stuff.dds"	
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_realpolitik"
+		texturefile = "gfx/interface/goals/realpolitik.dds"	
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_roman_stuff"
+		texturefile = "gfx/interface/goals/roman_stuff.dds"	
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_sign_parliament"
+		texturefile = "gfx/interface/goals/sign_parliament.dds"	
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_text_stuff"
+		texturefile = "gfx/interface/goals/text_stuff.dds"	
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_weltpolitik"
+		texturefile = "gfx/interface/goals/weltpolitik.dds"	
+	}
+	
+}

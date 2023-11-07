@@ -8,10 +8,14 @@ state={
 		owner = COC
 		buildings = {
 			infrastructure = 2
-
+		}
+		victory_points = {
+			5541 5
+		}
+		victory_points = {
+			3642 5
 		}
 		add_core_of = COC
-
 	}
 	provinces={
 		718 3136 3642 5541 5569 5594 

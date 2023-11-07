@@ -1,0 +1,2774 @@
+colorado_crisis_decision_category = {
+	cocrisis_declare_interest = {
+		available = {
+			has_country_flag = colorado_crisis_observer
+		}
+		visible = {
+			NOT = {
+				has_country_flag = interested_in_colorado_crisis
+				has_country_flag = NM_left_crisis
+				OR = {
+					tag = COC
+					tag = TXT
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 4000
+			modifier = {
+				factor = -4000
+				OR = {
+					has_stability < 35
+					has_war_support < 15
+				}
+			}
+			modifier = {
+				add = -600
+				has_war = yes
+			}
+			modifier = {
+				add = 600
+				tag = NMN
+				has_global_flag = TXT_stole_east_NM
+			}
+			modifier = {
+				add = -4000
+				tag = NMN
+				has_global_flag = NM_gave_up_east
+			}
+			modifier = {
+				add = -4000
+				tag = OKO
+				has_global_flag = OKO_gave_up_panhandle
+			}
+			modifier = {
+				add = 4000
+				tag = OKO
+				has_global_flag = TXT_stole_panhandle
+			}
+			modifier = {
+				add = 4000
+				tag = KSK
+				has_global_flag = TXT_stole_SW_Kansas
+			}
+		}
+		complete_effect = {
+			set_country_flag = interested_in_colorado_crisis
+			add_to_array = {
+				global.cocrisis_neutral_country = ROOT
+			}
+		}
+	}
+	cocrisis_pledge_loyalty_to_texas = {
+		available = {
+			OR = {
+				tag = UTU
+				tag = NMN
+				tag = KSK
+				tag = OKO
+			}
+		}
+		available = {
+			has_country_flag = interested_in_colorado_crisis
+		}
+		visible = {
+			NOT = {
+				has_country_flag = cocrisis_loyal_texas
+				OR = {
+					tag = COC
+					tag = TXT
+				}
+			}
+			has_country_flag = interested_in_colorado_crisis
+		}
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 4000
+				OR = {
+					is_in_faction_with = TXT
+					is_puppet_of = TXT
+				}
+			}
+			modifier = {
+				add = 100
+				tag = UTU
+				COC = {
+					has_country_flag = TXT_offered_western_CO
+				}
+			}
+			modifier = {
+				add = -10
+				tag = UTU
+				COC = {
+					has_country_flag = TXT_no_offer_western_CO
+				}
+			}
+			modifier = {
+				add = -100
+				tag = UTU
+				COC = {
+					has_country_flag = COC_pay_utah_1
+				}
+			}
+		}
+		complete_effect = {
+			if = {
+				limit = {
+					has_country_flag = cocrisis_neutrality_flag
+				}
+				remove_from_array = {
+					global.cocrisis_neutral_country = ROOT
+				}
+				clr_country_flag = cocrisis_neutrality_flag
+			}
+			else_if = {
+				limit = {
+					has_country_flag = cocrisis_loyal_colorado
+				}
+				remove_from_array = {
+					global.cocrisis_colorado_supporters = ROOT
+				}
+				clr_country_flag = cocrisis_loyal_colorado
+			}
+			add_to_array = {
+				global.cocrisis_texas_supporters = ROOT
+			}
+			set_country_flag = cocrisis_loyal_texas
+		}
+	}
+	cocrisis_pledge_loyalty_to_colorado = {
+		available = {
+			OR = {
+				tag = NMN
+				tag = WYW
+				tag = KSK
+				tag = OKO
+			}
+		}
+		available = {
+			has_country_flag = interested_in_colorado_crisis
+		}
+		visible = {
+			NOT = {
+				has_country_flag = cocrisis_loyal_colorado
+				OR = {
+					tag = COC
+					tag = TXT
+				}
+			}
+			has_country_flag = interested_in_colorado_crisis
+		}
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 100
+				tag = WYW
+			}
+			modifier = {
+				add = 4000
+				OR = {
+					is_in_faction_with = COC
+					is_puppet_of = COC
+				}
+			}
+		}
+		complete_effect = {
+			if = {
+				limit = {
+					has_country_flag = cocrisis_neutrality_flag
+				}
+				remove_from_array = {
+					global.cocrisis_neutral_country = ROOT
+				}
+				clr_country_flag = cocrisis_neutrality_flag
+			}
+			else_if = {
+				limit = {
+					has_country_flag = cocrisis_loyal_texas
+				}
+				remove_from_array = {
+					global.cocrisis_texas_supporters = ROOT
+				}
+				clr_country_flag = cocrisis_loyal_texas
+			}
+			add_to_array = {
+				global.cocrisis_colorado_supporters = ROOT
+			}
+			set_country_flag = cocrisis_loyal_colorado
+		}
+	}
+	COC_bribe_UTU = {
+		available = {
+			tag = COC
+		}
+		ai_will_do = {
+			factor = 4000
+		}
+		visible = {
+			tag = COC
+			UTU = {
+				has_country_flag = interested_in_colorado_crisis
+				NOT = {
+					has_country_flag = cocrisis_loyal_colorado
+					OR = {
+						is_puppet_of = TXT
+						is_in_faction_with = TXT
+					}
+				}
+			}
+		}
+		fire_only_once = yes
+		complete_effect = {
+			UTU = {
+				country_event = {
+					id = cocrisis.3
+					days = 1
+					random_days = 13
+				}
+			}
+		}
+	}
+	COC_bribe_UTU_more = {
+		available = {
+			tag = COC
+		}
+		ai_will_do = {
+			factor = 4000
+		}
+		visible = {
+			tag = COC
+			UTU = {
+				has_country_flag = interested_in_colorado_crisis
+				NOT = {
+					OR = {
+						is_puppet_of = TXT
+						is_in_faction_with = TXT
+					}
+				}
+			}
+			COC = {
+				has_country_flag = COC_allow_further_payment_utah
+			}
+		}
+		fire_only_once = yes
+		complete_effect = {
+			UTU = {
+				country_event = {
+					id = cocrisis.8
+					days = 1
+					random_days = 13
+				}
+			}
+		}
+	}
+	COC_bribe_utah_final = {
+		available = {
+			tag = COC
+		}
+		ai_will_do = {
+			factor = 4000
+		}
+		visible = {
+			tag = COC
+			UTU = {
+				has_country_flag = interested_in_colorado_crisis
+			}
+			COC = {
+				has_country_flag = COC_bribe_utah_last
+			}
+		}
+		fire_only_once = yes
+		complete_effect = {
+			UTU ={
+				country_event = {
+					id = cocrisis.15
+					days = 1
+					random_days = 13
+				}
+			}
+		}
+	}
+	COC_talk_with_NM = {
+		available = {
+			tag = COC
+		}
+		ai_will_do = {
+			factor = 4000
+		}
+		visible = {
+			tag = COC
+			NMN = {
+				has_country_flag = interested_in_colorado_crisis
+				NOT = {
+					has_country_flag = cocrisis_loyal_colorado
+					OR = {
+						is_puppet_of = TXT
+						is_in_faction_with = TXT
+					}
+				}
+			}
+		}
+		fire_only_once = yes
+		complete_effect = {
+			NMN = {
+				country_event = {
+					id = cocrisis.16
+					days = 1
+					random_days = 13
+				}
+			}
+		}
+	}
+	COC_deal_with_OK = {
+		available = {
+			tag = COC
+		}
+		ai_will_do = {
+			factor = 4000
+		}
+		visible = {
+			tag = COC
+			OKO = {
+				has_country_flag = interested_in_colorado_crisis
+				NOT = {
+					has_country_flag = cocrisis_loyal_colorado
+					OR = {
+						is_puppet_of = TXT
+						is_in_faction_with = TXT
+					}
+				}
+			}
+		}
+		fire_only_once = yes
+		complete_effect = {
+			OKO = {
+				country_event = {
+					id = cocrisis.22
+					days = 1
+					random_days = 13
+				}
+			}
+		}
+	}
+	COC_kansas_talks = {
+		available = {
+			tag = COC
+		}
+		ai_will_do = {
+			factor = 4000
+		}
+		visible = {
+			tag = COC
+			KSK = {
+				has_country_flag = interested_in_colorado_crisis
+				NOT = {
+					has_country_flag = cocrisis_loyal_colorado
+					OR = {
+						is_puppet_of = TXT
+						is_in_faction_with = TXT
+					}
+				}
+			}
+			OR = {
+				OKO = {
+					has_country_flag = cocrisis_loyal_texas
+				}
+				OKO = {
+					has_country_flag = cocrisis_loyal_colorado
+				}
+				OKO = {
+					has_country_flag = OKO_neutrality_in_cocrisis
+				}
+			}
+			has_global_flag = TXT_took_SW_Kansas
+		}
+		fire_only_once = yes
+		complete_effect = {
+			KSK = {
+				country_event = {
+					id = cocrisis.31
+					days = 1
+					random_days = 13
+				}
+			}
+		}
+	}
+	TXT_bribe_kansas = {
+		available = {
+			tag = TXT
+		}
+		ai_will_do = {
+			factor = 4000
+		}
+		visible = {
+			tag = TXT
+			KSK = {
+				has_country_flag = interested_in_colorado_crisis
+				NOT = {
+					has_country_flag = cocrisis_loyal_texas
+					OR = {
+						is_puppet_of = COC
+						is_in_faction_with = COC
+					}
+				}
+			}
+			NOT = {
+				has_global_flag = TXT_took_SW_Kansas
+			}
+			OR = {
+				OKO = {
+					has_country_flag = cocrisis_loyal_texas
+				}
+				OKO = {
+					has_country_flag = cocrisis_loyal_colorado
+				}
+				OKO = {
+					has_country_flag = OKO_neutrality_in_cocrisis
+				}
+			}
+		}
+		fire_only_once = yes
+		complete_effect = {
+			KSK = {
+				country_event = {
+					id = cocrisis.36
+					days = 1
+					random_days = 13
+				}
+			}
+			custom_effect_tooltip = TXT_offer_KS_CO_puppet_tt
+		}
+	}
+	cocrisis_end_of_the_crisis = {
+		visible = {
+			OR = {
+				tag = COC
+				tag = TXT
+				tag = UTU
+				tag = NMN
+				tag = WYW
+				tag = KSK
+				tag = OKO
+			}
+		}
+		available = {
+			has_global_flag = colorado_crisis_ended
+		}
+		activation = {
+			has_global_flag = colorado_crisis_active
+			NOT = {
+				has_global_flag = colorado_crisis_ended
+			}
+		}
+		fire_only_once = yes
+		is_good = no
+		selectable_mission = no
+		days_mission_timeout = 100
+		timeout_effect = {
+			if = {
+				limit = {
+					tag = COC
+				}
+				hidden_effect ={
+					news_event = coloradonews.3
+				}
+			}
+		}
+		complete_effect = {
+			set_global_flag = colorado_crisis_ended
+		}
+	}
+	cocrisis_surrender_war_decision = {
+		available = {
+			OR = {
+				tag = COC
+				tag = TXT
+			}
+		}
+		visible = {
+			OR ={
+				check_variable = {
+					COC.war_exhaustion_var > 0.50
+				}
+				check_variable = {
+					TXT.war_exhaustion_var > 0.50
+				}
+			}
+			has_global_flag = great_rockies_war
+		}
+		ai_will_do = {
+			base = 0
+		}
+		fire_only_once = yes
+		complete_effect = {
+			if = {
+				limit = {
+					tag = TXT
+				}
+				COC = {
+					country_event = cocrisis.61
+				}
+				country_event = cocrisis.62
+				hidden_effect = {
+					every_country = {
+						limit = {
+							has_country_flag = cocrisis_loyal_texas
+						}
+						country_event = cocrisis.62
+					}
+					every_country = {
+						limit = {
+							has_country_flag = cocrisis_loyal_colorado
+						}
+						country_event = cocrisis.67
+					}
+					clr_global_flag = great_rockies_war
+				}
+			}
+			if = {
+				limit = {
+					tag = COC
+				}
+				TXT = {
+					country_event = cocrisis.58
+				}
+				COC = {
+					country_event = cocrisis.60
+				}
+				hidden_effect = {
+					every_country = {
+						limit = {
+							has_country_flag = cocrisis_loyal_texas
+						}
+						country_event = cocrisis.59
+					}
+					every_country = {
+						limit = {
+							has_country_flag = cocrisis_loyal_colorado
+						}
+						country_event = cocrisis.60
+					}
+					clr_global_flag = great_rockies_war
+				}
+			}
+		}
+	}
+	cocrisis_TXT_take_pueblo_trinidad = {
+		allowed = {
+			tag = TXT
+		}
+		available = {
+			controls_province = 5873
+		}
+		activation = {
+			has_global_flag = great_rockies_war
+			NOT = {
+				OR = {
+					has_global_flag = TXT_failed_pueblo_trinidad
+					has_global_flag = TXT_failed_again_pueblo_trinidad
+					has_global_flag = TXT_failed_third_pueblo_trinidad
+					has_global_flag = TXT_took_pueblo_trinidad
+					has_global_flag = TXT_took_pueblo_trinidad_second_try
+					has_global_flag = TXT_took_pueblo_trinidad_third_try
+					has_global_flag = TXT_took_pueblo_trinidad_last_try
+				}
+			}
+		}
+		is_good = no
+		selectable_mission = no
+		days_mission_timeout = 100
+		timeout_effect = {
+			custom_effect_tooltip = you_gain_10_war_exhaustion_tt
+			hidden_effect = {
+				set_global_flag = TXT_failed_pueblo_trinidad
+				add_to_variable = {
+					TXT.war_exhaustion_var = 0.10
+				}
+				add_to_variable = {
+					COC.war_exhaustion_var = -0.10
+				}
+			}
+		}
+		complete_effect = {
+			custom_effect_tooltip = you_lose_5_war_exhaustion_tt
+			hidden_effect = {
+				set_global_flag = TXT_took_pueblo_trinidad
+				add_to_variable = {
+					TXT.war_exhaustion_var = -0.05
+				}
+				add_to_variable = {
+					COC.war_exhaustion_var = 0.05
+				}
+			}
+		}
+	}
+	cocrisis_COC_defend_pueblo_trinidad = {
+		allowed = {
+			tag = COC
+		}
+		available = {
+			TXT = {
+				controls_province = 5873
+			}
+		}
+		activation = {
+			has_global_flag = great_rockies_war
+			NOT = {
+				OR = {
+					has_global_flag = TXT_failed_pueblo_trinidad
+					has_global_flag = TXT_failed_again_pueblo_trinidad
+					has_global_flag = TXT_failed_third_pueblo_trinidad
+					has_global_flag = TXT_took_pueblo_trinidad
+					has_global_flag = TXT_took_pueblo_trinidad_second_try
+					has_global_flag = TXT_took_pueblo_trinidad_third_try
+					has_global_flag = TXT_took_pueblo_trinidad_last_try
+				}
+			}
+		}
+		is_good = yes
+		selectable_mission = no
+		days_mission_timeout = 100
+		timeout_effect = {
+			custom_effect_tooltip = you_lose_10_war_exhaustion_tt
+		}
+		complete_effect = {
+			custom_effect_tooltip = you_gain_5_war_exhaustion_tt
+		}
+	}
+	cocrisis_TXT_take_pueblo_trinidad2 = {
+		allowed = {
+			tag = TXT
+		}
+		available = {
+			controls_province = 5873
+		}
+		activation = {
+			has_global_flag = TXT_failed_pueblo_trinidad
+		}
+		is_good = no
+		selectable_mission = no
+		days_mission_timeout = 100
+		timeout_effect = {
+			custom_effect_tooltip = you_gain_15_war_exhaustion_tt
+			hidden_effect = {
+				clr_global_flag = TXT_failed_pueblo_trinidad
+				set_global_flag = TXT_failed_again_pueblo_trinidad
+				add_to_variable = {
+					TXT.war_exhaustion_var = 0.15
+				}
+				add_to_variable = {
+					COC.war_exhaustion_var = -0.15
+				}
+			}
+		}
+		complete_effect = {
+			custom_effect_tooltip = you_lose_10_war_exhaustion_tt
+			hidden_effect = {
+				set_global_flag = TXT_took_pueblo_trinidad_second_try
+				add_to_variable = {
+					TXT.war_exhaustion_var = -0.10
+				}
+				add_to_variable = {
+					COC.war_exhaustion_var = 0.10
+				}
+			}
+		}
+	}
+	cocrisis_COC_defend_pueblo_trinidad2 = {
+		allowed = {
+			tag = COC
+		}
+		available = {
+			TXT = {
+				controls_province = 5873
+			}
+		}
+		activation = {
+			has_global_flag = TXT_failed_pueblo_trinidad
+		}
+		is_good = yes
+		selectable_mission = no
+		days_mission_timeout = 100
+		timeout_effect = {
+			custom_effect_tooltip = you_lose_15_war_exhaustion_tt
+		}
+		complete_effect = {
+			custom_effect_tooltip = you_gain_10_war_exhaustion_tt
+		}
+	}
+	cocrisis_TXT_take_pueblo_trinidad3 = {
+		allowed = {
+			tag = TXT
+		}
+		available = {
+			controls_province = 5873
+		}
+		activation = {
+			has_global_flag = TXT_failed_again_pueblo_trinidad
+		}
+		is_good = no
+		selectable_mission = no
+		days_mission_timeout = 150
+		timeout_effect = {
+			custom_effect_tooltip = you_gain_20_war_exhaustion_tt
+			country_event = cocrisis.48
+			hidden_effect = {
+				clr_global_flag = TXT_failed_again_pueblo_trinidad
+				set_global_flag = TXT_failed_third_pueblo_trinidad
+				add_to_variable = {
+					TXT.war_exhaustion_var = 0.20
+				}
+				add_to_variable = {
+					COC.war_exhaustion_var = -0.20
+				}
+			}
+		}
+		complete_effect = {
+			custom_effect_tooltip = you_lose_10_war_exhaustion_tt
+			hidden_effect = {
+				set_global_flag = TXT_took_pueblo_trinidad_third_try
+				add_to_variable = {
+					TXT.war_exhaustion_var = -0.10
+				}
+				add_to_variable = {
+					COC.war_exhaustion_var = 0.10
+				}
+			}
+		}
+	}
+	cocrisis_COC_defend_pueblo_trinidad3 = {
+		allowed = {
+			tag = COC
+		}
+		available = {
+			TXT = {
+				controls_province = 5873
+			}
+		}
+		activation = {
+			has_global_flag = TXT_failed_again_pueblo_trinidad
+		}
+		is_good = yes
+		selectable_mission = no
+		days_mission_timeout = 150
+		timeout_effect = {
+			custom_effect_tooltip = you_lose_20_war_exhaustion_tt
+		}
+		complete_effect = {
+			custom_effect_tooltip = you_gain_10_war_exhaustion_tt
+		}
+	}
+	cocrisis_TXT_take_pueblo_trinidad_final = {
+		allowed = {
+			tag = TXT
+		}
+		available = {
+			controls_province = 5873
+		}
+		activation = {
+			has_global_flag = TXT_failed_third_pueblo_trinidad
+			has_country_flag = cocrisis_one_last_push
+		}
+		is_good = no
+		selectable_mission = no
+		days_mission_timeout = 200
+		timeout_effect = {
+			custom_effect_tooltip = we_lose_the_war_tt
+			hidden_effect = {
+				clr_global_flag = TXT_failed_third_pueblo_trinidad
+				country_event = cocrisis.62
+				COC = {
+					country_event = cocrisis.61
+				}
+				every_country = {
+					limit = {
+						has_country_flag = cocrisis_loyal_texas
+						has_war_together_with = TXT
+					}
+					country_event = cocrisis.62
+				}
+				every_country = {
+					limit = {
+						has_country_flag = cocrisis_loyal_colorado
+						has_war_together_with = COC
+					}
+					country_event = cocrisis.67
+				}
+				clr_global_flag = TXT_failed_again_alamosa_buenavista
+				clr_global_flag = TXT_failed_again_pueblo_trinidad
+				clr_global_flag = TXT_failed_alamosa_buenavista
+				clr_global_flag = TXT_failed_aspen_breckenridge
+				clr_global_flag = TXT_failed_pueblo_trinidad
+				clr_global_flag = TXT_failed_third_pueblo_trinidad
+				clr_global_flag = TXT_took_alamosa_buenavista
+				clr_global_flag = TXT_took_alamosa_buenavista_second_try
+				clr_global_flag = TXT_took_alamosa_buenavista_third_try
+				clr_global_flag = TXT_took_aspen_breckenridge
+				clr_global_flag = TXT_took_aspen_breckenridge_second_try
+				clr_global_flag = TXT_took_pueblo_trinidad_last_try
+				clr_global_flag = TXT_took_pueblo_trinidad
+				clr_global_flag = TXT_took_pueblo_trinidad_second_try
+				clr_global_flag = TXT_took_pueblo_trinidad_third_try
+			}
+		}
+		complete_effect = {
+			custom_effect_tooltip = you_lose_20_war_exhaustion_tt
+
+			hidden_effect = {
+				set_global_flag = TXT_took_pueblo_trinidad_last_try
+				add_to_variable = {
+					TXT.war_exhaustion_var = -0.20
+				}
+				add_to_variable = {
+					COC.war_exhaustion_var = 0.15
+				}
+			}
+		}
+	}
+	cocrisis_COC_defend_pueblo_trinidad_final = {
+		allowed = {
+			tag = COC
+		}
+		available = {
+			TXT = {
+				controls_province = 5873
+			}
+		}
+		activation = {
+			has_global_flag = TXT_failed_third_pueblo_trinidad
+			TXT = {
+				has_country_flag = cocrisis_one_last_push
+			}
+		}
+		is_good = yes
+		selectable_mission = no
+		days_mission_timeout = 200
+		timeout_effect = {
+			custom_effect_tooltip = we_win_the_war_tt
+		}
+		complete_effect = {
+			custom_effect_tooltip = you_gain_15_war_exhaustion_tt
+		}
+	}
+	cocrisis_TXT_take_alamosa_buenavista = {
+		allowed = {
+			tag = TXT
+		}
+		available = {
+			controls_province = 2147
+			controls_province = 5642
+		}
+		activation = {
+			OR = {
+				has_global_flag = TXT_took_pueblo_trinidad
+				has_global_flag = TXT_took_pueblo_trinidad_second_try
+				has_global_flag = TXT_took_pueblo_trinidad_third_try
+				has_global_flag = TXT_took_pueblo_trinidad_last_try
+			}
+		}
+		is_good = no
+		selectable_mission = no
+		days_mission_timeout = 100
+		timeout_effect = {
+			custom_effect_tooltip = you_gain_10_war_exhaustion_tt
+			hidden_effect = {
+				set_global_flag = TXT_failed_alamosa_buenavista
+				add_to_variable = {
+					TXT.war_exhaustion_var = 0.10
+				}
+				add_to_variable = {
+					COC.war_exhaustion_var = -0.10
+				}
+			}
+		}
+		complete_effect = {
+			custom_effect_tooltip = you_lose_5_war_exhaustion_tt
+			hidden_effect = {
+				set_global_flag = TXT_took_alamosa_buenavista
+				add_to_variable = {
+					TXT.war_exhaustion_var = -0.05
+				}
+				add_to_variable = {
+					COC.war_exhaustion_var = 0.05
+				}
+			}
+		}
+	}
+	cocrisis_COC_defend_alamosa_buenavista = {
+		allowed = {
+			tag = COC
+		}
+		available = {
+			TXT = {
+				controls_province = 2147
+			controls_province = 5642
+			}
+		}
+		activation = {
+			OR = {
+				has_global_flag = TXT_took_pueblo_trinidad
+				has_global_flag = TXT_took_pueblo_trinidad_second_try
+				has_global_flag = TXT_took_pueblo_trinidad_third_try
+				has_global_flag = TXT_took_pueblo_trinidad_last_try
+			}
+		}
+		is_good = yes
+		selectable_mission = no
+		days_mission_timeout = 100
+		timeout_effect = {
+			custom_effect_tooltip = you_lose_10_war_exhaustion_tt
+		}
+		complete_effect = {
+			custom_effect_tooltip = you_gain_5_war_exhaustion_tt
+		}
+	}
+	cocrisis_TXT_take_alamosa_buenavista2 = {
+		allowed = {
+			tag = TXT
+		}
+		available = {
+			controls_province = 2147
+			controls_province = 5642
+		}
+		activation = {
+			has_global_flag = TXT_failed_alamosa_buenavista
+		}
+		is_good = no
+		selectable_mission = no
+		days_mission_timeout = 100
+		timeout_effect = {
+			custom_effect_tooltip = you_gain_15_war_exhaustion_tt
+			hidden_effect = {
+				clr_global_flag = TXT_failed_alamosa_buenavista
+				set_global_flag = TXT_failed_again_alamosa_buenavista
+				add_to_variable = {
+					TXT.war_exhaustion_var = 0.15
+				}
+				add_to_variable = {
+					COC.war_exhaustion_var = -0.15
+				}
+			}
+		}
+		complete_effect = {
+			custom_effect_tooltip = you_lose_10_war_exhaustion_tt
+			hidden_effect = {
+				set_global_flag = TXT_took_alamosa_buenavista_second_try
+				add_to_variable = {
+					TXT.war_exhaustion_var = -0.10
+				}
+				add_to_variable = {
+					COC.war_exhaustion_var = 0.10
+				}
+			}
+		}
+	}
+	cocrisis_COC_defend_alamosa_buenavista2 = {
+		allowed = {
+			tag = COC
+		}
+		available = {
+			TXT = {
+				controls_province = 2147
+				controls_province = 5642
+			}
+		}
+		activation = {
+			has_global_flag = TXT_failed_alamosa_buenavista
+		}
+		is_good = yes
+		selectable_mission = no
+		days_mission_timeout = 100
+		timeout_effect = {
+			custom_effect_tooltip = you_lose_15_war_exhaustion_tt
+		}
+		complete_effect = {
+			custom_effect_tooltip = you_gain_10_war_exhaustion_tt
+		}
+	}
+	cocrisis_TXT_take_alamosa_buenavista3 = {
+		allowed = {
+			tag = TXT
+		}
+		available = {
+			controls_province = 2147
+			controls_province = 5642
+		}
+		activation = {
+			has_global_flag = TXT_failed_again_alamosa_buenavista
+		}
+		is_good = no
+		selectable_mission = no
+		days_mission_timeout = 150
+		timeout_effect = {
+			custom_effect_tooltip = war_becomes_a_stalemate_tt
+			custom_effect_tooltip = peace_negotiations_begin_tt
+			hidden_effect = {
+				country_event = cocrisis.64
+				every_country = {
+					limit = {
+						NOT = {
+							tag = ROOT
+						}
+						OR = {
+							has_country_flag = cocrisis_loyal_colorado
+							has_country_flag = cocrisis_loyal_texas
+						}
+					}
+					country_event = cocrisis.68
+				}
+				clr_global_flag = TXT_failed_again_alamosa_buenavista
+				clr_global_flag = TXT_failed_again_pueblo_trinidad
+				clr_global_flag = TXT_failed_alamosa_buenavista
+				clr_global_flag = TXT_failed_aspen_breckenridge
+				clr_global_flag = TXT_failed_pueblo_trinidad
+				clr_global_flag = TXT_failed_third_pueblo_trinidad
+				clr_global_flag = TXT_took_alamosa_buenavista
+				clr_global_flag = TXT_took_alamosa_buenavista_second_try
+				clr_global_flag = TXT_took_alamosa_buenavista_third_try
+				clr_global_flag = TXT_took_aspen_breckenridge
+				clr_global_flag = TXT_took_aspen_breckenridge_second_try
+				clr_global_flag = TXT_took_pueblo_trinidad_last_try
+				clr_global_flag = TXT_took_pueblo_trinidad
+				clr_global_flag = TXT_took_pueblo_trinidad_second_try
+				clr_global_flag = TXT_took_pueblo_trinidad_third_try
+			}
+		}
+		complete_effect = {
+			custom_effect_tooltip = you_lose_10_war_exhaustion_tt
+			hidden_effect = {
+				set_global_flag = TXT_took_alamosa_buenavista_third_try
+				add_to_variable = {
+					TXT.war_exhaustion_var = -0.10
+				}
+				add_to_variable = {
+					COC.war_exhaustion_var = 0.10
+				}
+			}
+		}
+	}
+	cocrisis_COC_defend_alamosa_buenavista3 = {
+		allowed = {
+			tag = COC
+		}
+		available = {
+			TXT = {
+				controls_province = 2147
+				controls_province = 5642
+			}
+		}
+		activation = {
+			has_global_flag = TXT_failed_again_alamosa_buenavista
+		}
+		is_good = yes
+		selectable_mission = no
+		days_mission_timeout = 150
+		timeout_effect = {
+			custom_effect_tooltip = war_becomes_a_stalemate_tt
+			custom_effect_tooltip = peace_negotiations_begin_tt
+			hidden_effect = {
+				country_event = cocrisis.64
+				every_country = {
+					limit = {
+						NOT = {
+							tag = ROOT
+						}
+						OR = {
+							has_country_flag = cocrisis_loyal_colorado
+							has_country_flag = cocrisis_loyal_texas
+						}
+					}
+					country_event = cocrisis.68
+				}
+				clr_global_flag = TXT_failed_again_alamosa_buenavista
+				clr_global_flag = TXT_failed_again_pueblo_trinidad
+				clr_global_flag = TXT_failed_alamosa_buenavista
+				clr_global_flag = TXT_failed_aspen_breckenridge
+				clr_global_flag = TXT_failed_pueblo_trinidad
+				clr_global_flag = TXT_failed_third_pueblo_trinidad
+				clr_global_flag = TXT_took_alamosa_buenavista
+				clr_global_flag = TXT_took_alamosa_buenavista_second_try
+				clr_global_flag = TXT_took_alamosa_buenavista_third_try
+				clr_global_flag = TXT_took_aspen_breckenridge
+				clr_global_flag = TXT_took_aspen_breckenridge_second_try
+				clr_global_flag = TXT_took_pueblo_trinidad_last_try
+				clr_global_flag = TXT_took_pueblo_trinidad
+				clr_global_flag = TXT_took_pueblo_trinidad_second_try
+				clr_global_flag = TXT_took_pueblo_trinidad_third_try
+			}
+		}
+		complete_effect = {
+			custom_effect_tooltip = you_gain_10_war_exhaustion_tt
+		}
+	}
+	cocrisis_TXT_take_aspen_breckenridge = {
+		allowed = {
+			tag = TXT
+		}
+		available = {
+			controls_province = 5541
+			controls_province = 3642
+		}
+		activation = {
+			OR = {
+				has_global_flag = TXT_took_alamosa_buenavista
+				has_global_flag = TXT_took_alamosa_buenavista_second_try
+				has_global_flag = TXT_took_alamosa_buenavista_third_try
+			}
+		}
+		is_good = no
+		selectable_mission = no
+		days_mission_timeout = 100
+		timeout_effect = {
+			custom_effect_tooltip = you_gain_10_war_exhaustion_tt
+			hidden_effect = {
+				set_global_flag = TXT_failed_aspen_breckenridge
+				add_to_variable = {
+					TXT.war_exhaustion_var = 0.10
+				}
+				add_to_variable = {
+					COC.war_exhaustion_var = -0.10
+				}
+			}
+		}
+		complete_effect = {
+			custom_effect_tooltip = you_lose_5_war_exhaustion_tt
+			hidden_effect = {
+				set_global_flag = TXT_took_aspen_breckenridge
+				add_to_variable = {
+					TXT.war_exhaustion_var = -0.05
+				}
+				add_to_variable = {
+					COC.war_exhaustion_var = 0.05
+				}
+			}
+		}
+	}
+	cocrisis_COC_defend_aspen_breckenridge = {
+		allowed = {
+			tag = COC
+		}
+		available = {
+			TXT = {
+				controls_province = 5541
+				controls_province = 3642
+			}
+		}
+		activation = {
+			OR = {
+				has_global_flag = TXT_took_alamosa_buenavista
+				has_global_flag = TXT_took_alamosa_buenavista_second_try
+				has_global_flag = TXT_took_alamosa_buenavista_third_try
+			}
+		}
+		is_good = yes
+		selectable_mission = no
+		days_mission_timeout = 100
+		timeout_effect = {
+			custom_effect_tooltip = you_lose_10_war_exhaustion_tt
+		}
+		complete_effect = {
+			custom_effect_tooltip = you_gain_5_war_exhaustion_tt
+		}
+	}
+	cocrisis_TXT_take_aspen_breckenridge2 = {
+		allowed = {
+			tag = TXT
+		}
+		available = {
+			controls_province = 5541
+			controls_province = 3642
+		}
+		activation = {
+			has_global_flag = TXT_failed_aspen_breckenridge
+		}
+		is_good = no
+		selectable_mission = no
+		days_mission_timeout = 100
+		timeout_effect = {
+			custom_effect_tooltip = war_becomes_a_stalemate_tt
+			custom_effect_tooltip = peace_negotiations_begin_tt
+			hidden_effect = {
+				country_event = cocrisis.64
+				every_country = {
+					limit = {
+						NOT = {
+							tag = ROOT
+						}
+						OR = {
+							has_country_flag = cocrisis_loyal_colorado
+							has_country_flag = cocrisis_loyal_texas
+						}
+					}
+					country_event = cocrisis.68
+				}
+				clr_global_flag = TXT_failed_again_alamosa_buenavista
+				clr_global_flag = TXT_failed_again_pueblo_trinidad
+				clr_global_flag = TXT_failed_alamosa_buenavista
+				clr_global_flag = TXT_failed_aspen_breckenridge
+				clr_global_flag = TXT_failed_pueblo_trinidad
+				clr_global_flag = TXT_failed_third_pueblo_trinidad
+				clr_global_flag = TXT_took_alamosa_buenavista
+				clr_global_flag = TXT_took_alamosa_buenavista_second_try
+				clr_global_flag = TXT_took_alamosa_buenavista_third_try
+				clr_global_flag = TXT_took_aspen_breckenridge
+				clr_global_flag = TXT_took_aspen_breckenridge_second_try
+				clr_global_flag = TXT_took_pueblo_trinidad_last_try
+				clr_global_flag = TXT_took_pueblo_trinidad
+				clr_global_flag = TXT_took_pueblo_trinidad_second_try
+				clr_global_flag = TXT_took_pueblo_trinidad_third_try
+			}
+		}
+		complete_effect = {
+			custom_effect_tooltip = you_lose_10_war_exhaustion_tt
+			hidden_effect = {
+				set_global_flag = TXT_took_aspen_breckenridge_second_try
+				add_to_variable = {
+					TXT.war_exhaustion_var = -0.10
+				}
+				add_to_variable = {
+					COC.war_exhaustion_var = 0.10
+				}
+			}
+		}
+	}
+	cocrisis_COC_defend_aspen_breckenridge2 = {
+		allowed = {
+			tag = COC
+		}
+		available = {
+			TXT = {
+				controls_province = 5541
+				controls_province = 3642
+			}
+		}
+		activation = {
+			has_global_flag = TXT_failed_aspen_breckenridge
+		}
+		is_good = yes
+		selectable_mission = no
+		days_mission_timeout = 100
+		timeout_effect = {
+			custom_effect_tooltip = war_becomes_a_stalemate_tt
+			custom_effect_tooltip = peace_negotiations_begin_tt
+			hidden_effect = {
+				country_event = cocrisis.64
+				every_country = {
+					limit = {
+						NOT = {
+							tag = ROOT
+						}
+						OR = {
+							has_country_flag = cocrisis_loyal_colorado
+							has_country_flag = cocrisis_loyal_texas
+						}
+					}
+					country_event = cocrisis.68
+				}
+				clr_global_flag = TXT_failed_again_alamosa_buenavista
+				clr_global_flag = TXT_failed_again_pueblo_trinidad
+				clr_global_flag = TXT_failed_alamosa_buenavista
+				clr_global_flag = TXT_failed_aspen_breckenridge
+				clr_global_flag = TXT_failed_pueblo_trinidad
+				clr_global_flag = TXT_failed_third_pueblo_trinidad
+				clr_global_flag = TXT_took_alamosa_buenavista
+				clr_global_flag = TXT_took_alamosa_buenavista_second_try
+				clr_global_flag = TXT_took_alamosa_buenavista_third_try
+				clr_global_flag = TXT_took_aspen_breckenridge
+				clr_global_flag = TXT_took_aspen_breckenridge_second_try
+				clr_global_flag = TXT_took_pueblo_trinidad_last_try
+				clr_global_flag = TXT_took_pueblo_trinidad
+				clr_global_flag = TXT_took_pueblo_trinidad_second_try
+				clr_global_flag = TXT_took_pueblo_trinidad_third_try
+			}
+		}
+		complete_effect = {
+			custom_effect_tooltip = you_gain_10_war_exhaustion_tt
+		}
+	}
+	cocrisis_TXT_take_gillette = {
+		allowed = {
+			tag = TXT
+		}
+		available = {
+			controls_province = 1747
+		}
+		activation = {
+			OR = {
+				has_global_flag = TXT_took_aspen_breckenridge
+				has_global_flag = TXT_took_aspen_breckenridge_second_try
+			}
+		}
+		is_good = no
+		selectable_mission = no
+		days_mission_timeout = 100
+		timeout_effect = {
+			custom_effect_tooltip = war_becomes_a_stalemate_tt
+			custom_effect_tooltip = peace_negotiations_begin_tt
+			hidden_effect = {
+				country_event = cocrisis.68
+				every_country = {
+					limit = {
+						NOT = {
+							tag = ROOT
+						}
+						OR = {
+							has_country_flag = cocrisis_loyal_colorado
+							has_country_flag = cocrisis_loyal_texas
+						}
+					}
+					country_event = cocrisis.68
+				}
+				clr_global_flag = TXT_failed_again_alamosa_buenavista
+				clr_global_flag = TXT_failed_again_pueblo_trinidad
+				clr_global_flag = TXT_failed_alamosa_buenavista
+				clr_global_flag = TXT_failed_aspen_breckenridge
+				clr_global_flag = TXT_failed_pueblo_trinidad
+				clr_global_flag = TXT_failed_third_pueblo_trinidad
+				clr_global_flag = TXT_took_alamosa_buenavista
+				clr_global_flag = TXT_took_alamosa_buenavista_second_try
+				clr_global_flag = TXT_took_alamosa_buenavista_third_try
+				clr_global_flag = TXT_took_aspen_breckenridge
+				clr_global_flag = TXT_took_aspen_breckenridge_second_try
+				clr_global_flag = TXT_took_pueblo_trinidad_last_try
+				clr_global_flag = TXT_took_pueblo_trinidad
+				clr_global_flag = TXT_took_pueblo_trinidad_second_try
+				clr_global_flag = TXT_took_pueblo_trinidad_third_try
+			}
+		}
+		complete_effect = {
+			custom_effect_tooltip = we_win_the_war_tt
+			hidden_effect = {
+				clr_global_flag = TXT_took_aspen_breckenridge_second_try
+				clr_global_flag = TXT_took_aspen_breckenridge
+				set_global_flag = TXT_won_rockies_war
+			}
+		}
+	}
+	cocrisis_COC_defend_gillette = {
+		allowed = {
+			OR = {
+				tag = COC
+				tag = WYW
+			}
+		}
+		available = {
+			TXT = {
+				controls_province = 1747
+			}
+		}
+		activation = {
+			OR = {
+				has_global_flag = TXT_took_aspen_breckenridge
+				has_global_flag = TXT_took_aspen_breckenridge_second_try
+			}
+		}
+		is_good = yes
+		selectable_mission = no
+		days_mission_timeout = 100
+		timeout_effect = {
+			custom_effect_tooltip = war_becomes_a_stalemate_tt
+			custom_effect_tooltip = peace_negotiations_begin_tt
+			hidden_effect = {
+				country_event = cocrisis.64
+				TXT = {
+					country_event = cocrisis.68
+				}
+				every_country = {
+					limit = {
+						has_country_flag = cocrisis_loyal_texas
+						has_war_together_with = TXT
+					}
+					country_event = cocrisis.68
+				}
+				every_country = {
+					limit = {
+						has_country_flag = cocrisis_loyal_colorado
+						has_war_together_with = COC
+					}
+					country_event = cocrisis.60
+				}
+				clr_global_flag = TXT_failed_again_alamosa_buenavista
+				clr_global_flag = TXT_failed_again_pueblo_trinidad
+				clr_global_flag = TXT_failed_alamosa_buenavista
+				clr_global_flag = TXT_failed_aspen_breckenridge
+				clr_global_flag = TXT_failed_pueblo_trinidad
+				clr_global_flag = TXT_failed_third_pueblo_trinidad
+				clr_global_flag = TXT_took_alamosa_buenavista
+				clr_global_flag = TXT_took_alamosa_buenavista_second_try
+				clr_global_flag = TXT_took_alamosa_buenavista_third_try
+				clr_global_flag = TXT_took_aspen_breckenridge
+				clr_global_flag = TXT_took_aspen_breckenridge_second_try
+				clr_global_flag = TXT_took_pueblo_trinidad_last_try
+				clr_global_flag = TXT_took_pueblo_trinidad
+				clr_global_flag = TXT_took_pueblo_trinidad_second_try
+				clr_global_flag = TXT_took_pueblo_trinidad_third_try
+			}
+		}
+		complete_effect = {
+			custom_effect_tooltip = we_lose_the_war_tt
+			custom_effect_tooltip = peace_negotiations_begin_tt
+			hidden_effect = {
+				country_event = cocrisis.64
+				every_country = {
+					limit = {
+						NOT = {
+							tag = ROOT
+						}
+						OR = {
+							has_country_flag = cocrisis_loyal_colorado
+							has_country_flag = cocrisis_loyal_texas
+						}
+					}
+					country_event = cocrisis.68
+				}
+				clr_global_flag = TXT_failed_again_alamosa_buenavista
+				clr_global_flag = TXT_failed_again_pueblo_trinidad
+				clr_global_flag = TXT_failed_alamosa_buenavista
+				clr_global_flag = TXT_failed_aspen_breckenridge
+				clr_global_flag = TXT_failed_pueblo_trinidad
+				clr_global_flag = TXT_failed_third_pueblo_trinidad
+				clr_global_flag = TXT_took_alamosa_buenavista
+				clr_global_flag = TXT_took_alamosa_buenavista_second_try
+				clr_global_flag = TXT_took_alamosa_buenavista_third_try
+				clr_global_flag = TXT_took_aspen_breckenridge
+				clr_global_flag = TXT_took_aspen_breckenridge_second_try
+				clr_global_flag = TXT_took_pueblo_trinidad_last_try
+				clr_global_flag = TXT_took_pueblo_trinidad
+				clr_global_flag = TXT_took_pueblo_trinidad_second_try
+				clr_global_flag = TXT_took_pueblo_trinidad_third_try
+			}
+		}
+	}
+	cocrisis_UTU_take_grand_junction_montrose = {
+		allowed = {
+			tag = UTU
+		}
+		available = {
+			controls_province = 2606
+		}
+		activation = {
+			has_global_flag = great_rockies_war
+			has_war_with = COC
+			has_war_together_with = TXT
+			has_country_flag = cocrisis_loyal_texas
+		}
+		is_good = no
+		selectable_mission = no
+		days_mission_timeout = 300
+		timeout_effect = {
+			country_event = cocrisis.50
+		}
+		complete_effect = {
+			country_event = cocrisis.51
+		}
+	}
+	cocrisis_COC_defend_grand_junction_montrose = {
+		allowed = {
+			tag = COC
+		}
+		available = {
+			UTU = {
+				controls_province = 2606
+			}
+		}
+		activation = {
+			has_global_flag = great_rockies_war
+			has_war_with = UTU
+			UTU = {
+				has_country_flag = cocrisis_loyal_texas
+			}
+		}
+		is_good = yes
+		selectable_mission = no
+		days_mission_timeout = 300
+		timeout_effect = {
+			custom_effect_tooltip = you_lose_20_war_exhaustion_tt
+			hidden_effect = {
+				add_to_variable = {
+					var = COC.war_exhaustion_var
+					value = -0.20
+				}
+			}
+		}
+		complete_effect = {
+			custom_effect_tooltip = you_gain_20_war_exhaustion_tt
+			hidden_effect = {
+				add_to_variable = {
+					var = COC.war_exhaustion_var
+					value = 0.20
+				}
+			}
+		}
+	}
+}
+colorado_alliance_decision_category = {
+	CA_give_army_xp = {
+		available = {
+			has_army_experience > 150
+		}
+		ai_will_do = {
+			base = 100
+		}
+		complete_effect = {
+			ROOT = {
+				army_experience = -150
+			}
+			add_to_variable = {
+				var = global.colorado_alliance_army_experience
+				value = 150
+			}
+		}
+	}
+	CA_give_air_xp = {
+		available = {
+			has_air_experience > 150
+		}
+		ai_will_do = {
+			base = 100
+		}
+		complete_effect = {
+			ROOT = {
+				air_experience = -150
+			}
+			add_to_variable = {
+				var = global.colorado_alliance_air_experience
+				value = 150
+			}
+		}
+	}
+	CA_give_infantry_equipment = {
+		available = {
+			has_equipment = {
+				infantry_equipment > 499
+			}
+			
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 1
+				has_equipment = {
+					infantry_equipment > 2000
+				}
+			}
+			modifier = {
+				add = 1
+				has_equipment = {
+					infantry_equipment > 2500
+				}
+			}
+			modifier = {
+				add = 1
+				has_equipment = {
+					infantry_equipment > 3000
+				}
+			}
+			modifier = {
+				add = 1
+				has_equipment = {
+					infantry_equipment > 3500
+				}
+			}
+			modifier = {
+				add = 1
+				has_equipment = {
+					infantry_equipment > 4000
+				}
+			}
+			modifier = {
+				add = 1
+				has_equipment = {
+					infantry_equipment > 4500
+				}
+			}
+			modifier = {
+				add = 10
+				has_equipment = {
+					infantry_equipment > 5000
+				}
+			}
+		}
+		complete_effect = {
+			ROOT = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = -500
+				}
+			}
+			add_to_variable = {
+				var = global.colorado_alliance_infantry_equipment
+				value = 500
+			}
+		}
+	}
+	CA_give_artillery_equipment = {
+		available = {
+			has_equipment = {
+				artillery_equipment > 49
+			}
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 1
+				has_equipment = {
+					artillery_equipment > 200
+				}
+			}
+			modifier = {
+				add = 1
+				has_equipment = {
+					artillery_equipment > 250
+				}
+			}
+			modifier = {
+				add = 1
+				has_equipment = {
+					artillery_equipment > 300
+				}
+			}
+			modifier = {
+				add = 1
+				has_equipment = {
+					artillery_equipment > 350
+				}
+			}
+			modifier = {
+				add = 1
+				has_equipment = {
+					artillery_equipment > 400
+				}
+			}
+			modifier = {
+				add = 1
+				has_equipment = {
+					artillery_equipment > 450
+				}
+			}
+			modifier = {
+				add = 10
+				has_equipment = {
+					artillery_equipment > 500
+				}
+			}
+		}
+		complete_effect = {
+			ROOT = {
+				add_equipment_to_stockpile = {
+					type = artillery_equipment
+					amount = -50
+				}
+			}
+			add_to_variable = {
+				var = global.colorado_alliance_artillery_equipment
+				value = 50
+			}
+		}
+	}
+	CA_give_motorized_equipment = {
+		available = {
+			has_equipment = {
+				motorized_equipment > 99
+			}
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 1
+				has_equipment = {
+					motorized_equipment > 400
+				}
+			}
+			modifier = {
+				add = 1
+				has_equipment = {
+					motorized_equipment > 500
+				}
+			}
+			modifier = {
+				add = 1
+				has_equipment = {
+					motorized_equipment > 600
+				}
+			}
+			modifier = {
+				add = 1
+				has_equipment = {
+					motorized_equipment > 700
+				}
+			}
+			modifier = {
+				add = 1
+				has_equipment = {
+					motorized_equipment > 800
+				}
+			}
+			modifier = {
+				add = 1
+				has_equipment = {
+					motorized_equipment > 900
+				}
+			}
+			modifier = {
+				add = 10
+				has_equipment = {
+					motorized_equipment > 1000
+				}
+			}
+		}
+		complete_effect = {
+			ROOT = {
+				add_equipment_to_stockpile = {
+					type = motorized_equipment
+					amount = -500
+				}
+			}
+			add_to_variable = {
+				var = global.colorado_alliance_motorized_equipment
+				value = 500
+			}
+		}
+	}
+	CA_give_support_equipment = {
+		available = {
+			has_equipment = {
+				support_equipment > 99
+			}
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 1
+				has_equipment = {
+					support_equipment > 400
+				}
+			}
+			modifier = {
+				add = 1
+				has_equipment = {
+					support_equipment > 500
+				}
+			}
+			modifier = {
+				add = 1
+				has_equipment = {
+					support_equipment > 600
+				}
+			}
+			modifier = {
+				add = 1
+				has_equipment = {
+					support_equipment > 700
+				}
+			}
+			modifier = {
+				add = 1
+				has_equipment = {
+					support_equipment > 800
+				}
+			}
+			modifier = {
+				add = 1
+				has_equipment = {
+					support_equipment > 900
+				}
+			}
+			modifier = {
+				add = 10
+				has_equipment = {
+					support_equipment > 1000
+				}
+			}
+		}
+		complete_effect = {
+			ROOT = {
+				add_equipment_to_stockpile = {
+					type = support_equipment
+					amount = -500
+				}
+			}
+			add_to_variable = {
+				var = global.colorado_alliance_support_equipment
+				value = 500
+			}
+		}
+	}
+	CA_give_manpower = {
+		available = {
+			has_manpower > 1000
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 1
+				has_manpower > 70000
+			}
+			modifier = {
+				add = 1
+				has_manpower > 80000
+			}
+			modifier = {
+				add = 1
+				has_manpower > 90000
+			}
+			modifier = {
+				add = 1
+				has_manpower > 100000
+			}
+			modifier = {
+				add = 1
+				has_manpower > 110000
+			}
+			modifier = {
+				add = 1
+				has_manpower > 120000
+			}
+			modifier = {
+				add = 10	
+				has_manpower > 130000
+			}
+		}
+		complete_effect = {
+			ROOT = {
+				add_manpower = -1000
+			}
+			add_to_variable = {
+				var = global.colorado_alliance_manpower
+				value = 1000
+			}
+		}
+	}
+	CA_take_army_xp = {
+		available = {
+			check_variable = {
+				global.colorado_alliance_army_experience > 150
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+		complete_effect = {
+			ROOT = {
+				army_experience = 150
+			}
+			add_to_variable = {
+				var = global.colorado_alliance_army_experience
+				value = -150
+			}
+		}
+	}
+	CA_take_air_xp = {
+		available = {
+			check_variable = {
+				global.colorado_alliance_air_experience > 150
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+		complete_effect = {
+			ROOT = {
+				air_experience = 150
+			}
+			add_to_variable = {
+				var = global.colorado_alliance_air_experience
+				value = -150
+			}
+		}
+	}
+	CA_take_infantry_equipment = {
+		available = {
+			check_variable = {
+				global.colorado_alliance_infantry_equipment > 499
+			}
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 1
+				has_equipment = {
+					infantry_equipment < 200
+				}
+			}
+			modifier = {
+				add = 1
+				has_equipment = {
+					infantry_equipment < 150
+				}
+			}
+			modifier = {
+				add = 1
+				has_equipment = {
+					infantry_equipment < 100
+				}
+			}
+			modifier = {
+				add = 1
+				has_equipment = {
+					infantry_equipment < 50
+				}
+			}
+			modifier = {
+				add = 100
+				has_equipment = {
+					infantry_equipment < 0
+				}
+			}
+		}
+		complete_effect = {
+			ROOT = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 500
+				}
+			}
+			add_to_variable = {
+				var = global.colorado_alliance_infantry_equipment
+				value = -500
+			}
+		}
+	}
+	CA_take_artillery_equipment = {
+		available = {
+			check_variable = {
+				global.colorado_alliance_artillery_equipment > 49
+			}
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 1
+				has_equipment = {
+					artillery_equipment < 50
+				}
+			}
+			modifier = {
+				add = 1
+				has_equipment = {
+					artillery_equipment < 40
+				}
+			}
+			modifier = {
+				add = 1
+				has_equipment = {
+					artillery_equipment < 30
+				}
+			}
+			modifier = {
+				add = 1
+				has_equipment = {
+					artillery_equipment < 20
+				}
+			}
+			modifier = {
+				add = 1
+				has_equipment = {
+					artillery_equipment < 10
+				}
+			}
+			modifier = {
+				add = 100
+				has_equipment = {
+					artillery_equipment < 0
+				}
+			}
+		}
+		complete_effect = {
+			ROOT = {
+				add_equipment_to_stockpile = {
+					type = artillery_equipment
+					amount = 50
+				}
+			}
+			add_to_variable = {
+				var = global.colorado_alliance_artillery_equipment
+				value = -50
+			}
+		}
+	}
+	CA_take_motorized_equipment = {
+		available = {
+			check_variable = {
+				global.colorado_alliance_motorized_equipment > 99
+			}	
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 1
+				has_equipment = {
+					motorized_equipment < 200
+				}
+			}
+			modifier = {
+				add = 1
+				has_equipment = {
+					motorized_equipment < 150
+				}
+			}
+			modifier = {
+				add = 1
+				has_equipment = {
+					motorized_equipment < 100
+				}
+			}
+			modifier = {
+				add = 1
+				has_equipment = {
+					motorized_equipment < 50
+				}
+			}
+			modifier = {
+				add = 100
+				has_equipment = {
+					motorized_equipment < 0
+				}
+			}
+		}
+		complete_effect = {
+			ROOT = {
+				add_equipment_to_stockpile = {
+					type = motorized_equipment
+					amount = 500
+				}
+			}
+			add_to_variable = {
+				var = global.colorado_alliance_motorized_equipment
+				value = -500
+			}
+		}
+	}
+	CA_take_support_equipment = {
+		available = {
+			check_variable = {
+				global.colorado_alliance_support_equipment > 99
+			}
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 1
+				has_equipment = {
+					support_equipment < 50
+				}
+			}
+			modifier = {
+				add = 1
+				has_equipment = {
+					support_equipment < 40
+				}
+			}
+			modifier = {
+				add = 1
+				has_equipment = {
+					support_equipment < 30
+				}
+			}
+			modifier = {
+				add = 1
+				has_equipment = {
+					support_equipment < 20
+				}
+			}
+			modifier = {
+				add = 1
+				has_equipment = {
+					support_equipment < 10
+				}
+			}
+			modifier = {
+				add = 100
+				has_equipment = {
+					support_equipment < 0
+				}
+			}
+		}
+		complete_effect = {
+			ROOT = {
+				add_equipment_to_stockpile = {
+					type = support_equipment
+					amount = 500
+				}
+			}
+			add_to_variable = {
+				var = global.colorado_alliance_support_equipment
+				value = -500
+			}
+		}
+	}
+	CA_take_manpower = {
+		available = {
+			check_variable = {
+				global.colorado_alliance_manpower > 1000
+			}
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 1
+				has_manpower < 20000
+			}
+			modifier = {
+				add = 1
+				has_manpower < 15000
+			}
+			modifier = {
+				add = 1
+				has_manpower < 10000
+			}
+			modifier = {
+				add = 1
+				has_manpower < 5000
+			}
+			modifier = {
+				add = 100
+				has_manpower < 0
+			}
+		}
+		complete_effect = {
+			ROOT = {
+				add_manpower = 10000
+			}
+			add_to_variable = {
+				var = global.colorado_alliance_manpower
+				value = 10000
+			}
+		}
+	}
+}
+texas_alliance_decision_category = {
+	TA_give_army_xp = {
+		available = {
+			has_army_experience > 150
+		}
+		ai_will_do = {
+			base = 100
+		}
+		complete_effect = {
+			ROOT = {
+				army_experience = -150
+			}
+			add_to_variable = {
+				var = global.texas_alliance_army_experience
+				value = 150
+			}
+		}
+	}
+	TA_give_air_xp = {
+		available = {
+			has_air_experience > 150
+		}
+		ai_will_do = {
+			base = 100
+		}
+		complete_effect = {
+			ROOT = {
+				air_experience = -150
+			}
+			add_to_variable = {
+				var = global.texas_alliance_air_experience
+				value = 150
+			}
+		}
+	}
+	TA_give_infantry_equipment = {
+		available = {
+			has_equipment = {
+				infantry_equipment > 499
+			}
+			
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 1
+				has_equipment = {
+					infantry_equipment > 2000
+				}
+			}
+			modifier = {
+				add = 1
+				has_equipment = {
+					infantry_equipment > 2500
+				}
+			}
+			modifier = {
+				add = 1
+				has_equipment = {
+					infantry_equipment > 3000
+				}
+			}
+			modifier = {
+				add = 1
+				has_equipment = {
+					infantry_equipment > 3500
+				}
+			}
+			modifier = {
+				add = 1
+				has_equipment = {
+					infantry_equipment > 4000
+				}
+			}
+			modifier = {
+				add = 1
+				has_equipment = {
+					infantry_equipment > 4500
+				}
+			}
+			modifier = {
+				add = 10
+				has_equipment = {
+					infantry_equipment > 5000
+				}
+			}
+		}
+		complete_effect = {
+			ROOT = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = -500
+				}
+			}
+			add_to_variable = {
+				var = global.texas_alliance_infantry_equipment
+				value = 500
+			}
+		}
+	}
+	TA_give_artillery_equipment = {
+		available = {
+			has_equipment = {
+				artillery_equipment > 49
+			}
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 1
+				has_equipment = {
+					artillery_equipment > 200
+				}
+			}
+			modifier = {
+				add = 1
+				has_equipment = {
+					artillery_equipment > 250
+				}
+			}
+			modifier = {
+				add = 1
+				has_equipment = {
+					artillery_equipment > 300
+				}
+			}
+			modifier = {
+				add = 1
+				has_equipment = {
+					artillery_equipment > 350
+				}
+			}
+			modifier = {
+				add = 1
+				has_equipment = {
+					artillery_equipment > 400
+				}
+			}
+			modifier = {
+				add = 1
+				has_equipment = {
+					artillery_equipment > 450
+				}
+			}
+			modifier = {
+				add = 10
+				has_equipment = {
+					artillery_equipment > 500
+				}
+			}
+		}
+		complete_effect = {
+			ROOT = {
+				add_equipment_to_stockpile = {
+					type = artillery_equipment
+					amount = -50
+				}
+			}
+			add_to_variable = {
+				var = global.texas_alliance_artillery_equipment
+				value = 50
+			}
+		}
+	}
+	TA_give_motorized_equipment = {
+		available = {
+			has_equipment = {
+				motorized_equipment > 99
+			}
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 1
+				has_equipment = {
+					motorized_equipment > 400
+				}
+			}
+			modifier = {
+				add = 1
+				has_equipment = {
+					motorized_equipment > 500
+				}
+			}
+			modifier = {
+				add = 1
+				has_equipment = {
+					motorized_equipment > 600
+				}
+			}
+			modifier = {
+				add = 1
+				has_equipment = {
+					motorized_equipment > 700
+				}
+			}
+			modifier = {
+				add = 1
+				has_equipment = {
+					motorized_equipment > 800
+				}
+			}
+			modifier = {
+				add = 1
+				has_equipment = {
+					motorized_equipment > 900
+				}
+			}
+			modifier = {
+				add = 10
+				has_equipment = {
+					motorized_equipment > 1000
+				}
+			}
+		}
+		complete_effect = {
+			ROOT = {
+				add_equipment_to_stockpile = {
+					type = motorized_equipment
+					amount = -500
+				}
+			}
+			add_to_variable = {
+				var = global.texas_alliance_motorized_equipment
+				value = 500
+			}
+		}
+	}
+	TA_give_support_equipment = {
+		available = {
+			has_equipment = {
+				support_equipment > 99
+			}
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 1
+				has_equipment = {
+					support_equipment > 400
+				}
+			}
+			modifier = {
+				add = 1
+				has_equipment = {
+					support_equipment > 500
+				}
+			}
+			modifier = {
+				add = 1
+				has_equipment = {
+					support_equipment > 600
+				}
+			}
+			modifier = {
+				add = 1
+				has_equipment = {
+					support_equipment > 700
+				}
+			}
+			modifier = {
+				add = 1
+				has_equipment = {
+					support_equipment > 800
+				}
+			}
+			modifier = {
+				add = 1
+				has_equipment = {
+					support_equipment > 900
+				}
+			}
+			modifier = {
+				add = 10
+				has_equipment = {
+					support_equipment > 1000
+				}
+			}
+		}
+		complete_effect = {
+			ROOT = {
+				add_equipment_to_stockpile = {
+					type = support_equipment
+					amount = -500
+				}
+			}
+			add_to_variable = {
+				var = global.texas_alliance_support_equipment
+				value = 500
+			}
+		}
+	}
+	TA_give_manpower = {
+		available = {
+			has_manpower > 1000
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 1
+				has_manpower > 70000
+			}
+			modifier = {
+				add = 1
+				has_manpower > 80000
+			}
+			modifier = {
+				add = 1
+				has_manpower > 90000
+			}
+			modifier = {
+				add = 1
+				has_manpower > 100000
+			}
+			modifier = {
+				add = 1
+				has_manpower > 110000
+			}
+			modifier = {
+				add = 1
+				has_manpower > 120000
+			}
+			modifier = {
+				add = 10	
+				has_manpower > 130000
+			}
+		}
+		complete_effect = {
+			ROOT = {
+				add_manpower = -1000
+			}
+			add_to_variable = {
+				var = global.texas_alliance_manpower
+				value = 1000
+			}
+		}
+	}
+	TA_take_army_xp = {
+		available = {
+			check_variable = {
+				global.texas_alliance_army_experience > 150
+			}	
+		}
+		ai_will_do = {
+			base = 0
+		}
+		complete_effect = {
+			ROOT = {
+				army_experience = 150
+			}
+			add_to_variable = {
+				var = global.texas_alliance_army_experience
+				value = -150
+			}
+		}
+	}
+	TA_take_air_xp = {
+		available = {
+			check_variable = {
+				global.texas_alliance_air_experience > 150
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+		complete_effect = {
+			ROOT = {
+				air_experience = 150
+			}
+			add_to_variable = {
+				var = global.texas_alliance_air_experience
+				value = -150
+			}
+		}
+	}
+	TA_take_infantry_equipment = {
+		available = {
+			check_variable = {
+				global.texas_alliance_infantry_equipment > 499
+			}
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 1
+				has_equipment = {
+					infantry_equipment < 200
+				}
+			}
+			modifier = {
+				add = 1
+				has_equipment = {
+					infantry_equipment < 150
+				}
+			}
+			modifier = {
+				add = 1
+				has_equipment = {
+					infantry_equipment < 100
+				}
+			}
+			modifier = {
+				add = 1
+				has_equipment = {
+					infantry_equipment < 50
+				}
+			}
+			modifier = {
+				add = 100
+				has_equipment = {
+					infantry_equipment < 0
+				}
+			}
+		}
+		complete_effect = {
+			ROOT = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 500
+				}
+			}
+			add_to_variable = {
+				var = global.texas_alliance_infantry_equipment
+				value = -500
+			}
+		}
+	}
+	TA_take_artillery_equipment = {
+		available = {
+			check_variable = {
+				global.texas_alliance_artillery_equipment > 49
+			}
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 1
+				has_equipment = {
+					artillery_equipment < 50
+				}
+			}
+			modifier = {
+				add = 1
+				has_equipment = {
+					artillery_equipment < 40
+				}
+			}
+			modifier = {
+				add = 1
+				has_equipment = {
+					artillery_equipment < 30
+				}
+			}
+			modifier = {
+				add = 1
+				has_equipment = {
+					artillery_equipment < 20
+				}
+			}
+			modifier = {
+				add = 1
+				has_equipment = {
+					artillery_equipment < 10
+				}
+			}
+			modifier = {
+				add = 100
+				has_equipment = {
+					artillery_equipment < 0
+				}
+			}
+		}
+		complete_effect = {
+			ROOT = {
+				add_equipment_to_stockpile = {
+					type = artillery_equipment
+					amount = 50
+				}
+			}
+			add_to_variable = {
+				var = global.texas_alliance_artillery_equipment
+				value = -50
+			}
+		}
+	}
+	TA_take_motorized_equipment = {
+		available = {
+			check_variable = {
+				global.texas_alliance_motorized_equipment > 99
+			}
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 1
+				has_equipment = {
+					motorized_equipment < 200
+				}
+			}
+			modifier = {
+				add = 1
+				has_equipment = {
+					motorized_equipment < 150
+				}
+			}
+			modifier = {
+				add = 1
+				has_equipment = {
+					motorized_equipment < 100
+				}
+			}
+			modifier = {
+				add = 1
+				has_equipment = {
+					motorized_equipment < 50
+				}
+			}
+			modifier = {
+				add = 100
+				has_equipment = {
+					motorized_equipment < 0
+				}
+			}
+		}
+		complete_effect = {
+			ROOT = {
+				add_equipment_to_stockpile = {
+					type = motorized_equipment
+					amount = 500
+				}
+			}
+			add_to_variable = {
+				var = global.texas_alliance_motorized_equipment
+				value = -500
+			}
+		}
+	}
+	TA_take_support_equipment = {
+		available = {
+			check_variable = {
+				global.texas_alliance_support_equipment > 99
+			}
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 1
+				has_equipment = {
+					support_equipment < 50
+				}
+			}
+			modifier = {
+				add = 1
+				has_equipment = {
+					support_equipment < 40
+				}
+			}
+			modifier = {
+				add = 1
+				has_equipment = {
+					support_equipment < 30
+				}
+			}
+			modifier = {
+				add = 1
+				has_equipment = {
+					support_equipment < 20
+				}
+			}
+			modifier = {
+				add = 1
+				has_equipment = {
+					support_equipment < 10
+				}
+			}
+			modifier = {
+				add = 100
+				has_equipment = {
+					support_equipment < 0
+				}
+			}
+		}
+		complete_effect = {
+			ROOT = {
+				add_equipment_to_stockpile = {
+					type = support_equipment
+					amount = 500
+				}
+			}
+			add_to_variable = {
+				var = global.texas_alliance_support_equipment
+				value = -500
+			}
+		}
+	}
+	TA_take_manpower = {
+		available = {
+			check_variable = {
+				global.texas_alliance_manpower > 1000
+			}
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 1
+				has_manpower < 20000
+			}
+			modifier = {
+				add = 1
+				has_manpower < 15000
+			}
+			modifier = {
+				add = 1
+				has_manpower < 10000
+			}
+			modifier = {
+				add = 1
+				has_manpower < 5000
+			}
+			modifier = {
+				add = 100
+				has_manpower < 0
+			}
+		}
+		complete_effect = {
+			ROOT = {
+				add_manpower = 10000
+			}
+			add_to_variable = {
+				var = global.texas_alliance_manpower
+				value = 10000
+			}
+		}
+	}
+}

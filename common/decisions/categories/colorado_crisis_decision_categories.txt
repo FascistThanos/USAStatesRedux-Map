@@ -1,0 +1,31 @@
+colorado_crisis_decision_category = {
+	icon = generic_crisis
+	priority = 100
+	visible_when_empty = yes
+	visible = {
+		has_global_flag = colorado_crisis_active
+		OR = {
+			has_country_flag = interested_in_colorado_crisis
+			has_country_flag = colorado_crisis_observer
+			has_country_flag = cocrisis_loyal_colorado
+			has_country_flag = cocrisis_loyal_texas
+			has_global_flag = great_rockies_war
+		}
+	}
+}
+colorado_alliance_decision_category = {
+	icon = decision_category_military_operation
+	priority = 99
+	visible = {
+		has_global_flag = great_rockies_war
+		has_country_flag = cocrisis_loyal_colorado
+	}
+}
+texas_alliance_decision_category = {
+	icon = decision_category_military_operation
+	priority = 99
+	visible = {
+		has_global_flag = great_rockies_war
+		has_country_flag = cocrisis_loyal_texas
+	}
+}

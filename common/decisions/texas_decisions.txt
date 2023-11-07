@@ -1,0 +1,363 @@
+TXT_fascist_civil_war = {
+	TXT_conscription_campaign = {
+
+	    icon = generic_prepare_civil_war
+
+	    allowed = {
+
+	    }
+
+	    cancel_if_not_visible = yes
+
+	    visible = {
+
+	    }
+
+	    available = {
+	      has_civil_war = yes
+	    }
+
+	    cost = 10
+
+	    days_re_enable = 30
+
+	    ai_will_do = {
+	      factor = 10
+	    }
+
+	    complete_effect = {
+			add_war_support = -0.02
+	    }
+  		days_remove = 10
+  		remove_effect = {
+			if = {
+	    		limit = {
+	    			has_government = fascism
+	    		}
+	    		random_owned_controlled_state = {
+					limit = {
+						ROOT = {
+							has_full_control_of_state = PREV
+						}
+					}
+					create_unit = {
+						division = "name = \"Emergency Reserve Conscript\" division_template = \"Emergency Reserve Conscript\" start_experience_factor = 0 start_equipment_factor = 0.50"
+						owner = TXT
+					}
+				}
+	    	}
+			else_if = {
+				limit = {
+					has_government = democratic
+				}
+				random_owned_controlled_state = {
+					limit = {
+						ROOT = {
+							has_full_control_of_state = PREV
+						}
+					}
+					create_unit = {
+						division = "name = \"Emergency Reserve Conscript\" division_template = \"Emergency Reserve Conscript\" start_experience_factor = 0 start_equipment_factor = 0.50"
+						owner = ROOT
+					}
+				}	
+			}
+  		}
+	}
+	TXT_mass_conscription_campaign = {
+
+	    icon = generic_prepare_civil_war
+
+	    allowed = {
+
+	    }
+
+	    cancel_if_not_visible = yes
+
+	    visible = {
+
+	    }
+
+	    available = {
+	      has_civil_war = yes
+	    }
+
+	    cost = 10
+
+	    days_re_enable = 30
+
+	    ai_will_do = {
+	      factor = 10
+	    }
+
+	    complete_effect = {
+	    	add_stability = -0.10
+			add_war_support = -0.05
+	    }
+  		days_remove = 20
+  		remove_effect = {
+			if = {
+	    		limit = {
+	    			has_government = fascism
+	    		}
+	    		random_owned_controlled_state = {
+					limit = {
+						ROOT = {
+							has_full_control_of_state = PREV
+						}
+					}
+					create_unit = {
+						division = "name = \"Emergency Reserve Conscript\" division_template = \"Emergency Reserve Conscript\" start_experience_factor = 0 start_equipment_factor = 0.50"
+						owner = TXT
+					}
+					create_unit = {
+						division = "name = \"Emergency Reserve Conscript\" division_template = \"Emergency Reserve Conscript\" start_experience_factor = 0 start_equipment_factor = 0.50"
+						owner = TXT
+					}
+					create_unit = {
+						division = "name = \"Emergency Reserve Conscript\" division_template = \"Emergency Reserve Conscript\" start_experience_factor = 0 start_equipment_factor = 0.50"
+						owner = TXT
+					}
+				}
+	    	}
+			else_if = {
+				limit = {
+					has_government = democratic
+				}
+				random_owned_controlled_state = {
+					limit = {
+						ROOT = {
+							has_full_control_of_state = PREV
+						}
+					}
+					create_unit = {
+						division = "name = \"Emergency Reserve Armor Brigade\" division_template = \"Emergency Reserve Conscript\" start_experience_factor = 0 start_equipment_factor = 0.30"
+						owner = ROOT
+					}
+					create_unit = {
+						division = "name = \"Emergency Reserve Armor Brigade\" division_template = \"Emergency Reserve Conscript\" start_experience_factor = 0 start_equipment_factor = 0.30"
+						owner = ROOT
+					}
+					create_unit = {
+						division = "name = \"Emergency Reserve Armor Brigade\" division_template = \"Emergency Reserve Conscript\" start_experience_factor = 0 start_equipment_factor = 0.30"
+						owner = ROOT
+					}
+				}
+			}
+			add_stability = 0.05
+  		}
+	}
+	TXT_emergency_armor_divisions = {
+
+	    icon = generic_industry
+
+	    allowed = {
+
+	    }
+
+	    cancel_if_not_visible = yes
+
+	    visible = {
+
+	    }
+
+	    available = {
+	      has_civil_war = yes
+	    }
+
+	    cost = 10
+
+	    fire_only_once = yes
+
+	    ai_will_do = {
+	      factor = 10
+	    }
+
+	    complete_effect = {
+	    	add_stability = -0.15
+			add_war_support = -0.05
+	    }
+  		days_remove = 30
+  		remove_effect = {
+			if = {
+	    		limit = {
+	    			has_government = fascism
+	    		}
+				random_owned_controlled_state = {
+					limit = {
+						ROOT = {
+							has_full_control_of_state = PREV
+						}
+					}
+					create_unit = {
+						division = "name = \"Emergency Reserve Armor Brigade\" division_template = \"Emergency Armor Brigade\" start_experience_factor = 0 start_equipment_factor = 0.30"
+						owner = TXT
+					}
+				}
+	    	}
+			else_if = {
+				limit = {
+					has_government = democratic
+				}
+				random_owned_controlled_state = {
+					limit = {
+						ROOT = {
+							has_full_control_of_state = PREV
+						}
+					}
+					create_unit = {
+						division = "name = \"Emergency Reserve Armor Brigade\" division_template = \"Emergency Armor Brigade\" start_experience_factor = 0 start_equipment_factor = 0.30"
+						owner = ROOT
+					}
+				}
+			}
+			add_stability = 0.05
+  		}
+	}
+	TXT_confiscate_guns = {
+
+		icon = generic_prepare_civil_war
+
+		available = {
+			has_civil_war = yes
+		}
+
+		cost = 15
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		days_re_enable = 20
+
+		complete_effect = {
+			add_stability = -0.02
+			add_war_support = -0.03
+		}
+		days_remove = 10
+		remove_effect = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 500
+				producer = ROOT
+			}
+		}
+	}
+	TXT_emergency_faction_conversion = {
+
+		icon = generic_industry
+
+		available = {
+			has_civil_war = yes
+			num_of_civilian_factories > 5
+		}
+
+		cost = 30
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		days_re_enable = 30
+
+		complete_effect = {
+			add_stability = -0.05
+			add_war_support = -0.10
+		}
+		days_remove = 30
+		remove_effect = {
+			random_owned_controlled_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+					industrial_complex > 0
+				}
+				remove_building = {
+					type = industrial_complex
+					level = 1
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+					industrial_complex > 0
+				}
+				remove_building = {
+					type = industrial_complex
+					level = 1
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	TXT_recruitment_campaign = {
+
+		icon = generic_civil_support
+
+		available = {
+			has_civil_war = yes
+		}
+
+		cost = 15
+
+		days_re_enable = 30
+
+		complete_effect = {
+			add_manpower = 5000
+			add_war_support = -0.05
+		}
+	}
+	TXT_reignite_war_effort = {
+
+		icon = generic_civil_support
+
+		available = {
+			has_civil_war = yes
+			has_war_support < 1 
+		}
+
+		cost = 20
+
+		days_re_enable = 15
+
+		complete_effect = {
+			add_war_support = 0.05
+		}
+	}
+	TXT_desperate_defense = {
+
+		icon = generic_civil_support
+
+		visible = {
+			surrender_progress > 0.25
+		}
+
+		available = {
+			has_civil_war = yes
+			surrender_progress > 0.50
+		}
+
+		cost = 0
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 100
+		}
+		
+		complete_effect = {
+			add_timed_idea = {
+				idea = TXT_idea_democratic_struggle
+				days = 180
+			}
+		}
+	}
+}

@@ -1,0 +1,13 @@
+TXT_fascist_civil_war = {
+
+	icon = generic_crisis
+
+	priority = 10
+
+	allowed = {
+
+	}
+	visible = {
+		has_country_flag = TXT_fascistcivwar
+	}
+}

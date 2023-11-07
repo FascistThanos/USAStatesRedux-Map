@@ -1621,13 +1621,3 @@ controls_panama_trigger = {
 	controls_state = 1300
 	controls_state = 1301
 }
-#Take Puppets Land
-take_cores_from_puppets = {
-	every_state = {
-		limit = {
-			is_controls_of = ROOT
-			controls_or_subject_of = yes
-		}
-		transfer_state_to = ROOT
-	}
-}

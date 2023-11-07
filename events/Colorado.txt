@@ -1,0 +1,4871 @@
+﻿###########################
+# Coloradan Events
+###########################
+
+add_namespace = colorado
+add_namespace = coc # This and below added by FascistThanos
+add_namespace = coloradonews
+add_namespace = cocrisis
+
+# Demand the Southernland
+country_event = {
+	id = colorado.1
+	title = colorado.1.t
+	desc = colorado.1.d
+	picture = GFX_report_event_generic_conference
+	
+	is_triggered_only = yes
+	
+	option = { # Accept
+		name = colorado.1.a
+		ai_chance = { factor = 50 }
+		COC = {
+			country_event = {
+				id = coc.10
+				days = 10
+				random_days = 5
+			}
+		}
+	}
+	option = { # Decline
+		name = colorado.1.b
+		ai_chance = { factor = 50 }	
+		COC = {
+			country_event = {
+				id = coc.11
+				days = 10
+				random_days = 5
+			}
+		}
+	}
+}
+country_event = { #Positive Response from Wyoming
+	id = coc.10
+	title = coc.10.t
+	desc = coc.10.d
+	picture = GFX_report_event_generic_conference
+
+	is_triggered_only = yes
+
+	option = {
+		name = coc.10.a
+		transfer_state = 604
+		transfer_state = 606
+		transfer_state = 605
+		transfer_state = 609
+		transfer_state = 610
+	}
+}
+country_event = { #Negative Response from Wyoming
+	id = coc.11
+	title = coc.11.t
+	desc = coc.11.d
+	picture = GFX_report_event_generic_conference
+
+	is_triggered_only = yes
+
+	option = { #Declare War
+		name = coc.11.a
+		declare_war_on = {
+			target = WYW
+			type = take_state_focus
+			generator = { 
+				604
+				606
+				605
+				609
+				610 
+			}
+		}
+	}
+	option = { #Give up
+		name = coc.11.b
+		add_political_power = -50
+		add_stability = -0.10
+		add_war_support = -0.15
+	}
+}
+
+# Demand the High Plains
+country_event = {
+	id = colorado.2
+	title = colorado.2.t
+	desc = colorado.2.d
+	picture = GFX_report_event_generic_conference
+	
+	is_triggered_only = yes
+	
+	option = { # Accept
+		name = colorado.2.a
+		ai_chance = { factor = 50 }
+		COC = {
+			country_event = {
+				id = coc.12
+				days = 10
+				random_days = 5
+			}
+		}
+	}
+	option = { # Decline
+		name = colorado.2.b
+		ai_chance = { factor = 50 }
+		COC = {
+			country_event = {
+				id = coc.13
+				days = 10
+				random_days = 5
+			}
+		}
+	}
+}
+country_event = { #Positive Response from Nebraska
+	id = coc.12
+	title = coc.12.t
+	desc = coc.12.d
+	picture = GFX_report_event_generic_conference
+
+	is_triggered_only = yes
+
+	option = {
+		name = coc.12.a
+		transfer_state = 527
+		transfer_state = 529
+		transfer_state = 530
+	}
+}
+country_event = { #Negative Response from Nebraska
+	id = coc.13
+	title = coc.13.t
+	desc = coc.13.d
+	picture = GFX_report_event_generic_conference
+
+	is_triggered_only = yes
+
+	option = { #Declare War
+		name = coc.13.a
+		declare_war_on = {
+			type = take_state_focus
+			target = NEN
+			generator = { 
+				527
+				529
+				530
+			}
+		}
+	}
+	option = { #Back Down
+		name = coc.13.b
+		add_political_power = -50
+		add_stability = -0.10
+		add_war_support = -0.15
+	}
+}
+
+# West or War
+country_event = {
+	id = colorado.3
+	title = colorado.3.t
+	desc = colorado.3.d
+	picture = GFX_report_event_generic_conference
+	
+	is_triggered_only = yes
+	
+	option = { # Accept
+		name = colorado.3.a
+		ai_chance = { factor = 15 }
+		COC = {
+			country_event = {
+				id = coc.14
+				days = 5
+				random_days = 10
+			}
+		}
+	}
+	option = { # Decline
+		name = colorado.3.b
+		ai_chance = { factor = 85 }	
+		COC = {
+			country_event = {
+				id = coc.15
+				days = 5
+				random_days = 10
+			}
+		}
+	}
+}
+country_event = { #Positive Response from Kansas
+	id = coc.14
+	title = coc.14.t
+	desc = coc.14.d
+	picture = GFX_report_event_generic_conference
+
+	is_triggered_only = yes
+
+	option = {
+		name = coc.14.a
+		transfer_state = 547
+		transfer_state = 542
+		transfer_state = 543
+	}
+}
+country_event = { #Negative Response from Kansas
+	id = coc.15
+	title = coc.15.t
+	desc = coc.15.d
+	picture = GFX_report_event_generic_conference
+
+	is_triggered_only = yes
+
+	option = { #Test Border
+		name = coc.15.a
+		start_border_war = {
+			change_state_after_war = no
+			attacker = {
+				state = 55
+				num_provinces = 4
+				on_win = coc.16
+				on_lose = coc.17
+			}
+			defender = {
+				state = 547
+				num_provinces = 4
+				on_win = coc.18
+				on_lose = coc.19
+			}
+		}
+	}
+	option = { #Give Up
+		name = coc.15.b
+		add_political_power = -50
+		add_stability = -0.10
+		add_war_support = -0.15
+	}
+}
+country_event = { #Colorado Wins Against Kansas
+	id = coc.16
+	title = coc.16.t
+	desc = coc.16.d
+	picture = GFX_report_event_soldiers_marching
+
+	is_triggered_only = yes
+
+	option = {
+		name = coc.16.a
+		army_experience = 20
+		add_war_support = 0.10
+	}
+}
+country_event = { #Colorado Loses Against Kansas
+	id = coc.17
+	title = coc.17.t
+	desc = coc.17.d
+	picture = GFX_report_event_soldiers_marching
+
+	is_triggered_only = yes
+
+	option = { #Give Up
+		name = coc.17.a
+		army_experience = 10
+		add_war_support = -0.05
+	}
+	option = { #Declare War anyway
+		name = coc.17.b
+		declare_war_on = {
+			type = take_state_focus
+			target = KSK
+			generator = { 547 543 542 }
+		}
+		army_experience = 10
+		add_war_support = -0.20
+	}
+}
+country_event = { #Kansas Wins Against Colorado
+	id = coc.18
+	title = coc.18.t
+	desc = coc.18.d
+	picture = GFX_report_event_soldiers_marching
+
+	is_triggered_only = yes
+
+	option = {
+		name = coc.18.a
+		army_experience = 20
+		add_war_support = 0.15
+		add_stability = 0.05
+	}
+}
+country_event = { #Kansas Loses Against Colorado
+	id = coc.19
+	title = coc.19.t
+	desc = coc.19.d
+	picture = GFX_report_event_soldiers_marching
+
+	is_triggered_only = yes
+
+	option = { #Surrender the Land
+		name = coc.19.a
+		army_experience = 20
+		add_war_support = -0.20
+		add_stability = -0.15
+		COC = {
+			country_event = {
+				id = coc.20
+				days = 5
+				random_days = 10
+			}
+		}
+	}
+	option = { #Continue to Stand
+		name = coc.19.b
+		army_experience = 10
+		add_war_support = -0.05
+		COC = {
+			country_event = {
+				id = coc.21
+				days = 5
+				random_days = 10
+			}
+		}
+	}
+}
+country_event = {
+	id = coc.20
+	title = coc.20.t
+	desc = coc.20.d
+	picture = GFX_report_event_generic_conference
+
+	is_triggered_only = yes
+
+	option = {
+		name = coc.20.a
+		transfer_state = 547
+		transfer_state = 543
+		transfer_state = 542
+	}
+}
+country_event = {
+	id = coc.21
+	title = coc.21.t
+	desc = coc.21.d
+	picture = GFX_report_event_canadian_artillery
+
+	is_triggered_only = yes
+
+	option = { #Declare War on KS
+		name = coc.21.a
+		add_political_power = -20
+		declare_war_on = {
+			type = take_state_focus
+			target = KSK
+			generator = { 547 543 542 }
+		}
+	}
+	option = { #Back Down
+		name = coc.21.b
+		add_stability = -0.15
+		add_war_support = -0.30
+		add_political_power = -100
+	}
+}
+
+# Demand the North
+country_event = {
+	id = colorado.4
+	title = colorado.4.t
+	desc = colorado.4.d
+	picture = GFX_report_event_generic_conference
+	
+	is_triggered_only = yes
+	
+	option = { # Accept
+		name = colorado.4.a
+		ai_chance = { factor = 15 }
+		COC = {
+			country_event = {
+				id = colorado.6
+				days = 5
+				random_days = 10
+			}
+		}
+	}
+	option = { # Decline
+		name = colorado.4.b
+		ai_chance = { factor = 85 }
+		COC = {
+			country_event = {
+				id = colorado.7
+				days = 10
+				random_days = 5
+			}
+		}
+	}
+}
+#NM Positive Response by FascistThanos
+country_event = {
+	id = colorado.6
+	title = colorado.6.t
+	desc = colorado.6.d
+	picture = GFX_report_event_generic_conference
+	is_triggered_only = yes
+
+	option = {
+		name = colorado.6.a
+		COC = {
+			transfer_state = 638
+			transfer_state = 639
+			transfer_state = 640
+			transfer_state = 646
+			transfer_state = 650
+			transfer_state = 647
+			transfer_state = 641
+			transfer_state = 642
+			transfer_state = 651
+			transfer_state = 652
+			transfer_state = 648
+			transfer_state = 649
+		}
+	}
+}
+#NM Negative Response by FascistThanos
+country_event = {
+	id = colorado.7
+	title = colorado.7.t
+	desc = colorado.7.d
+	picture = GFX_report_event_generic_conference
+	is_triggered_only = yes
+
+	option = {
+		name = colorado.7.a
+		COC = {
+			create_wargoal = {
+				target = NMN
+				type = take_claimed_state
+				generator = { 
+					638
+					639
+					640
+					646
+					650
+					647
+					641
+					642
+					651
+					652
+					648
+					649 
+				}
+			}
+		}
+		hidden_effect = {
+			638 = {
+				add_claim_by = COC
+			}
+			639 = {
+				add_claim_by = COC
+			}
+			640 = {
+				add_claim_by = COC
+			}
+			646 = {
+				add_claim_by = COC
+			}
+			650 = {
+				add_claim_by = COC
+			}
+			647 = {
+				add_claim_by = COC
+			}
+			641 = {
+				add_claim_by = COC
+			}
+			642 = {
+				add_claim_by = COC
+			}
+			651 = {
+				add_claim_by = COC
+			}
+			652 = {
+				add_claim_by = COC
+			}
+			648 = {
+				add_claim_by = COC
+			}
+			649 = {
+				add_claim_by = COC
+			}
+		}
+	}
+}
+# Demand the Summit
+country_event = {
+	id = colorado.5
+	title = colorado.5.t
+	desc = colorado.5.d
+	picture = GFX_report_event_generic_conference
+	is_triggered_only = yes
+	
+	option = { # Accept
+		name = colorado.5.a
+		ai_chance = { factor = 10 }
+		COC = {
+			country_event = {
+				id = colorado.8
+				days = 10
+				random_days = 5
+			}
+		}
+	}
+	option = { # Decline
+		name = colorado.5.b
+		ai_chance = { factor = 90 }
+		
+		COC = {
+			country_event = {
+				id = colorado.9
+				days = 10
+				random_days = 5
+			}
+		}
+	}
+}
+#Positive Response
+country_event = {
+	id = colorado.8
+	title = colorado.8.t
+	desc = colorado.8.d
+	picture = GFX_report_event_generic_conference
+	is_triggered_only = yes
+
+	option = {
+		name = colorado.8.a
+		COC = {
+			transfer_state = 680
+			transfer_state = 679
+			transfer_state = 678
+			transfer_state = 59
+			transfer_state = 674
+			transfer_state = 672
+		}
+	}
+}
+#UT Negative Response
+country_event = {
+	id = colorado.9
+	title = colorado.9.t
+	desc = colorado.9.d
+	picture = GFX_report_event_generic_conference
+	is_triggered_only = yes
+
+	option = {
+		name = colorado.9.a
+		COC = {
+			create_wargoal = {
+				type = take_state_focus
+				target = UTU
+				generator = { 
+					680
+					679
+					678
+					59
+					674
+					672
+				}
+			}
+			hidden_effect = {
+				680 = {
+					add_claim_by = COC
+				}
+				679 = {
+					add_claim_by = COC
+				}
+				678 = {
+					add_claim_by = COC
+				}
+				59 = {
+					add_claim_by = COC
+				}
+				674 = {
+					add_claim_by = COC
+				}
+				672 = {
+					add_claim_by = COC
+				}
+			}
+		}
+	}
+}
+
+#Added by FT
+country_event = { #Invest in Telluride
+	id = coc.1
+	title = coc.1.t
+	desc = coc.1.d
+	picture = GFX_report_event_generic_conference
+
+	is_triggered_only = yes
+
+	option = { #Invest in Telluride
+		name = coc.1.a
+		add_ideas = COC_investing_telluride
+		hidden_effect = {
+			country_event = {
+				id = coc.2
+				days = 100
+				random_days = 50
+			}
+		}
+	}
+	option = { #Redirect the Investment
+		name = coc.1.b
+		add_political_power = -20
+		add_timed_idea = {
+			idea = COC_telluride_investment_redirected
+			days = 200
+		}
+	}
+}
+country_event = { #Telluride is reopened
+	id = coc.2
+	title = coc.2.t
+	desc = coc.2.d
+	picture = GFX_report_event_generic_conference
+
+	is_triggered_only = yes
+
+	option = {
+		name = coc.2.a
+		add_victory_points = {
+			province = 4044
+			value = 5
+		}
+		623 = {
+			add_resource = {
+				type = steel
+				amount = 15
+			}
+		}
+		swap_ideas = {
+			remove_idea = COC_investing_telluride
+			add_idea = COC_telluride_complete_idea
+		}
+	}
+}
+#Denver International Airport Events
+country_event = { #Airport's Planning
+	id = coc.3
+	title = coc.3.t
+	desc = coc.3.d
+
+	trigger = {
+		tag = COC
+		has_idea = COC_building_dia
+	}
+	fire_only_once = yes
+
+	option = { #Civilian Use Planning
+		name = coc.3.a
+		country_event = coc.4
+	}
+	option = { #Military Use Planning
+		name = coc.3.b
+		country_event = coc.5
+	}
+}
+country_event = { #Civilian Airport Planning
+	id = coc.4
+	title = coc.4.t
+	desc = coc.4.d
+	
+	is_triggered_only = yes
+
+	option = { #Used to facilitate trade
+		name = coc.4.a
+		add_political_power = -25
+		if = {
+			limit = {
+				NOT = {
+						has_country_flag = DIA_rigorous_training_focus
+						has_country_flag = DIA_deployment_efficiency_focus
+						has_country_flag = DIA_military_both
+				}
+			}
+			country_event = coc.5
+		}
+		hidden_effect = {
+			set_country_flag = DIA_trade_focus	
+		}
+	}
+	option = { #Used to bring in tourists and migrants
+		name = coc.4.b
+		add_political_power = -25
+		if = {
+			limit = {
+				NOT = {
+						has_country_flag = DIA_rigorous_training_focus
+						has_country_flag = DIA_deployment_efficiency_focus
+						has_country_flag = DIA_military_both
+				}
+			}
+			country_event = coc.5
+		}
+		hidden_effect = {
+			set_country_flag = DIA_migrants_focus	
+		}
+	}
+	option = { #Used for both
+		name = coc.4.c
+		add_political_power = -50
+		if = {
+			limit = {
+				NOT = {
+
+						has_country_flag = DIA_rigorous_training_focus
+						has_country_flag = DIA_deployment_efficiency_focus
+						has_country_flag = DIA_military_both
+
+				}
+			}
+			country_event = coc.5
+		}
+		if = {
+			limit = {
+				has_idea = COC_building_dia
+			}
+			swap_ideas = {
+				remove_idea = COC_building_dia
+				add_idea = COC_dia_over_budget
+			}
+		}
+		else_if = {
+			limit = { 
+				has_idea = COC_dia_over_budget 
+			}
+			swap_ideas = {
+				remove_idea = COC_dia_over_budget
+				add_idea = COC_dia_massively_over_budget
+			}
+			random_list = {
+				25 = {
+
+				}
+				75 = {
+					country_event = {
+						id = coc.7
+						days = 248
+						random_days = 300
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			set_country_flag = DIA_civilian_both	
+		}
+	}
+}
+country_event = { #Military Airport Planning
+	id = coc.5
+	title = coc.5.t
+	desc = coc.5.d
+
+	is_triggered_only = yes
+
+	option = { #Used for Rigorous Training
+		name = coc.5.a
+		add_political_power = -25
+		if = {
+			limit = {
+				NOT = {
+					has_country_flag = DIA_migrants_focus
+					has_country_flag = DIA_trade_focus
+					has_country_flag = DIA_civilian_both
+				}
+			}
+			country_event = coc.4
+		}
+		hidden_effect = {
+			set_country_flag = DIA_rigorous_training_focus
+		}
+	}
+	option = { #Used to Deploy mass amounts of planes
+		name = coc.5.b
+		add_political_power = -25
+		if = {
+			limit = {
+				NOT = {
+					has_country_flag = DIA_migrants_focus
+					has_country_flag = DIA_trade_focus
+					has_country_flag = DIA_civilian_both
+				}
+			}
+			country_event = coc.4
+		}
+		hidden_effect = {
+			set_country_flag = DIA_deployment_efficiency_focus
+		}
+	}
+	option = { #Both
+		name = coc.5.c
+		add_political_power = -50
+		if = {
+			limit = {
+				NOT = {
+					has_country_flag = DIA_migrants_focus
+					has_country_flag = DIA_trade_focus
+					has_country_flag = DIA_civilian_both
+				}
+			}
+			country_event = coc.4
+		}
+		if = {
+			limit = {
+				has_idea = COC_building_dia
+			}
+			swap_ideas = {
+				remove_idea = COC_building_dia
+				add_idea = COC_dia_over_budget
+			}
+			random_list = {
+				50 = {
+
+				}
+				50 = {
+					country_event = {
+						id = coc.6
+						days = 100
+						random_days = 148
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = { 
+				has_idea = COC_dia_over_budget 
+			}
+			swap_ideas = {
+				remove_idea = COC_dia_over_budget
+				add_idea = COC_dia_massively_over_budget
+			}
+			random_list = {
+				25 = {
+
+				}
+				75 = {
+					country_event = {
+						id = coc.7
+						days = 248
+						random_days = 300
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			set_country_flag = DIA_military_both
+		}
+	}
+}
+country_event = { #Delay No. 1 for DIA
+	id = coc.6
+	title = coc.6.t
+	desc = coc.6.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = coc.6.a
+		hidden_effect = {
+			set_country_flag = DIA_delay_one
+		}
+	}
+}
+country_event = { #Delay No. 2 for DIA
+	id = coc.7
+	title = coc.7.t
+	desc = coc.7.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = coc.7.a
+		hidden_effect = {
+			set_country_flag = DIA_delay_two
+		}
+	}
+}
+country_event = { #DIA is completed
+	id = coc.8
+	title = coc.8.t
+	desc = coc.8.d
+	fire_only_once = yes
+	trigger = {
+		OR = {
+			has_idea = COC_building_dia
+			has_idea = COC_dia_over_budget
+			has_idea = COC_dia_massively_over_budget
+		}
+	}
+	mean_time_to_happen = {
+		days = 548
+		modifier = {
+			factor = 1.3
+			has_country_flag = DIA_delay_one
+		}
+		modifier = {
+			factor = 1.5
+			has_country_flag = DIA_delay_two
+		}
+	}
+
+	option = {
+		name = coc.8.a
+		634 = {
+			add_building_construction = {
+				type = air_base
+				level = 10
+				instant_build = yes
+			}
+		}
+		add_ideas = COC_denver_international_airport
+		if = {
+			limit = {
+				has_country_flag = DIA_trade_focus
+			}
+			add_ideas = COC_dia_trade
+		}
+		if = {
+			limit = { 
+				has_country_flag = DIA_migrants_focus 
+			}
+			add_ideas = COC_dia_migrants
+		}
+		if = {
+			limit = {
+				has_country_flag = DIA_civilian_both
+			}
+			add_ideas = COC_dia_trade
+			add_ideas = COC_dia_migrants
+		}
+		if = {
+			limit = { 
+				has_country_flag = DIA_rigorous_training_focus
+			}
+			add_ideas = COC_dia_training
+		}
+		if = {
+			limit = { 
+				has_country_flag = DIA_deployment_efficiency_focus
+			}
+			add_ideas = COC_dia_deployment
+		}
+		if = {
+			limit = { 
+				has_country_flag = DIA_military_both
+			}
+			add_ideas = COC_dia_training
+			add_ideas = COC_dia_deployment
+		}
+		hidden_effect = {
+			set_global_flag = COC_DIA_completed
+		}
+	}
+}
+country_event = { #Control of Denver International Airport & Idea
+	id = coc.9
+	title = coc.9.t
+	desc = coc.9.d
+	trigger = {
+		NOT = {
+			has_idea = COC_denver_international_airport
+		}
+		controls_state = 634
+		has_global_flag = COC_DIA_completed
+		634 = {
+			owner = {
+				has_war = yes
+			}
+		}
+		
+	}
+	immediate = {
+		add_ideas = COC_denver_international_airport
+		if = {
+			limit = {
+				has_country_flag = DIA_trade_focus
+			}
+			add_ideas = COC_dia_trade
+		}
+		else_if = {
+			limit = { 
+				has_country_flag = DIA_migrants_focus 
+			}
+			add_ideas = COC_dia_migrants
+		}
+		else_if = {
+			limit = {
+				has_country_flag = DIA_civilian_both
+			}
+			add_ideas = COC_dia_trade
+			add_ideas = COC_dia_migrants
+		}
+		else_if = {
+			limit = { 
+				has_country_flag = DIA_rigorous_training_focus
+			}
+			add_ideas = COC_dia_training
+		}
+		else_if = {
+			limit = { 
+				has_country_flag = DIA_deployment_efficiency_focus
+			}
+			add_ideas = COC_dia_deployment
+		}
+		else_if = {
+			limit = { 
+				has_country_flag = DIA_military_both
+			}
+			add_ideas = COC_dia_training
+			add_ideas = COC_dia_deployment
+		}
+	}
+	mean_time_to_happen = {
+		days = 2
+	}
+	option = {
+		name = coc.9.a
+	}
+}
+country_event = { #Memory of Columbine Mine
+	id = coc.22
+	title = coc.22.t
+	desc = coc.22.d
+	fire_only_once = yes
+	picture = GFX_report_event_generic_funeral
+	trigger = {
+		date > 1936.11.10
+		tag = COC
+	}
+	option = { #Supress demonstrations
+		name = coc.22.a
+		custom_effect_tooltip = COC_crack_down_columbine_mine_tt
+		ai_chance = {
+			base = 1
+			modifier = {
+				has_game_rule = {
+					rule = COC_game_path_ai
+					option = COCCOMMUNIST
+				}
+				factor = 4000
+			}
+		}
+		add_stability = -0.05
+		add_political_power = -20
+		hidden_effect = {
+			set_country_flag = COC_cracked_down_country_flag
+		}
+	}
+	option = { #Allow and remember
+		name = coc.22.b
+		ai_chance = {
+			base = 1
+		}
+		add_stability = 0.05
+	}
+}
+country_event = { #The Underground Unions
+	id = coc.23
+	title = coc.23.t
+	desc = coc.23.d
+	is_triggered_only = yes
+	picture = GFX_report_event_generic_factory
+
+	option = { #Destroy Unions
+		name = coc.23.a
+		add_timed_idea = {
+			idea = COC_busting_unions
+			days = 365
+		}
+		hidden_effect = {
+			country_event = {
+				id = coc.24
+				days = 50
+				random_days = 10
+			}
+		}
+	}
+	option = { #Legalize Unions
+		name = coc.23.b
+		add_ideas = COC_legalized_unions
+	}
+}
+country_event = { #Hidden union sabotage dispatch event
+	id = coc.24
+	hidden = yes
+	is_triggered_only = yes
+	immediate = {
+		random_list = { #Military Factory
+			34 ={
+				modifier = {
+					NOT = {
+						any_owned_state = {
+							is_core_of = ROOT
+							is_controlled_by = ROOT
+							arms_factory > 0
+						}
+					}
+					factor = 0
+				}
+				modifier = {
+					NOT = {
+						has_idea = COC_busting_unions
+					}
+					factor = 0
+				}
+				random_owned_controlled_state = {
+					limit = {
+						is_core_of = ROOT
+						industrial_complex > 0
+					}
+					save_global_event_target_as = COC_union_sabotage_state
+					state_event = { id = coc.25 trigger_for = controller }
+				}
+			}
+			33 = { #Civilian Factory
+				modifier = {
+					NOT = {
+						any_owned_state = {
+							is_core_of = ROOT
+							is_controlled_by = ROOT
+							industrial_complex > 0
+						}
+					}
+					factor = 0
+				}
+				modifier = {
+					NOT = {
+						has_idea = COC_busting_unions
+					}
+					factor = 0
+				}
+				random_owned_controlled_state = {
+					limit = {
+						is_core_of = ROOT
+						industrial_complex > 0
+					}
+					save_global_event_target_as = COC_union_sabotage_state
+					state_event = { id = coc.26 trigger_for = controller }
+				}
+			}
+			33 = { #Infrastructure
+				modifier = {
+					NOT = {
+						any_owned_state = {
+							is_core_of = ROOT
+							is_controlled_by = ROOT
+							infrastructure > 0
+						}
+					}
+					factor = 0
+				}
+				modifier = {
+					NOT = {
+						has_idea = COC_busting_unions
+					}
+					factor = 0
+				}
+				random_owned_controlled_state = {
+					limit = {
+						is_core_of = ROOT
+						infrastructure > 0
+					}
+					save_global_event_target_as = COC_union_sabotage_state
+					state_event = { id = coc.27 trigger_for = controller }
+				}
+			}
+			
+		}
+	}
+}
+country_event = { #Sabotage Military Factory
+	id = coc.25
+	title = coc.25.t
+	desc = coc.25.d
+	picture = GFX_report_event_generic_riot
+	is_triggered_only = yes
+	immediate = {
+		event_target:COC_union_sabotage_state = {
+			damage_building = {
+				type = arms_factory
+				damage = 0.5
+			}
+		}
+	}
+	option = {
+		name = coc.25.a
+		clear_global_event_target = COC_union_sabotage_state
+		hidden_effect = {
+			country_event = {
+				id = coc.28
+				days = 40
+				random_days = 10
+			}
+		}
+	}
+}
+country_event = { #Sabotage Civilian Factory
+	id = coc.26
+	title = coc.26.t
+	desc = coc.26.d
+	picture = GFX_report_event_generic_riot
+	is_triggered_only = yes
+	immediate = {
+		event_target:COC_union_sabotage_state = {
+			damage_building = {
+				type = industrial_complex
+				damage = 0.5
+			}
+		}
+	}
+	option = {
+		name = coc.26.a
+		clear_global_event_target = COC_union_sabotage_state
+		hidden_effect = {
+			country_event = {
+				id = coc.28
+				days = 40
+				random_days = 10
+			}
+		}
+	}
+}
+country_event = { #Sabotage Infrastructure
+	id = coc.27
+	title = coc.27.t
+	desc = coc.27.d
+	picture = GFX_report_event_generic_riot
+	is_triggered_only = yes
+	immediate = {
+		event_target:COC_union_sabotage_state = {
+			damage_building = {
+				type = infrastructure
+				damage = 0.5
+			}
+		}
+	}
+	option = {
+		name = coc.27.a
+		clear_global_event_target = COC_union_sabotage_state
+		hidden_effect = {
+			country_event = {
+				id = coc.28
+				days = 40
+				random_days = 10
+			}
+		}
+	}
+}
+country_event = { #Hidden clear union sabotage flag
+	id = coc.28
+	hidden = yes
+	is_triggered_only = yes
+	immediate = {
+		country_event = {
+			id = coc.24
+			days = 50
+			random_days = 10
+		}	
+	}
+}
+country_event = { #Communist Riots
+	id = coc.29
+	title = coc.29.t
+	desc = coc.29.d
+	picture = GFX_report_event_generic_riot
+	is_triggered_only = yes
+	option = {
+		name = coc.29.a
+		add_stability = -0.30
+		hidden_effect = {
+			news_event = {
+				id = coloradonews.1
+				days = 35
+			}
+			country_event = {
+				id = coc.31
+				days = 35
+				random_days = 3
+			}
+		}
+	}
+}
+country_event = { #Hidden Civil War Event
+	id = coc.31
+	hidden = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+		hidden_effect = {
+			set_country_flag = COC_civil_war
+			start_civil_war = {
+				ideology = democratic
+				size = 0.5
+				states = { 622 621 631 630 55 637 636 635 629 632 }
+				keep_political_leader = yes
+			}
+			load_oob = "COC_communist_civilwar"
+			set_equipment_fraction = 0.5
+			set_stability = 0.67
+			set_war_support = 0.92
+			set_politics = {
+				ruling_party = communism
+				elections_allowed = no
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = 0.15
+			}
+			set_capital = {
+				state = 624
+			}
+			random_other_country = {
+				limit = {
+					original_tag = COC
+					has_government = democratic
+				}
+				load_focus_tree = {
+					tree = colorado_focus
+					keep_completed = no
+				}
+				complete_national_focus = COC_where_the_columbines_grow
+				complete_national_focus = COC_nil_sine_numine
+				load_oob = "COC_democratic_civilwar"
+				set_equipment_fraction = 0.73
+				set_stability = 0.23
+				set_war_support = 0.34
+			}
+		}
+	}
+}
+country_event = {
+	id = coc.32
+	title = coc.32.t
+	desc = coc.32.d
+	picture = GFX_report_event_generic_funeral
+	is_triggered_only = yes
+	option = {
+		name = coc.32.a
+		add_stability = -0.15
+		add_political_power = -100
+		remove_country_leader_role = {
+			character = COC_edwin_c_johnson
+			ideology = conservatism
+		}
+		add_country_leader_role = {
+			character = COC_teller_ammons
+			promote_leader = yes
+			country_leader = {
+				ideology = conservatism
+				expire = "1972.1.16"
+			}
+		}
+	}
+}
+##News Events
+news_event = { #Second March on Denver - Colorado Civil War
+	id = coloradonews.1
+	title = coloradonews.1.t
+	desc = coloradonews.1.d
+	picture = GFX_news_event_063
+	major = yes
+	is_triggered_only = yes
+	option = {
+		name = coloradonews.1.a
+		trigger = {
+			tag = COC
+		}
+	}
+	option = {
+		name = coloradonews.1.b
+		trigger = {
+			NOT = {
+				tag = COC
+			}
+		}
+	}
+}
+
+###########################
+# Coloradan Crisis Events
+###########################
+news_event = { #Global Event on the Start of the Crisis
+	id = coloradonews.2
+	title = coloradonews.2.t
+	desc = coloradonews.2.d
+	picture = GFX_news_event_003
+	major = yes
+	is_triggered_only = yes
+	immediate = {
+		set_global_flag = colorado_crisis_active
+		NMN = {
+			set_country_flag = colorado_crisis_observer
+			set_country_flag = cocrisis_neutrality_flag
+		}
+		UTU = {
+			set_country_flag = colorado_crisis_observer
+			set_country_flag = cocrisis_neutrality_flag
+		}
+		WYW = {
+			set_country_flag = colorado_crisis_observer
+			set_country_flag = cocrisis_neutrality_flag
+		}
+		KSK = {
+			set_country_flag = colorado_crisis_observer
+			set_country_flag = cocrisis_neutrality_flag
+		}
+		OKO = {
+			set_country_flag = colorado_crisis_observer
+			set_country_flag = cocrisis_neutrality_flag
+		}
+	}
+	
+	option = {
+		name = coloradonews.2.a
+		trigger = {
+			NOT = {
+				TAG = COC
+				TAG = TXT
+			}
+		}
+	}
+	option = {
+		name = coloradonews.2.b
+		trigger = {
+			tag = COC
+		}
+	}
+	option = {
+		name = coloradonews.2.c
+		trigger = {
+			tag = TXT
+		}
+	}
+}
+news_event = { #The Great Rockies War
+	id = coloradonews.3
+	title = coloradonews.3.t
+	desc = coloradonews.3.d
+	picture = GFX_news_event_001
+	major = yes
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			TXT = {
+				declare_war_on = {
+					target = COC
+					type = take_state_focus
+					generator = {
+						620 625 626 627
+					}
+				}
+				create_faction = TXT_coalition_faction
+			}
+			COC = {
+				create_faction = COC_coalition_faction
+				load_oob = COC_texcoalition
+				load_oob = COC_texcoalition
+				load_oob = COC_texcoalition
+			}
+			every_country = {
+				limit = {
+					has_country_flag = cocrisis_loyal_colorado
+				}
+				country_event = cocrisis.46
+			}
+			every_country = {
+				limit = {
+					has_country_flag = cocrisis_loyal_texas
+				}
+				country_event = cocrisis.47
+			}
+			set_global_flag = great_rockies_war
+		}
+	}
+	option = {
+		name = coloradonews.3.a
+		trigger = {
+			NOT = {
+				TAG = COC
+				TAG = TXT
+			}
+		}
+	}
+	option = {
+		name = coloradonews.3.b
+		trigger = {
+			tag = COC
+		}
+	}
+	option = {
+		name = coloradonews.3.c
+		trigger = {
+			tag = TXT
+		}
+	}
+}
+news_event = {
+	id = coloradonews.4
+	title = coloradonews.4.t
+	desc = coloradonews.4.d
+	picture = GFX_news_event_009
+	major = yes
+	is_triggered_only = yes
+	option = {
+		name = coloradonews.4.a
+	}
+}
+news_event = {
+	id = coloradonews.5
+	title = coloradonews.5.t
+	desc = coloradonews.5.d
+	picture = GFX_news_event_009
+	major = yes
+	is_triggered_only = yes
+	option = {
+		name = coloradonews.5.a
+	}
+}
+news_event = {
+	id = coloradonews.6
+	title = coloradonews.6.t
+	desc = coloradonews.6.d
+	picture = GFX_news_event_009
+	major = yes
+	is_triggered_only = yes
+	option = {
+		name = coloradonews.6.a
+	}
+}
+country_event = { #Beginning of the Colorado Crisis - Texas Event
+	id = cocrisis.1
+	title = cocrisis.1.t
+	desc = cocrisis.1.d
+	picture = GFX_report_event_canada_patriation
+	is_triggered_only = yes
+	immediate = {
+		set_country_flag = interested_in_colorado_crisis
+	}
+	option = {
+		name = cocrisis.1.a
+		news_event = coloradonews.2
+	}
+}
+country_event = { #Beginning of the Colorado Crisis - Colorado Event
+	id = cocrisis.2
+	title = cocrisis.2.t
+	desc = cocrisis.2.d
+	picture = GFX_report_event_crowd_in_prague
+	is_triggered_only = yes
+	immediate = {
+		set_country_flag = interested_in_colorado_crisis
+	}
+	option = {
+		name = cocrisis.2.a
+	}
+}
+country_event = { #Offer From Colorado - Utah Event
+	id = cocrisis.3
+	title = cocrisis.3.t
+	desc = cocrisis.3.d
+	picture = GFX_report_event_baltic_entente
+	is_triggered_only = yes
+	option = { #Remain Neutral for Payment
+		name = cocrisis.3.a
+		ai_chance = {
+			base = 1
+			modifier = {
+				add = 2
+				COC = {
+					strength_ratio = {
+						tag = TXT
+						ratio > 0.5
+					}
+				}
+			}
+			modifier = {
+				add = 1
+				has_opinion = {
+					target = COC
+					value > 50
+				}
+			}
+		}
+		COC = {
+			country_event = {
+				id = cocrisis.11
+				days = 1
+				random_days = 6
+			}
+		}
+		custom_effect_tooltip = COC_pay_utah_1_tt
+		hidden_effect = {
+			COC = {
+				set_country_flag = COC_pay_utah_1
+			}
+		}
+	}
+	option = { #Refuse Colorado's Offer
+		name = cocrisis.3.b
+		ai_chance = {
+			base = 0
+			modifier = {
+				add = 1
+				COC = {
+					strength_ratio = {
+						tag = TXT
+						ratio < 0.5
+					}
+				}
+			}
+			modifier = {
+				add = 1
+				has_opinion = {
+					target = TXT
+					value > 50
+				}
+			}
+			modifier = {
+				add = 10
+				COC = {
+					strength_ratio = {
+						tag = TXT
+						ratio < 0.1
+					}
+				}
+			}
+		}
+		TXT = {
+			country_event = {
+				id = cocrisis.4
+				days = 10
+				random_days = 5
+			}
+		}
+		COC = {
+			add_opinion_modifier = {
+				target = UTU
+				modifier = small_decrease
+			}
+		}
+		hidden_effect = {
+			COC = {
+				set_country_flag = UTU_dismissed_colorado
+			}
+		}
+	}
+}
+country_event = { #Utahan Opportunity - Texas Event
+	id = cocrisis.4
+	title = cocrisis.4.t
+	desc = cocrisis.4.d
+	picture = GFX_report_event_canada_patriation
+	is_triggered_only = yes
+	option = { #Make the Offer
+		name = cocrisis.4.a
+		UTU = {
+			country_event = {
+				id = cocrisis.7
+				days = 1
+				random_days = 6
+			}
+		}
+	}
+	option = { #Don't make the offer
+		name = cocrisis.4.b
+		custom_effect_tooltip = cocrisis_dont_offer_western_co_tt
+		hidden_effect = {
+			COC = {
+				set_country_flag = TXT_no_offer_western_CO
+			}
+		}
+	}
+}
+country_event = { #Texas offers The Great West - Utah Event
+	id = cocrisis.7
+	title = cocrisis.7.t
+	desc = cocrisis.7.d
+	picture = GFX_report_event_canada_patriation
+	is_triggered_only = yes
+	option = { #Accept the offer
+		name = cocrisis.7.a
+		ai_chance = {
+			base = 0
+			modifier = {
+				add = 1
+				has_opinion = {
+					target = TXT
+					value > 50
+				}
+			}
+			modifier = {
+				add = 1
+				has_opinion = {
+					target = COC
+					value < 0
+				}
+			}
+			modifier = {
+				add = 1
+				TXT = {
+					strength_ratio = {
+						tag = COC
+						ratio > 1
+					}
+				}
+			}
+			modifier = {
+				add = 1
+				TXT = {
+					has_government = ROOT
+				}
+			}
+		}
+		COC = {
+			country_event = {
+				id = cocrisis.5
+				days = 1
+				random_days = 6
+			}
+		}
+	}
+	option = { #We don't deal with warmongers
+		name = cocrisis.7.b
+		ai_chance = {
+			base = 0
+			modifier = {
+				add = 1
+				has_opinion = {
+					target = COC
+					value > 50
+				}
+			}
+			modifier = {
+				add = 1
+				has_opinion = {
+					target = TXT
+					value < 0
+				}
+			}
+			modifier = {
+				add = 1
+				COC = {
+					strength_ratio = {
+						tag = TXT
+						ratio > 0.5
+					}
+				}
+			}
+			modifier = {
+				add = 1
+				COC = {
+					has_government = ROOT
+				}
+			}
+		}
+		TXT = {
+			add_opinion_modifier = {
+				target = UTU
+				modifier = small_decrease
+			}
+			TXT = {
+				country_event = {
+					id = cocrisis.13
+					days = 1
+					random_days = 6
+				}
+			}
+		}
+	}
+}
+country_event = { #Utah Declines Neutrality Offer
+	id = cocrisis.5
+	title = cocrisis.5.t
+	desc = cocrisis.5.d
+	picture = GFX_report_event_generic_conference
+	is_triggered_only = yes
+	immediate = {
+		COC = {
+			set_country_flag = TXT_offered_western_CO
+			clr_country_flag = COC_pay_utah_1
+		}
+		UTU = {
+			add_to_array = {
+				global.cocrisis_texas_supporters = UTU
+			}
+			set_country_flag = cocrisis_loyal_texas
+			remove_from_array = {
+				global.cocrisis_neutral_country = UTU
+			}
+			clr_country_flag = cocrisis_neutrality_flag
+		}
+	}
+	option = { #We will not forget - Close Utah Forever
+		name = cocrisis.5.a
+		custom_effect_tooltip = cocrisis_co_hates_utah_tt
+		TXT = {
+			country_event = {
+				id = cocrisis.6
+				days = 1
+				random_days = 6
+			}
+		}
+	}
+	option = { #Throw more money - Allow Utah Bribe 2 Decision
+		name = cocrisis.5.b
+		custom_effect_tooltip = cocrisis_throw_more_money_tt
+		hidden_effect = {
+			COC = {
+				set_country_flag = COC_allow_further_payment_utah
+			}
+		}
+	}
+}
+country_event = { #Utah Secured - Texas Event
+	id = cocrisis.6
+	title = cocrisis.6.t
+	desc = cocrisis.6.d
+	picture = GFX_report_event_generic_diplomacy
+	is_triggered_only = yes
+	option = {
+		name = cocrisis.6.a
+	}
+}
+country_event = { #Colorado's Second Offer - Utah event
+	id = cocrisis.8
+	title = cocrisis.8.t
+	desc = cocrisis.8.d
+	picture = GFX_report_event_generic_diplomacy
+	is_triggered_only = yes
+	option = { #Accept the new offer, leave Texas
+		name = cocrisis.8.a
+		ai_chance = {
+			base = 0
+			modifier = {
+				add = 1
+				COC = {
+					strength_ratio = {
+						tag = TXT
+						ratio > 0.60
+					}
+				}
+			}
+			modifier = {
+				add = 1
+				has_opinion = {
+					target = COC
+					value > 50
+				}
+			}
+			modifier = {
+				add = 1
+				has_government = ROOT
+			}
+			modifier = {
+				add = 1
+				TXT = {
+					NOT = {
+						has_government = ROOT
+					}
+				}
+			}
+			modifier = {
+				add = -3
+				COC = {
+					strength_ratio = {
+						tag = TXT
+						ratio < 0.10
+					}
+				}
+			}
+		}
+		TXT = {
+			add_opinion_modifier = {
+				target = UTU
+				modifier = large_decrease
+			}
+			country_event = {
+				id = cocrisis.10
+				days = 1
+				random_days = 6
+			}
+		}
+		custom_effect_tooltip = COC_pay_utah_2_tt
+		hidden_effect = {
+			COC = {
+				clr_country_flag = COC_pay_utah_1
+				set_country_flag = COC_pay_utah_2
+			}
+			remove_from_array = {
+				global.cocrisis_texas_supporters = ROOT
+			}
+			clr_country_flag = cocrisis_loyal_texas
+			add_to_array = {
+				global.cocrisis_neutral_country = ROOT
+			}
+			set_country_flag = cocrisis_neutrality_flag
+		}
+	}
+	option = { #Stay with Texas - No more opportunity to switch
+		name = cocrisis.8.b
+		ai_chance = {
+			base = 0
+			modifier = {
+				add = 5
+				COC = {
+					strength_ratio = {
+						tag = TXT
+						ratio < 0.10
+					}
+				}
+			}
+			modifier = {
+				add = 1
+				COC = {
+					NOT = {
+						has_government = ROOT
+					}
+				}
+			}
+			modifier = {
+				add = 1
+				has_opinion = {
+					target = TXT
+					value > 60
+				}
+			}
+		}
+		custom_effect_tooltip = cocrisis_no_more_switching_tt
+		COC = {
+			add_opinion_modifier = {
+				target = UTU
+				modifier = large_decrease
+			}
+			country_event = {
+				id = cocrisis.9
+				days = 1
+				random_days = 6
+			}
+		}
+		TXT = {
+			country_event = {
+				id = cocrisis.6
+				days = 1
+				random_days = 6
+			}
+		}
+	}
+}
+country_event = { #Utah Is Lost - Colorado Event
+	id = cocrisis.9
+	title = cocrisis.9.t
+	desc = cocrisis.9.d
+	picture = GFX_report_event_bunker_01
+	is_triggered_only = yes
+	option = {
+		name = cocrisis.9.a
+	}
+}
+country_event = { #Utah's Shifting Allegience
+	id = cocrisis.10
+	title = cocrisis.10.t
+	desc = cocrisis.10.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	option = { #Offer them money + the west
+		name = cocrisis.10.a
+		ai_chance = {
+			base = 0
+			modifier = {
+				add = 1
+				num_of_available_civilian_factories > 10
+			}
+			modifier = {
+				add = 1
+				has_opinion = {
+					target = UTU
+					value > 70
+				}
+			}
+			modifier = {
+				add = 1
+				strength_ratio = {
+					tag = COC
+					ratio < 0.5
+				}
+			}
+		}
+		UTU = {
+			country_event = {
+				id = cocrisis.12
+				days = 1
+				random_days = 6
+			}
+		}
+		custom_effect_tooltip = cocrisis_texas_offer_utah_more
+	}
+	option = { #Don't offer anything
+		name = cocrisis.10.b
+		ai_chance = {
+			base = 0
+			modifier = {
+				add = 100
+				num_of_available_civilian_factories < 5
+			}
+			modifier = {
+				add = 1
+				has_opinion = {
+					target = UTU
+					value < 50
+				}
+			}
+			modifier = {
+				add = 1
+				strength_ratio = {
+					tag = COC
+					ratio > 1
+				}
+			}
+		}
+		custom_effect_tooltip = cocrisis_co_hates_utah_tt
+		custom_effect_tooltip = cocrisis_dont_offer_western_co_tt
+		hidden_effect = {
+			COC = {
+				country_event = {
+					id = cocrisis.11
+					days = 1
+					random_days = 6
+				}
+			}
+			remove_from_array = {
+				global.cocrisis_texas_supporters = UTU
+			}
+			clr_country_flag = cocrisis_loyal_texas
+			add_to_array = {
+				global.cocrisis_neutral_country = UTU
+			}
+			set_country_flag = cocrisis_neutrality_flag
+		}
+	}
+}
+country_event = { #Utah Will Not Fight - Colorado Event
+	id = cocrisis.11
+	title = cocrisis.11.t
+	desc = cocrisis.11.d
+	picture = GFX_report_event_generic_rally2
+	is_triggered_only = yes
+	option = {
+		name = cocrisis.11.a
+	}
+}
+country_event = { #Another Offer From Texas - Utah Event
+	id = cocrisis.12
+	title = cocrisis.12.t
+	desc = cocrisis.12.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	option = { #Too good to pass up
+		name = cocrisis.12.a
+		ai_chance = {
+			base = 0
+			modifier = {
+				add = 1
+				has_opinion = {
+					target = TXT
+					value > 70
+				}
+			}
+			modifier = {
+				add = 1
+				TXT = {
+					has_government = ROOT
+				}
+			}
+			modifier = {
+				add = 1
+				has_opinion = {
+					target = COC
+					value < -10
+				}
+			}
+			modifier = {
+				add = 1
+				TXT = {
+					strength_ratio = {
+						tag = COC
+						ratio > 1
+					}
+				}
+			}
+		}
+		COC = {
+			add_opinion_modifier = {
+				target = UTU
+				modifier = medium_decrease
+			}
+			country_event = {
+				id = cocrisis.14
+				days = 1
+				random_days = 6
+			}
+		}
+		
+		hidden_effect = {
+			COC = {
+				set_country_flag = TXT_pay_utah
+				clr_country_flag = COC_pay_utah_1
+				clr_country_flag = COC_pay_utah_2
+			}
+			UTU = {
+				add_to_array = {
+					global.cocrisis_texas_supporters = ROOT
+				}
+				set_country_flag = cocrisis_loyal_texas
+				remove_from_array = {
+					global.cocrisis_neutral_country = ROOT
+				}
+				clr_country_flag = cocrisis_neutrality_flag
+			}
+		}
+	}
+	option = { #We have made up our minds
+		name = cocrisis.12.b
+		ai_chance = {
+			base = 0
+			modifier = {
+				add = 1
+				has_opinion = {
+					target = COC
+					value > 70
+				}
+			}
+			modifier = {
+				add = 1
+				COC = {
+					has_government = ROOT
+				}
+			}
+			modifier = {
+				add = 1
+				has_opinion = {
+					target = TXT
+					value < -10
+				}
+			}
+			modifier = {
+				add = 1
+				COC = {
+					strength_ratio = {
+						tag = TXT
+						ratio > 0.5
+					}
+				}
+			}
+		}
+		TXT = {
+			country_event = {
+				id = cocrisis.13
+				days = 1
+				random_days = 6
+			}
+		}
+		COC = {
+			country_event = {
+				id = cocrisis.11
+				days = 1
+				random_days = 6
+			}
+		}
+	}
+}
+country_event = { #Utah Has Confirmed Neutrality - Texas Event
+	id = cocrisis.13
+	title = cocrisis.13.t
+	desc = cocrisis.13.d
+	picture = GFX_report_event_generic_diplomacy
+	is_triggered_only = yes
+	option = {
+		name = cocrisis.13.a
+	}
+}
+country_event = { #Utah shifts once more - Colorado Event
+	id = cocrisis.14
+	title = cocrisis.14.t
+	desc = cocrisis.14.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	option = { #One last offer
+		name = cocrisis.14.a
+		ai_chance = {
+			base = 0
+			modifier = {
+				add = 1
+				num_of_available_civilian_factories > 10
+			}
+			modifier = {
+				add = 1
+				has_opinion = {
+					target = UTU
+					value > 80
+				}
+			}
+			modifier = {
+				add = 5
+				strength_ratio = {
+					tag = TXT
+					ratio < 0.50
+				}
+			}
+		}
+		hidden_effect = {
+			COC = {
+				clr_country_flag = COC_pay_utah_1
+				clr_country_flag = COC_pay_utah_2
+				set_country_flag = COC_bribe_utah_last
+			}
+		}
+		custom_effect_tooltip = cocrisis_bribe_utah_last_tt
+	}
+	option = { #They aren't worth
+		name = cocrisis.14.b
+		ai_chance = {
+			base = 0
+			modifier = {
+				add = 1
+				num_of_available_civilian_factories < 10
+			}
+			modifier = {
+				add = 1
+				has_opinion = {
+					target = UTU
+					value < 60
+				}
+			}
+			modifier = {
+				add = 2
+				strength_ratio = {
+					tag = TXT
+					ratio > 0.75
+				}
+			}
+		}
+		custom_effect_tooltip = cocrisis_co_hates_utah_tt
+		TXT = {
+			country_event = {
+				id = cocrisis.6
+				days = 1
+				random_days = 6
+			}
+		}
+	}
+}
+country_event = { #Colorado's Final Offer
+	id = cocrisis.15
+	title = cocrisis.15.t
+	desc = cocrisis.15.d
+	picture = GFX_report_event_generic_diplomacy
+	is_triggered_only = yes
+	option = { #Go with Colorado
+		name = cocrisis.15.a
+		COC = {
+			country_event = {
+				id = cocrisis.11
+				days = 1
+				random_days = 6
+			}
+		}
+		TXT = {
+			country_event = {
+				id = cocrisis.13
+				days = 1
+				random_days = 6
+			}
+		}
+		hidden_effect = {
+			COC = {
+				set_country_flag = COC_bribe_utah_last
+			}
+			remove_from_array = {
+				global.cocrisis_texas_supporters = ROOT
+			}
+			clr_country_flag = cocrisis_loyal_texas
+			add_to_array = {
+				global.cocrisis_neutral_country = ROOT
+			}
+			set_country_flag = cocrisis_neutrality_flag
+		}
+	}
+	option = { #Stay with Texas
+		name = cocrisis.15.b
+		COC = {
+			country_event = {
+				id = cocrisis.9
+				days = 1
+				random_days = 6
+			}
+		}
+		TXT = {
+			country_event = {
+				id = cocrisis.6
+				days = 1
+				random_days = 6
+			}
+		}
+	}
+}
+country_event = { #Colorado's Offer - New Mexico Event
+	id = cocrisis.16
+	title = cocrisis.16.t
+	desc = cocrisis.16.d
+	picture = GFX_report_event_generic_diplomacy
+	is_triggered_only = yes
+	option = { #We will join arms with Colorado
+		name = cocrisis.16.a
+		ai_chance = {
+			base = 0
+			modifier = {
+				add = 100
+				has_global_flag = TXT_stole_east_NM
+			}
+			modifier = {
+				add = 1
+				COC = {
+					strength_ratio = {
+						tag = TXT
+						ratio > 0.6
+					}
+				}
+			}
+			modifier = {
+				add = 1
+				has_opinion = {
+					target = COC
+					value > 50
+				}
+			}
+			modifier = {
+				add = 2
+				has_opinion = {
+					target = TXT
+					value < 25
+				}
+			}
+		}
+		COC = {
+			country_event = {
+				id = cocrisis.17
+				days = 1
+				random_days = 6
+			}
+		}
+		TXT = {
+			country_event = {
+				id = cocrisis.18
+				days = 1
+				random_days = 6
+			}
+		}
+		hidden_effect = {
+			COC = {
+				set_country_flag = NMN_wants_land_back
+			}
+			add_to_array = {
+				global.cocrisis_colorado_supporters = ROOT
+			}
+			set_country_flag = cocrisis_loyal_colorado
+			remove_from_array = {
+				global.cocrisis_neutral_country = ROOT
+			}
+			clr_country_flag = cocrisis_neutrality_flag
+		}
+	}
+	option = { #We stand no chance
+		name = cocrisis.16.b
+		ai_chance = {
+			base = 1
+			modifier = {
+				add = 1
+				COC = {
+					strength_ratio = {
+						tag = TXT
+						ratio < 0.25
+					}
+				}
+			}
+			modifier = {
+				add = 1
+				strength_ratio = {
+					tag = TXT
+					ratio < 0.20
+				}
+			}
+			modifier = {
+				add = 1
+				has_opinion = {
+					target = TXT
+					value > 50
+				}
+			}
+			modifier = {
+				add = 1
+				has_opinion = {
+					target = COC
+					value < 10
+				}
+			}
+		}
+		add_war_support = -0.15
+		add_stability = -0.05
+		COC = {
+			country_event = {
+				id = cocrisis.19
+				days = 1
+				random_days = 6
+			}
+		}
+		TXT = {
+			country_event = {
+				id = cocrisis.20
+				days = 1
+				random_days = 6
+			}
+		}
+		custom_effect_tooltip = cocrisis_nm_give_up_tt
+		hidden_effect = {
+			NMN = {
+				set_country_flag = NM_left_crisis
+			}
+		}
+	}
+}
+country_event = { #New Mexico Joins Arms - Colorado Event
+	id = cocrisis.17
+	title = cocrisis.17.t
+	desc = cocrisis.17.d
+	picture = GFX_report_event_crowd_in_prague
+	is_triggered_only = yes
+	option = {
+		name = cocrisis.17.a
+	}
+}
+country_event = { #New Mexico Joins Colorado - Texas Event
+	id = cocrisis.18
+	title = cocrisis.18.t
+	desc = cocrisis.18.d
+	picture = GFX_report_event_soldiers_marching
+	is_triggered_only = yes
+	option = {
+		name = cocrisis.18.a
+	}
+}
+country_event = { #New Mexico Remains Neutral - Colorado Event
+	id = cocrisis.19
+	title = cocrisis.19.t
+	desc = cocrisis.19.d
+	picture = GFX_report_event_canada_patriation
+	is_triggered_only = yes
+	option = {
+		name = cocrisis.19.a
+		hidden_effect = {
+			NMN = {
+				remove_from_array = {
+					global.cocrisis_neutral_country = NMN
+				}
+				clr_country_flag = cocrisis_neutrality_flag
+			}
+			COC = {
+				set_country_flag = NM_collab_government
+			}
+		}
+	}
+}
+country_event = { #New Mexico Remains Neutral - Texas Event
+	id = cocrisis.20
+	title = cocrisis.20.t
+	desc = cocrisis.20.d
+	picture = GFX_report_event_generic_conference
+	is_triggered_only = yes
+	option = { #Cowards
+		name = cocrisis.20.a
+	}
+	option = { #Opportunity
+		name = cocrisis.20.b
+		ai_chance = {
+			base = 1
+		}
+		NMN = {
+			country_event = {
+				id = cocrisis.21
+				days = 1
+				random_days = 6
+			}
+		}
+		custom_effect_tooltip = TXT_offer_mountains_mesas_tt
+		hidden_effect = {
+			COC = {
+				set_country_flag = NM_texan_gift
+			}
+		}
+	}
+}
+country_event = { #Texan Gift - New Mexico Event
+	id = cocrisis.21
+	title = cocrisis.21.t
+	desc = cocrisis.21.d
+	picture = GFX_report_event_generic_diplomacy
+	is_triggered_only = yes
+	option = {
+		name = cocrisis.21.a
+	}
+}
+country_event = { #The Panhandle Issue - Oklahoma Event
+	id = cocrisis.22
+	title = cocrisis.22.t
+	desc = cocrisis.22.d
+	picture = GFX_report_event_generic_diplomacy
+	is_triggered_only = yes
+	option = { #Join Colorado
+		name = cocrisis.22.a
+		ai_chance = {
+			base = 0
+			modifier = {
+				add = 100
+				has_global_flag = TXT_stole_panhandle
+			}
+			modifier = {
+				add = 1
+				COC = {
+					strength_ratio = {
+						tag = TXT
+						ratio > 0.6
+					}
+				}
+			}
+			modifier = {
+				add = 1
+				has_opinion = {
+					target = COC
+					value > 50
+				}
+			}
+			modifier = {
+				add = 2
+				has_opinion = {
+					target = TXT
+					value < 25
+				}
+			}
+		}
+		COC = {
+			country_event = {
+				id = cocrisis.23
+				days = 1
+				random_days = 6
+			}
+		}
+		TXT = {
+			country_event = {
+				id = cocrisis.25
+				days = 1
+				random_days = 6
+			}
+		}
+		hidden_effect = {
+			COC = {
+				set_country_flag = OKO_gets_panhandle_back
+			}
+		}
+	}
+	option = { #Refuse Colorado
+		name = cocrisis.22.b
+		ai_chance = {
+			base = 1
+			modifier = {
+				add = 1
+				COC = {
+					strength_ratio = {
+						tag = TXT
+						ratio < 0.25
+					}
+				}
+			}
+			modifier = {
+				add = 1
+				strength_ratio = {
+					tag = TXT
+					ratio < 0.20
+				}
+			}
+			modifier = {
+				add = 1
+				has_opinion = {
+					target = TXT
+					value > 50
+				}
+			}
+			modifier = {
+				add = 1
+				has_opinion = {
+					target = COC
+					value < 10
+				}
+			}
+		}
+		add_war_support = -0.15
+		add_stability = -0.05
+		COC = {
+			country_event = {
+				id = cocrisis.24
+				days = 1
+				random_days = 6
+			}
+		}
+		TXT = {
+			country_event = {
+				id = cocrisis.26
+				days = 1
+				random_days = 6
+			}
+		}
+	}
+}
+country_event = { #Oklahoma Joins Colorado - Colorado Event
+	id = cocrisis.23
+	title = cocrisis.23.t
+	desc = cocrisis.23.d
+	picture = GFX_report_event_crowd_in_prague
+	is_triggered_only = yes
+	immediate = {
+		OKO = {
+			remove_from_array = {
+				global.cocrisis_neutral_country = OKO
+			}
+			clr_country_flag = cocrisis_neutrality_flag
+			add_to_array = {
+				global.cocrisis_colorado_supporters = OKO
+			}
+			set_country_flag = cocrisis_loyal_colorado
+		}
+	}
+	option = {
+		name = cocrisis.23.a
+	}
+}
+country_event = { #Oklahoma Remains Neutral - Colorado Event
+	id = cocrisis.24
+	title = cocrisis.24.t
+	desc = cocrisis.24.d
+	picture = GFX_report_event_generic_rally2
+	is_triggered_only = yes
+	immediate = {
+		OKO = {
+			remove_from_array = {
+				global.cocrisis_neutral_country = OKO
+			}
+			clr_country_flag = cocrisis_neutrality_flag
+			clr_country_flag = interested_in_colorado_crisis
+		}
+	}
+	option = {
+		name = cocrisis.24.a
+	}
+}
+country_event = { #Oklahoma Joins Colorado - Texas Event
+	id = cocrisis.25
+	title = cocrisis.25.t
+	desc = cocrisis.25.d
+	picture = GFX_report_event_generic_rally2
+	is_triggered_only = yes
+	option = {
+		name = cocrisis.25.a
+	}
+}
+country_event = { #Oklahoma Remains Neutral - Texas Event
+	id = cocrisis.26
+	title = cocrisis.26.t
+	desc = cocrisis.26.d
+	picture = GFX_report_event_generic_diplomacy
+	is_triggered_only = yes
+	option = { #Good
+		name = cocrisis.26.a
+		hidden_effect = {
+			COC = {
+				set_country_flag = OKO_neutrality_in_cocrisis
+			}
+		}
+	}
+	option = { #Demand their loyalty
+		name = cocrisis.26.b
+		OKO = {
+			country_event = {
+				id = cocrisis.27
+				days = 1
+				random_days = 6
+			}
+		}
+	}
+}
+country_event = { #Texas Demands We Support Their Invasion - Oklahoma Event
+	id = cocrisis.27
+	title = cocrisis.27.t
+	desc = cocrisis.27.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	option = { #We have no choice
+		name = cocrisis.27.a
+		ai_chance = {
+			base = 0
+			modifier = {
+				add = 1
+				strength_ratio = {
+					tag = TXT
+					ratio > 1.3
+				}
+			}
+			modifier = {
+				add = 1
+				COC = {
+					strength_ratio = {
+						tag = TXT
+						ratio < 0.50
+					}
+				}
+			}
+			modifier = {
+				add = 1
+				TXT = {
+					has_government = ROOT
+				}
+			}
+		}
+		TXT = {
+			country_event = {
+				id = cocrisis.28
+				days = 1
+				random_days = 6
+			}
+		}
+		COC = {
+			country_event = {
+				id = cocrisis.30
+				days = 1
+				random_days = 6
+			}
+		}
+	}
+	option = { #War they will get
+		name = cocrisis.27.b
+		ai_chance = {
+			base = 1
+			modifier = {
+				add = 1
+				strength_ratio = {
+					tag = TXT
+					ratio < 1.3
+				}
+			}
+			modifier = {
+				add = 1
+				COC = {
+					strength_ratio = {
+						tag = TXT
+						ratio > 0.70
+					}
+				}
+			}
+			modifier = {
+				add = 1
+				TXT = {
+					NOT = {
+						has_government = ROOT
+					}
+				}
+			}
+		}
+		TXT = {
+			country_event = {
+				id = cocrisis.29
+				days = 1
+				random_days = 6
+			}
+		}
+		hidden_effect = { 
+			COC = {
+				set_country_flag = OKO_neutrality_in_cocrisis
+			}
+		}
+	}
+}
+country_event = { #Oklahoma Folds - Texas Event
+	id = cocrisis.28
+	title = cocrisis.28.t
+	desc = cocrisis.28.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	option = {
+		name = cocrisis.28.a
+	}
+}
+country_event = { #Oklahoma Tests their Fate - Texas Event
+	id = cocrisis.29
+	title = cocrisis.29.t
+	desc = cocrisis.29.d
+	picture = GFX_report_event_generic_rally2
+	is_triggered_only = yes
+	option = { #They have sealed their fate
+		name = cocrisis.29.a
+		ai_chance = {
+			base = 1
+		}
+		create_wargoal = {
+			target = OKO
+			type = puppet_wargoal_focus
+		}
+	}
+	option = { #They have called our bluff
+		name = cocrisis.29.b
+		add_political_power = -50
+		add_war_support = -0.20
+		OKO = {
+			add_political_power = 50
+			add_war_support = 0.05
+		}
+	}
+}
+country_event = { #Oklahoma goes back on their neutrality - Colorado Event
+	id = cocrisis.30
+	title = cocrisis.30.t
+	desc = cocrisis.30.d
+	picture = GFX_report_event_soldiers_marching
+	is_triggered_only = yes
+	immediate = {
+		OKO = {
+			remove_from_array = {
+				global.cocrisis_neutral_country = OKO
+			}
+			clr_country_flag = cocrisis_neutrality_flag
+			add_to_array = {
+				global.cocrisis_texas_supporters = OKO
+			}
+			set_country_flag = cocrisis_loyal_texas
+		}
+	}
+	option = {
+		name = cocrisis.30.a
+	}
+}
+country_event = { #Colorado Sends an Offer - Kansas Event -If Texas Takes SW KS before
+	id = cocrisis.31
+	title = cocrisis.31.t
+	desc = cocrisis.31.d
+	picture = GFX_report_event_generic_diplomacy
+	is_triggered_only = yes
+	option = { #Join Colorado
+		name = cocrisis.31.a
+		ai_chance = {
+			base = 2
+			modifier = {
+				add = 1
+				COC = {
+					has_government = ROOT
+				}
+			}
+			modifier = {
+				add = 1
+				has_opinion = {
+					target = COC
+					value > 25
+				}
+			}
+			modifier = {
+				add = 1
+				COC = {
+					strength_ratio = {
+						tag = TXT
+						ratio > 0.50
+					}
+				}
+			}
+			modifier = {
+				add = 1
+				has_opinion = {
+					target = TXT
+					value < 50
+				}
+			}
+		}
+		COC = {
+			country_event = {
+				id = cocrisis.32
+				days = 1
+				random_days = 6
+			}
+		}
+		TXT = {
+			country_event = {
+				id = cocrisis.34
+				days = 1
+				random_days = 6
+			}
+		}
+	}
+	option = { #Stay Neutral
+		name = cocrisis.31.b
+		ai_chance = {
+			base = 0
+			modifier = {
+				add = 1
+				TXT = {
+					has_government = ROOT
+				}
+			}
+			modifier = {
+				add = 1
+				has_opinion = {
+					target = TXT
+					value > 50
+				}
+			}
+			modifier = {
+				add = 1
+				COC = {
+					strength_ratio = {
+						tag = TXT
+						ratio < 0.30
+					}
+				}
+			}
+		}
+		COC = {
+			country_event = {
+				id = cocrisis.33
+				days = 1
+				random_days = 6
+			}
+		}
+		TXT = {
+			country_event = {
+				id = cocrisis.35
+				days = 1
+				random_days = 6
+			}
+		}
+	}
+}
+country_event = { #Kansas Joins Colorado - Colorado Event
+	id = cocrisis.32
+	title = cocrisis.32.t
+	desc = cocrisis.32.d
+	picture = GFX_report_event_generic_rally2
+	is_triggered_only = yes
+	immediate = {
+		KSK = {
+			remove_from_array = {
+				global.cocrisis_neutral_country = KSK
+			}
+			clr_country_flag = cocrisis_neutrality_flag
+			add_to_array = {
+				global.cocrisis_colorado_supporters = KSK
+			}
+			set_country_flag = cocrisis_loyal_colorado
+		}
+	}
+	option = {
+		name = cocrisis.32.a
+	}
+}
+country_event = { #Kansas Remains Neutral - Colorado Event
+	id = cocrisis.33
+	title = cocrisis.33.t
+	desc = cocrisis.33.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	immediate = {
+		KSK = {
+			remove_from_array = {
+				global.cocrisis_neutral_country = KSK
+			}
+			clr_country_flag = cocrisis_neutrality_flag
+		}
+	}
+	option = {
+		name = cocrisis.33.a
+	}
+}
+country_event = { #Kansas Joins Colorado - Texas Event
+	id = cocrisis.34
+	title = cocrisis.34.t
+	desc = cocrisis.34.d
+	picture = GFX_report_event_soldiers_marching
+	is_triggered_only = yes
+	option = {
+		name = cocrisis.34.a
+	}
+}
+country_event = { #Kansas Remains Neutral - Texas Event
+	id = cocrisis.35
+	title = cocrisis.35.t
+	desc = cocrisis.35.d
+	picture = GFX_report_event_generic_rally2
+	is_triggered_only = yes
+	option = {
+		name = cocrisis.35.a
+	}
+}
+country_event = { #Texas Offers a Trade Deal - Kansas Event - If Texas doesn't take SW KS before
+	id = cocrisis.36
+	title = cocrisis.36.t
+	desc = cocrisis.36.d
+	picture = GFX_report_event_generic_diplomacy
+	is_triggered_only = yes
+	option = { #Accept the Offer
+		name = cocrisis.36.a
+		ai_chance = {
+			base = 1
+			modifier = {
+				add = 1
+				TXT = {
+					has_government = ROOT
+				}
+			}
+			modifier = {
+				add = 1
+				has_opinion = {
+					target = TXT
+					value > 50
+				}
+			}
+			modifier = {
+				add = 1
+				TXT = {
+					strength_ratio = {
+						tag = COC
+						ratio > 1.2
+					}
+				}
+			}
+			modifier = {
+				add = 1
+				has_opinion = {
+					target = COC
+					value < 25
+				}
+			}
+		}
+		COC = {
+			country_event = {
+				id = cocrisis.37
+				days = 1
+				random_days = 6
+			}
+		}
+	}
+	option = { #What does Colorado have to offer?
+		name = cocrisis.36.b
+		ai_chance = {
+			base = 10
+		}
+		trigger = {
+			OR = {
+				OKO = {
+					has_country_flag = cocrisis_loyal_texas
+				}
+				OKO = {
+					has_country_flag = OKO_neutrality_in_cocrisis
+				}
+			}
+		}
+		COC = {
+			country_event = {
+				id = cocrisis.38
+				days = 1
+				random_days = 6
+			}
+		}
+		TXT = {
+			country_event = {
+				id = cocrisis.40
+				days = 1
+				random_days = 6
+			}
+		}
+	}
+	option = { #Decline the offer
+		name = cocrisis.36.c
+		ai_chance = {
+			base = 1
+			modifier = {
+				add = 1
+				strength_ratio = {
+					tag = TXT
+					ratio > 0.8
+				}
+			}
+			modifier = {
+				add = 1
+				has_opinion = {
+					target = TXT
+					value < 50
+				}
+			}
+			modifier = {
+				add = 1
+				has_opinion = {
+					target = COC
+					value > 25
+				}
+			}
+			modifier = {
+				add = 1
+				COC = {
+					strength_ratio = {
+						tag = COC
+						ratio > 0.50
+					}
+				}
+			}
+		}
+	}
+}
+country_event = { #Kansas Talks with Texas - Colorado Event
+	id = cocrisis.37
+	title = cocrisis.37.t
+	desc = cocrisis.37.d
+	picture = GFX_report_event_generic_diplomacy
+	is_triggered_only = yes
+	option = { #We can do nothing
+		name = cocrisis.37.a
+		trigger = {
+			NOT = {
+				OR = {
+					OKO = {
+						has_country_flag = cocrisis_loyal_texas
+					}
+					OKO = {
+						has_country_flag = OKO_neutrality_in_cocrisis
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			TXT = {
+				country_event = {
+					id = cocrisis.41
+					days = 1
+					random_days = 6
+				}
+			}
+			COC = {
+				country_event = {
+					id = cocrisis.42
+					days = 1
+					random_days = 6
+				}
+			}
+		}
+	}
+	option = { #Send them a counteroffer
+		name = cocrisis.37.b
+		trigger = {
+			OR = {
+				OKO = {
+					has_country_flag = cocrisis_loyal_texas
+				}
+				OKO = {
+					has_country_flag = OKO_neutrality_in_cocrisis
+				}
+			}
+		}
+		KSK = {
+			country_event = {
+				id = cocrisis.39
+				days = 1
+				random_days = 6
+			}
+		}
+		custom_effect_tooltip = cocrisis_offer_OK_to_KS_tt
+	}
+}
+country_event = { #Kansan Negotiator Arrives - Colorado Event
+	id = cocrisis.38
+	title = cocrisis.38.t
+	desc = cocrisis.38.d
+	picture = GFX_report_event_generic_conference
+	is_triggered_only = yes
+	option = { #Make them the offer
+		name = cocrisis.38.a
+		ai_chance = {
+			base = 10
+		}
+		KSK = {
+			country_event = {
+				id = cocrisis.39
+				days = 1
+				random_days = 6
+			}
+		}
+	}
+	option = { #Decline their support
+		name = cocrisis.38.b
+		ai_chance = {
+			base = 0
+		}
+		KSK = {
+			country_event = {
+				id = cocrisis.43
+				days = 1
+				random_days = 6
+			}
+		}
+		TXT = {
+			country_event = {
+				id = cocrisis.41
+				days = 1
+				random_days = 6
+			}
+		}
+		custom_effect_tooltip = cocrisis_lost_kansas_support_tt
+	}
+}
+country_event = { #The Coloradan Counter Offer - Kansas Event
+	id = cocrisis.39
+	title = cocrisis.39.t
+	desc = cocrisis.39.d
+	picture = GFX_report_event_generic_conference
+	is_triggered_only = yes
+	option = { #Go with Colorado
+		name = cocrisis.39.a
+		ai_chance = {
+			base = 1
+			modifier = {
+				add = 1
+				has_opinion = {
+					target = COC
+					value > 40
+				}
+			}
+			modifier = {
+				add = 1
+				has_opinion = {
+					target = TXT
+					value < 25
+				}
+			}
+			modifier = {
+				add = 1
+				COC = {
+					strength_ratio = {
+						tag = TXT
+						ratio > 0.50
+					}
+				}
+			}
+			modifier = {
+				add = 2
+				COC = {
+					has_government = ROOT
+				}
+			}
+		}
+		COC = {
+			country_event = {
+				id = cocrisis.44
+				days = 1
+				random_days = 6
+			}
+		}
+		TXT = {
+			country_event = {
+				id = cocrisis.45
+				days = 1
+				random_days = 6
+			}
+		}
+	}
+	option = { #Texas' Offer was better
+		name = cocrisis.39.b
+		ai_chance = {
+			base = 1
+			modifier = {
+				add = 1
+				has_opinion = {
+					target = TXT
+					value > 40
+				}
+			}
+			modifier = {
+				add = 1
+				has_opinion = {
+					target = COC
+					value < 25
+				}
+			}
+			modifier = {
+				add = 2
+				TXT = {
+					has_government = ROOT
+				}
+			}
+			modifier = {
+				add = 1
+				TXT = {
+					strength_ratio = {
+						tag = COC
+						ratio > 1.5
+					}
+				}
+			}
+		}
+		TXT = {
+			country_event = {
+				id = cocrisis.41
+				days = 1
+				random_days = 6
+			}
+		}
+		COC = {
+			country_event = {
+				id = cocrisis.42
+				days = 1
+				random_days = 6
+			}
+		}
+	}
+}
+country_event = { #Kansas Seeks Negotiation with Colorado - Texas Event
+	id = cocrisis.40
+	title = cocrisis.40.t
+	desc = cocrisis.40.d
+	picture = GFX_report_event_generic_conference
+	is_triggered_only = yes
+	option = {
+		name = cocrisis.40.a
+	}
+}
+country_event = { #Kansas Accepts Our Offer - Texas Event
+	id = cocrisis.41
+	title = cocrisis.41.t
+	desc = cocrisis.41.d
+	picture = GFX_report_event_generic_rally2
+	is_triggered_only = yes
+	option = {
+		name = cocrisis.41.a
+		hidden_effect = {
+			COC = {
+				set_country_flag = cocrisis_KS_gets_CO_puppet
+				set_country_flag = cocrisis_TX_gets_SW_KS
+			}
+		}
+	}
+}
+country_event = { #Kansas is Lost to Texas - Colorado Event
+	id = cocrisis.42
+	title = cocrisis.42.t
+	desc = cocrisis.42.d
+	picture = GFX_report_event_generic_rally2
+	is_triggered_only = yes
+	immediate = {
+		KSK = {
+			remove_from_array = {
+				global.cocrisis_neutral_country = KSK
+			}
+			clr_country_flag = cocrisis_neutrality_flag
+			add_to_array = {
+				global.cocrisis_texas_supporters = KSK
+			}
+			set_country_flag = cocrisis_loyal_texas
+		}
+	}
+	option = {
+		name = cocrisis.42.a
+	}
+}
+country_event = { #Colorado Refuses Negotiation - Kansas Event
+	id = cocrisis.43
+	title = cocrisis.43.t
+	desc = cocrisis.43.d
+	picture = GFX_report_event_generic_conference
+	is_triggered_only = yes
+	option = {
+		name = cocrisis.43.a
+		TXT = {
+			country_event = {
+				id = cocrisis.41
+				days = 1
+				random_days = 6
+			}
+		}
+	}
+}
+country_event = { #Kansas Accepts Our Deal - Colorado Event
+	id = cocrisis.44
+	title = cocrisis.44.t
+	desc = cocrisis.44.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	immediate = {
+		KSK = {
+			remove_from_array = {
+				global.cocrisis_neutral_country = KSK
+			}
+			clr_country_flag = cocrisis_neutrality_flag
+			add_to_array = {
+				global.cocrisis_colorado_supporters = KSK
+			}
+			set_country_flag = cocrisis_loyal_colorado
+		}
+	}
+	option = {
+		name = cocrisis.44.a
+		hidden_effect = {
+			set_country_flag = cocrisis_OK_becomes_KS_puppet
+			OKO = {
+				if = {
+					limit = {
+						NOT = {
+							has_country_flag = cocrisis_loyal_texas
+						}
+					}
+					remove_from_array = {
+						global.cocrisis_neutral_country = ROOT
+					}
+					clr_country_flag = cocrisis_neutrality_flag
+					add_to_array = {
+						global.cocrisis_texas_supporters = ROOT
+					}
+					set_country_flag = cocrisis_loyal_texas
+				}
+			}
+		}
+	}
+}
+country_event = { #Kansas Moves With Colorado - Texas Event
+	id = cocrisis.45
+	title = cocrisis.45.t
+	desc = cocrisis.45.d
+	picture = GFX_report_event_generic_rally2
+	is_triggered_only = yes
+	option = {
+		name = cocrisis.45.a
+	}
+}
+country_event = { #Coloradan Call to Arms
+	id = cocrisis.46
+	title = cocrisis.46.t
+	desc = cocrisis.46.d
+	picture = GFX_report_event_canadian_artillery
+	is_triggered_only = yes
+	option = {
+		name = cocrisis.46.a
+		add_to_war = {
+			targeted_alliance = COC
+			enemy = TXT
+		}
+		COC = {
+			add_to_faction = ROOT
+		}
+	}
+}
+country_event = { #Texan Call to Arms
+	id = cocrisis.47
+	title = cocrisis.47.t
+	desc = cocrisis.47.d
+	picture = GFX_report_event_canadian_artillery
+	is_triggered_only = yes
+	option = {
+		name = cocrisis.47.a
+		add_to_war = {
+			targeted_alliance = TXT
+			enemy = COC
+		}
+		TXT = {
+			add_to_faction = ROOT
+		}
+	}
+}
+country_event = { #Our Failure in Colorado - Texas Event
+	id = cocrisis.48
+	title = cocrisis.48.t
+	desc = cocrisis.48.d
+	picture = GFX_report_event_generic_rally2
+	is_triggered_only = yes
+	option = { #One last push into colorado - lose war if fail
+		name = cocrisis.48.a
+		hidden_effect = {
+			TXT = {
+				set_country_flag = cocrisis_one_last_push
+			}
+		}
+	}
+}
+country_event = { #War Effort Reinvigorated - Texas Event
+	id = cocrisis.49
+	title = cocrisis.49.t
+	desc = cocrisis.49.d
+	picture = GFX_report_event_generic_conference
+	is_triggered_only = yes
+	option = {
+		name = cocrisis.49.a
+		custom_effect_tooltip = you_lose_15_war_exhaustion_tt
+		hidden_effect = {
+			add_to_variable = {
+				TXT.war_exhaustion_var = -0.15
+			}
+		}
+	}
+}
+country_event = { #Surrender to Colorado? - Utah Event if they fail to take western CO in 300 days
+	id = cocrisis.50
+	title = cocrisis.50.t
+	desc = cocrisis.50.d
+	picture = GFX_report_event_generic_rally2
+	is_triggered_only = yes
+	option = { #Surrender to Colorado
+		name = cocrisis.50.a
+		ai_chance = {
+			base = 1
+		}
+		COC = {
+			country_event = {
+				id = cocrisis.52
+				days = 1
+				random_days = 6
+			}
+		}
+	}
+	option = { #Stay in the war
+		name = cocrisis.50.b
+		add_war_support = -0.15
+		add_stability = -0.20
+	}
+}
+country_event = { #Peace with Colorado? - Utah Event if they take western CO
+	id = cocrisis.51
+	title = cocrisis.51.t
+	desc = cocrisis.51.d
+	picture = GFX_report_event_generic_conference
+	is_triggered_only = yes
+	option = { #Offer Peace
+		name = cocrisis.51.a
+		ai_chance = {
+			base = 1
+		}
+		COC = {
+			country_event = {
+				id = cocrisis.54
+				days = 1
+				random_days = 6
+			}
+		}
+	}
+	option = { #We will not betray our allies
+		name = cocrisis.51.b
+		add_war_support = -0.10
+		add_stability = -0.05
+		every_country = {
+			limit = {
+				has_country_flag = cocrisis_loyal_texas
+				has_war_together_with = UTU
+			}
+			add_opinion_modifier = {
+				target = UTU
+				modifier = medium_increase
+			}
+		}
+	}
+}
+country_event = { #Utah Surrenders - Colorado Event
+	id = cocrisis.52
+	title = cocrisis.52.t
+	desc = cocrisis.52.d
+	picture = GFX_report_event_generic_diplomacy
+	is_triggered_only = yes
+	option = { #Send Demands
+		name = cocrisis.52.a
+		UTU = {
+			country_event = {
+				id = cocrisis.53
+				days = 1
+				random_days = 6
+			}
+		}
+	}
+	option = { #There will be no peace
+		name = cocrisis.52.b
+		UTU = {
+			country_event = {
+				id = cocrisis.57
+				days = 1
+				random_days = 6
+			}
+		}
+		hidden_effect = {
+			set_country_flag = COC_refused_UT_surrender
+		}
+	}
+}
+country_event = { #Coloradan Demands - Utah Event
+	id = cocrisis.53
+	title = cocrisis.53.t
+	desc = cocrisis.53.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	option = {
+		name = cocrisis.53.a
+		leave_faction = yes
+		every_country = {
+			limit = {
+				is_in_faction_with = TXT
+			}
+			add_opinion_modifier = {
+				target = UTU
+				modifier = faction_traitor
+			}
+		}
+		every_country = {
+			limit = {
+				is_in_faction_with = COC
+			}
+			white_peace = UTU
+			set_truce = {
+				target = UTU
+				days = 180
+			}
+		}
+		add_timed_idea = {
+			idea = COC_war_reps_sender
+			days = 730
+		}
+		COC = {
+			add_timed_idea = {
+				idea = COC_war_reps_receiver
+				days = 730
+			}
+		}
+	}
+}
+country_event = { #Utahan Peace Terms - Colorado Event
+	id = cocrisis.54
+	title = cocrisis.54.t
+	desc = cocrisis.54.d
+	picture = GFX_report_event_generic_diplomacy
+	is_triggered_only = yes
+	option = { #Terms are acceptable
+		name = cocrisis.54.a
+		UTU = {
+			country_event = {
+				id = cocrisis.55
+				days = 1
+				random_days = 6
+			}
+		}
+	}
+	option = { #We don't stop until SLC
+		name = cocrisis.54.b
+		UTU = {
+			country_event = {
+				id = cocrisis.56
+				days = 1
+				random_days = 6
+			}
+		}
+	}
+}
+country_event = { #Peace with Colorado - Utah Event
+	id = cocrisis.55
+	title = cocrisis.55.t
+	desc = cocrisis.55.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	option = {
+		name = cocrisis.55.a
+		leave_faction = yes
+		every_country = {
+			limit = {
+				is_in_faction_with = TXT
+			}
+			add_opinion_modifier = {
+				target = UTU
+				modifier = faction_traitor
+			}
+		}
+		every_country = {
+			limit = {
+				is_in_faction_with = COC
+			}
+			white_peace = UTU
+			set_truce = {
+				target = UTU
+				days = 180
+			}
+		}
+		transfer_state = 623
+		transfer_state = 624
+	}
+}
+country_event = { #Colorado Refuses Peace - Utah Favored Event
+	id = cocrisis.56
+	title = cocrisis.56.t
+	desc = cocrisis.56.d
+	picture = GFX_report_event_soldiers_marching
+	is_triggered_only = yes
+	option = {
+		name = cocrisis.56.a
+	}
+}
+country_event = { #Colorado Refuses Peace - Colorado Favored Event
+	id = cocrisis.57
+	title = cocrisis.57.t
+	desc = cocrisis.57.d
+	picture = GFX_report_event_soldiers_marching
+	is_triggered_only = yes
+	option = {
+		name = cocrisis.57.a
+	}
+}
+
+################################
+### END OF THE CRISIS EVENTS ###
+################################
+country_event = { #The War Has Been Won - Texas Event
+	id = cocrisis.58
+	title = cocrisis.58.t
+	desc = cocrisis.58.d
+	picture = GFX_report_event_crowd_in_prague
+	is_triggered_only = yes
+	option = {
+		name = cocrisis.58.a
+		hidden_effect = {
+			country_event = cocrisis.66
+		}
+	}
+}
+country_event = { #The War Has Been Won - Texas Coalition Event
+	id = cocrisis.59
+	title = cocrisis.59.t
+	desc = cocrisis.59.d
+	picture = GFX_report_event_crowd_in_prague
+	is_triggered_only = yes
+	option = {
+		name = cocrisis.59.a
+	}
+}
+country_event = { #Peace has been forced upon us - Colorado Coalition Event
+	id = cocrisis.60
+	title = cocrisis.60.t
+	desc = cocrisis.60.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	option = {
+		name = cocrisis.60.a
+	}
+}
+country_event = { #The War Has Been Won - Colorado Event
+	id = cocrisis.61
+	title = cocrisis.61.t
+	desc = cocrisis.61.d
+	picture = GFX_report_event_crowd_in_prague
+	is_triggered_only = yes
+	option = {
+		name = cocrisis.61.a
+		hidden_effect = {
+			country_event = cocrisis.63
+		}
+	}
+}
+country_event = { #Peace has been forced upon us - Texas Coalition Event
+	id = cocrisis.62
+	title = cocrisis.62.t
+	desc = cocrisis.62.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	option = {
+		name = cocrisis.62.a
+	}
+}
+country_event = { #Ceasefire Declared - Stalemate Colorado Peace Event
+	id = cocrisis.64
+	title = cocrisis.64.t
+	desc = cocrisis.64.d
+	picture = GFX_report_event_generic_rally2
+	is_triggered_only = yes
+	option = {
+		name = cocrisis.64.a
+		hidden_effect = {
+			country_event = cocrisis.65
+		}
+	}
+}
+country_event = { #War has been won - CO Coalition Event
+	id = cocrisis.67
+	title = cocrisis.67.t
+	desc = cocrisis.67.d
+	picture = GFX_report_event_crowd_in_prague
+	is_triggered_only = yes
+	option = {
+		name = cocrisis.67.a
+	}
+}
+country_event = { #Ceasefire Declared - Stalemate Generic Peace Event
+	id = cocrisis.68
+	title = cocrisis.64.t
+	desc = cocrisis.64.d
+	picture = GFX_report_event_generic_rally2
+	is_triggered_only = yes
+	option = {
+		name = cocrisis.64.a
+	}
+}
+
+country_event = { #Peace forced on TX Coalition - Hidden effect event
+	id = cocrisis.63
+	hidden = yes
+	is_triggered_only = yes
+	immediate = {
+		set_global_flag = COC_won_rockies_war
+		if = { #Kansas accepted Oklahoman puppet deal
+			limit = {
+				OKO = {
+					has_country_flag = cocrisis_loyal_texas
+				}
+				COC = {
+					has_country_flag = cocrisis_OK_becomes_KS_puppet
+				}
+			}
+			KSK = {
+				puppet = OKO
+			}
+		}
+		if = { #Colorado Refuses Utah's Surrender
+			limit = {
+				COC = {
+					has_country_flag = COC_refused_UT_surrender
+				}
+				UTU = {
+					has_country_flag = cocrisis_loyal_texas
+				}
+			}
+			COC = {
+				puppet = UTU
+				add_timed_idea = {
+					idea = COC_war_reps_receiver
+					days = 365
+				}
+			}
+			UTU = {
+				add_timed_idea = {
+					idea = COC_war_reps_sender
+					days = 365
+				}
+			}
+		}
+		if = { #Colorado Bribes Utah First Amount
+			limit = {
+				COC = {
+					has_country_flag = COC_pay_utah_1
+				}
+			}
+			COC = {
+				country_event = cocrisis.69
+			}
+		}
+		if = { #Colorado Bribes Utah Second Amount
+			limit = {
+				COC = {
+					has_country_flag = COC_pay_utah_2
+				}
+			}
+			COC = {
+				country_event = cocrisis.70
+			}
+		}
+		if = { #Colorado Bribes Utah Last Amount
+			limit = {
+				COC = {
+					has_country_flag = COC_bribe_utah_last
+				}
+			}
+			COC = {
+				country_event = cocrisis.71
+			}
+		}
+		if = { #Colorado chose to set up a puppet government in NM
+			limit = {
+				COC = {
+					has_country_flag = NM_collab_government
+				}
+			}
+			COC = {
+				transfer_state = 638
+				transfer_state = 639
+				transfer_state = 640
+				transfer_state = 646
+				transfer_state = 650
+				transfer_state = 647
+				transfer_state = 641
+				transfer_state = 642
+				transfer_state = 651
+				transfer_state = 652
+				transfer_state = 648
+				transfer_state = 649
+			}
+			create_dynamic_country = {
+				original_tag = NMN
+
+				set_variable = { collaboration_formed_by = COC }
+				set_temp_variable = { new_country = this }
+
+				COC = {
+					every_controlled_state = {
+						limit = { 
+							occupied_country_tag = NMN 
+						}
+						var:new_country = {
+							transfer_state = PREV
+						}
+					}
+
+					puppet = new_country
+
+					set_autonomy = {
+						target = new_country
+						autonomy_state = autonomy_collaboration_government
+						freedom_level = 0.5
+					}
+				}
+			}
+		}
+		if = { #Colorado Promised Oklahoma the Panhandle
+			limit = {
+				OKO = {
+					has_country_flag = cocrisis_loyal_colorado
+				}
+				COC = {
+					has_country_flag = OKO_gets_panhandle_back
+				}
+			}
+			OKO = {
+				transfer_state = 552
+			}
+		}
+		if = { #Colorado Promised New Mexico their land back
+			limit = {
+				NMN = {
+					has_country_flag = cocrisis_loyal_colorado
+				}
+				COC = {
+					has_country_flag = NMN_wants_land_back
+				}
+			}
+			NMN = {
+				transfer_state = 638
+				transfer_state = 639
+				transfer_state = 640
+				transfer_state = 646
+				transfer_state = 650
+				transfer_state = 647
+				transfer_state = 641
+				transfer_state = 642
+				transfer_state = 651
+				transfer_state = 652
+				transfer_state = 648
+				transfer_state = 649
+			}
+		}
+		if = { #Wyoming gets War Reps from Texas
+			limit = {
+				WYW = {
+					has_country_flag = cocrisis_loyal_colorado
+				}
+			}
+			TXT = {
+				add_timed_idea = {
+					idea = COC_war_reps_sender1
+					days = 730
+				}
+			}
+			WYW = {
+				add_timed_idea = {
+					idea = COC_war_reps_receiver1
+					days = 730
+				}
+			}
+		}
+		TXT = {
+			white_peace = COC
+			add_timed_idea = {
+				idea = COC_war_reps_sender
+				days = 730
+			}
+		}
+		COC = {
+			white_peace = TXT
+			add_timed_idea = {
+				idea = COC_war_reps_receiver
+				days = 730
+			}
+		}
+		every_country = {
+			limit = {
+				is_in_faction_with = COC
+			}
+			white_peace = TXT
+		}
+		every_country = {
+			limit = {
+				is_in_faction_with = TXT
+			}
+			white_peace = COC
+		}
+		every_country = { #Clears all crisis diplomacy flags
+			clr_country_flag = UTU_dismissed_colorado
+			clr_country_flag = interested_in_colorado_crisis
+			clr_country_flag = cocrisis_neutrality_flag
+			clr_country_flag = cocrisis_loyal_colorado
+			clr_country_flag = cocrisis_loyal_texas
+			clr_country_flag = COC_allow_further_payment_utah
+			clr_country_flag = OKO_neutrality_in_cocrisis
+			clr_country_flag = NM_left_crisis
+			clr_country_flag = cocrisis_one_last_push
+			clr_country_flag = COC_pay_utah_1
+			clr_country_flag = COC_pay_utah_2
+			clr_country_flag = COC_bribe_utah_last
+			clr_country_flag = TXT_offered_western_CO
+			clr_country_flag = TXT_no_offer_western_CO
+			clr_country_flag = TXT_pay_utah
+			clr_country_flag = NMN_wants_land_back
+			clr_country_flag = NM_collab_government
+			clr_country_flag = NM_texan_gift
+			clr_country_flag = OKO_gets_panhandle_back
+			clr_country_flag = cocrisis_OK_becomes_KS_puppet
+			clr_country_flag = cocrisis_KS_gets_CO_puppet
+			clr_country_flag = cocrisis_TX_gets_SW_KS
+			clr_country_flag = COC_refused_UT_surrender
+		}
+		TXT = {
+            remove_ideas = we_mutiny_1
+            remove_ideas = we_mutiny_2
+            remove_ideas = we_strikes_1
+            remove_ideas = we_strikes_2
+            set_variable = {
+                TXT.war_exhaustion_var = 0
+            }
+        }
+        COC = {
+            remove_ideas = we_mutiny_1
+            remove_ideas = we_mutiny_2
+            remove_ideas = we_strikes_1
+            remove_ideas = we_strikes_2
+            set_variable = {
+                COC.war_exhaustion_var = 0
+            }
+        }
+		news_event = {
+			id = coloradonews.4
+			days = 1
+			random_days = 6
+		}
+	}
+}
+country_event = { #Ceasefire Declared - Hidden effect event
+	id = cocrisis.65
+	hidden = yes
+	is_triggered_only = yes
+	immediate = {
+		set_global_flag = rockies_war_stalemate
+		if = { #Colorado Bribes Utah First Amount
+			limit = {
+				COC = {
+					has_country_flag = COC_pay_utah_1
+				}
+			}
+			COC = {
+				country_event = cocrisis.69
+			}
+		}
+		if = { #Colorado Bribes Utah Second Amount
+			limit = {
+				COC = {
+					has_country_flag = COC_pay_utah_2
+				}
+			}
+			COC = {
+				country_event = cocrisis.70
+			}
+		}
+		if = { #Colorado Bribes Utah Last Amount
+			limit = {
+				COC = {
+					has_country_flag = COC_bribe_utah_last
+				}
+			}
+			COC = {
+				country_event = cocrisis.71
+			}
+		}
+		if = { #Texas offered Western CO and they control it
+			limit = {
+				COC = {
+					has_country_flag = TXT_offered_western_CO
+				}
+				any_country = {
+					is_in_faction_with = TXT
+					controls_state = 624
+					controls_state = 623
+				}
+			}
+			UTU = {
+				transfer_state = 624
+				transfer_state = 623
+			}
+		}
+		if = { #Texas offered western CO and money
+			limit = {
+				COC = {
+					has_country_flag = TXT_pay_utah
+				}
+			}
+			TXT = {
+				country_event = cocrisis.69
+			}
+		}
+		if = { #New Mexico gets land back and control it - Santa Fe
+			limit = {
+				COC = {
+					has_country_flag = NMN_wants_land_back
+				}
+				any_country = {
+					is_in_faction_with = COC
+					controls_state = 650
+					controls_state = 646
+				}
+			}
+			NMN = {
+				transfer_state = 650
+				transfer_state = 646
+			}
+		}
+		if = { #New Mexico gets land back and control it - High Plains
+			limit = {
+				COC = {
+					has_country_flag = NMN_wants_land_back
+				}
+				any_country = {
+					is_in_faction_with = COC
+					controls_state = 647
+				}
+			}
+			NMN = {
+				transfer_state = 647
+			}
+		}
+		if = { #New Mexico gets land back and control it - Sangre de Cristo
+			limit = {
+				COC = {
+					has_country_flag = NMN_wants_land_back
+				}
+				any_country = {
+					is_in_faction_with = COC
+					controls_state = 648
+					controls_state = 652
+				}
+			}
+			NMN = {
+				transfer_state = 648
+				transfer_state = 652
+			}
+		}
+		if = { #New Mexico gets land back and control it - Eastern Albuquerque
+			limit = {
+				COC = {
+					has_country_flag = NMN_wants_land_back
+				}
+				any_country = {
+					is_in_faction_with = COC
+					controls_state = 651
+				}
+			}
+			NMN = {
+				transfer_state = 651
+			}
+		}
+		if = { #New Mexico gets land back and control it - Jordana del Muerto
+			limit = {
+				COC = {
+					has_country_flag = NMN_wants_land_back
+				}
+				any_country = {
+					is_in_faction_with = COC
+					controls_state = 653
+					controls_state = 654
+					controls_state = 655
+					controls_state = 656
+				}
+			}
+			NMN = {
+				transfer_state = 653
+				transfer_state = 654
+				transfer_state = 655
+				transfer_state = 656
+			}
+		}
+		if = { #New Mexico gets land back and control it - Low Plains
+			limit = {
+				COC = {
+					has_country_flag = NMN_wants_land_back
+				}
+				any_country = {
+					is_in_faction_with = COC
+					controls_state = 54
+					controls_state = 657
+				}
+			}
+			NMN = {
+				transfer_state = 54
+				transfer_state = 657
+			}
+		}
+		if = { #Colorado gets NM Collab government land - High Plains
+			limit = {
+				COC = {
+					has_country_flag = NM_collab_government
+				}
+				any_country = {
+					is_in_faction_with = COC
+					controls_state = 647
+					controls_state = 649
+					controls_state = 648
+				}
+			}
+			COC = {
+				transfer_state = 647
+				transfer_state = 649
+				transfer_state = 648
+			}
+		}
+		if = { #Colorado gets NM Collab government land - Santa Fe
+			limit = {
+				COC = {
+					has_country_flag = NM_collab_government
+				}
+				any_country = {
+					is_in_faction_with = COC
+					controls_state = 650
+					controls_state = 646
+				}
+			}
+			COC = {
+				transfer_state = 650
+				transfer_state = 646
+			}
+		}
+		if = { #Colorado gets NM Collab government land - Sangre de Cristo
+			limit = {
+				COC = {
+					has_country_flag = NM_collab_government
+				}
+				any_country = {
+					is_in_faction_with = COC
+					controls_state = 648
+					controls_state = 652
+				}
+			}
+			COC = {
+				transfer_state = 648
+				transfer_state = 652
+			}
+		}
+		if = { #Colorado gets NM Collab government land - Eastern Albuquerque
+			limit = {
+				COC = {
+					has_country_flag = NM_collab_government
+				}
+				any_country = {
+					is_in_faction_with = COC
+					controls_state = 651
+				}
+			}
+			COC = {
+				transfer_state = 651
+			}
+		}
+		if = { #Colorado gets NM Collab government land - Jordana del Muerto
+			limit = {
+				COC = {
+					has_country_flag = NM_collab_government
+				}
+				any_country = {
+					is_in_faction_with = COC
+					controls_state = 653
+					controls_state = 654
+					controls_state = 655
+					controls_state = 656
+				}
+			}
+			COC = {
+				transfer_state = 653
+				transfer_state = 654
+				transfer_state = 655
+				transfer_state = 656
+			}
+		}
+		if = { #Colorado gets NM Collab government land - Low Plains
+			limit = {
+				COC = {
+					has_country_flag = NM_collab_government
+				}
+				any_country = {
+					is_in_faction_with = COC
+					controls_state = 54
+					controls_state = 657
+				}
+			}
+			COC = {
+				transfer_state = 54
+				transfer_state = 657
+			}
+		}
+		if = { #Colorado gets the NM Collab Government Instated
+			limit = {
+				COC = {
+					has_country_flag = NM_collab_government
+				}
+				any_state = {
+					is_controlled_by = COC
+					is_core_of = NMN
+				}
+			}
+			create_dynamic_country = {
+				original_tag = NMN
+
+				set_variable = { collaboration_formed_by = COC }
+				set_temp_variable = { new_country = this }
+
+				COC = {
+					every_controlled_state = {
+						limit = { 
+							occupied_country_tag = NMN 
+						}
+						var:new_country = {
+							transfer_state = PREV
+						}
+					}
+
+					puppet = new_country
+
+					set_autonomy = {
+						target = new_country
+						autonomy_state = autonomy_collaboration_government
+						freedom_level = 0.5
+					}
+				}
+			}
+		}
+		if = { #Texas gives its gift to NM
+			limit = {
+				COC = {
+					has_country_flag = NM_texan_gift
+				}
+				any_country = {
+					is_in_faction_with = TXT
+					controls_state = 621
+					controls_state = 622
+				}
+			}
+			NMN = {
+				transfer_state = 621
+				transfer_state = 622
+			}
+		}
+		if = { #Oklahoma gets Panhandle Back
+			limit = {
+				COC = {
+					has_country_flag = OKO_gets_panhandle_back
+				}
+				any_country = {
+					is_in_faction_with = COC
+					controls_state = 552
+				}
+			}
+			OKO = {
+				transfer_state = 552
+			}
+		}
+		if = { #Texas gets Canyons and Plains
+			limit = {
+				any_country = {
+					is_in_faction_with = TXT
+					controls_state = 620
+				}
+			}
+			TXT = {
+				transfer_state = 620
+			}
+		}
+		if = { #Texas gets Pikes Peak Wonders
+			limit = {
+				any_country = {
+					is_in_faction_with = TXT
+					controls_state = 625
+				}
+			}
+			TXT = {
+				transfer_state = 625
+			}
+		}
+		if = { #Texas gets Rockies Playground
+			limit = {
+				any_country = {
+					is_in_faction_with = TXT
+					controls_state = 626
+					controls_state = 627
+				}
+			}
+			TXT = {
+				transfer_state = 626
+				transfer_state = 627
+			}
+		}
+		TXT = {
+			white_peace = COC
+		}
+		COC = {
+			white_peace = TXT
+		}
+		every_country = {
+			limit = {
+				is_in_faction_with = COC
+			}
+			white_peace = TXT
+		}
+		every_country = {
+			limit = {
+				is_in_faction_with = TXT
+			}
+			white_peace = COC
+		}
+		every_country = { #Clears all crisis diplomacy flags
+			clr_country_flag = UTU_dismissed_colorado
+			clr_country_flag = interested_in_colorado_crisis
+			clr_country_flag = cocrisis_neutrality_flag
+			clr_country_flag = cocrisis_loyal_colorado
+			clr_country_flag = cocrisis_loyal_texas
+			clr_country_flag = COC_allow_further_payment_utah
+			clr_country_flag = OKO_neutrality_in_cocrisis
+			clr_country_flag = NM_left_crisis
+			clr_country_flag = cocrisis_one_last_push
+			clr_country_flag = COC_pay_utah_1
+			clr_country_flag = COC_pay_utah_2
+			clr_country_flag = COC_bribe_utah_last
+			clr_country_flag = TXT_offered_western_CO
+			clr_country_flag = TXT_no_offer_western_CO
+			clr_country_flag = TXT_pay_utah
+			clr_country_flag = NMN_wants_land_back
+			clr_country_flag = NM_collab_government
+			clr_country_flag = NM_texan_gift
+			clr_country_flag = OKO_gets_panhandle_back
+			clr_country_flag = cocrisis_OK_becomes_KS_puppet
+			clr_country_flag = cocrisis_KS_gets_CO_puppet
+			clr_country_flag = cocrisis_TX_gets_SW_KS
+			clr_country_flag = COC_refused_UT_surrender
+		}
+		TXT = {
+            remove_ideas = we_mutiny_1
+            remove_ideas = we_mutiny_2
+            remove_ideas = we_strikes_1
+            remove_ideas = we_strikes_2
+            set_variable = {
+                TXT.war_exhaustion_var = 0
+            }
+        }
+        COC = {
+            remove_ideas = we_mutiny_1
+            remove_ideas = we_mutiny_2
+            remove_ideas = we_strikes_1
+            remove_ideas = we_strikes_2
+            set_variable = {
+                COC.war_exhaustion_var = 0
+            }
+        }
+		news_event = {
+			id = coloradonews.6
+			days = 1
+			random_days = 6
+		}
+	}
+}
+country_event = { #Peace forced on CO Coalition - hidden effect event
+	id = cocrisis.66
+	hidden = yes
+	is_triggered_only = yes
+	immediate = {
+		set_global_flag = TXT_won_rockies_war
+		if = { #Colorado Bribes Utah First Amount
+			limit = {
+				COC = {
+					has_country_flag = COC_pay_utah_1
+				}
+			}
+			COC = {
+				country_event = cocrisis.69
+			}
+		}
+		if = { #Colorado Bribes Utah Second Amount
+			limit = {
+				COC = {
+					has_country_flag = COC_pay_utah_2
+				}
+			}
+			COC = {
+				country_event = cocrisis.70
+			}
+		}
+		if = { #Colorado Bribes Utah Last Amount
+			limit = {
+				COC = {
+					has_country_flag = COC_bribe_utah_last
+				}
+			}
+			COC = {
+				country_event = cocrisis.71
+			}
+		}
+		if = { #Texas Offered Western CO
+			limit = {
+				COC = {
+					has_country_flag = TXT_offered_western_CO
+				}
+			}
+			UTU = {
+				transfer_state = 624
+				transfer_state = 623
+				transfer_state = 622
+				transfer_state = 621
+			}
+		}
+		if = { #Texas Paid Utah
+			limit = {
+				COC = {
+					has_country_flag = TXT_pay_utah
+				}
+			}
+			TXT = {
+				country_event = cocrisis.69
+			}
+		}
+		if = { #Texas Gifts Mountains and Mesas
+			limit = {
+				COC = {
+					has_country_flag = NM_texan_gift
+				}
+			}
+			NMN = {
+				transfer_state = 622
+				transfer_state = 621
+			}
+		}
+		if = { #Texas Gives Colorado Puppet to KS
+			limit = {
+				COC = {
+					has_country_flag = cocrisis_KS_gets_CO_puppet
+				}
+			}
+			KSK = {
+				puppet = COC
+			}
+		}
+		if = { #Texas Gets SW Kansas from KS
+			limit = {
+				COC = {
+					has_country_flag = cocrisis_TX_gets_SW_KS
+				}
+			}
+			TXT ={
+				transfer_state = 542
+			}
+		}
+		TXT = {
+			transfer_state = 620
+			transfer_state = 625
+			transfer_state = 626
+			transfer_state = 627
+		}
+		TXT = {
+			white_peace = COC
+			add_timed_idea = {
+				idea = COC_war_reps_receiver
+				days = 730
+			}
+		}
+		COC = {
+			white_peace = TXT
+			add_timed_idea = {
+				idea = COC_war_reps_sender
+				days = 730
+			}
+		}
+		every_country = {
+			limit = {
+				is_in_faction_with = COC
+			}
+			white_peace = TXT
+		}
+		every_country = {
+			limit = {
+				is_in_faction_with = TXT
+			}
+			white_peace = COC
+		}
+		every_country = { #Clears all crisis diplomacy flags
+			clr_country_flag = UTU_dismissed_colorado
+			clr_country_flag = interested_in_colorado_crisis
+			clr_country_flag = cocrisis_neutrality_flag
+			clr_country_flag = cocrisis_loyal_colorado
+			clr_country_flag = cocrisis_loyal_texas
+			clr_country_flag = COC_allow_further_payment_utah
+			clr_country_flag = OKO_neutrality_in_cocrisis
+			clr_country_flag = NM_left_crisis
+			clr_country_flag = cocrisis_one_last_push
+			clr_country_flag = COC_pay_utah_1
+			clr_country_flag = COC_pay_utah_2
+			clr_country_flag = COC_bribe_utah_last
+			clr_country_flag = TXT_offered_western_CO
+			clr_country_flag = TXT_no_offer_western_CO
+			clr_country_flag = TXT_pay_utah
+			clr_country_flag = NMN_wants_land_back
+			clr_country_flag = NM_collab_government
+			clr_country_flag = NM_texan_gift
+			clr_country_flag = OKO_gets_panhandle_back
+			clr_country_flag = cocrisis_OK_becomes_KS_puppet
+			clr_country_flag = cocrisis_KS_gets_CO_puppet
+			clr_country_flag = cocrisis_TX_gets_SW_KS
+			clr_country_flag = COC_refused_UT_surrender
+		}
+		TXT = {
+            remove_ideas = we_mutiny_1
+            remove_ideas = we_mutiny_2
+            remove_ideas = we_strikes_1
+            remove_ideas = we_strikes_2
+            set_variable = {
+                TXT.war_exhaustion_var = 0
+            }
+        }
+        COC = {
+            remove_ideas = we_mutiny_1
+            remove_ideas = we_mutiny_2
+            remove_ideas = we_strikes_1
+            remove_ideas = we_strikes_2
+            set_variable = {
+                COC.war_exhaustion_var = 0
+            }
+        }
+		news_event = {
+			id = coloradonews.5
+			days = 1
+			random_days = 6
+		}
+	}
+}
+country_event = { #Event to pay Utah first bribe amount - Texas or Colorado Event
+	id = cocrisis.69
+	title = cocrisis.69.t
+	desc = cocrisis.69.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	option = {
+		name = cocrisis.69.a
+		if = {
+			limit = {
+				tag = COC
+			}
+			add_timed_idea = {
+				idea = COC_war_reps_sender1
+				days = 365
+			}
+			UTU = {
+				add_timed_idea = {
+					idea = COC_war_reps_receiver1
+					days = 365
+				}
+			}
+		}
+		if = {
+			limit = {
+				tag = TXT
+			}
+			add_timed_idea = {
+				idea = COC_war_reps_sender1
+				days = 548
+			}
+			UTU = {
+				add_timed_idea = {
+					idea = COC_war_reps_receiver1
+					days = 548
+				}
+			}
+		}
+	}
+}
+country_event = { #Event to pay Utah the second bribe amount - Colorado Event
+	id = cocrisis.70
+	title = cocrisis.70.t
+	desc = cocrisis.70.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	option = {
+		name = cocrisis.70.a
+		add_timed_idea = {
+			idea = COC_war_reps_sender
+			days = 365
+		}
+		UTU = {
+			add_timed_idea = {
+				idea = COC_war_reps_receiver
+				days = 365
+			}
+		}
+	}
+	option = {
+		name = cocrisis.70.b
+		add_timed_idea = {
+			idea = COC_war_reps_sender1
+			days = 730
+		}
+		UTU = {
+			add_timed_idea = {
+				idea = COC_war_reps_receiver1
+				days = 730
+			}
+		}
+	}
+}
+country_event = { #Event to pay Utah the last bribe amount - Colorado Event
+	id = cocrisis.71
+	title = cocrisis.71.t
+	desc = cocrisis.71.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	option = {
+		name = cocrisis.71.a
+		add_timed_idea = {
+			idea = COC_war_reps_sender3
+			days = 365
+		}
+		UTU = {
+			add_timed_idea = {
+				idea = COC_war_reps_receiver3
+				days = 365
+			}
+		}
+	}
+	option = {
+		name = cocrisis.71.b
+		add_timed_idea = {
+			idea = COC_war_reps_sender
+			days = 730
+		}
+		UTU = {
+			add_timed_idea = {
+				idea = COC_war_reps_receiver
+				days = 730
+			}
+		}
+	}
+	option = {
+		name = cocrisis.71.c
+		add_timed_idea = {
+			idea = COC_war_reps_sender1
+			days = 1460
+		}
+		UTU = {
+			add_timed_idea = {
+				idea = COC_war_reps_receiver1
+				days = 1460
+			}
+		}
+	}
+}
+country_event = { #Public Outcry for Peace! - War Exhaustion Event 1
+	id = cocrisis.72
+	title = cocrisis.72.t
+	desc = cocrisis.72.d
+	picture = GFX_report_event_desertion_poster
+	trigger = {
+		OR = {
+			tag = COC
+			tag = TXT
+		}
+		OR ={
+			check_variable = {
+				COC.war_exhaustion_var > 0.75
+			}
+			check_variable = {
+				TXT.war_exhaustion_var > 0.65
+			}
+		}
+		NOT = {
+			OR = {
+				has_idea = we_mutiny_1
+				has_idea = we_strikes_1
+			}
+		}
+		has_war = yes
+	}
+	mean_time_to_happen = {
+		days = 20
+	}
+	fire_only_once = yes
+	option = {
+		name = cocrisis.72.a
+		add_ideas = we_mutiny_1
+		add_ideas = we_strikes_1
+	}
+}
+country_event = {
+	id = cocrisis.73
+	title = cocrisis.73.t
+	desc = cocrisis.73.d
+	picture = GFX_report_event_desertion_poster
+	trigger = {
+		OR = {
+			tag = COC
+			tag = TXT
+		}
+		OR ={
+			check_variable = {
+				COC.war_exhaustion_var > 0.99
+			}
+			check_variable = {
+				TXT.war_exhaustion_var > 0.95
+			}
+		}
+		OR = {
+			has_idea = we_mutiny_1
+			has_idea = we_strikes_1
+		}
+		has_war = yes
+	}
+	mean_time_to_happen = {
+		days = 20
+	}
+	fire_only_once = yes
+	option = {
+		name = cocrisis.73.a
+		swap_ideas = {
+			remove_idea = we_mutiny_1
+			add_idea = we_mutiny_2
+		}
+		swap_ideas = {
+			remove_idea = we_strikes_1
+			add_idea = we_strikes_2
+		}
+		add_stability = -0.10
+		add_war_support = -0.15
+	}
+}
