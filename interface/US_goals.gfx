@@ -2770,6 +2770,35 @@ SpriteType = {
   name = "GFX_TXT_Assimilate_Colorado"
   texturefile = "gfx/interface/goals/TXT_Assimilate_Colorado.dds"
 }
+
+SpriteType = {
+  name = "GFX_recognize_new_talent"
+  texturefile = "gfx/interface/goals/TXT_recognize_new_talent.dds"
+}
+SpriteType = {
+  name = "GFX_plan_supply_raid"
+  texturefile = "gfx/interface/goals/TXT_plan_supply_raid.dds"
+}
+SpriteType = {
+  name = "GFX_purchase_foreign"
+  texturefile = "gfx/interface/goals/TXT_purchase_foreign.dds"
+}
+SpriteType = {
+  name = "GFX_comandeer_civ_motor_vehicles"
+  texturefile = "gfx/interface/goals/TXT_comandeer_civ_motor_vehicles.dds"
+}
+SpriteType = {
+  name = "GFX_new_tank_divisions"
+  texturefile = "gfx/interface/goals/TXT_new_tank_divisions.dds"
+}
+SpriteType = {
+  name = "GFX_comandeer_civ_train"
+  texturefile = "gfx/interface/goals/TXT_comandeer_civ_train.dds"
+}
+SpriteType = {
+  name = "GFX_rapidly_improve_frontlines"
+  texturefile = "gfx/interface/goals/TXT_rapidly_improve_frontlines.dds"
+}
 ###########################################################################################################################
 
 
@@ -3093,4 +3122,5 @@ SpriteType = {
   texturefile = "gfx/interface/goals/radioliberty.dds"
 }
 #################################################################################################################################
+
 }

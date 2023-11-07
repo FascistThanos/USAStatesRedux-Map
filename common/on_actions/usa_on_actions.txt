@@ -4,18 +4,18 @@ on_actions = {
 			every_country = {
 				set_country_flag = formable_tab_visible
 			}
-			##Greenland Focus Tree
-			#if = {
-			#	limit = {
-			#		has_game_rule = {
-			#			rule = greenland_focus
-			#			option = GRNTREE
-			#		}
-			#	}
-			#	GRN = {
-			#		load_focus_tree = greenland_focus
-			#	}
-			#}
+			#Greenland Focus Tree
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = greenland_focus
+						option = GRNTREE
+					}
+				}
+				GRN = {
+					load_focus_tree = greenland_focus
+				}
+			}
 			#CSA v. Union
 			if = {
 				limit = {

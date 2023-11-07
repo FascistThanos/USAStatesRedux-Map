@@ -4,10 +4,6 @@ focus_tree = {
 	id = greenland_focus
 	country = {
 		factor = 0
-		modifier = {
-			add = 25
-			tag = GRN
-		}
 	}
 	default = no
 	continuous_focus_position = {
