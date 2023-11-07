@@ -7,8 +7,19 @@ state={
 			infrastructure = 3
 			industrial_complex = 1
 		}
+		victory_points = {
+			11368 10 #Nuuk
+		}
+		victory_points = {
+			11370 5 #Old Nuuk
+		}
+		victory_points = {
+			10452 5 #Nuussuaq
+		}
+		victory_points = {
+			11369 5 #Qarsaalik
+		}
 		add_core_of = GRN
-
 	}
 	provinces={
 		10452 11368 11369 11370 

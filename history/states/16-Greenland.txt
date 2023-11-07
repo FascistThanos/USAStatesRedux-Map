@@ -9,8 +9,10 @@ state={
 			infrastructure = 1
 
 		}
+		victory_points = {
+			4423 5 #Tasiilaq
+		}
 		add_core_of = GRN
-
 	}
 
 	provinces={

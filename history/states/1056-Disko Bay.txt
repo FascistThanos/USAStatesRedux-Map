@@ -7,6 +7,9 @@ state={
 			infrastructure = 1
 
 		}
+		victory_points = {
+			1726 5 #Ilulissat
+		}
 		add_core_of = GRN
 
 	}

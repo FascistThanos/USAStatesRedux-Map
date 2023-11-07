@@ -5,10 +5,11 @@ state={
 		owner = GRN
 		buildings = {
 			infrastructure = 1
-
+		}
+		victory_points = {
+			518 5 #Qaqortoq
 		}
 		add_core_of = GRN
-
 	}
 	provinces={
 		246 518 956 1131 1823 2014 4454 4470 

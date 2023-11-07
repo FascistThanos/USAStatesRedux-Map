@@ -1,0 +1,83 @@
+﻿units = {
+	fleet = {
+		name = "Denmark Commissioned Ships"
+		naval_base = 10452
+		task_force = {
+			name = "Commission"
+			location = 10452			# Tampa
+			# 1st Destroyer Division
+			ship = {
+				name = "GSS Arnarulunnguaq"
+				definition = destroyer
+				start_experience_factor = 0.25
+				equipment = {
+					ship_hull_light_1 = {
+						amount = 1
+						owner = GRN
+						version_name = "Farragut Class"
+					}
+				}
+			}
+			ship = {
+				name = "GSS Copenhagen"
+				definition = destroyer
+				start_experience_factor = 0.25
+				equipment = {
+					ship_hull_light_1 = {
+						amount = 1
+						owner = GRN
+						version_name = "Farragut Class"
+					}
+				}
+			}
+			ship = {
+				name = "GSS Rink"
+				definition = destroyer
+				start_experience_factor = 0.25
+				equipment = {
+					ship_hull_light_1 = {
+						amount = 1
+						owner = GRN
+						version_name = "Farragut Class"
+					}
+				}
+			}
+			ship = {
+				name = "GSS Nuuk"
+				definition = submarine
+				start_experience_factor = 0.25
+				equipment = {
+				  ship_hull_submarine_1 = {
+					amount = 1
+					owner = GRN
+					version_name = "Wichita Class"
+				  }
+				}
+			  }
+			  ship = {
+				name = "GSS Sisimiut"
+				definition = submarine
+				start_experience_factor = 0.25
+				equipment = {
+				  ship_hull_submarine_1 = {
+					amount = 1
+					owner = GRN
+					version_name = "Wichita Class"
+				  }
+				}
+			  }
+			  ship = {
+				name = "GSS Tasiilaq"
+				definition = submarine
+				start_experience_factor = 0.25
+				equipment = {
+				  ship_hull_submarine_1 = {
+					amount = 1
+					owner = GRN
+					version_name = "Wichita Class"
+				  }
+				}
+			  }
+		}
+	}
+}

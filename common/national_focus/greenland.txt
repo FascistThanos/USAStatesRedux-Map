@@ -4,6 +4,10 @@ focus_tree = {
 	id = greenland_focus
 	country = {
 		factor = 0
+		modifier = {
+			add = 25
+			tag = GRN
+		}
 	}
 	default = no
 	continuous_focus_position = {
@@ -22,7 +26,6 @@ focus_tree = {
 		bypass = {
 		}
 		cost = 4
-		#prerequisite = { focus = AST_workers_paradise }
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
@@ -200,8 +203,6 @@ focus_tree = {
 		prerequisite = {
 			focus = GRN_militarize_the_ice
 		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
 			#event chain
@@ -219,21 +220,24 @@ focus_tree = {
 	focus = {
 		id = GRN_nunavut_factories
 		icon = GFX_goal_generic_construct_civ_factory
-		x = 1
-		y = 4
+		x = 3
+		y = 3
 		
 		available = {
-			#owns nunavut
 			has_full_control_of_state = 1038
 		}
 		bypass = {
 		}
 		cost = 15
 		prerequisite = {
-			focus = GRN_annex_nunavut
+			focus = GRN_rally_the_men
 		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
+		prerequisite = {
+			focus = GRN_recruit_the_polar_bears
+		}
+		prerequisite = {
+			focus = GRN_militarize_the_ice
+		}
 		available_if_capitulated = yes
 		completion_reward = {
 			1038 = {
@@ -264,7 +268,7 @@ focus_tree = {
 		id = GRN_subjugate_newfoundland
 		icon = GFX_goal_generic_occupy_states_ongoing_war
 		x = 2
-		y = 5
+		y = 4
 		
 		available = {
 		}
@@ -273,10 +277,8 @@ focus_tree = {
 		cost = 10
 		prerequisite = {
 			focus = GRN_nunavut_factories
-			focus = GRN_greek_factories
+			focus = GRN_annex_nunavut
 		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
 			#event chain
@@ -294,8 +296,8 @@ focus_tree = {
 	focus = {
 		id = GRN_integrate_our_colonies
 		icon = GFX_goal_generic_navy_doctrines_tactics
-		x = 1
-		y = 6
+		x = 2
+		y = 5
 		
 		available = {
 			#owns newfoundland
@@ -303,27 +305,23 @@ focus_tree = {
 		}
 		bypass = {
 		}
-		cost = 17
+		cost = 17.2
 		prerequisite = {
 			focus = GRN_subjugate_newfoundland
 		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
 			core_newfoundland_effect = yes
 		}
 		ai_will_do = {
 			factor = 1
-			modifier = {
-			}
 		}
 	}
 	#Colonial Research
 	focus = {
 		id = GRN_colonial_research
 		icon = GFX_focus_research2
-		x = 3
+		x = 2
 		y = 6
 		
 		available = {
@@ -334,10 +332,8 @@ focus_tree = {
 		}
 		cost = 10
 		prerequisite = {
-			focus = GRN_subjugate_newfoundland
+			focus = GRN_integrate_our_colonies
 		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
 			#research slot
@@ -345,15 +341,13 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 1
-			modifier = {
-			}
 		}
 	}
 	#Take LA for No Reason (if made serious tree, replace with alaska?
 	focus = {
 		id = GRN_take_la_for_no_reason
 		icon = GFX_goal_california_war
-		x = 0
+		x = 1
 		y = 7
 		
 		available = {
@@ -362,13 +356,8 @@ focus_tree = {
 		}
 		cost = 10
 		prerequisite = {
-			focus = GRN_integrate_our_colonies
-		}
-		prerequisite = {
 			focus = GRN_colonial_research
 		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
 			#event chain
@@ -378,15 +367,13 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 1
-			modifier = {
-			}
 		}
 	}
 	#War on the Arctic
 	focus = {
 		id = GRN_war_on_the_arctic
 		icon = GFX_goal_generic_military_deal
-		x = 4
+		x = 3
 		y = 7
 		
 		available = {
@@ -395,13 +382,8 @@ focus_tree = {
 		}
 		cost = 10
 		prerequisite = {
-			focus = GRN_integrate_our_colonies
-		}
-		prerequisite = {
 			focus = GRN_colonial_research
 		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
 			#wargoal on northwestern and yukon
@@ -416,8 +398,6 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 1
-			modifier = {
-			}
 		}
 	}
 	#Monarchist Greenland Path
@@ -445,8 +425,6 @@ focus_tree = {
 		prerequisite = {
 			focus = GRN_a_new_greenland
 		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
 			set_politics = {
@@ -463,445 +441,9 @@ focus_tree = {
 				idea = support_for_monarchism
 				days = 150
 			}
-			hidden_effect = {
-				if = {
-					limit = {
-						AAA = {
-							exists = yes
-						}
-					}
-					AAA = {
-						country_event = greenland.15
-					}
-				}
-				if = {
-					limit = {
-						DEN = {
-							exists = yes
-						}
-					}
-					DEN = {
-						country_event = greenland.16
-					}
-				}
-			}
 		}
 		ai_will_do = {
 			factor = 1
-			modifier = {
-			}
-		}
-	}
-	##Restore the Danish Monarchy##
-	focus = {
-		id = GRN_restore_the_danish_monarchy
-		icon = GFX_focus_generic_monarchy_2
-		x = 6
-		y = 2
-		
-		available = {
-		}
-		bypass = {
-		}
-		cost = 10
-		prerequisite = {
-			focus = GRN_the_kingdom_of_greenland
-		}
-		mutually_exclusive = {
-			focus = GRN_the_santa_monarchy
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		completion_reward = {
-			#leader becomes danish monarch and cosmetic tag
-			create_country_leader = {
-				name = "Charles X"
-				desc = ""
-				picture = "Portrait_GRN_Charles_X.dds"
-				expire = "1965.1.1"
-				ideology = despotism
-				traits = {
-					popular_figurehead
-					great_survivor
-				}
-			}
-			set_cosmetic_tag = DEN_GRN
-		}
-		ai_will_do = {
-			factor = 1
-			modifier = {
-			}
-		}
-	}
-	#Prepare to take back Denmark
-	focus = {
-		id = GRN_prepare_to_take_back_denmark
-		icon = GFX_goal_generic_propaganda
-		x = 5
-		y = 3
-		
-		available = {
-		}
-		bypass = {
-		}
-		cost = 10
-		prerequisite = {
-			focus = GRN_restore_the_danish_monarchy
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		completion_reward = {
-			#wargoal on denmark and claims
-			create_wargoal = {
-				type = annex_everything
-				target = DEN
-			}
-			37 = {
-				add_claim_by = GRN
-			}
-			99 = {
-				add_claim_by = GRN
-			}
-		}
-		ai_will_do = {
-			factor = 1
-			modifier = {
-			}
-		}
-	}
-	#Rebuilding Copenhagen
-	focus = {
-		id = GRN_rebuilding_copenhagen
-		icon = GFX_goal_generic_production
-		x = 5
-		y = 4
-		
-		available = {
-			has_full_control_of_state = 37
-			has_full_control_of_state = 99
-		}
-		bypass = {
-		}
-		cost = 10
-		prerequisite = {
-			focus = GRN_prepare_to_take_back_denmark
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		completion_reward = {
-			37 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
-			#cores
-			37 = {
-				add_core_of = GRN
-			}
-			99 = {
-				add_core_of = GRN
-			}
-		}
-		ai_will_do = {
-			factor = 1
-			modifier = {
-			}
-		}
-	}
-	#Annex Iceland (and norway sweden coast?
-	focus = {
-		id = GRN_annex_iceland
-		icon = GFX_goal_anschluss
-		x = 4
-		y = 5
-		
-		available = {
-		}
-		bypass = {
-		}
-		cost = 27
-		prerequisite = {
-			focus = GRN_rebuilding_copenhagen
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		completion_reward = {
-			#annexes iceland and coast of norway and sweden
-			100 = {
-				if = {
-					limit = {
-						is_owned_by = ICE
-					}
-					add_claim_by = GRN
-					GRN = {
-						transfer_state = 100
-					}
-					add_compliance = 60
-				}
-			}
-			110 = {
-				if = {
-					limit = {
-						is_owned_by = NOR
-					}
-					add_claim_by = GRN
-					GRN = {
-						transfer_state = 110
-					}
-					add_compliance = 60
-				}
-			}
-			138 = {
-				if = {
-					limit = {
-						is_owned_by = SWE
-					}
-					add_claim_by = GRN
-					GRN = {
-						transfer_state = 138
-					}
-					add_compliance = 60
-				}
-			}
-			140 = {
-				if = {
-					limit = {
-						is_owned_by = SWE
-					}
-					add_claim_by = GRN
-					GRN = {
-						transfer_state = 140
-					}
-					add_compliance = 60
-				}
-			}
-			139 = {
-				if = {
-					limit = {
-						is_owned_by = SWE
-					}
-					add_claim_by = GRN
-					GRN = {
-						transfer_state = 139
-					}
-					add_compliance = 60
-				}
-			}
-			124 = {
-				if = {
-					limit = {
-						is_owned_by = SWE
-					}
-					add_claim_by = GRN
-					GRN = {
-						transfer_state = 124
-					}
-					add_compliance = 60
-				}
-			}
-			142 = {
-				if = {
-					limit = {
-						is_owned_by = NOR
-					}
-					add_claim_by = GRN
-					GRN = {
-						transfer_state = 142
-					}
-					add_compliance = 60
-				}
-			}
-			143 = {
-				if = {
-					limit = {
-						is_owned_by = NOR
-					}
-					add_claim_by = GRN
-					GRN = {
-						transfer_state = 143
-					}
-					add_compliance = 60
-				}
-			}
-			add_political_power = 50
-			add_war_support = 0.05
-			add_stability = 0.05
-			set_global_flag = greenland_iceland_annexed
-		}
-		ai_will_do = {
-			factor = 1
-			modifier = {
-			}
-		}
-	}
-	#Annex Scandinavia (the rest)
-	focus = {
-		id = GRN_annex_scandinavia
-		icon = GFX_goal_anschluss
-		x = 6
-		y = 5
-		
-		available = {
-		}
-		bypass = {
-		}
-		cost = 27
-		prerequisite = {
-			focus = GRN_rebuilding_copenhagen
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		completion_reward = {
-			#annexes rest of scandi
-			141 = {
-				if = {
-					limit = {
-						is_owned_by = SWE
-					}
-					add_claim_by = GRN
-					GRN = {
-						transfer_state = 141
-					}
-					add_compliance = 60
-				}
-			}
-			38 = {
-				if = {
-					limit = {
-						is_owned_by = SWE
-					}
-					add_claim_by = GRN
-					GRN = {
-						transfer_state = 38
-					}
-					add_compliance = 60
-				}
-			}
-			666 = {
-				if = {
-					limit = {
-						is_owned_by = SWE
-					}
-					add_claim_by = GRN
-					GRN = {
-						transfer_state = 666
-					}
-					add_compliance = 60
-				}
-			}
-			144 = {
-				if = {
-					limit = {
-						is_owned_by = NOR
-					}
-					add_claim_by = GRN
-					GRN = {
-						transfer_state = 144
-					}
-					add_compliance = 60
-				}
-			}
-			148 = {
-				if = {
-					limit = {
-						is_owned_by = FIN
-					}
-					add_claim_by = GRN
-					GRN = {
-						transfer_state = 148
-					}
-					add_compliance = 60
-				}
-			}
-			722 = {
-				if = {
-					limit = {
-						is_owned_by = FIN
-					}
-					add_claim_by = GRN
-					GRN = {
-						transfer_state = 722
-					}
-					add_compliance = 60
-				}
-			}
-			147 = {
-				if = {
-					limit = {
-						is_owned_by = FIN
-					}
-					add_claim_by = GRN
-					GRN = {
-						transfer_state = 147
-					}
-					add_compliance = 60
-				}
-			}
-			150 = {
-				if = {
-					limit = {
-						is_owned_by = FIN
-					}
-					add_claim_by = GRN
-					GRN = {
-						transfer_state = 150
-					}
-					add_compliance = 60
-				}
-			}
-			149 = {
-				if = {
-					limit = {
-						is_owned_by = FIN
-					}
-					add_claim_by = GRN
-					GRN = {
-						transfer_state = 149
-					}
-					add_compliance = 60
-				}
-			}
-			111 = {
-				if = {
-					limit = {
-						is_owned_by = FIN
-					}
-					add_claim_by = GRN
-					GRN = {
-						transfer_state = 111
-					}
-					add_compliance = 60
-				}
-			}
-			146 = {
-				if = {
-					limit = {
-						is_owned_by = FIN
-					}
-					add_claim_by = GRN
-					GRN = {
-						transfer_state = 146
-					}
-					add_compliance = 60
-				}
-			}
-			add_political_power = 60
-			add_war_support = 0.05
-			add_stability = 0.05
-			set_global_flag = greenland_sca_annexed
-		}
-		ai_will_do = {
-			factor = 1
-			modifier = {
-			}
 		}
 	}
 	#The Winter Army
@@ -910,165 +452,28 @@ focus_tree = {
 		icon = GFX_goal_generic_military_sphere
 		x = 5
 		y = 6
-		
+		prerequisite = {
+			focus = GRN_toys_in_new_york
+		}
 		available = {
 		}
 		bypass = {
 		}
 		cost = 10
-		prerequisite = {
-			focus = GRN_annex_iceland
-		}
-		prerequisite = {
-			focus = GRN_annex_scandinavia
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
 			#idea
-			add_ideas = {
-				the_winter_army_idea
-			}
+			add_ideas = the_winter_army_idea
 		}
 		ai_will_do = {
 			factor = 1
-			modifier = {
-			}
 		}
 	}
-	#The Arctic Kingdom 
-	focus = {
-		id = GRN_the_arctic_kingdom
-		icon = GFX_goal_continuous_increase_nu
-		x = 6
-		y = 7
-		
-		available = {
-		}
-		bypass = {
-		}
-		cost = 30
-		prerequisite = {
-			focus = GRN_the_winter_army
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		completion_reward = {
-			#cores on sweden, iceland, and norway
-			#ice
-			100 = {
-				if = {
-					limit = {
-						is_owned_by = GRN
-					}
-					add_core_of = GRN
-				}
-			}
-			#swe
-			138 = {
-				if = {
-					limit = {
-						is_owned_by = GRN
-					}
-					add_core_of = GRN
-				}
-			}
-			140 = {
-				if = {
-					limit = {
-						is_owned_by = GRN
-					}
-					add_core_of = GRN
-				}
-			}
-			139 = {
-				if = {
-					limit = {
-						is_owned_by = GRN
-					}
-					add_core_of = GRN
-				}
-			}
-			124 = {
-				if = {
-					limit = {
-						is_owned_by = GRN
-					}
-					add_core_of = GRN
-				}
-			}
-			141 = {
-				if = {
-					limit = {
-						is_owned_by = GRN
-					}
-					add_core_of = GRN
-				}
-			}
-			38 = {
-				if = {
-					limit = {
-						is_owned_by = GRN
-					}
-					add_core_of = GRN
-				}
-			}
-			666 = {
-				if = {
-					limit = {
-						is_owned_by = GRN
-					}
-					add_core_of = GRN
-				}
-			}
-			#nor
-			110 = {
-				if = {
-					limit = {
-						is_owned_by = GRN
-					}
-					add_core_of = GRN
-				}
-			}
-			144 = {
-				if = {
-					limit = {
-						is_owned_by = GRN
-					}
-					add_core_of = GRN
-				}
-			}
-			142 = {
-				if = {
-					limit = {
-						is_owned_by = GRN
-					}
-					add_core_of = GRN
-				}
-			}
-			143 = {
-				if = {
-					limit = {
-						is_owned_by = GRN
-					}
-					add_core_of = GRN
-				}
-			}
-		}
-		ai_will_do = {
-			factor = 1
-			modifier = {
-			}
-		}
-	}
-	##inbetween focuses########
 	#Raise Monarchism in the Arctic
 	focus = {
 		id = GRN_raise_monarchism_in_the_arctic
 		icon = GFX_focus_rom_royal_dictatorship
-		x = 7
+		x = 6
 		y = 3
 		
 		available = {
@@ -1077,11 +482,8 @@ focus_tree = {
 		}
 		cost = 10
 		prerequisite = {
-			focus = GRN_restore_the_danish_monarchy
 			focus = GRN_the_santa_monarchy
 		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
 			#ideas for arctic nations
@@ -1109,48 +511,16 @@ focus_tree = {
 					days = 350
 				}
 			}
-			ICE = {
-				add_timed_idea = {
-					idea = support_for_monarchism
-					days = 350
-				}
-			}
-			DEN = {
-				add_timed_idea = {
-					idea = support_for_monarchism
-					days = 350
-				}
-			}
-			SWE = {
-				add_timed_idea = {
-					idea = support_for_monarchism
-					days = 350
-				}
-			}
-			NOR = {
-				add_timed_idea = {
-					idea = support_for_monarchism
-					days = 350
-				}
-			}
-			FIN = {
-				add_timed_idea = {
-					idea = support_for_monarchism
-					days = 350
-				}
-			}
 		}
 		ai_will_do = {
 			factor = 1
-			modifier = {
-			}
 		}
 	}
 	#Establish our Place
 	focus = {
 		id = GRN_establish_our_place
 		icon = GFX_goal_generic_propaganda
-		x = 7
+		x = 6
 		y = 4
 		
 		available = {
@@ -1161,8 +531,6 @@ focus_tree = {
 		prerequisite = {
 			focus = GRN_raise_monarchism_in_the_arctic
 		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
 			#2 random wargoals 
@@ -1222,16 +590,11 @@ focus_tree = {
 		}
 		cost = 10
 		prerequisite = {
-			focus = GRN_annex_iceland
 			focus = GRN_recruit_the_elves
 		}
 		prerequisite = {
-			focus = GRN_annex_scandinavia
 			focus = GRN_toys_in_new_york
 		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
 		completion_reward = {
 			#faction with monarchist florida
 			create_faction = GRN_FLF_FACTION
@@ -1241,15 +604,13 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 1
-			modifier = {
-			}
 		}
 	}
 	##The Santa Monarchy##
 	focus = {
 		id = GRN_the_santa_monarchy
 		icon = GFX_goal_molotov_ribbentrop_pact
-		x = 8
+		x = 7
 		y = 2
 		
 		available = {
@@ -1260,11 +621,6 @@ focus_tree = {
 		prerequisite = {
 			focus = GRN_the_kingdom_of_greenland
 		}
-		mutually_exclusive = {
-			focus = GRN_restore_the_danish_monarchy
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
 			#leader becomes santa and cosmetic tag
@@ -1291,7 +647,7 @@ focus_tree = {
 	focus = {
 		id = GRN_annex_rhode_island_and_delaware
 		icon = GFX_goal_generic_territory_or_war
-		x = 9
+		x = 8
 		y = 3
 		
 		available = {
@@ -1302,54 +658,28 @@ focus_tree = {
 		prerequisite = {
 			focus = GRN_the_santa_monarchy
 		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
 			#annexes rhode island and delaware, no event
-			1078 = {
-				if = {
-					limit = {
-						is_owned_by = DED
-					}
-					add_claim_by = GRN
-					add_compliance = 60
-				}
-			}
-			1079 = {
-				if = {
-					limit = {
-						is_owned_by = DED
-					}
-					add_claim_by = GRN
-					add_compliance = 60
-				}
-			}
-			1080 = {
-				if = {
-					limit = {
-						is_owned_by = DED
-					}
-					add_claim_by = GRN
-					add_compliance = 60
-				}
-			}
 			annex_country = {
 				target = DED
 				transfer_troops = yes
 			}
-			1097 = {
-				if = {
-					limit = {
-						is_owned_by = RIR
-					}
-					add_claim_by = GRN
-					add_compliance = 60
+			every_state = {
+				limit = {
+					is_core_of = DED
 				}
+				add_compliance = 60
 			}
 			annex_country = {
 				target = RIR
 				transfer_troops = yes
+			}
+			every_state = {
+				limit = {
+					is_core_of = RIR
+				}
+				add_compliance = 60
 			}
 			add_political_power = 50
 			add_war_support = 0.05
@@ -1358,15 +688,13 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 1
-			modifier = {
-			}
 		}
 	}
 	#Construct Toy Factories
 	focus = {
 		id = GRN_construct_toy_factories
 		icon = GFX_goal_generic_construct_mil_factory
-		x = 9
+		x = 8
 		y = 4
 		
 		available = {
@@ -1377,11 +705,9 @@ focus_tree = {
 		prerequisite = {
 			focus = GRN_annex_rhode_island_and_delaware
 		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
-			1078 = {
+			237 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
@@ -1389,7 +715,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			1080 = {
+			193 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
@@ -1397,7 +723,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			1097 = {
+			1050 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
@@ -1408,15 +734,13 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 1
-			modifier = {
-			}
 		}
 	}
 	#Recruit the Elves
 	focus = {
 		id = GRN_recruit_the_elves
 		icon = GFX_focus_generic_support_the_left_right
-		x = 10
+		x = 9
 		y = 5
 		
 		available = {
@@ -1427,57 +751,21 @@ focus_tree = {
 		prerequisite = {
 			focus = GRN_construct_toy_factories
 		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
-			add_ideas = {
-				elf_recruitment
-			}
-			1078 = {
-				if = {
-					limit = {
-						is_owned_by = GRN
-					}
-					add_core_of = GRN
-				}
-			}
-			1079 = {
-				if = {
-					limit = {
-						is_owned_by = GRN
-					}
-					add_core_of = GRN
-				}
-			}
-			1080 = {
-				if = {
-					limit = {
-						is_owned_by = GRN
-					}
-					add_core_of = GRN
-				}
-			}
-			1097 = {
-				if = {
-					limit = {
-						is_owned_by = GRN
-					}
-					add_core_of = GRN
-				}
-			}
+			add_ideas = elf_recruitment
+			core_delaware_effect = yes
+			core_rhode_island_effect = yes
 		}
 		ai_will_do = {
 			factor = 1
-			modifier = {
-			}
 		}
 	}
 	#Toys in New York
 	focus = {
 		id = GRN_toys_in_new_york
 		icon = GFX_goal_generic_demand_territory
-		x = 8
+		x = 7
 		y = 5
 		
 		available = {
@@ -1488,31 +776,41 @@ focus_tree = {
 		prerequisite = {
 			focus = GRN_construct_toy_factories
 		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
 			#annexes nyc with claim, and gives factory
-			1084 = {
+			201 = {
 				if = {
 					limit = {
 						is_owned_by = NYN
 					}
 					add_claim_by = GRN
 					GRN = {
-						transfer_state = 1084
+						transfer_state = 201
 					}
 					add_compliance = 60
 				}
 			}
-			1085 = {
+			586 = {
 				if = {
 					limit = {
 						is_owned_by = NYN
 					}
 					add_claim_by = GRN
 					GRN = {
-						transfer_state = 1085
+						transfer_state = 586
+					}
+					add_compliance = 60
+				}
+			}
+			204 = {
+				if = {
+					limit = {
+						is_owned_by = NYN
+					}
+					add_claim_by = GRN
+					GRN = {
+						transfer_state = 204
 					}
 					add_compliance = 60
 				}
@@ -1520,8 +818,6 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 1
-			modifier = {
-			}
 		}
 	}
 	#The Christmas Expansion
@@ -1535,54 +831,48 @@ focus_tree = {
 		}
 		bypass = {
 		}
-		cost = 16
+		cost = 17.2
 		prerequisite = {
 			focus = GRN_toys_in_new_york
 		}
 		prerequisite = {
 			focus = GRN_recruit_the_elves
 		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
 			#annex parts of the coast dela-rhode and core nyc
-			1084 = {
+			244 = {
 				if = {
 					limit = {
-						is_owned_by = GRN
+						is_owned_by = VAV
 					}
-					add_core_of = GRN
+					add_claim_by = GRN
+					GRN = {
+						transfer_state = 244
+					}
+					add_compliance = 60
 				}
 			}
-			1085 = {
-				if = {
-					limit = {
-						is_owned_by = GRN
-					}
-					add_core_of = GRN
-				}
-			}
-			1067 = {
+			239 = {
 				if = {
 					limit = {
 						is_owned_by = MDM
 					}
 					add_claim_by = GRN
 					GRN = {
-						transfer_state = 1067
+						transfer_state = 239
 					}
 					add_compliance = 60
 				}
 			}
-			1082 = {
+			219 = {
 				if = {
 					limit = {
 						is_owned_by = NJN
 					}
 					add_claim_by = PAP
 					PAP = {
-						transfer_state = 1082
+						transfer_state = 219
 					}
 					add_compliance = 60
 				}
@@ -1591,146 +881,46 @@ focus_tree = {
 				target = NJN
 				transfer_troops = yes
 			}
-			1081 = {
-				if = {
-					limit = {
-						is_owned_by = NJN
-					}
-					add_claim_by = GRN
-					GRN = {
-						transfer_state = 1081
-					}
-					add_compliance = 60
+			every_state = {
+				limit = {
+					is_core_of = NJN
+					is_owned_by = GRN
 				}
+				add_compliance = 60
 			}
-			1083 = {
-				if = {
-					limit = {
-						is_owned_by = NJN
-					}
-					add_claim_by = GRN
-					GRN = {
-						transfer_state = 1083
-					}
-					add_compliance = 60
-				}
-			}
-			359 = {
-				if = {
-					limit = {
-						is_owned_by = NJN
-					}
-					add_claim_by = GRN
-					GRN = {
-						transfer_state = 359
-					}
-					add_compliance = 60
-				}
-			}
-			1077 = {
+			224 = {
 				if = {
 					limit = {
 						is_owned_by = PAP
 					}
 					add_claim_by = GRN
 					GRN = {
-						transfer_state = 1077
+						transfer_state = 224
 					}
 					add_compliance = 60
 				}
 			}
-			1094 = {
-				if = {
-					limit = {
-						is_owned_by = CTC
-					}
-					add_claim_by = GRN
-					GRN = {
-						transfer_state = 1094
-					}
-					add_compliance = 60
-				}
+			annex_country = {
+				target = CTC
+				transfer_troops = yes
 			}
-			1095 = {
-				if = {
-					limit = {
-						is_owned_by = CTC
-					}
-					add_claim_by = GRN
-					GRN = {
-						transfer_state = 1095
-					}
-					add_compliance = 60
+			every_state = {
+				limit = {
+					is_core_of = CTC
+					is_owned_by = GRN
 				}
-			}
-			1096 = {
-				if = {
-					limit = {
-						is_owned_by = CTC
-					}
-					add_claim_by = GRN
-					GRN = {
-						transfer_state = 1096
-					}
-					add_compliance = 60
-				}
+				add_core_of = GRN
 			}
 		}
 		ai_will_do = {
 			factor = 1
-			modifier = {
-			}
-		}
-	}
-	#Annex Bosnia
-	focus = {
-		id = GRN_annex_bosnia
-		icon = GFX_focus_YUG_safeguard_bosnia
-		x = 11
-		y = 6
-		
-		available = {
-		}
-		bypass = {
-		}
-		cost = 22
-		prerequisite = {
-			focus = GRN_recruit_the_elves
-		}
-		prerequisite = {
-			focus = GRN_toys_in_new_york
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		completion_reward = {
-			#annexes bosnia with core
-			104 = {
-				add_claim_by = GRN
-				GRN = {
-					transfer_state = 104
-				}
-				add_compliance = 90
-			}
-			105 = {
-				add_claim_by = GRN
-				GRN = {
-					transfer_state = 105
-				}
-				add_compliance = 70
-			}
-		}
-		ai_will_do = {
-			factor = 1
-			modifier = {
-			}
 		}
 	}
 	#War with California
 	focus = {
 		id = GRN_war_with_california
 		icon = GFX_goal_california_war
-		x = 10
+		x = 8
 		y = 7
 		
 		available = {
@@ -1739,10 +929,9 @@ focus_tree = {
 		}
 		cost = 10
 		prerequisite = {
-			focus = GRN_annex_bosnia
-		}
-		prerequisite = {
 			focus = GRN_the_christmas_expansion
+			focus = GRN_an_alliance_with_florida
+			focus = GRN_the_winter_army
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -1756,15 +945,13 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 1
-			modifier = {
-			}
 		}
 	}
 	#Santa in the South
 	focus = {
 		id = GRN_santa_in_the_south
 		icon = GFX_goal_generic_major_war
-		x = 8
+		x = 6
 		y = 7
 		
 		available = {
@@ -1773,13 +960,10 @@ focus_tree = {
 		}
 		cost = 20
 		prerequisite = {
-			focus = GRN_annex_bosnia
-		}
-		prerequisite = {
 			focus = GRN_the_christmas_expansion
+			focus = GRN_an_alliance_with_florida
+			focus = GRN_the_winter_army
 		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
 			#wargoals on the south, virginia, nc, sc, ga
@@ -1802,8 +986,6 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 1
-			modifier = {
-			}
 		}
 	}
 	#Democratic Greenland Path
@@ -1831,8 +1013,6 @@ focus_tree = {
 		prerequisite = {
 			focus = GRN_a_new_greenland
 		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
 			add_popularity = {
@@ -1843,8 +1023,6 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 15
-			modifier = {
-			}
 		}
 	}
 	#Hold Elections
@@ -1862,8 +1040,6 @@ focus_tree = {
 		prerequisite = {
 			focus = GRN_the_republic_of_greenland
 		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
 			#election event
@@ -1873,8 +1049,6 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 4
-			modifier = {
-			}
 		}
 	}
 	##Historical Path##
@@ -1897,8 +1071,6 @@ focus_tree = {
 		prerequisite = {
 			focus = GRN_hold_elections
 		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
 			#completed by election event
@@ -1906,8 +1078,6 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 1
-			modifier = {
-			}
 		}
 	}
 	#Pro-Democratic Propaganda
@@ -1927,8 +1097,6 @@ focus_tree = {
 		prerequisite = {
 			focus = GRN_the_council_wins
 		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
 			#democratic_propaganda idea
@@ -1939,8 +1107,6 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 1
-			modifier = {
-			}
 		}
 	}
 	#An Alliance with our Neighbors
@@ -1960,8 +1126,6 @@ focus_tree = {
 		prerequisite = {
 			focus = GRN_the_council_wins
 		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
 			#alliance with neighbors, canada nations, events
@@ -2010,8 +1174,6 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 1
-			modifier = {
-			}
 		}
 	}
 	#The Republic of Greenland Rises
@@ -2034,8 +1196,6 @@ focus_tree = {
 		prerequisite = {
 			focus = GRN_prodemocratic_propaganda
 		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
 			#idea?
@@ -2045,8 +1205,6 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 1
-			modifier = {
-			}
 		}
 	}
 	#Defense of the Greenlanders
@@ -2066,8 +1224,6 @@ focus_tree = {
 		prerequisite = {
 			focus = GRN_the_republic_of_greenland_rises
 		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
 			#idea with defense buff
@@ -2077,8 +1233,6 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 1
-			modifier = {
-			}
 		}
 	}
 	##Shared stuff##
@@ -2105,8 +1259,6 @@ focus_tree = {
 			focus = GRN_the_council_wins
 			focus = GRN_the_polar_bears_somehow_win
 		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
 			#event, proposes union with alliance members
@@ -2216,8 +1368,6 @@ focus_tree = {
 		prerequisite = {
 			focus = GRN_proposals_of_a_union
 		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
 			#makes union, gives cores on members that accepted (flags0
@@ -2230,38 +1380,6 @@ focus_tree = {
 					limit = {
 						has_global_flag = LAB_UNION
 					}
-					332 = {
-						if = {
-							limit = {
-								is_owned_by = LAB
-							}
-							add_core_of = GRN
-						}
-					}
-					1142 = {
-						if = {
-							limit = {
-								is_owned_by = LAB
-							}
-							add_core_of = GRN
-						}
-					}
-					1143 = {
-						if = {
-							limit = {
-								is_owned_by = LAB
-							}
-							add_core_of = GRN
-						}
-					}
-					1144 = {
-						if = {
-							limit = {
-								is_owned_by = LAB
-							}
-							add_core_of = GRN
-						}
-					}
 					LAB = {
 						every_unit_leader = {
 							set_nationality = GRN
@@ -2270,6 +1388,12 @@ focus_tree = {
 					annex_country = {
 						target = LAB
 						transfer_troops = yes
+					}
+					every_state = {
+						limit = {
+							is_core_of = LAB
+						}
+						add_core_of = GRN
 					}
 				}
 				if = {
@@ -2482,22 +1606,6 @@ focus_tree = {
 					limit = {
 						has_global_flag = NUN_UNION
 					}
-					950 = {
-						if = {
-							limit = {
-								is_owned_by = NUN
-							}
-							add_core_of = GRN
-						}
-					}
-					683 = {
-						if = {
-							limit = {
-								is_owned_by = NUN
-							}
-							add_core_of = GRN
-						}
-					}
 					NUN = {
 						every_unit_leader = {
 							set_nationality = GRN
@@ -2507,50 +1615,16 @@ focus_tree = {
 						target = NUN
 						transfer_troops = yes
 					}
+					every_state = {
+						limit = {
+							is_core_of = NUN
+						}
+						add_core_of = GRN
+					}
 				}
 				if = {
 					limit = {
 						has_global_flag = NTN_UNION
-					}
-					472 = {
-						if = {
-							limit = {
-								is_owned_by = NTN
-							}
-							add_core_of = GRN
-						}
-					}
-					839 = {
-						if = {
-							limit = {
-								is_owned_by = NTN
-							}
-							add_core_of = GRN
-						}
-					}
-					840 = {
-						if = {
-							limit = {
-								is_owned_by = NTN
-							}
-							add_core_of = GRN
-						}
-					}
-					841 = {
-						if = {
-							limit = {
-								is_owned_by = NTN
-							}
-							add_core_of = GRN
-						}
-					}
-					842 = {
-						if = {
-							limit = {
-								is_owned_by = NTN
-							}
-							add_core_of = GRN
-						}
 					}
 					NTN = {
 						every_unit_leader = {
@@ -2561,50 +1635,16 @@ focus_tree = {
 						target = NTN
 						transfer_troops = yes
 					}
+					every_state = {
+						limit = {
+							is_core_of = NTN
+						}
+						add_core_of = GRN
+					}
 				}
 				if = {
 					limit = {
 						has_global_flag = YTY_UNION
-					}
-					471 = {
-						if = {
-							limit = {
-								is_owned_by = YTY
-							}
-							add_core_of = GRN
-						}
-					}
-					836 = {
-						if = {
-							limit = {
-								is_owned_by = YTY
-							}
-							add_core_of = GRN
-						}
-					}
-					837 = {
-						if = {
-							limit = {
-								is_owned_by = YTY
-							}
-							add_core_of = GRN
-						}
-					}
-					838 = {
-						if = {
-							limit = {
-								is_owned_by = YTY
-							}
-							add_core_of = GRN
-						}
-					}
-					1151 = {
-						if = {
-							limit = {
-								is_owned_by = YTY
-							}
-							add_core_of = GRN
-						}
 					}
 					YTY = {
 						every_unit_leader = {
@@ -2615,66 +1655,16 @@ focus_tree = {
 						target = YTY
 						transfer_troops = yes
 					}
+					every_state = {
+						limit = {
+							is_core_of = YTY
+						}
+						add_core_of = GRN
+					}
 				}
 				if = {
 					limit = {
 						has_global_flag = AKA_UNION
-					}
-					463 = {
-						if = {
-							limit = {
-								is_owned_by = AKA
-							}
-							add_core_of = GRN
-						}
-					}
-					1198 = {
-						if = {
-							limit = {
-								is_owned_by = AKA
-							}
-							add_core_of = GRN
-						}
-					}
-					1199 = {
-						if = {
-							limit = {
-								is_owned_by = AKA
-							}
-							add_core_of = GRN
-						}
-					}
-					1200 = {
-						if = {
-							limit = {
-								is_owned_by = AKA
-							}
-							add_core_of = GRN
-						}
-					}
-					1201 = {
-						if = {
-							limit = {
-								is_owned_by = AKA
-							}
-							add_core_of = GRN
-						}
-					}
-					1202 = {
-						if = {
-							limit = {
-								is_owned_by = AKA
-							}
-							add_core_of = GRN
-						}
-					}
-					835 = {
-						if = {
-							limit = {
-								is_owned_by = AKA
-							}
-							add_core_of = GRN
-						}
 					}
 					AKA = {
 						every_unit_leader = {
@@ -2685,13 +1675,17 @@ focus_tree = {
 						target = AKA
 						transfer_troops = yes
 					}
+					every_state = {
+						limit = {
+							is_core_of = AKA
+						}
+						add_core_of = GRN
+					}
 				}
 			}
 		}
 		ai_will_do = {
 			factor = 1
-			modifier = {
-			}
 		}
 	}
 	#Building up Industry
@@ -2710,11 +1704,15 @@ focus_tree = {
 			focus = GRN_establish_the_polar_bear_republic
 			focus = GRN_the_republic_of_greenland_rises
 		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
 			random_owned_state = {
+				limit = {
+					NOT = {
+						state = 1043
+						state = 1044
+					}
+				}
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
@@ -2723,6 +1721,12 @@ focus_tree = {
 				}
 			}
 			random_owned_state = {
+				limit = {
+					NOT = {
+						state = 1043
+						state = 1044
+					}
+				}
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
@@ -2733,8 +1737,6 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 1
-			modifier = {
-			}
 		}
 	}
 	#Liberate Democracy
@@ -2755,8 +1757,6 @@ focus_tree = {
 			focus = GRN_defense_of_the_greenlanders
 			focus = GRN_prepare_the_polar_bears
 		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
 			#idea that justfiy
@@ -2766,8 +1766,6 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 1
-			modifier = {
-			}
 		}
 	}
 	##Polar Bear Path##
@@ -2790,8 +1788,6 @@ focus_tree = {
 		prerequisite = {
 			focus = GRN_hold_elections
 		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
 			#completed by election event
@@ -2799,8 +1795,6 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 1
-			modifier = {
-			}
 		}
 	}
 	#Polar Bear Citizenship
@@ -2820,8 +1814,6 @@ focus_tree = {
 		prerequisite = {
 			focus = GRN_the_polar_bears_somehow_win
 		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
 			#add polar_bear_citizenship
@@ -2831,8 +1823,6 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 1
-			modifier = {
-			}
 		}
 	}
 	#The Polar Bear Alliance
@@ -2841,19 +1831,10 @@ focus_tree = {
 		icon = GFX_goal_generic_intelligence_exchange
 		x = 19
 		y = 4
-		
-		available = {
-		}
-		bypass = {
-		}
-		mutually_exclusive = {
-		}
 		cost = 10
 		prerequisite = {
 			focus = GRN_the_polar_bears_somehow_win
 		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
 			#alliance with arctic nations
@@ -2894,8 +1875,6 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 1
-			modifier = {
-			}
 		}
 	}
 	#Establish the Polar Bear Republic
@@ -2918,8 +1897,6 @@ focus_tree = {
 		prerequisite = {
 			focus = GRN_the_polar_bear_alliance
 		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
 			#idea and tag change
@@ -2930,8 +1907,6 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 1
-			modifier = {
-			}
 		}
 	}
 	#Prepare the Polar Bears
@@ -2951,8 +1926,6 @@ focus_tree = {
 		prerequisite = {
 			focus = GRN_establish_the_polar_bear_republic
 		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
 			#idea with attack buff
@@ -2962,8 +1935,6 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 1
-			modifier = {
-			}
 		}
 	}
 	#Communist Greenland Path
@@ -2991,8 +1962,6 @@ focus_tree = {
 		prerequisite = {
 			focus = GRN_a_new_greenland
 		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
 			set_politics = {
@@ -3018,8 +1987,6 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 1
-			modifier = {
-			}
 		}
 	}
 	#The Military Speech
@@ -3037,8 +2004,6 @@ focus_tree = {
 		prerequisite = {
 			focus = GRN_the_polar_bears_rise_up
 		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
 			add_stability = 0.15
@@ -3046,8 +2011,6 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 1
-			modifier = {
-			}
 		}
 	}
 	#Polar Bear Propaganda
@@ -3057,16 +2020,10 @@ focus_tree = {
 		x = 21
 		y = 2
 		
-		available = {
-		}
-		bypass = {
-		}
 		cost = 8
 		prerequisite = {
 			focus = GRN_the_polar_bears_rise_up
 		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
 			#timed idea that increases communist support
@@ -3077,8 +2034,6 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 1
-			modifier = {
-			}
 		}
 	}
 	#Purge the Officers
@@ -3096,8 +2051,6 @@ focus_tree = {
 		prerequisite = {
 			focus = GRN_the_polar_bears_rise_up
 		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
 			#timed idea, gives negative buffs, polar bear union gives buff to make it worth
@@ -3108,8 +2061,6 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 1
-			modifier = {
-			}
 		}
 	}
 	#Recruit our Brothers
@@ -3127,9 +2078,6 @@ focus_tree = {
 		prerequisite = {
 			focus = GRN_the_polar_bears_rise_up
 		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
 		completion_reward = {
 			#recruitment idea
 			add_ideas = {
@@ -3138,8 +2086,6 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 1
-			modifier = {
-			}
 		}
 	}
 	#State Schools
@@ -3160,8 +2106,6 @@ focus_tree = {
 		prerequisite = {
 			focus = GRN_the_military_speech
 		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
 			#research slot
@@ -3170,8 +2114,6 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 1
-			modifier = {
-			}
 		}
 	}
 	#The Bears' Army
@@ -3192,8 +2134,6 @@ focus_tree = {
 		prerequisite = {
 			focus = GRN_recruit_our_brothers
 		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
 			#adds idea with better attack, defence, org
@@ -3204,8 +2144,6 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 1
-			modifier = {
-			}
 		}
 	}
 	#The Polar Bear Union
@@ -3226,8 +2164,6 @@ focus_tree = {
 		prerequisite = {
 			focus = GRN_state_schools
 		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
 			#adds idea with buffs, cosmetic tags
@@ -3238,8 +2174,6 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 1
-			modifier = {
-			}
 		}
 	}
 	#Go with Trotsky
@@ -3260,8 +2194,6 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = GRN_go_with_stalin
 		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
 			#adds idea 
@@ -3271,8 +2203,6 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 1
-			modifier = {
-			}
 		}
 	}
 	#Go with Stalin
@@ -3293,8 +2223,6 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = GRN_go_with_trotsky
 		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
 			#adds idea 
@@ -3304,8 +2232,6 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 1
-			modifier = {
-			}
 		}
 	}
 	#The Arctic Revolution
@@ -3324,8 +2250,6 @@ focus_tree = {
 			focus = GRN_go_with_stalin
 			focus = GRN_go_with_trotsky
 		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
 			#adds communist support idea for arctic nations support_for_arctic_communism
@@ -3353,41 +2277,9 @@ focus_tree = {
 					days = 350
 				}
 			}
-			ICE = {
-				add_timed_idea = {
-					idea = support_for_arctic_communism
-					days = 350
-				}
-			}
-			DEN = {
-				add_timed_idea = {
-					idea = support_for_arctic_communism
-					days = 350
-				}
-			}
-			SWE = {
-				add_timed_idea = {
-					idea = support_for_arctic_communism
-					days = 350
-				}
-			}
-			NOR = {
-				add_timed_idea = {
-					idea = support_for_arctic_communism
-					days = 350
-				}
-			}
-			FIN = {
-				add_timed_idea = {
-					idea = support_for_arctic_communism
-					days = 350
-				}
-			}
 		}
 		ai_will_do = {
 			factor = 1
-			modifier = {
-			}
 		}
 	}
 	#Liberate them into the Union
@@ -3396,17 +2288,10 @@ focus_tree = {
 		icon = GFX_Focus_Down_in_Flames
 		x = 19
 		y = 6
-		
-		available = {
-		}
-		bypass = {
-		}
 		cost = 10
 		prerequisite = {
 			focus = GRN_go_with_trotsky
 		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
 			#gives wargoals to annex the arctic
@@ -3429,8 +2314,6 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 1
-			modifier = {
-			}
 		}
 	}
 	#Integrate the Polar Bears
@@ -3441,180 +2324,35 @@ focus_tree = {
 		y = 7
 		
 		available = {
-			has_full_control_of_state = 683
-			has_full_control_of_state = 1257
-			has_full_control_of_state = 1254
-			has_full_control_of_state = 1202
-			has_full_control_of_state = 1201
+			has_full_control_of_state = 1038
+			has_full_control_of_state = 1012
+			has_full_control_of_state = 990
+			has_full_control_of_state = 1000
+			has_full_control_of_state = 770
 		}
 		bypass = {
 		}
-		cost = 17
+		cost = 17.2
 		prerequisite = {
 			focus = GRN_liberate_them_into_the_union
 		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
 			#gives cores on arctic, need to own states
-			683 = {
-				if = {
-					limit = {
-						is_owned_by = GRN
+			every_owned_state = {
+				limit = {
+					OR = {
+						is_core_of = AKA
+						is_core_of = NUN
+						is_core_of = NTN
+						is_core_of = YTY
 					}
-					add_core_of = GRN
 				}
-			}
-			950 = {
-				if = {
-					limit = {
-						is_owned_by = GRN
-					}
-					add_core_of = GRN
-				}
-			}
-			472 = {
-				if = {
-					limit = {
-						is_owned_by = GRN
-					}
-					add_core_of = GRN
-				}
-			}
-			839 = {
-				if = {
-					limit = {
-						is_owned_by = GRN
-					}
-					add_core_of = GRN
-				}
-			}
-			840 = {
-				if = {
-					limit = {
-						is_owned_by = GRN
-					}
-					add_core_of = GRN
-				}
-			}
-			841 = {
-				if = {
-					limit = {
-						is_owned_by = GRN
-					}
-					add_core_of = GRN
-				}
-			}
-			842 = {
-				if = {
-					limit = {
-						is_owned_by = GRN
-					}
-					add_core_of = GRN
-				}
-			}
-			471 = {
-				if = {
-					limit = {
-						is_owned_by = GRN
-					}
-					add_core_of = GRN
-				}
-			}
-			836 = {
-				if = {
-					limit = {
-						is_owned_by = GRN
-					}
-					add_core_of = GRN
-				}
-			}
-			837 = {
-				if = {
-					limit = {
-						is_owned_by = GRN
-					}
-					add_core_of = GRN
-				}
-			}
-			838 = {
-				if = {
-					limit = {
-						is_owned_by = GRN
-					}
-					add_core_of = GRN
-				}
-			}
-			1151 = {
-				if = {
-					limit = {
-						is_owned_by = GRN
-					}
-					add_core_of = GRN
-				}
-			}
-			463 = {
-				if = {
-					limit = {
-						is_owned_by = GRN
-					}
-					add_core_of = GRN
-				}
-			}
-			1198 = {
-				if = {
-					limit = {
-						is_owned_by = GRN
-					}
-					add_core_of = GRN
-				}
-			}
-			1199 = {
-				if = {
-					limit = {
-						is_owned_by = GRN
-					}
-					add_core_of = GRN
-				}
-			}
-			1200 = {
-				if = {
-					limit = {
-						is_owned_by = GRN
-					}
-					add_core_of = GRN
-				}
-			}
-			1201 = {
-				if = {
-					limit = {
-						is_owned_by = GRN
-					}
-					add_core_of = GRN
-				}
-			}
-			1202 = {
-				if = {
-					limit = {
-						is_owned_by = GRN
-					}
-					add_core_of = GRN
-				}
-			}
-			835 = {
-				if = {
-					limit = {
-						is_owned_by = GRN
-					}
-					add_core_of = GRN
-				}
+				add_core_of = GRN
 			}
 		}
 		ai_will_do = {
 			factor = 1
-			modifier = {
-			}
 		}
 	}
 	#Puppet the Arctic
@@ -3632,8 +2370,6 @@ focus_tree = {
 		prerequisite = {
 			focus = GRN_go_with_stalin
 		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
 			#gives wargoals to puppet the arctic
@@ -3656,8 +2392,6 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 1
-			modifier = {
-			}
 		}
 	}
 	#Start a coup in Quebec
@@ -3675,20 +2409,20 @@ focus_tree = {
 		prerequisite = {
 			focus = GRN_puppet_the_arctic
 		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
 			#starts civil war in quebec
-			QBC = {
+			QCQ = {
 				start_civil_war = {
 					ideology = communism
 					size = 0.5
 					capital = 1133
 					states = {
-						466
-						1133
-						1134
+						834
+						835
+						833
+						832
+						831
 					}
 					keep_political_leader = yes
 				}
@@ -3696,8 +2430,6 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 1
-			modifier = {
-			}
 		}
 	}
 	#Liberate the Polar Bears of the World!
@@ -3716,9 +2448,6 @@ focus_tree = {
 			focus = GRN_puppet_the_arctic
 			focus = GRN_liberate_them_into_the_union
 		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
 		completion_reward = {
 			#idea that reduces war goal justfiy time
 			add_ideas = {
@@ -3727,8 +2456,6 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 1
-			modifier = {
-			}
 		}
 	}
 	#Industry Path
@@ -3747,11 +2474,15 @@ focus_tree = {
 		prerequisite = {
 			focus = GRN_a_new_greenland
 		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
 			random_owned_state = {
+				limit = {
+					NOT = {
+						state = 1043
+						state = 1044
+					}
+				}
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
@@ -3760,6 +2491,12 @@ focus_tree = {
 				}
 			}
 			random_owned_state = {
+				limit = {
+					NOT = {
+						state = 1043
+						state = 1044
+					}
+				}
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
@@ -3770,8 +2507,6 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 1
-			modifier = {
-			}
 		}
 	}
 	#Greenland's Industry
@@ -3787,9 +2522,6 @@ focus_tree = {
 		}
 		cost = 8
 		#prerequisite = { focus = GRN_a_new_greenland }
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
 		completion_reward = {
 			add_tech_bonus = {
 				bonus = 1
@@ -3799,8 +2531,6 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 8
-			modifier = {
-			}
 		}
 	}
 	#Danish Factories
@@ -3818,8 +2548,6 @@ focus_tree = {
 		prerequisite = {
 			focus = GRN_greenland_industry
 		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
 			random_owned_state = {
@@ -3833,8 +2561,6 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 1
-			modifier = {
-			}
 		}
 	}
 	#Nuuk Railways
@@ -3852,22 +2578,18 @@ focus_tree = {
 		prerequisite = {
 			focus = GRN_greenland_industry
 		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
-			1188 = {
+			1050 = {
 				set_building_level = {
 					type = infrastructure
-					level = 3
+					level = 2
 					instant_build = yes
 				}
 			}
 		}
 		ai_will_do = {
 			factor = 1
-			modifier = {
-			}
 		}
 	}
 	#Inuit Factories
@@ -3885,11 +2607,14 @@ focus_tree = {
 		prerequisite = {
 			focus = GRN_greenland_industry
 		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
 		completion_reward = {
 			random_owned_state = {
+				limit = {
+					NOT = {
+						state = 1043
+						state = 1044
+					}
+				}
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
@@ -3900,8 +2625,6 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 1
-			modifier = {
-			}
 		}
 	}
 	#Improving Nuuk Factories
@@ -3925,11 +2648,9 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = GRN_nuuk_ports
 		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
-			1188 = {
+			1050 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
@@ -3940,8 +2661,6 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 1
-			modifier = {
-			}
 		}
 	}
 	#Nuuk Ports
@@ -3965,11 +2684,9 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = GRN_improving_nuuk_factories
 		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
-			1188 = {
+			1050 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = dockyard
@@ -3979,14 +2696,12 @@ focus_tree = {
 				set_building_level = {
 					type = naval_base
 					level = 3
-					province = 15434
+					province = 10452
 				}
 			}
 		}
 		ai_will_do = {
 			factor = 1
-			modifier = {
-			}
 		}
 	}
 	#Nuuk Tank Research
@@ -4004,9 +2719,6 @@ focus_tree = {
 		prerequisite = {
 			focus = GRN_improving_nuuk_factories
 		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
 		completion_reward = {
 			add_tech_bonus = {
 				bonus = 1
@@ -4021,8 +2733,6 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 1
-			modifier = {
-			}
 		}
 	}
 	#Nuuk Naval Research
@@ -4040,8 +2750,6 @@ focus_tree = {
 		prerequisite = {
 			focus = GRN_nuuk_ports
 		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
 			add_tech_bonus = {
@@ -4052,8 +2760,6 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 1
-			modifier = {
-			}
 		}
 	}
 	#Industrial Advances
@@ -4072,8 +2778,6 @@ focus_tree = {
 			focus = GRN_improving_nuuk_factories
 			focus = GRN_nuuk_ports
 		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
 			add_tech_bonus = {
@@ -4089,8 +2793,6 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 1
-			modifier = {
-			}
 		}
 	}
 	#Civilian Shops
@@ -4108,11 +2810,15 @@ focus_tree = {
 		prerequisite = {
 			focus = GRN_industrial_advances
 		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
 			random_owned_state = {
+				limit = {
+					NOT = {
+						state = 1043
+						state = 1044
+					}
+				}
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
@@ -4123,8 +2829,6 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 1
-			modifier = {
-			}
 		}
 	}
 	#Military Silos
@@ -4142,11 +2846,14 @@ focus_tree = {
 		prerequisite = {
 			focus = GRN_industrial_advances
 		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
 		completion_reward = {
 			random_owned_state = {
+				limit = {
+					NOT = {
+						state = 1043
+						state = 1044
+					}
+				}
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
@@ -4176,27 +2883,23 @@ focus_tree = {
 		prerequisite = {
 			focus = GRN_industrial_advances
 		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
-			1188 = {
+			1050 = {
 				add_resource = {
 					type = oil
 					amount = 10
 				}
 			}
-			101 = {
+			1058 = {
 				add_resource = {
 					type = steel
-					amount = 19
+					amount = 20
 				}
 			}
 		}
 		ai_will_do = {
 			factor = 1
-			modifier = {
-			}
 		}
 	}
 	#Military Path 
@@ -4208,13 +2911,11 @@ focus_tree = {
 		y = 0
 		
 		available = {
+			has_completed_focus = GRN_a_new_greenland
 		}
 		bypass = {
 		}
 		cost = 8
-		#prerequisite = { focus = GRN_a_new_greenland }
-		cancel_if_invalid = yes
-		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
 			add_political_power = 100
@@ -4225,8 +2926,6 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 1
-			modifier = {
-			}
 		}
 	}
 	#The Arctic Empire/Republic/Commune/Kingdom
@@ -4250,8 +2949,6 @@ focus_tree = {
 		prerequisite = {
 			focus = GRN_the_arctic_sky
 		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
 			add_ideas = {
@@ -4260,8 +2957,6 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 1
-			modifier = {
-			}
 		}
 	}
 	#Navy Path
@@ -4280,8 +2975,6 @@ focus_tree = {
 		prerequisite = {
 			focus = GRN_greenland_military
 		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
 			add_political_power = 10
@@ -4295,8 +2988,6 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 1
-			modifier = {
-			}
 		}
 	}
 	#Construct Convoys
@@ -4314,8 +3005,6 @@ focus_tree = {
 		prerequisite = {
 			focus = GRN_the_navy
 		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
 			add_equipment_to_stockpile = {
@@ -4325,8 +3014,6 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 1
-			modifier = {
-			}
 		}
 	}
 	#Buy ships from the Danish
@@ -4344,25 +3031,12 @@ focus_tree = {
 		prerequisite = {
 			focus = GRN_the_navy
 		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
-			add_equipment_to_stockpile = {
-				type = destroyer
-				amount = 2
-				producer = DEN
-			}
-			add_equipment_to_stockpile = {
-				type = ship_hull_submarine
-				amount = 3
-				producer = DEN
-			}
+			load_oob = "GRN_Denmark_Ships"
 		}
 		ai_will_do = {
 			factor = 1
-			modifier = {
-			}
 		}
 	}
 	#Coastal Dockyards
@@ -4381,11 +3055,9 @@ focus_tree = {
 			focus = GRN_buy_ships_from_the_danish
 			focus = GRN_construct_convoys
 		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
-			101 = {
+			1057 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = dockyard
@@ -4396,8 +3068,6 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 1
-			modifier = {
-			}
 		}
 	}
 	#Build up Ships
@@ -4415,23 +3085,12 @@ focus_tree = {
 		prerequisite = {
 			focus = GRN_coastal_dockyards
 		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
-			add_equipment_to_stockpile = {
-				type = destroyer
-				amount = 3
-			}
-			add_equipment_to_stockpile = {
-				type = ship_hull_submarine
-				amount = 2
-			}
+			load_oob = "GRN_Denmark_Ships"
 		}
 		ai_will_do = {
 			factor = 1
-			modifier = {
-			}
 		}
 	}
 	#Naval Research
@@ -4449,8 +3108,6 @@ focus_tree = {
 		prerequisite = {
 			focus = GRN_coastal_dockyards
 		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
 			add_tech_bonus = {
@@ -4466,8 +3123,6 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 1
-			modifier = {
-			}
 		}
 	}
 	#The Arctic Fleet
@@ -4488,8 +3143,6 @@ focus_tree = {
 		prerequisite = {
 			focus = GRN_naval_research
 		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
 			add_ideas = {
@@ -4498,8 +3151,6 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 1
-			modifier = {
-			}
 		}
 	}
 	#Army Path
@@ -4518,8 +3169,6 @@ focus_tree = {
 		prerequisite = {
 			focus = GRN_greenland_military
 		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
 			add_political_power = 10
@@ -4533,8 +3182,6 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 1
-			modifier = {
-			}
 		}
 	}
 	#Infantry Side	
@@ -4556,8 +3203,6 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = GRN_mechanized_focus
 		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
 			add_ideas = {
@@ -4566,8 +3211,6 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 1
-			modifier = {
-			}
 		}
 	}
 	#Buy Rifles
@@ -4581,12 +3224,10 @@ focus_tree = {
 		}
 		bypass = {
 		}
-		cost = 10
+		cost = 4.3
 		prerequisite = {
 			focus = GRN_infantry_focus
 		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
 			add_equipment_to_stockpile = {
@@ -4596,8 +3237,6 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 1
-			modifier = {
-			}
 		}
 	}
 	#Infantry Research
@@ -4618,8 +3257,6 @@ focus_tree = {
 		prerequisite = {
 			focus = GRN_expand_greenlandic_recruitment
 		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
 			add_tech_bonus = {
@@ -4630,8 +3267,6 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 1
-			modifier = {
-			}
 		}
 	}
 	#Shared
@@ -4651,8 +3286,6 @@ focus_tree = {
 			focus = GRN_infantry_focus
 			focus = GRN_mechanized_focus
 		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
 			add_ideas = {
@@ -4661,8 +3294,6 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 1
-			modifier = {
-			}
 		}
 	}
 	#Mechanized Side
@@ -4684,8 +3315,6 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = GRN_infantry_focus
 		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
 			add_ideas = {
@@ -4694,8 +3323,6 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 1
-			modifier = {
-			}
 		}
 	}
 	#Build up Tanks
@@ -4713,8 +3340,6 @@ focus_tree = {
 		prerequisite = {
 			focus = GRN_mechanized_focus
 		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
 			add_equipment_to_stockpile = {
@@ -4724,8 +3349,6 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 1
-			modifier = {
-			}
 		}
 	}
 	#Motorized Research
@@ -4746,8 +3369,6 @@ focus_tree = {
 		prerequisite = {
 			focus = GRN_expand_greenlandic_recruitment
 		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
 			add_tech_bonus = {
@@ -4758,8 +3379,6 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 1
-			modifier = {
-			}
 		}
 	}
 	#The Arctic Army
@@ -4778,8 +3397,6 @@ focus_tree = {
 			focus = GRN_motorized_research
 			focus = GRN_infantry_research
 		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
 			add_ideas = {
@@ -4788,8 +3405,6 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 1
-			modifier = {
-			}
 		}
 	}
 	#Airforce Path
@@ -4808,8 +3423,6 @@ focus_tree = {
 		prerequisite = {
 			focus = GRN_greenland_military
 		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
 			add_political_power = 10
@@ -4823,8 +3436,6 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 1
-			modifier = {
-			}
 		}
 	}
 	#Greenlandic Built Planes
@@ -4845,8 +3456,6 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = GRN_buy_planes_from_quebec
 		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
 			add_equipment_to_stockpile = {
@@ -4856,8 +3465,6 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 1
-			modifier = {
-			}
 		}
 	}
 	#Buy Planes from Quebec
@@ -4878,25 +3485,21 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = GRN_greenlandic_built_planes
 		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
 			add_equipment_to_stockpile = {
 				type = small_plane_cas_airframe_1
 				amount = 100
-				producer = QBC
+				producer = QCQ
 			}
 			add_equipment_to_stockpile = {
 				type = tac_bomber_equipment_2
 				amount = 80
-				producer = QBC
+				producer = QCQ
 			}
 		}
 		ai_will_do = {
 			factor = 1
-			modifier = {
-			}
 		}
 	}
 	#Nuuk Airfields
@@ -4915,11 +3518,9 @@ focus_tree = {
 			focus = GRN_greenlandic_built_planes
 			focus = GRN_buy_planes_from_quebec
 		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
-			1188 = {
+			1050 = {
 				add_building_construction = {
 					type = air_base
 					level = 3
@@ -4929,8 +3530,6 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 1
-			modifier = {
-			}
 		}
 	}
 	#Aviation Research
@@ -4948,8 +3547,6 @@ focus_tree = {
 		prerequisite = {
 			focus = GRN_nuuk_airfields
 		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
 			add_tech_bonus = {
@@ -4965,8 +3562,6 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 1
-			modifier = {
-			}
 		}
 	}
 	#Build up Planes
@@ -4984,8 +3579,6 @@ focus_tree = {
 		prerequisite = {
 			focus = GRN_nuuk_airfields
 		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
 			add_equipment_to_stockpile = {
@@ -4999,8 +3592,6 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 1
-			modifier = {
-			}
 		}
 	}
 	#The Arctic Sky
@@ -5021,8 +3612,6 @@ focus_tree = {
 		prerequisite = {
 			focus = GRN_build_up_planes
 		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
 			add_ideas = {
@@ -5031,8 +3620,6 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 1
-			modifier = {
-			}
 		}
 	}
 }

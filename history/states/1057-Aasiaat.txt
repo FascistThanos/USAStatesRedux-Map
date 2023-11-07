@@ -7,8 +7,10 @@ state={
 			infrastructure = 1
 
 		}
+		victory_points = {
+			819 5 #Sisimiut
+		}
 		add_core_of = GRN
-
 	}
 	provinces={
 		151 310 329 503 819 820 967 1007 2146 2739 3569 3945 4411 

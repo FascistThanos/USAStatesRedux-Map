@@ -1,0 +1,353 @@
+###########################
+### COLORADO SUPPORTERS ###
+###########################
+defined_text = {
+	name = COC_colorado_supporter0
+	text = {
+		trigger = {
+			check_variable = {
+				global.cocrisis_colorado_supporters^num > 0
+			}
+		}
+		localization_key = cocrisis_colorado_supporter0_name
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				global.cocrisis_colorado_supporters^num < 1
+			}
+		}
+		localization_key = cocrisis_supporter_none
+	}
+}
+defined_text = {
+	name = COC_colorado_supporter1
+	text = {
+		trigger = {
+			check_variable = {
+				global.cocrisis_colorado_supporters^num > 1
+			}
+		}
+		localization_key = cocrisis_colorado_supporter1_name
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				global.cocrisis_colorado_supporters^num < 1
+			}
+		}
+		localization_key = cocrisis_supporter_none
+	}
+}
+defined_text = {
+	name = COC_colorado_supporter2
+	text = {
+		trigger = {
+			check_variable = {
+				global.cocrisis_colorado_supporters^num > 2
+			}
+		}
+		localization_key = cocrisis_colorado_supporter2_name
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				global.cocrisis_colorado_supporters^num < 2
+			}
+		}
+		localization_key = cocrisis_supporter_none
+	}
+}
+defined_text = {
+	name = COC_colorado_supporter3
+	text = {
+		trigger = {
+			check_variable = {
+				global.cocrisis_colorado_supporters^num > 3
+			}
+		}
+		localization_key = cocrisis_colorado_supporter3_name
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				global.cocrisis_colorado_supporters^num < 3
+			}
+		}
+		localization_key = cocrisis_supporter_none
+	}
+}
+########################
+### TEXAS SUPPORTERS ###
+########################
+defined_text = {
+	name = COC_texas_supporter0
+	text = {
+		trigger = {
+			check_variable = {
+				global.cocrisis_texas_supporters^num > 0
+			}
+		}
+		localization_key = cocrisis_texas_supporter0_name
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				global.cocrisis_texas_supporters^num < 1
+			}
+		}
+		localization_key = cocrisis_supporter_none
+	}
+}
+defined_text = {
+	name = COC_texas_supporter1
+	text = {
+		trigger = {
+			check_variable = {
+				global.cocrisis_texas_supporters^num > 1
+			}
+		}
+		localization_key = cocrisis_texas_supporter1_name
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				global.cocrisis_texas_supporters^num < 1
+			}
+		}
+		localization_key = cocrisis_supporter_none
+	}
+}
+defined_text = {
+	name = COC_texas_supporter2
+	text = {
+		trigger = {
+			check_variable = {
+				global.cocrisis_texas_supporters^num > 2
+			}
+		}
+		localization_key = cocrisis_texas_supporter2_name
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				global.cocrisis_texas_supporters^num < 2
+			}
+		}
+		localization_key = cocrisis_supporter_none
+	}
+}
+defined_text = {
+	name = COC_texas_supporter3
+	text = {
+		trigger = {
+			check_variable = {
+				global.cocrisis_texas_supporters^num > 3
+			}
+		}
+		localization_key = cocrisis_texas_supporter3_name
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				global.cocrisis_texas_supporters^num < 3
+			}
+		}
+		localization_key = cocrisis_supporter_none
+	}
+}
+########################
+### NEUTRAL COUNTRIES###
+########################
+defined_text = {
+	name = COC_neutral_country0
+	text = {
+		trigger = {
+			check_variable = {
+				global.cocrisis_neutral_country^num > 0
+			}
+		}
+		localization_key = cocrisis_neutral_country0_name
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				global.cocrisis_neutral_country^num < 1
+			}
+		}
+		localization_key = cocrisis_supporter_none
+	}
+}
+defined_text = {
+	name = COC_neutral_country1
+	text = {
+		trigger = {
+			check_variable = {
+				global.cocrisis_neutral_country^num > 1
+			}
+		}
+		localization_key = cocrisis_neutral_country1_name
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				global.cocrisis_neutral_country^num < 1
+			}
+		}
+		localization_key = cocrisis_supporter_none
+	}
+}
+defined_text = {
+	name = COC_neutral_country2
+	text = {
+		trigger = {
+			check_variable = {
+				global.cocrisis_neutral_country^num > 2
+			}
+		}
+		localization_key = cocrisis_neutral_country2_name
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				global.cocrisis_neutral_country^num < 2
+			}
+		}
+		localization_key = cocrisis_supporter_none
+	}
+}
+defined_text = {
+	name = COC_neutral_country3
+	text = {
+		trigger = {
+			check_variable = {
+				global.cocrisis_neutral_country^num > 3
+			}
+		}
+		localization_key = cocrisis_neutral_country3_name
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				global.cocrisis_neutral_country^num < 3
+			}
+		}
+		localization_key = cocrisis_supporter_none
+	}
+}
+defined_text = {
+	name = COC_neutral_country4
+	text = {
+		trigger = {
+			check_variable = {
+				global.cocrisis_neutral_country^num > 4
+			}
+		}
+		localization_key = cocrisis_neutral_country4_name
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				global.cocrisis_neutral_country^num < 4
+			}
+		}
+		localization_key = cocrisis_supporter_none
+	}
+}
+#Events Scripted Localization
+defined_text = {
+	name = COC_kansas_talks_with_texas_sl
+	text = {
+		trigger = {
+			OR = {
+				OKO = {
+					has_country_flag = cocrisis_loyal_texas
+				}
+				OKO = {
+					has_country_flag = OKO_neutrality_in_cocrisis
+				}
+			}
+		}
+		localization_key = COC_kansas_talks_with_texas_has_offer_sl_key
+	}
+	text = {
+		trigger = {
+			NOT = {
+				OR = {
+					OKO = {
+						has_country_flag = cocrisis_loyal_texas
+					}
+					OKO = {
+						has_country_flag = OKO_neutrality_in_cocrisis
+					}
+				}
+			}
+		}
+		localization_key = COC_kansas_talks_with_texas_not_has_offer_sl_key
+	}
+}
+######################
+### WAR EXHAUSTION ###
+######################
+defined_text = {
+	name = COC_war_exhaustion_variable
+	text = {
+		trigger = {
+			NOT = {
+				OR = {
+					tag = COC
+					has_global_flag = great_rockies_war
+				}
+			}
+		}
+		localization_key = war_exhaustion_variable_blank
+	}
+	text = {
+		trigger = {
+			tag = COC
+			has_global_flag = great_rockies_war
+		}
+		localization_key = COC_war_exhaustion_variable_sl_key
+	}
+	text = {
+		trigger = {
+			tag = COC
+			has_global_flag = great_rockies_war
+			check_variable = {
+				COC.war_exhaustion_var > 99
+			}	
+		}
+		localization_key = war_exhaustion_variable_100
+	}
+}
+defined_text = {
+	name = TXT_war_exhaustion_variable
+	text = {
+		trigger = {
+			NOT = {
+				OR = {
+					tag = TXT
+					has_global_flag = great_rockies_war
+				}
+			}
+		}
+		localization_key = war_exhaustion_variable_blank
+	}
+	text = {
+		trigger = {
+			tag = TXT
+			has_global_flag = great_rockies_war
+		}
+		localization_key = TXT_war_exhaustion_variable_sl_key
+	}
+	text = {
+		trigger = {
+			tag = TXT
+			has_global_flag = great_rockies_war
+			check_variable = {
+				TXT.war_exhaustion_var > 0.99
+			}	
+		}
+		localization_key = war_exhaustion_variable_100
+	}
+}
