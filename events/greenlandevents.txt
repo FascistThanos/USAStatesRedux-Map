@@ -42,18 +42,13 @@ country_event = {
 	option = { # gives cores (may change to claims) and land
 		name = greenland.2.a
 		ai_chance = { factor = 100 }
-		683 = {
-			if = {
-				limit = { is_owned_by = NUN }
+		GRN = {
+			core_nunavut_effect = yes
+			every_state = {
+				limit = {
+					is_core_of = NUN
+				}
 				add_core_of = GRN
-				add_compliance = 60
-			}
-		}
-		950 = {
-			if = {
-				limit = { is_owned_by = NUN }
-				add_core_of = GRN
-				add_compliance = 60
 			}
 		}
 		NUN = {
@@ -85,12 +80,9 @@ country_event = {
 	option = { # gives war goal
 		name = greenland.3.a
 		ai_chance = { factor = 100 }
-		add_state_claim = 683
-		add_state_claim = 950
 		create_wargoal = {
-			type = take_state_focus
+			type = annex_everything
 			target = NUN
-			generator = { 683 950 }
 		}
 		#news event thing
 		hidden_effect = {
@@ -221,26 +213,11 @@ country_event = {
 	option = { # gives claims and land
 		name = greenland.9.a
 		ai_chance = { factor = 100 }
-		331 = {
-			if = {
-				limit = { is_owned_by = NLN }
-				add_claim_by = GRN
-				add_compliance = 60
+		every_state = {
+			limit = {
+				is_core_of = NLN
 			}
-		}
-		1145 = {
-			if = {
-				limit = { is_owned_by = NLN }
-				add_claim_by = GRN
-				add_compliance = 60
-			}
-		}
-		1146 = {
-			if = {
-				limit = { is_owned_by = NLN }
-				add_claim_by = GRN
-				add_compliance = 60
-			}
+			add_core_of = GRN
 		}
 		annex_country = { target = NLN transfer_troops = yes }
 		add_political_power = 40
@@ -266,12 +243,9 @@ country_event = {
 	option = { # gives war goal
 		name = greenland.10.a
 		ai_chance = { factor = 100 }
-		add_state_claim = 683
-		add_state_claim = 950
 		create_wargoal = {
-			type = take_state_focus
+			type = annex_everything
 			target = NLN
-			generator = { 331 1145 1146 }
 		}
 		#news event thing
 		hidden_effect = {
@@ -324,11 +298,11 @@ country_event = {
 	option = { # gives claim and land for la
 		name = greenland.12.a
 		ai_chance = { factor = 100 }
-		803 = {
+		747 = {
 			if = {
 				limit = { is_owned_by = CAC }
 				add_claim_by = GRN
-				GRN = { transfer_state = 803 }
+				GRN = { transfer_state = 747 }
 				add_compliance = 60
 			}
 		}
@@ -355,11 +329,11 @@ country_event = {
 	option = { # gives war goal
 		name = greenland.13.a
 		ai_chance = { factor = 100 }
-		add_state_claim = 803
+		add_state_claim = 747
 		create_wargoal = {
 			type = take_state_focus
 			target = CAC
-			generator = { 803 }
+			generator = { 747 }
 		}
 		#news event thing
 		hidden_effect = {
@@ -380,59 +354,67 @@ country_event = {
 	option = { # gives claim and land in alaska to columbia and greenland
 		name = greenland.14.a
 		ai_chance = { factor = 100 }
-		835 = {
+		786 = {
 			if = {
 				limit = { is_owned_by = AKA }
 				add_claim_by = GRN
-				GRN = { transfer_state = 835 }
+				GRN = { transfer_state = 786 }
 				add_compliance = 60
 			}
 		}
-		832 = {
+		785 = {
 			if = {
 				limit = { is_owned_by = AKA }
 				add_claim_by = GRN
-				GRN = { transfer_state = 832 }
+				GRN = { transfer_state = 785 }
 				add_compliance = 60
 			}
 		}
-		831 = {
+		784 = {
 			if = {
 				limit = { is_owned_by = AKA }
 				add_claim_by = GRN
-				GRN = { transfer_state = 831 }
+				GRN = { transfer_state = 784 }
 				add_compliance = 60
 			}
 		}
-		830 = {
+		783 = {
 			if = {
 				limit = { is_owned_by = AKA }
 				add_claim_by = GRN
-				GRN = { transfer_state = 830 }
+				GRN = { transfer_state = 783 }
 				add_compliance = 60
 			}
 		}
-		463 = {
+		148 = {
 			if = {
 				limit = { is_owned_by = AKA }
 				add_claim_by = GRN
-				GRN = { transfer_state = 463 }
+				GRN = { transfer_state = 148 }
 				add_compliance = 60
 			}
 		}
-		833 = {
+		782 = {
 			if = {
 				limit = { is_owned_by = AKA }
 				add_claim_by = GRN
-				GRN = { transfer_state = 833 }
+				GRN = { transfer_state = 782 }
 				add_compliance = 60
 			}
 		}
-		834 = {
+		150 = {
 			if = {
 				limit = { is_owned_by = AKA }
 				add_claim_by = BCB
-				BCB = { transfer_state = 834 }
+				BCB = { transfer_state = 150 }
+				add_compliance = 60
+			}
+		}
+		766 = {
+			if = {
+				limit = { is_owned_by = AKA }
+				add_claim_by = BCB
+				BCB = { transfer_state = 766 }
 				add_compliance = 60
 			}
 		}
@@ -459,11 +441,11 @@ country_event = {
 	option = { # debug
 		name = greenland.15.a
 		ai_chance = { factor = 1 }
-		release = ICE
-		release = DEN
-		release = FIN
-		release = NOR
-		release = SWE
+		#release = ICE
+		#release = DEN
+		#release = FIN
+		#release = NOR
+		#release = SWE
 		
 	}
 	
@@ -481,7 +463,7 @@ country_event = {
 	option = { # debug
 		name = greenland.16.a
 		ai_chance = { factor = 1 }
-		release = ICE
+		#release = ICE
 		
 	}
 	
