@@ -1,6 +1,6 @@
 state={
 	id=787
-	name="Bremerton"
+	name="Kitsap Peninsula"
 	history={
 		owner = WAW
 		buildings = {

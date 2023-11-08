@@ -27,6 +27,10 @@ set_technology = {
 	fuel_refining = 1
 	marines = 1
 	basic_train = 1
+iw_small_airframe = 1
+basic_small_airframe = 1
+iw_medium_airframe = 1
+iw_large_airframe = 1
 }
 set_convoys = 30
 set_stability = 0.9
