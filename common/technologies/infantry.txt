@@ -1963,7 +1963,7 @@ technologies = {
 			#hardness = 1
 			forest = {
 		    	attack = 0.05
-				movement = 0.1
+				movement = 0.05
 			}
 			desert = {
 		    	attack = -0.15
@@ -1971,8 +1971,8 @@ technologies = {
 			}
 
 			snow = {
-				attack = 0.2
-				movement = 0.25
+				attack = 0.05
+				movement = 0.08
 			}
 		}
 	}

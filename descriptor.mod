@@ -49,4 +49,5 @@ tags={
 	"Events"
 }
 supported_version="1.13.*"
-path="C:mod/USAStatesRedux-Map"
+path="C:/Users/Isaac/Documents/Paradox Interactive/Hearts of Iron IV/mod/USAStatesRedux-Map"
+remote_file_id="3075858558"

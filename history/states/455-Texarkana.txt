@@ -1,6 +1,6 @@
 state={
 	id=455
-	name="Texarcana"
+	name="Texarkana"
 	history={
 		owner = ARA
 		buildings = {

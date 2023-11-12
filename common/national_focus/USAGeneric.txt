@@ -658,7 +658,7 @@ focus_tree = {
     bypass = {
       OR = {
         has_idea = war_economy
-        has_idea = total_mobilization
+        has_idea = tot_economic_mobilisation
       }
     }
     cost = 10

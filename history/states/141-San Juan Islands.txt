@@ -1,6 +1,6 @@
 state={
 	id=141
-	name="Orcas Island"
+	name="San Juan Islands"
 	history={
 		owner = WAW
 		buildings = {
