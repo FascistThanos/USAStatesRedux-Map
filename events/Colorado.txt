@@ -1835,6 +1835,14 @@ country_event = { #Utah Secured - Texas Event
 	is_triggered_only = yes
 	option = {
 		name = cocrisis.6.a
+		UTU = {
+			remove_from_array = {
+				global.cocrisis_neutral_country = UTU
+			}
+			add_to_array = {
+				global.cocrisis_texas_supporters = UTU
+			}
+		}
 	}
 }
 country_event = { #Colorado's Second Offer - Utah event
@@ -1952,6 +1960,8 @@ country_event = { #Colorado's Second Offer - Utah event
 				days = 1
 				random_days = 6
 			}
+			clr_country_flag = COC_pay_utah_1
+			clr_country_flag = COC_pay_utah_2
 		}
 		TXT = {
 			country_event = {
@@ -3901,19 +3911,12 @@ country_event = { #Peace forced on TX Coalition - Hidden effect event
 					has_country_flag = NM_collab_government
 				}
 			}
-			COC = {
-				transfer_state = 638
-				transfer_state = 639
-				transfer_state = 640
-				transfer_state = 646
-				transfer_state = 650
-				transfer_state = 647
-				transfer_state = 641
-				transfer_state = 642
-				transfer_state = 651
-				transfer_state = 652
-				transfer_state = 648
-				transfer_state = 649
+			every_state = {
+				limit = {
+					is_core_of = NMN
+					is_owned_by = TXT
+				}
+				transfer_state_to = COC
 			}
 			create_dynamic_country = {
 				original_tag = NMN

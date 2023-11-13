@@ -1550,11 +1550,6 @@ focus_tree = {
 				COC = {
 					country_event = cocrisis.2
 				}
-				news_event = {
-					id = coloradonews.2
-					days = 5
-					random_days = 10
-				}
 				COC = {
 					add_opinion_modifier = {
 						target = TXT
