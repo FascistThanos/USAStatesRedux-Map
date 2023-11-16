@@ -49,10 +49,13 @@ set_technology = {
 	tech_trucks = 1
 	motorised_infantry = 1
 	basic_train = 1
-iw_small_airframe = 1
-basic_small_airframe = 1
-iw_medium_airframe = 1
-iw_large_airframe = 1
+	iw_small_airframe = 1
+	basic_small_airframe = 1
+	iw_medium_airframe = 1
+	iw_large_airframe = 1
+	early_bombs = 1
+	aa_lmg = 1
+	engines_1 = 1
 }
 set_country_flag = monroe_doctrine
 set_war_support = 0.1
