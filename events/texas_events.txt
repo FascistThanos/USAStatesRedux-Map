@@ -538,6 +538,10 @@ country_event = {
         set_equipment_fraction = 0.5
         set_stability = 0.55
         set_war_support = 0.53
+        add_popularity = {
+          ideology = fascism
+          popularity = 0.40
+        }
         set_politics = {
   				ruling_party = fascism
   				elections_allowed = no

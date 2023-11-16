@@ -1327,7 +1327,7 @@ country_event = { #Hidden Civil War Event
 			}
 			add_popularity = {
 				ideology = communism
-				popularity = 0.25
+				popularity = 0.50
 			}
 			random_other_country = {
 				limit = {
