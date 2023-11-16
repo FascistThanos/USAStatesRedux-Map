@@ -9,7 +9,7 @@ state={
 			dockyard = 2
 		}
 		add_core_of = PAN
-
+		add_core_of = PCP
 	}
 	provinces={
 		10325 10326 10328 11372 

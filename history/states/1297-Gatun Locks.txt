@@ -8,6 +8,7 @@ state={
 
 		}
 		add_core_of = PAN
+		add_core_of = PCP
 		victory_points = {
 			10332 20 #Colon
 		}
