@@ -72,7 +72,9 @@ set_variable = {
 	var = TXT.war_exhaustion_var
 	value = 0
 }
-
+##Hidden
+recruit_character = TXT_oveta_c_hobby
+recruit_character = TXT_john_pierce
 
 set_convoys = 100
 set_stability = 0.75

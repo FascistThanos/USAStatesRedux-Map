@@ -254,5 +254,28 @@ ideas = {
 				conscription_factor = 0.05
 			}
 		}
+		FLF_war_college_idea = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+
+			}
+
+			picture = generic_infantry_bonus
+
+			removal_cost = -1
+
+			modifier = {
+				planning_speed = 0.1
+				military_leader_cost_factor = -0.3
+				army_leader_start_attack_level = 1
+				army_leader_start_planning_level = 1
+				army_leader_start_defense_level = 1
+				field_officer_promotion_penalty = -1.0
+			}
+		}
+
 	}
 }
