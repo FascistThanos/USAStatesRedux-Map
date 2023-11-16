@@ -5,11 +5,13 @@ state={
 		owner = ARA
 		buildings = {
 			infrastructure = 4
-
 		}
 		add_core_of = ARA
 		victory_points = {
 			2783 10 #Pine Bluff
+		}
+		victory_points = {
+			6484 10 #El Dorado
 		}
 	}
 	provinces={

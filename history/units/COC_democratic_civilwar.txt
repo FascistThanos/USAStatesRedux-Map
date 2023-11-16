@@ -23,12 +23,12 @@
 units = {
 	division = {
 		name = "Civilian Conscript"
-		location = 11449
+		location = 4737
 		division_template = "Civilian Militia"
 	}
 	division = {
 		name = "Civilian Conscript"
-		location = 10857
+		location = 4299
 		division_template = "Civilian Militia"
 	}
 	division = {
@@ -43,7 +43,7 @@ units = {
 	}
 	division = {
 		name = "Civilian Conscript"
-		location = 5680
+		location = 5737
 		division_template = "Civilian Militia"
 	}
 	division = {
