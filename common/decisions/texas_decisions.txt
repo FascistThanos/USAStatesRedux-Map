@@ -39,6 +39,9 @@ TXT_fascist_civil_war = {
 						ROOT = {
 							has_full_control_of_state = PREV
 						}
+						NOT = {
+							state = 583
+						}
 					}
 					create_unit = {
 						division = "name = \"Emergency Reserve Conscript\" division_template = \"Emergency Reserve Conscript\" start_experience_factor = 0 start_equipment_factor = 0.50"
@@ -54,6 +57,9 @@ TXT_fascist_civil_war = {
 					limit = {
 						ROOT = {
 							has_full_control_of_state = PREV
+						}
+						NOT = {
+							state = 583
 						}
 					}
 					create_unit = {
@@ -105,6 +111,9 @@ TXT_fascist_civil_war = {
 						ROOT = {
 							has_full_control_of_state = PREV
 						}
+						NOT = {
+							state = 583
+						}
 					}
 					create_unit = {
 						division = "name = \"Emergency Reserve Conscript\" division_template = \"Emergency Reserve Conscript\" start_experience_factor = 0 start_equipment_factor = 0.50"
@@ -128,6 +137,9 @@ TXT_fascist_civil_war = {
 					limit = {
 						ROOT = {
 							has_full_control_of_state = PREV
+						}
+						NOT = {
+							state = 583
 						}
 					}
 					create_unit = {
@@ -188,6 +200,9 @@ TXT_fascist_civil_war = {
 						ROOT = {
 							has_full_control_of_state = PREV
 						}
+						NOT = {
+							state = 583
+						}
 					}
 					create_unit = {
 						division = "name = \"Emergency Reserve Armor Brigade\" division_template = \"Emergency Armor Brigade\" start_experience_factor = 0 start_equipment_factor = 0.30"
@@ -203,6 +218,9 @@ TXT_fascist_civil_war = {
 					limit = {
 						ROOT = {
 							has_full_control_of_state = PREV
+						}
+						NOT = {
+							state = 583
 						}
 					}
 					create_unit = {
