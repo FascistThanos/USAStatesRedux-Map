@@ -1,5 +1,6 @@
 ﻿l_english:
 GATHERING_STORM_NAME1:0 "The Great Collapse"
+OTHER_GATHERING_STORM_DESC:0 "In the aftermath of the Great Collapse, nations vie for power on the newly fractured continent. For many nations and peoples, the fight will be long and difficult. Larger nations have begun executing their plans of expansion while others simply strive to survive. It's unknown as of now what will come of this situation, but what is known, is that there will be blood to pay. Which nation will come out on top?"
 #Strengthen [TAG]
 custom_diff_strong_cac:0 "@CAC Strengthen the New California Republic"
 custom_diff_strong_flf:0 "@FLF Strengthen the State of Florida"
