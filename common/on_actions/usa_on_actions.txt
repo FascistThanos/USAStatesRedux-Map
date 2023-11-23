@@ -25,9 +25,6 @@ on_actions = {
 					}
 				}
 				SCS = {
-					set_capital = {
-						state = 251
-					}
 					set_cosmetic_tag = CSA
 					annex_country = {
 						target = LAL
@@ -76,6 +73,9 @@ on_actions = {
 					annex_country = {
 						target = OKO
 						transfer_troops = yes
+					}
+					set_capital = {
+						state = 251
 					}
 					#NM South
 					add_state_core = 54

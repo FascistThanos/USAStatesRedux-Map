@@ -1383,6 +1383,9 @@ CAC_area_priority = {
 	enable = {
 		tag = CAC
 	}
+	abort = {
+		always = no
+	}
 	ai_strategy = {
 		type = area_priority
 		id = west_coast

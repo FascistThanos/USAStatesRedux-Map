@@ -41,6 +41,7 @@ replace_path="common/units/names_railway_guns"
 replace_path="common/ai_equipment"
 replace_path="history/general"
 version="2.1"
+picture="thumbnail.png"
 tags={
 	"Map"
 	"National Focuses"
@@ -49,4 +50,4 @@ tags={
 }
 supported_version="1.13.*"
 path="C:/Users/Isaac/Documents/Paradox Interactive/Hearts of Iron IV/mod/USAStatesRedux-Map"
-remote_file_id="3075858558"
+remote_file_id="3093007269"
