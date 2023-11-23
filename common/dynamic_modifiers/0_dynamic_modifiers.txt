@@ -157,3 +157,11 @@ unplanned_offensive = {
 	ground_attack_factor = -0.75
 	local_org_regain = -0.5
 }
+
+renovated_city_modifier = {
+	icon = GFX_modifiers_sabotaged_resource
+
+	local_building_slots_factor = 0.50
+	state_resources_factor = 0.50
+	state_production_speed_buildings_factor = 0.25
+}

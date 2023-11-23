@@ -31,18 +31,18 @@ peace_ai_desires = {
                             is_capital = yes
                             is_coastal = yes
                         }
-                        state = 738 #California
-                        state = 860 #Cote Nord
-                        state = 458 #Tunis
-                        state = 446 #Suez
-                        state = 126 #London
-                        state = 286 #Indochina
+                        state = 1296 #Panama Canal
+                        state = 1297
+                        state = 201 #New York City
+                        state = 586
+                        state = 154 #Washington DC
+                        state = 747 #Los Angeles
                         AND = {
-                            ROOT.FROM = { capital_scope = { is_on_continent = europe } }
+                            ROOT.FROM = { capital_scope = { is_on_continent = northeast } }
                             OR = {
-                                state = 137 #Crimea
-                                state = 797 #Istanbul
-                                state = 118 #Gibraltar
+                                state = 201 #New York City
+                                state = 586
+                                state = 224 #Philadelphia
                             }
                         }
                     }
@@ -134,7 +134,7 @@ peace_ai_desires = {
             }
         }
 
-        ai_desire = 50
+        ai_desire = 20
     }
 
     fascist_puppet_desire = {
@@ -146,7 +146,7 @@ peace_ai_desires = {
             }
         }
 
-        ai_desire = -50
+        ai_desire = 25
     }
 
     fascist_liberate_desire = {
@@ -163,15 +163,6 @@ peace_ai_desires = {
         ai_desire = -75
     }
 
-    # Breakaway countries in the Soviet Civil war don't want to liberate stuff
-    breakaway_country = {
-        peace_action_type = { liberate puppet force_government }
-        enable = {
-           ROOT = { has_country_flag = SOV_breakaway_country_flag }
-        }
-        ai_desire = -200  # just don't, please
-    }
-
 
     # Force gov on communism preferably
     democracy_force_government_on_communism = {
@@ -186,7 +177,7 @@ peace_ai_desires = {
 
 
     democracy_owner_does_not_have_core = {
-        peace_action_type = { force_government puppet take_states }
+        peace_action_type = { take_states }
         enable = {
             ROOT = { has_government = democratic }
             ROOT.FROM.FROM.FROM = { NOT = { is_core_of = ROOT.FROM } }
@@ -413,24 +404,6 @@ peace_ai_desires = {
     }
 
 
-    try_and_take_neighbors_when_forcing_gov = { #Leaving here; this has unintended consequences, but we need it for SOV
-        peace_action_type = { force_government puppet }
-        enable = {
-            ROOT = { has_government = democratic }
-            ROOT.FROM.FROM.FROM = {
-                any_neighbor_state = {
-                    OR = {
-                        pc_is_state_claimed_by = ROOT.FROM
-                        pc_is_state_claimed_by = ROOT
-                    }
-                }
-            }
-        }
-
-        ai_desire = 50
-    }
-
-
     liberate_if_already_exists = {
         peace_action_type = liberate
         enable = {
@@ -447,7 +420,7 @@ peace_ai_desires = {
     }
 
 
-    minors_and_subjects_dont_liberate = {
+    minors_and_subjects_dont_liberate = { #Made to just subjects
         peace_action_type = { liberate take_states force_government puppet }
         enable = {
             ROOT = {
@@ -455,7 +428,7 @@ peace_ai_desires = {
             }
             ROOT = {
                 OR = {
-                    is_major = no
+                    #is_major = no
                     is_subject = yes
                 }
             }
@@ -584,7 +557,7 @@ peace_ai_desires = {
                 is_core_of = ROOT.FROM
             }
         }
-        ai_desire = 100
+        ai_desire = 200
     }
 
 
@@ -876,14 +849,14 @@ peace_ai_desires = {
         ai_desire = -80
     }
 
-    dont_even_try_to_puppet_large_states = { ###Too messy
-        peace_action_type = { puppet }
-
-        enable = {
-            ROOT.FROM.FROM = { check_variable = { num_owned_states > 30 } }
-        }
-        ai_desire = -200
-    }
+    #dont_even_try_to_puppet_large_states = { ###Too messy
+    #    peace_action_type = { puppet }
+    #
+    #    enable = {
+    #        ROOT.FROM.FROM = { check_variable = { num_owned_states > 30 } }
+    #    }
+    #    ai_desire = -200
+    #}
 
     dont_liberate_if_puppeted = { ###Too messy
         peace_action_type = { liberate }

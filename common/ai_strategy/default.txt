@@ -772,33 +772,6 @@ more_naval_focused_nation = {
 	}
 }
 
-
-#default_area_priority = {
-#	enable = {
-#	}
-#	abort_when_not_enabled = yes
-#
-#	ai_strategy = {
-#		type = area_priority
-#		id = europe
-#		value = 100
-#	}
-#
-#	ai_strategy = {
-#		type = area_priority
-#		id = scandinavia
-#		value = 0
-#	}
-#
-#	ai_strategy = {
-#		type = area_priority
-#		id = north_america
-#		value = 100
-#	}
-#
-#
-#}
-
 default_railway_gun_management = {
 	enable = {
 		num_divisions > 150
@@ -1377,3 +1350,97 @@ default_produce_floating_harbors = {
 	}
 }
 
+new_england_area_priority = {
+	enable = {
+		capital_scope = {
+			is_on_continent = new_england
+		}
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = area_priority
+		id = new_england
+		value = 100
+	}
+	ai_strategy = {
+		type = area_priority
+		id = northeast
+		value = 50
+	}
+	ai_strategy = {
+		type = area_priority
+		id = southeast
+		value = 25
+	}
+	ai_strategy = {
+		type = area_priority
+		id = atlantic_region
+		value = 25
+	}
+}
+CAC_area_priority = {
+	enable = {
+		tag = CAC
+	}
+	ai_strategy = {
+		type = area_priority
+		id = west_coast
+		value = 100
+	}
+	ai_strategy = {
+		type = area_priority
+		id = rocky_mountain
+		value = 25
+	}
+	ai_strategy = {
+		type = area_priority
+		id = new_england
+		value = -50
+	}
+	ai_strategy = {
+		type = area_priority
+		id = northeast
+		value = -50
+	}
+	ai_strategy = {
+		type = area_priority
+		id = southeast
+		value = -50
+	}
+	ai_strategy = {
+		type = area_priority
+		id = south
+		value = -50
+	}
+	ai_strategy = {
+		type = area_priority
+		id = midwest
+		value = -50
+	}
+	ai_strategy = {
+		type = area_priority
+		id = northern_territories
+		value = -50
+	}
+	ai_strategy = {
+		type = area_priority
+		id = prairie_provinces
+		value = -50
+	}
+	ai_strategy = {
+		type = area_priority
+		id = central_canada
+		value = -50
+	}
+	ai_strategy = {
+		type = area_priority
+		id = atlantic_region
+		value = -50
+	}
+	ai_strategy = {
+		type = area_priority
+		id = great_lakes
+		value = -50
+	}
+}
