@@ -1,0 +1,7627 @@
+focus_tree = {
+  id = NEGeneric
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			OR = {
+				tag = MAM
+				tag = CTC
+				tag = MEM
+				tag = NHN
+				tag = VTV
+				tag = RIR
+			}
+		}
+	}
+	focus = {
+		id = NEG_navy
+		icon = GFX_goal_generic_construct_naval_dockyard
+		available = {
+				any_state = {
+					is_coastal = yes
+					is_controlled_by = ROOT
+				}
+			}
+
+		cost = 10
+		x = 6
+		y = 0
+
+		completion_reward = {
+			navy_experience = 25
+				if = {
+					limit = {
+						NOT = {
+							any_owned_state = {
+								dockyard > 0
+								free_building_slots = {
+									building = dockyard
+									size > 2
+									include_locked = yes
+								}
+							}
+						}
+						any_owned_state = {
+							is_coastal = yes
+						}
+					}
+					random_owned_controlled_state = {
+						limit = {
+							is_coastal = yes
+							free_building_slots = {
+								building = dockyard
+								size > 2
+								include_locked = yes
+							}
+						}
+						add_extra_state_shared_building_slots = 3
+						add_building_construction = {
+							type = dockyard
+							level = 3
+							instant_build = yes
+						}
+					}
+					set_country_flag = naval_effort_built
+				}
+				if = {
+					limit = {
+						any_owned_state = {
+							dockyard > 0
+							free_building_slots = {
+								building = dockyard
+								size > 2
+								include_locked = yes
+							}
+						}
+					}
+					random_owned_controlled_state = {
+						limit = {
+							dockyard > 0
+							free_building_slots = {
+								building = dockyard
+								size > 2
+								include_locked = yes
+							}
+						}
+						add_extra_state_shared_building_slots = 3
+						add_building_construction = {
+							type = dockyard
+							level = 3
+							instant_build = yes
+						}
+					}
+					set_country_flag = naval_effort_built
+				}
+				if = {
+					limit = {
+						NOT = {
+							any_owned_state = {
+								free_building_slots = {
+									building = dockyard
+									size > 2
+									include_locked = yes
+								}
+							}
+						}
+					}
+					random_state = {
+						limit = {
+							controller = { tag = ROOT }
+							free_building_slots = {
+								building = dockyard
+								size > 2
+								include_locked = yes
+							}
+						}
+						add_extra_state_shared_building_slots = 3
+						add_building_construction = {
+							type = dockyard
+							level = 3
+							instant_build = yes
+						}
+					}
+				}
+			}
+	}
+	#Aerial Expansion
+	focus = {
+		id = NEG_air_1
+		icon = GFX_Generic_Industry_Planes
+		x = 12
+		y = 0
+		
+		#prerequisite = { focus = NEG_tank_power}
+		
+		relative_position_id = NEG_navy
+		
+	
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 10
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			air_experience = 5
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				uses = 1
+				category = air_doctrine
+			}
+		}
+	}
+	#Military Expansion
+	focus = {
+		id = NEG_military
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 12
+		y = 0
+		
+		prerequisite = { }
+		
+		relative_position_id = NEG_air_1
+	
+	
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 10
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			army_experience = 5
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				uses = 1
+				category = land_doctrine
+			}
+			
+		}
+	}	
+	#Economic Matters
+	focus = {
+		id = NEG_economy
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 16
+		y = 0
+		
+		#prerequisite = { focus = NEG_ne_revived}
+		
+		relative_position_id = NEG_military
+	
+	
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 7.2
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 1.0
+				uses = 1
+				category = industry
+			}
+		}
+	}
+	#Interior Matters
+	focus = {
+		id = NEG_political
+		icon = GFX_Generic_Global_Hegemony
+		x = 32
+		y = 0
+		
+		#prerequisite = { focus = NEG_ne_revived}
+		
+		relative_position_id = NEG_economy
+	
+	
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 10
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+	#The New England Initiative
+	focus = {
+		id = NEG_ne_initiative
+		icon = GFX_neg_ne_goal
+		x = 25
+		y = 0
+		prerequisite = {}
+		
+		relative_position_id = NEG_political
+	
+		available = {
+			OR = {
+				has_completed_focus = NEG_start_ne
+				date > 1940.01.01 
+				any_country = {
+					has_country_flag = NEG_newenglandstart
+				}
+			}
+			is_subject = no
+		}
+		
+		
+		cost = 5
+		
+		ai_will_do = {
+			factor = 4000
+		}
+		completion_reward = {
+			add_ideas = NEG_neinitiative
+			set_country_flag = NEG_newenglandstart
+			hidden_effect = {
+				every_country = {
+					limit = { }
+					diplomatic_relation = {
+						country = MEM
+						relation = guarantee
+						active = no
+					}
+					diplomatic_relation = {
+						country = VTV
+						relation = guarantee
+						active = no
+					}
+					diplomatic_relation = {
+						country = NHN
+						relation = guarantee
+						active = no
+					}
+					diplomatic_relation = {
+						country = MAM
+						relation = guarantee
+						active = no
+					}
+					diplomatic_relation = {
+						country = CTC
+						relation = guarantee
+						active = no
+					}
+					diplomatic_relation = {
+						country = RIR
+						relation = guarantee
+						active = no
+					}
+				}
+			}
+			
+			division_template = {
+				name = "New England Militia"
+				priority = 1
+				division_names_group = USA_INF_01
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+		
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+		
+				}
+				support = {
+					engineer = { x = 0 y = 0 }
+					artillery = { x = 0 y = 1 }
+				}
+			}
+			random_owned_controlled_state = {
+				limit = { ROOT = { has_full_control_of_state = PREV } }
+				prioritize = { 10 }
+				create_unit = {
+					division = "name = \"1 New England Militia\" division_template = \"New England Ground Troop\" start_experience_factor = 0.3" 
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"2 New England Militia\" division_template = \"New England Ground Troop\" start_experience_factor = 0.3" 
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"3 New England Militia\" division_template = \"New England Ground Troop\" start_experience_factor = 0.3" 
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"4 New England Militia\" division_template = \"New England Ground Troop\" start_experience_factor = 0.3" 
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"5 New England Militia\" division_template = \"New England Ground Troop\" start_experience_factor = 0.3" 
+					owner = ROOT
+				}
+			}
+			
+			
+			hidden_effect = {
+				ROOT = {
+					set_rule = {
+						#desc = NEG_unification_rules_tt
+						can_create_factions = no
+						can_join_factions = no
+						can_puppet = no
+					}
+				}
+				news_event = { 
+					id =  newengland_news.2
+				}
+			}
+
+		}
+	}
+	
+	#Attack Nation 1
+	focus = {
+		id = NEG_ne_attack_1
+		icon = GFX_neg_ne_war_1
+		x = -2
+		y = 1
+		prerequisite = { focus = NEG_ne_initiative}
+		
+		relative_position_id = NEG_ne_initiative
+	
+		available = {
+			is_subject = no
+		}
+		
+		bypass = {
+			IF = {
+				limit = {
+					tag = CTC
+				}
+				NOT = {
+					country_exists = RIR
+				}
+				
+			}
+			IF = {
+				limit = {
+					tag = RIR
+				}
+				NOT = {
+					country_exists = CTC
+				}
+				
+			}
+			IF = {
+				limit = {
+					tag = MAM
+				}
+				NOT = {
+					country_exists = NHN
+				}
+				
+			}
+			IF = {
+				limit = {
+					tag = VTV
+				}
+				NOT = {
+					country_exists = NHN
+				}
+				
+			}
+			IF = {
+				limit = {
+					tag = NHN
+				}
+				NOT = {
+					country_exists = VTV
+				}
+				
+			}
+			IF = {
+				limit = {
+					tag = MEM
+				}
+				NOT = {
+					country_exists = NHN
+				}
+				
+			}
+		}
+		
+		cost = 7.2
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 4000
+		}
+		completion_reward = {
+			IF = {
+				limit = {
+					tag = CTC
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = RIR
+				}
+				claim_rhode_island_effect = yes
+			}
+			IF = {
+				limit = {
+					tag = RIR
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = CTC
+					
+				}
+				claim_connecticut_effect = yes
+			}
+			IF = {
+				limit = {
+					tag = MAM
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = NHN
+					
+				}
+				claim_new_hampshire_effect = yes
+			}
+			IF = {
+				limit = {
+					tag = VTV
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = NHN
+				}
+				claim_new_hampshire_effect = yes
+			}
+			IF = {
+				limit = {
+					tag = NHN
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = VTV
+				}
+				claim_vermont_effect = yes
+			}
+			IF = {
+				limit = {
+					tag = MEM
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = NHN
+				}
+				claim_new_hampshire_effect = yes
+			}
+			
+		}
+	}
+	
+	#Attack Nation 2
+	focus = {
+		id = NEG_ne_attack_2
+		icon = GFX_neg_ne_war_2
+		x = 2
+		y = 1
+		prerequisite = { focus = NEG_ne_initiative}
+		
+		relative_position_id = NEG_ne_initiative
+	
+		available = {
+
+			is_subject = no
+		}
+		
+		bypass = {
+			IF = {
+				limit = {
+					tag = CTC
+				}
+				NOT = {
+					country_exists = MAM
+				}
+				
+			}
+			IF = {
+				limit = {
+					tag = RIR
+				}
+				NOT = {
+					country_exists = MAM
+				}
+				
+			}
+			IF = {
+				limit = {
+					tag = MAM
+				}
+				NOT = {
+					country_exists = VTV
+				}
+				
+			}
+			IF = {
+				limit = {
+					tag = VTV
+				}
+				NOT = {
+					country_exists = MEM
+				}
+				
+			}
+			IF = {
+				limit = {
+					tag = NHN
+				}
+				NOT = {
+					country_exists = MEM
+				}
+				
+			}
+			IF = {
+				limit = {
+					tag = MEM
+				}
+				NOT = {
+					country_exists = VTV
+				}
+				
+			}
+		}
+		
+		cost = 7.2
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 4000
+		}
+		completion_reward = {
+			IF = {
+				limit = {
+					tag = CTC
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = MAM
+				}
+				claim_massachusetts_effect = yes
+			}
+			IF = {
+				limit = {
+					tag = RIR
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = MAM
+				}				
+				claim_massachusetts_effect = yes
+			}
+			IF = {
+				limit = {
+					tag = MAM
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = VTV
+				}
+				claim_vermont_effect = yes
+			}
+			IF = {
+				limit = {
+					tag = VTV
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = MEM
+				}
+				claim_maine_effect = yes
+			}
+			IF = {
+				limit = {
+					tag = NHN
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = MEM
+				}
+				claim_maine_effect = yes
+			}
+			IF = {
+				limit = {
+					tag = MEM
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = VTV
+				}
+				claim_vermont_effect = yes
+			}
+			
+		}
+	}
+	
+	#Adjust our Economy for War
+	focus = {
+		id = NEG_ne_adjust_war
+		icon = GFX_Generic_factory_planning
+		x = 0
+		y = 2
+		
+		prerequisite = { focus = NEG_ne_initiative}
+		
+		relative_position_id = NEG_ne_initiative
+	
+	
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 7.2
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 4000
+		}
+		completion_reward = {
+			add_timed_idea = { idea = NEG_ne_waradj days = 365 }
+			
+		}
+	}
+	
+	#Supression Efforts
+	focus = {
+		id = NEG_ne_supress
+		icon = GFX_goal_generic_defence
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = NEG_ne_attack_1}
+		
+		relative_position_id = NEG_ne_attack_1
+	
+	
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 7.2
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 4000
+		}
+		completion_reward = {
+			add_ideas = NEG_neinitiative_resistance
+		}
+	}
+	
+	
+	#More Troops
+	focus = {
+		id = NEG_ne_soldiers
+		icon = GFX_Generic_German_Soldiers2
+		x = 5
+		y = 1
+		
+		prerequisite = { focus = NEG_ne_initiative }
+		
+		relative_position_id = NEG_ne_initiative
+	
+	
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 4
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 5000
+		}
+		completion_reward = {
+			division_template = {
+				name = "New England Ground Troop"
+				priority = 1
+				division_names_group = USA_INF_01
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+		
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+		
+					infantry = { x = 2 y = 0 }
+					artillery_brigade = { x = 2 y = 1 }
+					artillery_brigade = { x = 2 y = 2 }
+				}
+				support = {
+					engineer = { x = 0 y = 0 }
+				}
+			}
+			random_owned_controlled_state = {
+				create_unit = {
+					division = "name = \"ONew England Ground Troop\" division_template = \"New England Ground Troop\" start_experience_factor = 0.1" 
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"New England Ground Troop\" division_template = \"New England Ground Troop\" start_experience_factor = 0.1" 
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"New England Ground Troop\" division_template = \"New England Ground Troop\" start_experience_factor = 0.1" 
+					owner = ROOT
+				}
+			}
+			random_owned_controlled_state = {
+				create_unit = {
+					division = "name = \"New England Militia\" division_template = \"New England Ground Troop\" start_experience_factor = 0.3" 
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"New England Militia\" division_template = \"New England Ground Troop\" start_experience_factor = 0.3" 
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"New England Militia\" division_template = \"New England Ground Troop\" start_experience_factor = 0.3" 
+					owner = ROOT
+				}
+			}
+			
+			
+		}
+	}
+	
+	#Mor Troops 2
+	focus = {
+		id = NEG_ne_soldiers_1
+		icon = GFX_Generic_Barricade
+		x = 0
+		y = 2
+		
+		prerequisite = { focus = NEG_ne_soldiers}
+		prerequisite = { focus = NEG_ne_adjust_eco}
+		
+		relative_position_id = NEG_ne_soldiers
+	
+	
+		available = {
+		}
+		
+		bypass = {
+			OR = {
+				has_idea = service_by_requirement
+				has_idea = all_adults_serve
+				has_idea = scraping_the_barrel
+			}
+		}
+		
+		cost = 4
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 4000
+		}
+		completion_reward = {
+			add_ideas = service_by_requirement
+			add_war_support = 0.10
+		}
+	}
+	
+	#Mor Equiptment
+	focus = {
+		id = NEG_ne_equipt
+		icon = GFX_Generic_Machine_Gun
+		x = -5
+		y = 1
+		
+		prerequisite = { focus = NEG_ne_initiative}
+		
+		relative_position_id = NEG_ne_initiative
+	
+	
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 7.2
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 4000
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					has_tech_bonus = {
+						technology = infantry_weapons2
+					}
+				}
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_2
+					amount = 5000
+					producer = ROOT
+				}
+				else = {
+					add_equipment_to_stockpile = {
+						type = infantry_equipment
+						amount = 5000
+						producer = ROOT
+					}
+				}
+			}
+		}
+	}
+	
+	#Mor Planes
+	focus = {
+		id = NEG_ne_planes
+		icon = GFX_focus_chi_flying_tigers
+		x = 0
+		y = 2
+		
+		prerequisite = { focus = NEG_ne_equipt }
+		prerequisite = { focus = NEG_ne_supress }
+		
+		relative_position_id = NEG_ne_equipt
+	
+	
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 7.2
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 4000
+		}
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = small_plane_airframe_1
+				amount = 350
+				variant_name = "Fighter 1"
+				producer = ROOT
+			}
+			add_equipment_to_stockpile = {
+				type = small_plane_airframe_1
+				amount = 500
+				variant_name = "Close Air Support 1"
+				producer = ROOT
+			}
+			
+		}
+	}
+	
+	
+	
+	#Economic Benifits
+	focus = {
+		id = NEG_ne_adjust_eco
+		icon = GFX_Generic_Industry_04
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = NEG_ne_attack_2}
+		
+		relative_position_id = NEG_ne_attack_2
+	
+	
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 7.2
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 4000
+		}
+		completion_reward = {
+			every_owned_state =	{
+					limit = {
+						is_core_of = ROOT
+						infrastructure < 5
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	#Attack Nation 3
+	focus = {
+		id = NEG_ne_attack_3
+		icon = GFX_neg_ne_war_3
+		x = 0
+		y = 1
+		prerequisite = { focus = NEG_ne_supress}
+		
+		relative_position_id = NEG_ne_supress
+	
+		available = {
+			is_subject = no
+			IF = {
+				limit = {
+					tag = CTC
+				}
+			is_neighbor_of = VTV
+			}
+			IF = {
+				limit = {
+					tag = RIR
+				}
+			is_neighbor_of = VTV
+			}
+			IF = {
+				limit = {
+					tag = MAM
+				}
+			is_neighbor_of = MEM
+			}
+			IF = {
+				limit = {
+					tag = VTV
+				}
+			is_neighbor_of = MAM
+			}
+			IF = {
+				limit = {
+					tag = NHN
+				}
+			is_neighbor_of = MAM
+			}
+			IF = {
+				limit = {
+					tag = MEM
+				}
+			is_neighbor_of = MAM
+			}
+		}
+		
+		bypass = {
+			IF = {
+				limit = {
+					tag = CTC
+				}
+				NOT = {
+					country_exists = VTV
+				}
+				
+			}
+			IF = {
+				limit = {
+					tag = RIR
+				}
+				NOT = {
+					country_exists = VTV
+				}
+				
+			}
+			IF = {
+				limit = {
+					tag = MAM
+				}
+				NOT = {
+					country_exists = MEM
+				}
+				
+			}
+			IF = {
+				limit = {
+					tag = VTV
+				}
+				NOT = {
+					country_exists = MAM
+				}
+				
+			}
+			IF = {
+				limit = {
+					tag = NHN
+				}
+				NOT = {
+					country_exists = MAM
+				}
+				
+			}
+			IF = {
+				limit = {
+					tag = MEM
+				}
+				NOT = {
+					country_exists = MAM
+				}
+				
+			}
+		}
+		
+		cost = 7.2
+		
+		ai_will_do = {
+			factor = 4000
+		}
+		completion_reward = {
+			IF = {
+				limit = {
+					tag = CTC
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = VTV
+				}
+				claim_vermont_effect = yes
+			}
+			IF = {
+				limit = {
+					tag = RIR
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = VTV
+				}
+				claim_rhode_island_effect = yes
+			}
+			IF = {
+				limit = {
+					tag = MAM
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = MEM
+				}
+				claim_maine_effect = yes
+			}
+			IF = {
+				limit = {
+					tag = VTV
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = MAM
+				}
+				claim_massachusetts_effect = yes
+			}
+			IF = {
+				limit = {
+					tag = NHN
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = MAM
+				}
+				claim_massachusetts_effect = yes
+			}
+			IF = {
+				limit = {
+					tag = MEM
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = MAM
+				}
+				claim_massachusetts_effect = yes
+			}
+			
+		}
+	}
+	
+	#Attack Nation 5
+	focus = {
+		id = NEG_ne_attack_5
+		icon = GFX_neg_ne_war_5
+		x = -2
+		y = 1
+		prerequisite = { focus = NEG_ne_adjust_eco focus = NEG_ne_supress}
+		
+		relative_position_id = NEG_ne_adjust_eco
+	
+		available = {
+			is_subject = no
+			IF = {
+				limit = {
+					tag = CTC
+				}
+			is_neighbor_of = NHN
+			}
+			IF = {
+				limit = {
+					tag = RIR
+				}
+			is_neighbor_of = NHN
+			}
+			IF = {
+				limit = {
+					tag = MAM
+				}
+			is_neighbor_of = CTC
+			}
+			IF = {
+				limit = {
+					tag = VTV
+				}
+			is_neighbor_of = CTC
+			}
+			IF = {
+				limit = {
+					tag = NHN
+				}
+			is_neighbor_of = CTC
+			}
+			IF = {
+				limit = {
+					tag = MEM
+				}
+			is_neighbor_of = CTC
+			}
+			
+			has_completed_focus = NEG_ne_attack_3
+			has_completed_focus = NEG_ne_attack_4
+
+		}
+		
+		bypass = {
+			IF = {
+				limit = {
+					tag = CTC
+				}
+				NOT = {
+					country_exists = NHN
+				}
+				
+			}
+			IF = {
+				limit = {
+					tag = RIR
+				}
+				NOT = {
+					country_exists = NHN
+				}
+				
+			}
+			IF = {
+				limit = {
+					tag = MAM
+				}
+				NOT = {
+					country_exists = CTC
+				}
+				
+			}
+			IF = {
+				limit = {
+					tag = VTV
+				}
+				NOT = {
+					country_exists = CTC
+				}
+				
+			}
+			IF = {
+				limit = {
+					tag = NHN
+				}
+				NOT = {
+					country_exists = CTC
+				}
+				
+			}
+			IF = {
+				limit = {
+					tag = MEM
+				}
+				NOT = {
+					country_exists = CTC
+				}
+				
+			}
+		}
+		
+		cost = 7.2
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 4000
+		}
+		completion_reward = {
+			IF = {
+				limit = {
+					tag = CTC
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = NHN
+				}
+				claim_new_hampshire_effect = yes
+			}
+			IF = {
+				limit = {
+					tag = RIR
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = NHN
+				}
+				claim_new_hampshire_effect = yes
+			}
+			IF = {
+				limit = {
+					tag = MAM
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = CTC
+				}
+				claim_connecticut_effect = yes
+			}
+			IF = {
+				limit = {
+					tag = VTV
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = CTC
+				}
+				claim_connecticut_effect = yes
+			}
+			IF = {
+				limit = {
+					tag = NHN
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = CTC
+				}
+				claim_connecticut_effect = yes
+			}
+			IF = {
+				limit = {
+					tag = MEM
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = CTC	
+				}
+				claim_connecticut_effect = yes
+			}
+			
+		}
+	}
+	
+	#Attack Nation 4
+	focus = {
+		id = NEG_ne_attack_4
+		icon = GFX_neg_ne_war_4
+		x = 0
+		y = 1
+		prerequisite = { focus = NEG_ne_adjust_eco}
+		
+		relative_position_id = NEG_ne_adjust_eco
+	
+		available = {
+			is_subject = no
+			IF = {
+				limit = {
+					tag = CTC
+				}
+			is_neighbor_of = MEM
+			}
+			IF = {
+				limit = {
+					tag = RIR
+				}
+			is_neighbor_of = MEM
+			}
+			IF = {
+				limit = {
+					tag = MAM
+				}
+			is_neighbor_of = RIR
+			}
+			IF = {
+				limit = {
+					tag = VTV
+				}
+			is_neighbor_of = RIR
+			}
+			IF = {
+				limit = {
+					tag = NHN
+				}
+			is_neighbor_of = RIR
+			}
+			IF = {
+				limit = {
+					tag = MEM
+				}
+			is_neighbor_of = RIR
+			}
+		}
+		
+		bypass = {
+			IF = {
+				limit = {
+					tag = CTC
+				}
+				NOT = {
+					country_exists = MEM
+				}
+				
+			}
+			IF = {
+				limit = {
+					tag = RIR
+				}
+				NOT = {
+					country_exists = MEM
+				}
+				
+			}
+			IF = {
+				limit = {
+					tag = MAM
+				}
+				NOT = {
+					country_exists = RIR
+				}
+				
+			}
+			IF = {
+				limit = {
+					tag = VTV
+				}
+				NOT = {
+					country_exists = RIR
+				}
+				
+			}
+			IF = {
+				limit = {
+					tag = NHN
+				}
+				NOT = {
+					country_exists = RIR
+				}
+				
+			}
+			IF = {
+				limit = {
+					tag = MEM
+				}
+				NOT = {
+					country_exists = RIR
+				}
+				
+			}
+		}
+		
+		cost = 7.2
+		
+		ai_will_do = {
+			factor = 4000
+		}
+		completion_reward = {
+			IF = {
+				limit = {
+					tag = CTC
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = MEM
+				}
+				claim_maine_effect = yes
+			}
+			IF = {
+				limit = {
+					tag = RIR
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = MEM
+				}
+				claim_maine_effect = yes
+			}
+			IF = {
+				limit = {
+					tag = MAM
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = RIR
+				}
+				claim_rhode_island_effect = yes
+			}
+			IF = {
+				limit = {
+					tag = VTV
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = RIR
+				}
+				claim_rhode_island_effect = yes
+			}
+			IF = {
+				limit = {
+					tag = NHN
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = RIR
+				}
+				claim_rhode_island_effect = yes
+			}
+			IF = {
+				limit = {
+					tag = MEM
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = RIR
+				}
+				claim_rhode_island_effect = yes
+			}
+		}
+	}
+	
+	#Revive New England
+	focus = {
+		id = NEG_ne_revived
+		icon = GFX_neg_ne_reunification
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = NEG_ne_attack_3}
+		prerequisite = { focus = NEG_ne_attack_4}
+		prerequisite = { focus = NEG_ne_attack_5}
+		
+		relative_position_id = NEG_ne_attack_5
+	
+	
+		available = {
+			#Conn.
+			custom_trigger_tooltip = {
+				tooltip = form_country_ctc_required_states_tt
+				controls_connecticut_trigger = yes
+			}
+			#Rhode Island
+			custom_trigger_tooltip = {
+				tooltip = form_country_rir_required_states_tt
+				controls_rhode_island_trigger = yes
+			}
+			#Mass.
+			custom_trigger_tooltip = {
+				tooltip = form_country_mam_required_states_tt
+				controls_massachusetts_trigger = yes
+			}
+			#Vermont
+			custom_trigger_tooltip = {
+				tooltip = form_country_vtv_required_states_tt
+				controls_vermont_trigger = yes
+			}
+			#New Hamp.
+			custom_trigger_tooltip = {
+				tooltip = form_country_nhn_required_states_tt
+				controls_new_hampshire_trigger = yes
+			}
+			#Lobster
+			custom_trigger_tooltip = {
+				tooltip = form_country_mem_required_states_tt
+				controls_maine_trigger = yes
+			}
+		}
+		
+		cost = 3
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 4000
+		}
+		completion_reward = {
+			set_cosmetic_tag = NEC
+			add_stability = 0.2
+			hidden_effect = {
+				ROOT = {
+					set_rule = {
+						#desc = NEG_unification_rules_tt
+						can_create_factions = yes
+						can_join_factions = yes
+						can_puppet = yes
+					}
+				}
+			}
+			remove_ideas = {
+				NEG_neinitiative
+				NEG_neinitiative_resistance
+			}
+		}
+	}
+	
+	#Connect The Cities
+	focus = {
+		id = NEG_ne_railway
+		icon = GFX_neg_ne_railway
+		x = -5
+		y = 1
+		
+		prerequisite = { focus = NEG_ne_revived}
+		
+		relative_position_id = NEG_ne_revived
+	
+	
+		available = {
+			has_war = no
+			owns_state = 197
+			owns_state = 193
+			owns_state = 184
+			owns_state = 180
+			owns_state = 181
+			owns_state = 171
+		}
+		
+		bypass = {
+		}
+		
+		cost = 7.2
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			build_railway = {
+				level = 2
+				start_province = 11040
+				target_province = 11006
+			}
+			build_railway = {
+				level = 2
+				start_province = 11006
+				target_province = 10981
+			}
+			build_railway = {
+				level = 2
+				start_province = 10981
+				target_province = 11118
+			}
+			build_railway = {
+				level = 2
+				start_province = 11118
+				target_province = 11163
+			}
+			build_railway = {
+				level = 2
+				start_province = 11118
+				target_province = 11132
+			}
+			build_railway = {
+				level = 1
+				start_province = 11040
+				target_province = 11032
+			}
+		}
+	}
+	
+	#Bolster our Industry
+	focus = {
+		id = NEG_ne_bolster_industry
+		icon = GFX_neg_ne_industry
+		x = -3
+		y = 1
+		
+		prerequisite = { focus = NEG_ne_revived}
+		
+		relative_position_id = NEG_ne_revived
+	
+	
+		available = {
+			has_war = no
+		}
+		
+		bypass = {
+		}
+		
+		cost = 4.3
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+					limit = {
+						is_coastal = yes
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = dockyard
+						level = 1
+						instant_build = yes
+					}
+			}
+		}
+	}
+	
+	#New National Pride
+	focus = {
+		id = NEG_ne_natpride
+		icon = GFX_neg_ne_pride
+		x = -1
+		y = 1
+		
+		prerequisite = { focus = NEG_ne_revived}
+		
+		relative_position_id = NEG_ne_revived
+	
+	
+		available = {
+			has_war = no
+		}
+		
+		bypass = {
+		}
+		
+		cost = 4.3
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			add_ideas = NEG_ne_national_pride
+		}
+	}
+	
+	#Army Expansions
+	focus = {
+		id = NEG_ne_expand_army
+		icon = GFX_neg_ne_army
+		x = 1
+		y = 1
+		
+		prerequisite = { focus = NEG_ne_revived}
+		
+		relative_position_id = NEG_ne_revived
+	
+	
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 4.3
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			 army_experience = 30
+			add_doctrine_cost_reduction = {
+				#name = why
+				cost_reduction = 0.75
+				uses = 2
+				category = land_doctrine
+			}
+		}
+	}
+	
+	#A New Air Force
+	focus = {
+		id = NEG_ne_expand_airforce
+		icon = GFX_neg_ne_airforce
+		x = 5
+		y = 1
+		
+		prerequisite = { focus = NEG_ne_revived}
+		
+		relative_position_id = NEG_ne_revived
+	
+	
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 4.3
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			air_experience = 30
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 1.0
+				uses = 2
+				technology = fighter2
+				technology = fighter3
+				technology = CAS2
+				technology = CAS3
+				technology = jet_fighter1
+				technology = jet_fighter2
+			}
+		}
+	}
+	
+	#Naval Expertise
+	focus = {
+		id = NEG_ne_expand_navy
+		icon = GFX_neg_ne_navy
+		x = 3
+		y = 1
+		
+		prerequisite = { focus = NEG_ne_revived}
+		
+		relative_position_id = NEG_ne_revived
+	
+	
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 4.3
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			navy_experience = 30
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = cl_tech
+				category = ca_tech
+			}
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = ss_tech
+			}
+		}
+	}
+	
+	#Pursue Greater New England
+	focus = {
+		id = NEG_ne_go_greater
+		icon = GFX_neg_ne_greater_ne2
+		x = 1
+		y = 1
+		
+		prerequisite = { focus = NEG_ne_railway}
+		prerequisite = { focus = NEG_ne_bolster_industry}
+		prerequisite = { focus = NEG_ne_natpride}
+		prerequisite = { focus = NEG_ne_expand_army}
+		prerequisite = { focus = NEG_ne_expand_airforce}
+		prerequisite = { focus = NEG_ne_expand_navy}
+		
+		relative_position_id = NEG_ne_natpride
+	
+	
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 7.2
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			claim_new_york_effect = yes
+			claim_new_jersey_effect = yes
+			claim_new_brunswick_effect = yes
+			claim_nova_scotia_effect = yes
+			claim_prince_edward_island_effect = yes
+		}
+	}
+	
+	###################################
+	######### DEMOCRATIC TREE #########
+	###################################
+	
+	
+	
+	
+	#Democracy prevails
+	focus = {
+		id = NEG_democratic
+		icon = GFX_Generic_Blue_Democracy
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = NEG_political }
+		
+		relative_position_id = NEG_political
+		mutually_exclusive = { focus =  NEG_fascist }
+		mutually_exclusive = { focus =  NEG_communist }
+	
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 10
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.2
+			}
+			add_stability = 0.05
+		}
+	}
+	
+	#Diplomatic Missions
+	focus = {
+		id = NEG_diplo1
+		icon = GFX_NEG_diplomatic_missions
+		x = -3
+		y = 1
+		
+		prerequisite = { focus = NEG_democratic }
+		
+		relative_position_id = NEG_democratic
+	
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 5
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			set_country_flag = NEG_diplomission
+			custom_effect_tooltip = NEG_diplotext_1_tt
+			set_variable = { NEG_democratic_connection = random }
+			set_variable = { NEG_democratic_connection_1 = random }
+		}
+	}
+	
+	#Diplomats to the New Great Powers
+	focus = {
+		id = NEG_diplogp
+		icon = GFX_NEG_diplomats_great_powers
+		x = -1
+		y = 1
+		
+		prerequisite = { focus = NEG_diplo1}
+		
+		relative_position_id = NEG_diplo1
+	
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 5
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			every_country = {
+				limit = { is_major = yes }
+				add_opinion_modifier = { target = ROOT modifier = large_increase }
+			}
+			add_political_power = 50
+			set_country_flag = NEG_diplomission_gp
+			custom_effect_tooltip = NEG_diplotext_2_tt
+			set_variable = { NEG_gp_connection = random }
+		}
+	}
+	
+	#Diplomats to New England
+	focus = {
+		id = NEG_diplone
+		icon = GFX_NEG_diplomats_new_england
+		x = 1
+		y = 1
+		
+		prerequisite = { focus = NEG_diplo1}
+		
+		relative_position_id = NEG_diplo1
+	
+		available = {
+			
+		}
+		
+		bypass = {
+			#NOT = {
+			#	ROOT = {
+			#		has_cosmetic_tag = NEC @@@
+			#	}
+			#}
+		}
+		
+		cost = 5
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			RIR = {
+				add_opinion_modifier = { target = ROOT modifier = large_increase }
+			}
+			CTC = {
+				add_opinion_modifier = { target = ROOT modifier = large_increase }
+			}
+			VTV = {
+				add_opinion_modifier = { target = ROOT modifier = large_increase }
+			}
+			MEM = {
+				add_opinion_modifier = { target = ROOT modifier = large_increase }
+			}
+			NHN = {
+				add_opinion_modifier = { target = ROOT modifier = large_increase }
+			}
+			MAM = {
+				add_opinion_modifier = { target = ROOT modifier = large_increase }
+			}
+			add_political_power = 50
+			set_country_flag = NEG_diplomission_ne
+			custom_effect_tooltip = NEG_diplotext_3_tt
+			set_variable = { NEG_gp_connection = random }
+		}
+	}
+	
+	#New Connections
+	focus = {
+		id = NEG_new_connections
+		icon = GFX_NEG_new_connections1
+		x = 1
+		y = 1
+		
+		prerequisite = { focus = NEG_diplogp}
+		prerequisite = { focus = NEG_diplone}
+		
+		relative_position_id = NEG_diplogp
+	
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 5
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			add_political_power = 140
+		}
+	}
+	
+	
+	#Establish New Basis's
+	focus = {
+		id = NEG_new_basis
+		icon = GFX_Generic_Government_Control
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = NEG_democratic}
+		
+		relative_position_id = NEG_democratic
+	
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 10
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			add_ideas = NEG_improved_govt_1
+		}
+	}
+	
+	#Free Press
+	focus = {
+		id = NEG_free_press
+		icon = GFX_Generic_Pass_Legislation
+		x = 0
+		y = 2
+		
+		prerequisite = { focus = NEG_new_basis}
+		
+		relative_position_id = NEG_new_basis
+	
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 10
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = NEG_improved_govt_1
+				add_idea = NEG_improved_govt_2
+			}
+		}
+	}
+	
+	#Prepare for the Worst
+	focus = {
+		id = NEG_prepare_worst
+		icon = GFX_Generic_American_Soldier2
+		x = 3
+		y = 1
+		
+		prerequisite = { focus = NEG_democratic}
+		
+		relative_position_id = NEG_democratic
+	
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 5
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			add_war_support = 0.1
+		}
+	}
+	
+	#National Defense Fund
+	focus = {
+		id = NEG_nat_defense_fund
+		icon = GFX_Generic_Construction
+		x = -1
+		y = 1
+		
+		prerequisite = { focus = NEG_prepare_worst}
+		
+		relative_position_id = NEG_prepare_worst
+	
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 10
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			add_ideas = NEG_defense_fund_idea
+		}
+	}
+	
+	#Economic Boosts
+	focus = {
+		id = NEG_eco_boosts
+		icon = GFX_Generic_Factory_Complex
+		x = 1
+		y = 1
+		
+		prerequisite = { focus = NEG_prepare_worst}
+		
+		relative_position_id = NEG_prepare_worst
+	
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 10
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 1.0
+				uses = 2
+				category = industry
+			}
+		}
+	}
+	
+	#Military Benifits
+	focus = {
+		id = NEG_mil_benifits
+		icon = GFX_Generic_Rearmament
+		x = 1
+		y = 1
+		
+		prerequisite = { focus = NEG_nat_defense_fund}
+		prerequisite = { focus = NEG_eco_boosts}
+		
+		relative_position_id = NEG_nat_defense_fund
+	
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 10
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+				type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	#Defend our Values
+	focus = {
+		id = NEG_defend_values
+		icon = GFX_Generic_Elections
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = NEG_free_press }
+		
+		relative_position_id = NEG_free_press
+	
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 10
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = NEG_improved_govt_2
+				add_idea = NEG_improved_govt_3
+			}
+		}
+	}
+	
+	#Political Flexibility
+	focus = {
+		id = NEG_political_flex
+		icon = GFX_NEG_political_flexibility
+		x = -1
+		y = 2
+		
+		prerequisite = { focus = NEG_free_press}
+		prerequisite = { focus = NEG_mil_benifits focus = NEG_new_connections }
+		mutually_exclusive = { focus = NEG_democratic_bedrock }
+		
+		
+		relative_position_id = NEG_free_press
+	
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 7.2
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			add_ideas = NEG_political_flex_idea
+		}
+	}
+	
+	#Democratic Bedrock
+	focus = {
+		id = NEG_democratic_bedrock
+		icon = GFX_NEG_democracy_power
+		x = 1
+		y = 2
+		
+		prerequisite = { focus = NEG_free_press}
+		prerequisite = { focus = NEG_mil_benifits focus = NEG_new_connections }
+		mutually_exclusive = { focus = NEG_political_flex }
+		
+		
+		relative_position_id = NEG_free_press
+	
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 7.2
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			add_ideas = NEG_democratic_bedrock_idea
+		}
+	}
+	
+	##################################
+	######### POST-POLITICAL #########
+	##################################
+
+	
+	#Increase College Funding
+	focus = {
+		id = NEG_research_slot_1
+		icon = GFX_focus_research
+		x = -2
+		y = 1
+		
+		prerequisite = { focus = NEG_political_flex focus = NEG_democratic_bedrock focus = NEG_idea_war focus = NEG_volunteer_communism}
+		
+		
+		relative_position_id = NEG_political_flex
+	
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 10
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	
+	#Research Initiatives
+	focus = {
+		id = NEG_research_slot_2
+		icon = GFX_focus_research
+		x = 4
+		y = 1
+		
+		prerequisite = { focus = NEG_political_flex focus = NEG_democratic_bedrock focus = NEG_nation_of_soldiers focus = NEG_fascist_outlook }
+		
+		
+		relative_position_id = NEG_political_flex
+	
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 10
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	
+	#Our Future
+	focus = {
+		id = NEG_future
+		icon = GFX_NEG_our_future
+		x = 1
+		y = 2
+		
+		prerequisite = { focus = NEG_political_flex focus = NEG_democratic_bedrock focus = NEG_research_slot_1 focus = NEG_research_slot_2}
+		
+		
+		relative_position_id = NEG_political_flex
+	
+		available = {
+			NOT = {
+				has_war = yes
+			}
+		}
+		
+		bypass = {
+		}
+		
+		cost = 5
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			ROOT = {
+				country_event = newengland.16
+			}
+		}
+	}
+	
+	#Embrace the Truth
+	focus = {
+		id = NEG_embrace_truth
+		icon = GFX_NEG_embrace_the_truth
+		x = 2
+		y = 1
+		
+		prerequisite = { focus = NEG_future }
+		mutually_exclusive = { focus = NEG_dream_outwards}
+		
+		relative_position_id = NEG_future
+	
+		available = {
+			has_country_flag = NEG_future_A
+			NOT = {
+				has_war = yes
+			}
+		}
+		
+		bypass = {
+		}
+		
+		cost = 5
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = NEG_start_minor_nation
+				add_idea = NEG_start_minor_nation_1A
+			}
+		}
+	}
+	
+	#Improve on what Matters
+	focus = {
+		id = NEG_improve_on_matters
+		icon = GFX_Generic_Industrialization
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = NEG_embrace_truth }
+		
+		relative_position_id = NEG_embrace_truth
+	
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 7.2
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			ROOT = {
+				country_event = newengland.17
+			}
+		}
+	}
+	
+	#Reform on the International Stage
+	focus = {
+		id = NEG_reform_international
+		icon = GFX_Generic_Internationalism
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = NEG_improve_on_matters }
+		
+		relative_position_id = NEG_improve_on_matters
+	
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 7.2
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			IF = { #Research
+				limit = {
+					has_country_flag = NEG_improve_matter_1
+				}
+				swap_ideas = {
+					remove_idea = NEG_start_minor_nation_2A1
+					add_idea = NEG_start_minor_nation_3A1
+				}
+			}
+			IF = { #Population
+				limit = {
+					has_country_flag = NEG_improve_matter_2
+				}
+				swap_ideas = {
+					remove_idea = NEG_start_minor_nation_2A2
+					add_idea = NEG_start_minor_nation_3A2
+				}
+			}
+		}
+	}
+	
+	#Center our Nation on the Capitol
+	focus = {
+		id = NEG_capitol
+		icon = GFX_Generic_Construction
+		x = 2
+		y = 1
+		
+		prerequisite = { focus = NEG_improve_on_matters }
+		
+		relative_position_id = NEG_improve_on_matters
+	
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 5
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			IF = {
+				limit = {
+					tag = MEM
+				}
+				add_victory_points = {
+					province = 7462
+					value = 5
+				}
+				1113 = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			IF = {
+				limit = {
+					tag = NHN
+				}
+				add_victory_points = {
+					province = 733
+					value = 5
+				}
+				1108 = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			IF = {
+				limit = {
+					tag = VTV
+				}
+				add_victory_points = {
+					province = 14061
+					value = 5
+				}
+				1105 = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			IF = {
+				limit = {
+					tag = MAM
+				}
+				add_victory_points = {
+					province = 13961
+					value = 5
+				}
+				1102 = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			IF = {
+				limit = {
+					tag = RIR
+				}
+				add_victory_points = {
+					province = 11830
+					value = 5
+				}
+				1097 = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			IF = {
+				limit = {
+					tag = CTC
+				}
+				add_victory_points = {
+					province = 13926
+					value = 5
+				}
+				1094 = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+	
+	
+	
+	#Dream Outwards
+	focus = {
+		id = NEG_dream_outwards
+		icon = GFX_NEG_dream_outwards
+		x = -2
+		y = 1
+		
+		prerequisite = { focus = NEG_future }
+		mutually_exclusive = { focus = NEG_embrace_truth}
+		
+		relative_position_id = NEG_future
+	
+		available = {
+			has_country_flag = NEG_future_B
+			NOT = {
+				has_war = yes
+			}
+		}
+		
+		bypass = {
+		}
+		
+		cost = 5
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = NEG_start_minor_nation
+				add_idea = NEG_start_minor_nation_1B
+			}
+		}
+	}
+	
+	#A New Vision
+	focus = {
+		id = NEG_a_new_vision
+		icon = GFX_Generic_Liberalism
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = NEG_dream_outwards }
+		
+		relative_position_id = NEG_dream_outwards
+	
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 7.2
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = NEG_start_minor_nation_1B
+				add_idea = NEG_new_nation
+			}
+		}
+	}
+	
+	#A New National Unity
+	focus = {
+		id = NEG_a_new_unity
+		icon = GFX_Generic_Break_Free
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = NEG_a_new_vision }
+		
+		relative_position_id = NEG_a_new_vision
+	
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 7.2
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = NEG_new_nation
+				add_idea = NEG_new_nation_1
+			}
+			add_war_support = 0.05
+		}
+	}
+	
+	#Expansionism
+	focus = {
+		id = NEG_expansionism
+		icon = GFX_Generic_Invasion
+		x = -2
+		y = 1
+		
+		prerequisite = { focus = NEG_dream_outwards }
+		
+		relative_position_id = NEG_dream_outwards
+	
+		available = {
+			OR = {
+				has_government = fascism
+				has_government = communism
+			}
+		}
+		
+		bypass = {
+		}
+		
+		cost = 10
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			add_ideas = NEG_expansionism_idea
+		}
+	}
+	
+	#Improve our Rail Capacity
+	focus = {
+		id = NEG_rail_capacity
+		icon = GFX_Generic_Railroads
+		x = 2
+		y = 1
+		
+		prerequisite = { focus = NEG_dream_outwards focus = NEG_embrace_truth}
+		
+		relative_position_id = NEG_dream_outwards
+	
+		available = {
+			num_of_controlled_states > 14
+		}
+		
+		bypass = {
+		}
+		
+		cost = 10
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			add_ideas = NEG_better_rail
+		}
+	}
+	
+	#A New Future
+	focus = {
+		id = NEG_new_future
+		icon = GFX_NEG_new_future
+		x = 2
+		y = 1
+		
+		prerequisite = { focus = NEG_reform_international focus = NEG_a_new_unity}
+		
+		relative_position_id = NEG_a_new_unity
+	
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 10
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			#Minor Nation Research Buff
+			IF = {
+				limit = {
+					has_idea = NEG_start_minor_nation_3A1
+				}
+				swap_ideas = {
+					remove_idea = NEG_start_minor_nation_3A1
+					add_idea = NEG_not_minor_nation_3A1
+				}
+			}
+			#Minor Nation Population Buff
+			IF = {
+				limit = {
+					has_idea = NEG_start_minor_nation_3A2
+				}
+				swap_ideas = {
+					remove_idea = NEG_start_minor_nation_3A2
+					add_idea = NEG_not_minor_nation_3A2
+				}
+			}
+			#New Nation
+			IF = {
+				limit = {
+					has_idea = NEG_new_nation_1
+				}
+				swap_ideas = {
+					remove_idea = NEG_new_nation_1
+					add_idea = NEG_new_nation_2
+				}
+			}
+			
+		}
+	}
+	
+	#Begin the New England Initiative
+	focus = {
+		id = NEG_start_ne
+		icon = GFX_NEG_begin_new_england_initiative
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = NEG_new_future }
+		
+		relative_position_id = NEG_new_future
+	
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 2
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 4000
+		}
+		completion_reward = {
+			custom_effect_tooltip = NEG_commence_ne_tt
+		}
+	}
+	
+	##################################
+	######### COMMUNIST TREE #########
+	##################################
+	
+	#The Left Movement 
+	focus = {
+		id = NEG_communist
+		icon = GFX_goal_support_communism
+		x = -10
+		y = 1
+		
+		prerequisite = { focus = NEG_political }
+		
+		relative_position_id = NEG_political
+		mutually_exclusive = { focus =  NEG_fascist }
+		mutually_exclusive = { focus =  NEG_democratic }
+	
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 10
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.05
+			}
+			ROOT = {
+				country_event = newengland.22
+			}
+		}
+	}
+	
+	#Gain Support from the Military
+	focus = {
+		id = NEG_communist_support_military
+		icon = GFX_NEG_military_support
+		x = -2
+		y = 1
+		
+		prerequisite = { focus = NEG_communist }
+		
+		relative_position_id = NEG_communist
+	
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 7.2
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 4000
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_weapons
+				bonus = 1.0
+				uses = 1
+				category = infantry_weapons
+			}
+			ROOT = {
+				country_event = newengland.23
+			}
+		}
+	}
+	
+	#Gain Support from the People
+	focus = {
+		id = NEG_communist_support_people
+		icon = GFX_NEG_popular_support
+		x = 2
+		y = 1
+		
+		prerequisite = { focus = NEG_communist }
+		
+		relative_position_id = NEG_communist
+	
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 7.2
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 4000
+		}
+		completion_reward = {
+			add_political_power = 100
+			ROOT = {
+				country_event = newengland.24
+			}
+		}
+	}
+	
+	#Increase the Power of the Government
+	focus = {
+		id = NEG_communist_support_government
+		icon = GFX_Generic_Government_Control
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = NEG_communist }
+		
+		relative_position_id = NEG_communist
+	
+		available = {
+			has_idea = NEG_anti_communism
+		}
+		
+		bypass = {
+		}
+		
+		cost = 10
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			add_timed_idea = { idea = NEG_increased_gov_power days = 365 }
+		}
+	}
+	
+	#Foreign Aid
+	focus = {
+		id = NEG_communist_support_aid
+		icon = GFX_civilian_factory
+		x = 1
+		y = 1
+		
+		prerequisite = { focus = NEG_communist_support_people}
+		
+		relative_position_id = NEG_communist_support_people
+	
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 10
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+				type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+				type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	#A Man for the Country
+	focus = {
+		id = NEG_communist_soldiers
+		icon = GFX_Generic_Communist_Propaganda02
+		x = -1
+		y = 1
+		
+		prerequisite = { focus = NEG_communist_support_military}
+		
+		relative_position_id = NEG_communist_support_military
+	
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 10
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			add_ideas = NEG_communist_soldiers_idea
+		}
+	}
+	
+	#Opression of Opposition
+	focus = {
+		id = NEG_opposition_1
+		icon = GFX_NEG_opression
+		x = -5
+		y = 1
+		
+		prerequisite = { focus = NEG_communist}
+		
+		relative_position_id = NEG_communist
+		mutually_exclusive = { focus = NEG_opposition_2 }
+	
+		available = {
+			has_idea = NEG_anti_communism
+		}
+		
+		bypass = {
+		}
+		
+		cost = 10
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = NEG_anti_communism
+				add_idea = NEG_anti_communism_1a
+			}
+		}
+	}
+	
+	#Cooperation
+	focus = {
+		id = NEG_opposition_2
+		icon = GFX_NEG_Cooperation
+		x = -7
+		y = 1
+		
+		prerequisite = { focus = NEG_communist}
+		
+		relative_position_id = NEG_communist
+		mutually_exclusive = { focus = NEG_opposition_1 }
+	
+		available = {
+			has_idea = NEG_anti_communism
+		}
+		
+		bypass = {
+		}
+		
+		cost = 10
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = NEG_anti_communism
+				add_idea = NEG_anti_communism_1b
+			}
+		}
+	}
+	
+	#Revamped Economy
+	focus = {
+		id = NEG_communist_economy_1
+		icon = GFX_NEG_revamped_economy1
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = NEG_opposition_1 focus = NEG_opposition_2}
+		
+		relative_position_id = NEG_opposition_2
+		mutually_exclusive = { focus = NEG_communist_economy_2 }
+	
+		available = {
+			OR = {
+				has_idea = NEG_anti_communism_1a
+				has_idea = NEG_anti_communism_1b
+			}
+		}
+		
+		bypass = {
+		}
+		
+		cost = 10
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			#opression
+			IF = {
+				limit = {
+					has_idea = NEG_anti_communism_1a
+				}
+				swap_ideas = {
+					remove_idea = NEG_anti_communism_1a
+					add_idea = NEG_anti_communism_1aa
+				}
+			}
+			#cooperation
+			IF = {
+				limit = {
+					has_idea = NEG_anti_communism_1b
+				}
+				swap_ideas = {
+					remove_idea = NEG_anti_communism_1b
+					add_idea = NEG_anti_communism_1ab
+				}
+			}
+		}
+	}
+	
+	#State Economy
+	focus = {
+		id = NEG_communist_economy_2
+		icon = GFX_Generic_Industry02
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = NEG_opposition_1 focus = NEG_opposition_2}
+		
+		relative_position_id = NEG_opposition_1
+		mutually_exclusive = { focus = NEG_communist_economy_1 }
+	
+		available = {
+			has_idea = NEG_anti_communism
+		}
+		
+		bypass = {
+		}
+		
+		cost = 10
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			#opression
+			IF = {
+				limit = {
+					has_idea = NEG_anti_communism_1a
+				}
+				swap_ideas = {
+					remove_idea = NEG_anti_communism_1a
+					add_idea = NEG_anti_communism_1ab
+				}
+			}
+			#cooperation
+			IF = {
+				limit = {
+					has_idea = NEG_anti_communism_1b
+				}
+				swap_ideas = {
+					remove_idea = NEG_anti_communism_1b
+					add_idea = NEG_anti_communism_2bb
+				}
+			}
+		}
+	}
+	
+	#New Communist Society
+	focus = {
+		id = NEG_communist_society
+		icon = GFX_NEG_new_communist_society
+		x = 1
+		y = 1
+		
+		prerequisite = { focus = NEG_communist_economy_1 focus = NEG_communist_economy_2}
+		
+		relative_position_id = NEG_communist_economy_1
+	
+		available = {
+			OR = {
+				has_idea = NEG_anti_communism_1aa
+				has_idea = NEG_anti_communism_1ab
+				has_idea = NEG_anti_communism_1ab
+				has_idea = NEG_anti_communism_2bb 
+			}
+			communism > 0.6
+		}
+		
+		bypass = {
+		}
+		
+		cost = 10
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 4000
+		}
+		completion_reward = {
+			remove_ideas = {
+				NEG_anti_communism
+				NEG_anti_communism_1a
+				NEG_anti_communism_1b
+				NEG_anti_communism_1aa
+				NEG_anti_communism_1ab
+				NEG_anti_communism_2bb
+				NEG_anti_communism_1ab
+			}
+		}
+	}
+	
+	
+	#A Long-Awaited Summit
+	focus = {
+		id = NEG_slow_growth
+		icon =  GFX_focus_prc_agrarian_socialism
+		x = 1
+		y = 1
+		
+		prerequisite = { focus = NEG_communist_support_people }
+		prerequisite = { focus = NEG_communist_support_military }
+		
+		relative_position_id = NEG_communist_support_military
+		mutually_exclusive = { focus = NEG_quick_growth }
+		
+		available = {
+			NOT = {
+				has_idea = NEG_anti_communism
+			}
+			communism > 0.5
+		}
+		
+		bypass = {
+		}
+		
+		cost = 5
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 4000
+		}
+		completion_reward = {
+			add_ideas = NEG_new_com_gov
+			set_politics = {
+				ruling_party = communism
+				elections_allowed = no
+			}
+		}
+	}
+	
+	#A New Stable Government
+	focus = {
+		id = NEG_quick_growth
+		icon = GFX_Generic_Bell_Tolls
+		x = -1
+		y = 1
+		
+		prerequisite = { focus = NEG_communist_support_people }
+		prerequisite = { focus = NEG_communist_support_military }
+		
+		relative_position_id = NEG_communist_support_people
+		mutually_exclusive = { focus = NEG_slow_growth }
+		
+		available = {
+			has_idea = NEG_anti_communism
+			communism > 0.35
+		}
+		
+		bypass = {
+		}
+		
+		cost = 5
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 4000
+		}
+		completion_reward = {
+			add_stability = 0.15
+			add_ideas = NEG_new_com_gov
+			IF = {
+				limit = {
+					has_idea = NEG_increased_gov_power
+				}
+				remove_ideas = NEG_increased_gov_power
+			}
+			set_politics = {
+				ruling_party = communism
+				elections_allowed = no
+			}
+		}
+	}
+	
+	#Influence at Home
+	focus = {
+		id = NEG_influence_home
+		icon = GFX_Generic_Workers_Democracy
+		x = -2
+		y = 1
+		
+		prerequisite = { focus = NEG_quick_growth focus = NEG_slow_growth }
+		
+		relative_position_id = NEG_slow_growth
+		mutually_exclusive = { focus = NEG_influence_external }
+		
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 7.2
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			add_political_power = 120
+			add_stability = 0.05
+		}
+	}
+	
+	#Foriegn Interventionism
+	focus = {
+		id = NEG_influence_external
+		icon = GFX_Generic_War_Propaganda03
+		x = 2
+		y = 1
+		
+		prerequisite = { focus = NEG_quick_growth focus = NEG_slow_growth }
+		
+		relative_position_id = NEG_quick_growth
+		mutually_exclusive = { focus = NEG_influence_home }
+		
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 7.2
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			add_war_support = 0.1
+		}
+	}
+	
+	#Radicalism
+	focus = {
+		id = NEG_radicalism
+		icon = GFX_Generic_Socialist_Revolution_Fixed
+		x = 1
+		y = 1
+		
+		prerequisite = { focus = NEG_influence_home }
+		
+		relative_position_id = NEG_influence_home
+		
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 10
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = NEG_new_com_gov
+				add_idea = NEG_new_com_gov_1
+			}
+		}
+	}
+	
+	#National Defense
+	focus = {
+		id = NEG_com_nat_defense
+		icon = GFX_Generic_Soldiers_Defense
+		x = -1
+		y = 1
+		
+		prerequisite = { focus = NEG_influence_home }
+		
+		relative_position_id = NEG_influence_home
+		
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 10
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			add_ideas = NEG_communist_defense
+		}
+	}
+	
+	#Volunteers for Communism
+	focus = {
+		id = NEG_volunteer_communism
+		icon = GFX_Generic_Socialist_Volunteers
+		x = 1
+		y = 1
+		
+		prerequisite = { focus = NEG_radicalism }
+		prerequisite = { focus = NEG_com_nat_defense }
+		
+		relative_position_id = NEG_com_nat_defense
+		
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 7.2
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = NEG_new_com_gov_1
+				add_idea = NEG_new_com_gov_2
+			}
+		}
+	}
+	
+	#Militant Society
+	focus = {
+		id = NEG_militant_society
+		icon = GFX_Generic_Reactionary
+		x = -1
+		y = 1
+		
+		prerequisite = { focus = NEG_influence_external }
+		
+		relative_position_id = NEG_influence_external
+		
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 10
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			add_ideas = NEG_com_militants
+		}
+	}
+	
+	#Invest in our Agency
+	focus = {
+		id = NEG_communist_spy
+		icon = GFX_Focus_Communist_Spy02
+		x = 1
+		y = 1
+		
+		prerequisite = { focus = NEG_influence_external }
+		
+		relative_position_id = NEG_influence_external
+	
+		available = {
+			has_intelligence_agency = yes
+		}
+		
+		bypass = {
+		}
+		
+		cost = 10
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			add_ideas = NEG_communist_spy_idea
+		}
+	}
+	
+	#The Idea of War
+	focus = {
+		id = NEG_idea_war
+		icon = GFX_Generic_Pawns
+		x = 1
+		y = 1
+		
+		prerequisite = { focus = NEG_militant_society }
+		prerequisite = { focus = NEG_communist_spy }
+		
+		relative_position_id = NEG_militant_society
+	
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 7.2
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+				type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
+			add_ideas = { NEG_communist_puppets }
+		}
+	}
+	
+	#[Country] National Progression
+	focus = {
+		id = NEG_nat_progression
+		icon = GFX_Generic_Revolutionary_Government
+		x = -3
+		y = 2
+		
+		prerequisite = { focus = NEG_influence_external focus = NEG_influence_home }
+		
+		relative_position_id = NEG_influence_external
+	
+		available = {
+			communism > 0.8
+		}
+		
+		bypass = {
+		}
+		
+		cost = 10
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			add_ideas = NEG_communist_loves_compliance
+		}
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	##################################
+	########## FASCIST TREE ##########
+	##################################
+	
+	#The Right Movement
+	focus = {
+		id = NEG_fascist
+		icon = GFX_goal_support_fascism
+		x = 10
+		y = 1
+		
+		prerequisite = { focus = NEG_political }
+		
+		relative_position_id = NEG_political
+		mutually_exclusive = { focus =  NEG_democratic }
+		mutually_exclusive = { focus =  NEG_communist }
+	
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 10
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.05
+			}
+			ROOT = {
+				country_event = newengland.18
+			}
+		}
+	}
+	
+	#Increase Popular Support
+	focus = {
+		id = NEG_grow_fascist
+		icon = GFX_Generic_Authority
+		x = 5
+		y = 1
+		
+		prerequisite = { focus = NEG_fascist }
+		
+		relative_position_id = NEG_fascist
+	
+		available = {
+			NOT = {
+				has_completed_focus = NEG_fascist_cause
+			}
+		}
+		
+		bypass = {
+		}
+		
+		cost = 7.2
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 8000
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.05
+			}
+			swap_ideas = {
+				remove_idea = NEG_anti_fascist
+				add_idea = NEG_anti_fascist_1
+			}
+		}
+	}
+	
+	#Speeches of 10,000
+	focus = {
+		id = NEG_grow_fascist_10000
+		icon = GFX_nyn_goal_speech
+		x = -1
+		y = 1
+		
+		prerequisite = { focus = NEG_grow_fascist }
+		
+		relative_position_id = NEG_grow_fascist
+	
+		available = {
+			NOT = {
+				has_completed_focus = NEG_fascist_cause
+			}
+		}
+		
+		bypass = {
+		}
+		
+		cost = 7.2
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 8000
+		}
+		completion_reward = {
+			custom_effect_tooltip = NEG_speech10000_tt
+			random_list = {
+				10 = {
+					ROOT = {
+						country_event = newengland.19
+					}
+				}
+				65 = {
+					ROOT = {
+						country_event = newengland.20
+					}
+				}
+				25 = {
+					ROOT = {
+						country_event = newengland.21
+					}
+				}
+			}	
+		}
+	}
+	
+	#Side the Workers
+	focus = {
+		id = NEG_grow_fascist_workers
+		icon = GFX_Generic_Fascist_Guy
+		x = 1
+		y = 1
+		
+		prerequisite = { focus = NEG_grow_fascist }
+		
+		relative_position_id = NEG_grow_fascist
+	
+		available = {
+			NOT = {
+				has_completed_focus = NEG_fascist_cause
+			}
+		}
+		
+		bypass = {
+		}
+		
+		cost = 7.2
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 8000
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.10
+			}
+		}
+	}
+	
+	#Popular Movement
+	focus = {
+		id = NEG_grow_fascist_popular
+		icon = GFX_Generic_Mutual_Cooperation
+		x = -1
+		y = 1
+		
+		prerequisite = { focus = NEG_grow_fascist_workers }
+		prerequisite = { focus = NEG_grow_fascist_10000 }
+		
+		relative_position_id = NEG_grow_fascist_workers
+	
+		available = {
+			NOT = {
+				has_completed_focus = NEG_fascist_cause
+			}
+		}
+		
+		bypass = {
+		}
+		
+		cost = 7.2
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 4000
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = NEG_anti_fascist_1
+				add_idea = NEG_anti_fascist_2
+			}
+		}
+	}
+	
+	#Initialize the Cause
+	focus = {
+		id = NEG_fascist_cause
+		icon = GFX_Generic_Liberation
+		x = 1
+		y = 1
+		
+		prerequisite = { focus = NEG_fascist }
+		
+		relative_position_id = NEG_fascist
+	
+		available = {
+			fascism > 0.4
+		}
+		
+		bypass = {
+			has_government = fascism
+		}
+		
+		cost = 5
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 10000
+		}
+		completion_reward = {
+			set_politics = {
+				ruling_party = fascism
+				elections_allowed = no
+			}
+			remove_ideas = {
+				NEG_anti_fascist_2
+				NEG_anti_fascist_1
+				NEG_anti_fascist
+			}
+		}
+	}
+	
+	#Annilihilate Resistance
+	focus = {
+		id = NEG_no_resistance
+		icon = GFX_Generic_Elections_Banned
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = NEG_fascist_cause }
+		
+		relative_position_id = NEG_fascist_cause
+	
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 10
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = democratic
+				popularity = -0.10
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = -0.10
+			}
+			add_popularity = {
+				ideology = neutrality
+				popularity = -0.10
+			}
+		}
+	}
+	
+	#Improved National Image
+	focus = {
+		id = NEG_better_image
+		icon = GFX_Generic_Ultranationalist_Government
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = NEG_no_resistance }
+		
+		relative_position_id = NEG_no_resistance
+	
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 7.2
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			add_stability = 0.1
+		}
+	}
+	
+	#Interior Surveillance
+	focus = {
+		id = NEG_fascist_spy_1
+		icon = GFX_Generic_Lookout
+		x = 2
+		y = 1
+		
+		prerequisite = { focus = NEG_no_resistance }
+		
+		relative_position_id = NEG_no_resistance
+	
+		available = {
+			if = {
+				limit = {
+					has_dlc = "La Resistance"
+				}	
+				has_intelligence_agency = yes
+			}	
+		}
+		
+		bypass = {
+		}
+		
+		cost = 7.2
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			add_ideas = NEG_fascist_spy_idea
+		}
+	}
+	
+	#Cryptology Department
+	focus = {
+		id = NEG_fascist_spy_2
+		icon = GFX_Generic_Intelligence_Gathering
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = NEG_fascist_spy_1 }
+		
+		relative_position_id = NEG_fascist_spy_1
+	
+		available = {
+			is_cryptology_department_active = yes
+		}
+		
+		bypass = {
+			NOT = {
+				has_dlc = "La Resistance"	
+			}	
+		}
+		
+		cost = 7.2
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = NEG_fascist_spy_idea
+				add_idea = NEG_fascist_spy_idea_1
+			}
+		}
+	}
+	
+	#Hypernationalism
+	focus = {
+		id = NEG_hypernationalism
+		icon = GFX_Generic_Revanchism02
+		x = -2
+		y = 1
+		
+		prerequisite = { focus = NEG_fascist }
+		
+		relative_position_id = NEG_fascist
+	
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 10
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			add_ideas = NEG_national_unity
+		}
+	}
+	
+	#National Men
+	focus = {
+		id = NEG_nat_men
+		icon = GFX_Generic_American_Soldier
+		x = -1
+		y = 1
+		
+		prerequisite = { focus = NEG_hypernationalism }
+		mutually_exclusive = {focus = NEG_nat_eco}
+		
+		relative_position_id = NEG_hypernationalism
+	
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 10
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			add_ideas = NEG_national_men_idea
+		}
+	}
+	
+	#National Economics
+	focus = {
+		id = NEG_nat_eco
+		icon = GFX_nyn_goal_construction_ny
+		x = 1
+		y = 1
+		
+		prerequisite = { focus = NEG_hypernationalism }
+		mutually_exclusive = {focus = NEG_nat_men}
+		
+		relative_position_id = NEG_hypernationalism
+	
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 10
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			add_ideas = NEG_national_economics_idea
+		}
+	}
+	
+	#Military Endevours
+	focus = {
+		id = NEG_mil_endevours
+		icon = GFX_goal_generic_small_arms
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = NEG_nat_men}
+		
+		relative_position_id = NEG_nat_men
+	
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 10
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			army_experience = 25
+			add_tech_bonus = {
+				name = infantry_weapons
+				bonus = 1.0
+				uses = 1
+				category = infantry_weapons
+			}
+		}
+	}
+	
+	#Improved Industry
+	focus = {
+		id = NEG_improved_industry
+		icon = GFX_Generic_Factory_Planning
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = NEG_nat_eco}
+		
+		relative_position_id = NEG_nat_eco
+	
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 5
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 1.0
+				uses = 2
+				category = industry
+			}
+		}
+	}
+	
+	#Banks Nationalized
+	focus = {
+		id = NEG_improved_industry_2
+		icon = GFX_Generic_Protectionism
+		x = 1
+		y = 1
+		
+		prerequisite = { focus = NEG_improved_industry}
+		prerequisite = { focus = NEG_better_image}
+		
+		relative_position_id = NEG_improved_industry
+	
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 7.2
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			add_ideas = NEG_national_banks
+		}
+	}
+	
+	#Military Growth
+	focus = {
+		id = NEG_military_growth
+		icon = GFX_focus_generic_little_entente
+		x = 1
+		y = 2
+		
+		prerequisite = { focus = NEG_nat_eco focus = NEG_nat_men}
+		
+		relative_position_id = NEG_nat_men
+	
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 7.2
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+	
+	#Nation Of Soldiers
+	focus = {
+		id = NEG_nation_of_soldiers
+		icon = GFX_Generic_Ultranationalist_Volunteers
+		x = 0
+		y = 2
+		
+		prerequisite = { focus = NEG_mil_endevours }
+		
+		relative_position_id = NEG_mil_endevours
+	
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 10
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = NEG_national_men_idea
+				add_idea = NEG_national_men_idea_1
+			}
+		}
+	}
+	
+	#[Country] New Outlook
+	focus = {
+		id = NEG_fascist_outlook
+		icon = GFX_Generic_Internationalism
+		x = 1
+		y = 1
+		
+		prerequisite = { focus = NEG_improved_industry_2 }
+		prerequisite = { focus = NEG_fascist_spy_2 focus = NEG_improved_industry_2 }
+		
+		relative_position_id = NEG_improved_industry_2
+	
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 10
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			add_political_power = 150
+			add_war_support = 0.15
+		}
+	}
+	
+	
+	
+	
+	
+	#################################
+	######### ECONOMIC TREE #########
+	#################################
+	
+	
+	#Resource Extraction
+	focus = {
+		id = NEG_resource_extraction
+		icon = GFX_Generic_Mining
+		x = -5
+		y = 1
+		
+		prerequisite = { focus = NEG_economy}
+		
+		relative_position_id = NEG_economy
+	
+	
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 7.2
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			add_ideas = NEG_resource_extraction
+		}
+	}
+	
+	
+	#Aluminium Production
+	focus = {
+		id = NEG_alump
+		icon = GFX_UTU_aluminum_mines
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = NEG_resource_extraction}
+		
+		relative_position_id = NEG_resource_extraction
+		mutually_exclusive = { focus = NEG_steelp }
+		mutually_exclusive = { focus = NEG_chromp }
+		
+	
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 10
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			random_owned_state = {
+				add_resource = {
+					type = aluminium
+					amount = 10
+				}
+			}
+		}
+	}
+	
+	#Steel Production
+	focus = {
+		id = NEG_steelp
+		icon = GFX_focus_generic_steel
+		x = -2
+		y = 1
+		
+		prerequisite = { focus = NEG_resource_extraction}
+		
+		relative_position_id = NEG_resource_extraction
+		mutually_exclusive = { focus = NEG_alump }
+		mutually_exclusive = { focus = NEG_chromp }
+		
+	
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 10
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			random_owned_state = {
+				add_resource = {
+					type = steel
+					amount = 10
+				}
+			}
+		}
+	}
+	
+	#Chromium Production
+	focus = {
+		id = NEG_chromp
+		icon = GFX_UTU_chromium_mines
+		x = 2
+		y = 1
+		
+		prerequisite = { focus = NEG_resource_extraction}
+		
+		relative_position_id = NEG_resource_extraction
+		mutually_exclusive = { focus = NEG_steelp }
+		mutually_exclusive = { focus = NEG_alump }
+		
+	
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 10
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			random_owned_state = {
+				add_resource = {
+					type = chromium
+					amount = 10
+				}
+			}
+		}
+	}
+	
+	#Maximize our Space
+	focus = {
+		id = NEG_increase_space
+		icon = GFX_Generic_Land_Reform
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = NEG_economy}
+		
+		relative_position_id = NEG_economy
+	
+	
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 7.2
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			add_ideas = NEG_better_space_1
+		}
+	}
+	
+	
+	#Improve our Economy
+	focus = {
+		id = NEG_civ_1
+		icon = GFX_goal_generic_construct_civ_factory
+		x = -1
+		y = 1
+		
+		prerequisite = { focus = NEG_increase_space}
+		
+		relative_position_id = NEG_increase_space
+	
+	
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 7.2
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	#Industry Expansion
+	focus = {
+		id = NEG_civ_2
+		icon = GFX_goal_generic_construct_civilian
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = NEG_civ_1}
+		
+		relative_position_id = NEG_civ_1
+	
+	
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 7.2
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	#Urban Expansion
+	focus = {
+		id = NEG_civ_3
+		icon = GFX_goal_generic_construction
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = NEG_civ_2}
+		
+		relative_position_id = NEG_civ_2
+	
+	
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 7.2
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+				type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	#Military Investments
+	focus = {
+		id = NEG_mil_1
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 1
+		y = 1
+		
+		prerequisite = { focus = NEG_increase_space}
+		
+		relative_position_id = NEG_increase_space
+	
+	
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 7.2
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+				type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	#MAS military factories
+	focus = {
+		id = NEG_mil_2
+		icon = GFX_goal_generic_construct_civilian
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = NEG_mil_1}
+		
+		relative_position_id = NEG_mil_1
+	
+	
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 7.2
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+				type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	#Invest in Infrastructure
+	focus = {
+		id = NEG_infrastructure
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 5
+		y = 1
+		
+		prerequisite = { focus = NEG_economy}
+		
+		relative_position_id = NEG_economy
+	
+	
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 7.2
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			random_owned_state = {
+				add_building_construction = {
+				type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_building_construction = {
+				type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	#Nationwide Infastructure Project
+	focus = {
+		id = NEG_infrastructure_2
+		icon = GFX_Generic_Public_Works
+		x = 1
+		y = 1
+		
+		prerequisite = { focus = NEG_infrastructure}
+		
+		relative_position_id = NEG_infrastructure
+	
+	
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 5
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			random_owned_state = {
+				add_building_construction = {
+				type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_building_construction = {
+				type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	#Build Better Supply Hubs
+	focus = {
+		id = NEG_infrastructure_supply
+		icon = GFX_Generic_Railroads
+		x = 2
+		y = 2
+		
+		prerequisite = { focus = NEG_infrastructure}
+		
+		relative_position_id = NEG_infrastructure
+	
+	
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 10
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			add_ideas = NEG_supply_hub
+		}
+	}
+	
+	#Improve National Highways
+	focus = {
+		id = NEG_infrastructure_3
+		icon = GFX_goal_generic_construct_civilian
+		x = 0
+		y = 2
+		
+		prerequisite = { focus = NEG_infrastructure_2}
+		prerequisite = { focus = NEG_infrastructure_supply}
+		
+		relative_position_id = NEG_infrastructure_2
+	
+	
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 7.2
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			every_owned_state = {
+				limit = {
+					infrastructure < 5
+				}
+				add_building_construction = {
+				type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	#Connect the Nation
+	focus = {
+		id = NEG_railroad_1
+		icon = GFX_Generic_Train
+		x = -1
+		y = 1
+		
+		prerequisite = { focus = NEG_infrastructure}
+		
+		relative_position_id = NEG_infrastructure
+	
+	
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 5
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			IF = {
+				limit = {
+					tag = CTC
+				}
+				build_railway = {
+					level = 2
+					start_province = 10981
+					target_province = 11742
+					build_only_on_allied = yes
+				}
+			}
+			IF = {
+				limit = {
+					tag = RIR
+				}
+				build_railway = {
+					level = 2
+					start_province = 11006
+					target_province = 11747
+					build_only_on_allied = yes
+				}
+			}
+			IF = {
+				limit = {
+					tag = MAM
+				}
+				build_railway = {
+					level = 2
+					start_province = 11040
+					target_province = 11032
+					build_only_on_allied = yes
+				}
+			}
+			IF = {
+				limit = {
+					tag = VTV
+				}
+				build_railway = {
+					level = 2
+					start_province = 11163
+					target_province = 11177
+					build_only_on_allied = yes
+				}
+			}
+			IF = {
+				limit = {
+					tag = NHN
+				}
+				build_railway = {
+					level = 2
+					start_province = 11118
+					target_province = 2196
+					build_only_on_allied = yes
+				}
+			}
+			IF = {
+				limit = {
+					tag = MEM
+				}
+				build_railway = {
+					level = 2
+					start_province = 2999
+					target_province = 3655
+					build_only_on_allied = yes
+				}
+			}
+		}
+	}
+	
+	#Improve the Railways
+	focus = {
+		id = NEG_nat_connect
+		icon = GFX_Generic_Railroads
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = NEG_railroad_1}
+		
+		relative_position_id = NEG_railroad_1
+	
+	
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 5
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 1.0
+				uses = 1
+				category = industry
+			}
+		}
+	}
+	
+	#Increase Productivity
+	focus = {
+		id = NEG_increase_product
+		icon = GFX_Generic_Industry
+		x = -2
+		y = 1
+		
+		prerequisite = { focus = NEG_nat_connect}
+		prerequisite = { focus = NEG_mil_2}
+		
+		relative_position_id = NEG_nat_connect
+	
+	
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 10
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = NEG_better_space_1
+				add_idea = NEG_better_space_2
+			}
+		}
+	}
+	
+	#Influence Our Industry
+	focus = {
+		id = NEG_industry_influence
+		icon = GFX_Generic_Industry_04
+		x = 10
+		y = 1
+		
+		prerequisite = { focus = NEG_economy}
+		
+		relative_position_id = NEG_economy
+	
+	
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 5
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			add_political_power = 130
+		}
+	}
+	
+	#Civ Boom
+	focus = {
+		id = NEG_civ_boom
+		icon = GFX_focus_generic_industry_2
+		x = 1
+		y = 1
+		
+		prerequisite = { focus = NEG_industry_influence}
+		
+		relative_position_id = NEG_industry_influence
+	
+	
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 10
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 1.0
+				uses = 2
+				category = industry
+			}
+		}
+	}
+	
+	#Refinery Production
+	focus = {
+		id = NEG_refinery_production
+		icon = GFX_Generic_Oil_Production
+		x = -1
+		y = 1
+		
+		prerequisite = { focus = NEG_industry_influence }
+		
+		relative_position_id = NEG_industry_influence
+	
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 10
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+				type = synthetic_refinery
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_tech_bonus = {
+				name = synthetics
+				bonus = 1.5
+				uses = 1
+				category = synth_resources
+			}
+		}
+	}	
+	
+	#Anti-Air Focus
+	focus = {
+		id = NEG_antiair
+		icon = GFX_Generic_Air_Defense
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = NEG_refinery_production }
+		
+		relative_position_id = NEG_refinery_production
+		mutually_exclusive = { focus = NEG_urban_defense }
+	
+		available = {
+			if = {
+				limit = { num_of_controlled_states > 1}
+				NOT = {
+					any_owned_state = {
+						free_building_slots = {
+							building = anti_air_building
+							size > 3
+						}
+					}
+				}
+			}
+			else = {
+				NOT = {
+					any_owned_state = {
+						free_building_slots = {
+							building = anti_air_building
+							size > 1
+						}
+					}
+				}
+			}
+		}
+		
+		bypass = {
+		}
+		
+		cost = 7.2
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			if = {
+				limit = { num_of_controlled_states > 1}
+				random_owned_state = {
+					add_building_construction = {
+					type = anti_air_building
+						level = 2
+						instant_build = yes
+					}
+				}
+				random_owned_state = {
+					add_building_construction = {
+					type = anti_air_building
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			else = {
+				random_owned_state = {
+					add_building_construction = {
+					type = anti_air_building
+						level = 4
+						instant_build = yes
+					}
+				}
+			}
+			
+		}
+	}	
+	
+	#Urban Defense
+	focus = {
+		id = NEG_urban_defense
+		icon = GFX_goal_generic_fortify_city
+		x = 2
+		y = 1
+		
+		prerequisite = { focus = NEG_civ_boom }
+		
+		relative_position_id = NEG_refinery_production
+		mutually_exclusive = { focus = NEG_antiair }
+	
+		#available = {
+		#	all_core_state = { # @@@ need to fix this
+		#		owner = { ROOT }
+		#	}
+		#}
+		
+		bypass = {
+		}
+		
+		cost = 7.2
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			custom_effect_tooltip = NEG_urban_defense_tt
+			hidden_effect = {
+				IF = {
+					limit = {
+						tag = CTC
+					}
+					1094 = {
+						add_building_construction = {
+							type = bunker
+							level = 6
+							province = 13926
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 13934
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 13931
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 13917
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 13914
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 13921
+							instant_build = yes
+						}
+					}
+				}
+				IF = {
+					limit = {
+						tag = RIR
+					}
+					1097 = {
+						add_building_construction = {
+							type = bunker
+							level = 6
+							province = 11830
+							instant_build = yes
+						}
+					}
+				}
+				IF = {
+					limit = {
+						tag = MAM
+					}
+					1102 = {
+						add_building_construction = {
+							type = bunker
+							level = 6
+							province = 13961
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 13960
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 13964
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 13969
+							instant_build = yes
+						}
+					}
+				}
+				IF = {
+					limit = {
+						tag = VTV
+					}
+					1105 = {
+						add_building_construction = {
+							type = bunker
+							level = 6
+							province = 14061
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 14066
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 14059
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 14058
+							instant_build = yes
+						}
+					}
+					1104 = {
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 14041
+							instant_build = yes
+						}
+					}
+					1106 = {
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 14062
+							instant_build = yes
+						}
+					}
+					1103 = {
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 9675
+							instant_build = yes
+						}
+					}
+				}
+				IF = {
+					limit = {
+						tag = NHN
+					}
+					1108 = {
+						add_building_construction = {
+							type = bunker
+							level = 6
+							province = 733
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 14006
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 14007
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 13997
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 13988
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 13989
+							instant_build = yes
+						}
+					}
+				}
+				IF = {
+					limit = {
+						tag = MEM
+					}
+					1113 = {
+						add_building_construction = {
+							type = bunker
+							level = 6
+							province = 7462
+							instant_build = yes
+						}
+					}
+					1112 = {
+						add_building_construction = {
+							type = bunker
+							level = 6
+							province = 14011
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 14002
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 14017
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 14028
+							instant_build = yes
+						}
+					}
+					1115 = {
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 13988
+							instant_build = yes
+						}
+					}
+				}
+			}
+		}
+	}	
+	
+	#################################
+	######### MILITARY TREE #########
+	#################################
+	
+	
+	#War Games
+	focus = {
+		id = NEG_wargames
+		icon = GFX_Generic_Redraw_Borders
+		x = -5
+		y = 1
+		
+		prerequisite = { focus = NEG_military }
+		
+		relative_position_id = NEG_military
+	
+	
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 10
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			army_experience = 30
+			
+		}
+	}	
+	
+	#Mountain Training
+	focus = {
+		id = NEG_mountaineers
+		icon = GFX_Generic_Mountain_Warfare
+		x = -1
+		y = 1
+		
+		prerequisite = { focus = NEG_wargames }
+		
+		relative_position_id = NEG_wargames
+	
+	
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 10
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			army_experience = 5
+			add_tech_bonus = {
+				name = special_bonus
+				ahead_reduction = 2
+				uses = 1
+				category = mountaineers_tech
+				#technology = tech_mountaineers2
+			}
+		}
+	}	
+	
+	#Doctrine Research
+	focus = {
+		id = NEG_doctrines
+		icon = GFX_goal_generic_army_doctrines
+		x = 1
+		y = 1
+		
+		prerequisite = { focus = NEG_wargames }
+		
+		relative_position_id = NEG_wargames
+	
+	
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 10
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			army_experience = 5
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				uses = 2
+				category = land_doctrine
+			}
+		}
+	}	
+	
+	#Improve our Generals
+	focus = {
+		id = NEG_generals
+		icon = GFX_Generic_Autonomy
+		x = 0
+		y = 2
+		
+		prerequisite = { focus = NEG_wargames }
+		
+		relative_position_id = NEG_wargames
+	
+	
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 10
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+            add_ideas = NEG_better_army_1
+		}
+	}
+	
+	#Improve our Soldiers
+	focus = {
+		id = NEG_soldiers
+		icon = GFX_Generic_Coalition_Army
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = NEG_generals }
+		
+		relative_position_id = NEG_generals
+	
+	
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 10
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+            swap_ideas = {
+				remove_idea = NEG_better_army_1
+				add_idea = NEG_better_army_2
+			}	
+		}
+	}	
+	
+	#Improve our Weaponry
+	focus = {
+		id = NEG_better_weapons
+		icon = GFX_Generic_Machine_Gun
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = NEG_military}
+		
+		relative_position_id = NEG_military
+	
+	
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 10
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				#name = idk
+				bonus = 1.0
+				uses = 1
+				category = infantry_weapons
+			}
+		}
+	}	
+	
+	#Anti_Tank Focus
+	focus = {
+		id = NEG_anti_tank
+		icon = GFX_Generic_Child_Soldiers
+		x = 2
+		y = 1
+		
+		prerequisite = { focus = NEG_better_weapons }
+		
+		relative_position_id = NEG_better_weapons
+	
+	
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 5.8
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+           add_tech_bonus = {
+				name = POL_anti_tank_guns
+				bonus = 1.0
+				uses = 1
+				category = cat_anti_tank
+			}
+		}
+	}	
+	
+	#Small Arms Production
+	focus = {
+		id = NEG_small_arms
+		icon = GFX_goal_generic_small_arms
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = NEG_better_weapons }
+		
+		relative_position_id = NEG_better_weapons
+	
+	
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 10
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+           add_tech_bonus = {
+				#name = idk
+				bonus = 1.0
+				uses = 2
+				category = infantry_weapons
+			}
+		}
+	}	
+	
+	#Better Artillery
+	focus = {
+		id = NEG_better_art
+		icon = GFX_goal_generic_army_artillery2
+		x = -2
+		y = 1
+		
+		prerequisite = { focus = NEG_better_weapons }
+		
+		relative_position_id = NEG_better_weapons
+	
+	
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 5.8
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				#name = idk
+				bonus = 1.0
+				uses = 1
+				category = artillery
+			}
+		}
+	}	
+	
+	#Assistance on the Battlefield
+	focus = {
+		id = NEG_better_support
+		icon = GFX_Generic_Red_Cross
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = NEG_better_art }
+		prerequisite = { focus = NEG_small_arms }
+		prerequisite = { focus = NEG_anti_tank }
+		
+		
+		relative_position_id = NEG_small_arms
+	
+	
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 10
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+           add_tech_bonus = {
+				name = support_tech
+				bonus = 1.0
+				uses = 2
+				category = support_tech
+			}
+		}
+	}	
+	
+	#Strive for Quality
+	focus = {
+		id = NEG_inf_quality
+		icon = GFX_Generic_Republican_Japanese_Army
+		x = 1
+		y = 1
+		
+		prerequisite = { focus = NEG_better_support }
+		
+		relative_position_id = NEG_better_support 
+		
+		mutually_exclusive = { focus = NEG_inf_quantity }
+	
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 10
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+           add_ideas = NEG_quality_1
+		}
+	}	
+	
+	
+	#Strive for Quantity
+	focus = {
+		id = NEG_inf_quantity
+		icon = GFX_Generic_Colonial_Army
+		x = -1
+		y = 1
+		
+		prerequisite = { focus = NEG_better_support }
+		
+		relative_position_id = NEG_better_support 
+		
+		mutually_exclusive = { focus = NEG_inf_quality }
+	
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 10
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+           add_ideas = NEG_quantity_1 # @@@ Idea is broken
+		}
+		
+		
+	}	
+	
+	#The new Tank Programme
+	focus = {
+		id = NEG_tank_1
+		icon = GFX_Generic_Purchase_Tanks_Focus
+		x = 5
+		y = 1
+		
+		prerequisite = { focus = NEG_military }
+		
+		relative_position_id = NEG_military
+		
+	
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 10
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}	
+	
+	#Fast Tanks
+	focus = {
+		id = NEG_tank_fast
+		icon = GFX_Generic_Tank_with_Flags
+		x = -1
+		y = 1
+		
+		prerequisite = { focus = NEG_tank_1 }
+		
+		relative_position_id = NEG_tank_1
+		mutually_exclusive = { focus = NEG_tank_power }
+	
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 10
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = cat_light_armor
+				bonus = 1.5
+				uses = 1
+				category = cat_light_armor
+			}
+		}
+	}	
+	
+	#Powerful Tanks
+	focus = {
+		id = NEG_tank_power
+		icon = GFX_goal_generic_build_tank
+		x = 1
+		y = 1
+		
+		prerequisite = { focus = NEG_tank_1 }
+		
+		relative_position_id = NEG_tank_1
+		mutually_exclusive = { focus = NEG_tank_fast }
+	
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 10
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = cat_heavy_armor
+				bonus = 1.5
+				uses = 1
+				category = cat_heavy_armor
+			}
+		}
+	}	
+	
+	#Tanks of the Future
+	focus = {
+		id = NEG_tank_2
+		icon = GFX_Generic_Refit_Tanks
+		x = 1
+		y = 1
+		
+		prerequisite = { focus = NEG_tank_fast focus = NEG_tank_power}
+		
+		relative_position_id = NEG_tank_fast
+		
+	
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 10
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = armor
+				bonus = 1
+				uses = 1
+				category = armor
+			}
+		}
+	}	
+	
+	#New Mechanized
+	focus = {
+		id = NEG_tank_mech
+		icon = GFX_goal_generic_build_tank
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = NEG_tank_2}
+		
+		relative_position_id = NEG_tank_2
+		
+	
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 5.8
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = cat_mechanized_equipment
+				bonus = 1
+				uses = 1
+				category = cat_mechanized_equipment
+			}
+		}
+	}	
+	
+	#Improvements on Engine Design
+	focus = {
+		id = NEG_tank_engines
+		icon = GFX_goal_generic_army_tanks
+		x = -1
+		y = 1
+		
+		prerequisite = { focus = NEG_tank_fast}
+		
+		relative_position_id = NEG_tank_fast
+		
+	
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 5.8
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			add_ideas = NEG_speedytanks
+		}
+	}	
+	
+	#Firepower At the Helm
+	focus = {
+		id = NEG_tank_firepower
+		icon = GFX_Generic_Tank_through_Wall
+		x = 1
+		y = 1
+		
+		prerequisite = { focus = NEG_tank_power}
+		
+		relative_position_id = NEG_tank_power
+		
+	
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 5.8
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			add_ideas = NEG_powerfultanks
+		}
+	}
+	
+	##############################
+	########## AIR TREE ##########
+	##############################
+	
+	
+	
+	#Bombing Efforts
+	focus = {
+		id = NEG_air_bombers
+		icon = GFX_goal_generic_air_bomber
+		x = -3
+		y = 1
+		
+		prerequisite = { focus = NEG_air_1}
+		
+		relative_position_id = NEG_air_1
+		mutually_exclusive = { focus = NEG_air_fighters}
+	
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 10
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = heavy_air
+				bonus = 1
+				uses = 1
+				category = naval_air
+				category = cas_bomber
+				category = tactical_bomber
+				category = cat_strategic_bomber
+			}
+		}
+	}
+	
+	#Supremacy Efforts
+	focus = {
+		id = NEG_air_fighters
+		icon = GFX_goal_generic_air_fighter
+		x = 3
+		y = 1
+		
+		prerequisite = { focus = NEG_air_1}
+		
+		relative_position_id = NEG_air_1
+		mutually_exclusive = { focus = NEG_air_bombers}
+	
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 10
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = light_fighter
+				bonus = 1
+				uses = 1
+				category = light_fighter
+				category = cat_heavy_fighter
+				category = cat_scout_plane
+			}
+		}
+	}
+	
+	#Better Planes
+	focus = {
+		id = NEG_air_fighters_2
+		icon = GFX_focus_chi_flying_tigers
+		x = -1
+		y = 1
+		
+		prerequisite = { focus = NEG_air_fighters}
+		
+		relative_position_id = NEG_air_fighters
+	
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 10
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				uses = 1
+				category = air_doctrine
+			}
+		}
+	}
+	
+	#Ace Program
+	focus = {
+		id = NEG_air_aces
+		icon = GFX_Generic_Pilots
+		x = 1
+		y = 1
+		
+		prerequisite = { focus = NEG_air_fighters}
+		
+		relative_position_id = NEG_air_fighters
+	
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 10
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			add_ideas = NEG_aces
+		}
+	}
+	
+	#Better our Fighter Designs
+	focus = {
+		id = NEG_air_fighters_3
+		icon = GFX_goal_generic_air_fighter2
+		x = 1
+		y = 1
+		
+		prerequisite = { focus = NEG_air_aces}
+		prerequisite = { focus = NEG_air_fighters_2}
+		
+		relative_position_id = NEG_air_fighters_2
+	
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 10
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			air_experience = 40
+			add_tech_bonus = {
+				name = light_fighter
+				bonus = 1
+				uses = 1
+				category = light_fighter
+			}
+		}
+	}
+	
+	#Urban Destruction
+	focus = {
+		id = NEG_air_destruction
+		icon = GFX_goal_generic_air_bomber
+		x = -1
+		y = 1
+		
+		prerequisite = { focus = NEG_air_bombers}
+		
+		relative_position_id = NEG_air_bombers
+	
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 10
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = heavy_air
+				bonus = 1
+				uses = 1
+				category = tactical_bomber
+				category = cat_strategic_bomber
+			}
+		}
+	}
+	
+	#CAS Damage
+	focus = {
+		id = NEG_air_cas
+		icon = GFX_Generic_Bombs
+		x = 1
+		y = 1
+		
+		prerequisite = { focus = NEG_air_bombers}
+		
+		relative_position_id = NEG_air_bombers
+	
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 10
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = cas_bomber
+				bonus = 1
+				uses = 1
+				category = cas_bomber
+			}
+		}
+	}
+	
+	#Better our Fighter Designs
+	focus = {
+		id = NEG_air_bombers_2
+		icon = GFX_WAW_streamline_bomber_production
+		x = 1
+		y = 1
+		
+		prerequisite = { focus = NEG_air_cas}
+		prerequisite = { focus = NEG_air_destruction}
+		
+		relative_position_id = NEG_air_destruction
+	
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 10
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			air_experience = 40
+			add_tech_bonus = {
+				name = naval_air
+				bonus = 1
+				uses = 1
+				category = naval_air
+			}
+		}
+	}
+	
+	#Doctrine Improvement
+	focus = {
+		id = NEG_air_doctrines
+		icon = GFX_goal_generic_air_doctrine
+		x = 3
+		y = 2
+		
+		prerequisite = { focus = NEG_air_fighters focus = NEG_air_bombers}
+		
+		relative_position_id = NEG_air_bombers
+	
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cost = 10
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				uses = 2
+				category = air_doctrine
+			}
+			
+		}
+	}
+	
+	#Aerial Deterrent
+	focus = {
+		id = NEG_anti_air
+		icon = GFX_Generic_Air_Defense
+		x = -1
+		y = 1
+		
+		prerequisite = { focus = NEG_air_fighters_3 focus = NEG_air_bombers_2}
+		prerequisite = { focus = NEG_air_doctrines }
+		
+		relative_position_id = NEG_air_doctrines
+	
+		available = {
+
+		}
+		
+		bypass = {
+		}
+		
+		cost = 10
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			random_owned_state = {
+				add_building_construction = {
+				type = anti_air_building
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_building_construction = {
+				type = anti_air_building
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_building_construction = {
+				type = anti_air_building
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	#Build More Air Bases
+	focus = {
+		id = NEG_air_bases
+		icon = GFX_goal_generic_air_production
+		x = 1
+		y = 1
+		
+		prerequisite = { focus = NEG_air_fighters_3 focus = NEG_air_bombers_2}
+		prerequisite = { focus = NEG_air_doctrines }
+		
+		relative_position_id = NEG_air_doctrines
+	
+		available = {
+
+		}
+		
+		bypass = {
+		}
+		
+		cost = 10
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			random_owned_state = {
+				add_building_construction = {
+				type = air_base
+					level = 4
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_building_construction = {
+				type = air_base
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	###############################
+	########## NAVY TREE ##########
+	###############################
+	
+	
+	
+	focus = {
+		id = NEG_navy1
+		icon = GFX_goal_generic_navy_submarine
+		mutually_exclusive = {
+		  focus = NEG_navy2
+		}
+		mutually_exclusive = {
+		  focus = NEG_navy3
+		}
+		prerequisite = {
+		  focus = NEG_navy
+		}
+		available = {
+			any_state = {
+				is_coastal = yes
+				is_controlled_by = ROOT
+			}
+		}
+		
+		
+
+		cost = 7.2
+		x = -4
+		y = 2
+
+		relative_position_id = NEG_navy
+
+		completion_reward = {
+			random_owned_state = {
+				limit = {
+				  is_coastal = yes
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+				  type = dockyard
+				  level = 1
+				  instant_build = yes
+				}
+			}
+		  add_tech_bonus = {
+					name = sub_op_bonus
+					bonus = 1.0
+					uses = 2
+			category = cat_trade_interdiction
+				}
+		}
+	}
+	
+	focus = {
+		id = NEG_navy4
+		icon = GFX_focus_generic_destroyer
+		prerequisite = {
+		  focus = NEG_navy1
+		}
+
+		relative_position_id = NEG_navy1
+
+		cost = 7.2
+		x = 1
+		y = 1
+
+		completion_reward = {
+			
+			add_tech_bonus = {
+				name = sub_op_bonus
+				bonus = 1.0
+				uses = 2
+				category = dd_tech
+			}
+		}
+	}
+	
+	focus = {
+		id = NEG_navy5
+		icon = GFX_goal_generic_wolf_pack
+		prerequisite = {
+		  focus = NEG_navy1
+		}
+
+		relative_position_id = NEG_navy1
+
+		cost = 7.2
+		x = -1
+		y = 1
+		
+		
+
+		completion_reward = {
+			add_ideas = GEN_subtree
+		}
+	}
+	
+	
+	focus = {
+		id = NEG_navy2
+		icon = GFX_goal_generic_navy_carrier
+		mutually_exclusive = {
+		  focus = NEG_navy3
+		}
+		mutually_exclusive = {
+		  focus = NEG_navy1
+		}
+		prerequisite = {
+		  focus = NEG_navy
+		}
+		available = {
+		  any_state = {
+			is_coastal = yes
+			is_controlled_by = ROOT
+		  }
+		}
+
+		relative_position_id = NEG_navy
+
+		cost = 7.2
+		x = 0
+		y = 2
+
+		completion_reward = {
+			random_owned_state = {
+				limit = {
+				  is_coastal = yes
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+				  type = dockyard
+				  level = 1
+				  instant_build = yes
+				}
+			}
+			add_tech_bonus = {
+				name = sub_op_bonus
+				bonus = 1.0
+				uses = 2
+				category = cat_base_strike
+			}
+		}
+	}	
+	
+	focus = {
+		id = NEG_navy6
+		icon = GFX_goal_generic_air_naval_bomber
+		prerequisite = {
+		  focus = NEG_navy2
+		}
+
+		relative_position_id = NEG_navy2
+
+		cost = 7.2
+		x = 1
+		y = 1
+
+		completion_reward = {
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_tech_bonus = {
+				name = NEG_airstrikebonus
+				bonus = 1.25
+				uses = 1
+				category = naval_bomber
+			}
+		}
+	}
+	
+	focus = {
+		id = NEG_navy7
+		icon = GFX_goal_generic_navy_cruiser
+		prerequisite = {
+		  focus = NEG_navy2
+		}
+
+		relative_position_id = NEG_navy2
+
+		cost = 7.2
+		x = -1
+		y = 1
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = NEG_carrierbonus
+				bonus = 1.5
+				uses = 2
+				category = cv_tech
+			}
+		}
+	}
+	
+	focus = {
+		id = NEG_navy3
+		icon = GFX_goal_generic_navy_battleship
+		mutually_exclusive = {
+		  focus = NEG_navy1
+		}
+		mutually_exclusive = {
+		  focus = NEG_navy2
+		}
+		prerequisite = {
+		  focus = NEG_navy
+		}
+		available = {
+			any_state = {
+				is_coastal = yes
+				is_controlled_by = ROOT
+			}
+		}
+		
+		relative_position_id = NEG_navy	
+		
+		cost = 7.2
+		x = 4
+		y = 2
+
+		completion_reward = {
+			random_owned_state = {
+				limit = {
+				  is_coastal = yes
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+				  type = dockyard
+				  level = 1
+				  instant_build = yes
+				}
+			}
+			add_tech_bonus = {
+				name = fleet_in_being_bonus
+				bonus = 1.0
+				uses = 2
+				category = cat_fleet_in_being
+			}
+		}
+	}
+	focus = {
+		id = NEG_navy8
+		icon = GFX_goal_generic_navy_battleship
+		prerequisite = {
+		  focus = NEG_navy3
+		}
+
+		relative_position_id = NEG_navy3
+
+		cost = 7.2
+		x = -1
+		y = 1
+
+		completion_reward = {
+				add_tech_bonus = {
+					name = NEG_battleshipbonus
+					bonus = 1.0
+					uses = 2
+					category = bb_tech
+				}
+		}
+	}
+	focus = {
+		id = NEG_navy9
+		icon = GFX_focus_generic_cruiser2
+		prerequisite = {
+		  focus = NEG_navy3
+		}
+
+		relative_position_id = NEG_navy3
+
+		cost = 7.2
+		x = 1
+		y = 1
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = NEG_battlecruiserbonus
+				bonus = 1.0
+				uses = 2
+				category = bc_tech
+			}
+		}
+	}
+	
+	#Expand Production
+	focus = {
+		id = NEG_dockyard_1
+		icon = GFX_Generic_Naval_Industry
+		prerequisite = {
+		  focus = NEG_navy
+		}
+		
+		available = {
+		  any_state = {
+			is_coastal = yes
+			is_controlled_by = ROOT
+		  }
+		}
+
+		relative_position_id = NEG_navy
+
+		cost = 10
+		x = 2
+		y = 1
+
+		completion_reward = {
+			random_owned_state = {
+				limit = {
+				  is_coastal = yes
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	#Build more Dockyards
+	focus = {
+		id = NEG_dockyard_2
+		icon = GFX_Generic_Naval_Industry
+		prerequisite = {
+		  focus = NEG_navy
+		}
+		
+		available = {
+		  any_state = {
+			is_coastal = yes
+			is_controlled_by = ROOT
+		  }
+		}
+
+		relative_position_id = NEG_navy
+
+		cost = 10
+		x = -2
+		y = 1
+
+		completion_reward = {
+			random_owned_state = {
+				limit = {
+				  is_coastal = yes
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	#Increased Naval Production
+	focus = {
+		id = NEG_dockyard_3
+		icon = GFX_Generic_Maritime
+		prerequisite = {
+		  focus = NEG_navy4
+		  focus = NEG_navy5
+		  focus = NEG_navy6
+		  focus = NEG_navy7
+		  focus = NEG_navy8
+		  focus = NEG_navy9
+		}
+		
+		available = {
+		  any_state = {
+			is_coastal = yes
+			is_controlled_by = ROOT
+		  }
+		}
+
+		relative_position_id = NEG_navy7
+
+		cost = 10
+		x = 1
+		y = 1
+
+		completion_reward = {
+			random_owned_state = {
+				limit = {
+				  is_coastal = yes
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	#Import Foreign Fuel
+	focus = {
+		id = NEG_navy_fuel
+		icon = GFX_Generic_Barrels
+		prerequisite = {
+		  focus = NEG_navy4
+		  focus = NEG_navy5
+		  focus = NEG_navy6
+		  focus = NEG_navy7
+		  focus = NEG_navy8
+		  focus = NEG_navy9
+		}
+
+		relative_position_id = NEG_navy7
+
+		cost = 10
+		x = 5
+		y = 1
+
+		completion_reward = {
+			random_owned_state = {
+				limit = {
+				  is_coastal = yes
+				}
+				add_resource = {
+					type = oil
+					amount = 12
+				}
+			}
+			add_political_power = -30
+		}
+	}
+	
+	#Better Doctrine
+	focus = {
+		id = NEG_navy_doctrine
+		icon = GFX_Generic_Sea_Focus_Navy
+		prerequisite = {
+		  focus = NEG_navy4
+		  focus = NEG_navy5
+		  focus = NEG_navy6
+		  focus = NEG_navy7
+		  focus = NEG_navy8
+		  focus = NEG_navy9
+		}
+
+		relative_position_id = NEG_navy7
+
+		cost = 10
+		x = -3
+		y = 1
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = naval_bonus
+				bonus = 0.5
+				uses = 3
+				category = naval_doctrine
+			}
+		}
+	}
+	
+
+	##########################
+	######### BOOSTS #########
+	##########################	
+	
+	#Resource Boost
+	focus = {
+		id = NEG_res_boost
+		icon = GFX_NEG_resource_boost1
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = NEG_steelp focus = NEG_alump focus = NEG_chromp}
+		
+		relative_position_id = NEG_alump
+	
+	
+		available = {
+			NOT = {	has_country_flag = NEG_currently_boosting }
+		}
+		
+		bypass = {
+		}
+		
+		cost = 10
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {	
+			set_country_flag = {
+				flag = NEG_currently_boosting
+				days = 365
+				value = 1
+			}
+			add_timed_idea = { idea = NEG_res_initiative days = 365 }
+		}
+	}
+	
+	#Industrial Boost
+	focus = {
+		id = NEG_industry_boost
+		icon = GFX_NEG_industrial_boost1
+		x = -2
+		y = 1
+		
+		prerequisite = { focus = NEG_increase_product }
+		prerequisite = { focus = NEG_civ_3 }
+		
+		relative_position_id = NEG_increase_product
+	
+	
+		available = {
+			NOT = {	has_country_flag = NEG_currently_boosting }
+		}
+		
+		bypass = {
+		}
+		
+		cost = 10
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			set_country_flag = {
+				flag = NEG_currently_boosting
+				days = 365
+				value = 1
+			}
+			add_timed_idea = { idea = NEG_industry_initiative days = 365 }
+		}
+	}
+	
+	#Research Boost
+	focus = {
+		id = NEG_research_boost
+		icon = GFX_NEG_resource_boost1
+		x = -1
+		y = 1
+		
+		prerequisite = { focus = NEG_infrastructure_3 focus = NEG_increase_product }
+		
+		relative_position_id = NEG_infrastructure_3
+	
+	
+		available = {
+			NOT = {	has_country_flag = NEG_currently_boosting }
+		}
+		
+		bypass = {
+		}
+		
+		cost = 10
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			set_country_flag = {
+				flag = NEG_currently_boosting
+				days = 365
+				value = 1
+			}
+			add_timed_idea = { idea = NEG_research_initiative days = 365 }
+		}
+	}
+	
+	#Economic Boost
+	focus = {
+		id = NEG_economic_boost
+		icon = GFX_NEG_economic_boost1
+		x = -1
+		y = 1
+		
+		prerequisite = { focus = NEG_antiair focus = NEG_urban_defense }
+		
+		relative_position_id = NEG_urban_defense
+	
+	
+		available = {
+			NOT = {	has_country_flag = NEG_currently_boosting }
+		}
+		
+		bypass = {
+		}
+		
+		cost = 10
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			set_country_flag = {
+				flag = NEG_currently_boosting
+				days = 365
+				value = 1
+			}
+			add_timed_idea = { idea = NEG_eco_initiative days = 365 }
+		}
+	}
+	
+	#Tank Boost
+	focus = {
+		id = NEG_tank_boost
+		icon = GFX_NEG_tank_boost1
+		x = 0
+		y = 2
+		
+		prerequisite = { focus = NEG_tank_mech }
+		
+		relative_position_id = NEG_tank_mech
+	
+	
+		available = {
+			NOT = {	has_country_flag = NEG_currently_boosting }
+		}
+		
+		bypass = {
+		}
+		
+		cost = 10
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			set_country_flag = {
+				flag = NEG_currently_boosting
+				days = 365
+				value = 1
+			}
+			add_timed_idea = { idea = NEG_tank_initiative1 days = 365 }
+		}
+	}
+	
+	#War Materials Boost
+	focus = {
+		id = NEG_material_boost
+		icon = GFX_NEG_war_materials_boost1
+		x = 1
+		y = 2
+		
+		prerequisite = { focus = NEG_inf_quality focus = NEG_inf_quantity }
+		
+		relative_position_id = NEG_inf_quantity
+	
+	
+		available = {
+			NOT = {	has_country_flag = NEG_currently_boosting }
+		}
+		
+		bypass = {
+		}
+		
+		cost = 10
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			set_country_flag = {
+				flag = NEG_currently_boosting
+				days = 365
+				value = 1
+			}
+			add_timed_idea = { idea = NEG_material_initiative days = 365 }
+		}
+	}
+	
+	#Military Boost
+	focus = {
+		id = NEG_military_boost
+		icon = GFX_NEG_military_boost1
+		x = 0
+		y = 2
+		
+		prerequisite = { focus = NEG_soldiers }
+		
+		relative_position_id = NEG_soldiers
+	
+	
+		available = {
+			NOT = {	has_country_flag = NEG_currently_boosting }
+		}
+		
+		bypass = {
+		}
+		
+		cost = 10
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			set_country_flag = {
+				flag = NEG_currently_boosting
+				days = 365
+				value = 1
+			}
+			add_timed_idea = { idea = NEG_military_initiative days = 365 }
+		}
+	}
+	
+	#Aerial Boost
+	focus = {
+		id = NEG_air_boost
+		icon = GFX_NEG_aerial_boost1
+		x = 1
+		y = 2
+		
+		prerequisite = { focus = NEG_anti_air }
+		prerequisite = { focus = NEG_air_bases }
+		
+		relative_position_id = NEG_anti_air
+	
+	
+		available = {
+			NOT = {	has_country_flag = NEG_currently_boosting }
+		}
+		
+		bypass = {
+		}
+		
+		cost = 10
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			set_country_flag = {
+				flag = NEG_currently_boosting
+				days = 365
+				value = 1
+			}
+			add_timed_idea = { idea = NEG_air_initiative days = 365 }
+		}
+	}
+	
+	#Naval Boost
+	focus = {
+		id = NEG_navy_boost
+		icon = GFX_NEG_naval_boost
+		x = 0
+		y = 2
+		
+		prerequisite = { focus = NEG_navy_fuel focus = NEG_navy_doctrine focus = NEG_dockyard_3}
+		
+		
+		relative_position_id = NEG_dockyard_3
+	
+	
+		available = {
+			NOT = {	has_country_flag = NEG_currently_boosting }
+		}
+		
+		bypass = {
+		}
+		
+		cost = 10
+		
+		
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			set_country_flag = {
+				flag = NEG_currently_boosting
+				days = 365
+				value = 1
+			}
+			add_timed_idea = { idea = NEG_navy_initiative days = 365 }
+		}
+	}
+}
+
+	

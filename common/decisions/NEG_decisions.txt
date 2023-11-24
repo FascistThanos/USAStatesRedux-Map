@@ -1,0 +1,496 @@
+
+
+NEG_diplomacy = {
+
+	#Light Industry
+	NEG_improve_relation_1 = {
+	
+		icon = GFX_decision_icon_default		
+		
+		available = {
+			has_country_flag = NEG_diplomission
+		}
+		
+		fire_only_once = no	
+		days_re_enable = 20
+
+		visible = {
+			ROOT = {
+				has_government = democratic
+			}
+			has_country_flag = NEG_diplomission
+		}		
+
+		cost = 50	
+
+
+		complete_effect = {
+			random_list = {
+				75 = {
+					ROOT = {
+						country_event = newengland.1
+					}
+				}
+				25 = {
+					ROOT = {
+						country_event = newengland.25
+					}
+				}
+			}
+		}
+
+		ai_will_do = {	
+			factor = 100			
+		}
+	}
+	
+	#Heavy Industy
+	NEG_improve_relation_2 = {
+	
+		icon = GFX_decision_icon_default		
+		
+		available = {
+			has_country_flag = NEG_diplomission
+		}
+		
+		fire_only_once = no	
+		days_re_enable = 20
+
+		visible = {
+			ROOT = {
+				has_government = democratic
+			}
+			has_country_flag = NEG_diplomission
+		}		
+
+		cost = 50	
+
+
+		complete_effect = {
+			random_list = {
+				75 = {
+					ROOT = {
+						country_event = newengland.2
+					}
+				}
+				25 = {
+					ROOT = {
+						country_event = newengland.26
+					}
+				}
+			}
+		}
+
+		ai_will_do = {	
+			factor = 100			
+		}
+	}
+	
+	
+	#Regional Decisions
+	NEG_ctc_relations = {
+	
+		icon = GFX_decision_icon_default	
+		
+		available = {
+			country_exists = CTC
+			OR = {
+				NOT = {
+					has_idea = NEG_neg_relations_boost_major
+					has_idea = NEG_neg_relations_boost_minor
+					has_country_flag = NEG_relations_failed
+				}
+			}
+		}
+		
+		fire_only_once = no	
+		days_re_enable = 120
+
+		visible = {
+			#has_country_flag = NEG_diplomission_ne
+			ROOT = {
+				has_government = democratic
+			}
+			has_country_flag = NEG_diplomission_ne
+		}		
+
+		cost = 40	
+
+
+		complete_effect = {
+			CTC = {
+				country_event = newengland.3
+			}
+		}
+
+		ai_will_do = {	
+			factor = 1000		
+		}
+	}
+	
+	NEG_rir_relations = {
+	
+		icon = GFX_decision_icon_default		
+		
+		available = {
+			country_exists = RIR
+			OR = {
+				NOT = {
+					has_idea = NEG_neg_relations_boost_major
+					has_idea = NEG_neg_relations_boost_minor
+					has_country_flag = NEG_relations_failed
+				}
+			}
+		}
+		
+		fire_only_once = no	
+		days_re_enable = 120	
+
+		visible = {
+			#has_country_flag = NEG_diplomission_ne
+			ROOT = {
+				has_government = democratic
+			}
+			has_country_flag = NEG_diplomission_ne
+		}		
+
+		cost = 40
+
+
+		complete_effect = {
+			RIR = {
+				country_event = newengland.3
+			}
+		}
+
+		ai_will_do = {	
+			factor = 1000			
+		}
+	}
+	
+	NEG_mam_relations = {
+	
+		icon = GFX_decision_icon_default		
+		
+		available = {
+			country_exists = MAM
+			OR = {
+				NOT = {
+					has_idea = NEG_neg_relations_boost_major
+					has_idea = NEG_neg_relations_boost_minor
+					has_country_flag = NEG_relations_failed
+				}
+			}
+		}
+		
+		fire_only_once = no	
+		days_re_enable = 120	
+
+		visible = {
+			#has_country_flag = NEG_diplomission_ne
+			ROOT = {
+				has_government = democratic
+			}
+			has_country_flag = NEG_diplomission_ne
+		}		
+
+		cost = 40	
+
+
+		complete_effect = {
+			MAM = {
+				country_event = newengland.3
+			}
+		}
+
+		ai_will_do = {	
+			factor = 1000			
+		}
+	}
+	
+	NEG_vtv_relations = {
+	
+		icon = GFX_decision_icon_default		
+		
+		available = {
+			country_exists = VTV
+			OR = {
+				NOT = {
+					has_idea = NEG_neg_relations_boost_major
+					has_idea = NEG_neg_relations_boost_minor
+					has_country_flag = NEG_relations_failed
+				}
+			}
+		}
+		
+		fire_only_once = no	
+		days_re_enable = 120	
+
+		visible = {
+			#has_country_flag = NEG_diplomission_ne
+			ROOT = {
+				has_government = democratic
+			}
+			has_country_flag = NEG_diplomission_ne
+			
+		}		
+
+		cost = 40	
+
+
+		complete_effect = {
+			VTV = {
+				country_event = newengland.3
+			}
+		}
+
+		ai_will_do = {	
+			factor = 1000		
+		}
+	}
+	
+	NEG_mem_relations = {
+	
+		icon = GFX_decision_icon_default		
+		
+		available = {
+			country_exists = MEM
+			OR = {
+				NOT = {
+					has_idea = NEG_neg_relations_boost_major
+					has_idea = NEG_neg_relations_boost_minor
+					has_country_flag = NEG_relations_failed
+				}
+			}
+		}
+		
+		fire_only_once = no	
+		days_re_enable = 120
+
+		visible = {
+			#has_country_flag = NEG_diplomission_ne
+			ROOT = {
+				has_government = democratic
+			}
+			has_country_flag = NEG_diplomission_ne
+		}		
+
+		cost = 40
+
+
+		complete_effect = {
+			MEM = {
+				country_event = newengland.3
+			}
+
+		}
+
+		ai_will_do = {	
+			factor = 1000			
+		}
+	}
+	
+	NEG_nhn_relations = {
+	
+		icon = GFX_decision_icon_default		
+		
+		available = {
+			country_exists = NHN
+			OR = {
+				NOT = {
+					has_idea = NEG_neg_relations_boost_major
+					has_idea = NEG_neg_relations_boost_minor
+					has_country_flag = NEG_relations_failed
+				}
+			}
+		}
+		
+		fire_only_once = no	
+		days_re_enable = 120	
+
+		visible = {
+			#has_country_flag = NEG_diplomission_ne
+			ROOT = {
+				has_government = democratic
+			} 
+			has_country_flag = NEG_diplomission_ne
+		}		
+
+		cost = 40	
+
+
+		complete_effect = {
+			NHN = {
+				country_event = newengland.3
+			}
+		}
+
+		ai_will_do = {	
+			factor = 1000			
+		}
+	}
+	
+	#GP Decisions
+	NEG_gp_army = {
+	
+		icon = GFX_decision_icon_default		
+		
+		available = {
+		}
+		
+		fire_only_once = no	
+		days_re_enable = 120
+
+		visible = {
+			ROOT = {
+				has_government = democratic
+			}
+			has_country_flag = NEG_diplomission_gp
+		}		
+
+		cost = 75	
+
+
+		complete_effect = {
+			random_country = {
+				limit = { is_major = yes }
+				country_event = newengland.7
+			}
+		}
+
+		ai_will_do = {	
+			factor = 50			
+		}
+	}
+	
+	NEG_gp_air = {
+	
+		icon = GFX_decision_icon_default		
+		
+		available = {
+		}
+		
+		fire_only_once = no	
+		days_re_enable = 120
+
+		visible = {
+			ROOT = {
+				has_government = democratic
+			}
+			has_country_flag = NEG_diplomission_gp
+		}		
+
+		cost = 75	
+
+
+		complete_effect = {
+			random_country = {
+				limit = { is_major = yes }
+				country_event = newengland.13
+			}
+		}
+
+		ai_will_do = {	
+			factor = 50			
+		}
+	}
+	
+	NEG_gp_navy = {
+	
+		icon = GFX_decision_icon_default		
+		
+		available = {
+		}
+		
+		fire_only_once = no	
+		days_re_enable = 120
+
+		visible = {
+			ROOT = {
+				has_government = democratic
+			}
+			has_country_flag = NEG_diplomission_gp
+		}		
+
+		cost = 75	
+
+
+		complete_effect = {
+			random_country = {
+				limit = { is_major = yes }
+				country_event = newengland.10
+			}
+		}
+
+		ai_will_do = {	
+			factor = 50			
+		}
+	}
+	
+	
+	
+	###############
+	#### DEBUG ####
+	###############
+	
+	NEG_variable_DEBUG = {
+	
+		icon = GFX_decision_icon_default		
+		
+		available = {
+			always = no
+		}
+		
+		fire_only_once = no		 
+		days_re_enable = 1	
+
+		visible = {
+			ROOT = {
+				has_government = democratic
+			}
+		}		
+
+		cost = 50	
+
+
+		complete_effect = {
+			add_political_power = 10
+		}
+
+		ai_will_do = {	
+			factor = 0			
+		}
+	}
+	
+	NEG_variable_DEBUG_1 = {
+	
+		icon = GFX_decision_icon_default		
+		
+		available = {
+			always = no
+		}
+		
+		fire_only_once = no		 
+		days_re_enable = 1	
+
+		visible = {
+			ROOT = {
+				has_government = democratic
+			}
+		}		
+
+		cost = 50	
+
+
+		complete_effect = {
+			add_political_power = 10
+		}
+
+		ai_will_do = {	
+			factor = 0			
+		}
+	}
+
+}
+
+
