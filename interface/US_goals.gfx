@@ -3122,5 +3122,45 @@ SpriteType = {
   texturefile = "gfx/interface/goals/radioliberty.dds"
 }
 #################################################################################################################################
-
+#Generic Non Aligned
+SpriteType = {
+  name = "GEN_building_blocks_icon"
+  texturefile = "gfx/interface/goals/GEN_building_blocks.dds"
+}
+SpriteType = {
+  name = "GEN_conscript_peasants_icon"
+  texturefile = "gfx/interface/goals/GEN_conscript_peasants.dds"
+}
+SpriteType = {
+  name = "GEN_expand_kingdom_icon"
+  texturefile = "gfx/interface/goals/GEN_expand_kingdom.dds"
+}
+SpriteType = {
+  name = "GEN_find_mercenaries_icon"
+  texturefile = "gfx/interface/goals/GEN_find_mercenaries.dds"
+}
+SpriteType = {
+  name = "GEN_protect_monarchy_icon"
+  texturefile = "gfx/interface/goals/GEN_protect_monarchy.dds"
+}
+SpriteType = {
+  name = "GEN_king_country_icon"
+  texturefile = "gfx/interface/goals/GEN_king_country.dds"
+}
+SpriteType = {
+  name = "GEN_jewel_for_commonwealth_icon"
+  texturefile = "gfx/interface/goals/GEN_jewel_for_commonwealth.dds"
+}
+SpriteType = {
+  name = "GEN_nurture_peasants_icon"
+  texturefile = "gfx/interface/goals/GEN_nurture_peasants.dds"
+}
+SpriteType = {
+  name = "GEN_send_peasants_factories_icon"
+  texturefile = "gfx/interface/goals/GEN_send_peasants_factories.dds"
+}
+SpriteType = {
+  name = "GEN_tax_peasants_icon"
+  texturefile = "gfx/interface/goals/GEN_tax_peasants.dds"
+}
 }

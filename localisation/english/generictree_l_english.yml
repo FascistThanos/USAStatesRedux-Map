@@ -47,6 +47,16 @@
   GEN_decrypt_desc:0 ""
   GEN_volunteersf:0 "Foreign Influence Focus"
   GEN_volunteersf_desc:0 ""
+  GEN_defend_monarchy_idea:0 "Defend the Monarchy"
+  GEN_defend_monarchy_idea_desc:0 ""
+  GEN_nurture_peasants_idea:0 "Nurture the Peasants"
+  GEN_nurture_peasants_idea_desc:0 ""
+  GEN_expanding_royal_army_idea:0 "Expand the Royal Army"
+  GEN_expanding_royal_army_idea_desc:0 ""
+  GEN_peasants_in_army:0 "Peasants in the Army"
+  GEN_peasants_in_army_desc:0 ""
+  GEN_for_the_commonwealth:0 "For the Commonwealth"
+  GEN_for_the_commonwealth_desc:0 ""
   #Events
   GEN.1.t:0 "The Results of the Election"
   GEN.1.d:0 "After the collapse of the United States we have held emergency elections. The elections will determine which ideology we will closely follow in the aftermath of this catastrophe, as all we currently know is that we'll follow the will of the people."
@@ -91,6 +101,8 @@
   GEN_defend_values_desc:0 ""
   GEN_getsupport_foreign:0 "Rally Support for Foreign Intervention"
   GEN_getsupport_foreign_desc:0 ""
+  GEN_topple_dictatorships:0 "Liberate Neighboring Nations"
+  GEN_topple_dictatorships_desc:0 ""
   #Communism
   GEN_gocommunist:0 "Workers of the World!"
   GEN_gocommunist_desc:0 "Throughout all of the instability only one thing is clear: capitalism and democracy have failed us all! The world has seen what happens to the non-believers and capitalists. It's time for the world to know the glory of communism and to overthrow the working class! Workers of the world, unite!"
@@ -248,6 +260,27 @@
   GEN_navy8_desc:0 ""
   GEN_navy9:0 "Comission a New Battlecruiser"
   GEN_navy9_desc:0 ""
+  #Non Aligned Path
+  GEN_king_country:0 "For King And Country"
+  GEN_king_country_desc:0 ""
+  GEN_nurture_peasants:0 "Nurture the Peasants"
+  GEN_nurture_peasants_desc:0 ""
+  GEN_protect_monarchy:0 "Protect the Absolute Monarchy"
+  GEN_protect_monarchy_desc:0 ""
+  GEN_find_mercenaries:0 "Find Mercenaries"
+  GEN_find_mercenaries_desc:0 ""
+  GEN_tax_peasants:0 "Tax the Peasants"
+  GEN_tax_peasants_desc:0 ""
+  GEN_send_peasants_factories:0 "Enforce a Labor Quota"
+  GEN_send_peasants_factories_desc:0 ""
+  GEN_conscript_peasants:0 "Conscript the Peasants"
+  GEN_conscript_peasants_desc:0 ""
+  GEN_building_blocks_commonwealth:0 "Building Blocks for the Commonwealth"
+  GEN_building_blocks_commonwealth_desc:0 ""
+  GEN_expand_kingdom:0 "Expand the Kingdom"
+  GEN_expand_kingdom_desc:0 ""
+  GEN_jewel_for_commonwealth:0 "A Jewel for the Commonwealth"
+  GEN_jewel_for_commonwealth_desc:0 ""
   #Tooltips
   GEN_civincapital:0 "(§Y[Root.Capital.GetName]§!)\n   Add §G2§! Building Slots. \n   Add §Y2 Civilian Factories§!."
   GEN_securesphere:0 "Overlord Secured Their Sphere"
@@ -255,12 +288,13 @@
   GEN_airstrikebonus:0 "Naval Bomber Focus"
   GEN_battleshipbonus:0 "Battleship Effort"
   GEN_battlecruiserbonus:0 "Battlecruiser Effort"
-
-
-
-#####LEADERS
-#Washington D.C
-DCD_william_covell:0 "William E. R. Covell"
-DCD_bruce_magruder:0 "Bruce Magruder"
-DCD_vernon_prichard:0 "Vernon Prichard"
-CAC_James_Keating:0 "General James J. Keating"
+  #Communist Faction Names
+  communistfac:0 "North American Military Union"
+  communistfac1:0 "American Union"
+  communistfac2:0 "North American Military Pact"
+  communistfac3:0 "North American Military Alliance"
+  #Democratic Faction Names
+  democraticfac:0 "North American Associative Federation"
+  democraticfac1:0 "American Coalition"
+  democraticfac2:0 "American Military Cooperation Group"
+  democraticfac3:0 "North American Defense Pact"
