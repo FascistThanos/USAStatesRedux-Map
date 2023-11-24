@@ -60,8 +60,9 @@ set_technology = {
 	aa_lmg = 1
 	engines_1 = 1
 }
-
-
+add_ideas = {
+	NEG_start_minor_nation
+}
 create_equipment_variant = {
 	name = "Fighter 1"
 	type = small_plane_airframe_1

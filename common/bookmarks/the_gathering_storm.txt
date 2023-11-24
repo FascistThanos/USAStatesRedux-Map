@@ -87,6 +87,78 @@ bookmarks = {
 		"---"={
 			history = "OTHER_GATHERING_STORM_DESC"
 		}
+		"CTC"={
+			minor = yes
+			history = "NEG_BOOKMARK_DESC"
+			ideas = {
+				NEG_start_minor_nation
+			}
+			focuses = {
+				NEG_ne_initiative
+				NEG_ne_revived
+				NEG_ne_go_greater
+			}
+		}
+		"RIR"={
+			minor = yes
+			history = "NEG_BOOKMARK_DESC"
+			ideas = {
+				NEG_start_minor_nation
+			}
+			focuses = {
+				NEG_ne_initiative
+				NEG_ne_revived
+				NEG_ne_go_greater
+			}
+		}
+		"MAM"={
+			minor = yes
+			history = "NEG_BOOKMARK_DESC"
+			ideas = {
+				NEG_start_minor_nation
+			}
+			focuses = {
+				NEG_ne_initiative
+				NEG_ne_revived
+				NEG_ne_go_greater
+			}
+		}
+		"VTV"={
+			minor = yes
+			history = "NEG_BOOKMARK_DESC"
+			ideas = {
+				NEG_start_minor_nation
+			}
+			focuses = {
+				NEG_ne_initiative
+				NEG_ne_revived
+				NEG_ne_go_greater
+			}
+		}
+		"NHN"={
+			minor = yes
+			history = "NEG_BOOKMARK_DESC"
+			ideas = {
+				NEG_start_minor_nation
+			}
+			focuses = {
+				NEG_ne_initiative
+				NEG_ne_revived
+				NEG_ne_go_greater
+			}
+		}
+		"MEM"={
+			minor = yes
+			history = "NEG_BOOKMARK_DESC"
+			ideas = {
+				NEG_start_minor_nation
+			}
+			focuses = {
+				NEG_ne_initiative
+				NEG_ne_revived
+				NEG_ne_go_greater
+			}
+		}
 
 		effect = {
 			randomize_weather = 22345 # <- Obligatory in every bookmark !

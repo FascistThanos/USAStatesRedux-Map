@@ -389,6 +389,183 @@ spriteTypes = {
 		name = "GFX_idea_UTU_economicboom"
 		texturefile = "gfx/interface/ideas/UTU_economicboom.dds"
 	}
+	#New England
+	spriteType = {
+		name = "GFX_idea_NEG_quality_1_idea"
+		texturefile = "gfx/interface/ideas/NEG_quality_1_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_NEG_quantity_1_idea"
+		texturefile = "gfx/interface/ideas/NEG_quantity_1_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_NEG_supply_hub_idea"
+		texturefile = "gfx/interface/ideas/NEG_supply_hub_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_NEG_neinitiative"
+		texturefile = "gfx/interface/ideas/NEG_idea_neinitiative.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_NEG_minor_nation_idea"
+		texturefile = "gfx/interface/ideas/NEG_minor_nation_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_NEG_powerfultanks_idea"
+		texturefile = "gfx/interface/ideas/NEG_powerfultanks_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_NEG_speedytanks_idea"
+		texturefile = "gfx/interface/ideas/NEG_speedytanks_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_NEG_political_flex_idea"
+		texturefile = "gfx/interface/ideas/NEG_political_flex_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_NEG_neg_relations_boost_minor_idea"
+		texturefile = "gfx/interface/ideas/NEG_neg_relations_boost_minor_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_NEG_neg_relations_boost_major_idea"
+		texturefile = "gfx/interface/ideas/NEG_neg_relations_boost_major_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_NEG_ne_waradj_idea"
+		texturefile = "gfx/interface/ideas/NEG_ne_waradj_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_NEG_ne_national_pride_idea"
+		texturefile = "gfx/interface/ideas/NEG_ne_national_pride_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_NEG_national_unity_idea"
+		texturefile = "gfx/interface/ideas/NEG_national_unity_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_NEG_national_men_idea_idea"
+		texturefile = "gfx/interface/ideas/NEG_national_men_idea_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_NEG_national_economics_idea_idea"
+		texturefile = "gfx/interface/ideas/NEG_national_economics_idea_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_NEG_democratic_bedrock_idea"
+		texturefile = "gfx/interface/ideas/NEG_democratic_bedrock_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_NEG_communist_puppets_idea"
+		texturefile = "gfx/interface/ideas/NEG_communist_puppets_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_NEG_communist_loves_compliance_idea"
+		texturefile = "gfx/interface/ideas/NEG_communist_loves_compliance_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_NEG_communist_defense_idea"
+		texturefile = "gfx/interface/ideas/NEG_communist_defense_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_NEG_better_army_idea"
+		texturefile = "gfx/interface/ideas/NEG_better_army_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_NEG_appease_political_idea"
+		texturefile = "gfx/interface/ideas/NEG_appease_political_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_NEG_appease_economy_idea"
+		texturefile = "gfx/interface/ideas/NEG_appease_economy_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_NEG_appease_doctrine_idea"
+		texturefile = "gfx/interface/ideas/NEG_appease_doctrine_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_NEG_appease_army_idea"
+		texturefile = "gfx/interface/ideas/NEG_appease_army_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_NEG_anti_fascist_idea"
+		texturefile = "gfx/interface/ideas/NEG_anti_fascist_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_NEG_anti_communism_idea"
+		texturefile = "gfx/interface/ideas/NEG_anti_communism_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_NEG_not_minor_nation_idea"
+		texturefile = "gfx/interface/ideas/NEG_not_minor_nation_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_NEG_new_nation_idea"
+		texturefile = "gfx/interface/ideas/NEG_new_nation_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_NEG_neinitiative_resistance_idea"
+		texturefile = "gfx/interface/ideas/NEG_neinitiative_resistance_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_NEG_anti_fascist_2_idea"
+		texturefile = "gfx/interface/ideas/NEG_anti_fascist_2_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_NEG_research_initiative_idea"
+		texturefile = "gfx/interface/ideas/NEG_research_initiative_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_NEG_tank_initiative1_idea"
+		texturefile = "gfx/interface/ideas/NEG_tank_initiative1_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_NEG_res_initiative_idea"
+		texturefile = "gfx/interface/ideas/NEG_res_initiative_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_NEG_navy_initiative_idea"
+		texturefile = "gfx/interface/ideas/NEG_navy_initiative_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_NEG_military_initiative_idea"
+		texturefile = "gfx/interface/ideas/NEG_military_initiative_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_NEG_material_initiative_idea"
+		texturefile = "gfx/interface/ideas/NEG_material_initiative_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_NEG_industry_initiative_idea"
+		texturefile = "gfx/interface/ideas/NEG_industry_initiative_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_NEG_eco_initiative_idea"
+		texturefile = "gfx/interface/ideas/NEG_eco_initiative_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_NEG_air_initiative_idea"
+		texturefile = "gfx/interface/ideas/NEG_air_initiative_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_NEG_improved_govt_idea"
+		texturefile = "gfx/interface/ideas/NEG_improved_govt_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_NEG_better_rail"
+		texturefile = "gfx/interface/ideas/NEG_better_rail.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_NEG_more_space_idea"
+		texturefile = "gfx/interface/ideas/NEG_more_space_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_NEG_mining_idea"
+		texturefile = "gfx/interface/ideas/NEG_mining_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_NEG_anti_communism_2_idea"
+		texturefile = "gfx/interface/ideas/NEG_anti_communism_2_idea.dds"
+	}
 
 
 
