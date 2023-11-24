@@ -1,0 +1,74 @@
+	########################
+	######### NEWS #########
+	########################
+
+
+add_namespace = newengland_news
+#COMMUNIST TAKEOVER NEWS EVENT
+news_event = { 
+	id = newengland_news.1
+	title = newengland_news.1.t
+	desc = newengland_news.1.d
+	
+	is_triggered_only = yes
+	major = yes
+	
+	picture = GFX_news_event_034
+	fire_only_once = no
+	
+	option = {
+		name = newengland_news.1.a
+		trigger = {
+			NOT = {
+				TAG = ROOT
+			}
+		}
+	}
+	
+	option = {
+		name = newengland_news.1.b
+		trigger = {
+			TAG = ROOT
+		}
+	}
+}
+
+#NEW ENGLAND START
+news_event = { 
+	id = newengland_news.2
+	title = newengland_news.2.t
+	desc = newengland_news.2.d
+	
+	is_triggered_only = yes
+	major = yes
+	
+	picture = GFX_news_event_034
+	fire_only_once = yes
+	
+	option = {
+		name = newengland_news.2.a
+		trigger = {
+			NOT = {
+				TAG = MEM
+				TAG = NHN
+				TAG = VIV
+				TAG = MAM
+				TAG = RIR
+				TAG = CTC
+			}
+		}
+	}
+	
+	option = {
+		name = newengland_news.2.b
+		trigger = {
+			TAG = MEM
+			TAG = NHN
+			TAG = VIV
+			TAG = MAM
+			TAG = RIR
+			TAG = CTC
+		}
+	}
+}
+

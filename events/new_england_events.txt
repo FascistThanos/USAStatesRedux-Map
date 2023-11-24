@@ -1,0 +1,676 @@
+add_namespace = newengland
+
+#Light Industry Event Failure
+country_event = { 
+	id = newengland.1
+	title = newengland.1.t
+	desc = newengland.1.d
+	is_triggered_only = yes
+	picture = GFX_report_event_oahu_withdraws
+	fire_only_once = no
+	
+	option = {
+		name = newengland.1.a
+		set_temp_variable = { temp1_NEG = 0 }
+		randomize_temp_variable = {
+			var = temp1_NEG
+			distribution = uniform
+			min = 0
+			max = 1
+		}
+		set_variable = { NEG_democratic_connection = temp1_NEG }
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+
+#Heavy Industry Event Success
+country_event = { 
+	id = newengland.2
+	title = newengland.1.t
+	desc = newengland.1.d
+	is_triggered_only = yes
+	picture = GFX_report_event_oahu_withdraws
+	fire_only_once = no
+	
+	option = {
+		name = newengland.1.a
+		set_temp_variable = { temp1_NEG = 0 }
+		randomize_temp_variable = {
+			var = temp1_NEG
+			distribution = uniform
+			min = 0
+			max = 1
+		}
+		set_variable = { NEG_democratic_connection_1 = temp1_NEG }
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+
+#Investment Failure Light
+country_event = { 
+	id = newengland.25
+	title = newengland.25.t
+	desc = newengland.25.d 
+	is_triggered_only = yes
+	picture = GFX_report_event_oahu_withdraws
+	fire_only_once = no
+	
+	option = {
+		name = newengland.25.a
+		set_temp_variable = { temp1_NEG = 0 }
+		randomize_temp_variable = {
+			var = temp1_NEG
+			distribution = uniform
+			min = 0
+			max = 1
+		}
+		set_variable = { NEG_democratic_connection_1 = temp1_NEG }
+	}
+}
+
+#Investment Failure Heavy
+country_event = { 
+	id = newengland.26
+	title = newengland.25.t
+	desc = newengland.25.d 
+	is_triggered_only = yes
+	picture = GFX_report_event_oahu_withdraws
+	fire_only_once = no
+	
+	option = {
+		name = newengland.25.a
+		set_temp_variable = { temp1_NEG = 0 }
+		randomize_temp_variable = {
+			var = temp1_NEG
+			distribution = uniform
+			min = 0
+			max = 1
+		}
+		set_variable = { NEG_democratic_connection_1 = temp1_NEG }
+	}
+}
+
+#Relations Event
+country_event = { 
+	id = newengland.3
+	title = newengland.3.t #THE MAIN ONE
+	desc = newengland.3.d #THE MAIN ONE
+	is_triggered_only = yes
+	picture = GFX_report_event_oahu_withdraws
+	fire_only_once = no
+	
+	option = { #YES
+		name = newengland.3.a
+		ai_chance = { base = 40 }
+		add_political_power = -25
+		ROOT = {
+			add_timed_idea = { 
+				idea = NEG_neg_relations_boost_minor 
+				days = 90 
+			}
+		}
+		FROM = {
+			country_event = newengland.4
+		}
+	}
+	option = { #VERY YES
+		name = newengland.3.b
+		ai_chance = { base = 40 }
+		add_political_power = -50
+		ROOT = {
+			add_timed_idea = { 
+				idea = NEG_neg_relations_boost_major
+				days = 90
+			}
+		}
+		FROM = {
+			country_event = newengland.5
+		}
+	}
+	option = { #NO
+		name = newengland.3.c
+		ai_chance = { base = 20 }
+		FROM = {
+			country_event = newengland.6
+		}
+	}
+	
+}
+
+#Minor Success Event
+country_event = { 
+	id = newengland.4
+	title = newengland.4.t
+	desc = newengland.4.d 
+	is_triggered_only = yes
+	picture = GFX_report_event_oahu_withdraws
+	fire_only_once = no
+	
+	option = {
+		name = newengland.4.a
+		ROOT = {
+			add_timed_idea = { idea = NEG_neg_relations_boost_minor  days = 90 }
+		}
+	}
+}
+
+#Major Success Event
+country_event = { 
+	id = newengland.5
+	title = newengland.5.t
+	desc = newengland.5.d 
+	is_triggered_only = yes
+	picture = GFX_report_event_oahu_withdraws
+	fire_only_once = no
+	
+	option = {
+		name = newengland.5.a
+		ROOT = {
+			add_timed_idea = { 
+				idea = NEG_neg_relations_boost_major
+				days = 90
+			}
+		}
+	}
+}
+
+#Failure [JUST NE]
+country_event = { 
+	id = newengland.27
+	title = newengland.6.t
+	desc = newengland.6.d 
+	is_triggered_only = yes
+	picture = GFX_report_event_oahu_withdraws
+	fire_only_once = no
+	
+	option = {
+		name = newengland.6.a
+		set_country_flag = {
+			flag = NEG_relations_failed
+			days = 90
+			value = 1
+		}
+	}
+}
+
+#Failure {UNIVERSAL}
+country_event = { 
+	id = newengland.6
+	title = newengland.6.t
+	desc = newengland.6.d 
+	is_triggered_only = yes
+	picture = GFX_report_event_oahu_withdraws
+	fire_only_once = no
+	
+	option = {
+		name = newengland.6.a
+	}
+}
+
+#GP ARMY
+country_event = { 
+	id = newengland.7
+	title = newengland.7.t
+	desc = newengland.7.d
+	is_triggered_only = yes
+	picture = GFX_report_event_oahu_withdraws
+	fire_only_once = no
+	
+	option = { #Guns
+		name = newengland.7.a
+		ai_chance = { base = 40 }
+		ROOT = {
+			army_experience = 40
+			send_equipment = {
+				equipment = infantry_equipment
+				amount = 600
+				target = FROM
+			}
+		}
+		FROM = {
+			country_event = newengland.8
+		}
+	}
+	option = { #Army XP
+		name = newengland.7.b
+		ai_chance = { base = 40 }
+		add_political_power = -10
+		ROOT = {
+			army_experience = 20
+		}
+		FROM = {
+			country_event = newengland.9
+		}
+	}
+	option = { #NO
+		name = newengland.7.c
+		ai_chance = { base = 20 }
+		FROM = {
+			country_event = newengland.6
+		}
+	}
+}
+
+#Guns Event
+country_event = { 
+	id = newengland.8
+	title = newengland.8.t
+	desc = newengland.8.d 
+	is_triggered_only = yes
+	picture = GFX_report_event_oahu_withdraws
+	fire_only_once = no
+	
+	option = {
+		name = newengland.8.a
+		custom_effect_tooltip = NEG_get_guns.tt
+	}
+}
+
+#Army XP
+country_event = { 
+	id = newengland.9
+	title = newengland.9.t
+	desc = newengland.9.d 
+	is_triggered_only = yes
+	picture = GFX_report_event_oahu_withdraws
+	fire_only_once = no
+	
+	option = {
+		name = newengland.9.a
+		army_experience = 20
+	}
+}
+
+#GP NAVY
+country_event = { 
+	id = newengland.10
+	title = newengland.10.t
+	desc = newengland.10.d
+	is_triggered_only = yes
+	picture = GFX_report_event_oahu_withdraws
+	fire_only_once = no
+	
+	option = { #Naval Research Tech
+		name = newengland.10.a
+		ai_chance = { base = 40 }
+		add_political_power = -50
+		ROOT = {
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				uses = 1
+				category = naval_doctrine
+			}
+		}
+		FROM = {
+			country_event = newengland.11
+		}
+	}
+	option = { #Army XP
+		name = newengland.10.b
+		ai_chance = { base = 40 }
+		add_political_power = -10
+		ROOT = {
+			navy_experience = 25
+		}
+		FROM = {
+			country_event = newengland.12
+		}
+	}
+	option = { #NO
+		name = newengland.10.c
+		ai_chance = { base = 20 }
+		FROM = {
+			country_event = newengland.6
+		}
+	}
+}
+
+#Guns Event
+country_event = { 
+	id = newengland.11
+	title = newengland.11.t
+	desc = newengland.11.d 
+	is_triggered_only = yes
+	picture = GFX_report_event_oahu_withdraws
+	fire_only_once = no
+	
+	option = {
+		name = newengland.11.a
+		add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				uses = 1
+				category = naval_doctrine
+			}
+	}
+}
+
+#Navy XP
+country_event = { 
+	id = newengland.12
+	title = newengland.12.t
+	desc = newengland.12.d 
+	is_triggered_only = yes
+	picture = GFX_report_event_oahu_withdraws
+	fire_only_once = no
+	
+	option = {
+		name = newengland.12.a
+		navy_experience = 25
+	}
+}
+
+#GP AIR
+country_event = { 
+	id = newengland.13
+	title = newengland.13.t
+	desc = newengland.13.d
+	is_triggered_only = yes
+	picture = GFX_report_event_oahu_withdraws
+	fire_only_once = no
+	
+	option = { #Naval Research Tech
+		name = newengland.13.a
+		ai_chance = { base = 34 }
+		add_political_power = -50
+		ROOT = {
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				uses = 1
+				category = air_doctrine
+			}
+		}
+		FROM = {
+			country_event = newengland.14
+		}
+	}
+	option = { #Army XP
+		name = newengland.13.b
+		ai_chance = { base = 33 }
+		add_political_power = -10
+		ROOT = {
+			air_experience = 20
+		}
+		FROM = {
+			country_event = newengland.15
+		}
+	}
+	option = { #NO
+		name = newengland.13.c
+		ai_chance = { base = 33 }
+		FROM = {
+			country_event = newengland.6
+		}
+	}
+}
+
+#Air Doctrine
+country_event = { 
+	id = newengland.14
+	title = newengland.14.t
+	desc = newengland.14.d 
+	is_triggered_only = yes
+	picture = GFX_report_event_oahu_withdraws
+	fire_only_once = no
+	
+	option = {
+		name = newengland.14.a
+		add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				uses = 1
+				category = air_doctrine
+			}
+	}
+}
+
+#Air XP
+country_event = { 
+	id = newengland.15
+	title = newengland.15.t
+	desc = newengland.15.d 
+	is_triggered_only = yes
+	picture = GFX_report_event_oahu_withdraws
+	fire_only_once = no
+	
+	option = {
+		name = newengland.15.a
+		air_experience = 20
+	}
+}
+
+#OUR FUTURE
+country_event = { 
+	id = newengland.16
+	title = newengland.16.t
+	desc = newengland.16.d 
+	is_triggered_only = yes
+	picture = GFX_report_event_oahu_withdraws
+	fire_only_once = no
+	
+	option = {
+		name = newengland.16.a
+		set_country_flag = NEG_future_A
+		add_war_support = 0.05
+	}
+	
+	option = {
+		name = newengland.16.b
+		set_country_flag = NEG_future_B
+		add_war_support = 0.05
+	}
+}
+
+#Improve on What Matters
+country_event = { 
+	id = newengland.17
+	title = newengland.17.t
+	desc = newengland.17.d 
+	is_triggered_only = yes
+	picture = GFX_report_event_oahu_withdraws
+	fire_only_once = no
+	
+	#Research Speed
+	option = {
+		name = newengland.17.a
+		swap_ideas = {
+			remove_idea = NEG_start_minor_nation_1A
+			add_idea = NEG_start_minor_nation_2A1
+		}
+		set_country_flag = NEG_improve_matter_1
+	}
+	
+	#Population
+	option = {
+		name = newengland.17.b
+		swap_ideas = {
+			remove_idea = NEG_start_minor_nation_1A
+			add_idea = NEG_start_minor_nation_2A2
+		}
+		set_country_flag = NEG_improve_matter_2
+	}
+}
+
+#Fascist Start Event
+country_event = { 
+	id = newengland.18
+	title = newengland.18.t
+	desc = newengland.18.d 
+	is_triggered_only = yes
+	picture = GFX_report_event_oahu_withdraws
+	fire_only_once = no
+	
+	option = {
+		name = newengland.18.a
+		add_ideas = NEG_anti_fascist
+	}
+}
+
+#Speeches of 10,000 epic success
+country_event = { 
+	id = newengland.19
+	title = newengland.19.t
+	desc = newengland.19.d 
+	is_triggered_only = yes
+	picture = GFX_report_event_oahu_withdraws
+	fire_only_once = no
+	
+	option = {
+		name = newengland.19.a
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.25
+		}
+		add_war_support = 0.05
+	}
+}
+
+#Speeches of 10,000 mid success
+country_event = { 
+	id = newengland.20
+	title = newengland.20.t
+	desc = newengland.20.d 
+	is_triggered_only = yes
+	picture = GFX_report_event_oahu_withdraws
+	fire_only_once = no
+	
+	option = {
+		name = newengland.19.a
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.15
+		}
+	}
+}
+
+#Speeches of 10,000 massive Failure
+country_event = { 
+	id = newengland.21
+	title = newengland.21.t
+	desc = newengland.21.d 
+	is_triggered_only = yes
+	picture = GFX_report_event_oahu_withdraws
+	fire_only_once = no
+	
+	option = {
+		name = newengland.21.a
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.1
+		}
+		add_stability = -0.05
+	}
+}
+
+#Communism Decision
+country_event = { 
+	id = newengland.22
+	title = newengland.22.t
+	desc = newengland.22.d 
+	is_triggered_only = yes
+	picture = GFX_report_event_oahu_withdraws
+	fire_only_once = no
+	
+	#Coup
+	option = {
+		name = newengland.22.a
+		set_politics = {
+			ruling_party = communism
+			elections_allowed = no
+		}
+		add_stability = -0.1
+		add_ideas = NEG_anti_communism
+		hidden_effect = {
+			news_event = { 
+				id =  newengland_news.1
+			}
+		}
+	}
+	
+	#Take time
+	option = {
+		name = newengland.22.b
+		add_political_power = -20
+		custom_effect_tooltip = NEG_rise_of_communism_tt
+	}
+}
+
+#Concessions to the Military
+country_event = { 
+	id = newengland.23
+	title = newengland.23.t
+	desc = newengland.23.d 
+	is_triggered_only = yes
+	picture = GFX_report_event_oahu_withdraws
+	fire_only_once = no
+	
+	#Weakened Army
+	option = {
+		name = newengland.23.a
+		add_timed_idea = { idea = NEG_appease_army days = 200 }
+		add_popularity = {
+			ideology = communism
+			popularity = 0.10
+		}
+	}
+	
+	#No Doctrine Developement
+	option = {
+		name = newengland.23.b
+		add_timed_idea = { idea = NEG_appease_doctrine days = 200 }
+		add_popularity = {
+			ideology = communism
+			popularity = 0.10
+		}
+	}
+}
+
+#Concessions to the People
+country_event = { 
+	id = newengland.24
+	title = newengland.24.t
+	desc = newengland.24.d 
+	is_triggered_only = yes
+	picture = GFX_report_event_oahu_withdraws
+	fire_only_once = no
+	
+	#Civs
+	option = {
+		name = newengland.24.a
+		add_timed_idea = { idea = NEG_appease_economy days = 200 }
+		add_popularity = {
+			ideology = communism
+			popularity = 0.10
+		}
+	}
+	
+	#Political Power
+	option = {
+		name = newengland.24.b
+		add_timed_idea = { idea = NEG_appease_political days = 200 }
+		add_popularity = {
+			ideology = communism
+			popularity = 0.10
+		}
+	}
+}
+
+
+
+
+
+
+
+

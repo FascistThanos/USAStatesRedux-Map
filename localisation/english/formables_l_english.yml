@@ -200,8 +200,8 @@
  NEC_communism_DEF:0 "the Commune of New England"
  NEC_communism_ADJ:0 "New English"
  NEC_democratic:0 "New England"
- NEC_democratic_ADJ:0 "New England"
- NEC_democratic_DEF:0 "New English"
+ NEC_democratic_ADJ:0 "New English"
+ NEC_democratic_DEF:0 "New England"
  ###############################################
 CSA_fascism:0 "Confederate Legion of America"
 CSA_fascism_DEF:0 "the Confederate Legion of America"
