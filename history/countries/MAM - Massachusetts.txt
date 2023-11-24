@@ -71,9 +71,9 @@ create_equipment_variant = {
 }
 create_equipment_variant = {
 	name = "Close Air Support 1" 
-	type = small_plane_airframe_1
+	type = small_plane_cas_airframe_1
 	modules = {
-		main_armament_slot = small_bomb_bay
+		fixed_main_weapon_slot = small_bomb_bay
 		engine_type_slot = engine_1_2x
 		special_type_slot_1 = empty
 	}

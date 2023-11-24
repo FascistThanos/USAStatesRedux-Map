@@ -946,7 +946,7 @@ focus_tree = {
 				producer = ROOT
 			}
 			add_equipment_to_stockpile = {
-				type = small_plane_airframe_1
+				type = small_plane_cas_airframe_1
 				amount = 500
 				variant_name = "Close Air Support 1"
 				producer = ROOT
