@@ -63,7 +63,13 @@ set_technology = {
 
 
 
-
+set_variable = { contcon_yes_votes = 0 }
+set_variable = { contcon_no_votes = 0 }
+set_variable = { contcon_abstain_votes = 0 }
+add_ideas = {
+	DC_crisis
+	DC_leased_land_idea
+}
 set_convoys = 100
 set_stability = 0.6
 

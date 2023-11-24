@@ -1,0 +1,1962 @@
+########################### Washington D.C. by FascistThanos ###########################
+focus_tree = {
+	id = dc_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 0
+			tag = DCD
+		}
+	}
+	default = no
+	continuous_focus_position = {
+		x = 50
+		y = 3000
+	}
+	focus = {
+		id = DC_constitution
+		icon = GFX_Generic_Factionalism
+		cost = 10
+		x = 25
+		y = 0
+		completion_reward = {
+			country_event = dc.5
+		}
+	}
+	focus = {
+		id = DC_divided
+		icon = GFX_DCD_burning_flag
+		cost = 10
+		prerequisite = {
+			focus = DC_constitution
+		}
+		x = 0
+		y = 1
+		relative_position_id = DC_constitution
+		completion_reward = {
+			add_political_power = 100
+			country_event = dc.9
+		}
+	}
+	focus = {
+		id = DC_fascist1
+		icon = GFX_Generic_Ultranationalist_Government
+		cost = 10
+		prerequisite = {
+			focus = DC_divided
+		}
+		mutually_exclusive = {
+			focus = DC_democratic1
+			focus = DC_communist1
+		}
+		x = 4
+		y = 1
+		relative_position_id = DC_divided
+		completion_reward = {
+			add_stability = -0.05
+			add_war_support = 0.1
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.25
+			}
+			hidden_effect = {
+				news_event = {
+					hours = 1
+					id = genericfocusnews.5
+				}
+			}
+		}
+	}
+	focus = {
+		id = DC_communist1
+		icon = GFX_Generic_Revolutionary_Government
+		cost = 10
+		prerequisite = {
+			focus = DC_divided
+		}
+		mutually_exclusive = {
+			focus = DC_democratic1
+			focus = DC_fascist1
+		}
+		x = 13
+		y = 1
+		relative_position_id = DC_divided
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.3
+			}
+			hidden_effect = {
+				news_event = {
+					hours = 1
+					id = genericfocusnews.5
+				}
+			}
+		}
+	}
+	focus = {
+		id = DC_democratic1
+		icon = GFX_Generic_Blue_Democracy
+		cost = 10
+		prerequisite = {
+			focus = DC_divided
+		}
+		mutually_exclusive = {
+			focus = DC_fascist1
+			focus = DC_communist1
+		}
+		x = -8
+		y = 1
+		relative_position_id = DC_divided
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability = 0.05
+		}
+	}
+	focus = {
+		id = DC_democratic2
+		icon = GFX_Generic_Meeting
+		cost = 7.2
+		prerequisite = {
+			focus = DC_democratic1
+		}
+		x = 0
+		y = 1
+		relative_position_id = DC_democratic1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability = 0.02
+		}
+	}
+	focus = {
+		id = DC_democratic3
+		icon = GFX_Generic_Legislation
+		cost = 2.2
+		prerequisite = {
+			focus = DC_democratic2
+		}
+		x = -2
+		y = 1
+		relative_position_id = DC_democratic2
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.02
+		}
+	}
+	focus = {
+		id = DC_democratic4
+		icon = GFX_Generic_Parliament_Box
+		cost = 4.4
+		prerequisite = {
+			focus = DC_democratic2
+		}
+		available = {
+			has_completed_focus = DC_democratic3
+		}
+		available = {
+			has_completed_focus = DC_democratic5
+		}
+		x = 0
+		y = 1
+		relative_position_id = DC_democratic2
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.03
+		}
+	}
+	focus = {
+		id = DC_democratic5
+		icon = GFX_Generic_Shady_Deal
+		cost = 2.2
+		prerequisite = {
+			focus = DC_democratic2
+		}
+		x = 2
+		y = 1
+		relative_position_id = DC_democratic2
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.03
+		}
+	}
+	focus = {
+		id = DC_democratic6
+		icon = GFX_Focus_Television
+		cost = 14.3
+		prerequisite = {
+			focus = DC_democratic3
+		}
+		prerequisite = {
+			focus = DC_democratic4
+		}
+		prerequisite = {
+			focus = DC_democratic5
+		}
+		x = 0
+		y = 1
+		relative_position_id = DC_democratic4
+		completion_reward = {
+			news_event = {
+				hours = 1
+				id = genericfocusnews.3
+			}
+			add_ideas = DC_stable
+			add_stability = 0.05
+		}
+	}
+	focus = {
+		id = DC_democratic7
+		icon = GFX_Generic_Democracy
+		cost = 4.3
+		prerequisite = {
+			focus = DC_democratic6
+		}
+		x = 0
+		y = 1
+		relative_position_id = DC_democratic6
+		completion_reward = {
+			add_country_leader_trait = great_reformer
+		}
+	}
+	focus = {
+		id = DC_democratic8
+		icon = GFX_Generic_Workers_Democracy
+		cost = 2.2
+		prerequisite = {
+			focus = DC_democratic7
+		}
+		x = -2
+		y = 1
+		relative_position_id = DC_democratic7
+		completion_reward = {
+			add_ideas = DC_wpa
+		}
+	}
+	focus = {
+		id = DC_democratic9
+		icon = GFX_focus_usa_guarantee_the_american_dream
+		cost = 2.2
+		prerequisite = {
+			focus = DC_democratic7
+		}
+		x = 0
+		y = 1
+		relative_position_id = DC_democratic7
+		completion_reward = {
+			add_ideas = DC_ssa
+		}
+	}
+	focus = {
+		id = DC_democratic10
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 2.2
+		prerequisite = {
+			focus = DC_democratic7
+		}
+		x = 2
+		y = 1
+		relative_position_id = DC_democratic7
+		completion_reward = {
+			add_ideas = DC_mic
+		}
+	}
+	focus = {
+		id = DC_democratic11
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		cost = 2.2
+		prerequisite = {
+			focus = DC_democratic8
+		}
+		x = 0
+		y = 1
+		relative_position_id = DC_democratic8
+		completion_reward = {
+			add_ideas = DC_jobs
+		}
+	}
+	focus = {
+		id = DC_democratic12
+		icon = GFX_goal_generic_production
+		cost = 2.2
+		prerequisite = {
+			focus = DC_democratic9
+		}
+		x = 0
+		y = 1
+		relative_position_id = DC_democratic9
+		completion_reward = {
+			1070 = {
+				add_extra_state_shared_building_slots = 2
+			}
+			add_ideas = DC_publicworks
+		}
+	}
+	focus = {
+		id = DC_democratic13
+		icon = GFX_goal_generic_fortify_city
+		cost = 2.2
+		prerequisite = {
+			focus = DC_democratic10
+		}
+		x = 0
+		y = 1
+		relative_position_id = DC_democratic10
+		completion_reward = {
+			add_ideas = DC_onestepahead
+		}
+	}
+	focus = {
+		id = DC_democratic14
+		icon = GFX_goal_unknown
+		cost = 1.5
+		prerequisite = {
+			focus = DC_democratic15
+		}
+		available = {
+			has_war = no
+		}
+		x = 17
+		y = 10
+		completion_reward = {
+			hidden_effect = {
+				load_focus_tree = {
+					tree = dc_focus_democratic
+					keep_completed = yes
+				}
+			}
+			custom_effect_tooltip = DCD_continue_democratic_tt
+		}
+	}
+	focus = {
+		id = DC_democratic15
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = DC_democratic11
+		}
+		prerequisite = {
+			focus = DC_democratic12
+		}
+		prerequisite = {
+			focus = DC_democratic13
+		}
+		WILL_LEAD_TO_WAR_WITH = MDM
+		x = 2
+		y = 1
+		relative_position_id = DC_democratic11
+		completion_reward = {
+			MDM = {
+				country_event = dc.6
+			}
+			hidden_effect = {
+				MDM = {
+					end_puppet = DCD
+				}
+				remove_ideas = DC_wpa
+				remove_ideas = DC_ssa
+				remove_ideas = DC_mic
+				remove_ideas = DC_jobs
+				remove_ideas = DC_publicworks
+				remove_ideas = DC_onestepahead
+				add_timed_idea = {
+					idea = DC_newdeal
+					days = 3650
+				}
+			}
+		}
+	}
+	focus = {
+		id = DC_fascist2
+		icon = GFX_Generic_Ripping_Papers
+		cost = 10
+		prerequisite = {
+			focus = DC_fascist1
+		}
+		x = 0
+		y = 1
+		relative_position_id = DC_fascist1
+		completion_reward = {
+			add_stability = 0.05
+		}
+	}
+	focus = {
+		id = DC_fascist4
+		icon = GFX_Generic_Political_Purge
+		cost = 10
+		prerequisite = {
+			focus = DC_fascist2
+		}
+		x = -2
+		y = 1
+		relative_position_id = DC_fascist2
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = DC_fascist5
+		icon = GFX_Generic_Espionage04
+		cost = 10
+		prerequisite = {
+			focus = DC_fascist4
+		}
+		x = 0
+		y = 1
+		relative_position_id = DC_fascist4
+		completion_reward = {
+			add_ideas = DC_COINTELPRO
+		}
+	}
+	focus = {
+		id = DC_fascist6
+		icon = GFX_Generic_Lookout
+		cost = 10
+		prerequisite = {
+			focus = DC_fascist2
+		}
+		x = 2
+		y = 1
+		relative_position_id = DC_fascist2
+		completion_reward = {
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = USA_joseph_mccarthy
+		}
+	}
+	focus = {
+		id = DC_fascist7
+		icon = GFX_Generic_Arrests
+		cost = 10
+		prerequisite = {
+			focus = DC_fascist6
+		}
+		x = 0
+		y = 1
+		relative_position_id = DC_fascist6
+		completion_reward = {
+			add_stability = 0.1
+		}
+	}
+	focus = {
+		id = DC_fascist8
+		icon = GFX_Generic_Ultranationalist_Volunteers
+		cost = 10
+		prerequisite = {
+			focus = DC_fascist2
+		}
+		x = 0
+		y = 3
+		relative_position_id = DC_fascist2
+		completion_reward = {
+			remove_ideas = dc_crisis
+		}
+	}
+	focus = {
+		id = DC_fascist9
+		icon = GFX_Generic_Ultranationalist_Volunteers
+		cost = 10
+		prerequisite = {
+			focus = DC_fascist8
+		}
+		mutually_exclusive = {
+			focus = DC_fascist10
+		}
+		x = -1
+		y = 1
+		relative_position_id = DC_fascist8
+		completion_reward = {
+			create_country_leader = {
+				name = "Douglas Macarthur"
+				desc = POLITICS_WDC_DOUGLAS_MACARTHUR_DESC
+				picture = "Portrait_WDC_Douglas_Macarthur.dds"
+				expire = "1965.1.1"
+				ideology = rexism
+				traits = {
+					american_caesar
+				}
+			}
+			add_war_support = 0.1
+		}
+	}
+	focus = {
+		id = DC_fascist10
+		icon = GFX_Generic_Imperial_Eagle
+		cost = 10
+		prerequisite = {
+			focus = DC_fascist8
+		}
+		mutually_exclusive = {
+			focus = DC_fascist9
+		}
+		x = 1
+		y = 1
+		relative_position_id = DC_fascist8
+		completion_reward = {
+			create_country_leader = {
+				name = "Alvin M. Owsley"
+				desc = POLITICS_WDC_ALVIN_OWLSEY_DESC
+				picture = "Portrait_WDC_Alvin_Owsley.dds"
+				expire = "1965.1.1"
+				ideology = falangism
+				traits = {
+					rearmer
+				}
+			}
+			add_stability = 0.1
+		}
+	}
+	focus = {
+		id = DC_war_powers
+		icon = GFX_Generic_Elections
+		cost = 10
+		prerequisite = {
+			focus = DC_fascist9
+		}
+		x = 0
+		y = 1
+		relative_position_id = DC_fascist9
+		completion_reward = {
+			add_ideas = DC_warpowers
+		}
+	}
+	focus = {
+		id = DC_stringent_recruitment
+		icon = GFX_Generic_Infantry_Training
+		cost = 10
+		prerequisite = {
+			focus = DC_fascist10
+		}
+		x = 0
+		y = 1
+		relative_position_id = DC_fascist10
+		completion_reward = {
+			add_ideas = DC_recruitment
+		}
+	}
+}
+
+########################Monarchist DC
+focus_tree = {
+	id = dc_focus_monarchist
+	country = {
+		factor = 0
+		modifier = {
+			add = 0
+			tag = DCD
+		}
+	}
+	continuous_focus_position = {
+		x = 50
+		y = 3000
+	}
+	focus = {
+		id = DCD_divine_ascendant
+		icon = GFX_Generic_Crown_Box
+		cost = 2.2
+		x = 15
+		y = 0
+		completion_reward = {
+			country_event = dc.19
+		}
+	}
+	focus = {
+		id = DCD_Prussian_Scheme
+		icon = GFX_goal_unknown
+		prerequisite = {
+			focus = DCD_divine_ascendant
+		}
+		available = {
+			always = no
+		}
+		cost = 0
+		x = 20
+		y = 1
+		completion_reward = {
+		}
+	}
+	#Washington Branch
+	focus = {
+		id = DCD_Washington_Monarchy
+		icon = GFX_Generic_Cult_of_Washington
+		prerequisite = {
+			focus = DCD_divine_ascendant
+		}
+		available = {
+			always = no
+		}
+		cost = 0
+		x = 10
+		y = 1
+		completion_reward = {
+			country_event = dc.20
+		}
+	}
+	focus = {
+		id = DCD_follow_bloodline_foundation
+		icon = GFX_goal_unknown
+		available = {
+			always = no
+		}
+		prerequisite = {
+			focus = DCD_Washington_Monarchy
+		}
+		cost = 0
+		x = 12
+		y = 2
+		completion_reward = {
+			add_country_leader_trait = constitutional_monarch
+		}
+	}
+	focus = {
+		id = DCD_grab_the_reigns
+		icon = GFX_goal_unknown
+		available = {
+			always = no
+		}
+		prerequisite = {
+			focus = DCD_Washington_Monarchy
+		}
+		cost = 0
+		x = 8
+		y = 2
+		completion_reward = {
+			add_country_leader_trait = absolute_monarch
+		}
+	}
+	focus = {
+		id = DCD_unite_american_english
+		icon = GFX_goal_unknown
+		prerequisite = {
+			focus = DCD_grab_the_reigns
+		}
+		cost = 10
+		x = 8
+		y = 3
+		completion_reward = {
+			add_ideas = DCD_american_english_unity_idea
+		}
+	}
+	focus = {
+		id = DCD_push_towards_new_england
+		icon = GFX_goal_unknown
+		prerequisite = {
+			focus = DCD_unite_american_english
+		}
+		cost = 10
+		x = 7
+		y = 4
+		completion_reward = {
+			create_wargoal = {
+				target = MDM
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = DED
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = PAP
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = NJN
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = NYN
+				type = annex_everything
+			}
+		}
+	}
+	focus = {
+		id = DCD_the_most_english_states
+		icon = GFX_goal_unknown
+		prerequisite = {
+			focus = DCD_push_towards_new_england
+		}
+		cost = 10
+		x = 7
+		y = 5
+		completion_reward = {
+			create_wargoal = {
+				target = CTC
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = RIR
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = MAM
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = NHN
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = VTV
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = MEM
+				type = annex_everything
+			}
+		}
+	}
+	focus = {
+		id = DCD_reign_in_ex_canadian_english
+		icon = GFX_goal_unknown
+		prerequisite = {
+			focus = DCD_the_most_english_states
+		}
+		cost = 10
+		x = 7
+		y = 6
+		completion_reward = {
+			create_wargoal = {
+				target = NBN
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = NSN
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = PEP
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = NLN
+				type = annex_everything
+			}
+		}
+	}
+	focus = {
+		id = DCD_southern_doctrine
+		icon = GFX_goal_unknown
+		prerequisite = {
+			focus = DCD_unite_american_english
+		}
+		cost = 10
+		x = 9
+		y = 4
+		completion_reward = {
+			create_wargoal = {
+				target = VAV
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = WVW
+				type = annex_everything
+			}
+		}
+	}
+	focus = {
+		id = DCD_into_the_beast
+		icon = GFX_goal_unknown
+		prerequisite = {
+			focus = DCD_southern_doctrine
+		}
+		cost = 10
+		x = 9
+		y = 5
+		completion_reward = {
+			create_wargoal = {
+				target = KYK
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = NCN
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = TNT
+				type = annex_everything
+			}
+		}
+	}
+	focus = {
+		id = DCD_a_united_kingdom
+		icon = GFX_goal_unknown
+		prerequisite = {
+			focus = DCD_into_the_beast
+		}
+		prerequisite = {
+			focus = DCD_reign_in_ex_canadian_english
+		}
+		available = {
+			controls_state = 1066
+			controls_state = 1078
+			controls_state = 1077
+			controls_state = 1083
+			controls_state = 1084
+			controls_state = 1094
+			controls_state = 1097
+			controls_state = 1102
+			controls_state = 1105
+			controls_state = 1108
+			controls_state = 1112
+			controls_state = 1056
+			controls_state = 362
+			controls_state = 1001
+			controls_state = 369
+			controls_state = 1048
+		}
+		cost = 4.3
+		x = 8
+		y = 7
+		completion_reward = {
+			set_cosmetic_tag = UEK
+			hidden_effect = {
+				every_owned_state = {
+					add_core_of = DCD
+				}
+			}
+		}
+	}
+	#Washington Constitutional
+	focus = {
+		id = DCD_reunite_the_colonies
+		icon = GFX_goal_unknown
+		prerequisite = {
+			focus = DCD_follow_bloodline_foundation
+		}
+		cost = 10
+		x = 12
+		y = 3
+		completion_reward = {
+			add_ideas = DCD_reunite_the_colonies_idea
+			unlock_decision_category_tooltip = dc_experiment_reborn
+		}
+	}
+	#Germany Union Path
+}
+
+####################Democratic Path
+focus_tree = {
+	id = dc_focus_democratic
+	country = {
+		factor = 0
+		modifier = {
+			add = 20
+			tag = DCD
+		}
+	}
+	default = no
+	continuous_focus_position = {
+		x = 50
+		y = 3000
+	}
+	focus = {
+		id = DCD_call_to_arms
+		text = DCD_call_to_arms
+		icon = GFX_Generic_Army_Focus_Red02
+		cost = 1
+		x = 19
+		y = 0
+		completion_reward = {
+			news_event = dc_news.0
+		}
+	}
+	focus = {
+		id = DCD_liberty_prevails
+		text = DCD_liberty_prevails
+		icon = GFX_Generic_Liberty_Calling
+		cost = 7.2
+		prerequisite = {
+			focus = DCD_call_to_arms
+		}
+		mutually_exclusive = {
+			focus = DCD_appeal_to_loyalists
+		}
+		x = 13
+		y = 1
+		completion_reward = {
+			custom_effect_tooltip = DCD_improve_relations_demo_tt
+			hidden_effect = {
+				every_neighbor_country = {
+					add_opinion_modifier = {
+						target = DCD
+						modifier = medium_increase
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = DCD_Famed13
+		icon = GFX_DCD_Famed_13
+		cost = 4.4
+		prerequisite = {
+			focus = DCD_liberty_prevails
+		}
+		x = 13
+		y = 2
+		completion_reward = {
+			add_political_power = 50
+			MEM = {
+				add_opinion_modifier = {
+					target = DCD
+					modifier = huge_increase
+				}
+			}
+			NHN = {
+				add_opinion_modifier = {
+					target = DCD
+					modifier = huge_increase
+				}
+			}
+			VTV = {
+				add_opinion_modifier = {
+					target = DCD
+					modifier = huge_increase
+				}
+			}
+			MAM = {
+				add_opinion_modifier = {
+					target = DCD
+					modifier = huge_increase
+				}
+			}
+			RIR = {
+				add_opinion_modifier = {
+					target = DCD
+					modifier = huge_increase
+				}
+			}
+			CTC = {
+				add_opinion_modifier = {
+					target = DCD
+					modifier = huge_increase
+				}
+			}
+			NYN = {
+				add_opinion_modifier = {
+					target = DCD
+					modifier = huge_increase
+				}
+			}
+			NJN = {
+				add_opinion_modifier = {
+					target = DCD
+					modifier = huge_increase
+				}
+			}
+			PAP = {
+				add_opinion_modifier = {
+					target = DCD
+					modifier = huge_increase
+				}
+			}
+			DED = {
+				add_opinion_modifier = {
+					target = DCD
+					modifier = huge_increase
+				}
+			}
+			MDM = {
+				add_opinion_modifier = {
+					target = DCD
+					modifier = huge_increase
+				}
+			}
+			VAV = {
+				add_opinion_modifier = {
+					target = DCD
+					modifier = huge_increase
+				}
+			}
+			WVW = {
+				add_opinion_modifier = {
+					target = DCD
+					modifier = huge_increase
+				}
+			}
+			NCN = {
+				add_opinion_modifier = {
+					target = DCD
+					modifier = huge_increase
+				}
+			}
+			SCS = {
+				add_opinion_modifier = {
+					target = DCD
+					modifier = huge_increase
+				}
+			}
+			GAG = {
+				add_opinion_modifier = {
+					target = DCD
+					modifier = huge_increase
+				}
+			}
+		}
+	}
+	focus = {
+		id = DCD_mediate
+		icon = GFX_DCD_Diplomatic_War
+		cost = 4.4
+		prerequisite = {
+			focus = DCD_Famed13
+		}
+		x = 11
+		y = 3
+		completion_reward = {
+			add_political_power = -70
+			OHO = {
+				add_opinion_modifier = {
+					target = DCD
+					modifier = huge_increase
+				}
+			}
+			MIM = {
+				add_opinion_modifier = {
+					target = DCD
+					modifier = huge_increase
+				}
+			}
+			IAI = {
+				add_opinion_modifier = {
+					target = DCD
+					modifier = huge_increase
+				}
+			}
+			MOM = {
+				add_opinion_modifier = {
+					target = DCD
+					modifier = huge_increase
+				}
+			}
+		}
+	}
+	focus = {
+		id = DCD_diplomatic_war
+		icon = GFX_DCD_Diplomatic_War2
+		cost = 10
+		prerequisite = {
+			focus = DCD_Famed13
+		}
+		x = 13
+		y = 3
+		completion_reward = {
+			news_event = dc_news.1
+			add_ideas = DC_diplomaticwar_idea
+		}
+	}
+	focus = {
+		id = DCD_our_ideals
+		icon = GFX_DCD_Common_Liberalism
+		cost = 10
+		prerequisite = {
+			focus = DCD_Famed13
+		}
+		x = 15
+		y = 3
+		completion_reward = {
+			custom_effect_tooltip = DCD_our_ideals_tt
+			every_country = {
+				limit = {
+					AND = {
+						has_opinion = {
+							target = DCD
+							value > 100
+						}
+						capital_scope = {
+							is_on_continent = north_america
+						}
+					}
+				}
+				add_popularity = {
+					ideology = democratic
+					popularity = 0.15
+				}
+			}
+		}
+	}
+	focus = {
+		id = DCD_third_congress
+		icon = GFX_DCD_Continental_Congress
+		cost = 4.4
+		prerequisite = {
+			focus = DCD_mediate
+		}
+		prerequisite = {
+			focus = DCD_diplomatic_war
+		}
+		prerequisite = {
+			focus = DCD_our_ideals
+		}
+		x = 13
+		y = 4
+		completion_reward = {
+			country_event = continental_congress.1
+		}
+	}
+	focus = {
+		id = DCD_successful_congress
+		text = DCD_successful_congress
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 0
+		prerequisite = {
+			focus = DCD_third_congress
+		}
+		available = {
+			always = no
+		}
+		x = 9
+		y = 5
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = DCD_hold_national_election
+		icon = GFX_Generic_Elections
+		cost = 2.7
+		prerequisite = {
+			focus = DCD_successful_congress
+		}
+		available = {
+			always = no
+		}
+		x = 9
+		y = 6
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = DCD_congress_failure
+		text = DCD_congress_failure
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 0
+		available = {
+			always = no
+		}
+		prerequisite = {
+			focus = DCD_third_congress
+		}
+		x = 17
+		y = 5
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = DCD_renounce_occupation
+		icon = GFX_Generic_Pass_Legislation
+		cost = 10
+		prerequisite = {
+			focus = DCD_congress_failure
+		}
+		x = 17
+		y = 6
+		completion_reward = {
+			remove_ideas = DC_leased_land_idea
+		}
+	}
+	#Stay Democratic
+	focus = {
+		id = DCD_unify_the_fronts
+		icon = GFX_Generic_Mutual_Cooperation
+		prerequisite = {
+			focus = DCD_renounce_occupation
+		}
+		cost = 10
+		x = 17
+		y = 7
+		completion_reward = {
+			remove_ideas = DC_crisis
+			add_stability = 0.1
+			add_war_support = 0.05
+		}
+	}
+	focus = {
+		id = DCD_support_foreign_democratic
+		icon = GFX_Generic_American_Soldier2
+		prerequisite = {
+			focus = DCD_unify_the_fronts
+		}
+		cost = 4.4
+		x = 19
+		y = 8
+		completion_reward = {
+			set_rule = {
+				can_send_volunteers = yes
+			}
+		}
+	}
+	focus = {
+		id = DCD_beacon_democracy
+		icon = GFX_Generic_Blue_Democracy
+		prerequisite = {
+			focus = DCD_support_foreign_democratic
+		}
+		cost = 10
+		x = 19
+		y = 9
+		completion_reward = {
+			add_ideas = DC_beacon_of_democracy_idea
+		}
+	}
+	focus = {
+		id = DCD_desegregate
+		icon = GFX_focus_generic_support_the_left_right
+		prerequisite = {
+			focus = DCD_unify_the_fronts
+		}
+		cost = 10
+		x = 15
+		y = 8
+		completion_reward = {
+			add_stability = -0.1
+			add_ideas = USA_full_desegregation
+		}
+	}
+	focus = {
+		id = DCD_womens_rights
+		icon = GFX_Generic_Working_Women
+		prerequisite = {
+			focus = DCD_desegregate
+		}
+		cost = 10
+		x = 15
+		y = 9
+		completion_reward = {
+			add_stability = -0.05
+			add_ideas = USA_womens_armed_service_integration_act
+			set_rule = {
+				can_generate_female_aces = yes
+			}
+		}
+	}
+	focus = {
+		id = DCD_defensive_armaments
+		icon = GFX_Generic_Soldiers_Defense
+		prerequisite = {
+			focus = DCD_unify_the_fronts
+		}
+		cost = 7.2
+		x = 17
+		y = 8
+		completion_reward = {
+			1070 = {
+				add_building_construction = {
+					type = bunker
+					province = 15244
+					level = 7
+				}
+				add_building_construction = {
+					type = bunker
+					province = 13794
+					level = 7
+				}
+			}
+		}
+	}
+	focus = {
+		id = DCD_cult_of_washington
+		icon = GFX_Generic_Cult_of_Washington
+		prerequisite = {
+			focus = DCD_defensive_armaments
+		}
+		cost = 10
+		x = 17
+		y = 9
+		completion_reward = {
+			add_ideas = DC_george_washington_academy_idea
+		}
+	}
+	focus = {
+		id = DCD_operation_phoenix
+		icon = GFX_Generic_Revanchism02
+		prerequisite = {
+			focus = DCD_cult_of_washington
+		}
+		bypass = {
+			OR = {
+				MDM = {
+					is_subject_of = DCD
+				}
+				MDM = {
+					exists = no
+				}
+			}
+		}
+		will_lead_to_war_with = MDM
+		cost = 10
+		x = 17
+		y = 10
+		completion_reward = {
+			custom_effect_tooltip = DCD_operation_phoenix_tt
+			declare_war_on = {
+				target = MDM
+				type = puppet_wargoal_focus
+			}
+		}
+	}
+	focus = {
+		id = DCD_federation_once_more
+		icon = GFX_Generic_George_Washington
+		prerequisite = {
+			focus = DCD_operation_phoenix
+		}
+		available = {
+			has_war = no
+		}
+		cost = 0
+		x = 17
+		y = 11
+		completion_reward = {
+			if = {
+				limit = {
+					MDM = {
+						NOT = {
+							is_subject_of = DCD
+						}
+					}
+				}
+				release_puppet = MDM
+				DCD = {
+					set_autonomy = {
+						target = MDM
+						autonomy_state = autonomy_federal_state
+						freedom_level = 0
+					}
+				}
+				MDM = {
+					set_cosmetic_tag = FED
+				}
+			}
+			set_cosmetic_tag = FED
+		}
+	}
+	focus = {
+		id = DCD_reclaim_states
+		icon = GFX_generic_america_conscription
+		prerequisite = {
+			focus = DCD_federation_once_more
+		}
+		cost = 10
+		x = 17
+		y = 12
+		completion_reward = {
+			add_ideas = DCD_reclaimation_of_the_us_idea
+			custom_effect_tooltip = DCD_reclaim_states_tt
+			unlock_decision_category_tooltip = dc_reclaim_the_states
+		}
+	}
+	focus = {
+		id = DCD_reclaim_north
+		icon = GFX_DCD_Expand_North
+		prerequisite = {
+			focus = DCD_reclaim_states
+		}
+		cost = 4.4
+		x = 17
+		y = 13
+		completion_reward = {
+			custom_effect_tooltip = DCD_reclaim_more_states_tt
+		}
+	}
+	focus = {
+		id = DCD_reclaim_south
+		icon = GFX_DCD_Expand_South
+		prerequisite = {
+			focus = DCD_reclaim_states
+		}
+		cost = 4.4
+		x = 15
+		y = 13
+		completion_reward = {
+			custom_effect_tooltip = DCD_reclaim_more_states_tt
+		}
+	}
+	focus = {
+		id = DCD_reclaim_midwest
+		icon = GFX_DCD_Expand_Midwest
+		prerequisite = {
+			focus = DCD_reclaim_states
+		}
+		cost = 4.4
+		x = 19
+		y = 13
+		completion_reward = {
+			custom_effect_tooltip = DCD_reclaim_more_states_tt
+		}
+	}
+	focus = {
+		id = DCD_reclaim_southwest
+		icon = GFX_DCD_Expand_Southwest
+		prerequisite = {
+			focus = DCD_reclaim_north
+			focus = DCD_reclaim_south
+			focus = DCD_reclaim_midwest
+		}
+		cost = 4.4
+		x = 17
+		y = 14
+		completion_reward = {
+			custom_effect_tooltip = DCD_reclaim_more_states_tt
+		}
+	}
+	focus = {
+		id = DCD_reclaim_columbia_territory
+		icon = GFX_goal_unknown
+		prerequisite = {
+			focus = DCD_reclaim_southwest
+		}
+		cost = 4.4
+		x = 17
+		y = 15
+		completion_reward = {
+			custom_effect_tooltip = DCD_reclaim_more_states_tt
+		}
+	}
+	focus = {
+		id = DCD_united_once_more
+		icon = GFX_DCD_Common_Liberalism
+		prerequisite = {
+			focus = DCD_reclaim_columbia_territory
+		}
+		cost = 14.3
+		x = 17
+		y = 16
+		completion_reward = {
+			custom_effect_tooltip = DCD_united_once_more_tt
+			every_country = {
+				limit = {
+					has_cosmetic_tag = FED
+				}
+				country_event = dc.15
+			}
+			hidden_effect = {
+				DCD = {
+					country_event = {
+						id = dc.16
+						days = 5
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = DCD_stabilize_canada
+		icon = GFX_goal_unknown
+		mutually_exclusive = {
+			focus = DCD_stabilize_mexico
+		}
+		prerequisite = {
+			focus = DCD_united_once_more
+		}
+		cost = 14.3
+		x = 15
+		y = 17
+		completion_reward = {
+			DCD = {
+				create_wargoal = {
+					target = PEP
+					type = puppet_wargoal_focus
+				}
+				create_wargoal = {
+					target = NSN
+					type = puppet_wargoal_focus
+				}
+				create_wargoal = {
+					target = NBN
+					type = puppet_wargoal_focus
+				}
+				create_wargoal = {
+					target = NLN
+					type = puppet_wargoal_focus
+				}
+				create_wargoal = {
+					target = LAB
+					type = puppet_wargoal_focus
+				}
+				create_wargoal = {
+					target = QBC
+					type = puppet_wargoal_focus
+				}
+				create_wargoal = {
+					target = ONO
+					type = puppet_wargoal_focus
+				}
+				create_wargoal = {
+					target = MBM
+					type = puppet_wargoal_focus
+				}
+				create_wargoal = {
+					target = NUN
+					type = puppet_wargoal_focus
+				}
+				create_wargoal = {
+					target = SKS
+					type = puppet_wargoal_focus
+				}
+				create_wargoal = {
+					target = ABA
+					type = puppet_wargoal_focus
+				}
+				create_wargoal = {
+					target = BCB
+					type = puppet_wargoal_focus
+				}
+				create_wargoal = {
+					target = NTN
+					type = puppet_wargoal_focus
+				}
+				create_wargoal = {
+					target = YTY
+					type = puppet_wargoal_focus
+				}
+			}
+		}
+	}
+	focus = {
+		id = DCD_stabilize_mexico
+		icon = GFX_goal_unknown
+		mutually_exclusive = {
+			focus = DCD_stabilize_canada
+		}
+		prerequisite = {
+			focus = DCD_united_once_more
+		}
+		x = 19
+		y = 17
+		cost = 14.3
+		completion_reward = {
+			create_wargoal = {
+				target = BAJ
+				type = puppet_wargoal_focus
+			}
+			create_wargoal = {
+				target = SON
+				type = puppet_wargoal_focus
+			}
+			create_wargoal = {
+				target = CIA
+				type = puppet_wargoal_focus
+			}
+			create_wargoal = {
+				target = COU
+				type = puppet_wargoal_focus
+			}
+			create_wargoal = {
+				target = SIN
+				type = puppet_wargoal_focus
+			}
+			create_wargoal = {
+				target = TAU
+				type = puppet_wargoal_focus
+			}
+			create_wargoal = {
+				target = NAY
+				type = puppet_wargoal_focus
+			}
+			create_wargoal = {
+				target = OME
+				type = puppet_wargoal_focus
+			}
+			create_wargoal = {
+				target = GUE
+				type = puppet_wargoal_focus
+			}
+			create_wargoal = {
+				target = OAX
+				type = puppet_wargoal_focus
+			}
+			create_wargoal = {
+				target = CHP
+				type = puppet_wargoal_focus
+			}
+			create_wargoal = {
+				target = YUC
+				type = puppet_wargoal_focus
+			}
+			create_wargoal = {
+				target = VEC
+				type = puppet_wargoal_focus
+			}
+		}
+	}
+	#Go MacArthur
+	focus = {
+		id = DCD_american_caesar
+		icon = GFX_Generic_Caesar
+		prerequisite = {
+			focus = DCD_renounce_occupation
+		}
+		cost = 10
+		x = 21
+		y = 7
+		completion_reward = {
+			add_stability = -0.1
+			add_war_support = -0.1
+			country_event = dc.10
+		}
+	}
+	focus = {
+		id = DCD_solidify_control
+		icon = GFX_Generic_Ultranationalist_Monarchy
+		prerequisite = {
+			focus = DCD_american_caesar
+		}
+		cost = 10
+		x = 21
+		y = 8
+		completion_reward = {
+			add_timed_idea = {
+				idea = DC_solidify_dictatorship_idea
+				days = 730
+			}
+		}
+	}
+	#MacArthur Path
+	focus = {
+		id = DCD_appeal_to_loyalists
+		text = DCD_appeal_to_loyalists
+		icon = GFX_Generic_Liberation
+		cost = 7.2
+		prerequisite = {
+			focus = DCD_call_to_arms
+		}
+		mutually_exclusive = {
+			focus = DCD_liberty_prevails
+		}
+		x = 25
+		y = 1
+		completion_reward = {
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.1
+			}
+		}
+	}
+	focus = {
+		id = DCD_infiltrate_the_government
+		icon = GFX_Generic_Meeting
+		cost = 10
+		prerequisite = {
+			focus = DCD_appeal_to_loyalists
+		}
+		x = 25
+		y = 2
+		completion_reward = {
+			add_ideas = DCD_infiltrate_the_government_idea
+		}
+	}
+	focus = {
+		id = DCD_no_compromise
+		icon = GFX_Generic_Tear_Paper
+		prerequisite = {
+			focus = DCD_infiltrate_the_government
+		}
+		cost = 4.3
+		x = 25
+		y = 3
+		completion_reward = {
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.05
+			}
+		}
+	}
+	focus = {
+		id = DCD_assassinate_opposition_leaders
+		icon = GFX_Generic_Political_Killing
+		prerequisite = {
+			focus = DCD_no_compromise
+		}
+		cost = 7.2
+		x = 24
+		y = 4
+		completion_reward = {
+			add_timed_idea = {
+				idea = DCD_assassinate_opposition_leaders_idea
+				days = 365
+			}
+		}
+	}
+	focus = {
+		id = DCD_assure_military_loyalty
+		icon = GFX_Generic_Volunteer_Corps
+		prerequisite = {
+			focus = DCD_no_compromise
+		}
+		cost = 7.2
+		x = 26
+		y = 4
+		completion_reward = {
+			add_ideas = DCD_assure_military_loyalty_idea
+		}
+	}
+	focus = {
+		id = DCD_complete_control
+		icon = GFX_Generic_Government_Control
+		prerequisite = {
+			focus = DCD_assure_military_loyalty
+		}
+		prerequisite = {
+			focus = DCD_assassinate_opposition_leaders
+		}
+		cost = 2.2
+		x = 25
+		y = 5
+		completion_reward = {
+			add_stability = -0.15
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.1
+			}
+		}
+	}
+	focus = {
+		id = DCD_raise_loyalists
+		icon = GFX_goal_mobilization
+		cost = 10
+		prerequisite = {
+			focus = DCD_complete_control
+		}
+		x = 25
+		y = 6
+		completion_reward = {
+			country_event = dc.17
+		}
+	}
+	focus = {
+		id = DCD_gather_arms
+		icon = GFX_Generic_War_Propaganda04
+		cost = 7.2
+		prerequisite = {
+			focus = DCD_raise_loyalists
+		}
+		x = 25
+		y = 7
+		completion_reward = {
+			add_ideas = DCD_loyalist_fervor_idea
+		}
+	}
+	focus = {
+		id = DCD_strike_MD
+		text = DCD_strike_MD
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = DCD_gather_arms
+			focus = DCD_american_caesar
+		}
+		bypass = {
+			OR = {
+				MDM = {
+					is_subject_of = DCD
+				}
+				MDM = {
+					exists = no
+				}
+			}
+		}
+		will_lead_to_war_with = MDM
+		mutually_exclusive = {
+			focus = DCD_strike_VA
+		}
+		x = 27
+		y = 8
+		completion_reward = {
+			declare_war_on = {
+				target = MDM
+				type = puppet_wargoal_focus
+			}
+		}
+	}
+	focus = {
+		id = DCD_strike_VA
+		text = DCD_strike_VA
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = DCD_gather_arms
+			focus = DCD_american_caesar
+		}
+		bypass = {
+			OR = {
+				VAV = {
+					is_subject_of = DCD
+				}
+				VAV = {
+					exists = no
+				}
+			}
+		}
+		will_lead_to_war_with = VAV
+		mutually_exclusive = {
+			focus = DCD_strike_MD
+		}
+		x = 23
+		y = 8
+		completion_reward = {
+			declare_war_on = {
+				target = VAV
+				type = puppet_wargoal_focus
+			}
+		}
+	}
+	focus = {
+		id = DCD_gateway_south
+		text = DCD_gateway_south
+		icon = GFX_goal_unknown
+		cost = 4.3
+		prerequisite = {
+			focus = DCD_strike_VA
+		}
+		available = {
+			has_war = no
+		}
+		x = 23
+		y = 9
+		completion_reward = {
+			if = {
+				limit = {
+					VAV = {
+						NOT = {
+							is_subject_of = DCD
+						}
+					}
+				}
+				release_puppet = VAV
+				DCD = {
+					set_autonomy = {
+						target = VAV
+						autonomy_state = autonomy_military_occupation
+						freedom_level = 0
+					}
+				}
+				VAV = {
+					set_cosmetic_tag = MIL
+				}
+			}
+			set_cosmetic_tag = MIL
+		}
+	}
+	focus = {
+		id = DCD_break_north
+		text = DCD_break_north
+		icon = GFX_goal_unknown
+		cost = 4.3
+		prerequisite = {
+			focus = DCD_strike_MD
+		}
+		available = {
+			has_war = no
+		}
+		x = 27
+		y = 9
+		completion_reward = {
+			if = {
+				limit = {
+					MDM = {
+						NOT = {
+							is_subject_of = DCD
+						}
+					}
+				}
+				release_puppet = MDM
+				DCD = {
+					set_autonomy = {
+						target = MDM
+						autonomy_state = autonomy_military_occupation
+						freedom_level = 0
+					}
+				}
+				MDM = {
+					set_cosmetic_tag = MIL
+				}
+			}
+			set_cosmetic_tag = MIL
+		}
+	}
+	focus = {
+		id = DCD_reclaim_legitimacy
+		text = DCD_reclaim_legitimacy
+		icon = GFX_Generic_Break_Free
+		cost = 10
+		prerequisite = {
+			focus = DCD_break_north
+			focus = DCD_gateway_south
+		}
+		x = 25
+		y = 10
+		completion_reward = {
+			add_stability = 0.1
+			remove_ideas = DCD_assure_military_loyalty_idea
+			remove_ideas = DCD_assassinate_opposition_leaders_idea
+			remove_ideas = DCD_no_compromise_idea
+			remove_ideas = DCD_infiltrate_the_government_idea
+		}
+	}
+	focus = {
+		id = DCD_the_inevitable_discussion
+		icon = GFX_Generic_Red_Tearing_Paper
+		prerequisite = {
+			focus = DCD_reclaim_legitimacy
+		}
+		cost = 4.3
+		x = 25
+		y = 11
+		completion_reward = {
+			country_event = dc.18
+		}
+	}
+	focus = {
+		id = DCD_military_leadership
+		icon = GFX_Generic_Ultranationalist_Government
+		prerequisite = {
+			focus = DCD_the_inevitable_discussion
+		}
+		available = {
+			has_war = no
+			has_country_flag = DCD_military_rule
+		}
+		cost = 1.5
+		x = 24
+		y = 12
+		completion_reward = {
+			#load_focus_tree
+			hidden_effect = {
+				clr_country_flag = DCD_military_rule
+			}
+		}
+	}
+	focus = {
+		id = DCD_divine_leadership
+		icon = GFX_goal_monarchism
+		prerequisite = {
+			focus = DCD_the_inevitable_discussion
+		}
+		available = {
+			has_war = no
+			has_country_flag = DCD_divine_right
+		}
+		cost = 1.5
+		x = 26
+		y = 12
+		completion_reward = {
+			#load_focus_tree
+			hidden_effect = {
+				clr_country_flag = DCD_divine_right
+			}
+		}
+	}
+}
+
+#####################################Fascism Path
+#####################################Communism Path

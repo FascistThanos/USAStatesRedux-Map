@@ -7,5 +7,42 @@ leader_traits = {
 		ai_will_do = {
 			factor = 1
 		}
-	}	
+	}
+
+	#Washington DC
+	great_reformer = {
+		random = no
+		political_power_factor = 0.15
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	absolute_monarch = {
+		random = no
+		political_power_factor = -0.10
+		stability_factor = -0.05
+		war_support_factor = 0.15
+		drift_defence_factor = 0.20
+		political_advisor_cost_factor = -0.25
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	constitutional_monarch = {
+		random = no
+		political_power_factor = 0.10
+		stability_factor = 0.05
+		war_support_factor = -0.10
+		drift_defence_factor = -0.20
+		political_advisor_cost_factor = 0.25
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
 }

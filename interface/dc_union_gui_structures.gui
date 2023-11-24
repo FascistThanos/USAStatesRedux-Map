@@ -1,0 +1,61 @@
+guiTypes = {
+	containerWindowType = {
+		name = "state_of_the_union_button_gui"
+		position = {x = 0 y = 0 }
+		size = { width = 550 height = 100 }
+		clipping = no
+	
+		buttonType = {
+			name = "open_union_gui_window_button"
+			spriteType = "GFX_generic_text_bg_258"
+			position = { x = 250 y = 450 }
+		}
+		buttonType = {
+			name = "open_union_gui_window_button2"
+			spriteType = "GFX_generic_text_bg_258"
+			position = { x = 250 y = 450 }
+		}
+		instantTextboxType = {
+			name = "open_union_menutxt"
+			position = { x = 253 y = 453 }
+			font = "hoi_20b"
+			text = "View the Union"
+			maxWidth = 250
+			maxHeight = 40
+		}
+	}
+	containerWindowType = {
+		name = "state_of_the_union_gui"
+		position = { x = 0 y = 0 }
+		size = { width = 1000 height= 650 }
+		orientation = center
+		origo = center
+		fade_time = 100
+		moveable = yes
+		fade_type = linear
+		click_to_front = yes
+		clipping = no
+	
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_scripted_gui_window_background"
+		}
+
+		instantTextBoxType = {
+			name = "usa_union_name"
+			position = {
+				x = 300
+				y= 70
+			}
+			font = "hoi_30header"
+			borderSize = {
+				x = 0
+				y = 0
+			}
+			text = "The United States of America"
+			maxWidth = 400
+			maxHeight = 20
+			fixedsize = yes
+		}
+	}
+}

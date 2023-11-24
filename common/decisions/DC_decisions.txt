@@ -1,0 +1,5054 @@
+dc_continental_congress = {
+	contcon_economic = {
+		visible = {
+			always = yes
+		}
+		allowed = {
+			original_tag = DCD
+		}
+		available = {
+			NOT = {
+				has_country_flag = completed_contcon_economic
+				OR = {
+					has_decision = contcon_military
+					has_decision = contcon_faction
+					has_decision = contcon_political
+				}
+			}
+		}
+		cost = 50
+		ai_will_do = {
+			factor = 100
+		}
+		complete_effect = {
+			set_country_flag = doing_contcon_economic
+		}
+    	days_remove = 30
+    	remove_effect = {
+    		set_country_flag = completed_contcon_economic
+			clr_country_flag = doing_contcon_economic
+			if = {
+				limit = {
+					check_variable = {
+						global.contcon_yes_votes > global.contcon_no_votes
+					}
+				}
+				set_country_flag = contcon_economic_passed
+			}
+			else_if = {
+				limit = {
+					AND = {
+						check_variable = {
+							global.contcon_yes_votes = global.contcon_no_votes
+						}
+						check_variable = {
+							global.contcon_abstain_votes > 0
+						}
+					}
+				}
+				set_country_flag = contcon_economic_failed
+			}
+			else = {
+				if = {
+					limit = {
+						check_variable = {
+							global.contcon_yes_votes < global.contcon_no_votes
+						}
+					}
+					set_country_flag = contcon_economic_failed
+				}
+			}
+			set_variable = {
+				var = global.contcon_yes_votes
+				value = 0
+			}
+			set_variable = {
+				var = global.contcon_abstain_votes
+				value = 0
+			}
+			set_variable = {
+				var = global.contcon_no_votes
+				value = 0
+			}
+			hidden_effect = {
+				every_country = {
+					clr_country_flag = cc_has_voted
+				}
+			}
+    	}
+	}
+	contcon_military = {
+		visible = {
+			has_country_flag = DCD_voting_opened
+		}
+		allowed = {
+			original_tag = DCD
+		}
+		available = {
+			NOT = {
+				has_country_flag = completed_contcon_military
+				OR = {
+					has_decision = contcon_economic
+					has_decision = contcon_faction
+					has_decision = contcon_political
+				}
+			}
+		}
+		cost = 50
+		ai_will_do = {
+			factor = 100
+		}
+		complete_effect = {
+			set_country_flag = doing_contcon_military
+		}
+    	days_remove = 30
+    	remove_effect = {
+    		set_country_flag = completed_contcon_military
+			clr_country_flag = doing_contcon_military
+			if = {
+				limit = {
+					check_variable = {
+						global.contcon_yes_votes > global.contcon_no_votes
+					}
+				}
+				set_country_flag = contcon_military_passed
+			}
+			else_if = {
+				limit = {
+					AND = {
+						check_variable = {
+							global.contcon_yes_votes = global.contcon_no_votes
+						}
+						check_variable = {
+							global.contcon_abstain_votes > 0
+						}
+					}
+				}
+				set_country_flag = contcon_economic_failed
+			}
+			else = {
+				if = {
+					limit = {
+						check_variable = {
+							global.contcon_yes_votes < global.contcon_no_votes
+						}
+					}
+					set_country_flag = contcon_military_failed
+				}
+			}
+			set_variable = {
+				var = global.contcon_yes_votes
+				value = 0
+			}
+			set_variable = {
+				var = global.contcon_abstain_votes
+				value = 0
+			}
+			set_variable = {
+				var = global.contcon_no_votes
+				value = 0
+			}
+			hidden_effect = {
+				every_country = {
+					clr_country_flag = cc_has_voted
+				}
+			}
+    	}
+	}
+	contcon_faction = {
+		visible = {
+			has_country_flag = DCD_voting_opened
+		}
+		allowed = {
+			original_tag = DCD
+		}
+		available = {
+			NOT = {
+				has_country_flag = completed_contcon_faction
+				OR = {
+					has_decision = contcon_economic
+					has_decision = contcon_military
+					has_decision = contcon_political
+				}
+			}
+		}
+		cost = 50
+		ai_will_do = {
+			factor = 100
+		}
+		complete_effect = {
+			set_country_flag = doing_contcon_faction
+		}
+    	days_remove = 50
+    	remove_effect = {
+    		set_country_flag = completed_contcon_faction
+			clr_country_flag = doing_contcon_faction
+			if = {
+				limit = {
+					check_variable = {
+						global.contcon_yes_votes > global.contcon_no_votes
+					}
+				}
+				set_country_flag = contcon_faction_passed
+			}
+			else_if = {
+				limit = {
+					AND = {
+						check_variable = {
+							global.contcon_yes_votes = global.contcon_no_votes
+						}
+						check_variable = {
+							global.contcon_abstain_votes > 0
+						}
+					}
+				}
+				set_country_flag = contcon_economic_failed
+			}
+			else = {
+				if = {
+					limit = {
+						check_variable = {
+							global.contcon_yes_votes < global.contcon_no_votes
+						}
+					}
+					set_country_flag = contcon_faction_failed
+				}
+			}
+			set_variable = {
+				var = global.contcon_yes_votes
+				value = 0
+			}
+			set_variable = {
+				var = global.contcon_abstain_votes
+				value = 0
+			}
+			set_variable = {
+				var = global.contcon_no_votes
+				value = 0
+			}
+			hidden_effect = {
+				every_country = {
+					clr_country_flag = cc_has_voted
+				}
+			}
+    	}
+	}
+	contcon_political = {
+		visible = {
+			has_country_flag = DCD_voting_opened
+		}
+		allowed = {
+			original_tag = DCD
+		}	
+		available = {
+			NOT = {
+				has_country_flag = completed_contcon_political
+				OR = {
+					has_decision = contcon_economic
+					has_decision = contcon_military
+					has_decision = contcon_faction
+				}
+			}
+		}
+		cost = 50
+		ai_will_do = {
+			factor = 100
+		}
+		complete_effect = {
+			set_country_flag = doing_contcon_political
+		}
+    	days_remove = 30
+    	remove_effect = {
+    		set_country_flag = completed_contcon_political
+			clr_country_flag = doing_contcon_political
+			if = {
+				limit = {
+					check_variable = {
+						global.contcon_yes_votes > global.contcon_no_votes
+					}
+				}
+				set_country_flag = contcon_political_passed
+			}
+			else_if = {
+				limit = {
+					AND = {
+						check_variable = {
+							global.contcon_yes_votes = global.contcon_no_votes
+						}
+						check_variable = {
+							global.contcon_abstain_votes > 0
+						}
+					}
+				}
+				set_country_flag = contcon_economic_failed
+			}
+			else = {
+				if = {
+					limit = {
+						check_variable = {
+							global.contcon_yes_votes < global.contcon_no_votes
+						}
+					}
+					set_country_flag = contcon_political_failed
+				}
+			}
+			set_variable = {
+				var = global.contcon_yes_votes
+				value = 0
+			}
+			set_variable = {
+				var = global.contcon_abstain_votes
+				value = 0
+			}
+			set_variable = {
+				var = global.contcon_no_votes
+				value = 0
+			}
+			hidden_effect = {
+				every_country = {
+					clr_country_flag = cc_has_voted
+				}
+			}
+    	}
+	}
+	contcon_conclusion = {
+		visible = {
+			OR = {
+				has_country_flag = DCD_voting_opened
+				has_country_flag = attending_cc
+			}
+		}
+		allowed = {
+			original_tag = DCD
+		}
+		available = {
+			has_country_flag = completed_contcon_political
+			has_country_flag = completed_contcon_economic
+			has_country_flag = completed_contcon_faction
+			has_country_flag = completed_contcon_military
+		}
+		cost = 100
+		ai_will_do = {
+			factor = 100
+		}
+		complete_effect = {
+			
+		}
+		days_remove = 50
+		remove_effect = {
+			if = {
+				limit = {
+					OR = {
+						has_country_flag = contcon_faction_passed
+						has_country_flag = contcon_political_passed
+					}
+				}
+				DCD = {
+					create_faction = DCD_Union
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = contcon_military_passed
+				}
+				set_country_flag = contcon_military_idea_pending
+			}
+			if = {
+				limit = {
+					has_country_flag = contcon_political_passed
+				}
+				set_country_flag = contcon_federation_pending
+			}
+			if = {
+				limit = {
+					has_country_flag = contcon_economic_passed
+				}
+				set_country_flag = contcon_economic_idea_pending
+			}
+			country_event = {
+				id = continental_congress.6
+				days = 15
+			}
+			clr_country_flag = completed_contcon_political
+			clr_country_flag = completed_contcon_economic
+			clr_country_flag = completed_contcon_faction
+			clr_country_flag = completed_contcon_military
+			clr_country_flag = DCD_voting_opened
+			hidden_effect = {
+				every_country = {
+					limit = {
+						has_country_flag = attending_cc
+					}
+					country_event = {
+						id = continental_congress.6
+						days = 10
+					}
+				}
+				DCD = {
+					set_cosmetic_tag = DCF
+				}
+				if = {
+					limit = {
+						AND = {
+							OR = {
+								has_country_flag = contcon_economic_idea_pending
+								has_country_flag = contcon_military_idea_pending
+							}
+							OR = {
+								has_country_flag = contcon_federation_pending
+								DCD = {
+									is_faction_leader = yes
+								}
+							}
+						}
+					}
+					complete_national_focus = DCD_successful_congress
+				}
+				else = {
+					complete_national_focus = DCD_congress_failure
+				}
+			}
+		}
+	}
+	#Voting Decisions
+	contcon_vote_yes = {
+		visible = {
+			NOT = {
+				tag = DCD
+				AND = {
+					has_country_flag = doing_contcon_economic
+					has_country_flag = doing_contcon_faction
+					has_country_flag = doing_contcon_military
+					has_country_flag = doing_contcon_political	
+				}
+			}
+			DCD = {
+				has_country_flag = DCD_voting_opened
+			}
+		}
+		available = {
+			DCD = {
+				AND = {
+					OR = {
+						has_country_flag = doing_contcon_economic
+						has_country_flag = doing_contcon_faction
+						has_country_flag = doing_contcon_military
+						has_country_flag = doing_contcon_political
+					}
+				}
+			}
+			NOT = {
+				has_country_flag = cc_has_voted
+			}
+		}
+		cost = 0
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				has_government = democratic
+				factor = 2
+			}
+			modifier = {
+				is_puppet_of = DCD
+				factor = 100
+			}
+			modifier = {
+				strength_ratio = {
+					tag = DCD
+					ratio < 2
+				}
+				factor = 100
+			}
+			modifier = {
+				has_opinion = {
+					target = DCD
+					value > 50
+				}
+				factor = 5
+			}
+		}
+		complete_effect = {
+			set_country_flag = cc_has_voted
+			add_to_variable = {
+				var = global.contcon_yes_votes
+				value = 1
+			}
+		}
+	}
+	contcon_vote_no = {
+		visible = {
+			NOT = {
+				tag = DCD
+				AND = {
+					has_country_flag = doing_contcon_economic
+					has_country_flag = doing_contcon_faction
+					has_country_flag = doing_contcon_military
+					has_country_flag = doing_contcon_political	
+				}
+			}
+			DCD = {
+				has_country_flag = DCD_voting_opened
+			}
+		}
+		available = {
+			DCD = {
+				AND = {
+					OR = {
+						has_country_flag = doing_contcon_economic
+						has_country_flag = doing_contcon_faction
+						has_country_flag = doing_contcon_military
+						has_country_flag = doing_contcon_political
+					}
+				}
+			}
+			NOT = {
+				has_country_flag = cc_has_voted
+			}
+		}
+		cost = 0
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				has_opinion = {
+					target = DCD
+					value < 50
+				}
+				factor = 1
+			}
+			modifier = {
+				is_major = yes
+				factor = 1
+			}
+			modifier = {
+				has_war_with = DCD
+				factor = 1000
+			}
+			modifier = {
+				OR = {
+					has_government = fascism
+					has_government = communism
+				}
+				factor = 20
+			}
+		}
+		complete_effect = {
+			set_country_flag = cc_has_voted
+			add_to_variable = {
+				var = global.contcon_no_votes
+				value = 1
+			}
+		}
+	}
+	contcon_vote_abstain = {
+		visible = {
+			NOT = {
+				OR = {
+					tag = DCD
+					AND = {
+						has_country_flag = doing_contcon_economic
+						has_country_flag = doing_contcon_faction
+						has_country_flag = doing_contcon_military
+						has_country_flag = doing_contcon_political	
+					}
+				}
+			}
+			DCD = {
+				has_country_flag = DCD_voting_opened
+			}
+		}
+		available = {
+			DCD = {
+				AND = {
+					OR = {
+						has_country_flag = doing_contcon_economic
+						has_country_flag = doing_contcon_faction
+						has_country_flag = doing_contcon_military
+						has_country_flag = doing_contcon_political
+					}
+				}
+			}
+			NOT = {
+				has_country_flag = cc_has_voted
+			}
+		}
+		cost = 0
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			set_country_flag = cc_has_voted
+			add_to_variable = {
+				var = global.contcon_abstain_votes
+				value = 1
+			}
+		}
+	}
+}
+dc_leave_the_union = {
+	GEN_leave_union = {
+		visible = {
+			is_subject_of = DCD
+		}
+		allowed = {
+			
+		}
+		available = {
+			has_war = no
+			has_cosmetic_tag = FED
+		}
+		cost = 100
+		complete_effect = {
+			drop_cosmetic_tag = yes
+			release = ROOT
+			DCD = {
+				country_event = dc.14
+			}
+		}
+	}
+}
+dc_reclaim_the_states = {
+	DCD_reclaim_MEM = {
+		visible = {
+			NOT = {
+				MEM = {
+					is_subject_of = DCD
+				}
+			}
+			has_completed_focus = DCD_reclaim_north
+		}
+		allowed = {
+			original_tag = DCD
+		}
+		available = {
+			AND = {
+				OR = {
+					DCD = {
+						is_neighbor_of = MEM
+					}
+					any_allied_country = {
+						is_neighbor_of = MEM
+					}
+				}
+				NOT = {
+					OR = {
+						has_decision = DCD_reclaim_MEM
+						has_decision = DCD_reclaim_NHN
+						has_decision = DCD_reclaim_VTV
+						has_decision = DCD_reclaim_MAM
+						has_decision = DCD_reclaim_RIR
+						has_decision = DCD_reclaim_CTC
+						has_decision = DCD_reclaim_NYN
+						has_decision = DCD_reclaim_NJN
+						has_decision = DCD_reclaim_PAP
+						has_decision = DCD_reclaim_DED
+						has_decision = DCD_reclaim_MDM
+						has_decision = DCD_reclaim_WVW
+						has_decision = DCD_reclaim_VAV
+						has_decision = DCD_reclaim_NCN
+						has_decision = DCD_reclaim_SCS
+						has_decision = DCD_reclaim_GAG
+						has_decision = DCD_reclaim_FLF
+						has_decision = DCD_reclaim_ALA
+						has_decision = DCD_reclaim_TNT
+						has_decision = DCD_reclaim_KYK
+						has_decision = DCD_reclaim_OHO
+						has_decision = DCD_reclaim_INI
+						has_decision = DCD_reclaim_MIM
+						has_decision = DCD_reclaim_ILI
+						has_decision = DCD_reclaim_WIW
+						has_decision = DCD_reclaim_MSM
+						has_decision = DCD_reclaim_LAL
+						has_decision = DCD_reclaim_ARA
+						has_decision = DCD_reclaim_MOM
+						has_decision = DCD_reclaim_IAI
+						has_decision = DCD_reclaim_MNM
+						has_decision = DCD_reclaim_NDN
+						has_decision = DCD_reclaim_SDS
+						has_decision = DCD_reclaim_NEN
+						has_decision = DCD_reclaim_KSK
+						has_decision = DCD_reclaim_OKO
+						has_decision = DCD_reclaim_TXT
+						has_decision = DCD_reclaim_NMN
+						has_decision = DCD_reclaim_COC
+						has_decision = DCD_reclaim_WYW
+						has_decision = DCD_reclaim_MTM
+						has_decision = DCD_reclaim_IDI
+						has_decision = DCD_reclaim_UTU
+						has_decision = DCD_reclaim_AZA
+						has_decision = DCD_reclaim_NVN
+						has_decision = DCD_reclaim_CAC
+						has_decision = DCD_reclaim_ORO
+						has_decision = DCD_reclaim_WAW
+						has_decision = DCD_reclaim_AKA
+						has_decision = DCD_reclaim_HIH
+					}
+				}
+			}
+		}
+
+		cost = 50
+		days_remove = 30
+		days_re_enable = 365
+		remove_effect = {
+			MEM = {
+				country_event = dc.11
+			}
+		}
+	}
+	DCD_reclaim_NHN = {
+		visible = {
+			NOT = {
+				NHN = {
+					is_subject_of = DCD
+				}
+			}
+			has_completed_focus = DCD_reclaim_north
+		}
+		allowed = {
+			original_tag = DCD
+		}
+		available = {
+			AND = {
+				OR = {
+					DCD = {
+						is_neighbor_of = NHN
+					}
+					any_allied_country = {
+						is_neighbor_of = NHN
+					}
+				}
+				NOT = {
+					OR = {
+						has_decision = DCD_reclaim_MEM
+						has_decision = DCD_reclaim_NHN
+						has_decision = DCD_reclaim_VTV
+						has_decision = DCD_reclaim_MAM
+						has_decision = DCD_reclaim_RIR
+						has_decision = DCD_reclaim_CTC
+						has_decision = DCD_reclaim_NYN
+						has_decision = DCD_reclaim_NJN
+						has_decision = DCD_reclaim_PAP
+						has_decision = DCD_reclaim_DED
+						has_decision = DCD_reclaim_MDM
+						has_decision = DCD_reclaim_WVW
+						has_decision = DCD_reclaim_VAV
+						has_decision = DCD_reclaim_NCN
+						has_decision = DCD_reclaim_SCS
+						has_decision = DCD_reclaim_GAG
+						has_decision = DCD_reclaim_FLF
+						has_decision = DCD_reclaim_ALA
+						has_decision = DCD_reclaim_TNT
+						has_decision = DCD_reclaim_KYK
+						has_decision = DCD_reclaim_OHO
+						has_decision = DCD_reclaim_INI
+						has_decision = DCD_reclaim_MIM
+						has_decision = DCD_reclaim_ILI
+						has_decision = DCD_reclaim_WIW
+						has_decision = DCD_reclaim_MSM
+						has_decision = DCD_reclaim_LAL
+						has_decision = DCD_reclaim_ARA
+						has_decision = DCD_reclaim_MOM
+						has_decision = DCD_reclaim_IAI
+						has_decision = DCD_reclaim_MNM
+						has_decision = DCD_reclaim_NDN
+						has_decision = DCD_reclaim_SDS
+						has_decision = DCD_reclaim_NEN
+						has_decision = DCD_reclaim_KSK
+						has_decision = DCD_reclaim_OKO
+						has_decision = DCD_reclaim_TXT
+						has_decision = DCD_reclaim_NMN
+						has_decision = DCD_reclaim_COC
+						has_decision = DCD_reclaim_WYW
+						has_decision = DCD_reclaim_MTM
+						has_decision = DCD_reclaim_IDI
+						has_decision = DCD_reclaim_UTU
+						has_decision = DCD_reclaim_AZA
+						has_decision = DCD_reclaim_NVN
+						has_decision = DCD_reclaim_CAC
+						has_decision = DCD_reclaim_ORO
+						has_decision = DCD_reclaim_WAW
+						has_decision = DCD_reclaim_AKA
+						has_decision = DCD_reclaim_HIH
+					}
+				}
+			}
+		}
+
+		cost = 50
+		days_remove = 30
+		days_re_enable = 365
+		remove_effect = {
+			NHN = {
+				country_event = dc.11
+			}
+		}
+	}
+	DCD_reclaim_VTV = {
+		visible = {
+			NOT = {
+				VTV = {
+					is_subject_of = DCD
+				}
+			}
+			has_completed_focus = DCD_reclaim_north
+		}
+		allowed = {
+			original_tag = DCD
+		}
+		available = {
+			AND = {
+				OR = {
+					DCD = {
+						is_neighbor_of = VTV
+					}
+					any_allied_country = {
+						is_neighbor_of = VTV
+					}
+				}
+				NOT = {
+					OR = {
+						has_decision = DCD_reclaim_MEM
+						has_decision = DCD_reclaim_NHN
+						has_decision = DCD_reclaim_VTV
+						has_decision = DCD_reclaim_MAM
+						has_decision = DCD_reclaim_RIR
+						has_decision = DCD_reclaim_CTC
+						has_decision = DCD_reclaim_NYN
+						has_decision = DCD_reclaim_NJN
+						has_decision = DCD_reclaim_PAP
+						has_decision = DCD_reclaim_DED
+						has_decision = DCD_reclaim_MDM
+						has_decision = DCD_reclaim_WVW
+						has_decision = DCD_reclaim_VAV
+						has_decision = DCD_reclaim_NCN
+						has_decision = DCD_reclaim_SCS
+						has_decision = DCD_reclaim_GAG
+						has_decision = DCD_reclaim_FLF
+						has_decision = DCD_reclaim_ALA
+						has_decision = DCD_reclaim_TNT
+						has_decision = DCD_reclaim_KYK
+						has_decision = DCD_reclaim_OHO
+						has_decision = DCD_reclaim_INI
+						has_decision = DCD_reclaim_MIM
+						has_decision = DCD_reclaim_ILI
+						has_decision = DCD_reclaim_WIW
+						has_decision = DCD_reclaim_MSM
+						has_decision = DCD_reclaim_LAL
+						has_decision = DCD_reclaim_ARA
+						has_decision = DCD_reclaim_MOM
+						has_decision = DCD_reclaim_IAI
+						has_decision = DCD_reclaim_MNM
+						has_decision = DCD_reclaim_NDN
+						has_decision = DCD_reclaim_SDS
+						has_decision = DCD_reclaim_NEN
+						has_decision = DCD_reclaim_KSK
+						has_decision = DCD_reclaim_OKO
+						has_decision = DCD_reclaim_TXT
+						has_decision = DCD_reclaim_NMN
+						has_decision = DCD_reclaim_COC
+						has_decision = DCD_reclaim_WYW
+						has_decision = DCD_reclaim_MTM
+						has_decision = DCD_reclaim_IDI
+						has_decision = DCD_reclaim_UTU
+						has_decision = DCD_reclaim_AZA
+						has_decision = DCD_reclaim_NVN
+						has_decision = DCD_reclaim_CAC
+						has_decision = DCD_reclaim_ORO
+						has_decision = DCD_reclaim_WAW
+						has_decision = DCD_reclaim_AKA
+						has_decision = DCD_reclaim_HIH
+					}
+				}
+			}
+		}
+
+		cost = 50
+		days_remove = 30
+		days_re_enable = 365
+		remove_effect = {
+			VTV = {
+				country_event = dc.11
+			}
+		}
+	}
+	DCD_reclaim_MAM = {
+		visible = {
+			NOT = {
+				MAM = {
+					is_subject_of = DCD
+				}
+			}
+			has_completed_focus = DCD_reclaim_north
+		}
+		allowed = {
+			original_tag = DCD
+		}
+		available = {
+			AND = {
+				OR = {
+					DCD = {
+						is_neighbor_of = MAM
+					}
+					any_allied_country = {
+						is_neighbor_of = MAM
+					}
+				}
+				NOT = {
+					OR = {
+						has_decision = DCD_reclaim_MEM
+						has_decision = DCD_reclaim_NHN
+						has_decision = DCD_reclaim_VTV
+						has_decision = DCD_reclaim_MAM
+						has_decision = DCD_reclaim_RIR
+						has_decision = DCD_reclaim_CTC
+						has_decision = DCD_reclaim_NYN
+						has_decision = DCD_reclaim_NJN
+						has_decision = DCD_reclaim_PAP
+						has_decision = DCD_reclaim_DED
+						has_decision = DCD_reclaim_MDM
+						has_decision = DCD_reclaim_WVW
+						has_decision = DCD_reclaim_VAV
+						has_decision = DCD_reclaim_NCN
+						has_decision = DCD_reclaim_SCS
+						has_decision = DCD_reclaim_GAG
+						has_decision = DCD_reclaim_FLF
+						has_decision = DCD_reclaim_ALA
+						has_decision = DCD_reclaim_TNT
+						has_decision = DCD_reclaim_KYK
+						has_decision = DCD_reclaim_OHO
+						has_decision = DCD_reclaim_INI
+						has_decision = DCD_reclaim_MIM
+						has_decision = DCD_reclaim_ILI
+						has_decision = DCD_reclaim_WIW
+						has_decision = DCD_reclaim_MSM
+						has_decision = DCD_reclaim_LAL
+						has_decision = DCD_reclaim_ARA
+						has_decision = DCD_reclaim_MOM
+						has_decision = DCD_reclaim_IAI
+						has_decision = DCD_reclaim_MNM
+						has_decision = DCD_reclaim_NDN
+						has_decision = DCD_reclaim_SDS
+						has_decision = DCD_reclaim_NEN
+						has_decision = DCD_reclaim_KSK
+						has_decision = DCD_reclaim_OKO
+						has_decision = DCD_reclaim_TXT
+						has_decision = DCD_reclaim_NMN
+						has_decision = DCD_reclaim_COC
+						has_decision = DCD_reclaim_WYW
+						has_decision = DCD_reclaim_MTM
+						has_decision = DCD_reclaim_IDI
+						has_decision = DCD_reclaim_UTU
+						has_decision = DCD_reclaim_AZA
+						has_decision = DCD_reclaim_NVN
+						has_decision = DCD_reclaim_CAC
+						has_decision = DCD_reclaim_ORO
+						has_decision = DCD_reclaim_WAW
+						has_decision = DCD_reclaim_AKA
+						has_decision = DCD_reclaim_HIH
+					}
+				}
+			}
+		}
+
+		cost = 50
+		days_remove = 30
+		days_re_enable = 365
+		remove_effect = {
+			MAM = {
+				country_event = dc.11
+			}
+		}
+	}
+	DCD_reclaim_RIR = {
+		visible = {
+			NOT = {
+				RIR = {
+					is_subject_of = DCD
+				}
+			}
+			has_completed_focus = DCD_reclaim_north
+		}
+		allowed = {
+			original_tag = DCD
+		}
+		available = {
+			AND = {
+				OR = {
+					DCD = {
+						is_neighbor_of = RIR
+					}
+					any_allied_country = {
+						is_neighbor_of = RIR
+					}
+				}
+				NOT = {
+					OR = {
+						has_decision = DCD_reclaim_MEM
+						has_decision = DCD_reclaim_NHN
+						has_decision = DCD_reclaim_VTV
+						has_decision = DCD_reclaim_MAM
+						has_decision = DCD_reclaim_RIR
+						has_decision = DCD_reclaim_CTC
+						has_decision = DCD_reclaim_NYN
+						has_decision = DCD_reclaim_NJN
+						has_decision = DCD_reclaim_PAP
+						has_decision = DCD_reclaim_DED
+						has_decision = DCD_reclaim_MDM
+						has_decision = DCD_reclaim_WVW
+						has_decision = DCD_reclaim_VAV
+						has_decision = DCD_reclaim_NCN
+						has_decision = DCD_reclaim_SCS
+						has_decision = DCD_reclaim_GAG
+						has_decision = DCD_reclaim_FLF
+						has_decision = DCD_reclaim_ALA
+						has_decision = DCD_reclaim_TNT
+						has_decision = DCD_reclaim_KYK
+						has_decision = DCD_reclaim_OHO
+						has_decision = DCD_reclaim_INI
+						has_decision = DCD_reclaim_MIM
+						has_decision = DCD_reclaim_ILI
+						has_decision = DCD_reclaim_WIW
+						has_decision = DCD_reclaim_MSM
+						has_decision = DCD_reclaim_LAL
+						has_decision = DCD_reclaim_ARA
+						has_decision = DCD_reclaim_MOM
+						has_decision = DCD_reclaim_IAI
+						has_decision = DCD_reclaim_MNM
+						has_decision = DCD_reclaim_NDN
+						has_decision = DCD_reclaim_SDS
+						has_decision = DCD_reclaim_NEN
+						has_decision = DCD_reclaim_KSK
+						has_decision = DCD_reclaim_OKO
+						has_decision = DCD_reclaim_TXT
+						has_decision = DCD_reclaim_NMN
+						has_decision = DCD_reclaim_COC
+						has_decision = DCD_reclaim_WYW
+						has_decision = DCD_reclaim_MTM
+						has_decision = DCD_reclaim_IDI
+						has_decision = DCD_reclaim_UTU
+						has_decision = DCD_reclaim_AZA
+						has_decision = DCD_reclaim_NVN
+						has_decision = DCD_reclaim_CAC
+						has_decision = DCD_reclaim_ORO
+						has_decision = DCD_reclaim_WAW
+						has_decision = DCD_reclaim_AKA
+						has_decision = DCD_reclaim_HIH
+					}
+				}
+			}
+		}
+
+		cost = 50
+		days_remove = 30
+		days_re_enable = 365
+		remove_effect = {
+			RIR = {
+				country_event = dc.11
+			}
+		}
+	}
+	DCD_reclaim_CTC = {
+		visible = {
+			NOT = {
+				CTC = {
+					is_subject_of = DCD
+				}
+			}
+			has_completed_focus = DCD_reclaim_north
+		}
+		allowed = {
+			original_tag = DCD
+		}
+		available = {
+			AND = {
+				OR = {
+					DCD = {
+						is_neighbor_of = CTC
+					}
+					any_allied_country = {
+						is_neighbor_of = CTC
+					}
+				}
+				NOT = {
+					OR = {
+						has_decision = DCD_reclaim_MEM
+						has_decision = DCD_reclaim_NHN
+						has_decision = DCD_reclaim_VTV
+						has_decision = DCD_reclaim_MAM
+						has_decision = DCD_reclaim_RIR
+						has_decision = DCD_reclaim_CTC
+						has_decision = DCD_reclaim_NYN
+						has_decision = DCD_reclaim_NJN
+						has_decision = DCD_reclaim_PAP
+						has_decision = DCD_reclaim_DED
+						has_decision = DCD_reclaim_MDM
+						has_decision = DCD_reclaim_WVW
+						has_decision = DCD_reclaim_VAV
+						has_decision = DCD_reclaim_NCN
+						has_decision = DCD_reclaim_SCS
+						has_decision = DCD_reclaim_GAG
+						has_decision = DCD_reclaim_FLF
+						has_decision = DCD_reclaim_ALA
+						has_decision = DCD_reclaim_TNT
+						has_decision = DCD_reclaim_KYK
+						has_decision = DCD_reclaim_OHO
+						has_decision = DCD_reclaim_INI
+						has_decision = DCD_reclaim_MIM
+						has_decision = DCD_reclaim_ILI
+						has_decision = DCD_reclaim_WIW
+						has_decision = DCD_reclaim_MSM
+						has_decision = DCD_reclaim_LAL
+						has_decision = DCD_reclaim_ARA
+						has_decision = DCD_reclaim_MOM
+						has_decision = DCD_reclaim_IAI
+						has_decision = DCD_reclaim_MNM
+						has_decision = DCD_reclaim_NDN
+						has_decision = DCD_reclaim_SDS
+						has_decision = DCD_reclaim_NEN
+						has_decision = DCD_reclaim_KSK
+						has_decision = DCD_reclaim_OKO
+						has_decision = DCD_reclaim_TXT
+						has_decision = DCD_reclaim_NMN
+						has_decision = DCD_reclaim_COC
+						has_decision = DCD_reclaim_WYW
+						has_decision = DCD_reclaim_MTM
+						has_decision = DCD_reclaim_IDI
+						has_decision = DCD_reclaim_UTU
+						has_decision = DCD_reclaim_AZA
+						has_decision = DCD_reclaim_NVN
+						has_decision = DCD_reclaim_CAC
+						has_decision = DCD_reclaim_ORO
+						has_decision = DCD_reclaim_WAW
+						has_decision = DCD_reclaim_AKA
+						has_decision = DCD_reclaim_HIH
+					}
+				}
+			}
+		}
+
+		cost = 50
+		days_remove = 30
+		days_re_enable = 365
+		remove_effect = {
+			CTC = {
+				country_event = dc.11
+			}
+		}
+	}
+	DCD_reclaim_NYN = {
+		visible = {
+			NOT = {
+				NYN = {
+					is_subject_of = DCD
+				}
+			}
+			has_completed_focus = DCD_reclaim_north
+		}
+		allowed = {
+			original_tag = DCD
+		}
+		available = {
+			AND = {
+				OR = {
+					DCD = {
+						is_neighbor_of = NYN
+					}
+					any_allied_country = {
+						is_neighbor_of = NYN
+					}
+				}
+				NOT = {
+					OR = {
+						has_decision = DCD_reclaim_MEM
+						has_decision = DCD_reclaim_NHN
+						has_decision = DCD_reclaim_VTV
+						has_decision = DCD_reclaim_MAM
+						has_decision = DCD_reclaim_RIR
+						has_decision = DCD_reclaim_CTC
+						has_decision = DCD_reclaim_NYN
+						has_decision = DCD_reclaim_NJN
+						has_decision = DCD_reclaim_PAP
+						has_decision = DCD_reclaim_DED
+						has_decision = DCD_reclaim_MDM
+						has_decision = DCD_reclaim_WVW
+						has_decision = DCD_reclaim_VAV
+						has_decision = DCD_reclaim_NCN
+						has_decision = DCD_reclaim_SCS
+						has_decision = DCD_reclaim_GAG
+						has_decision = DCD_reclaim_FLF
+						has_decision = DCD_reclaim_ALA
+						has_decision = DCD_reclaim_TNT
+						has_decision = DCD_reclaim_KYK
+						has_decision = DCD_reclaim_OHO
+						has_decision = DCD_reclaim_INI
+						has_decision = DCD_reclaim_MIM
+						has_decision = DCD_reclaim_ILI
+						has_decision = DCD_reclaim_WIW
+						has_decision = DCD_reclaim_MSM
+						has_decision = DCD_reclaim_LAL
+						has_decision = DCD_reclaim_ARA
+						has_decision = DCD_reclaim_MOM
+						has_decision = DCD_reclaim_IAI
+						has_decision = DCD_reclaim_MNM
+						has_decision = DCD_reclaim_NDN
+						has_decision = DCD_reclaim_SDS
+						has_decision = DCD_reclaim_NEN
+						has_decision = DCD_reclaim_KSK
+						has_decision = DCD_reclaim_OKO
+						has_decision = DCD_reclaim_TXT
+						has_decision = DCD_reclaim_NMN
+						has_decision = DCD_reclaim_COC
+						has_decision = DCD_reclaim_WYW
+						has_decision = DCD_reclaim_MTM
+						has_decision = DCD_reclaim_IDI
+						has_decision = DCD_reclaim_UTU
+						has_decision = DCD_reclaim_AZA
+						has_decision = DCD_reclaim_NVN
+						has_decision = DCD_reclaim_CAC
+						has_decision = DCD_reclaim_ORO
+						has_decision = DCD_reclaim_WAW
+						has_decision = DCD_reclaim_AKA
+						has_decision = DCD_reclaim_HIH
+					}
+				}
+			}
+		}
+
+		cost = 50
+		days_remove = 30
+		days_re_enable = 365
+		remove_effect = {
+			NYN = {
+				country_event = dc.11
+			}
+		}
+	}
+	DCD_reclaim_NJN = {
+		visible = {
+			NOT = {
+				NJN = {
+					is_subject_of = DCD
+				}
+			}
+			has_completed_focus = DCD_reclaim_north
+		}
+		allowed = {
+			original_tag = DCD
+		}
+		available = {
+			AND = {
+				OR = {
+					DCD = {
+						is_neighbor_of = NJN
+					}
+					any_allied_country = {
+						is_neighbor_of = NJN
+					}
+				}
+				NOT = {
+					OR = {
+						has_decision = DCD_reclaim_MEM
+						has_decision = DCD_reclaim_NHN
+						has_decision = DCD_reclaim_VTV
+						has_decision = DCD_reclaim_MAM
+						has_decision = DCD_reclaim_RIR
+						has_decision = DCD_reclaim_CTC
+						has_decision = DCD_reclaim_NYN
+						has_decision = DCD_reclaim_NJN
+						has_decision = DCD_reclaim_PAP
+						has_decision = DCD_reclaim_DED
+						has_decision = DCD_reclaim_MDM
+						has_decision = DCD_reclaim_WVW
+						has_decision = DCD_reclaim_VAV
+						has_decision = DCD_reclaim_NCN
+						has_decision = DCD_reclaim_SCS
+						has_decision = DCD_reclaim_GAG
+						has_decision = DCD_reclaim_FLF
+						has_decision = DCD_reclaim_ALA
+						has_decision = DCD_reclaim_TNT
+						has_decision = DCD_reclaim_KYK
+						has_decision = DCD_reclaim_OHO
+						has_decision = DCD_reclaim_INI
+						has_decision = DCD_reclaim_MIM
+						has_decision = DCD_reclaim_ILI
+						has_decision = DCD_reclaim_WIW
+						has_decision = DCD_reclaim_MSM
+						has_decision = DCD_reclaim_LAL
+						has_decision = DCD_reclaim_ARA
+						has_decision = DCD_reclaim_MOM
+						has_decision = DCD_reclaim_IAI
+						has_decision = DCD_reclaim_MNM
+						has_decision = DCD_reclaim_NDN
+						has_decision = DCD_reclaim_SDS
+						has_decision = DCD_reclaim_NEN
+						has_decision = DCD_reclaim_KSK
+						has_decision = DCD_reclaim_OKO
+						has_decision = DCD_reclaim_TXT
+						has_decision = DCD_reclaim_NMN
+						has_decision = DCD_reclaim_COC
+						has_decision = DCD_reclaim_WYW
+						has_decision = DCD_reclaim_MTM
+						has_decision = DCD_reclaim_IDI
+						has_decision = DCD_reclaim_UTU
+						has_decision = DCD_reclaim_AZA
+						has_decision = DCD_reclaim_NVN
+						has_decision = DCD_reclaim_CAC
+						has_decision = DCD_reclaim_ORO
+						has_decision = DCD_reclaim_WAW
+						has_decision = DCD_reclaim_AKA
+						has_decision = DCD_reclaim_HIH
+					}
+				}
+			}
+		}
+
+		cost = 50
+		days_remove = 30
+		days_re_enable = 365
+		remove_effect = {
+			NJN = {
+				country_event = dc.11
+			}
+		}
+	}
+	DCD_reclaim_PAP = {
+		visible = {
+			NOT = {
+				PAP = {
+					is_subject_of = DCD
+				}
+			}
+			has_completed_focus = DCD_reclaim_north
+		}
+		allowed = {
+			original_tag = DCD
+		}
+		available = {
+			AND = {
+				OR = {
+					DCD = {
+						is_neighbor_of = PAP
+					}
+					any_allied_country = {
+						is_neighbor_of = PAP
+					}
+				}
+				NOT = {
+					OR = {
+						has_decision = DCD_reclaim_MEM
+						has_decision = DCD_reclaim_NHN
+						has_decision = DCD_reclaim_VTV
+						has_decision = DCD_reclaim_MAM
+						has_decision = DCD_reclaim_RIR
+						has_decision = DCD_reclaim_CTC
+						has_decision = DCD_reclaim_NYN
+						has_decision = DCD_reclaim_NJN
+						has_decision = DCD_reclaim_PAP
+						has_decision = DCD_reclaim_DED
+						has_decision = DCD_reclaim_MDM
+						has_decision = DCD_reclaim_WVW
+						has_decision = DCD_reclaim_VAV
+						has_decision = DCD_reclaim_NCN
+						has_decision = DCD_reclaim_SCS
+						has_decision = DCD_reclaim_GAG
+						has_decision = DCD_reclaim_FLF
+						has_decision = DCD_reclaim_ALA
+						has_decision = DCD_reclaim_TNT
+						has_decision = DCD_reclaim_KYK
+						has_decision = DCD_reclaim_OHO
+						has_decision = DCD_reclaim_INI
+						has_decision = DCD_reclaim_MIM
+						has_decision = DCD_reclaim_ILI
+						has_decision = DCD_reclaim_WIW
+						has_decision = DCD_reclaim_MSM
+						has_decision = DCD_reclaim_LAL
+						has_decision = DCD_reclaim_ARA
+						has_decision = DCD_reclaim_MOM
+						has_decision = DCD_reclaim_IAI
+						has_decision = DCD_reclaim_MNM
+						has_decision = DCD_reclaim_NDN
+						has_decision = DCD_reclaim_SDS
+						has_decision = DCD_reclaim_NEN
+						has_decision = DCD_reclaim_KSK
+						has_decision = DCD_reclaim_OKO
+						has_decision = DCD_reclaim_TXT
+						has_decision = DCD_reclaim_NMN
+						has_decision = DCD_reclaim_COC
+						has_decision = DCD_reclaim_WYW
+						has_decision = DCD_reclaim_MTM
+						has_decision = DCD_reclaim_IDI
+						has_decision = DCD_reclaim_UTU
+						has_decision = DCD_reclaim_AZA
+						has_decision = DCD_reclaim_NVN
+						has_decision = DCD_reclaim_CAC
+						has_decision = DCD_reclaim_ORO
+						has_decision = DCD_reclaim_WAW
+						has_decision = DCD_reclaim_AKA
+						has_decision = DCD_reclaim_HIH
+					}
+				}
+			}
+		}
+
+		cost = 50
+		days_remove = 30
+		days_re_enable = 365
+		remove_effect = {
+			PAP = {
+				country_event = dc.11
+			}
+		}
+	}
+	DCD_reclaim_DED = {
+		visible = {
+			NOT = {
+				DED = {
+					is_subject_of = DCD
+				}
+			}
+			has_completed_focus = DCD_reclaim_south
+		}
+		allowed = {
+			original_tag = DCD
+		}
+		available = {
+			AND = {
+				OR = {
+					DCD = {
+						is_neighbor_of = DED
+					}
+					any_allied_country = {
+						is_neighbor_of = DED
+					}
+				}
+				NOT = {
+					OR = {
+						has_decision = DCD_reclaim_MEM
+						has_decision = DCD_reclaim_NHN
+						has_decision = DCD_reclaim_VTV
+						has_decision = DCD_reclaim_MAM
+						has_decision = DCD_reclaim_RIR
+						has_decision = DCD_reclaim_CTC
+						has_decision = DCD_reclaim_NYN
+						has_decision = DCD_reclaim_NJN
+						has_decision = DCD_reclaim_PAP
+						has_decision = DCD_reclaim_DED
+						has_decision = DCD_reclaim_MDM
+						has_decision = DCD_reclaim_WVW
+						has_decision = DCD_reclaim_VAV
+						has_decision = DCD_reclaim_NCN
+						has_decision = DCD_reclaim_SCS
+						has_decision = DCD_reclaim_GAG
+						has_decision = DCD_reclaim_FLF
+						has_decision = DCD_reclaim_ALA
+						has_decision = DCD_reclaim_TNT
+						has_decision = DCD_reclaim_KYK
+						has_decision = DCD_reclaim_OHO
+						has_decision = DCD_reclaim_INI
+						has_decision = DCD_reclaim_MIM
+						has_decision = DCD_reclaim_ILI
+						has_decision = DCD_reclaim_WIW
+						has_decision = DCD_reclaim_MSM
+						has_decision = DCD_reclaim_LAL
+						has_decision = DCD_reclaim_ARA
+						has_decision = DCD_reclaim_MOM
+						has_decision = DCD_reclaim_IAI
+						has_decision = DCD_reclaim_MNM
+						has_decision = DCD_reclaim_NDN
+						has_decision = DCD_reclaim_SDS
+						has_decision = DCD_reclaim_NEN
+						has_decision = DCD_reclaim_KSK
+						has_decision = DCD_reclaim_OKO
+						has_decision = DCD_reclaim_TXT
+						has_decision = DCD_reclaim_NMN
+						has_decision = DCD_reclaim_COC
+						has_decision = DCD_reclaim_WYW
+						has_decision = DCD_reclaim_MTM
+						has_decision = DCD_reclaim_IDI
+						has_decision = DCD_reclaim_UTU
+						has_decision = DCD_reclaim_AZA
+						has_decision = DCD_reclaim_NVN
+						has_decision = DCD_reclaim_CAC
+						has_decision = DCD_reclaim_ORO
+						has_decision = DCD_reclaim_WAW
+						has_decision = DCD_reclaim_AKA
+						has_decision = DCD_reclaim_HIH
+					}
+				}
+			}
+		}
+
+		cost = 50
+		days_remove = 30
+		days_re_enable = 365
+		remove_effect = {
+			DED = {
+				country_event = dc.11
+			}
+		}
+	}
+	DCD_reclaim_MDM = {
+		visible = {
+			NOT = {
+				MDM = {
+					is_subject_of = DCD
+				}
+			}
+			has_completed_focus = DCD_reclaim_south
+		}
+		allowed = {
+			original_tag = DCD
+		}
+		available = {
+			AND = {
+				OR = {
+					DCD = {
+						is_neighbor_of = MDM
+					}
+					any_allied_country = {
+						is_neighbor_of = MDM
+					}
+				}
+				NOT = {
+					OR = {
+						has_decision = DCD_reclaim_MEM
+						has_decision = DCD_reclaim_NHN
+						has_decision = DCD_reclaim_VTV
+						has_decision = DCD_reclaim_MAM
+						has_decision = DCD_reclaim_RIR
+						has_decision = DCD_reclaim_CTC
+						has_decision = DCD_reclaim_NYN
+						has_decision = DCD_reclaim_NJN
+						has_decision = DCD_reclaim_PAP
+						has_decision = DCD_reclaim_DED
+						has_decision = DCD_reclaim_MDM
+						has_decision = DCD_reclaim_WVW
+						has_decision = DCD_reclaim_VAV
+						has_decision = DCD_reclaim_NCN
+						has_decision = DCD_reclaim_SCS
+						has_decision = DCD_reclaim_GAG
+						has_decision = DCD_reclaim_FLF
+						has_decision = DCD_reclaim_ALA
+						has_decision = DCD_reclaim_TNT
+						has_decision = DCD_reclaim_KYK
+						has_decision = DCD_reclaim_OHO
+						has_decision = DCD_reclaim_INI
+						has_decision = DCD_reclaim_MIM
+						has_decision = DCD_reclaim_ILI
+						has_decision = DCD_reclaim_WIW
+						has_decision = DCD_reclaim_MSM
+						has_decision = DCD_reclaim_LAL
+						has_decision = DCD_reclaim_ARA
+						has_decision = DCD_reclaim_MOM
+						has_decision = DCD_reclaim_IAI
+						has_decision = DCD_reclaim_MNM
+						has_decision = DCD_reclaim_NDN
+						has_decision = DCD_reclaim_SDS
+						has_decision = DCD_reclaim_NEN
+						has_decision = DCD_reclaim_KSK
+						has_decision = DCD_reclaim_OKO
+						has_decision = DCD_reclaim_TXT
+						has_decision = DCD_reclaim_NMN
+						has_decision = DCD_reclaim_COC
+						has_decision = DCD_reclaim_WYW
+						has_decision = DCD_reclaim_MTM
+						has_decision = DCD_reclaim_IDI
+						has_decision = DCD_reclaim_UTU
+						has_decision = DCD_reclaim_AZA
+						has_decision = DCD_reclaim_NVN
+						has_decision = DCD_reclaim_CAC
+						has_decision = DCD_reclaim_ORO
+						has_decision = DCD_reclaim_WAW
+						has_decision = DCD_reclaim_AKA
+						has_decision = DCD_reclaim_HIH
+					}
+				}
+			}
+		}
+
+		cost = 50
+		days_remove = 30
+		days_re_enable = 365
+		remove_effect = {
+			MDM = {
+				country_event = dc.11
+			}
+		}
+	}
+	DCD_reclaim_WVW = {
+		visible = {
+			NOT = {
+				WVW = {
+					is_subject_of = DCD
+				}
+			}
+			has_completed_focus = DCD_reclaim_south
+		}
+		allowed = {
+			original_tag = DCD
+		}
+		available = {
+			AND = {
+				OR = {
+					DCD = {
+						is_neighbor_of = WVW
+					}
+					any_allied_country = {
+						is_neighbor_of = WVW
+					}
+				}
+				NOT = {
+					OR = {
+						has_decision = DCD_reclaim_MEM
+						has_decision = DCD_reclaim_NHN
+						has_decision = DCD_reclaim_VTV
+						has_decision = DCD_reclaim_MAM
+						has_decision = DCD_reclaim_RIR
+						has_decision = DCD_reclaim_CTC
+						has_decision = DCD_reclaim_NYN
+						has_decision = DCD_reclaim_NJN
+						has_decision = DCD_reclaim_PAP
+						has_decision = DCD_reclaim_DED
+						has_decision = DCD_reclaim_MDM
+						has_decision = DCD_reclaim_WVW
+						has_decision = DCD_reclaim_VAV
+						has_decision = DCD_reclaim_NCN
+						has_decision = DCD_reclaim_SCS
+						has_decision = DCD_reclaim_GAG
+						has_decision = DCD_reclaim_FLF
+						has_decision = DCD_reclaim_ALA
+						has_decision = DCD_reclaim_TNT
+						has_decision = DCD_reclaim_KYK
+						has_decision = DCD_reclaim_OHO
+						has_decision = DCD_reclaim_INI
+						has_decision = DCD_reclaim_MIM
+						has_decision = DCD_reclaim_ILI
+						has_decision = DCD_reclaim_WIW
+						has_decision = DCD_reclaim_MSM
+						has_decision = DCD_reclaim_LAL
+						has_decision = DCD_reclaim_ARA
+						has_decision = DCD_reclaim_MOM
+						has_decision = DCD_reclaim_IAI
+						has_decision = DCD_reclaim_MNM
+						has_decision = DCD_reclaim_NDN
+						has_decision = DCD_reclaim_SDS
+						has_decision = DCD_reclaim_NEN
+						has_decision = DCD_reclaim_KSK
+						has_decision = DCD_reclaim_OKO
+						has_decision = DCD_reclaim_TXT
+						has_decision = DCD_reclaim_NMN
+						has_decision = DCD_reclaim_COC
+						has_decision = DCD_reclaim_WYW
+						has_decision = DCD_reclaim_MTM
+						has_decision = DCD_reclaim_IDI
+						has_decision = DCD_reclaim_UTU
+						has_decision = DCD_reclaim_AZA
+						has_decision = DCD_reclaim_NVN
+						has_decision = DCD_reclaim_CAC
+						has_decision = DCD_reclaim_ORO
+						has_decision = DCD_reclaim_WAW
+						has_decision = DCD_reclaim_AKA
+						has_decision = DCD_reclaim_HIH
+					}
+				}
+			}
+		}
+
+		cost = 50
+		days_remove = 30
+		days_re_enable = 365
+		remove_effect = {
+			WVW = {
+				country_event = dc.11
+			}
+		}
+	}
+	DCD_reclaim_VAV = {
+		visible = {
+			NOT = {
+				VAV = {
+					is_subject_of = DCD
+				}
+			}
+			has_completed_focus = DCD_reclaim_south
+		}
+		allowed = {
+			original_tag = DCD
+		}
+		available = {
+			AND = {
+				OR = {
+					DCD = {
+						is_neighbor_of = VAV
+					}
+					any_allied_country = {
+						is_neighbor_of = VAV
+					}
+				}
+				NOT = {
+					OR = {
+						has_decision = DCD_reclaim_MEM
+						has_decision = DCD_reclaim_NHN
+						has_decision = DCD_reclaim_VTV
+						has_decision = DCD_reclaim_MAM
+						has_decision = DCD_reclaim_RIR
+						has_decision = DCD_reclaim_CTC
+						has_decision = DCD_reclaim_NYN
+						has_decision = DCD_reclaim_NJN
+						has_decision = DCD_reclaim_PAP
+						has_decision = DCD_reclaim_DED
+						has_decision = DCD_reclaim_MDM
+						has_decision = DCD_reclaim_WVW
+						has_decision = DCD_reclaim_VAV
+						has_decision = DCD_reclaim_NCN
+						has_decision = DCD_reclaim_SCS
+						has_decision = DCD_reclaim_GAG
+						has_decision = DCD_reclaim_FLF
+						has_decision = DCD_reclaim_ALA
+						has_decision = DCD_reclaim_TNT
+						has_decision = DCD_reclaim_KYK
+						has_decision = DCD_reclaim_OHO
+						has_decision = DCD_reclaim_INI
+						has_decision = DCD_reclaim_MIM
+						has_decision = DCD_reclaim_ILI
+						has_decision = DCD_reclaim_WIW
+						has_decision = DCD_reclaim_MSM
+						has_decision = DCD_reclaim_LAL
+						has_decision = DCD_reclaim_ARA
+						has_decision = DCD_reclaim_MOM
+						has_decision = DCD_reclaim_IAI
+						has_decision = DCD_reclaim_MNM
+						has_decision = DCD_reclaim_NDN
+						has_decision = DCD_reclaim_SDS
+						has_decision = DCD_reclaim_NEN
+						has_decision = DCD_reclaim_KSK
+						has_decision = DCD_reclaim_OKO
+						has_decision = DCD_reclaim_TXT
+						has_decision = DCD_reclaim_NMN
+						has_decision = DCD_reclaim_COC
+						has_decision = DCD_reclaim_WYW
+						has_decision = DCD_reclaim_MTM
+						has_decision = DCD_reclaim_IDI
+						has_decision = DCD_reclaim_UTU
+						has_decision = DCD_reclaim_AZA
+						has_decision = DCD_reclaim_NVN
+						has_decision = DCD_reclaim_CAC
+						has_decision = DCD_reclaim_ORO
+						has_decision = DCD_reclaim_WAW
+						has_decision = DCD_reclaim_AKA
+						has_decision = DCD_reclaim_HIH
+					}
+				}
+			}
+		}
+
+		cost = 50
+		days_remove = 30
+		days_re_enable = 365
+		remove_effect = {
+			VAV = {
+				country_event = dc.11
+			}
+		}
+	}
+	DCD_reclaim_NCN = {
+		visible = {
+			NOT = {
+				NCN = {
+					is_subject_of = DCD
+				}
+			}
+			has_completed_focus = DCD_reclaim_south
+		}
+		allowed = {
+			original_tag = DCD
+		}
+		available = {
+			AND = {
+				OR = {
+					DCD = {
+						is_neighbor_of = NCN
+					}
+					any_allied_country = {
+						is_neighbor_of = NCN
+					}
+				}
+				NOT = {
+					OR = {
+						has_decision = DCD_reclaim_MEM
+						has_decision = DCD_reclaim_NHN
+						has_decision = DCD_reclaim_VTV
+						has_decision = DCD_reclaim_MAM
+						has_decision = DCD_reclaim_RIR
+						has_decision = DCD_reclaim_CTC
+						has_decision = DCD_reclaim_NYN
+						has_decision = DCD_reclaim_NJN
+						has_decision = DCD_reclaim_PAP
+						has_decision = DCD_reclaim_DED
+						has_decision = DCD_reclaim_MDM
+						has_decision = DCD_reclaim_WVW
+						has_decision = DCD_reclaim_VAV
+						has_decision = DCD_reclaim_NCN
+						has_decision = DCD_reclaim_SCS
+						has_decision = DCD_reclaim_GAG
+						has_decision = DCD_reclaim_FLF
+						has_decision = DCD_reclaim_ALA
+						has_decision = DCD_reclaim_TNT
+						has_decision = DCD_reclaim_KYK
+						has_decision = DCD_reclaim_OHO
+						has_decision = DCD_reclaim_INI
+						has_decision = DCD_reclaim_MIM
+						has_decision = DCD_reclaim_ILI
+						has_decision = DCD_reclaim_WIW
+						has_decision = DCD_reclaim_MSM
+						has_decision = DCD_reclaim_LAL
+						has_decision = DCD_reclaim_ARA
+						has_decision = DCD_reclaim_MOM
+						has_decision = DCD_reclaim_IAI
+						has_decision = DCD_reclaim_MNM
+						has_decision = DCD_reclaim_NDN
+						has_decision = DCD_reclaim_SDS
+						has_decision = DCD_reclaim_NEN
+						has_decision = DCD_reclaim_KSK
+						has_decision = DCD_reclaim_OKO
+						has_decision = DCD_reclaim_TXT
+						has_decision = DCD_reclaim_NMN
+						has_decision = DCD_reclaim_COC
+						has_decision = DCD_reclaim_WYW
+						has_decision = DCD_reclaim_MTM
+						has_decision = DCD_reclaim_IDI
+						has_decision = DCD_reclaim_UTU
+						has_decision = DCD_reclaim_AZA
+						has_decision = DCD_reclaim_NVN
+						has_decision = DCD_reclaim_CAC
+						has_decision = DCD_reclaim_ORO
+						has_decision = DCD_reclaim_WAW
+						has_decision = DCD_reclaim_AKA
+						has_decision = DCD_reclaim_HIH
+					}
+				}
+			}
+		}
+
+		cost = 50
+		days_remove = 30
+		days_re_enable = 365
+		remove_effect = {
+			NCN = {
+				country_event = dc.11
+			}
+		}
+	}
+	DCD_reclaim_SCS = {
+		visible = {
+			NOT = {
+				SCS = {
+					is_subject_of = DCD
+				}
+			}
+			has_completed_focus = DCD_reclaim_south
+		}
+		allowed = {
+			original_tag = DCD
+		}
+		available = {
+			AND = {
+				OR = {
+					DCD = {
+						is_neighbor_of = SCS
+					}
+					any_allied_country = {
+						is_neighbor_of = SCS
+					}
+				}
+				NOT = {
+					OR = {
+						has_decision = DCD_reclaim_MEM
+						has_decision = DCD_reclaim_NHN
+						has_decision = DCD_reclaim_VTV
+						has_decision = DCD_reclaim_MAM
+						has_decision = DCD_reclaim_RIR
+						has_decision = DCD_reclaim_CTC
+						has_decision = DCD_reclaim_NYN
+						has_decision = DCD_reclaim_NJN
+						has_decision = DCD_reclaim_PAP
+						has_decision = DCD_reclaim_DED
+						has_decision = DCD_reclaim_MDM
+						has_decision = DCD_reclaim_WVW
+						has_decision = DCD_reclaim_VAV
+						has_decision = DCD_reclaim_NCN
+						has_decision = DCD_reclaim_SCS
+						has_decision = DCD_reclaim_GAG
+						has_decision = DCD_reclaim_FLF
+						has_decision = DCD_reclaim_ALA
+						has_decision = DCD_reclaim_TNT
+						has_decision = DCD_reclaim_KYK
+						has_decision = DCD_reclaim_OHO
+						has_decision = DCD_reclaim_INI
+						has_decision = DCD_reclaim_MIM
+						has_decision = DCD_reclaim_ILI
+						has_decision = DCD_reclaim_WIW
+						has_decision = DCD_reclaim_MSM
+						has_decision = DCD_reclaim_LAL
+						has_decision = DCD_reclaim_ARA
+						has_decision = DCD_reclaim_MOM
+						has_decision = DCD_reclaim_IAI
+						has_decision = DCD_reclaim_MNM
+						has_decision = DCD_reclaim_NDN
+						has_decision = DCD_reclaim_SDS
+						has_decision = DCD_reclaim_NEN
+						has_decision = DCD_reclaim_KSK
+						has_decision = DCD_reclaim_OKO
+						has_decision = DCD_reclaim_TXT
+						has_decision = DCD_reclaim_NMN
+						has_decision = DCD_reclaim_COC
+						has_decision = DCD_reclaim_WYW
+						has_decision = DCD_reclaim_MTM
+						has_decision = DCD_reclaim_IDI
+						has_decision = DCD_reclaim_UTU
+						has_decision = DCD_reclaim_AZA
+						has_decision = DCD_reclaim_NVN
+						has_decision = DCD_reclaim_CAC
+						has_decision = DCD_reclaim_ORO
+						has_decision = DCD_reclaim_WAW
+						has_decision = DCD_reclaim_AKA
+						has_decision = DCD_reclaim_HIH
+					}
+				}
+			}
+		}
+
+		cost = 50
+		days_remove = 30
+		days_re_enable = 365
+		remove_effect = {
+			SCS = {
+				country_event = dc.11
+			}
+		}
+	}
+	DCD_reclaim_GAG = {
+		visible = {
+			NOT = {
+				GAG = {
+					is_subject_of = DCD
+				}
+			}
+			has_completed_focus = DCD_reclaim_south
+		}
+		allowed = {
+			original_tag = DCD
+		}
+		available = {
+			AND = {
+				OR = {
+					DCD = {
+						is_neighbor_of = GAG
+					}
+					any_allied_country = {
+						is_neighbor_of = GAG
+					}
+				}
+				NOT = {
+					OR = {
+						has_decision = DCD_reclaim_MEM
+						has_decision = DCD_reclaim_NHN
+						has_decision = DCD_reclaim_VTV
+						has_decision = DCD_reclaim_MAM
+						has_decision = DCD_reclaim_RIR
+						has_decision = DCD_reclaim_CTC
+						has_decision = DCD_reclaim_NYN
+						has_decision = DCD_reclaim_NJN
+						has_decision = DCD_reclaim_PAP
+						has_decision = DCD_reclaim_DED
+						has_decision = DCD_reclaim_MDM
+						has_decision = DCD_reclaim_WVW
+						has_decision = DCD_reclaim_VAV
+						has_decision = DCD_reclaim_NCN
+						has_decision = DCD_reclaim_SCS
+						has_decision = DCD_reclaim_GAG
+						has_decision = DCD_reclaim_FLF
+						has_decision = DCD_reclaim_ALA
+						has_decision = DCD_reclaim_TNT
+						has_decision = DCD_reclaim_KYK
+						has_decision = DCD_reclaim_OHO
+						has_decision = DCD_reclaim_INI
+						has_decision = DCD_reclaim_MIM
+						has_decision = DCD_reclaim_ILI
+						has_decision = DCD_reclaim_WIW
+						has_decision = DCD_reclaim_MSM
+						has_decision = DCD_reclaim_LAL
+						has_decision = DCD_reclaim_ARA
+						has_decision = DCD_reclaim_MOM
+						has_decision = DCD_reclaim_IAI
+						has_decision = DCD_reclaim_MNM
+						has_decision = DCD_reclaim_NDN
+						has_decision = DCD_reclaim_SDS
+						has_decision = DCD_reclaim_NEN
+						has_decision = DCD_reclaim_KSK
+						has_decision = DCD_reclaim_OKO
+						has_decision = DCD_reclaim_TXT
+						has_decision = DCD_reclaim_NMN
+						has_decision = DCD_reclaim_COC
+						has_decision = DCD_reclaim_WYW
+						has_decision = DCD_reclaim_MTM
+						has_decision = DCD_reclaim_IDI
+						has_decision = DCD_reclaim_UTU
+						has_decision = DCD_reclaim_AZA
+						has_decision = DCD_reclaim_NVN
+						has_decision = DCD_reclaim_CAC
+						has_decision = DCD_reclaim_ORO
+						has_decision = DCD_reclaim_WAW
+						has_decision = DCD_reclaim_AKA
+						has_decision = DCD_reclaim_HIH
+					}
+				}
+			}
+		}
+
+		cost = 50
+		days_remove = 30
+		days_re_enable = 365
+		remove_effect = {
+			GAG = {
+				country_event = dc.11
+			}
+		}
+	}
+	DCD_reclaim_FLF = {
+		visible = {
+			NOT = {
+				FLF = {
+					is_subject_of = DCD
+				}
+			}
+			has_completed_focus = DCD_reclaim_south
+		}
+		allowed = {
+			original_tag = DCD
+		}
+		available = {
+			AND = {
+				OR = {
+					DCD = {
+						is_neighbor_of = FLF
+					}
+					any_allied_country = {
+						is_neighbor_of = FLF
+					}
+				}
+				NOT = {
+					OR = {
+						has_decision = DCD_reclaim_MEM
+						has_decision = DCD_reclaim_NHN
+						has_decision = DCD_reclaim_VTV
+						has_decision = DCD_reclaim_MAM
+						has_decision = DCD_reclaim_RIR
+						has_decision = DCD_reclaim_CTC
+						has_decision = DCD_reclaim_NYN
+						has_decision = DCD_reclaim_NJN
+						has_decision = DCD_reclaim_PAP
+						has_decision = DCD_reclaim_DED
+						has_decision = DCD_reclaim_MDM
+						has_decision = DCD_reclaim_WVW
+						has_decision = DCD_reclaim_VAV
+						has_decision = DCD_reclaim_NCN
+						has_decision = DCD_reclaim_SCS
+						has_decision = DCD_reclaim_GAG
+						has_decision = DCD_reclaim_FLF
+						has_decision = DCD_reclaim_ALA
+						has_decision = DCD_reclaim_TNT
+						has_decision = DCD_reclaim_KYK
+						has_decision = DCD_reclaim_OHO
+						has_decision = DCD_reclaim_INI
+						has_decision = DCD_reclaim_MIM
+						has_decision = DCD_reclaim_ILI
+						has_decision = DCD_reclaim_WIW
+						has_decision = DCD_reclaim_MSM
+						has_decision = DCD_reclaim_LAL
+						has_decision = DCD_reclaim_ARA
+						has_decision = DCD_reclaim_MOM
+						has_decision = DCD_reclaim_IAI
+						has_decision = DCD_reclaim_MNM
+						has_decision = DCD_reclaim_NDN
+						has_decision = DCD_reclaim_SDS
+						has_decision = DCD_reclaim_NEN
+						has_decision = DCD_reclaim_KSK
+						has_decision = DCD_reclaim_OKO
+						has_decision = DCD_reclaim_TXT
+						has_decision = DCD_reclaim_NMN
+						has_decision = DCD_reclaim_COC
+						has_decision = DCD_reclaim_WYW
+						has_decision = DCD_reclaim_MTM
+						has_decision = DCD_reclaim_IDI
+						has_decision = DCD_reclaim_UTU
+						has_decision = DCD_reclaim_AZA
+						has_decision = DCD_reclaim_NVN
+						has_decision = DCD_reclaim_CAC
+						has_decision = DCD_reclaim_ORO
+						has_decision = DCD_reclaim_WAW
+						has_decision = DCD_reclaim_AKA
+						has_decision = DCD_reclaim_HIH
+					}
+				}
+			}
+		}
+
+		cost = 50
+		days_remove = 30
+		days_re_enable = 365
+		remove_effect = {
+			FLF = {
+				country_event = dc.11
+			}
+		}
+	}
+	DCD_reclaim_ALA = {
+		visible = {
+			NOT = {
+				ALA = {
+					is_subject_of = DCD
+				}
+			}
+			has_completed_focus = DCD_reclaim_south
+		}
+		allowed = {
+			original_tag = DCD
+		}
+		available = {
+			AND = {
+				OR = {
+					DCD = {
+						is_neighbor_of = ALA
+					}
+					any_allied_country = {
+						is_neighbor_of = ALA
+					}
+				}
+				NOT = {
+					OR = {
+						has_decision = DCD_reclaim_MEM
+						has_decision = DCD_reclaim_NHN
+						has_decision = DCD_reclaim_VTV
+						has_decision = DCD_reclaim_MAM
+						has_decision = DCD_reclaim_RIR
+						has_decision = DCD_reclaim_CTC
+						has_decision = DCD_reclaim_NYN
+						has_decision = DCD_reclaim_NJN
+						has_decision = DCD_reclaim_PAP
+						has_decision = DCD_reclaim_DED
+						has_decision = DCD_reclaim_MDM
+						has_decision = DCD_reclaim_WVW
+						has_decision = DCD_reclaim_VAV
+						has_decision = DCD_reclaim_NCN
+						has_decision = DCD_reclaim_SCS
+						has_decision = DCD_reclaim_GAG
+						has_decision = DCD_reclaim_FLF
+						has_decision = DCD_reclaim_ALA
+						has_decision = DCD_reclaim_TNT
+						has_decision = DCD_reclaim_KYK
+						has_decision = DCD_reclaim_OHO
+						has_decision = DCD_reclaim_INI
+						has_decision = DCD_reclaim_MIM
+						has_decision = DCD_reclaim_ILI
+						has_decision = DCD_reclaim_WIW
+						has_decision = DCD_reclaim_MSM
+						has_decision = DCD_reclaim_LAL
+						has_decision = DCD_reclaim_ARA
+						has_decision = DCD_reclaim_MOM
+						has_decision = DCD_reclaim_IAI
+						has_decision = DCD_reclaim_MNM
+						has_decision = DCD_reclaim_NDN
+						has_decision = DCD_reclaim_SDS
+						has_decision = DCD_reclaim_NEN
+						has_decision = DCD_reclaim_KSK
+						has_decision = DCD_reclaim_OKO
+						has_decision = DCD_reclaim_TXT
+						has_decision = DCD_reclaim_NMN
+						has_decision = DCD_reclaim_COC
+						has_decision = DCD_reclaim_WYW
+						has_decision = DCD_reclaim_MTM
+						has_decision = DCD_reclaim_IDI
+						has_decision = DCD_reclaim_UTU
+						has_decision = DCD_reclaim_AZA
+						has_decision = DCD_reclaim_NVN
+						has_decision = DCD_reclaim_CAC
+						has_decision = DCD_reclaim_ORO
+						has_decision = DCD_reclaim_WAW
+						has_decision = DCD_reclaim_AKA
+						has_decision = DCD_reclaim_HIH
+					}
+				}
+			}
+		}
+
+		cost = 50
+		days_remove = 30
+		days_re_enable = 365
+		remove_effect = {
+			ALA = {
+				country_event = dc.11
+			}
+		}
+	}
+	DCD_reclaim_TNT = {
+		visible = {
+			NOT = {
+				TNT = {
+					is_subject_of = DCD
+				}
+			}
+			has_completed_focus = DCD_reclaim_south
+		}
+		allowed = {
+			original_tag = DCD
+		}
+		available = {
+			AND = {
+				OR = {
+					DCD = {
+						is_neighbor_of = TNT
+					}
+					any_allied_country = {
+						is_neighbor_of = TNT
+					}
+				}
+				NOT = {
+					OR = {
+						has_decision = DCD_reclaim_MEM
+						has_decision = DCD_reclaim_NHN
+						has_decision = DCD_reclaim_VTV
+						has_decision = DCD_reclaim_MAM
+						has_decision = DCD_reclaim_RIR
+						has_decision = DCD_reclaim_CTC
+						has_decision = DCD_reclaim_NYN
+						has_decision = DCD_reclaim_NJN
+						has_decision = DCD_reclaim_PAP
+						has_decision = DCD_reclaim_DED
+						has_decision = DCD_reclaim_MDM
+						has_decision = DCD_reclaim_WVW
+						has_decision = DCD_reclaim_VAV
+						has_decision = DCD_reclaim_NCN
+						has_decision = DCD_reclaim_SCS
+						has_decision = DCD_reclaim_GAG
+						has_decision = DCD_reclaim_FLF
+						has_decision = DCD_reclaim_ALA
+						has_decision = DCD_reclaim_TNT
+						has_decision = DCD_reclaim_KYK
+						has_decision = DCD_reclaim_OHO
+						has_decision = DCD_reclaim_INI
+						has_decision = DCD_reclaim_MIM
+						has_decision = DCD_reclaim_ILI
+						has_decision = DCD_reclaim_WIW
+						has_decision = DCD_reclaim_MSM
+						has_decision = DCD_reclaim_LAL
+						has_decision = DCD_reclaim_ARA
+						has_decision = DCD_reclaim_MOM
+						has_decision = DCD_reclaim_IAI
+						has_decision = DCD_reclaim_MNM
+						has_decision = DCD_reclaim_NDN
+						has_decision = DCD_reclaim_SDS
+						has_decision = DCD_reclaim_NEN
+						has_decision = DCD_reclaim_KSK
+						has_decision = DCD_reclaim_OKO
+						has_decision = DCD_reclaim_TXT
+						has_decision = DCD_reclaim_NMN
+						has_decision = DCD_reclaim_COC
+						has_decision = DCD_reclaim_WYW
+						has_decision = DCD_reclaim_MTM
+						has_decision = DCD_reclaim_IDI
+						has_decision = DCD_reclaim_UTU
+						has_decision = DCD_reclaim_AZA
+						has_decision = DCD_reclaim_NVN
+						has_decision = DCD_reclaim_CAC
+						has_decision = DCD_reclaim_ORO
+						has_decision = DCD_reclaim_WAW
+						has_decision = DCD_reclaim_AKA
+						has_decision = DCD_reclaim_HIH
+					}
+				}
+			}
+		}
+
+		cost = 50
+		days_remove = 30
+		days_re_enable = 365
+		remove_effect = {
+			TNT = {
+				country_event = dc.11
+			}
+		}
+	}
+	DCD_reclaim_KYK = {
+		visible = {
+			NOT = {
+				KYK = {
+					is_subject_of = DCD
+				}
+			}
+			has_completed_focus = DCD_reclaim_south
+		}
+		allowed = {
+			original_tag = DCD
+		}
+		available = {
+			AND = {
+				OR = {
+					DCD = {
+						is_neighbor_of = KYK
+					}
+					any_allied_country = {
+						is_neighbor_of = KYK
+					}
+				}
+				NOT = {
+					OR = {
+						has_decision = DCD_reclaim_MEM
+						has_decision = DCD_reclaim_NHN
+						has_decision = DCD_reclaim_VTV
+						has_decision = DCD_reclaim_MAM
+						has_decision = DCD_reclaim_RIR
+						has_decision = DCD_reclaim_CTC
+						has_decision = DCD_reclaim_NYN
+						has_decision = DCD_reclaim_NJN
+						has_decision = DCD_reclaim_PAP
+						has_decision = DCD_reclaim_DED
+						has_decision = DCD_reclaim_MDM
+						has_decision = DCD_reclaim_WVW
+						has_decision = DCD_reclaim_VAV
+						has_decision = DCD_reclaim_NCN
+						has_decision = DCD_reclaim_SCS
+						has_decision = DCD_reclaim_GAG
+						has_decision = DCD_reclaim_FLF
+						has_decision = DCD_reclaim_ALA
+						has_decision = DCD_reclaim_TNT
+						has_decision = DCD_reclaim_KYK
+						has_decision = DCD_reclaim_OHO
+						has_decision = DCD_reclaim_INI
+						has_decision = DCD_reclaim_MIM
+						has_decision = DCD_reclaim_ILI
+						has_decision = DCD_reclaim_WIW
+						has_decision = DCD_reclaim_MSM
+						has_decision = DCD_reclaim_LAL
+						has_decision = DCD_reclaim_ARA
+						has_decision = DCD_reclaim_MOM
+						has_decision = DCD_reclaim_IAI
+						has_decision = DCD_reclaim_MNM
+						has_decision = DCD_reclaim_NDN
+						has_decision = DCD_reclaim_SDS
+						has_decision = DCD_reclaim_NEN
+						has_decision = DCD_reclaim_KSK
+						has_decision = DCD_reclaim_OKO
+						has_decision = DCD_reclaim_TXT
+						has_decision = DCD_reclaim_NMN
+						has_decision = DCD_reclaim_COC
+						has_decision = DCD_reclaim_WYW
+						has_decision = DCD_reclaim_MTM
+						has_decision = DCD_reclaim_IDI
+						has_decision = DCD_reclaim_UTU
+						has_decision = DCD_reclaim_AZA
+						has_decision = DCD_reclaim_NVN
+						has_decision = DCD_reclaim_CAC
+						has_decision = DCD_reclaim_ORO
+						has_decision = DCD_reclaim_WAW
+						has_decision = DCD_reclaim_AKA
+						has_decision = DCD_reclaim_HIH
+					}
+				}
+			}
+		}
+
+		cost = 50
+		days_remove = 30
+		days_re_enable = 365
+		remove_effect = {
+			KYK = {
+				country_event = dc.11
+			}
+		}
+	}
+	DCD_reclaim_OHO = {
+		visible = {
+			NOT = {
+				OHO = {
+					is_subject_of = DCD
+				}
+			}
+			has_completed_focus = DCD_reclaim_north
+		}
+		allowed = {
+			original_tag = DCD
+		}
+		available = {
+			AND = {
+				OR = {
+					DCD = {
+						is_neighbor_of = OHO
+					}
+					any_allied_country = {
+						is_neighbor_of = OHO
+					}
+				}
+				NOT = {
+					OR = {
+						has_decision = DCD_reclaim_MEM
+						has_decision = DCD_reclaim_NHN
+						has_decision = DCD_reclaim_VTV
+						has_decision = DCD_reclaim_MAM
+						has_decision = DCD_reclaim_RIR
+						has_decision = DCD_reclaim_CTC
+						has_decision = DCD_reclaim_NYN
+						has_decision = DCD_reclaim_NJN
+						has_decision = DCD_reclaim_PAP
+						has_decision = DCD_reclaim_DED
+						has_decision = DCD_reclaim_MDM
+						has_decision = DCD_reclaim_WVW
+						has_decision = DCD_reclaim_VAV
+						has_decision = DCD_reclaim_NCN
+						has_decision = DCD_reclaim_SCS
+						has_decision = DCD_reclaim_GAG
+						has_decision = DCD_reclaim_FLF
+						has_decision = DCD_reclaim_ALA
+						has_decision = DCD_reclaim_TNT
+						has_decision = DCD_reclaim_KYK
+						has_decision = DCD_reclaim_OHO
+						has_decision = DCD_reclaim_INI
+						has_decision = DCD_reclaim_MIM
+						has_decision = DCD_reclaim_ILI
+						has_decision = DCD_reclaim_WIW
+						has_decision = DCD_reclaim_MSM
+						has_decision = DCD_reclaim_LAL
+						has_decision = DCD_reclaim_ARA
+						has_decision = DCD_reclaim_MOM
+						has_decision = DCD_reclaim_IAI
+						has_decision = DCD_reclaim_MNM
+						has_decision = DCD_reclaim_NDN
+						has_decision = DCD_reclaim_SDS
+						has_decision = DCD_reclaim_NEN
+						has_decision = DCD_reclaim_KSK
+						has_decision = DCD_reclaim_OKO
+						has_decision = DCD_reclaim_TXT
+						has_decision = DCD_reclaim_NMN
+						has_decision = DCD_reclaim_COC
+						has_decision = DCD_reclaim_WYW
+						has_decision = DCD_reclaim_MTM
+						has_decision = DCD_reclaim_IDI
+						has_decision = DCD_reclaim_UTU
+						has_decision = DCD_reclaim_AZA
+						has_decision = DCD_reclaim_NVN
+						has_decision = DCD_reclaim_CAC
+						has_decision = DCD_reclaim_ORO
+						has_decision = DCD_reclaim_WAW
+						has_decision = DCD_reclaim_AKA
+						has_decision = DCD_reclaim_HIH
+					}
+				}
+			}
+		}
+
+		cost = 50
+		days_remove = 30
+		days_re_enable = 365
+		remove_effect = {
+			OHO = {
+				country_event = dc.11
+			}
+		}
+	}
+	DCD_reclaim_INI = {
+		visible = {
+			NOT = {
+				INI = {
+					is_subject_of = DCD
+				}
+			}
+			has_completed_focus = DCD_reclaim_north
+		}
+		allowed = {
+			original_tag = DCD
+		}
+		available = {
+			AND = {
+				OR = {
+					DCD = {
+						is_neighbor_of = INI
+					}
+					any_allied_country = {
+						is_neighbor_of = INI
+					}
+				}
+				NOT = {
+					OR = {
+						has_decision = DCD_reclaim_MEM
+						has_decision = DCD_reclaim_NHN
+						has_decision = DCD_reclaim_VTV
+						has_decision = DCD_reclaim_MAM
+						has_decision = DCD_reclaim_RIR
+						has_decision = DCD_reclaim_CTC
+						has_decision = DCD_reclaim_NYN
+						has_decision = DCD_reclaim_NJN
+						has_decision = DCD_reclaim_PAP
+						has_decision = DCD_reclaim_DED
+						has_decision = DCD_reclaim_MDM
+						has_decision = DCD_reclaim_WVW
+						has_decision = DCD_reclaim_VAV
+						has_decision = DCD_reclaim_NCN
+						has_decision = DCD_reclaim_SCS
+						has_decision = DCD_reclaim_GAG
+						has_decision = DCD_reclaim_FLF
+						has_decision = DCD_reclaim_ALA
+						has_decision = DCD_reclaim_TNT
+						has_decision = DCD_reclaim_KYK
+						has_decision = DCD_reclaim_OHO
+						has_decision = DCD_reclaim_INI
+						has_decision = DCD_reclaim_MIM
+						has_decision = DCD_reclaim_ILI
+						has_decision = DCD_reclaim_WIW
+						has_decision = DCD_reclaim_MSM
+						has_decision = DCD_reclaim_LAL
+						has_decision = DCD_reclaim_ARA
+						has_decision = DCD_reclaim_MOM
+						has_decision = DCD_reclaim_IAI
+						has_decision = DCD_reclaim_MNM
+						has_decision = DCD_reclaim_NDN
+						has_decision = DCD_reclaim_SDS
+						has_decision = DCD_reclaim_NEN
+						has_decision = DCD_reclaim_KSK
+						has_decision = DCD_reclaim_OKO
+						has_decision = DCD_reclaim_TXT
+						has_decision = DCD_reclaim_NMN
+						has_decision = DCD_reclaim_COC
+						has_decision = DCD_reclaim_WYW
+						has_decision = DCD_reclaim_MTM
+						has_decision = DCD_reclaim_IDI
+						has_decision = DCD_reclaim_UTU
+						has_decision = DCD_reclaim_AZA
+						has_decision = DCD_reclaim_NVN
+						has_decision = DCD_reclaim_CAC
+						has_decision = DCD_reclaim_ORO
+						has_decision = DCD_reclaim_WAW
+						has_decision = DCD_reclaim_AKA
+						has_decision = DCD_reclaim_HIH
+					}
+				}
+			}
+		}
+
+		cost = 50
+		days_remove = 30
+		days_re_enable = 365
+		remove_effect = {
+			INI = {
+				country_event = dc.11
+			}
+		}
+	}
+	DCD_reclaim_MIM = {
+		visible = {
+			NOT = {
+				MIM = {
+					is_subject_of = DCD
+				}
+			}
+			has_completed_focus = DCD_reclaim_north
+		}
+		allowed = {
+			original_tag = DCD
+		}
+		available = {
+			AND = {
+				OR = {
+					DCD = {
+						is_neighbor_of = MIM
+					}
+					any_allied_country = {
+						is_neighbor_of = MIM
+					}
+				}
+				NOT = {
+					OR = {
+						has_decision = DCD_reclaim_MEM
+						has_decision = DCD_reclaim_NHN
+						has_decision = DCD_reclaim_VTV
+						has_decision = DCD_reclaim_MAM
+						has_decision = DCD_reclaim_RIR
+						has_decision = DCD_reclaim_CTC
+						has_decision = DCD_reclaim_NYN
+						has_decision = DCD_reclaim_NJN
+						has_decision = DCD_reclaim_PAP
+						has_decision = DCD_reclaim_DED
+						has_decision = DCD_reclaim_MDM
+						has_decision = DCD_reclaim_WVW
+						has_decision = DCD_reclaim_VAV
+						has_decision = DCD_reclaim_NCN
+						has_decision = DCD_reclaim_SCS
+						has_decision = DCD_reclaim_GAG
+						has_decision = DCD_reclaim_FLF
+						has_decision = DCD_reclaim_ALA
+						has_decision = DCD_reclaim_TNT
+						has_decision = DCD_reclaim_KYK
+						has_decision = DCD_reclaim_OHO
+						has_decision = DCD_reclaim_INI
+						has_decision = DCD_reclaim_MIM
+						has_decision = DCD_reclaim_ILI
+						has_decision = DCD_reclaim_WIW
+						has_decision = DCD_reclaim_MSM
+						has_decision = DCD_reclaim_LAL
+						has_decision = DCD_reclaim_ARA
+						has_decision = DCD_reclaim_MOM
+						has_decision = DCD_reclaim_IAI
+						has_decision = DCD_reclaim_MNM
+						has_decision = DCD_reclaim_NDN
+						has_decision = DCD_reclaim_SDS
+						has_decision = DCD_reclaim_NEN
+						has_decision = DCD_reclaim_KSK
+						has_decision = DCD_reclaim_OKO
+						has_decision = DCD_reclaim_TXT
+						has_decision = DCD_reclaim_NMN
+						has_decision = DCD_reclaim_COC
+						has_decision = DCD_reclaim_WYW
+						has_decision = DCD_reclaim_MTM
+						has_decision = DCD_reclaim_IDI
+						has_decision = DCD_reclaim_UTU
+						has_decision = DCD_reclaim_AZA
+						has_decision = DCD_reclaim_NVN
+						has_decision = DCD_reclaim_CAC
+						has_decision = DCD_reclaim_ORO
+						has_decision = DCD_reclaim_WAW
+						has_decision = DCD_reclaim_AKA
+						has_decision = DCD_reclaim_HIH
+					}
+				}
+			}
+		}
+
+		cost = 50
+		days_remove = 30
+		days_re_enable = 365
+		remove_effect = {
+			MIM = {
+				country_event = dc.11
+			}
+		}
+	}
+	DCD_reclaim_ILI = {
+		visible = {
+			NOT = {
+				ILI = {
+					is_subject_of = DCD
+				}
+			}
+			has_completed_focus = DCD_reclaim_north
+		}
+		allowed = {
+			original_tag = DCD
+		}
+		available = {
+			AND = {
+				OR = {
+					DCD = {
+						is_neighbor_of = ILI
+					}
+					any_allied_country = {
+						is_neighbor_of = ILI
+					}
+				}
+				NOT = {
+					OR = {
+						has_decision = DCD_reclaim_MEM
+						has_decision = DCD_reclaim_NHN
+						has_decision = DCD_reclaim_VTV
+						has_decision = DCD_reclaim_MAM
+						has_decision = DCD_reclaim_RIR
+						has_decision = DCD_reclaim_CTC
+						has_decision = DCD_reclaim_NYN
+						has_decision = DCD_reclaim_NJN
+						has_decision = DCD_reclaim_PAP
+						has_decision = DCD_reclaim_DED
+						has_decision = DCD_reclaim_MDM
+						has_decision = DCD_reclaim_WVW
+						has_decision = DCD_reclaim_VAV
+						has_decision = DCD_reclaim_NCN
+						has_decision = DCD_reclaim_SCS
+						has_decision = DCD_reclaim_GAG
+						has_decision = DCD_reclaim_FLF
+						has_decision = DCD_reclaim_ALA
+						has_decision = DCD_reclaim_TNT
+						has_decision = DCD_reclaim_KYK
+						has_decision = DCD_reclaim_OHO
+						has_decision = DCD_reclaim_INI
+						has_decision = DCD_reclaim_MIM
+						has_decision = DCD_reclaim_ILI
+						has_decision = DCD_reclaim_WIW
+						has_decision = DCD_reclaim_MSM
+						has_decision = DCD_reclaim_LAL
+						has_decision = DCD_reclaim_ARA
+						has_decision = DCD_reclaim_MOM
+						has_decision = DCD_reclaim_IAI
+						has_decision = DCD_reclaim_MNM
+						has_decision = DCD_reclaim_NDN
+						has_decision = DCD_reclaim_SDS
+						has_decision = DCD_reclaim_NEN
+						has_decision = DCD_reclaim_KSK
+						has_decision = DCD_reclaim_OKO
+						has_decision = DCD_reclaim_TXT
+						has_decision = DCD_reclaim_NMN
+						has_decision = DCD_reclaim_COC
+						has_decision = DCD_reclaim_WYW
+						has_decision = DCD_reclaim_MTM
+						has_decision = DCD_reclaim_IDI
+						has_decision = DCD_reclaim_UTU
+						has_decision = DCD_reclaim_AZA
+						has_decision = DCD_reclaim_NVN
+						has_decision = DCD_reclaim_CAC
+						has_decision = DCD_reclaim_ORO
+						has_decision = DCD_reclaim_WAW
+						has_decision = DCD_reclaim_AKA
+						has_decision = DCD_reclaim_HIH
+					}
+				}
+			}
+		}
+
+		cost = 50
+		days_remove = 30
+		days_re_enable = 365
+		remove_effect = {
+			ILI = {
+				country_event = dc.11
+			}
+		}
+	}
+	DCD_reclaim_WIW = {
+		visible = {
+			NOT = {
+				WIW = {
+					is_subject_of = DCD
+				}
+			}
+			has_completed_focus = DCD_reclaim_north
+		}
+		allowed = {
+			original_tag = DCD
+		}
+		available = {
+			AND = {
+				OR = {
+					DCD = {
+						is_neighbor_of = WIW
+					}
+					any_allied_country = {
+						is_neighbor_of = WIW
+					}
+				}
+				NOT = {
+					OR = {
+						has_decision = DCD_reclaim_MEM
+						has_decision = DCD_reclaim_NHN
+						has_decision = DCD_reclaim_VTV
+						has_decision = DCD_reclaim_MAM
+						has_decision = DCD_reclaim_RIR
+						has_decision = DCD_reclaim_CTC
+						has_decision = DCD_reclaim_NYN
+						has_decision = DCD_reclaim_NJN
+						has_decision = DCD_reclaim_PAP
+						has_decision = DCD_reclaim_DED
+						has_decision = DCD_reclaim_MDM
+						has_decision = DCD_reclaim_WVW
+						has_decision = DCD_reclaim_VAV
+						has_decision = DCD_reclaim_NCN
+						has_decision = DCD_reclaim_SCS
+						has_decision = DCD_reclaim_GAG
+						has_decision = DCD_reclaim_FLF
+						has_decision = DCD_reclaim_ALA
+						has_decision = DCD_reclaim_TNT
+						has_decision = DCD_reclaim_KYK
+						has_decision = DCD_reclaim_OHO
+						has_decision = DCD_reclaim_INI
+						has_decision = DCD_reclaim_MIM
+						has_decision = DCD_reclaim_ILI
+						has_decision = DCD_reclaim_WIW
+						has_decision = DCD_reclaim_MSM
+						has_decision = DCD_reclaim_LAL
+						has_decision = DCD_reclaim_ARA
+						has_decision = DCD_reclaim_MOM
+						has_decision = DCD_reclaim_IAI
+						has_decision = DCD_reclaim_MNM
+						has_decision = DCD_reclaim_NDN
+						has_decision = DCD_reclaim_SDS
+						has_decision = DCD_reclaim_NEN
+						has_decision = DCD_reclaim_KSK
+						has_decision = DCD_reclaim_OKO
+						has_decision = DCD_reclaim_TXT
+						has_decision = DCD_reclaim_NMN
+						has_decision = DCD_reclaim_COC
+						has_decision = DCD_reclaim_WYW
+						has_decision = DCD_reclaim_MTM
+						has_decision = DCD_reclaim_IDI
+						has_decision = DCD_reclaim_UTU
+						has_decision = DCD_reclaim_AZA
+						has_decision = DCD_reclaim_NVN
+						has_decision = DCD_reclaim_CAC
+						has_decision = DCD_reclaim_ORO
+						has_decision = DCD_reclaim_WAW
+						has_decision = DCD_reclaim_AKA
+						has_decision = DCD_reclaim_HIH
+					}
+				}
+			}
+		}
+
+		cost = 50
+		days_remove = 30
+		days_re_enable = 365
+		remove_effect = {
+			WIW = {
+				country_event = dc.11
+			}
+		}
+	}
+	DCD_reclaim_MSM = {
+		visible = {
+			NOT = {
+				MSM = {
+					is_subject_of = DCD
+				}
+			}
+			has_completed_focus = DCD_reclaim_south
+		}
+		allowed = {
+			original_tag = DCD
+		}
+		available = {
+			AND = {
+				OR = {
+					DCD = {
+						is_neighbor_of = MSM
+					}
+					any_allied_country = {
+						is_neighbor_of = MSM
+					}
+				}
+				NOT = {
+					OR = {
+						has_decision = DCD_reclaim_MEM
+						has_decision = DCD_reclaim_NHN
+						has_decision = DCD_reclaim_VTV
+						has_decision = DCD_reclaim_MAM
+						has_decision = DCD_reclaim_RIR
+						has_decision = DCD_reclaim_CTC
+						has_decision = DCD_reclaim_NYN
+						has_decision = DCD_reclaim_NJN
+						has_decision = DCD_reclaim_PAP
+						has_decision = DCD_reclaim_DED
+						has_decision = DCD_reclaim_MDM
+						has_decision = DCD_reclaim_WVW
+						has_decision = DCD_reclaim_VAV
+						has_decision = DCD_reclaim_NCN
+						has_decision = DCD_reclaim_SCS
+						has_decision = DCD_reclaim_GAG
+						has_decision = DCD_reclaim_FLF
+						has_decision = DCD_reclaim_ALA
+						has_decision = DCD_reclaim_TNT
+						has_decision = DCD_reclaim_KYK
+						has_decision = DCD_reclaim_OHO
+						has_decision = DCD_reclaim_INI
+						has_decision = DCD_reclaim_MIM
+						has_decision = DCD_reclaim_ILI
+						has_decision = DCD_reclaim_WIW
+						has_decision = DCD_reclaim_MSM
+						has_decision = DCD_reclaim_LAL
+						has_decision = DCD_reclaim_ARA
+						has_decision = DCD_reclaim_MOM
+						has_decision = DCD_reclaim_IAI
+						has_decision = DCD_reclaim_MNM
+						has_decision = DCD_reclaim_NDN
+						has_decision = DCD_reclaim_SDS
+						has_decision = DCD_reclaim_NEN
+						has_decision = DCD_reclaim_KSK
+						has_decision = DCD_reclaim_OKO
+						has_decision = DCD_reclaim_TXT
+						has_decision = DCD_reclaim_NMN
+						has_decision = DCD_reclaim_COC
+						has_decision = DCD_reclaim_WYW
+						has_decision = DCD_reclaim_MTM
+						has_decision = DCD_reclaim_IDI
+						has_decision = DCD_reclaim_UTU
+						has_decision = DCD_reclaim_AZA
+						has_decision = DCD_reclaim_NVN
+						has_decision = DCD_reclaim_CAC
+						has_decision = DCD_reclaim_ORO
+						has_decision = DCD_reclaim_WAW
+						has_decision = DCD_reclaim_AKA
+						has_decision = DCD_reclaim_HIH
+					}
+				}
+			}
+		}
+
+		cost = 50
+		days_remove = 30
+		days_re_enable = 365
+		remove_effect = {
+			MSM = {
+				country_event = dc.11
+			}
+		}
+	}
+	DCD_reclaim_LAL = {
+		visible = {
+			NOT = {
+				LAL = {
+					is_subject_of = DCD
+				}
+			}
+			has_completed_focus = DCD_reclaim_south
+		}
+		allowed = {
+			original_tag = DCD
+		}
+		available = {
+			AND = {
+				OR = {
+					DCD = {
+						is_neighbor_of = LAL
+					}
+					any_allied_country = {
+						is_neighbor_of = LAL
+					}
+				}
+				NOT = {
+					OR = {
+						has_decision = DCD_reclaim_MEM
+						has_decision = DCD_reclaim_NHN
+						has_decision = DCD_reclaim_VTV
+						has_decision = DCD_reclaim_MAM
+						has_decision = DCD_reclaim_RIR
+						has_decision = DCD_reclaim_CTC
+						has_decision = DCD_reclaim_NYN
+						has_decision = DCD_reclaim_NJN
+						has_decision = DCD_reclaim_PAP
+						has_decision = DCD_reclaim_DED
+						has_decision = DCD_reclaim_MDM
+						has_decision = DCD_reclaim_WVW
+						has_decision = DCD_reclaim_VAV
+						has_decision = DCD_reclaim_NCN
+						has_decision = DCD_reclaim_SCS
+						has_decision = DCD_reclaim_GAG
+						has_decision = DCD_reclaim_FLF
+						has_decision = DCD_reclaim_ALA
+						has_decision = DCD_reclaim_TNT
+						has_decision = DCD_reclaim_KYK
+						has_decision = DCD_reclaim_OHO
+						has_decision = DCD_reclaim_INI
+						has_decision = DCD_reclaim_MIM
+						has_decision = DCD_reclaim_ILI
+						has_decision = DCD_reclaim_WIW
+						has_decision = DCD_reclaim_MSM
+						has_decision = DCD_reclaim_LAL
+						has_decision = DCD_reclaim_ARA
+						has_decision = DCD_reclaim_MOM
+						has_decision = DCD_reclaim_IAI
+						has_decision = DCD_reclaim_MNM
+						has_decision = DCD_reclaim_NDN
+						has_decision = DCD_reclaim_SDS
+						has_decision = DCD_reclaim_NEN
+						has_decision = DCD_reclaim_KSK
+						has_decision = DCD_reclaim_OKO
+						has_decision = DCD_reclaim_TXT
+						has_decision = DCD_reclaim_NMN
+						has_decision = DCD_reclaim_COC
+						has_decision = DCD_reclaim_WYW
+						has_decision = DCD_reclaim_MTM
+						has_decision = DCD_reclaim_IDI
+						has_decision = DCD_reclaim_UTU
+						has_decision = DCD_reclaim_AZA
+						has_decision = DCD_reclaim_NVN
+						has_decision = DCD_reclaim_CAC
+						has_decision = DCD_reclaim_ORO
+						has_decision = DCD_reclaim_WAW
+						has_decision = DCD_reclaim_AKA
+						has_decision = DCD_reclaim_HIH
+					}
+				}
+			}
+		}
+
+		cost = 50
+		days_remove = 30
+		days_re_enable = 365
+		remove_effect = {
+			LAL = {
+				country_event = dc.11
+			}
+		}
+	}
+	DCD_reclaim_ARA = {
+		visible = {
+			NOT = {
+				ARA = {
+					is_subject_of = DCD
+				}
+			}
+			has_completed_focus = DCD_reclaim_south
+		}
+		allowed = {
+			original_tag = DCD
+		}
+		available = {
+			AND = {
+				OR = {
+					DCD = {
+						is_neighbor_of = ARA
+					}
+					any_allied_country = {
+						is_neighbor_of = ARA
+					}
+				}
+				NOT = {
+					OR = {
+						has_decision = DCD_reclaim_MEM
+						has_decision = DCD_reclaim_NHN
+						has_decision = DCD_reclaim_VTV
+						has_decision = DCD_reclaim_MAM
+						has_decision = DCD_reclaim_RIR
+						has_decision = DCD_reclaim_CTC
+						has_decision = DCD_reclaim_NYN
+						has_decision = DCD_reclaim_NJN
+						has_decision = DCD_reclaim_PAP
+						has_decision = DCD_reclaim_DED
+						has_decision = DCD_reclaim_MDM
+						has_decision = DCD_reclaim_WVW
+						has_decision = DCD_reclaim_VAV
+						has_decision = DCD_reclaim_NCN
+						has_decision = DCD_reclaim_SCS
+						has_decision = DCD_reclaim_GAG
+						has_decision = DCD_reclaim_FLF
+						has_decision = DCD_reclaim_ALA
+						has_decision = DCD_reclaim_TNT
+						has_decision = DCD_reclaim_KYK
+						has_decision = DCD_reclaim_OHO
+						has_decision = DCD_reclaim_INI
+						has_decision = DCD_reclaim_MIM
+						has_decision = DCD_reclaim_ILI
+						has_decision = DCD_reclaim_WIW
+						has_decision = DCD_reclaim_MSM
+						has_decision = DCD_reclaim_LAL
+						has_decision = DCD_reclaim_ARA
+						has_decision = DCD_reclaim_MOM
+						has_decision = DCD_reclaim_IAI
+						has_decision = DCD_reclaim_MNM
+						has_decision = DCD_reclaim_NDN
+						has_decision = DCD_reclaim_SDS
+						has_decision = DCD_reclaim_NEN
+						has_decision = DCD_reclaim_KSK
+						has_decision = DCD_reclaim_OKO
+						has_decision = DCD_reclaim_TXT
+						has_decision = DCD_reclaim_NMN
+						has_decision = DCD_reclaim_COC
+						has_decision = DCD_reclaim_WYW
+						has_decision = DCD_reclaim_MTM
+						has_decision = DCD_reclaim_IDI
+						has_decision = DCD_reclaim_UTU
+						has_decision = DCD_reclaim_AZA
+						has_decision = DCD_reclaim_NVN
+						has_decision = DCD_reclaim_CAC
+						has_decision = DCD_reclaim_ORO
+						has_decision = DCD_reclaim_WAW
+						has_decision = DCD_reclaim_AKA
+						has_decision = DCD_reclaim_HIH
+					}
+				}
+			}
+		}
+
+		cost = 50
+		days_remove = 30
+		days_re_enable = 365
+		remove_effect = {
+			ARA = {
+				country_event = dc.11
+			}
+		}
+	}
+	DCD_reclaim_MOM = {
+		visible = {
+			NOT = {
+				MOM = {
+					is_subject_of = DCD
+				}
+			}
+			has_completed_focus = DCD_reclaim_midwest
+		}
+		allowed = {
+			original_tag = DCD
+		}
+		available = {
+			AND = {
+				OR = {
+					DCD = {
+						is_neighbor_of = MOM
+					}
+					any_allied_country = {
+						is_neighbor_of = MOM
+					}
+				}
+				NOT = {
+					OR = {
+						has_decision = DCD_reclaim_MEM
+						has_decision = DCD_reclaim_NHN
+						has_decision = DCD_reclaim_VTV
+						has_decision = DCD_reclaim_MAM
+						has_decision = DCD_reclaim_RIR
+						has_decision = DCD_reclaim_CTC
+						has_decision = DCD_reclaim_NYN
+						has_decision = DCD_reclaim_NJN
+						has_decision = DCD_reclaim_PAP
+						has_decision = DCD_reclaim_DED
+						has_decision = DCD_reclaim_MDM
+						has_decision = DCD_reclaim_WVW
+						has_decision = DCD_reclaim_VAV
+						has_decision = DCD_reclaim_NCN
+						has_decision = DCD_reclaim_SCS
+						has_decision = DCD_reclaim_GAG
+						has_decision = DCD_reclaim_FLF
+						has_decision = DCD_reclaim_ALA
+						has_decision = DCD_reclaim_TNT
+						has_decision = DCD_reclaim_KYK
+						has_decision = DCD_reclaim_OHO
+						has_decision = DCD_reclaim_INI
+						has_decision = DCD_reclaim_MIM
+						has_decision = DCD_reclaim_ILI
+						has_decision = DCD_reclaim_WIW
+						has_decision = DCD_reclaim_MSM
+						has_decision = DCD_reclaim_LAL
+						has_decision = DCD_reclaim_ARA
+						has_decision = DCD_reclaim_MOM
+						has_decision = DCD_reclaim_IAI
+						has_decision = DCD_reclaim_MNM
+						has_decision = DCD_reclaim_NDN
+						has_decision = DCD_reclaim_SDS
+						has_decision = DCD_reclaim_NEN
+						has_decision = DCD_reclaim_KSK
+						has_decision = DCD_reclaim_OKO
+						has_decision = DCD_reclaim_TXT
+						has_decision = DCD_reclaim_NMN
+						has_decision = DCD_reclaim_COC
+						has_decision = DCD_reclaim_WYW
+						has_decision = DCD_reclaim_MTM
+						has_decision = DCD_reclaim_IDI
+						has_decision = DCD_reclaim_UTU
+						has_decision = DCD_reclaim_AZA
+						has_decision = DCD_reclaim_NVN
+						has_decision = DCD_reclaim_CAC
+						has_decision = DCD_reclaim_ORO
+						has_decision = DCD_reclaim_WAW
+						has_decision = DCD_reclaim_AKA
+						has_decision = DCD_reclaim_HIH
+					}
+				}
+			}
+		}
+
+		cost = 50
+		days_remove = 30
+		days_re_enable = 365
+		remove_effect = {
+			MOM = {
+				country_event = dc.11
+			}
+		}
+	}
+	DCD_reclaim_IAI = {
+		visible = {
+			NOT = {
+				IAI = {
+					is_subject_of = DCD
+				}
+			}
+			has_completed_focus = DCD_reclaim_midwest
+		}
+		allowed = {
+			original_tag = DCD
+		}
+		available = {
+			AND = {
+				OR = {
+					DCD = {
+						is_neighbor_of = IAI
+					}
+					any_allied_country = {
+						is_neighbor_of = IAI
+					}
+				}
+				NOT = {
+					OR = {
+						has_decision = DCD_reclaim_MEM
+						has_decision = DCD_reclaim_NHN
+						has_decision = DCD_reclaim_VTV
+						has_decision = DCD_reclaim_MAM
+						has_decision = DCD_reclaim_RIR
+						has_decision = DCD_reclaim_CTC
+						has_decision = DCD_reclaim_NYN
+						has_decision = DCD_reclaim_NJN
+						has_decision = DCD_reclaim_PAP
+						has_decision = DCD_reclaim_DED
+						has_decision = DCD_reclaim_MDM
+						has_decision = DCD_reclaim_WVW
+						has_decision = DCD_reclaim_VAV
+						has_decision = DCD_reclaim_NCN
+						has_decision = DCD_reclaim_SCS
+						has_decision = DCD_reclaim_GAG
+						has_decision = DCD_reclaim_FLF
+						has_decision = DCD_reclaim_ALA
+						has_decision = DCD_reclaim_TNT
+						has_decision = DCD_reclaim_KYK
+						has_decision = DCD_reclaim_OHO
+						has_decision = DCD_reclaim_INI
+						has_decision = DCD_reclaim_MIM
+						has_decision = DCD_reclaim_ILI
+						has_decision = DCD_reclaim_WIW
+						has_decision = DCD_reclaim_MSM
+						has_decision = DCD_reclaim_LAL
+						has_decision = DCD_reclaim_ARA
+						has_decision = DCD_reclaim_MOM
+						has_decision = DCD_reclaim_IAI
+						has_decision = DCD_reclaim_MNM
+						has_decision = DCD_reclaim_NDN
+						has_decision = DCD_reclaim_SDS
+						has_decision = DCD_reclaim_NEN
+						has_decision = DCD_reclaim_KSK
+						has_decision = DCD_reclaim_OKO
+						has_decision = DCD_reclaim_TXT
+						has_decision = DCD_reclaim_NMN
+						has_decision = DCD_reclaim_COC
+						has_decision = DCD_reclaim_WYW
+						has_decision = DCD_reclaim_MTM
+						has_decision = DCD_reclaim_IDI
+						has_decision = DCD_reclaim_UTU
+						has_decision = DCD_reclaim_AZA
+						has_decision = DCD_reclaim_NVN
+						has_decision = DCD_reclaim_CAC
+						has_decision = DCD_reclaim_ORO
+						has_decision = DCD_reclaim_WAW
+						has_decision = DCD_reclaim_AKA
+						has_decision = DCD_reclaim_HIH
+					}
+				}
+			}
+		}
+
+		cost = 50
+		days_remove = 30
+		days_re_enable = 365
+		remove_effect = {
+			IAI = {
+				country_event = dc.11
+			}
+		}
+	}
+	DCD_reclaim_MNM = {
+		visible = {
+			NOT = {
+				MNM = {
+					is_subject_of = DCD
+				}
+			}
+			has_completed_focus = DCD_reclaim_midwest
+		}
+		allowed = {
+			original_tag = DCD
+		}
+		available = {
+			AND = {
+				OR = {
+					DCD = {
+						is_neighbor_of = MNM
+					}
+					any_allied_country = {
+						is_neighbor_of = MNM
+					}
+				}
+				NOT = {
+					OR = {
+						has_decision = DCD_reclaim_MEM
+						has_decision = DCD_reclaim_NHN
+						has_decision = DCD_reclaim_VTV
+						has_decision = DCD_reclaim_MAM
+						has_decision = DCD_reclaim_RIR
+						has_decision = DCD_reclaim_CTC
+						has_decision = DCD_reclaim_NYN
+						has_decision = DCD_reclaim_NJN
+						has_decision = DCD_reclaim_PAP
+						has_decision = DCD_reclaim_DED
+						has_decision = DCD_reclaim_MDM
+						has_decision = DCD_reclaim_WVW
+						has_decision = DCD_reclaim_VAV
+						has_decision = DCD_reclaim_NCN
+						has_decision = DCD_reclaim_SCS
+						has_decision = DCD_reclaim_GAG
+						has_decision = DCD_reclaim_FLF
+						has_decision = DCD_reclaim_ALA
+						has_decision = DCD_reclaim_TNT
+						has_decision = DCD_reclaim_KYK
+						has_decision = DCD_reclaim_OHO
+						has_decision = DCD_reclaim_INI
+						has_decision = DCD_reclaim_MIM
+						has_decision = DCD_reclaim_ILI
+						has_decision = DCD_reclaim_WIW
+						has_decision = DCD_reclaim_MSM
+						has_decision = DCD_reclaim_LAL
+						has_decision = DCD_reclaim_ARA
+						has_decision = DCD_reclaim_MOM
+						has_decision = DCD_reclaim_IAI
+						has_decision = DCD_reclaim_MNM
+						has_decision = DCD_reclaim_NDN
+						has_decision = DCD_reclaim_SDS
+						has_decision = DCD_reclaim_NEN
+						has_decision = DCD_reclaim_KSK
+						has_decision = DCD_reclaim_OKO
+						has_decision = DCD_reclaim_TXT
+						has_decision = DCD_reclaim_NMN
+						has_decision = DCD_reclaim_COC
+						has_decision = DCD_reclaim_WYW
+						has_decision = DCD_reclaim_MTM
+						has_decision = DCD_reclaim_IDI
+						has_decision = DCD_reclaim_UTU
+						has_decision = DCD_reclaim_AZA
+						has_decision = DCD_reclaim_NVN
+						has_decision = DCD_reclaim_CAC
+						has_decision = DCD_reclaim_ORO
+						has_decision = DCD_reclaim_WAW
+						has_decision = DCD_reclaim_AKA
+						has_decision = DCD_reclaim_HIH
+					}
+				}
+			}
+		}
+
+		cost = 50
+		days_remove = 30
+		days_re_enable = 365
+		remove_effect = {
+			MNM = {
+				country_event = dc.11
+			}
+		}
+	}
+	DCD_reclaim_NDN = {
+		visible = {
+			NOT = {
+				NDN = {
+					is_subject_of = DCD
+				}
+			}
+			has_completed_focus = DCD_reclaim_midwest
+		}
+		allowed = {
+			original_tag = DCD
+		}
+		available = {
+			AND = {
+				OR = {
+					DCD = {
+						is_neighbor_of = NDN
+					}
+					any_allied_country = {
+						is_neighbor_of = NDN
+					}
+				}
+				NOT = {
+					OR = {
+						has_decision = DCD_reclaim_MEM
+						has_decision = DCD_reclaim_NHN
+						has_decision = DCD_reclaim_VTV
+						has_decision = DCD_reclaim_MAM
+						has_decision = DCD_reclaim_RIR
+						has_decision = DCD_reclaim_CTC
+						has_decision = DCD_reclaim_NYN
+						has_decision = DCD_reclaim_NJN
+						has_decision = DCD_reclaim_PAP
+						has_decision = DCD_reclaim_DED
+						has_decision = DCD_reclaim_MDM
+						has_decision = DCD_reclaim_WVW
+						has_decision = DCD_reclaim_VAV
+						has_decision = DCD_reclaim_NCN
+						has_decision = DCD_reclaim_SCS
+						has_decision = DCD_reclaim_GAG
+						has_decision = DCD_reclaim_FLF
+						has_decision = DCD_reclaim_ALA
+						has_decision = DCD_reclaim_TNT
+						has_decision = DCD_reclaim_KYK
+						has_decision = DCD_reclaim_OHO
+						has_decision = DCD_reclaim_INI
+						has_decision = DCD_reclaim_MIM
+						has_decision = DCD_reclaim_ILI
+						has_decision = DCD_reclaim_WIW
+						has_decision = DCD_reclaim_MSM
+						has_decision = DCD_reclaim_LAL
+						has_decision = DCD_reclaim_ARA
+						has_decision = DCD_reclaim_MOM
+						has_decision = DCD_reclaim_IAI
+						has_decision = DCD_reclaim_MNM
+						has_decision = DCD_reclaim_NDN
+						has_decision = DCD_reclaim_SDS
+						has_decision = DCD_reclaim_NEN
+						has_decision = DCD_reclaim_KSK
+						has_decision = DCD_reclaim_OKO
+						has_decision = DCD_reclaim_TXT
+						has_decision = DCD_reclaim_NMN
+						has_decision = DCD_reclaim_COC
+						has_decision = DCD_reclaim_WYW
+						has_decision = DCD_reclaim_MTM
+						has_decision = DCD_reclaim_IDI
+						has_decision = DCD_reclaim_UTU
+						has_decision = DCD_reclaim_AZA
+						has_decision = DCD_reclaim_NVN
+						has_decision = DCD_reclaim_CAC
+						has_decision = DCD_reclaim_ORO
+						has_decision = DCD_reclaim_WAW
+						has_decision = DCD_reclaim_AKA
+						has_decision = DCD_reclaim_HIH
+					}
+				}
+			}
+		}
+
+		cost = 50
+		days_remove = 30
+		days_re_enable = 365
+		remove_effect = {
+			NDN = {
+				country_event = dc.11
+			}
+		}
+	}
+	DCD_reclaim_SDS = {
+		visible = {
+			NOT = {
+				SDS = {
+					is_subject_of = DCD
+				}
+			}
+			has_completed_focus = DCD_reclaim_midwest
+		}
+		allowed = {
+			original_tag = DCD
+		}
+		available = {
+			AND = {
+				OR = {
+					DCD = {
+						is_neighbor_of = SDS
+					}
+					any_allied_country = {
+						is_neighbor_of = SDS
+					}
+				}
+				NOT = {
+					OR = {
+						has_decision = DCD_reclaim_MEM
+						has_decision = DCD_reclaim_NHN
+						has_decision = DCD_reclaim_VTV
+						has_decision = DCD_reclaim_MAM
+						has_decision = DCD_reclaim_RIR
+						has_decision = DCD_reclaim_CTC
+						has_decision = DCD_reclaim_NYN
+						has_decision = DCD_reclaim_NJN
+						has_decision = DCD_reclaim_PAP
+						has_decision = DCD_reclaim_DED
+						has_decision = DCD_reclaim_MDM
+						has_decision = DCD_reclaim_WVW
+						has_decision = DCD_reclaim_VAV
+						has_decision = DCD_reclaim_NCN
+						has_decision = DCD_reclaim_SCS
+						has_decision = DCD_reclaim_GAG
+						has_decision = DCD_reclaim_FLF
+						has_decision = DCD_reclaim_ALA
+						has_decision = DCD_reclaim_TNT
+						has_decision = DCD_reclaim_KYK
+						has_decision = DCD_reclaim_OHO
+						has_decision = DCD_reclaim_INI
+						has_decision = DCD_reclaim_MIM
+						has_decision = DCD_reclaim_ILI
+						has_decision = DCD_reclaim_WIW
+						has_decision = DCD_reclaim_MSM
+						has_decision = DCD_reclaim_LAL
+						has_decision = DCD_reclaim_ARA
+						has_decision = DCD_reclaim_MOM
+						has_decision = DCD_reclaim_IAI
+						has_decision = DCD_reclaim_MNM
+						has_decision = DCD_reclaim_NDN
+						has_decision = DCD_reclaim_SDS
+						has_decision = DCD_reclaim_NEN
+						has_decision = DCD_reclaim_KSK
+						has_decision = DCD_reclaim_OKO
+						has_decision = DCD_reclaim_TXT
+						has_decision = DCD_reclaim_NMN
+						has_decision = DCD_reclaim_COC
+						has_decision = DCD_reclaim_WYW
+						has_decision = DCD_reclaim_MTM
+						has_decision = DCD_reclaim_IDI
+						has_decision = DCD_reclaim_UTU
+						has_decision = DCD_reclaim_AZA
+						has_decision = DCD_reclaim_NVN
+						has_decision = DCD_reclaim_CAC
+						has_decision = DCD_reclaim_ORO
+						has_decision = DCD_reclaim_WAW
+						has_decision = DCD_reclaim_AKA
+						has_decision = DCD_reclaim_HIH
+					}
+				}
+			}
+		}
+
+		cost = 50
+		days_remove = 30
+		days_re_enable = 365
+		remove_effect = {
+			SDS = {
+				country_event = dc.11
+			}
+		}
+	}
+	DCD_reclaim_NEN = {
+		visible = {
+			NOT = {
+				NEN = {
+					is_subject_of = DCD
+				}
+			}
+			has_completed_focus = DCD_reclaim_midwest
+		}
+		allowed = {
+			original_tag = DCD
+		}
+		available = {
+			AND = {
+				OR = {
+					DCD = {
+						is_neighbor_of = NEN
+					}
+					any_allied_country = {
+						is_neighbor_of = NEN
+					}
+				}
+				NOT = {
+					OR = {
+						has_decision = DCD_reclaim_MEM
+						has_decision = DCD_reclaim_NHN
+						has_decision = DCD_reclaim_VTV
+						has_decision = DCD_reclaim_MAM
+						has_decision = DCD_reclaim_RIR
+						has_decision = DCD_reclaim_CTC
+						has_decision = DCD_reclaim_NYN
+						has_decision = DCD_reclaim_NJN
+						has_decision = DCD_reclaim_PAP
+						has_decision = DCD_reclaim_DED
+						has_decision = DCD_reclaim_MDM
+						has_decision = DCD_reclaim_WVW
+						has_decision = DCD_reclaim_VAV
+						has_decision = DCD_reclaim_NCN
+						has_decision = DCD_reclaim_SCS
+						has_decision = DCD_reclaim_GAG
+						has_decision = DCD_reclaim_FLF
+						has_decision = DCD_reclaim_ALA
+						has_decision = DCD_reclaim_TNT
+						has_decision = DCD_reclaim_KYK
+						has_decision = DCD_reclaim_OHO
+						has_decision = DCD_reclaim_INI
+						has_decision = DCD_reclaim_MIM
+						has_decision = DCD_reclaim_ILI
+						has_decision = DCD_reclaim_WIW
+						has_decision = DCD_reclaim_MSM
+						has_decision = DCD_reclaim_LAL
+						has_decision = DCD_reclaim_ARA
+						has_decision = DCD_reclaim_MOM
+						has_decision = DCD_reclaim_IAI
+						has_decision = DCD_reclaim_MNM
+						has_decision = DCD_reclaim_NDN
+						has_decision = DCD_reclaim_SDS
+						has_decision = DCD_reclaim_NEN
+						has_decision = DCD_reclaim_KSK
+						has_decision = DCD_reclaim_OKO
+						has_decision = DCD_reclaim_TXT
+						has_decision = DCD_reclaim_NMN
+						has_decision = DCD_reclaim_COC
+						has_decision = DCD_reclaim_WYW
+						has_decision = DCD_reclaim_MTM
+						has_decision = DCD_reclaim_IDI
+						has_decision = DCD_reclaim_UTU
+						has_decision = DCD_reclaim_AZA
+						has_decision = DCD_reclaim_NVN
+						has_decision = DCD_reclaim_CAC
+						has_decision = DCD_reclaim_ORO
+						has_decision = DCD_reclaim_WAW
+						has_decision = DCD_reclaim_AKA
+						has_decision = DCD_reclaim_HIH
+					}
+				}
+			}
+		}
+
+		cost = 50
+		days_remove = 30
+		days_re_enable = 365
+		remove_effect = {
+			NEN = {
+				country_event = dc.11
+			}
+		}
+	}
+	DCD_reclaim_KSK = {
+		visible = {
+			NOT = {
+				KSK = {
+					is_subject_of = DCD
+				}
+			}
+			has_completed_focus = DCD_reclaim_midwest
+		}
+		allowed = {
+			original_tag = DCD
+		}
+		available = {
+			AND = {
+				OR = {
+					DCD = {
+						is_neighbor_of = KSK
+					}
+					any_allied_country = {
+						is_neighbor_of = KSK
+					}
+				}
+				NOT = {
+					OR = {
+						has_decision = DCD_reclaim_MEM
+						has_decision = DCD_reclaim_NHN
+						has_decision = DCD_reclaim_VTV
+						has_decision = DCD_reclaim_MAM
+						has_decision = DCD_reclaim_RIR
+						has_decision = DCD_reclaim_CTC
+						has_decision = DCD_reclaim_NYN
+						has_decision = DCD_reclaim_NJN
+						has_decision = DCD_reclaim_PAP
+						has_decision = DCD_reclaim_DED
+						has_decision = DCD_reclaim_MDM
+						has_decision = DCD_reclaim_WVW
+						has_decision = DCD_reclaim_VAV
+						has_decision = DCD_reclaim_NCN
+						has_decision = DCD_reclaim_SCS
+						has_decision = DCD_reclaim_GAG
+						has_decision = DCD_reclaim_FLF
+						has_decision = DCD_reclaim_ALA
+						has_decision = DCD_reclaim_TNT
+						has_decision = DCD_reclaim_KYK
+						has_decision = DCD_reclaim_OHO
+						has_decision = DCD_reclaim_INI
+						has_decision = DCD_reclaim_MIM
+						has_decision = DCD_reclaim_ILI
+						has_decision = DCD_reclaim_WIW
+						has_decision = DCD_reclaim_MSM
+						has_decision = DCD_reclaim_LAL
+						has_decision = DCD_reclaim_ARA
+						has_decision = DCD_reclaim_MOM
+						has_decision = DCD_reclaim_IAI
+						has_decision = DCD_reclaim_MNM
+						has_decision = DCD_reclaim_NDN
+						has_decision = DCD_reclaim_SDS
+						has_decision = DCD_reclaim_NEN
+						has_decision = DCD_reclaim_KSK
+						has_decision = DCD_reclaim_OKO
+						has_decision = DCD_reclaim_TXT
+						has_decision = DCD_reclaim_NMN
+						has_decision = DCD_reclaim_COC
+						has_decision = DCD_reclaim_WYW
+						has_decision = DCD_reclaim_MTM
+						has_decision = DCD_reclaim_IDI
+						has_decision = DCD_reclaim_UTU
+						has_decision = DCD_reclaim_AZA
+						has_decision = DCD_reclaim_NVN
+						has_decision = DCD_reclaim_CAC
+						has_decision = DCD_reclaim_ORO
+						has_decision = DCD_reclaim_WAW
+						has_decision = DCD_reclaim_AKA
+						has_decision = DCD_reclaim_HIH
+					}
+				}
+			}
+		}
+
+		cost = 50
+		days_remove = 30
+		days_re_enable = 365
+		remove_effect = {
+			KSK = {
+				country_event = dc.11
+			}
+		}
+	}
+	DCD_reclaim_OKO = {
+		visible = {
+			NOT = {
+				OKO = {
+					is_subject_of = DCD
+				}
+			}
+			has_completed_focus = DCD_reclaim_southwest
+		}
+		allowed = {
+			original_tag = DCD
+		}
+		available = {
+			AND = {
+				OR = {
+					DCD = {
+						is_neighbor_of = OKO
+					}
+					any_allied_country = {
+						is_neighbor_of = OKO
+					}
+				}
+				NOT = {
+					OR = {
+						has_decision = DCD_reclaim_MEM
+						has_decision = DCD_reclaim_NHN
+						has_decision = DCD_reclaim_VTV
+						has_decision = DCD_reclaim_MAM
+						has_decision = DCD_reclaim_RIR
+						has_decision = DCD_reclaim_CTC
+						has_decision = DCD_reclaim_NYN
+						has_decision = DCD_reclaim_NJN
+						has_decision = DCD_reclaim_PAP
+						has_decision = DCD_reclaim_DED
+						has_decision = DCD_reclaim_MDM
+						has_decision = DCD_reclaim_WVW
+						has_decision = DCD_reclaim_VAV
+						has_decision = DCD_reclaim_NCN
+						has_decision = DCD_reclaim_SCS
+						has_decision = DCD_reclaim_GAG
+						has_decision = DCD_reclaim_FLF
+						has_decision = DCD_reclaim_ALA
+						has_decision = DCD_reclaim_TNT
+						has_decision = DCD_reclaim_KYK
+						has_decision = DCD_reclaim_OHO
+						has_decision = DCD_reclaim_INI
+						has_decision = DCD_reclaim_MIM
+						has_decision = DCD_reclaim_ILI
+						has_decision = DCD_reclaim_WIW
+						has_decision = DCD_reclaim_MSM
+						has_decision = DCD_reclaim_LAL
+						has_decision = DCD_reclaim_ARA
+						has_decision = DCD_reclaim_MOM
+						has_decision = DCD_reclaim_IAI
+						has_decision = DCD_reclaim_MNM
+						has_decision = DCD_reclaim_NDN
+						has_decision = DCD_reclaim_SDS
+						has_decision = DCD_reclaim_NEN
+						has_decision = DCD_reclaim_KSK
+						has_decision = DCD_reclaim_OKO
+						has_decision = DCD_reclaim_TXT
+						has_decision = DCD_reclaim_NMN
+						has_decision = DCD_reclaim_COC
+						has_decision = DCD_reclaim_WYW
+						has_decision = DCD_reclaim_MTM
+						has_decision = DCD_reclaim_IDI
+						has_decision = DCD_reclaim_UTU
+						has_decision = DCD_reclaim_AZA
+						has_decision = DCD_reclaim_NVN
+						has_decision = DCD_reclaim_CAC
+						has_decision = DCD_reclaim_ORO
+						has_decision = DCD_reclaim_WAW
+						has_decision = DCD_reclaim_AKA
+						has_decision = DCD_reclaim_HIH
+					}
+				}
+			}
+		}
+
+		cost = 50
+		days_remove = 30
+		days_re_enable = 365
+		remove_effect = {
+			OKO = {
+				country_event = dc.11
+			}
+		}
+	}
+	DCD_reclaim_TXT = {
+		visible = {
+			NOT = {
+				TXT = {
+					is_subject_of = DCD
+				}
+			}
+			has_completed_focus = DCD_reclaim_southwest
+		}
+		allowed = {
+			original_tag = DCD
+		}
+		available = {
+			AND = {
+				OR = {
+					DCD = {
+						is_neighbor_of = TXT
+					}
+					any_allied_country = {
+						is_neighbor_of = TXT
+					}
+				}
+				NOT = {
+					OR = {
+						has_decision = DCD_reclaim_MEM
+						has_decision = DCD_reclaim_NHN
+						has_decision = DCD_reclaim_VTV
+						has_decision = DCD_reclaim_MAM
+						has_decision = DCD_reclaim_RIR
+						has_decision = DCD_reclaim_CTC
+						has_decision = DCD_reclaim_NYN
+						has_decision = DCD_reclaim_NJN
+						has_decision = DCD_reclaim_PAP
+						has_decision = DCD_reclaim_DED
+						has_decision = DCD_reclaim_MDM
+						has_decision = DCD_reclaim_WVW
+						has_decision = DCD_reclaim_VAV
+						has_decision = DCD_reclaim_NCN
+						has_decision = DCD_reclaim_SCS
+						has_decision = DCD_reclaim_GAG
+						has_decision = DCD_reclaim_FLF
+						has_decision = DCD_reclaim_ALA
+						has_decision = DCD_reclaim_TNT
+						has_decision = DCD_reclaim_KYK
+						has_decision = DCD_reclaim_OHO
+						has_decision = DCD_reclaim_INI
+						has_decision = DCD_reclaim_MIM
+						has_decision = DCD_reclaim_ILI
+						has_decision = DCD_reclaim_WIW
+						has_decision = DCD_reclaim_MSM
+						has_decision = DCD_reclaim_LAL
+						has_decision = DCD_reclaim_ARA
+						has_decision = DCD_reclaim_MOM
+						has_decision = DCD_reclaim_IAI
+						has_decision = DCD_reclaim_MNM
+						has_decision = DCD_reclaim_NDN
+						has_decision = DCD_reclaim_SDS
+						has_decision = DCD_reclaim_NEN
+						has_decision = DCD_reclaim_KSK
+						has_decision = DCD_reclaim_OKO
+						has_decision = DCD_reclaim_TXT
+						has_decision = DCD_reclaim_NMN
+						has_decision = DCD_reclaim_COC
+						has_decision = DCD_reclaim_WYW
+						has_decision = DCD_reclaim_MTM
+						has_decision = DCD_reclaim_IDI
+						has_decision = DCD_reclaim_UTU
+						has_decision = DCD_reclaim_AZA
+						has_decision = DCD_reclaim_NVN
+						has_decision = DCD_reclaim_CAC
+						has_decision = DCD_reclaim_ORO
+						has_decision = DCD_reclaim_WAW
+						has_decision = DCD_reclaim_AKA
+						has_decision = DCD_reclaim_HIH
+					}
+				}
+			}
+		}
+
+		cost = 50
+		days_remove = 30
+		days_re_enable = 365
+		remove_effect = {
+			TXT = {
+				country_event = dc.11
+			}
+		}
+	}
+	DCD_reclaim_NMN = {
+		visible = {
+			NOT = {
+				NMN = {
+					is_subject_of = DCD
+				}
+			}
+			has_completed_focus = DCD_reclaim_southwest
+		}
+		allowed = {
+			original_tag = DCD
+		}
+		available = {
+			AND = {
+				OR = {
+					DCD = {
+						is_neighbor_of = NMN
+					}
+					any_allied_country = {
+						is_neighbor_of = NMN
+					}
+				}
+				NOT = {
+					OR = {
+						has_decision = DCD_reclaim_MEM
+						has_decision = DCD_reclaim_NHN
+						has_decision = DCD_reclaim_VTV
+						has_decision = DCD_reclaim_MAM
+						has_decision = DCD_reclaim_RIR
+						has_decision = DCD_reclaim_CTC
+						has_decision = DCD_reclaim_NYN
+						has_decision = DCD_reclaim_NJN
+						has_decision = DCD_reclaim_PAP
+						has_decision = DCD_reclaim_DED
+						has_decision = DCD_reclaim_MDM
+						has_decision = DCD_reclaim_WVW
+						has_decision = DCD_reclaim_VAV
+						has_decision = DCD_reclaim_NCN
+						has_decision = DCD_reclaim_SCS
+						has_decision = DCD_reclaim_GAG
+						has_decision = DCD_reclaim_FLF
+						has_decision = DCD_reclaim_ALA
+						has_decision = DCD_reclaim_TNT
+						has_decision = DCD_reclaim_KYK
+						has_decision = DCD_reclaim_OHO
+						has_decision = DCD_reclaim_INI
+						has_decision = DCD_reclaim_MIM
+						has_decision = DCD_reclaim_ILI
+						has_decision = DCD_reclaim_WIW
+						has_decision = DCD_reclaim_MSM
+						has_decision = DCD_reclaim_LAL
+						has_decision = DCD_reclaim_ARA
+						has_decision = DCD_reclaim_MOM
+						has_decision = DCD_reclaim_IAI
+						has_decision = DCD_reclaim_MNM
+						has_decision = DCD_reclaim_NDN
+						has_decision = DCD_reclaim_SDS
+						has_decision = DCD_reclaim_NEN
+						has_decision = DCD_reclaim_KSK
+						has_decision = DCD_reclaim_OKO
+						has_decision = DCD_reclaim_TXT
+						has_decision = DCD_reclaim_NMN
+						has_decision = DCD_reclaim_COC
+						has_decision = DCD_reclaim_WYW
+						has_decision = DCD_reclaim_MTM
+						has_decision = DCD_reclaim_IDI
+						has_decision = DCD_reclaim_UTU
+						has_decision = DCD_reclaim_AZA
+						has_decision = DCD_reclaim_NVN
+						has_decision = DCD_reclaim_CAC
+						has_decision = DCD_reclaim_ORO
+						has_decision = DCD_reclaim_WAW
+						has_decision = DCD_reclaim_AKA
+						has_decision = DCD_reclaim_HIH
+					}
+				}
+			}
+		}
+
+		cost = 50
+		days_remove = 30
+		days_re_enable = 365
+		remove_effect = {
+			NMN = {
+				country_event = dc.11
+			}
+		}
+	}
+	DCD_reclaim_COC = {
+		visible = {
+			NOT = {
+				COC = {
+					is_subject_of = DCD
+				}
+			}
+			has_completed_focus = DCD_reclaim_southwest
+		}
+		allowed = {
+			original_tag = DCD
+		}
+		available = {
+			AND = {
+				OR = {
+					DCD = {
+						is_neighbor_of = COC
+					}
+					any_allied_country = {
+						is_neighbor_of = COC
+					}
+				}
+				NOT = {
+					OR = {
+						has_decision = DCD_reclaim_MEM
+						has_decision = DCD_reclaim_NHN
+						has_decision = DCD_reclaim_VTV
+						has_decision = DCD_reclaim_MAM
+						has_decision = DCD_reclaim_RIR
+						has_decision = DCD_reclaim_CTC
+						has_decision = DCD_reclaim_NYN
+						has_decision = DCD_reclaim_NJN
+						has_decision = DCD_reclaim_PAP
+						has_decision = DCD_reclaim_DED
+						has_decision = DCD_reclaim_MDM
+						has_decision = DCD_reclaim_WVW
+						has_decision = DCD_reclaim_VAV
+						has_decision = DCD_reclaim_NCN
+						has_decision = DCD_reclaim_SCS
+						has_decision = DCD_reclaim_GAG
+						has_decision = DCD_reclaim_FLF
+						has_decision = DCD_reclaim_ALA
+						has_decision = DCD_reclaim_TNT
+						has_decision = DCD_reclaim_KYK
+						has_decision = DCD_reclaim_OHO
+						has_decision = DCD_reclaim_INI
+						has_decision = DCD_reclaim_MIM
+						has_decision = DCD_reclaim_ILI
+						has_decision = DCD_reclaim_WIW
+						has_decision = DCD_reclaim_MSM
+						has_decision = DCD_reclaim_LAL
+						has_decision = DCD_reclaim_ARA
+						has_decision = DCD_reclaim_MOM
+						has_decision = DCD_reclaim_IAI
+						has_decision = DCD_reclaim_MNM
+						has_decision = DCD_reclaim_NDN
+						has_decision = DCD_reclaim_SDS
+						has_decision = DCD_reclaim_NEN
+						has_decision = DCD_reclaim_KSK
+						has_decision = DCD_reclaim_OKO
+						has_decision = DCD_reclaim_TXT
+						has_decision = DCD_reclaim_NMN
+						has_decision = DCD_reclaim_COC
+						has_decision = DCD_reclaim_WYW
+						has_decision = DCD_reclaim_MTM
+						has_decision = DCD_reclaim_IDI
+						has_decision = DCD_reclaim_UTU
+						has_decision = DCD_reclaim_AZA
+						has_decision = DCD_reclaim_NVN
+						has_decision = DCD_reclaim_CAC
+						has_decision = DCD_reclaim_ORO
+						has_decision = DCD_reclaim_WAW
+						has_decision = DCD_reclaim_AKA
+						has_decision = DCD_reclaim_HIH
+					}
+				}
+			}
+		}
+
+		cost = 50
+		days_remove = 30
+		days_re_enable = 365
+		remove_effect = {
+			COC = {
+				country_event = dc.11
+			}
+		}
+	}
+	DCD_reclaim_WYW = {
+		visible = {
+			NOT = {
+				WYW = {
+					is_subject_of = DCD
+				}
+			}
+			has_completed_focus = DCD_reclaim_midwest
+		}
+		allowed = {
+			original_tag = DCD
+		}
+		available = {
+			AND = {
+				OR = {
+					DCD = {
+						is_neighbor_of = WYW
+					}
+					any_allied_country = {
+						is_neighbor_of = WYW
+					}
+				}
+				NOT = {
+					OR = {
+						has_decision = DCD_reclaim_MEM
+						has_decision = DCD_reclaim_NHN
+						has_decision = DCD_reclaim_VTV
+						has_decision = DCD_reclaim_MAM
+						has_decision = DCD_reclaim_RIR
+						has_decision = DCD_reclaim_CTC
+						has_decision = DCD_reclaim_NYN
+						has_decision = DCD_reclaim_NJN
+						has_decision = DCD_reclaim_PAP
+						has_decision = DCD_reclaim_DED
+						has_decision = DCD_reclaim_MDM
+						has_decision = DCD_reclaim_WVW
+						has_decision = DCD_reclaim_VAV
+						has_decision = DCD_reclaim_NCN
+						has_decision = DCD_reclaim_SCS
+						has_decision = DCD_reclaim_GAG
+						has_decision = DCD_reclaim_FLF
+						has_decision = DCD_reclaim_ALA
+						has_decision = DCD_reclaim_TNT
+						has_decision = DCD_reclaim_KYK
+						has_decision = DCD_reclaim_OHO
+						has_decision = DCD_reclaim_INI
+						has_decision = DCD_reclaim_MIM
+						has_decision = DCD_reclaim_ILI
+						has_decision = DCD_reclaim_WIW
+						has_decision = DCD_reclaim_MSM
+						has_decision = DCD_reclaim_LAL
+						has_decision = DCD_reclaim_ARA
+						has_decision = DCD_reclaim_MOM
+						has_decision = DCD_reclaim_IAI
+						has_decision = DCD_reclaim_MNM
+						has_decision = DCD_reclaim_NDN
+						has_decision = DCD_reclaim_SDS
+						has_decision = DCD_reclaim_NEN
+						has_decision = DCD_reclaim_KSK
+						has_decision = DCD_reclaim_OKO
+						has_decision = DCD_reclaim_TXT
+						has_decision = DCD_reclaim_NMN
+						has_decision = DCD_reclaim_COC
+						has_decision = DCD_reclaim_WYW
+						has_decision = DCD_reclaim_MTM
+						has_decision = DCD_reclaim_IDI
+						has_decision = DCD_reclaim_UTU
+						has_decision = DCD_reclaim_AZA
+						has_decision = DCD_reclaim_NVN
+						has_decision = DCD_reclaim_CAC
+						has_decision = DCD_reclaim_ORO
+						has_decision = DCD_reclaim_WAW
+						has_decision = DCD_reclaim_AKA
+						has_decision = DCD_reclaim_HIH
+					}
+				}
+			}
+		}
+
+		cost = 50
+		days_remove = 30
+		days_re_enable = 365
+		remove_effect = {
+			WYW = {
+				country_event = dc.11
+			}
+		}
+	}
+	DCD_reclaim_MTM = {
+		visible = {
+			NOT = {
+				MTM = {
+					is_subject_of = DCD
+				}
+			}
+			has_completed_focus = DCD_reclaim_midwest
+		}
+		allowed = {
+			original_tag = DCD
+		}
+		available = {
+			AND = {
+				OR = {
+					DCD = {
+						is_neighbor_of = MTM
+					}
+					any_allied_country = {
+						is_neighbor_of = MTM
+					}
+				}
+				NOT = {
+					OR = {
+						has_decision = DCD_reclaim_MEM
+						has_decision = DCD_reclaim_NHN
+						has_decision = DCD_reclaim_VTV
+						has_decision = DCD_reclaim_MAM
+						has_decision = DCD_reclaim_RIR
+						has_decision = DCD_reclaim_CTC
+						has_decision = DCD_reclaim_NYN
+						has_decision = DCD_reclaim_NJN
+						has_decision = DCD_reclaim_PAP
+						has_decision = DCD_reclaim_DED
+						has_decision = DCD_reclaim_MDM
+						has_decision = DCD_reclaim_WVW
+						has_decision = DCD_reclaim_VAV
+						has_decision = DCD_reclaim_NCN
+						has_decision = DCD_reclaim_SCS
+						has_decision = DCD_reclaim_GAG
+						has_decision = DCD_reclaim_FLF
+						has_decision = DCD_reclaim_ALA
+						has_decision = DCD_reclaim_TNT
+						has_decision = DCD_reclaim_KYK
+						has_decision = DCD_reclaim_OHO
+						has_decision = DCD_reclaim_INI
+						has_decision = DCD_reclaim_MIM
+						has_decision = DCD_reclaim_ILI
+						has_decision = DCD_reclaim_WIW
+						has_decision = DCD_reclaim_MSM
+						has_decision = DCD_reclaim_LAL
+						has_decision = DCD_reclaim_ARA
+						has_decision = DCD_reclaim_MOM
+						has_decision = DCD_reclaim_IAI
+						has_decision = DCD_reclaim_MNM
+						has_decision = DCD_reclaim_NDN
+						has_decision = DCD_reclaim_SDS
+						has_decision = DCD_reclaim_NEN
+						has_decision = DCD_reclaim_KSK
+						has_decision = DCD_reclaim_OKO
+						has_decision = DCD_reclaim_TXT
+						has_decision = DCD_reclaim_NMN
+						has_decision = DCD_reclaim_COC
+						has_decision = DCD_reclaim_WYW
+						has_decision = DCD_reclaim_MTM
+						has_decision = DCD_reclaim_IDI
+						has_decision = DCD_reclaim_UTU
+						has_decision = DCD_reclaim_AZA
+						has_decision = DCD_reclaim_NVN
+						has_decision = DCD_reclaim_CAC
+						has_decision = DCD_reclaim_ORO
+						has_decision = DCD_reclaim_WAW
+						has_decision = DCD_reclaim_AKA
+						has_decision = DCD_reclaim_HIH
+					}
+				}
+			}
+		}
+
+		cost = 50
+		days_remove = 30
+		days_re_enable = 365
+		remove_effect = {
+			MTM = {
+				country_event = dc.11
+			}
+		}
+	}
+	DCD_reclaim_IDI = {
+		visible = {
+			NOT = {
+				IDI = {
+					is_subject_of = DCD
+				}
+			}
+			has_completed_focus = DCD_reclaim_columbia_territory
+		}
+		allowed = {
+			original_tag = DCD
+		}
+		available = {
+			AND = {
+				OR = {
+					DCD = {
+						is_neighbor_of = IDI
+					}
+					any_allied_country = {
+						is_neighbor_of = IDI
+					}
+				}
+				NOT = {
+					OR = {
+						has_decision = DCD_reclaim_MEM
+						has_decision = DCD_reclaim_NHN
+						has_decision = DCD_reclaim_VTV
+						has_decision = DCD_reclaim_MAM
+						has_decision = DCD_reclaim_RIR
+						has_decision = DCD_reclaim_CTC
+						has_decision = DCD_reclaim_NYN
+						has_decision = DCD_reclaim_NJN
+						has_decision = DCD_reclaim_PAP
+						has_decision = DCD_reclaim_DED
+						has_decision = DCD_reclaim_MDM
+						has_decision = DCD_reclaim_WVW
+						has_decision = DCD_reclaim_VAV
+						has_decision = DCD_reclaim_NCN
+						has_decision = DCD_reclaim_SCS
+						has_decision = DCD_reclaim_GAG
+						has_decision = DCD_reclaim_FLF
+						has_decision = DCD_reclaim_ALA
+						has_decision = DCD_reclaim_TNT
+						has_decision = DCD_reclaim_KYK
+						has_decision = DCD_reclaim_OHO
+						has_decision = DCD_reclaim_INI
+						has_decision = DCD_reclaim_MIM
+						has_decision = DCD_reclaim_ILI
+						has_decision = DCD_reclaim_WIW
+						has_decision = DCD_reclaim_MSM
+						has_decision = DCD_reclaim_LAL
+						has_decision = DCD_reclaim_ARA
+						has_decision = DCD_reclaim_MOM
+						has_decision = DCD_reclaim_IAI
+						has_decision = DCD_reclaim_MNM
+						has_decision = DCD_reclaim_NDN
+						has_decision = DCD_reclaim_SDS
+						has_decision = DCD_reclaim_NEN
+						has_decision = DCD_reclaim_KSK
+						has_decision = DCD_reclaim_OKO
+						has_decision = DCD_reclaim_TXT
+						has_decision = DCD_reclaim_NMN
+						has_decision = DCD_reclaim_COC
+						has_decision = DCD_reclaim_WYW
+						has_decision = DCD_reclaim_MTM
+						has_decision = DCD_reclaim_IDI
+						has_decision = DCD_reclaim_UTU
+						has_decision = DCD_reclaim_AZA
+						has_decision = DCD_reclaim_NVN
+						has_decision = DCD_reclaim_CAC
+						has_decision = DCD_reclaim_ORO
+						has_decision = DCD_reclaim_WAW
+						has_decision = DCD_reclaim_AKA
+						has_decision = DCD_reclaim_HIH
+					}
+				}
+			}
+		}
+
+		cost = 50
+		days_remove = 30
+		days_re_enable = 365
+		remove_effect = {
+			IDI = {
+				country_event = dc.11
+			}
+		}
+	}
+	DCD_reclaim_UTU = {
+		visible = {
+			NOT = {
+				UTU = {
+					is_subject_of = DCD
+				}
+			}
+			has_completed_focus = DCD_reclaim_southwest
+		}
+		allowed = {
+			original_tag = DCD
+		}
+		available = {
+			AND = {
+				OR = {
+					DCD = {
+						is_neighbor_of = UTU
+					}
+					any_allied_country = {
+						is_neighbor_of = UTU
+					}
+				}
+				NOT = {
+					OR = {
+						has_decision = DCD_reclaim_MEM
+						has_decision = DCD_reclaim_NHN
+						has_decision = DCD_reclaim_VTV
+						has_decision = DCD_reclaim_MAM
+						has_decision = DCD_reclaim_RIR
+						has_decision = DCD_reclaim_CTC
+						has_decision = DCD_reclaim_NYN
+						has_decision = DCD_reclaim_NJN
+						has_decision = DCD_reclaim_PAP
+						has_decision = DCD_reclaim_DED
+						has_decision = DCD_reclaim_MDM
+						has_decision = DCD_reclaim_WVW
+						has_decision = DCD_reclaim_VAV
+						has_decision = DCD_reclaim_NCN
+						has_decision = DCD_reclaim_SCS
+						has_decision = DCD_reclaim_GAG
+						has_decision = DCD_reclaim_FLF
+						has_decision = DCD_reclaim_ALA
+						has_decision = DCD_reclaim_TNT
+						has_decision = DCD_reclaim_KYK
+						has_decision = DCD_reclaim_OHO
+						has_decision = DCD_reclaim_INI
+						has_decision = DCD_reclaim_MIM
+						has_decision = DCD_reclaim_ILI
+						has_decision = DCD_reclaim_WIW
+						has_decision = DCD_reclaim_MSM
+						has_decision = DCD_reclaim_LAL
+						has_decision = DCD_reclaim_ARA
+						has_decision = DCD_reclaim_MOM
+						has_decision = DCD_reclaim_IAI
+						has_decision = DCD_reclaim_MNM
+						has_decision = DCD_reclaim_NDN
+						has_decision = DCD_reclaim_SDS
+						has_decision = DCD_reclaim_NEN
+						has_decision = DCD_reclaim_KSK
+						has_decision = DCD_reclaim_OKO
+						has_decision = DCD_reclaim_TXT
+						has_decision = DCD_reclaim_NMN
+						has_decision = DCD_reclaim_COC
+						has_decision = DCD_reclaim_WYW
+						has_decision = DCD_reclaim_MTM
+						has_decision = DCD_reclaim_IDI
+						has_decision = DCD_reclaim_UTU
+						has_decision = DCD_reclaim_AZA
+						has_decision = DCD_reclaim_NVN
+						has_decision = DCD_reclaim_CAC
+						has_decision = DCD_reclaim_ORO
+						has_decision = DCD_reclaim_WAW
+						has_decision = DCD_reclaim_AKA
+						has_decision = DCD_reclaim_HIH
+					}
+				}
+			}
+		}
+
+		cost = 50
+		days_remove = 30
+		days_re_enable = 365
+		remove_effect = {
+			UTU = {
+				country_event = dc.11
+			}
+		}
+	}
+	DCD_reclaim_AZA = {
+		visible = {
+			NOT = {
+				AZA = {
+					is_subject_of = DCD
+				}
+			}
+			has_completed_focus = DCD_reclaim_southwest
+		}
+		allowed = {
+			original_tag = DCD
+		}
+		available = {
+			AND = {
+				OR = {
+					DCD = {
+						is_neighbor_of = AZA
+					}
+					any_allied_country = {
+						is_neighbor_of = AZA
+					}
+				}
+				NOT = {
+					OR = {
+						has_decision = DCD_reclaim_MEM
+						has_decision = DCD_reclaim_NHN
+						has_decision = DCD_reclaim_VTV
+						has_decision = DCD_reclaim_MAM
+						has_decision = DCD_reclaim_RIR
+						has_decision = DCD_reclaim_CTC
+						has_decision = DCD_reclaim_NYN
+						has_decision = DCD_reclaim_NJN
+						has_decision = DCD_reclaim_PAP
+						has_decision = DCD_reclaim_DED
+						has_decision = DCD_reclaim_MDM
+						has_decision = DCD_reclaim_WVW
+						has_decision = DCD_reclaim_VAV
+						has_decision = DCD_reclaim_NCN
+						has_decision = DCD_reclaim_SCS
+						has_decision = DCD_reclaim_GAG
+						has_decision = DCD_reclaim_FLF
+						has_decision = DCD_reclaim_ALA
+						has_decision = DCD_reclaim_TNT
+						has_decision = DCD_reclaim_KYK
+						has_decision = DCD_reclaim_OHO
+						has_decision = DCD_reclaim_INI
+						has_decision = DCD_reclaim_MIM
+						has_decision = DCD_reclaim_ILI
+						has_decision = DCD_reclaim_WIW
+						has_decision = DCD_reclaim_MSM
+						has_decision = DCD_reclaim_LAL
+						has_decision = DCD_reclaim_ARA
+						has_decision = DCD_reclaim_MOM
+						has_decision = DCD_reclaim_IAI
+						has_decision = DCD_reclaim_MNM
+						has_decision = DCD_reclaim_NDN
+						has_decision = DCD_reclaim_SDS
+						has_decision = DCD_reclaim_NEN
+						has_decision = DCD_reclaim_KSK
+						has_decision = DCD_reclaim_OKO
+						has_decision = DCD_reclaim_TXT
+						has_decision = DCD_reclaim_NMN
+						has_decision = DCD_reclaim_COC
+						has_decision = DCD_reclaim_WYW
+						has_decision = DCD_reclaim_MTM
+						has_decision = DCD_reclaim_IDI
+						has_decision = DCD_reclaim_UTU
+						has_decision = DCD_reclaim_AZA
+						has_decision = DCD_reclaim_NVN
+						has_decision = DCD_reclaim_CAC
+						has_decision = DCD_reclaim_ORO
+						has_decision = DCD_reclaim_WAW
+						has_decision = DCD_reclaim_AKA
+						has_decision = DCD_reclaim_HIH
+					}
+				}
+			}
+		}
+
+		cost = 50
+		days_remove = 30
+		days_re_enable = 365
+		remove_effect = {
+			AZA = {
+				country_event = dc.11
+			}
+		}
+	}
+	DCD_reclaim_NVN = {
+		visible = {
+			NOT = {
+				NVN = {
+					is_subject_of = DCD
+				}
+			}
+			has_completed_focus = DCD_reclaim_southwest
+		}
+		allowed = {
+			original_tag = DCD
+		}
+		available = {
+			AND = {
+				OR = {
+					DCD = {
+						is_neighbor_of = NVN
+					}
+					any_allied_country = {
+						is_neighbor_of = NVN
+					}
+				}
+				NOT = {
+					OR = {
+						has_decision = DCD_reclaim_MEM
+						has_decision = DCD_reclaim_NHN
+						has_decision = DCD_reclaim_VTV
+						has_decision = DCD_reclaim_MAM
+						has_decision = DCD_reclaim_RIR
+						has_decision = DCD_reclaim_CTC
+						has_decision = DCD_reclaim_NYN
+						has_decision = DCD_reclaim_NJN
+						has_decision = DCD_reclaim_PAP
+						has_decision = DCD_reclaim_DED
+						has_decision = DCD_reclaim_MDM
+						has_decision = DCD_reclaim_WVW
+						has_decision = DCD_reclaim_VAV
+						has_decision = DCD_reclaim_NCN
+						has_decision = DCD_reclaim_SCS
+						has_decision = DCD_reclaim_GAG
+						has_decision = DCD_reclaim_FLF
+						has_decision = DCD_reclaim_ALA
+						has_decision = DCD_reclaim_TNT
+						has_decision = DCD_reclaim_KYK
+						has_decision = DCD_reclaim_OHO
+						has_decision = DCD_reclaim_INI
+						has_decision = DCD_reclaim_MIM
+						has_decision = DCD_reclaim_ILI
+						has_decision = DCD_reclaim_WIW
+						has_decision = DCD_reclaim_MSM
+						has_decision = DCD_reclaim_LAL
+						has_decision = DCD_reclaim_ARA
+						has_decision = DCD_reclaim_MOM
+						has_decision = DCD_reclaim_IAI
+						has_decision = DCD_reclaim_MNM
+						has_decision = DCD_reclaim_NDN
+						has_decision = DCD_reclaim_SDS
+						has_decision = DCD_reclaim_NEN
+						has_decision = DCD_reclaim_KSK
+						has_decision = DCD_reclaim_OKO
+						has_decision = DCD_reclaim_TXT
+						has_decision = DCD_reclaim_NMN
+						has_decision = DCD_reclaim_COC
+						has_decision = DCD_reclaim_WYW
+						has_decision = DCD_reclaim_MTM
+						has_decision = DCD_reclaim_IDI
+						has_decision = DCD_reclaim_UTU
+						has_decision = DCD_reclaim_AZA
+						has_decision = DCD_reclaim_NVN
+						has_decision = DCD_reclaim_CAC
+						has_decision = DCD_reclaim_ORO
+						has_decision = DCD_reclaim_WAW
+						has_decision = DCD_reclaim_AKA
+						has_decision = DCD_reclaim_HIH
+					}
+				}
+			}
+		}
+
+		cost = 50
+		days_remove = 30
+		days_re_enable = 365
+		remove_effect = {
+			NVN = {
+				country_event = dc.11
+			}
+		}
+	}
+	DCD_reclaim_CAC = {
+		visible = {
+			NOT = {
+				CAC = {
+					is_subject_of = DCD
+				}
+			}
+			has_completed_focus = DCD_reclaim_southwest
+		}
+		allowed = {
+			original_tag = DCD
+		}
+		available = {
+			AND = {
+				OR = {
+					DCD = {
+						is_neighbor_of = CAC
+					}
+					any_allied_country = {
+						is_neighbor_of = CAC
+					}
+				}
+				NOT = {
+					OR = {
+						has_decision = DCD_reclaim_MEM
+						has_decision = DCD_reclaim_NHN
+						has_decision = DCD_reclaim_VTV
+						has_decision = DCD_reclaim_MAM
+						has_decision = DCD_reclaim_RIR
+						has_decision = DCD_reclaim_CTC
+						has_decision = DCD_reclaim_NYN
+						has_decision = DCD_reclaim_NJN
+						has_decision = DCD_reclaim_PAP
+						has_decision = DCD_reclaim_DED
+						has_decision = DCD_reclaim_MDM
+						has_decision = DCD_reclaim_WVW
+						has_decision = DCD_reclaim_VAV
+						has_decision = DCD_reclaim_NCN
+						has_decision = DCD_reclaim_SCS
+						has_decision = DCD_reclaim_GAG
+						has_decision = DCD_reclaim_FLF
+						has_decision = DCD_reclaim_ALA
+						has_decision = DCD_reclaim_TNT
+						has_decision = DCD_reclaim_KYK
+						has_decision = DCD_reclaim_OHO
+						has_decision = DCD_reclaim_INI
+						has_decision = DCD_reclaim_MIM
+						has_decision = DCD_reclaim_ILI
+						has_decision = DCD_reclaim_WIW
+						has_decision = DCD_reclaim_MSM
+						has_decision = DCD_reclaim_LAL
+						has_decision = DCD_reclaim_ARA
+						has_decision = DCD_reclaim_MOM
+						has_decision = DCD_reclaim_IAI
+						has_decision = DCD_reclaim_MNM
+						has_decision = DCD_reclaim_NDN
+						has_decision = DCD_reclaim_SDS
+						has_decision = DCD_reclaim_NEN
+						has_decision = DCD_reclaim_KSK
+						has_decision = DCD_reclaim_OKO
+						has_decision = DCD_reclaim_TXT
+						has_decision = DCD_reclaim_NMN
+						has_decision = DCD_reclaim_COC
+						has_decision = DCD_reclaim_WYW
+						has_decision = DCD_reclaim_MTM
+						has_decision = DCD_reclaim_IDI
+						has_decision = DCD_reclaim_UTU
+						has_decision = DCD_reclaim_AZA
+						has_decision = DCD_reclaim_NVN
+						has_decision = DCD_reclaim_CAC
+						has_decision = DCD_reclaim_ORO
+						has_decision = DCD_reclaim_WAW
+						has_decision = DCD_reclaim_AKA
+						has_decision = DCD_reclaim_HIH
+					}
+				}
+			}
+		}
+
+		cost = 50
+		days_remove = 30
+		days_re_enable = 365
+		remove_effect = {
+			CAC = {
+				country_event = dc.11
+			}
+		}
+	}
+	DCD_reclaim_ORO = {
+		visible = {
+			NOT = {
+				ORO = {
+					is_subject_of = DCD
+				}
+			}
+			has_completed_focus = DCD_reclaim_columbia_territory
+		}
+		allowed = {
+			original_tag = DCD
+		}
+		available = {
+			AND = {
+				OR = {
+					DCD = {
+						is_neighbor_of = ORO
+					}
+					any_allied_country = {
+						is_neighbor_of = ORO
+					}
+				}
+				NOT = {
+					OR = {
+						has_decision = DCD_reclaim_MEM
+						has_decision = DCD_reclaim_NHN
+						has_decision = DCD_reclaim_VTV
+						has_decision = DCD_reclaim_MAM
+						has_decision = DCD_reclaim_RIR
+						has_decision = DCD_reclaim_CTC
+						has_decision = DCD_reclaim_NYN
+						has_decision = DCD_reclaim_NJN
+						has_decision = DCD_reclaim_PAP
+						has_decision = DCD_reclaim_DED
+						has_decision = DCD_reclaim_MDM
+						has_decision = DCD_reclaim_WVW
+						has_decision = DCD_reclaim_VAV
+						has_decision = DCD_reclaim_NCN
+						has_decision = DCD_reclaim_SCS
+						has_decision = DCD_reclaim_GAG
+						has_decision = DCD_reclaim_FLF
+						has_decision = DCD_reclaim_ALA
+						has_decision = DCD_reclaim_TNT
+						has_decision = DCD_reclaim_KYK
+						has_decision = DCD_reclaim_OHO
+						has_decision = DCD_reclaim_INI
+						has_decision = DCD_reclaim_MIM
+						has_decision = DCD_reclaim_ILI
+						has_decision = DCD_reclaim_WIW
+						has_decision = DCD_reclaim_MSM
+						has_decision = DCD_reclaim_LAL
+						has_decision = DCD_reclaim_ARA
+						has_decision = DCD_reclaim_MOM
+						has_decision = DCD_reclaim_IAI
+						has_decision = DCD_reclaim_MNM
+						has_decision = DCD_reclaim_NDN
+						has_decision = DCD_reclaim_SDS
+						has_decision = DCD_reclaim_NEN
+						has_decision = DCD_reclaim_KSK
+						has_decision = DCD_reclaim_OKO
+						has_decision = DCD_reclaim_TXT
+						has_decision = DCD_reclaim_NMN
+						has_decision = DCD_reclaim_COC
+						has_decision = DCD_reclaim_WYW
+						has_decision = DCD_reclaim_MTM
+						has_decision = DCD_reclaim_IDI
+						has_decision = DCD_reclaim_UTU
+						has_decision = DCD_reclaim_AZA
+						has_decision = DCD_reclaim_NVN
+						has_decision = DCD_reclaim_CAC
+						has_decision = DCD_reclaim_ORO
+						has_decision = DCD_reclaim_WAW
+						has_decision = DCD_reclaim_AKA
+						has_decision = DCD_reclaim_HIH
+					}
+				}
+			}
+		}
+
+		cost = 50
+		days_remove = 30
+		days_re_enable = 365
+		remove_effect = {
+			ORO = {
+				country_event = dc.11
+			}
+		}
+	}
+	DCD_reclaim_WAW = {
+		visible = {
+			NOT = {
+				WAW = {
+					is_subject_of = DCD
+				}
+			}
+			has_completed_focus = DCD_reclaim_columbia_territory
+		}
+		allowed = {
+			original_tag = DCD
+		}
+		available = {
+			AND = {
+				OR = {
+					DCD = {
+						is_neighbor_of = WAW
+					}
+					any_allied_country = {
+						is_neighbor_of = WAW
+					}
+				}
+				NOT = {
+					OR = {
+						has_decision = DCD_reclaim_MEM
+						has_decision = DCD_reclaim_NHN
+						has_decision = DCD_reclaim_VTV
+						has_decision = DCD_reclaim_MAM
+						has_decision = DCD_reclaim_RIR
+						has_decision = DCD_reclaim_CTC
+						has_decision = DCD_reclaim_NYN
+						has_decision = DCD_reclaim_NJN
+						has_decision = DCD_reclaim_PAP
+						has_decision = DCD_reclaim_DED
+						has_decision = DCD_reclaim_MDM
+						has_decision = DCD_reclaim_WVW
+						has_decision = DCD_reclaim_VAV
+						has_decision = DCD_reclaim_NCN
+						has_decision = DCD_reclaim_SCS
+						has_decision = DCD_reclaim_GAG
+						has_decision = DCD_reclaim_FLF
+						has_decision = DCD_reclaim_ALA
+						has_decision = DCD_reclaim_TNT
+						has_decision = DCD_reclaim_KYK
+						has_decision = DCD_reclaim_OHO
+						has_decision = DCD_reclaim_INI
+						has_decision = DCD_reclaim_MIM
+						has_decision = DCD_reclaim_ILI
+						has_decision = DCD_reclaim_WIW
+						has_decision = DCD_reclaim_MSM
+						has_decision = DCD_reclaim_LAL
+						has_decision = DCD_reclaim_ARA
+						has_decision = DCD_reclaim_MOM
+						has_decision = DCD_reclaim_IAI
+						has_decision = DCD_reclaim_MNM
+						has_decision = DCD_reclaim_NDN
+						has_decision = DCD_reclaim_SDS
+						has_decision = DCD_reclaim_NEN
+						has_decision = DCD_reclaim_KSK
+						has_decision = DCD_reclaim_OKO
+						has_decision = DCD_reclaim_TXT
+						has_decision = DCD_reclaim_NMN
+						has_decision = DCD_reclaim_COC
+						has_decision = DCD_reclaim_WYW
+						has_decision = DCD_reclaim_MTM
+						has_decision = DCD_reclaim_IDI
+						has_decision = DCD_reclaim_UTU
+						has_decision = DCD_reclaim_AZA
+						has_decision = DCD_reclaim_NVN
+						has_decision = DCD_reclaim_CAC
+						has_decision = DCD_reclaim_ORO
+						has_decision = DCD_reclaim_WAW
+						has_decision = DCD_reclaim_AKA
+						has_decision = DCD_reclaim_HIH
+					}
+				}
+			}
+		}
+
+		cost = 50
+		days_remove = 30
+		days_re_enable = 365
+		remove_effect = {
+			WAW = {
+				country_event = dc.11
+			}
+		}
+	}
+	DCD_reclaim_AKA = {
+		visible = {
+			NOT = {
+				AKA = {
+					is_subject_of = DCD
+				}
+			}
+			has_completed_focus = DCD_reclaim_columbia_territory
+		}
+		allowed = {
+			original_tag = DCD
+		}
+		available = {
+			AND = {
+				OR = {
+					DCD = {
+						is_neighbor_of = AKA
+					}
+					any_allied_country = {
+						is_neighbor_of = AKA
+					}
+				}
+				NOT = {
+					OR = {
+						has_decision = DCD_reclaim_MEM
+						has_decision = DCD_reclaim_NHN
+						has_decision = DCD_reclaim_VTV
+						has_decision = DCD_reclaim_MAM
+						has_decision = DCD_reclaim_RIR
+						has_decision = DCD_reclaim_CTC
+						has_decision = DCD_reclaim_NYN
+						has_decision = DCD_reclaim_NJN
+						has_decision = DCD_reclaim_PAP
+						has_decision = DCD_reclaim_DED
+						has_decision = DCD_reclaim_MDM
+						has_decision = DCD_reclaim_WVW
+						has_decision = DCD_reclaim_VAV
+						has_decision = DCD_reclaim_NCN
+						has_decision = DCD_reclaim_SCS
+						has_decision = DCD_reclaim_GAG
+						has_decision = DCD_reclaim_FLF
+						has_decision = DCD_reclaim_ALA
+						has_decision = DCD_reclaim_TNT
+						has_decision = DCD_reclaim_KYK
+						has_decision = DCD_reclaim_OHO
+						has_decision = DCD_reclaim_INI
+						has_decision = DCD_reclaim_MIM
+						has_decision = DCD_reclaim_ILI
+						has_decision = DCD_reclaim_WIW
+						has_decision = DCD_reclaim_MSM
+						has_decision = DCD_reclaim_LAL
+						has_decision = DCD_reclaim_ARA
+						has_decision = DCD_reclaim_MOM
+						has_decision = DCD_reclaim_IAI
+						has_decision = DCD_reclaim_MNM
+						has_decision = DCD_reclaim_NDN
+						has_decision = DCD_reclaim_SDS
+						has_decision = DCD_reclaim_NEN
+						has_decision = DCD_reclaim_KSK
+						has_decision = DCD_reclaim_OKO
+						has_decision = DCD_reclaim_TXT
+						has_decision = DCD_reclaim_NMN
+						has_decision = DCD_reclaim_COC
+						has_decision = DCD_reclaim_WYW
+						has_decision = DCD_reclaim_MTM
+						has_decision = DCD_reclaim_IDI
+						has_decision = DCD_reclaim_UTU
+						has_decision = DCD_reclaim_AZA
+						has_decision = DCD_reclaim_NVN
+						has_decision = DCD_reclaim_CAC
+						has_decision = DCD_reclaim_ORO
+						has_decision = DCD_reclaim_WAW
+						has_decision = DCD_reclaim_AKA
+						has_decision = DCD_reclaim_HIH
+					}
+				}
+			}
+		}
+
+		cost = 50
+		days_remove = 30
+		days_re_enable = 365
+		remove_effect = {
+			AKA = {
+				country_event = dc.11
+			}
+		}
+	}
+	DCD_reclaim_HIH = {
+		visible = {
+			NOT = {
+				HIH = {
+					is_subject_of = DCD
+				}
+			}
+			has_completed_focus = DCD_reclaim_columbia_territory
+		}
+		allowed = {
+			original_tag = DCD
+		}
+		available = {
+			AND = {
+				OR = {
+					DCD = {
+						is_neighbor_of = HIH
+					}
+					any_allied_country = {
+						is_neighbor_of = HIH
+					}
+				}
+				NOT = {
+					OR = {
+						has_decision = DCD_reclaim_MEM
+						has_decision = DCD_reclaim_NHN
+						has_decision = DCD_reclaim_VTV
+						has_decision = DCD_reclaim_MAM
+						has_decision = DCD_reclaim_RIR
+						has_decision = DCD_reclaim_CTC
+						has_decision = DCD_reclaim_NYN
+						has_decision = DCD_reclaim_NJN
+						has_decision = DCD_reclaim_PAP
+						has_decision = DCD_reclaim_DED
+						has_decision = DCD_reclaim_MDM
+						has_decision = DCD_reclaim_WVW
+						has_decision = DCD_reclaim_VAV
+						has_decision = DCD_reclaim_NCN
+						has_decision = DCD_reclaim_SCS
+						has_decision = DCD_reclaim_GAG
+						has_decision = DCD_reclaim_FLF
+						has_decision = DCD_reclaim_ALA
+						has_decision = DCD_reclaim_TNT
+						has_decision = DCD_reclaim_KYK
+						has_decision = DCD_reclaim_OHO
+						has_decision = DCD_reclaim_INI
+						has_decision = DCD_reclaim_MIM
+						has_decision = DCD_reclaim_ILI
+						has_decision = DCD_reclaim_WIW
+						has_decision = DCD_reclaim_MSM
+						has_decision = DCD_reclaim_LAL
+						has_decision = DCD_reclaim_ARA
+						has_decision = DCD_reclaim_MOM
+						has_decision = DCD_reclaim_IAI
+						has_decision = DCD_reclaim_MNM
+						has_decision = DCD_reclaim_NDN
+						has_decision = DCD_reclaim_SDS
+						has_decision = DCD_reclaim_NEN
+						has_decision = DCD_reclaim_KSK
+						has_decision = DCD_reclaim_OKO
+						has_decision = DCD_reclaim_TXT
+						has_decision = DCD_reclaim_NMN
+						has_decision = DCD_reclaim_COC
+						has_decision = DCD_reclaim_WYW
+						has_decision = DCD_reclaim_MTM
+						has_decision = DCD_reclaim_IDI
+						has_decision = DCD_reclaim_UTU
+						has_decision = DCD_reclaim_AZA
+						has_decision = DCD_reclaim_NVN
+						has_decision = DCD_reclaim_CAC
+						has_decision = DCD_reclaim_ORO
+						has_decision = DCD_reclaim_WAW
+						has_decision = DCD_reclaim_AKA
+						has_decision = DCD_reclaim_HIH
+					}
+				}
+			}
+		}
+
+		cost = 50
+		days_remove = 30
+		days_re_enable = 365
+		remove_effect = {
+			HIH = {
+				country_event = dc.11
+			}
+		}
+	}
+}
+dc_experiment_reborn = {
+	dc_begin_talks_MEM = {
+		visible = {
+			
+		}
+		available = {
+			
+		}
+		cost = 50
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			add_opinion_modifier = {
+				target = MEM
+				modifier = DCD_american_experiment
+			}
+		}
+	}
+	dc_influence_politics_MEM = {
+		visible = {
+			has_decision = dc_begin_talks_MEM
+		}
+		available = {
+			
+		}
+		cost = 50
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			MEM = {
+				add_popularity = {
+					ideology = neutrality
+					popularity = 0.10
+				}
+				add_timed_idea = {
+					idea = DCD_infiltrate_their_government_idea
+					days = 365
+				}
+			}
+		}
+	}
+}

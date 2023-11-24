@@ -244,3 +244,37 @@ DEM = {
 	color = rgb { 55 109 191 }
 	color_ui = rgb { 55 109 191 }
 }
+
+#Washington DC
+DCF = { #Federalist DC
+	color = rgb { 0 101 196 }
+	color_ui = rgb { 0 101 196 }
+}
+FED = { #Federal State
+	color = rgb { 0 101 196 }
+	color_ui = rgb { 0 101 196 }
+}
+MIL = { #Federal Occupied State
+	color = rgb { 166 95 232 }
+	color_ui = rgb { 166 95 232 }
+}
+DCM = { #DC Military Government
+	color = rgb { 166 95 232 }
+	color_ui = rgb { 166 95 232 }
+}
+DCP = { #DC Prussian Monarchy
+	color = rgb { 0 49 83 }
+	color_ui = rgb { 0 49 83 }
+}
+DCW = { #DC Washington Monarchy
+	color = rgb { 191 0 0 }
+	color_ui = rgb { 191 0 0 }
+}
+DMF = { #DC Monarchist Forces
+	color = rgb { 166 95 232 }
+	color_ui = rgb { 166 95 232 }
+}
+UEK = { #United English Kingdom of America
+	color = rgb { 176 9 31 }
+	color_ui = rgb { 176 9 31 }
+}

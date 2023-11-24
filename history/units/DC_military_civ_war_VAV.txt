@@ -1,0 +1,108 @@
+division_template = {
+  name = "Civilian Militia"
+  is_locked = yes
+  regiments = {
+    infantry = {
+      x = 0
+      y = 0
+    }
+    infantry = {
+      x = 1
+      y = 0
+    }
+    infantry = {
+      x = 0
+      y = 1
+    }
+    infantry = {
+      x = 1
+      y = 1
+    }
+  }
+}
+units = {
+  division = {
+    name = "Civilian Militia"
+    location = 2511
+    division_template = "Civilian Militia"
+    start_experience_factor = 0.25
+    start_equipment_factor = 0.5
+  }
+  division = {
+    name = "Civilian Militia"
+    location = 3640
+    division_template = "Civilian Militia"
+    start_experience_factor = 0.25
+    start_equipment_factor = 0.5
+  }
+  division = {
+    name = "Civilian Militia"
+    location = 5778
+    division_template = "Civilian Militia"
+    start_experience_factor = 0.25
+    start_equipment_factor = 0.5
+  }
+  division = {
+    name = "Civilian Militia"
+    location = 11431
+    division_template = "Civilian Militia"
+    start_experience_factor = 0.25
+    start_equipment_factor = 0.5
+  }
+  division = {
+    name = "Civilian Militia"
+    location = 11432
+    division_template = "Civilian Militia"
+    start_experience_factor = 0.25
+    start_equipment_factor = 0.5
+  }
+  division = {
+    name = "Civilian Militia"
+    location = 10638
+    division_template = "Civilian Militia"
+    start_experience_factor = 0.25
+    start_equipment_factor = 0.5
+  }
+  division = {
+    name = "Civilian Militia"
+    location = 13736
+    division_template = "Civilian Militia"
+    start_experience_factor = 0.25
+    start_equipment_factor = 0.5
+  }
+  division = {
+    name = "Civilian Militia"
+    location = 13732
+    division_template = "Civilian Militia"
+    start_experience_factor = 0.25
+    start_equipment_factor = 0.5
+  }
+  division = {
+    name = "Civilian Militia"
+    location = 15738
+    division_template = "Civilian Militia"
+    start_experience_factor = 0.25
+    start_equipment_factor = 0.5
+  }
+  division = {
+    name = "Civilian Militia"
+    location = 1053
+    division_template = "Civilian Militia"
+    start_experience_factor = 0.25
+    start_equipment_factor = 0.5
+  }
+  division = {
+    name = "Civilian Militia"
+    location = 15659
+    division_template = "Civilian Militia"
+    start_experience_factor = 0.25
+    start_equipment_factor = 0.5
+  }
+  division = {
+    name = "Civilian Militia"
+    location = 873
+    division_template = "Civilian Militia"
+    start_experience_factor = 0.25
+    start_equipment_factor = 0.5
+  }
+}

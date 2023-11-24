@@ -1,0 +1,450 @@
+##List of Votes
+defined_text = {
+	name = DCD_current_vote
+	text = {
+		trigger = {
+			has_country_flag = doing_contcon_political
+		}
+		localization_key = DCD_contcon_political_vote
+	}
+	text = {
+		trigger = {
+			has_country_flag = doing_contcon_economic
+		}
+		localization_key = DCD_contcon_economic_vote
+	}
+	text = {
+		trigger = {
+			has_country_flag = doing_contcon_military
+		}
+		localization_key = DCD_contcon_military_vote
+	}
+	text = {
+		trigger = {
+			has_country_flag = doing_contcon_faction
+		}
+		localization_key = DCD_contcon_faction_vote
+	}
+	text = {
+		trigger = {
+			NOT = {
+				OR = {
+					has_country_flag = doing_contcon_economic
+					has_country_flag = doing_contcon_faction
+					has_country_flag = doing_contcon_military
+					has_country_flag = doing_contcon_political
+				}
+			}
+		}
+		localization_key = DCD_no_current_vote
+	}
+}
+##List of Voters
+defined_text = {
+	name = DCD_continental_voter1
+	text = {
+		trigger = {
+			check_variable = { global.contcon_voters^num > 1 }
+		}
+		localization_key = contcon_voter1_name
+	}
+	text = {
+		trigger = {
+			check_variable = { global.contcon_voters^num < 1 }
+		}
+		localization_key = contcon_voter_none
+	}
+	text = {
+		trigger = {
+			check_variable = { global.contcon_voters^num < 2 }
+		}
+		localization_key = contcon_voter1_last
+	}
+}
+defined_text = {
+	name = DCD_continental_voter2
+	text = {
+		trigger = {
+			check_variable = { global.contcon_voters^num > 2 }
+		}
+		localization_key = contcon_voter2_name
+	}
+	text = {
+		trigger = {
+			check_variable = { global.contcon_voters^num < 2 }
+		}
+		localization_key = contcon_voter_none
+	}
+	text = {
+		trigger = {
+			check_variable = { global.contcon_voters^num < 3 }
+		}
+		localization_key = contcon_voter2_last
+	}
+}
+defined_text = {
+	name = DCD_continental_voter3
+	text = {
+		trigger = {
+			check_variable = { global.contcon_voters^num > 3 }
+		}
+		localization_key = contcon_voter3_name
+	}
+	text = {
+		trigger = {
+			check_variable = { global.contcon_voters^num < 3 }
+		}
+		localization_key = contcon_voter_none
+	}
+	text = {
+		trigger = {
+			check_variable = { global.contcon_voters^num < 4 }
+		}
+		localization_key = contcon_voter3_last
+	}
+}
+defined_text = {
+	name = DCD_continental_voter4
+	text = {
+		trigger = {
+			check_variable = { global.contcon_voters^num > 4 }
+		}
+		localization_key = contcon_voter4_name
+	}
+	text = {
+		trigger = {
+			check_variable = { global.contcon_voters^num < 4 }
+		}
+		localization_key = contcon_voter_none
+	}
+	text = {
+		trigger = {
+			check_variable = { global.contcon_voters^num < 5 }
+		}
+		localization_key = contcon_voter4_last
+	}
+}
+defined_text = {
+	name = DCD_continental_voter5
+	text = {
+		trigger = {
+			check_variable = { global.contcon_voters^num > 5 }
+		}
+		localization_key = contcon_voter5_name
+	}
+	text = {
+		trigger = {
+			check_variable = { global.contcon_voters^num < 5 }
+		}
+		localization_key = contcon_voter_none
+	}
+	text = {
+		trigger = {
+			check_variable = { global.contcon_voters^num < 6 }
+		}
+		localization_key = contcon_voter5_last
+	}
+}
+defined_text = {
+	name = DCD_continental_voter6
+	text = {
+		trigger = {
+			check_variable = { global.contcon_voters^num > 6 }
+		}
+		localization_key = contcon_voter6_name
+	}
+	text = {
+		trigger = {
+			check_variable = { global.contcon_voters^num < 6 }
+		}
+		localization_key = contcon_voter_none
+	}
+	text = {
+		trigger = {
+			check_variable = { global.contcon_voters^num < 7 }
+		}
+		localization_key = contcon_voter6_last
+	}
+}
+defined_text = {
+	name = DCD_continental_voter7
+	text = {
+		trigger = {
+			check_variable = { global.contcon_voters^num > 7 }
+		}
+		localization_key = contcon_voter7_name
+	}
+	text = {
+		trigger = {
+			check_variable = { global.contcon_voters^num < 7 }
+		}
+		localization_key = contcon_voter_none
+	}
+	text = {
+		trigger = {
+			check_variable = { global.contcon_voters^num < 8 }
+		}
+		localization_key = contcon_voter7_last
+	}
+}
+defined_text = {
+	name = DCD_continental_voter8
+	text = {
+		trigger = {
+			check_variable = { global.contcon_voters^num > 8 }
+		}
+		localization_key = contcon_voter8_name
+	}
+	text = {
+		trigger = {
+			check_variable = { global.contcon_voters^num < 8 }
+		}
+		localization_key = contcon_voter_none
+	}
+	text = {
+		trigger = {
+			check_variable = { global.contcon_voters^num < 9 }
+		}
+		localization_key = contcon_voter8_last
+	}
+}
+defined_text = {
+	name = DCD_continental_voter9
+	text = {
+		trigger = {
+			check_variable = { global.contcon_voters^num > 9 }
+		}
+		localization_key = contcon_voter9_name
+	}
+	text = {
+		trigger = {
+			check_variable = { global.contcon_voters^num < 9 }
+		}
+		localization_key = contcon_voter_none
+	}
+	text = {
+		trigger = {
+			check_variable = { global.contcon_voters^num < 9 }
+		}
+		localization_key = contcon_voter9_last
+	}
+}
+defined_text = {
+	name = DCD_continental_voter10
+	text = {
+		trigger = {
+			check_variable = { global.contcon_voters^num > 10 }
+		}
+		localization_key = contcon_voter10_name
+	}
+	text = {
+		trigger = {
+			check_variable = { global.contcon_voters^num < 10 }
+		}
+		localization_key = contcon_voter_none
+	}
+	text = {
+		trigger = {
+			check_variable = { global.contcon_voters^num < 10 }
+		}
+		localization_key = contcon_voter10_last
+	}
+}
+defined_text = {
+	name = DCD_continental_voter11
+	text = {
+		trigger = {
+			check_variable = { global.contcon_voters^num > 11 }
+		}
+		localization_key = contcon_voter11_name
+	}
+	text = {
+		trigger = {
+			check_variable = { global.contcon_voters^num < 11 }
+		}
+		localization_key = contcon_voter_none
+	}
+	text = {
+		trigger = {
+			check_variable = { global.contcon_voters^num < 11 }
+		}
+		localization_key = contcon_voter11_last
+	}
+}
+defined_text = {
+	name = DCD_continental_voter12
+	text = {
+		trigger = {
+			check_variable = { global.contcon_voters^num > 12 }
+		}
+		localization_key = contcon_voter12_name
+	}
+	text = {
+		trigger = {
+			check_variable = { global.contcon_voters^num < 12 }
+		}
+		localization_key = contcon_voter_none
+	}
+	text = {
+		trigger = {
+			check_variable = { global.contcon_voters^num < 12 }
+		}
+		localization_key = contcon_voter12_last
+	}
+}
+defined_text = {
+	name = DCD_continental_voter13
+	text = {
+		trigger = {
+			check_variable = { global.contcon_voters^num > 13 }
+		}
+		localization_key = contcon_voter13_name
+	}
+	text = {
+		trigger = {
+			check_variable = { global.contcon_voters^num < 13 }
+		}
+		localization_key = contcon_voter_none
+	}
+	text = {
+		trigger = {
+			check_variable = { global.contcon_voters^num < 13 }
+		}
+		localization_key = contcon_voter13_last
+	}
+}
+defined_text = {
+	name = DCD_continental_voter14
+	text = {
+		trigger = {
+			check_variable = { global.contcon_voters^num > 14 }
+		}
+		localization_key = contcon_voter14_name
+	}
+	text = {
+		trigger = {
+			check_variable = { global.contcon_voters^num < 14 }
+		}
+		localization_key = contcon_voter_none
+	}
+	text = {
+		trigger = {
+			check_variable = { global.contcon_voters^num < 14 }
+		}
+		localization_key = contcon_voter14_last
+	}
+}
+#Passed/Failed Resolutions
+defined_text = {
+	name = DCD_econ_policy
+	text = {
+		trigger = {
+			NOT = {
+				OR = {
+					has_country_flag = contcon_economic_passed
+					has_country_flag = contcon_economic_failed
+				}
+			}
+		}
+		localization_key = DCD_econ_policy_novote
+	}
+	text = {
+		trigger = {
+			has_country_flag = contcon_economic_passed
+		}
+		localization_key = DCD_econ_policy_passed
+	}
+	text = {
+		trigger = {
+			has_country_flag = contcon_economic_failed
+		}
+		localization_key = DCD_econ_policy_failed
+	}
+}
+defined_text = {
+	name = DCD_mil_policy
+	text = {
+		trigger = {
+			NOT = {
+				OR = {
+					has_country_flag = contcon_military_passed
+					has_country_flag = contcon_military_failed
+				}
+			}
+		}
+		localization_key = DCD_mil_policy_novote
+	}
+	text = {
+		trigger = {
+			has_country_flag = contcon_military_passed
+		}
+		localization_key = DCD_mil_policy_passed
+	}
+	text = {
+		trigger = {
+			has_country_flag = contcon_military_failed
+		}
+		localization_key = DCD_mil_policy_failed
+	}
+}
+defined_text = {
+	name = DCD_political_policy
+	text = {
+		trigger = {
+			NOT = {
+				OR = {
+					has_country_flag = contcon_political_passed
+					has_country_flag = contcon_political_failed
+				}
+			}
+		}
+		localization_key = DCD_political_policy_novote
+	}
+	text = {
+		trigger = {
+			has_country_flag = contcon_political_passed
+		}
+		localization_key = DCD_political_policy_passed
+	}
+	text = {
+		trigger = {
+			has_country_flag = contcon_political_failed
+		}
+		localization_key = DCD_political_policy_failed
+	}
+}
+defined_text = {
+	name = DCD_faction_policy
+	text = {
+		trigger = {
+			NOT = {
+				OR = {
+					has_country_flag = contcon_faction_passed
+					has_country_flag = contcon_faction_failed
+				}
+			}
+		}
+		localization_key = DCD_faction_policy_novote
+	}
+	text = {
+		trigger = {
+			has_country_flag = contcon_faction_passed
+		}
+		localization_key = DCD_faction_policy_passed
+	}
+	text = {
+		trigger = {
+			has_country_flag = contcon_faction_failed
+		}
+		localization_key = DCD_faction_policy_failed
+	}
+}
+#The Experience Reborn
+defined_text = {
+	name = DCD_experiment_status
+	text = {
+		trigger = {
+			
+		}
+	}
+}

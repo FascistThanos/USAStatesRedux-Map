@@ -3074,11 +3074,11 @@ SpriteType = {
 
 #Washington DC
 SpriteType = {
-  name = "GFX_WDC_burning_flag"
+  name = "GFX_DCD_burning_flag"
   texturefile = "gfx/interface/goals/WDC_burning_flag.dds"
 }
 SpriteType = {
-  name = "GFX_DCC_Common_Liberalism"
+  name = "GFX_DCD_Common_Liberalism"
   texturefile = "gfx/interface/goals/commonlib.dds"
 }
 SpriteType = {
