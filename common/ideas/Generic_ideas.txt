@@ -382,7 +382,7 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				send_volunteer_divisions_required = -0.5
-				send_volunteer_size = 2
+				send_volunteer_size = 3
 				war_support_factor = 0.1
 			}
 		}

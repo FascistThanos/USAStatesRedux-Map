@@ -246,40 +246,49 @@ focus_tree = {
 			add_ideas = GEN_foreign_intervention
 		}
 	}
-  focus = {
-    id = GEN_topple_dictatorships
-    icon = GFX_Generic_Chess_Move
-    prerequisite = {
-      focus = GEN_defend_values
-    }
-    search_filters = {
-      FOCUS_FILTER_POLITICAL
-    }
-    cost = 10
-    x = 31
-    y = 6
-    completion_reward = {
-      random_neighbor_country = {
+	focus = {
+		id = GEN_topple_dictatorships
+		icon = GFX_Generic_Chess_Move
+		prerequisite = {
+			focus = GEN_defend_values
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		ai_will_do = {
+			factor = 0
+			modifier = {
+			  add = 1
+			  date > 1940.1.1
+			}
+		  }
+		cost = 10
+		x = 31
+		y = 6
+		completion_reward = {
+			random_neighbor_country = {
 				limit = {
 					not = {
-						is_guaranteed_by = ROOT
-						is_in_faction_with = ROOT
-						has_non_aggression_pact_with = ROOT
-						is_subject_of = ROOT
-            has_government = democratic
+					  is_guaranteed_by = ROOT
+					  is_in_faction_with = ROOT
+					  has_non_aggression_pact_with = ROOT
+					  is_subject_of = ROOT
+					  has_war_with = ROOT
+					  has_war_together_with = ROOT
+					  has_government = democratic
+					}
+				  }
+		  
+				country_event = GEN.4
+				ROOT = {
+					create_wargoal = {
+						target = PREV
+						type = topple_government
 					}
 				}
-        country_event = GEN.4
-        ROOT = {
-          create_wargoal = {
-            target = PREV
-            type = topple_government
-          }
-        }
 			}
-      
-    }
-  }
+		}
+	}
 	#Communist Path
 	focus = {
 		id = GEN_gocommunist
@@ -483,6 +492,13 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 			FOCUS_FILTER_ANNEXATION
 		}
+		ai_will_do = {
+			factor = 0
+			modifier = {
+			  add = 1
+			  date > 1940.1.1
+			}
+		  }
 		cost = 10
 		x = 24
 		y = 5
@@ -490,12 +506,15 @@ focus_tree = {
 			random_neighbor_country = {
 				limit = {
 					not = {
-						is_guaranteed_by = ROOT
-						is_in_faction_with = ROOT
-						has_non_aggression_pact_with = ROOT
-						is_subject_of = ROOT
+					  is_guaranteed_by = ROOT
+					  is_in_faction_with = ROOT
+					  has_non_aggression_pact_with = ROOT
+					  is_subject_of = ROOT
+					  has_war_with = ROOT
+					  has_war_together_with = ROOT
 					}
-				}
+				  }
+		  
 				country_event = GEN.4
 				ROOT = {
 					create_wargoal = {
@@ -624,19 +643,16 @@ focus_tree = {
 	focus = {
 		id = GEN_mobilizeeconomy
 		icon = GFX_Generic_Machine_Gun
-		available = {
-			threat > 0.1
-		}
 		prerequisite = {
 			focus = GEN_gofascist
 		}
-    bypass = {
-      OR = {
-        has_idea = partial_economic_mobilisation
-        has_idea = war_economy
-        has_idea = tot_economic_mobilisation
-      }
-    }
+		bypass = {
+			OR = {
+				has_idea = partial_economic_mobilisation
+				has_idea = war_economy
+				has_idea = tot_economic_mobilisation
+			}
+		}
 		cost = 10
 		x = 42
 		y = 2
@@ -655,17 +671,17 @@ focus_tree = {
 		id = GEN_mobilizeeconomy1
 		icon = GFX_Generic_Industry_Tanks
 		available = {
-			threat > 0.25
+			threat > 0.1
 		}
 		prerequisite = {
 			focus = GEN_mobilizeeconomy
 		}
-    bypass = {
-      OR = {
-        has_idea = war_economy
-        has_idea = tot_economic_mobilisation
-      }
-    }
+		bypass = {
+			OR = {
+				has_idea = war_economy
+				has_idea = tot_economic_mobilisation
+			}
+		}
 		cost = 10
 		x = 42
 		y = 3
@@ -737,6 +753,9 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		completion_reward = {
+			set_rule = {
+				can_create_factions = yes
+			}
 			add_ideas = GEN_volunteersf
 		}
 	}
@@ -746,6 +765,13 @@ focus_tree = {
 		prerequisite = {
 			focus = GEN_foreignintervention
 		}
+		ai_will_do = {
+			factor = 0
+			modifier = {
+			  add = 1
+			  date > 1940.1.1
+			}
+		  }
 		cost = 10
 		x = 42
 		y = 5
@@ -756,12 +782,15 @@ focus_tree = {
 			random_neighbor_country = {
 				limit = {
 					not = {
-						is_guaranteed_by = ROOT
-						is_in_faction_with = ROOT
-						has_non_aggression_pact_with = ROOT
-						is_subject_of = ROOT
+					  is_guaranteed_by = ROOT
+					  is_in_faction_with = ROOT
+					  has_non_aggression_pact_with = ROOT
+					  is_subject_of = ROOT
+					  has_war_with = ROOT
+					  has_war_together_with = ROOT
 					}
-				}
+				  }
+		  
 				country_event = GEN.4
 				ROOT = {
 					create_wargoal = {
@@ -778,6 +807,13 @@ focus_tree = {
 		prerequisite = {
 			focus = GEN_expandborders
 		}
+		ai_will_do = {
+			factor = 0
+			modifier = {
+			  add = 1
+			  date > 1940.1.1
+			}
+		  }
 		cost = 10
 		x = 42
 		y = 6
@@ -788,12 +824,15 @@ focus_tree = {
 			random_neighbor_country = {
 				limit = {
 					not = {
-						is_guaranteed_by = ROOT
-						is_in_faction_with = ROOT
-						has_non_aggression_pact_with = ROOT
-						is_subject_of = ROOT
+					  is_guaranteed_by = ROOT
+					  is_in_faction_with = ROOT
+					  has_non_aggression_pact_with = ROOT
+					  is_subject_of = ROOT
+					  has_war_with = ROOT
+					  has_war_together_with = ROOT
 					}
-				}
+				  }
+		  
 				country_event = GEN.4
 				ROOT = {
 					create_wargoal = {
@@ -812,7 +851,7 @@ focus_tree = {
 			focus = GEN_solidify_influence
 			focus = GEN_getsupport_foreign
 			focus = GEN_jewel_for_commonwealth
-      focus = GEN_topple_dictatorships
+			focus = GEN_topple_dictatorships
 		}
 		cost = 10
 		x = 33
@@ -2371,10 +2410,10 @@ focus_tree = {
 			focus = GEN_king_country
 		}
 		available = {
-      NOT = {
-        has_completed_focus = GEN_find_mercenaries
-      }
-    }
+			NOT = {
+				has_completed_focus = GEN_find_mercenaries
+			}
+		}
 		cost = 10
 		x = 34
 		y = 2
@@ -2389,10 +2428,10 @@ focus_tree = {
 			focus = GEN_king_country
 		}
 		available = {
-      NOT = {
-        has_completed_focus = GEN_protect_monarchy
-      }
-    }
+			NOT = {
+				has_completed_focus = GEN_protect_monarchy
+			}
+		}
 		cost = 10
 		x = 38
 		y = 2
@@ -2406,12 +2445,12 @@ focus_tree = {
 		prerequisite = {
 			focus = GEN_nurture_peasants
 		}
-    bypass = {
-      OR = {
-        has_idea = war_economy
-        has_idea = tot_economic_mobilisation
-      }
-    }
+		bypass = {
+			OR = {
+				has_idea = war_economy
+				has_idea = tot_economic_mobilisation
+			}
+		}
 		cost = 10
 		x = 36
 		y = 3
@@ -2470,6 +2509,13 @@ focus_tree = {
 		prerequisite = {
 			focus = GEN_building_blocks_commonwealth
 		}
+		ai_will_do = {
+			factor = 0
+			modifier = {
+			  add = 1
+			  date > 1940.1.1
+			}
+		  }
 		cost = 10
 		x = 36
 		y = 5
@@ -2477,12 +2523,14 @@ focus_tree = {
 			random_neighbor_country = {
 				limit = {
 					not = {
-						is_guaranteed_by = ROOT
-						is_in_faction_with = ROOT
-						has_non_aggression_pact_with = ROOT
-						is_subject_of = ROOT
+					  is_guaranteed_by = ROOT
+					  is_in_faction_with = ROOT
+					  has_non_aggression_pact_with = ROOT
+					  is_subject_of = ROOT
+					  has_war_with = ROOT
+					  has_war_together_with = ROOT
 					}
-				}
+				  }		  
 				country_event = GEN.4
 				ROOT = {
 					create_wargoal = {
@@ -2502,16 +2550,26 @@ focus_tree = {
 		cost = 10
 		x = 36
 		y = 6
+		ai_will_do = {
+			factor = 0
+			modifier = {
+			  add = 1
+			  date > 1940.1.1
+			}
+		  }
 		completion_reward = {
 			random_neighbor_country = {
 				limit = {
 					not = {
-						is_guaranteed_by = ROOT
-						is_in_faction_with = ROOT
-						has_non_aggression_pact_with = ROOT
-						is_subject_of = ROOT
+					  is_guaranteed_by = ROOT
+					  is_in_faction_with = ROOT
+					  has_non_aggression_pact_with = ROOT
+					  is_subject_of = ROOT
+					  has_war_with = ROOT
+					  has_war_together_with = ROOT
 					}
-				}
+				  }
+		  
 				country_event = GEN.4
 				ROOT = {
 					create_wargoal = {
