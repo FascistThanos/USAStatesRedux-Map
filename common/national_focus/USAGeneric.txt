@@ -2379,6 +2379,9 @@ focus_tree = {
 		cost = 10
 		x = 36
 		y = 1
+		ai_will_do = {
+			factor = 10
+		}
 		completion_reward = {
 			set_politics = {
 				ruling_party = neutrality
@@ -2399,6 +2402,9 @@ focus_tree = {
 		cost = 10
 		x = 36
 		y = 2
+		ai_will_do = {
+			factor = 10
+		}
 		completion_reward = {
 			add_ideas = GEN_nurture_peasants_idea
 		}
@@ -2417,6 +2423,9 @@ focus_tree = {
 		cost = 10
 		x = 34
 		y = 2
+		ai_will_do = {
+			factor = 10
+		}
 		completion_reward = {
 			add_ideas = GEN_defend_monarchy_idea
 		}
@@ -2435,6 +2444,9 @@ focus_tree = {
 		cost = 10
 		x = 38
 		y = 2
+		ai_will_do = {
+			factor = 10
+		}
 		completion_reward = {
 			add_ideas = GEN_expanding_royal_army_idea
 		}
@@ -2454,6 +2466,9 @@ focus_tree = {
 		cost = 10
 		x = 36
 		y = 3
+		ai_will_do = {
+			factor = 10
+		}
 		completion_reward = {
 			add_ideas = war_economy
 			add_stability = -0.1
@@ -2468,6 +2483,9 @@ focus_tree = {
 		cost = 10
 		x = 34
 		y = 3
+		ai_will_do = {
+			factor = 10
+		}
 		completion_reward = {
 			add_political_power = 200
 			add_stability = -0.02
@@ -2482,6 +2500,9 @@ focus_tree = {
 		cost = 10
 		x = 38
 		y = 3
+		ai_will_do = {
+			factor = 10
+		}
 		completion_reward = {
 			add_ideas = GEN_peasants_in_army
 		}
@@ -2496,6 +2517,9 @@ focus_tree = {
 		cost = 10
 		x = 36
 		y = 4
+		ai_will_do = {
+			factor = 10
+		}
 		completion_reward = {
 			set_rule = {
 				can_create_factions = yes
@@ -2519,6 +2543,9 @@ focus_tree = {
 		cost = 10
 		x = 36
 		y = 5
+		ai_will_do = {
+			factor = 10
+		}
 		completion_reward = {
 			random_neighbor_country = {
 				limit = {
@@ -2553,7 +2580,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 0
 			modifier = {
-			  add = 1
+			  add = 10
 			  date > 1940.1.1
 			}
 		  }
