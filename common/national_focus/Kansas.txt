@@ -1,4 +1,5 @@
 ########################### KANSAS by cfc324 ###########################
+########################### KANSAS rework by GrievingOhio150 ###########################
 focus_tree = {
 	id = kansas_focus
 	country = {
@@ -584,7 +585,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KSK_communist4
-		icon = GFX_goal_generic_fortify_city
+		icon = GFX_focus_KSK_American_Communism
 		prerequisite = {
 			focus = KSK_communist
 		}
@@ -593,19 +594,14 @@ focus_tree = {
 		relative_position_id = KSK_communist
 		cost = 10
 		available = {
-			has_defensive_war = yes
 		}
 		completion_reward = {
-			add_timed_idea = {
-				idea = KSK_defense
-				days = 365
-			}
-			add_political_power = 100
+			add_stability = 0.05
 		}
 	}
 	focus = {
 		id = KSK_communist5
-		icon = GFX_focus_YUG_pan_slavic_congress
+		icon = GFX_FLF_Purge_Radicals
 		prerequisite = {
 			focus = KSK_communist1
 		}
@@ -689,6 +685,217 @@ focus_tree = {
 			}
 		}
 	}
+	focus = {
+		id = KSK_communist11
+		icon = GFX_focus_KSK_Red_Army
+		prerequisite = {
+			focus = KSK_communist9
+		}
+		x = -2
+		y = 1
+		relative_position_id = KSK_communist9
+		cost = 10
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = KSK_communist12
+		icon = GFX_Generic_Red_Atomic
+		prerequisite = {
+			focus = KSK_communist9
+		}
+		x = 0
+		y = 1
+		relative_position_id = KSK_communist9
+		cost = 10
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = KSK_communist13
+		icon = GFX_focus_eng_crush_the_dream
+		prerequisite = {
+			focus = KSK_communist12
+			focus = KSK_communist11
+		}
+		x = 1
+		y = 1
+		relative_position_id = KSK_communist11
+		cost = 10
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = KSK_communist14
+		icon = GFX_focus_eng_crush_the_dream
+		prerequisite = {
+			focus = KSK_communist13
+		}
+		mutually_exclusive = {
+			focus = KSK_communist15
+		}
+		available = {
+			NOT = {
+				TXT = { has_government = communism }
+			}
+		}
+		prerequisite = { focus = KSK_communist4 }
+		x = -1
+		y = 1
+		relative_position_id = KSK_communist4
+		cost = 10
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = KSK_communist15
+		icon = GFX_focus_KSK_Befriend_Texas
+		prerequisite = {
+			focus = KSK_communist10
+		}
+		mutually_exclusive = {
+			focus = KSK_communist14
+		}
+		available = {
+			TXT = { has_government = communism }
+		}
+		prerequisite = { focus = KSK_communist4 }
+		x = -1
+		y = 1
+		relative_position_id = KSK_communist10
+		cost = 10
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = KSK_communist16
+		icon = GFX_Generic_Socialist_Revolution_Fixed
+		prerequisite = {
+			focus = KSK_communist14
+			focus = KSK_communist15
+		}
+		available = {
+			has_army_manpower = {
+				size > 50000
+			}
+		}
+		x = 1
+		y = 1
+		relative_position_id = KSK_communist14
+		cost = 10
+		completion_reward = {
+			add_war_support = 0.1
+		}
+	}
+	focus = {
+		id = KSK_communist17
+		icon = GFX_focus_eng_crush_the_dream
+		prerequisite = {
+			focus = KSK_communist16
+		}
+		x = -3
+		y = 1
+		relative_position_id = KSK_communist16
+		cost = 5
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = OKO
+			}
+		}
+	}
+	focus = {
+		id = KSK_communist18
+		icon = GFX_focus_eng_crush_the_dream
+		prerequisite = { focus = KSK_communist16 }
+		x = -1
+		y = 1
+		relative_position_id = KSK_communist16
+		cost = 10
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = MOM
+			}
+		}
+	}
+	focus = {
+		id = KSK_communist19
+		icon = GFX_focus_eng_crush_the_dream
+		prerequisite = { focus = KSK_communist16 }
+		x = 1
+		y = 1
+		relative_position_id = KSK_communist16
+		cost = 10
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = NEN
+			}
+		}
+	}
+	focus = {
+		id = KSK_communist20
+		icon = GFX_TXT_Assimilate_Colorado
+		prerequisite = { focus = KSK_communist16 }
+		x = 3
+		y = 1
+		relative_position_id = KSK_communist16
+		cost = 10
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = COC
+			}
+		}
+	}
+	focus = {
+		id = KSK_communist21
+		icon = GFX_focus_eng_crush_the_dream
+		prerequisite = {
+			focus = KSK_communist17
+		}
+		prerequisite = { focus = KSK_communist18 }
+		x = 1
+		y = 1
+		relative_position_id = KSK_communist17
+		cost = 10
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = TXT
+			}
+		}
+	}
+	focus = {
+		id = KSK_communist22
+		icon = GFX_focus_KSK_SSR_System
+		prerequisite = {
+			focus = KSK_communist19
+		}
+		prerequisite = { focus = KSK_communist20 }
+		x = 1
+		y = 1
+		relative_position_id = KSK_communist19
+		cost = 10
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = KSK_communist23
+		icon = GFX_focus_eng_crush_the_dream
+		prerequisite = {
+			focus = KSK_communist21
+			focus = KSK_communist22
+		}
+		x = 2
+		y = 1
+		relative_position_id = KSK_communist21
+		cost = 10
+		completion_reward = {
+		}
+	}
+
 	focus = {
 		id = KSK_fascist1
 		icon = GFX_goal_support_fascism

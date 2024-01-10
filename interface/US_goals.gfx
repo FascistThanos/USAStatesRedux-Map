@@ -2812,6 +2812,22 @@ SpriteType = {
   name = "GFX_focus_KSK_Chaffee"
   texturefile = "gfx/interface/goals/focus_KSK_Chaffee.dds"
 }
+SpriteType = {
+  name = "GFX_focus_KSK_SSR_System"
+  texturefile = "gfx/interface/goals/Focus_Congress_of_Soviets.dds"
+}
+SpriteType = {
+  name = "GFX_focus_KSK_Red_Army"
+  texturefile = "gfx/interface/goals/TotSoc_Focus.dds"
+}
+SpriteType = {
+  name = "GFX_focus_KSK_American_Communism"
+  texturefile = "gfx/interface/goals/KSK_American_Communism.dds"
+}
+SpriteType = {
+  name = "GFX_focus_KSK_Befriend_Texas"
+  texturefile = "gfx/interface/goals/KSK_Befriend_Texas.dds"
+}
 ###########################################################################################################################
 
 

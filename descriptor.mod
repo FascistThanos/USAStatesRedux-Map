@@ -1,4 +1,9 @@
-name="USA States Redux: North America"
+version="2.1"
+tags={
+	"Alternative History"
+	"Events"
+	"Gameplay"
+}
 replace_path="history/countries"
 replace_path="history/states"
 replace_path="history/units"
@@ -40,14 +45,5 @@ replace_path="common/operations"
 replace_path="common/units/names_railway_guns"
 replace_path="common/ai_equipment"
 replace_path="history/general"
-version="2.1"
-picture="thumbnail.png"
-tags={
-	"Map"
-	"National Focuses"
-	"Gameplay"
-	"Events"
-}
-supported_version="1.13.*"
-path="C:/Users/Isaac/Documents/Paradox Interactive/Hearts of Iron IV/mod/USAStatesRedux-Map"
-remote_file_id="3093007269"
+name="US States Redux Github"
+supported_version="1.13.6"
