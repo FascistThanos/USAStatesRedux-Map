@@ -244,3 +244,8 @@ DEM = {
 	color = rgb { 55 109 191 }
 	color_ui = rgb { 55 109 191 }
 }
+
+KSK_USSR = {
+	color = rgb { 255 0 0 }
+	color_ui = rgb { 225 0 0 }
+}

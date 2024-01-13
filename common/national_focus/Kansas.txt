@@ -547,6 +547,9 @@ focus_tree = {
 				ideology = communism
 				popularity = 0.40
 			}
+			add_ideas = {
+				KSK_jayhawk_resistance1
+			}
 			add_stability = -0.15
 		}
 	}
@@ -610,10 +613,8 @@ focus_tree = {
 		cost = 10
 		relative_position_id = KSK_communist1
 		completion_reward = {
-			add_timed_idea = {
-				idea = KSK_five_year_plan
-				days = 1825
-			}
+			add_war_support = 0.05
+			add_political_power = -20
 		}
 	}
 	focus = {
@@ -660,7 +661,7 @@ focus_tree = {
 			set_rule = {
 				can_create_factions = yes
 			}
-			create_faction = "Sunflower Internationale"
+			create_faction = "AMERIFORM"
 		}
 	}
 	focus = {
@@ -672,17 +673,12 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = KSK_communist6
-		cost = 15
+		cost = 5
 		available = {
 		}
 		completion_reward = {
-			add_political_power = 200
-			add_ideas = {
-				KSK_finished_five_year_plan
-			}
-			remove_ideas = {
-				KSK_five_year_plan
-			}
+			add_political_power = 30
+			add_stability = 0.1
 		}
 	}
 	focus = {
@@ -696,6 +692,9 @@ focus_tree = {
 		relative_position_id = KSK_communist9
 		cost = 10
 		completion_reward = {
+			add_ideas = {
+				KSK_red_army
+			}
 		}
 	}
 	focus = {
@@ -709,6 +708,7 @@ focus_tree = {
 		relative_position_id = KSK_communist9
 		cost = 10
 		completion_reward = {
+			add_research_slot = 1
 		}
 	}
 	focus = {
@@ -723,6 +723,9 @@ focus_tree = {
 		relative_position_id = KSK_communist11
 		cost = 10
 		completion_reward = {
+			add_ideas = {
+				KSK_five_year_plan
+			}
 		}
 	}
 	focus = {

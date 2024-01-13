@@ -1,6 +1,11 @@
 ﻿l_english:
 ##Ideas
  KSK_realpolitik:0 "RealPolitik"
+ KSK_red_army:0 "Kansan Red Army"
+ KSK_jayhawk_resistance1:0 "Jayhawk Resistance: Strong"
+ KSK_jayhawk_resistance2:0 "Jayhawk Resistance: Faltering"
+ KSK_jayhawk_resistance3:0 "Jayhawk Resistance: Weakened"
+ KSK_jayhawk_resistance4:0 "Jayhawk Resistance: Nearly Destroyed"
  KSK_beacon:0 "Beacon of Democracy"
  KSK_integration:0 "Full Integration"
  KSK_defense:0 "Motherland Defense"
@@ -230,6 +235,11 @@
 ##DECISIONS##
 KSK_ssr_decisions:0 "Forming the New SSR's"
 KSK_form_missourian_ssr:0 "Establish the Missourian SSR"
+KSK_jayhawk_resistance_decisions:0 "Dealing with the Jayhawk Resistance"
+KSK_fund_KCIA:0 "Fund the KCIA"
+KSK_crack_down_on_public_meetings:0 "Crack down on Public Meetings"
+KSK_strike_at_nazi_headquarters:0 "Strike at Nazi Headquarters"
+KSK_assassinate_winrod:0 "Assassinate Winrod"
 
 
 missouri.1.t:0 "Missourian Victory!"
@@ -239,3 +249,12 @@ missouri.3.t:0 "The Kansas City Referendum"
 missouri.3.d:0 "Following the skirmishes along the border, Kansas has decided to propose a referendum to the people of Kansas City. The votes have all been counted, and it seems that Kansas City has voted to be unified under Kansas. Should we accept the result?"
 missouri.3.a:0 "We must follow the will of the people."
 missouri.3.b:0 "Absolutely not! They obviously tampered with the vote!"
+
+  KSK_democratic_party:0 "Republican Party of Kansas"
+  KSK_democratic_party_long:0 "Republican Party of Kansas"
+  KSK_fascism_party:0 "NSKCP"
+  KSK_fascism_party_long:0 "National Socialist Kansas Catholics Party"
+  KSK_communism_party:0 "KCP"
+  KSK_communism_party_long:0 "Kansas Communist Party"
+  KSK_neutrality_party:0 "Dissidents"
+  KSK_neutrality_party_long:0 "Unknown Dissidents"

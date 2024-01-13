@@ -790,3 +790,7 @@ DEM_neutrality_ADJ:0 "Democratic"
 factions:0 "Form a Faction"
 communist_faction:0 "Form a Communist Faction"
 democratic_faction:0 "Form a Democratic Faction"
+
+KSK_USSR_communism:0 "American Soviet Socialist Republic"
+KSK_USSR_communism_DEF:0 "the American Soviet Socialist Republic"
+KSK_USSR_communism_ADJ:0 "American"

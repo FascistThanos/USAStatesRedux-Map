@@ -12,17 +12,10 @@ KSK_ssr_decisions = {
 	}
 	visible_when_empty = yes
 }
-COC_unite_mighty_rockies_decisions = {
+KSK_jayhawk_resistance_decisions = {
 	icon = decision_category_military_operation
 	priority = 10
 	visible = {
-		has_completed_focus = COC_unite_the_mighty_rockies
-	}
-}
-COC_strengthen_coloradan_state_decisions = {
-	icon = decision_category_military_operation
-	priority = 10
-	visible = {
-		has_completed_focus = COC_strengthen_the_coloradan_state
+		has_completed_focus = KSK_communist5
 	}
 }

@@ -4,6 +4,7 @@ KSK_ssr_decisions = {
 		allowed = {
 			tag = KSK
 		}
+		fire_only_once = yes
 		available = {
 				controls_state = 465
 				controls_state = 467
@@ -22,364 +23,92 @@ KSK_ssr_decisions = {
 		}
 	}
 }
-COC_unite_mighty_rockies_decisions = {
-	COC_demand_the_north_decision = {
-		icon = decision_generic_prepare_civil_war
-		visible = {
-			NOT = {
-				AND = {
-					controls_state = 638
-					controls_state = 639
-					controls_state = 640
-					controls_state = 646
-					controls_state = 650
-					controls_state = 647
-					controls_state = 641
-					controls_state = 642
-					controls_state = 651
-					controls_state = 652
-					controls_state = 648
-					controls_state = 649
-				}
-			}
+KSK_jayhawk_resistance_decisions = {
+	KSK_fund_KCIA = {
+		icon = decision_generic_operation
+		allowed = {
+			tag = KSK
 		}
 		available = {
-			
+			has_completed_decision = KSK_fund_the_kcia
 		}
 		fire_only_once = yes
 		ai_will_do = {
 			factor = 1
+		}
+		cost = 10
+		complete_effect = {
+			swap_ideas = {
+				remove_idea = KSK_jayhawk_resistance1
+				add_idea = KSK_jayhawk_resistance2
+			}
+			set_country_flag = KSK_resistance1
+		}
+	}
+	KSK_crack_down_on_public_meetings = {
+		icon = decision_generic_operation
+		allowed = {
+			tag = KSK
+		}
+		available = {
+			has_completed_decision = KSK_fund_the_kcia
+		}
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		visible = {
+			has_country_flag = KSK_resistance1
+		}
+		cost = 35
+		complete_effect = {
+			swap_ideas = {
+				remove_idea = KSK_jayhawk_resistance2
+				add_idea = KSK_jayhawk_resistance3
+			}
+			set_country_flag = KSK_resistance2
+		}
+	}
+	KSK_strike_at_nazi_headquarters = {
+		icon = decision_generic_operation
+		allowed = {
+			tag = KSK
+		}
+		available = {
+		}
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 35
+		visible = {
+			has_country_flag = KSK_resistance2
+		}
+		complete_effect = {
+			swap_ideas = {
+				remove_idea = KSK_jayhawk_resistance3
+				add_idea = KSK_jayhawk_resistance4
+			}
+			set_country_flag = KSK_resistance3
+		}
+	}
+	KSK_assassinate_winrod = {
+		icon = decision_generic_operation
+		allowed = {
+			tag = KSK
+		}
+		available = {
+		}
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		visible = {
+			has_country_flag = KSK_resistance3
 		}
 		cost = 100
 		complete_effect = {
-			647 = {
-				owner = {
-					country_event = {
-						id = colorado.4
-					}
-				}	
-			}
-		}
-	}
-	COC_demand_the_summit_decision = {
-		icon = decision_generic_prepare_civil_war
-		visible = {
-			NOT = {
-				AND = {
-					controls_state = 680
-					controls_state = 679
-					controls_state = 678
-				}
-			}
-		}
-		available = {
-			controls_state = 638
-			controls_state = 639
-			controls_state = 640
-			controls_state = 646
-			controls_state = 650
-			controls_state = 647
-			controls_state = 641
-			controls_state = 642
-			controls_state = 651
-			controls_state = 652
-			controls_state = 648
-			controls_state = 649
-		}
-		fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		cost = 100
-		complete_effect = {
-			680 = {
-				owner = {
-					country_event = colorado.5
-				}
-			}
-		}
-	}
-	COC_equality_state_decision = {
-		icon = decision_generic_prepare_civil_war
-		visible = {
-			NOT = {
-				AND = {
-					controls_state = 610
-					controls_state = 615
-					controls_state = 617
-					controls_state = 616
-					controls_state = 1389
-					controls_state = 618
-					controls_state = 1388
-				}
-			}
-		}
-		available = {
-			controls_state = 674
-			controls_state = 650
-			controls_state = 651
-		}
-		fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		cost = 150
-		complete_effect = {
-			615 = {
-				owner = {
-					COC = {
-						create_wargoal = {
-							type = annex_everything
-							target = PREV
-						}
-					}
-				}
-			}
-			
-		}
-	}
-	COC_gem_state_decision = {
-		icon = decision_generic_prepare_civil_war
-		visible = {
-			NOT = {
-				AND = {
-					controls_state = 685
-					controls_state = 684
-				}
-			}
-		}
-		available = {
-			controls_state = 674
-			controls_state = 650
-			controls_state = 651
-			controls_state = 1388
-		}
-		fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		cost = 150
-		complete_effect = {
-			1269 = {
-				owner = {
-					COC = {
-						create_wargoal = {
-							type = annex_everything
-							target = PREV
-						}
-					}
-				}
-			}
-		}
-	}
-	COC_treasure_state_decision = {
-		icon = decision_generic_prepare_civil_war
-		visible = {
-			NOT = {
-				AND = {
-					controls_state = 594
-					controls_state = 590
-				}
-			}
-		}
-		available = {
-			controls_state = 674
-			controls_state = 650
-			controls_state = 651
-			controls_state = 1388
-			controls_state = 684
-		}
-		fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		cost = 150
-		complete_effect = {
-			587 = {
-				owner = {
-					COC = {
-						create_wargoal = {
-							type = take_state
-							target = PREV
-							generator = { 587 1390 588 1392 1391 590 }
-						}
-					}
-				}
-			}
-		}
-	}
-	COC_rockies_united_decision = {
-		icon = decision_generic_form_nation
-		visible = {
-			has_completed_focus = COC_unite_the_mighty_rockies
-		}
-		available = {
-			controls_state = 674
-			controls_state = 650
-			controls_state = 651
-			controls_state = 1388
-			controls_state = 684
-			controls_state = 590
-		}
-		fire_only_once = yes
-		ai_will_do = {
-			factor = 100
-		}
-		cost = 200
-		complete_effect = {
-			hidden_effect = {
-				core_idaho_effect = yes
-				every_owned_state = {
-					limit = {
-						is_core_of = UTU
-					}
-					add_core_of = COC
-				}
-				every_owned_state = {
-					limit = {
-						is_core_of = WYW
-					}
-					add_core_of = COC
-				}
-				every_owned_state = {
-					limit = {
-						is_core_of = MTM
-					}
-					add_core_of = COC
-				}
-			}
-			add_stability = -0.10
-			set_cosmetic_tag = RMR
-			custom_effect_tooltip = COC_united_rockies_tt
-		}
-	}
-}
-COC_strengthen_coloradan_state_decisions = {
-	COC_demand_southerland_decision = {
-		icon = decision_generic_prepare_civil_war
-		visible = {
-			NOT = {
-				AND = {
-					controls_state = 604
-					controls_state = 606
-					controls_state = 605
-					controls_state = 609
-					controls_state = 610
-				}
-			}
-		}
-		fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		cost = 100
-		complete_effect = {
-			605 = {
-				owner = {
-					country_event = colorado.1
-				}
-			}
-		}
-	}
-	COC_demand_high_plains_decision = {
-		icon = decision_generic_prepare_civil_war
-		visible = {
-			NOT = {
-				AND = {
-					controls_state = 527
-					controls_state = 529
-					controls_state = 530
-				}
-			}
-		}
-		available = {
-			
-		}
-		fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		cost = 100
-		complete_effect = {
-			527 = {
-				owner = {
-					country_event = colorado.2
-				}
-			}
-		}
-	}
-	COC_west_or_war_decision = {
-		icon = decision_generic_prepare_civil_war
-		visible = {
-			NOT = {
-				AND = {
-					controls_state = 547
-					controls_state = 542
-					controls_state = 543
-				}
-			}
-		}
-		available = {
-			
-		}
-		fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		cost = 100
-		complete_effect = {
-			547 = {
-				owner = {
-					country_event = colorado.3
-				}
-			}
-		}
-	}
-	COC_proclaim_greater_colorado_decision = {
-		icon = decision_generic_form_nation
-		visible = {
-			has_completed_focus = COC_strengthen_the_coloradan_state
-		}
-		available = {
-			controls_state = 914
-			controls_state = 1289
-			controls_state = 928
-		}
-		fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-		}
-		cost = 150
-		complete_effect = {
-			hidden_effect = {
-				every_owned_state = {
-					limit = {
-						is_core_of = NEN
-					}
-					add_core_of = COC
-				}
-				every_owned_state = {
-					limit = {
-						is_core_of = KSK
-					}
-					add_core_of = COC
-				}
-				every_owned_state = {
-					limit = {
-						is_core_of = UTU
-					}
-					add_core_of = COC
-				}
-				every_owned_state = {
-					limit = {
-						is_core_of = NMN
-					}
-					add_core_of = COC
-				}
-			}
-			add_stability = -0.10
-			set_cosmetic_tag = GCC
-			custom_effect_tooltip = COC_united_rockies_tt
+				remove_ideas = KSK_jayhawk_resistance4
 		}
 	}
 }
