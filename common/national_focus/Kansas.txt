@@ -882,6 +882,7 @@ focus_tree = {
 		relative_position_id = KSK_communist19
 		cost = 10
 		completion_reward = {
+			custom_effect_tooltip = KSK_ssr_system_tt
 		}
 	}
 	focus = {
@@ -909,40 +910,94 @@ focus_tree = {
 			focus = KSK_democratic1
 			focus = KSK_communist1
 		}
-		x = 6
+		x = 9
 		y = 1
 		relative_position_id = KSK_bleeding_kansas
 		cost = 5
 		completion_reward = {
-			set_politics = {
-				ruling_party = fascism
-				elections_allowed = no
-			}
 			add_popularity = {
 				ideology = fascism
 				popularity = 0.75
 			}
 			add_stability = -0.1
-			create_country_leader = {
-				name = "Rev. Gerald Burton Winrod"
-				desc = POLITICS_KSK_GERALD_WINROD_DESC
-				picture = "Portrait_KSK_Gerald_Winrod.dds"
-				expire = "1965.1.1"
-				ideology = falangism
-				traits = {
-				}
-			}
 		}
 	}
+
 	focus = {
 		id = KSK_fascist2
 		icon = GFX_focus_chi_army_reform
 		prerequisite = {
 			focus = KSK_fascist1
 		}
-		x = 0
+		x = -1
 		y = 1
 		relative_position_id = KSK_fascist1
+		cost = 10
+		completion_reward = {
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.05
+			}
+			add_stability = -0.05
+		}
+	}
+	focus = {
+		id = KSK_fascist3
+		icon = GFX_focus_chi_army_reform
+		prerequisite = {
+			focus = KSK_fascist1
+		}
+		x = 1
+		y = 1
+		relative_position_id = KSK_fascist1
+		cost = 10
+		completion_reward = {
+			army_experience = 5
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.1
+			}
+		}
+	}
+	focus = {
+		id = KSK_fascist4
+		icon = GFX_focus_generic_strike_at_democracy1
+		prerequisite = {
+			focus = KSK_fascist3
+		}
+		prerequisite = {
+			focus = KSK_fascist2
+		}
+		x = 1
+		y = 1
+		relative_position_id = KSK_fascist2
+		cost = 10
+		completion_reward = {
+			add_stability = -0.1
+			set_politics = {
+				ruling_party = fascism
+				elections_allowed = no
+			}
+			create_country_leader = {
+				name = "Rev. Gerald Burton Winrod"
+				desc = POLITICS_KSK_GERALD_WINROD_DESC
+				picture = "Portrait_KSK_Gerald_Winrod.dds"
+				expire = "1965.1.1"
+				ideology = national_socialism
+				traits = {
+				}
+			}
+		}
+	}
+	focus = {
+		id = KSK_fascist5
+		icon = GFX_Generic_Christian_Trade_Unions
+		prerequisite = {
+			focus = KSK_fascist4
+		}
+		x = -2
+		y = 1
+		relative_position_id = KSK_fascist4
 		cost = 10
 		completion_reward = {
 			army_experience = 25
@@ -950,38 +1005,8 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = KSK_fascist3
-		icon = GFX_focus_generic_strike_at_democracy1
-		prerequisite = {
-			focus = KSK_fascist2
-		}
-		x = 0
-		y = 1
-		relative_position_id = KSK_fascist2
-		cost = 10
-		completion_reward = {
-			country_event = kansas.4
-		}
-	}
-	focus = {
-		id = KSK_fascist4
-		icon = GFX_focus_usa_recruit_the_free_corps
-		prerequisite = {
-			focus = KSK_fascist3
-		}
-		x = 0
-		y = 1
-		relative_position_id = KSK_fascist3
-		cost = 10
-		completion_reward = {
-			add_ideas = {
-				KSK_boy_scouts
-			}
-		}
-	}
-	focus = {
-		id = KSK_fascist5
-		icon = GFX_focus_ger_oppose_hitler
+		id = KSK_fascist6
+		icon = GFX_goal_generic_construct_mil_factory
 		prerequisite = {
 			focus = KSK_fascist4
 		}
@@ -990,126 +1015,210 @@ focus_tree = {
 		relative_position_id = KSK_fascist4
 		cost = 10
 		completion_reward = {
-			add_ideas = {
-				KSK_bund
-			}
-		}
-	}
-	focus = {
-		id = KSK_fascist6
-		icon = GFX_focus_generic_treaty
-		prerequisite = {
-			focus = KSK_fascist1
-		}
-		x = -2
-		y = 1
-		relative_position_id = KSK_fascist1
-		cost = 10
-		completion_reward = {
-			add_ideas = {
-				KSK_war_readiness
-			}
+			army_experience = 25
+			add_ideas = KSK_legionaires_integrated
 		}
 	}
 	focus = {
 		id = KSK_fascist7
-		icon = GFX_goal_generic_intelligence_exchange
+		icon = GFX_goal_generic_propaganda
 		prerequisite = {
-			focus = KSK_fascist6
+			focus = KSK_fascist4
 		}
-		x = 0
+		x = 2
 		y = 1
-		relative_position_id = KSK_fascist6
+		relative_position_id = KSK_fascist4
 		cost = 10
 		completion_reward = {
-			add_offsite_building = {
-				type = industrial_complex
-				level = 2
-			}
-			add_ideas = {
-				KSK_corporations
-			}
+			army_experience = 25
+			add_ideas = KSK_legionaires_integrated
 		}
 	}
 	focus = {
 		id = KSK_fascist8
-		icon = GFX_goal_generic_construct_mil_factory
+		icon = GFX_focus_mex_restore_the_army_of_christ
 		prerequisite = {
-			focus = KSK_fascist7
+			focus = KSK_fascist5
 		}
-		x = 0
+		x = -1
 		y = 1
-		relative_position_id = KSK_fascist7
+		relative_position_id = KSK_fascist5
 		cost = 10
 		completion_reward = {
-			random_owned_controlled_state = {
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = arms_factory
-					level = 3
-					instant_build = yes
-				}
-			}
-			random_owned_controlled_state = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-			}
+			army_experience = 25
+			add_ideas = KSK_legionaires_integrated
 		}
 	}
 	focus = {
 		id = KSK_fascist9
-		icon = GFX_goal_generic_propaganda
+		icon = GFX_Generic_Christian_Trade_Unions
 		prerequisite = {
-			focus = KSK_fascist1
+			focus = KSK_fascist5
 		}
-		x = 2
+		prerequisite = {
+			focus = KSK_fascist6
+		}
+		x = 1
 		y = 1
-		relative_position_id = KSK_fascist1
+		relative_position_id = KSK_fascist5
 		cost = 10
 		completion_reward = {
-			custom_effect_tooltip = available_political_advisor
-			show_ideas_tooltip = gordon_winrod
 		}
 	}
 	focus = {
 		id = KSK_fascist10
-		icon = GFX_Generic_Christian_Trade_Unions
+		icon = GFX_goal_generic_propaganda
 		prerequisite = {
-			focus = KSK_fascist9
+			focus = KSK_fascist7
 		}
-		x = 0
+		prerequisite = {
+			focus = KSK_fascist6
+		}
+		x = 1
 		y = 1
-		relative_position_id = KSK_fascist9
+		relative_position_id = KSK_fascist6
 		cost = 10
 		completion_reward = {
-			add_ideas = KSK_spiritual_awakening
 		}
 	}
 	focus = {
 		id = KSK_fascist11
-		icon = GFX_focus_mex_restore_the_army_of_christ
+		icon = GFX_focus_chi_army_reform
+		prerequisite = {
+			focus = KSK_fascist7
+		}
+		x = 1
+		y = 1
+		relative_position_id = KSK_fascist7
+		cost = 10
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = KSK_fascist12
+		icon = GFX_focus_chi_army_reform
+		prerequisite = {
+			focus = KSK_fascist8
+		}
+		prerequisite = {
+			focus = KSK_fascist9
+		}
+		x = 1
+		y = 1
+		relative_position_id = KSK_fascist8
+		cost = 10
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = KSK_fascist13
+		icon = GFX_focus_chi_army_reform
 		prerequisite = {
 			focus = KSK_fascist10
 		}
-		x = 0
+		prerequisite = {
+			focus = KSK_fascist11
+		}
+		x = 1
 		y = 1
 		relative_position_id = KSK_fascist10
 		cost = 10
 		completion_reward = {
-			add_war_support = 0.1
-			set_rule = {
-				can_create_factions = yes
-			}
-			set_rule = {
-				can_use_kamikaze_pilots = yes
-			}
-			add_ideas = {
-				KSK_spiritual_fanaticism
-			}
+		}
+	}
+	focus = {
+		id = KSK_fascist14
+		icon = GFX_focus_chi_army_reform
+		prerequisite = {
+			focus = KSK_fascist12
+			focus = KSK_fascist13
+		}
+		x = 2
+		y = 1
+		relative_position_id = KSK_fascist12
+		cost = 10
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = KSK_fascist15
+		icon = GFX_focus_chi_army_reform
+		prerequisite = {
+			focus = KSK_fascist14
+		}
+		x = -2
+		y = 1
+		relative_position_id = KSK_fascist14
+		cost = 10
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = KSK_fascist16
+		icon = GFX_focus_chi_army_reform
+		prerequisite = {
+			focus = KSK_fascist14
+		}
+		x = 2
+		y = 1
+		relative_position_id = KSK_fascist14
+		cost = 10
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = KSK_fascist17
+		icon = GFX_focus_chi_army_reform
+		prerequisite = {
+			focus = KSK_fascist15
+		}
+		x = 0
+		y = 1
+		relative_position_id = KSK_fascist15
+		cost = 10
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = KSK_fascist18
+		icon = GFX_focus_chi_army_reform
+		prerequisite = {
+			focus = KSK_fascist16
+		}
+		x = 0
+		y = 1
+		relative_position_id = KSK_fascist16
+		cost = 10
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = KSK_fascist19
+		icon = GFX_focus_chi_army_reform
+		prerequisite = {
+			focus = KSK_fascist15
+			focus = KSK_fascist16
+		}
+		x = 2
+		y = 1
+		relative_position_id = KSK_fascist15
+		cost = 10
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = KSK_fascist20
+		icon = GFX_focus_chi_army_reform
+		prerequisite = {
+			focus = KSK_fascist19
+			focus = KSK_fascist18
+			focus = KSK_fascist17
+		}
+		x = 0
+		y = 1
+		relative_position_id = KSK_fascist19
+		cost = 10
+		completion_reward = {
 		}
 	}
 	################################################################################
@@ -1120,7 +1229,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = KSK_chaffee1
 		}
-		x = 28
+		x = 38
 		y = 0
 		cost = 10
 		completion_reward = {
@@ -1254,7 +1363,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = KSK_eisenhower1
 		}
-		x = 30
+		x = 40
 		y = 0
 		cost = 10
 		completion_reward = {
@@ -1445,7 +1554,7 @@ focus_tree = {
 	focus = {
 		id = KSK_air1
 		icon = GFX_Generic_Industry_Planes
-		x = 38
+		x = 48
 		y = 0
 		cost = 5
 		completion_reward = {
@@ -1700,237 +1809,6 @@ focus_tree = {
 				uses = 3
 				category = air_doctrine
 			}
-		}
-	}
-	################################################################################
-	############################ EXPANSION #########################################
-	focus = {
-		id = KSK_conquest1
-		icon = GFX_goal_generic_territory_or_war
-		available = {
-			has_completed_focus = KSK_bleeding_kansas
-		}
-		x = 45
-		y = 0
-		cost = 14.3
-		completion_reward = {
-			add_political_power = 200
-			add_war_support = 0.1
-			add_ideas = {
-				KSK_war
-			}
-		}
-	}
-	focus = {
-		id = KSK_conquest2
-		icon = GFX_goal_generic_construct_military
-		prerequisite = {
-			focus = KSK_conquest1
-		}
-		x = 0
-		y = 1
-		relative_position_id = KSK_conquest1
-		cost = 5
-		completion_reward = {
-			546 = {
-				add_building_construction = {
-					type = bunker
-					level = 2
-					instant_build = yes
-					province = {
-						all_provinces = yes
-						limit_to_border = yes
-					}
-				}
-			}
-			549 = {
-				add_building_construction = {
-					type = bunker
-					province = 7834
-					level = 2
-					instant_build = yes
-				}
-			}
-			50 = {
-				add_building_construction = {
-					type = bunker
-					level = 2
-					instant_build = yes
-					province = {
-						all_provinces = yes
-						limit_to_border = yes
-					}
-				}
-			}
-			540 = {
-				add_building_construction = {
-					type = bunker
-					level = 2
-					instant_build = yes
-					province = {
-						all_provinces = yes
-						limit_to_border = yes
-					}
-				}
-			}
-		}
-	}
-	focus = {
-		id = KSK_conquest3
-		icon = GFX_goal_generic_attack_allies
-		prerequisite = {
-			focus = KSK_conquest2
-		}
-		x = -1
-		y = 1
-		relative_position_id = KSK_conquest2
-		cost = 10
-		bypass = {
-			MOM = {
-				OR = {
-					exists = no
-					is_subject = yes
-					AND = {
-						is_subject = no
-						is_in_faction_with = ROOT
-					}
-				}
-			}
-		}
-		completion_reward = {
-			add_state_claim = 546
-			create_wargoal = {
-				type = annex_everything
-				target = MOM
-			}
-		}
-	}
-	focus = {
-		id = KSK_conquest4
-		icon = GFX_goal_generic_occupy_states_ongoing_war
-		prerequisite = {
-			focus = KSK_conquest2
-		}
-		x = 1
-		y = 1
-		relative_position_id = KSK_conquest2
-		cost = 10
-		bypass = {
-			COC = {
-				OR = {
-					exists = no
-					is_subject = yes
-					AND = {
-						is_subject = no
-						is_in_faction_with = ROOT
-					}
-				}
-			}
-		}
-		completion_reward = {
-			add_state_claim = 620
-			add_state_claim = 625
-			add_state_claim = 626
-			add_state_claim = 627
-			add_state_claim = 636
-			add_state_claim = 629
-			add_state_claim = 628
-			add_state_claim = 635
-			add_state_claim = 634
-			add_state_claim = 633
-			add_state_claim = 632
-			add_state_claim = 637
-			add_state_claim = 55
-			add_state_claim = 630
-			add_state_claim = 631
-			create_wargoal = {
-				type = take_state_focus
-				target = COC
-			}
-		}
-	}
-	focus = {
-		id = KSK_conquest5
-		icon = GFX_goal_generic_major_war
-		prerequisite = {
-			focus = KSK_conquest3
-		}
-		x = 0
-		y = 1
-		relative_position_id = KSK_conquest3
-		cost = 10
-		bypass = {
-			OKO = {
-				OR = {
-					exists = no
-					is_subject = yes
-					AND = {
-						is_subject = no
-						is_in_faction_with = ROOT
-					}
-				}
-			}
-		}
-		completion_reward = {
-			create_wargoal = {
-				type = annex_everything
-				target = OKO
-			}
-		}
-	}
-	focus = {
-		id = KSK_conquest6
-		icon = GFX_goal_generic_major_war
-		prerequisite = {
-			focus = KSK_conquest4
-		}
-		x = 0
-		y = 1
-		relative_position_id = KSK_conquest4
-		cost = 10
-		bypass = {
-			NEN = {
-				OR = {
-					exists = no
-					is_subject = yes
-					AND = {
-						is_subject = no
-						is_in_faction_with = ROOT
-					}
-				}
-			}
-		}
-		completion_reward = {
-			create_wargoal = {
-				type = annex_everything
-				target = NEN
-			}
-		}
-	}
-	focus = {
-		id = KSK_conquest7
-		icon = GFX_goal_generic_national_unity
-		prerequisite = {
-			focus = KSK_conquest5
-		}
-		prerequisite = {
-			focus = KSK_conquest6
-		}
-		x = 1
-		y = 1
-		relative_position_id = KSK_conquest5
-		cost = 10
-		available = {
-			date > 1940.01.01
-			controls_state = 634
-			controls_state = 533
-			controls_state = 557
-		}
-		completion_reward = {
-			add_stability = 0.15
-			core_oklahoma_effect = yes
-			core_nebraska_effect = yes
-			core_colorado_effect = yes
 		}
 	}
 }

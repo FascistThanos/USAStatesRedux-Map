@@ -62,7 +62,11 @@ set_technology = {
 }
 
 set_convoys = 100
-set_stability = 0.9
+set_stability = 0.72
+
+add_ideas = {
+	KSK_legacy_of_the_dustbowl
+}
 
 set_politics = {
 
@@ -73,9 +77,9 @@ set_politics = {
 }
 
 set_popularities = {
-	democratic = 98
-	communism = 1
-	fascism = 1
+	democratic = 68
+	communism = 14
+	fascism = 18
 }
 create_country_leader = {
 	name = "Alf Landon"

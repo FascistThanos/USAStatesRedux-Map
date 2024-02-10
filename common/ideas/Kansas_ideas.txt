@@ -13,6 +13,21 @@ ideas = {
 				political_advisor_cost_factor = -0.25
 			}
 		}
+		KSK_legacy_of_the_dustbowl = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = -0.15
+				conscription_factor = -0.25			
+				production_speed_arms_factory_factor = -0.15
+				consumer_goods_factor = 0.25
+			}
+		}
 		KSK_beacon = {
 			allowed = {
 				always = no

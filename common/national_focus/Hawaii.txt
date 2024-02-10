@@ -1,0 +1,2720 @@
+focus_tree = {
+	id = hawaii_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 25
+			tag = HIH
+		}
+	}
+	continuous_focus_position = { x = 1 y = 1500 }
+	default = no
+
+####  ### #   #
+#   # #   ## ##
+#   # ##  # # #
+#   # #   #   #
+####  ### #   #
+
+	focus = {
+		id = democratic_path
+		icon = GFX_goal_support_democracy
+		x = 5
+		y = 0
+		#relative_position_id = 
+		
+		available = {
+			#NOT = 
+		}
+		bypass = {
+		}
+		
+		#prerequisite = { focus =  }
+		cost = 10
+
+		mutually_exclusive = { 
+			focus = fascist_path 
+			focus = communist_path
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = 0.05
+		}
+	}
+	focus = {
+		id = promote_elections
+		icon = GFX_goal_generic_national_unity
+		x = 1
+		y = 1
+		relative_position_id = democratic_path
+		
+		available = {
+			#NOT = 
+		}
+		bypass = {
+		}
+		
+		prerequisite = { focus = democratic_path }
+		cost = 10
+
+		#mutually_exclusive = { focus = fascist_path }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = 0.10
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = build_up_towns
+		icon = GFX_goal_generic_construct_civ_factory
+		x = -1
+		y = 1
+		relative_position_id = democratic_path
+		
+		available = {
+			#NOT = 
+		}
+		bypass = {
+		}
+		
+		prerequisite = { focus = democratic_path }
+		cost = 10
+
+		#mutually_exclusive = { focus = fascist_path }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}
+		}
+	}
+	focus = {
+		id = build_civs
+		icon = GFX_goal_generic_construct_civilian
+		x = 0
+		y = 1
+		relative_position_id = build_up_towns
+		
+		available = {
+			#NOT = 
+		}
+		bypass = {
+		}
+		
+		prerequisite = { focus = build_up_towns }
+		cost = 10
+
+		#mutually_exclusive = { focus = fascist_path }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				prioritize = { 1153 }
+				limit = {
+					ROOT = { has_full_control_of_state = PREV }
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}	
+		focus = {
+		id = free_speech
+		icon = GFX_goal_generic_improve_relations
+		x = 0
+		y = 1
+		relative_position_id = promote_elections
+		
+		available = {
+			#NOT = 
+		}
+		bypass = {
+		}
+		
+		prerequisite = { focus = promote_elections }
+		cost = 10
+
+		#mutually_exclusive = { focus = fascist_path }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.07
+			}	
+		}
+	}
+	focus = {
+		id = democracy_secured
+		icon = GFX_goal_support_democracy
+		x = 1
+		y = 1
+		relative_position_id = build_civs
+		
+		available = {
+			#NOT = 
+		}
+		bypass = {
+		}
+		
+		prerequisite = { focus = free_speech }
+		prerequisite = { focus = build_civs }
+		cost = 10
+
+		#mutually_exclusive = { focus = fascist_path }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = 0.20
+		}
+	}
+	focus = {
+		id = our_foreign_policy
+		icon = GFX_goal_generic_forceful_treaty
+		x = 0
+		y = 1
+		relative_position_id = democracy_secured
+		
+		available = {
+			#NOT = 
+		}
+		bypass = {
+		}
+		
+		prerequisite = { focus = democracy_secured }
+		cost = 10
+
+		#mutually_exclusive = { focus = fascist_path }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = work_together
+		icon = GFX_goal_generic_major_alliance
+		x = -2
+		y = 1
+		relative_position_id = our_foreign_policy
+		
+		available = {
+			#NOT = 
+		}
+		bypass = {
+		}
+		
+		prerequisite = { focus = our_foreign_policy }
+		cost = 10
+
+		mutually_exclusive = { focus = on_our_own }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = YUG_idea_foreign_capital
+		}
+	}
+	focus = {
+		id = on_our_own
+		icon = GFX_goal_generic_demand_territory
+		x = 2
+		y = 1
+		relative_position_id = our_foreign_policy
+		
+		available = {
+			#NOT = 
+		}
+		bypass = {
+		}
+		
+		prerequisite = { focus = our_foreign_policy }
+		cost = 10
+
+		mutually_exclusive = { focus = work_together }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = neutrality_idea
+		}
+	}
+
+##### #   # ##   #
+#   # #   # # #  #
+#   # #   # #  # #
+#   # # # # #   ##
+##### ## ## #    #
+
+	focus = {
+		id = ready_the_troops
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 0
+		y = 1
+		relative_position_id = on_our_own
+		
+		available = {
+			#NOT = 
+		}
+		bypass = {
+		}
+		
+		prerequisite = { focus = on_our_own }
+		cost = 10
+
+		#mutually_exclusive = { focus = fascist_path }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_manpower = 100000
+		}
+	}
+	focus = {
+		id = prepare_the_ships
+		icon = GFX_goal_generic_navy_battleship
+		x = 2
+		y = 1
+		relative_position_id = on_our_own 
+		
+		available = {
+			#NOT = 
+		}
+		bypass = {
+		}
+		
+		prerequisite = { focus = on_our_own }
+		cost = 10
+
+		#mutually_exclusive = { focus = fascist_path }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = HOL_naval_heritage
+		}
+	}
+	focus = {
+		id = prepare_to_defend
+		icon = GFX_goal_generic_defence
+		x = 1
+		y = 1
+		relative_position_id = ready_the_troops
+		
+		available = {
+			#NOT = 
+		}
+		bypass = {
+		}
+		
+		prerequisite = { focus = ready_the_troops }
+		prerequisite = { focus = prepare_the_ships }
+		cost = 10
+
+		#mutually_exclusive = { focus = fascist_path }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_war_support = 0.15
+			add_ideas = HOL_responsibility_for_our_own_defense
+		}
+	}
+
+##### #### ####
+  #   #  # #   
+  #   #  # #  #
+  #   #### ####
+
+	focus = {
+		id = cali_swag
+		icon = GFX_CAC_mcga
+		x = -2
+		y = 1
+		relative_position_id = work_together
+		
+		available = {
+			#NOT = 
+		}
+		bypass = {
+		}
+		
+		prerequisite = { focus = work_together }
+		cost = 10
+
+		#mutually_exclusive = { focus = fascist_path }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			diplomatic_relation = {
+				country = CAC
+				relation = non_aggression_pact
+				active = yes
+			}
+		}
+	}
+	focus = {
+		id = join_the_allies
+		icon = GFX_focus_chi_british_cooperation
+		x = 0
+		y = 1
+		relative_position_id = work_together
+		
+		available = {
+			#NOT = 
+		}
+		bypass = {
+		}
+		
+		prerequisite = { focus = work_together }
+		cost = 10
+
+		#mutually_exclusive = { focus = fascist_path }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			ENG = { country_event = { id = generic.2 hours = 6 } }
+		}
+	}
+	focus = {
+		id = alaska_swag
+		icon = GFX_CAC_deal_alaska
+		x = 0
+		y = 1
+		relative_position_id = cali_swag
+		
+		available = {
+			#NOT = 
+		}
+		bypass = {
+		}
+		
+		prerequisite = { focus = cali_swag }
+		cost = 10
+
+		#mutually_exclusive = { focus = fascist_path }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			diplomatic_relation = {
+				country = AKA
+				relation = non_aggression_pact
+				active = yes
+			}
+		}
+	}
+	focus = {
+		id = investments_from_the_allies
+		icon = GFX_goal_generic_construction
+		x = 0
+		y = 1
+		relative_position_id = join_the_allies
+		
+		available = {
+			#NOT = 
+		}
+		bypass = {
+		}
+		
+		prerequisite = { focus = join_the_allies }
+		cost = 10
+
+		#mutually_exclusive = { focus = fascist_path }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			1154 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = destroy_the_japanese_threat
+		icon = GFX_focus_AST_war_japan
+		x = 1
+		y = 1
+		relative_position_id = alaska_swag
+		
+		available = {
+			#NOT = 
+		}
+		bypass = {
+		}
+		
+		prerequisite = { focus = alaska_swag }
+		prerequisite = { focus = investments_from_the_allies }
+		cost = 10
+
+		#mutually_exclusive = { focus = fascist_path }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = JAP
+			}
+		}
+	}
+
+# ##### #
+# #     #
+# ##### #
+#     # #
+# ##### #####
+
+	focus = {
+		id = an_offer_they_cant_refuse
+		icon = GFX_goal_generic_intelligence_exchange
+		x = 2
+		y = 1
+		relative_position_id = work_together
+		
+		available = {
+			#NOT = 
+		}
+		bypass = {
+		}
+		
+		prerequisite = { 
+			focus = work_together 
+			focus = on_our_own
+		}
+		cost = 10
+
+		#mutually_exclusive = { focus = fascist_path }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			puppet = JAJ
+			puppet = LIL
+			puppet = MWM
+			puppet = WKW
+		}
+	}
+	focus = {
+		id = integrate_them
+		icon = GFX_goal_generic_military_sphere
+		x = 0
+		y = 1
+		relative_position_id = an_offer_they_cant_refuse
+		
+		available = {
+			#NOT = 
+		}
+		bypass = {
+		}
+		
+		prerequisite = { focus = an_offer_they_cant_refuse }
+		cost = 10
+
+		#mutually_exclusive = { focus = fascist_path }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			annex_country = { target = JAJ transfer_troops = yes }
+			annex_country = { target = LIL transfer_troops = yes }
+			annex_country = { target = MWM transfer_troops = yes }
+			annex_country = { target = WKW transfer_troops = yes }
+		}
+	}
+
+#####  ###  #####
+#     #   # #
+###   ##### #####
+#     #   #     #
+#     #   # #####
+
+	focus = {
+		id = fascist_path
+		icon = GFX_goal_support_fascism
+		x = 10
+		y = 0
+		relative_position_id = democratic_path
+		
+		available = {
+			#NOT = 
+		}
+		bypass = {
+		}
+		
+		#prerequisite = { focus =  }
+		cost = 10
+
+		mutually_exclusive = {
+				focus = democratic_path
+				focus = communist_path 
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.05
+			}
+						add_timed_idea = {
+				idea = nationalism
+				days = 365
+			}
+		}
+	}
+	focus = {
+		id = spread_propoganda
+		icon = GFX_Generic_Ripping_Papers
+		x = -1
+		y = 1
+		relative_position_id = fascist_path
+		
+		available = {
+			#NOT = 
+		}
+		bypass = {
+		}
+		
+		prerequisite = { focus = fascist_path }
+		cost = 10
+
+		#mutually_exclusive = { focus = fascist_path }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_war_support = 0.1
+		}
+	}
+	focus = {
+		id = bug_the_homes
+		icon = GFX_Generic_Lookout
+		x = 0
+		y = 1
+		relative_position_id = spread_propoganda
+		
+		available = {
+			#NOT = 
+		}
+		bypass = {
+		}
+		
+		prerequisite = { focus = spread_propoganda }
+		cost = 10
+
+		#mutually_exclusive = { focus = fascist_path }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = -0.02
+			add_war_support = 0.05
+			add_manpower = 50000
+		}
+	}
+	focus = {
+		id = start_protests
+		icon = GFX_Generic_Gray_Fascists
+		x = 1
+		y = 1
+		relative_position_id = fascist_path
+		
+		available = {
+			#NOT = 
+		}
+		bypass = {
+		}
+		
+		prerequisite = { focus = fascist_path }
+		cost = 10
+
+		#mutually_exclusive = { focus = fascist_path }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = -0.02
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.05
+			}
+		}
+	}
+	focus = {
+		id = that_turn_to_riots
+		icon = GFX_Generic_Spy_Sabotage
+		x = 0
+		y = 1
+		relative_position_id = start_protests
+		
+		available = {
+			#NOT = 
+		}
+		bypass = {
+		}
+		
+		prerequisite = { focus = start_protests }
+		cost = 10
+
+		#mutually_exclusive = { focus = fascist_path }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = -0.05
+			add_war_support = 0.05
+			add_manpower = 10000
+		}
+	}
+	focus = {
+		id = the_time_is_now
+		icon = GFX_goal_generic_major_war
+		x = 1
+		y = 1
+		relative_position_id = bug_the_homes
+		
+		available = {
+			#NOT = 
+		}
+		bypass = {
+		}
+		
+		prerequisite = { focus = bug_the_homes }
+		prerequisite = { focus = that_turn_to_riots }
+		cost = 10
+
+		#mutually_exclusive = { focus = fascist_path }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			set_politics = {
+				ruling_party = fascism
+				elections_allowed = no
+			}
+			add_stability = -0.05
+		}
+	}
+	focus = {
+		id = our_place_secured
+		icon = GFX_goal_generic_secret_weapon
+		x = 0
+		y = 1
+		relative_position_id = the_time_is_now
+		
+		available = {
+			#NOT = 
+		}
+		bypass = {
+		}
+		
+		prerequisite = { focus = the_time_is_now }
+		cost = 10
+
+		#mutually_exclusive = { focus = fascist_path }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = 0.10
+			add_war_support = 0.02
+			add_political_power = 150
+		}
+	}
+	focus = {
+		id = rebuild_our_roads
+		icon = GFX_goal_generic_construct_infrastructure
+		x = -2
+		y = 1
+		relative_position_id = the_time_is_now
+		
+		available = {
+			#NOT = 
+		}
+		bypass = {
+		}
+		
+		prerequisite = { focus = the_time_is_now }
+		cost = 10
+
+		#mutually_exclusive = { focus = fascist_path }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_timed_idea = {
+				idea = TUR_rebuilding_our_home
+				days = 180
+			}
+		}
+	}
+	focus = {
+		id = rejuvinate_the_army
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		x = 2
+		y = 1
+		relative_position_id = the_time_is_now
+		
+		available = {
+			#NOT = 
+		}
+		bypass = {
+		}
+		
+		prerequisite = { focus = the_time_is_now }
+		cost = 10
+
+		#mutually_exclusive = { focus = fascist_path }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+					add_ideas = CAC_allignthearmyidea
+		}
+	}
+	focus = {
+		id = refill_the_navy
+		icon = GFX_focus_generic_cruiser2
+		x = 0
+		y = 1
+		relative_position_id = rejuvinate_the_army
+		
+		available = {
+			#NOT = 
+		}
+		bypass = {
+		}
+		
+		prerequisite = { focus = rejuvinate_the_army }
+		cost = 10
+
+		#mutually_exclusive = { focus = fascist_path }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {			
+			add_tech_bonus = {
+				name = USA_fleet_submarines
+				bonus = 1
+				uses = 2
+				category = ss_tech
+			}
+		}
+	}
+	focus = {
+		id = eliminate_opponents
+		icon = GFX_focus_generic_support_the_left_right
+		x = 0
+		y = 1
+		relative_position_id = our_place_secured
+		
+		available = {
+			#NOT = 
+		}
+		bypass = {
+		}
+		
+		prerequisite = { focus = our_place_secured }
+		cost = 10
+
+		#mutually_exclusive = { focus = fascist_path }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_timed_idea = {
+				idea = TXT_idea_purged
+				days = 365
+			}
+		}
+	}
+	focus = {
+		id = new_arms_factories
+		icon = GFX_focus_generic_tank_production
+		x = 0
+		y = 1
+		relative_position_id = rebuild_our_roads
+		
+		available = {
+			#NOT = 
+		}
+		bypass = {
+		}
+		
+		prerequisite = { focus = rebuild_our_roads }
+		cost = 10
+
+		#mutually_exclusive = { focus = fascist_path }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			1152 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = prepare_for_the_conquests
+		icon = GFX_focus_generic_little_entente
+		x = 0
+		y = 1
+		relative_position_id = eliminate_opponents
+		
+		available = {
+			#NOT = 
+		}
+		bypass = {
+		}
+		
+		prerequisite = { 
+			focus = eliminate_opponents
+			focus = refill_the_navy
+			focus = new_arms_factories 
+		}
+		cost = 10
+
+		#mutually_exclusive = { focus = fascist_path }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = CAC_prepareexpansionidea
+			add_war_support = 0.15
+		}
+	}
+	focus = {
+		id = strike_the_neighbors
+		icon = GFX_focus_generic_combined_arms
+		x = -1
+		y = 1
+		relative_position_id = prepare_for_the_conquests
+		
+		available = {
+			#NOT = 
+		}
+		bypass = {
+		}
+		
+		prerequisite = { focus = prepare_for_the_conquests }
+		cost = 10
+
+		#mutually_exclusive = { focus = fascist_path }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = JAJ
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = MWM
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = LIL
+			}
+		}
+	}
+	focus = {
+		id = operation_arcadia
+		icon = GFX_focus_generic_manpower
+		x = 1
+		y = 1
+		relative_position_id = prepare_for_the_conquests
+		
+		available = {
+			#NOT = 
+		}
+		bypass = {
+		}
+		
+		prerequisite = { focus = prepare_for_the_conquests }
+		cost = 10
+
+		#mutually_exclusive = { focus = fascist_path }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = ORO
+			}
+		}
+	}
+	focus = {
+		id = operation_tsunami
+		icon = GFX_focus_generic_coastal_fort
+		x = -1
+		y = 1
+		relative_position_id = strike_the_neighbors
+		
+		available = {
+			#NOT = 
+		}
+		bypass = {
+		}
+		
+		prerequisite = { focus = strike_the_neighbors }
+		cost = 10
+
+		#mutually_exclusive = { focus = fascist_path }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = PIP
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = ASA
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = WKW
+			}
+		}
+	}
+	focus = {
+		id = operation_great_bear
+		icon = GFX_TXT_assimilate_california
+		x = 1
+		y = 1
+		relative_position_id = operation_arcadia
+		
+		available = {
+			#NOT = 
+		}
+		bypass = {
+		}
+		
+		prerequisite = { focus = operation_arcadia }
+		cost = 10
+
+		#mutually_exclusive = { focus = fascist_path }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = CAC
+			}
+		}
+	}
+	focus = {
+		id = extend_the_olive_branch
+		icon = GFX_focus_generic_treaty
+		x = 1
+		y = 1
+		relative_position_id = strike_the_neighbors
+		
+		available = {
+			#NOT = 
+		}
+		bypass = {
+		}
+		
+		prerequisite = { 
+			focus = strike_the_neighbors
+			focus = operation_arcadia
+		}
+		cost = 10
+
+		#mutually_exclusive = { focus = fascist_path }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			diplomatic_relation = {
+				country = JAP
+				relation = non_aggression_pact
+				active = yes
+			}
+		}
+	}
+	focus = {
+		id = operation_fallen_samurai
+		icon = GFX_focus_attack_japan
+		x = -1
+		y = 1
+		relative_position_id = extend_the_olive_branch
+		
+		available = {
+			#NOT = 
+		}
+		bypass = {
+		}
+		
+		prerequisite = { focus = extend_the_olive_branch }
+		cost = 10
+
+		mutually_exclusive = { focus = honor_our_word }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			declare_war_on = { type = annex_everything    target = JAP }
+		}
+	}
+	focus = {
+		id = honor_our_word
+		icon = GFX_focus_chi_collaboration_with_the_japanese
+		x = 1
+		y = 1
+		relative_position_id = extend_the_olive_branch
+		
+		available = {
+			NOT = { has_war_with = JAP }
+			JAP = { has_government = ROOT }
+			is_subject = no
+			has_government = fascism			
+		}
+		bypass = {
+		}
+		
+		prerequisite = { focus = extend_the_olive_branch }
+		cost = 10
+
+		mutually_exclusive = { focus = operation_fallen_samurai }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			JAP = { country_event = { id = tfv_new_zealand.4 } }
+		}
+	}
+
+##### ##### #   #
+#     #   # ## ##
+#     #   # # # #
+#     #   # #   #
+##### ##### #   #
+
+	focus = {
+		id = communist_path
+		icon = GFX_goal_support_communism
+		x = 10
+		y = 0
+		relative_position_id = fascist_path
+		
+		available = {
+			#NOT = 
+		}
+		bypass = {
+		}
+		
+		#prerequisite = { focus =  }
+		cost = 10
+
+		mutually_exclusive = { focus = fascist_path }
+		mutually_exclusive = { focus = democratic_path }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.05
+			}			
+		}
+	}
+	focus = {
+		id = entice_the_workers
+		icon = GFX_goal_generic_soviet_construction
+		x = 0
+		y = 1
+		relative_position_id = communist_path
+		
+		available = {
+			#NOT = 
+		}
+		bypass = {
+		}
+		
+		prerequisite = { focus = communist_path }
+		cost = 10
+
+		#mutually_exclusive = { focus = fascist_path }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.15
+			}		
+		}
+	}
+	focus = {
+		id = attack_the_upper_class
+		icon = GFX_goal_tfv_burn_the_royal_portraits
+		x = 0
+		y = 1
+		relative_position_id = entice_the_workers
+		
+		available = {
+			#NOT = 
+		}
+		bypass = {
+		}
+		
+		prerequisite = { focus = entice_the_workers }
+		cost = 10
+
+		#mutually_exclusive = { focus = fascist_path }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = -0.03
+			add_political_power = 35
+		}
+	}
+	focus = {
+		id = negotiate_with_the_arm_plants
+		icon = GFX_goal_tripartite_pact
+		x = -1
+		y = 1
+		relative_position_id = attack_the_upper_class
+		
+		available = {
+			#NOT = 
+		}
+		bypass = {
+		}
+		
+		prerequisite = { focus = attack_the_upper_class }
+		cost = 10
+
+		#mutually_exclusive = { focus = fascist_path }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_manpower = 25000
+		}
+	}
+	focus = {
+		id = negotiate_with_the_factories
+		icon = GFX_goal_generic_dangerous_deal
+		x = 1
+		y = 1
+		relative_position_id = attack_the_upper_class
+		
+		available = {
+			#NOT = 
+		}
+		bypass = {
+		}
+		
+		prerequisite = { focus = attack_the_upper_class }
+		cost = 10
+
+		#mutually_exclusive = { focus = fascist_path }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = CAC_aworkersarmyidea
+		}
+	}
+	focus = {
+		id = begin_the_revolution
+		icon = GFX_goal_generic_war_with_comintern
+		x = 1
+		y = 1
+		relative_position_id = negotiate_with_the_arm_plants
+
+		available = {
+			#NOT = 
+		}
+		bypass = {
+		}
+		
+		prerequisite = { focus = negotiate_with_the_arm_plants }
+		prerequisite = { focus = negotiate_with_the_factories  }
+		cost = 10
+
+		#mutually_exclusive = { focus = fascist_path }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			start_civil_war = {
+				ideology = democratic
+				size = 0.2
+			}
+			set_politics = {
+				ruling_party = communism
+				elections_allowed = no
+			}
+		}
+	}
+	focus = {
+		id = victory_is_ours
+		icon = GFX_focus_por_workers_of_iberia
+		x = 0
+		y = 1
+		relative_position_id = begin_the_revolution
+		
+		available = {
+			has_war = FALSE
+		}
+		bypass = {
+		}
+		
+		prerequisite = { focus = begin_the_revolution }
+		cost = 10
+
+		#mutually_exclusive = { focus = fascist_path }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = 0.10
+			add_political_power = 100
+						add_popularity = {
+				ideology = communism
+				popularity = 0.25
+			}
+		}
+	}
+	focus = {
+		id = the_stalinist_route
+		icon = GFX_focus_fra_loyalty_stalin
+		x = -2
+		y = 1
+		relative_position_id = victory_is_ours
+		
+		available = {
+			#NOT = 
+		}
+		bypass = {
+		}
+		
+		prerequisite = { focus = victory_is_ours }
+		cost = 10
+
+		mutually_exclusive = { focus = the_trotsky_way }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			SOV = {
+				add_opinion_modifier = { 
+					target = ROOT
+					modifier = medium_increase
+				}
+			}
+		}
+	}
+	focus = {
+		id = the_trotsky_way
+		icon = GFX_focus_fra_loyalty_trotzky
+		x = 2
+		y = 1
+		relative_position_id = victory_is_ours
+		
+		available = {
+			#NOT = 
+		}
+		bypass = {
+		}
+		
+		prerequisite = { focus = victory_is_ours }
+		cost = 10
+
+		mutually_exclusive = { focus = the_stalinist_route }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			SOV = {
+				add_opinion_modifier = { 
+					target = ROOT
+					modifier = large_decrease
+				}
+			}
+		}
+	}
+	focus = {
+		id = puppet_islands
+		icon = GFX_focus_eng_global_defense
+		x = -1
+		y = 1
+		relative_position_id = the_stalinist_route
+		
+		available = {
+			#NOT = 
+		}
+		bypass = {
+		}
+		
+		prerequisite = { focus = the_stalinist_route }
+		cost = 10
+
+		#mutually_exclusive = { focus = fascist_path }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			create_wargoal = { type = puppet_wargoal_focus target = JAJ }
+			create_wargoal = { type = puppet_wargoal_focus target = LIL }
+			create_wargoal = { type = puppet_wargoal_focus target = MWM }
+		}
+	}
+	focus = {
+		id = build_up_the_islands
+		icon = GFX_focus_generic_tank_production
+		x = 0
+		y = 1
+		relative_position_id = puppet_islands
+		
+		available = {
+			any_state = {
+						OR = {
+						state = 630
+						state = 631
+						state = 727
+					}
+					OWNER = {
+						OR = {
+							tag = ROOT
+							is_subject_of = ROOT
+						}
+					}
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+				}
+			}
+		}
+
+		bypass = {
+		}
+		
+		prerequisite = { focus = puppet_islands }
+		cost = 10
+
+		#mutually_exclusive = { focus = fascist_path }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			631 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			630 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = puppet_baja
+		icon = GFX_CAC_Baja
+		x = 1
+		y = 1
+		relative_position_id = the_stalinist_route
+		
+		available = {
+			#NOT = 
+		}
+		bypass = {
+		}
+		
+		prerequisite = { focus = the_stalinist_route }
+		cost = 10
+
+		#mutually_exclusive = { focus = fascist_path }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			create_wargoal = { type = puppet_wargoal_focus target = BAJ }
+		}
+	}
+	focus = {
+		id = rebuilding_baja
+		icon = GFX_Generic_Industry_Tanks
+		x = 0
+		y = 1
+		relative_position_id = puppet_baja
+		
+		available = {
+			#NOT = 
+		}
+		bypass = {
+		}
+		
+		prerequisite = { focus = puppet_baja }
+		cost = 10
+
+		#mutually_exclusive = { focus = fascist_path }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			484 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = join_the_comintern
+		icon = GFX_focus_chi_mission_to_the_soviet_union
+		x = 1
+		y = 1
+		relative_position_id = build_up_the_islands
+		
+		available = {
+			#NOT = 
+		}
+		bypass = {
+		}
+		
+		prerequisite = { focus = build_up_the_islands }
+		prerequisite = { focus = rebuilding_baja }
+		cost = 10
+
+		#mutually_exclusive = { focus = fascist_path }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+				SOV = { country_event = generic.2 }
+		}
+	}
+	focus = {
+		id = washingtons_plight
+		icon = GFX_Generic_Revanchism02
+		x = -1
+		y = 1
+		relative_position_id = the_trotsky_way
+		
+		available = {
+			#NOT = 
+		}
+		bypass = {
+		}
+		
+		prerequisite = { focus = the_trotsky_way }
+		cost = 10
+
+		#mutually_exclusive = { focus = fascist_path }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = WAW
+			}
+		}
+	}
+	focus = {
+		id = oregons_fall
+		icon = GFX_Generic_Socialist_Volunteers
+		x = 1
+		y = 1
+		relative_position_id = the_trotsky_way
+		
+		available = {
+			#NOT = 
+		}
+		bypass = {
+		}
+		
+		prerequisite = { focus = the_trotsky_way }
+		cost = 10
+
+		#mutually_exclusive = { focus = the_trostky_way }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = ORO
+			}
+		}
+	}
+	focus = {
+		id = the_seattle_arms_factories
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 0
+		y = 1
+		relative_position_id = washingtons_plight
+		
+		available = {
+			#NOT = 
+		}
+		bypass = {
+		}
+		
+		prerequisite = { focus = washingtons_plight }
+		cost = 10
+
+		#mutually_exclusive = { focus = fascist_path }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			821 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = portlands_power
+		icon = GFX_Generic_Espionage
+		x = 0
+		y = 1
+		relative_position_id = oregons_fall
+		
+		available = {
+			#NOT = 
+		}
+		bypass = {
+		}
+		
+		prerequisite = { focus = oregons_fall }
+		cost = 10
+
+		#mutually_exclusive = { focus = fascist_path }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_manpower = 40000
+			add_ideas = YUG_idea_local_militias
+		}
+	}
+	focus = {
+		id = our_own_pact
+		icon = GFX_goal_generic_attack_allies
+		x = -1
+		y = 1
+		relative_position_id = portlands_power
+		
+		available = {
+			#NOT = 
+		}
+		bypass = {
+		}
+		
+		prerequisite = { focus = portlands_power }
+		prerequisite = { focus = the_seattle_arms_factories }
+		cost = 10
+
+		#mutually_exclusive = { focus = fascist_path }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			set_rule = { can_create_factions = yes }
+			create_faction = pacific_communist_pact
+			hidden_effect = { news_event = { id = hawaiifocusnews.3 } }
+		}
+	}
+	focus = {
+		id = join_the_fight_against_fascism
+		icon = GFX_focus_generic_anti_fascist_diplomacy
+		x = 2
+		y = 1
+		relative_position_id = join_the_comintern
+		
+		available = {
+			#NOT = 
+		}
+		bypass = {
+		}
+		
+		prerequisite = { 
+			focus = join_the_comintern
+			focus = our_own_pact
+		 }
+		cost = 10
+
+		#mutually_exclusive = { focus = fascist_path }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+				every_country = {
+				limit = {
+					has_government = fascism
+					is_major = yes
+					NOT = { is_in_faction_with = ROOT }
+				}
+				ROOT = {
+					create_wargoal = {
+						target = PREV
+						type = topple_government
+						expire = 0
+					}
+				}
+			}
+		}
+	}
+
+ ###  ##### #   # #   #
+#   # #   # ## ##  # #
+##### ####  # # #   #
+#   # ###   #   #   #
+#   # #  #  #   #   #
+
+	focus = {
+		id = review_the_army
+		icon = GFX_goal_generic_military_sphere
+		x = 6
+		y = 0
+		relative_position_id = communist_path
+		
+		available = {
+			#NOT = 
+		}
+		bypass = {
+		}
+		
+		#prerequisite = { focus =  }
+		cost = 10
+
+		#mutually_exclusive = { focus = fascist_path }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+				army_experience = 50
+		}
+	}
+	focus = {
+		id = import_new_guns	
+		icon = GFX_goal_generic_small_arms
+		x = 0
+		y = 1
+		relative_position_id = review_the_army
+		
+		available = {
+			#NOT = 
+		}
+		bypass = {
+		}
+		
+		prerequisite = { focus = review_the_army }
+		cost = 10
+
+		#mutually_exclusive = { focus = fascist_path }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = review_the_army
+				bonus = 0.75
+				uses = 2
+				category = infantry_weapons
+			}
+		}
+	}
+	focus = {
+		id = infantry_path
+		icon = GFX_goal_generic_axis_build_infantry
+		x = -1.5
+		y = 1
+		relative_position_id = import_new_guns
+		
+		available = {
+			#NOT = 
+		}
+		bypass = {
+		}
+		
+		prerequisite = { focus = import_new_guns }
+		cost = 10
+
+		#mutually_exclusive = { focus = fascist_path }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+				add_tech_bonus = {
+					name = land_doctrine
+					bonus = 1.0
+					uses = 1
+					category = cat_superior_firepower
+			}
+		}
+	}
+	focus = {
+		id = armored_path
+		icon = GFX_goal_generic_build_tank
+		x = 1.5
+		y = 1
+		relative_position_id = import_new_guns
+		
+		available = {
+			#NOT = 
+		}
+		bypass = {
+		}
+		
+		prerequisite = { focus = import_new_guns }
+		cost = 10
+
+		#mutually_exclusive = { focus = import_new_guns }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 1.0
+				uses = 1
+				category = armor
+			}
+		}
+	}
+	focus = {
+		id = train_the_marines
+		icon = GFX_goal_generic_amphibious_assault
+		x = 0
+		y = 2
+		relative_position_id = import_new_guns
+		
+		available = {
+			#NOT = 
+		}
+		bypass = {
+		}
+		
+		prerequisite = { focus = import_new_guns }
+		cost = 10
+
+		#mutually_exclusive = { focus = fascist_path }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = train_the_marines
+				bonus = 1.0
+				uses = 1
+				category = marine_tech
+			}
+			add_tech_bonus = {
+				name = train_the_marines
+				bonus = 1.0
+				uses = 1
+				category = tp_tech
+			}
+		}
+	}
+	focus = {
+		id = experienced_generals
+		icon = GFX_focus_generic_military_mission
+		x = -1
+		y = 1
+		relative_position_id = train_the_marines
+		
+		available = {
+			#NOT = 
+		}
+		bypass = {
+		}
+		
+		prerequisite = { focus = train_the_marines }
+		cost = 10
+
+		#mutually_exclusive = { focus = fascist_path }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			army_experience = 25
+		}
+	}
+	focus = {
+		id = prepare_the_coastlines
+		icon = GFX_goal_generic_construct_military
+		x = 1
+		y = 1
+		relative_position_id = train_the_marines
+		
+		available = {
+			#NOT = 
+		}
+		bypass = {
+		}
+		
+		prerequisite = { focus = train_the_marines }
+		cost = 10
+
+		#mutually_exclusive = { focus = fascist_path }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = FRA_fortification_focus
+		}
+	}
+	focus = {
+		id = doctorine_research
+		icon = GFX_goal_generic_army_doctrines
+		x = 1
+		y = 1
+		relative_position_id = experienced_generals
+		
+		available = {
+			#NOT = 
+		}
+		bypass = {
+		}
+		
+		prerequisite = { focus = experienced_generals }
+		prerequisite = { focus = prepare_the_coastlines }
+		cost = 10
+
+		#mutually_exclusive = { focus = fascist_path }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = doctorine_research
+				bonus = 1.0
+				uses = 2
+				category = land_doctrine
+			}
+		}
+	}
+
+##### #   # ####
+  #   ##  # #   #
+  #   # # # #   #
+  #   #  ## #   #
+##### #   # #####
+
+	focus = {
+		id = industrial_path
+		icon = GFX_goal_generic_construct_civilian
+		x = 6
+		y = 0
+		relative_position_id = review_the_army
+		
+		available = {
+			#NOT = 
+		}
+		bypass = {
+		}
+		
+		#prerequisite = { focus =  }
+		cost = 10
+
+		#mutually_exclusive = { focus = fascist_path }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 3
+				category = industry
+			}
+			add_ideas = BUL_national_industry_01
+		}
+	}
+	focus = {
+		id = build_our_roads_up
+		icon = GFX_goal_generic_construct_infrastructure
+		x = -2
+		y = 1
+		relative_position_id = industrial_path
+		
+		available = {
+			#NOT = 
+		}
+		bypass = {
+		}
+		
+		prerequisite = { focus = industrial_path }
+		cost = 10
+
+		#mutually_exclusive = { focus = fascist_path }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			if = {
+				limit = {
+					629 = {
+						owner = {
+							OR = {
+								tag = ROOT
+								is_subject_of = ROOT
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+				629 = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					1152 = {
+						owner = {
+							OR = {
+								tag = ROOT
+								is_subject_of = ROOT
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+				1152 = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					1153 = {
+						owner = {
+							OR = {
+								tag = ROOT
+								is_subject_of = ROOT
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+				1153 = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					1154 = {
+						owner = {
+							OR = {
+								tag = ROOT
+								is_subject_of = ROOT
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+				1154 = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = build_oil_refineries
+		icon = GFX_goal_generic_oil_refinery
+		x = 2
+		y = 1
+		relative_position_id = industrial_path
+		
+		available = {
+			#NOT = 
+		}
+		bypass = {
+		}
+		
+		prerequisite = { focus = industrial_path }
+		cost = 10
+
+		#mutually_exclusive = { focus = fascist_path }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_full_control_of_state = 1154
+				}
+				1154 = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = synthetic_refinery
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = invest_in_research
+		icon = GFX_focus_research
+		x = 0
+		y = 1
+		relative_position_id = industrial_path
+		
+		available = {
+			#NOT = 
+		}
+		bypass = {
+		}
+		
+		prerequisite = { focus = industrial_path }
+		cost = 10
+
+		#mutually_exclusive = { focus = fascist_path }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	focus = {
+		id = new_civs
+		icon = GFX_goal_generic_construct_civ_factory
+		x = -1
+		y = 1
+		relative_position_id = invest_in_research
+		
+		available = {
+			#NOT = 
+		}
+		bypass = {
+		}
+		
+		prerequisite = { focus = invest_in_research }
+		cost = 10
+
+		#mutually_exclusive = { focus = fascist_path }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				prioritize = { 1152 }
+				limit = {
+					ROOT = { has_full_control_of_state = PREV }
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = invest_in_mils
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 1
+		y = 1
+		relative_position_id = invest_in_research
+		
+		available = {
+			#NOT = 
+		}
+		bypass = {
+		}
+		
+		prerequisite = { focus = invest_in_research }
+		cost = 10
+
+		#mutually_exclusive = { focus = fascist_path }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				prioritize = { 107 }
+				limit = {
+					ROOT = { has_full_control_of_state = PREV }
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = business_is_booming
+		icon = GFX_focus_generic_the_giant_wakes
+		x = 0
+		y = 1
+		relative_position_id = new_civs
+		
+		available = {
+			#NOT = 
+		}
+		bypass = {
+		}
+		
+		prerequisite = { focus = new_civs }
+		cost = 10
+
+		#mutually_exclusive = { focus = fascist_path }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+				add_manpower = 100000	
+		}
+	}
+	focus = {
+		id = all_we_could_get
+		icon = GFX_goal_generic_positive_trade_relations
+		x = 0
+		y = 1
+		relative_position_id = invest_in_mils
+		
+		available = {
+			#NOT = 
+		}
+		bypass = {
+		}
+		
+		prerequisite = { focus = invest_in_mils }
+		cost = 10
+
+		#mutually_exclusive = { focus = fascist_path }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = BUL_national_industry_01
+				add_idea = BUL_national_industry_02
+			}
+		}
+	}
+	focus = {
+		id = healthcare_for_our_troops
+		icon = GFX_focus_research
+		x = 1
+		y = 1
+		relative_position_id = business_is_booming
+		
+		available = {
+			#NOT = 
+		}
+		bypass = {
+		}
+		
+		prerequisite = { focus = business_is_booming }
+		prerequisite = { focus = all_we_could_get }
+		cost = 10
+
+		#mutually_exclusive = { focus = fascist_path }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_war_support = 0.02
+		}
+	}
+	focus = {
+		id = improved_science_facilities
+		icon = GFX_Generic_Cult_of_Reason
+		x = 0
+		y = 1
+		relative_position_id = healthcare_for_our_troops
+		
+		available = {
+			#NOT = 
+		}
+		bypass = {
+		}
+		
+		prerequisite = { focus = healthcare_for_our_troops }
+		cost = 10
+
+		#mutually_exclusive = { focus = fascist_path }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+
+#   #  ###  #   # #   #
+##  # #   # #   #  # #
+# # # #####  # #    #
+#  ## #   #  # #    #
+#   # #   #   #     #
+
+	focus = {
+		id = the_naval_situation
+		icon = GFX_goal_generic_navy_cruiser
+		x = 3
+		y = 1
+		relative_position_id = doctorine_research
+		
+		available = {
+			#NOT = 
+		}
+		bypass = {
+		}
+		
+		prerequisite = { focus =  }
+		cost = 10
+
+		#mutually_exclusive = { focus = fascist_path }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			navy_experience = 25
+		}
+	}
+	focus = {
+		id = ready_pearl_harbor
+		icon = GFX_goal_generic_construct_naval_dockyard
+		x = -1
+		y = 1
+		relative_position_id = the_naval_situation
+		
+		available = {
+			#NOT = 
+		}
+		bypass = {
+		}
+		
+		prerequisite = { focus = the_naval_situation }
+		cost = 10
+
+		#mutually_exclusive = { focus = fascist_path }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+				629 = {
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = dockyard
+						level = 3
+						instant_build = yes
+						}
+					}
+		}
+	}
+	focus = {
+		id = new_sub_models
+		icon = GFX_goal_generic_navy_submarine
+		x = 1
+		y = 1
+		relative_position_id = the_naval_situation
+		
+		available = {
+			#NOT = 
+		}
+		bypass = {
+		}
+		
+		prerequisite = { focus = the_naval_situation }
+		cost = 10
+
+		#mutually_exclusive = { focus = fascist_path }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = USA_fleet_submarines
+				bonus = 0.75
+				uses = 2
+				category = ss_tech
+			}
+		}
+	}
+	focus = {
+		id = a_fortress_of_doom
+		icon = GFX_goal_generic_occupy_states_coastal
+		x = 0
+		y = 1
+		relative_position_id = ready_pearl_harbor
+		
+		available = {
+			#NOT = 
+		}
+		bypass = {
+		}
+		
+		prerequisite = { focus = ready_pearl_harbor }
+		cost = 10
+
+		#mutually_exclusive = { focus = fascist_path }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			629 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 2
+					province = 10048
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					level = 1
+					province = 15526
+					instant_build = yes
+				}
+			}
+			1153 = {	
+				add_building_construction = {
+					type = coastal_bunker
+					level = 3
+					province = 4180
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = increased_power
+		icon = GFX_goal_generic_navy_anti_submarine
+		x = -2
+		y = 1
+		relative_position_id = ready_pearl_harbor
+		
+		available = {
+			#NOT = 
+		}
+		bypass = {
+		}
+		
+		prerequisite = { focus = ready_pearl_harbor }
+		cost = 10
+
+		#mutually_exclusive = { focus = fascist_path }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = increased_power
+				bonus = 1.25
+				uses = 1
+				category = tp_tech
+			}
+		}
+	}
+	focus = {
+		id = research_new_destroyers
+		icon = GFX_goal_generic_navy_battleship
+		x = 0
+		y = 1
+		relative_position_id = new_sub_models
+		
+		available = {
+			#NOT = 
+		}
+		bypass = {
+		}
+		
+		prerequisite = { focus = new_sub_models }
+		cost = 10
+
+		mutually_exclusive = { focus = carrier_models }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+					add_tech_bonus = {
+							name = dd_bonus
+							bonus = 0.75
+							uses = 2
+							category = dd_tech
+						}
+		}
+	}
+	focus = {
+		id = carrier_models
+		icon = GFX_goal_generic_navy_carrier
+		x = 2
+		y = 1
+		relative_position_id = new_sub_models
+		
+		available = {
+			#NOT = 
+		}
+		bypass = {
+		}
+		
+		prerequisite = { focus = new_sub_models }
+		cost = 10
+
+		mutually_exclusive = { focus = research_new_destroyers }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = USA_carrier_primacy
+				bonus = 0.75
+				uses = 2
+				category = cv_tech
+			}
+		}
+	}
+	focus = {
+		id = new_pacific_fleet
+		icon = GFX_goal_generic_air_naval_bomber
+		x = 1
+		y = 1
+		relative_position_id = increased_power
+		
+		available = {
+			#NOT = 
+		}
+		bypass = {
+		}
+		
+		prerequisite = { focus = increased_power }
+		prerequisite = { focus = a_fortress_of_doom }
+		cost = 10
+
+		#mutually_exclusive = { focus = fascist_path }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = new_pacific_fleet
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = bb_tech
+				category = cv_tech
+			}
+		}
+	}
+	focus = {
+		id = our_doctorine_renewed
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		x = 1
+		y = 1
+		relative_position_id = research_new_destroyers
+		
+		available = {
+			#NOT = 
+		}
+		bypass = {
+		}
+		
+		prerequisite = { 
+			focus = research_new_destroyers 
+			focus = carrier_models
+		}
+		cost = 10
+
+		#mutually_exclusive = { focus = fascist_path }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+				add_tech_bonus = {
+				name = our_doctorine_renewed
+				bonus = 1.0
+				uses = 2
+				category = naval_doctrine
+			}
+		}
+	}
+	focus = {
+		id = ready_for_anything
+		icon = GFX_focus_generic_destroyer
+		x = 2
+		y = 1
+		relative_position_id = new_pacific_fleet
+		
+		available = {
+			#NOT = 
+		}
+		bypass = {
+		}
+		
+		prerequisite = { focus = new_pacific_fleet }
+		prerequisite = { focus = our_doctorine_renewed }
+		cost = 10
+
+		#mutually_exclusive = { focus = fascist_path }
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = 0.05
+		}
+	}

@@ -2664,7 +2664,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CAC_DavissMarch4
-		icon = GFX_Generic_Revanchism02
+		icon = GFX_TXT_Assimilate_Colorado
 		cost = 10
 		prerequisite = {
 			focus = CAC_DavissMarch
