@@ -40,7 +40,7 @@ bookmarks = {
 			history = "KSK_BOOKMARK_DESC"
 			ideology = democratic
 			ideas = {
-				#
+				KSK_legacy_of_the_dustbowl
 			}
 			focuses = {
 				KSK_bleeding_kansas
@@ -82,6 +82,18 @@ bookmarks = {
 				GRN_the_greenland_empire
 				GRN_the_republic_of_greenland
 				GRN_the_polar_bears_rise_up
+			}
+		}
+		"HIH"={
+			history = "HIH_BOOKMARK_DESC"
+			ideology = democratic
+			ideas = {
+				#
+			}
+			focuses = {
+				democratic_path
+				fascist_path
+				communist_path
 			}
 		}
 		"---"={

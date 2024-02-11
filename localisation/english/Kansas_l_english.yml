@@ -1,4 +1,7 @@
 ﻿l_english:
+##Tooltips
+KSK_ssr_system_tt:0 "This will enable the SSR decisions, allowing you to set up loyal puppet states!"
+
 ##Ideas
  KSK_realpolitik:0 "RealPolitik"
  KSK_red_army:0 "Kansan Red Army"
@@ -18,6 +21,11 @@
  KSK_boy_scouts:0 "Boy Scouts Conscripted"
  KSK_bund:0 "American Bund Training"
  KSK_war_readiness:0 "War Readiness Initiative"
+ KSK_american_national_socialism1:0 "American National Socialism"
+ KSK_american_national_socialism2:0 "American National Socialism"
+ KSK_theocratic_policies:0 "Theocratic Policies"
+ KSK_theocratic_policies2:0 "Theocratic Policies"
+ KSK_theocratic_policies3:0 "Theocratic Policies"
  KSK_corporations:0 "Corporate Tax Breaks"
  KSK_spiritual_awakening:0 "Spiritual Awakening"
  KSK_spiritual_fanaticism:0 "Spritiual Fanaticism"
@@ -160,7 +168,7 @@
  KSK_fascist10_desc:0 "The Reverend has long been advocating for a return to the most important aspects of Christianity, those of defending against heresy and fighting against those who would see the church destroyed. Now, it is time that the people join our effort, and fight for the glory of God!"
  KSK_fascist11:0 "German Military Aid"
  KSK_fascist11_desc:0 "Now that we have awakened our people, it is time that we show them the light of God! In their fight against the destructive elements of international communism and weak liberalism, many will die. But, their immortal souls will be honored in heaven as the true warriors of Christ. our forces will fight with unseen ferocity and determination. God will watch over us, Deus Vult!"
- KSK_fascist12:0 "Christ Watches Over America"
+ KSK_fascist12:0 "Christ Watches Over Americana"
  KSK_fascist12_desc:0 "Now that we have awakened our people, it is time that we show them the light of God! In their fight against the destructive elements of international communism and weak liberalism, many will die. But, their immortal souls will be honored in heaven as the true warriors of Christ. our forces will fight with unseen ferocity and determination. God will watch over us, Deus Vult!"
  KSK_fascist13:0 "National Socialist Principles"
  KSK_fascist13_desc:0 "Now that we have awakened our people, it is time that we show them the light of God! In their fight against the destructive elements of international communism and weak liberalism, many will die. But, their immortal souls will be honored in heaven as the true warriors of Christ. our forces will fight with unseen ferocity and determination. God will watch over us, Deus Vult!"

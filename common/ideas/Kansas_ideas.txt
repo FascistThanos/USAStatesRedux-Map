@@ -222,7 +222,7 @@ ideas = {
 				recon_factor = 0.05
 			}
 		}
-		KSK_bund = {
+		KSK_theocratic_policies = {
 			allowed = {
 				always = no
 			}
@@ -233,6 +233,37 @@ ideas = {
 			modifier = {
 				training_time_army_factor = -0.1
 				army_org_factor = 0.05
+			}
+		}
+		KSK_theocratic_policies2 = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = 0.05
+				training_time_army_factor = -0.1
+				army_org_factor = 0.075
+			}
+		}
+		KSK_theocratic_policies3 = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.1
+				stability_factor = 0.1
+				war_support_factor = 0.1
+				training_time_army_factor = -0.15
+				army_org_factor = 0.1
 			}
 		}
 		KSK_war_readiness = {
@@ -248,7 +279,7 @@ ideas = {
 				consumer_goods_factor = -0.05
 			}
 		}
-		KSK_corporations = {
+		KSK_american_national_socialism1 = {
 			allowed = {
 				always = no
 			}
@@ -258,6 +289,19 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				industrial_capacity_factory = 0.05
+			}
+		}
+		KSK_american_national_socialism2 = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.10
+				consumer_goods_factor = -0.05
 			}
 		}
 		KSK_spiritual_awakening = {

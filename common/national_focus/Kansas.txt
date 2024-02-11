@@ -1001,7 +1001,7 @@ focus_tree = {
 		cost = 10
 		completion_reward = {
 			army_experience = 25
-			add_ideas = KSK_legionaires_integrated
+			add_ideas = KSK_theocratic_policies
 		}
 	}
 	focus = {
@@ -1015,8 +1015,22 @@ focus_tree = {
 		relative_position_id = KSK_fascist4
 		cost = 10
 		completion_reward = {
-			army_experience = 25
-			add_ideas = KSK_legionaires_integrated
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
@@ -1031,7 +1045,7 @@ focus_tree = {
 		cost = 10
 		completion_reward = {
 			army_experience = 25
-			add_ideas = KSK_legionaires_integrated
+			add_ideas = KSK_american_national_socialism1
 		}
 	}
 	focus = {
@@ -1045,8 +1059,10 @@ focus_tree = {
 		relative_position_id = KSK_fascist5
 		cost = 10
 		completion_reward = {
-			army_experience = 25
-			add_ideas = KSK_legionaires_integrated
+			swap_ideas = {
+				remove_idea = KSK_theocratic_policies
+				add_idea = KSK_theocratic_policies2
+			}
 		}
 	}
 	focus = {
@@ -1079,6 +1095,8 @@ focus_tree = {
 		relative_position_id = KSK_fascist6
 		cost = 10
 		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 50
 		}
 	}
 	focus = {
@@ -1092,6 +1110,7 @@ focus_tree = {
 		relative_position_id = KSK_fascist7
 		cost = 10
 		completion_reward = {
+			add_manpower = 20000
 		}
 	}
 	focus = {
@@ -1108,6 +1127,10 @@ focus_tree = {
 		relative_position_id = KSK_fascist8
 		cost = 10
 		completion_reward = {
+			swap_ideas = {
+				remove_idea = KSK_theocratic_policies2
+				add_idea = KSK_theocratic_policies3
+			}
 		}
 	}
 	focus = {
@@ -1124,6 +1147,10 @@ focus_tree = {
 		relative_position_id = KSK_fascist10
 		cost = 10
 		completion_reward = {
+			swap_ideas = {
+				remove_idea = KSK_american_national_socialism1
+				add_idea = KSK_american_national_socialism2
+			}
 		}
 	}
 	focus = {
@@ -1151,6 +1178,10 @@ focus_tree = {
 		relative_position_id = KSK_fascist14
 		cost = 10
 		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = OKO
+			}
 		}
 	}
 	focus = {
@@ -1164,6 +1195,10 @@ focus_tree = {
 		relative_position_id = KSK_fascist14
 		cost = 10
 		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = MOM
+			}
 		}
 	}
 	focus = {
@@ -1177,6 +1212,10 @@ focus_tree = {
 		relative_position_id = KSK_fascist15
 		cost = 10
 		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = TXT
+			}
 		}
 	}
 	focus = {
@@ -1190,6 +1229,10 @@ focus_tree = {
 		relative_position_id = KSK_fascist16
 		cost = 10
 		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = ARA
+			}
 		}
 	}
 	focus = {
@@ -1204,6 +1247,10 @@ focus_tree = {
 		relative_position_id = KSK_fascist15
 		cost = 10
 		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = LAL
+			}
 		}
 	}
 	focus = {
