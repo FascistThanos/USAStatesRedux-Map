@@ -1,4 +1,47 @@
 characters = {
+	KSK_alf_landon = {
+		name = "Alf Landon"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/KSK/Portrait_USA_Landon_Alfred.dds"
+			}
+		}
+		country_leader = {
+			ideology = liberalism
+			traits = {
+				staunch_constitutionalist
+			}
+			expire = "1972.1.16"
+		}
+	}
+	KSK_earl_browder = {
+		name = "Earl Browder"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/KSK/Portrait_USA_Earl_Browder.dds"
+			}
+		}
+		country_leader = {
+			ideology = stalinism
+			traits = {
+			}
+			expire = "1972.1.16"
+		}
+	}
+	KSK_burton_winrod = {
+		name = "Gerald Burton Winrod"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/KSK/Portrait_KSK_Gerald_Winrod.dds"
+			}
+		}
+		country_leader = {
+			ideology = national_socialism
+			traits = {
+			}
+			expire = "1972.1.16"
+		}
+	}
 #Generals
 	KSK_dwight_d_eisenhower={
 		name="Dwight D. Eisenhower"

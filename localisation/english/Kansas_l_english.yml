@@ -1,6 +1,8 @@
 ﻿l_english:
 ##Tooltips
 KSK_ssr_system_tt:0 "This will enable the SSR decisions, allowing you to set up loyal puppet states!"
+KSK_gpssr_tt:0 "Will enable decision to form the GPSSR, granting Cores on conquered territory!"
+KSK_form_assr:0 "Form the Great Plains Soviet Socialist Republic"
 
 ##Ideas
  KSK_realpolitik:0 "RealPolitik"
@@ -143,7 +145,7 @@ KSK_ssr_system_tt:0 "This will enable the SSR decisions, allowing you to set up 
  KSK_communist21_desc:0 "It is time. Fascism and Capitalism has lasted much too long. The time has come to crush the uprisings throughout the former United States, and establish our grand plan!"
  KSK_communist22:0 "Establishing the SSR System"
  KSK_communist22_desc:0 "It is time. Fascism and Capitalism has lasted much too long. The time has come to crush the uprisings throughout the former United States, and establish our grand plan!"
- KSK_communist23:0 "Proclaim the American Soviet Socialist Republic"
+ KSK_communist23:0 "Proclaim the Great Plains Soviet Socialist Republic"
  KSK_communist23_desc:0 "It is time. Fascism and Capitalism has lasted much too long. The time has come to crush the uprisings throughout the former United States, and establish our grand plan!"
 
  KSK_fascist1:0 "The Catholic Storm"
@@ -263,6 +265,9 @@ KSK_ssr_system_tt:0 "This will enable the SSR decisions, allowing you to set up 
 ##DECISIONS##
 KSK_ssr_decisions:0 "Forming the New SSR's"
 KSK_form_missourian_ssr:0 "Establish the Missourian SSR"
+KSK_form_arkansas_ssr:0 "Establish the Arkansas SSR"
+KSK_form_nebraskan_ssr:0 "Establish the Nebraskan SSR"
+KSK_form_coloradan_ssr:0 "Establish the Coloradan SSR"
 KSK_jayhawk_resistance_decisions:0 "Dealing with the Jayhawk Resistance"
 KSK_fund_KCIA:0 "Fund the KCIA"
 KSK_crack_down_on_public_meetings:0 "Crack down on Public Meetings"

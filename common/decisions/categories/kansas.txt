@@ -12,6 +12,20 @@ KSK_ssr_decisions = {
 	}
 	visible_when_empty = yes
 }
+KSK_form_assr_decisions = {
+
+	icon = decision_category_military_operation
+
+	priority = 99
+
+	allowed = {
+
+	}
+	visible = {
+		has_completed_focus = KSK_communist23
+	}
+	visible_when_empty = yes
+}
 KSK_jayhawk_resistance_decisions = {
 	icon = decision_category_military_operation
 	priority = 10

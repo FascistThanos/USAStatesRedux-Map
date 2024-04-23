@@ -12,14 +12,236 @@ KSK_ssr_decisions = {
 				controls_state = 462
 				controls_state = 473
 				controls_state = 474
-				controls_state = 45
 		}
 		ai_will_do = {
 			factor = 1
 		}
+		highlight_states = {
+    				highlight_state_targets = {
+			state = 474
+			state = 473
+			state = 462
+			state = 467
+			state = 466
+			state = 465
+    				}
+    		highlight_color_while_active = 3
+    		highlight_color_before_active = 2
+		}
 		cost = 25
 		complete_effect = {
-			add_stability = 0.05
+			KSK = {
+				puppet = {
+					target = MOM
+					end_wars = no
+				}
+			}
+			MOM = {
+				transfer_state = 474
+				transfer_state = 473
+				transfer_state = 462
+				transfer_state = 467
+				transfer_state = 466
+				transfer_state = 465
+				set_politics = {
+					ruling_party = communism
+				elections_allowed = no
+				last_election = 1936.1.1
+				election_frequency = 48
+				}
+			}
+		}
+	}
+	KSK_form_arkansas_ssr = {
+		icon = decision_generic_operation
+		allowed = {
+			tag = KSK
+		}
+		fire_only_once = yes
+		available = {
+				controls_state = 46
+				controls_state = 457
+				controls_state = 1400
+				controls_state = 456
+				controls_state = 453
+				controls_state = 452
+				controls_state = 454
+				controls_state = 455
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		highlight_states = {
+    				highlight_state_targets = {
+			state = 46
+			state = 457
+			state = 1400
+			state = 456
+			state = 453
+			state = 452
+			state = 454
+			state = 455
+    				}
+    		highlight_color_while_active = 3
+    		highlight_color_before_active = 2
+		}
+		cost = 25
+		complete_effect = {
+			KSK = {
+				puppet = {
+					target = ARA
+					end_wars = no
+				}
+			}
+			ARA = {
+			transfer_state = 46
+			transfer_state = 457
+			transfer_state = 1400
+			transfer_state = 456
+			transfer_state = 453
+			transfer_state = 452
+			transfer_state = 454
+			transfer_state = 455
+				set_politics = {
+					ruling_party = communism
+				elections_allowed = no
+				last_election = 1936.1.1
+				election_frequency = 48
+				}
+			}
+		}
+	}
+	KSK_form_nebraskan_ssr = {
+		icon = decision_generic_operation
+		allowed = {
+			tag = KSK
+		}
+		fire_only_once = yes
+		available = {
+				controls_state = 539
+				controls_state = 51
+				controls_state = 538
+				controls_state = 535
+				controls_state = 534
+				controls_state = 537
+				controls_state = 536
+				controls_state = 527
+				controls_state = 528
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		highlight_states = {
+    				highlight_state_targets = {
+			state = 539
+			state = 51
+			state = 538
+			state = 535
+			state = 534
+			state = 537
+			state = 536
+			state = 527
+			state = 528
+    				}
+    		highlight_color_while_active = 3
+    		highlight_color_before_active = 2
+		}
+		cost = 25
+		complete_effect = {
+			KSK = {
+				puppet = {
+					target = NEN
+					end_wars = no
+				}
+			}
+			NEN = {
+			transfer_state = 539
+			transfer_state = 51
+			transfer_state = 538
+			transfer_state = 535
+			transfer_state = 534
+			transfer_state = 537
+			transfer_state = 536
+			transfer_state = 527
+			transfer_state = 528
+				set_politics = {
+					ruling_party = communism
+				elections_allowed = no
+				last_election = 1936.1.1
+				election_frequency = 48
+				}
+			}
+		}
+	}
+	KSK_form_coloradan_ssr = {
+		icon = decision_generic_operation
+		allowed = {
+			tag = KSK
+		}
+		fire_only_once = yes
+		available = {
+				controls_state = 621
+				controls_state = 622
+				controls_state = 623
+				controls_state = 625
+				controls_state = 626
+				controls_state = 629
+				controls_state = 624
+				controls_state = 627
+				controls_state = 628
+				controls_state = 633
+				controls_state = 632
+				controls_state = 631
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		highlight_states = {
+    				highlight_state_targets = {
+			state = 621
+			state = 622
+			state = 623
+			state = 625
+			state = 626
+			state = 629
+			state = 624
+			state = 627
+			state = 628
+			state = 633
+			state = 632
+			state = 631
+    				}
+    		highlight_color_while_active = 3
+    		highlight_color_before_active = 2
+		}
+		cost = 25
+		complete_effect = {
+			KSK = {
+				puppet = {
+					target = COC
+					end_wars = no
+				}
+			}
+			COC = {
+			transfer_state = 621
+			transfer_state = 622
+			transfer_state = 623
+			transfer_state = 625
+			transfer_state = 626
+			transfer_state = 629
+			transfer_state = 624
+			transfer_state = 627
+			transfer_state = 628
+			transfer_state = 633
+			transfer_state = 632
+			transfer_state = 631
+				set_politics = {
+					ruling_party = communism
+				elections_allowed = no
+				last_election = 1936.1.1
+				election_frequency = 48
+				}
+			}
 		}
 	}
 }
@@ -109,6 +331,131 @@ KSK_jayhawk_resistance_decisions = {
 		cost = 100
 		complete_effect = {
 				remove_ideas = KSK_jayhawk_resistance4
+		}
+	}
+}
+KSK_form_assr_decisions = {
+	KSK_form_assr = {
+		icon = decision_generic_operation
+		allowed = {
+			tag = KSK
+		}
+		fire_only_once = yes
+		available = {
+			owns_state = 552
+			owns_state = 561
+			owns_state = 647
+			owns_state = 553
+			owns_state = 559
+			owns_state = 558
+			owns_state = 557
+			owns_state = 560
+			owns_state = 49
+			owns_state = 459
+			owns_state = 460
+			owns_state = 458
+			owns_state = 461
+			owns_state = 468
+			owns_state = 469
+			owns_state = 470
+			owns_state = 471
+			owns_state = 475
+			owns_state = 463
+			owns_state = 464
+			owns_state = 45
+			owns_state = 472
+			owns_state = 532
+			owns_state = 533
+			owns_state = 531
+			owns_state = 530
+			owns_state = 529
+			owns_state = 630
+			owns_state = 55
+			owns_state = 637
+			owns_state = 634
+			owns_state = 636
+			owns_state = 635
+			owns_state = 620
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		highlight_states = {
+    			highlight_state_targets = {
+			state = 552
+			state = 561
+			state = 647
+			state = 553
+			state = 559
+			state = 558
+			state = 557
+			state = 560
+			state = 49
+			state = 459
+			state = 460
+			state = 458
+			state = 461
+			state = 468
+			state = 469
+			state = 470
+			state = 471
+			state = 475
+			state = 463
+			state = 464
+			state = 45
+			state = 472
+			state = 532
+			state = 533
+			state = 531
+			state = 530
+			state = 529
+			state = 630
+			state = 55
+			state = 637
+			state = 634
+			state = 636
+			state = 635
+			state = 620
+    			}
+    		highlight_color_while_active = 3
+    		highlight_color_before_active = 2
+		}
+		cost = 25
+		complete_effect = {
+			add_state_core = 552
+			add_state_core = 561
+			add_state_core = 647
+			add_state_core = 553
+			add_state_core = 559
+			add_state_core = 558
+			add_state_core = 557
+			add_state_core = 560
+			add_state_core = 49
+			add_state_core = 459
+			add_state_core = 460
+			add_state_core = 458
+			add_state_core = 461
+			add_state_core = 468
+			add_state_core = 469
+			add_state_core = 470
+			add_state_core = 471
+			add_state_core = 475
+			add_state_core = 463
+			add_state_core = 464
+			add_state_core = 45
+			add_state_core = 472
+			add_state_core = 532
+			add_state_core = 533
+			add_state_core = 531
+			add_state_core = 530
+			add_state_core = 529
+			add_state_core = 630
+			add_state_core = 55
+			add_state_core = 637
+			add_state_core = 634
+			add_state_core = 636
+			add_state_core = 635
+			add_state_core = 620
 		}
 	}
 }

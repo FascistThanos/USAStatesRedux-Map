@@ -68,6 +68,10 @@ add_ideas = {
 	KSK_legacy_of_the_dustbowl
 }
 
+recruit_character = KSK_alf_landon
+recruit_character = KSK_earl_browder
+recruit_character = KSK_burton_winrod
+
 set_politics = {
 
 	ruling_party = democratic
@@ -80,16 +84,6 @@ set_popularities = {
 	democratic = 68
 	communism = 14
 	fascism = 18
-}
-create_country_leader = {
-	name = "Alf Landon"
-	desc = "POLITICS_ALF_LANDON_DESC"
-	picture = "Portrait_USA_Landon_Alfred.dds"
-	expire = "1965.1.1"
-	ideology = liberalism
-	traits = {
-		staunch_constitutionalist
-	}
 }
 create_field_marshal = {
 	name = "Dwight D. Eisenhower"
