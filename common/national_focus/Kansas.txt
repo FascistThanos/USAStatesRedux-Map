@@ -917,7 +917,7 @@ focus_tree = {
 		completion_reward = {
 			add_popularity = {
 				ideology = fascism
-				popularity = 0.75
+				popularity = 0.3
 			}
 			add_stability = -0.1
 		}
@@ -1165,6 +1165,7 @@ focus_tree = {
 		relative_position_id = KSK_fascist12
 		cost = 10
 		completion_reward = {
+			add_ideas = KSK_kansan_lebensraum1
 		}
 	}
 	focus = {
@@ -1266,6 +1267,11 @@ focus_tree = {
 		relative_position_id = KSK_fascist19
 		cost = 10
 		completion_reward = {
+			swap_ideas = {
+				remove_idea = KSK_kansan_lebensraum1
+				add_idea = KSK_kansan_lebensraum2
+			}
+			add_stability = 0.1
 		}
 	}
 	################################################################################
