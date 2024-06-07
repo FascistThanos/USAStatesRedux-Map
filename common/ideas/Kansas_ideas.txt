@@ -13,6 +13,33 @@ ideas = {
 				political_advisor_cost_factor = -0.25
 			}
 		}
+		KSK_reunification_ambitions = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				justify_war_goal_time = -0.25
+				annex_cost_factor = -0.2
+			}
+		}
+		KSK_against_the_far_right = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.1
+				stability_factor = 0.05
+				fascism_drift = -0.05
+			}
+		}
 		KSK_legacy_of_the_dustbowl = {
 			allowed = {
 				always = no
@@ -490,6 +517,22 @@ ideas = {
 				send_volunteer_divisions_required = -1
 				send_volunteer_size = 1
 				send_volunteers_tension = -0.3
+			}
+		}
+		KSK_expeditionary_force2 = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			picture = generic_volunteer_expedition_bonus
+			removal_cost = -1
+			modifier = {
+				war_support_factor = 0.05
+				send_volunteer_divisions_required = -2
+				send_volunteer_size = 2
+				send_volunteers_tension = -0.5
 			}
 		}
 		KSK_dust_bowl = {

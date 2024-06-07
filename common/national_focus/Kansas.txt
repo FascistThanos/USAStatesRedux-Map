@@ -20,7 +20,7 @@ focus_tree = {
 	focus = {
 		id = KSK_bleeding_kansas
 		icon = GFX_focus_generic_provoke_border_clashes
-		x = 16
+		x = 19
 		y = 0
 		cost = 5
 		ai_will_do = {
@@ -114,7 +114,7 @@ focus_tree = {
 		prerequisite = {
 			focus = KSK_democratic4
 		}
-		x = 6
+		x = 9
 		y = 4
 		cost = 10
 		ai_will_do = {
@@ -167,7 +167,7 @@ focus_tree = {
 		prerequisite = {
 			focus = KSK_democratic3
 		}
-		x = 6
+		x = 9
 		y = 5
 		cost = 15
 		ai_will_do = {
@@ -193,12 +193,13 @@ focus_tree = {
 		relative_position_id = KSK_democratic4
 		cost = 10
 		completion_reward = {
-			add_research_slot = 1
+			add_stability = -0.05
+			add_manpower = 10000
 			544 = {
 				add_manpower = 25000
 			}
 			545 = {
-				add_manpower = 18000
+				add_manpower = 28000
 			}
 		}
 	}
@@ -208,7 +209,7 @@ focus_tree = {
 		prerequisite = {
 			focus = KSK_democratic6
 		}
-		x = 10
+		x = 13
 		y = 5
 		cost = 10
 		completion_reward = {
@@ -227,7 +228,7 @@ focus_tree = {
 		prerequisite = {
 			focus = KSK_democratic1
 		}
-		x = 6
+		x = 9
 		y = 2
 		cost = 10
 		completion_reward = {
@@ -244,7 +245,7 @@ focus_tree = {
 		prerequisite = {
 			focus = KSK_democratic1
 		}
-		x = 10
+		x = 13
 		y = 2
 		cost = 10
 		completion_reward = {
@@ -257,7 +258,7 @@ focus_tree = {
 		prerequisite = {
 			focus = KSK_democratic4
 		}
-		x = 8
+		x = 11
 		y = 4
 		cost = 10
 		completion_reward = {
@@ -269,14 +270,165 @@ focus_tree = {
 	}
 	focus = {
 		id = KSK_democratic12
-		icon = GFX_goal_generic_military_sphere
+		icon = GFX_TXT_Assimilate_Colorado
 		prerequisite = {
 			focus = KSK_democratic9
 		}
-		x = 6
+		available = {
+			has_country_flag = TXT_crisis
+		}
+		x = 9
 		y = 3
 		cost = 10
 		completion_reward = {
+			swap_ideas = {
+				remove_idea = KSK_expeditionary_force
+				add_idea = KSK_expeditionary_force2
+			}
+		}
+	}
+	focus = {
+		id = KSK_democratic13
+		icon = GFX_goal_generic_military_sphere
+		prerequisite = {
+			focus = KSK_democratic11
+		}
+		x = 10
+		y = 6
+		cost = 10
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = NEN
+			}
+		}
+	}
+	focus = {
+		id = KSK_democratic14
+		icon = GFX_goal_generic_military_sphere
+		prerequisite = {
+			focus = KSK_democratic11
+		}
+		x = 12
+		y = 6
+		cost = 10
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = MOM
+			}
+		}
+	}
+	focus = {
+		id = KSK_democratic15
+		icon = GFX_goal_generic_military_sphere
+		prerequisite = {
+			focus = KSK_democratic13
+		}
+		prerequisite = {
+			focus = KSK_democratic14
+		}
+		x = 9
+		y = 7
+		cost = 10
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = KSK_democratic16
+		icon = GFX_goal_generic_military_sphere
+		prerequisite = {
+			focus = KSK_democratic13
+		}
+		prerequisite = {
+			focus = KSK_democratic14
+		}
+		x = 11
+		y = 7
+		cost = 10
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = KSK_democratic17
+		icon = GFX_goal_generic_military_sphere
+		prerequisite = {
+			focus = KSK_democratic13
+		}
+		prerequisite = {
+			focus = KSK_democratic14
+		}
+		x = 13
+		y = 7
+		cost = 10
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = KSK_democratic18
+		icon = GFX_goal_generic_military_sphere
+		prerequisite = {
+			focus = KSK_democratic15
+		}
+		prerequisite = {
+			focus = KSK_democratic16
+		}
+		prerequisite = {
+			focus = KSK_democratic17
+		}
+		x = 11
+		y = 8
+		cost = 10
+		completion_reward = {
+			add_war_support = 0.1
+			add_ideas = KSK_reunification_ambitions
+		}
+	}
+	focus = {
+		id = KSK_democratic19
+		icon = GFX_goal_generic_military_sphere
+		prerequisite = {
+			focus = KSK_democratic10
+		}
+		x = 13
+		y = 3
+		cost = 10
+		completion_reward = {
+			random_owned_controlled_state = {
+			add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+   					type = synthetic_refinery	
+    					level = 1
+    					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = KSK_democratic20
+		icon = GFX_goal_generic_military_sphere
+		prerequisite = {
+			focus = KSK_democratic6
+			focus = KSK_communist13
+		}
+		x = 15
+		y = 5
+		cost = 10
+		completion_reward = {
+			add_ideas = KSK_against_the_far_right
+		}
+	}
+	focus = {
+		id = KSK_democratic21
+		icon = GFX_focus_research
+		prerequisite = {
+			focus = KSK_democratic3
+		}
+		x = 7
+		y = 5
+		cost = 10
+		completion_reward = {
+			add_research_slot = 1
 		}
 	}
 	################################################################################
