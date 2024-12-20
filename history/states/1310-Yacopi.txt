@@ -1,6 +1,6 @@
 state={
 	id=1310
-	name="Tacopí"
+	name=STATE_YACOPI
 	resources = {
 		oil = 139
 	}

@@ -1,6 +1,6 @@
 state={
 	id=1264
-	name="Quimistán"
+	name=STATE_QUIMISTAN
 	resources = {
 		rubber = 7
 	}

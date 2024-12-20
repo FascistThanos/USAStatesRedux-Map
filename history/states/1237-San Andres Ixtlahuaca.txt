@@ -1,6 +1,6 @@
 state={
 	id=1237
-	name="San Andrés Ixtalhuaca"
+	name=STATE_SAN_ANDRES
 	history={
 		owner = OAX
 		buildings = {

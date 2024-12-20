@@ -1,6 +1,6 @@
 state={
 	id=3
-	name="Gaspésie-Iles-de-la-Madeleine"
+	name=STATE_QBC1
 	resources = {
 		oil = 16
 	}

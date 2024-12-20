@@ -1,6 +1,6 @@
 state={
 	id=1205
-	name="Mérida"
+	name=STATE_MERIDA
 	history={
 		owner = YUC
 		buildings = {

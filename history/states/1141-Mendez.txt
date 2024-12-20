@@ -1,6 +1,6 @@
 state={
 	id=1141
-	name="Méndez"
+	name=STATE_MENDEZ
 	history={
 		owner = TAM
 		buildings = {

@@ -1,6 +1,6 @@
 state={
 	id=838
-	name="Québec city"
+	name=STATE_QUEBEC_CITY
 	resources = {
 		steel = 3
 	}

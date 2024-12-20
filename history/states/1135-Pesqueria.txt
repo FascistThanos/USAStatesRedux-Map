@@ -1,6 +1,6 @@
 state={
 	id=1135
-	name="Pesquería"
+	name=STATE_PESQUERIA
 	history={
 		owner = NEL
 		buildings = {

@@ -1,6 +1,6 @@
 state={
 	id=1307
-	name="Necoclí"
+	name=STATE_NECOCLI
 	history={
 		owner = COL
 		buildings = {

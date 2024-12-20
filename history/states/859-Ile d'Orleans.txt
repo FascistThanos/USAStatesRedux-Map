@@ -1,6 +1,6 @@
 state={
 	id=859
-	name="Île d'Orléans"
+	name=STATE_ORLEANS_ISLAND
 	history={
 		owner = QCQ
 		buildings = {

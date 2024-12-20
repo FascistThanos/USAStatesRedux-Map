@@ -1,6 +1,6 @@
 state={
 	id=1172
-	name="Tecalitlán"
+	name=STATE_TECALITLAN
 	history={
 		owner = JAL
 		buildings = {

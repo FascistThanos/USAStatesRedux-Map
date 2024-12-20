@@ -1,6 +1,6 @@
 state={
 	id=1309
-	name="Bolívar"
+	name=STATE_BOLIVAR
 	history={
 		owner = COL
 		buildings = {

@@ -1,6 +1,6 @@
 state={
 	id=1123
-	name="Acuña"
+	name=STATE_ACUNA
 	history={
 		owner = COA
 		buildings = {

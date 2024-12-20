@@ -1,6 +1,6 @@
 state={
 	id=1153
-	name="Saín Alto"
+	name=STATE_SAIN_ALTO
 	history={
 		owner = ZAC
 		buildings = {

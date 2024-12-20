@@ -1,6 +1,6 @@
 state={
 	id=1219
-	name="Tlacotepec de Benito Juárez"
+	name=STATE_TLACOTEPEC_DE_BENITO_JUAREZ
 	history={
 		owner = PUE
 		buildings = {

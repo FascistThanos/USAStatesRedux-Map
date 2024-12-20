@@ -1,6 +1,6 @@
 state={
 	id=1066
-	name="Comondú"
+	name=STATE_COMONDU
 	history={
 		owner = BCS
 		buildings = {

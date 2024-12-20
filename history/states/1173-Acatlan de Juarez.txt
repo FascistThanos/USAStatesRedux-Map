@@ -1,6 +1,6 @@
 state={
 	id=1173
-	name="Acatlán de Juárez"
+	name=STATE_ACATLAN_DE_JUAREZ
 	history={
 		owner = JAL
 		buildings = {

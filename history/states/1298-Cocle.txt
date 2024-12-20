@@ -1,6 +1,6 @@
 state={
 	id=1298
-	name="Coclé"
+	name=STATE_COCLE
 	history={
 		owner = PAN
 		buildings = {

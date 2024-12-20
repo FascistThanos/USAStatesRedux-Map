@@ -1,7 +1,7 @@
 
 state={
 	id=116
-	name="Marueño"
+	name=STATE_PUERTO_RICO
 
 	history={
 		owner = PRP

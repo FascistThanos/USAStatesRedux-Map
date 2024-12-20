@@ -1,6 +1,6 @@
 state={
 	id=94
-	name="Hecelchakán"
+	name=STATE_CAMPECHE
 	history={
 		owner = CMP
 		buildings = {

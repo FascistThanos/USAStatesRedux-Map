@@ -1,7 +1,7 @@
 
 state={
 	id=934
-	name="Keewatin Yatthé"
+	name=STATE_KEEWATIN
 
 	history={
 		owner = SKS

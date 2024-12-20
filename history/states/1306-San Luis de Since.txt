@@ -1,6 +1,6 @@
 state={
 	id=1306
-	name="San Luis de Sincé"
+	name=STATE_SAN_LUIS_SINCE
 	history={
 		owner = COL
 		buildings = {

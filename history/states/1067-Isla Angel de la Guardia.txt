@@ -1,6 +1,6 @@
 state={
 	id=1067
-	name="Isla Ángel de la Guardia"
+	name=STATE_ISLA_ANGEL_DE_LA_GUARDIA
 	history={
 		owner = BCA
 		buildings = {

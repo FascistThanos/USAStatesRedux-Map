@@ -1,6 +1,6 @@
 state={
 	id=1102
-	name="Culiacán"
+	name=STATE_CULIACAN
 	history={
 		owner = SIN
 		buildings = {

@@ -1,6 +1,6 @@
 state={
 	id=1239
-	name="Santa María Colotepec"
+	name=STATE_SANTA_MARIA_COLOTEPEC
 	history={
 		owner = OAX
 		buildings = {

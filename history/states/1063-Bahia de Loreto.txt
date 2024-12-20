@@ -1,6 +1,6 @@
 state={
 	id=1063
-	name="Bahía de Loreto"
+	name=STATE_BAHIA_LOREDO
 	history={
 		owner = BCS
 		buildings = {

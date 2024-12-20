@@ -1,6 +1,6 @@
 state={
 	id=1128
-	name="Cuatroeiénegas"
+	name=STATE_CUATROEIENEGAS
 	history={
 		owner = COA
 		buildings = {

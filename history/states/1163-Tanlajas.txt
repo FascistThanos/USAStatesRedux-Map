@@ -1,6 +1,6 @@
 state={
 	id=1163
-	name="Tanlajás"
+	name=STATE_TANLAJAS
 	history={
 		owner = SLP
 		buildings = {

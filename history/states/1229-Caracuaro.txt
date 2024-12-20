@@ -1,6 +1,6 @@
 state={
 	id=1229
-	name="Carácuaro"
+	name=STATE_CARACUARO
 	history={
 		owner = MIC
 		buildings = {

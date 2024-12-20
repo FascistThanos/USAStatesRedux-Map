@@ -1,6 +1,6 @@
 state={
 	id=1371
-	name="Camagüey"
+	name=STATE_CAMAGUEY
 	resources = {
 		chromium = 47
 	}

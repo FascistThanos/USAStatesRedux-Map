@@ -1,6 +1,6 @@
 state={
 	id=1171
-	name="Jalostotitlán"
+	name=STATE_JALOSTOTITLAN
 	history={
 		owner = JAL
 		buildings = {

@@ -1,6 +1,6 @@
 state={
 	id=1101
-	name="Mazatlán"
+	name=STATE_MAZATLAN
 	history={
 		owner = SIN
 		buildings = {

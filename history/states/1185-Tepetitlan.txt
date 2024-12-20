@@ -1,6 +1,6 @@
 state={
 	id=1185
-	name="Tepetitlán"
+	name=STATE_TEPETITLAN
 	history={
 		owner = HID
 		buildings = {

@@ -1,6 +1,6 @@
 state={
 	id=1164
-	name="Tamuín"
+	name=STATE_TAMUIN
 	history={
 		owner = SLP
 		buildings = {

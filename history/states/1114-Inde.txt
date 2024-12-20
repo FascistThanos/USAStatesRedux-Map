@@ -1,6 +1,6 @@
 state={
 	id=1114
-	name="Indé"
+	name=STATE_INDE
 	history={
 		owner = DUR
 		buildings = {

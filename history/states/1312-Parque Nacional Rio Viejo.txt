@@ -1,6 +1,6 @@
 state={
 	id=1312
-	name="Parque Nacional Río Viejo"
+	name=STATE_RIO_VIEJO_PARK
 	history={
 		owner = VEN
 		buildings = {

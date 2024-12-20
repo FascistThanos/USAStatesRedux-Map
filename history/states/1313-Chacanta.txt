@@ -1,6 +1,6 @@
 state={
 	id=1313
-	name="Chancantá"
+	name=STATE_CHACANTA
 	history={
 		owner = VEN
 		buildings = {

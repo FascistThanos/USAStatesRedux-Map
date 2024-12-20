@@ -1,6 +1,6 @@
 state={
 	id=1273
-	name="José Santos Guardiola"
+	name=STATE_JOSE_SANTOS
 	history={
 		owner = HON
 		buildings = {

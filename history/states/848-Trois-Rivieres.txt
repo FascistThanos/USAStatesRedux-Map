@@ -1,7 +1,7 @@
 
 state={
 	id=848
-	name="Trois-Rivières"
+	name=STATE_TROIS_RIVIERES
 	resources = {
 		oil = 34
 	}

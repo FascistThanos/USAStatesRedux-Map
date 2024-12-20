@@ -1,6 +1,6 @@
 state={
 	id=1254
-	name="San Pedro Carchá"
+	name=STATE_SAN_PEDRO_CARCHA
 	resources = {
 		rubber = 21
 	}

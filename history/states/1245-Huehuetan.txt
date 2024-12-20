@@ -1,6 +1,6 @@
 state={
 	id=1245
-	name="Huehuetán"
+	name=STATE_HUEHUETAN
 	resources = {
 		rubber = 21
 	}

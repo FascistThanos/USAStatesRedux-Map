@@ -1,6 +1,6 @@
 state={
 	id=133
-	name="Açores"
+	name=STATE_AZORES
 	resources = {
 		aluminium = 1920
 		rubber = 690

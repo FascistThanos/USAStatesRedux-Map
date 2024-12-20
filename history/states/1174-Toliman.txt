@@ -1,6 +1,6 @@
 state={
 	id=1174
-	name="Tolimán"
+	name=STATE_TOLIMAN
 	history={
 		owner = JAL
 		buildings = {

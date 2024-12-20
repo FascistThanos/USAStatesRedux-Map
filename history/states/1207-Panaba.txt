@@ -1,6 +1,6 @@
 state={
 	id=1207
-	name="Panabá"
+	name=STATE_PANABA
 	history={
 		owner = YUC
 		buildings = {

@@ -1,6 +1,6 @@
 state={
 	id=1189
-	name="Benito Juárez"
+	name=STATE_BENITO_JUAREZ
 	history={
 		owner = VER
 		buildings = {

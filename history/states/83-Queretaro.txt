@@ -1,7 +1,7 @@
 
 state={
 	id=83
-	name="Peñamiller"
+	name=STATE_QUERETARO
 
 	history={
 		owner = QUE

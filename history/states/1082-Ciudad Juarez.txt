@@ -1,6 +1,6 @@
 state={
 	id=1082
-	name="Ciudad Juárez"
+	name=STATE_CIUDAD_JUAREZ
 	history={
 		owner = CIA
 		buildings = {

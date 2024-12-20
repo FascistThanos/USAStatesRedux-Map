@@ -1,6 +1,6 @@
 state={
 	id=854
-	name="Montèrègie"
+	name=STATE_MONTEREGIE
 	history={
 		owner = QCQ
 		buildings = {

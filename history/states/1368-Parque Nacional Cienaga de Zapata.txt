@@ -1,6 +1,6 @@
 state={
 	id=1368
-	name="Parque Nacional Ciénaga de Zapata"
+	name=STATE_CIENAGA_ZAPATA_PARK
 	history={
 		owner = CUB
 		buildings = {

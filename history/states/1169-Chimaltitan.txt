@@ -1,6 +1,6 @@
 state={
 	id=1169
-	name="Chimaltitán"
+	name=STATE_CHIMALTITAN
 	history={
 		owner = JAL
 		buildings = {

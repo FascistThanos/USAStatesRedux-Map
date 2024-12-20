@@ -1,6 +1,6 @@
 state={
 	id=1236
-	name="Santiago Huajolotitlán"
+	name=STATE_SANTIAGO_HUAJOLOTITLAN
 	history={
 		owner = OAX
 		buildings = {

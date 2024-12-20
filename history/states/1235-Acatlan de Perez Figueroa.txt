@@ -1,6 +1,6 @@
 state={
 	id=1235
-	name="Acatlán de Pérez Figueroa"
+	name=STATE_ACATLAN
 	history={
 		owner = OAX
 		buildings = {

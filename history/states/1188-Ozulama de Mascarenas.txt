@@ -1,6 +1,6 @@
 state={
 	id=1188
-	name="Ozulama de Mascareñas"
+	name=STATE_OZULAMA_DE_MASCARENAS
 	history={
 		owner = VER
 		buildings = {

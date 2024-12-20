@@ -1,6 +1,6 @@
 state={
 	id=1210
-	name="José María Morelos"
+	name=STATE_JOSE_MARIA
 	resources = {
 		rubber = 19
 	}

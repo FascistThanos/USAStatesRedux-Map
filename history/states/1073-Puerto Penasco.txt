@@ -1,6 +1,6 @@
 state={
 	id=1073
-	name="Puerto Peñasco"
+	name=STATE_PUERTO_PENASCO
 	history={
 		owner = SON
 		buildings = {

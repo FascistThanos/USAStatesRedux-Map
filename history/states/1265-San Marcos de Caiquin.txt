@@ -1,6 +1,6 @@
 state={
 	id=1265
-	name="San Marcos de Caiquín"
+	name=STATE_SAN_MARCOS_CAIQUIN
 	history={
 		owner = HON
 		buildings = {

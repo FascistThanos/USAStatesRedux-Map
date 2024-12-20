@@ -1,6 +1,6 @@
 state={
 	id=1302
-	name="Darién Gap"
+	name=STATE_DARIEN_GAP
 	history={
 		owner = COL
 		buildings = {

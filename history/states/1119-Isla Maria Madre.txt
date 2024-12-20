@@ -1,6 +1,6 @@
 state={
 	id=1119
-	name="Isla María Madre"
+	name=STATE_ISLA_MARIA_MADRE
 	history={
 		owner = NAY
 		buildings = {

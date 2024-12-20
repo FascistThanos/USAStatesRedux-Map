@@ -1,6 +1,6 @@
 state={
 	id=1133
-	name="Anáhuac"
+	name=STATE_ANAHUAC
 	history={
 		owner = NEL
 		buildings = {

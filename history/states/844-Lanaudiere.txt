@@ -1,7 +1,7 @@
 
 state={
 	id=844
-	name="Lanaudière"
+	name=STATE_LANAUDIERE
 
 	history={
 		owner = QCQ

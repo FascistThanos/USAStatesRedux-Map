@@ -1,6 +1,6 @@
 state={
 	id=1227
-	name="Múgica"
+	name=STATE_MUGICA
 	history={
 		owner = MIC
 		buildings = {

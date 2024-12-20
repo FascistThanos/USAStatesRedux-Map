@@ -1,6 +1,6 @@
 state={
 	id=1374
-	name="Holguín"
+	name=STATE_HOLGUIN
 	resources = {
 		chromium = 52
 	}

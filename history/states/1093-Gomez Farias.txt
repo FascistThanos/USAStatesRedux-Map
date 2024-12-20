@@ -1,6 +1,6 @@
 state={
 	id=1093
-	name="Gómez Farías"
+	name=STATE_GOMEZ_FARIAS
 	history={
 		owner = CIA
 		buildings = {
