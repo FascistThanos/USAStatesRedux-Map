@@ -1,6 +1,6 @@
 state={
 	id=855
-	name="Chaudière-Appalaches"
+	name=STATE_CHAUDIERE_APPALACHES
 	history={
 		owner = QCQ
 		buildings = {

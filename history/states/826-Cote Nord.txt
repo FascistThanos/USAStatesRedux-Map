@@ -1,6 +1,6 @@
 state={
 	id=826
-	name="Côte-Nord"
+	name=STATE_COTE_NORD
 	history={
 		owner = QCQ
 		buildings = {

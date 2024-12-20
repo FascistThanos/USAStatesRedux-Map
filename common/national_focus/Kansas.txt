@@ -1132,7 +1132,7 @@ focus_tree = {
 				desc = POLITICS_KSK_GERALD_WINROD_DESC
 				picture = "Portrait_KSK_Gerald_Winrod.dds"
 				expire = "1965.1.1"
-				ideology = national_socialism
+				ideology = nazism
 				traits = {
 				}
 			}
