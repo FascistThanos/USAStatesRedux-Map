@@ -37,13 +37,11 @@ dc_continental_congress = {
 			}
 			else_if = {
 				limit = {
-					AND = {
-						check_variable = {
-							global.contcon_yes_votes = global.contcon_no_votes
-						}
-						check_variable = {
-							global.contcon_abstain_votes > 0
-						}
+					check_variable = {
+						global.contcon_yes_votes = global.contcon_no_votes
+					}
+					check_variable = {
+						global.contcon_abstain_votes > 0
 					}
 				}
 				set_country_flag = contcon_economic_failed
@@ -193,13 +191,11 @@ dc_continental_congress = {
 			}
 			else_if = {
 				limit = {
-					AND = {
-						check_variable = {
-							global.contcon_yes_votes = global.contcon_no_votes
-						}
-						check_variable = {
-							global.contcon_abstain_votes > 0
-						}
+					check_variable = {
+						global.contcon_yes_votes = global.contcon_no_votes
+					}
+					check_variable = {
+						global.contcon_abstain_votes > 0
 					}
 				}
 				set_country_flag = contcon_economic_failed
@@ -271,13 +267,11 @@ dc_continental_congress = {
 			}
 			else_if = {
 				limit = {
-					AND = {
-						check_variable = {
-							global.contcon_yes_votes = global.contcon_no_votes
-						}
-						check_variable = {
-							global.contcon_abstain_votes > 0
-						}
+					check_variable = {
+						global.contcon_yes_votes = global.contcon_no_votes
+					}
+					check_variable = {
+						global.contcon_abstain_votes > 0
 					}
 				}
 				set_country_flag = contcon_economic_failed
@@ -338,10 +332,7 @@ dc_continental_congress = {
 		remove_effect = {
 			if = {
 				limit = {
-					OR = {
-						has_country_flag = contcon_faction_passed
-						has_country_flag = contcon_political_passed
-					}
+					has_country_flag = contcon_faction_passed
 				}
 				DCD = {
 					create_faction = DCD_Union
@@ -389,16 +380,14 @@ dc_continental_congress = {
 				}
 				if = {
 					limit = {
-						AND = {
-							OR = {
-								has_country_flag = contcon_economic_idea_pending
-								has_country_flag = contcon_military_idea_pending
-							}
-							OR = {
-								has_country_flag = contcon_federation_pending
-								DCD = {
-									is_faction_leader = yes
-								}
+						OR = {
+							has_country_flag = contcon_economic_idea_pending
+							has_country_flag = contcon_military_idea_pending
+						}
+						OR = {
+							has_country_flag = contcon_federation_pending
+							DCD = {
+								is_faction_leader = yes
 							}
 						}
 					}
@@ -466,6 +455,13 @@ dc_continental_congress = {
 				}
 				factor = 5
 			}
+			modifier = {
+				has_opinion = {
+					target = DCD
+					value > 100
+				}
+				factor = 10
+			}
 		}
 		complete_effect = {
 			set_country_flag = cc_has_voted
@@ -513,11 +509,18 @@ dc_continental_congress = {
 					target = DCD
 					value < 50
 				}
-				factor = 1
+				factor = 5
+			}
+			modifier = {
+				has_opinion = {
+					target = DCD
+					value < 0
+				}
+				factor = 10
 			}
 			modifier = {
 				is_major = yes
-				factor = 1
+				factor = 5
 			}
 			modifier = {
 				has_war_with = DCD

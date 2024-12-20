@@ -16,8 +16,8 @@ focus_tree = {
 	focus = {
 		id = DC_constitution
 		icon = GFX_Generic_Factionalism
-		cost = 10
-		x = 25
+		cost = 7.2
+		x = 10
 		y = 0
 		completion_reward = {
 			country_event = dc.5
@@ -26,18 +26,165 @@ focus_tree = {
 	focus = {
 		id = DC_divided
 		icon = GFX_DCD_burning_flag
-		cost = 10
+		cost = 7.2
 		prerequisite = {
 			focus = DC_constitution
 		}
-		x = 0
+		x = 10
 		y = 1
-		relative_position_id = DC_constitution
 		completion_reward = {
-			add_political_power = 100
+			add_political_power = 50
 			country_event = dc.9
 		}
 	}
+#Democratic Pre-Tree
+	focus = {
+		id = DC_democratic1
+		icon = GFX_Generic_Blue_Democracy
+		cost = 10
+		prerequisite = {
+			focus = DC_divided
+		}
+		mutually_exclusive = {
+			focus = DC_fascist1
+			focus = DC_communist1
+		}
+		x = 10
+		y = 2
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability = 0.05
+		}
+	}
+	focus = {
+		id = DC_democratic2
+		icon = GFX_Generic_Meeting
+		cost = 4.3
+		prerequisite = {
+			focus = DC_democratic3
+		}
+		prerequisite = {
+			focus = DC_democratic5
+		}
+		x = 10
+		y = 4
+		completion_reward = {
+			add_stability = 0.05
+		}
+	}
+	focus = {
+		id = DC_democratic3
+		icon = GFX_Generic_Legislation
+		cost = 1.5
+		prerequisite = {
+			focus = DC_democratic1
+		}
+		x = 9
+		y = 3
+		completion_reward = {
+			add_political_power = 20
+			add_stability = 0.02
+		}
+	}
+	focus = {
+		id = DC_democratic4
+		icon = GFX_Generic_Parliament_Box
+		cost = 2.2
+		prerequisite = {
+			focus = DC_democratic2
+		}
+		x = 10
+		y = 5
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.03
+		}
+	}
+	focus = {
+		id = DC_democratic5
+		icon = GFX_Generic_Shady_Deal
+		cost = 1.5
+		prerequisite = {
+			focus = DC_democratic1
+		}
+		x = 11
+		y = 3
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power = 20
+			add_stability = 0.03
+		}
+	}
+	focus = {
+		id = DC_democratic6
+		icon = GFX_Focus_Television
+		cost = 7.2
+		prerequisite = {
+			focus = DC_democratic4
+		}
+		x = 10
+		y = 6
+		completion_reward = {
+			news_event = {
+				hours = 1
+				id = genericfocusnews.3
+			}
+			add_timed_idea = {
+				idea = DC_stable
+				days = 365
+			}
+			add_stability = 0.05
+		}
+	}
+	focus = {
+		id = DC_democratic14
+		icon = GFX_goal_unknown
+		cost = 1.5
+		prerequisite = {
+			focus = DC_democratic15
+		}
+		available = {
+			has_war = no
+			is_puppet = no
+		}
+		x = 10
+		y = 8
+		completion_reward = {
+			hidden_effect = {
+				load_focus_tree = {
+					tree = dc_focus_democratic
+					keep_completed = yes
+				}
+			}
+			custom_effect_tooltip = DCD_continue_democratic_tt
+		}
+	}
+	focus = {
+		id = DC_democratic15
+		icon = GFX_goal_unknown
+		cost = 7.2
+		prerequisite = {
+			focus = DC_democratic6
+		}
+		WILL_LEAD_TO_WAR_WITH = MDM
+		x = 10
+		y = 7
+		completion_reward = {
+			MDM = {
+				country_event = dc.6
+			}
+			hidden_effect = {
+				MDM = {
+					end_puppet = DCD
+				}
+			}
+		}
+	}
+#Fascist Pre-Tree
 	focus = {
 		id = DC_fascist1
 		icon = GFX_Generic_Ultranationalist_Government
@@ -49,9 +196,8 @@ focus_tree = {
 			focus = DC_democratic1
 			focus = DC_communist1
 		}
-		x = 4
-		y = 1
-		relative_position_id = DC_divided
+		x = 16
+		y = 2
 		completion_reward = {
 			add_stability = -0.05
 			add_war_support = 0.1
@@ -68,326 +214,14 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = DC_communist1
-		icon = GFX_Generic_Revolutionary_Government
-		cost = 10
-		prerequisite = {
-			focus = DC_divided
-		}
-		mutually_exclusive = {
-			focus = DC_democratic1
-			focus = DC_fascist1
-		}
-		x = 13
-		y = 1
-		relative_position_id = DC_divided
-		completion_reward = {
-			add_popularity = {
-				ideology = communism
-				popularity = 0.3
-			}
-			hidden_effect = {
-				news_event = {
-					hours = 1
-					id = genericfocusnews.5
-				}
-			}
-		}
-	}
-	focus = {
-		id = DC_democratic1
-		icon = GFX_Generic_Blue_Democracy
-		cost = 10
-		prerequisite = {
-			focus = DC_divided
-		}
-		mutually_exclusive = {
-			focus = DC_fascist1
-			focus = DC_communist1
-		}
-		x = -8
-		y = 1
-		relative_position_id = DC_divided
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			add_stability = 0.05
-		}
-	}
-	focus = {
-		id = DC_democratic2
-		icon = GFX_Generic_Meeting
-		cost = 7.2
-		prerequisite = {
-			focus = DC_democratic1
-		}
-		x = 0
-		y = 1
-		relative_position_id = DC_democratic1
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			add_stability = 0.02
-		}
-	}
-	focus = {
-		id = DC_democratic3
-		icon = GFX_Generic_Legislation
-		cost = 2.2
-		prerequisite = {
-			focus = DC_democratic2
-		}
-		x = -2
-		y = 1
-		relative_position_id = DC_democratic2
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			add_political_power = 50
-			add_stability = 0.02
-		}
-	}
-	focus = {
-		id = DC_democratic4
-		icon = GFX_Generic_Parliament_Box
-		cost = 4.4
-		prerequisite = {
-			focus = DC_democratic2
-		}
-		available = {
-			has_completed_focus = DC_democratic3
-		}
-		available = {
-			has_completed_focus = DC_democratic5
-		}
-		x = 0
-		y = 1
-		relative_position_id = DC_democratic2
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			add_political_power = 50
-			add_stability = 0.03
-		}
-	}
-	focus = {
-		id = DC_democratic5
-		icon = GFX_Generic_Shady_Deal
-		cost = 2.2
-		prerequisite = {
-			focus = DC_democratic2
-		}
-		x = 2
-		y = 1
-		relative_position_id = DC_democratic2
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			add_political_power = 50
-			add_stability = 0.03
-		}
-	}
-	focus = {
-		id = DC_democratic6
-		icon = GFX_Focus_Television
-		cost = 14.3
-		prerequisite = {
-			focus = DC_democratic3
-		}
-		prerequisite = {
-			focus = DC_democratic4
-		}
-		prerequisite = {
-			focus = DC_democratic5
-		}
-		x = 0
-		y = 1
-		relative_position_id = DC_democratic4
-		completion_reward = {
-			news_event = {
-				hours = 1
-				id = genericfocusnews.3
-			}
-			add_ideas = DC_stable
-			add_stability = 0.05
-		}
-	}
-	focus = {
-		id = DC_democratic7
-		icon = GFX_Generic_Democracy
-		cost = 4.3
-		prerequisite = {
-			focus = DC_democratic6
-		}
-		x = 0
-		y = 1
-		relative_position_id = DC_democratic6
-		completion_reward = {
-			add_country_leader_trait = great_reformer
-		}
-	}
-	focus = {
-		id = DC_democratic8
-		icon = GFX_Generic_Workers_Democracy
-		cost = 2.2
-		prerequisite = {
-			focus = DC_democratic7
-		}
-		x = -2
-		y = 1
-		relative_position_id = DC_democratic7
-		completion_reward = {
-			add_ideas = DC_wpa
-		}
-	}
-	focus = {
-		id = DC_democratic9
-		icon = GFX_focus_usa_guarantee_the_american_dream
-		cost = 2.2
-		prerequisite = {
-			focus = DC_democratic7
-		}
-		x = 0
-		y = 1
-		relative_position_id = DC_democratic7
-		completion_reward = {
-			add_ideas = DC_ssa
-		}
-	}
-	focus = {
-		id = DC_democratic10
-		icon = GFX_goal_generic_construct_mil_factory
-		cost = 2.2
-		prerequisite = {
-			focus = DC_democratic7
-		}
-		x = 2
-		y = 1
-		relative_position_id = DC_democratic7
-		completion_reward = {
-			add_ideas = DC_mic
-		}
-	}
-	focus = {
-		id = DC_democratic11
-		icon = GFX_focus_eng_concessions_to_the_trade_unions
-		cost = 2.2
-		prerequisite = {
-			focus = DC_democratic8
-		}
-		x = 0
-		y = 1
-		relative_position_id = DC_democratic8
-		completion_reward = {
-			add_ideas = DC_jobs
-		}
-	}
-	focus = {
-		id = DC_democratic12
-		icon = GFX_goal_generic_production
-		cost = 2.2
-		prerequisite = {
-			focus = DC_democratic9
-		}
-		x = 0
-		y = 1
-		relative_position_id = DC_democratic9
-		completion_reward = {
-			1070 = {
-				add_extra_state_shared_building_slots = 2
-			}
-			add_ideas = DC_publicworks
-		}
-	}
-	focus = {
-		id = DC_democratic13
-		icon = GFX_goal_generic_fortify_city
-		cost = 2.2
-		prerequisite = {
-			focus = DC_democratic10
-		}
-		x = 0
-		y = 1
-		relative_position_id = DC_democratic10
-		completion_reward = {
-			add_ideas = DC_onestepahead
-		}
-	}
-	focus = {
-		id = DC_democratic14
-		icon = GFX_goal_unknown
-		cost = 1.5
-		prerequisite = {
-			focus = DC_democratic15
-		}
-		available = {
-			has_war = no
-		}
-		x = 17
-		y = 10
-		completion_reward = {
-			hidden_effect = {
-				load_focus_tree = {
-					tree = dc_focus_democratic
-					keep_completed = yes
-				}
-			}
-			custom_effect_tooltip = DCD_continue_democratic_tt
-		}
-	}
-	focus = {
-		id = DC_democratic15
-		icon = GFX_goal_unknown
-		cost = 10
-		prerequisite = {
-			focus = DC_democratic11
-		}
-		prerequisite = {
-			focus = DC_democratic12
-		}
-		prerequisite = {
-			focus = DC_democratic13
-		}
-		WILL_LEAD_TO_WAR_WITH = MDM
-		x = 2
-		y = 1
-		relative_position_id = DC_democratic11
-		completion_reward = {
-			MDM = {
-				country_event = dc.6
-			}
-			hidden_effect = {
-				MDM = {
-					end_puppet = DCD
-				}
-				remove_ideas = DC_wpa
-				remove_ideas = DC_ssa
-				remove_ideas = DC_mic
-				remove_ideas = DC_jobs
-				remove_ideas = DC_publicworks
-				remove_ideas = DC_onestepahead
-				add_timed_idea = {
-					idea = DC_newdeal
-					days = 3650
-				}
-			}
-		}
-	}
-	focus = {
 		id = DC_fascist2
 		icon = GFX_Generic_Ripping_Papers
 		cost = 10
 		prerequisite = {
 			focus = DC_fascist1
 		}
-		x = 0
-		y = 1
-		relative_position_id = DC_fascist1
+		x = 16
+		y = 3
 		completion_reward = {
 			add_stability = 0.05
 		}
@@ -399,9 +233,8 @@ focus_tree = {
 		prerequisite = {
 			focus = DC_fascist2
 		}
-		x = -2
-		y = 1
-		relative_position_id = DC_fascist2
+		x = 14
+		y = 4
 		completion_reward = {
 		}
 	}
@@ -412,9 +245,8 @@ focus_tree = {
 		prerequisite = {
 			focus = DC_fascist4
 		}
-		x = 0
-		y = 1
-		relative_position_id = DC_fascist4
+		x = 14
+		y = 5
 		completion_reward = {
 			add_ideas = DC_COINTELPRO
 		}
@@ -426,9 +258,8 @@ focus_tree = {
 		prerequisite = {
 			focus = DC_fascist2
 		}
-		x = 2
-		y = 1
-		relative_position_id = DC_fascist2
+		x = 16
+		y = 4
 		completion_reward = {
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = USA_joseph_mccarthy
@@ -441,9 +272,8 @@ focus_tree = {
 		prerequisite = {
 			focus = DC_fascist6
 		}
-		x = 0
-		y = 1
-		relative_position_id = DC_fascist6
+		x = 16
+		y = 5
 		completion_reward = {
 			add_stability = 0.1
 		}
@@ -455,9 +285,8 @@ focus_tree = {
 		prerequisite = {
 			focus = DC_fascist2
 		}
-		x = 0
-		y = 3
-		relative_position_id = DC_fascist2
+		x = 19
+		y = 4
 		completion_reward = {
 			remove_ideas = dc_crisis
 		}
@@ -472,9 +301,8 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = DC_fascist10
 		}
-		x = -1
-		y = 1
-		relative_position_id = DC_fascist8
+		x = 20
+		y = 5
 		completion_reward = {
 			create_country_leader = {
 				name = "Douglas Macarthur"
@@ -499,9 +327,8 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = DC_fascist9
 		}
-		x = 1
-		y = 1
-		relative_position_id = DC_fascist8
+		x = 18
+		y = 5
 		completion_reward = {
 			create_country_leader = {
 				name = "Alvin M. Owsley"
@@ -523,9 +350,8 @@ focus_tree = {
 		prerequisite = {
 			focus = DC_fascist9
 		}
-		x = 0
-		y = 1
-		relative_position_id = DC_fascist9
+		x = 20
+		y = 6
 		completion_reward = {
 			add_ideas = DC_warpowers
 		}
@@ -537,11 +363,37 @@ focus_tree = {
 		prerequisite = {
 			focus = DC_fascist10
 		}
-		x = 0
-		y = 1
-		relative_position_id = DC_fascist10
+		x = 18
+		y = 6
 		completion_reward = {
 			add_ideas = DC_recruitment
+		}
+	}
+#Communist Pre-Tree
+	focus = {
+		id = DC_communist1
+		icon = GFX_Generic_Revolutionary_Government
+		cost = 10
+		prerequisite = {
+			focus = DC_divided
+		}
+		mutually_exclusive = {
+			focus = DC_democratic1
+			focus = DC_fascist1
+		}
+		x = 4
+		y = 2
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.3
+			}
+			hidden_effect = {
+				news_event = {
+					hours = 1
+					id = genericfocusnews.5
+				}
+			}
 		}
 	}
 }
@@ -850,7 +702,7 @@ focus_tree = {
 	country = {
 		factor = 0
 		modifier = {
-			add = 20
+			add = 15
 			tag = DCD
 		}
 	}
@@ -863,13 +715,14 @@ focus_tree = {
 		id = DCD_call_to_arms
 		text = DCD_call_to_arms
 		icon = GFX_Generic_Army_Focus_Red02
-		cost = 1
+		cost = 1.5
 		x = 19
 		y = 0
 		completion_reward = {
 			news_event = dc_news.0
 		}
 	}
+#Liberty Prevails - Democratic Path
 	focus = {
 		id = DCD_liberty_prevails
 		text = DCD_liberty_prevails
@@ -887,6 +740,9 @@ focus_tree = {
 			custom_effect_tooltip = DCD_improve_relations_demo_tt
 			hidden_effect = {
 				every_neighbor_country = {
+					limit = {
+						has_government = democratic
+					}
 					add_opinion_modifier = {
 						target = DCD
 						modifier = medium_increase
@@ -1014,7 +870,7 @@ focus_tree = {
 		x = 11
 		y = 3
 		completion_reward = {
-			add_political_power = -70
+			add_political_power = -50
 			OHO = {
 				add_opinion_modifier = {
 					target = DCD
@@ -1027,7 +883,7 @@ focus_tree = {
 					modifier = huge_increase
 				}
 			}
-			IAI = {
+			KSK = {
 				add_opinion_modifier = {
 					target = DCD
 					modifier = huge_increase
@@ -1074,13 +930,21 @@ focus_tree = {
 							value > 100
 						}
 						capital_scope = {
-							is_on_continent = north_america
+							OR = {
+								is_on_continent = new_england
+								is_on_continent = northeast
+								is_on_continent = southeast
+								is_on_continent = south
+								is_on_continent = midwest
+								is_on_continent = rocky_mountain
+								is_on_continent = west_coast
+							}
 						}
 					}
 				}
 				add_popularity = {
 					ideology = democratic
-					popularity = 0.15
+					popularity = 0.10
 				}
 			}
 		}
@@ -1104,6 +968,7 @@ focus_tree = {
 			country_event = continental_congress.1
 		}
 	}
+#Continental Congress Success
 	focus = {
 		id = DCD_successful_congress
 		text = DCD_successful_congress
@@ -1118,6 +983,7 @@ focus_tree = {
 		x = 9
 		y = 5
 		completion_reward = {
+			remove_ideas = DC_crisis
 		}
 	}
 	focus = {
@@ -1135,6 +1001,7 @@ focus_tree = {
 		completion_reward = {
 		}
 	}
+#Continental Congress Failure
 	focus = {
 		id = DCD_congress_failure
 		text = DCD_congress_failure
@@ -1164,12 +1031,15 @@ focus_tree = {
 			remove_ideas = DC_leased_land_idea
 		}
 	}
-	#Stay Democratic
+#Stay Democratic
 	focus = {
 		id = DCD_unify_the_fronts
 		icon = GFX_Generic_Mutual_Cooperation
 		prerequisite = {
 			focus = DCD_renounce_occupation
+		}
+		mutually_exclusive = {
+			focus = DCD_american_caesar
 		}
 		cost = 10
 		x = 17
@@ -1249,16 +1119,16 @@ focus_tree = {
 		x = 17
 		y = 8
 		completion_reward = {
-			1070 = {
+			154 = {
 				add_building_construction = {
 					type = bunker
-					province = 15244
-					level = 7
+					province = 10811
+					level = 5
 				}
 				add_building_construction = {
 					type = bunker
-					province = 13794
-					level = 7
+					province = 10667
+					level = 5
 				}
 			}
 		}
@@ -1323,6 +1193,9 @@ focus_tree = {
 						NOT = {
 							is_subject_of = DCD
 						}
+					}
+					DCD = {
+						controls_maryland_trigger = yes
 					}
 				}
 				release_puppet = MDM
@@ -1448,153 +1321,16 @@ focus_tree = {
 				}
 			}
 		}
-	}
-	focus = {
-		id = DCD_stabilize_canada
-		icon = GFX_goal_unknown
-		mutually_exclusive = {
-			focus = DCD_stabilize_mexico
-		}
-		prerequisite = {
-			focus = DCD_united_once_more
-		}
-		cost = 14.3
-		x = 15
-		y = 17
-		completion_reward = {
-			DCD = {
-				create_wargoal = {
-					target = PEP
-					type = puppet_wargoal_focus
-				}
-				create_wargoal = {
-					target = NSN
-					type = puppet_wargoal_focus
-				}
-				create_wargoal = {
-					target = NBN
-					type = puppet_wargoal_focus
-				}
-				create_wargoal = {
-					target = NLN
-					type = puppet_wargoal_focus
-				}
-				create_wargoal = {
-					target = LAB
-					type = puppet_wargoal_focus
-				}
-				create_wargoal = {
-					target = QBC
-					type = puppet_wargoal_focus
-				}
-				create_wargoal = {
-					target = ONO
-					type = puppet_wargoal_focus
-				}
-				create_wargoal = {
-					target = MBM
-					type = puppet_wargoal_focus
-				}
-				create_wargoal = {
-					target = NUN
-					type = puppet_wargoal_focus
-				}
-				create_wargoal = {
-					target = SKS
-					type = puppet_wargoal_focus
-				}
-				create_wargoal = {
-					target = ABA
-					type = puppet_wargoal_focus
-				}
-				create_wargoal = {
-					target = BCB
-					type = puppet_wargoal_focus
-				}
-				create_wargoal = {
-					target = NTN
-					type = puppet_wargoal_focus
-				}
-				create_wargoal = {
-					target = YTY
-					type = puppet_wargoal_focus
-				}
-			}
-		}
-	}
-	focus = {
-		id = DCD_stabilize_mexico
-		icon = GFX_goal_unknown
-		mutually_exclusive = {
-			focus = DCD_stabilize_canada
-		}
-		prerequisite = {
-			focus = DCD_united_once_more
-		}
-		x = 19
-		y = 17
-		cost = 14.3
-		completion_reward = {
-			create_wargoal = {
-				target = BAJ
-				type = puppet_wargoal_focus
-			}
-			create_wargoal = {
-				target = SON
-				type = puppet_wargoal_focus
-			}
-			create_wargoal = {
-				target = CIA
-				type = puppet_wargoal_focus
-			}
-			create_wargoal = {
-				target = COU
-				type = puppet_wargoal_focus
-			}
-			create_wargoal = {
-				target = SIN
-				type = puppet_wargoal_focus
-			}
-			create_wargoal = {
-				target = TAU
-				type = puppet_wargoal_focus
-			}
-			create_wargoal = {
-				target = NAY
-				type = puppet_wargoal_focus
-			}
-			create_wargoal = {
-				target = OME
-				type = puppet_wargoal_focus
-			}
-			create_wargoal = {
-				target = GUE
-				type = puppet_wargoal_focus
-			}
-			create_wargoal = {
-				target = OAX
-				type = puppet_wargoal_focus
-			}
-			create_wargoal = {
-				target = CHP
-				type = puppet_wargoal_focus
-			}
-			create_wargoal = {
-				target = YUC
-				type = puppet_wargoal_focus
-			}
-			create_wargoal = {
-				target = VEC
-				type = puppet_wargoal_focus
-			}
-		}
-	}
-	#Go MacArthur
+	}	
+#Go MacArthur
 	focus = {
 		id = DCD_american_caesar
 		icon = GFX_Generic_Caesar
 		prerequisite = {
 			focus = DCD_renounce_occupation
+		}
+		mutually_exclusive = {
+			focus = DCD_unify_the_fronts
 		}
 		cost = 10
 		x = 21
@@ -1621,12 +1357,12 @@ focus_tree = {
 			}
 		}
 	}
-	#MacArthur Path
+#Appeal to the Loyalists - Dictatorship Path
 	focus = {
 		id = DCD_appeal_to_loyalists
 		text = DCD_appeal_to_loyalists
 		icon = GFX_Generic_Liberation
-		cost = 7.2
+		cost = 4.4
 		prerequisite = {
 			focus = DCD_call_to_arms
 		}
@@ -1645,7 +1381,7 @@ focus_tree = {
 	focus = {
 		id = DCD_infiltrate_the_government
 		icon = GFX_Generic_Meeting
-		cost = 10
+		cost = 7.2
 		prerequisite = {
 			focus = DCD_appeal_to_loyalists
 		}
@@ -1709,7 +1445,7 @@ focus_tree = {
 		prerequisite = {
 			focus = DCD_assassinate_opposition_leaders
 		}
-		cost = 2.2
+		cost = 2.9
 		x = 25
 		y = 5
 		completion_reward = {
@@ -1750,7 +1486,7 @@ focus_tree = {
 		id = DCD_strike_MD
 		text = DCD_strike_MD
 		icon = GFX_goal_unknown
-		cost = 5
+		cost = 4.4
 		prerequisite = {
 			focus = DCD_gather_arms
 			focus = DCD_american_caesar
@@ -1782,7 +1518,7 @@ focus_tree = {
 		id = DCD_strike_VA
 		text = DCD_strike_VA
 		icon = GFX_goal_unknown
-		cost = 5
+		cost = 4.4
 		prerequisite = {
 			focus = DCD_gather_arms
 			focus = DCD_american_caesar
@@ -1814,7 +1550,7 @@ focus_tree = {
 		id = DCD_gateway_south
 		text = DCD_gateway_south
 		icon = GFX_goal_unknown
-		cost = 4.3
+		cost = 1.5
 		prerequisite = {
 			focus = DCD_strike_VA
 		}
@@ -1832,12 +1568,29 @@ focus_tree = {
 						}
 					}
 				}
-				release_puppet = VAV
-				DCD = {
-					set_autonomy = {
-						target = VAV
-						autonomy_state = autonomy_military_occupation
-						freedom_level = 0
+				create_dynamic_country = {
+					original_tag = VAV
+		
+					set_variable = { collaboration_formed_by = DCD }
+					set_temp_variable = { new_country = this }
+		
+					DCD = {
+						every_controlled_state = {
+							limit = { 
+								occupied_country_tag = VAV 
+							}
+							var:new_country = {
+								transfer_state = PREV
+							}
+						}
+		
+						puppet = new_country
+		
+						set_autonomy = {
+							target = new_country
+							autonomy_state = autonomy_military_occupation
+							freedom_level = 0
+						}
 					}
 				}
 				VAV = {
@@ -1851,7 +1604,7 @@ focus_tree = {
 		id = DCD_break_north
 		text = DCD_break_north
 		icon = GFX_goal_unknown
-		cost = 4.3
+		cost = 1.5
 		prerequisite = {
 			focus = DCD_strike_MD
 		}
@@ -1861,6 +1614,9 @@ focus_tree = {
 		x = 27
 		y = 9
 		completion_reward = {
+			hidden_effect = {
+				release = DCD
+			}
 			if = {
 				limit = {
 					MDM = {
@@ -1869,19 +1625,36 @@ focus_tree = {
 						}
 					}
 				}
-				release_puppet = MDM
-				DCD = {
-					set_autonomy = {
-						target = MDM
-						autonomy_state = autonomy_military_occupation
-						freedom_level = 0
+				create_dynamic_country = {
+					original_tag = MDM
+		
+					set_variable = { collaboration_formed_by = DCD }
+					set_temp_variable = { new_country = this }
+		
+					DCD = {
+						every_controlled_state = {
+							limit = { 
+								occupied_country_tag = MDM 
+							}
+							var:new_country = {
+								transfer_state = PREV
+							}
+						}
+		
+						puppet = new_country
+		
+						set_autonomy = {
+							target = new_country
+							autonomy_state = autonomy_military_occupation
+							freedom_level = 0
+						}
 					}
 				}
 				MDM = {
 					set_cosmetic_tag = MIL
 				}
 			}
-			set_cosmetic_tag = MIL
+			set_cosmetic_tag = DCM
 		}
 	}
 	focus = {
@@ -1897,10 +1670,12 @@ focus_tree = {
 		y = 10
 		completion_reward = {
 			add_stability = 0.1
-			remove_ideas = DCD_assure_military_loyalty_idea
-			remove_ideas = DCD_assassinate_opposition_leaders_idea
-			remove_ideas = DCD_no_compromise_idea
-			remove_ideas = DCD_infiltrate_the_government_idea
+			hidden_effect = {
+				remove_ideas = DCD_assure_military_loyalty_idea
+				remove_ideas = DCD_assassinate_opposition_leaders_idea
+				remove_ideas = DCD_no_compromise_idea
+				remove_ideas = DCD_infiltrate_the_government_idea
+			}
 		}
 	}
 	focus = {
@@ -1960,3 +1735,254 @@ focus_tree = {
 
 #####################################Fascism Path
 #####################################Communism Path
+
+
+
+
+###Unused Democratic Focuses- will add back later
+#focus = {
+#	id = DC_democratic7
+#	icon = GFX_Generic_Democracy
+#	cost = 4.3
+#	prerequisite = {
+#		focus = DC_democratic6
+#	}
+#	x = 0
+#	y = 1
+#	relative_position_id = DC_democratic6
+#	completion_reward = {
+#		add_country_leader_trait = great_reformer
+#	}
+#}
+#focus = {
+#	id = DC_democratic8
+#	icon = GFX_Generic_Workers_Democracy
+#	cost = 2.2
+#	prerequisite = {
+#		focus = DC_democratic7
+#	}
+#	x = -2
+#	y = 1
+#	relative_position_id = DC_democratic7
+#	completion_reward = {
+#		add_ideas = DC_wpa
+#	}
+#}
+#focus = {
+#	id = DC_democratic9
+#	icon = GFX_focus_usa_guarantee_the_american_dream
+#	cost = 2.2
+#	prerequisite = {
+#		focus = DC_democratic7
+#	}
+#	x = 0
+#	y = 1
+#	relative_position_id = DC_democratic7
+#	completion_reward = {
+#		add_ideas = DC_ssa
+#	}
+#}
+#focus = {
+#	id = DC_democratic10
+#	icon = GFX_goal_generic_construct_mil_factory
+#	cost = 2.2
+#	prerequisite = {
+#		focus = DC_democratic7
+#	}
+#	x = 2
+#	y = 1
+#	relative_position_id = DC_democratic7
+#	completion_reward = {
+#		add_ideas = DC_mic
+#	}
+#}
+#focus = {
+#	id = DC_democratic11
+#	icon = GFX_focus_eng_concessions_to_the_trade_unions
+#	cost = 2.2
+#	prerequisite = {
+#		focus = DC_democratic8
+#	}
+#	x = 0
+#	y = 1
+#	relative_position_id = DC_democratic8
+#	completion_reward = {
+#		add_ideas = DC_jobs
+#	}
+#}
+#focus = {
+#	id = DC_democratic12
+#	icon = GFX_goal_generic_production
+#	cost = 2.2
+#	prerequisite = {
+#		focus = DC_democratic9
+#	}
+#	x = 0
+#	y = 1
+#	relative_position_id = DC_democratic9
+#	completion_reward = {
+#		1070 = {
+#			add_extra_state_shared_building_slots = 2
+#		}
+#		add_ideas = DC_publicworks
+#	}
+#}
+#focus = {
+#	id = DC_democratic13
+#	icon = GFX_goal_generic_fortify_city
+#	cost = 2.2
+#	prerequisite = {
+#		focus = DC_democratic10
+#	}
+#	x = 0
+#	y = 1
+#	relative_position_id = DC_democratic10
+#	completion_reward = {
+#		add_ideas = DC_onestepahead
+#	}
+#}
+
+
+#################################
+### FOR DEMOCRATIC UNITED USA ###
+#################################
+#focus = {
+#	id = DCD_stabilize_canada
+#	icon = GFX_goal_unknown
+#	mutually_exclusive = {
+#		focus = DCD_stabilize_mexico
+#	}
+#	prerequisite = {
+#		focus = DCD_united_once_more
+#	}
+#	cost = 14.3
+#	x = 15
+#	y = 17
+#	completion_reward = {
+#		DCD = {
+#			create_wargoal = {
+#				target = PEP
+#				type = puppet_wargoal_focus
+#			}
+#			create_wargoal = {
+#				target = NSN
+#				type = puppet_wargoal_focus
+#			}
+#			create_wargoal = {
+#				target = NBN
+#				type = puppet_wargoal_focus
+#			}
+#			create_wargoal = {
+#				target = NLN
+#				type = puppet_wargoal_focus
+#			}
+#			create_wargoal = {
+#				target = LAB
+#				type = puppet_wargoal_focus
+#			}
+#			create_wargoal = {
+#				target = QBC
+#				type = puppet_wargoal_focus
+#			}
+#			create_wargoal = {
+#				target = ONO
+#				type = puppet_wargoal_focus
+#			}
+#			create_wargoal = {
+#				target = MBM
+#				type = puppet_wargoal_focus
+#			}
+#			create_wargoal = {
+#				target = NUN
+#				type = puppet_wargoal_focus
+#			}
+#			create_wargoal = {
+#				target = SKS
+#				type = puppet_wargoal_focus
+#			}
+#			create_wargoal = {
+#				target = ABA
+#				type = puppet_wargoal_focus
+#			}
+#			create_wargoal = {
+#				target = BCB
+#				type = puppet_wargoal_focus
+#			}
+#			create_wargoal = {
+#				target = NTN
+#				type = puppet_wargoal_focus
+#			}
+#			create_wargoal = {
+#				target = YTY
+#				type = puppet_wargoal_focus
+#			}
+#		}
+#	}
+#}
+#focus = {
+#	id = DCD_stabilize_mexico
+#	icon = GFX_goal_unknown
+#	mutually_exclusive = {
+#		focus = DCD_stabilize_canada
+#	}
+#	prerequisite = {
+#		focus = DCD_united_once_more
+#	}
+#	x = 19
+#	y = 17
+#	cost = 14.3
+#	completion_reward = {
+#		create_wargoal = {
+#			target = BAJ
+#			type = puppet_wargoal_focus
+#		}
+#		create_wargoal = {
+#			target = SON
+#			type = puppet_wargoal_focus
+#		}
+#		create_wargoal = {
+#			target = CIA
+#			type = puppet_wargoal_focus
+#		}
+#		create_wargoal = {
+#			target = COU
+#			type = puppet_wargoal_focus
+#		}
+#		create_wargoal = {
+#			target = SIN
+#			type = puppet_wargoal_focus
+#		}
+#		create_wargoal = {
+#			target = TAU
+#			type = puppet_wargoal_focus
+#		}
+#		create_wargoal = {
+#			target = NAY
+#			type = puppet_wargoal_focus
+#		}
+#		create_wargoal = {
+#			target = OME
+#			type = puppet_wargoal_focus
+#		}
+#		create_wargoal = {
+#			target = GUE
+#			type = puppet_wargoal_focus
+#		}
+#		create_wargoal = {
+#			target = OAX
+#			type = puppet_wargoal_focus
+#		}
+#		create_wargoal = {
+#			target = CHP
+#			type = puppet_wargoal_focus
+#		}
+#		create_wargoal = {
+#			target = YUC
+#			type = puppet_wargoal_focus
+#		}
+#		create_wargoal = {
+#			target = VEC
+#			type = puppet_wargoal_focus
+#		}
+#	}
+#}

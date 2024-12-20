@@ -2,1219 +2,1371 @@ add_namespace = dc
 add_namespace = dc_news
 add_namespace = continental_congress
 #News Events
-news_event = { #A Call to Arms focus
-  id = dc_news.0
-  picture = GFX_placeholder
-  major = yes
-  is_triggered_only = yes
-  title = dc_news.0.t
-  desc = dc_news.0.d
-  
-  option = {
-    name = dc_news.0.democratic
-    trigger = {
-      has_government = democratic
-    }
-  }
-  option = {
-    name = dc_news.0.fascism
-    trigger = {
-      has_government = fascism
-    }
-  }
-  option = {
-    name = dc_news.0.communism
-    trigger = {
-      has_government = communism
-    }
-  }
-}
-news_event = { #Diplomatic War Decision
-  id = dc_news.1
-  picture = GFX_placeholder
-  major = yes
-  is_triggered_only = yes
-  title = dc_news.1.t
-  desc = dc_news.1.d
-
-  option = {
-    name = dc_news.1.a
-    trigger = {
-      has_government = democratic
-    }
-  }
-  option = {
-    name = dc_news.1.b
-    trigger = {
-      OR = {
-        has_government = fascism
-        has_government = communism
-      }
-    }
-  }
-}
-news_event = { #Continental Congress Focus
-  id = dc_news.2
-  picture = GFX_placeholder
-  major = yes
-  is_triggered_only = yes
-  title = dc_news.2.t
-  desc = dc_news.2.d
-
-  option = {
-    name = dc_news.2.a
-    trigger = {
-      has_government = democratic
-    }
-  }
-  option = {
-    name = dc_news.2.b
-    trigger = {
-      has_government = fascism
-    }
-  }
-  option = {
-    name = dc_news.2.c
-    trigger = {
-      has_government = communism
-    }
-  }
-}
-news_event = { #USA Reformed
-  id = dc_news.3
-  picture = GFX_placeholder
-  major = yes
-  is_triggered_only = yes
-  title = dc_news.3.t
-  desc = dc_news.3.d
-
-  option = {
-    name = dc_news.3.a
-  }
-}
 news_event = {
-  id = dc_news.4
-  picture = GFX_placeholder
-  major = yes
-  is_triggered_only = yes
-  title = dc_news.4.t
-  desc = dc_news.4.d
-
-  option = {
-    name = dc_news.4.a
-  }
+	#A Call to Arms focus
+	id = dc_news.0
+	picture = GFX_placeholder
+	major = yes
+	is_triggered_only = yes
+	title = dc_news.0.t
+	desc = dc_news.0.d
+	option = {
+		name = dc_news.0.democratic
+		trigger = {
+			has_government = democratic
+		}
+	}
+	option = {
+		name = dc_news.0.fascism
+		trigger = {
+			has_government = fascism
+		}
+	}
+	option = {
+		name = dc_news.0.communism
+		trigger = {
+			has_government = communism
+		}
+	}
 }
+
+news_event = {
+	#Diplomatic War Decision
+	id = dc_news.1
+	picture = GFX_placeholder
+	major = yes
+	is_triggered_only = yes
+	title = dc_news.1.t
+	desc = dc_news.1.d
+	option = {
+		name = dc_news.1.a
+		trigger = {
+			has_government = democratic
+		}
+	}
+	option = {
+		name = dc_news.1.b
+		trigger = {
+			OR = {
+				has_government = fascism
+				has_government = communism
+			}
+		}
+	}
+}
+
+news_event = {
+	#Continental Congress Focus
+	id = dc_news.2
+	picture = GFX_placeholder
+	major = yes
+	is_triggered_only = yes
+	title = dc_news.2.t
+	desc = dc_news.2.d
+	option = {
+		name = dc_news.2.a
+		trigger = {
+			has_government = democratic
+		}
+	}
+	option = {
+		name = dc_news.2.b
+		trigger = {
+			has_government = fascism
+		}
+	}
+	option = {
+		name = dc_news.2.c
+		trigger = {
+			has_government = communism
+		}
+	}
+}
+
+news_event = {
+	#USA Reformed
+	id = dc_news.3
+	picture = GFX_placeholder
+	major = yes
+	is_triggered_only = yes
+	title = dc_news.3.t
+	desc = dc_news.3.d
+	option = {
+		name = dc_news.3.a
+	}
+}
+
+news_event = {
+	id = dc_news.4
+	picture = GFX_placeholder
+	major = yes
+	is_triggered_only = yes
+	title = dc_news.4.t
+	desc = dc_news.4.d
+	option = {
+		name = dc_news.4.a
+	}
+}
+
 # Preamble
 country_event = {
-  id = dc.1
-  title = dc.1.t
-  desc = dc.1.d
-  picture = GFX_DCD_constitution
-
-  is_triggered_only = yes
-
-  option = {
-    name = dc.1.a
-    ai_chance = { factor = 33 }
-    add_ideas = { DC_preambled }
-    country_event = dc.2
-  }
-  option = {
-    name = dc.1.b
-    ai_chance = { factor = 33 }
-    add_ideas = { DC_preamblec }
-    country_event = dc.2
-  }
-  option = {
-    name = dc.1.c
-    ai_chance = { factor = 33 }
-    add_ideas = { DC_preamblef }
-    country_event = dc.2
-  }
+	id = dc.1
+	title = dc.1.t
+	desc = dc.1.d
+	picture = GFX_DCD_constitution
+	is_triggered_only = yes
+	option = {
+		name = dc.1.a
+		ai_chance = {
+			base = 34
+		}
+		add_ideas = {
+			DC_preambled
+		}
+		country_event = dc.2
+    set_country_flag = dc_chose_democracy
+	}
+	option = {
+		name = dc.1.b
+		ai_chance = {
+			base = 33
+		}
+		add_ideas = {
+			DC_preamblec
+		}
+		country_event = dc.2
+    set_country_flag = dc_chose_communism
+	}
+	option = {
+		name = dc.1.c
+		ai_chance = {
+			base = 33
+		}
+		add_ideas = {
+			DC_preamblef
+		}
+		country_event = dc.2
+    set_country_flag = dc_chose_fascism
+	}
 }
 
 # 1st Amendment
 country_event = {
-  id = dc.2
-  title = dc.2.t
-  desc = dc.2.d
-  picture = GFX_report_event_iww_demonstration
-
-  is_triggered_only = yes
-
-  option = {
-    name = dc.2.a
-    ai_chance = { factor = 33 }
-    add_stability = 0.1
-    country_event = dc.3
-  }
-  option = {
-    name = dc.2.b
-    ai_chance = { factor = 33 }
-    add_ideas = { DC_firstc }
-    country_event = dc.3
-  }
-  option = {
-    name = dc.2.c
-    ai_chance = { factor = 33 }
-    add_ideas = { DC_firstf }
-    country_event = dc.3
-  }
+	id = dc.2
+	title = dc.2.t
+	desc = dc.2.d
+	picture = GFX_report_event_iww_demonstration
+	is_triggered_only = yes
+	option = {
+		name = dc.2.a
+		ai_chance = {
+			base = 0
+      modifier = {
+        has_country_flag = dc_chose_democracy
+        factor = 100
+      }
+		}
+		add_stability = 0.1
+		country_event = dc.3
+	}
+	option = {
+		name = dc.2.b
+		ai_chance = {
+			base = 0
+      modifier = {
+        has_country_flag = dc_chose_communism
+        factor = 100
+      }
+		}
+		add_ideas = {
+			DC_firstc
+		}
+		country_event = dc.3
+	}
+	option = {
+		name = dc.2.c
+		ai_chance = {
+			base = 0
+      modifier = {
+        has_country_flag = dc_chose_fascism
+        factor = 100
+      }
+		}
+		add_ideas = {
+			DC_firstf
+		}
+		country_event = dc.3
+	}
 }
 
 # 2nd Amendment
 country_event = {
-  id = dc.3
-  title = dc.3.t
-  desc = dc.3.d
-  picture = GFX_report_event_spain_civil_war_soldiers
-
-  is_triggered_only = yes
-
-  option = {
-    name = dc.3.a
-    ai_chance = { factor = 33 }
-    add_ideas = { DC_secondd }
-    country_event = dc.4
-  }
-  option = {
-    name = dc.3.b
-    ai_chance = { factor = 33 }
-    add_ideas = { DC_secondc }
-    country_event = dc.4
-  }
-  option = {
-    name = dc.3.c
-    ai_chance = { factor = 33 }
-    add_ideas = { DC_secondf }
-    country_event = dc.4
-  }
+	id = dc.3
+	title = dc.3.t
+	desc = dc.3.d
+	picture = GFX_report_event_spain_civil_war_soldiers
+	is_triggered_only = yes
+	option = {
+		name = dc.3.a
+		ai_chance = {
+			base = 0
+      modifier = {
+        has_country_flag = dc_chose_democracy
+        factor = 100
+      }
+		}
+		add_ideas = {
+			DC_secondd
+		}
+		country_event = dc.4
+	}
+	option = {
+		name = dc.3.b
+		ai_chance = {
+			base = 0
+      modifier = {
+        has_country_flag = dc_chose_communism
+        factor = 100
+      }
+		}
+		add_ideas = {
+			DC_secondc
+		}
+		country_event = dc.4
+	}
+	option = {
+		name = dc.3.c
+		ai_chance = {
+			base = 0
+      modifier = {
+        has_country_flag = dc_chose_fascism
+        factor = 100
+      }
+		}
+		add_ideas = {
+			DC_secondf
+		}
+		country_event = dc.4
+	}
 }
 
 # 3rd Amendment
 country_event = {
-  id = dc.4
-  title = dc.4.t
-  desc = dc.4.d
-  picture = GFX_report_event_soldiers_marching
-
-  is_triggered_only = yes
-
-  option = {
-    name = dc.4.a
-    ai_chance = { factor = 33 }
-    add_stability = 0.05
-  }
-  option = {
-    name = dc.4.b
-    ai_chance = { factor = 33 }
-    add_ideas = { DC_thirdc }
-  }
-  option = {
-    name = dc.4.c
-    ai_chance = { factor = 33 }
-    add_ideas = { DC_thirdf }
-  }
+	id = dc.4
+	title = dc.4.t
+	desc = dc.4.d
+	picture = GFX_report_event_soldiers_marching
+	is_triggered_only = yes
+	option = {
+		name = dc.4.a
+		ai_chance = {
+			base = 0
+      modifier = {
+        has_country_flag = dc_chose_democracy
+        factor = 100
+      }
+		}
+		add_stability = 0.05
+	}
+	option = {
+		name = dc.4.b
+		ai_chance = {
+			base = 0
+      modifier = {
+        has_country_flag = dc_chose_communism
+        factor = 100
+      }
+		}
+		add_ideas = {
+			DC_thirdc
+		}
+	}
+	option = {
+		name = dc.4.c
+		ai_chance = {
+			base = 0
+      modifier = {
+        has_country_flag = dc_chose_fascism
+        factor = 100
+      }
+		}
+		add_ideas = {
+			DC_thirdf
+		}
+	}
 }
 
 # 2nd Constitutional Convention
 country_event = {
-  id = dc.5
-  title = dc.5.t
-  desc = dc.5.d
-  picture = GFX_report_event_generic_usa_treaty
-
-  is_triggered_only = yes
-
-  option = {
-    name = dc.5.a
-    ai_chance = { factor = 100 }
-    country_event = dc.1
-  }
+	id = dc.5
+	title = dc.5.t
+	desc = dc.5.d
+	picture = GFX_report_event_generic_usa_treaty
+	is_triggered_only = yes
+	option = {
+		name = dc.5.a
+		country_event = dc.1
+	}
 }
 
 #Maryland Recieves offer
 country_event = {
-  id = dc.6
-  title = dc.6.t
-  desc = dc.6.d
-  picture = GFX_report_event_generic_usa_treaty
-
-  is_triggered_only = yes
-
-  #Maryland Accepts
-  option = {
-    name = dc.6.a
-    ai_chance = { 
-      base = 50
+	id = dc.6
+	title = dc.6.t
+	desc = dc.6.d
+	picture = GFX_report_event_generic_usa_treaty
+	is_triggered_only = yes
+	#Maryland Accepts
+	option = {
+		name = dc.6.a
+		ai_chance = {
+			base = 50
+			modifier = {
+				has_opinion = {
+					target = DCD
+					value > 100
+				}
+				factor = 5
+			}
       modifier = {
-        has_opinion = {
-          target = DCD
-          value > 100	
+        DCD = {
+          is_ai = yes
         }
-        factor = 5
+        factor = 100
       }
-    }
-    MDM = {
-      every_unit_leader = {
-        set_unit_leader_flag = flag_former_maryland_general
-        set_nationality = DCD
-      }
-    }
-    DCD = {
-      country_event = dc.8
-      puppet = MDM
-      core_maryland_effect = yes
-    }
-  }
-  #Maryland Refuses
-  option = {
-    name = dc.6.b
-    ai_chance = { 
-      base = 50 
-    }
-    create_wargoal = {
-      type = puppet_wargoal_focus
-      target = DCD
-    }
-    DCD = {
-      country_event = dc.7
-    }
-  }
+		}
+		MDM = {
+			every_unit_leader = {
+				set_unit_leader_flag = flag_former_maryland_general
+				set_nationality = DCD
+			}
+		}
+		DCD = {
+			country_event = dc.8
+			puppet = MDM
+			core_maryland_effect = yes
+		}
+	}
+	#Maryland Refuses
+	option = {
+		name = dc.6.b
+		ai_chance = {
+			base = 50
+		}
+		create_wargoal = {
+			type = puppet_wargoal_focus
+			target = DCD
+		}
+		DCD = {
+			country_event = dc.7
+		}
+	}
 }
+
 # Maryland refuses
-
 country_event = {
-  id = dc.7
-  title = dc.7.t
-  desc = dc.7.d
-  picture = GFX_report_event_soldiers_marching
-
-  is_triggered_only = yes
-
-  option = {
-    name = dc.7.a
-    add_timed_idea = {
-      idea = DC_unionisticfervor
-      days = 365
+	id = dc.7
+	title = dc.7.t
+	desc = dc.7.d
+	picture = GFX_report_event_soldiers_marching
+	is_triggered_only = yes
+	option = {
+		name = dc.7.a
+		add_timed_idea = {
+			idea = DC_unionisticfervor
+			days = 365
+		}
+    hidden_effect = {
+      load_oob = DC_independence_war
     }
-  }
-  option = {
-    name = dc.7.b
-    MDM = {
-      puppet = DCD
-    }
-  }
+	}
+	option = {
+		name = dc.7.b
+		MDM = {
+			puppet = DCD
+		}
+    add_stability = -0.30
+	}
 }
 
 # Maryland Accepts
-
 country_event = {
-  id = dc.8
-  title = dc.8.t
-  desc = dc.8.d
-  picture = GFX_DCD_soldiers_flag
-
-  is_triggered_only = yes
-
-  option = {
-    name = dc.8.a
-    ai_chance = { factor = 1 }
-  }
+	id = dc.8
+	title = dc.8.t
+	desc = dc.8.d
+	picture = GFX_DCD_soldiers_flag
+	is_triggered_only = yes
+	option = {
+		name = dc.8.a
+	}
 }
 
 #Emergency Elections
 country_event = {
-  id = dc.9
-  title = dc.9.t
-  desc = dc.9.d
-
-  is_triggered_only = yes
-
-  option = {
-    name = dc.9.a
-
-    complete_national_focus = DC_democratic1
-  }
-  option = {
-    name = dc.9.b
-    
-    complete_national_focus = DC_fascist1
-  }
-  option = {
-    name = dc.9.c
-
-    complete_national_focus = DC_communist1
-  }
-}
-#Instate Military Govt
-country_event = {
-  id = dc.10
-  title = dc.10.t
-  desc = dc.10.d
-  picture = GFX_DCD_soldiers_flag
-
-  is_triggered_only = yes
-
-  option = {
-    name = dc.10.a
-    set_politics = {
-      ruling_party = neutrality
-      elections_allowed = no
-      last_election = "1932.11.8"
-    }
-    remove_ideas = DC_leased_land_idea
-  }
-}
-#DC Demands Submission
-country_event = {
-  id = dc.11
-  title = dc.11.t
-  desc = dc.11.d
-  picture = GFX_placeholder
-
-  is_triggered_only = yes
-
-  option = { #Become a Fed State
-    name = dc.11.a
+	id = dc.9
+	title = dc.9.t
+	desc = dc.9.d
+	is_triggered_only = yes
+	option = {
+		name = dc.9.a
     ai_chance = {
       base = 0
       modifier = {
-        is_in_faction_with = DCD
-        factor = 3
+        has_country_flag = dc_chose_democracy
+        add = 100
       }
+    }
+		complete_national_focus = DC_democratic1
+	}
+	option = {
+		name = dc.9.b
+    ai_chance = {
+      base = 0
       modifier = {
-        is_guaranteed_by = DCD
-        factor = 5
+        has_country_flag = dc_chose_fascism
+        add = 100
       }
+    }
+		complete_national_focus = DC_fascist1
+	}
+	option = {
+		name = dc.9.c
+    ai_chance = {
+      base = 0
       modifier = {
-        has_opinion = {
-          target = DCD
-          value > 90
-        }
-        factor = 2
+        has_country_flag = dc_chose_communism
+        add = 100
       }
-      modifier = {
+    }
+		complete_national_focus = DC_communist1
+	}
+}
+
+#Instate Military Govt
+country_event = {
+	id = dc.10
+	title = dc.10.t
+	desc = dc.10.d
+	picture = GFX_DCD_soldiers_flag
+	is_triggered_only = yes
+	option = {
+		name = dc.10.a
+		set_politics = {
+			ruling_party = neutrality
+			elections_allowed = no
+			last_election = "1932.11.8"
+		}
+		remove_ideas = DC_leased_land_idea
+	}
+}
+
+#DC Demands Submission
+country_event = {
+	id = dc.11
+	title = dc.11.t
+	desc = dc.11.d
+	picture = GFX_placeholder
+	is_triggered_only = yes
+	option = {
+		#Become a Fed State
+		name = dc.11.a
+		ai_chance = {
+			base = 0
+			modifier = {
+				is_in_faction_with = DCD
+				factor = 3
+			}
+			modifier = {
+				is_guaranteed_by = DCD
+				factor = 5
+			}
+			modifier = {
+				has_opinion = {
+					target = DCD
+					value > 90
+				}
+				factor = 2
+			}
+			modifier = {
 				strength_ratio = {
 					tag = DCD
 					ratio > 2
 				}
 				factor = 10
 			}
-      modifier = {
+			modifier = {
 				strength_ratio = {
 					tag = DCD
 					ratio > 10
 				}
 				factor = 100
 			}
-    }
-    DCD = {
-      country_event = {
-        id = dc.12
-        days = 10
-        random_days = 10
-      }
-      set_autonomy = {
-        target = ROOT
-        autonomy_state = autonomy_federal_state
-        freedom_level = 0
-      }
-    }
-    ROOT = {
-      set_cosmetic_tag = FED
-    }
-  }
-  option = { #Refuse
-    name = dc.11.b
-    ai_chance = {
-      base = 10
-      modifier = {
+		}
+		DCD = {
+			country_event = {
+				id = dc.12
+				days = 10
+				random_days = 10
+			}
+			set_autonomy = {
+				target = ROOT
+				autonomy_state = autonomy_federal_state
+				freedom_level = 0
+			}
+		}
+		ROOT = {
+			set_cosmetic_tag = FED
+		}
+	}
+	option = {
+		#Refuse
+		name = dc.11.b
+		ai_chance = {
+			base = 10
+			modifier = {
 				strength_ratio = {
 					tag = DCD
 					ratio > 2
 				}
 				factor = 10
 			}
+			modifier = {
+				has_opinion = {
+					target = DCD
+					value < 50
+				}
+				factor = 1
+			}
+			modifier = {
+				is_major = yes
+				factor = 5
+			}
+			modifier = {
+				has_war_with = DCD
+				factor = 1000
+			}
+			modifier = {
+				OR = {
+					has_government = fascism
+					has_government = communism
+				}
+				factor = 20
+			}
+		}
+		DCD = {
+			country_event = {
+				id = dc.13
+				days = 10
+				random_days = 10
+			}
+		}
+	}
+}
+
+country_event = {
+	#Country accepted into FED
+	id = dc.12
+	title = dc.12.t
+	desc = dc.12.d
+	picture = GFX_placeholder
+	is_triggered_only = yes
+	option = {
+		name = dc.12.a
+	}
+}
+
+country_event = {
+	#Country refused FED
+	id = dc.13
+	title = dc.13.t
+	desc = dc.13.d
+	picture = GFX_placeholder
+	is_triggered_only = yes
+	option = {
+		name = dc.13.a
+		DCD = {
+			create_wargoal = {
+				target = FROM
+				type = puppet_wargoal_focus
+			}
+		}
+	}
+	option = {
+		name = dc.13.b
+		add_stability = -0.05
+		add_war_support = -0.1
+	}
+}
+
+#Country Leaves the FED
+country_event = {
+	id = dc.14
+	title = dc.14.t
+	desc = dc.14.d
+	picture = GFX_placeholder
+	is_triggered_only = yes
+	option = {
+		name = dc.14.a
+		ai_chance = {
+			base = 10
+			modifier = {
+				strength_ratio = {
+					tag = FROM
+					ratio > 2
+				}
+				factor = 10
+			}
+		}
+    create_wargoal = {
+      target = FROM
+      type = puppet_wargoal_focus
+    }
+	}
+	option = {
+		name = dc.14.b
+		ai_chance = {
+			base = 10
+		}
+		add_stability = -0.1
+		add_war_support = -0.15
+	}
+}
+
+#DC Unites the US
+country_event = {
+	id = dc.15
+	title = dc.15.t
+	desc = dc.15.d
+	is_triggered_only = yes
+	option = {
+		name = dc.15.a
+		ai_chance = {
+			base = 0
+      modifier = {
+        DCD = {
+          alliance_strength_ratio > 2.0
+        }
+        factor = 20
+      }
+      modifier = {
+        has_opinion = {
+          target = DCD
+          value > 100
+        }
+        factor = 10
+      }
+		}
+    ROOT = {
+      every_owned_state = {
+        limit = {
+          is_core_of = ROOT
+        }
+        add_core_of = DCD
+      }
+    }
+		DCD = {
+			annex_country = {
+				target = ROOT
+				transfer_troops = yes
+			}
+		}
+	}
+	option = {
+		name = dc.15.b
+		ai_chance = {
+			base = 0
+      modifier = {
+        DCD = {
+          alliance_strength_ratio < 1.5
+        }
+        factor = 20
+      }
       modifier = {
         has_opinion = {
           target = DCD
           value < 50
         }
-        factor = 1
-      }
-      modifier = {
-        is_major = yes
-        factor = 5
-      }
-      modifier = {
-        has_war_with = DCD
-        factor = 1000
-      }
-      modifier = {
-        OR = {
-          has_government = fascism
-          has_government = communism
-        }
-        factor = 20
-      }
-    }
-    DCD = {
-      country_event = {
-        id = dc.13
-        days = 10
-        random_days = 10
-      }
-    }
-  }
-}
-country_event = { #Country accepted into FED
-  id = dc.12
-  title = dc.12.t
-  desc = dc.12.d
-  picture = GFX_placeholder
-
-  is_triggered_only = yes
-
-  option = {
-    name = dc.12.a
-  }
-}
-country_event = { #Country refused FED
-  id = dc.13
-  title = dc.13.t
-  desc = dc.13.d
-  picture = GFX_placeholder
-
-  is_triggered_only = yes
-
-  option = {
-    name = dc.13.a
-    DCD = {
-      create_wargoal = {
-        target = FROM
-        type = puppet_wargoal_focus
-      }
-    }
-  }
-  option = {
-    name = dc.13.b
-    add_stability = -0.05
-    add_war_support = -0.10
-  }
-}
-#Country Leaves the FED
-country_event = {
-  id = dc.14
-  title = dc.14.t
-  desc = dc.14.d
-  picture = GFX_placeholder
-
-  is_triggered_only = yes
-
-  option = {
-    name = dc.14.a
-    ai_chance = {
-      base = 10
-      modifier = {
-        strength_ratio = {
-          tag = FROM
-          ratio > 2
-        }
         factor = 10
       }
-    }
-  }
-  option = {
-    name = dc.14.b
-    ai_chance = {
-      base = 10
-    }
-    add_stability = -0.10
-    add_war_support = -0.15
-  }
+		}
+		release = ROOT
+		drop_cosmetic_tag = yes
+		DCD = {
+			create_wargoal = {
+				target = ROOT
+				type = annex_everything
+			}
+		}
+	}
 }
 
-#DC Unites the US
-country_event = {
-  id = dc.15
-  title = dc.15.t
-  desc = dc.15.d
-
-  is_triggered_only = yes
-
-  option = {
-    name = dc.15.a
-    ai_chance = {
-      base = 100
-    }
-    DCD = {
-      annex_country = {
-        target = ROOT
-        transfer_troops = yes
-      }
-    }
-  }
-  option = {
-    name = dc.15.b
-    ai_chance = {
-      base = 0
-    }
-    release = ROOT
-    drop_cosmetic_tag = yes
-    DCD = {
-      create_wargoal = {
-        target = ROOT
-        type = annex_everything
-      }
-    }
-  }
-}
 #DC Gets Cores on Everything
 country_event = {
-  id = dc.16
-  title = dc.16.t
-  desc = dc.16.d
-
-  is_triggered_only = yes
-
-  option = {
-    name = dc.16.a
-    news_event = dc_news.3
-    hidden_effect = {
-      every_owned_state = {
-        add_core_of = DCD
-      }
-    }
-  }
+	id = dc.16
+	title = dc.16.t
+	desc = dc.16.d
+	is_triggered_only = yes
+	option = {
+		name = dc.16.a
+		news_event = dc_news.3
+	}
 }
 
 #Non-Aligned Path
 country_event = {
-  id = dc.17
-  title = dc.17.t
-  desc = dc.17.d
-
-  is_triggered_only = yes
-
-  option = {
-    name = dc.17.a
-    set_politics = {
-      ruling_party = neutrality
-      elections_allowed = no
-      last_election = "1932.11.8"
-    }
-    remove_ideas = DC_leased_land_idea
-    news_event = {
-      id = dc_news.4
-      days = 5
-    }
-    set_cosmetic_tag = DCM
-  }
+	id = dc.17
+	title = dc.17.t
+	desc = dc.17.d
+	is_triggered_only = yes
+	option = {
+		name = dc.17.a
+		set_politics = {
+			ruling_party = neutrality
+			elections_allowed = no
+			last_election = "1932.11.8"
+		}
+		remove_ideas = DC_leased_land_idea
+		remove_ideas = DCD_infiltrate_the_government
+		news_event = {
+			id = dc_news.4
+			days = 5
+		}
+		set_cosmetic_tag = DCM
+	}
 }
-country_event = { #Party Discussion
-  id = dc.18
-  title = dc.18.t
-  desc = dc.18.d
 
-  is_triggered_only = yes
-
-  option = {
-    name = dc.18.a
-    set_country_flag = DCD_military_rule
-    hidden_effect = {
-      if = {
-        limit = {
-          VAV = {
-            is_subject_of = DCD
-          }
-        }
-        DCD = {
-          annex_country = {
-            target = VAV
-            transfer_troops = yes
-          }
-          start_civil_war = {
-            ideology = neutrality
-            size = 0.50
-            states = {
-              900 28 255 256 257 250 254 252 253
-            }
-          }
-          load_oob = "DC_military_civ_war_VAV"
-          set_equipment_fraction = 0.60
-          set_stability = 0.32
-          set_war_support = 0.97
-          set_cosmetic_tag = DCM
-          set_party_name = {
-            ideology = neutrality
-            long_name = DCD_MacArthur_Party_long
-            name = DCD_MacArthur_Party
-          }
-          every_owned_state = {
-            add_core_of = DCD
-          }
-        }
-        random_other_country = {
-          limit = {
-            original_tag = DCD
-            has_government = neutrality
-          }
-          load_focus_tree = {
-            tree = dc_focus_democratic
-            keep_completed = yes
-          }
-          set_country_flag = DCD_divine_right
-          load_oob = "DC_monarchist_civ_war_VAV"
-          set_equipment_fraction = 0.5
-          set_stability = 0.24
-          set_war_support = 0.80
-          set_cosmetic_tag = DMF
-          set_party_name = {
-            ideology = neutrality
-            long_name = DCD_monarchist_party_long
-            name = DCD_monarchist_party
-          }
-        }
-      }
-      else_if = {
-        limit = { 
-          MDM = {
-            is_subject_of = DCD
-          }
-        }
-        DCD = {
-          annex_country = {
-            target = MDM
-            transfer_troops = yes
-          }
-          start_civil_war = {
-            ideology = neutrality
-            size = 0.50
-            states = {
-              361 1067 1068
-            }
-          }
-          load_oob = "DC_military_civ_war_MDM" #Always player/original country
-          set_equipment_fraction = 0.60
-          set_stability = 0.32
-          set_war_support = 0.97
-          set_cosmetic_tag = DCM
-          set_party_name = {
-            ideology = neutrality
-            long_name = DCD_MacArthur_Party_long
-            name = DCD_MacArthur_Party
-          }
-          every_owned_state = {
-            add_core_of = DCD
-          }
-        }
-        random_other_country = {
-          limit = {
-            original_tag = DCD
-            has_government = neutrality
-          }
-          load_focus_tree = {
-            tree = dc_focus_democratic
-            keep_completed = yes
-          }
-          set_country_flag = DCD_divine_right
-          load_oob = "DC_monarchist_civ_war_MDM" #Always opposition
-          set_equipment_fraction = 0.5
-          set_stability = 0.24
-          set_war_support = 0.80
-          set_cosmetic_tag = DMF
-          set_party_name = {
-            ideology = neutrality
-            long_name = DCD_monarchist_party_long
-            name = DCD_monarchist_party
-          }
-        }
-      }
-    }
-  }
-  option = {
-    name = dc.18.b
-    set_country_flag = DCD_divine_right
-    hidden_effect = {
-      if = {
-        limit = {
-          VAV = {
-            is_subject_of = DCD
-          }
-        }
-        DCD = {
-          annex_country = {
-            target = VAV
-            transfer_troops = yes
-          }
-          start_civil_war = {
-            ideology = neutrality
-            size = 0.50
-            states = {
-              1049 1051 1050 1052
-            }
-          }
-          load_oob = "DC_military_civ_war_VAV"
-          set_equipment_fraction = 0.60
-          set_stability = 0.32
-          set_war_support = 0.97
-          set_cosmetic_tag = DMF
-          set_party_name = {
-            ideology = neutrality
-            long_name = DCD_monarchist_party_long
-            name = DCD_monarchist_party
-          }
-          every_owned_state = {
-            add_core_of = DCD
-          }
-        }
-        random_other_country = {
-          limit = {
-            original_tag = DCD
-            has_government = neutrality
-          }
-          load_focus_tree = {
-            tree = dc_focus_democratic
-            keep_completed = yes
-          }
-          set_country_flag = DCD_military_rule
-          load_oob = "DC_monarchist_civ_war_VAV"
-          set_equipment_fraction = 0.5
-          set_stability = 0.24
-          set_war_support = 0.80
-          set_cosmetic_tag = DCM
-          set_party_name = {
-            ideology = neutrality
-            long_name = DCD_MacArthur_Party_long
-            name = DCD_MacArthur_Party
-          }
-        }
-      }
-      else_if = {
-        limit = { 
-          MDM = {
-            is_subject_of = DCD
-          }
-        }
-        DCD = {
-          annex_country = {
-            target = MDM
-            transfer_troops = yes
-          }
-          start_civil_war = {
-            ideology = neutrality
-            size = 0.50
-            states = {
-              361 1067 1068
-            }
-          }
-          load_oob = "DC_military_civ_war_MDM" #Always player/original country
-          set_equipment_fraction = 0.60
-          set_stability = 0.32
-          set_war_support = 0.97
-          set_cosmetic_tag = DMF
-          set_party_name = {
-            ideology = neutrality
-            long_name = DCD_monarchist_party_long
-            name = DCD_monarchist_party
-          }
-          every_owned_state = {
-            add_core_of = DCD
-          }
-        }
-        random_other_country = {
-          limit = {
-            original_tag = DCD
-            has_government = neutrality
-          }
-          load_focus_tree = {
-            tree = dc_focus_democratic
-            keep_completed = yes
-          }
-          set_country_flag = DCD_military_rule
-          load_oob = "DC_monarchist_civ_war_MDM" #Always opposition
-          set_equipment_fraction = 0.5
-          set_stability = 0.24
-          set_war_support = 0.80
-          set_cosmetic_tag = DCM
-          set_party_name = {
-            ideology = neutrality
-            long_name = DCD_MacArthur_Party_long
-            name = DCD_MacArthur_Party
-          }
-        }
-      }
-    }
-  }
+country_event = {
+	#Party Discussion
+	id = dc.18
+	title = dc.18.t
+	desc = dc.18.d
+	is_triggered_only = yes
+	option = {
+		name = dc.18.a
+		set_country_flag = DCD_military_rule
+		hidden_effect = {
+			if = {
+				limit = {
+					VAV = {
+						is_subject_of = DCD
+					}
+				}
+				DCD = {
+					annex_country = {
+						target = VAV
+						transfer_troops = yes
+					}
+					start_civil_war = {
+						ideology = neutrality
+						size = 0.5
+						states = {
+							900
+							28
+							255
+							256
+							257
+							250
+							254
+							252
+							253
+						}
+					}
+					load_oob = "DC_military_civ_war_VAV"
+					set_equipment_fraction = 0.6
+					set_stability = 0.32
+					set_war_support = 0.97
+					set_cosmetic_tag = DCM
+					set_party_name = {
+						ideology = neutrality
+						long_name = DCD_MacArthur_Party_long
+						name = DCD_MacArthur_Party
+					}
+					every_owned_state = {
+						add_core_of = DCD
+					}
+				}
+				random_other_country = {
+					limit = {
+						original_tag = DCD
+						has_government = neutrality
+					}
+					load_focus_tree = {
+						tree = dc_focus_democratic
+						keep_completed = yes
+					}
+					set_country_flag = DCD_divine_right
+					load_oob = "DC_monarchist_civ_war_VAV"
+					set_equipment_fraction = 0.5
+					set_stability = 0.24
+					set_war_support = 0.8
+					set_cosmetic_tag = DMF
+					set_party_name = {
+						ideology = neutrality
+						long_name = DCD_monarchist_party_long
+						name = DCD_monarchist_party
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					MDM = {
+						is_subject_of = DCD
+					}
+				}
+				DCD = {
+					annex_country = {
+						target = MDM
+						transfer_troops = yes
+					}
+					start_civil_war = {
+						ideology = neutrality
+						size = 0.5
+						states = {
+							243
+							27
+							240
+              239
+						}
+					}
+					load_oob = "DC_military_civ_war_MDM"					#Always player/original country
+					set_equipment_fraction = 0.6
+					set_stability = 0.32
+					set_war_support = 0.97
+					set_cosmetic_tag = DCM
+					set_party_name = {
+						ideology = neutrality
+						long_name = DCD_MacArthur_Party_long
+						name = DCD_MacArthur_Party
+					}
+					every_owned_state = {
+						add_core_of = DCD
+					}
+				}
+				random_other_country = {
+					limit = {
+						original_tag = DCD
+						has_government = neutrality
+					}
+					load_focus_tree = {
+						tree = dc_focus_democratic
+						keep_completed = yes
+					}
+					set_country_flag = DCD_divine_right
+					load_oob = "DC_monarchist_civ_war_MDM"					#Always opposition
+					set_equipment_fraction = 0.5
+					set_stability = 0.24
+					set_war_support = 0.8
+					set_cosmetic_tag = DMF
+					set_party_name = {
+						ideology = neutrality
+						long_name = DCD_monarchist_party_long
+						name = DCD_monarchist_party
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = dc.18.b
+		set_country_flag = DCD_divine_right
+		hidden_effect = {
+			if = {
+				limit = {
+					VAV = {
+						is_subject_of = DCD
+					}
+				}
+				DCD = {
+					annex_country = {
+						target = VAV
+						transfer_troops = yes
+					}
+					start_civil_war = {
+						ideology = neutrality
+						size = 0.5
+						states = {
+							900
+							28
+							255
+							256
+							257
+							250
+							254
+							252
+							253
+						}
+					}
+					load_oob = "DC_military_civ_war_VAV"
+					set_equipment_fraction = 0.6
+					set_stability = 0.32
+					set_war_support = 0.97
+					set_cosmetic_tag = DMF
+					set_party_name = {
+						ideology = neutrality
+						long_name = DCD_monarchist_party_long
+						name = DCD_monarchist_party
+					}
+					every_owned_state = {
+						add_core_of = DCD
+					}
+				}
+				random_other_country = {
+					limit = {
+						original_tag = DCD
+						has_government = neutrality
+					}
+					load_focus_tree = {
+						tree = dc_focus_democratic
+						keep_completed = yes
+					}
+					set_country_flag = DCD_military_rule
+					load_oob = "DC_monarchist_civ_war_VAV"
+					set_equipment_fraction = 0.5
+					set_stability = 0.24
+					set_war_support = 0.8
+					set_cosmetic_tag = DCM
+					set_party_name = {
+						ideology = neutrality
+						long_name = DCD_MacArthur_Party_long
+						name = DCD_MacArthur_Party
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					MDM = {
+						is_subject_of = DCD
+					}
+				}
+				DCD = {
+					annex_country = {
+						target = MDM
+						transfer_troops = yes
+					}
+					start_civil_war = {
+						ideology = neutrality
+						size = 0.5
+						states = {
+							361
+							1067
+							1068
+						}
+					}
+					load_oob = "DC_military_civ_war_MDM"					#Always player/original country
+					set_equipment_fraction = 0.6
+					set_stability = 0.32
+					set_war_support = 0.97
+					set_cosmetic_tag = DMF
+					set_party_name = {
+						ideology = neutrality
+						long_name = DCD_monarchist_party_long
+						name = DCD_monarchist_party
+					}
+					every_owned_state = {
+						add_core_of = DCD
+					}
+				}
+				random_other_country = {
+					limit = {
+						original_tag = DCD
+						has_government = neutrality
+					}
+					load_focus_tree = {
+						tree = dc_focus_democratic
+						keep_completed = yes
+					}
+					set_country_flag = DCD_military_rule
+					load_oob = "DC_monarchist_civ_war_MDM"					#Always opposition
+					set_equipment_fraction = 0.5
+					set_stability = 0.24
+					set_war_support = 0.8
+					set_cosmetic_tag = DCM
+					set_party_name = {
+						ideology = neutrality
+						long_name = DCD_MacArthur_Party_long
+						name = DCD_MacArthur_Party
+					}
+				}
+			}
+		}
+	}
 }
-country_event = { #Choose the Successor
-  id = dc.19
-  title = dc.19.t
-  desc = dc.19
 
-  is_triggered_only = yes
-
-  option = {
-    name = dc.19.a
-    set_country_flag = DCD_prussian_scheme
-    create_country_leader = {
-      name = "Wilhelm II von Hohenzollern"
-      picture = "Portrait_DCD_Wilhelm_II.dds"
-      ideology = despotism
-      expire = "1941.6.4"
-    }
-    complete_national_focus = DCD_Prussian_Scheme
-  }
-  option = {
-    name = dc.19.b
-    create_country_leader = {
-      name = "Spotswood Washington"
-      picture = "Portrait_DCD_Spotswood_Washington.dds"
-      ideology = centrism
-      expire = "1948.1.1"
-    }
-    complete_national_focus = DCD_Washington_Monarchy
-  }
+country_event = {
+	#Choose the Successor
+	id = dc.19
+	title = dc.19.t
+	desc = dc.19
+	is_triggered_only = yes
+	option = {
+		name = dc.19.a
+		set_country_flag = DCD_prussian_scheme
+		create_country_leader = {
+			name = "Wilhelm II von Hohenzollern"
+			picture = "Portrait_DCD_Wilhelm_II.dds"
+			ideology = despotism
+			expire = "1941.6.4"
+		}
+		complete_national_focus = DCD_Prussian_Scheme
+	}
+	option = {
+		name = dc.19.b
+		create_country_leader = {
+			name = "Spotswood Washington"
+			picture = "Portrait_DCD_Spotswood_Washington.dds"
+			ideology = centrism
+			expire = "1948.1.1"
+		}
+		complete_national_focus = DCD_Washington_Monarchy
+	}
 }
-country_event = { #Absolute or Constitutional
-  id = dc.20
-  title = dc.20.t
-  desc = dc.20.d
 
-  is_triggered_only = yes
-
-  option = {
-    name = dc.20.a
-    complete_national_focus = DCD_grab_the_reigns
-  }
-  option = {
-    name = dc.20.b
-    complete_national_focus = DCD_follow_bloodline_foundation
-  }
+country_event = {
+	#Absolute or Constitutional
+	id = dc.20
+	title = dc.20.t
+	desc = dc.20.d
+	is_triggered_only = yes
+	option = {
+		name = dc.20.a
+		complete_national_focus = DCD_grab_the_reigns
+	}
+	option = {
+		name = dc.20.b
+		complete_national_focus = DCD_follow_bloodline_foundation
+	}
 }
 
 ##########################################
 ###        CONTINENTAL CONGRESS        ###
 ##########################################
-
 #Beginning of Continental Congress
 country_event = {
-  id = continental_congress.1
-  title = continental_congress.1.t
-  desc = continental_congress.1.d
-
-  is_triggered_only = yes
-
-  option = {
-    name = continental_congress.1.a
-    hidden_effect = {
-      MEM = {
-        country_event = {
-          id = continental_congress.2
-          days = 1
-          random_days = 40
-        }
-      }
-      MAM = {
-        country_event = {
-          id = continental_congress.2
-          days = 1
-          random_days = 40
-        }
-      }
-      NHN = {
-        country_event = {
-          id = continental_congress.2
-          days = 1
-          random_days = 40
-        }
-      }
-      RIR = {
-        country_event = {
-          id = continental_congress.2
-          days = 1
-          random_days = 40
-        }
-      }
-      CTC = {
-        country_event = {
-          id = continental_congress.2
-          days = 1
-          random_days = 40
-        }
-      }
-      NYN = {
-        country_event = {
-          id = continental_congress.2
-          days = 1
-          random_days = 40
-        }
-      }
-      NJN = {
-        country_event = {
-          id = continental_congress.2
-          days = 1
-          random_days = 40
-        }
-      }
-      PAP = {
-        country_event = {
-          id = continental_congress.2
-          days = 1
-          random_days = 40
-        }
-      }
-      DED = {
-        country_event = {
-          id = continental_congress.2
-          days = 1
-          random_days = 40
-        }
-      }
-      MDM = {
-        country_event = {
-          id = continental_congress.2
-          days = 1
-          random_days = 40
-        }
-      }
-      VAV = {
-        country_event = {
-          id = continental_congress.2
-          days = 1
-          random_days = 40
-        }
-      }
-      NCN = {
-        country_event = {
-          id = continental_congress.2
-          days = 1
-          random_days = 40
-        }
-      }
-      SCS = {
-        country_event = {
-          id = continental_congress.2
-          days = 1
-          random_days = 40
-        }
-      }
-      GAG = {
-        country_event = {
-          id = continental_congress.2
-          days = 1
-          random_days = 40
-        }
-      }
-      country_event = {
-        id = continental_congress.5
-        days = 45
-    }
-    }
-  }
+	id = continental_congress.1
+	title = continental_congress.1.t
+	desc = continental_congress.1.d
+	is_triggered_only = yes
+	option = {
+		name = continental_congress.1.a
+		hidden_effect = {
+			MEM = {
+				country_event = {
+					id = continental_congress.2
+					days = 1
+					random_days = 40
+				}
+			}
+			MAM = {
+				country_event = {
+					id = continental_congress.2
+					days = 1
+					random_days = 40
+				}
+			}
+			NHN = {
+				country_event = {
+					id = continental_congress.2
+					days = 1
+					random_days = 40
+				}
+			}
+			RIR = {
+				country_event = {
+					id = continental_congress.2
+					days = 1
+					random_days = 40
+				}
+			}
+			CTC = {
+				country_event = {
+					id = continental_congress.2
+					days = 1
+					random_days = 40
+				}
+			}
+			NYN = {
+				country_event = {
+					id = continental_congress.2
+					days = 1
+					random_days = 40
+				}
+			}
+			NJN = {
+				country_event = {
+					id = continental_congress.2
+					days = 1
+					random_days = 40
+				}
+			}
+			PAP = {
+				country_event = {
+					id = continental_congress.2
+					days = 1
+					random_days = 40
+				}
+			}
+			DED = {
+				country_event = {
+					id = continental_congress.2
+					days = 1
+					random_days = 40
+				}
+			}
+			MDM = {
+				country_event = {
+					id = continental_congress.2
+					days = 1
+					random_days = 40
+				}
+			}
+			VAV = {
+				country_event = {
+					id = continental_congress.2
+					days = 1
+					random_days = 40
+				}
+			}
+			NCN = {
+				country_event = {
+					id = continental_congress.2
+					days = 1
+					random_days = 40
+				}
+			}
+			SCS = {
+				country_event = {
+					id = continental_congress.2
+					days = 1
+					random_days = 40
+				}
+			}
+			GAG = {
+				country_event = {
+					id = continental_congress.2
+					days = 1
+					random_days = 40
+				}
+			}
+			country_event = {
+				id = continental_congress.5
+				days = 45
+			}
+		}
+	}
 }
+
 #State's Invitation to the Congress
 country_event = {
-  id = continental_congress.2
-  title = continental_congress.2.t
-  desc = continental_congress.2.d
-
-  is_triggered_only = yes
-
-  option = { #State chooses to attend
-    name = continental_congress.2.a
-    ai_chance = {
-      base = 0  
-      modifier = {
-        is_in_faction_with = DCD
-        factor = 100
-      }
-      modifier = {
-        is_guaranteed_by = DCD
-        factor = 1
-      }
-      modifier = {
-        is_puppet_of = DCD
-        factor = 100
-      }
-      modifier = {
-        has_opinion = {
-          target = DCD
-          value > 50
-        }
-        factor = 1
-      }
-      factor = 1
-    }
-    add_to_array = { global.contcon_voters = ROOT }
-    ROOT = {
-      set_country_flag = attending_cc
-      add_opinion_modifier = {
-        target = DCD
-        modifier = DCD_attended_cc
-      }
-    }
-    DCD = {
-      country_event = continental_congress.3
-      add_opinion_modifier = {
-        target = ROOT
-        modifier = DCD_attended_cc
-      }
-    }
-  }
-  option = { #State declines invitation
-    name = continental_congress.2.b
-    ai_chance = {
-      base = 0
+	id = continental_congress.2
+	title = continental_congress.2.t
+	desc = continental_congress.2.d
+	is_triggered_only = yes
+	option = {
+		#State chooses to attend
+		name = continental_congress.2.a
+		ai_chance = {
+			base = 0
+			modifier = {
+				is_in_faction_with = DCD
+				factor = 100
+			}
+			modifier = {
+				is_guaranteed_by = DCD
+				factor = 20
+			}
+			modifier = {
+				is_puppet_of = DCD
+				factor = 100
+			}
+			modifier = {
+				has_opinion = {
+					target = DCD
+					value > 50
+				}
+				factor = 10
+			}
       modifier = {
         has_opinion = {
           target = DCD
-          value < 50
-        }
-        factor = 1
-      }
-      modifier = {
-        is_major = yes
-        factor = 1
-      }
-      modifier = {
-        has_war_with = DCD
-        factor = 100
-      }
-      modifier = {
-        OR = {
-          has_government = fascism
-          has_government = communism
+          value > 100
         }
         factor = 20
       }
-    }
-    DCD = {
-      country_event = continental_congress.4
-      add_opinion_modifier = {
-        target = ROOT
-        modifier = DCD_refused_cc
+		}
+		add_to_array = {
+			global.contcon_voters = ROOT
+		}
+		ROOT = {
+			set_country_flag = attending_cc
+			add_opinion_modifier = {
+				target = DCD
+				modifier = DCD_attended_cc
+			}
+		}
+		DCD = {
+			country_event = continental_congress.3
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = DCD_attended_cc
+			}
+		}
+	}
+	option = {
+		#State declines invitation
+		name = continental_congress.2.b
+		ai_chance = {
+			base = 0
+			modifier = {
+				has_opinion = {
+					target = DCD
+					value < 50
+				}
+				factor = 10
+			}
+      modifier = {
+        has_opinion = {
+          target = DCD
+          value < 0
+        }
+        factor = 20
       }
-    }
-  }
+			modifier = {
+				is_major = yes
+				factor = 5
+			}
+			modifier = {
+				has_war_with = DCD
+				factor = 100
+			}
+			modifier = {
+				OR = {
+					has_government = fascism
+					has_government = communism
+				}
+				factor = 20
+			}
+		}
+		DCD = {
+			country_event = continental_congress.4
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = DCD_refused_cc
+			}
+		}
+	}
 }
+
 #State Accepts Invite
 country_event = {
-  id = continental_congress.3
-  title = continental_congress.3.t
-  desc = continental_congress.3.d
-
-  is_triggered_only = yes
-
-  option = {
-    name = continental_congress.3.a
-  }
+	id = continental_congress.3
+	title = continental_congress.3.t
+	desc = continental_congress.3.d
+	is_triggered_only = yes
+	option = {
+		name = continental_congress.3.a
+	}
 }
+
 #State Declines Invite
 country_event = {
-  id = continental_congress.4
-  title = continental_congress.4.t
-  desc = continental_congress.4.d
-
-  is_triggered_only = yes
-
-  option = {
-    name = continental_congress.4.a
-  }
+	id = continental_congress.4
+	title = continental_congress.4.t
+	desc = continental_congress.4.d
+	is_triggered_only = yes
+	option = {
+		name = continental_congress.4.a
+	}
 }
+
 #The Congress is Opened
 country_event = {
-  id = continental_congress.5
-  title = continental_congress.5.t
-  desc = continental_congress.5.d
-
-  is_triggered_only = yes
-
-  option = {
-    name = continental_congress.5.a
-    hidden_effect = {
-      set_country_flag = DCD_voting_opened
-    }
-  }
+	id = continental_congress.5
+	title = continental_congress.5.t
+	desc = continental_congress.5.d
+	is_triggered_only = yes
+	option = {
+		name = continental_congress.5.a
+		hidden_effect = {
+			set_country_flag = DCD_voting_opened
+		}
+	}
 }
+
 #The Effects of the Congress
 country_event = {
-  id = continental_congress.6
-  title = continental_congress.6.t
-  desc = continental_congress.6.d
-
-  is_triggered_only = yes
-
-  option = {
-    name = continental_congress.6.a
-    ai_chance = {
-      base = 1
-    }
-    if = {
-      limit = {
-        DCD = {
-          has_country_flag = contcon_military_idea_pending
-        }
-      }
-      add_ideas = DC_military_cooperation_idea
-    }
-    if = {
-      limit = {
-        NOT = {
-          tag = DCD
-        }
-        DCD = {
-          has_country_flag = contcon_federation_pending
-        }
-      }
-      DCD = {
-        set_autonomy = {
-          target = ROOT
-          autonomy_state = autonomy_federal_state
-          freedom_level = 0
-        }
-      }
-    }
-    if = {
-      limit = {
-        DCD = {
-          has_country_flag = contcon_economic_idea_pending
-        }
-      }
-      add_ideas = DC_economic_cooperation_idea
-    }
-    if = {
-      limit = {
-        DCD = {
-          is_faction_leader = yes
-        }
-      }
-      DCD = {
-        add_to_faction = ROOT
-      }
-    }
-  }
-  option = {
-    name = continental_congress.6.b
-    ai_chance = {
-      base = 0
-    }
-    if = {
-      limit = {
-        DCD = {
-          has_country_flag = contcon_federation_pending
-        }
-      }
-      custom_effect_tooltip = DCD_congressional_retaliation_tt
-      hidden_effect = {
-        DCD = {
-          create_wargoal = {
-            target = ROOT
-            type = puppet_wargoal_focus
-          }
-        }
-      }
-    }
-  }
+	id = continental_congress.6
+	title = continental_congress.6.t
+	desc = continental_congress.6.d
+	is_triggered_only = yes
+	option = {
+		name = continental_congress.6.a
+		ai_chance = {
+			base = 1
+		}
+		if = { #Military Collaboration Accepted
+			limit = {
+				DCD = {
+					has_country_flag = contcon_military_idea_pending
+				}
+			}
+			add_ideas = DC_military_cooperation_idea
+		}
+		if = { #Federation Accepted
+			limit = {
+				NOT = {
+					tag = DCD
+				}
+				DCD = {
+					has_country_flag = contcon_federation_pending
+				}
+			}
+			DCD = {
+				set_autonomy = {
+					target = ROOT
+					autonomy_state = autonomy_federal_state
+					freedom_level = 0
+				}
+			}
+		}
+		if = { #Economic Collaboration Accepted
+			limit = {
+				DCD = {
+					has_country_flag = contcon_economic_idea_pending
+				}
+			}
+			add_ideas = DC_economic_cooperation_idea
+		}
+		if = { #Faction Accepted
+			limit = {
+				DCD = {
+					is_faction_leader = yes
+				}
+			}
+			DCD = {
+				add_to_faction = ROOT
+			}
+		}
+	}
+	option = {
+		name = continental_congress.6.b
+		ai_chance = {
+			base = 0
+		}
+		if = { #Federation Was Accepted - Back Out
+			limit = {
+				DCD = {
+					has_country_flag = contcon_federation_pending
+				}
+			}
+			custom_effect_tooltip = DCD_congressional_retaliation_tt
+			hidden_effect = {
+				DCD = {
+					create_wargoal = {
+						target = ROOT
+						type = puppet_wargoal_focus
+					}
+				}
+			}
+		}
+	}
 }

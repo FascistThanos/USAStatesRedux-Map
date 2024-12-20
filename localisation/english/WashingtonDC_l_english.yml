@@ -39,7 +39,8 @@ DCD_loyalist_fervor_idea:0 "Loyalist Fervor"
 DCD_american_english_unity_idea:0 "Proclaimation of American-English Unity"
 DCD_reunite_the_colonies_idea:0 "The Experiment Resurgent"
 DCD_infiltrate_their_government_idea:0 "Monarchist Support Surges"
-
+USA_armed_forces_desegregation:0 "Armed Forces Desegregation"
+USA_womens_armed_service_integration_act:0 "Women in the Armed Forces"
 
 
 ##Focuses
@@ -114,7 +115,7 @@ DCD_call_to_arms:0 "A Call to Arms!"
 DCD_call_to_arms_desc:0 "Our situation is dire, but we must not forget our place in the world, the American Experiment is for the people, of the people, and by the people. We will keep this in mind as well as remind the others of it as we progress through these turbulent times."
 
 #Democratic Tree
-DCD_liberty_prevails:0 "Liberty Always Prevails!"
+DCD_liberty_prevails:0 "Liberty Prevails!"
 DCD_liberty_prevails_desc:0 "So long as Washington D.C. remains dedicated to freedom and liberty, it shall shine as a beacon in the world. However, first, that beacon must illuminate her immediate neighbors and bring back hope and faith in democracy to their populations. We will stand once more for Life, Liberty, and the Pursuit of Happiness."
 DCD_Famed13:0 "The Famed 13"
 DCD_Famed13_desc:0 "The American Experiment, Dream, and Republic all began with the Thirteen. As such, the American Recovery will do so as well. The time has come for Capitol Hill to shine upon them and their constituents, and so the District of Columbia will reach out to them each."
@@ -394,7 +395,7 @@ dc.20.b:0 "The duty of the state is to serve the people."
 
 #Decisions
 dc_continental_congress:0 "The Continental Congress"
-dc_continental_congress_desc:0 "The Third Continental Congress is now underway with delegates being invited from New Hampshire, Massachusetts, Maine, Rhode Island, Connecticut, New York, New Jersey, Pennsylvania, Delaware, Maryland, Virginia, North Carolina, and South Carolina. Each voting period is 50 days, abstained votes do not count unless there is a tie, in which they will be counted as a no vote. Each treaty has a different effect at the end of the Congress. \n\n\nCurrent Attendees:\n[DCD_continental_voter1][DCD_continental_voter2][DCD_continental_voter3][DCD_continental_voter4][DCD_continental_voter5][DCD_continental_voter6][DCD_continental_voter7][DCD_continental_voter8][DCD_continental_voter9][DCD_continental_voter10][DCD_continental_voter11][DCD_continental_voter12][DCD_continental_voter13]\n\nThe Current Treaty on the floor is:  [DCD_current_vote]\n\nYes Votes: §G[?global.contcon_yes_votes]§!\nAbstentions: §Y[?global.contcon_abstain_votes]§!\nNo Votes: §R[?global.contcon_no_votes]§!\n\n[DCD_econ_policy]\n[DCD_mil_policy]\n[DCD_faction_policy]\n[DCD_political_policy]"
+dc_continental_congress_desc:0 "The Third Continental Congress is now underway with delegates being invited from New Hampshire, Massachusetts, Maine, Rhode Island, Connecticut, New York, New Jersey, Pennsylvania, Delaware, Maryland, Virginia, North Carolina, and South Carolina. Each voting period is 30 days, abstained votes do not count unless there is a tie, in which they will be counted as a no vote. Each treaty has a different effect at the end of the Congress. \n\n\nCurrent Attendees:\n[DCD_continental_voter1][DCD_continental_voter2][DCD_continental_voter3][DCD_continental_voter4][DCD_continental_voter5][DCD_continental_voter6][DCD_continental_voter7][DCD_continental_voter8][DCD_continental_voter9][DCD_continental_voter10][DCD_continental_voter11][DCD_continental_voter12][DCD_continental_voter13]\n\nThe Current Treaty on the floor is:  [DCD_current_vote]\n\nYes Votes: §G[?global.contcon_yes_votes]§!\nAbstentions: §Y[?global.contcon_abstain_votes]§!\nNo Votes: §R[?global.contcon_no_votes]§!\n\n[DCD_econ_policy]\n[DCD_mil_policy]\n[DCD_faction_policy]\n[DCD_political_policy]"
 contcon_economic:0 "Continental Congress Vote on Economic Policy"
 contcon_military:0 "Continental Congress Vote on Military Policy"
 contcon_faction:0 "Continental Congress Vote on Mutual Defense"
@@ -558,9 +559,14 @@ DCD_monarchist_party:0 "Monarchist Party"
 DCD_monarchist_party_long:0 "Washington D.C. Divine Right Party"
 
 #Cosmetic Tags
-DCM_neutrality:0 "Washington D.C. Military Governance"
+DCF_democratic:0 "Confederation of American States"
+DCF_DEF:0 "the Confederation of American States"
+DCF_democratic_ADJ:0 "American"
+DCF:0 "Washington D.C."
+DCM_neutrality:0 "Washington D.C. Military Government"
 DCM_nutrality_ADJ:0 "American"
-DCM_neutrality_DEF:0 "the Washington D.C. Military Governance"
+DCM_neutrality_DEF:0 "the Washington D.C. Military Government"
+MIL_neutrality:0 "Military Occupation Zone of $NONIDEOLOGY$"
 DMF_neutrality:0 "Washington D.C. Monarchist Forces"
 DMF_neutrality_ADJ:0 "American"
 DMF_neutrality_DEF:0 "the Washington D.C. Monarchist Forces"

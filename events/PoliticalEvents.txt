@@ -1350,6 +1350,9 @@ country_event = {
 		is_subject = no
 		has_civil_war = yes
 		NOT = { has_country_flag = ENG_communist_civil_war }
+		NOT = {
+			tag = DCD
+		}
 		any_other_country = {
 			NOT = { tag = ROOT }
 			original_tag = ROOT

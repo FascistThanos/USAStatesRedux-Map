@@ -44,3 +44,156 @@ news_event = {
     trigger = { TAG = CAC }
   }
 }
+# D.C. State of the Union
+news_event = {
+  id = genericfocusnews.3
+  title = genericfocusnews.3.t
+  desc = genericfocusnews.3.d
+  picture = GFX_news_event_state_of_the_union
+  is_triggered_only = yes
+
+  major = yes
+
+  option = {
+    name = genericfocusnews.3.a
+    trigger = {
+      NOT = {
+        TAG = DCD
+      }
+      AND = {
+        has_government = democratic
+      }
+    }
+  }
+  option = {
+    name = genericfocusnews.3.b
+    trigger = { TAG = DCD }
+  }
+
+  option = {
+    name = genericfocusnews.3.c
+    trigger = {
+      NOT = {
+        TAG = DCD
+      }
+      AND = {
+        has_government = communism
+      }
+    }
+  }
+  option = {
+    name = genericfocusnews.3.e
+    trigger = {
+      NOT = {
+        TAG = DCD
+      }
+      AND = {
+        has_government = fascism
+      }
+    }
+  }
+}
+
+# Battle of Pennsylvania Avenue - Fascist D.C.
+
+news_event = {
+  id = genericfocusnews.4
+  title = genericfocusnews.4.t
+  desc = genericfocusnews.4.d
+  picture = GFX_news_event_whitehouse2
+  is_triggered_only = yes
+
+  major = yes
+
+  option = {
+    name = genericfocusnews.4.a
+    trigger = {
+      TAG = DCD
+    }
+  }
+  option = {
+    name = genericfocusnews.4.b
+    trigger = {
+      NOT = {
+        TAG = DCD
+      }
+      AND = {
+        has_government = communism
+      }
+    }
+  }
+  option = {
+    name = genericfocusnews.4.c
+    trigger = {
+      NOT = {
+        TAG = DCD
+      }
+      AND = {
+        has_government = fascism
+      }
+    }
+  }
+  option = {
+    name = genericfocusnews.4.e
+    trigger = {
+      NOT = {
+        TAG = DCD
+      }
+      AND = {
+        has_government = democratic
+      }
+    }
+  }
+}
+
+# Storm Capitol Hill - D.C. Communism
+
+news_event = {
+  id = genericfocusnews.5
+  title = genericfocusnews.5.t
+  desc = genericfocusnews.5.d
+  picture = GFX_news_event_dccapitol
+  is_triggered_only = yes
+
+  major = yes
+
+  option = {
+    name = genericfocusnews.5.a
+    trigger = {
+      TAG = DCD
+    }
+  }
+  option = {
+    name = genericfocusnews.5.b
+    trigger = {
+      NOT = {
+        TAG = DCD
+      }
+      AND = {
+        has_government = communism
+      }
+    }
+  }
+  option = {
+    name = genericfocusnews.5.c
+    trigger = {
+      NOT = {
+        TAG = DCD
+      }
+      AND = {
+        has_government = fascism
+      }
+    }
+  }
+  option = {
+    name = genericfocusnews.5.e
+    trigger = {
+      NOT = {
+        TAG = DCD
+      }
+      AND = {
+        has_government = democratic
+      }
+    }
+  }
+}

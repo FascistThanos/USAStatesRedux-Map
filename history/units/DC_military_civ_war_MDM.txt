@@ -24,63 +24,63 @@ division_template = {
 units = {
   division = {
     name = "Civilian Militia"
-    location = 13811
+    location = 10811
     division_template = "Civilian Militia"
     start_experience_factor = 0.25
     start_equipment_factor = 0.5
   }
   division = {
     name = "Civilian Militia"
-    location = 13811
+    location = 2679
     division_template = "Civilian Militia"
     start_experience_factor = 0.25
     start_equipment_factor = 0.5
   }
   division = {
     name = "Civilian Militia"
-    location = 13811
+    location = 10829
     division_template = "Civilian Militia"
     start_experience_factor = 0.25
     start_equipment_factor = 0.5
   }
   division = {
     name = "Civilian Militia"
-    location = 3957
+    location = 10836
     division_template = "Civilian Militia"
     start_experience_factor = 0.25
     start_equipment_factor = 0.5
   }
   division = {
     name = "Civilian Militia"
-    location = 3957
+    location = 10833
     division_template = "Civilian Militia"
     start_experience_factor = 0.25
     start_equipment_factor = 0.5
   }
   division = {
     name = "Civilian Militia"
-    location = 3957
+    location = 10811
     division_template = "Civilian Militia"
     start_experience_factor = 0.25
     start_equipment_factor = 0.5
   }
   division = {
     name = "Civilian Militia"
-    location = 13805
+    location = 10829
     division_template = "Civilian Militia"
     start_experience_factor = 0.25
     start_equipment_factor = 0.5
   }
   division = {
     name = "Civilian Militia"
-    location = 13805
+    location = 10836
     division_template = "Civilian Militia"
     start_experience_factor = 0.25
     start_equipment_factor = 0.5
   }
   division = {
     name = "Civilian Militia"
-    location = 13805
+    location = 10833
     division_template = "Civilian Militia"
     start_experience_factor = 0.25
     start_equipment_factor = 0.5

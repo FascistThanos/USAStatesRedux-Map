@@ -2,7 +2,7 @@
 
 oob = "DCD_1936"
 
-set_research_slots = 4
+set_research_slots = 3
 
 
 # Starting tech
@@ -71,7 +71,7 @@ add_ideas = {
 	DC_leased_land_idea
 }
 set_convoys = 100
-set_stability = 0.6
+set_stability = 0.24
 
 set_politics = {
 
@@ -81,9 +81,9 @@ set_politics = {
 	elections_allowed = yes
 }
 set_popularities = {
-	democratic = 98
-	communism = 1
-	fascism = 1
+	democratic = 50
+	communism = 26
+	fascism = 24
 }
 
 create_country_leader = {
