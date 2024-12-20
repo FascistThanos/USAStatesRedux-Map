@@ -30,8 +30,8 @@ NDiplomacy = {
 	BASE_SURRENDER_LEVEL = 1.0,						-- Surrender when level reached. valid 0-1
 	MAX_TRUST_VALUE = 100,							-- Max trust value cap.
 	MIN_TRUST_VALUE = -100,							-- Min trust value cap.
-	MAX_OPINION_VALUE = 100,						-- Max opinion value cap.
-	MIN_OPINION_VALUE = -100,						-- Min opinion value cap.
+	MAX_OPINION_VALUE = 300,						-- Max opinion value cap.
+	MIN_OPINION_VALUE = -150,						-- Min opinion value cap.
 	BASE_TRUCE_PERIOD = 180,						-- Base truce period in days.
 	TRUCE_PERIOD_AFTER_KICKING_FROM_FACTION = 60,				-- Truce period after kicking someone from faction in days.
 	NUM_DAYS_TO_ENABLE_KICKING_NEW_MEMBERS_OF_FACTION = 90,			-- Number of days before being able to kick a new member of faction
@@ -78,13 +78,13 @@ NDiplomacy = {
 	--   if distance is between [NEUTRAL_DIST, MAX_DIST], we lerp the cost modifier between [1.0, MAX_DIST_COST_MODIFIER]
 	-- The below values represent (pixel distance / INFLUENCE_DISTANCE_DIVISOR)
 	INFLUENCE_NEUTRAL_DIST_CAPITAL = 30.0,           -- distance to capital that results in a cost modifier of 1.0
-	INFLUENCE_MAX_DIST_CAPITAL = 45.0,              -- distance to capital that results in a cost modifier of INFLUENCE_MAX_DIST_COST_MODIFIER
+	INFLUENCE_MAX_DIST_CAPITAL = 35.0,              -- distance to capital that results in a cost modifier of INFLUENCE_MAX_DIST_COST_MODIFIER
 	INFLUENCE_NEUTRAL_DIST_CORE = 6.0,              -- distance to nearest core state that results in a cost modifier of 1.0
 	INFLUENCE_MAX_DIST_CORE = 13.0,                 -- distance to nearest core state that results in a cost modifier of INFLUENCE_MAX_DIST_COST_MODIFIER
 	INFLUENCE_NEUTRAL_DIST_CONTROLLED = 14.0,       -- distance to nearest controlled state that results in a cost modifier of 1.0
 	INFLUENCE_MAX_DIST_CONTROLLED = 20.0,           -- distance to nearest controlled state that results in a cost modifier of INFLUENCE_MAX_DIST_COST_MODIFIER
 	INFLUENCE_MIN_DIST_COST_MODIFIER = 0.70,        -- Cost modifier at min (zero) distance
-	INFLUENCE_MAX_DIST_COST_MODIFIER = 1.00,         -- Cost modifier at max distance
+	INFLUENCE_MAX_DIST_COST_MODIFIER = 5.00,         -- Cost modifier at max distance
 	INFLUENCE_RATIO_CAPITAL = 0.05,                  -- Ratio of influence based on distance to capital
 	INFLUENCE_RATIO_CORE = 0.45,                     -- Ratio of influence based on distance to nearest core territory
 	INFLUENCE_RATIO_CONTROLLED = 0.5,               -- Ratio of influence based on distance to neared controlled territory (including uncontested peace conference bids)
