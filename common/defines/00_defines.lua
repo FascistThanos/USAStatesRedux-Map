@@ -173,12 +173,12 @@ NDiplomacy = {
 	PEACE_SCORE_RESET_LOW_SCORE_THRESHOLD = 0.05,			-- Winners with less than this ratio of war participation will give all their score to other players
 	PEACE_SCORE_RESET_LOW_SCORE_MINIMUM_FOR_RECEIVER = 0.1, -- Disable the previous, if no winner has at least this ratio of war participation
 
-	PEACE_SCORE_SCALE_FACTOR = 1.35,                -- Losers' total value times this factor becomes the default total peace conference score that is distributed to the winners.
+	PEACE_SCORE_SCALE_FACTOR = 1.4,                -- Losers' total value times this factor becomes the default total peace conference score that is distributed to the winners.
 
 	PEACE_SCORE_MINOR_BOOST_FRACTION = 0.05,        -- Low-scoring winners are boosted by receiving more of their score earlier. This value, multiplied by the total score distributed this turn, is the minimum score they will receive (up until their total allocated score).
 	-- Example: If 2000 score is distributed to winners this turn and this value is set to 0.05, each winner will receive a minimum of 100 score (clamped by the max score they will receive over the cource of the conference).
 
-	PEACE_SCORE_DISTRIBUTION = { 0.2, 0.2, 0.2, 0.2, 0.2 }, -- How much of the total peace conference score you get during the first n turns.
+	PEACE_SCORE_DISTRIBUTION = { 1.0 }, -- How much of the total peace conference score you get during the first n turns.
 	-- More explanation of the peace score distribution above:
 	-- {1.0} would give you all the score on the first turn.
 	-- {0.5, 0.5, 0.5} would give you 50 % of the total score on each of the first three turns (in this case resulting in receiving 150 % of the total score).
@@ -2795,9 +2795,9 @@ NAI = {
 	DECISION_PRIORITY_RANDOMIZER = 0.1,					-- random factor that is used while picking decisions. ai is able to pick a lower priority decision earler than a higher one if it is within this threshold
 
 	DESIGN_COMPANY_SCORE_MULTIPLIER = 1.25,             -- score multiplier for hiring a design company
-	ARMY_CHIEF_SCORE_MULTIPLIER = 1.0,                  -- score multiplier for hiring an army chief
-	AIR_CHIEF_SCORE_MULTIPLIER = 1.0,                   -- score multiplier for hiring an air chief
-	NAVY_CHIEF_SCORE_MULTIPLIER = 1.0,                  -- score multiplier for hiring an navy chief
+	ARMY_CHIEF_SCORE_MULTIPLIER = 20.0,                  -- score multiplier for hiring an army chief
+	AIR_CHIEF_SCORE_MULTIPLIER = 20.0,                   -- score multiplier for hiring an air chief
+	NAVY_CHIEF_SCORE_MULTIPLIER = 20.0,                  -- score multiplier for hiring an navy chief
 	POLITICAL_ADVISOR_SCORE_MULTIPLIER = 1.25,          -- score multiplier for hiring political advisors
 	THEORIST_ACCEPTANCE_MULTIPLIER = 0.7,						-- scale the acceptance of hiring a theorist by this number times the amount of non-theorists we have, capped at one.
 	MIN_SCALED_IDEA_WEIGHT_TO_COMPARE_WITH_DECISIONS = 100,		-- idea scores are scaled between these two values while comparing them to decisions

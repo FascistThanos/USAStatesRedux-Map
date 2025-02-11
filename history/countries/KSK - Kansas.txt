@@ -70,7 +70,7 @@ add_ideas = {
 
 recruit_character = KSK_alf_landon
 recruit_character = KSK_earl_browder
-recruit_character = KSK_burton_winrod
+#recruit_character = KSK_burton_winrod ##making an issue possibly, for no assigned political party
 
 set_politics = {
 

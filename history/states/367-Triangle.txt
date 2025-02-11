@@ -7,6 +7,11 @@ state={
 			infrastructure = 4
 			industrial_complex = 3
 			arms_factory = 1
+			
+			6148 = {
+				# Fort Bragg
+				land_facility = 1
+			}
 		}
 		victory_points = {
 			6082 5

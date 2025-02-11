@@ -466,7 +466,7 @@ every_possible_country = {
 		token_base = generic_army_chief_off # token will be TAG_token_base
 		advisor = {
 			slot = army_chief
-			traits = { army_chief_offensive_1 }
+			traits = { army_chief_offensive_2 }
 			cost = 50
 		}
 		portraits = { 
@@ -477,7 +477,7 @@ every_possible_country = {
 		token_base = generic_army_chief_def # token will be TAG_token_base
 		advisor = {
 			slot = army_chief
-			traits = { army_chief_defensive_1 }
+			traits = { army_chief_defensive_2 }
 			cost = 50
 		}
 		portraits = { 
@@ -499,8 +499,9 @@ every_possible_country = {
 	generate_character = {
 		token_base = generic_navy_anti_submarine # token will be TAG_token_base
 		advisor = {
-			slot = navy_chief
+			slot = high_command
 			traits = { navy_anti_submarine_2 }
+			ledger = navy
 			cost = 50
 		}
 		portraits = { 
@@ -511,8 +512,9 @@ every_possible_country = {
 	generate_character = {
 		token_base = generic_air_close_air_sup # token will be TAG_token_base
 		advisor = {
-			slot = air_chief
+			slot = high_command
 			traits = { air_close_air_support_2 }
+			ledger = air
 			cost = 50
 		}
 		portraits = { 
@@ -525,6 +527,11 @@ every_possible_country = {
 			slot = air_chief
 			traits = { air_chief_all_weather_2 }
 			cost = 50
+
+			
+			ai_will_do = {
+				factor = 10
+			}
 		}
 		portraits = { 
 			army = { small = GFX_idea_generic_air_chief_all_weather }

@@ -1,0 +1,11 @@
+
+strategic_region={
+	id=130
+	name="Curacao and Aruba"
+	provinces={
+		8224 8226 8227 8959 11624 11625 11626 
+	}
+	naval_terrain=water_fjords
+	weather={
+	}
+}

@@ -1,0 +1,116 @@
+##Riptide USA States Redux 1.15 Update notes##
+
+#-Changed mod folder/descriptor/mod file to all be titled "USA States Redux Dev Build" from various names
+#-Removed the following Folders/Files to allow native vanilla files to keep the game in line with the current base version:			  ## Many files are now out of date or redundant
+#	-Common:
+#		-abilities (whole folder)
+#		-ai_equipment (whole folder)
+#		-ai_strategy (whole folder)
+#		-ai_templates (whole folder)
+#		-autonomous_states (whole folder)
+#		-buildings (whole folder)
+#		-country_leader
+#			-00_traits
+#		-country_tags
+#			-00_countries (removed all from file except USA)
+#		-decisions
+#			-_generic_decisions
+#			-stability_war_support		## resource_prospecting is empty, may need future adjustment (moved into new "replace" subfolder for now to prevent basegame override)
+#		-dynamic_modifiers (whole folder; replaced with base game folder copy)
+#		-peace_conferences (whole folder)
+#		-units
+#			-equipment (whole folder)
+#	-GFX:
+#		-entities (whole folder)
+#		-interface
+#			-buildings (whole folder)
+#			-equipmentdesigner (whole folder)
+#			-stateview (whole folder)
+#			-models (whole folder)
+#			-train_gfx_database (whole folder)
+#	-interface
+#		-all_technologies.gfx
+#		-countrystateview.gfx
+#		-countrystateview.gui
+#		-frontendmainview.gui
+#		-frontendgamesetupview.gui
+
+##Descriptor has replace paths commented out for some of the ones above
+## Added in common/buildings/02_lock_buildings.txt for Niagara Locks
+## Added some air bases to get the AI to use the air chief for XP
+## Changes 00_defines.lua so that all peace score is given on the first turn, and increased hiring priority of chiefs of staff
+
+
+
+# Files/Folders that may need future editing to either bring them in line with the current game or just to make them work:
+#	-common
+#		-defines (whole folder?)
+#		-equipment_groups
+#		-ideas (all non-specific country files)
+#		-military_industrial_organization
+#		-modifiers (whole folder)
+#		-scripted effects
+#		-terrain
+
+
+## Followed guide to edit files:
+# common/ideas/_economic.txt to add an if statement
+# added common/raids from base game for air and nuclear
+# removed map/rocketsites.txt and map/airports.txt
+# replaced the following in building.txt:
+#	-rocket_site with rocket_site_spawn
+#	-nuclear_reactor with nuclear_reactor_spawn
+#	-naval_base with naval_base_spawn
+# added in buildings.txt:
+#	-special_project_facility_spawn
+#	-dam_spawn
+#	-stronghold_network
+#	-locks_spawn
+#	-landmark_spawn
+# added in history/states:
+#	-201: New York City:
+#		-naval_facility
+#		-landmark_statue_of_liberty
+# replaced zzz_generic in common/ideas to include new special projects (and re-added Azores idea)
+
+
+########################
+### PUBLIC CHANGELOG ###
+########################
+
+### Features ###
+# Updated to 1.15
+# Added Special Project Facilites on the map:
+	# Naval Engineering Facility in Lower New York City
+	# Naval Engineering Facility in Washington DC
+	# Aerodynamics and Avionics Facility in Greater Bridgeport
+	# Land Warfare Facility in Sandhills
+	# Land Warfare Facility in Cross Timbers & Prairies
+# Added a Dam outside of Las Vegas
+# Added a Dam in Niagra, NY
+# Added Canal Locks in Niagara, NY; Gatun Locks; and Panama Canal Zone
+# Added a new minimap
+
+### Balance ###
+# Added a level 3 railway connecting Havana to the port in the next province
+# Added a level 1 railway from Hudson Valley to Upper New York City
+# Officers in High Command no longer provide XP
+# Chiefs of Staff now provide the correct amount of XP
+# Added a bunch of air bases across the map
+
+### Bugfixes ###
+# Planes will now correctly fly to different airbases when ordered; their speed has been fixed (they fly now)
+# War Support & Stability Decisions will now correctly appear
+# Closed Economy can now be accessed on partial mobilization if all other requirements are met
+# Peace conference score will no longer fail to accumulate over successive turns; instead, all score will be given on the first turn
+
+### AI ###
+# General AI army and construction behavior improvements
+# AI will better research planes and their modules
+# AI will better research tanks and their modules
+# AI will design better tanks and aircraft
+# Updated AI peace conference behavior
+# Integrated the new facilities with the AI; they will actively use and build facilities and hire scientists
+
+TODO:
+-test Michigan upper peninsula glitch reported on discord (tested, could not replicate)

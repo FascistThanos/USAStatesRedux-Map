@@ -12,6 +12,16 @@ state={
 			11711 = {
 				naval_base = 10
 			}
+			10893 = {
+				# Brooklyn Navy Yard
+				naval_facility = 1
+			}
+			landmark_statue_of_liberty = {
+				level = 1
+				allowed = {
+					has_dlc = "Gotterdammerung"
+				}
+			}
 		}
 		victory_points = {
 			10904 50

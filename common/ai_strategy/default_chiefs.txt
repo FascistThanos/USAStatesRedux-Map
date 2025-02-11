@@ -1,0 +1,26 @@
+### Only edited to include a priority to hire chiefs of staff. Originally copied over for 1.15
+
+chief_of_staff_pp_spend_priority = {
+	enable = {
+		always = yes
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = pp_spend_priority
+		id = army_chief
+		value = 100
+	}
+
+	ai_strategy = {
+		type = pp_spend_priority
+		id = air_chief
+		value = 100
+	}
+
+	ai_strategy = {
+		type = pp_spend_priority
+		id = navy_chief
+		value = 100
+	}
+}
