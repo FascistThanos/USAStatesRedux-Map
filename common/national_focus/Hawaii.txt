@@ -530,10 +530,14 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			puppet = JAJ
-			puppet = LIL
-			puppet = MWM
-			puppet = WKW
+			create_wargoal = {
+				type = annex_everything
+				target = BCS
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = BCA
+			}
 		}
 	}
 	focus = {
@@ -558,10 +562,10 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			annex_country = { target = JAJ transfer_troops = yes }
-			annex_country = { target = LIL transfer_troops = yes }
-			annex_country = { target = MWM transfer_troops = yes }
-			annex_country = { target = WKW transfer_troops = yes }
+			create_wargoal = {
+				type = annex_everything
+				target = SON
+			}
 		}
 	}
 
@@ -968,15 +972,11 @@ focus_tree = {
 		completion_reward = {
 			create_wargoal = {
 				type = annex_everything
-				target = JAJ
+				target = BCB
 			}
 			create_wargoal = {
 				type = annex_everything
-				target = MWM
-			}
-			create_wargoal = {
-				type = annex_everything
-				target = LIL
+				target = AKA
 			}
 		}
 	}
@@ -1032,15 +1032,7 @@ focus_tree = {
 		completion_reward = {
 			create_wargoal = {
 				type = annex_everything
-				target = PIP
-			}
-			create_wargoal = {
-				type = annex_everything
-				target = ASA
-			}
-			create_wargoal = {
-				type = annex_everything
-				target = WKW
+				target = YTY
 			}
 		}
 	}
@@ -1442,9 +1434,10 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			create_wargoal = { type = puppet_wargoal_focus target = JAJ }
-			create_wargoal = { type = puppet_wargoal_focus target = LIL }
-			create_wargoal = { type = puppet_wargoal_focus target = MWM }
+			create_wargoal = {
+				type = annex_everything
+				target = CAC
+			}
 		}
 	}
 	focus = {
