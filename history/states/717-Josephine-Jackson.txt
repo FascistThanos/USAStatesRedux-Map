@@ -1,6 +1,9 @@
 state={
 	id=717
 	name="Josephine-Jackson"
+	resources = {
+		chromium = 25
+	}
 	history={
 		owner = ORO
 		buildings = {

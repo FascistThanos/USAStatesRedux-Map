@@ -1,6 +1,9 @@
 state={
 	id=667
 	name="Southern Highlands"
+	resources = {
+		chromium = 19
+	}
 	history={
 		owner = AZA
 		buildings = {

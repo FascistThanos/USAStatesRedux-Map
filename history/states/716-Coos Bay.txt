@@ -2,6 +2,9 @@
 state={
 	id=716
 	name="Coos Bay"
+	resources = {
+		chromium = 17
+	}
 
 	history={
 		owner = ORO

@@ -1,6 +1,9 @@
 state={
 	id=567
 	name="Cross Timbers & Prairies"
+	resources = {
+		chromium = 3
+	}
 	history = {
 		owner = TXT
 		buildings = {

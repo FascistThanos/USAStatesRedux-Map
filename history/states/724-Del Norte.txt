@@ -1,6 +1,9 @@
 state={
 	id=724
 	name="Del Norte"
+	resources = {
+		chromium = 12
+	}
 	history={
 		owner = CAC
 		buildings = {

@@ -2,6 +2,9 @@
 state={
 	id=615
 	name="Sweetwater"
+	resources = {
+		chromium = 4
+	}
 
 	history={
 		owner = WYW

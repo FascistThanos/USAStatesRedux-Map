@@ -3,6 +3,7 @@ state={
 	name="Latah"
 	resources = {
 		tungsten = 44
+		chromium = 13
 	}
 	history = {
 		owner = IDI

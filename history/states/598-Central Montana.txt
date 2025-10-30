@@ -2,6 +2,9 @@
 state={
 	id=598
 	name="Central Montana"
+	resources = {
+		chromium = 7
+	}
 
 	history={
 		owner = MTM

@@ -1,6 +1,9 @@
 state={
 	id=524
 	name="Cheyenne River"
+	resources = {
+		chromium = 12
+	}
 	history={
 		owner = SDS
 		buildings = {

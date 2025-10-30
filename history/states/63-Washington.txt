@@ -2,6 +2,9 @@
 state={
 	id=63
 	name="Olympic Peninsula"
+	resources = {
+		chromium = 11
+	}
 
 	history={
 		owner = WAW

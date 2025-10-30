@@ -1,6 +1,9 @@
 state={
 	id=452
 	name="Timberlands"
+		resources = {
+		aluminum = 153
+
 	history={
 		owner = ARA
 		buildings = {

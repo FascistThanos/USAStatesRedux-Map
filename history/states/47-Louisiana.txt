@@ -2,6 +2,9 @@
 state={
 	id=47
 	name="Sportsman's Paradise"
+	resources = {
+		chromium = 9
+	}
 
 	history={
 		owner = LAL

@@ -3,6 +3,7 @@ state={
 	name="Lemhi"
 	resources = {
 		tungsten = 107
+		chromium = 14
 	}
 	history={
 		owner = IDI

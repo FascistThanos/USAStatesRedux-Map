@@ -1,6 +1,9 @@
 state={
 	id=441
 	name="Florida Parishes"
+	resources = {
+		chromium = 3
+	}
 	history={
 		owner = LAL
 		buildings = {

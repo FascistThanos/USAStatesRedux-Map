@@ -2,6 +2,9 @@
 state={
 	id=56
 	name="Yellowstone National Park"
+	resources = {
+		chromium = 19
+	}
 
 	history={
 		owner = WYW

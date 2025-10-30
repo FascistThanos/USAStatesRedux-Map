@@ -1,6 +1,9 @@
 state={
 	id=585
 	name="Hill Country"
+	resources = {
+		chromium = 7
+	}
 	history = {
 		owner = TXT
 		buildings = {

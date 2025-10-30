@@ -2,6 +2,9 @@
 state={
 	id=53
 	name="Standing Rock"
+	resources = {
+		chromium = 6
+	}
 
 	history={
 		owner = NDN

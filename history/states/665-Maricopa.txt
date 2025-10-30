@@ -4,6 +4,7 @@ state={
 	name="Maricopa"
 	resources = {
 		steel = 15
+		chromium = 7
 	}
 	history={
 		owner = AZA

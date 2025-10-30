@@ -1,6 +1,9 @@
 state={
 	id=734
 	name="Greater Bay Area"
+	resources = {
+		chromium = 12
+	}
 	history={
 		owner = CAC
 		buildings = {

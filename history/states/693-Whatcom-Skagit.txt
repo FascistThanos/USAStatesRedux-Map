@@ -2,6 +2,9 @@
 state={
 	id=693
 	name="Whatcom-Skagit"
+	resources = {
+		chromium = 17
+	}
 
 	history={
 		owner = WAW

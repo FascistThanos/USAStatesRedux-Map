@@ -3,6 +3,7 @@ state={
 	name="Black Range"
 	resources = {
 		tungsten = 71
+		chromium = 11
 	}
 	history={
 		owner = NMN
