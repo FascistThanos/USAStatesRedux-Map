@@ -3,6 +3,7 @@ state={
 	name="Socorro"
 	resources = {
 		tungsten = 146
+		steel = 14
 	}
 	history={
 		owner = NMN

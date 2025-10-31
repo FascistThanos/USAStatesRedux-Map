@@ -2,6 +2,9 @@
 state={
 	id=301
 	name="Kalamazoo"
+	resources = {
+		steel = 24
+	}
 
 	history={
 		owner = MIM

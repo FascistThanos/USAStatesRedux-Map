@@ -2,6 +2,9 @@
 state={
 	id=299
 	name="Greater Lansing Metro"
+	resources = {
+		steel = 61
+	}
 
 	history={
 		owner = MIM

@@ -1,6 +1,10 @@
 state={
 	id=401
 	name="Northwestern Alabama"
+	resources = {
+		aluminium = 61
+		steel = 43
+	}
 	history={
 		owner = ALA
 		buildings = {

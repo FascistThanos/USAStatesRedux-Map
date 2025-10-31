@@ -2,6 +2,9 @@
 state={
 	id=336
 	name="Pennyrile"
+	resources = {
+		steel = 41
+	}
 
 	history={
 		owner = KYK

@@ -2,6 +2,9 @@
 state={
 	id=265
 	name="Mountain Lakes"
+	resources = {
+		steel = 104
+	}
 
 	history={
 		owner = WVW

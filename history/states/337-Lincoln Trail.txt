@@ -1,6 +1,9 @@
 state={
 	id=337
 	name="Lincoln Trail"
+	resources = {
+		steel = 31
+	}
 	history={
 		owner = KYK
 		buildings = {

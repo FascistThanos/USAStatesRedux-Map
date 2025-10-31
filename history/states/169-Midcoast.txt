@@ -1,6 +1,9 @@
 state={
 	id=169
 	name="Midcoast"
+	resources = {
+		steel = 4
+	}
 	history={
 		owner = MEM
 		buildings = {

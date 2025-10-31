@@ -2,6 +2,9 @@
 state={
 	id=303
 	name="Grand"
+	resources = {
+		steel = 46
+	}
 
 	history={
 		owner = MIM

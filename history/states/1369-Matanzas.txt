@@ -2,7 +2,7 @@ state={
 	id=1369
 	name="Matanzas"
 	resources = {
-		chromium = 44
+		chromium = 13
 	}
 	history={
 		owner = CUB

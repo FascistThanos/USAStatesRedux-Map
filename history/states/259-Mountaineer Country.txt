@@ -2,6 +2,9 @@
 state={
 	id=259
 	name="Mountaineer Country"
+	resources = {
+		steel = 57
+	}
 
 	history={
 		owner = WVW

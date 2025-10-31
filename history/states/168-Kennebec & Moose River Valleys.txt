@@ -1,6 +1,9 @@
 state={
 	id=168
 	name="Kennebec & Moose Rivery Valleys"
+	resources = {
+		chromium = 7
+	}
 	history={
 		owner = MEM
 		buildings = {

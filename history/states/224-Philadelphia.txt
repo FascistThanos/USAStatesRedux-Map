@@ -1,6 +1,9 @@
 state={
 	id=224
 	name="Philadelphia"
+	resources = {
+		chromium = 9
+	}
 	history={
 		owner = PAP
 		buildings = {

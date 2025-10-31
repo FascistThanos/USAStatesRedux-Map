@@ -1,6 +1,9 @@
 state={
 	id=324
 	name="Rockford"
+	resources = {
+		steel = 19
+	}
 	history={
 		owner = ILI
 		buildings = {

@@ -2,6 +2,10 @@
 state={
 	id=176
 	name="Champlain Valley"
+	resources = {
+		steel = 11
+		chromium = 3
+	}
 
 	history={
 		owner = VTV

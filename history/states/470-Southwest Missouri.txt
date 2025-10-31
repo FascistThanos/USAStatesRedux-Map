@@ -1,6 +1,9 @@
 state={
 	id=470
 	name="Southwest Missouri"
+	resources = {
+		steel = 11
+	}
 	history={
 		owner = MOM
 		buildings = {

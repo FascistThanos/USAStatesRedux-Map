@@ -2,6 +2,9 @@
 state={
 	id=32
 	name="Southern Indiana"
+	resources = {
+		steel = 27
+	}
 
 	history={
 		owner = INI

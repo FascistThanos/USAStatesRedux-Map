@@ -3,7 +3,7 @@ state={
 	id=202
 	name="Hudson Valley"
 	resources = {
-		steel = 40
+		steel = 26
 	}
 	history={
 		owner = NYN

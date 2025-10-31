@@ -1,6 +1,9 @@
 state={
 	id=383
 	name="Coosa"
+	resources = {
+		aluminium = 98
+	}
 	history={
 		owner = GAG
 		buildings = {

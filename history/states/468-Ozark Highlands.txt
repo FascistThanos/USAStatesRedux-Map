@@ -2,6 +2,9 @@
 state={
 	id=468
 	name="Ozark Highlands"
+	resources = {
+		steel = 6
+	}
 
 	history={
 		owner = MOM

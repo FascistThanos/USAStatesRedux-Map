@@ -1,6 +1,9 @@
 state={
 	id=328
 	name="Starved Rock"
+	resources = {
+		steel = 20
+	}
 	history={
 		owner = ILI
 		buildings = {

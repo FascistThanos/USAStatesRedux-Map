@@ -1,6 +1,9 @@
 state={
 	id=382
 	name="Historic High Country"
+	resources = {
+		aluminium = 82
+	}
 	history={
 		owner = GAG
 		buildings = {

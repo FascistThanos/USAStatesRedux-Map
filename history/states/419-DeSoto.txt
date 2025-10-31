@@ -1,6 +1,9 @@
 state={
 	id=419
 	name="Desoto"
+	resources = {
+		aluminium = 36
+	}
 	history={
 		owner = MSM
 		buildings = {

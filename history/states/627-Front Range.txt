@@ -3,6 +3,7 @@ state={
 	name="Front Range"
 	resources = {
 		tungsten = 78
+		steel = 21
 	}
 	history={
 		owner = COC

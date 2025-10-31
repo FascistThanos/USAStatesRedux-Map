@@ -1,7 +1,10 @@
 
 state={
 	id=175
-	name="Monadock"
+	name="Monadnock"
+	resources = {
+		steel = 14
+	}
 
 	history={
 		owner = NHN

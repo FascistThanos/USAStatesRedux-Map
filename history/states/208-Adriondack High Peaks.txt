@@ -2,7 +2,7 @@ state={
 	id=208
 	name="Adriondack High Peaks"
 	resources = {
-		steel = 80
+		steel = 30
 	}
 	history={
 		owner = NYN

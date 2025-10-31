@@ -1,6 +1,9 @@
 state={
 	id=398
 	name="Madison-Jackson"
+	resources = {
+		steel = 31
+	}
 	history={
 		owner = ALA
 		buildings = {

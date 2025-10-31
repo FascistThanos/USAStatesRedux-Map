@@ -2,10 +2,10 @@
 state={
 	id=715
 	name="Tillamook"
-	resources = {
+resources = {
+		steel = 37
 		chromium = 18
 	}
-
 	history={
 		owner = ORO
 		buildings = {

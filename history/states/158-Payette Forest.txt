@@ -4,6 +4,7 @@ state={
 	name="Payette Forest"
 	resources = {
 		tungsten = 178
+		steel = 19
 	}
 	history={
 		owner = IDI

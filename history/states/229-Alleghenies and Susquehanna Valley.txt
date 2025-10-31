@@ -2,7 +2,7 @@ state={
 	id=229
 	name="Alleghenies & Susquehanna Valley"
 	resources = {
-		steel = 76
+		steel = 41
 	}
 	history={
 		owner = PAP

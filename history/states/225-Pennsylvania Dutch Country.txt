@@ -2,7 +2,7 @@ state={
 	id=225
 	name="Pennsylvania Dutch Country"
 	resources = {
-		steel = 61
+		steel = 38
 	}
 	history={
 		owner = PAP

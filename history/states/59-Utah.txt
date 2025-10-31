@@ -2,7 +2,9 @@
 state={
 	id=59
 	name="Wasatch"
-
+	resources = {
+		steel = 26
+	}
 	history={
 		owner = UTU
 		buildings = {

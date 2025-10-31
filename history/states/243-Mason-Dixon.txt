@@ -1,6 +1,10 @@
 state={
 	id=243
 	name="Mason-Dixon"
+	resources = {
+		steel = 29
+		chromium = 13
+	}
 	history={
 		owner = MDM
 		buildings = {

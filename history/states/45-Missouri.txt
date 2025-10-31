@@ -1,6 +1,9 @@
 state={
 	id=45
 	name="North Platte"
+	resources = {
+		steel = 2
+	}
 
 	history={
 		owner = MOM

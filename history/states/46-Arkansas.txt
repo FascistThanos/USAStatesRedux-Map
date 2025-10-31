@@ -2,7 +2,9 @@
 state={
 	id=46
 	name="Arkansas River Delta"
-
+resources = {
+		aluminium = 95
+	}
 	history={
 		owner = ARA
 		buildings = {

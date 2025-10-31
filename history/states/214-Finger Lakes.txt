@@ -3,7 +3,7 @@ state={
 	id=214
 	name="Finger Lakes"
 	resources = {
-		steel = 37
+		steel = 24
 	}
 	history={
 		owner = NYN

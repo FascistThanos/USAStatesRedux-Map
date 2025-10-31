@@ -3,6 +3,7 @@ state={
 	name="Pikes Peak Wonders"
 	resources = {
 		tungsten = 32
+		steel = 29
 	}
 	history={
 		owner = COC

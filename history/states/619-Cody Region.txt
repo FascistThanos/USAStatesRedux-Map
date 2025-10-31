@@ -1,6 +1,9 @@
 state={
 	id=619
 	name="Cody Region"
+	resources = {
+		steel = 15
+	}
 	history={
 		owner = WYW
 		buildings = {

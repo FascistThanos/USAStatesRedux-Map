@@ -3,6 +3,7 @@ state={
 	name="Basin and Range"
 	resources = {
 		tungsten = 10
+		steel = 6
 	}
 	history={
 		owner = UTU

@@ -1,6 +1,9 @@
 state={
 	id=333
 	name="Kaskaskia"
+	resources = {
+		steel = 19
+	}
 	history={
 		owner = ILI
 		buildings = {

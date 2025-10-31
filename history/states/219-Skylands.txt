@@ -2,7 +2,7 @@ state={
 	id=219
 	name="Skylands"
 	resources = {
-		steel = 99
+		steel = 31
 	}
 	history={
 		owner = NJN

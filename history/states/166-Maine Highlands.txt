@@ -1,6 +1,9 @@
 state={
 	id=166
 	name="Maine Highlands"
+	resources = {
+		chromium = 20
+	}
 	history={
 		owner = MEM
 		buildings = {

@@ -1,6 +1,9 @@
 state={
 	id=457
 	name="Arkansas River Valley"
+	resources = {
+		aluminium = 132
+	}
 	history={
 		owner = ARA
 		buildings = {

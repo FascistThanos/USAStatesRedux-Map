@@ -2,6 +2,9 @@
 state={
 	id=179
 	name="Rutland-Windsor"
+	resources = {
+		steel = 16
+	}
 
 	history={
 		owner = VTV

@@ -1,6 +1,9 @@
 state={
 	id=261
 	name="Greenbrier Valley"
+	resources = {
+		steel = 89
+	}
 	history={
 		owner = WVW
 		buildings = {

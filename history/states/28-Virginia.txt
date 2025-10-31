@@ -2,6 +2,9 @@
 state={
 	id=28
 	name="Heart of Appalachia"
+	resources = {
+		steel = 39
+	}
 
 	history={
 		owner = VAV

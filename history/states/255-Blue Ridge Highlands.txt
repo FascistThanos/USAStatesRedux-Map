@@ -1,6 +1,9 @@
 state={
 	id=255
 	name="Blue Ridge Highlands"
+	resources = {
+		steel = 29
+	}
 	history={
 		owner = VAV
 		buildings = {

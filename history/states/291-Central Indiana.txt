@@ -2,6 +2,9 @@
 state={
 	id=291
 	name="Boone"
+	resources = {
+		steel = 49
+	}
 
 	history={
 		owner = INI

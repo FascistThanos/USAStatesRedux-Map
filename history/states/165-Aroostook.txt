@@ -3,6 +3,7 @@ state={
 	name="Aroostook"
 	resources = {
 		steel = 20
+		chromium = 16
 	}
 	history={
 		owner = MEM

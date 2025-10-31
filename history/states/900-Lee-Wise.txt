@@ -1,6 +1,10 @@
 state={
 	id=900
 	name="Lee-Wise"
+	resources = {
+		aluminium = 41
+		steel = 48
+	}
 	history={
 		owner = VAV
 		buildings = {

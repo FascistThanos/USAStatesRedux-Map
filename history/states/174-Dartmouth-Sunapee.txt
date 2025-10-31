@@ -2,6 +2,9 @@
 state={
 	id=174
 	name="Dartmouth-Sunapee"
+	resources = {
+		steel = 6
+	}
 
 	history={
 		owner = NHN

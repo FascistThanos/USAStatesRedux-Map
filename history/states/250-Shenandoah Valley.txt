@@ -1,6 +1,10 @@
 state={
 	id=250
 	name="Shenandoah Valley"
+	resources = {
+		aluminium = 38
+		steel = 37
+	}
 	history={
 		owner = VAV
 		buildings = {

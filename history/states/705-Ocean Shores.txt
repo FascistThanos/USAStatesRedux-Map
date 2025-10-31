@@ -1,6 +1,9 @@
 state={
 	id=705
 	name="Ocean Shores"
+	resources = {
+		steel = 18
+	}
 	history={
 		owner = WAW
 		buildings = {

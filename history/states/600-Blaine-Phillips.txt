@@ -1,6 +1,9 @@
 state={
 	id=600
 	name="Blaine-Phillips"
+	resources = {
+		steel = 17
+	}
 	history={
 		owner = MTM
 		buildings = {

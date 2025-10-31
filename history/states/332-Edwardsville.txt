@@ -1,6 +1,9 @@
 state={
 	id=332
 	name="Edwardsville"
+	resources = {
+		steel = 39
+	}
 	history={
 		owner = ILI
 		buildings = {
