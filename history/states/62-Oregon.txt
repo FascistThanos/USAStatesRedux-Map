@@ -2,10 +2,10 @@
 state={
 	id=62
 	name="Harney-Malheur"
-	resources = {
+resources = {
+		steel = 15
 		chromium = 5
 	}
-
 	history={
 		owner = ORO
 		buildings = {
