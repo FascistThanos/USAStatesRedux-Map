@@ -4,9 +4,9 @@ state={
 	history={
 		owner = NJN
 		buildings = {
-			infrastructure = 5
-			industrial_complex = 10
-			arms_factory = 3
+			infrastructure = 3
+			industrial_complex = 3
+			arms_factory = 1
 		}
 		add_core_of = NJN
 

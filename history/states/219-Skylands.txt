@@ -7,9 +7,9 @@ state={
 	history={
 		owner = NJN
 		buildings = {
-			infrastructure = 4
-			industrial_complex = 9
-			arms_factory = 4
+			infrastructure = 3
+			industrial_complex = 3
+			arms_factory = 1
 		}
 		victory_points = {
 			5393 25

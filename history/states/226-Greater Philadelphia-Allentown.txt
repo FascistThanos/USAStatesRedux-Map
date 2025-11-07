@@ -7,8 +7,9 @@ state={
 	history={
 		owner = PAP
 		buildings = {
-			infrastructure = 5
-			industrial_complex = 12
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 2
 		}
 		victory_points = {
 			3300 15

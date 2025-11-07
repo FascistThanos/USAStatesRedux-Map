@@ -4,9 +4,9 @@ state={
 	history={
 		owner = NYN
 		buildings = {
-			infrastructure = 5
-			industrial_complex = 10
-			arms_factory = 4
+			infrastructure = 3
+			industrial_complex = 3
+			arms_factory = 1
 			# Niagara Dam & Locks
 			11100 = { 
 				dam = 1 
