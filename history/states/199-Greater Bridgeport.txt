@@ -16,6 +16,12 @@ state={
 				# Sikorsky
 				air_facility = 1
 			}
+			10938 = {
+             bunker = 6
+            }
+			3173 = {
+             bunker = 6
+            }
 		}
 		victory_points = {
 			10938 10

@@ -10,7 +10,13 @@ state={
 		owner = VTV
 		buildings = {
 			infrastructure = 3
-
+			11890 = {
+             bunker = 6
+            }
+			11048 = {
+             bunker = 6
+            }
+			
 		}
 		victory_points = {
 			11909 15

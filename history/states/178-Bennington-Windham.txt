@@ -7,6 +7,9 @@ state={
 		owner = VTV
 		buildings = {
 			infrastructure = 3
+			11856 = {
+             bunker = 6
+            }
 
 		}
 		victory_points = {
