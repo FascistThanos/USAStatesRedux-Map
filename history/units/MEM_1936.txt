@@ -47,15 +47,32 @@ division_template = {
 	support = {
 		engineer = { x = 0 y = 0 }
 	}
-	priority = 0
+	priority = 2
 }
 units = {
 	# I Army Corps #
 	division= {			
 		name = "1st Mainer National Guard"		
 		location = 11132
-		division_template = "Infantry Division"
+		division_template = "Garrison Brigade"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
+		start_equipment_factor = 0.8
+		start_manpower_factor = 1
+	}
+	division= {			
+		name = "2nd Mainer National Guard"		
+		location = 11132
+		division_template = "Garrison Brigade"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+		start_manpower_factor = 1
+	}
+	division= {			
+		name = "3rd Mainer National Guard"		
+		location = 11132
+		division_template = "Garrison Brigade"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+		start_manpower_factor = 1
 	}
 }

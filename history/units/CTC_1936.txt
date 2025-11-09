@@ -47,36 +47,40 @@ division_template = {
 	support = {
 		engineer = { x = 0 y = 0 }
 	}
-	priority = 0
+	priority = 2
 }
 units = {
 	# I Army Corps #
 	division= {			
 		name = "1st Connecticuter National Guard"		
 		location = 10981
-		division_template = "Infantry Division"
+		division_template = "Garrison Brigade"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 1
+		start_manpower_factor = 1
 	}
 	division= {			
 		name = "2nd Connecticuter National Guard"		
 		location = 11736
-		division_template = "Infantry Division"
+		division_template = "Garrison Brigade"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 1
+		start_manpower_factor = 1
 	}
 	division= {			
 		name = "3rd Connecticuter National Guard"		
 		location = 11739
-		division_template = "Infantry Division"
+		division_template = "Garrison Brigade"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 1
+		start_manpower_factor = 1
 	}
 	division= {			
 		name = "4th Connecticuter National Guard"		
 		location = 10938
-		division_template = "Infantry Division"
+		division_template = "Garrison Brigade"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 1
+		start_manpower_factor = 1
 	}
 }

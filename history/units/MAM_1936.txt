@@ -47,50 +47,55 @@ division_template = {
 	support = {
 		engineer = { x = 0 y = 0 }
 	}
-	priority = 0
+	priority = 2
 }
 units = {
 	# I Army Corps #
 	division= {			
 		name = "1st Massachusettsan National Guard"		
 		location = 11050
-		division_template = "Infantry Division"
+		division_template = "Garrison Brigade"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1
+		start_manpower_factor = 1
 	}
 	division= {			
 		name = "2nd Massachusettsan National Guard"		
 		location = 5176
-		division_template = "Infantry Division"
+		division_template = "Garrison Brigade"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1
+		start_manpower_factor = 1
 	}
 	division= {			
 		name = "3rd Massachusettsan National Guard"		
 		location = 11820
-		division_template = "Infantry Division"
+		division_template = "Garrison Brigade"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1
 	}
 	division= {			
 		name = "4th Massachusettsan National Guard"		
 		location = 11019
-		division_template = "Infantry Division"
+		division_template = "Garrison Brigade"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
+		start_equipment_factor = 1
+		start_manpower_factor = 1
 	}
 	division= {			
 		name = "5th Massachusettsan National Guard"		
 		location = 11020
-		division_template = "Infantry Division"
+		division_template = "Garrison Brigade"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
+		start_equipment_factor = 1
+		start_manpower_factor = 1
 	}
 	division= {			
 		name = "6th Massachusettsan National Guard"		
 		location = 11777
-		division_template = "Infantry Division"
+		division_template = "Garrison Brigade"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
+		start_equipment_factor = 1
+		start_manpower_factor = 1
 	}
 }

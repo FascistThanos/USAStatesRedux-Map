@@ -121,7 +121,7 @@ division_template = {
 			y = 0
 		}
 	}
-	priority = 0
+	priority = 2
 }
 
 units = {
@@ -130,8 +130,25 @@ units = {
 	division = {
 		name = "1st Vermonter National Guard"
 		location = 11163
-		division_template = "Infantry Division"
+		division_template = "Garrison Brigade"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.8
+		start_manpower_factor = 1
+	}
+	division = {
+		name = "2nd Vermonter National Guard"
+		location = 11163
+		division_template = "Garrison Brigade"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+		start_manpower_factor = 1
+	}
+	division = {
+		name = "3rd Vermonter National Guard"
+		location = 11163
+		division_template = "Garrison Brigade"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+		start_manpower_factor = 1
 	}
 }
