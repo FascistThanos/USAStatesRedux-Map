@@ -57,21 +57,24 @@ units = {
 		location = 11208 # Montreal
 		division_template = "Infantry Division" 
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 1
+		start_manpower_factor = 1
 	}
 	division= {	
 		name = "1st Régiment"
 		location = 11200 # Montreal
 		division_template = "Cavalry Division" 
 		start_experience_factor = 1.0
-		start_equipment_factor = 0.7
+		start_equipment_factor = 1
+		start_manpower_factor = 1
 	}
 	division= {	
 		name = "32nd Régiment"
 		location = 11202 # Montreal
 		division_template = "Cavalry Division" 
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.2
+		start_equipment_factor = 1
+		start_manpower_factor = 1
 	}
 	## 5th Miltary District ##
 	division= {	
@@ -79,6 +82,23 @@ units = {
 		location = 3654 # Quebec City
 		division_template = "Infantry Division" 
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 1
+		start_manpower_factor = 1
+	}
+	division= {	
+		name = "2nd Guard"
+		location = 11208 # Montreal
+		division_template = "Infantry Division" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+		start_manpower_factor = 1
+	}
+	division= {	
+		name = "3rd Guard"
+		location = 11208 # Montreal
+		division_template = "Infantry Division" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+		start_manpower_factor = 1
 	}
 }
