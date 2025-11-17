@@ -15,7 +15,7 @@ focus_tree = {
 		x = 33
 		y = 0
 		ai_will_do = {
-			factor = 10
+			factor = 5
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -893,7 +893,7 @@ focus_tree = {
 			FOCUS_FILTER_INDUSTRY
 		}
 		ai_will_do = {
-			factor = 10
+			factor = 20
 		}
 		completion_reward = {
 			add_tech_bonus = {
@@ -984,7 +984,7 @@ focus_tree = {
 			focus = GEN_develop_civ1
 		}
 		ai_will_do = {
-			factor = 35
+			factor = 11
 		}
 		cost = 10
 		x = 1
