@@ -4,6 +4,7 @@ state={
 	name="Coos Bay"
 	resources = {
 		chromium = 17
+		coal = 4
 	}
 
 	history={

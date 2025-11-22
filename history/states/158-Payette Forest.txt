@@ -5,6 +5,8 @@ state={
 	resources = {
 		tungsten = 178
 		steel = 19
+		coal = 4
+		
 	}
 	history={
 		owner = IDI

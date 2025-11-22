@@ -4,6 +4,7 @@ state={
 	resources = {
 		tungsten = 94
 		steel = 32
+		coal = 4
 	}
 	history={
 		owner = NVN

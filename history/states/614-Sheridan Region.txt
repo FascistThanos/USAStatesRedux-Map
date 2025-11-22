@@ -1,6 +1,9 @@
 state={
 	id=614
 	name="Sheridan Region"
+	resources = {
+		coal = 8
+	}
 	history={
 		owner = WYW
 		buildings = {

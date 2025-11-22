@@ -1,6 +1,9 @@
 state={
 	id=646
 	name="Sangre de Cristo Mountains"
+	resources = {
+		coal = 3
+	}
 	history={
 		owner = NMN
 		buildings = {

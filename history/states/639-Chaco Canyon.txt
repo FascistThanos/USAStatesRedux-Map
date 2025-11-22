@@ -1,6 +1,9 @@
 state={
 	id=639
 	name="Chaco Canyon"
+	resources = {
+		coal = 11
+	}
 	history={
 		owner = NMN
 		buildings = {

@@ -1,6 +1,9 @@
 state={
 	id=680
 	name="Uintah"
+	resources = {
+		coal = 2
+	}
 	history={
 		owner = UTU
 		buildings = {

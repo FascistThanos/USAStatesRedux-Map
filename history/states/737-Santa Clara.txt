@@ -1,6 +1,9 @@
 state={
 	id=737
 	name="Santa Clara"
+	resources = {
+		coal = 3
+	}
 	history={
 		owner = CAC
 		buildings = {

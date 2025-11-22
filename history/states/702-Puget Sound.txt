@@ -2,6 +2,9 @@
 state={
 	id=702
 	name="Puget Sound"
+	resources = {
+		coal = 4
+	}
 
 	history={
 		owner = WAW

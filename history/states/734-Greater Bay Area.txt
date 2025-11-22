@@ -3,6 +3,8 @@ state={
 	name="Greater Bay Area"
 	resources = {
 		chromium = 12
+		coal = 6
+		
 	}
 	history={
 		owner = CAC

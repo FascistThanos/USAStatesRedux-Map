@@ -4,6 +4,7 @@ state={
 	name="Whatcom-Skagit"
 	resources = {
 		chromium = 17
+		coal = 5
 	}
 
 	history={

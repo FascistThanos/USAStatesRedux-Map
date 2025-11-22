@@ -4,6 +4,7 @@ state={
 	name="Wasatch"
 	resources = {
 		steel = 26
+		coal = 3
 	}
 	history={
 		owner = UTU

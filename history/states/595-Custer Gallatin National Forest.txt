@@ -3,6 +3,7 @@ state={
 	name="Custer Gallatin National Forest"
 	resources = {
 		steel = 13
+		coal = 4
 	}
 	history={
 		owner = MTM

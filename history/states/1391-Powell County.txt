@@ -2,7 +2,9 @@
 state={
 	id=1391
 	name="Powell County"
-
+	resources = {
+		coal = 2
+	}
 	history={
 		owner = MTM
 		buildings = {

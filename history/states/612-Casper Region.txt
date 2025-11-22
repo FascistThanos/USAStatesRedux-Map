@@ -3,6 +3,7 @@ state={
 	name="Casper Region"
 	resources = {
 		oil = 21
+		coal = 6
 	}
 	history={
 		owner = WYW

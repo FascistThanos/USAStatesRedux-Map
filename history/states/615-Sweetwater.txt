@@ -4,6 +4,7 @@ state={
 	name="Sweetwater"
 	resources = {
 		chromium = 4
+		coal = 4
 	}
 
 	history={
