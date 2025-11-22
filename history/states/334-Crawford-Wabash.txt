@@ -1,6 +1,9 @@
 state={
 	id=334
 	name="Crawford-Wabash"
+	resources = {
+		coal = 13
+	}
 	history={
 		owner = ILI
 		buildings = {

@@ -3,6 +3,7 @@ state={
 	name="Greater Philadelphia-Allentown"
 	resources = {
 		steel = 34
+		coal = 3
 	}
 	history={
 		owner = PAP

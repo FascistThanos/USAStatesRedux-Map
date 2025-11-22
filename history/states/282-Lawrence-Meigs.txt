@@ -1,6 +1,9 @@
 state={
 	id=282
 	name="Lawrence-Meigs"
+	resources = {
+		coal = 7
+	}
 	history={
 		owner = OHO
 		buildings = {

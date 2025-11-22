@@ -1,6 +1,9 @@
 state={
 	id=339
 	name="Owensboro"
+	resources = {
+		coal = 2
+	}
 	history={
 		owner = KYK
 		buildings = {

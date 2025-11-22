@@ -2,6 +2,9 @@
 state={
 	id=232
 	name="Laurel Highlands"
+	resources = {
+		coal = 6
+	}
 
 	history={
 		owner = PAP

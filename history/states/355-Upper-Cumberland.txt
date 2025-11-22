@@ -3,6 +3,7 @@ state={
 	name="Upper-Cumberland"
 	resources = {
 		steel = 84
+		coal = 14
 	}
 	history={
 		owner = TNT

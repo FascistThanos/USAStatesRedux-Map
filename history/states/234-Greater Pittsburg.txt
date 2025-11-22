@@ -2,6 +2,9 @@
 state={
 	id=234
 	name="Greater Pittsburgh"
+	resources = {
+		coal = 13
+	}
 
 	history={
 		owner = PAP

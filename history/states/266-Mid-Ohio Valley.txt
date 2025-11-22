@@ -1,10 +1,13 @@
 state={
 	id=266
 	name="Mid-Ohio Valley"
+	resources = {
+		coal = 17
+	}
 	history={
 		owner = WVW
 		buildings = {
-			infrastructure = 4
+			infrastructure = 1
 			industrial_complex = 2
 			arms_factory = 1
 		}

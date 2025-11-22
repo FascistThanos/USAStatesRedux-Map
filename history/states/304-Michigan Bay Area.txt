@@ -1,6 +1,9 @@
 state={
 	id=304
 	name="Michigan Bay Area"
+	resources = {
+		coal = 13
+	}
 	history = {
 		owner = MIM
 		add_core_of = MIM

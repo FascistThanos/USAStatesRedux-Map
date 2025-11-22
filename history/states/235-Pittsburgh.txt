@@ -1,6 +1,9 @@
 state={
 	id=235
 	name="Pittsburgh"
+	resources = {
+		coal = 5
+	}
 	history={
 		owner = PAP
 		buildings = {

@@ -4,6 +4,7 @@ state={
 	resources = {
 		aluminium = 61
 		steel = 43
+		coal = 9
 	}
 	history={
 		owner = ALA

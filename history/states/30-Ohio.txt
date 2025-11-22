@@ -4,6 +4,7 @@ state={
 	name="Appalachian Plateau"
 	resources = {
 		steel = 18
+		coal = 14
 	}
 	history={
 		owner = OHO

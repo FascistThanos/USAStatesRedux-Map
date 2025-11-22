@@ -3,6 +3,7 @@ state={
 	name="Triad Area"
 	resources = {
 		chromium = 9
+		coal = 2
 	}
 	history={
 		owner = NCN

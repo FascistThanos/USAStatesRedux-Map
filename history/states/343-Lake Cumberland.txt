@@ -1,6 +1,9 @@
 state={
 	id=343
 	name="Lake Cumberland"
+	resources = {
+		coal = 7
+	}
 	history={
 		owner = KYK
 		buildings = {

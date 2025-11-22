@@ -5,6 +5,7 @@ state={
 		owner = ALA
 		buildings = {
 			infrastructure = 4
+			air_base = 1
 		}
 		victory_points = {
 			6533 10

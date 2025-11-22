@@ -3,6 +3,7 @@ state={
 	name="Historic High Country"
 	resources = {
 		aluminium = 82
+		coal = 2
 	}
 	history={
 		owner = GAG

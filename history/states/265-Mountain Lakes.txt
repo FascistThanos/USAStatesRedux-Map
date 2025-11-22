@@ -4,12 +4,13 @@ state={
 	name="Mountain Lakes"
 	resources = {
 		steel = 104
+		coal = 19
 	}
 
 	history={
 		owner = WVW
 		buildings = {
-			infrastructure = 2
+			infrastructure = 1
 
 		}
 		victory_points = {

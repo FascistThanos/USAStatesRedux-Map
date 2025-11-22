@@ -1,6 +1,8 @@
 state={
 	id=249
-	name="Piedmont"
+	name="Piedmont"resources = {
+		coal = 4
+	}
 	history={
 		owner = VAV
 		buildings = {

@@ -4,6 +4,7 @@ state={
 	name="Ridge and Valley"
 	resources = {
 		steel = 35
+		coal = 2
 	}
 
 	history={

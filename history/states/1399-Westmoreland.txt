@@ -1,6 +1,9 @@
 state={
 	id=1399
 	name="Westmoreland"
+	resources = {
+		coal = 6
+	}
 	history={
 		owner = PAP
 		buildings = {

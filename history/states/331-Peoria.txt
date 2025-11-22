@@ -1,12 +1,16 @@
 state={
 	id=331
 	name="Springfield_IL"
+	resources = {
+		coal = 3
+	}
 	history={
 		owner = ILI
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 6
 			arms_factory = 1
+			air_base = 1
 		}
 		victory_points = {
 			10873 25

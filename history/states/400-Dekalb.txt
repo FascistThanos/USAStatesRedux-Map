@@ -2,6 +2,9 @@
 state={
 	id=400
 	name="Dekalb"
+	resources = {
+		coal = 11
+	}
 
 	history={
 		owner = ALA

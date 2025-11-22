@@ -1,11 +1,15 @@
 state={
 	id=264
 	name="Charleston_WV"
+	resources = {
+		coal = 3
+	}
 	history={
 		owner = WVW
 		buildings = {
-			infrastructure = 4
+			infrastructure = 3
 			industrial_complex = 3
+			air_base = 1
 		}
 		victory_points = {
 			10770 25

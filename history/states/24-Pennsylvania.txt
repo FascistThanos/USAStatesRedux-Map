@@ -2,6 +2,9 @@
 state={
 	id=24
 	name="Greater Erie"
+	resources = {
+		coal = 7
+	}
 
 	history={
 		owner = PAP

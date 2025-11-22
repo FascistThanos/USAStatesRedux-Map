@@ -2,7 +2,9 @@
 state={
 	id=33
 	name="Big Sandy Basin"
-
+	resources = {
+		coal = 21
+	}
 	history={
 		owner = KYK
 		buildings = {

@@ -3,6 +3,7 @@ state={
 	name="Abe Lincoln"
 	resources = {
 		steel = 29
+		coal = 17
 	}
 	history={
 		owner = ILI

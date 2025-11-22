@@ -4,6 +4,7 @@ state={
 	name="Greater Lansing Metro"
 	resources = {
 		steel = 61
+		coal = 11
 	}
 
 	history={

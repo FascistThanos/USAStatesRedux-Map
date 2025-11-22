@@ -1,6 +1,9 @@
 state={
 	id=281
 	name="Franklin-Knox"
+	resources = {
+		coal = 4
+	}
 	history={
 		owner = OHO
 		buildings = {

@@ -3,6 +3,7 @@ state={
 	name="Starved Rock"
 	resources = {
 		steel = 20
+		coal = 12
 	}
 	history={
 		owner = ILI

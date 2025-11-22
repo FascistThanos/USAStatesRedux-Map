@@ -1,10 +1,13 @@
 state={
 	id=268
 	name="Morgantown"
+	resources = {
+		coal = 6
+	}
 	history={
 		owner = WVW
 		buildings = {
-			infrastructure = 3
+			infrastructure = 2
 			industrial_complex = 3
 			arms_factory = 1
 		}

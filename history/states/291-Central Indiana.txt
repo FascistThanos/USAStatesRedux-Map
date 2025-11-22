@@ -4,6 +4,7 @@ state={
 	name="Boone"
 	resources = {
 		steel = 49
+		coal = 9
 	}
 
 	history={

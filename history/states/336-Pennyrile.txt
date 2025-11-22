@@ -4,6 +4,7 @@ state={
 	name="Pennyrile"
 	resources = {
 		steel = 41
+		coal = 9
 	}
 
 	history={

@@ -3,6 +3,7 @@ state={
 	name="Central Illinois Valley"
 	resources = {
 		steel = 37
+		coal = 15
 	}
 	history={
 		owner = ILI

@@ -2,11 +2,13 @@
 state={
 	id=29
 	name="Northern Panhandle"
-
+	resources = {
+		coal = 11
+	}
 	history={
 		owner = WVW
 		buildings = {
-			infrastructure = 3
+			infrastructure = 2
 
 		}
 		victory_points = {

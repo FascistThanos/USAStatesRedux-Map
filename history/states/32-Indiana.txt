@@ -4,6 +4,7 @@ state={
 	name="Southern Indiana"
 	resources = {
 		steel = 27
+		coal = 7
 	}
 
 	history={

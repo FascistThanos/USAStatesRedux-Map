@@ -3,6 +3,7 @@ state={
 	name="Wabash Valley"
 	resources = {
 		steel = 81
+		coal = 15
 	}
 	history={
 		owner = INI

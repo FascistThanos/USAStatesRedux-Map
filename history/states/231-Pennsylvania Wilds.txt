@@ -1,6 +1,9 @@
 state={
 	id=231
 	name="Pennsylvania Wilds"
+	resources = {
+		coal = 6
+	}
 	history={
 		owner = PAP
 		buildings = {

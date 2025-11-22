@@ -1,6 +1,9 @@
 state={
 	id=402
 	name="Birmingham"
+	resources = {
+		coal = 3
+	}
 	history={
 		owner = ALA
 		buildings = {

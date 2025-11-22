@@ -1,6 +1,9 @@
 state={
 	id=356
 	name="South Central Tennessee"
+	resources = {
+		coal = 9
+	}
 	history={
 		owner = TNT
 		buildings = {

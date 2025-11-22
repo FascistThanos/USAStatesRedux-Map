@@ -1,6 +1,9 @@
 state={
 	id=230
 	name="Upstate Pennsylvania"
+	resources = {
+		coal = 2
+	}
 	history={
 		owner = PAP
 		buildings = {
