@@ -1,6 +1,9 @@
 state={
 	id=581
 	name="Rio Grande"
+	resources = {
+		coal = 4
+	}
 	history = {
 		owner = TXT
 		buildings = {

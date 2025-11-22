@@ -1,12 +1,16 @@
 state={
 	id=484
 	name="Des Moines"
+	resources = {
+		coal = 6
+	}
 	history={
 		owner = IAI
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 5
 			arms_factory = 2
+			air_base = 1
 		}
 		add_core_of = IAI
 		victory_points = {

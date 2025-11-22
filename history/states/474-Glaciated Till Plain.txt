@@ -1,6 +1,9 @@
 state={
 	id=474
 	name="Glaciated Till Plain"
+	resources = {
+		coal = 11
+	}
 	history={
 		owner = MOM
 		buildings = {

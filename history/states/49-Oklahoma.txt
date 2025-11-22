@@ -2,6 +2,9 @@
 state={
 	id=49
 	name="Green Country"
+	resources = {
+		coal = 4
+	}
 
 	history={
 		owner = OKO

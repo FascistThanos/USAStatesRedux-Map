@@ -1,6 +1,9 @@
 state={
 	id=620
 	name="Canyons and Plains"
+	resources = {
+		coal = 2
+	}
 	history={
 		owner = COC
 		buildings = {

@@ -3,6 +3,7 @@ state={
 	name="Frontier Country"
 	resources = {
 		oil = 216
+		coal = 6
 	}
 	history={
 		owner = OKO

@@ -3,6 +3,7 @@ state={
 	name="North Platte"
 	resources = {
 		steel = 2
+		coal = 9
 	}
 
 	history={

@@ -1,6 +1,9 @@
 state={
 	id=550
 	name="Flint Hills Uplands"
+	resources = {
+		coal = 3
+	}
 	history={
 		owner = KSK
 		buildings = {

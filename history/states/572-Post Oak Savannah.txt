@@ -1,6 +1,9 @@
 state={
 	id=572
 	name="Post Oak Savannah"
+	resources = {
+		coal = 3 
+	}
 	history = {
 		owner = TXT
 		buildings = {

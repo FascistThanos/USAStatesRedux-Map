@@ -1,6 +1,9 @@
 state={
 	id=480
 	name="Johnson-Washington"
+	resources = {
+		coal = 13
+	}
 	history={
 		owner = IAI
 		buildings = {

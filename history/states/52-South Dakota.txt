@@ -2,6 +2,9 @@
 state={
 	id=52
 	name="Butte"
+	resources = {
+		coal = 2
+	}
 
 	history={
 		owner = SDS

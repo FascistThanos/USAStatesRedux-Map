@@ -2,6 +2,9 @@
 state={
 	id=50
 	name="Osage Cuestas"
+	resources = {
+		coal = 5
+	}
 
 	history={
 		owner = KSK

@@ -1,6 +1,9 @@
 state={
 	id=540
 	name="Glaciated Region"
+	resources = {
+		coal = 1
+	}
 	history={
 		owner = KSK
 		buildings = {

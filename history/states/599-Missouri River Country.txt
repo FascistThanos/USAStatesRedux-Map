@@ -1,6 +1,9 @@
 state={
 	id=599
 	name="Missouri River Country"
+	resources = {
+		coal = 21
+	}
 	history={
 		owner = MTM
 		buildings = {

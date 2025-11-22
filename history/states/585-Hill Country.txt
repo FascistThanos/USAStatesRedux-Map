@@ -3,6 +3,7 @@ state={
 	name="Hill Country"
 	resources = {
 		chromium = 7
+		coal = 2
 	}
 	history = {
 		owner = TXT

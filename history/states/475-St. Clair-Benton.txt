@@ -1,6 +1,9 @@
 state={
 	id=475
 	name="St. Clair Benton"
+	resources = {
+		coal = 7
+	}
 	history={
 		owner = MOM
 		buildings = {

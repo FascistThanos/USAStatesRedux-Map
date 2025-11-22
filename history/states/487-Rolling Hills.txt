@@ -4,6 +4,7 @@ state={
 	name="Rolling Hills"
 	resources = {
 		steel = 12
+		coal = 11
 	}
 
 	history={

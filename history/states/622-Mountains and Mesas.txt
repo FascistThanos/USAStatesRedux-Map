@@ -3,6 +3,7 @@ state={
 	name="Mountains and Mesas"
 	resources = {
 		steel = 27
+		coal = 2
 	}
 	history={
 		owner = COC

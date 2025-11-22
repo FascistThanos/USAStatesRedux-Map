@@ -3,6 +3,7 @@ state={
 	name="Timberlands"
 	resources = {
 		aluminium = 153
+		coal = 2
 	}
 	history={
 		owner = ARA

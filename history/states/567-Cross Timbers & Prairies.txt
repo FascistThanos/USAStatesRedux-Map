@@ -3,6 +3,7 @@ state={
 	name="Cross Timbers & Prairies"
 	resources = {
 		chromium = 3
+		coal = 23
 	}
 	history = {
 		owner = TXT
