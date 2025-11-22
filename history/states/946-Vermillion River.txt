@@ -4,6 +4,7 @@ state={
 	name="Vermillion River"
 	resources = {
 		oil = 58
+		coal = 10
 	}
 	history={
 		owner = ABA

@@ -1,6 +1,9 @@
 state={
 	id=942
 	name="Yellowhead"
+	resources = {
+		coal = 7
+	}
 	history={
 		owner = ABA
 		buildings = {

@@ -1,6 +1,9 @@
 state={
 	id=924
 	name="Five Hills"
+	resources = {
+		coal = 9
+	}
 	history={
 		owner = SKS
 		buildings = {

@@ -1,6 +1,9 @@
 state={
 	id=843
 	name="Outaouais"
+	resources = {
+		coal = 3
+	}
 	history={
 		owner = QCQ
 		buildings = {

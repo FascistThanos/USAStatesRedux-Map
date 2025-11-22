@@ -2,8 +2,10 @@
 state={
 	id=866
 	name="Dufferin-Hamilton"
+
 	resources = {
 		oil = 24
+		coal = 2
 	}
 	history={
 		owner = ONO

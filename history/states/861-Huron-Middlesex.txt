@@ -1,6 +1,9 @@
 state={
 	id=861
 	name="Huron-Middlesex"
+	resources = {
+		coal = 4
+	}
 	history={
 		owner = ONO
 		buildings = {

@@ -1,6 +1,9 @@
 state={
 	id=510
 	name="Tri-County"
+	resources = {
+		coal = 19
+	}
 	history={
 		owner = NDN
 		buildings = {

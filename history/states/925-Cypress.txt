@@ -1,6 +1,9 @@
 state={
 	id=925
 	name="Cypress"
+	resources = {
+		coal = 11
+	}
 	history={
 		owner = SKS
 		buildings = {

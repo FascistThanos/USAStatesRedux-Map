@@ -4,6 +4,7 @@ state={
 	name="Halimand-Oxford"
 	resources = {
 		oil = 34
+		coal = 4
 	}
 	history={
 		owner = ONO

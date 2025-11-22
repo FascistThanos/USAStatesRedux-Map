@@ -3,6 +3,7 @@ state={
 	name="Battle River"
 	resources = {
 		oil = 8
+		coal = 5
 	}
 	history={
 		owner = ABA

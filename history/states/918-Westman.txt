@@ -4,6 +4,7 @@ state={
 	name="Westman"
 	resources = {
 		oil = 9
+		coal = 3
 	}
 	history={
 		owner = MBM

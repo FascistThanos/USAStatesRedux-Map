@@ -1,6 +1,9 @@
 state={
 	id=509
 	name="Souris Basin"
+	resources = {
+		coal = 22
+	}
 	history={
 		owner = NDN
 		buildings = {

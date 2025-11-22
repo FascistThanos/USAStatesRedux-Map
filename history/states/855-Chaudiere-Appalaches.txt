@@ -1,6 +1,9 @@
 state={
 	id=855
 	name=STATE_CHAUDIERE_APPALACHES
+	resources = {
+		coal = 2
+	}
 	history={
 		owner = QCQ
 		buildings = {

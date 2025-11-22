@@ -1,6 +1,9 @@
 state={
 	id=513
 	name="Roosevelt-Custer"
+	resources = {
+		coal = 21
+	}
 	history={
 		owner = NDN
 		buildings = {

@@ -1,6 +1,9 @@
 state={
 	id=602
 	name="Crow Reservation"
+	resources = {
+		coal = 16
+	}
 	history={
 		owner = MTM
 		buildings = {

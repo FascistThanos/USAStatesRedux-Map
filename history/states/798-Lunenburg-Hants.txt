@@ -1,6 +1,9 @@
 state={
 	id=798
 	name="Lunenburg-Hants"
+	resources = {
+		coal = 2
+	}
 	history={
 		owner = NSN
 		buildings = {

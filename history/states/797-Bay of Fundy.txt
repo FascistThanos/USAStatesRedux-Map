@@ -1,6 +1,9 @@
 state={
 	id=797
 	name="Bay of Fundy"
+	resources = {
+		coal = 3
+	}
 	history={
 		owner = NSN
 		buildings = {

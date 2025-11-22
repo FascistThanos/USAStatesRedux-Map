@@ -2,6 +2,9 @@
 state={
 	id=975
 	name="Iskut"
+	resources = {
+		coal = 2
+	}
 
 	history={
 		owner = BCB

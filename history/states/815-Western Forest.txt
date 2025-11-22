@@ -1,6 +1,9 @@
 state={
 	id=815
 	name="Western Forest"
+	resources = {
+		coal = 1
+	}
 	history={
 		owner = NLN
 		buildings = {

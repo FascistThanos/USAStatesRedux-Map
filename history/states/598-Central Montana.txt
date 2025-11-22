@@ -4,6 +4,7 @@ state={
 	name="Central Montana"
 	resources = {
 		chromium = 7
+		coal = 21
 	}
 
 	history={

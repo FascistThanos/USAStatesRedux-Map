@@ -5,6 +5,7 @@ state={
 		owner = CIA
 		buildings = {
 			infrastructure = 3
+			air_base = 1
 		}
 		victory_points = {
 			2203 20 #Chihuahua
