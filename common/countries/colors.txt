@@ -322,8 +322,8 @@ LAB = {
 }
 
 YUC = {
-	color = rgb { 127 4 0 }
-	color_ui = rgb { 127 4 0 }
+	color = rgb { 28 75 19 }
+	color_ui = rgb { 28 75 19 }
 }
 
 OAX = {
@@ -457,8 +457,8 @@ CLA = {
 }
 
 DUR = {
-	color = rgb { 90 164 186 }
-	color_ui = rgb { 0 90 0 }
+	color = rgb { 25 82 99 }
+	color_ui = rgb { 25 82 99 }
 }
 
 GAJ = {
@@ -539,11 +539,11 @@ ZAC = {
 #Added From Base Game
 COL = {
 	color = rgb { 222 187 91 }
-	color_ui = rgb { 255 243 118 }
+	color_ui = rgb { 222 187 91 }
 }
 COS = {
-	color = rgb { 152 128 43 }
-	color_ui = rgb { 152 128 43 }
+	color = rgb { 61 105 131 }
+	color_ui = rgb { 61 105 131 }
 }
 ELS = {
 	color = rgb { 152 130 191 }
@@ -558,16 +558,16 @@ HON = {
 	color_ui = rgb { 128 145 65 }
 }
 NIC = {
-	color = rgb { 146 179 191 }
-	color_ui = rgb { 146 179 191 }
+	color = rgb { 29 11 71 }
+	color_ui = rgb { 29 11 71 }
 }
 VEN = {
 	color = rgb { 171 190 152 }
 	color_ui = rgb { 222 247 198 }
 }
 PAN = {
-	color = rgb { 152 130 191 }
-	color_ui = rgb { 198 169 248 }
+	color = rgb { 10 30 34 }
+	color_ui = rgb { 10 30 34 }
 }
 CUB = {
 	color = rgb { 140 65 166 }
