@@ -416,10 +416,6 @@ PCP = {
 	color_ui = rgb { 14 17 165 }
 }
 
-MAN = {
-	color = rgb { 0 90 0 }
-	color_ui = rgb { 255 120 71 }
-}
 
 AGU = {
 	color = rgb { 255 225 0 }
