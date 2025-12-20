@@ -9,9 +9,6 @@ division_template = {
 		infantry = { x = 1 y = 0 }
 		infantry = { x = 1 y = 1 }
 		infantry = { x = 1 y = 2 }
-		infantry = { x = 2 y = 0 }
-		infantry = { x = 2 y = 1 }
-		infantry = { x = 2 y = 2 }
 	}
 	support = {
 		artillery = { x = 0 y = 0 }
@@ -57,48 +54,55 @@ units = {
 		location = 10816
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 1
+		start_manpower_factor = 1
 	}
 	division= {			
 		name = "2nd Ohioan National Guard"		
 		location = 10848
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 1
+		start_manpower_factor = 1
 	}
 	division= {			
 		name = "3rd Ohioan National Guard"		
 		location = 10992
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 1
+		start_manpower_factor = 1
 	}
 	division= {			
 		name = "4th Ohioan National Guard"		
 		location = 11767
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 1
+		start_manpower_factor = 1
 	}
 	division= {			
 		name = "5th Ohioan National Guard"		
 		location = 5270
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 1
+		start_manpower_factor = 1
 	}
 	division= {			
 		name = "6th Ohioan National Guard"		
 		location = 11766
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 1
+		start_manpower_factor = 1
 	}
 	division= {			
 		name = "7th Ohioan National Guard"		
 		location = 10967
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 1
+		start_manpower_factor = 1
 	}
 }

@@ -26,18 +26,6 @@ division_template = {
 			x = 1
 			y = 2
 		}
-		infantry = {
-			x = 2
-			y = 0
-		}
-		infantry = {
-			x = 2
-			y = 1
-		}
-		infantry = {
-			x = 2
-			y = 2
-		}
 	}
 	support = {
 		artillery = {
@@ -130,27 +118,31 @@ units = {
 		location = 11053
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 1
+		start_manpower_factor = 1
 	}
 	division = {
 		name = "2nd Wisconsinite National Guard"
 		location = 11110
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 1
+		start_manpower_factor = 1
 	}
 	division = {
 		name = "3rd Wisconsinite National Guard"
 		location = 11175
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 1
+		start_manpower_factor = 1
 	}
 	division = {
 		name = "4th Wisconsinite National Guard"
 		location = 11117
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 1
+		start_manpower_factor = 1
 	}
 }

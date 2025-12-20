@@ -9,9 +9,6 @@ division_template = {
 		infantry = { x = 1 y = 0 }
 		infantry = { x = 1 y = 1 }
 		infantry = { x = 1 y = 2 }
-		infantry = { x = 2 y = 0 }
-		infantry = { x = 2 y = 1 }
-		infantry = { x = 2 y = 2 }
 	}
 	support = {
 		artillery = { x = 0 y = 0 }
@@ -56,7 +53,8 @@ units = {
 		location = 11338
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.15
+		start_equipment_factor = 1
+		start_manpower_factor = 1
 
 	}
 	division= {
@@ -64,7 +62,8 @@ units = {
 		location = 11353
 		division_template = "Garrison Brigade"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.15
+		start_equipment_factor = 1
+		start_manpower_factor = 1
 
 	}
 }

@@ -9,9 +9,6 @@ division_template = {
 		infantry = { x = 1 y = 0 }
 		infantry = { x = 1 y = 1 }
 		infantry = { x = 1 y = 2 }
-		infantry = { x = 2 y = 0 }
-		infantry = { x = 2 y = 1 }
-		infantry = { x = 2 y = 2 }
 	}
 	support = {
 		artillery = { x = 0 y = 0 }
@@ -56,48 +53,55 @@ units = {
 		location = 11007
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 1
+		start_manpower_factor = 1
 	}
 	division= {			
 		name = "2nd Illinoisian National Guard"		
 		location = 11498
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 1
+		start_manpower_factor = 1
 	}
 	division= {			
 		name = "3rd Illinoisian National Guard"		
 		location = 5248
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 1
+		start_manpower_factor = 1
 	}
 	division= {			
 		name = "4th Illinoisian National Guard"		
 		location = 2088
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 1
+		start_manpower_factor = 1
 	}
 	division= {			
 		name = "5th Illinoisian National Guard"		
 		location = 10508
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 1
+		start_manpower_factor = 1
 	}
 	division= {			
 		name = "6th Illinoisian National Guard"		
 		location = 5173
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 1
+		start_manpower_factor = 1
 	}
 	division= {			
 		name = "7th Illinoisian National Guard"		
 		location = 10873
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 1
+		start_manpower_factor = 1
 	}
 }

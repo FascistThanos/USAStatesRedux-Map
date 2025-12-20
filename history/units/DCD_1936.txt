@@ -31,12 +31,14 @@ units = {
 		division_template = "Infantry Division"
 		start_experience_factor = 0.6
 		start_equipment_factor = 1
+		start_manpower_factor = 1
 	}
 	division= {
 		name = "2nd Capital National Guard"
 		location = 10667
 		division_template = "Infantry Division"
 		start_experience_factor = 0.4
-		start_equipment_factor = 0.8
+		start_equipment_factor = 1
+		start_manpower_factor = 1
 	}
 }

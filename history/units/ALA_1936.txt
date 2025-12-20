@@ -9,9 +9,6 @@ division_template = {
 		infantry = { x = 1 y = 0 }
 		infantry = { x = 1 y = 1 }
 		infantry = { x = 1 y = 2 }
-		infantry = { x = 2 y = 0 }
-		infantry = { x = 2 y = 1 }
-		infantry = { x = 2 y = 2 }
 	}
 	support = {
 		artillery = { x = 0 y = 0 }
@@ -57,49 +54,56 @@ units = {
 		location = 3528
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 1
+		start_manpower_factor = 1
 	}
 	division= {
 		name = "2nd Alabama National Guard"
 		location = 3528
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 1
+		start_manpower_factor = 1
 	}
 	division= {
 		name = "3rd Alabama National Guard"
 		location = 10516
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 1
+		start_manpower_factor = 1
 	}
 	division= {
 		name = "4th Alabama National Guard"
 		location = 10594
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 1
+		start_manpower_factor = 1
 	}
 	division= {
 		name = "Reserve Garrison"
 		location = 10594
 		division_template = "Garrison Brigade"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
+		start_equipment_factor = 1
+		start_manpower_factor = 1
 	}
 	division= {
 		name = "Reserve Garrison"
 		location = 10642
 		division_template = "Garrison Brigade"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
+		start_equipment_factor = 1
+		start_manpower_factor = 1
 	}
 	division= {
 		name = "Cavalry Division"
 		location = 10514
 		division_template = "Cavalry Division"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.9
+		start_equipment_factor = 1
+		start_manpower_factor = 1
 	}
 }
 #########################
