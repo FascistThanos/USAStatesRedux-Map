@@ -1,0 +1,434 @@
+#BOP
+NYN_balance = {
+	buy_out_dockyards = {
+		cost = 25
+		fire_only_once = yes
+		complete_effect = {
+			add_power_balance_value = {
+				id = NYN_balance
+				value = 0.1
+				}
+		}
+	}
+	prioritize_naval_excercises = {
+		custom_cost_trigger = {
+			has_navy_experience > 24
+			}
+		custom_cost_text = decision_cost_navyxp_25
+		days_re_enable = 100
+		complete_effect = {
+			add_power_balance_value = {
+				id = NYN_balance
+				value = 0.05
+				}
+			hidden_effect = {
+				navy_experience = -25
+			}	
+		}		
+	}
+	encourage_growth_fleet = {
+		cost = 50
+		days_re_enable = 200
+		complete_effect = {
+			add_power_balance_value = {
+				id = NYN_balance
+				value = 0.1
+				}
+		}
+	}
+	denounce_power_grabbers = {
+		cost = 25
+		fire_only_once = yes
+		complete_effect = {
+			add_power_balance_value = {
+				id = NYN_balance
+				value = -0.1
+				}
+		}
+	}
+	fund_all_around_training = {
+		custom_cost_trigger = {
+			has_army_experience > 24
+			}
+		custom_cost_text = decision_cost_armyxp_25
+		days_re_enable = 100
+		complete_effect = {
+			add_power_balance_value = {
+				id = NYN_balance
+				value = -0.05
+				}
+			hidden_effect = {
+				army_experience = -25
+			}	
+		}		
+	}
+	aid_industry_leaders = {
+		cost = 50
+		days_re_enable = 200
+		complete_effect = {
+			add_power_balance_value = {
+				id = NYN_balance
+				value = -0.1
+				}
+			}
+	}		
+}
+#Communist Decisions
+NYN_communistuprising = {
+	NYN_communistuprising = {
+		days_mission_timeout = 310
+		fire_only_once = yes
+		available = {
+			has_civil_war = yes
+			}
+		allowed = {
+			original_tag = NYN
+			}
+		timeout_effect = {
+			NYN = {
+				country_event = newyork.1
+				}
+			}
+		}
+	}	
+
+
+
+NYN_communistprep = {
+	NYN_preparemilitias = {
+		cost = 25
+		fire_only_once = yes
+		days_remove = 50
+		available = {
+			has_completed_focus = NYN_rallylongisland
+			NOT = {
+				has_decision = NYN_hudsonvalley
+				has_decision = NYN_catskills
+				has_decision = NYN_raidarmories
+				}
+			}
+		complete_effect = {
+				country_event = {
+				id = cnewyork.8
+				days = 1
+				}
+			}	
+		}		
+	NYN_hudsonvalley = {
+		cost = 100
+		fire_only_once = yes
+		days_remove = 100
+		available = {
+			has_completed_focus = NYN_spreadttherevolutiontothemainland
+			NOT = {
+				has_decision = NYN_preparemilitias
+				has_decision = NYN_catskills
+				has_decision = NYN_raidarmories
+			}
+		}	
+		complete_effect = {
+			country_event = {
+				id = cnewyork.9
+				days = 1
+			}	
+		}
+	}
+	NYN_catskills = {
+		cost = 100
+		fire_only_once = yes
+		days_remove = 100
+		available = {
+			has_completed_focus = NYN_spreadttherevolutiontothemainland
+			NOT = {
+				has_decision = NYN_hudsonvalley
+				has_decision = NYN_preparemilitias
+				has_decision = NYN_raidarmories
+				}
+			}
+		complete_effect = {
+			country_event = {
+				id = cnewyork.10
+				days = 1		
+		}
+	}
+}	
+	NYN_raidarmories = {
+		cost = 100
+		fire_only_once = yes
+		days_remove = 50
+		available = {
+			has_completed_focus = NYN_seizureofweapons
+			NOT = {
+				has_decision = NYN_hudsonvalley
+				has_decision = NYN_catskills
+				has_decision = NYN_preparemilitias
+				}
+			}
+		complete_effect = {
+			country_event = {
+				id = cnewyork.7
+				days = 1
+			}
+		}
+	}
+}
+NYN_rustbeltmeddling = {
+	NYN_clevelandspeakers = {
+		cost = 25
+		fire_only_once = yes
+		days_remove = 30
+		available = {
+			has_completed_focus = NYN_redruckus
+			}
+		remove_effect = {
+			OHO = {
+				add_timed_idea = {
+				idea = NYN_newyorkcommunism
+				days = 365
+				}
+			}
+		}
+	}	
+	NYN_ftwaynespeakers = {
+		cost = 25
+		fire_only_once = yes
+		days_remove = 30
+		available = {
+			has_completed_focus = NYN_redruckus
+			}
+		remove_effect = {
+			INI = {
+				add_timed_idea = {
+				idea = NYN_newyorkcommunism
+				days = 365
+				}
+			}
+		}
+	}	
+	NYN_detroitspeakers = {
+		cost = 25
+		fire_only_once = yes
+		days_remove = 30
+		available = {
+			has_completed_focus = NYN_redruckus
+			}
+		remove_effect = {
+			MIM = {
+				add_timed_idea = {
+				idea = NYN_newyorkcommunism
+				days = 365
+				}
+			}
+		}
+	}	
+	NYN_chicagospeakers = {
+		cost = 25
+		fire_only_once = yes
+		days_remove = 30
+		available = {
+			has_completed_focus = NYN_redruckus
+			}
+		remove_effect = {
+			ILI = {
+				add_timed_idea = {
+				idea = NYN_newyorkcommunism
+				days = 365
+				}
+			}
+		}
+	}	
+	NYN_milwaukeespeakers = {
+		cost = 25
+		fire_only_once = yes
+		days_remove = 30
+		available = {
+			has_completed_focus = NYN_redruckus
+			}
+		remove_effect = {
+			WIW = {
+				add_timed_idea = {
+				idea = NYN_newyorkcommunism
+				days = 365
+				}
+				}
+			}
+		}
+	NYN_clevelanduprising = {
+		cost = 50
+		fire_only_once = yes
+		days_remove = 30
+		visible = {
+			has_completed_focus = NYN_preparetheuprisings
+			}
+		available = {
+			OHO = {
+				communism > 0.4
+				}
+			}	
+		remove_effect = {
+			OHO = {
+                start_civil_war = {
+                    ruling_party = communism
+					ideology = communism
+                    size = 0.5
+                    capital = 271
+                    states = {
+                        269 270 275 278 276 283 277 271
+						}
+					}
+				}
+			OHO = {
+				set_politics = {
+					ruling_party = democratic
+					elections_allowed = no
+					}
+				}
+			NYN = {
+				country_event = {
+					id = cnewyork.11
+					days = 2
+					}
+				}	
+			}
+		}
+	NYN_ftwayneuprising = {
+		cost = 50
+		fire_only_once = yes
+		days_remove = 30
+		visible = {
+			has_completed_focus = NYN_preparetheuprisings
+			}
+		available = {
+			INI = {
+				communism > 0.4
+				}
+			}	
+		remove_effect = {
+			INI = {
+                start_civil_war = {
+                    ruling_party = communism
+					ideology = communism
+                    size = 0.5
+                    capital = 287
+                    states = {
+                        288 285 286 284
+						}
+					}
+				}
+			INI = {
+				set_politics = {
+					ruling_party = democratic
+					elections_allowed = no
+					}
+				}
+			NYN = {
+				country_event = {
+					id = cnewyork.14
+					days = 2
+					}
+				}	
+			}
+		}
+	NYN_chicagouprising = {
+		cost = 50
+		fire_only_once = yes
+		days_remove = 30
+		visible = {
+			has_completed_focus = NYN_preparetheuprisings
+			}
+		available = {
+			ILI = {
+				communism > 0.4
+				}
+			}	
+		remove_effect = {
+			ILI = {
+                start_civil_war = {
+                    ruling_party = communism
+					ideology = communism
+                    size = 0.5
+                    capital = 321
+                    states = {
+                        322 323 324 
+						}
+					}
+				}
+			ILI = {
+				set_politics = {
+					ruling_party = democratic
+					elections_allowed = no
+					}
+				}
+			NYN = {
+				country_event = {
+					id = cnewyork.16
+					days = 2
+					}
+				}	
+			}
+		}
+	NYN_milwaukeeuprising = {
+		cost = 50
+		fire_only_once = yes
+		days_remove = 30
+		visible = {
+			has_completed_focus = NYN_preparetheuprisings
+			}
+		available = {
+			WIW = {
+				communism > 0.4
+				}
+			}	
+		remove_effect = {
+			WIW = {
+                start_civil_war = {
+                    ruling_party = communism
+					ideology = communism
+                    size = 0.5
+                    capital = 309
+                    states = {
+                        310 313 312 311 317 315 316 319 308
+						}
+					}
+				}
+			WIW = {
+				set_politics = {
+					ruling_party = democratic
+					elections_allowed = no
+					}
+				}
+			NYN = {
+				country_event = {
+					id = cnewyork.19
+					days = 2
+					}
+				}	
+			}
+		}
+	NYN_detroituprising = {
+		cost = 50
+		fire_only_once = yes
+		days_remove = 30
+		visible = {
+			has_completed_focus = NYN_preparetheuprisings
+			}
+		available = {
+			MIM = {
+				communism > 0.4
+				}
+			}	
+		remove_effect = {
+		MIM = {
+			country_event = {
+				id = cnewyork.21
+				days = 3
+				}
+			}
+		}
+	}	
+					
+			
+			
+			
+			
+		}	

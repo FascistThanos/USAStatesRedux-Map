@@ -732,8 +732,8 @@ NPolitics = {
 	MIN_OVERTHROWN_GOVERNMENT_SUPPORT_RATIO = 0.4, -- Min possible support for new government after puppeting the government
 	NUM_OCCUPATION_POLICIES = 4,		-- Number of potential occupation policies
 	DEFAULT_OCCUPATION_POLICY = 1,		-- Defaullt value for occupation policy
-	INSTANT_WIN_REVOLTER_POPULARITY_RATIO = 0.4, -- Min party popularity for instant win in one province state
-	INSTANT_WIN_POPULARITY_WIN = 50, -- New party popularity
+	INSTANT_WIN_REVOLTER_POPULARITY_RATIO = 0.7, -- Min party popularity for instant win in one province state
+	INSTANT_WIN_POPULARITY_WIN = 70, -- New party popularity
 },
 
 NBuildings = {

@@ -68,16 +68,17 @@ set_stability = 0.9
 
 set_politics = {
 
-	ruling_party = democratic
+	ruling_party = neutrality
 	last_election = "1932.11.8"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
 set_popularities = {
-	democratic = 98
-	communism = 1
-	fascism = 1
+	democratic = 10
+	communism = 5
+	fascism = 5
+	neutrality = 80
 }
 create_country_leader = {
 	name = "Herbert O'Conor"
@@ -99,16 +100,6 @@ create_country_leader = {
 		elections_allowed = yes
 	}
 }
-set_popularities = {
-	democratic = 98
-	communism = 1
-	fascism = 1
-}
-set_autonomy = {
-	target = DCD
-	autonomous_state =  autonomy_puppet
-}
-
 create_corps_commander = {
 	name = "Russell Hartle"
 	picture = "Portrait_MDM_Russell_P_Hartle.dds"

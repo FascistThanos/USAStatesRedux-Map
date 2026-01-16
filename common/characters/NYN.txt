@@ -1,0 +1,49 @@
+#Navy
+characters = {
+	NYN_thomas_craven = {
+		name = NYN_thomas_craven
+		portraits = {
+			army = {
+				small = GFX_idea_NYN_Thomas_Tingey_Craven
+				large = GFX_Portrait_NYN_Thomas_Tingey_Craven
+				}
+			}
+		navy_leader = {
+			traits = { spotter fleet_protector naval_lineage }
+			skill = 4
+			attack_skill =
+			defense_skill =
+			maneuvering_skill =
+			coordination_skill =
+			visible = { has_not_completed_focus = NYN_rally_long_island }
+		}
+	}
+	NYN_dean_wexler = {
+		name = NYN_dean_wexler
+		advisor = {
+			slot = political_advisor
+			idea_token = NYN_dean_wexler
+			traits = { all_seeing_eye }
+			}
+		available = {
+			has_completed_focus = NYN_informationiskey
+			}
+		}
+	NYN_williamhalseyjr={
+		name="William Halsey Jr."
+		portraits={
+			civilian={
+				large="gfx/leaders/NYN/Portrait_NYN_ErnestJKing.dds"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={ lucky }
+			expire="1965.1.1"
+			id=-1
+		}
+	}
+}
+}
+}
+}	

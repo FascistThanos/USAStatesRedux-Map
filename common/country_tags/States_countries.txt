@@ -74,6 +74,7 @@ LAB = "countries/Labrador.txt"
 SUP = "countries/Superior.txt"
 NYC = "countries/Long Island.txt"
 GRN = "countries/Greenland.txt"
+AMC = "countries/Amish.txt"
 
 #Mexico
 AGU = "countries/Aguascalientes.txt"

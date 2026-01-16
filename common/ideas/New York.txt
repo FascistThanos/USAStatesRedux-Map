@@ -1,4 +1,658 @@
 ideas = {
+	#country
+	country = {
+		#Communists
+		NYN_forthecause = {
+			allowed = {
+				always = no
+				}
+			 allowed_civil_war = {
+                always = yes
+            }
+			removal_cost = -1
+			
+			picture = generic_communist_army
+
+			modifier = {
+				army_core_defence_factor = 0.25
+				war_support_weekly = 0.05
+				}
+			}
+		NYN_eyeseverywhere = {
+			allowed = {
+				always = no
+				}
+			 allowed_civil_war = {
+                always = yes
+            }
+			removal_cost = -1
+			
+			picture = generic_spy_political
+			
+			modifier = {
+				operative_slot = 3
+				}
+			}
+		NYN_unifiedlabor = {
+			allowed = {
+				always = no
+				}
+			allowed_civil_war = {
+				always = yes
+				}
+			removal_cost = -1
+
+			picture = eng_spirit_of_the_industrial_revolution
+
+			modifier = {
+				production_speed_buildings_factor = 0.10
+				industrial_capacity_factory = 0.10
+				local_resources_factor = 0.10
+				}
+			}
+		NYN_unionfundedresearch = {	
+			allowed = {
+				always = no
+				}
+			allowed_civil_war = {
+				always = yes
+				}
+			removal_cost = -1
+
+			picture = generic_research_bonus
+
+			modifier = {
+				research_speed_factor = 0.10
+				}
+			}
+		NYN_newyorkcommunism = {		
+			allowed = {
+				always = no
+				}
+			allowed_civil_war = {
+				always = yes
+				}
+			removal_cost = -1
+
+			picture = generic_communism_drift_bonus
+
+			modifier = {
+				communism_drift = 0.25
+				}
+			}
+		NYN_amishdissidents = {
+			allowed = {
+				always = no
+				}
+			allowed_civil_war = {
+				always = yes
+				}
+			removal_cost = -1
+
+			picture = amishdissent
+
+			modifier = {
+				stability_factor = -0.20
+				war_support_factor = -0.20
+				weekly_manpower = -100
+				}
+			}
+		NYN_everymanarevolutionary = {
+			allowed = {
+				always = no
+				}
+			allowed_civil_war = {
+				always = yes
+				}
+			removal_cost = -1
+
+			picture = eng_for_the_good_of_the_revolution
+	
+			modifier = {
+				communism_drift = 0.02
+				conscription = 0.04
+				stability_factor = 0.05
+				}
+			}
+		NYN_armyofworkers = {
+			allowed = {
+				always = no
+				}
+			allowed_civil_war = {
+				always = yes
+				}
+			removal_cost = -1
+
+			picture = generic_women_in_the_army
+	
+			modifier = {
+				army_org = 0.1
+				offence = 0.05
+				defence = 0.05
+				}
+			}
+		NYN_anarmyofthepeople = {
+			allowed = {
+				always = no
+				}
+			allowed_civil_war = {
+				always = yes
+				}
+			removal_cost = -1
+
+			picture = NORDIC_army_communist
+	
+			modifier = {
+				conscription = 0.05
+				}
+			
+			equipment_bonus = {
+				infantry = {
+					reliability = 0.10
+					}
+				}
+			}
+		NYN_therevolutionwillbemechanized = {
+			allowed = {
+				always = no
+				}
+			allowed_civil_war = {
+				always = yes
+				}
+			removal_cost = -1
+
+			picture = NORDIC_industry_communist
+	
+			equipment_bonus = {
+				armor = {
+				build_cost_ic = -0.15
+				reliability = 0.10
+				defense = 0.05
+				}
+				cat_mechanized_equipment = {
+				build_cost_ic = -0.15
+				reliability = 0.10
+				defense = 0.05
+				}
+			}	
+		}
+	
+		#Democratic Spirits
+		NYN_workersagainstthereds = {
+			allowed = {
+				always = no
+				}
+			allowed_civil_war = {
+				always = yes
+				}
+			removal_cost = -1
+
+			picture = ARG_anti_soviet
+	
+			modifier = {
+				consumer_goods_factor = -0.20
+				production_factory_max_efficiency_factor = 0.10
+				}
+			}
+		NYN_breakingthered = {
+			allowed = {
+				always = no
+				}
+			allowed_civil_war = {
+				always = yes
+				}
+			removal_cost = -1
+
+			picture = NOR_anti_communist_sentiment
+	
+			modifier = {
+				attack_bonus_against_cores = 0.25
+				war_support_weekly = 0.05
+				}
+			}
+		NYN_anetworkofpeople = {
+			allowed = {
+				always = no
+				}
+			allowed_civil_war = {
+				always = yes
+				}
+			removal_cost = -1
+
+			picture = generic_spy_political
+	
+			modifier = {
+				operative_slot = 2
+				intel_network_gain_factor = 0.10
+				}
+			}
+		NYN_shieldofthepeople = {
+			allowed = {
+				always = no
+				}
+			allowed_civil_war = {
+				always = yes
+				}
+			removal_cost = -1
+
+			picture = generic_shield_against_communism
+	
+			modifier = {
+				defence = 0.15
+				army_morale = 0.5
+				max_dig_in = 4
+				}
+			}
+		NYN_democracyprevails = {
+			allowed = {
+				always = no
+				}
+			allowed_civil_war = {
+				always = yes
+				}
+			removal_cost = -1
+
+			picture = generic_pp_unity_bonus
+	
+			modifier = {
+				stability_factor = 0.10
+				enemy_declare_war_tension = 0.15
+				political_power_factor = 0.06
+				democracy_drift = 0.06
+				}
+			}
+		NYN_ruralrailways = {
+			allowed = {
+				always = no
+				}
+			allowed_civil_war = {
+				always = yes
+				}
+			removal_cost = -1
+
+			picture = generic_railroads
+	
+			modifier = {
+				production_speed_rail_way_factor = 0.10
+				production_speed_supply_node_factor = 0.20
+				}
+			}
+		NYN_migrantsabound = {
+			allowed = {
+				always = no
+				}
+			allowed_civil_war = {
+				always = yes
+				}
+			removal_cost = -1
+
+			picture = CAC_dust_bowl_migration
+	
+			modifier = {
+				monthly_population = 2000
+				stability_factor = -0.05
+				}
+			}
+		NYN_standardizedmedics = {
+			allowed = {
+				always = no
+				}
+			allowed_civil_war = {
+				always = yes
+				}
+			removal_cost = -1
+
+			picture = generic_supply_line
+	
+			equipment_bonus = {
+				support_equipment = {
+				build_cost_ic = -0.15
+				reliability = 0.20
+				defense = 0.10
+						}
+					}
+				}	
+		NYN_empirestateinnovations = {
+			allowed = {
+				always = no
+				}
+			allowed_civil_war = {
+				always = yes
+				}
+			removal_cost = -1
+
+			picture = AFG_democratic_graduates
+	
+			modifier = {
+				research_speed_factor = 0.15
+				}
+			}
+		NYN_boostedmorale = {
+			allowed = {
+				always = no
+				}
+			allowed_civil_war = {
+				always = yes
+				}
+			removal_cost = -1
+
+			picture = generic_morale_bonus
+	
+			modifier = {
+				recruitable_population_factor = 0.01
+				drift_defence_factor = 0.10
+				}
+			}	
+		NYN_awallofliberty = {
+			allowed = {
+				always = no
+				}
+			allowed_civil_war = {
+				always = yes
+				}
+			removal_cost = -1
+
+			picture = usa_department_of_defense
+	
+			modifier = {
+				defence = 0.10
+				max_dig_in_factor = 0.05
+				}
+			}
+		NYN_canadianvolunteers = {
+			allowed = {
+				always = no
+				}
+			allowed_civil_war = {
+				always = yes
+				}
+			removal_cost = -1
+
+			picture = can_send_in_the_zombies
+	
+			modifier = {
+				recruitable_population_factor = 0.03
+				}
+			}
+
+		#Naval Spirits
+		NYN_crackingdown = {
+		allowed = {
+				always = no
+				}
+			allowed_civil_war = {
+				always = yes
+				}
+			removal_cost = -1
+
+			picture = generic_spy_intel
+	
+			modifier = {
+				operative_slot = 1
+				agency_upgarde_time = -0.10
+				intelligence_agency_defense = 0.2
+				}
+			}
+		NYN_swordofthestate = {
+			allowed = {
+				always = no
+				}
+			allowed_civil_war = {
+				always = yes
+				}
+			removal_cost = -1
+
+			picture = tur_coordinated_balkan_armed_forces
+	
+			modifier = {
+				offence = 0.20
+				special_forces_cap = 0.3
+				}
+			}	
+		NYN_allhandsondeck = {
+			allowed = {
+				always = no
+				}
+			allowed_civil_war = {
+				always = yes
+				}
+			removal_cost = -1
+
+			picture = idea_generic_navy_cruiser_warfare
+	
+			modifier = {
+				experience_gain_navy = 0.15
+				industrial_capacity_dockyard = 0.10
+				war_support_factor = 0.10
+				production_speed_dockyard_factor = 0.15
+				neutrality_drift = 0.06
+				}
+			}
+		NYN_raidersoftheeastcoast = {
+			allowed = {
+				always = no
+				}
+			allowed_civil_war = {
+				always = yes
+				}
+			removal_cost = -1
+
+			picture = AUS_navy
+	
+			modifier = {
+				naval_invasion_prep_speed = 0.10
+				naval_invasion_capacity = 4
+				}
+			}
+		NYN_theoceansbatteringram = {
+			allowed = {
+				always = no
+				}
+			allowed_civil_war = {
+				always = yes
+				}
+			removal_cost = -1
+
+			picture = SWE_coastal_support
+	
+			modifier = {
+				shore_bombardment_bonus = 0.10
+				convoy_escort_efficiency = 0.10
+				}
+			}
+		NYN_atlantickings = {
+			allowed = {
+				always = no
+				}
+			allowed_civil_war = {
+				always = yes
+				}
+			removal_cost = -1
+
+			picture = AUS_naval_efficiency_idea
+	
+			modifier = {
+				production_speed_dockyard_factor = 0.10
+				research_speed_factor = 0.10
+				navy_fuel_consumption_factor = -0.10
+				}
+			}
+		NYN_defenseagainsttheempirestate = {
+			allowed = {
+				always = no
+				}
+			allowed_civil_war = {
+				always = yes
+				}
+			removal_cost = -1
+
+			picture = SWE_hedgehog_defense
+	
+			targeted_modifier = {
+				tag = NYN
+				defense_bonus_against = 0.30
+				}
+			}
+		NYN_anauticalarmy = {
+			allowed = {
+				always = no
+				}
+			allowed_civil_war = {
+				always = yes
+				}
+			removal_cost = -1
+
+			picture = eng_imperial_conscription
+	
+			modifier = {
+				recruitable_population_factor = 0.03
+				}
+			}
+		NYN_anempireofwater = {
+			allowed = {
+				always = no
+				}
+			allowed_civil_war = {
+				always = yes
+				}
+			removal_cost = -1
+
+			picture = NORDIC_navy_democratic
+	
+			modifier = {
+				naval_coordination = 0.05
+				naval_damage_factor = 0.10
+				naval_defense_factor = 0.10
+				}
+			}	
+			
+		#Industry Spirits
+		
+		NYN_cripplingdepression = {
+			allowed = {
+				always = no
+				}
+			allowed_civil_war = {
+				always = yes
+				}
+			removal_cost = -1
+
+			picture = POL_disjointed_industry
+	
+			modifier = {
+				political_power_gain = -0.4
+				consumer_goods_factor = 0.60
+				production_factory_max_efficiency_factor = -0.55
+				production_speed_buildings_factor = -0.60
+				}
+			}
+		NYN_lesseningdepression	= {
+			allowed = {
+				always = no
+				}
+			allowed_civil_war = {
+				always = yes
+				}
+			removal_cost = -1
+
+			picture = generic_economic_crisis
+	
+			modifier = {
+				political_power_gain = -0.2
+				consumer_goods_factor = 0.50
+				production_factory_max_efficiency_factor = -0.35
+				production_speed_buildings_factor = -0.40
+				}
+			}
+		NYN_recoveringfromdepression = {
+			allowed = {
+				always = no
+				}
+			allowed_civil_war = {
+				always = yes
+				}
+			removal_cost = -1
+
+			picture = generic_improved_industries
+	
+			modifier = {
+				consumer_goods_factor = 0.20
+				production_speed_buildings_factor = -0.20
+				}
+			}
+		NYN_productsofrevolution = {
+			allowed = {
+				always = no
+				}
+			allowed_civil_war = {
+				always = yes
+				}
+			removal_cost = -1
+
+			picture = ARG_women_in_industry
+	
+			modifier = {
+				consumer_goods_factor = -0.20
+				industrial_capacity_factory = 0.15
+				industrial_capacity_dockyard = 0.15
+				production_factory_max_efficiency_factor = 0.10
+				}
+			}
+		NYN_theindustrialeast = {
+			allowed = {
+				always = no
+				}
+			allowed_civil_war = {
+				always = yes
+				}
+			removal_cost = -1
+
+			picture = ARG_civilian_economy_boost
+	
+			modifier = {
+				production_speed_buildings_factor = 0.20
+				}
+			}
+		NYN_constructioncontracts = {
+			allowed = {
+				always = no
+				}
+			allowed_civil_war = {
+				always = yes
+				}
+			removal_cost = -1
+
+			picture = idea_ARG_construction_guilds
+	
+			modifier = {
+				political_power_cost = 0.2
+				production_speed_buildings_factor = 0.25
+				}
+			}
+		NYN_railroadbarons = {
+			allowed = {
+				always = no
+				}
+			allowed_civil_war = {
+				always = yes
+				}
+			removal_cost = -1
+
+			picture = ARG_invest_in_railways
+	
+			modifier = {
+				production_speed_rail_way_factor = 0.20
+				production_speed_supply_node_factor = 0.25
+				}
+			}	
+	}
+			
+			
+	
+	
+	
+	
+	
 	political_advisor = {
 
 		NYN_James_Gully= {
@@ -282,4 +936,23 @@ ideas = {
 			}
 		}
 	}
+	
+	designer_category = {
+		designer = yes
+		
+		NYN_nycentralrailroad = {
+			allowed = {
+				tag = NYN
+				}
+			available = {
+				has_completed_focus = NYN_swayrailroadcompanies
+				}
+			modifier = {
+				production_speed_rail_way_factor = 0.10
+				production_speed_supply_node_factor = 0.15
+				}
+			}
+		}	
+				
+	
 }

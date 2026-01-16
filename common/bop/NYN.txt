@@ -1,0 +1,116 @@
+
+NYN_balance = {
+	initial_value = 0
+	left_side = "Government"
+	right_side = "Navy"
+	decision_category = NYN_balance
+	range = {
+		id = "Balanced Government And Navy"
+		min = -0.1
+		max = 0.1
+	}
+	side = {
+		id = "Government"
+		icon = GFX_idea_generic_agrarian_society
+		range = {
+			id = "Complete Government Control"
+			min = -1
+			max = -0.9
+			modifier = {
+				stability_factor = 00.10
+				enemy_justify_war_goal_time = 0.25
+				political_power_factor 00.10
+				democratic_drift = 0.1
+				industrial_capacity_dockyard = -00.30
+				war_support_factor = -00.25
+				production_speed_dockyard_factor = -00.25
+			}
+		}
+		range = {
+			id = "Government Dominance"
+			min = -0.9
+			max = -0.6
+			modifier = {
+				stability_factor = 00.06
+				enemy_justify_war_goal_time = 0.15
+				political_power_factor 00.06
+				democratic_drift = 0.06
+				industrial_capacity_dockyard = -00.20
+				war_support_factor = -00.20
+				production_speed_dockyard_factor = -00.20
+			}
+		}	
+		range = {
+			id = "High Government Control"
+			min = -0.6
+			max = -0.3
+			modifier = {
+				political_power_factor = 00.04
+				democratic_drift = 0.02
+				industrial_capacity_dockyard = -00.10
+				war_support_factor = -00.15
+			}
+		}	
+		range = {
+			id = "Low Government Control"
+			min = -0.3
+			max = -0.1
+			modifier = {
+				political_power_factor = 00.02
+			}	
+		}
+	}	
+	side = {
+		id = "Navy"
+		icon = GFX_idea_generic_degauss_ship_hulls
+		range = {
+			id = "Low Naval Control"
+			min = 0.1
+			max = 0.3
+			modifier = {
+				experience_gain_navy = 0.1
+			}
+		}
+		range = {
+			id = "High Naval Control"
+			min = 0.3
+			max = 0.6
+			modifier = {
+			experience_gain_navy = 0.1
+			industrial_capacity_dockyard = 0.10
+			neutrality_drift = 0.02
+			political_advisor_cost_factor = 0.10
+			stability_factor = -0.10
+			}
+		}
+		range = {
+			id = "High Naval Control"
+			min = 0.6
+			max = 0.9
+			modifier = {
+			experience_gain_navy = 0.15
+			production_speed_dockyard_factor = 0.20
+			war_support_factor = 0.20
+			industrial_capacity_dockyard = 0.15
+			neutrality_drift = 0.06
+			political_advisor_cost_factor = 0.15
+			stability_factor = -0.20
+			}
+		}
+		range = {
+			id = "Complete Naval Control"
+			min = 0.9
+			max = 1
+			modifier = {
+			experience_gain_navy = 0.2
+			production_speed_dockyard_factor = 0.30
+			war_support_factor = 0.30
+			industrial_capacity_dockyard = 0.20
+			neutrality_drift = 0.1
+			political_advisor_cost_factor = 0.20
+			stability_factor = -0.25
+			}
+		}
+	}
+}
+

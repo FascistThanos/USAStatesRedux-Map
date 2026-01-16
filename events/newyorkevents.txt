@@ -1,0 +1,1188 @@
+add_namespace = newyork
+add_namespace = nynengland
+add_namespace = cnewyork
+#Civil War Launch
+country_event = {
+  id = newyork.1
+	title = newyork.1.t
+	desc = newyork.1.d 
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+	option = {#Communist
+		name = newyork.1.a
+		ai_chance = {
+			base = 33
+			}
+	if = {
+		limit = {
+			has_decision = NYN_catskills
+			}
+		start_civil_war = {
+			ruling_party = communism
+			ideology = FROM
+			army_ratio = 0.5
+			navy_ratio = 0
+			air_ratio = 0.5
+			capital = 207
+			states = {
+				216 23 215 214 213 211 210 209 208 206 205 207 202 212
+				}
+			}
+		}
+	else = {
+		start_civil_war = {
+			ruling_party = communism
+			ideology = FROM
+			army_ratio = 0.5
+			navy_ratio = 0
+			air_ratio = 0.5
+			capital = 207
+			states = {
+				216 23 215 214 213 211 210 209 208 206 205 207 202 212 203
+				}
+			}
+		}
+	}	
+		
+		
+	option = {#Democratic
+		name = newyork.1.b 
+		ai_chance = {
+			base = 67
+			}
+		start_civil_war = {
+			ruling_party = democracy
+			ideology = communism
+			army_ratio = 0.5
+			navy_ratio = 1
+			air_ratio = 0.5
+			capital = 201
+			states = {
+				201 204 217 586  
+				}
+			}	
+	}	
+}
+country_event = {
+  id = newyork.2
+	title = newyork.2.t
+	desc = newyork.2.d 
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+	option = {
+		name = newyork.2.a
+		ai_chance = {
+			base = 100
+			}
+		set_power_balance = {
+				id = NYN_balance
+				}
+	}
+}
+country_event = {
+	id = newyork.3
+		title = newyork.3.t
+		desc = newyork.3.d
+		picture = GFX_report_event_election_vote
+		is_triggered_only = yes
+		option = {
+			name = newyork.3.a
+			ai_chance = {
+				base = 100
+				}
+			NYN = {
+				add_to_faction = NJN
+				}
+			}
+		option = {
+			name = newyork.3.b
+			ai_chance = {
+				base = 0
+				}
+			NYN = {
+				country_event = {
+				id = newyork.31
+				days = 3
+				}
+			}
+		}
+	}	
+country_event = {
+	id = newyork.31
+		title = newyork.31.t
+		desc = newyork.31.d
+		picture = GFX_report_event_election_vote
+		is_triggered_only = yes
+		option = {
+			name = newyork.31.a
+			ai_chance = {
+				base = 100
+				}
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = NJN
+				}
+			}
+		}
+country_event = {
+	id = newyork.4
+		title = newyork.4.t
+		desc = newyork.4.d
+		picture = GFX_report_event_election_vote
+		is_triggered_only = yes
+		option = {
+			name = newyork.4.a
+			ai_chance = {
+				base = 100
+				}
+			NYN = {
+				add_to_faction = LAB
+				}
+			}
+		option = {
+			name = newyork.4.b
+			ai_chance = {
+				base = 0
+				}
+			NYN = {
+				country_event = {
+				id = newyork.41
+				days = 3
+				}
+			}
+		}
+	}
+country_event = {
+	id = newyork.41
+		title = newyork.41.t
+		desc = newyork.41.d
+		picture = GFX_report_event_election_vote
+		is_triggered_only = yes
+		option = {
+			name = newyork.41.a
+			ai_chance = {
+				base = 100
+				}
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = LAB
+				}
+			}
+		}
+country_event = {
+	id = newyork.5
+		title = newyork.5.t
+		desc = newyork.5.d
+		picture = GFX_report_event_election_vote
+		is_triggered_only = yes
+		option = {
+			name = newyork.5.a
+			ai_chance = {
+				base = 100
+				}
+			NYN = {
+				add_to_faction = ONO
+				}
+			}
+		option = {
+			name = newyork.5.b
+			ai_chance = {
+				base = 0
+				}
+			NYN = {
+				country_event = {
+				id = newyork.51
+				days = 3
+				}
+			}
+		}
+	}
+country_event = {
+	id = newyork.51
+		title = newyork.51.t
+		desc = newyork.51.d
+		picture = GFX_report_event_election_vote
+		is_triggered_only = yes
+		option = {
+			name = newyork.51.a
+			ai_chance = {
+				base = 100
+				}
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = ONO
+				}
+			}
+		}
+country_event = {
+	id = newyork.6
+		title = newyork.6.t
+		desc = newyork.6.d
+		picture = GFX_report_event_election_vote
+		is_triggered_only = yes
+		option = {
+			name = newyork.6.a
+			ai_chance = {
+				base = 100
+				}
+			NYN = {
+				add_to_faction = QCQ
+				}
+			}
+		option = {
+			name = newyork.6.b
+			ai_chance = {
+				base = 0
+				}
+			NYN = {
+				country_event = {
+				id = newyork.61
+				days = 3
+				}
+			}
+		}
+	}
+country_event = {
+	id = newyork.61
+		title = newyork.61.t
+		desc = newyork.61.d
+		picture = GFX_report_event_election_vote
+		is_triggered_only = yes
+		option = {
+			name = newyork.61.a
+			ai_chance = {
+				base = 100
+				}
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = QCQ
+				}
+			}
+		}
+country_event = {
+		id = newyork.7
+		title = newyork.7.t
+		desc = newyork.7.d
+		picture = GFX_report_event_election_vote
+		is_triggered_only = yes
+		option = {
+			name = newyork.7.a
+			ai_chance = {
+				base = 100
+				}
+			NYN = {
+				add_to_faction = PAP
+				}
+			}
+		option = {
+			name = newyork.7.b
+			ai_chance = {
+				base = 0
+				}
+			NYN = {
+				country_event = {
+				id = newyork.71
+				days = 3
+				}
+			}
+		}
+	}
+country_event = {
+	id = newyork.71
+		title = newyork.71.t
+		desc = newyork.71.d
+		picture = GFX_report_event_election_vote
+		is_triggered_only = yes
+		option = {
+			name = newyork.71.a
+			ai_chance = {
+				base = 100
+				}
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = PAP
+				}
+			}
+		}
+country_event = {
+	id = newyork.8
+	title = newyork.8.t
+		desc = newyork.8.d
+		picture = GFX_report_event_election_vote
+		is_triggered_only = yes
+		option = {
+			name = newyork.8.a
+			ai_chance = {
+				base = 100
+				}
+			create_wargoal = {
+				type = annex_everything
+				target = BRM
+				}
+			}
+		}
+country_event = {
+	id = newyork.9
+	title = newyork.9.t
+		desc = newyork.9.d
+		picture = GFX_report_event_election_vote
+		is_triggered_only = yes
+		option = {
+			name = newyork.9.a
+			ai_chance = {
+				base = 100
+				}
+			create_wargoal = {
+				type = annex_everything
+				target = BAH
+				}
+			create_wargoal = {
+				type = annex_everything
+				target = TCI
+				}
+			}
+		}
+country_event = {
+	id = newyork.10
+	title = newyork.10.t
+		desc = newyork.10.d
+		picture = GFX_report_event_election_vote
+		is_triggered_only = yes
+		option = {
+			name = newyork.10.a
+			ai_chance = {
+				base = 100
+				}
+			create_wargoal = {
+				type = annex_everything
+				target = PRP
+				}
+			}
+		}
+country_event = {
+	id = newyork.11
+	title = newyork.11.t
+		desc = newyork.11.d
+		picture = GFX_report_event_election_vote
+		is_triggered_only = yes
+		option = {
+			name = newyork.11.a
+			ai_chance = {
+				base = 100
+				}
+			create_wargoal = {
+				type = annex_everything
+				target = HAI
+				}
+			create_wargoal = {
+				type = annex_everything
+				target = DOM
+				}
+			}
+		}
+country_event = {
+	id = newyork.12
+	title = newyork.12.t
+		desc = newyork.12.d
+		picture = GFX_report_event_election_vote
+		is_triggered_only = yes
+		option = {
+			name = newyork.12.a
+			ai_chance = {
+				base = 100
+				}
+			create_wargoal = {
+				type = annex_everything
+				target = JAM
+				}
+			create_wargoal = {
+				type = annex_everything
+				target = CYM
+				}
+			}
+		}
+country_event = {
+	id = newyork.13
+	title = newyork.13.t
+		desc = newyork.13.d
+		picture = GFX_report_event_election_vote
+		is_triggered_only = yes
+		option = {
+			name = newyork.13.a
+			ai_chance = {
+				base = 100
+				}
+			create_wargoal = {
+				type = annex_everything
+				target = CUB
+				}
+			}
+		}
+country_event = {
+	id = newyork.14
+	title = newyork.14.t
+		desc = newyork.14.d
+		picture = GFX_report_event_election_vote
+		is_triggered_only = yes
+		option = {
+			name = newyork.14.a
+			ai_chance = {
+				base = 100
+				}
+			create_wargoal = {
+				type = annex_everything
+				target = PAN
+				}
+			}
+		}
+country_event = {
+	id = newyork.15
+	title = newyork.15.t
+	desc = newyork.15.d
+	picture = GFX_report_event_election_vote
+		is_triggered_only = yes
+		option = {
+			name = newyork.15.a
+			ai_chance = {
+				base = 100
+				}
+			DCD = {
+				add_to_faction = NYN
+				}
+			}
+		}	
+		
+country_event = {
+	id = nynengland.1
+	title = nynengland.1.t
+	desc = nynengland.1.d
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+	option = {
+		name = nynengland.1.a
+		ai_chance = {
+			base = 100
+			}
+		create_faction = new_york_opposition_pact
+		CTC = {
+			country_event = {
+			id = nynengland.2
+			days = 3
+			}
+		}
+		RIR = {
+			country_event = {
+			id = nynengland.3
+			days = 3
+			}
+		}
+		VTV = {
+			country_event = {
+			id = nynengland.4
+			days = 3
+			}
+		}
+		NHN = {
+			country_event = {
+			id = nynengland.5
+			days = 3
+			}
+		}
+		MEM = {
+			country_event = {
+			id = nynengland.6
+			days = 3
+			}	
+		}
+		add_ideas = NYN_defenseagainsttheempirestate
+	}	
+	option = {
+		name = nynengland.1.b
+		ai_chance = {
+			base = 0
+			}
+		}
+	}
+	
+country_event = {
+	id = nynengland.2
+	title = nynengland.2.t
+	desc = nynengland.2.d
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+	option = {
+		name = nynengland.2.a
+		ai_chance = {
+			base = 100
+			}
+		MAM = {
+			add_to_faction = CTC
+			}
+		add_ideas = NYN_defenseagainsttheempirestate	
+		}
+	option = {
+		name = nynengland.2.b
+		ai_chance = {
+			base = 0
+			}
+		}
+	}
+country_event = {
+	id = nynengland.3
+	title = nynengland.3.t
+	desc = nynengland.3.d
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+	option = {
+		name = nynengland.3.a
+		ai_chance = {
+			base = 100
+			}
+		MAM = {
+			add_to_faction = RIR
+			}
+		add_ideas = NYN_defenseagainsttheempirestate	
+		}
+	option = {
+		name = nynengland.3.b
+		ai_chance = {
+			base = 0
+			}
+		}
+	}
+country_event = {
+	id = nynengland.4
+	title = nynengland.4.t
+	desc = nynengland.4.d
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+	option = {
+		name = nynengland.4.a
+		ai_chance = {
+			base = 100
+			}
+		MAM = {
+			add_to_faction = VTV
+			}
+		add_ideas = NYN_defenseagainsttheempirestate	
+		}
+	option = {
+		name = nynengland.4.b
+		ai_chance = {
+			base = 0
+			}
+		}
+	}
+country_event = {
+	id = nynengland.5
+	title = nynengland.5.t
+	desc = nynengland.5.d
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+	option = {
+		name = nynengland.5.a
+		ai_chance = {
+			base = 100
+			}
+		MAM = {
+			add_to_faction = NHN
+			}
+		add_ideas = NYN_defenseagainsttheempirestate	
+		}
+	option = {
+		name = nynengland.5.b
+		ai_chance = {
+			base = 0
+			}
+		}
+	}	
+country_event = {
+	id = nynengland.6
+	title = nynengland.6.t
+	desc = nynengland.6.d
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+	option = {
+		name = nynengland.6.a
+		ai_chance = {
+			base = 100
+			}
+		MAM = {
+			add_to_faction = MEM
+			}
+		add_ideas = NYN_defenseagainsttheempirestate	
+		}
+	option = {
+		name = nynengland.6.b
+		ai_chance = {
+			base = 0
+			}
+		}
+		
+	}
+country_event = {
+	id = cnewyork.1
+	title = cnewyork.1.t
+	desc = cnewyork.1.d
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+	option = {
+		name = cnewyork.1.a
+		ai_chance = {
+			base = 25
+			}
+			NYN = {
+				annex_country = {
+					target = NJN
+					transfer_troops = no
+					}
+				}
+			}
+	option = {
+		name = cnewyork.1.b
+		ai_chance = {
+			base = 75
+			}
+			PAP = {
+				country_event = {
+					id = cnewyork.2
+					days = 3
+					}
+				}
+			}
+		}	
+country_event = {
+	id = cnewyork.2
+	title = cnewyork.2.t
+	desc = cnewyork.2.d
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+	option = {
+		name = cnewyork.2.a
+		ai_chance = {
+			base = 25
+			}
+		PAP = {
+			give_guarantee = NJN
+			}
+		NJN = {
+			country_event = {
+				id = cnewyork.3
+				days = 3
+				}
+			}
+		NYN = {
+			country_event = {
+				id = cnewyork.4
+				days = 3
+				}
+			}
+		}	
+	option = {
+		name = cnewyork.2.b
+		ai_chance = {
+			base = 75
+			}
+		NJN = {
+			country_event = {
+				id = cnewyork.5
+				days = 3
+				}
+			}
+		}
+	}
+country_event = {
+	id = cnewyork.3
+	title = cnewyork.3.t
+	desc = cnewyork.3.d
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+	option = {
+		name = cnewyork.3.a
+		}
+	}
+country_event = {
+	id = cnewyork.4
+	title = cnewyork.4.t
+	desc = cnewyork.4.d
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+	option = {
+		name = cnewyork.4.a
+		NYN = {
+			create_wargoal = {
+				type = annex_everything
+				target = NJN
+				}
+			}
+		}
+	}
+country_event = {
+	id = cnewyork.5
+	title = cnewyork.5.t
+	desc = cnewyork.5.d
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+	option = {
+		name = cnewyork.5.a
+		ai_chance = {
+			base = 75
+			}
+		NYN = {
+			annex_country = {
+				target = NJN
+				transfer_troops = no
+				}
+			}
+		}
+	option = {
+		name = cnewyork.5.b
+		ai_chance = {
+			base = 25
+			}
+		NYN	= {
+			country_event = {
+				id = cnewyork.6
+				days = 3
+				}
+			}
+		}
+	}
+country_event = {
+	id = cnewyork.6
+	title = cnewyork.6.t
+	desc = cnewyork.6.d
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+	option = {
+		name = cnewyork.6.a
+		NYN = {
+			create_wargoal = {
+				type = annex_everything
+				target = NJN
+				}
+			}
+		}
+	}
+country_event = {
+    id = cnewyork.7
+    hidden = yes
+    is_triggered_only = yes
+
+    immediate = {
+        if = {
+            limit = { date < 1936.11.21 }
+
+            country_event = {
+                id = cnewyork.7
+                days = 1
+            }
+        }
+        else = {
+			NYN = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 2000
+					producer = NYN
+				}
+            }
+        }
+    }
+}
+country_event = {
+    id = cnewyork.8
+    hidden = yes
+    is_triggered_only = yes
+
+    immediate = {
+        if = {
+            limit = { date < 1936.11.21 }
+
+            country_event = {
+                id = cnewyork.8
+                days = 1
+            }
+        }
+        else = {
+			division_template = {
+				name = NYN_communist_militia  	# Standard formation for frontline divisions
+					is_locked = yes
+					regiments = {
+						militia = { x = 0 y = 0 }
+						militia = { x = 0 y = 1 }
+						militia = { x = 0 y = 2 }
+						}
+						support = {
+							}
+					}
+					204 = {
+					create_unit = { division = "name = \"Communist Militia\" division_template = \"NYN_communist_militia\" start_experience_factor = 0.5" owner = NYN
+					count = 3
+					}
+				}
+			}
+		}
+	}
+country_event = {
+    id = cnewyork.9
+    hidden = yes
+    is_triggered_only = yes
+
+    immediate = {
+        if = {
+            limit = { date < 1936.11.21 }
+
+            country_event = {
+                id = cnewyork.9
+                days = 1
+            }
+        }
+        else = {
+			202 = {
+				transfer_state_to = NYN
+				}
+			}
+		}
+	}
+country_event = {
+    id = cnewyork.10
+    hidden = yes
+    is_triggered_only = yes
+
+    immediate = {
+        if = {
+            limit = { date < 1936.11.21 }
+
+            country_event = {
+                id = cnewyork.10
+                days = 1
+            }
+        }
+        else = {
+			203 = {
+				transfer_state_to = NYN
+				}
+			}
+		}
+	}
+country_event = {
+	id = cnewyork.11
+	title = cnewyork.11.t
+	desc = cnewyork.11.d
+	is_triggered_only = yes
+	picture = GFX_report_event_election_vote
+	option = {
+		name = cnewyork.11.a
+		ai_chance = {
+			base = 100
+			}
+		KYK = {
+			country_event = cnewyork.12
+			}
+		WVW = {
+			country_event = cnewyork.13
+			}
+		every_country = {
+			limit = {
+				is_civil_war = yes
+				original_tag = OHO
+				has_government = communism
+				}
+			ROOT = {
+				puppet = {
+				target = PREV
+				end_wars = yes
+				end_civil_wars = no
+				}
+			}
+		}
+	}
+}
+country_event = {
+	id = cnewyork.12
+	title = cnewyork.12.t
+	desc = cnewyork.12.d
+	is_triggered_only = yes
+	picture = GFX_report_event_election_vote
+	option = {
+		name = cnewyork.12.a
+		ai_chance = {
+			base = 100
+			}
+		KYK = {
+			transfer_state = 279
+			transfer_state = 273
+			transfer_state = 280
+			transfer_state = 274
+			}
+		}
+	option = {
+		name = cnewyork.12.b
+		}
+	}
+country_event = {
+	id = cnewyork.13
+	title = cnewyork.13.t
+	desc = cnewyork.13.d
+	is_triggered_only = yes
+	picture = GFX_report_event_election_vote
+	option = {
+		name = cnewyork.13.a
+		ai_chance = {
+			base = 100
+			}	
+		WVW = {
+			transfer_state = 272
+			transfer_state = 281
+			transfer_state = 282
+			transfer_state = 30
+			}
+		}
+	option = {
+		name = cnewyork.13.b
+		}
+	}	
+country_event = {
+	id = cnewyork.14
+	title = cnewyork.14.t
+	desc = cnewyork.14.d
+	is_triggered_only = yes
+	picture = GFX_report_event_election_vote
+	option = {
+		name = cnewyork.14.a
+		ai_chance = {
+			base = 100
+			}
+		KYK = {
+			country_event = cnewyork.15
+			}
+		every_country = {
+			limit = {
+				is_civil_war = yes
+				original_tag = INI
+				has_government = communism
+				}
+			ROOT = {
+				puppet = {
+				target = PREV
+				end_wars = yes
+				end_civil_wars = no
+				}
+			}
+		}
+	}
+}
+country_event = {
+	id = cnewyork.15
+	title = cnewyork.15.t
+	desc = cnewyork.15.d
+	is_triggered_only = yes
+	picture = GFX_report_event_election_vote
+	option = {
+		name = cnewyork.15.a
+		ai_chance = {
+			base = 100
+			}
+		KYK = {
+			transfer_state = 290
+			transfer_state = 289
+			transfer_state = 292
+			transfer_state = 291
+			transfer_state = 294
+			transfer_state = 32
+			transfer_state = 293
+			}
+		}
+	option = {
+		name = cnewyork.15.b
+		}
+	}
+country_event = {
+	id = cnewyork.16
+	title = cnewyork.16.t
+	desc = cnewyork.16.d
+	is_triggered_only = yes
+	picture = GFX_report_event_election_vote
+	option = {
+		name = cnewyork.16.a
+		ai_chance = {
+			base = 100
+			}
+		KYK = {
+			country_event = cnewyork.17
+			}
+		MOM = {
+			country_event = cnewyork.18
+			}
+		every_country = {
+			limit = {
+				is_civil_war = yes
+				original_tag = ILI
+				has_government = communism
+				}
+			ROOT = {
+				puppet = {
+				target = PREV
+				end_wars = yes
+				end_civil_wars = no
+				}
+			}
+		}
+	}
+}
+country_event = {
+	id = cnewyork.17
+	title = cnewyork.17.t
+	desc = cnewyork.17.d
+	is_triggered_only = yes
+	picture = GFX_report_event_election_vote
+	option = {
+		name = cnewyork.17.a
+		ai_chance = {
+			base = 100
+			}
+		KYK = {
+			transfer_state = 34
+			transfer_state = 334
+			transfer_state = 329
+			}
+		}
+	option = {
+		name = cnewyork.17.b
+		}	
+	}
+country_event = {
+	id = cnewyork.18
+	title = cnewyork.18.t
+	desc = cnewyork.18.d
+	is_triggered_only = yes
+	picture = GFX_report_event_election_vote
+	option = {
+		name = cnewyork.18.a
+		ai_chance = {
+			base = 100
+			}
+		MOM = {
+			transfer_state = 327
+			transfer_state = 332
+			transfer_state = 331
+			transfer_state = 333
+			transfer_state = 325
+			transfer_state = 326
+			transfer_state = 328
+			transfer_state = 330
+			}
+		}
+	option = {
+		name = cnewyork.18.b
+		}	
+	}
+country_event = {
+	id = cnewyork.19
+	title = cnewyork.19.t
+	desc = cnewyork.19.d
+	is_triggered_only = yes
+	picture = GFX_report_event_election_vote
+	option = {
+		name = cnewyork.19.a
+		ai_chance = {
+			base = 100
+			}
+		MNM = {
+			country_event = cnewyork.20
+			}
+		every_country = {
+			limit = {
+				is_civil_war = yes
+				original_tag = WIW
+				has_government = communism
+				}
+			ROOT = {
+				puppet = {
+				target = PREV
+				end_wars = yes
+				end_civil_wars = no
+				}
+			}
+		}
+	}
+}
+country_event = {
+	id = cnewyork.20
+	title = cnewyork.20.t
+	desc = cnewyork.20.d
+	is_triggered_only = yes
+	picture = GFX_report_event_election_vote
+	option = {
+		name = cnewyork.20.a
+		ai_chance = {
+			base = 100
+			}
+		MNM = {
+			transfer_state = 318
+			transfer_state = 314
+			transfer_state = 320
+			transfer_state = 35
+			}
+		}
+	option = {
+		name = cnewyork.20.b
+		}	
+	}
+country_event = {
+	id = cnewyork.21
+	title = cnewyork.21.t
+	desc = cnewyork.21.d
+	is_triggered_only = yes
+	picture = GFX_report_event_election_vote
+	option = {
+		name = cnewyork.21.a
+		ai_chance = {
+			base = 75
+			}
+		MIM = {
+                start_civil_war = {
+                    ruling_party = communism
+					ideology = communism
+                    size = 0.5
+                    capital = 295
+                    states = {
+                        304 297 296 300 301
+						}
+					}
+				}
+			MIM = {
+				set_politics = {
+					ruling_party = democratic
+					elections_allowed = no
+					}
+				}
+		every_country = {
+			limit = {
+				is_civil_war = yes
+				original_tag = MIM
+				has_government = communism
+				}
+			NYN = {
+				puppet = {
+				target = PREV
+				end_wars = yes
+				end_civil_wars = no
+				}
+			}
+		}
+	}
+	option = {
+		name = cnewyork.21.b 
+		ai_chance = {
+			base = 25
+			}
+			NYN = {
+				puppet = {
+				target = MIM
+				end_wars = yes
+				end_civil_wars = no
+				}
+			}
+		}
+	}

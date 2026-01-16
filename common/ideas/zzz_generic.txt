@@ -162,6 +162,27 @@ ideas = {
 				repair_speed_factor = -0.05
 			}
 		}
+		generic_depression = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+
+			picture = generic_depression
+			
+			modifier = {
+				political_power_gain = -0.3
+				local_resources_factor = -00.30
+				production_speed_buildings_factor = -00.40
+				consumer_goods_factor = 00.30
+			}
+		}
 		damage_to_naval_base_medium = {
 			allowed = {
 				always = no
@@ -671,6 +692,7 @@ ideas = {
 		}
 		# Generic Focus Ideas
 
+		
 		special_forces = {
 			allowed = {
 				always = no

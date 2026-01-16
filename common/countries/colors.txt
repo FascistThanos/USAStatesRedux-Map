@@ -231,6 +231,11 @@ VAV = {
 	color_ui = rgb { 242 214 0 }
 }
 
+DCD = {
+	color = rgb { 88 97 160 }
+	color_ui = rgb { 88 97 160 }
+}
+
 WAW = {
 	color = rgb { 5 130 43 }
 	color_ui = rgb { 5 130 43 }

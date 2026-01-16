@@ -1,0 +1,25 @@
+NYN_balance = {
+
+}
+NYN_communistprep = {
+	allowed = {
+			original_tag = NYN
+			}
+	visible = {
+		has_completed_focus = NYN_rallylongisland
+		}
+}
+NYN_communistuprising = {
+}
+NYN_rustbeltmeddling = {
+	allowed = {
+		original_tag = NYN
+		available = {
+			has_completed_focus = NYN_redruckus
+			}
+		}
+	visible = {
+		has_completed_focus = NYN_redruckus
+		}
+
+}

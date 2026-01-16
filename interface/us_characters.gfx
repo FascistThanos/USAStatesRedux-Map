@@ -106,4 +106,14 @@ spriteType = {
   name = GFX_Portrait_leader_six_small
   texturefile = "gfx/interface/ideas/idea_generic_army_europe_6.dds"
 }
+#NewYork
+spriteType = {
+	name = "GFX_Portrait_NYN_thomastingeycraven"
+	texturefile = "gfx/leaders/NYN/Portrait_NYN_Thomas_Tingey_Craven.dds"
+	}
+	
+spriteType = {
+	name = "GFX_Portrait_NYN_thomastingeycraven_small"
+	texturefile = "gfx/interface/ideas/idea_NYN_Thomas_Tingey_Craven.dds"
+	}	
 }

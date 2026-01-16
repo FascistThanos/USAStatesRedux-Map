@@ -62,7 +62,7 @@ set_technology = {
 
 
 set_convoys = 100
-set_stability = 0.9
+set_stability = 0.4
 
 set_politics = {
 
@@ -72,7 +72,7 @@ set_politics = {
 	elections_allowed = yes
 }
 add_ideas = {
-	#
+	NYN_cripplingdepression
 }
 set_popularities = {
 	democratic = 60
@@ -112,6 +112,14 @@ create_country_leader = {
 									anti_democrat
 														}
 												}
+create_country_leader = {
+	name = "William Halsey Jr."
+	#desc = ""
+	picture = "Portrait_NYN_WilliamHalseyJR"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = { lucky }
+	}
 
 
 create_corps_commander = {
@@ -136,6 +144,56 @@ create_corps_commander = {
 	planning_skill = 2
 	logistics_skill = 1
 	}
+create_navy_leader = {
+	name = "Thomas Tingey Craven"
+	picture = "Portrait_NYN_Thomas_Tingey_Craven.dds"
+	traits = { spotter fleet_protector naval_lineage }
+	skill = 4
+	attack_skill = 2
+	defense_skill = 1
+	maneuvering_skill = 4
+	coordination_skill = 2	
+	}
+create_navy_leader = {
+	name = "Clark H. Woodward"
+	picture = "Portrait_NYN_ClarkHWoodward.dds"
+	traits = { ironside big_guns_expert battleship_adherent bold }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 2
+	maneuvering_skill = 2
+	coordination_skill = 2	
+	}
+create_navy_leader = {
+	name = "Ernest J. King"
+	picture = "Portrait_NYN_ErnestJKing.dds"
+	traits = { fleet_protector fly_swatter chief_engineer }
+	skill = 5
+	attack_skill = 2
+	defense_skill = 4
+	maneuvering_skill = 2
+	coordination_skill = 3
+	}
+create_navy_leader = {
+	name = "William Halsey Jr."
+	picture = "Portrait_NYN_WilliamHalseyJR.dds"
+	traits = { air_controller flight_deck_manager bold }
+	skill = 5
+	attack_skill = 3
+	defense_skill = 2
+	maneuvering_skill = 3
+	coordination_skill = 2
+	}
+create_navy_leader = {
+	name = "C. Wade McClusky"
+	picture = "Portrait_NYN_Clarence_Wade_McClusky.dds"
+	traits = { air_controller fly_swatter gentlemanly }
+	skill = 4
+	attack_skill = 2
+	defense_skill = 2
+	maneuvering_skill = 2
+	coordination_skill = 2
+	}
 
 
 1939.1.1 = {
@@ -150,10 +208,11 @@ create_corps_commander = {
 	}
 }
 set_popularities = {
-	democratic = 98
-	communism = 1
-	fascism = 1
+	democratic = 60
+	communism = 30
+	neutrality = 10
 }
+
 ### Ship Variants ###
 
 create_equipment_variant = {

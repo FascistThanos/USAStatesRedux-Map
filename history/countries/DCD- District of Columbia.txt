@@ -69,16 +69,22 @@ set_stability = 0.6
 
 set_politics = {
 
-	ruling_party = democratic
+	ruling_party = neutrality
 	last_election = "1936.11.8"
 	election_frequency = 48
 	elections_allowed = yes
 }
 set_popularities = {
-	democratic = 98
-	communism = 1
-	fascism = 1
+	democratic = 10
+	communism = 5
+	fascism = 5
+	neutrality = 80
 }
+set_autonomy = {
+	target = MDM
+	autonomous_state =  autonomy_puppet
+}
+create_faction_from_template = DCD_faction_template_european_dominance_monarchist
 
 create_country_leader = {
  	name = "Franklin D. Roosevelt"
@@ -134,11 +140,6 @@ create_corps_commander = {
 		election_frequency = 48
 		elections_allowed = yes
 	}
-}
-set_popularities = {
-	democratic = 98
-	communism = 1
-	fascism = 1
 }
 ### Ship Variants ###
 
