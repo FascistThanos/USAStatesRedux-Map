@@ -289,7 +289,7 @@ ideas = {
 			picture = CAC_dust_bowl_migration
 	
 			modifier = {
-				monthly_population = 2000
+				monthly_population = 0.2
 				stability_factor = -0.05
 				}
 			}
