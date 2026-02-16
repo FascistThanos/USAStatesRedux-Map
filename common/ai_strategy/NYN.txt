@@ -1,0 +1,11 @@
+NYN_navalinvasion= {
+	allowed = {
+		original_tag = NYN
+		}
+	enable = {
+		country_exists = NYN
+		}
+	ai_strategy = {
+		type = naval_invasion
+		}
+	}	

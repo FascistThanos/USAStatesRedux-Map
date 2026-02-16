@@ -1565,6 +1565,7 @@
 				focus = NYN_modernizeourcruisers
 				}
 			completion_reward = {
+				add_ideas = NYN_attackjersey
 				create_wargoal = {
 					type = annex_everything
 					target = NJN
@@ -2771,6 +2772,7 @@
 			}
 		}	
 		completion_reward = {
+			add_ideas = NYN_attackjersey
 			NJN = {
 				country_event = {
 					id = cnewyork.1
