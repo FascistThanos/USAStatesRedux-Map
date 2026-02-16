@@ -62,6 +62,9 @@ spriteTypes = {
 		name = "GFX_idea_amishdissent"
 		texturefile = "gfx\interface\ideas\amishdissent2.dds"
 	}
+	spriteType = {
+		name = GFX_idea_herbidea"
+		texturefile = "gfx\interface\ideas\idea_herbidea.dds"
 #Flordia
 	spriteType = {
 		name = "GFX_idea_FLF_welfare_Program_idea"

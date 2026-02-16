@@ -2,7 +2,7 @@
 
 oob = "NEN_1936"
 
-set_research_slots = 4
+set_research_slots = 3
 
 # Starting tech
 set_technology = {
@@ -60,11 +60,13 @@ set_technology = {
 	engines_1 = 1
 }
 
-
+add_ideas = NEN_leavethedust
+add_ideas = NEN_lightson
+add_ideas = NEN_abandonedwork
 
 
 set_convoys = 100
-set_stability = 0.9
+set_stability = 0.4
 
 set_politics = {
 
@@ -86,9 +88,9 @@ set_politics = {
 	}
 }
 set_popularities = {
-	democratic = 98
-	communism = 1
-	fascism = 1
+	democratic = 65
+	communism = 20
+	neutrality = 15
 }
 create_country_leader = {
 	name = "Robert Leroy Cochran"

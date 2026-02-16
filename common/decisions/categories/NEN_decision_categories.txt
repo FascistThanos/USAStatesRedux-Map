@@ -1,0 +1,16 @@
+NEN_babyboom = {
+	allowed = {
+		original_tag = NEN
+			}
+	visible = {
+		has_completed_focus = NEN_babyboom
+		}
+}
+NEN_foreigncontracts = {
+	allowed = {
+		original_tag = NEN
+			}
+	visible = {
+		has_completed_focus = NEN_foreigncontracts
+		}
+}

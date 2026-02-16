@@ -19,7 +19,7 @@ DCD_faction_template_european_dominance_monarchist = {
 	}
 
 	default_rules = {
-		joining_rule_neighbors_only
+		joining_rule_puppets_only
 		faction_peace_take_claimed_focus
 		change_leader_rule_manpower
 	}

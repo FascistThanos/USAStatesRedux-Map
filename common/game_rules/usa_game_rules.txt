@@ -95,6 +95,25 @@ KSK_game_path_ai = {
 		desc = "The AI will go down the communist side of their focus tree."
 	}
 }
+NEN_ai_behavior = {
+	name = "NEN_game_path_ai_title"
+	group = "RULE_GROUP_USASTATES_PATH_CHOICES"
+	option = {
+		name = federal_nebraska
+		text = "Heartland Command"
+		desc = "Nebraska will align itself with the Federal government and carry out its orders."
+		}
+	option = {
+		name = democratic_nebraska
+		text = "Agricultural Giant"
+		desc = "Nebraska will sell its crops to neighboring states in order to gain power."
+		}
+	option = {
+		name = communist_nebraska
+		text = "The Farm State"
+		desc = "Nebraska will keep a large surplus of food to gain the loyalty of her people."
+		}
+	}	
 decision_formables = {
 	name = "Form Nation Mechanic"
 	group = "Miscellaneous USA States Options"

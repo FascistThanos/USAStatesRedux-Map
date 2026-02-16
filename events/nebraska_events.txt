@@ -1,0 +1,1032 @@
+add_namespace = dnebraska
+add_namespace = cnebraska
+add_namespace = nnebraska
+#Federal Events
+country_event = {
+	id = nnebraska.1
+	title = nnebraska.1.t
+	desc = nnebraska.1.d 
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+	option = {
+		name = nnebraska.1.a
+		ai_chance = {
+			base = 100
+			}
+		DCD = {
+			add_to_faction = NEN
+			}
+		}	
+	}
+country_event = {
+	id = nnebraska.2
+	title = nnebraska.2.t
+	desc = nnebraska.2.d 
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+	option = {
+		name = nnebraska.2.a
+		ai_chance = {
+			base = 100
+			}
+		add_state_claim = 522
+		add_state_claim = 523
+		add_state_claim = 525
+		add_state_claim = 526
+		add_state_claim = 52
+		add_state_claim = 524
+		add_state_claim = 53
+		add_state_claim = 513
+		add_state_claim = 510
+		add_state_claim = 512
+		create_wargoal = {
+			type = take_claimed_state
+			target = SDS
+			}
+		}
+	}
+country_event = {
+	id = nnebraska.3
+	title = nnebraska.3.t
+	desc = nnebraska.3.d 
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+	option = {
+		name = nnebraska.3.a
+		ai_chance = {
+			base = 75
+			}
+		give_guarantee = SDS
+		}
+	option = {
+		name = nnebraska.3.b
+		ai_chance = {
+			base = 25
+			}
+		}
+	}	
+country_event = {
+	id = nnebraska.4
+	title = nnebraska.4.t
+	desc = nnebraska.4.d 
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+	option = {
+		name = nnebraska.4.a
+		ai_chance = {
+			base = 100
+			}
+		add_state_claim = 628
+		add_state_claim = 629
+		add_state_claim = 632
+		add_state_claim = 630
+		add_state_claim = 633
+		add_state_claim = 634
+		add_state_claim = 631
+		create_wargoal = {
+			type = take_claimed_state
+			target = COC
+			}
+		}
+	}	
+country_event = {
+	id = nnebraska.5
+	title = nnebraska.5.t
+	desc = nnebraska.5.d 
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+	option = {
+		name = nnebraska.5.a
+		ai_chance = {
+			base = 100
+			}
+		add_state_claim = 56
+		add_state_claim = 619
+		add_state_claim = 614
+		add_state_claim = 612
+		add_state_claim = 608
+		add_state_claim = 604
+		add_state_claim = 605
+		add_state_claim = 606
+		add_state_claim = 607
+		add_state_claim = 613
+		add_state_claim = 610
+		add_state_claim = 609
+		create_wargoal = {
+			type = take_claimed_state
+			target = WYW
+			}
+		}
+	}	
+country_event = {
+	id = nnebraska.6
+	title = nnebraska.6.t
+	desc = nnebraska.6.d 
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+	option = {
+		name = nnebraska.6.a
+		ai_chance = {
+			base = 100
+			}		
+		create_wargoal = {
+			type = take_claimed_state
+			target = NDN
+			}
+		}
+	}
+country_event = {
+	id = nnebraska.7
+	title = nnebraska.7.t
+	desc = nnebraska.7.d 
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+	option = {
+		name = nnebraska.7.a
+		ai_chance = {
+			base = 100
+			}
+		add_state_claim = 594
+		add_state_claim = 1393
+		add_state_claim = 1391
+		add_state_claim = 589
+		add_state_claim = 592
+		add_state_claim = 591
+		add_state_claim = 593
+		add_state_claim = 597
+		add_state_claim = 596
+		add_state_claim = 598
+		add_state_claim = 600
+		add_state_claim = 595
+		add_state_claim = 601
+		add_state_claim = 599
+		add_state_claim = 57
+		add_state_claim = 602
+		add_state_claim = 603
+		create_wargoal = {
+			type = take_claimed_state
+			target = MTM
+			}
+		}
+	}	
+country_event = {
+	id = cnebraska.1
+	title = cnebraska.1.t
+	desc = nnebraska.1.d 
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+	option = {
+		name = cnebraska.1.a
+		ai_chance = {
+			base = 100
+			}
+		NDN = {
+			add_state_claim = 521
+			add_state_claim = 524
+			add_state_claim = 52
+			add_state_claim = 525
+			add_state_claim = 526
+			diplomatic_relation = {
+				country = NEN
+				relation = non_aggression_pact
+				active = yes
+				}
+			create_wargoal = {
+				type = take_claimed_state
+				target = SDS
+				}
+			}
+		NEN = {
+			add_state_claim = 523
+			add_state_claim = 522
+			add_state_claim = 520
+			add_state_claim = 519
+			add_state_claim = 517
+			add_state_claim = 514
+			add_state_claim = 515
+			add_state_claim = 516
+			add_state_claim = 518
+			create_wargoal = {
+				type = take_claimed_state
+				target = SDS
+				}
+			}
+		}
+	}	
+country_event = {
+	id = cnebraska.2
+	title = cnebraska.2.t
+	desc = nnebraska.2.d 
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+	option = {
+		name = cnebraska.2.a
+		ai_chance = {
+			base = 100
+			}
+		MTM = {
+			add_state_claim = 521
+			add_state_claim = 524
+			add_state_claim = 52
+			add_state_claim = 525
+			add_state_claim = 526
+			diplomatic_relation = {
+				country = NEN
+				relation = non_aggression_pact
+				active = yes
+				}
+			create_wargoal = {
+				type = take_claimed_state
+				target = SDS
+				}
+			}
+		NEN = {
+			add_state_claim = 523
+			add_state_claim = 522
+			add_state_claim = 520
+			add_state_claim = 519
+			add_state_claim = 517
+			add_state_claim = 514
+			add_state_claim = 515
+			add_state_claim = 516
+			add_state_claim = 518
+			create_wargoal = {
+				type = take_claimed_state
+				target = SDS
+				}
+			}
+		}
+	}
+country_event = {
+	id = cnebraska.3
+	title = cnebraska.3.t
+	desc = nnebraska.3.d 
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+	option = {
+		name = cnebraska.3.a
+		ai_chance = {
+			base = 100
+			}
+		ARA = {
+			add_state_claim = 464
+			add_state_claim = 475
+			add_state_claim = 472
+			add_state_claim = 463
+			add_state_claim = 468
+			add_state_claim = 467
+			add_state_claim = 466
+			add_state_claim = 465
+			add_state_claim = 469
+			add_state_claim = 471
+			add_state_claim = 470
+			diplomatic_relation = {
+				country = NEN
+				relation = non_aggression_pact
+				active = yes
+				}
+			create_wargoal = {
+				type = take_claimed_state
+				target = MOM
+				}
+			}		
+		NEN = {
+			add_state_claim = 45
+			add_state_claim = 474
+			add_state_claim = 473
+			add_state_claim = 462
+			create_wargoal = {
+				type = take_claimed_state
+				target = MOM
+				}
+			}
+		}
+	}	
+country_event = {
+	id = cnebraska.4
+	title = cnebraska.4.t
+	desc = nnebraska.4.d 
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+	option = {
+		name = cnebraska.4.a
+		ai_chance = {
+			base = 100
+			}
+		KSK = {
+			add_state_claim = 464
+			add_state_claim = 475
+			add_state_claim = 472
+			add_state_claim = 463
+			add_state_claim = 468
+			add_state_claim = 467
+			add_state_claim = 466
+			add_state_claim = 465
+			add_state_claim = 469
+			add_state_claim = 471
+			add_state_claim = 470
+			diplomatic_relation = {
+				country = NEN
+				relation = non_aggression_pact
+				active = yes
+				}
+			create_wargoal = {
+				type = take_claimed_state
+				target = MOM
+				}
+			}		
+		NEN = {
+			add_state_claim = 45
+			add_state_claim = 474
+			add_state_claim = 473
+			add_state_claim = 462
+			create_wargoal = {
+				type = take_claimed_state
+				target = MOM
+				}
+			}
+		}
+	}			
+country_event = {
+	id = cnebraska.5
+	title = cnebraska.5.t
+	desc = nnebraska.5.d 
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+	option = {
+		name = cnebraska.5.a
+		ai_chance = {
+			base = 100
+			}
+		NDN = {
+			add_state_claim = 492
+			add_state_claim = 498
+			add_state_claim = 501
+			add_state_claim = 502
+			add_state_claim = 43
+			add_state_claim = 503
+			add_state_claim = 49
+			add_state_claim = 500
+			diplomatic_relation = {
+				country = NEN
+				relation = non_aggression_pact
+				active = yes
+				}
+			create_wargoal = {
+				type = take_claimed_state
+				target = MNM
+				}
+			}		
+		NEN = {
+			add_state_claim = 490
+			add_state_claim = 491
+			add_state_claim = 497
+			add_state_claim = 495
+			add_state_claim = 496
+			add_state_claim = 494
+			add_state_claim = 493
+			create_wargoal = {
+				type = take_claimed_state
+				target = MNM
+				}
+			}
+		}
+	}			
+country_event = {
+	id = cnebraska.6
+	title = cnebraska.6.t
+	desc = nnebraska.6.d 
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+	option = {
+		name = cnebraska.6.a
+		ai_chance = {
+			base = 100
+			}
+		WIW = {
+			add_state_claim = 492
+			add_state_claim = 498
+			add_state_claim = 501
+			add_state_claim = 502
+			add_state_claim = 43
+			add_state_claim = 503
+			add_state_claim = 49
+			add_state_claim = 500
+			diplomatic_relation = {
+				country = NEN
+				relation = non_aggression_pact
+				active = yes
+				}
+			create_wargoal = {
+				type = take_claimed_state
+				target = MNM
+				}
+			}		
+		NEN = {
+			add_state_claim = 490
+			add_state_claim = 491
+			add_state_claim = 497
+			add_state_claim = 495
+			add_state_claim = 496
+			add_state_claim = 494
+			add_state_claim = 493
+			create_wargoal = {
+				type = take_claimed_state
+				target = MNM
+				}
+			}
+		}
+	}
+country_event = {
+	id = cnebraska.7
+	title = cnebraska.7.t
+	desc = cnebraska.7.d 
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+	option = {
+		name = cnebraska.7.a
+		ai_chance = {
+			base = 100
+			}
+		CAC = {
+			add_to_faction = NEN
+			}
+		}
+	}
+country_event = {
+	id = cnebraska.8
+	title = cnebraska.8.t
+	desc = cnebraska.8.d 
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+	option = {
+		name = cnebraska.8.a
+		ai_chance = {
+			base = 100
+			}
+		KSK = {
+			add_to_faction = NEN
+			}
+		}
+	}	
+#DEMOCRATIC PATH
+country_event = {
+	id = dnebraska.1
+	title = dnebraska.1.t
+	desc = dnebraska.1.d 
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+	option = {
+		name = dnebraska.1.a
+		ai_chance = {
+			base = 100
+			}			
+		COC = {
+			add_ideas = NEN_nebraskanproduce
+			}
+		NEN = {
+			add_offsite_building = {
+				type = industrial_complex
+				level = 1
+				}
+			}
+		}
+	option = {
+		name = dnebraska.1.b
+		ai_chance ={
+			base = 0
+			}
+		}
+	}	
+country_event = {
+	id = dnebraska.2
+	title = dnebraska.2.t
+	desc = dnebraska.2.d 
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+	option = {
+		name = dnebraska.2.a
+		ai_chance = {
+			base = 100
+			}			
+		IAI = {
+			add_ideas = NEN_nebraskanproduce
+			}
+		NEN = {
+			add_offsite_building = {
+				type = industrial_complex
+				level = 1
+				}
+			}
+		}
+	option = {
+		name = dnebraska.2.b
+		ai_chance ={
+			base = 0
+			}
+		}
+	}
+country_event = {
+	id = dnebraska.3
+	title = dnebraska.3.t
+	desc = dnebraska.3.d 
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+	option = {
+		name = dnebraska.3.a
+		ai_chance = {
+			base = 100
+			}			
+		WYW = {
+			add_ideas = NEN_nebraskanproduce
+			}
+		NEN = {
+			add_offsite_building = {
+				type = industrial_complex
+				level = 1
+				}
+			}
+		}
+	option = {
+		name = dnebraska.3.b
+		ai_chance ={
+			base = 0
+			}
+		}
+	}
+country_event = {
+	id = dnebraska.4
+	title = dnebraska.4.t
+	desc = dnebraska.4.d 
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+	option = {
+		name = dnebraska.4.a
+		ai_chance = {
+			base = 100
+			}			
+		SDS = {
+			add_ideas = NEN_nebraskanproduce
+			}
+		NEN = {
+			add_offsite_building = {
+				type = industrial_complex
+				level = 1
+				}
+			}
+		}
+	option = {
+		name = dnebraska.4.b
+		ai_chance ={
+			base = 0
+			}
+		}
+	}
+country_event = {
+	id = dnebraska.5
+	title = dnebraska.5.t
+	desc = dnebraska.5.d 
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+	option = {
+		name = dnebraska.5.a
+		ai_chance = {
+			base = 100
+			}			
+		KSK = {
+			add_ideas = NEN_nebraskanproduce
+			}
+		NEN = {
+			add_offsite_building = {
+				type = industrial_complex
+				level = 1
+				}
+			}
+		}
+	option = {
+		name = dnebraska.5.b
+		ai_chance ={
+			base = 0
+			}
+		}
+	}
+country_event = {
+	id = dnebraska.6
+	title = dnebraska.6.t
+	desc = dnebraska.6.d 
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+	option = {
+		name = dnebraska.6.a
+		ai_chance = {
+			base = 100
+			}			
+		MOM = {
+			add_ideas = NEN_nebraskanproduce
+			}
+		NEN = {
+			add_offsite_building = {
+				type = industrial_complex
+				level = 1
+				}
+			}
+		}
+	option = {
+		name = dnebraska.6.b
+		ai_chance ={
+			base = 0
+			}
+		}
+	}	
+country_event = {
+	id = dnebraska.7
+	title = dnebraska.7.t
+	desc = dnebraska.7.d 
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+	option = {
+		name = dnebraska.7.a
+		ai_chance = {
+			base = 100
+			}			
+		COC = {
+			add_ideas = NEN_cornhuskercommodities
+			}
+		NEN = {
+			add_offsite_building = {
+				type = industrial_complex
+				level = 2
+				}
+			}
+		}
+	option = {
+		name = dnebraska.7.b
+		ai_chance ={
+			base = 0
+			}
+		}
+	}
+country_event = {
+	id = dnebraska.8
+	title = dnebraska.8.t
+	desc = dnebraska.8.d 
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+	option = {
+		name = dnebraska.8.a
+		ai_chance = {
+			base = 100
+			}			
+		IAI = {
+			add_ideas = NEN_cornhuskercommodities
+			}
+		NEN = {
+			add_offsite_building = {
+				type = industrial_complex
+				level = 2
+				}
+			}
+		}
+	option = {
+		name = dnebraska.8.b
+		ai_chance ={
+			base = 0
+			}
+		}
+	}
+country_event = {
+	id = dnebraska.9
+	title = dnebraska.9.t
+	desc = dnebraska.9.d 
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+	option = {
+		name = dnebraska.9.a
+		ai_chance = {
+			base = 100
+			}			
+		WYW = {
+			add_ideas = NEN_cornhuskercommodities
+			}
+		NEN = {
+			add_offsite_building = {
+				type = industrial_complex
+				level = 2
+				}
+			}
+		}
+	option = {
+		name = dnebraska.9.b
+		ai_chance ={
+			base = 0
+			}
+		}
+	}
+country_event = {
+	id = dnebraska.10
+	title = dnebraska.10.t
+	desc = dnebraska.10.d 
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+	option = {
+		name = dnebraska.10.a
+		ai_chance = {
+			base = 100
+			}			
+		SDS = {
+			add_ideas = NEN_cornhuskercommodities
+			}
+		NEN = {
+			add_offsite_building = {
+				type = industrial_complex
+				level = 2
+				}
+			}
+		}
+	option = {
+		name = dnebraska.10.b
+		ai_chance ={
+			base = 0
+			}
+		}
+	}
+country_event = {
+	id = dnebraska.11
+	title = dnebraska.11.t
+	desc = dnebraska.11.d 
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+	option = {
+		name = dnebraska.11.a
+		ai_chance = {
+			base = 100
+			}			
+		KSK = {
+			add_ideas = NEN_cornhuskercommodities
+			}
+		NEN = {
+			add_offsite_building = {
+				type = industrial_complex
+				level = 2
+				}
+			}
+		}
+	option = {
+		name = dnebraska.11.b
+		ai_chance ={
+			base = 0
+			}
+		}
+	}
+country_event = {
+	id = dnebraska.12
+	title = dnebraska.12.t
+	desc = dnebraska.12.d 
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+	option = {
+		name = dnebraska.12.a
+		ai_chance = {
+			base = 100
+			}			
+		MOM = {
+			add_ideas = NEN_cornhuskercommodities
+			}
+		NEN = {
+			add_offsite_building = {
+				type = industrial_complex
+				level = 2
+				}
+			}
+		}
+	option = {
+		name = dnebraska.12.b
+		ai_chance ={
+			base = 0
+			}
+		}
+	}
+country_event = {
+	id = dnebraska.13
+	title = dnebraska.13.t
+	desc = dnebraska.13.d 
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+	option = {
+		name = dnebraska.13.a
+		ai_chance = {
+			base = 75
+			}			
+		NEN = {
+			transfer_state = 630
+			transfer_state = 631
+			add_state_core = 630
+			add_state_core = 631
+			}
+		}
+	option = {
+		name = dnebraska.13.b
+		ai_chance ={
+			base = 20
+			}
+		COC = {
+			remove_ideas = {
+				NEN_cornhuskercommodities
+				NEN_nebraskanproduce
+				}
+			}
+		}
+	option = {
+		name = dnebraska.13.c
+		ai_chance = {
+			base = 5
+			}
+		COC = {	
+			remove_ideas = {
+				NEN_cornhuskercommodities
+				NEN_nebraskanproduce
+				}
+			create_wargoal = {
+				type = topple_government
+				target = NEN
+				}
+			}
+		}	
+	}
+country_event = {
+	id = dnebraska.14
+	title = dnebraska.14.t
+	desc = dnebraska.14.d 
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+	option = {
+		name = dnebraska.14.a
+		ai_chance = {
+			base = 75
+			}			
+		NEN = {
+			transfer_state = 523
+			transfer_state = 522
+			add_state_core = 523
+			add_state_core = 522
+			}
+		}
+	option = {
+		name = dnebraska.14.b
+		ai_chance ={
+			base = 20
+			}
+		SDS = {
+			remove_ideas = {
+				NEN_cornhuskercommodities
+				NEN_nebraskanproduce
+				}
+			}
+		}
+	option = {
+		name = dnebraska.14.c
+		ai_chance = {
+			base = 5
+			}
+		SDS = {	
+			remove_ideas = {
+				NEN_cornhuskercommodities
+				NEN_nebraskanproduce
+				}
+			create_wargoal = {
+				type = topple_government
+				target = NEN
+				}
+			}
+		}	
+	}
+country_event = {
+	id = dnebraska.15
+	title = dnebraska.15.t
+	desc = dnebraska.15.d 
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+	option = {
+		name = dnebraska.15.a
+		ai_chance = {
+			base = 75
+			}			
+		NEN = {
+			transfer_state = 543
+			transfer_state = 540
+			add_state_core = 543
+			add_state_core = 540
+			}
+		}
+	option = {
+		name = dnebraska.15.b
+		ai_chance ={
+			base = 20
+			}
+		KSK = {
+			remove_ideas = {
+				NEN_cornhuskercommodities
+				NEN_nebraskanproduce
+				}
+			}
+		}
+	option = {
+		name = dnebraska.15.c
+		ai_chance = {
+			base = 5
+			}
+		KSK = {	
+			remove_ideas = {
+				NEN_cornhuskercommodities
+				NEN_nebraskanproduce
+				}
+			create_wargoal = {
+				type = topple_government
+				target = NEN
+				}
+			}
+		}	
+	}
+country_event = {
+	id = dnebraska.16
+	title = dnebraska.16.t
+	desc = dnebraska.16.d 
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+	option = {
+		name = dnebraska.16.a
+		ai_chance = {
+			base = 75
+			}			
+		NEN = {
+			transfer_state = 611
+			transfer_state = 604
+			transfer_state = 606
+			transfer_state = 605
+			add_state_core = 611
+			add_state_core = 604
+			add_state_core = 606
+			add_state_core = 605
+			}
+		}
+	option = {
+		name = dnebraska.16.b
+		ai_chance ={
+			base = 20
+			}
+		WYW = {
+			remove_ideas = {
+				NEN_cornhuskercommodities
+				NEN_nebraskanproduce
+				}
+			}
+		}
+	option = {
+		name = dnebraska.16.c
+		ai_chance = {
+			base = 5
+			}
+		WYW = {	
+			remove_ideas = {
+				NEN_cornhuskercommodities
+				NEN_nebraskanproduce
+				}
+			create_wargoal = {
+				type = topple_government
+				target = NEN
+				}
+			}
+		}	
+	}
+country_event = {
+	id = dnebraska.17
+	title = dnebraska.17.t
+	desc = dnebraska.17.d 
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+	option = {
+		name = dnebraska.17.a
+		ai_chance = {
+			base = 100
+			}
+		TXT = {
+			add_to_faction = NEN
+			}
+		}
+	}
+country_event = {
+	id = dnebraska.18
+	title = dnebraska.18.t
+	desc = dnebraska.18.d 
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+	option = {
+		name = dnebraska.18.a
+		ai_chance = {
+			base = 100
+			}
+		CAC = {
+			add_to_faction = NEN
+			}
+		}
+	}	

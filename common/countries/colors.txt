@@ -132,8 +132,8 @@ MTM = {
 }
 
 NEN = {
-	color = rgb { 124 176 65 }
-	color_ui = rgb { 124 176 65 }
+	color = rgb { 227 25 55 }
+	color_ui = rgb { 227 25 55 }
 }
 
 NVN = {
@@ -202,8 +202,8 @@ SCS = {
 }
 
 SDS = {
-	color = rgb { 199 46 46 }
-	color_ui = rgb { 199 46 46 }
+	color = rgb { 0 116 168 }
+	color_ui = rgb { 0 116 168 }
 }
 
 TNT = {

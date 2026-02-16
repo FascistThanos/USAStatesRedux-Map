@@ -1,4 +1,414 @@
 ideas = {
+	country = {
+		#The Shindig
+		NEN_leavethedust = {
+			allowed = {
+				always = no
+				}
+			 allowed_civil_war = {
+                always = yes
+            }
+			removal_cost = -1
+			
+			picture = RAJ_state_of_famine_country
+
+			modifier = {
+				recruitable_population_factor = -0.25
+				}
+			}	
+		NEN_lightson = {
+			allowed = {
+				always = no
+				}
+			 allowed_civil_war = {
+                always = yes
+            }
+			removal_cost = -1
+			
+			picture = PRC_nanjing_wireless_electronics_plant
+
+			modifier = {
+				consumer_goods_factor = 0.3
+				}
+			}	
+		NEN_abandonedwork = {
+			allowed = {
+				always = no
+				}
+			 allowed_civil_war = {
+                always = yes
+            }
+			removal_cost = -1
+			
+			picture = ICE_general_strike
+
+			modifier = {
+				production_speed_buildings_factor = -0.2
+				}
+			}
+		NEN_farmingsurplus = {
+			allowed = {
+				always = no
+				}
+			 allowed_civil_war = {
+                always = yes
+            }
+			removal_cost = -1
+			
+			picture = LIT_invested_in_farms
+
+			modifier = {	
+				monthly_population = 0.15
+				}
+			}	
+		NEN_railwayinvestments = {
+			allowed = {
+				always = no
+				}
+			 allowed_civil_war = {
+                always = yes
+            }
+			removal_cost = -1
+			
+			picture = ARG_invest_in_railways
+
+			modifier = {
+				production_speed_rail_way_factor = 0.10
+				production_speed_supply_node_factor = 0.10
+				}
+			}
+		NEN_governmentbeef = {
+			allowed = {
+				always = no
+				}
+			 allowed_civil_war = {
+                always = yes
+            }
+			removal_cost = -1
+			
+			picture = ARG_argentine_beef_trade
+
+			modifier = {
+				monthly_population = 0.1
+				political_power_gain = 0.25
+				consumer_goods_factor = 0.15
+				}
+			}
+		NEN_traineddiplomats = {
+			allowed = {
+				always = no
+				}
+			 allowed_civil_war = {
+                always = yes
+            }
+			removal_cost = -1
+			
+			picture = hun_treaty_of_trianon
+
+			modifier = {
+				political_power_gain = 0.25
+				stability_factor = -0.10
+				consumer_goods_factor = -0.10
+				}
+			}
+		NEN_farmtostate = {
+			allowed = {
+				always = no
+				}
+			 allowed_civil_war = {
+                always = yes
+            }
+			removal_cost = -1
+			
+			picture = generic_agrarian_reform
+
+			modifier = {
+				communism_drift = 0.1
+				}
+			}
+		NEN_governmentoverreach = {
+			allowed = {
+				always = no
+				}
+			 allowed_civil_war = {
+                always = yes
+            }
+			removal_cost = -1
+			
+			picture = generic_neutrality_drift_bonus
+
+			modifier = {
+				neutrality_drift = 0.1
+				}
+			}
+		NEN_wellpaidfarmers = {
+			allowed = {
+				always = no
+				}
+			 allowed_civil_war = {
+                always = yes
+            }
+			removal_cost = -1
+			
+			picture = NOR_printing_money
+
+			modifier = {
+				democratic_drift = 0.1
+				}
+			}
+#COMMUNIST PATH
+		NEN_ragstorifles = {
+			allowed = {
+				always = no
+				}
+			 allowed_civil_war = {
+                always = yes
+            }
+			removal_cost = -1
+			
+			picture = raj_rifle_factory_ishapore
+
+			modifier = {
+				recruitable_population_factor = 0.15
+				}
+			}
+		NEN_neverhungry = {
+			allowed = {
+				always = no
+				}
+			 allowed_civil_war = {
+                always = yes
+            }
+			removal_cost = -1
+			
+			picture = eng_for_the_good_of_the_revolution
+
+			modifier = {
+				monthly_population = 0.25
+				}
+			}
+		NEN_citizenstosoldiers = {
+			allowed = {
+				always = no
+				}
+			 allowed_civil_war = {
+                always = yes
+            }
+			removal_cost = -1
+			
+			picture = eng_imperial_conscription
+
+			modifier = {
+				recruitable_population_factor = 0.15
+				training_time_factor = -0.25
+				}
+			}
+		NEN_gobigred = {
+			allowed = {
+				always = no
+				}
+			 allowed_civil_war = {
+                always = yes
+            }
+			
+			picture = NEN_gobigred
+			removal_cost = -1
+
+			modifier = {
+				communism_drift = 0.02
+				research_speed_factor = 0.10
+				}
+			}
+		NEN_onestatesociety = {
+			allowed = {
+				always = no
+				}
+			 allowed_civil_war = {
+                always = yes
+            }
+			removal_cost = -1
+			
+			picture = HUN_resurgent_communist_party_idea
+
+			modifier = {
+				compliance_gain = 0.40
+				resistance_target = -0.25
+				resistance_activity = -0.20
+				}
+			}
+#DEMOCRATIC PATH
+		NEN_nebraskanproduce = {
+			allowed = {
+				always = no
+				}
+			 allowed_civil_war = {
+                always = yes
+            }
+			removal_cost = -1
+			cancel = {
+				has_war_with = NEN
+				}
+			picture = ARG_argentine_beef_trade
+
+			modifier = {
+				monthly_population = 0.05
+				}
+			}
+		NEN_cornhuskercommodities = {
+			allowed = {
+				always = no
+				}
+			 allowed_civil_war = {
+                always = yes
+            }
+			removal_cost = -1
+			on_remove = {
+				add_timed_idea = {
+					idea = NEN_derailedeconomy
+					days = 365
+				}
+			}	
+			cancel = {
+				has_war_with = NEN
+				}
+			
+			picture = HUN_agrarian_tradition
+
+			modifier = {
+				consumer_goods_factor = -0.20
+				monthly_population = 0.03
+				stability_factor = 0.10
+				}
+			}
+		NEN_derailedeconomy = {
+			allowed = {
+				always = no
+				}
+			 allowed_civil_war = {
+                always = yes
+            }
+			removal_cost = -1
+			
+			picture = generic_economic_crisis
+
+			modifier = {
+				consumer_goods_factor = 0.50
+				stability_factor = -0.40
+				production_speed_buildings_factor = -0.30
+				}
+			}
+		NEN_fundedsciences = {
+			allowed = {
+				always = no
+				}
+			 allowed_civil_war = {
+                always = yes
+            }
+			removal_cost = -1
+			
+			picture = jap_duplicate_research
+
+			modifier = {
+				research_speed_factor = 0.10
+				production_speed_buildings_factor = 0.15
+				industrial_capacity_factory = 0.10
+				}
+			}
+		NEN_bunkerbuilder = {
+			allowed = {
+				always = no
+				}
+			 allowed_civil_war = {
+                always = yes
+            }
+			removal_cost = -1
+			
+			picture = generic_fortify_the_borders
+
+			modifier = {
+				production_speed_bunker_factor = 0.25
+				army_defence_factor = 0.25
+				}
+			}
+#MILITARY
+		NEN_elitetraining = {
+			allowed = {
+				always = no
+				}
+			 allowed_civil_war = {
+                always = yes
+            }
+			removal_cost = -1
+			
+			picture = PER_special_units_division_idea
+
+			modifier = {
+				special_forces_cap = 0.25
+				special_forces_out_of_supply_factor = -0.25
+				}
+			}
+		NEN_greasedguns = {
+			allowed = {
+				always = no
+				}
+			 allowed_civil_war = {
+                always = yes
+            }
+			removal_cost = -1
+			
+			picture = SWE_let_fly_all_guns
+
+			modifier = {
+				equipment_bonus = {
+					infantry = {
+						reliability = 0.10
+						build_cost_ic = -0.10
+						}
+					}
+				}
+			}	
+		NEN_cornfieldcombat = {
+			allowed = {
+				always = no
+				}
+			 allowed_civil_war = {
+                always = yes
+            }
+			removal_cost = -1
+			
+			picture = generic_war_preparation
+
+			modifier = {
+				offence = 0.15
+				defence = 0.15
+				}
+			}	
+			
+
+
+
+
+
+
+
+			
+			
+
+
+	}
+		
+
+
+
+
+
+
+
+
+
+
+
+
 	political_advisor = {
 
 		NEN_James_Gully= {

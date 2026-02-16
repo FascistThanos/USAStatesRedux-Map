@@ -2747,6 +2747,10 @@
 				ideology = communism
 				popularity = 0.10
 				}
+			set_division_template_lock = {
+				division_template = NYN_communist_militia
+				is_locked = no
+				}
 			}
 		}
 	focus = {

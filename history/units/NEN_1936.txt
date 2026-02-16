@@ -57,4 +57,28 @@ units = {
 		start_equipment_factor = 1
 		start_manpower_factor = 1
 	}
+	division= {			
+		name = "2nd Nebraskan National Guard"		
+		location = 11537
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+		start_manpower_factor = 1
+	}
+	division= {			
+		name = "3rd Nebraskan National Guard"		
+		location = 11537
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+		start_manpower_factor = 1
+	}
+	division= {			
+		name = "4th Nebraskan National Guard"		
+		location = 11537
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+		start_manpower_factor = 1
+	}
 }

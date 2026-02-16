@@ -107,6 +107,9 @@ NYN_communistprep = {
 				has_decision = NYN_raidarmories
 				}
 			}
+			ai_will_do = {
+			base = 10
+			}
 		complete_effect = {
 				country_event = {
 				id = cnewyork.8
@@ -125,7 +128,10 @@ NYN_communistprep = {
 				has_decision = NYN_catskills
 				has_decision = NYN_raidarmories
 			}
-		}	
+		}
+			ai_will_do = {
+			base = 10
+			}		
 		complete_effect = {
 			country_event = {
 				id = cnewyork.9
@@ -144,6 +150,9 @@ NYN_communistprep = {
 				has_decision = NYN_preparemilitias
 				has_decision = NYN_raidarmories
 				}
+			}
+			ai_will_do = {
+			base = 10
 			}
 		complete_effect = {
 			country_event = {
@@ -164,6 +173,9 @@ NYN_communistprep = {
 				has_decision = NYN_preparemilitias
 				}
 			}
+			ai_will_do = {
+			base = 10
+			}
 		complete_effect = {
 			country_event = {
 				id = cnewyork.7
@@ -179,6 +191,9 @@ NYN_rustbeltmeddling = {
 		days_remove = 30
 		available = {
 			has_completed_focus = NYN_redruckus
+			}
+			ai_will_do = {
+			base = 10
 			}
 		remove_effect = {
 			OHO = {
@@ -196,6 +211,9 @@ NYN_rustbeltmeddling = {
 		available = {
 			has_completed_focus = NYN_redruckus
 			}
+			ai_will_do = {
+			base = 10
+			}
 		remove_effect = {
 			INI = {
 				add_timed_idea = {
@@ -211,6 +229,9 @@ NYN_rustbeltmeddling = {
 		days_remove = 30
 		available = {
 			has_completed_focus = NYN_redruckus
+			}
+			ai_will_do = {
+			base = 10
 			}
 		remove_effect = {
 			MIM = {
@@ -228,6 +249,9 @@ NYN_rustbeltmeddling = {
 		available = {
 			has_completed_focus = NYN_redruckus
 			}
+			ai_will_do = {
+			base = 10
+			}
 		remove_effect = {
 			ILI = {
 				add_timed_idea = {
@@ -244,6 +268,9 @@ NYN_rustbeltmeddling = {
 		available = {
 			has_completed_focus = NYN_redruckus
 			}
+			ai_will_do = {
+			base = 10
+			}
 		remove_effect = {
 			WIW = {
 				add_timed_idea = {
@@ -259,6 +286,9 @@ NYN_rustbeltmeddling = {
 		days_remove = 30
 		visible = {
 			has_completed_focus = NYN_preparetheuprisings
+			}
+			ai_will_do = {
+			base = 10
 			}
 		available = {
 			OHO = {
@@ -298,6 +328,9 @@ NYN_rustbeltmeddling = {
 		visible = {
 			has_completed_focus = NYN_preparetheuprisings
 			}
+			ai_will_do = {
+			base = 10
+			}
 		available = {
 			INI = {
 				communism > 0.4
@@ -335,6 +368,9 @@ NYN_rustbeltmeddling = {
 		days_remove = 30
 		visible = {
 			has_completed_focus = NYN_preparetheuprisings
+			}
+			ai_will_do = {
+			base = 10
 			}
 		available = {
 			ILI = {
@@ -374,6 +410,9 @@ NYN_rustbeltmeddling = {
 		visible = {
 			has_completed_focus = NYN_preparetheuprisings
 			}
+			ai_will_do = {
+			base = 10
+			}
 		available = {
 			WIW = {
 				communism > 0.4
@@ -411,6 +450,9 @@ NYN_rustbeltmeddling = {
 		days_remove = 30
 		visible = {
 			has_completed_focus = NYN_preparetheuprisings
+			}
+			ai_will_do = {
+			base = 10
 			}
 		available = {
 			MIM = {

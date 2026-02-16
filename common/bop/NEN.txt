@@ -1,0 +1,90 @@
+NEN_bop = {
+	initial_value = 0
+	left_side = "Surplus"
+	right_side = "Export"
+	range = {
+		id = "Balanced Economy"
+		min = -0.2
+		max = 0.2
+		modifier = {
+			neutrality_drift = 0.06
+			stability_factor = 0.15
+			}
+	}
+	side = {
+		id = "Surplus"
+		icon = GFX_idea_LIT_invested_in_farms
+		range = {
+			id = "Overwhelming Surplus"
+			min = -1
+			max = -0.8
+			modifier = {
+				stability_factor = -00.20
+				recruitable_population_factor = 0.25
+				communism_drift = 0.10
+				monthly_population = 0.30
+				production_speed_buildings_factor = -0.1
+			}
+		}
+		range = {
+			id = "Large Surplus"
+			min = -0.8
+			max = -0.5
+			modifier = {
+				stability_factor = -00.10
+				recruitable_population_factor = 0.15
+				communism_drift = 0.08
+				monthly_population = 0.20
+				production_speed_buildings_factor = -0.05
+			}
+		}	
+		range = {
+			id = "Small Surplus"
+			min = -0.5
+			max = -0.2
+			modifier = {
+				recruitable_population_factor = 0.55
+				communism_drift = 0.06
+				monthly_population = 0.10
+			}
+		}	
+	}
+	side = {
+		id = "Export"
+		icon = GFX_idea_NOR_printing_money
+		range = {
+			id = "Extreme Exports"
+			min = 0.8
+			max = 1
+			modifier = {
+				stability_factor = -00.20
+				recruitable_population_factor = -0.10
+				democratic_drift = 0.10
+				consumer_goods_factor = -0.15
+				production_speed_buildings_factor = 0.25
+			}
+		}
+		range = {
+			id = "High Exports"
+			min = 0.5
+			max = 0.8
+			modifier = {
+				stability_factor = -00.10
+				recruitable_population_factor = -0.05
+				democratic_drift = 0.08
+				consumer_goods_factor = -0.10
+				production_speed_buildings_factor = 0.15
+			}
+		}	
+		range = {
+			id = "Low Exports"
+			min = 0.2
+			max = 0.5
+			modifier = {
+				democratic_drift = 0.06
+				consumer_goods_factor = -0.05
+				production_speed_buildings_factor = 0.05
+			}
+		}	
+	}
+}

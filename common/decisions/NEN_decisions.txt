@@ -1,0 +1,542 @@
+NEN_babyboom = {
+	NEN_creditkearny = {
+		cost = 25
+		fire_only_once = yes
+		days_remove = 25
+		ai_will_do = {
+			base = 10
+			}
+		available = {
+			has_completed_focus = NEN_babyboom
+			}
+		remove_effect = {
+			536 = {
+				add_manpower = 150000
+				}
+			add_power_balance_value = {
+				id = NEN_bop
+				value = -0.05
+				}
+			}
+		}
+	NEN_creditgrandisland = {
+		cost = 25
+		fire_only_once = yes
+		days_remove = 25
+		ai_will_do = {
+			base = 10
+			}
+		available = {
+			has_completed_focus = NEN_babyboom
+			}
+		remove_effect = {
+			537 = {
+				add_manpower = 150000
+				}
+			add_power_balance_value = {
+				id = NEN_bop
+				value = -0.05
+				}
+			}
+		}
+	NEN_creditlincoln = {
+		cost = 25
+		fire_only_once = yes
+		days_remove = 25
+		ai_will_do = {
+			base = 10
+			}
+		available = {
+			has_completed_focus = NEN_babyboom
+			}
+		remove_effect = {
+			533 = {
+				add_manpower = 150000
+				}
+			add_power_balance_value = {
+				id = NEN_bop
+				value = -0.05
+				}
+			}
+		}
+	NEN_creditomaha = {
+		cost = 25
+		fire_only_once = yes
+		days_remove = 25
+		ai_will_do = {
+			base = 10
+			}
+		available = {
+			has_completed_focus = NEN_babyboom
+			}
+		remove_effect = {
+			539 = {
+				add_manpower = 150000
+				}
+			add_power_balance_value = {
+				id = NEN_bop
+				value = -0.05
+				}
+			}
+		}
+	NEN_creditloess = {
+		cost = 25
+		fire_only_once = yes
+		days_remove = 25
+		ai_will_do = {
+			base = 10
+			}
+		available = {
+			has_completed_focus = NEN_babyboom
+			}
+		remove_effect = {
+			535 = {
+				add_manpower = 150000
+				}
+			add_power_balance_value = {
+				id = NEN_bop
+				value = -0.05
+				}
+			}
+		}
+	NEN_creditpioneer = {
+		cost = 25
+		fire_only_once = yes
+		days_remove = 25
+		ai_will_do = {
+			base = 10
+			}
+		available = {
+			has_completed_focus = NEN_babyboom
+			}
+		remove_effect = {
+			532 = {
+				add_manpower = 150000
+				}
+			add_power_balance_value = {
+				id = NEN_bop
+				value = -0.05
+				}
+			}
+		}
+		
+}
+NEN_foreigncontracts = {
+	NEN_colorado1 = {
+		cost = 25
+		fire_only_once = yes
+		days_remove = 25
+		ai_will_do = {
+			base = 10
+			}
+		available = {
+			has_completed_focus = NEN_foreigncontracts
+			}
+		remove_effect = {
+			add_power_balance_value = {
+				id = NEN_bop
+				value = 0.05
+				}
+			COC = {
+				country_event = {
+					id = dnebraska.1
+					days = 3
+					}
+				}	
+			}
+		}
+	NEN_iowa1 = {
+		cost = 25
+		fire_only_once = yes
+		days_remove = 25
+		ai_will_do = {
+			base = 10
+			}
+		available = {
+			has_completed_focus = NEN_foreigncontracts
+			}
+		remove_effect = {
+			add_power_balance_value = {
+				id = NEN_bop
+				value = 0.05
+				}
+			IAI = {
+				country_event = {
+					id = dnebraska.2
+					days = 3
+					}
+				}	
+			}
+		}
+	NEN_wyoming1 = {
+		cost = 25
+		fire_only_once = yes
+		days_remove = 25
+		ai_will_do = {
+			base = 10
+			}
+		available = {
+			has_completed_focus = NEN_foreigncontracts
+			}
+		remove_effect = {
+			add_power_balance_value = {
+				id = NEN_bop
+				value = 0.05
+				}
+			WYW = {
+				country_event = {
+					id = dnebraska.3
+					days = 3
+					}
+				}	
+			}
+		}
+	NEN_sdakota1 = {
+		cost = 25
+		fire_only_once = yes
+		days_remove = 25
+		ai_will_do = {
+			base = 10
+			}
+		available = {
+			has_completed_focus = NEN_foreigncontracts
+			}
+		remove_effect = {
+			add_power_balance_value = {
+				id = NEN_bop
+				value = 0.05
+				}
+			SDS = {
+				country_event = {
+					id = dnebraska.4
+					days = 3
+					}
+				}	
+			}
+		}
+	NEN_kansas1 = {
+		cost = 25
+		fire_only_once = yes
+		days_remove = 25
+		ai_will_do = {
+			base = 10
+			}
+		available = {
+			has_completed_focus = NEN_foreigncontracts
+			}
+		remove_effect = {
+			add_power_balance_value = {
+				id = NEN_bop
+				value = 0.05
+				}
+			KSK = {
+				country_event = {
+					id = dnebraska.5
+					days = 3
+					}
+				}	
+			}
+		}
+	NEN_missouri1 = {
+		cost = 25
+		fire_only_once = yes
+		days_remove = 25
+		ai_will_do = {
+			base = 10
+			}
+		available = {
+			has_completed_focus = NEN_foreigncontracts
+			}
+		remove_effect = {
+			add_power_balance_value = {
+				id = NEN_bop
+				value = 0.05
+				}
+			MOM = {
+				country_event = {
+					id = dnebraska.6
+					days = 3
+					}
+				}	
+			}
+		}
+	NEN_colorado2 = {
+		cost = 25
+		fire_only_once = yes
+		days_remove = 25
+		ai_will_do = {
+			base = 10
+			}
+		available = {
+			has_completed_focus = NEN_freemarket
+			COC = {
+				has_idea = NEN_nebraskanproduce
+				}
+			}
+		visible = {
+			has_completed_focus = NEN_freemarket
+			}
+		remove_effect = {
+			add_power_balance_value = {
+				id = NEN_bop
+				value = 0.05
+				}
+			COC = {
+				country_event = {
+					id = dnebraska.7
+					days = 3
+					}
+				}	
+			}
+		}
+	NEN_iowa2 = {
+		cost = 25
+		fire_only_once = yes
+		days_remove = 25
+		ai_will_do = {
+			base = 10
+			}
+		available = {
+			has_completed_focus = NEN_freemarket
+			IAI = {
+				has_idea = NEN_nebraskanproduce
+				}
+			}
+		visible = {
+			has_completed_focus = NEN_freemarket
+			}
+		remove_effect = {
+			add_power_balance_value = {
+				id = NEN_bop
+				value = 0.05
+				}
+			IAI = {
+				country_event = {
+					id = dnebraska.8
+					days = 3
+					}
+				}	
+			}
+		}
+	NEN_wyoming2 = {
+		cost = 25
+		fire_only_once = yes
+		days_remove = 25
+		ai_will_do = {
+			base = 10
+			}
+		available = {
+			has_completed_focus = NEN_freemarket
+			WYW = {
+				has_idea = NEN_nebraskanproduce
+				}
+			}
+		visible = {
+			has_completed_focus = NEN_freemarket
+			}
+		remove_effect = {
+			add_power_balance_value = {
+				id = NEN_bop
+				value = 0.05
+				}
+			WYW = {
+				country_event = {
+					id = dnebraska.9
+					days = 3
+					}
+				}	
+			}
+		}
+	NEN_sdakota2 = {
+		cost = 25
+		fire_only_once = yes
+		days_remove = 25
+		ai_will_do = {
+			base = 10
+			}
+		available = {
+			has_completed_focus = NEN_freemarket
+			SDS = {
+				has_idea = NEN_nebraskanproduce
+				}
+			}
+		visible = {
+			has_completed_focus = NEN_freemarket
+			}
+		remove_effect = {
+			add_power_balance_value = {
+				id = NEN_bop
+				value = 0.05
+				}
+			SDS = {
+				country_event = {
+					id = dnebraska.10
+					days = 3
+					}
+				}	
+			}
+		}
+	NEN_kansas2 = {
+		cost = 25
+		fire_only_once = yes
+		days_remove = 25
+		ai_will_do = {
+			base = 10
+			}
+		available = {
+			has_completed_focus = NEN_freemarket
+			KSK = {
+				has_idea = NEN_nebraskanproduce
+				}
+			}
+		visible = {
+			has_completed_focus = NEN_freemarket
+			}
+		remove_effect = {
+			add_power_balance_value = {
+				id = NEN_bop
+				value = 0.05
+				}
+			KSK = {
+				country_event = {
+					id = dnebraska.11
+					days = 3
+					}
+				}	
+			}
+		}
+	NEN_missouri2 = {
+		cost = 25
+		fire_only_once = yes
+		days_remove = 25
+		ai_will_do = {
+			base = 10
+			}
+		available = {
+			has_completed_focus = NEN_freemarket
+			MOM = {
+				has_idea = NEN_nebraskanproduce
+				}
+			}
+		visible = {
+			has_completed_focus = NEN_freemarket
+			}
+		remove_effect = {
+			add_power_balance_value = {
+				id = NEN_bop
+				value = 0.05
+				}
+			MOM = {
+				country_event = {
+					id = dnebraska.12
+					days = 3
+					}
+				}	
+			}
+		}
+	NEN_colorado3 = {
+		cost = 100
+		fire_only_once = yes
+		days_remove = 50
+		ai_will_do = {
+			base = 10
+			}
+		available = {
+			has_completed_focus = NEN_simoleoncentennial
+			COC = {
+				has_idea = NEN_cornhuskercommodities
+				}
+			}
+		visible = {
+			has_completed_focus = NEN_makingpurchases
+			}
+		remove_effect = {
+			COC = {
+				country_event = {
+					id = dnebraska.13
+					days = 3
+					}
+				}	
+			}
+		}
+	NEN_sdakota3 = {
+		cost = 100
+		fire_only_once = yes
+		days_remove = 50
+		ai_will_do = {
+			base = 10
+			}
+		available = {
+			has_completed_focus = NEN_moneymountain
+			SDS = {
+				has_idea = NEN_cornhuskercommodities
+				}
+			}
+		visible = {
+			has_completed_focus = NEN_makingpurchases
+			}
+		remove_effect = {
+			SDS = {
+				country_event = {
+					id = dnebraska.14
+					days = 3
+					}
+				}	
+			}
+		}
+	NEN_kansas3 = {
+		cost = 100
+		fire_only_once = yes
+		days_remove = 50
+		ai_will_do = {
+			base = 10
+			}
+		available = {
+			has_completed_focus = NEN_silversunflower
+			KSK = {
+				has_idea = NEN_cornhuskercommodities
+				}
+			}
+		visible = {
+			has_completed_focus = NEN_makingpurchases
+			}
+		remove_effect = {
+			KSK = {
+				country_event = {
+					id = dnebraska.15
+					days = 3
+					}
+				}	
+			}
+		}
+	NEN_wyoming3 = {
+		cost = 100
+		fire_only_once = yes
+		days_remove = 50
+		ai_will_do = {
+			base = 10
+			}
+		available = {
+			has_completed_focus = NEN_currencycowboy
+			WYW = {
+				has_idea = NEN_cornhuskercommodities
+				}
+			}
+		visible = {
+			has_completed_focus = NEN_makingpurchases
+			}
+		remove_effect = {
+			WYW = {
+				country_event = {
+					id = dnebraska.16
+					days = 3
+					}
+				}	
+			}
+		}	
+		
+		
+		
+		
+		
+}		

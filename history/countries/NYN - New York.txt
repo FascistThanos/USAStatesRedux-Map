@@ -1,6 +1,7 @@
 ﻿capital = 207
 
 oob = "NYN_1936"
+set_naval_oob = "NYN_naval"
 
 set_research_slots = 4
 

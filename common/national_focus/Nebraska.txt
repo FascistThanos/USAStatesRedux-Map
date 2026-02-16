@@ -1,0 +1,2486 @@
+#Nebraska Focus Tree By Toaster
+focus_tree = {
+	id = nebraska_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 25
+			original_tag = NEN
+		}
+	}
+	continuous_focus_position = {
+		x = 150
+		y = 2700
+	}
+	default = no
+#The Shindig
+	focus = {
+		id = NEN_dealingwithdust
+		icon = GFX_goal_generic_propaganda
+		cost = 1
+		x = 25
+		y = 1
+		ai_will_do = {
+			factor = 75
+		}
+		completion_reward = {
+			add_political_power = 25
+			}
+		}
+	focus = {
+		id = NEN_agrarianfuture
+		icon = GFX_focus_generic_farmland
+		cost = 10
+		x = 23
+		y = 2
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = NEN_dealingwithdust
+			}
+		completion_reward = {
+			remove_ideas = NEN_leavethedust
+			}
+		}
+	focus = {
+		id = NEN_electrificationinitiative
+		icon = GFX_focus_generic_electrification
+		cost = 10
+		x = 25
+		y = 2
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = NEN_dealingwithdust
+			}
+		completion_reward = {
+			remove_ideas = NEN_lightson
+			533 = {
+				add_building_construction = {
+					type = energy_infrastructure
+					level = 1
+					instant_build = yes
+					}
+				}
+			539 = {
+				add_building_construction = {
+					type = energy_infrastructure
+					level = 1
+					instant_build = yes
+					}
+				}
+			536 = {
+				add_building_construction = {
+					type = energy_infrastructure
+					level = 1
+					instant_build = yes
+					}
+				}	
+			}
+		}
+	focus = {
+		id = NEN_protectlaborers
+		icon = GFX_focus_generic_full_employment
+		cost = 10
+		x = 27
+		y = 2
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = NEN_dealingwithdust
+			}
+		completion_reward = {	
+			remove_ideas = NEN_abandonedwork
+			}
+		}
+	focus = {
+		id = NEN_donewithdust
+		icon = GFX_Generic_Public_Works
+		cost = 10
+		x = 25
+		y = 3
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = NEN_agrarianfuture
+			}
+		prerequisite = {
+			focus = NEN_electrificationinitiative
+			}
+		prerequisite = {
+			focus = NEN_protectlaborers
+			}
+		completion_reward = {
+			set_power_balance = {
+				id = NEN_bop
+				}
+			add_political_power = 100	
+			}
+		}
+	focus = {
+		id = NEN_focusinternal
+		icon = GFX_focus_generic_self_management
+		cost = 4.3
+		x = 23
+		y = 4
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = NEN_donewithdust
+			}
+		completion_reward = {
+			add_power_balance_value = {
+				id = NEN_bop
+				value = -0.10
+				}
+			add_ideas = NEN_farmingsurplus
+			}
+		}	
+	focus = {
+		id = NEN_improverailways
+		icon = GFX_focus_generic_railroad
+		cost = 4.3
+		x = 27
+		y = 4
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = NEN_donewithdust
+			}
+		completion_reward = {
+			add_power_balance_value = {
+				id = NEN_bop
+				value = 0.10
+				}
+			add_ideas = NEN_railwayinvestments
+			}
+		}
+	focus = {
+		id = NEN_costofliving
+		icon = GFX_focus_generic_low_cost_housing
+		cost = 4.3
+		x = 21
+		y = 5
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = NEN_focusinternal
+			focus = NEN_improverailways
+			}
+		completion_reward = {
+			add_power_balance_value = {
+				id = NEN_bop
+				value = -0.15
+				}
+			add_popularity = {
+				ideology = communism
+				popularity = 0.15
+				}
+			}
+		}
+	focus = {
+		id = NEN_cattleinitiative
+		icon = GFX_focus_CHL_focus_on_cattle_and_wool
+		cost = 4.3
+		x = 23
+		y = 5
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = NEN_focusinternal
+			focus = NEN_improverailways
+			}
+		completion_reward = {
+			add_power_balance_value = {
+				id = NEN_bop
+				value = -0.15
+				}
+			add_timed_idea = {
+				idea = NEN_governmentbeef
+				days = 365
+				}
+			}
+		}
+	focus = {
+		id = NEN_pricecontrols
+		icon = GFX_focus_generic_price_controls
+		cost = 4.3
+		x = 25
+		y = 5
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = NEN_focusinternal
+			focus = NEN_improverailways
+			}
+		completion_reward = {
+			add_stability = 0.10
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.15
+				}
+			}
+		}
+	focus = {
+		id = NEN_artofdeal
+		icon = GFX_Focus_SOV_To_Get_Rich
+		cost = 4.3
+		x = 27
+		y = 5
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = NEN_focusinternal
+			focus = NEN_improverailways
+			}
+		completion_reward = {
+			add_power_balance_value = {
+				id = NEN_bop
+				value = 0.10
+				}
+			add_timed_idea = {
+				idea = NEN_traineddiplomats
+				days = 365
+				}	
+			}
+		}
+	focus = {
+		id = NEN_foreigncontracts
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 4.3
+		x = 29
+		y = 5
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = NEN_focusinternal
+			focus = NEN_improverailways
+			}
+		completion_reward = {
+			add_power_balance_value = {
+				id = NEN_bop
+				value = 0.10
+				}
+			#SELLING DECISIONS
+			}
+		}
+	focus = {
+		id = NEN_farmtostate
+		icon = GFX_focus_PRC_rural_region_development
+		cost = 10
+		x = 21
+		y = 6
+		ai_will_do = {
+			factor = 75
+		}
+		mutually_exclusive = {
+			focus = NEN_marketmeddling
+			}
+		mutually_exclusive = {
+			focus = NEN_taxbreaks
+			}
+		prerequisite = {
+			focus = NEN_costofliving
+			}
+		prerequisite = {
+			focus = NEN_cattleinitiative
+			}
+		completion_reward = {	
+			add_power_balance_value = {
+				id = NEN_bop
+				value = -0.15
+				}
+			add_ideas = NEN_farmtostate
+			}
+		}
+	focus = {
+		id = NEN_marketmeddling
+		icon = GFX_focus_PRC_establish_shorter_market_plans
+		cost = 10
+		x = 25
+		y = 6
+		ai_will_do = {
+			factor = 75
+		}
+		mutually_exclusive = {
+			focus = NEN_taxbreaks
+			}
+		mutually_exclusive = {
+			focus = NEN_farmtostate
+			}
+		prerequisite = {
+			focus = NEN_artofdeal
+			}
+		prerequisite = {
+			focus = NEN_cattleinitiative
+			}
+		completion_reward = {
+			add_ideas = NEN_governmentoverreach
+			}
+		}
+	focus = {
+		id = NEN_taxbreaks
+		icon = GFX_focus_RAJ_war_taxes
+		cost = 10
+		x = 29
+		y = 6
+		ai_will_do = {
+			factor = 75
+		}
+		mutually_exclusive = {
+			focus = NEN_marketmeddling
+			}
+		mutually_exclusive = {
+			focus = NEN_farmtostate
+			}
+		prerequisite = {
+			focus = NEN_artofdeal
+			}
+		prerequisite = {
+			focus = NEN_foreigncontracts
+			}
+		completion_reward = {
+			add_power_balance_value = {
+				id = NEN_bop
+				value = 0.10
+				}
+			add_ideas = NEN_wellpaidfarmers
+				}
+		}
+	focus = {
+		id = NEN_serviceunemployed
+		icon = GFX_Generic_Socialist_Propaganda
+		cost = 10
+		x = 19
+		y = 7
+		ai_will_do = {
+			factor = 75
+		}
+		available = {
+			has_power_balance = {
+				id = NEN_bop
+				}
+			}	
+		prerequisite = {
+			focus = NEN_farmtostate
+			}
+		completion_reward = {
+			add_power_balance_value = {
+				id = NEN_bop
+				value = -0.10
+				}
+			add_popularity = {
+				ideology = communism
+				popularity = 0.10
+				}	
+			add_ideas = NEN_ragstorifles
+			}
+		}	
+	focus = {
+		id = NEN_babyboom
+		icon = GFX_focus_generic_population_growth
+		cost = 10
+		x = 23
+		y = 7
+		ai_will_do = {
+			factor = 75
+		}
+		available = {
+			has_power_balance = {
+				id = NEN_bop
+				}
+			}
+		prerequisite = {
+			focus = NEN_farmtostate
+			focus = NEN_marketmeddling
+			}
+		completion_reward = {
+			add_power_balance_value = {
+				id = NEN_bop
+				value = -0.15
+				}
+			#DECISIONS	
+			}
+		}
+	focus = {
+		id = NEN_profittoindustry
+		icon = GFX_focus_generic_industrial_experts
+		cost = 10
+		x = 27
+		y = 7
+		ai_will_do = {
+			factor = 75
+		}
+		available = {
+			has_power_balance = {
+				id = NEN_bop
+				}
+			}
+		prerequisite = {
+			focus = NEN_taxbreaks
+			focus = NEN_marketmeddling
+			}
+		completion_reward = {
+			add_power_balance_value = {
+				id = NEN_bop
+				value = 0.10
+				}
+			533 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+					}
+				}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = industry
+				}
+			}
+		}
+	focus = {
+		id = NEN_freemarket
+		icon = GFX_focus_RAJ_special_economic_zones
+		cost = 10
+		x = 31
+		y = 7
+		ai_will_do = {
+			factor = 75
+		}
+		available = {
+			has_power_balance = {
+				id = NEN_bop
+				}
+			}
+		prerequisite = {
+			focus = NEN_taxbreaks
+			}
+		completion_reward = {
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.15
+				}
+			add_power_balance_value = {
+				id = NEN_bop
+				value = 0.10
+				}
+			#DECISIONS
+			}
+		}	
+	focus = {
+		id = NEN_greatleap
+		icon = GFX_focus_prc_agrarian_socialism
+		cost = 10
+		x = 19
+		y = 8
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = NEN_serviceunemployed
+			}
+		prerequisite = {
+			focus = NEN_babyboom
+			}
+		available = {
+			power_balance_value = {
+				id = NEN_bop
+				value < -0.20
+				}	
+			communism > 0.4
+			}
+		completion_reward = {
+			remove_power_balance = {
+				id = NEN_bop
+				}
+			add_popularity = {
+				ideology = communism
+				popularity = 0.15
+				}
+			set_politics = {
+					ruling_party = communism
+					elections_allowed = no	
+				}
+			}
+		}
+	focus = {
+		id = NEN_crackdown
+		icon = GFX_Generic_Break_Free
+		cost = 10
+		x = 25
+		y = 8
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = NEN_profittoindustry
+			}
+		prerequisite = {
+			focus = NEN_babyboom
+			}
+		available = {
+			power_balance_value = {
+				id = NEN_bop
+				value > -0.20
+				}	
+			power_balance_value = {
+				id = NEN_bop
+				value < 0.20
+				}	
+			}
+		completion_reward = {
+			remove_power_balance = {
+				id = NEN_bop
+				}
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.30
+				}
+			set_politics = {
+					ruling_party = neutrality
+					elections_allowed = no	
+				}
+			}
+		}	
+	focus = {
+		id = NEN_steppingintomarket
+		icon = GFX_focus_RAJ_trickle_down_economics
+		cost = 10
+		x = 31
+		y = 8
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = NEN_profittoindustry
+			}
+		prerequisite = {
+			focus = NEN_freemarket
+			}			
+		available = {
+			power_balance_value = {
+				id = NEN_bop
+				value > 0.20
+				}
+			}	
+		completion_reward = {
+			remove_power_balance = {
+				id = NEN_bop
+				}
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.15
+				}
+			}
+		}
+#FEDERAL PATH
+	focus = {
+		id = NEN_martiallaw
+		icon = GFX_focus_BRA_repeale_national_security_law
+		cost = 4.3
+		x = 25
+		y = 9
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = NEN_crackdown
+			}	
+		completion_reward = {
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.10
+				add_stability = -0.25
+				}
+			add_war_support = 0.25
+			swap_ideas = {
+				remove_idea = volunteer_only
+				add_idea = extensive_conscription
+				}
+			}
+		}
+	focus = {
+		id = NEN_contactdc
+		icon = GFX_focus_generic_befriend_usa
+		cost = 4.3
+		x = 25
+		y = 10
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = NEN_martiallaw
+			}	
+		completion_reward = {
+		DCD = {
+			country_event = {
+				id = nnebraska.1
+				days = 3
+				}
+			}	
+		}
+	}
+	focus = {
+		id = NEN_constructioncapable
+		icon = GFX_goal_generic_construct_civilian
+		cost = 4.3
+		x = 25
+		y = 11
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = NEN_contactdc
+			}	
+		completion_reward = {
+			534 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+					}
+				}
+			}
+		}
+	focus = {
+		id = NEN_operationplanning
+		icon = GFX_goal_generic_position_armies
+		cost = 4.3
+		x = 28
+		y = 11
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = NEN_contactdc
+			}	
+		completion_reward = {
+			army_experience = 100
+			}
+		}	
+	focus = {
+		id = NEN_specialweapons
+		icon = GFX_focus_usa_tank_destroyer_doctrine
+		cost = 4.3
+		x = 24
+		y = 12
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = NEN_constructioncapable
+			}	
+		completion_reward = {
+			add_building_construction = {
+				type = land_facility
+				level = 1
+				instant_build = yes
+				}
+			}
+		}
+	focus = {
+		id = NEN_readyforreclamation
+		icon = GFX_focus_generic_tank_production
+		cost = 4.3
+		x = 26
+		y = 12
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = NEN_constructioncapable
+			}	
+		completion_reward = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+				}
+			}
+		}
+	focus = {
+		id = NEN_headstrong
+		icon = GFX_focus_generic_total_war
+		cost = 10
+		x = 28
+		y = 12
+		ai_will_do = {
+			factor = 75
+		}
+		available = {
+			has_offensive_war = no
+			}
+		prerequisite = {
+			focus = NEN_operationplanning
+			}	
+		completion_reward = {
+			country_event = {
+				id = nnebraska.2
+				days = 7
+				}
+			NDN = {
+				country_event = {
+					id = nnebraska.3
+					days = 1
+				}
+			}
+		}
+	}	
+	focus = {
+		id = NEN_76
+		icon = GFX_focus_generic_total_war
+		cost = 10
+		x = 30
+		y = 12
+		ai_will_do = {
+			factor = 75
+		}
+		available = {
+			has_offensive_war = no
+			}
+		prerequisite = {
+			focus = NEN_operationplanning
+			}	
+		completion_reward = {
+			country_event = {
+				id = nnebraska.4
+				days = 3
+				}
+			}
+		}
+	focus = {
+		id = NEN_buffalosoldier
+		icon = GFX_focus_generic_total_war
+		cost = 10
+		x = 32
+		y = 12
+		ai_will_do = {
+			factor = 75
+		}
+		available = {
+			has_offensive_war = no
+			}
+		prerequisite = {
+			focus = NEN_operationplanning
+			}	
+		completion_reward = {
+			country_event = {
+				id = nnebraska.5
+				days = 3
+				}
+			}
+		}	
+	focus = {
+		id = NEN_sioux
+		icon = GFX_focus_generic_total_war
+		cost = 10
+		x = 27
+		y = 13
+		ai_will_do = {
+			factor = 75
+		}
+		available = {
+			has_offensive_war = no
+			}
+		prerequisite = {
+			focus = NEN_headstrong
+			}
+		bypass = {
+			512 = {
+				is_owned_and_controlled_by = NEN
+				}
+			}	
+		completion_reward = {
+			country_event = {
+				id = nnebraska.6
+				days = 3
+				}
+			}
+		}
+	focus = {
+		id = NEN_cumulus
+		icon = GFX_focus_generic_total_war
+		cost = 10
+		x = 29
+		y = 13
+		ai_will_do = {
+			factor = 75
+		}
+		available = {
+			has_offensive_war = no
+			}
+		prerequisite = {
+			focus = NEN_headstrong
+			}	
+		completion_reward = {
+			country_event = {
+				id = nnebraska.7
+				days = 3
+			}
+		}
+	}	
+	focus = {
+		id = NEN_heartlandascension
+		icon = GFX_focus_ARG_the_war_machine
+		cost = 10
+		x = 30
+		y = 14
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = NEN_sioux
+			}
+		prerequisite = {
+			focus = NEN_cumulus
+			}
+		prerequisite = {
+			focus = NEN_76
+			}
+		prerequisite = {
+			focus = NEN_buffalosoldier
+			}
+		available = {
+			592 = {
+				is_owned_and_controlled_by = NEN
+				}
+			512 = {
+				is_owned_and_controlled_by = NEN
+				}
+			607 = {
+				is_owned_and_controlled_by = NEN
+				}
+			526 = {
+				is_owned_and_controlled_by = NEN
+				}
+			632 = {
+				is_owned_and_controlled_by = NEN
+				}
+			}	
+		completion_reward = {
+			add_state_core = 56
+			add_state_core = 1393
+			add_state_core = 594
+			add_state_core = 619
+			add_state_core = 614
+			add_state_core = 612
+			add_state_core = 608
+			add_state_core = 604
+			add_state_core = 605
+			add_state_core = 606
+			add_state_core = 607
+			add_state_core = 613
+			add_state_core = 610
+			add_state_core = 1391
+			add_state_core = 589
+			add_state_core = 592
+			add_state_core = 591
+			add_state_core = 593
+			add_state_core = 597
+			add_state_core = 596
+			add_state_core = 598
+			add_state_core = 600
+			add_state_core = 595
+			add_state_core = 601
+			add_state_core = 599
+			add_state_core = 57
+			add_state_core = 602
+			add_state_core = 603
+			add_state_core = 522
+			add_state_core = 523
+			add_state_core = 525
+			add_state_core = 526
+			add_state_core = 52
+			add_state_core = 524
+			add_state_core = 53
+			add_state_core = 513
+			add_state_core = 510
+			add_state_core = 512
+			add_state_core = 628
+			add_state_core = 629
+			add_state_core = 632
+			add_state_core = 630
+			add_state_core = 633
+			add_state_core = 634
+			add_state_core = 631
+			add_state_core = 609
+			}
+		}
+#DEMOCRATIC PATH		
+	focus = {
+		id = NEN_tradesandscience
+		icon = GFX_focus_NORDIC_dem_selector_research
+		cost = 4.3
+		x = 33
+		y = 9
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = NEN_steppingintomarket
+			}	
+		completion_reward = {
+			add_ideas = NEN_fundedsciences
+			}
+		}
+	focus = {
+		id = NEN_irrigatedplatte
+		icon = GFX_focus_RAJ_water_privatization
+		cost = 4.3
+		x = 35
+		y = 9
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = NEN_steppingintomarket
+			}	
+		completion_reward = {
+			529 = {
+				add_manpower = 100000
+				}
+			531 = {
+				add_manpower = 100000
+				}
+			532 = {
+				add_manpower = 100000
+				}
+			}
+		}
+	focus = {
+		id = NEN_makingpurchases
+		icon = GFX_CAC_relieve_states
+		cost = 4.3
+		x = 37
+		y = 9
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = NEN_steppingintomarket
+			}	
+		completion_reward = {
+			add_political_power = 100
+			#DECISIONS
+			}
+		}
+	focus = {
+		id = NEN_profittouniversities
+		icon = GFX_focus_NORDIC_dem_capstone_research
+		cost = 10
+		x = 33
+		y = 10
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = NEN_tradesandscience
+			}	
+		completion_reward = {
+			add_research_slot = 1
+			}
+		}
+	focus = {
+		id = NEN_prepareunjust
+		icon = GFX_focus_ARG_defense_and_democracy
+		cost = 4.3
+		x = 35
+		y = 10
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = NEN_irrigatedplatte
+			}	
+		completion_reward = {
+			add_ideas = NEN_bunkerbuilder
+			}
+		}
+	focus = {
+		id = NEN_currencycowboy
+		icon = GFX_focus_generic_treaty
+		cost = 10
+		x = 37
+		y = 10
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = NEN_makingpurchases
+			}	
+		completion_reward = {
+			#DECISIONS
+			}
+		}
+	focus = {
+		id = NEN_silversunflower
+		icon = GFX_focus_generic_treaty
+		cost = 10
+		x = 39
+		y = 10
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = NEN_makingpurchases
+			}	
+		completion_reward = {
+			#DECISIONS
+			}
+		}
+	focus = {
+		id = NEN_simoleoncentennial
+		icon = GFX_focus_generic_treaty
+		cost = 10
+		x = 41
+		y = 10
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = NEN_makingpurchases
+			}	
+		completion_reward = {
+			#DECISIONS
+			}
+		}
+	focus = {
+		id = NEN_moneymountain
+		icon = GFX_focus_generic_treaty
+		cost = 10
+		x = 43
+		y = 10
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = NEN_makingpurchases
+			}	
+		completion_reward = {
+			#DECISIONS
+			}
+		}
+	focus = {
+		id = NEN_lookingoutward
+		icon = GFX_goal_generic_major_alliance
+		cost = 4.3
+		x = 35
+		y = 11
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = NEN_prepareunjust
+			}	
+		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.10
+			}
+		}
+	focus = {
+		id = NEN_marchofprogress
+		icon = GFX_focus_SWE_hygienic_housing
+		cost = 4.3
+		x = 37
+		y = 11
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = NEN_prepareunjust
+			}	
+		completion_reward = {
+			every_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+					}
+				}
+			}
+		}
+	focus = {
+		id = NEN_stepintorace
+		icon = GFX_focus_SWE_urbanization
+		cost = 4.3
+		x = 39
+		y = 11
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = NEN_prepareunjust
+			}	
+		completion_reward = {
+			every_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+					}
+				}
+			}
+		}
+	focus = {
+		id = NEN_highways
+		icon = GFX_focus_generic_road_investment
+		cost = 4.3
+		x = 41
+		y = 11
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = NEN_prepareunjust
+			}	
+		completion_reward = {
+			every_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+					}
+				}
+			}
+		}
+	focus = {
+		id = NEN_missouristeel
+		icon = GFX_focus_generic_steel
+		cost = 4.3
+		x = 43
+		y = 11
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = NEN_prepareunjust
+			}	
+		completion_reward = {
+			532 = {
+				add_resource = {
+					type = steel
+					amount = 10
+					}
+				}
+			}
+		}
+	focus = {
+		id = NEN_looktolonestar
+		icon = GFX_TXT_TexanNationalism
+		cost = 10
+		x = 34
+		y = 12
+		ai_will_do = {
+			factor = 75
+		}
+		available = {
+			TXT = {
+				has_same_ideology = yes
+				is_faction_leader = yes
+				}
+			}
+		mutually_exclusive = {
+			focus = NEN_bondwithbear
+			}
+		prerequisite = {
+			focus = NEN_lookingoutward
+			}	
+		completion_reward = {
+			TXT = {
+				country_event = {
+					id = dnebraska.17
+					days = 3
+					}
+				}	
+			}
+		}
+	focus = {
+		id = NEN_bondwithbear
+		icon = GFX_CAC_mcga
+		cost = 10
+		x = 36
+		y = 12
+		ai_will_do = {
+			factor = 75
+		}
+		available = {
+			CAC = {
+				has_same_ideology = yes
+				is_faction_leader = yes
+				}
+			}
+		mutually_exclusive = {
+			focus = NEN_looktolonestar
+			}
+		prerequisite = {
+			focus = NEN_lookingoutward
+			}	
+		completion_reward = {
+			CAC = {
+				country_event = {
+					id = dnebraska.18
+					days = 3
+					}
+				}
+			}
+		}
+#COMMUNIST PATH
+	focus = {
+		id = NEN_manykernels
+		icon = GFX_focus_generic_agricultural_subsidies
+		cost = 4.3
+		x = 15
+		y = 9
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = NEN_greatleap
+			}	
+		completion_reward = {
+			add_ideas = NEN_neverhungry
+			}
+		}
+	focus = {
+		id = NEN_defenseofnewstate
+		icon = GFX_Generic_Revolutionary_Women
+		cost = 4.3
+		x = 17
+		y = 9
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = NEN_greatleap
+			}	
+		completion_reward = {
+			534 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+					}
+				}
+			}
+		}	
+	focus = {
+		id = NEN_communistteachings
+		icon = GFX_Generic_Communist_Propaganda
+		cost = 4.3
+		x = 19
+		y = 9
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = NEN_greatleap
+			}	
+		completion_reward = {
+			add_ideas = NEN_gobigred
+			}
+		}
+	focus = {
+		id = NEN_agriculturaljuggernaut
+		icon = GFX_focus_generic_modernize_agriculture_2
+		cost = 4.3
+		x = 15
+		y = 10
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = NEN_manykernels
+			}	
+		completion_reward = {
+			add_stability = 0.10
+			add_political_power = 50
+			}
+		}
+	focus = {
+		id = NEN_citizenstosoldiers
+		icon = GFX_focus_NORDIC_com_institution_1
+		cost = 4.3
+		x = 17
+		y = 10
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = NEN_defenseofnewstate
+			}	
+		completion_reward = {
+			add_ideas = NEN_citizenstosoldiers
+			}
+		}
+	focus = {
+		id = NEN_warplanning
+		icon = GFX_focus_SWE_refuge_for_revolutionaries
+		cost = 4.3
+		x = 18
+		y = 11
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = NEN_agriculturaljuggernaut
+			}
+		prerequisite = {
+			focus = NEN_citizenstosoldiers
+			}
+		prerequisite = {
+			focus = NEN_communistteachings
+			}
+		completion_reward = {
+			army_experience = 50
+			add_war_support = 0.20
+			}
+		}
+	focus = {
+		id = NEN_manyminds
+		icon = GFX_focus_NORDIC_com_research
+		cost = 10
+		x = 20
+		y = 10
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = NEN_communistteachings
+			}	
+		completion_reward = {
+			add_research_slot = 1
+			}
+		}
+	focus = {
+		id = NEN_manyeyes
+		icon = GFX_Generic_Spy_Communist
+		cost = 10
+		x = 22
+		y = 10
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = NEN_communistteachings
+			}	
+		completion_reward = {
+			create_intelligence_agency = yes
+			}
+		}
+	focus = {
+		id = NEN_dealingwithdakotas
+		icon = GFX_Generic_War_Propaganda04
+		cost = 10
+		x = 14
+		y = 12
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = NEN_warplanning
+			}
+		mutually_exclusive = {
+			focus = NEN_bigskyally
+			}
+		available = {
+			NDN = {
+				NOT = {
+					has_government = democratic
+					}
+				}
+			}	
+		completion_reward = {
+			NDN = {
+				country_event = {
+					id = cnebraska.1
+					days = 5
+					}
+				}	
+			}
+		}
+	focus = {
+		id = NEN_bigskyally
+		icon = GFX_Generic_Army_Focus_Red02
+		cost = 10
+		x = 16
+		y = 12
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = NEN_warplanning
+			}
+		mutually_exclusive = {
+			focus = NEN_dealingwithdakotas
+			}
+		available = {
+			MTM = {
+				NOT = {
+					has_government = democratic
+					}
+				}
+			}	
+		completion_reward = {
+			MTM = {
+				country_event = {
+					id = cnebraska.2
+					days = 5
+					}
+				}
+			}
+		}
+	focus = {
+		id = NEN_crossingthemissouri
+		icon = GFX_goal_generic_propaganda
+		cost = 10
+		x = 18
+		y = 12
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = NEN_warplanning
+			}
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = IAI
+				}
+			}
+		}
+	focus = {
+		id = NEN_showmediamond
+		icon = GFX_focus_CONGO_bakwanga_mine
+		cost = 10
+		x = 20
+		y = 12
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = NEN_warplanning
+			}
+		mutually_exclusive = {
+			focus = NEN_lengthenkansas
+			}
+		available = {
+			ARA = {
+				NOT = {
+					has_government = democratic
+					}
+				}
+			}	
+		completion_reward = {
+			ARA	= {
+				country_event = {
+					id = cnebraska.3
+					days = 5
+					}
+				}
+			}
+		}
+	focus = {
+		id = NEN_lengthenkansas
+		icon = GFX_Generic_Crouched_Soldier
+		cost = 10
+		x = 22
+		y = 12
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = NEN_warplanning
+			}
+		mutually_exclusive = {
+			focus = NEN_showmediamond
+			}
+		available = {
+			KSK = {
+				NOT = {
+					has_government = democratic
+					}
+				}
+			}	
+		completion_reward = {
+			KSK	= {
+				country_event = {
+					id = cnebraska.4
+					days = 5
+					}
+				}
+			}
+		}
+	focus = {
+		id = NEN_westminnesota
+		icon = GFX_Generic_Crouched_Soldier_German
+		cost = 10
+		x = 14
+		y = 13
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = NEN_dealingwithdakotas
+			focus = NEN_bigskyally
+			}
+		mutually_exclusive = {
+			focus = NEN_eastminnesota
+			}
+		available = {
+			NDN = {
+				NOT = {
+					has_government = democratic
+					}
+				}
+			}	
+		completion_reward = {
+			NDN	= {
+				country_event = {
+					id = cnebraska.5
+					days = 5
+					}
+				}
+			}
+		}
+	focus = {
+		id = NEN_eastminnesota
+		icon = GFX_Generic_Machine_Gun02
+		cost = 10
+		x = 16
+		y = 13
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = NEN_dealingwithdakotas
+			focus = NEN_bigskyally
+			}
+		mutually_exclusive = {
+			focus = NEN_westminnesota
+			}
+		available = {
+			WIW = {
+				NOT = {
+					has_government = democratic
+					}
+				}
+			}	
+		completion_reward = {
+			WIW	= {
+				country_event = {
+					id = cnebraska.6
+					days = 5
+					}
+				}
+			}
+		}
+	focus = {
+		id = NEN_encouragerelocation
+		icon = GFX_Generic_Working_Class_Family
+		cost = 4.3
+		x = 18
+		y = 14
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = NEN_eastminnesota
+			focus = NEN_westminnesota
+			}
+		prerequisite = {
+			focus = NEN_crossingthemissouri
+			}
+		prerequisite = {
+			focus = NEN_showmediamond
+			focus = NEN_lengthenkansas
+			}
+		completion_reward = {
+			add_ideas = NEN_onestatesociety
+			}
+		}
+	focus = {
+		id = NEN_reachwest
+		icon = GFX_Generic_Militant_Socialism
+		cost = 10
+		x = 16
+		y = 15
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = NEN_encouragerelocation
+			}
+		mutually_exclusive = {
+			focus = NEN_pioneers
+			}
+		mutually_exclusive = {
+			focus = NEN_redmidwest
+			}
+		available = {
+			CAC = {
+				has_same_ideology = yes
+				is_faction_leader = yes
+				}
+			}	
+		completion_reward = {
+			CAC = {
+				country_event = {
+					id = dnebraska.7
+					days = 3
+					}
+				}
+			}
+		}
+	focus = {
+		id = NEN_pioneers
+		icon = GFX_Generic_Liberatian_Socialism
+		cost = 4.3
+		x = 18
+		y = 15
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = NEN_encouragerelocation
+			}
+		mutually_exclusive = {
+			focus = NEN_redmidwest
+			}
+		mutually_exclusive = {
+			focus = NEN_reachwest
+			}
+		completion_reward = {
+			add_war_support = 0.15
+			add_stability = 0.15
+			add_political_power = 100
+			army_experience = 50
+			}
+		}
+	focus = {
+		id = NEN_redmidwest
+		icon = GFX_focus_KSK_American_Communism
+		cost = 10
+		x = 20
+		y = 15
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = NEN_encouragerelocation
+			}
+		mutually_exclusive = {
+			focus = NEN_pioneers
+			}
+		mutually_exclusive = {
+			focus = NEN_reachwest
+			}
+		available = {
+			KSK = {
+				has_same_ideology = yes
+				is_faction_leader = yes
+				}
+			}	
+		completion_reward = {
+			KSK = {
+				country_event = {
+					id = dnebraska.8
+					days = 3
+					}
+				}
+			}
+		}
+	focus = {
+		id = NEN_newnebraska
+		icon = GFX_Generic_Revolutionary_Government
+		cost = 10
+		x = 18
+		y = 16
+		ai_will_do = {
+			factor = 75
+			}
+		prerequisite = {
+			focus = NEN_reachwest
+			focus = NEN_pioneers
+			focus = NEN_redmidwest
+			}
+		available = {
+			490 = {
+				is_owned_and_controlled_by = NEN
+				}
+			491 = {
+				is_owned_and_controlled_by = NEN
+				}
+			497 = {
+				is_owned_and_controlled_by = NEN
+				}
+			495 = {
+				is_owned_and_controlled_by = NEN
+				}
+			496 = {
+				is_owned_and_controlled_by = NEN
+				}
+			494 = {
+				is_owned_and_controlled_by = NEN
+				}
+			493 = {
+				is_owned_and_controlled_by = NEN
+				}
+			523 = {
+				is_owned_and_controlled_by = NEN
+				}
+			522 = {
+				is_owned_and_controlled_by = NEN
+				}
+			520 = {
+				is_owned_and_controlled_by = NEN
+				}
+			519 = {
+				is_owned_and_controlled_by = NEN
+				}
+			517 = {
+				is_owned_and_controlled_by = NEN
+				}
+			514 = {
+				is_owned_and_controlled_by = NEN
+				}
+			515 = {
+				is_owned_and_controlled_by = NEN
+				}
+			516 = {
+				is_owned_and_controlled_by = NEN
+				}
+			518 = {
+				is_owned_and_controlled_by = NEN
+				}
+			45 = {
+				is_owned_and_controlled_by = NEN
+				}
+			474 = {
+				is_owned_and_controlled_by = NEN
+				}
+			473 = {
+				is_owned_and_controlled_by = NEN
+				}
+			462 = {
+				is_owned_and_controlled_by = NEN
+				}
+			}
+		completion_reward = {
+			add_state_core = 491
+			add_state_core = 490
+			add_state_core = 497
+			add_state_core = 495
+			add_state_core = 496
+			add_state_core = 494
+			add_state_core = 493
+			add_state_core = 523
+			add_state_core = 522
+			add_state_core = 520
+			add_state_core = 519
+			add_state_core = 517
+			add_state_core = 514
+			add_state_core = 515
+			add_state_core = 516
+			add_state_core = 518
+			add_state_core = 45
+			add_state_core = 474
+			add_state_core = 473
+			add_state_core = 462
+			every_state = {
+				limit = {
+					is_core_of = IAI
+					}
+				add_core_of = ROOT
+					}
+			set_cosmetic_tag = PePr
+			}
+		}
+#MILITARY TREE
+	focus = {
+		id = NEN_avionicsinvestment
+		icon = GFX_goal_generic_air_production
+		cost = 10
+		x = 8
+		y = 1
+		ai_will_do = {
+			factor = 20
+			}
+		completion_reward = {
+			air_experience = 50
+			}
+		}
+	focus = {
+		id = NEN_modernizearmy
+		icon = GFX_goal_generic_axis_build_infantry
+		cost = 10
+		x = 17
+		y = 1
+		ai_will_do = {
+			factor = 20
+			}
+		completion_reward = {
+			army_experience = 50
+			}
+		}
+	focus = {
+		id = NEN_flyswatting
+		icon = GFX_focus_PER_construct_air_defenses
+		cost = 4.3
+		x = 0
+		y = 2
+		ai_will_do = {
+			factor = 20
+			}
+		prerequisite = {
+			focus = NEN_avionicsinvestment
+			}
+		completion_reward = {
+			set_technology = {
+				interwar_antiair = 1
+				}
+			}
+		}
+	focus = {
+		id = NEN_expandairports
+		icon = GFX_focus_PRC_establish_domestic_aircraft_production
+		cost = 4.3
+		x = 2
+		y = 2
+		ai_will_do = {
+			factor = 20
+			}
+		prerequisite = {
+			focus = NEN_avionicsinvestment
+			}
+		completion_reward = {
+			533 = {
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+					}
+				}
+			537 = {
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+					}
+				}
+			539 = {
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+					}
+				}
+			}
+		}
+	focus = {
+		id = NEN_lightmodels
+		icon = GFX_focus_chi_flying_tigers
+		cost = 4.3
+		x = 4
+		y = 2
+		ai_will_do = {
+			factor = 20
+			}
+		prerequisite = {
+			focus = NEN_avionicsinvestment
+			}
+		mutually_exclusive = {
+			focus = NEN_mediummodels
+			}
+		mutually_exclusive = {
+			focus = NEN_heavymodels
+			}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = light_air
+				}
+			}
+		}
+	focus = {
+		id = NEN_mediummodels
+		icon = GFX_focus_usa_escort_fighters
+		cost = 4.3
+		x = 8
+		y = 2
+		ai_will_do = {
+			factor = 20
+			}
+		prerequisite = {
+			focus = NEN_avionicsinvestment
+			}
+		mutually_exclusive = {
+			focus = NEN_lightmodels
+			}
+		mutually_exclusive = {
+			focus = NEN_heavymodels
+			}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = medium_air
+				}
+			}
+		}
+	focus = {
+		id = NEN_heavymodels
+		icon = GFX_goal_generic_air_bomber
+		cost = 4.3
+		x = 12
+		y = 2
+		ai_will_do = {
+			factor = 20
+			}
+		prerequisite = {
+			focus = NEN_avionicsinvestment
+			}
+		mutually_exclusive = {
+			focus = NEN_mediummodels
+			}
+		mutually_exclusive = {
+			focus = NEN_lightmodelsmodels
+			}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = heavy_air
+				}
+			}
+		}
+	focus = {
+		id = NEN_strongarmor
+		icon = GFX_Generic_Draw_Up_Plans
+		cost = 4.3
+		x = 15
+		y = 2
+		ai_will_do = {
+			factor = 20
+			}
+		prerequisite = {
+			focus = NEN_modernizearmy
+			}
+		completion_reward = {
+			add_tech_bonus = {
+				ahead_reduction = 1
+				bonus = 1
+				uses = 1
+				category = armor
+				}
+			}
+		}
+	focus = {
+		id = NEN_increasearmscapacity
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 4.3
+		x = 17
+		y = 2
+		ai_will_do = {
+			factor = 20
+			}
+		prerequisite = {
+			focus = NEN_modernizearmy
+			}
+		completion_reward = {
+			536 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+					}
+				}
+			533 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+					}
+				}
+			528 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+					}
+				}
+			}
+		}	
+	focus = {
+		id = NEN_newrifles
+		icon = GFX_goal_generic_small_arms
+		cost = 4.3
+		x = 19
+		y = 2
+		ai_will_do = {
+			factor = 20
+			}
+		prerequisite = {
+			focus = NEN_modernizearmy
+			}
+		completion_reward = {
+			add_tech_bonus = {
+				ahead_reduction = 1
+				bonus = .5
+				uses = 1
+				category = infantry_weapons
+				}
+			}
+		}
+	focus = {
+		id = NEN_raidprotection
+		icon = GFX_Generic_Air_Defense
+		cost = 4.3
+		x = 0
+		y = 3
+		ai_will_do = {
+			factor = 20
+			}
+		prerequisite = {
+			focus = NEN_flyswatting
+			}
+		completion_reward = {
+			533 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 2
+					instant_build = yes
+					}
+				}
+			539 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 2
+					instant_build = yes
+					}
+				}
+			537 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 2
+					instant_build = yes
+					}
+				}
+			}
+		}
+	focus = {
+		id = NEN_westernproduction
+		icon = GFX_goal_generic_air_production
+		cost = 4.3
+		x = 2
+		y = 3
+		ai_will_do = {
+			factor = 20
+			}
+		prerequisite = {
+			focus = NEN_expandairports
+			}
+		completion_reward = {	
+			527 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+					}
+				}
+			528 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+					}
+				}
+			}
+		}
+	focus = {
+		id = NEN_engineimprovements
+		icon = GFX_focus_generic_tank_air_support
+		cost = 4.3
+		x = 4
+		y = 3
+		ai_will_do = {
+			factor = 20
+			}
+		prerequisite = {
+			focus = NEN_lightmodels
+			}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = cat_air_engine
+				}
+			}
+		}
+	focus = {
+		id = NEN_fighterdrills
+		icon = GFX_Generic_Jet_Fighters
+		cost = 4.3
+		x = 6
+		y = 3
+		ai_will_do = {
+			factor = 20
+			}
+		prerequisite = {
+			focus = NEN_lightmodels
+			focus = NEN_mediummodels
+			}
+		completion_reward = {
+			air_experience = 50
+			}
+		}
+	focus = {
+		id = NEN_flakstudies
+		icon = GFX_goal_generic_air_fighter
+		cost = 4.3
+		x = 8
+		y = 3
+		ai_will_do = {
+			factor = 20
+			}
+		prerequisite = {
+			focus = NEN_mediummodels
+			}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = cat_air_guns
+				}
+			}
+		}
+	focus = {
+		id = NEN_bombingdrills
+		icon = GFX_WAW_streamline_bomber_production
+		cost = 4.3
+		x = 10
+		y = 3
+		ai_will_do = {
+			factor = 20
+			}
+		prerequisite = {
+			focus = NEN_mediummodels
+			focus = NEN_heavymodels
+			}
+		completion_reward = {
+			air_experience = 50
+			}
+		}
+	focus = {
+		id = NEN_payloadresearch
+		icon = GFX_Generic_Bombs
+		cost = 4.3
+		x = 12
+		y = 3
+		ai_will_do = {
+			factor = 20
+			}
+		prerequisite = {
+			focus = NEN_heavymodels
+			}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = cat_air_bombs
+				}
+			}
+		}
+	focus = {
+		id = NEN_atomicstudies
+		icon = GFX_focus_research2
+		cost = 10
+		x = 14
+		y = 3
+		ai_will_do = {
+			factor = 20
+			}
+		prerequisite = {
+			focus = NEN_strongarmor
+			}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = nuclear
+				}
+			}
+		}
+	focus = {
+		id = NEN_anarmytoenvy
+		icon = GFX_focus_PRC_arms_recovery_efforts
+		cost = 4.3
+		x = 16
+		y = 3
+		ai_will_do = {
+			factor = 20
+			}
+		prerequisite = {
+			focus = NEN_strongarmor
+			}
+		completion_reward = {
+			529 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+					}
+				}	
+			531 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+					}
+				}
+			}
+		}
+	focus = {
+		id = NEN_backboneofthefrontline
+		icon = GFX_focus_generic_military_academy
+		cost = 4.3
+		x = 18
+		y = 3
+		ai_will_do = {
+			factor = 20
+			}
+		prerequisite = {
+			focus = NEN_newrifles
+			}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = support_tech
+				}
+			}
+		}
+	focus = {
+		id = NEN_nebraskanelite
+		icon = GFX_Generic_Colonial_Army
+		cost = 4.3
+		x = 20
+		y = 3
+		ai_will_do = {
+			factor = 20
+			}
+		prerequisite = {
+			focus = NEN_newrifles
+			}
+		completion_reward = {
+			add_ideas = NEN_elitetraining
+			}
+		}	
+	focus = {
+		id = NEN_wideopenskies
+		icon = GFX_Generic_Pilots
+		cost = 10
+		x = 1
+		y = 4
+		ai_will_do = {
+			factor = 20
+			}
+		prerequisite = {
+			focus = NEN_raidprotection
+			}
+		prerequisite = {
+			focus = NEN_westernproduction
+			}
+		completion_reward = {
+			536 = {
+				add_building_construction = {
+					type = air_facility
+					level = 1
+					instant_build = yes
+					}
+				}
+			}
+		}
+	focus = {
+		id = NEN_aluminumrefining
+		icon = GFX_focus_generic_aluminum
+		cost = 10
+		x = 4
+		y = 4
+		ai_will_do = {
+			factor = 20
+			}
+		prerequisite = {
+			focus = NEN_engineimprovements
+			}
+		prerequisite= {
+			focus = NEN_fighterdrills
+			}
+		completion_reward = {
+			538 = {
+				add_resource = {
+					type = aluminium
+					amount = 25
+					}
+				}
+			}
+		}
+	focus = {
+		id = NEN_mastersoftheair
+		icon = GFX_focus_generic_copy_plane_designs
+		cost = 10
+		x = 8
+		y = 4
+		ai_will_do = {
+			factor = 20
+			}
+		prerequisite = {
+			focus = NEN_fighterdrills
+			}
+		prerequisite = {
+			focus = NEN_flakstudies
+			}
+		prerequisite = {
+			focus = NEN_bombingdrills
+			}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 4
+				category = plane_modules_tech
+				}
+			}
+		}
+	focus = {
+		id = NEN_torivalthesunitself
+		icon = GFX_focus_generic_nuclear_development
+		cost = 10
+		x = 13
+		y = 4
+		ai_will_do = {
+			factor = 20
+			}
+		prerequisite = {
+			focus = NEN_bombingdrills
+			}
+		prerequisite = {
+			focus = NEN_payloadresearch
+			}
+		prerequisite = {
+			focus = NEN_atomicstudies
+				}
+		completion_reward = {
+			535 = {
+				add_building_construction = {
+					type = nuclear_facility
+					level = 1
+					instant_build = yes
+					}
+				}
+			add_breakthrough_points = {
+				specialization = specialization_nuclear
+				value = 1
+				}
+			}
+		}	
+	focus = {
+		id = NEN_wellroundedarmy
+		icon = GFX_Generic_Coalition_Army
+		cost = 10
+		x = 17
+		y = 4
+		ai_will_do = {
+			factor = 20
+			}
+		prerequisite = {
+			focus = NEN_anarmytoenvy
+			}
+		prerequisite = {
+			focus = NEN_backboneofthefrontline
+			}
+		completion_reward = {
+			add_ideas = NEN_cornfieldcombat
+			}
+		}		
+	focus = {
+		id = NEN_fastassembling
+		icon = GFX_Generic_Industry_Tanks
+		cost = 10
+		x = 20
+		y = 4
+		ai_will_do = {
+			factor = 20
+			}
+		prerequisite = {
+			focus = NEN_nebraskanelite
+				}
+			prerequisite = {
+				focus = NEN_backboneofthefrontline
+				}
+		completion_reward = {
+			add_ideas = NEN_greasedguns
+			}
+		}
+		
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

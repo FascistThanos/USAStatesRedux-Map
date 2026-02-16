@@ -1,0 +1,98 @@
+federal_nebraska = {
+	name = "Heartland Command"
+	desc = "Nebraska will align itself with the Federal government and carry out its orders."
+	
+	allowed = {
+		original_tag = NEN
+		}
+		
+	enable = {
+		has_game_rule = {
+			rule = NEN_ai_behavior
+			option = federal_nebraska
+			}
+		}
+	
+	ai_national_focuses = {
+		NEN_dealingwithdust
+		NEN_agrarianfuture
+		NEN_electrificationinitiative
+		NEN_protectlaborers
+		NEN_donewithdust
+		NEN_focusinternal
+		NEN_improverailways
+		NEN_cattleinitiative
+		NEN_pricecontrols
+		NEN_artofdeal
+		NEN_foreigncontracts
+		NEN_marketmeddling
+		NEN_babyboom
+		NEN_profittoindustry
+		NEN_crackdown
+		}
+	}
+
+democratic_nebraska = {
+	name = "Agricultural Giant"
+	desc = "Nebraska will sell its crops to neighboring states in order to gain power."
+	
+	allowed = {
+		original_tag = NEN
+		}
+		
+	enable = {
+		has_game_rule = {
+			rule = NEN_ai_behavior
+			option = democratic_nebraska
+			}
+		}
+	
+	ai_national_focuses = {
+		NEN_dealingwithdust
+		NEN_agrarianfuture
+		NEN_electrificationinitiative
+		NEN_protectlaborers
+		NEN_donewithdust
+		NEN_focusinternal
+		NEN_improverailways
+		NEN_cattleinitiative
+		NEN_artofdeal
+		NEN_foreigncontracts
+		NEN_taxbreaks
+		NEN_profittoindustry
+		NEN_freemarket
+		NEN_steppingintomarket
+		}
+	}
+communist_nebraska = {
+	name = "The Farm State"
+	desc = "Nebraska will keep a large surplus of food to gain the loyalty of her people."
+	
+	allowed = {
+		original_tag = NEN
+		}
+		
+	enable = {
+		has_game_rule = {
+			rule = NEN_ai_behavior
+			option = communist_nebraska
+			}
+		}
+	
+	ai_national_focuses = {
+		NEN_dealingwithdust
+		NEN_agrarianfuture
+		NEN_electrificationinitiative
+		NEN_protectlaborers
+		NEN_donewithdust
+		NEN_focusinternal
+		NEN_improverailways
+		NEN_cattleinitiative
+		NEN_artofdeal
+		NEN_costofliving
+		NEN_farmtostate
+		NEN_babyboom
+		NEN_serviceunemployed
+		NEN_greatleap
+		}
+	}	
