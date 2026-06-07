@@ -23,7 +23,7 @@ state={
 	provinces={
 		674 1964 3624 7609 7625 7637 
 	}
-	manpower=97021
+	manpower=194042
 	state_category=town
 	local_supplies=3.000
 }

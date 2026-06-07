@@ -29,7 +29,7 @@ state={
 	provinces={
 		11167 11170 11171 11177 11179 
 	}
-	manpower=150001
+	manpower=300002
 	buildings_max_level_factor=1.000
 	state_category=city
 	

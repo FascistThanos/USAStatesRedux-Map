@@ -1,4 +1,11 @@
 
 USA = "countries/USA.txt"
 
+# Vanilla Majors (Required by game engine/hardcoded scripts)
+GER = "countries/Germany.txt"
+ENG = "countries/United Kingdom.txt"
+FRA = "countries/France.txt"
+SOV = "countries/Soviet Union.txt"
+ITA = "countries/Italy.txt"
+JAP = "countries/Japan.txt"
 

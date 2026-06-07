@@ -25,7 +25,7 @@ state={
 	provinces={
 		11598 11599 11600 11601 
 	}
-	manpower=59367
+	manpower=118734
 	buildings_max_level_factor=1.000
 	local_supplies=8.000
 	state_category = small_city

@@ -15,7 +15,7 @@ state={
 		}
 		add_core_of = SKN
 	}
-	manpower=37600
+	manpower=75200
 	state_category=small_city
 	provinces={
 		8213

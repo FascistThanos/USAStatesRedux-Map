@@ -26,7 +26,7 @@ state={
 	provinces={
 		2257 2858 2968 3108 5153 5158 5198 5231 11785 11786 11787 11799 11813 11825 11833 11839 11842 
 	}
-	manpower=354538
+	manpower=709076
 	buildings_max_level_factor=1.000
 	state_category=city
 	local_supplies=10.000

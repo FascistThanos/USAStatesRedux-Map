@@ -19,7 +19,7 @@ state={
 	provinces={
 		3803 7561 
 	}
-	manpower=157390
+	manpower=314780
 	state_category=city
 	local_supplies=8.000
 }

@@ -21,7 +21,7 @@ state={
 		}
 		add_core_of = TCI
 	}
-	manpower=5830
+	manpower=11660
 	state_category=small_city
 	provinces={
 		8193 8194 8195

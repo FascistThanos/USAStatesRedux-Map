@@ -14,7 +14,7 @@ state={
 	provinces={
 		4352 5419 
 	}
-	manpower=473214
+	manpower=946428
 	buildings_max_level_factor=1.000
 	local_supplies=12.000
 	state_category = metropolis

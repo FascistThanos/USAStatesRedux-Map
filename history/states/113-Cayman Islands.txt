@@ -15,7 +15,7 @@ state={
 		}
 		add_core_of = CYM
 	}
-	manpower=6912
+	manpower=13824
 	state_category=small_city
 	provinces={
 		8204

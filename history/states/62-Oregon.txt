@@ -22,7 +22,7 @@ resources = {
 	provinces={
 		563 746 1127 1525 2252 2453 2621 2760 3062 3727 4186 4189 4991 5007 5027 5039 5089 5110 5111 5121 5130 5142 5147 5148 5164 5187 5204 10240 10242 
 	}
-	manpower=63672
+	manpower=127344
 	buildings_max_level_factor=1.000
 	state_category=town
 	local_supplies=1.000

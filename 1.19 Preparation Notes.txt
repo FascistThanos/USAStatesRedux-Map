@@ -1,0 +1,20 @@
+##Riptide USA States Redux 1.15 Update notes##
+
+# Doubled manpower of all states
+# Added background changer & defines to menu
+# Added missing defines (except NEVERMINE_ME_MEDAL_MIN_RATIO which doesn't exist in base game defines either)
+# Laid groundwork for Tallahassee Crisis event chain
+
+########################
+### TO DO LIST ########
+########################
+
+# Add Tallahassee Crisis event chain
+# Alabama tree
+# Georgia tree
+# Florida tree
+# Correct apparent localization errors (Nebraska had some)
+# Prep for a 1.19 compat update (likely will need to edit defines, air raids, and spy operations, as well as unit designer gfx/gui)
+# Take a closer look at factions & faction goals
+
+

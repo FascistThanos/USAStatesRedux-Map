@@ -13,7 +13,7 @@ state={
 	provinces={
 		486 681 1787 1980 4516 4528 4531 10044 10051 10060 
 	}
-	manpower=1487
+	manpower=2974
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
 	state_category = wasteland

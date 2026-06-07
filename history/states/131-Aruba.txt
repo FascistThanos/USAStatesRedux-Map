@@ -15,7 +15,7 @@ state={
 			8224 10 #Oranjestad
 		}
 	}
-	manpower=21915
+	manpower=43830
 	state_category=small_city
 	provinces={
 		8224

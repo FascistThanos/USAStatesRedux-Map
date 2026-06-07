@@ -20,7 +20,7 @@ state={
 	provinces={
 		866 2510 4823 
 	}
-	manpower=64069
+	manpower=128138
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
 	state_category = town

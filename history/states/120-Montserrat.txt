@@ -15,7 +15,7 @@ state={
 			8215 5 #Plymouth
 		}
 	}
-	manpower=12716
+	manpower=25432
 	state_category=small_city
 	provinces={
 		8215

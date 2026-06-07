@@ -52,19 +52,20 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_idea_NYN_idea_socalistscience"
-		texturefile = "gfx/interface/ideas/GFX_idea_generic_research_bonus"
+		texturefile = "gfx/interface/ideas/GFX_idea_generic_research_bonus.dds"
 	}
 	spriteType = {
 		name = "generic_depression"
-		texturefile = "gfx\interface\ideas\WAW_industrial_reforms.dds"
+		texturefile = "gfx/interface/ideas/WAW_industrial_reforms.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_amishdissent"
-		texturefile = "gfx\interface\ideas\amishdissent2.dds"
+		texturefile = "gfx/interface/ideas/amishdissent2.dds"
 	}
 	spriteType = {
-		name = GFX_idea_herbidea"
-		texturefile = "gfx\interface\ideas\idea_herbidea.dds"
+		name = "GFX_idea_herbidea"
+		texturefile = "gfx/interface/ideas/idea_herbidea.dds"
+	}
 #Flordia
 	spriteType = {
 		name = "GFX_idea_FLF_welfare_Program_idea"

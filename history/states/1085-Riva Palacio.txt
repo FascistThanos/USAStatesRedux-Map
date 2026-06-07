@@ -11,7 +11,7 @@ state={
 	provinces={
 		389 3432 7121 7126 7138 7143 
 	}
-	manpower=15647
+	manpower=31294
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
 	state_category = pastoral

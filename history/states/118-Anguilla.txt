@@ -15,7 +15,7 @@ state={
 		}
 		add_core_of = ANG
 	}
-	manpower=4600
+	manpower=9200
 	state_category=small_city
 	provinces={
 		8210

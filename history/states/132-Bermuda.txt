@@ -15,7 +15,7 @@ state={
 		}
 		add_core_of = BRM
 	}
-	manpower=29301
+	manpower=58602
 	state_category=rural
 	provinces={
 		8155

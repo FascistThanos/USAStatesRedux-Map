@@ -13,7 +13,7 @@ state={
 	provinces={
 		8170 8174 8177 8179 
 	}
-	manpower=203
+	manpower=406
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
 	state_category = tiny_island

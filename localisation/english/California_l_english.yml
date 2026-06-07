@@ -1,4 +1,4 @@
-﻿l_english:
+﻿﻿l_english:
 ##Ideas
   CAC_californiandollar:0 "Uses Californian Tender"
   CAC_usdollar:0 "Uses US Tender"
@@ -26,7 +26,7 @@
   CAC_aloyaldemocraticarmy:0 "A Loyal Democratic Army"
   CAC_aloyaldemocraticarmy_desc:0 "The Army of California has stayed loyal to Frank Merriam during the aftermath of the collapse of America. Frank Merriam promises to not turn to the ideas of fascism and communism and the California Army agrees with him. The next election in California has made the army worry of a possible fascist or even worse communist president, if upset, The Army could rebel. As many soldiers say, they will die for the bear."
   CAC_unloyalarmy:0 "Disjointed Army"
-  CAC_unloyalarmy_desc:0 "The Army of California swore an oath to Frank Merriam after the collapse of the United States, with the new undemocratic president in power the army refuses to serve this "new" California and rumors of a coup are by the military are common to hear."
+  CAC_unloyalarmy_desc:0 "The Army of California swore an oath to Frank Merriam after the collapse of the United States, with the new undemocratic president in power the army refuses to serve this 'new' California and rumors of a coup are by the military are common to hear."
   CAC_dustbowlmigration:0 "The Dust Bowl Migration"
   CAC_dustbowlmigration_desc:0 "California was not affected by the Dust Bowl directly, but it has been causing mass migrants from other states to come to California in hopes of a better life. This has caused some problems for the government and finding a job can be hard for normal citizens."
   CAC_submarinewarfare:0 "Submarine Warfare"
@@ -51,7 +51,7 @@
   CAC_recoveryfromwar:0 "Relieve Devastation From War"
   CAC_openrecruitmentcenters:0 "Funded Recruitment Centers"
   CAC_spyidea:0 "The California Espionage Defense Agency"
-  CAC_anewmp:0 "A New "Military" Police"
+  CAC_anewmp:0 "A New 'Military' Police"
   CAC_fundrightwingnews:0 "Hollywood Propaganda"
   CAC_policeforceempowered:0 "Police Force Empowered"
   CAC_encouragedcapitalism:0 "Encouraged Capitalism & Small Businesses"
@@ -80,7 +80,7 @@
   ### Below, Defensive programs
   california.2.t:0 "Defensive Fort Program"
   california.2.d:0 "We have been brought an opportunity to build forts along our neighboring states. We have 2 options. We can either build our forts on the southern part of California on the border of Mexico and Arizona, or up north and protect our border with Nevada and Oregon, which one shall we do?"
-  california.2.a:0 "The North is already protected with mountains. A "Mexican Maginot" shall do."
+  california.2.a:0 "The North is already protected with mountains. A 'Mexican Maginot' shall do."
   california.2.b:0 "We must defend from north-western aggression!"
   #### Below, Unique Nevada event
   california.3.t:0 "Nevadan Security"
@@ -207,7 +207,7 @@
   californiaarmy.2.d:0 "Under the night, multiple Californian army soldiers deserted to Arizona crossing the Colorado River. Our border patrol reported it in the radio but couldn't do anything to stop them due to the fact that many of these deserters were armed and outnumbered our border patrol. Arizona has accepted these deserters and are reported to be accepting them into the ranks of the Arizonan Army. Some soldiers have died during the crossing of the Colorado River due to bodies washing up on the bank.."
   californiaarmy.2.a:0 "Better if the traitors are dead! Find the survivors immediately and imprison them!"
   californiaarmy.3.t:0 "The Patton Revolution"
-  californiaarmy.3.d:0 ""An immediate restoration of democracy and justice.." George S Patton said earlier on a radio broadcast to all Californian citizens after announcing the formation of the The Californian Liberation Front for Democracy (CLFD) "The Liberation Front will not rest until [CAC.GetLeader] is out of power and California holds its rightfully eletected President.""
+  californiaarmy.3.d:0 "\"An immediate restoration of democracy and justice...\" George S Patton said earlier on a radio broadcast to all Californian citizens after announcing the formation of the The Californian Liberation Front for Democracy (CLFD) \"The Liberation Front will not rest until [CAC.GetLeader] is out of power and California holds its rightfully elected President.\""
   californiaarmy.3.a:0 "Crush them! Make them suffer! (Stay with Davis)"
   californiaarmy.3.b:0 "For Liberty and Justice! (Play the CLFD)"
   californiaarmy.4.t:0 "Protests in San Diego!"

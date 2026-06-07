@@ -1,4 +1,4 @@
-﻿l_english:
+﻿﻿l_english:
     #focus
     NEN_dealingwithdust:0 "Dealing With The Dust"
     NEN_dealingwithdust_desc:0 "The Dustbowl hit the midwest hard, our economy, our crops, and our people have suffered for years with little end in sight. If we wish to move forward, we must deal with these issues."
@@ -236,7 +236,7 @@
     nnebraska.5.d:0 "Washington has orders for us. We are to seize the lands of the former Nebraska Territory from Wyoming. This will be much of the state, and we are to either establish a friendly government in the rest, or leave it to the traitorous dogs to fight over. Claiming Cheyenne will increase the legitimacy of our cause to the people, and hopefully lead to restoring order on the continent."
     nnebraska.5.a:0 "One step closer to destiny"
     nnebraska.6.t:0 "Operation: Sioux"
-    nnebraska.6.d:0 "With South Dakota taken care of, Washington has ordered us to continue our course along the Missouri and seize their western lands. They shouldn't be able to put up too much of a fight thankfully, so this will be over quick, and we will be one step closer to cementing our rightful place in the new Federal Government.
+    nnebraska.6.d:0 "With South Dakota taken care of, Washington has ordered us to continue our course along the Missouri and seize their western lands. They shouldn't be able to put up too much of a fight thankfully, so this will be over quick, and we will be one step closer to cementing our rightful place in the new Federal Government."
     nnebraska.6.a:0 "To arms, soldiers!"
     nnebraska.7.t:0 "Operation: Cumulus"
     nnebraska.7.d:0 "With a path now clear into Montana, D.C. has given us the orders to march onto Helena, and seize the majority of their lands. They seem to have plans for the westernmost parts, so we have been ordered to only take the locations defined by our orders."
@@ -339,7 +339,7 @@
     NEN_creditkearny:0 "Tax Credits In Kearney"
     NEN_creditgrandisland:0 "Tax Credits In Grand Island"
     NEN_creditlincoln:0 "Tax Credits In Lincoln"
-    NEN_creditomaha:0 ""Tax Credits In Omaha"
+    NEN_creditomaha:0 "Tax Credits In Omaha"
     NEN_creditloess:0 "Tax Credits In Loess Hills"
     NEN_creditpioneer:0 "Tax Credits In Pioneer Country"
     NEN_colorado1:0 "Sell To Colorado"

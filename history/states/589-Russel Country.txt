@@ -21,7 +21,7 @@ resources = {
 	provinces={
 		27 140 784 1067 3006 3700 4743  
 	}
-	manpower=15943
+	manpower=31886
 	buildings_max_level_factor=1.000
 	state_category=pastoral
 	local_supplies=0.000
