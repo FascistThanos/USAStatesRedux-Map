@@ -1,4 +1,301 @@
-add_namespace = tallahassee_crisis
+add_namespace = tc.ala
+add_namespace = tc.flf
+add_namespace = tc.gag
 
 # Tallahassee Crisis Events
 ## Alabama Events
+country_event = {
+	id = tc.ala.1  ##Push or release the claim
+	title = tc.ala.1.t
+	desc = tc.ala.1.d
+	picture = GFX_report_event_communist_leader
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	#trigger = {
+		#has_country_flag = tallahassee_crisis_active
+	#}
+
+	option = {
+		name = tc.ala.1.a  ##Press Claim
+		hidden_effect = {
+			country_event = {
+				hours = 6
+				id = tc.1
+			}
+		}
+		set_global_flag = tallahassee_crisis_active
+		add_state_claim = 422
+		FLF = {
+			country_event = {
+				id = tc.flf.1
+				hours = 6
+			}
+		}
+	}
+	option = {
+		name = tc.ala.1.b  ##Release Claim
+		add_political_power = 150
+	}
+}
+country_event = {
+	id = tc.ala.2 ##Florida yields
+	title = tc.ala.2.t
+	desc = tc.ala.2.d
+	picture = GFX_report_event_communist_leader
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = tc.ala.2.a
+		add_stability = 0.1
+		add_political_power = 100
+		add_state_core = 422
+		transfer_state = 422
+		set_state_name = { id = 422 "Alabama Coastline"}
+		hidden_effect = {
+			country_event = {
+				hours = 6
+				id = tc.2
+			}
+		}
+	}
+}
+country_event = {
+	id = tc.ala.3 ##Florida Defiant (Alone)
+	title = tc.ala.3.t
+	desc = tc.ala.3.d
+	is_triggered_only = yes
+	option = {
+		name = tc.ala.3.a
+		ALA = {
+			declare_war_on = {
+			target = FLF
+			type = take_claimed_state
+			}
+		add_war_support = 0.1
+		}
+		hidden_effect = {
+			country_event = {
+				hours = 12
+				id = tc.3
+			}
+			
+		}
+	}
+	option = {
+		name = tc.ala.3.b
+		GAG = {
+			country_event = { 
+				hours = 6
+				id = tc.gag.2
+			}
+		}
+	}
+	option = {
+		name = tc.ala.3.c
+		add_war_support = -0.1
+		add_stability = -0.1
+		hidden_effect = {
+			country_event = {
+				hours = 6
+				id = tc.3
+			}
+		}
+	}
+}
+#Alabama gets word of Florida reaching out to Georgia
+country_event = {
+	id = tc.ala.4
+	title = tc.ala.4.t
+	desc = tc.ala.4.d
+	picture = GFX_report_event_generic
+	is_triggered_only = yes
+	fire_only_once = yes
+	#Alabama waits
+	option = {
+		name = tc.ala.4.a
+		add_war_support = 0.05
+		##add national idea for bonus attack and defense on GA and FL for 70 days
+	}
+	#Alabama strikes
+	option = {
+		name = tc.ala.4.b
+		ALA = {
+			declare_war_on = {
+			target = FLF
+			type = take_claimed_state
+			}
+		FLF = {
+			country_event = {
+				hours = 2
+				id = tc.flf.5
+			}
+		}
+		add_war_support = 0.1
+		}
+		hidden_effect = {
+			country_event = {
+				hours = 12
+				id = tc.3
+			}
+			
+		}
+	}
+}
+#Georgia Backs Florida (Resources)
+country_event = {
+	id = tc.ala.5
+	title = tc.ala.5.t
+	desc = tc.ala.5.d
+	picture = GFX_report_event_generic
+	is_triggered_only = yes
+	fire_only_once = yes
+	#Refuse Demands (war)
+	option = {
+		name = tc.ala.5.a
+		ALA = {
+			declare_war_on = {
+			target = FLF
+			type = take_claimed_state
+			generator { 422 }
+			}
+			declare_war_on = {
+			target = GAG
+			type = take_state_focus
+			generator = { 389 }
+			}
+			add_war_support = 0.1
+			add_stability = 0.15
+			hidden_effect = {
+				country_event = {
+					hours = 12
+					id = tc.4
+				}
+			
+			}
+		}
+	}
+	#Accept Demands
+	option = {
+		name = tc.ala.5.b
+		ALA = {
+			give_resource_rights = {
+			target = GAG
+			state = 398
+			resource = steel
+			}
+		}
+	}
+}
+
+
+## Florida Events
+# Crisis Start
+country_event = {
+	id = tc.flf.1
+	title = tc.flf.1.t
+	desc = tc.flf.1.d
+	picture = GFX_report_event_generic
+	is_triggered_only = yes
+	fire_only_once = yes
+	## Refuse Alabama's Demand
+	option = {
+		name = tc.flf.1.a
+		ALA = {
+			country_event = {
+				hours = 6
+				id = tc.ala.3
+			}
+		}
+		add_war_support = 0.1
+	}
+	## Reach out to Georgia
+	option = {
+		name = tc.flf.1.b
+		GAG = {
+			country_event = {
+				hours = 2
+				id = tc.gag.1
+			}
+		}
+		ALA = {
+			country_event = {
+				hours = 2
+				id = tc.ala.4
+			}
+		}}
+	}
+	## Submit to Alabama
+	option = {
+		name = tc.flf.1.c
+		ALA = {
+			country_event = {
+				hours = 4
+				id = tc.ala.2
+			}
+		}
+		
+	}
+}
+
+## Georgia agrees to help (for resources)	
+country_event = {
+	id = tc.flf.2
+	title = tc.flf.2.t
+	desc = tc.flf.2.d
+	picture = GFX_report_event_generic
+	is_triggered_only = yes
+
+	## Agree
+	option = {
+		name = tc.flf.2.a
+		GAG = {
+			country_event = {
+				hours = 6
+				id = tc.gag.4
+			}
+		set_global_flag = georgia_backs_florida_resource
+		ALA = {
+			country_event = {
+				hours = 6
+				id = tc.ala.5
+			}
+	}
+}
+
+## Georgia Events
+country_event = {
+	id = tc.gag.1
+	title = tc.gag.1.t
+	desc = tc.gag.1.d
+	picture = GFX_report_event_generic
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = tc.gag.1.a
+		FLF = {
+			country_event = {
+				hours = 6
+				id = tc.flf.2
+			}
+		}
+	}
+	option = {
+		name = tc.gag.1.b
+		FLF = {
+			country_event = {
+				hours = 6
+				id = tc.flf.3
+			}
+		}
+	}
+	option = {
+		name = tc.gag.1.c
+		FLF = {
+			country_event = {
+				hours = 6
+				id = tc.flf.4
+			}
+		}
+	}
+}

@@ -3,7 +3,8 @@
 # Doubled manpower of all states
 # Added background changer & defines to menu
 # Added missing defines (except NEVERMINE_ME_MEDAL_MIN_RATIO which doesn't exist in base game defines either)
-# Laid groundwork for Tallahassee Crisis event chain
+# Began writing Tallahassee Crisis events
+# Full 1.18 Compatibility
 
 ########################
 ### TO DO LIST ########

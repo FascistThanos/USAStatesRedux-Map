@@ -1,0 +1,51 @@
+﻿l_english:
+###Alabama Events###
+ tc.ala.1.t: "The Tallahassee Crisis"
+ tc.ala.1.d: "Our access to the sea is fully dependent on Mobile Bay; while not an issue before the dissolution of the Union, we are now quite vulnerable to naval blockade or influence from Texas or Florida in particular. Florida is a weaker state than us for now, but we cannot predict if it will always stay this way. Should we apply pressure to secure additional coastline along the Florida Panhandle?"
+ tc.ala.1.a: "Yes. It is a matter of national security."
+ tc.ala.1.b: "We cannot risk this at this time."
+ tc.ala.1.at: "These events may lead to war with Florida and Georgia. We will be able to back down later if we need, at a cost."
+ tc.ala.2.t: "Florida Caves"
+ tc.ala.2.d: "Florida has given in to all of our demands. Pensacola and the Floridian Panhandle have become Alabama's new coastline, without so much as a shot fired."
+ tc.ala.2.a: "A resounding success!"
+ tc.ala.3.t: "Florida Refuses!"
+ tc.ala.3.d: "Florida has refused to cave to pressure, and believes they are strong enough to refuse and repulse us on their own. How should we respond to this turn of events?"
+ tc.ala.3.a: "No matter, we can take it from them anyway!"
+ tc.ala.3.b: "Perhaps the Georgians will aid us."
+ tc.ala.3.c: "War is ill-timed. We will have to back down."
+ tc.ala.4.t: "Florida Reaches out to Georgia"
+ tc.ala.4.d: "Florida has reached out to Georgia to secure aid against us. We do not know if anything will come of it, but we cannot withdraw from pressure at the mere mention of another state. We can hold strong, hoping their talks fall through or we can win a quick war, or we could strike Florida immediately and hope for a fait d'accompli."
+ tc.ala.4.a: "Hold for now. We can handle this."
+ tc.ala.4.b: "We can't chance it. Give the signal."
+
+ ###Florida Events###
+ tc.flf.1.t: "The Tallahassee Crisis"
+ tc.flf.1.d: "Alabama has begun threatening our state with invasion, unless we yield Pensacola and the Panhandle to them. Our infrastructure in the region is in a shoddy state, and they are stronger on land. We could try to fight them off, petition for aid from Georgia, or simply cut our losses."
+ tc.flf.1.a: "We will not yield an inch of territory!"
+ tc.flf.1.b: "Approach the Georgians, perhaps we can come to an arrangement."
+ tc.flf.1.c: "We can ill afford a war at this time."
+
+
+ ###Georgia Events###
+
+ ###News Events###
+ tc.1.t: "The Tallahassee Crisis"
+ tc.1.d: "Alabama has begun a campaign of pressure against Florida with the apparent purpose of securing the Floridian Panhandle. Delegates from both states have gathered in Tallahassee to discuss a resoltion and the Alabaman demands, even as both states begin to mobilize their armed forces to the borders. The Alabaman military seems more well-equipped for such an eventuality, having beaten their Floridian counterparts to the border, and are currently conducting show-of-force drills. Georgia seems disturbed by this turn of events, and it is only a matter of time before a resolution is reached by peace or by force."
+ tc.1.a: "Another flashpoint in the wake of the Union..."
+ tc.1.b: "Those Floridian dogs will yield."
+ tc.1.c: "Those Alabaman bastards will learn their place!"
+ tc.1.e: "Intervention may be necessary..."
+ tc.2.t: "The Alabama Panhandle"
+ tc.2.d: "After caving to significant Alabaman pressure, Florida has yielded the panhandle to the Yellowhammer State. Evidently Floridian leaders believed that a war was untenable, and surrendered a significant territory and population (as well as Naval Station Pensacola) without so much as a shot fired. It has left Alabama in an emboldened state, and disrupted the delicate balance of power between Alabama and Georgia."
+ tc.2.a: "Not even a single shot?!"
+ tc.2.b: "We expected nothing less from those Sunshiners."
+ tc.2.c: "Watch your back, Alabamans..."
+ tc.2.e: "Perhaps we should have acted..."
+ tc.3.t: "Tallahassee Crisis Resolved"
+ tc.3.d: "Alabama has backed down today, their bluff called by the other states involved in the crisis. This has led to widespread dissillusionment with the Alabaman government, who is currently attempting to stabilize the situation at home, and has emboldened the radical elements of the state."
+ tc.3.a: "Bit off more than they could chew."
+ tc.3.b: "This won't play well at home..."
+ tc.3.c: "Up yours, Alabama!" ## Use the following for Mobile seizure: Mobile is our sweet home now, Alabama.
+ tc.3.e: "Maybe now it's our turn to strike."
+ tc.4.t: "Panhandler War"
+ tc.4.d: "Negotiations have broken down on the Florida Panhandle as the nearby states fight for control of their claimed territories. 

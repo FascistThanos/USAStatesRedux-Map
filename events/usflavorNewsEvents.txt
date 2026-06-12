@@ -4,6 +4,7 @@
 
 add_namespace = us_flavor_news
 add_namespace = us_nukes
+add_namespace = tc
 
 # 1936 cold wave
 news_event = {
@@ -105,6 +106,165 @@ news_event = {
 		name = us_nukes.1.b
 		trigger = {
 			TAG = FLF
+		}
+	}
+}
+
+##Tallahassee Crisis News##
+#Tallahasse Crisis Begins
+news_event = {
+	id = tc.1
+	title = tc.1.t
+	desc = tc.1.d
+	picture = GFX_report_event_generic
+	major = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = tc.1.a
+		trigger = {
+			NOT = {
+				tag = ALA
+				tag = FLF
+				tag = GAG
+			}
+		}	
+	}
+	option = {
+		name = tc.1.b
+		trigger = {
+			tag = ALA
+		}
+	}
+	option = {
+		name = tc.1.c
+		trigger = {
+			tag = FLF
+		}		
+	}
+	option = {
+		name = tc.1.e
+		trigger = {
+			tag = GAG
+		}
+	}
+}
+
+#Florida Caves
+news_event = {
+	id = tc.2
+	title = tc.2.t
+	desc = tc.2.d
+	picture = GFX_report_event_generic
+	major = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = tc.2.a
+		trigger = {
+			NOT = {
+				tag = ALA
+				tag = FLF
+				tag = GAG
+			}
+		}
+	}
+	option = {
+		name = tc.2.b
+		trigger = {
+			tag = ALA
+		}
+	}
+	option = {
+		name = tc.2.c
+		trigger = {
+			tag = FLF
+		}		
+	}
+	option = {
+		name = tc.2.e
+		trigger = {
+			tag = GAG
+		}
+	}
+}
+#Alabama Caves (No territory loss)
+news_event = {
+	id = tc.3
+	title = tc.3.t
+	desc = tc.3.d
+	picture = GFX_report_event_generic
+	major = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = tc.3.a
+		trigger = {
+			NOT = {
+				tag = ALA
+				tag = FLF
+				tag = GAG
+			}
+		}
+	}
+	option = {
+		name = tc.3.b
+		trigger = {
+			tag = ALA
+		}
+	}
+	option = {
+		name = tc.3.c
+		trigger = {
+			tag = FLF
+		}		
+	}
+	option = {
+		name = tc.3.e
+		trigger = {
+			tag = GAG
+		}
+	}
+}
+
+#War breaks out
+news_event = {
+	id = tc.3
+	title = tc.3.t
+	desc = tc.3.d
+	picture = GFX_report_event_generic
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = tc.3.a
+		trigger = {
+			NOT = {
+				tag = ALA
+				tag = FLF
+				tag = GAG
+			}
+		}
+	}
+	option = {
+		name = tc.3.b
+		trigger = {
+			tag = ALA
+		}
+	}
+	option = {
+		name = tc.3.c
+		trigger = {
+			tag = FLF
+		}		
+	}
+	option = {
+		name = tc.3.e
+		trigger = {
+			tag = GAG
 		}
 	}
 }
