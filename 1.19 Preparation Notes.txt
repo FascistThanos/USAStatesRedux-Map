@@ -1,21 +1,37 @@
-##Riptide USA States Redux 1.15 Update notes##
+##Riptide USA States Redux 1.19 Update notes##
 
 # Doubled manpower of all states
 # Added background changer & defines to menu
 # Added missing defines (except NEVERMINE_ME_MEDAL_MIN_RATIO which doesn't exist in base game defines either)
 # Began writing Tallahassee Crisis events
+# Added Supply Hub to common/buildings/02_lock_buildings.txt in order to reduce the construction cost from 20000 to 12000
+# Army HQ Templates and Localisation added (AI still won't deploy for some reason)
+# Country Selection screen updates
+# Restored USA States loading screens, added small versions for the selector, and added two more (D-Day and Iwo Jima)
 # Full 1.18 Compatibility
+# Full 1.19 Compat
+# Removed Folders/Files: (makes further updates easier as long as we have no unique traits in it)
+# 	common/raids
+# 	common/operations
+#	common/unit_leader
+#	common/unit_medals
+#	common/terrain
+#	common/dynamic_modifiers (old files, replaced with a new custom one to include Texas and future modifiers)
+#   common/ai_strategy/doctrines.txt
+#   common/ai_strategy/generic_operation_strats.txt
+#   common/ai_strategy/operatives_default.txt
 
 ########################
 ### TO DO LIST ########
 ########################
 
+# Permanent fix to country selection
+# Parsing through effects and triggers and cutting down on Vanilla tag refrences in all files
 # Add Tallahassee Crisis event chain
 # Alabama tree
 # Georgia tree
 # Florida tree
-# Correct apparent localization errors (Nebraska had some)
-# Prep for a 1.19 compat update (likely will need to edit defines, air raids, and spy operations, as well as unit designer gfx/gui)
 # Take a closer look at factions & faction goals
+# Find whatever tech doesn't exist in the history/countries and ai_strategy files
 
 

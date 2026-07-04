@@ -4,7 +4,7 @@ bookmarks = {
 		desc = "GATHERING_STORM_DESC1"
 		date = 1936.1.1.12
 		picture = GFX_select_date_1936
-		default_country = "COC"
+		default_country = "NEN"
 		default = yes
 
 		"TXT" = {
@@ -35,6 +35,18 @@ bookmarks = {
 			}
 		}
 
+		"FLF"={
+			history = "FLF_BOOKMARK_DESC"
+			ideology = democratic
+			ideas = {
+				#
+			}
+			focuses = {
+				FLF_southernpride
+				FLF_patrioticrestoration
+				FLF_alligatorbite
+			}
+		}
 
 		"KSK"={
 			history = "KSK_BOOKMARK_DESC"
@@ -46,18 +58,6 @@ bookmarks = {
 				KSK_bleeding_kansas
 				KSK_steel_plant
 				KSK_fascist5
-			}
-		}
-		"FLF"={
-			history = "FLF_BOOKMARK_DESC"
-			ideology = democratic
-			ideas = {
-				#
-			}
-			focuses = {
-				FLF_southernpride
-				FLF_patrioticrestoration
-				FLF_alligatorbite
 			}
 		}
 		"COC" = {
@@ -72,20 +72,20 @@ bookmarks = {
 				COC_denver_space_administration
 			}
 		}
-		"GRN"={
-			history = "GRN_BOOKMARK_DESC"
+		"NYN"={
+			history = "NYN_BOOKMARK_DESC"
 			ideology = democratic
 			ideas = {
-				the_pride_of_greenland
+				#
 			}
 			focuses = {
-				GRN_the_greenland_empire
-				GRN_the_republic_of_greenland
-				GRN_the_polar_bears_rise_up
+				democratic_path
+				fascist_path
+				communist_path
 			}
 		}
-		"HIH"={
-			history = "HIH_BOOKMARK_DESC"
+		"NEN"={
+			history = "NEN_BOOKMARK_DESC"
 			ideology = democratic
 			ideas = {
 				#
@@ -169,6 +169,32 @@ bookmarks = {
 				NEG_ne_initiative
 				NEG_ne_revived
 				NEG_ne_go_greater
+			}
+		}
+		"HIH"={
+			minor = yes
+			history = "HIH_BOOKMARK_DESC"
+			ideology = democratic
+			ideas = {
+				#
+			}
+			focuses = {
+				democratic_path
+				fascist_path
+				communist_path
+			}
+		}
+		"GRN"={
+			minor = yes
+			history = "GRN_BOOKMARK_DESC"
+			ideology = democratic
+			ideas = {
+				the_pride_of_greenland
+			}
+			focuses = {
+				GRN_the_greenland_empire
+				GRN_the_republic_of_greenland
+				GRN_the_polar_bears_rise_up
 			}
 		}
 

@@ -1,4 +1,8 @@
-﻿﻿l_english:
+﻿l_english:
+## Bookmark for everyone
+ COUNTRY_SELECTION_CHARACTER_DESC_NAME: "$NAME|Y$" 
+ COUNTRY_SELECTION_CHARACTER_DESC: "$NAME|Y$ $DESC|$\n$TRAITS_DESC|$"
+
 ##Ideas
   CAC_californiandollar:0 "Uses Californian Tender"
   CAC_usdollar:0 "Uses US Tender"
@@ -207,7 +211,7 @@
   californiaarmy.2.d:0 "Under the night, multiple Californian army soldiers deserted to Arizona crossing the Colorado River. Our border patrol reported it in the radio but couldn't do anything to stop them due to the fact that many of these deserters were armed and outnumbered our border patrol. Arizona has accepted these deserters and are reported to be accepting them into the ranks of the Arizonan Army. Some soldiers have died during the crossing of the Colorado River due to bodies washing up on the bank.."
   californiaarmy.2.a:0 "Better if the traitors are dead! Find the survivors immediately and imprison them!"
   californiaarmy.3.t:0 "The Patton Revolution"
-  californiaarmy.3.d:0 "\"An immediate restoration of democracy and justice...\" George S Patton said earlier on a radio broadcast to all Californian citizens after announcing the formation of the The Californian Liberation Front for Democracy (CLFD) \"The Liberation Front will not rest until [CAC.GetLeader] is out of power and California holds its rightfully elected President.\""
+  californiaarmy.3.d:0 "'An immediate restoration of democracy and justice..' George S Patton said earlier on a radio broadcast to all Californian citizens after announcing the formation of the The Californian Liberation Front for Democracy (CLFD) "The Liberation Front will not rest until [CAC.GetLeader] is out of power and California holds its rightfully eletected President.""
   californiaarmy.3.a:0 "Crush them! Make them suffer! (Stay with Davis)"
   californiaarmy.3.b:0 "For Liberty and Justice! (Play the CLFD)"
   californiaarmy.4.t:0 "Protests in San Diego!"
@@ -231,7 +235,7 @@
   CAC_frankmerriamsplans:0 "Frank Merriam's Plan"
   CAC_frankmerriamsplans_desc:0 "If we are to survive the coming storm, we must trust in our leadership. Governor Merriam has proven time and time again that he is a capable leader with a pragmatic approach to governing. Though many around us have abandoned democracy, the New California Republic will continue to be a shining example of what democracy can offer the world."
   CAC_JamesEDavis:0 "James E. Davis's Plan"
-  CAC_JamesEDavis_desc:0 "James Edgar Davis or his nickname "Two Gun Davis" has proven to be a strong, confident leader wanting only the best for the future of California. He has announced while gathering support for his presidental campaign that he would bring anyone who dares to threaten California will be brought to a swift punishment."
+  CAC_JamesEDavis_desc:0 "James Edgar Davis or his nickname 'Two Gun Davis' has proven to be a strong, confident leader wanting only the best for the future of California. He has announced while gathering support for his presidental campaign that he would bring anyone who dares to threaten California will be brought to a swift punishment."
   CAC_uptonsinclairsplan:0 "Upton Sinclair's Plan"
   CAC_uptonsinclairsplan_desc:0 "In the aftermath of the Longshoreman's strike and Merriam's crackdown on unions, one thing has become clear- The workers of California are under attack, and the only thing that will save it is a political revolution. Merriam stands for the evils of capitalism, and Davis is a corrupt fascist. As Sinclair once wrote, "one of the necessary accompaniments of capitalism in a democracy is political corruption.""
   CAC_militaryexpansionprogram:0 "Military Expansion Program"
@@ -359,7 +363,7 @@
   CAC_publicworksprogram_desc:0 "In each park, every street! There will be new recreational activites that show the joy of socialism and communism! There will be new statues of communist figureheads!"
   CAC_guaranteedpensions:0 "Guaranteed Pensions"
   CAC_guaranteedpensions_desc:0 "If we guarantee every man who has worked for the Worker's Republic a pension, every person will prosper and live a wonderful life."
-  CAC_endpovertyincaliforniaplans:0 ""End Poverty In California" Campaign"
+  CAC_endpovertyincaliforniaplans:0 "'End Poverty In California' Campaign"
   CAC_endpovertyincaliforniaplans_desc:0 "The End Poverty in California movement (EPIC) was a political campaign started in 1934 by socialist writer Upton Sinclair. The movement formed the basis for Sinclair’s campaign for Governor of California in 1934 but will now with is victory in the election. The plan called for a massive public works program, sweeping tax reform, and guaranteed pensions. It gained major popular support, with thousands joining End Poverty Leagues across the state."
   CAC_collectivizefarmland:0 "To Each According To Their Needs"
   CAC_collectivizefarmland_desc:0 "From each according to their abilities..."
@@ -443,10 +447,10 @@
   CAC_incorporatethepolice_desc:0 "Military Police is already a term to describe military soldiers that are law enforcement agencies connceted with the military of a state, by giving police actual military rights, benefits, and weapons. We can make sure no one opposes Davis."
   CAC_statecontrolledmedia_desc:0 "Using Hollywood and making sure no movies paint California in a bad way and even bribing movies to paint us in a good light."
   CAC_noopposition_desc:0 "The unstable politics of California has caused great troubles for Davis with him being constantly seen by the opposition, with enough public popularity, we can easily deal with our enemies."
-  CAC_allignthearmy_desc:0 "Davis is no idiot, he is aware of the renowned "Loyal Democratic Army Of California" and knows of the resentment of the election results, with enough bribes and pay raises, we might be able to show them that we aren't so bad."
+  CAC_allignthearmy_desc:0 "Davis is no idiot, he is aware of the renowned 'Loyal Democratic Army Of California' and knows of the resentment of the election results, with enough bribes and pay raises, we might be able to show them that we aren't so bad."
   CAC_amilitarizedstate_desc:0 "The final stages of a militarized California are in effect, and soon Davis's plan of being a police state will become a reality and he will have full control over what anyone says, or else they might just disappear."
   CAC_adailywellnesscheck_desc:0 "Daily patrols through neighboords, police can check up on citizens to make sure they are law-abiding citizens and are legal Californians."
-  CAC_beginningofpsa_desc:0 "Democracy has vanished from North America, what was federalized states of the United States are now "tribal warlords" posing as governors trying to reap as much wealth as possible from the downfall of the United States. The Pacific States of America is a plan by Frank Merriam to secure Californian democracy in the west.. It would include reaching out to several nations on the west coast about a federation under California.. As the true successors to the United States.. We must secure liberty and democracy.. By any means."
+  CAC_beginningofpsa_desc:0 "Democracy has vanished from North America, what was federalized states of the United States are now 'tribal warlords' posing as governors trying to reap as much wealth as possible from the downfall of the United States. The Pacific States of America is a plan by Frank Merriam to secure Californian democracy in the west.. It would include reaching out to several nations on the west coast about a federation under California.. As the true successors to the United States.. We must secure liberty and democracy.. By any means."
   CAC_coresocialistland:0 "Under New Management"
   CAC_coresocialistland_desc:0 "We have secured our sphere of influence, now it is time to show the new populace what life is like under our prosperous flag."
   CAC_thecurrencyissue:0 "The Currency Issue"

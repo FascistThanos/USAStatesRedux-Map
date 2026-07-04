@@ -31,7 +31,22 @@ buildings = {
 	#   missing_tech_loc = <bindable localization> # See script concept bindable localization
 	#   repair_speed_factor = 0.5 # Optional. Factor for how fast the building is repaired (default = 1.0)
 
-	
+	supply_node = { ###ADDED HERE TO REDUCE THE COST COMPARED TO BASE GAME
+		show_on_map = 1
+		base_cost = 12000
+		disabled_in_dmz = yes
+		icon_frame = 15
+		centered = yes
+		supply_node = yes
+		damage_factor = 0.1
+		allied_build = yes
+		always_shown = yes
+		infrastructure_construction_effect = yes
+		level_cap = {
+			province_max = 1
+		}
+		tags = { supply_building }
+	}	
 
 	canal_niagara = {
 		show_on_map = 1

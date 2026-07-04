@@ -1,4 +1,6 @@
-﻿﻿l_english:
+﻿l_english:
+    #bookmarks
+    NEN_BOOKMARK_DESC:0 "Nebraska was hit hard by the dust bowl, with the crops failing and people moving West, it seems the heartland has become a wasteland. But the dissolution of the United States may just be a boon, perhaps the ones who stayed behind can rebuild and leverage the price of crops to bring Nebraska on top."
     #focus
     NEN_dealingwithdust:0 "Dealing With The Dust"
     NEN_dealingwithdust_desc:0 "The Dustbowl hit the midwest hard, our economy, our crops, and our people have suffered for years with little end in sight. If we wish to move forward, we must deal with these issues."
