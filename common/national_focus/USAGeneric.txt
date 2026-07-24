@@ -1,6 +1,9 @@
 focus_tree = {
 	id = USA_generic
 	default = yes
+	country = {
+		factor = 0
+	}
 	initial_show_position = {
 		focus = GEN_our_place
 	}

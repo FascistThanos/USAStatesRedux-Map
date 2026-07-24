@@ -1330,7 +1330,7 @@ focus_tree = {
 		relative_position_id = begin_the_revolution
 		
 		available = {
-			has_war = FALSE
+			has_war = no
 		}
 		bypass = {
 		}
@@ -1520,7 +1520,8 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			create_wargoal = { type = puppet_wargoal_focus target = BAJ }
+			create_wargoal = { type = puppet_wargoal_focus target = BCA }
+			create_wargoal = { type = puppet_wargoal_focus target = BCS }
 		}
 	}
 	focus = {
@@ -2409,7 +2410,7 @@ focus_tree = {
 		bypass = {
 		}
 		
-		prerequisite = { focus =  }
+		#prerequisite = { focus =  }
 		cost = 10
 
 		#mutually_exclusive = { focus = fascist_path }

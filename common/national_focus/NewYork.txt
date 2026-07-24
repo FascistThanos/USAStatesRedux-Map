@@ -471,9 +471,9 @@
 			}
 		completion_reward = {
 			add_political_power = 50
-		create_advisor = {
+			create_advisor = {
 			name = Dean Wexler
-			picture = 
+			#picture = 
 			advisor = {
 				slot = political_advisor
 				idea_token = NYN_dean_wexler
