@@ -1,6 +1,6 @@
 state={
 	id=464
-	name="Kansas city"
+	name="Kansas City"
 
 	history={
 		owner = MOM

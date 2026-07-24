@@ -1,6 +1,6 @@
 state={
 	id=546
-	name="West Kansas city"
+	name="West Kansas City"
 	history={
 		owner = KSK
 		buildings = {
