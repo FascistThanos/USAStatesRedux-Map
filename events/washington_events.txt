@@ -1,0 +1,416 @@
+add_namespace = lwashington
+add_namespace = fwashington
+add_namespace = nwashington
+country_event = {
+	id = lwashington.1
+	title = lwashington.1.t
+	desc = lwashington.1.d 
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+	option = {
+		name = lwashington.1.a
+		ai_chance = {
+			base = 50
+			}
+		complete_national_focus = WAW_nativereconciliation
+		}
+	option = {
+		name = lwashington.1.b
+		ai_chance = {
+			base = 50
+			}
+		complete_national_focus = WAW_firmstance
+		}
+	}	
+country_event = {
+	id = lwashington.2
+	title = lwashington.2.t
+	desc = lwashington.2.d 
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+	option = {
+		name = lwashington.2.a
+		ai_chance = {
+			base = 100
+			}
+		WAW = {
+			puppet = ORO
+			}
+		}
+	option = {
+		name = lwashington.2.b
+		ai_chance = {
+			base = 0
+			}
+		WAW = {
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = ORO
+				}
+			}	
+		}
+	}
+country_event = {
+	id = lwashington.3
+	title = lwashington.3.t
+	desc = lwashington.3.d 
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+	option = {
+		name = lwashington.3.a
+		ai_chance = {
+			base = 100
+			}
+		WAW = {
+			puppet = IDI
+			}
+		}
+	option = {
+		name = lwashington.3.b
+		ai_chance = {
+			base = 0
+			}
+		WAW = {
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = IDI
+				}
+			}	
+		}
+	}
+country_event = {
+	id = lwashington.4
+	title = lwashington.4.t
+	desc = lwashington.4.d 
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+	option = {
+		name = lwashington.4.a
+		ai_chance = {
+			base = 100
+			}
+		WAW = {
+			puppet = IDI
+			}
+		}
+	option = {
+		name = lwashington.4.b
+		ai_chance = {
+			base = 0
+			}
+		WAW = {
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = IDI
+				}
+			}	
+		}
+	}
+country_event = {
+	id = lwashington.5
+	title = lwashington.5.t
+	desc = lwashington.5.d 
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+	option = {
+		name = lwashington.5.a
+		ai_chance = {
+			base = 100
+			}
+		WAW = {
+			puppet = ORO
+			}
+		}
+	option = {
+		name = lwashington.5.b
+		ai_chance = {
+			base = 0
+			}
+		WAW = {
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = ORO
+				}
+			}	
+		}
+	}
+country_event = {
+	id = lwashington.6
+	title = lwashington.6.t
+	desc = lwashington.6.d 
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+	option = {
+		name = lwashington.6.a
+		CAC = {
+			add_to_faction = WAW
+			}
+		}
+	}	
+	
+	
+	
+country_event = {
+	id = nwashington.1
+	title = nwashington.1.t
+	desc = nwashington.1.d 
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+	option = {
+		name = nwashington.1.a
+		ai_chance = {
+			base = 50
+			}
+		complete_national_focus = WAW_restoringhomelands
+		}
+	option = {
+		name = nwashington.1.b
+		ai_chance = {
+			base = 50
+			}
+		complete_national_focus = WAW_undersingleflag
+		}
+	}
+country_event = {
+	id = nwashington.2
+	title = nwashington.2.t
+	desc = nwashington.2.d 
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+	option = {
+		name = nwashington.2.a
+		ai_chance = {
+			base = 75
+			}
+		diplomatic_relation = {
+			country = WAW
+			relation = non_aggression_pact
+			active = yes
+			}
+		}	
+	option = {
+		name = nwashington.2.b
+		ai_chance = {
+			base = 25
+			}
+		WAW = {
+			add_ideas = WAW_defendingfromthebear
+		}
+	}
+}
+country_event = {
+	id = nwashington.3
+	title = nwashington.3.t
+	desc = nwashington.3.d 
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+	option = {
+		name = nwashington.3.a
+		ai_chance = {
+			base = 100
+			}
+		add_state_claim = 954
+		add_state_claim = 953
+		create_wargoal = {
+				type = take_claimed_state
+				target = BCB
+				}
+		WAW = {
+			create_wargoal = {
+				type = take_claimed_state
+				target = BCB
+				}
+			}	
+		}	
+	option = {
+		name = nwashington.2.b
+		ai_chance = {
+			base = 0
+			}
+		WAW = {
+			create_wargoal = {
+				type = take_claimed_state
+				target = BCB
+				}
+			}
+		}
+	}
+country_event = {
+	id = nwashington.4
+	title = nwashington.4.t
+	desc = nwashington.4.d 
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+	option = {
+		name = nwashington.4.a
+		ai_chance = {
+			base = 100
+			}
+		add_state_claim = 157
+		add_state_claim = 159
+		add_state_claim = 161
+		add_state_claim = 685
+		add_state_claim = 160
+		create_wargoal = {
+				type = take_claimed_state
+				target = IDI
+				}
+		WAW = {
+			create_wargoal = {
+				type = take_claimed_state
+				target = IDI
+				}
+			}	
+		}	
+	option = {
+		name = nwashington.4.b
+		ai_chance = {
+			base = 0
+			}
+		WAW = {
+			create_wargoal = {
+				type = take_claimed_state
+				target = IDI
+				}
+			}
+		}
+	}
+
+
+
+country_event = {
+	id = fwashington.1
+	title = fwashington.1.t
+	desc = fwashington.1.d 
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+	option = {
+		name = fwashington.1.a
+		DCD = {
+			add_to_faction = WAW
+			}
+		}
+	}
+
+country_event = {
+	id = fwashington.2
+	title = fwashington.2.t
+	desc = fwashington.2.d 
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+	option = {
+		name = fwashington.2.a
+		ai_chance = {
+			base = 85
+			}
+		WAW = {
+			annex_country = {
+				target = ORO
+				transfer_troops = yes
+				}
+			}	
+		}	
+	option = {
+		name = fwashington.2.b
+		ai_chance = {
+			base = 15
+			}
+		WAW = {
+			create_wargoal = {
+				type = annex_everything
+				target = ORO
+				}
+			}	
+		}
+	}
+	
+country_event = {
+	id = fwashington.3
+	title = fwashington.3.t
+	desc = fwashington.3.d 
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+	option = {
+		name = fwashington.3.a
+		ORO = {
+			create_wargoal = {
+				type = annex_everything
+				target = BCB
+				}
+			}	
+		}
+	}
+	
+country_event = {
+	id = fwashington.4
+	title = fwashington.4.t
+	desc = fwashington.4.d 
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+	option = {
+		name = fwashington.4.a
+		ORO = {
+			create_wargoal = {
+				type = annex_everything
+				target = IDI
+				}
+			}	
+		}
+	}
+
+country_event = {
+	id = fwashington.5
+	title = fwashington.5.t
+	desc = fwashington.5.d 
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+	option = {
+		name = fwashington.5.a
+		ORO = {
+			create_wargoal = {
+				type = annex_everything
+				target = AKA
+				}
+			}	
+		}
+	}
+
+country_event = {
+	id = fwashington.6
+	title = fwashington.6.t
+	desc = fwashington.6.d 
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+	option = {
+		name = fwashington.6.a
+		ORO = {
+			create_wargoal = {
+				type = annex_everything
+				target = YTY
+				}
+			}	
+		}
+	}
+
+country_event = {
+	id = fwashington.7
+	title = fwashington.7.t
+	desc = fwashington.7.d 
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+	option = {
+		name = fwashington.7.a
+		ORO = {
+			create_wargoal = {
+				type = take_claimed_state
+				target = MTM
+				}
+			add_state_claim = 588
+			add_state_claim = 1932
+			add_state_claim = 590
+			add_state_claim = 1390
+			add_state_claim = 587
+			}	
+		}
+	}	
+	

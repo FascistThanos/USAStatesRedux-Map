@@ -1,0 +1,7582 @@
+#Washington Focus Tree By Toaster
+focus_tree = {
+	id = washington_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 25
+			original_tag = WAW
+		}
+	}
+	continuous_focus_position = {
+		x = 150
+		y = 2700
+	}
+	default = no
+	focus = {
+		id = WAW_nativerights
+		icon = GFX_focus_BEL_the_lost_tribe
+		cost = 1
+		x = 70
+		y = 1
+		ai_will_do = {
+			factor = 75
+		}
+		completion_reward = {
+			country_event = {
+				id = lwashington.1
+				days = 2
+				random_hours = 12
+				random_days = 2
+			}
+			hidden_effect = {
+				ALU = {
+					add_state_core = 146
+					add_state_core = 776
+					add_state_core = 775
+					add_state_core = 148
+					add_state_core = 783
+					add_state_core = 782
+					add_state_core = 777
+					add_state_core = 774
+					add_state_core = 769
+					add_state_core = 771
+					add_state_core = 770
+					add_state_core = 778
+					add_state_core = 779
+					add_state_core = 781
+					add_state_core = 780
+					add_state_core = 768
+					add_state_core = 843
+					add_state_core = 151
+					}
+				TSI = {
+					add_state_core = 767
+					add_state_core = 1002
+					add_state_core = 972
+					add_state_core = 1000
+					add_state_core = 1001
+					add_state_core = 150
+					add_state_core = 764
+					add_state_core = 149
+					add_state_core = 765
+					add_state_core = 763
+					add_state_core = 762
+					add_state_core = 153
+					add_state_core = 760
+					add_state_core = 761
+					add_state_core = 974
+					add_state_core = 138
+					add_state_core = 1395
+					add_state_core = 11
+					add_state_core = 975
+					add_state_core = 139
+					add_state_core = 977
+					add_state_core = 976
+					add_state_core = 766
+					add_state_core = 1003 
+					add_state_core = 968
+					add_state_core = 973
+					}
+				SAL = {
+					add_state_core = 694
+					add_state_core = 700
+					add_state_core = 697
+					add_state_core = 696
+					add_state_core = 164
+					add_state_core = 698
+					add_state_core = 155
+					add_state_core = 588
+					add_state_core = 1392
+					add_state_core = 1393
+					add_state_core = 589
+					add_state_core = 591
+					add_state_core = 592
+					add_state_core = 1391
+					add_state_core = 590
+					add_state_core = 587
+					add_state_core = 157
+					add_state_core = 1390
+					}
+				NEZ = {
+					add_state_core = 718
+					add_state_core = 719
+					add_state_core = 62
+					add_state_core = 1346
+					add_state_core = 699
+					add_state_core = 720
+					add_state_core = 163
+					add_state_core = 462
+					add_state_core = 683
+					add_state_core = 156
+					add_state_core = 158
+					add_state_core = 60
+					add_state_core = 684
+					add_state_core = 162
+					}
+				}	
+			}
+		}
+	focus = {
+		id = WAW_nativereconciliation
+		icon = GFX_Generic_Mutual_Cooperation
+		cost = 4.3
+		x = 66
+		y = 2
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_nativerights
+			}
+		mutually_exclusive = {
+			focus = WAW_firmstance
+			}
+		completion_reward = {
+			add_timed_idea = {
+				idea = WAW_nativepacification
+				days = 365
+				}
+			}
+		}
+	focus = {
+		id = WAW_firmstance
+		icon = GFX_Generic_Break_Free
+		cost = 4.3
+		x = 74
+		y = 2
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_nativerights
+			}
+		mutually_exclusive = {
+			focus = WAW_nativereconciliation
+			}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = WAW_nativeunrest
+				add_idea = WAW_nativerevolts
+				}
+			}
+		}
+	#Democracy Struggle
+	focus = {
+		id = WAW_lessenrestrictions
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 10
+		x = 56
+		y = 3
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_nativereconciliation
+			}
+		completion_reward = {
+			add_timed_idea = {
+				idea = WAW_nativebusiness
+				days = 365
+				}
+			}
+		}
+	focus = {
+		id = WAW_aidnativecivilians
+		icon = GFX_CAC_relieve_states
+		cost = 10
+		x = 62
+		y = 3
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_nativereconciliation
+			}
+		completion_reward = {
+			add_timed_idea = {
+				idea = WAW_tribalwelfare
+				days = 365
+				}
+			}
+		}
+	focus = {
+		id = WAW_fastenerstudies
+		icon = GFX_focus_generic_industry_1
+		cost = 4.3
+		x = 54
+		y = 4
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_aidnativecivilians
+			}
+		prerequisite = {
+			focus = WAW_lessenrestrictions
+			}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = industry
+				}
+			}
+		}
+	focus = {
+		id = WAW_dismantlelobbyists
+		icon = GFX_focus_RAJ_war_taxes
+		cost = 4.3
+		x = 59
+		y = 4
+		ai_will_do = {
+			factor = 75
+		}
+		available = {
+			has_political_power > 50
+			}
+		prerequisite = {
+			focus = WAW_aidnativecivilians
+			}
+		prerequisite = {
+			focus = WAW_lessenrestrictions
+			}
+		completion_reward = {
+			add_stability = 0.1
+			}
+		}
+	focus = {
+		id = WAW_enactlaborlaws
+		icon = GFX_focus_generic_treaty
+		cost = 4.3
+		x = 64
+		y = 4
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_aidnativecivilians
+			}
+		prerequisite = {
+			focus = WAW_lessenrestrictions
+			}
+		completion_reward = {
+			add_ideas = WAW_laborlaws
+			}
+		}	
+	focus = {
+		id = WAW_coastalresourceexpansion
+		icon = GFX_focus_generic_resource_extraction
+		cost = 4.3
+		x = 53
+		y = 5
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_fastenerstudies
+			}
+		mutually_exclusive = {
+			focus = WAW_openpacifictrade
+			}
+		completion_reward = {
+			705 = {
+				add_building_construction = {
+					type = industrial_infrastructure
+					level = 1
+					instant_build = yes
+					}
+				}
+			}
+		}
+	focus = {
+		id = WAW_openpacifictrade
+		icon = GFX_focus_RAJ_issue_bonds_on_the_stock_market
+		cost = 4.3
+		x = 55
+		y = 5
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_fastenerstudies
+			}
+		mutually_exclusive = {
+			focus = WAW_coastalresourceexpansion
+			}
+		completion_reward = {
+			705 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+					}
+				}
+			}
+		}
+	focus = {
+		id = WAW_progresstowardsequity
+		icon = GFX_focus_ARG_defense_and_democracy
+		cost = 4.3
+		x = 59
+		y = 5
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_dismantlelobbyists
+			}
+		completion_reward = {
+			remove_ideas = WAW_nativeunrest
+			add_political_power = 100
+			}
+		}
+	focus = {
+		id = WAW_urbancentereconomy
+		icon = GFX_focus_JAP_further_urban_investments
+		cost = 4.3
+		x = 63
+		y = 5
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_enactlaborlaws
+			}
+		mutually_exclusive = {
+			focus = WAW_centralwashingtondevelopment
+			}
+		completion_reward = {
+			707 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+					}
+				}
+			708 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+					}
+				}
+			706 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+					}
+				}
+			}
+		}
+	focus = {
+		id = WAW_centralwashingtondevelopment
+		icon = GFX_focus_PRC_rural_region_development_two
+		cost = 4.3
+		x = 65
+		y = 5
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_enactlaborlaws
+			}
+		mutually_exclusive = {
+			focus = WAW_urbancentereconomy
+			}
+		completion_reward = {
+			700 = {
+				add_extra_state_shared_building_slots = 3
+				}
+			695 = {
+				add_extra_state_shared_building_slots = 3
+				}
+			701 = {
+				add_extra_state_shared_building_slots = 3
+				}
+			}
+		}
+	focus = {
+		id = WAW_reassurecapitalistconcerns
+		icon = GFX_focus_generic_monetary_union
+		cost = 4.3
+		x = 54
+		y = 6
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_coastalresourceexpansion
+			focus = WAW_openpacifictrade
+			}
+		completion_reward = {
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.1
+				}
+			}
+		}
+	focus = {
+		id = WAW_specialnativeoperations
+		icon = GFX_focus_generic_infiltration
+		cost = 4.3
+		x = 59
+		y = 6
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_progresstowardsequity
+			}
+		completion_reward = {
+			army_experience = 100
+			}
+		}
+	focus = {
+		id = WAW_espousesocialistpolicies
+		icon = GFX_focus_FIN_socialist_welfare
+		cost = 4.3
+		x = 64
+		y = 6
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_urbancentereconomy
+			focus = WAW_centralwashingtondevelopment
+			}
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.1
+				}
+			}
+		}
+	focus = {
+		id = WAW_enacttradecommitments
+		icon = GFX_focus_PRC_establish_shorter_market_plans
+		cost = 4.3
+		x = 53
+		y = 7
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_reassurecapitalistconcerns
+			}
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = convoy
+				amount = 100
+				}
+			add_ideas = WAW_tradecommitments	
+			}
+		}
+	focus = {
+		id = WAW_learnfromcoastaltribes
+		icon = GFX_focus_AST_coast_watchers
+		cost = 4.3
+		x = 57
+		y = 7
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_specialnativeoperations
+			}
+		completion_reward = {
+			set_technology = {
+				marines = 1
+				}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = marine_tech
+				}
+			}
+		}
+	focus = {
+		id = WAW_learnfromforesttribes
+		icon = GFX_focus_CHL_expand_the_forestry
+		cost = 4.3
+		x = 59
+		y = 7
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_specialnativeoperations
+			}
+		completion_reward = {
+			set_technology = {
+				rangers_tech = 1
+				}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = rangers_tech_cat
+				}
+			}
+		}
+	focus = {
+		id = WAW_learnfrommountaintribes
+		icon = GFX_focus_generic_mountain_training
+		cost = 4.3
+		x = 61
+		y = 7
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_specialnativeoperations
+			}
+		completion_reward = {
+			set_technology = {
+				tech_mountaineers = 1
+				}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = mountaineers_tech
+				}
+			}
+		}
+	focus = {
+		id = WAW_migrantwaves
+		icon = GFX_focus_generic_population_growth
+		cost = 4.3
+		x = 65
+		y = 7
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_espousesocialistpolicies
+			}
+		completion_reward = {
+			704 = {
+				add_manpower = 50000
+				}
+			698 = {
+				add_manpower = 50000
+				}
+			}
+		}
+	focus = {
+		id = WAW_subsidizerailwaycompanies
+		icon = GFX_focus_generic_railroad
+		cost = 4.3
+		x = 54
+		y = 8
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_reassurecapitalistconcerns
+			}
+		completion_reward = {
+			add_ideas = WAW_improvedsupplylines
+			701 = {
+					add_building_construction = {
+						type = supply_node
+						level = 1
+						instant_build = yes
+						province = 1768
+					}
+				}
+			}
+		}	
+	focus = {
+		id = WAW_elevatenativementors
+		icon = GFX_focus_PRC_reorganize_divisions
+		cost = 10
+		x = 59
+		y = 8
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_learnfromcoastaltribes
+			}
+		prerequisite = {
+			focus = WAW_learnfrommountaintribes
+			}
+		prerequisite = {
+			focus = WAW_learnfromforesttribes
+			}		
+		completion_reward = {
+			add_ideas = WAW_reveredidentities
+			}
+		}
+	focus = {
+		id = WAW_ruralwelfare
+		icon = GFX_focus_AST_rural_concessions
+		cost = 4.3
+		x = 64
+		y = 8
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_espousesocialistpolicies
+			}
+		completion_reward = {
+			695 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+					}
+				}
+			694 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+					}
+				}
+			697 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+					}
+				}
+			700 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+					}
+				}
+			701 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+					}
+				}
+			699 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+					}
+				}
+			696 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+					}
+				}
+			693 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+					}
+				}
+			}
+		}
+	focus = {
+		id = WAW_walkingwithbear
+		icon = GFX_CAC_mcga
+		cost = 10
+		x = 22
+		y = 9
+		ai_will_do = {
+			factor = 75
+		}
+		available = {
+			democratic > 0.50
+			CAC = {
+				has_government = democratic
+				is_faction_leader = yes
+				}
+			}	
+		prerequisite = {
+			focus = WAW_subsidizerailwaycompanies
+			}
+		mutually_exclusive = {
+			focus = WAW_compromisewithsocialists
+			focus = WAW_socialistswin
+			}
+		completion_reward = {
+			CAC = {
+				country_event = {
+					id = lwashington.6
+					days = 2
+					}
+				}
+			}
+		}
+	focus = {
+		id = WAW_propagandizestruggle
+		icon = GFX_focus_ARG_anti_american_propaganda
+		cost = 4.3
+		x = 22
+		y = 10
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_walkingwithbear
+			}
+		completion_reward = {
+			add_war_support = 0.15
+			}
+		}
+	focus = {
+		id = WAW_thwartenemies
+		icon = GFX_goal_generic_propaganda
+		cost = 4.3
+		x = 20
+		y = 11
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_propagandizestruggle
+			}
+		completion_reward = {
+			add_ideas = WAW_armyofdemocracy
+			}
+		}
+	focus = {
+		id = WAW_economytowardsstruggle
+		icon = GFX_focus_AFG_a_modern_economy
+		cost = 4.3
+		x = 22
+		y = 11
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_propagandizestruggle
+			}
+		completion_reward = {
+			add_ideas = partial_economic_mobilisation
+			}
+		}
+	focus = {
+		id = WAW_smallscaleconscription
+		icon = GFX_Generic_Coalition_Army
+		cost = 4.3
+		x = 30
+		y = 11
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_propagandizestruggle
+			focus = WAW_instillbunkermentality
+			}
+		completion_reward = {
+			add_ideas = limited_conscription
+			}
+		}
+	focus = {
+		id = WAW_pressureidaho
+		icon = GFX_focus_generic_subjugation
+		cost = 10
+		x = 20
+		y = 12
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_thwartenemies
+			}
+		prerequisite = {
+			focus = WAW_economytowardsstruggle
+			}
+		prerequisite = {
+			focus = WAW_smallscaleconscription
+			}
+		bypass = {
+			IDI = {
+				country_exists = no
+				}
+			}	
+		completion_reward = {
+			IDI = {
+				country_event = {
+					id = lwashington.4
+					days = 3
+					}
+				}
+			}
+		}
+	focus = {
+		id = WAW_pressureoregon
+		icon = GFX_focus_generic_subjugation
+		cost = 10
+		x = 22
+		y = 12
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_thwartenemies
+			}
+		prerequisite = {
+			focus = WAW_economytowardsstruggle
+			}
+		prerequisite = {
+			focus = WAW_smallscaleconscription
+			}
+		bypass = {
+			ORO = {
+				country_exists = no
+				}
+			}	
+		completion_reward = {
+			ORO = {
+				country_event = {
+					id = lwashington.5
+					days = 3
+					}
+				}
+			}
+		}
+	focus = {
+		id = WAW_newdirection
+		icon = GFX_focus_generic_democratic_europe
+		cost = 4.3
+		x = 21
+		y = 13
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_pressureoregon
+			}
+		prerequisite = {
+			focus = WAW_pressureidaho
+			}	
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.1
+			}
+		}
+	focus = {
+		id = WAW_investmentpartners
+		icon = GFX_focus_generic_american_investments
+		cost = 4.3
+		x = 20
+		y = 14
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_newdirection
+			}
+		available = {
+			has_subject = ORO
+			has_subject = IDI
+			}
+		completion_reward = {
+			custom_effect_tooltip = 1_WAW_tt
+		
+		}
+	}	
+	focus = {
+		id = WAW_alliedrailways
+		icon = GFX_focus_BEL_engine_of_the_economy
+		cost = 4.3
+		x = 16
+		y = 15
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_investmentpartners
+			}
+		available = {
+			has_subject = ORO
+			has_subject = IDI
+			}
+		completion_reward = {
+			custom_effect_tooltip = 2_WAW_tt
+		}
+	}
+	focus = {
+		id = WAW_alliedresources
+		icon = GFX_focus_generic_mining_industry
+		cost = 4.3
+		x = 18
+		y = 15
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_investmentpartners
+			}
+		available = {
+			has_subject = ORO
+			has_subject = IDI
+			}
+		completion_reward = {
+			custom_effect_tooltip = 3_WAW_tt
+		}
+	}
+	focus = {
+		id = WAW_alliedfactories
+		icon = GFX_focus_generic_industry_investment
+		cost = 4.3
+		x = 20
+		y = 15
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_investmentpartners
+			}
+		available = {
+			has_subject = ORO
+			has_subject = IDI
+			}
+		completion_reward = {
+			custom_effect_tooltip = 4_WAW_tt
+		}
+	}
+	focus = {
+		id = WAW_alliedinfrastructure
+		icon = GFX_Generic_Railroads
+		cost = 4.3
+		x = 16
+		y = 16
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_alliedrailways
+			}
+		available = {
+			has_subject = ORO
+			has_subject = IDI
+			}
+		completion_reward = {
+			custom_effect_tooltip = 5_WAW_tt
+		}
+	}
+	focus = {
+		id = WAW_alliedwelfare
+		icon = GFX_focus_generic_welfare
+		cost = 4.3
+		x = 18
+		y = 16
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_alliedresources
+			}
+		available = {
+			has_subject = ORO
+			has_subject = IDI
+			}
+		completion_reward = {
+			custom_effect_tooltip = 6_WAW_tt
+		}
+	}
+	focus = {
+		id = WAW_alliedresearch
+		icon = GFX_focus_NORDIC_dem_research
+		cost = 4.3
+		x = 20
+		y = 16
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_alliedfactories
+			}
+		available = {
+			has_subject = ORO
+			has_subject = IDI
+			}
+		completion_reward = {
+			custom_effect_tooltip = 7_WAW_tt
+		}
+	}
+	focus = {
+		id = WAW_industrializewest
+		icon = GFX_focus_generic_modernize_industry
+		cost = 4.3
+		x = 26
+		y = 14
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_newdirection
+			focus = WAW_paidtuition
+			}
+		available = {
+			NOT = {
+				has_government = communism
+				}
+			}
+		completion_reward = {
+			703 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+					}
+				}	
+			705 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+					}
+				}	
+			63 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+					}
+				}
+		}
+	}
+	focus = {
+		id = WAW_strengthenartery
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 4.3
+		x = 30
+		y = 14
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_newdirection
+			focus = WAW_paidtuition
+			}
+		available = {
+			NOT = {
+				has_government = communism
+				}
+			}
+		completion_reward = {
+			build_railway = {
+				level = 3
+				build_only_on_allied = yes
+				controller_priority = {
+					base = 1
+					modifier = {
+					tag = WAW
+					add = 3
+					}
+				}
+				fallback = yes
+				path = { 706 10813 11263 11260 25 1768 3484 4753 2050 4158 696 3879 11277 11275 }
+				start_province = 706
+				target_province = 11275
+				}
+			700 = {	
+					add_building_construction = {
+						type = supply_node
+						level = 1
+						instant_build = yes
+						province = 4753
+						}
+					}
+				}
+			}
+	focus = {
+		id = WAW_industrializeeast
+		icon = GFX_Generic_Industry02
+		cost = 4.3
+		x = 34
+		y = 14
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_newdirection
+			focus = WAW_paidtuition
+			}
+		available = {
+			NOT = {
+				has_government = communism
+				}
+			}
+		completion_reward = {
+			697 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+					}
+				}	
+			694 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+					}
+				}	
+			699 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+					}
+				}
+		}
+	}	
+	focus = {
+		id = WAW_buildingcapital
+		icon = GFX_focus_AST_a_democratic_bulwark
+		cost = 4.3
+		x = 25
+		y = 15
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_industrializewest
+			}
+		available = {
+			NOT = {
+				has_government = communism
+				}
+			}
+		completion_reward = {
+			707 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+					}
+				}	
+			}
+		}
+	focus = {
+		id = WAW_metromilitary
+		icon = GFX_Generic_Industry_Tanks
+		cost = 4.3
+		x = 27
+		y = 15
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_industrializewest
+			}
+		available = {
+			NOT = {
+				has_government = communism
+				}
+			}
+		completion_reward = {
+			706 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+					}
+				}	
+			}
+		}
+	focus = {
+		id = WAW_widedesert
+		icon = GFX_focus_PER_desert_training
+		cost = 4.3
+		x = 33
+		y = 15
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_industrializeeast
+			}
+		available = {
+			NOT = {
+				has_government = communism
+				}
+			}
+		completion_reward = {
+			700 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+					}
+				}	
+			}
+		}
+	focus = {
+		id = WAW_easternjewel
+		icon = GEN_jewel_for_commonwealth_icon
+		cost = 4.3
+		x = 35
+		y = 15
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_industrializeeast
+			}
+		available = {
+			NOT = {
+				has_government = communism
+				}
+			}
+		completion_reward = {
+			698 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+					}
+				}	
+			}
+		}
+	 focus = {
+		id = WAW_worthynamesake
+		icon = GFX_focus_AFG_parliamentary_democracy
+		cost = 10
+		x = 30
+		y = 16
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_buildingcapital
+			}
+		prerequisite = {
+			focus = WAW_metromilitary
+			}
+		prerequisite = {
+			focus = WAW_widedesert
+			}
+		prerequisite = {
+			focus = WAW_easternjewel
+			}	
+		available = {
+			NOT = {
+				has_government = communism
+				}
+			}
+		completion_reward = {
+			add_ideas = WAW_resolutewashington
+			}
+		}
+	focus = {
+		id = WAW_electrificationinitiatives
+		icon = GFX_focus_generic_electrification
+		cost = 14.3
+		x = 40
+		y = 14
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_newdirection
+			focus = WAW_paidtuition
+			}
+		available = {
+			NOT = {
+				has_government = communism
+				}
+			}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = electronics
+				}
+			693 = {
+				add_building_construction = {
+					type = industrial_infrastructure
+					level = 1
+					instant_build = yes
+					}
+				}
+			705 = {
+				add_building_construction = {
+					type = industrial_infrastructure
+					level = 1
+					instant_build = yes
+					}
+				}
+			706 = {
+				add_building_construction = {
+					type = energy_infrastructure
+					level = 1
+					instant_build = yes
+					}
+				}
+			708 = {
+				add_building_construction = {
+					type = energy_infrastructure
+					level = 1
+					instant_build = yes
+					}
+				}
+			707 = {
+				add_building_construction = {
+					type = energy_infrastructure
+					level = 1
+					instant_build = yes
+					}
+				}
+			}
+		}
+	focus = {
+		id = WAW_assemblyinnovation
+		icon = GFX_focus_generic_industrial_experts
+		cost = 10
+		x = 38
+		y = 15
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_electrificationinitiatives
+			}
+		available = {
+			NOT = {
+				has_government = communism
+				}
+			}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 4
+				category = industry
+				}
+			}
+		}
+	focus = {
+		id = WAW_educationspending
+		icon = GFX_focus_AUS_womens_education_initiative
+		cost = 4.3
+		x = 40
+		y = 15
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_electrificationinitiatives
+			}
+		available = {
+			NOT = {
+				has_government = communism
+				}
+			}
+		completion_reward = {
+			add_ideas = WAW_washingtonstateuniversity
+			}
+		}
+	focus = {
+		id = WAW_electricadvantage
+		icon = GFX_focus_ARG_develop_the_electricity_sector
+		cost = 4.3
+		x = 42
+		y = 15
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_electrificationinitiatives
+			}
+		available = {
+			NOT = {
+				has_government = communism
+				}
+			}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 4
+				category = electronics
+				}
+			}
+		}
+	focus = {
+		id = WAW_productionintoknowledge
+		icon = GFX_focus_NORDIC_dem_capstone_research
+		cost = 10
+		x = 38
+		y = 16
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_assemblyinnovation
+			}
+		available = {
+			num_of_factories > 75
+			NOT = {
+				has_government = communism
+				}
+			}
+		completion_reward = {	
+			add_research_slot = 1
+			}
+		}
+	focus = {
+		id = WAW_pugetsoundlabs
+		icon = GFX_focus_INS_expand_batavia_med_school
+		cost = 10
+		x = 40
+		y = 16
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_educationspending
+			}
+		available = {
+			NOT = {
+				has_government = communism
+				}
+			}
+		completion_reward = {
+			add_research_slot = 1
+			}
+		}
+	focus = {
+		id = WAW_atomicage
+		icon = GFX_focus_generic_nuclear_development
+		cost = 10
+		x = 42
+		y = 16
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_electricadvantage
+			}
+		available = {
+			NOT = {
+				has_government = communism
+				}
+			}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 2
+				uses = 1
+				category = nuclear
+				}
+			}
+		}
+	focus = {
+		id = WAW_powerofgod
+		icon = GFX_focus_JAP_ni_go_nuclear_project
+		cost = 10
+		x = 42
+		y = 17
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_atomicage
+			}
+		available = {
+			NOT = {
+				has_government = communism
+				}
+			}
+		completion_reward = {
+			707 = {
+				add_building_construction = {
+					type = nuclear_facility
+					level = 1
+					instant_build = yes
+					province = 11251
+					}
+				}
+			}
+		}
+	focus = {
+		id = WAW_compromisewithsocialists
+		icon = GFX_focus_generic_social_democracy
+		cost = 10
+		x = 40
+		y = 9
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_subsidizerailwaycompanies
+			}
+		prerequisite = {
+			focus = WAW_ruralwelfare
+			}
+		mutually_exclusive = {
+			focus = WAW_walkingwithbear
+			focus = WAW_socialistswin
+			}
+		completion_reward = {
+			add_ideas = WAW_socialdemocracy
+			}
+		}	
+	focus = {
+		id = WAW_instillbunkermentality
+		icon = GFX_focus_generic_mountain_fortification
+		cost = 4.3
+		x = 36
+		y = 10
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_compromisewithsocialists
+			}
+		completion_reward = {	
+			add_timed_idea = {
+				idea = WAW_bunkermentality
+				days = 365
+				}
+			}
+		}
+	focus = {
+		id = WAW_defensivedrills
+		icon = GFX_focus_SIA_night_time_training
+		cost = 4.3
+		x = 36
+		y = 11
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_instillbunkermentality
+			}
+		completion_reward = {
+			army_experience = 100
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = support_tech
+				}
+			}
+		}
+	focus = {
+		id = WAW_treeshaveeyes
+		icon = GFX_focus_generic_secret_agent_operative
+		cost = 4.3
+		x = 40
+		y = 11
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_instillbunkermentality
+			}
+		completion_reward = {
+			create_intelligence_agency = {
+				name = "Washington Agency of Information"
+				icon = GFX_intelligence_agency_logo_agency
+			}
+		}
+	}	
+	focus = {
+		id = WAW_statetobeproud
+		icon = GFX_focus_SIA_defenders_of_constitutional_liberty
+		cost = 10
+		x = 36
+		y = 12
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_treeshaveeyes
+			}
+		prerequisite = {
+			focus = WAW_defensivedrills
+			}
+		prerequisite = {
+			focus = WAW_smallscaleconscription
+			}
+		completion_reward = {
+			add_ideas = WAW_washingtondefiant
+			}
+		}
+	focus = {
+		id = WAW_welfareinitiatives
+		icon = GFX_focus_FIN_pragmatic_socialism
+		cost = 4.3
+		x = 46
+		y = 10
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_compromisewithsocialists
+			focus = WAW_socialistswin
+			}
+		completion_reward = {
+			add_stability = 0.15
+			add_political_power = 100
+			}
+		}
+	focus = {
+		id = WAW_mandatetimeoff
+		icon = GFX_focus_SWE_privately_managed_vacation
+		cost = 4.3
+		x = 42
+		y = 11
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_welfareinitiatives
+			}
+		completion_reward = {
+			add_ideas = WAW_restedworkers
+			}
+		}
+	focus = {
+		id = WAW_paidtuition
+		icon = GFX_focus_ARG_universidad_de_buenos_aires
+		cost = 10
+		x = 46
+		y = 11
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_welfareinitiatives
+			}
+		completion_reward = {
+			add_research_slot = 1
+			}
+		}
+	focus = {
+		id = WAW_fundhealthcare
+		icon = GFX_focus_generic_bad_medical
+		cost = 4.3
+		x = 50
+		y = 11
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_welfareinitiatives
+			}
+		completion_reward = {
+			add_ideas = WAW_freehealthcare
+			}
+		}
+	focus = {
+		id = WAW_knowledgetoproduction
+		icon = GFX_focus_generic_mass_production
+		cost = 4.3
+		x = 44
+		y = 12
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_mandatetimeoff
+			}
+		prerequisite = {
+			focus = WAW_paidtuition
+			}
+		completion_reward = {
+			add_ideas = WAW_productiveminds
+			}
+		}
+	focus = {
+		id = WAW_knowledgetoprotection
+		icon = GFX_focus_DEN_protect_bornholm
+		cost = 4.3
+		x = 48
+		y = 12
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_fundhealthcare
+			}
+		prerequisite = {
+			focus = WAW_paidtuition
+			}
+		completion_reward = {
+			add_ideas = WAW_defensiveminds
+			}
+		}
+	focus = {
+		id = WAW_socialistswin
+		icon = GFX_focus_ITA_corpo_volontari_della_liberta
+		cost = 10
+		x = 59
+		y = 9
+		ai_will_do = {
+			factor = 75
+		}
+		available = {
+			communism > 0.5
+			}
+		prerequisite = {
+			focus = WAW_ruralwelfare
+			}
+		mutually_exclusive = {
+			focus = WAW_compromisewithsocialists
+			focus = WAW_walkingwithbear
+			}
+		completion_reward = {
+			set_politics = {
+				ruling_party = communism
+				elections_allowed = no
+				}
+			add_ideas = WAW_redscarerebels
+			}
+		}
+	focus = {
+		id = WAW_spreadideals
+		icon = GFX_focus_PRC_revolutionary_war_of_the_masses
+		cost = 4.3
+		x = 56
+		y = 10
+		ai_will_do = {
+			factor = 75
+		}
+		available = {
+			political_power > 100
+			}
+		prerequisite = {
+			focus = WAW_socialistswin
+			}
+		completion_reward = {
+			add_war_support = 0.10
+			add_stability = -0.10
+			add_political_power = -100
+			}
+		}
+	focus = {
+		id = WAW_internalaffairs
+		icon = GFX_focus_PRC_form_central_social_affairs_department
+		cost = 4.3
+		x = 64
+		y = 10
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_socialistswin
+			}
+		completion_reward = {	
+			add_political_power = 100
+			add_stability = 0.1
+			}
+		}
+	focus = {
+		id = WAW_formwib
+		icon = GFX_focus_generic_secret_service_agency
+		cost = 4.3
+		x = 56
+		y = 11
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_spreadideals
+			}
+		completion_reward = {
+			create_intelligence_agency = {
+				name = "Washington Investigation Bureau"
+				icon = GFX_intelligence_agency_logo_agency
+			}
+		}
+	}
+	focus = {
+		id = WAW_constructionprojects
+		icon = GFX_focus_generic_crush_capitalism
+		cost = 4.3
+		x = 62
+		y = 11
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_internalaffairs
+			}
+		completion_reward = {
+			add_ideas = WAW_unionizedconstruction
+			}
+		}
+	focus = {
+		id = WAW_ensurefuture
+		icon = GFX_focus_AUS_danubian_socialist_communes
+		cost = 4.3
+		x = 66
+		y = 11
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_internalaffairs
+			}
+		completion_reward = {
+			add_ideas = WAW_futuresecured
+			}
+		}
+	focus = {
+		id = WAW_swaythesouth
+		icon = GFX_focus_PER_limit_foreign_influence
+		cost = 4.3
+		x = 53
+		y = 12
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_formwib
+			}
+		completion_reward = {
+			ORO = {
+				add_ideas = WAW_washingtonsocialism
+				}
+			}	
+		}
+	focus = {
+		id = WAW_civiliantips
+		icon = GFX_focus_PRC_behind_enemy_lines
+		cost = 4.3
+		x = 56
+		y = 12
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_formwib
+			}
+		completion_reward = {
+			add_ideas = WAW_peopleseyes
+			}
+		}
+	focus = {
+		id = WAW_equivocatetheeast
+		icon = GFX_focus_PER_limit_foreign_influence
+		cost = 4.3
+		x = 59
+		y = 12
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_formwib
+			}
+		completion_reward = {
+			IDI = {
+				add_ideas = WAW_washingtonsocialism
+				}
+			}	
+		}
+	focus = {
+		id = WAW_rallyyoungmilitia
+		icon = GFX_focus_RAJ_enrollment_of_dali_children
+		cost = 4.3
+		x = 64
+		y = 12
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_constructionprojects
+			}
+		prerequisite = {
+			focus = WAW_ensurefuture
+			}
+		completion_reward = {
+			division_template = {
+				name = WAW_youth_militia  	# Standard formation for frontline divisions
+					is_locked = no
+					regiments = {
+						militia = { x = 0 y = 0 }
+						militia = { x = 0 y = 1 }
+						militia = { x = 0 y = 2 }
+						militia = { x = 0 y = 3 }
+						}
+						support = {
+							}
+						}
+			700 = {
+					create_unit = { division = "name = \"Youth Militia\" division_template = \"WAW_youth_militia\" start_experience_factor = 0.5" owner = WAW
+					count = 4
+					}
+				}
+			}
+		}	
+	focus = {
+		id = WAW_demandoregon
+		icon = GFX_focus_GER_total_control_over_domestic_affairs
+		cost = 10
+		x = 52
+		y = 13
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_swaythesouth
+			}
+		prerequisite = {
+			focus = WAW_civiliantips
+			}
+		available = {
+			ORO = {
+				communism > 0.40
+				}
+			}	
+		completion_reward = {
+			ORO = {
+				country_event = {
+					id = lwashington.2
+					days = 3
+					}
+				}	
+			}
+		}
+	focus = {
+		id = WAW_promoteideals
+		icon = GFX_focus_JAP_organize_the_student_movements
+		cost = 4.3
+		x = 54
+		y = 13
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_swaythesouth
+			}
+		prerequisite = {
+			focus = WAW_equivocatetheeast
+			}
+		prerequisite = {
+			focus = WAW_civiliantips
+			}
+		completion_reward = {
+			ORO = {
+				add_popularity = {
+					ideology = communism
+					popularity = 0.1
+					}
+				}
+			IDI = {
+				add_popularity = {
+					ideology = communism
+					popularity = 0.1
+					}
+				}
+			}
+		}
+	focus = {
+		id = WAW_socialistpride
+		icon = GFX_focus_generic_spur_communist_revolutions
+		cost = 4.3
+		x = 58
+		y = 13
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_civiliantips
+			}
+		completion_reward = {
+			add_war_support = 0.10
+			}
+		}
+	focus = {
+		id = WAW_demandidaho
+		icon = GFX_focus_GER_total_control_over_domestic_affairs
+		cost = 10
+		x = 60
+		y = 13
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_equivocatetheeast
+			}
+		prerequisite = {
+			focus = WAW_civiliantips
+			}
+		available = {
+			IDI = {
+				communism > 0.40
+				}
+			}	
+		completion_reward = {
+			IDI = {
+				country_event = {
+					id = lwashington.3
+					days = 3
+					}
+				}
+			}
+		}
+	focus = {
+		id = WAW_allowcollaborativeraillines
+		icon = GFX_Generic_Legislation
+		cost = 4.3
+		x = 62
+		y = 13
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_rallyyoungmilitia
+			}
+		completion_reward = {
+			add_ideas = WAW_evergreenblueprints
+			}
+		}
+	focus = {
+		id = WAW_routetherebels
+		icon = GFX_focus_spr_masters_of_our_own_fate
+		cost = 4.3
+		x = 66
+		y = 13
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_rallyyoungmilitia
+			}
+		completion_reward = {
+			remove_ideas = WAW_redscarerebels
+			add_stability = 0.2
+			}
+		}
+	focus = {
+		id = WAW_pacificconstructionprojects
+		icon = GFX_Generic_Industrialization
+		cost = 4.3
+		x = 56
+		y = 14
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_demandidaho
+			}
+		prerequisite = {
+			focus = WAW_demandoregon
+			}
+		prerequisite = {
+			focus = WAW_allowcollaborativeraillines
+			}	
+		completion_reward = {
+			add_ideas = WAW_pnwconstruction
+			}
+		}
+	focus = {
+		id = WAW_strongcoastline
+		icon = GFX_focus_FIN_coastal_defense
+		cost = 10
+		x = 52
+		y = 15
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_pacificconstructionprojects
+			}
+		available = {
+			OR = {
+				ORO = {
+					is_puppet_of = WAW
+					}
+			WAW = {
+				owns_state = 712
+				}
+			}
+		}	
+		completion_reward = {
+			715 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+					}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+					}	
+				}
+			716 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+					}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+					}	
+				}
+			717 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+					}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+					}	
+				}
+			}
+		}
+	focus = {
+		id = WAW_extractioninitiative
+		icon = GFX_focus_generic_uranium_extraction
+		cost = 10
+		x = 54
+		y = 15
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_pacificconstructionprojects
+			}
+		available = {
+			OR = {
+				ORO = {
+					is_puppet_of = WAW
+					}
+			WAW = {
+				owns_state = 712
+				}
+			}
+		}	
+		completion_reward = {
+			715 = {
+				add_building_construction = {
+					type = industrial_infrastructure
+					level = 1
+					instant_build = yes
+					}	
+				}
+			716 = {
+				add_building_construction = {
+					type = industrial_infrastructure
+					level = 1
+					instant_build = yes
+					}	
+				}
+			62 = {
+				add_building_construction = {
+					type = industrial_infrastructure
+					level = 1
+					instant_build = yes
+					}	
+				}
+			}
+		}
+	focus = {
+		id = WAW_tungstenmonopoly
+		icon = GFX_focus_generic_tungsten
+		cost = 10
+		x = 58
+		y = 15
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_pacificconstructionprojects
+			}
+		available = {
+			OR = {
+				IDI = {
+					is_puppet_of = WAW
+					}
+			WAW = {
+				owns_state = 684
+				}
+			}
+		}	
+		completion_reward = {
+			162 = {
+				add_resource = {
+				type = tungsten
+				amount = 20
+				}
+			}	
+			156 = {
+				add_resource = {
+				type = tungsten
+				amount = 40
+				}
+			}
+		}
+	}
+	focus = {
+		id = WAW_boiserailroad
+		icon = GFX_Generic_Railroads
+		cost = 4.3
+		x = 60
+		y = 15
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_pacificconstructionprojects
+			}
+		available = {
+			OR = {
+				IDI = {
+					is_puppet_of = WAW
+					}
+			WAW = {
+				owns_state = 684
+				}
+			}
+		}	
+		completion_reward = {
+			build_railway = {
+				level = 1
+				build_only_on_allied = yes
+				controller_priority = {
+					base = 1
+					modifier = {
+					tag = WAW
+					add = 2
+					}
+				}
+				fallback = yes
+				path = { 1026 3687 780 11932 4929 4985 11917 11151 11143 }
+				start_province = 1026
+				target_province = 11143
+				}
+			164 = {
+				add_building_construction = {
+					type = supply_node
+					level = 1
+					instant_build = yes
+					province = 1026
+					}	
+				}
+			}
+		}
+	focus = {
+		id = WAW_absorbthebeaver
+		icon = GFX_focus_AFG_defender_of_central_asia
+		cost = 10
+		x = 53
+		y = 16
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_strongcoastline
+			}
+		prerequisite = {
+			focus = WAW_extractioninitiative
+			}
+		available = {
+			OR = {
+				ORO = {
+					is_puppet_of = WAW
+					}
+			WAW = {
+				owns_state = 712
+				}
+			}
+		}	
+		completion_reward = {
+			annex_country = {
+				target = ORO
+				transfer_troops = yes
+				}
+			}
+		}
+	focus = {
+		id = WAW_devourthespuds
+		icon = GFX_focus_GER_integrated_economies
+		cost = 10
+		x = 59
+		y = 16
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_tungstenmonopoly
+			}
+		prerequisite = {
+			focus = WAW_boiserailroad
+			}
+		available = {
+			OR = {
+				IDI = {
+					is_puppet_of = WAW
+					}
+			WAW = {
+				owns_state = 684
+				}
+			}
+		}	
+		completion_reward = {
+			annex_country = {
+				target = IDI
+				transfer_troops = yes
+				}
+			}
+		}
+	focus = {
+		id = WAW_defenseofsouth
+		icon = GFX_goal_generic_build_tank
+		cost = 4.3
+		x = 54
+		y = 17
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_absorbthebeaver
+			}
+		prerequisite = {
+			focus = WAW_devourthespuds
+			}
+		available = {
+			WAW = {
+				owns_state = 717
+				owns_state = 719
+				owns_state = 62
+				owns_state = 163
+				owns_state = 161
+				}
+			}	
+		completion_reward = {
+			717 = {
+				add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_border = yes
+						limit_to_victory_point > 1
+					}
+				}
+			}
+			719 = {
+				add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_border = yes
+						limit_to_victory_point > 1
+					}
+				}
+			}
+			62 = {
+				add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_border = yes
+						limit_to_victory_point > 1
+					}
+				}
+			}
+			163 = {
+				add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_border = yes
+						limit_to_victory_point > 1
+					}
+				}
+			}
+			161 = {
+				add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_border = yes
+						limit_to_victory_point > 1
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = WAW_defenseofeast
+		icon = GFX_goal_generic_build_tank
+		cost = 4.3
+		x = 58
+		y = 17
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_absorbthebeaver
+			}
+		prerequisite = {
+			focus = WAW_devourthespuds
+			}
+		available = {
+			WAW = {
+				owns_state = 164
+				owns_state = 155
+				owns_state = 156
+				owns_state = 157
+				owns_state = 159
+				owns_state = 160
+				}
+			}	
+		completion_reward = {
+			164 = {
+				add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_border = yes
+						limit_to_victory_point > 1
+					}
+				}
+			}
+			155 = {
+				add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_border = yes
+						limit_to_victory_point > 1
+					}
+				}
+			}
+			156 = {
+				add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_border = yes
+						limit_to_victory_point > 1
+					}
+				}
+			}
+			157 = {
+				add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_border = yes
+						limit_to_victory_point > 1
+					}
+				}
+			}
+			159 = {
+				add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_border = yes
+						limit_to_victory_point > 1
+					}
+				}
+			}
+			160 = {
+				add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_border = yes
+						limit_to_victory_point > 1
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = WAW_cementtheunion
+		icon = GFX_focus_SOV_international_union_of_soviet_republics
+		cost = 10
+		x = 56
+		y = 18
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_defenseofsouth
+			}
+		prerequisite = {
+			focus = WAW_defenseofeast
+			}
+		completion_reward = {
+			every_state = {
+				limit = {
+					is_core_of = ORO
+					}
+				add_core_of = ROOT
+						}
+			every_state = {
+				limit = {
+					is_core_of = IDI
+					}
+				add_core_of = ROOT
+						}
+			set_cosmetic_tag = UNOS
+			}
+		}
+
+	#CIVIL WAR TREE
+	focus = {
+		id = WAW_allowlocalcrackdowns
+		icon = GFX_focus_AUS_lawmaking_leniency
+		cost = 4.3
+		x = 78
+		y = 3
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_firmstance
+			}
+		completion_reward = {
+			add_popularity = {
+				ideology = democratic
+				popularity = -0.15
+				}
+			}
+		}
+	focus = {
+		id = WAW_inciteincidents
+		icon = GFX_Generic_Molotov_Cocktail
+		cost = 4.3
+		x = 74
+		y = 4
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_firmstance
+			}
+		completion_reward = {
+			add_war_support = 0.2
+			}
+		}
+	focus = {
+		id = WAW_denouncenativeactivities
+		icon = GFX_focus_CHI_denounce_feudalism
+		cost = 4.3
+		x = 78
+		y = 4
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_firmstance
+			}
+		completion_reward = {
+			63 = {
+				remove_core_of = WAW
+				}
+			700 = {
+				remove_core_of = WAW
+				}
+			701 = {
+				remove_core_of = WAW
+				}
+			694 = {
+				remove_core_of = WAW
+				}
+			}
+		}
+	focus = {
+		id = WAW_enactstatecurfews
+		icon = GFX_Generic_Lookout
+		cost = 10
+		x = 80
+		y = 4
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_allowlocalcrackdowns
+			}
+		completion_reward = {
+			add_ideas = WAW_statewidecurfews
+			}
+		}
+	focus = {
+		id = WAW_divertluxuryspending
+		icon = GFX_focus_generic_price_controls
+		cost = 4.3
+		x = 72
+		y = 5
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_inciteincidents
+			}
+		completion_reward = {
+			add_ideas = WAW_basicnecessities
+			}
+		}
+	focus = {
+		id = WAW_urbanwarindustry
+		icon = GFX_focus_generic_urban_training
+		cost = 10
+		x = 74
+		y = 5
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_inciteincidents
+			}
+		mutually_exclusive = {
+			focus = WAW_reservationwarplanning
+			}
+		completion_reward = {
+			707 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+					}
+				}
+			708 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+					}
+				}
+			706 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+					}
+				}
+			}
+		}
+	focus = {
+		id = WAW_reservationwarplanning
+		icon = GFX_focus_generic_road_investment
+		cost = 10
+		x = 76
+		y = 5
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_inciteincidents
+			}
+		mutually_exclusive = {
+			focus = WAW_urbanwarindustry
+			}
+		completion_reward = {
+			696 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+					}
+				}
+			700 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+					}
+				}
+			694 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+					}
+				}
+			}
+		}
+	focus = {
+		id = WAW_declaremartiallaw
+		icon = GFX_focus_BRA_repeale_national_security_law
+		cost = 4.3
+		x = 79
+		y = 5
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_enactstatecurfews
+			}
+		prerequisite = {
+			focus = WAW_denouncenativeactivities
+			}
+		completion_reward = {
+			add_popularity = {
+				ideology = democratic
+				popularity = -0.15
+				}
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.05
+			}
+		}
+	}	
+	focus = {
+		id = WAW_widespreadviolence
+		icon = GFX_focus_GER_support_the_proletarian_uprising
+		cost = 10
+		x = 96
+		y = 6
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_declaremartiallaw
+			}
+		prerequisite = {
+			focus = WAW_divertluxuryspending
+			}
+		prerequisite = {
+			focus = WAW_urbanwarindustry
+			focus = WAW_reservationwarplanning
+			}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = WAW_nativerevolts
+				add_idea = WAW_nativeviolence
+				}
+			}
+		}
+	focus = {
+		id = WAW_prepareforlargerriots
+		icon = GFX_focus_POL_riot_of_37
+		cost = 4.3
+		x = 76
+		y = 7
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_widespreadviolence
+			}
+		mutually_exclusive = {
+			focus = WAW_coordinatefforts
+			}
+		completion_reward = {
+			add_political_power = 100
+			}
+		}
+	focus = {
+		id = WAW_coordinatefforts
+		icon = GFX_focus_SWE_rapid_defense_force
+		cost = 4.3
+		x = 98
+		y = 7
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_widespreadviolence
+			}
+		mutually_exclusive = {
+			focus = WAW_prepareforlargerriots
+			}
+		completion_reward = {
+			add_political_power = 150
+			}
+		}
+		
+	#NATIVE PATH
+	
+	focus = {
+		id = WAW_reachoutoranchers
+		icon = GFX_focus_ITA_grande_rivolta_rurale
+		cost = 4.3
+		x = 96
+		y = 8
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_coordinatefforts
+			}
+		completion_reward = {
+			add_political_power = -50
+			}
+		}
+	focus = {
+		id = WAW_swayoregontribes
+		icon = GFX_focus_AFG_contact_rural_loyalists
+		cost = 10
+		x = 98
+		y = 8
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_coordinatefforts
+			}
+		completion_reward = {
+			add_political_power = -100
+			}
+		}
+	focus = {
+		id = WAW_purchasearmsfromsalish
+		icon = GFX_focus_generic_arms_trade
+		cost = 4.3
+		x = 100
+		y = 8
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_coordinatefforts
+			}
+		mutually_exclusive = {
+			focus = WAW_salishinspokane
+			}
+		completion_reward = {
+			add_political_power = -50
+			set_global_flag = WAW_salishguns
+			}
+		}
+	focus = {
+		id = WAW_salishinspokane
+		icon = GFX_focus_PAR_pull_back_troops_from_the_chaco
+		cost = 4.3
+		x = 102
+		y = 8
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_coordinatefforts
+			}
+		mutually_exclusive = {
+			focus = WAW_purchasearmsfromsalish
+			}
+		completion_reward = {
+			set_global_flag = WAW_salishspokane
+			custom_effect_tooltip = 8_WAW_tt
+		}
+	}	
+	focus = {
+		id = WAW_launchtherevolt
+		icon = GFX_focus_PRC_raid_weapon_depots
+		cost = 10
+		x = 100
+		y = 9
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_swayoregontribes
+			}
+		prerequisite = {
+			focus = WAW_reachoutoranchers
+			}
+		prerequisite = {
+			focus = WAW_salishinspokane
+			focus = WAW_purchasearmsfromsalish
+			}
+		completion_reward = {
+			63 = {
+				add_core_of = WAW
+				}
+			700 = {
+				add_core_of = WAW
+				}
+			701 = {
+				add_core_of = WAW
+				}
+			694 = {
+				add_core_of = WAW
+				}
+			if = {
+					limit = {
+						has_global_flag = WAW_salishinspokane
+						}
+				start_civil_war = {
+					ruling_party = neutrality
+					ideology = neutrality
+					size = 0.6
+					states = {
+						695 693 702 703 701 707 708 706 141 140 704
+					}
+				}
+			}
+			else_if = {
+				start_civil_war = {
+					ruling_party = neutrality
+					ideology = neutrality
+					size = 0.6
+					states = {
+						695 693 702 703 701 707 708 706 141 140 704 698
+					}
+				}	
+			}
+				
+			WAW = {
+				declare_war_on = {
+					target = ORO
+					type = annex_everything
+					}
+				remove_ideas = WAW_nativeviolence	
+				transfer_state = 720
+				transfer_state = 62
+				transfer_state = 1346
+				transfer_state = 718
+				transfer_state = 719
+				transfer_state = 716
+				transfer_state = 715	
+				set_cosmetic_tag = SalT
+				every_state = {
+				limit = {
+					is_core_of = ORO
+					}
+				add_core_of = WAW
+						}
+				division_template = {
+				name = WAW_native_militia  	# Standard formation for frontline divisions
+					is_locked = no
+					regiments = {
+						militia = { x = 0 y = 0 }
+						militia = { x = 0 y = 1 }
+						militia = { x = 0 y = 2 }
+						}
+						support = {
+							}
+						}
+				division_template = {
+				name = WAW_native_cavalry  	# Standard formation for frontline divisions
+					is_locked = no
+					regiments = {
+						cavalry = { x = 0 y = 0 }
+						cavalry = { x = 0 y = 1 }
+						cavalry = { x = 0 y = 2 }
+						}
+						support = {
+							}
+						}		
+					}	
+				705 = {
+					create_unit = { division = "name = \"Native Militia\" division_template = \"WAW_native_militia\" start_experience_factor = 0.5" owner = WAW
+					count = 1
+					}
+				}	
+				716 = {
+					create_unit = { division = "name = \"Native Militia\" division_template = \"WAW_native_militia\" start_experience_factor = 0.5" owner = WAW
+					count = 1
+					}
+				}	
+				718 = {
+					create_unit = { division = "name = \"Native Militia\" division_template = \"WAW_native_militia\" start_experience_factor = 0.5" owner = WAW
+					count = 1
+					}
+				}	
+				697 = {
+					create_unit = { division = "name = \"Native Cavalry\" division_template = \"WAW_native_cavalry\" start_experience_factor = 0.5" owner = WAW
+					count = 1
+					}
+				}
+				694 = {
+					create_unit = { division = "name = \"Native Cavalry\" division_template = \"WAW_native_cavalry\" start_experience_factor = 0.5" owner = WAW
+					count = 1
+					}
+				}
+				if = {
+					limit = {
+						has_global_flag = WAW_salishguns
+						}
+					add_equipment_to_stockpile = {		
+						type = infantry_equipment
+						amount = 2000
+						producer = WAW
+						}
+				}
+				add_popularity = {
+					ideology = neutrality
+					popularity = 0.5
+					}
+				}	
+				
+			}
+	focus = {
+		id = WAW_increasecavalrytraining
+		icon = GFX_focus_BEL_the_french_horse_and_the_red_rider
+		cost = 4.3
+		x = 108
+		y = 10
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_launchtherevolt
+			}
+		completion_reward = {
+			718 = {
+					create_unit = { division = "name = \"Native Militia\" division_template = \"WAW_native_militia\" start_experience_factor = 0.5" owner = WAW
+					count = 4
+					}
+				}
+			}
+		}
+	focus = {
+		id = WAW_reachfororegonsympathies
+		icon = GFX_Generic_Working_Class_Family
+		cost = 10
+		x = 110
+		y = 10
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_launchtherevolt
+			}
+		completion_reward = {
+			add_ideas = WAW_oregonsympathies
+			}
+		}
+	focus = {
+		id = WAW_createnewarmymodel
+		icon = GFX_focus_CHI_guerrilla_warfare
+		cost = 4.3
+		x = 112
+		y = 10
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_launchtherevolt
+			}
+		completion_reward = {
+			add_ideas = WAW_newarmymodel
+			}
+		}
+	focus = {
+		id = WAW_yakimaweaponmanufacturing
+		icon = GFX_focus_ETH_freedom_at_gunpoint
+		cost = 4.3
+		x = 114
+		y = 10
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_launchtherevolt
+			}
+		completion_reward = {
+			701 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+					}
+				}
+			}
+		}
+	focus = {
+		id = WAW_formalrangertraining
+		icon = GFX_focus_CHL_expand_the_forestry
+		cost = 4.3
+		x = 110
+		y = 11
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_createnewarmymodel
+			}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = rangers_tech_cat
+				}
+			}
+		}
+	focus = {
+		id = WAW_formalmountaineertraining
+		icon = GFX_focus_generic_mountain_troops
+		cost = 4.3
+		x = 112
+		y = 11
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_createnewarmymodel
+			}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = mountaineers_tech
+				}
+			}
+		}
+	focus = {
+		id = WAW_formalmarinetraining
+		icon = GFX_focus_generic_naval_invasion
+		cost = 4.3
+		x = 114
+		y = 11
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_createnewarmymodel
+			}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = marine_tech
+				}
+			}
+		}
+	focus = {
+		id = WAW_fullytrainedrangers
+		icon = GFX_focus_CHL_expand_the_forestry
+		cost = 4.3
+		x = 110
+		y = 12
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_formalrangertraining
+			}
+		completion_reward = {
+			add_ideas = WAW_trainedrangers
+			}
+		}
+	focus = {
+		id = WAW_fullytrainedmountaineers
+		icon = GFX_focus_generic_mountain_troops
+		cost = 4.3
+		x = 112
+		y = 12
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_formalmountaineertraining
+			}
+		completion_reward = {
+			add_ideas = WAW_trainedmountaineers
+			}
+		}
+	focus = {
+		id = WAW_fullytrainedmarines
+		icon = GFX_focus_generic_naval_invasion
+		cost = 4.3
+		x = 114
+		y = 12
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_formalmarinetraining
+			}
+		completion_reward = {
+			add_ideas = WAW_trainedmarines
+			}
+		}
+	focus = {
+		id = WAW_rightingwrongs
+		icon = GFX_focus_hol_the_foundations_of_defense
+		cost = 4.3
+		x = 106
+		y = 11
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_launchtherevolt
+			}
+		completion_reward = {
+			add_stability = 0.1
+			}
+		}
+	focus = {
+		id = WAW_investinranches
+		icon = GFX_focus_generic_horse_studs
+		cost = 10
+		x = 104
+		y = 12
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_rightingwrongs
+			}
+		completion_reward = {
+			add_ideas = WAW_fundedranches
+			}
+		}
+	focus = {
+		id = WAW_enactfairerlaws
+		icon = GFX_focus_SIA_the_duty_of_the_thai_people_during_the_war_act
+		cost = 4.3
+		x = 106
+		y = 12
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_rightingwrongs
+			}
+		completion_reward = {
+			add_stability = 0.1
+			}
+		}
+	focus = {
+		id = WAW_sustainabilityefforts
+		icon = GFX_focus_PHI_rally_the_fisherfolk
+		cost = 10
+		x = 108
+		y = 12
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_rightingwrongs
+			}
+		completion_reward = {
+			custom_effect_tooltip = 9_WAW_tt
+			}
+		}
+	focus = {
+		id = WAW_directionofoursystem
+		icon = GFX_focus_SIA_the_midnight_meeting
+		cost = 10
+		x = 96
+		y = 12
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_rightingwrongs
+			}
+		available = {
+			has_civil_war = no
+			}
+		completion_reward = {	
+			country_event = {
+				id = nwashington.1
+				days = 2
+				random_hours = 12
+				random_days = 2
+				}
+			}
+		}
+	focus = {
+		id = WAW_restoringhomelands
+		icon = GFX_focus_PRC_land_revolution_expedited
+		cost = 10
+		x = 90
+		y = 13
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_directionofoursystem
+			}
+		mutually_exclusive = {
+			focus = WAW_undersingleflag
+			}
+		available = {
+			has_civil_war = no
+			}
+		completion_reward = {
+			add_war_support = 0.2
+			add_stability = 0.15
+			}
+		}
+	focus = {
+		id = WAW_thepatheast
+		icon = GFX_Generic_War_Propaganda04
+		cost = 5
+		x = 86
+		y = 14
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_restoringhomelands
+			}
+		completion_reward = {
+			add_ideas = WAW_easternpush
+			add_state_claim = 694
+			add_state_claim = 700
+			add_state_claim = 697
+			add_state_claim = 696
+			add_state_claim = 164
+			add_state_claim = 698
+			add_state_claim = 155
+			add_state_claim = 588
+			add_state_claim = 1392
+			add_state_claim = 1393
+			add_state_claim = 589
+			add_state_claim = 591
+			add_state_claim = 592
+			add_state_claim = 1391
+			add_state_claim = 590
+			add_state_claim = 587
+			add_state_claim = 157
+			add_state_claim = 1390
+			add_state_claim = 718
+			add_state_claim = 719
+			add_state_claim = 62
+			add_state_claim = 1346
+			add_state_claim = 699
+			add_state_claim = 720
+			add_state_claim = 163
+			add_state_claim = 462
+			add_state_claim = 683
+			add_state_claim = 156
+			add_state_claim = 158
+			add_state_claim = 60
+			add_state_claim = 684
+			}
+		}
+	focus = {
+		id = WAW_establishtheconfederacy
+		icon = GFX_focus_generic_treaty
+		cost = 4.3
+		x = 88
+		y = 14
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_restoringhomelands
+			}
+		completion_reward = {
+			create_faction_from_template = WAW_faction_template_european_dominance_monarchist
+			}
+		}
+	focus = {
+		id = WAW_thepathnorth
+		icon = GFX_Generic_Army_Focus_Red02
+		cost = 5
+		x = 90
+		y = 14
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_restoringhomelands
+			}
+		completion_reward = {
+			add_ideas = WAW_northernpush
+			add_state_claim = 146
+			add_state_claim = 776
+			add_state_claim = 775
+			add_state_claim = 148
+			add_state_claim = 783
+			add_state_claim = 782
+			add_state_claim = 777
+			add_state_claim = 774
+			add_state_claim = 769
+			add_state_claim = 771
+			add_state_claim = 770
+			add_state_claim = 778
+			add_state_claim = 779
+			add_state_claim = 781
+			add_state_claim = 780
+			add_state_claim = 768
+			add_state_claim = 843
+			add_state_claim = 151
+			add_state_claim = 966
+			add_state_claim = 960
+			add_state_claim = 957
+			add_state_claim = 965
+			add_state_claim = 137
+			add_state_claim = 963
+			add_state_claim = 958
+			add_state_claim = 962
+			add_state_claim = 964
+			add_state_claim = 961
+			add_state_claim = 959
+			add_state_claim = 692
+			add_state_claim = 693
+			add_state_claim = 695
+			add_state_claim = 701
+			add_state_claim = 702
+			add_state_claim = 706
+			add_state_claim = 708
+			add_state_claim = 707
+			add_state_claim = 63
+			add_state_claim = 787
+			add_state_claim = 140
+			add_state_claim = 141
+			add_state_claim = 703
+			add_state_claim = 705
+			add_state_claim = 704
+			add_state_claim = 709
+			add_state_claim = 710
+			add_state_claim = 711
+			add_state_claim = 715
+			add_state_claim = 712
+			add_state_claim = 714
+			add_state_claim = 1345
+			add_state_claim = 767
+			add_state_claim = 1002
+			add_state_claim = 972
+			add_state_claim = 1000
+			add_state_claim = 1001
+			add_state_claim = 150
+			add_state_claim = 764
+			add_state_claim = 149
+			add_state_claim = 765
+			add_state_claim = 763
+			add_state_claim = 762
+			add_state_claim = 153
+			add_state_claim = 760
+			add_state_claim = 761
+			add_state_claim = 974
+			add_state_claim = 138
+			add_state_claim = 1395
+			add_state_claim = 11
+			add_state_claim = 975
+			add_state_claim = 139
+			add_state_claim = 977
+			add_state_claim = 976
+			add_state_claim = 766
+			}
+		}
+	focus = {
+		id = WAW_peacewithcalifornia
+		icon = GFX_CAC_roar
+		cost = 10
+		x = 94
+		y = 14
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_restoringhomelands
+			focus = WAW_undersingleflag
+			}
+		completion_reward = {
+			CAC = {
+				country_event = {
+					id = nwashington.2
+					days = 2
+					random_hours = 12
+					random_days = 2
+					}
+				}	
+			}
+		}
+	focus = {
+		id = WAW_reclaimeasternlands
+		icon = GFX_Generic_Crouched_Soldier
+		cost = 10
+		x = 86
+		y = 15
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_thepatheast
+			}
+		completion_reward = {
+			create_wargoal = {
+				type = take_claimed_state
+				target = IDI
+				}
+			}
+		}
+	focus = {
+		id = WAW_beginthemarchnorth
+		icon = GFX_Generic_Crouched_Soldier_German
+		cost = 10
+		x = 90
+		y = 15
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_thepathnorth
+			}
+		completion_reward = {
+			create_wargoal = {
+				type = take_claimed_state
+				target = BCB
+				}
+			}
+		}
+	focus = {
+		id = WAW_farbeyondthesnake
+		icon = GFX_Generic_Machine_Gun02
+		cost = 10
+		x = 86
+		y = 16
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_reclaimeasternlands
+			}
+		completion_reward = {
+			create_wargoal = {
+				type = take_claimed_state
+				target = MTM
+				}
+			}
+		}
+	focus = {
+		id = WAW_liberatethenezpercepeople
+		icon = GFX_focus_PRC_petition_for_freedom
+		cost = 4.3
+		x = 88
+		y = 16
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_reclaimeasternlands
+			}
+		available = {
+			controls_state = 684
+			}
+		completion_reward = {
+			release_puppet = NEZ
+			add_stability = 0.1
+			add_war_support = 0.1
+			}
+		}
+	focus = {
+		id = WAW_vengeanceforthegoldrush
+		icon = GFX_Generic_Socialist_Soldier
+		cost = 10
+		x = 90
+		y = 16
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_beginthemarchnorth
+			}
+		completion_reward = {
+			create_wargoal = {
+				type = take_claimed_state
+				target = YTY
+				}
+			}
+		}
+	focus = {
+		id = WAW_liberatethesalishpeople
+		icon = GFX_focus_generic_self_management
+		cost = 4.3
+		x = 86
+		y = 17
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_farbeyondthesnake
+			}
+		available = {
+			controls_state = 592
+			}
+		completion_reward = {
+			release_puppet = SAL
+			add_stability = 0.1
+			add_war_support = 0.1
+			}
+		}
+	focus = {
+		id = WAW_thefirstfrontier
+		icon = GFX_Generic_Soldiers_Defense
+		cost = 10
+		x = 90
+		y = 17
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_vengeanceforthegoldrush
+			}
+		completion_reward = {
+			create_wargoal = {
+				type = take_claimed_state
+				target = AKA
+				}
+			}
+		}
+	focus = {
+		id = WAW_liberatethealeutpeople
+		icon = GFX_Generic_Mutual_Cooperation
+		cost = 4.3
+		x = 90
+		y = 18
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_thefirstfrontier
+			}
+		available = {
+			controls_state = 770
+			}
+		completion_reward = {
+			release_puppet = ALU
+			add_stability = 0.1
+			add_war_support = 0.1
+			}
+		}
+	focus = {
+		id = WAW_liberatethetsimshimianpeople
+		icon = GFX_Generic_Legislation
+		cost = 4.3
+		x = 92
+		y = 18
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_thefirstfrontier
+			}
+		available = {
+			controls_state = 766
+			}
+		completion_reward = {
+			release_puppet = TSI
+			add_stability = 0.1
+			add_war_support = 0.1
+			}
+		}
+	focus = {
+		id = WAW_realizethedream
+		icon = GFX_focus_ARG_defense_and_democracy
+		cost = 10
+		x = 88
+		y = 19
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_liberatethesalishpeople
+			}
+		prerequisite = {
+			focus = WAW_liberatethetsimshimianpeople
+			}
+		prerequisite = {
+			focus = WAW_liberatethenezpercepeople
+			}
+		prerequisite = {
+			focus = WAW_liberatethealeutpeople
+			}	
+		completion_reward = {
+			add_state_core = 966
+			add_state_core = 960
+			add_state_core = 957
+			add_state_core = 965
+			add_state_core = 137
+			add_state_core = 963
+			add_state_core = 958
+			add_state_core = 962
+			add_state_core = 964
+			add_state_core = 961
+			add_state_core = 959
+			add_state_core = 692
+			add_state_core = 693
+			add_state_core = 695
+			add_state_core = 701
+			add_state_core = 702
+			add_state_core = 706
+			add_state_core = 708
+			add_state_core = 707
+			add_state_core = 63
+			add_state_core = 787
+			add_state_core = 140
+			add_state_core = 141
+			add_state_core = 703
+			add_state_core = 705
+			add_state_core = 704
+			add_state_core = 709
+			add_state_core = 710
+			add_state_core = 711
+			add_state_core = 715
+			add_state_core = 712
+			add_state_core = 714
+			add_state_core = 1345
+			add_state_core = 716
+			add_state_core = 717
+			add_state_core = 713
+			set_cosmetic_tag = CSL
+			add_ideas = WAW_reclaimedlands
+			}
+		}	
+	focus = {
+		id = WAW_undersingleflag
+		icon = GFX_focus_generic_public_meetings
+		cost = 10
+		x = 102
+		y = 13
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_directionofoursystem
+			}
+		mutually_exclusive = {
+			focus = WAW_restoringhomelands
+			}
+		available = {
+			has_civil_war = no
+			}
+		completion_reward = {
+			add_stability = 0.2
+			add_war_support = 0.1
+			add_political_power = 50
+			}
+		}	
+	focus = {
+		id = WAW_workwithalberta
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 10
+		x = 100
+		y = 14
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_undersingleflag
+			}
+		mutually_exclusive = {
+			focus = WAW_thecolumbianlands
+			}
+		available = {
+			ABA = {
+				exists = yes
+				}	
+			}	
+		completion_reward = {
+			add_state_claim = 956
+			add_state_claim = 955
+			add_state_claim = 966
+			add_state_claim = 960
+			add_state_claim = 957
+			add_state_claim = 958
+			add_state_claim = 959
+			add_state_claim = 962
+			add_state_claim = 964
+			add_state_claim = 963
+			add_state_claim = 965
+			add_state_claim = 137
+			add_state_claim = 979
+			add_state_claim = 961
+			add_state_claim = 692
+			ABA = {
+				country_event = {
+					id = nwashington.3
+					days = 2
+					random_hours = 12
+					random_days = 2
+					}
+			}
+		}
+	}	
+	focus = {
+		id = WAW_thecolumbianlands
+		icon = GFX_Generic_Volunteer_Corps
+		cost = 10
+		x = 98
+		y = 14
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_undersingleflag
+			}
+		mutually_exclusive = {
+			focus = WAW_workwithalberta
+			}
+		available = {
+			has_civil_war = no
+			}
+		completion_reward = {
+			add_state_claim = 956
+			add_state_claim = 955
+			add_state_claim = 966
+			add_state_claim = 960
+			add_state_claim = 957
+			add_state_claim = 958
+			add_state_claim = 959
+			add_state_claim = 962
+			add_state_claim = 964
+			add_state_claim = 963
+			add_state_claim = 965
+			add_state_claim = 137
+			add_state_claim = 979
+			add_state_claim = 961
+			add_state_claim = 692
+			}
+		}
+	focus = {
+		id = WAW_confirmtheoregonalliances
+		icon = GFX_goal_generic_major_alliance
+		cost = 10
+		x = 102
+		y = 14
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_undersingleflag
+			}	
+		completion_reward = {
+			every_state = {
+				limit = {
+					is_core_of = ORO
+					}
+				add_core_of = ROOT
+					}
+				}
+			}	
+	focus = {
+		id = WAW_workwithmontana
+		icon = GFX_Generic_Elections
+		cost = 10
+		x = 104
+		y = 14
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_undersingleflag
+			}
+		mutually_exclusive = {
+			focus = WAW_theidahoanlands
+			}
+		available = {
+			MTM = {
+				exists = yes
+			}
+		}	
+		completion_reward = {
+			add_state_claim = 164
+			add_state_claim = 155
+			add_state_claim = 156
+			add_state_claim = 158
+			add_state_claim = 683
+			add_state_claim = 60
+			add_state_claim = 684
+			add_state_claim = 162
+			add_state_claim = 163
+			MTM = {
+				country_event = {
+					id = nwashington.4
+					days = 2
+					random_hours = 12
+					random_days = 2
+					}
+				}
+			}
+		}
+	focus = {
+		id = WAW_theidahoanlands
+		icon = GFX_goal_generic_position_armies
+		cost = 10
+		x = 106
+		y = 14
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_undersingleflag
+			}
+		mutually_exclusive = {
+			focus = WAW_workwithmontana
+			}	
+		completion_reward = {
+			add_state_claim = 164
+			add_state_claim = 155
+			add_state_claim = 156
+			add_state_claim = 158
+			add_state_claim = 683
+			add_state_claim = 60
+			add_state_claim = 684
+			add_state_claim = 162
+			add_state_claim = 163
+			}
+		}
+	focus = {
+		id = WAW_reclamationofthenorth
+		icon = GFX_focus_generic_land_reclamation
+		cost = 10
+		x = 98
+		y = 15
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_thecolumbianlands
+			}	
+		completion_reward = {
+			create_wargoal = {
+				type = take_claimed_state
+				target = BCB
+				}
+			}
+		}
+	focus = {
+		id = WAW_reclamationoftheeast
+		icon = GFX_focus_generic_farmland
+		cost = 10
+		x = 106
+		y = 15
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_theidahoanlands
+			}	
+		completion_reward = {
+			create_wargoal = {
+				type = take_claimed_state
+				target = IDI
+				}
+			}
+		}
+	focus = {
+		id = WAW_integrationinitiatives
+		icon = GFX_focus_JAP_an_integrated_union
+		cost = 10
+		x = 102
+		y = 15
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_confirmtheoregonalliances
+			}	
+		completion_reward = {
+			add_political_power = 50
+			}
+		}
+	focus = {
+		id = WAW_neveragainunderestimated
+		icon = GFX_focus_generic_heavy_tank
+		cost = 10
+		x = 102
+		y = 16
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_integrationinitiatives
+			}
+		prerequisite = {
+			focus = WAW_reclamationoftheeast
+			focus = WAW_workwithmontana
+			}
+		prerequisite = {
+			focus = WAW_reclamationofthenorth
+			focus = WAW_workwithalberta
+			}	
+		completion_reward = {
+			add_ideas = WAW_neverunderestimated
+			}
+		}
+		
+	#FEDERAL PATH	
+	focus = {
+		id = WAW_antinativepropaganda
+		icon = GFX_Generic_Radio_Broadcast
+		cost = 4.3
+		x = 70
+		y = 8
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_prepareforlargerriots
+			}
+		completion_reward = {
+			add_war_support = 0.15
+			add_political_power = -25
+			}
+		}
+	focus = {
+		id = WAW_holdcapitalpunishment
+		icon = GFX_Generic_Arrests
+		cost = 4.3
+		x = 72
+		y = 8
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_prepareforlargerriots
+			}
+		completion_reward = {
+			set_global_flag = WAW_cappun
+			add_political_power = -50
+			}
+		}
+	focus = {
+		id = WAW_stirupmilitia
+		icon = GFX_Generic_Infantry_Training
+		cost = 4.3
+		x = 74
+		y = 8
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_prepareforlargerriots
+			}
+		completion_reward = {
+			add_political_power = 25
+			}
+		}
+	focus = {
+		id = WAW_protecturbancenters
+		icon = GFX_focus_SWE_urbanization
+		cost = 4.3
+		x = 76
+		y = 8
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_prepareforlargerriots
+			}
+		completion_reward = {
+			add_political_power = -50
+			707 = {
+				add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = 11251
+					}
+				}
+			708 = {
+				add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = 11259
+					}
+				}
+			706 = {
+				add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = 11271
+					}
+				}
+			}
+		}	
+	focus = {
+		id = WAW_defendthestate
+		icon = GFX_goal_generic_defence
+		cost = 4.3
+		x = 74
+		y = 9
+		ai_will_do = {
+			factor = 75
+			}
+		prerequisite = {
+			focus = WAW_protecturbancenters
+			}
+		prerequisite = {
+			focus = WAW_antinativepropaganda
+			}
+		prerequisite = {
+			focus = WAW_holdcapitalpunishment
+			}
+		completion_reward = {
+			add_popularity = {
+					ideology = neutrality
+					popularity = 0.5
+					}
+			if = {
+					limit = {
+						has_global_flag = WAW_cappun
+						}
+				start_civil_war = {
+					ruling_party = neutrality
+					ideology = neutrality
+					size = 0.7
+					states = {
+						705 700 694 697 696 699 698
+					}
+				}
+			}
+			else_if = {
+				start_civil_war = {
+					ruling_party = neutrality
+					ideology = neutrality
+					size = 0.7
+					states = {
+						63 705 700 694 697 696 699 698
+					}
+				}	
+			}
+			division_template = {
+				name = WAW_patriot_militia  	# Standard formation for frontline divisions
+					is_locked = no
+					regiments = {
+						militia = { x = 0 y = 0 }
+						militia = { x = 0 y = 1 }
+						militia = { x = 0 y = 2 }
+						}
+						support = {
+							}
+						}
+			701 = {
+					create_unit = { division = "name = \"Patriot Militia\" division_template = \"WAW_patriot_militia\" start_experience_factor = 0.5" owner = WAW
+					count = 2
+					}
+				}
+			703 = {
+					create_unit = { division = "name = \"Patriot Militia\" division_template = \"WAW_patriot_militia\" start_experience_factor = 0.5" owner = WAW
+					count = 1	
+					}
+				}	
+				
+			if = {
+				limit = {
+					original_tag = WAW
+					is_dynamic_country = yes
+					}
+					declare_war_on = {
+						target = ORO
+						type = annex_everything
+						}
+					remove_ideas = WAW_nativeviolence	
+					transfer_state = 720
+					transfer_state = 62
+					transfer_state = 1346
+					transfer_state = 718
+					transfer_state = 719
+					transfer_state = 716
+					transfer_state = 715
+					add_state_core = 720
+					add_state_core = 62
+					add_state_core = 1346
+					add_state_core = 719
+					add_state_core = 718
+					add_state_core = 716
+					add_state_core = 715
+					set_cosmetic_tag = SalT
+					division_template = {
+						name = WAW_native_cavalry  	# Standard formation for frontline divisions
+						is_locked = no
+						regiments = {
+							cavalry = { x = 0 y = 0 }
+							cavalry = { x = 0 y = 1 }
+							cavalry = { x = 0 y = 2 }
+							}
+							support = {
+								}
+							}
+						694 = {
+							create_unit = { division = "name = \"Native Cavalry\" division_template = \"WAW_native_cavalry\" start_experience_factor = 0.5" owner = SalT
+							count = 2
+								}
+							}
+						716 = {
+							create_unit = { division = "name = \"Native Cavalry\" division_template = \"WAW_native_cavalry\" start_experience_factor = 0.5" owner = SalT
+							count = 2
+								}
+							}	
+					
+				}
+				
+			}
+		}	
+	focus = {
+		id = WAW_emergencyconscription
+		icon = GFX_Generic_Coalition_Army
+		cost = 10
+		x = 76
+		y = 10
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_defendthestate
+			}
+		completion_reward = {
+			add_ideas = extensive_conscription
+			}
+		}
+	focus = {
+		id = WAW_emergencyeconomylaws
+		icon = GFX_Generic_Industry
+		cost = 5
+		x = 72
+		y = 10
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_defendthestate
+			}
+		completion_reward = {
+			add_ideas = war_economy
+			}
+		}
+	focus = {
+		id = WAW_subverttheaggressors
+		icon = GFX_Generic_Execute_Dissidents02
+		cost = 5
+		x = 74
+		y = 10
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_defendthestate
+			}
+		completion_reward = {
+			add_ideas = WAW_coordinatedguerillas
+			}
+		}
+	focus = {
+		id = WAW_consolidatetheindustry
+		icon = GFX_focus_generic_industry_3
+		cost = 5
+		x = 68
+		y = 11
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_emergencyeconomylaws
+			}
+		completion_reward = {	
+			706 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+					}
+				}
+			}
+		}	
+	focus = {
+		id = WAW_startthewarmachine
+		icon = GFX_focus_generic_advanced_military_studies
+		cost = 5
+		x = 70
+		y = 11
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_emergencyeconomylaws
+			}
+		completion_reward = {	
+			707 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+					}
+				}
+			}
+		}
+	focus = {
+		id = WAW_mutualsecurity
+		icon = GFX_focus_GER_integrated_economies
+		cost = 10
+		x = 74
+		y = 11
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_subverttheaggressors
+			}
+		completion_reward = {
+			ORO = {
+				country_event = {
+					id = fwashington.1
+					days = 2
+					random_hours = 12
+					random_days = 2
+					}
+				}
+			}
+		}	
+	focus = {
+		id = WAW_enlisttheupperechelon
+		icon = GFX_focus_generic_military_academy
+		cost = 5
+		x = 76
+		y = 11
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_emergencyconscription
+			}
+		completion_reward = {
+			add_ideas = WAW_topoftheclass
+			}
+		}
+	focus = {
+		id = WAW_beginhighelevationtraining
+		icon = GFX_focus_SMB_special_forces_option_1
+		cost = 5
+		x = 78
+		y = 11
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_emergencyconscription
+			}
+		completion_reward = {
+			set_technology = {
+				tech_mountaineers = 1
+				}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = mountaineers_tech
+				}
+			}
+		}
+	focus = {
+		id = WAW_crushtherevolters
+		icon = GFX_focus_generic_military_dictatorship
+		cost = 10
+		x = 74
+		y = 12
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_mutualsecurity
+			}
+		prerequisite = {
+			focus = WAW_emergencyeconomylaws
+			}
+		completion_reward = {
+			remove_ideas = WAW_nativeviolence
+			add_state_core = 63
+			add_state_core = 694
+			add_state_core = 700
+			add_state_core = 701
+			
+			}
+		}	
+	focus = {
+		id = WAW_rainiersgreatest
+		icon = GFX_focus_SMB_a_land_of_mountains
+		cost = 5
+		x = 78
+		y = 12
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_beginhighelevationtraining
+			}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = mountaineers_tech
+				}
+			}
+		}
+	focus = {
+		id = WAW_contactdc
+		icon = GFX_focus_generic_befriend_usa
+		cost = 10
+		x = 74
+		y = 13
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_crushtherevolters
+			}
+		completion_reward = {
+			DCD = {
+				country_event = {
+					id = fwashington.1
+					days = 2
+					random_hours = 12
+					random_days = 2
+					}
+			}
+			set_cosmetic_tag = PacCom
+			}
+		}
+	focus = {
+		id = WAW_connecttheoregonians
+		icon = GFX_Generic_Construction
+		cost = 10
+		x = 70
+		y = 14
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_contactdc
+			}
+		prerequisite = {
+			focus = WAW_consolidatetheindustry
+			}
+		completion_reward = {
+			699 = {
+				add_building_construction = {
+					type = supply_node
+					level = 1
+					instant_build = yes
+					province = 3558
+					}
+				}
+			62 = {
+				add_building_construction = {
+					type = supply_node
+					level = 1
+					instant_build = yes
+					province = 3727
+					}
+				}
+			build_railway = {
+				level = 2
+				build_only_on_allied = yes
+				controller_priority = {
+					base = 1
+					modifier = {
+					tag = WAW
+					add = 3
+					}
+				}
+				fallback = yes
+				path = { 3727 5007 1188 2250 851 197 3558 697 }
+				start_province = 3727
+				target_province = 696
+				}
+			}
+		}	
+	focus = {
+		id = WAW_renewpublictrust
+		icon = GFX_Generic_Liberty_Calling
+		cost = 5
+		x = 72
+		y = 14
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_contactdc
+			}
+		completion_reward = {
+			add_timed_idea = {
+				idea = WAW_restorationofwashington
+				days = 180
+				}
+			}
+		}
+	focus = {
+		id = WAW_surveythestate
+		icon = GFX_Generic_Lookout
+		cost = 5
+		x = 74
+		y = 14
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_contactdc
+			}
+		completion_reward = {
+			create_intelligence_agency = {
+				name = "Washington Loyalist Department"
+				icon = GFX_intelligence_agency_logo_agency
+				}
+			}
+		}
+	focus = {
+		id = WAW_federaleconomicstimulus
+		icon = GFX_focus_PHI_military_requisitions
+		cost = 10
+		x = 70
+		y = 15
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_connecttheoregonians
+			}
+		prerequisite = {
+			focus = WAW_renewpublictrust
+			}
+		completion_reward = {
+			add_ideas = WAW_stimuluschecks
+			}
+		}
+	focus = {
+		id = WAW_raisepensionsforarmedforces
+		icon = GFX_focus_AST_liberty_loans
+		cost = 10
+		x = 72
+		y = 15
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_renewpublictrust
+			}
+		completion_reward = {
+			add_ideas = WAW_raisedpensions
+			}
+		}
+	focus = {
+		id = WAW_fullgovernmentoversight
+		icon = GFX_Focus_Communist_Spy02
+		cost = 10
+		x = 74
+		y = 15
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_surveythestate
+			}
+		prerequisite = {
+			focus = WAW_renewpublictrust
+			}
+		completion_reward = {
+			add_ideas = WAW_biggestbrother
+			}
+		}
+	focus = {
+		id = WAW_askforfederalgrants
+		icon = GFX_focus_RAJ_trickle_down_economics
+		cost = 10
+		x = 76
+		y = 15
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_contactdc
+			}
+		completion_reward = {
+			add_ideas = WAW_researchgrants
+			}
+		}
+	focus = {
+		id = WAW_forceoregonissue
+		icon = GFX_goal_generic_political_pressure
+		cost = 10
+		x = 74
+		y = 16
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_federaleconomicstimulus
+			}
+		prerequisite = {
+			focus = WAW_raisepensionsforarmedforces
+			}
+		prerequisite = {
+			focus = WAW_fullgovernmentoversight
+			}
+		prerequisite = {
+			focus = WAW_askforfederalgrants
+			}
+		completion_reward = {
+			every_state = {
+				limit = {
+					is_core_of = ORO
+					}
+				add_core_of = ROOT
+						}
+			add_stability = -0.25
+			}
+		}
+	focus = {
+		id = WAW_researchthenucleus
+		icon = GFX_focus_generic_nuclear_development
+		cost = 10
+		x = 76
+		y = 16
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_askforfederalgrants
+			}
+		completion_reward = {
+			701 = {
+				add_building_construction = {
+					type = nuclear_facility
+					level = 1
+					instant_build = yes
+					province = 1768
+					}
+				}
+			add_breakthrough_points = {
+				specialization = specialization_nuclear
+				value = 1
+				}
+			}
+		}	
+	focus = {
+		id = WAW_showofforce
+		icon = GFX_Generic_Brain_Force_Plus
+		cost = 10
+		x = 78
+		y = 16
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_askforfederalgrants
+			}
+		completion_reward = {
+			add_research_slot = 1
+			}
+		}
+	focus = {
+		id = WAW_operationvicky
+		icon = GFX_Generic_American_Soldier2
+		cost = 10
+		x = 72
+		y = 17
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_forceoregonissue
+			}
+		completion_reward = {
+			country_event = {
+				id = fwashington.3
+				days = 2
+				random_hours = 12
+				random_days = 2
+				}
+			}
+		}
+	focus = {
+		id = WAW_operationtuber
+		icon = GFX_focus_PRC_arms_recovery_efforts
+		cost = 10
+		x = 76
+		y = 17
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_forceoregonissue
+			}
+		completion_reward = {
+			country_event = {
+				id = fwashington.4
+				days = 2
+				random_hours = 12
+				random_days = 2
+				}
+			}
+		}
+	focus = {
+		id = WAW_operationaurora
+		icon = GFX_focus_SWE_lottakoren
+		cost = 10
+		x = 71
+		y = 18
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_operationvicky
+			}
+		completion_reward = {
+			country_event = {
+				id = fwashington.5
+				days = 2
+				random_hours = 12
+				random_days = 2
+				}
+			}
+		}
+	focus = {
+		id = WAW_operationfoolsgold
+		icon = GFX_focus_usa_reestablish_the_gold_standard
+		cost = 10
+		x = 73
+		y = 18
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_operationvicky
+			}
+		completion_reward = {
+			country_event = {
+				id = fwashington.6
+				days = 2
+				random_hours = 12
+				random_days = 2
+				}
+			}
+		}
+	focus = {
+		id = WAW_operationstratus
+		icon = GFX_focus_FIN_sissi
+		cost = 10
+		x = 76
+		y = 18
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_operationtuber
+			}
+		completion_reward = {
+			country_event = {
+				id = fwashington.7
+				days = 2
+				random_hours = 12
+				random_days = 2
+				}
+			}
+		}
+	focus = {
+		id = WAW_guardianofthepacific
+		icon = GFX_focus_usa_recruit_the_free_corps
+		cost = 10
+		x = 74
+		y = 19
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_operationfoolsgold
+			}
+		prerequisite = {
+			focus = WAW_operationaurora
+			}
+		prerequisite = {
+			focus = WAW_operationstratus
+			}
+		available = {
+			684 = {
+				is_controlled_by = WAW
+				}
+			590 = {
+				is_controlled_by = WAW
+				}
+			958 = {
+				is_controlled_by = WAW
+				}
+			770 = {
+				is_controlled_by = WAW
+				}
+			1000 = {
+				is_controlled_by = WAW
+				}
+			}	
+		completion_reward = {
+			add_stability = 0.25
+			every_state = {
+				limit = {
+					is_core_of = IDI
+					}
+				add_core_of = ROOT
+						}
+			every_state = {
+				limit = {
+					is_core_of = BCB
+					}
+				add_core_of = ROOT
+						}
+			every_state = {
+				limit = {
+					is_core_of = AKA
+					}
+				add_core_of = ROOT
+						}
+			every_state = {
+				limit = {
+					is_core_of = YTY
+					}
+				add_core_of = ROOT
+						}
+			add_state_core = 588
+			add_state_core = 1932
+			add_state_core = 590
+			add_state_core = 1390
+			add_state_core = 587
+			}
+		}
+		
+	#MILITARY INDUSTRIAL TREES
+
+	focus = {
+		id = WAW_designateairfacilities
+		icon = GFX_focus_generic_air_partners
+		cost = 5
+		x = 16
+		y = 1
+		ai_will_do = {
+			factor = 75
+		}
+		completion_reward = {
+			air_experience = 10
+			if = {
+				limit = {
+					has_idea = WAW_pleasedboeing
+					}
+				swap_ideas = {
+					remove_idea = WAW_pleasedboeing
+					add_idea = WAW_appeasedboeing
+					}
+				}
+			if = {
+				limit = {
+					has_idea = WAW_neutralboeing
+					}
+				swap_ideas = {
+					remove_idea = WAW_neutralboeing
+					add_idea = WAW_pleasedboeing
+					}
+				}
+			if = {
+				limit = {
+					has_idea = WAW_displeasedboeing
+					}
+				swap_ideas = {
+					remove_idea = WAW_displeasedboeing
+					add_idea = WAW_neutralboeing
+					}
+				}	
+			if = {
+				limit = {
+					has_idea = WAW_abandonedboeing
+					}
+				swap_ideas = {
+					remove_idea = WAW_abandonedboeing
+					add_idea = WAW_displeasedboeing
+					}
+				}	
+		}
+	}
+	focus = {
+		id = WAW_experimentlarger
+		icon = GFX_focus_JAP_z_bomber_project
+		cost = 5
+		x = 13
+		y = 2
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_designateairfacilities
+			}
+		completion_reward = {
+			set_technology = {
+				early_transport_plane = 1
+				}
+			if = {
+				limit = {
+					has_idea = WAW_pleasedboeing
+					}
+				swap_ideas = {
+					remove_idea = WAW_pleasedboeing
+					add_idea = WAW_appeasedboeing
+					}
+				}
+			if = {
+				limit = {
+					has_idea = WAW_neutralboeing
+					}
+				swap_ideas = {
+					remove_idea = WAW_neutralboeing
+					add_idea = WAW_pleasedboeing
+					}
+				}
+			if = {
+				limit = {
+					has_idea = WAW_displeasedboeing
+					}
+				swap_ideas = {
+					remove_idea = WAW_displeasedboeing
+					add_idea = WAW_neutralboeing
+					}
+				}	
+			if = {
+				limit = {
+					has_idea = WAW_abandonedboeing
+					}
+				swap_ideas = {
+					remove_idea = WAW_abandonedboeing
+					add_idea = WAW_displeasedboeing
+					}
+				}	
+		}
+	}
+	focus = {
+		id = WAW_enginestudies
+		icon = GFX_goal_generic_air_production
+		cost = 5
+		x = 16
+		y = 2
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_designateairfacilities
+			}
+		completion_reward = {
+				if = {
+					 limit = {
+						has_dlc = "By Blood Alone"
+						}
+					add_tech_bonus = {
+						bonus = 0.5
+						uses = 2
+						category = cat_air_engine
+						}
+					}
+				else = {
+					air_experience = 50
+					}
+				
+		}
+	}
+	focus = {
+		id = WAW_torpedomounting
+		icon = GFX_focus_generic_torpedo_production
+		cost = 5
+		x = 19
+		y = 2
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_designateairfacilities
+			}
+		available = {
+			OR = {
+				has_idea = WAW_pleasedpuget
+				has_idea = WAW_appeasedpuget
+				}
+			}	
+		completion_reward = {
+			if = {
+				limit = {
+					has_dlc = "By Blood Alone"
+					}
+				set_technology = {
+					air_torpedoe_1 = 1
+					}
+				}
+			else = {
+				add_tech_bonus = {
+					bonus = 0.5
+					uses = 2
+					category = naval_air
+					}
+				}
+			}
+		}
+	focus = {
+		id = WAW_fillparatrooperbackpacks
+		icon = GFX_Generic_Pilots
+		cost = 5
+		x = 11
+		y = 3
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_experimentlarger
+			}
+		available = {
+			OR = {
+				has_idea = WAW_pleasedpacific
+				has_idea = WAW_appeasedpacific
+				}
+			}	
+		completion_reward = {
+			add_ideas = WAW_airborneadvancements
+			if = {
+				limit = {
+					has_idea = WAW_pleasedboeing
+					}
+				swap_ideas = {
+					remove_idea = WAW_pleasedboeing
+					add_idea = WAW_appeasedboeing
+					}
+				}
+			if = {
+				limit = {
+					has_idea = WAW_neutralboeing
+					}
+				swap_ideas = {
+					remove_idea = WAW_neutralboeing
+					add_idea = WAW_pleasedboeing
+					}
+				}
+			if = {
+				limit = {
+					has_idea = WAW_displeasedboeing
+					}
+				swap_ideas = {
+					remove_idea = WAW_displeasedboeing
+					add_idea = WAW_neutralboeing
+					}
+				}	
+			if = {
+				limit = {
+					has_idea = WAW_abandonedboeing
+					}
+				swap_ideas = {
+					remove_idea = WAW_abandonedboeing
+					add_idea = WAW_displeasedboeing
+					}
+				}
+				
+			if = {
+				limit = {
+					has_idea = WAW_pleasedpacific
+					}
+				swap_ideas = {
+					remove_idea = WAW_pleasedpacific
+					add_idea = WAW_appeasedpacific
+					}
+				}
+			if = {
+				limit = {
+					has_idea = WAW_neutralpacific
+					}
+				swap_ideas = {
+					remove_idea = WAW_neutralpacific
+					add_idea = WAW_pleasedpacific
+					}
+				}
+			if = {
+				limit = {
+					has_idea = WAW_displeasedpacific
+					}
+				swap_ideas = {
+					remove_idea = WAW_displeasedpacific
+					add_idea = WAW_neutralpacific
+					}
+				}	
+			if = {
+				limit = {
+					has_idea = WAW_abandonedpacific
+					}
+				swap_ideas = {
+					remove_idea = WAW_abandonedpacific
+					add_idea = WAW_displeasedpacific
+					}
+				}
+
+			if = {
+				limit = {
+					has_idea = WAW_displeasedpuget
+					}
+				swap_ideas = {
+					remove_idea = WAW_displeasedpuget
+					add_idea = WAW_abandonedpuget
+					}
+				}
+			if = {
+				limit = {
+					has_idea = WAW_neutralpuget
+					}
+				swap_ideas = {
+					remove_idea = WAW_neutralpuget
+					add_idea = WAW_displeasedpuget
+					}
+				}
+			if = {
+				limit = {
+					has_idea = WAW_pleasedpuget
+					}
+				swap_ideas = {
+					remove_idea = WAW_pleasedpuget
+					add_idea = WAW_neutralpuget
+					}
+				}	
+			if = {
+				limit = {
+					has_idea = WAW_appeasedpuget
+					}
+				swap_ideas = {
+					remove_idea = WAW_appeasedpuget
+					add_idea = WAW_pleasedpuget
+					}
+				}
+			}
+		}
+	focus = {
+		id = WAW_sizestudies
+		icon = GFX_focus_SWE_marauder_bombers
+		cost = 5
+		x = 13
+		y = 3
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_experimentlarger
+			}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.25
+				uses = 2
+				category = heavy_air
+				}
+			if = {
+				limit = {
+					has_idea = WAW_pleasedboeing
+					}
+				swap_ideas = {
+					remove_idea = WAW_pleasedboeing
+					add_idea = WAW_appeasedboeing
+					}
+				}
+			if = {
+				limit = {
+					has_idea = WAW_neutralboeing
+					}
+				swap_ideas = {
+					remove_idea = WAW_neutralboeing
+					add_idea = WAW_pleasedboeing
+					}
+				}
+			if = {
+				limit = {
+					has_idea = WAW_displeasedboeing
+					}
+				swap_ideas = {
+					remove_idea = WAW_displeasedboeing
+					add_idea = WAW_neutralboeing
+					}
+				}	
+			if = {
+				limit = {
+					has_idea = WAW_abandonedboeing
+					}
+				swap_ideas = {
+					remove_idea = WAW_abandonedboeing
+					add_idea = WAW_displeasedboeing
+					}
+				}
+			}
+		}	
+	focus = {
+		id = WAW_armamentstudies
+		icon = GFX_focus_chi_flying_tigers
+		cost = 5
+		x = 15
+		y = 3
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_enginestudies
+			}
+		completion_reward = {
+			if = {
+				limit = {
+					has_dlc = "By Blood Alone"
+					}
+				add_tech_bonus = {
+					bonus = 1
+					uses = 2
+					category = cat_air_guns
+					}
+				}
+			else = {
+				air_experience = 50
+				}
+			
+			if = {
+				limit = {
+					has_idea = WAW_displeasedpuget
+					}
+				swap_ideas = {
+					remove_idea = WAW_displeasedpuget
+					add_idea = WAW_abandonedpuget
+					}
+				}
+			if = {
+				limit = {
+					has_idea = WAW_neutralpuget
+					}
+				swap_ideas = {
+					remove_idea = WAW_neutralpuget
+					add_idea = WAW_displeasedpuget
+					}
+				}
+			if = {
+				limit = {
+					has_idea = WAW_pleasedpuget
+					}
+				swap_ideas = {
+					remove_idea = WAW_pleasedpuget
+					add_idea = WAW_neutralpuget
+					}
+				}	
+			if = {
+				limit = {
+					has_idea = WAW_appeasedpuget
+					}
+				swap_ideas = {
+					remove_idea = WAW_appeasedpuget
+					add_idea = WAW_pleasedpuget
+					}
+				}
+				
+			if = {
+				limit = {
+					has_idea = WAW_displeasedpacific
+					}
+				swap_ideas = {
+					remove_idea = WAW_displeasedpacific
+					add_idea = WAW_abandonedpacific
+					}
+				}
+			if = {
+				limit = {
+					has_idea = WAW_neutralpacific
+					}
+				swap_ideas = {
+					remove_idea = WAW_neutralpacific
+					add_idea = WAW_displeasedpacific
+					}
+				}
+			if = {
+				limit = {
+					has_idea = WAW_pleasedpacific
+					}
+				swap_ideas = {
+					remove_idea = WAW_pleasedpacific
+					add_idea = WAW_neutralpacific
+					}
+				}	
+			if = {
+				limit = {
+					has_idea = WAW_appeasedpacific
+					}
+				swap_ideas = {
+					remove_idea = WAW_appeasedpacific
+					add_idea = WAW_pleasedpacific
+					}
+				}
+			}
+		}
+	focus = {
+		id = WAW_runsupportdrills
+		icon = GFX_Generic_Bombs
+		cost = 5
+		x = 17
+		y = 3
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_enginestudies
+			}
+		available = {
+			OR = {
+				has_idea = WAW_pleasedpacific
+				has_idea = WAW_appeasedpacific
+				}
+			}	
+		completion_reward = {	
+			add_ideas = WAW_coordinatedoperations
+			
+			
+			if = {
+				limit = {
+					has_idea = WAW_displeasedpuget
+					}
+				swap_ideas = {
+					remove_idea = WAW_displeasedpuget
+					add_idea = WAW_abandonedpuget
+					}
+				}
+			if = {
+				limit = {
+					has_idea = WAW_neutralpuget
+					}
+				swap_ideas = {
+					remove_idea = WAW_neutralpuget
+					add_idea = WAW_displeasedpuget
+					}
+				}
+			if = {
+				limit = {
+					has_idea = WAW_pleasedpuget
+					}
+				swap_ideas = {
+					remove_idea = WAW_pleasedpuget
+					add_idea = WAW_neutralpuget
+					}
+				}	
+			if = {
+				limit = {
+					has_idea = WAW_appeasedpuget
+					}
+				swap_ideas = {
+					remove_idea = WAW_appeasedpuget
+					add_idea = WAW_pleasedpuget
+					}
+				}
+			
+			if = {
+				limit = {
+					has_idea = WAW_pleasedboeing
+					}
+				swap_ideas = {
+					remove_idea = WAW_pleasedboeing
+					add_idea = WAW_appeasedboeing
+					}
+				}
+			if = {
+				limit = {
+					has_idea = WAW_neutralboeing
+					}
+				swap_ideas = {
+					remove_idea = WAW_neutralboeing
+					add_idea = WAW_pleasedboeing
+					}
+				}
+			if = {
+				limit = {
+					has_idea = WAW_displeasedboeing
+					}
+				swap_ideas = {
+					remove_idea = WAW_displeasedboeing
+					add_idea = WAW_neutralboeing
+					}
+				}	
+			if = {
+				limit = {
+					has_idea = WAW_abandonedboeing
+					}
+				swap_ideas = {
+					remove_idea = WAW_abandonedboeing
+					add_idea = WAW_displeasedboeing
+					}
+				}
+				
+			if = {
+				limit = {
+					has_idea = WAW_pleasedpacific
+					}
+				swap_ideas = {
+					remove_idea = WAW_pleasedpacific
+					add_idea = WAW_appeasedpacific
+					}
+				}
+			if = {
+				limit = {
+					has_idea = WAW_neutralpacific
+					}
+				swap_ideas = {
+					remove_idea = WAW_neutralpacific
+					add_idea = WAW_pleasedpacific
+					}
+				}
+			if = {
+				limit = {
+					has_idea = WAW_displeasedpacific
+					}
+				swap_ideas = {
+					remove_idea = WAW_displeasedpacific
+					add_idea = WAW_neutralpacific
+					}
+				}	
+			if = {
+				limit = {
+					has_idea = WAW_abandonedpacific
+					}
+				swap_ideas = {
+					remove_idea = WAW_abandonedpacific
+					add_idea = WAW_displeasedpacific
+					}
+				}
+			}
+		}
+	
+	focus = {
+		id = WAW_openwalletsforboeing
+		icon = GFX_focus_NORDIC_dem_capstone_airforce
+		cost = 10
+		x = 15
+		y = 4
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_armamentstudies
+			}
+		prerequisite = {
+			focus = WAW_sizestudies
+			}	
+		completion_reward = {
+			706 = {
+				add_building_construction = {
+					type = air_facility
+					level = 1
+					instant_build = yes
+					province = 11271
+					}
+				}
+			add_breakthrough_points = {
+			  specialization = specialization_air
+			  value = 1
+				}
+				
+			if = {
+				limit = {
+					has_idea = WAW_displeasedpuget
+					}
+				swap_ideas = {
+					remove_idea = WAW_displeasedpuget
+					add_idea = WAW_abandonedpuget
+					}
+				}
+			if = {
+				limit = {
+					has_idea = WAW_neutralpuget
+					}
+				swap_ideas = {
+					remove_idea = WAW_neutralpuget
+					add_idea = WAW_displeasedpuget
+					}
+				}
+			if = {
+				limit = {
+					has_idea = WAW_pleasedpuget
+					}
+				swap_ideas = {
+					remove_idea = WAW_pleasedpuget
+					add_idea = WAW_neutralpuget
+					}
+				}	
+			if = {
+				limit = {
+					has_idea = WAW_appeasedpuget
+					}
+				swap_ideas = {
+					remove_idea = WAW_appeasedpuget
+					add_idea = WAW_pleasedpuget
+					}
+				}	
+			
+			if = {
+				limit = {
+					has_idea = WAW_pleasedboeing
+					}
+				swap_ideas = {
+					remove_idea = WAW_pleasedboeing
+					add_idea = WAW_appeasedboeing
+					}
+				}
+			if = {
+				limit = {
+					has_idea = WAW_neutralboeing
+					}
+				swap_ideas = {
+					remove_idea = WAW_neutralboeing
+					add_idea = WAW_pleasedboeing
+					}
+				}
+			if = {
+				limit = {
+					has_idea = WAW_displeasedboeing
+					}
+				swap_ideas = {
+					remove_idea = WAW_displeasedboeing
+					add_idea = WAW_neutralboeing
+					}
+				}	
+			if = {
+				limit = {
+					has_idea = WAW_abandonedboeing
+					}
+				swap_ideas = {
+					remove_idea = WAW_abandonedboeing
+					add_idea = WAW_displeasedboeing
+					}
+				}
+			
+			if = {
+				limit = {
+					has_idea = WAW_displeasedpacific
+					}
+				swap_ideas = {
+					remove_idea = WAW_displeasedpacific
+					add_idea = WAW_abandonedpacific
+					}
+				}
+			if = {
+				limit = {
+					has_idea = WAW_neutralpacific
+					}
+				swap_ideas = {
+					remove_idea = WAW_neutralpacific
+					add_idea = WAW_displeasedpacific
+					}
+				}
+			if = {
+				limit = {
+					has_idea = WAW_pleasedpacific
+					}
+				swap_ideas = {
+					remove_idea = WAW_pleasedpacific
+					add_idea = WAW_neutralpacific
+					}
+				}	
+			if = {
+				limit = {
+					has_idea = WAW_appeasedpacific
+					}
+				swap_ideas = {
+					remove_idea = WAW_appeasedpacific
+					add_idea = WAW_pleasedpacific
+					}
+				}
+			}
+		}
+	focus = {
+		id = WAW_navaltunedbombsights
+		icon = GFX_focus_generic_cryptologic_bomb
+		cost = 5
+		x = 20
+		y = 4
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_torpedomounting
+			}
+		available = {
+			OR = {
+				has_idea = WAW_pleasedpuget
+				has_idea = WAW_appeasedpuget
+				}
+			}	
+		completion_reward = {	
+			add_ideas = WAW_sharksintheskies
+			
+			if = {
+				limit = {
+					has_idea = WAW_pleasedboeing
+					}
+				swap_ideas = {
+					remove_idea = WAW_pleasedboeing
+					add_idea = WAW_appeasedboeing
+					}
+				}
+			if = {
+				limit = {
+					has_idea = WAW_neutralboeing
+					}
+				swap_ideas = {
+					remove_idea = WAW_neutralboeing
+					add_idea = WAW_pleasedboeing
+					}
+				}
+			if = {
+				limit = {
+					has_idea = WAW_displeasedboeing
+					}
+				swap_ideas = {
+					remove_idea = WAW_displeasedboeing
+					add_idea = WAW_neutralboeing
+					}
+				}	
+			if = {
+				limit = {
+					has_idea = WAW_abandonedboeing
+					}
+				swap_ideas = {
+					remove_idea = WAW_abandonedboeing
+					add_idea = WAW_displeasedboeing
+					}
+				}
+				
+			if = {
+				limit = {
+					has_idea = WAW_pleasedpuget
+					}
+				swap_ideas = {
+					remove_idea = WAW_pleasedpuget
+					add_idea = WAW_appeasedpuget
+					}
+				}
+			if = {
+				limit = {
+					has_idea = WAW_neutralpuget
+					}
+				swap_ideas = {
+					remove_idea = WAW_neutralpuget
+					add_idea = WAW_pleasedpuget
+					}
+				}
+			if = {
+				limit = {
+					has_idea = WAW_displeasedpuget
+					}
+				swap_ideas = {
+					remove_idea = WAW_displeasedpuget
+					add_idea = WAW_neutralpuget
+					}
+				}	
+			if = {
+				limit = {
+					has_idea = WAW_abandonedpuget
+					}
+				swap_ideas = {
+					remove_idea = WAW_abandonedpuget
+					add_idea = WAW_displeasedpuget
+					}
+				}	
+			
+			
+			if = {
+				limit = {
+					has_idea = WAW_displeasedpacific
+					}
+				swap_ideas = {
+					remove_idea = WAW_displeasedpacific
+					add_idea = WAW_abandonedpacific
+					}
+				}
+			if = {
+				limit = {
+					has_idea = WAW_neutralpacific
+					}
+				swap_ideas = {
+					remove_idea = WAW_neutralpacific
+					add_idea = WAW_displeasedpacific
+					}
+				}
+			if = {
+				limit = {
+					has_idea = WAW_pleasedpacific
+					}
+				swap_ideas = {
+					remove_idea = WAW_pleasedpacific
+					add_idea = WAW_neutralpacific
+					}
+				}	
+			if = {
+				limit = {
+					has_idea = WAW_appeasedpacific
+					}
+				swap_ideas = {
+					remove_idea = WAW_appeasedpacific
+					add_idea = WAW_pleasedpacific
+					}
+				}
+			}
+		}
+		
+	focus = {
+		id = WAW_mockportstrikes
+		icon = GFX_focus_SMB_special_forces_option_3
+		cost = 5
+		x = 18
+		y = 4
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_torpedomounting
+			}
+		available = {
+			OR = {
+				has_idea = WAW_pleasedpuget
+				has_idea = WAW_appeasedpuget
+				}
+			}	
+		completion_reward = {	
+			add_ideas = WAW_novesselleftfloating
+			
+			if = {
+				limit = {
+					has_idea = WAW_pleasedboeing
+					}
+				swap_ideas = {
+					remove_idea = WAW_pleasedboeing
+					add_idea = WAW_appeasedboeing
+					}
+				}
+			if = {
+				limit = {
+					has_idea = WAW_neutralboeing
+					}
+				swap_ideas = {
+					remove_idea = WAW_neutralboeing
+					add_idea = WAW_pleasedboeing
+					}
+				}
+			if = {
+				limit = {
+					has_idea = WAW_displeasedboeing
+					}
+				swap_ideas = {
+					remove_idea = WAW_displeasedboeing
+					add_idea = WAW_neutralboeing
+					}
+				}	
+			if = {
+				limit = {
+					has_idea = WAW_abandonedboeing
+					}
+				swap_ideas = {
+					remove_idea = WAW_abandonedboeing
+					add_idea = WAW_displeasedboeing
+					}
+				}
+				
+			if = {
+				limit = {
+					has_idea = WAW_pleasedpuget
+					}
+				swap_ideas = {
+					remove_idea = WAW_pleasedpuget
+					add_idea = WAW_appeasedpuget
+					}
+				}
+			if = {
+				limit = {
+					has_idea = WAW_neutralpuget
+					}
+				swap_ideas = {
+					remove_idea = WAW_neutralpuget
+					add_idea = WAW_pleasedpuget
+					}
+				}
+			if = {
+				limit = {
+					has_idea = WAW_displeasedpuget
+					}
+				swap_ideas = {
+					remove_idea = WAW_displeasedpuget
+					add_idea = WAW_neutralpuget
+					}
+				}	
+			if = {
+				limit = {
+					has_idea = WAW_abandonedpuget
+					}
+				swap_ideas = {
+					remove_idea = WAW_abandonedpuget
+					add_idea = WAW_displeasedpuget
+					}
+				}	
+			
+			
+			if = {
+				limit = {
+					has_idea = WAW_displeasedpacific
+					}
+				swap_ideas = {
+					remove_idea = WAW_displeasedpacific
+					add_idea = WAW_abandonedpacific
+					}
+				}
+			if = {
+				limit = {
+					has_idea = WAW_neutralpacific
+					}
+				swap_ideas = {
+					remove_idea = WAW_neutralpacific
+					add_idea = WAW_displeasedpacific
+					}
+				}
+			if = {
+				limit = {
+					has_idea = WAW_pleasedpacific
+					}
+				swap_ideas = {
+					remove_idea = WAW_pleasedpacific
+					add_idea = WAW_neutralpacific
+					}
+				}	
+			if = {
+				limit = {
+					has_idea = WAW_appeasedpacific
+					}
+				swap_ideas = {
+					remove_idea = WAW_appeasedpacific
+					add_idea = WAW_pleasedpacific
+					}
+				}
+			}
+		}
+		
+		
+		
+	focus = {
+		id = WAW_partnerwiththefoundry
+		icon = GFX_focus_SWE_defense_act
+		cost = 5
+		x = 29
+		y = 1
+		ai_will_do = {
+			factor = 75
+		}
+		completion_reward = {
+			army_experience = 10	
+			if = {
+				limit = {
+					has_idea = WAW_pleasedpacific
+					}
+				swap_ideas = {
+					remove_idea = WAW_pleasedpacific
+					add_idea = WAW_appeasedpacific
+					}
+				}
+			if = {
+				limit = {
+					has_idea = WAW_neutralpacific
+					}
+				swap_ideas = {
+					remove_idea = WAW_neutralpacific
+					add_idea = WAW_pleasedpacific
+					}
+				}
+			if = {
+				limit = {
+					has_idea = WAW_displeasedpacific
+					}
+				swap_ideas = {
+					remove_idea = WAW_displeasedpacific
+					add_idea = WAW_neutralpacific
+					}
+				}	
+			if = {
+				limit = {
+					has_idea = WAW_abandonedpacific
+					}
+				swap_ideas = {
+					remove_idea = WAW_abandonedpacific
+					add_idea = WAW_displeasedpacific
+					}
+				}
+			}
+		}
+	focus = {
+		id = WAW_testlongdistancebarrage
+		icon = GFX_goal_generic_army_artillery
+		cost = 5
+		x = 27
+		y = 2
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_partnerwiththefoundry
+			}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = artillery
+				}
+			}
+		}	
+	focus = {
+		id = WAW_conductcoastalsynergy
+		icon = GFX_focus_FIN_coastal_defense
+		cost = 5
+		x = 29
+		y = 2
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_partnerwiththefoundry
+			}
+		available = {
+			OR = {
+				has_idea = WAW_pleasedpuget
+				has_idea = WAW_appeasedpuget
+				}
+			}	
+		completion_reward = {	
+			add_ideas = WAW_coastalsynergyefforts		
+			if = {
+				limit = {
+					has_idea = WAW_pleasedpuget
+					}
+				swap_ideas = {
+					remove_idea = WAW_pleasedpuget
+					add_idea = WAW_appeasedpuget
+					}
+				}
+			if = {
+				limit = {
+					has_idea = WAW_neutralpuget
+					}
+				swap_ideas = {
+					remove_idea = WAW_neutralpuget
+					add_idea = WAW_pleasedpuget
+					}
+				}
+			if = {
+				limit = {
+					has_idea = WAW_displeasedpuget
+					}
+				swap_ideas = {
+					remove_idea = WAW_displeasedpuget
+					add_idea = WAW_neutralpuget
+					}
+				}	
+			if = {
+				limit = {
+					has_idea = WAW_abandonedpuget
+					}
+				swap_ideas = {
+					remove_idea = WAW_abandonedpuget
+					add_idea = WAW_displeasedpuget
+					}
+				}
+				
+			if = {
+				limit = {
+					has_idea = WAW_pleasedpacific
+					}
+				swap_ideas = {
+					remove_idea = WAW_pleasedpacific
+					add_idea = WAW_appeasedpacific
+					}
+				}
+			if = {
+				limit = {
+					has_idea = WAW_neutralpacific
+					}
+				swap_ideas = {
+					remove_idea = WAW_neutralpacific
+					add_idea = WAW_pleasedpacific
+					}
+				}
+			if = {
+				limit = {
+					has_idea = WAW_displeasedpacific
+					}
+				swap_ideas = {
+					remove_idea = WAW_displeasedpacific
+					add_idea = WAW_neutralpacific
+					}
+				}	
+			if = {
+				limit = {
+					has_idea = WAW_abandonedpacific
+					}
+				swap_ideas = {
+					remove_idea = WAW_abandonedpacific
+					add_idea = WAW_displeasedpacific
+					}
+				}
+
+			
+			if = {
+				limit = {
+					has_idea = WAW_displeasedboeing
+					}
+				swap_ideas = {
+					remove_idea = WAW_displeasedboeing
+					add_idea = WAW_abandonedboeing
+					}
+				}
+			if = {
+				limit = {
+					has_idea = WAW_neutralboeing
+					}
+				swap_ideas = {
+					remove_idea = WAW_neutralboeing
+					add_idea = WAW_displeasedboeing
+					}
+				}
+			if = {
+				limit = {
+					has_idea = WAW_pleasedboeing
+					}
+				swap_ideas = {
+					remove_idea = WAW_pleasedboeing
+					add_idea = WAW_neutralboeing
+					}
+				}	
+			if = {
+				limit = {
+					has_idea = WAW_appeasedboeing
+					}
+				swap_ideas = {
+					remove_idea = WAW_appeasedboeing
+					add_idea = WAW_pleasedboeing
+					}
+				}
+			}
+		}	
+			
+	focus = {
+		id = WAW_streamlineautomotive
+		icon = GFX_focus_generic_truck
+		cost = 5
+		x = 31
+		y = 2
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_partnerwiththefoundry
+			}
+		completion_reward = {
+			add_ideas = WAW_properassemblylines
+			
+			if = {
+				limit = {
+					has_idea = WAW_displeasedboeing
+					}
+				swap_ideas = {
+					remove_idea = WAW_displeasedboeing
+					add_idea = WAW_abandonedboeing
+					}
+				}
+			if = {
+				limit = {
+					has_idea = WAW_neutralboeing
+					}
+				swap_ideas = {
+					remove_idea = WAW_neutralboeing
+					add_idea = WAW_displeasedboeing
+					}
+				}
+			if = {
+				limit = {
+					has_idea = WAW_pleasedboeing
+					}
+				swap_ideas = {
+					remove_idea = WAW_pleasedboeing
+					add_idea = WAW_neutralboeing
+					}
+				}	
+			if = {
+				limit = {
+					has_idea = WAW_appeasedboeing
+					}
+				swap_ideas = {
+					remove_idea = WAW_appeasedboeing
+					add_idea = WAW_pleasedboeing
+					}
+				}
+			
+			if = {
+				limit = {
+					has_idea = WAW_displeasedpuget
+					}
+				swap_ideas = {
+					remove_idea = WAW_displeasedpuget
+					add_idea = WAW_abandonedpuget
+					}
+				}
+			if = {
+				limit = {
+					has_idea = WAW_neutralpuget
+					}
+				swap_ideas = {
+					remove_idea = WAW_neutralpuget
+					add_idea = WAW_displeasedpuget
+					}
+				}
+			if = {
+				limit = {
+					has_idea = WAW_pleasedpuget
+					}
+				swap_ideas = {
+					remove_idea = WAW_pleasedpuget
+					add_idea = WAW_neutralpuget
+					}
+				}	
+			if = {
+				limit = {
+					has_idea = WAW_appeasedpuget
+					}
+				swap_ideas = {
+					remove_idea = WAW_appeasedpuget
+					add_idea = WAW_pleasedpuget
+					}
+				}
+			}
+		}
+
+	focus = {
+		id = WAW_flakstudies
+		icon = GFX_focus_PRC_anti_air_effort
+		cost = 5
+		x = 26
+		y = 3
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_testlongdistancebarrage
+			}
+		available = {
+			OR = {
+				has_idea = WAW_pleasedboeing
+				has_idea = WAW_appeasedboeing
+				}
+			}	
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.75
+				uses = 3
+				category = cat_anti_air
+				}
+				
+			if = {
+				limit = {
+					has_idea = WAW_displeasedpuget
+					}
+				swap_ideas = {
+					remove_idea = WAW_displeasedpuget
+					add_idea = WAW_abandonedpuget
+					}
+				}
+			if = {
+				limit = {
+					has_idea = WAW_neutralpuget
+					}
+				swap_ideas = {
+					remove_idea = WAW_neutralpuget
+					add_idea = WAW_displeasedpuget
+					}
+				}
+			if = {
+				limit = {
+					has_idea = WAW_pleasedpuget
+					}
+				swap_ideas = {
+					remove_idea = WAW_pleasedpuget
+					add_idea = WAW_neutralpuget
+					}
+				}	
+			if = {
+				limit = {
+					has_idea = WAW_appeasedpuget
+					}
+				swap_ideas = {
+					remove_idea = WAW_appeasedpuget
+					add_idea = WAW_pleasedpuget
+					}
+				}
+			
+			if = {
+				limit = {
+					has_idea = WAW_pleasedboeing
+					}
+				swap_ideas = {
+					remove_idea = WAW_pleasedboeing
+					add_idea = WAW_appeasedboeing
+					}
+				}
+			if = {
+				limit = {
+					has_idea = WAW_neutralboeing
+					}
+				swap_ideas = {
+					remove_idea = WAW_neutralboeing
+					add_idea = WAW_pleasedboeing
+					}
+				}
+			if = {
+				limit = {
+					has_idea = WAW_displeasedboeing
+					}
+				swap_ideas = {
+					remove_idea = WAW_displeasedboeing
+					add_idea = WAW_neutralboeing
+					}
+				}	
+			if = {
+				limit = {
+					has_idea = WAW_abandonedboeing
+					}
+				swap_ideas = {
+					remove_idea = WAW_abandonedboeing
+					add_idea = WAW_displeasedboeing
+					}
+				}
+				
+			if = {
+				limit = {
+					has_idea = WAW_pleasedpacific
+					}
+				swap_ideas = {
+					remove_idea = WAW_pleasedpacific
+					add_idea = WAW_appeasedpacific
+					}
+				}
+			if = {
+				limit = {
+					has_idea = WAW_neutralpacific
+					}
+				swap_ideas = {
+					remove_idea = WAW_neutralpacific
+					add_idea = WAW_pleasedpacific
+					}
+				}
+			if = {
+				limit = {
+					has_idea = WAW_displeasedpacific
+					}
+				swap_ideas = {
+					remove_idea = WAW_displeasedpacific
+					add_idea = WAW_neutralpacific
+					}
+				}	
+			if = {
+				limit = {
+					has_idea = WAW_abandonedpacific
+					}
+				swap_ideas = {
+					remove_idea = WAW_abandonedpacific
+					add_idea = WAW_displeasedpacific
+					}
+				}
+			}
+		}
+
+	focus = {
+		id = WAW_newcasting
+		icon = GFX_focus_generic_tank_assembly
+		cost = 5
+		x = 30
+		y = 3
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_streamlineautomotive
+			}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.25
+				uses = 3
+				category = armor
+				}
+			
+			if = {
+				limit = {
+					has_idea = WAW_displeasedboeing
+					}
+				swap_ideas = {
+					remove_idea = WAW_displeasedboeing
+					add_idea = WAW_abandonedboeing
+					}
+				}
+			if = {
+				limit = {
+					has_idea = WAW_neutralboeing
+					}
+				swap_ideas = {
+					remove_idea = WAW_neutralboeing
+					add_idea = WAW_displeasedboeing
+					}
+				}
+			if = {
+				limit = {
+					has_idea = WAW_pleasedboeing
+					}
+				swap_ideas = {
+					remove_idea = WAW_pleasedboeing
+					add_idea = WAW_neutralboeing
+					}
+				}	
+			if = {
+				limit = {
+					has_idea = WAW_appeasedboeing
+					}
+				swap_ideas = {
+					remove_idea = WAW_appeasedboeing
+					add_idea = WAW_pleasedboeing
+					}
+				}
+			
+			if = {
+				limit = {
+					has_idea = WAW_displeasedpuget
+					}
+				swap_ideas = {
+					remove_idea = WAW_displeasedpuget
+					add_idea = WAW_abandonedpuget
+					}
+				}
+			if = {
+				limit = {
+					has_idea = WAW_neutralpuget
+					}
+				swap_ideas = {
+					remove_idea = WAW_neutralpuget
+					add_idea = WAW_displeasedpuget
+					}
+				}
+			if = {
+				limit = {
+					has_idea = WAW_pleasedpuget
+					}
+				swap_ideas = {
+					remove_idea = WAW_pleasedpuget
+					add_idea = WAW_neutralpuget
+					}
+				}	
+			if = {
+				limit = {
+					has_idea = WAW_appeasedpuget
+					}
+				swap_ideas = {
+					remove_idea = WAW_appeasedpuget
+					add_idea = WAW_pleasedpuget
+					}
+				}
+			}
+		}
+	focus = {
+		id = WAW_upgradetheinfantry
+		icon = GFX_focus_generic_mechanized
+		cost = 5
+		x = 32
+		y = 3
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_streamlineautomotive
+			}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = cat_mechanized_equipment
+				}
+			if = {
+				limit = {
+					has_idea = WAW_pleasedpacific
+					}
+				swap_ideas = {
+					remove_idea = WAW_pleasedpacific
+					add_idea = WAW_appeasedpacific
+					}
+				}
+			if = {
+				limit = {
+					has_idea = WAW_neutralpacific
+					}
+				swap_ideas = {
+					remove_idea = WAW_neutralpacific
+					add_idea = WAW_pleasedpacific
+					}
+				}
+			if = {
+				limit = {
+					has_idea = WAW_displeasedpacific
+					}
+				swap_ideas = {
+					remove_idea = WAW_displeasedpacific
+					add_idea = WAW_neutralpacific
+					}
+				}	
+			if = {
+				limit = {
+					has_idea = WAW_abandonedpacific
+					}
+				swap_ideas = {
+					remove_idea = WAW_abandonedpacific
+					add_idea = WAW_displeasedpacific
+					}
+				}
+			}
+		}
+	focus = {
+		id = WAW_develophighshrapnel
+		icon = GFX_Generic_Artillery_Barrel
+		cost = 5
+		x = 27
+		y = 4
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_testlongdistancebarrage
+			}
+		completion_reward = {
+			add_ideas = WAW_highshrapnel
+			if = {
+				limit = {
+					has_idea = WAW_pleasedpacific
+					}
+				swap_ideas = {
+					remove_idea = WAW_pleasedpacific
+					add_idea = WAW_appeasedpacific
+					}
+				}
+			if = {
+				limit = {
+					has_idea = WAW_neutralpacific
+					}
+				swap_ideas = {
+					remove_idea = WAW_neutralpacific
+					add_idea = WAW_pleasedpacific
+					}
+				}
+			if = {
+				limit = {
+					has_idea = WAW_displeasedpacific
+					}
+				swap_ideas = {
+					remove_idea = WAW_displeasedpacific
+					add_idea = WAW_neutralpacific
+					}
+				}	
+			if = {
+				limit = {
+					has_idea = WAW_abandonedpacific
+					}
+				swap_ideas = {
+					remove_idea = WAW_abandonedpacific
+					add_idea = WAW_displeasedpacific
+					}
+				}
+			}
+		}
+	focus = {
+		id = WAW_devloptankvariants
+		icon = GFX_focus_generic_tank_assault
+		cost = 5
+		x = 29
+		y = 4
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_testlongdistancebarrage
+			}
+		prerequisite = {
+			focus = WAW_newcasting
+			}
+		completion_reward = {
+			add_ideas = WAW_treadsthatlightthesky
+			if = {
+				limit = {
+					has_idea = WAW_pleasedpacific
+					}
+				swap_ideas = {
+					remove_idea = WAW_pleasedpacific
+					add_idea = WAW_appeasedpacific
+					}
+				}
+			if = {
+				limit = {
+					has_idea = WAW_neutralpacific
+					}
+				swap_ideas = {
+					remove_idea = WAW_neutralpacific
+					add_idea = WAW_pleasedpacific
+					}
+				}
+			if = {
+				limit = {
+					has_idea = WAW_displeasedpacific
+					}
+				swap_ideas = {
+					remove_idea = WAW_displeasedpacific
+					add_idea = WAW_neutralpacific
+					}
+				}	
+			if = {
+				limit = {
+					has_idea = WAW_abandonedpacific
+					}
+				swap_ideas = {
+					remove_idea = WAW_abandonedpacific
+					add_idea = WAW_displeasedpacific
+					}
+				}
+			}
+		}
+	focus = {
+		id = WAW_integratemotorizedsupport
+		icon = GFX_goal_generic_army_motorized
+		cost = 5
+		x = 31
+		y = 4
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_streamlineautomotive
+			}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = hospital_tech
+				}
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = logistics_tech
+				}
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = signal_company_tech
+				}	
+			
+			if = {
+				limit = {
+					has_idea = WAW_displeasedboeing
+					}
+				swap_ideas = {
+					remove_idea = WAW_displeasedboeing
+					add_idea = WAW_abandonedboeing
+					}
+				}
+			if = {
+				limit = {
+					has_idea = WAW_neutralboeing
+					}
+				swap_ideas = {
+					remove_idea = WAW_neutralboeing
+					add_idea = WAW_displeasedboeing
+					}
+				}
+			if = {
+				limit = {
+					has_idea = WAW_pleasedboeing
+					}
+				swap_ideas = {
+					remove_idea = WAW_pleasedboeing
+					add_idea = WAW_neutralboeing
+					}
+				}	
+			if = {
+				limit = {
+					has_idea = WAW_appeasedboeing
+					}
+				swap_ideas = {
+					remove_idea = WAW_appeasedboeing
+					add_idea = WAW_pleasedboeing
+					}
+				}
+			
+			if = {
+				limit = {
+					has_idea = WAW_displeasedpuget
+					}
+				swap_ideas = {
+					remove_idea = WAW_displeasedpuget
+					add_idea = WAW_abandonedpuget
+					}
+				}
+			if = {
+				limit = {
+					has_idea = WAW_neutralpuget
+					}
+				swap_ideas = {
+					remove_idea = WAW_neutralpuget
+					add_idea = WAW_displeasedpuget
+					}
+				}
+			if = {
+				limit = {
+					has_idea = WAW_pleasedpuget
+					}
+				swap_ideas = {
+					remove_idea = WAW_pleasedpuget
+					add_idea = WAW_neutralpuget
+					}
+				}	
+			if = {
+				limit = {
+					has_idea = WAW_appeasedpuget
+					}
+				swap_ideas = {
+					remove_idea = WAW_appeasedpuget
+					add_idea = WAW_pleasedpuget
+					}
+				}
+				
+			if = {
+				limit = {
+					has_idea = WAW_pleasedpacific
+					}
+				swap_ideas = {
+					remove_idea = WAW_pleasedpacific
+					add_idea = WAW_appeasedpacific
+					}
+				}
+			if = {
+				limit = {
+					has_idea = WAW_neutralpacific
+					}
+				swap_ideas = {
+					remove_idea = WAW_neutralpacific
+					add_idea = WAW_pleasedpacific
+					}
+				}
+			if = {
+				limit = {
+					has_idea = WAW_displeasedpacific
+					}
+				swap_ideas = {
+					remove_idea = WAW_displeasedpacific
+					add_idea = WAW_neutralpacific
+					}
+				}	
+			if = {
+				limit = {
+					has_idea = WAW_abandonedpacific
+					}
+				swap_ideas = {
+					remove_idea = WAW_abandonedpacific
+					add_idea = WAW_displeasedpacific
+					}
+				}	
+			}
+		}
+	focus = {
+		id = WAW_openwalletsforpacific
+		icon = GFX_Generic_Tank_with_Flags
+		cost = 10
+		x = 28
+		y = 5
+		ai_will_do = {
+			factor = 75
+		}
+		prerequisite = {
+			focus = WAW_develophighshrapnel
+			}
+		prerequisite = {
+			focus = WAW_devloptankvariants
+			}
+		completion_reward = {
+			707 = {
+				add_building_construction = {
+					type = land_facility
+					level = 1
+					instant_build = yes
+					province = 11251
+					}
+				}
+			
+			if = {
+				limit = {
+					has_idea = WAW_displeasedboeing
+					}
+				swap_ideas = {
+					remove_idea = WAW_displeasedboeing
+					add_idea = WAW_abandonedboeing
+					}
+				}
+			if = {
+				limit = {
+					has_idea = WAW_neutralboeing
+					}
+				swap_ideas = {
+					remove_idea = WAW_neutralboeing
+					add_idea = WAW_displeasedboeing
+					}
+				}
+			if = {
+				limit = {
+					has_idea = WAW_pleasedboeing
+					}
+				swap_ideas = {
+					remove_idea = WAW_pleasedboeing
+					add_idea = WAW_neutralboeing
+					}
+				}	
+			if = {
+				limit = {
+					has_idea = WAW_appeasedboeing
+					}
+				swap_ideas = {
+					remove_idea = WAW_appeasedboeing
+					add_idea = WAW_pleasedboeing
+					}
+				}
+			
+			if = {
+				limit = {
+					has_idea = WAW_displeasedpuget
+					}
+				swap_ideas = {
+					remove_idea = WAW_displeasedpuget
+					add_idea = WAW_abandonedpuget
+					}
+				}
+			if = {
+				limit = {
+					has_idea = WAW_neutralpuget
+					}
+				swap_ideas = {
+					remove_idea = WAW_neutralpuget
+					add_idea = WAW_displeasedpuget
+					}
+				}
+			if = {
+				limit = {
+					has_idea = WAW_pleasedpuget
+					}
+				swap_ideas = {
+					remove_idea = WAW_pleasedpuget
+					add_idea = WAW_neutralpuget
+					}
+				}	
+			if = {
+				limit = {
+					has_idea = WAW_appeasedpuget
+					}
+				swap_ideas = {
+					remove_idea = WAW_appeasedpuget
+					add_idea = WAW_pleasedpuget
+					}
+				}
+				
+			if = {
+				limit = {
+					has_idea = WAW_pleasedpacific
+					}
+				swap_ideas = {
+					remove_idea = WAW_pleasedpacific
+					add_idea = WAW_appeasedpacific
+					}
+				}
+			if = {
+				limit = {
+					has_idea = WAW_neutralpacific
+					}
+				swap_ideas = {
+					remove_idea = WAW_neutralpacific
+					add_idea = WAW_pleasedpacific
+					}
+				}
+			if = {
+				limit = {
+					has_idea = WAW_displeasedpacific
+					}
+				swap_ideas = {
+					remove_idea = WAW_displeasedpacific
+					add_idea = WAW_neutralpacific
+					}
+				}	
+			if = {
+				limit = {
+					has_idea = WAW_abandonedpacific
+					}
+				swap_ideas = {
+					remove_idea = WAW_abandonedpacific
+					add_idea = WAW_displeasedpacific
+					}
+				}	
+			}
+		}
+	focus = {
+		id = WAW_partnerwiththedockyards
+		icon = GFX_Generic_Navy1
+		cost = 5
+		x = 42
+		y = 1
+		ai_will_do = {
+			factor = 75
+		}	
+		completion_reward = {	
+			navy_experience = 25	
+			if = {
+				limit = {
+					has_idea = WAW_pleasedpuget
+					}
+				swap_ideas = {
+					remove_idea = WAW_pleasedpuget
+					add_idea = WAW_appeasedpuget
+					}
+				}
+			if = {
+				limit = {
+					has_idea = WAW_neutralpuget
+					}
+				swap_ideas = {
+					remove_idea = WAW_neutralpuget
+					add_idea = WAW_pleasedpuget
+					}
+				}
+			if = {
+				limit = {
+					has_idea = WAW_displeasedpuget
+					}
+				swap_ideas = {
+					remove_idea = WAW_displeasedpuget
+					add_idea = WAW_neutralpuget
+					}
+				}	
+			if = {
+				limit = {
+					has_idea = WAW_abandonedpuget
+					}
+				swap_ideas = {
+					remove_idea = WAW_abandonedpuget
+					add_idea = WAW_displeasedpuget
+					}
+				}
+				
+			}
+		}
+	focus = {
+		id = WAW_fundsubmarineadvancements
+		icon = GFX_goal_generic_navy_submarine
+		cost = 5
+		x = 40
+		y = 2
+		ai_will_do = {
+			factor = 75
+		}	
+		prerequisite = {
+			focus = WAW_partnerwiththedockyards
+			}
+		completion_reward = {	
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = ss_tech
+				}
+			if = {
+				limit = {
+					has_idea = WAW_pleasedpuget
+					}
+				swap_ideas = {
+					remove_idea = WAW_pleasedpuget
+					add_idea = WAW_appeasedpuget
+					}
+				}
+			if = {
+				limit = {
+					has_idea = WAW_neutralpuget
+					}
+				swap_ideas = {
+					remove_idea = WAW_neutralpuget
+					add_idea = WAW_pleasedpuget
+					}
+				}
+			if = {
+				limit = {
+					has_idea = WAW_displeasedpuget
+					}
+				swap_ideas = {
+					remove_idea = WAW_displeasedpuget
+					add_idea = WAW_neutralpuget
+					}
+				}	
+			if = {
+				limit = {
+					has_idea = WAW_abandonedpuget
+					}
+				swap_ideas = {
+					remove_idea = WAW_abandonedpuget
+					add_idea = WAW_displeasedpuget
+					}
+				}
+				
+			if = {
+				limit = {
+					has_idea = WAW_displeasedboeing
+					}
+				swap_ideas = {
+					remove_idea = WAW_displeasedboeing
+					add_idea = WAW_abandonedboeing
+					}
+				}
+			if = {
+				limit = {
+					has_idea = WAW_neutralboeing
+					}
+				swap_ideas = {
+					remove_idea = WAW_neutralboeing
+					add_idea = WAW_displeasedboeing
+					}
+				}
+			if = {
+				limit = {
+					has_idea = WAW_pleasedboeing
+					}
+				swap_ideas = {
+					remove_idea = WAW_pleasedboeing
+					add_idea = WAW_neutralboeing
+					}
+				}	
+			if = {
+				limit = {
+					has_idea = WAW_appeasedboeing
+					}
+				swap_ideas = {
+					remove_idea = WAW_appeasedboeing
+					add_idea = WAW_pleasedboeing
+					}
+				}
+
+			if = {
+				limit = {
+					has_idea = WAW_displeasedpacific
+					}
+				swap_ideas = {
+					remove_idea = WAW_displeasedpacific
+					add_idea = WAW_abandonedpacific
+					}
+				}
+			if = {
+				limit = {
+					has_idea = WAW_neutralpacific
+					}
+				swap_ideas = {
+					remove_idea = WAW_neutralpacific
+					add_idea = WAW_displeasedpacific
+					}
+				}
+			if = {
+				limit = {
+					has_idea = WAW_pleasedpacific
+					}
+				swap_ideas = {
+					remove_idea = WAW_pleasedpacific
+					add_idea = WAW_neutralpacific
+					}
+				}	
+			if = {
+				limit = {
+					has_idea = WAW_appeasedpacific
+					}
+				swap_ideas = {
+					remove_idea = WAW_appeasedpacific
+					add_idea = WAW_pleasedpacific
+					}
+				}	
+			}
+		}
+
+	focus = {
+		id = WAW_allpurposehulls
+		icon = GFX_focus_generic_navy_battleship2
+		cost = 5
+		x = 42
+		y = 2
+		ai_will_do = {
+			factor = 75
+		}	
+		prerequisite = {
+			focus = WAW_partnerwiththedockyards
+			}
+		completion_reward = {	
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = ca_tech
+				}
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = dd_tech
+				}
+			}
+		}
+	focus = {
+		id = WAW_largehullincentives
+		icon = GFX_goal_generic_navy_cruiser
+		cost = 5
+		x = 44
+		y = 2
+		ai_will_do = {
+			factor = 75
+		}	
+		prerequisite = {
+			focus = WAW_partnerwiththedockyards
+			}
+		completion_reward = {	
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = bb_tech
+				}
+			if = {
+				limit = {
+					has_idea = WAW_pleasedpuget
+					}
+				swap_ideas = {
+					remove_idea = WAW_pleasedpuget
+					add_idea = WAW_appeasedpuget
+					}
+				}
+			if = {
+				limit = {
+					has_idea = WAW_neutralpuget
+					}
+				swap_ideas = {
+					remove_idea = WAW_neutralpuget
+					add_idea = WAW_pleasedpuget
+					}
+				}
+			if = {
+				limit = {
+					has_idea = WAW_displeasedpuget
+					}
+				swap_ideas = {
+					remove_idea = WAW_displeasedpuget
+					add_idea = WAW_neutralpuget
+					}
+				}	
+			if = {
+				limit = {
+					has_idea = WAW_abandonedpuget
+					}
+				swap_ideas = {
+					remove_idea = WAW_abandonedpuget
+					add_idea = WAW_displeasedpuget
+					}
+				}
+			}
+		}
+
+	focus = {
+		id = WAW_underseadetection
+		icon = GFX_Generic_Sea_Focus_Navy
+		cost = 5
+		x = 40
+		y = 3
+		ai_will_do = {
+			factor = 75
+		}	
+		prerequisite = {
+			focus = WAW_fundsubmarineadvancements
+			}
+		prerequisite = {
+			focus = WAW_allpurposehulls
+			}
+		completion_reward = {	
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = asw_tech
+				}
+			if = {
+				limit = {
+					has_idea = WAW_displeasedboeing
+					}
+				swap_ideas = {
+					remove_idea = WAW_displeasedboeing
+					add_idea = WAW_abandonedboeing
+					}
+				}
+			if = {
+				limit = {
+					has_idea = WAW_neutralboeing
+					}
+				swap_ideas = {
+					remove_idea = WAW_neutralboeing
+					add_idea = WAW_displeasedboeing
+					}
+				}
+			if = {
+				limit = {
+					has_idea = WAW_pleasedboeing
+					}
+				swap_ideas = {
+					remove_idea = WAW_pleasedboeing
+					add_idea = WAW_neutralboeing
+					}
+				}	
+			if = {
+				limit = {
+					has_idea = WAW_appeasedboeing
+					}
+				swap_ideas = {
+					remove_idea = WAW_appeasedboeing
+					add_idea = WAW_pleasedboeing
+					}
+				}
+
+			if = {
+				limit = {
+					has_idea = WAW_displeasedpacific
+					}
+				swap_ideas = {
+					remove_idea = WAW_displeasedpacific
+					add_idea = WAW_abandonedpacific
+					}
+				}
+			if = {
+				limit = {
+					has_idea = WAW_neutralpacific
+					}
+				swap_ideas = {
+					remove_idea = WAW_neutralpacific
+					add_idea = WAW_displeasedpacific
+					}
+				}
+			if = {
+				limit = {
+					has_idea = WAW_pleasedpacific
+					}
+				swap_ideas = {
+					remove_idea = WAW_pleasedpacific
+					add_idea = WAW_neutralpacific
+					}
+				}	
+			if = {
+				limit = {
+					has_idea = WAW_appeasedpacific
+					}
+				swap_ideas = {
+					remove_idea = WAW_appeasedpacific
+					add_idea = WAW_pleasedpacific
+					}
+				}	
+			}
+		}
+	focus = {
+		id = WAW_maximizenavalpresence
+		icon = GFX_goal_generic_navy_battleship
+		cost = 5
+		x = 42
+		y = 3
+		ai_will_do = {
+			factor = 75
+		}	
+		prerequisite = {
+			focus = WAW_allpurposehulls
+			}
+		completion_reward = {
+			add_ideas = WAW_unmatchednavalpresence
+			if = {
+				limit = {
+					has_idea = WAW_pleasedpuget
+					}
+				swap_ideas = {
+					remove_idea = WAW_pleasedpuget
+					add_idea = WAW_appeasedpuget
+					}
+				}
+			if = {
+				limit = {
+					has_idea = WAW_neutralpuget
+					}
+				swap_ideas = {
+					remove_idea = WAW_neutralpuget
+					add_idea = WAW_pleasedpuget
+					}
+				}
+			if = {
+				limit = {
+					has_idea = WAW_displeasedpuget
+					}
+				swap_ideas = {
+					remove_idea = WAW_displeasedpuget
+					add_idea = WAW_neutralpuget
+					}
+				}	
+			if = {
+				limit = {
+					has_idea = WAW_abandonedpuget
+					}
+				swap_ideas = {
+					remove_idea = WAW_abandonedpuget
+					add_idea = WAW_displeasedpuget
+					}
+				}
+			}
+		}
+	focus = {
+		id = WAW_standardizecannondesigns
+		icon = GFX_focus_generic_trade_interdiction
+		cost = 5
+		x = 44
+		y = 3
+		ai_will_do = {
+			factor = 75
+		}	
+		prerequisite = {
+			focus = WAW_largehullincentives
+			}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 3
+				category = naval_artillery
+				}
+			if = {
+				limit = {
+					has_idea = WAW_pleasedpuget
+					}
+				swap_ideas = {
+					remove_idea = WAW_pleasedpuget
+					add_idea = WAW_appeasedpuget
+					}
+				}
+			if = {
+				limit = {
+					has_idea = WAW_neutralpuget
+					}
+				swap_ideas = {
+					remove_idea = WAW_neutralpuget
+					add_idea = WAW_pleasedpuget
+					}
+				}
+			if = {
+				limit = {
+					has_idea = WAW_displeasedpuget
+					}
+				swap_ideas = {
+					remove_idea = WAW_displeasedpuget
+					add_idea = WAW_neutralpuget
+					}
+				}	
+			if = {
+				limit = {
+					has_idea = WAW_abandonedpuget
+					}
+				swap_ideas = {
+					remove_idea = WAW_abandonedpuget
+					add_idea = WAW_displeasedpuget
+					}
+				}
+			}
+		}
+	focus = {
+		id = WAW_birdsatsea
+		icon = GFX_goal_generic_navy_carrier
+		cost = 5
+		x = 46
+		y = 3
+		ai_will_do = {
+			factor = 75
+		}	
+		prerequisite = {
+			focus = WAW_largehullincentives
+			}
+		available = {
+			OR = {
+				has_idea = WAW_pleasedboeing
+				has_idea = WAW_appeasedboeing
+				}
+			}	
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = cv_tech
+				}
+			if = {
+				limit = {
+					has_idea = WAW_pleasedpuget
+					}
+				swap_ideas = {
+					remove_idea = WAW_pleasedpuget
+					add_idea = WAW_appeasedpuget
+					}
+				}
+			if = {
+				limit = {
+					has_idea = WAW_neutralpuget
+					}
+				swap_ideas = {
+					remove_idea = WAW_neutralpuget
+					add_idea = WAW_pleasedpuget
+					}
+				}
+			if = {
+				limit = {
+					has_idea = WAW_displeasedpuget
+					}
+				swap_ideas = {
+					remove_idea = WAW_displeasedpuget
+					add_idea = WAW_neutralpuget
+					}
+				}	
+			if = {
+				limit = {
+					has_idea = WAW_abandonedpuget
+					}
+				swap_ideas = {
+					remove_idea = WAW_abandonedpuget
+					add_idea = WAW_displeasedpuget
+					}
+				}
+			
+			if = {
+				limit = {
+					has_idea = WAW_pleasedboeing
+					}
+				swap_ideas = {
+					remove_idea = WAW_pleasedboeing
+					add_idea = WAW_appeasedboeing
+					}
+				}
+			if = {
+				limit = {
+					has_idea = WAW_neutralboeing
+					}
+				swap_ideas = {
+					remove_idea = WAW_neutralboeing
+					add_idea = WAW_pleasedboeing
+					}
+				}
+			if = {
+				limit = {
+					has_idea = WAW_displeasedboeing
+					}
+				swap_ideas = {
+					remove_idea = WAW_displeasedboeing
+					add_idea = WAW_neutralboeing
+					}
+				}	
+			if = {
+				limit = {
+					has_idea = WAW_abandonedboeing
+					}
+				swap_ideas = {
+					remove_idea = WAW_abandonedboeing
+					add_idea = WAW_displeasedboeing
+					}
+				}
+				
+			if = {
+				limit = {
+					has_idea = WAW_displeasedpacific
+					}
+				swap_ideas = {
+					remove_idea = WAW_displeasedpacific
+					add_idea = WAW_abandonedpacific
+					}
+				}
+			if = {
+				limit = {
+					has_idea = WAW_neutralpacific
+					}
+				swap_ideas = {
+					remove_idea = WAW_neutralpacific
+					add_idea = WAW_displeasedpacific
+					}
+				}
+			if = {
+				limit = {
+					has_idea = WAW_pleasedpacific
+					}
+				swap_ideas = {
+					remove_idea = WAW_pleasedpacific
+					add_idea = WAW_neutralpacific
+					}
+				}	
+			if = {
+				limit = {
+					has_idea = WAW_appeasedpacific
+					}
+				swap_ideas = {
+					remove_idea = WAW_appeasedpacific
+					add_idea = WAW_pleasedpacific
+					}
+				}	
+			}
+		}
+		
+	focus = {
+		id = WAW_openwalletsforpuget
+		icon = GFX_Generic_Maritime
+		cost = 10
+		x = 42
+		y = 4
+		ai_will_do = {
+			factor = 75
+		}	
+		prerequisite = {
+			focus = WAW_maximizenavalpresence
+			}
+		prerequisite = {
+			focus = WAW_standardizecannondesigns
+			}
+		completion_reward = {
+			140 = {
+				add_building_construction = {
+					type = nuclear_facility
+					level = 1
+					instant_build = yes
+					province = 8115
+					}
+				}
+			if = {
+				limit = {
+					has_idea = WAW_pleasedpuget
+					}
+				swap_ideas = {
+					remove_idea = WAW_pleasedpuget
+					add_idea = WAW_appeasedpuget
+					}
+				}
+			if = {
+				limit = {
+					has_idea = WAW_neutralpuget
+					}
+				swap_ideas = {
+					remove_idea = WAW_neutralpuget
+					add_idea = WAW_pleasedpuget
+					}
+				}
+			if = {
+				limit = {
+					has_idea = WAW_displeasedpuget
+					}
+				swap_ideas = {
+					remove_idea = WAW_displeasedpuget
+					add_idea = WAW_neutralpuget
+					}
+				}	
+			if = {
+				limit = {
+					has_idea = WAW_abandonedpuget
+					}
+				swap_ideas = {
+					remove_idea = WAW_abandonedpuget
+					add_idea = WAW_displeasedpuget
+					}
+				}
+				
+			if = {
+				limit = {
+					has_idea = WAW_displeasedboeing
+					}
+				swap_ideas = {
+					remove_idea = WAW_displeasedboeing
+					add_idea = WAW_abandonedboeing
+					}
+				}
+			if = {
+				limit = {
+					has_idea = WAW_neutralboeing
+					}
+				swap_ideas = {
+					remove_idea = WAW_neutralboeing
+					add_idea = WAW_displeasedboeing
+					}
+				}
+			if = {
+				limit = {
+					has_idea = WAW_pleasedboeing
+					}
+				swap_ideas = {
+					remove_idea = WAW_pleasedboeing
+					add_idea = WAW_neutralboeing
+					}
+				}	
+			if = {
+				limit = {
+					has_idea = WAW_appeasedboeing
+					}
+				swap_ideas = {
+					remove_idea = WAW_appeasedboeing
+					add_idea = WAW_pleasedboeing
+					}
+				}
+
+			if = {
+				limit = {
+					has_idea = WAW_displeasedpacific
+					}
+				swap_ideas = {
+					remove_idea = WAW_displeasedpacific
+					add_idea = WAW_abandonedpacific
+					}
+				}
+			if = {
+				limit = {
+					has_idea = WAW_neutralpacific
+					}
+				swap_ideas = {
+					remove_idea = WAW_neutralpacific
+					add_idea = WAW_displeasedpacific
+					}
+				}
+			if = {
+				limit = {
+					has_idea = WAW_pleasedpacific
+					}
+				swap_ideas = {
+					remove_idea = WAW_pleasedpacific
+					add_idea = WAW_neutralpacific
+					}
+				}	
+			if = {
+				limit = {
+					has_idea = WAW_appeasedpacific
+					}
+				swap_ideas = {
+					remove_idea = WAW_appeasedpacific
+					add_idea = WAW_pleasedpacific
+					}
+				}
+			}
+		}	
+				

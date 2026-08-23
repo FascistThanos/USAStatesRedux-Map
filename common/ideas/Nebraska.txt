@@ -358,7 +358,6 @@ ideas = {
 			
 			picture = SWE_let_fly_all_guns
 
-			modifier = {
 				equipment_bonus = {
 					infantry = {
 						reliability = 0.10
@@ -366,7 +365,7 @@ ideas = {
 						}
 					}
 				}
-			}	
+				
 		NEN_cornfieldcombat = {
 			allowed = {
 				always = no

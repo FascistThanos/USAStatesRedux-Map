@@ -24,6 +24,7 @@ state={
 			11341 5 #Mendenhall Valley
 		}
 		add_core_of = AKA
+		add_core_of = TSI
 	}
 	provinces={
 		11338 11339 11340 11341 11342 

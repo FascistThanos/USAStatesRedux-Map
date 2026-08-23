@@ -76,7 +76,10 @@ set_politics = {
 	elections_allowed = yes
 }
 add_ideas = {
-	
+	WAW_nativeunrest
+	WAW_neutralboeing
+	WAW_neutralpacific
+	WAW_neutralpuget
 }
 set_popularities = {
 	democratic = 70

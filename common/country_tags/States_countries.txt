@@ -153,3 +153,10 @@ BRM = "countries/Bermuda.txt"
 TCI = "countries/Turks and Caicos Islands.txt"
 CYM = "countries/Cayman Islands.txt"
 AZO = "countries/Azores.txt"
+
+#Native
+ALU = "countries/Aleut.txt"
+TSI = "countries/Tsimshimian.txt"
+CSL = "countries/CoastalSalish.txt"
+SAL = "countries/Salish.txt"
+NEZ = "countries/NezPerce.txt"

@@ -619,7 +619,8 @@ country_event = {
 
 	trigger = {
 		NOT = { has_government = democratic }
-		democratic > 0.6
+		democratic > 0.8
+		stability < 0.1
 		NOT = { democratic > 0.7 }
 		check_has_focus_tree_to_switch_to_democratic = yes
 		NOT = {
@@ -1148,6 +1149,8 @@ country_event = {
 
 	trigger = {
 		democratic > 0.7
+		stability < 0.1
+		war_support < 0.1
 		num_of_controlled_states > 1
 		#has_idea = democratic_revolutionaries
 		#Special case CHI PRC
@@ -1339,38 +1342,3 @@ country_event = {
 }
 
 # Country has same ideology as revolter
-country_event = {
-	id = political.28
-	title = political.28.t
-	desc = political.28.d
-
-	picture = GFX_report_event_journalists_speech
-
-	trigger = {
-		is_subject = no
-		has_civil_war = yes
-		NOT = { has_country_flag = ENG_communist_civil_war }
-		any_other_country = {
-			NOT = { tag = ROOT }
-			original_tag = ROOT
-			is_subject = no
-			has_government = ROOT
-			has_war_with = ROOT
-		}
-	}
-
-	mean_time_to_happen = {
-		days = 2
-	}
-
-	option = {
-		name = political.28.a
-		random_other_country = {
-			limit = {
-				original_tag = ROOT
-				NOT = { tag = ROOT }
-			}
-			ROOT = { annex_country = { target = PREV transfer_troops = yes } }
-		}
-	}
-}

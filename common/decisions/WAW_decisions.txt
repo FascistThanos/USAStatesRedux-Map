@@ -1,0 +1,807 @@
+WAW_investmentpartners = {
+	WAW_oregonrailways = {
+		cost = 50
+		fire_only_once = yes
+		days_remove = 50
+		ai_will_do = {
+			base = 10
+			}
+		available = {
+			has_completed_focus = WAW_alliedrailways
+			ORO = {
+				is_subject_of = WAW
+			}
+		}	
+		remove_effect = {
+			62 = {
+					add_building_construction = {
+						type = supply_node
+						level = 1
+						instant_build = yes
+						province = 3727
+						}
+					}
+			ORO = {
+			build_railway = {
+				level = 1
+				build_only_on_allied = yes
+				controller_priority = {
+					base = 1
+					modifier = {
+					tag = ORO
+					add = 2
+					}
+				}
+				fallback = yes
+				path = { 11275 2453 3595 3723 1977 4804 3596 3879 3727 }
+				start_province = 11275
+				target_province = 3727
+				}
+			}
+		}	
+		}	
+	WAW_idahorailways = {
+		cost = 50
+		fire_only_once = yes
+		days_remove = 50
+		ai_will_do = {
+			base = 10
+			}
+		available = {
+			has_completed_focus = WAW_alliedrailways
+			IDI = {
+				is_subject_of = WAW
+			}
+		}	
+		remove_effect = {
+			164 = {
+					add_building_construction = {
+						type = supply_node
+						level = 1
+						instant_build = yes
+						province = 1026
+						}
+					}
+			IDI = {		
+			build_railway = {
+				level = 1
+				build_only_on_allied = yes
+				controller_priority = {
+					base = 1
+					modifier = {
+					tag = IDI
+					add = 2
+					}
+				}
+				fallback = yes
+				path = { 1026 3687 780 11932 4929 4985 11917 11151 11143 }
+				start_province = 1026
+				target_province = 11143
+				}	
+			}
+			}
+		}
+	WAW_oregonresources = {
+		cost = 25
+		fire_only_once = yes
+		days_remove = 50
+		ai_will_do = {
+			base = 10
+			}
+		available = {
+			has_completed_focus = WAW_alliedresources
+			ORO = {
+				is_subject_of = WAW
+			}
+		}	
+		remove_effect = {
+			ORO = {
+				add_ideas = WAW_washingtonmining
+				}
+			}
+		}
+	WAW_idahoresources = {
+		cost = 25
+		fire_only_once = yes
+		days_remove = 50
+		ai_will_do = {
+			base = 10
+			}
+		available = {
+			has_completed_focus = WAW_alliedresources
+			IDI = {
+				is_subject_of = WAW
+			}
+		}	
+		remove_effect = {
+			IDI = {
+				add_ideas = WAW_washingtonmining
+				}
+			}
+		}
+	WAW_oregonfactories = {
+		cost = 100
+		fire_only_once = yes
+		days_remove = 180
+		ai_will_do = {
+			base = 10
+			}
+		available = {
+			has_completed_focus = WAW_alliedfactories
+			ORO = {
+				is_subject_of = WAW
+			}
+		}	
+		remove_effect = {
+			711 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+					}
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+					}
+				}
+			718 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+					}
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+					}
+				}
+			1345 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+					}
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+					}
+				}
+			}
+		}
+	WAW_idahofactories = {
+		cost = 100
+		fire_only_once = yes
+		days_remove = 180
+		ai_will_do = {
+			base = 10
+			}
+		available = {
+			has_completed_focus = WAW_alliedfactories
+			IDI = {
+				is_subject_of = WAW
+			}
+		}	
+		remove_effect = {
+			164 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+					}
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+					}
+				}
+			161 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+					}
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+					}
+				}
+			60 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+					}
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+					}
+				}
+			}
+		}
+	WAW_oregoninfrastructure = {
+		cost = 25
+		fire_only_once = yes
+		days_remove = 50
+		ai_will_do = {
+			base = 10
+			}
+		available = {
+			has_completed_focus = WAW_alliedinfrastructure
+			ORO = {
+				is_subject_of = WAW
+			}
+		}	
+		remove_effect = {
+			ORO = {
+				add_ideas = WAW_washingtoninfrastructure
+				}
+			717 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+					}
+				}	
+			716 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+					}
+				}	
+			715 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+					}
+				}	
+			}
+		}
+	WAW_idahoinfrastructure = {
+		cost = 25
+		fire_only_once = yes
+		days_remove = 50
+		ai_will_do = {
+			base = 10
+			}
+		available = {
+			has_completed_focus = WAW_alliedinfrastructure
+			IDI = {
+				is_subject_of = WAW
+			}
+		}	
+		remove_effect = {
+			IDI = {
+				add_ideas = WAW_washingtoninfrastructure
+				}
+			158 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+					}
+				}	
+			683 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+					}
+				}	
+			157 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+					}
+				}
+			162 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+					}
+				}
+			}
+		}
+	WAW_idahowelfare = {
+		cost = 25
+		fire_only_once = yes
+		days_remove = 50
+		ai_will_do = {
+			base = 10
+			}
+		available = {
+			has_completed_focus = WAW_alliedwelfare
+			IDI = {
+				is_subject_of = WAW
+			}
+		}	
+		remove_effect = {
+			IDI = {
+				add_ideas = WAW_washingtonwelfare
+				}
+			}
+		}
+	WAW_oregonwelfare = {
+		cost = 25
+		fire_only_once = yes
+		days_remove = 50
+		ai_will_do = {
+			base = 10
+			}
+		available = {
+			has_completed_focus = WAW_alliedwelfare
+			ORO = {
+				is_subject_of = WAW
+			}
+		}	
+		remove_effect = {
+			ORO = {
+				add_ideas = WAW_washingtonwelfare
+				}
+			}
+		}
+	WAW_oregonresearch = {
+		cost = 25
+		fire_only_once = yes
+		days_remove = 50
+		ai_will_do = {
+			base = 10
+			}
+		available = {
+			has_completed_focus = WAW_alliedresearch
+			ORO = {
+				is_subject_of = WAW
+			}
+		}	
+		remove_effect = {
+			ORO = {
+				add_ideas = WAW_washingtonresearch
+				}
+			}
+		}
+	WAW_idahoresearch = {
+		cost = 25
+		fire_only_once = yes
+		days_remove = 50
+		ai_will_do = {
+			base = 10
+			}
+		available = {
+			has_completed_focus = WAW_alliedresearch
+			IDI = {
+				is_subject_of = WAW
+			}
+		}	
+		remove_effect = {
+			IDI = {
+				add_ideas = WAW_washingtonresearch
+				}
+			}
+		}
+		
+
+
+
+
+
+
+
+
+	
+			
+	}
+WAW_sustainabilityefforts = {
+	WAW_fishingsustainability = {
+		cost = 100
+		fire_only_once = yes
+		days_remove = 100
+		ai_will_do = {
+			base = 10
+			}
+		available = {
+		}	
+		remove_effect = {
+			add_ideas = WAW_fishingsustainability
+			}
+		}
+	WAW_loggingsustainability = {
+		cost = 100
+		fire_only_once = yes
+		days_remove = 100
+		ai_will_do = {
+			base = 10
+			}
+		available = {
+		}	
+		remove_effect = {
+			add_ideas = WAW_loggingsustainability
+			}
+		}
+	WAW_cleanerfactories = {
+		cost = 100
+		fire_only_once = yes
+		days_remove = 100
+		ai_will_do = {
+			base = 10
+			}
+		available = {
+		}	
+		remove_effect = {
+			add_ideas = WAW_cleanerfactories
+			}
+		}
+	WAW_enactnaturaleducation = {
+		cost = 100
+		fire_only_once = yes
+		days_remove = 100
+		ai_will_do = {
+			base = 10
+			}
+		available = {
+		}	
+		remove_effect = {
+			add_ideas = WAW_naturaleducation
+			}
+		}
+		
+	}
+
+WAW_integrationinitiatives = {
+		WAW_integratevancouver = {
+		cost = 25
+		fire_only_once = yes
+		days_remove = 60
+		ai_will_do = {
+			base = 10
+			}
+		available = {
+			controls_state = 958
+		}	
+		remove_effect = {
+			add_state_core = 958
+			}
+		}
+		WAW_integrateokanagan = {
+		cost = 25
+		fire_only_once = yes
+		days_remove = 60
+		ai_will_do = {
+			base = 10
+		}
+		available = {
+			controls_state = 956
+		}	
+		remove_effect = {
+		add_state_core = 956
+		}
+	}
+
+	WAW_integratethomsonnicola = {
+		cost = 25
+		fire_only_once = yes
+		days_remove = 60
+		ai_will_do = {
+			base = 10
+		}
+		available = {
+			controls_state = 955
+		}	
+		remove_effect = {
+			add_state_core = 955
+		}
+	}
+
+	WAW_integratecariboo = {
+		cost = 25
+		fire_only_once = yes
+		days_remove = 60
+		ai_will_do = {
+			base = 10
+		}
+		available = {
+			controls_state = 966
+		}	
+		remove_effect = {
+			add_state_core = 966
+		}
+	}
+
+	WAW_integratestrathcona = {
+		cost = 25
+		fire_only_once = yes
+		days_remove = 60
+		ai_will_do = {
+			base = 10
+		}
+		available = {
+			controls_state = 960
+		}	
+		remove_effect = {
+			add_state_core = 960
+		}
+	}
+
+	WAW_integratefraservalley = {
+		cost = 25
+		fire_only_once = yes
+		days_remove = 60
+		ai_will_do = {
+			base = 10
+		}
+		available = {
+			controls_state = 957
+		}	
+		remove_effect = {
+			add_state_core = 957
+		}
+	}
+
+	WAW_integratetexadaisland = {
+		cost = 10
+		fire_only_once = yes
+		days_remove = 60
+		ai_will_do = {
+			base = 10
+		}
+		available = {
+			controls_state = 959
+		}	
+		remove_effect = {
+			add_state_core = 959
+		}
+	}
+
+	WAW_integratesaltspringisland = {
+		cost = 10
+		fire_only_once = yes
+		days_remove = 60
+		ai_will_do = {
+			base = 10
+		}
+		available = {
+			controls_state = 962
+		}	
+		remove_effect = {
+			add_state_core = 962
+		}
+	}
+
+	WAW_integratevictoria = {
+		cost = 25
+		fire_only_once = yes
+		days_remove = 60
+		ai_will_do = {
+			base = 10
+		}
+		available = {
+			controls_state = 964
+		}	
+		remove_effect = {
+			add_state_core = 964
+		}
+	}
+
+	WAW_integratenanaimo = {
+		cost = 25
+		fire_only_once = yes
+		days_remove = 60
+		ai_will_do = {
+			base = 10
+		}
+		available = {
+			controls_state = 963
+		}	
+		remove_effect = {
+			add_state_core = 963
+		}
+	}
+
+	WAW_integratecomoxvalley = {
+		cost = 25
+		fire_only_once = yes
+		days_remove = 60
+		ai_will_do = {
+			base = 10
+		}
+		available = {
+			controls_state = 965
+		}	
+		remove_effect = {
+			add_state_core = 965
+		}
+	}
+
+	WAW_integratevancouverisland = {
+		cost = 25
+		fire_only_once = yes
+		days_remove = 60
+		ai_will_do = {
+			base = 10
+		}
+		available = {
+			controls_state = 137
+		}	
+		remove_effect = {
+			add_state_core = 137
+		}
+	}
+
+	WAW_integratemalcolmisland = {
+		cost = 10
+		fire_only_once = yes
+		days_remove = 60
+		ai_will_do = {
+			base = 10
+		}
+		available = {
+			controls_state = 979
+		}	
+		remove_effect = {
+			add_state_core = 979
+		}
+	}
+
+	WAW_integratequandraisland = {
+		cost = 10
+		fire_only_once = yes
+		days_remove = 60
+		ai_will_do = {
+			base = 10
+		}
+		available = {
+			controls_state = 961
+		}	
+		remove_effect = {
+			add_state_core = 961
+		}
+	}
+
+	WAW_integratekootenai = {
+		cost = 25
+		fire_only_once = yes
+		days_remove = 60
+		ai_will_do = {
+			base = 10
+		}
+		available = {
+			controls_state = 164
+		}	
+		remove_effect = {
+			add_state_core = 164
+		}
+	}
+
+	WAW_integrateshoshone = {
+		cost = 25
+		fire_only_once = yes
+		days_remove = 60
+		ai_will_do = {
+			base = 10
+		}
+		available = {
+			controls_state = 155
+		}	
+		remove_effect = {
+			add_state_core = 155
+		}
+	}
+
+	WAW_integratelatah = {
+		cost = 25
+		fire_only_once = yes
+		days_remove = 60
+		ai_will_do = {
+			base = 10
+		}
+		available = {
+			controls_state = 156
+		}	
+		remove_effect = {
+			add_state_core = 156
+		}
+	}
+
+	WAW_integratepayetteforest = {
+		cost = 25
+		fire_only_once = yes
+		days_remove = 60
+		ai_will_do = {
+			base = 10
+		}
+		available = {
+			controls_state = 158
+		}	
+		remove_effect = {
+			add_state_core = 158
+		}
+	}
+
+	WAW_integratecuster = {
+		cost = 25
+		fire_only_once = yes
+		days_remove = 60
+		ai_will_do = {
+			base = 10
+		}
+		available = {
+			controls_state = 683
+		}	
+		remove_effect = {
+			add_state_core = 683
+		}
+	}
+
+	WAW_integratecanyoncountry = {
+		cost = 25
+		fire_only_once = yes
+		days_remove = 60
+		ai_will_do = {
+			base = 10
+		}
+		available = {
+			controls_state = 60
+		}	
+		remove_effect = {
+			add_state_core = 60
+		}
+	}
+
+	WAW_integrateboise = {
+		cost = 25
+		fire_only_once = yes
+		days_remove = 60
+		ai_will_do = {
+			base = 10
+		}
+		available = {
+			controls_state = 684
+		}	
+		remove_effect = {
+			add_state_core = 684
+		}
+	}
+
+	WAW_integratewesternsnakeriver = {
+		cost = 25
+		fire_only_once = yes
+		days_remove = 60
+		ai_will_do = {
+			base = 10
+		}
+		available = {
+			controls_state = 162
+		}	
+		remove_effect = {
+			add_state_core = 162
+		}
+	}
+
+	WAW_integrateowyheeforest = {
+		cost = 25
+		fire_only_once = yes
+		days_remove = 60
+		ai_will_do = {
+			base = 10
+		}
+		available = {
+			controls_state = 163
+		}	
+		remove_effect = {
+			add_state_core = 163
+		}
+	}
+		

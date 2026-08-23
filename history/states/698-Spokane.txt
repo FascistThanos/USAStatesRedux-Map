@@ -23,6 +23,7 @@ state={
 			11279 10
 		}
 		add_core_of = WAW
+		add_core_of = SAL
 
 	}
 	provinces={

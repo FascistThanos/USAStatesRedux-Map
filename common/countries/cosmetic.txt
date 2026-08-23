@@ -249,3 +249,7 @@ KSK_USSR = {
 	color = rgb { 255 0 0 }
 	color_ui = rgb { 225 0 0 }
 }
+CSL = {
+	color = { 81 4 78 }
+	color_ui = { 81 4 78 }
+}

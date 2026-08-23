@@ -27,6 +27,7 @@ state={
 			11352 5 #Basher
 		}
 		add_core_of = AKA
+		add_core_of = ALU
 	}
 	provinces={
 		11350 11351 11352 11353 11355 11356 

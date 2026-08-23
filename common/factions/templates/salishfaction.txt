@@ -1,0 +1,27 @@
+WAW_faction_template_european_dominance_monarchist = {
+	name = northwestern_tribal_confederacy
+	manifest = faction_manifest_regional_expansionism
+	can_leader_join_other_factions = no
+	icon = GFX_faction_logo_generic_15
+	visible = {
+		has_government = neutrality
+	}
+	
+	goals = {
+		# Short term
+		# faction_goal_military_infrastructure
+
+		# Medium term
+		faction_goal_secure_the_oil_supply
+		
+		# Long term
+		faction_goal_defeat_of_communism
+	}
+
+	default_rules = {
+		joining_rule_puppets_only
+		faction_peace_take_claimed_focus
+		change_leader_rule_manpower
+	}
+
+}
