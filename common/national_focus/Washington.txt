@@ -203,7 +203,7 @@ focus_tree = {
 	focus = {
 		id = WAW_fastenerstudies
 		icon = GFX_focus_generic_industry_1
-		cost = 4.3
+		cost = 10
 		x = 54
 		y = 4
 		ai_will_do = {
@@ -248,7 +248,7 @@ focus_tree = {
 	focus = {
 		id = WAW_enactlaborlaws
 		icon = GFX_focus_generic_treaty
-		cost = 4.3
+		cost = 10
 		x = 64
 		y = 4
 		ai_will_do = {
@@ -262,6 +262,10 @@ focus_tree = {
 			}
 		completion_reward = {
 			add_ideas = WAW_laborlaws
+			add_popularity = {
+				ideology = communism
+				popularity = 0.1
+				}
 			}
 		}	
 	focus = {
@@ -404,7 +408,7 @@ focus_tree = {
 	focus = {
 		id = WAW_reassurecapitalistconcerns
 		icon = GFX_focus_generic_monetary_union
-		cost = 4.3
+		cost = 10
 		x = 54
 		y = 6
 		ai_will_do = {
@@ -440,7 +444,7 @@ focus_tree = {
 	focus = {
 		id = WAW_espousesocialistpolicies
 		icon = GFX_focus_FIN_socialist_welfare
-		cost = 4.3
+		cost = 10
 		x = 64
 		y = 6
 		ai_will_do = {
@@ -565,12 +569,16 @@ focus_tree = {
 			698 = {
 				add_manpower = 50000
 				}
+			add_popularity = {
+				ideology = communism
+				popularity = 0.1
+				}	
 			}
 		}
 	focus = {
 		id = WAW_subsidizerailwaycompanies
 		icon = GFX_focus_generic_railroad
-		cost = 4.3
+		cost = 10
 		x = 54
 		y = 8
 		ai_will_do = {
@@ -616,7 +624,7 @@ focus_tree = {
 	focus = {
 		id = WAW_ruralwelfare
 		icon = GFX_focus_AST_rural_concessions
-		cost = 4.3
+		cost = 10
 		x = 64
 		y = 8
 		ai_will_do = {
@@ -691,7 +699,7 @@ focus_tree = {
 		x = 22
 		y = 9
 		ai_will_do = {
-			factor = 75
+			factor = 90
 		}
 		available = {
 			democratic > 0.50
@@ -1511,7 +1519,7 @@ focus_tree = {
 		x = 40
 		y = 9
 		ai_will_do = {
-			factor = 75
+			factor = 50
 		}
 		prerequisite = {
 			focus = WAW_subsidizerailwaycompanies
