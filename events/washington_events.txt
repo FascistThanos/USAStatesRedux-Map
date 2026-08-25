@@ -332,12 +332,10 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = fwashington.3.a
-		ORO = {
 			create_wargoal = {
 				type = annex_everything
 				target = BCB
-				}
-			}	
+				}	
 		}
 	}
 	
@@ -349,12 +347,10 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = fwashington.4.a
-		ORO = {
 			create_wargoal = {
 				type = annex_everything
 				target = IDI
-				}
-			}	
+				}	
 		}
 	}
 
@@ -366,12 +362,10 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = fwashington.5.a
-		ORO = {
 			create_wargoal = {
 				type = annex_everything
 				target = AKA
-				}
-			}	
+				}	
 		}
 	}
 
@@ -383,12 +377,10 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = fwashington.6.a
-		ORO = {
 			create_wargoal = {
 				type = annex_everything
 				target = YTY
-				}
-			}	
+				}	
 		}
 	}
 
@@ -400,7 +392,6 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = fwashington.7.a
-		ORO = {
 			create_wargoal = {
 				type = take_claimed_state
 				target = MTM
@@ -409,8 +400,7 @@ country_event = {
 			add_state_claim = 1932
 			add_state_claim = 590
 			add_state_claim = 1390
-			add_state_claim = 587
-			}	
+			add_state_claim = 587	
 		}
 	}	
 	
