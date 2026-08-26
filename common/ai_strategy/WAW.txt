@@ -1,6 +1,6 @@
-NYN_naval_invasion = {
+WAW_naval_invasion = {
 	allowed = {
-		original tag = NYN
+		original tag = WAW
 		}
 	enable = {
 		has_war = yes
@@ -9,4 +9,4 @@ NYN_naval_invasion = {
 		type = naval_invasion_focus
 		value = 500
 		}
-	}		
+	}	
