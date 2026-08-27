@@ -79,7 +79,7 @@ ideas = {
 			picture = ARG_social_welfare_fund_ns
 
 			modifier = {
-				communism_drift = 0.06
+				communism_drift = 0.07
 				political_power_gain = -0.2
 				}
 			}
@@ -343,7 +343,7 @@ ideas = {
 
 			modifier = {
 				consumer_goods_factor = 0.05
-				weekly_manpower = 1000
+				weekly_manpower = 200
 				monthly_population = 0.05
 				}
 			}
@@ -440,7 +440,7 @@ ideas = {
 			picture = por_iberian_workers_united
 
 			modifier = {
-				communism_drift = 0.08
+				communism_drift = 0.1
 				}
 			}
 		WAW_peopleseyes = {
