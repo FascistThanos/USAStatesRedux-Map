@@ -898,7 +898,7 @@ ideas = {
 			picture = AST_government_aircraft_factories
 
 			modifier = {
-				civilian_factory_use = 6
+				civilian_factory_use = 5
 				experience_gain_air = 0.05
 				experience_gain_air_factor = 0.1
 				air_agility_factor = 0.1
@@ -928,7 +928,7 @@ ideas = {
 			picture = AST_government_aircraft_factories
 
 			modifier = {
-				civilian_factory_use = 4
+				civilian_factory_use = 3
 				experience_gain_air = 0.03
 				experience_gain_air_factor = 0.06
 				air_accidents_factor = -0.2
@@ -957,7 +957,7 @@ ideas = {
 			picture = AST_government_aircraft_factories
 
 			modifier = {
-				civilian_factory_use = 2
+				civilian_factory_use = 1
 				experience_gain_air = 0.01
 				experience_gain_air_factor = 0.02
 				}
@@ -1043,7 +1043,7 @@ ideas = {
 			picture = generic_acquire_tanks
 
 			modifier = {
-				civilian_factory_use = 6
+				civilian_factory_use = 5
 				experience_gain_army = 0.05
 				experience_gain_army_factor = 0.1
 				army_artillery_attack_factor = 0.1
@@ -1075,7 +1075,7 @@ ideas = {
 			picture = generic_acquire_tanks
 
 			modifier = {
-				civilian_factory_use = 4
+				civilian_factory_use = 3
 				experience_gain_army = 0.05
 				experience_gain_army_factor = 0.05
 				army_artillery_attack_factor = 0.08
@@ -1107,7 +1107,7 @@ ideas = {
 			picture = generic_acquire_tanks
 
 			modifier = {
-				civilian_factory_use = 2
+				civilian_factory_use = 1
 				experience_gain_army = 0.02
 				experience_gain_army_factor = 0.05
 				army_artillery_attack_factor = 0.05
@@ -1195,7 +1195,7 @@ ideas = {
 			picture = PRC_shipbuilding_industry_bureau
 
 			modifier = {
-				civilian_factory_use = 6
+				civilian_factory_use = 5
 				experience_gain_navy = 0.05
 				experience_gain_navy_factor = 0.1
 				war_support_weekly = 0.01
@@ -1221,7 +1221,7 @@ ideas = {
 			picture = PRC_shipbuilding_industry_bureau
 
 			modifier = {
-				civilian_factory_use = 4
+				civilian_factory_use = 3
 				experience_gain_navy = 0.03
 				experience_gain_navy_factor = 0.05
 				war_support_weekly = 0.01
@@ -1247,7 +1247,7 @@ ideas = {
 			picture = PRC_shipbuilding_industry_bureau
 
 			modifier = {
-				civilian_factory_use = 2
+				civilian_factory_use = 1
 				experience_gain_navy = 0.01
 				experience_gain_navy_factor = 0.05
 				navy_fuel_consumption_factor = -0.1
