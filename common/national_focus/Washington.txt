@@ -4496,7 +4496,7 @@ focus_tree = {
 	focus = {
 		id = WAW_connecttheoregonians
 		icon = GFX_Generic_Construction
-		cost = 10
+		cost = 5
 		x = 70
 		y = 14
 		ai_will_do = {
@@ -4618,7 +4618,7 @@ focus_tree = {
 	focus = {
 		id = WAW_fullgovernmentoversight
 		icon = GFX_Focus_Communist_Spy02
-		cost = 10
+		cost = 5
 		x = 74
 		y = 15
 		ai_will_do = {
@@ -4657,7 +4657,7 @@ focus_tree = {
 		x = 74
 		y = 16
 		ai_will_do = {
-			factor = 75
+			factor = 80
 		}
 		prerequisite = {
 			focus = WAW_federaleconomicstimulus
@@ -4907,7 +4907,7 @@ focus_tree = {
 		x = 16
 		y = 1
 		ai_will_do = {
-			factor = 40
+			factor = 30
 		}
 		completion_reward = {
 			air_experience = 10
@@ -4956,7 +4956,7 @@ focus_tree = {
 		x = 13
 		y = 2
 		ai_will_do = {
-			factor = 40
+			factor = 30
 		}
 		prerequisite = {
 			focus = WAW_designateairfacilities
@@ -5010,7 +5010,7 @@ focus_tree = {
 		x = 16
 		y = 2
 		ai_will_do = {
-			factor = 40
+			factor = 30
 		}
 		prerequisite = {
 			focus = WAW_designateairfacilities
@@ -5039,7 +5039,7 @@ focus_tree = {
 		x = 19
 		y = 2
 		ai_will_do = {
-			factor = 40
+			factor = 30
 		}
 		prerequisite = {
 			focus = WAW_designateairfacilities
@@ -5075,7 +5075,7 @@ focus_tree = {
 		x = 11
 		y = 3
 		ai_will_do = {
-			factor = 40
+			factor = 30
 		}
 		prerequisite = {
 			focus = WAW_experimentlarger
@@ -5207,7 +5207,7 @@ focus_tree = {
 		x = 13
 		y = 3
 		ai_will_do = {
-			factor = 40
+			factor = 30
 		}
 		prerequisite = {
 			focus = WAW_experimentlarger
@@ -5263,7 +5263,7 @@ focus_tree = {
 		x = 15
 		y = 3
 		ai_will_do = {
-			factor = 40
+			factor = 30
 		}
 		prerequisite = {
 			focus = WAW_enginestudies
@@ -5365,7 +5365,7 @@ focus_tree = {
 		x = 17
 		y = 3
 		ai_will_do = {
-			factor = 40
+			factor = 30
 		}
 		prerequisite = {
 			focus = WAW_enginestudies
@@ -5500,7 +5500,7 @@ focus_tree = {
 		x = 15
 		y = 4
 		ai_will_do = {
-			factor = 40
+			factor = 30
 		}
 		prerequisite = {
 			focus = WAW_armamentstudies
@@ -5641,7 +5641,7 @@ focus_tree = {
 		x = 20
 		y = 4
 		ai_will_do = {
-			factor = 40
+			factor = 30
 		}
 		prerequisite = {
 			focus = WAW_torpedomounting
@@ -5776,7 +5776,7 @@ focus_tree = {
 		x = 18
 		y = 4
 		ai_will_do = {
-			factor = 40
+			factor = 30
 		}
 		prerequisite = {
 			focus = WAW_torpedomounting
@@ -5913,7 +5913,7 @@ focus_tree = {
 		x = 29
 		y = 1
 		ai_will_do = {
-			factor = 40
+			factor = 30
 		}
 		completion_reward = {
 			army_experience = 10	
@@ -5962,7 +5962,7 @@ focus_tree = {
 		x = 27
 		y = 2
 		ai_will_do = {
-			factor = 40
+			factor = 30
 		}
 		prerequisite = {
 			focus = WAW_partnerwiththefoundry
@@ -5982,7 +5982,7 @@ focus_tree = {
 		x = 29
 		y = 2
 		ai_will_do = {
-			factor = 40
+			factor = 30
 		}
 		prerequisite = {
 			focus = WAW_partnerwiththefoundry
@@ -6116,7 +6116,7 @@ focus_tree = {
 		x = 31
 		y = 2
 		ai_will_do = {
-			factor = 40
+			factor = 30
 		}
 		prerequisite = {
 			focus = WAW_partnerwiththefoundry
@@ -6207,7 +6207,7 @@ focus_tree = {
 		x = 26
 		y = 3
 		ai_will_do = {
-			factor = 40
+			factor = 30
 		}
 		prerequisite = {
 			focus = WAW_testlongdistancebarrage
@@ -6345,7 +6345,7 @@ focus_tree = {
 		x = 30
 		y = 3
 		ai_will_do = {
-			factor = 40
+			factor = 30
 		}
 		prerequisite = {
 			focus = WAW_streamlineautomotive
@@ -6439,7 +6439,7 @@ focus_tree = {
 		x = 32
 		y = 3
 		ai_will_do = {
-			factor = 40
+			factor = 30
 		}
 		prerequisite = {
 			focus = WAW_streamlineautomotive
@@ -6495,7 +6495,7 @@ focus_tree = {
 		x = 27
 		y = 4
 		ai_will_do = {
-			factor = 40
+			factor = 30
 		}
 		prerequisite = {
 			focus = WAW_testlongdistancebarrage
@@ -6547,7 +6547,7 @@ focus_tree = {
 		x = 29
 		y = 4
 		ai_will_do = {
-			factor = 40
+			factor = 30
 		}
 		prerequisite = {
 			focus = WAW_testlongdistancebarrage
@@ -6602,7 +6602,7 @@ focus_tree = {
 		x = 31
 		y = 4
 		ai_will_do = {
-			factor = 40
+			factor = 30
 		}
 		prerequisite = {
 			focus = WAW_streamlineautomotive
@@ -6743,7 +6743,7 @@ focus_tree = {
 		x = 28
 		y = 5
 		ai_will_do = {
-			factor = 40
+			factor = 30
 		}
 		prerequisite = {
 			focus = WAW_develophighshrapnel
@@ -6880,7 +6880,7 @@ focus_tree = {
 		x = 42
 		y = 1
 		ai_will_do = {
-			factor = 40
+			factor = 30
 		}	
 		completion_reward = {	
 			navy_experience = 25	
@@ -6930,7 +6930,7 @@ focus_tree = {
 		x = 40
 		y = 2
 		ai_will_do = {
-			factor = 40
+			factor = 30
 		}	
 		prerequisite = {
 			focus = WAW_partnerwiththedockyards
@@ -7069,7 +7069,7 @@ focus_tree = {
 		x = 42
 		y = 2
 		ai_will_do = {
-			factor = 40
+			factor = 30
 		}	
 		prerequisite = {
 			focus = WAW_partnerwiththedockyards
@@ -7102,7 +7102,7 @@ focus_tree = {
 		x = 44
 		y = 2
 		ai_will_do = {
-			factor = 40
+			factor = 30
 		}	
 		prerequisite = {
 			focus = WAW_partnerwiththedockyards
@@ -7167,7 +7167,7 @@ focus_tree = {
 		x = 40
 		y = 3
 		ai_will_do = {
-			factor = 40
+			factor = 30
 		}	
 		prerequisite = {
 			focus = WAW_fundsubmarineadvancements
@@ -7263,7 +7263,7 @@ focus_tree = {
 		x = 42
 		y = 3
 		ai_will_do = {
-			factor = 40
+			factor = 30
 		}	
 		prerequisite = {
 			focus = WAW_allpurposehulls
@@ -7323,7 +7323,7 @@ focus_tree = {
 		x = 44
 		y = 3
 		ai_will_do = {
-			factor = 40
+			factor = 30
 		}	
 		prerequisite = {
 			focus = WAW_largehullincentives
@@ -7379,7 +7379,7 @@ focus_tree = {
 		x = 46
 		y = 3
 		ai_will_do = {
-			factor = 40
+			factor = 30
 		}	
 		prerequisite = {
 			focus = WAW_largehullincentives
@@ -7516,7 +7516,7 @@ focus_tree = {
 		x = 42
 		y = 4
 		ai_will_do = {
-			factor = 40
+			factor = 30
 		}	
 		prerequisite = {
 			focus = WAW_maximizenavalpresence
