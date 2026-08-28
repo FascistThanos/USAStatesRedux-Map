@@ -4490,6 +4490,7 @@ focus_tree = {
 					}
 			}
 			set_cosmetic_tag = PacCom
+			set_major = yes
 			}
 		}
 	focus = {
