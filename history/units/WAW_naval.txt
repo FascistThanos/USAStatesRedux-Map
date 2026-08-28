@@ -1,0 +1,32 @@
+units = {
+  
+	fleet = {
+	  name = "Destroyer Flotilla  1"
+	  naval_base = 11271
+	  task_force = {
+		location = 11271 # Seattle
+		ship = { name = "FSS Rainier" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = WAW version_name = "Omaha Class" } } }
+		ship = { name = "FSS Hood" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = WAW version_name = "Omaha Class" } } }
+		# 1st Destroyer Division
+		ship = { name = "FSS St.Helens" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = WAW version_name = "Farragut Class" } } }
+		ship = { name = "FSS Sacagawea" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = WAW version_name = "Farragut Class" } } }
+		ship = { name = "FSS Olympia" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = WAW version_name = "Farragut Class" } } }
+		ship = { name = "FSS Seattle" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = WAW version_name = "Farragut Class" } } }
+		# 2nd Destroyer Division
+		ship = { name = "FSS Spokane" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = WAW version_name = "Farragut Class" } } }
+		ship = { name = "FSS Vancouver" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = WAW version_name = "Farragut Class" } } }
+		ship = { name = "FSS Puget" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = WAW version_name = "Farragut Class" } } }
+		ship = { name = "FSS Pacific" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = WAW version_name = "Farragut Class" } } }
+		### Destroyer Squadron 9 ###
+	  }
+	}
+	fleet = {
+	  name = "Puget Cruisers"
+	  naval_base = 8115
+	  task_force = {
+		location = 8115 # Puget
+		ship = { name = "FSS Lewis" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = WAW version_name = "Pensacola Class" } } }
+		ship = { name = "FSS Clark" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = WAW version_name = "Pensacola Class" } } }
+	  }
+	}
+  }
