@@ -383,12 +383,12 @@ country_event = {
 	option = {
 		name = disunitedstates.7.a
 		ai_chance = {
-			base = 40
+			base = 0
 			modifier = {
-				factor = 30
-				strength_ratio = {
-					tag = FROM
-					ratio > 0.5
+				factor = 80
+				ORO = = {
+					has_government = democratic
+					}
 				}
 			}
 		}
@@ -407,7 +407,7 @@ country_event = {
 	option = {
 		name = disunitedstates.7.b
 		ai_chance = {
-			factor = 60
+			factor = 40
 		}
 		add_war_support = 0.15
 		CAC = {
@@ -474,14 +474,15 @@ country_event = {
 	option = {
 		name = disunitedstates.8.a
 		ai_chance = {
-			base = 60
+			base = 0
 			modifier = {
-				factor = 30
-				strength_ratio = {
-					tag = FROM
-					ratio > 0.1
+				factor = 80
+				WAW = {
+					has_government = democratic
+					}
 				}
 			}
+			
 		}
 		CAC = {
 			annex_country = {
@@ -498,7 +499,7 @@ country_event = {
 	option = {
 		name = disunitedstates.8.b
 		ai_chance = {
-			base = 40
+			base = 20
 		}
 		add_war_support = 0.15
 		CAC = {
@@ -601,12 +602,12 @@ country_event = {
 		option = {
 			name = disunitedstates.13.a
 			ai_chance = {
-				factor = 60
+				factor = 0
 				modifier = {
-					factor = 30
-					strength_ratio = {
-						tag = FROM
-						ratio > 0.1
+					factor = 80
+					AKA = {
+					has_government = democratic
+					}
 					}
 				}
 			}
@@ -625,7 +626,7 @@ country_event = {
 		option = {
 			name = disunitedstates.8.b
 			ai_chance = {
-				factor = 40
+				factor = 20
 			}
 			add_war_support = 0.15
 			CAC = {
@@ -869,7 +870,7 @@ country_event = {
 				factor = 30
 				strength_ratio = {
 					tag = FROM
-					ratio > 0.1
+					ratio > 0.5
 				}
 			}
 		}
