@@ -112,7 +112,7 @@ ideas = {
 			picture = CHI_illicit_trade_2
 
 			modifier = {
-				democratic_drift = 0.03
+				democratic_drift = 0.01
 				construction_speed_dockyard_factor = 0.1
 				}
 			}
@@ -848,8 +848,8 @@ ideas = {
 
 			modifier = {
 				operative_slot = 1
-				compliance_growth_on_our_occupied_states = 0.2
-				resistance_growth_on_our_occupied_states = -0.2
+				compliance_growth = 0.2
+				resistance_growth = -0.2
 				}
 			}
 		WAW_researchgrants = {
