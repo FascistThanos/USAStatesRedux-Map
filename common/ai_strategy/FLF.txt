@@ -1,0 +1,12 @@
+FLF_naval_invasion = {
+	allowed = {
+		original tag = FLF
+		}
+	enable = {
+		has_war = yes
+		}
+	ai_strategy = {
+		type = naval_invasion_focus
+		value = 500
+		}
+	}		
