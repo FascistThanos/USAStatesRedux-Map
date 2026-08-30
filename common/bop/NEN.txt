@@ -43,7 +43,7 @@ NEN_bop = {
 			min = -0.5
 			max = -0.2
 			modifier = {
-				recruitable_population_factor = 0.55
+				recruitable_population_factor = 0.05
 				communism_drift = 0.06
 				monthly_population = 0.10
 			}
