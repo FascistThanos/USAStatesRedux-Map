@@ -16,7 +16,7 @@ focus_tree = {
 		y = 0
 		available_if_capitulated = yes
 		ai_will_do = {
-			factor = 1
+			factor = 50
 		}
 		completion_reward = {
 			air_experience = 15
@@ -32,7 +32,7 @@ focus_tree = {
 		y = 0
 		available_if_capitulated = yes
 		ai_will_do = {
-			factor = 1
+			factor = 60
 		}
 		completion_reward = {
 			add_political_power = 100
@@ -46,7 +46,7 @@ focus_tree = {
 		y = 0
 		available_if_capitulated = yes
 		ai_will_do = {
-			factor = 1
+			factor = 70
 		}
 		completion_reward = {
 			random_owned_controlled_state = {
@@ -89,7 +89,7 @@ focus_tree = {
 		y = 0
 		available_if_capitulated = yes
 		ai_will_do = {
-			factor = 1
+			factor = 70
 		}
 		completion_reward = {
 			navy_experience = 25
@@ -182,7 +182,7 @@ focus_tree = {
 		y = 1
 		available_if_capitulated = yes
 		ai_will_do = {
-			factor = 1
+			factor = 50
 		}
 		completion_reward = {
 			add_ideas = FLF_Old_Tactics
@@ -267,7 +267,7 @@ focus_tree = {
 		y = 4
 		available_if_capitulated = yes
 		ai_will_do = {
-			factor = 1
+			factor = 50
 		}
 		completion_reward = {
 			add_political_power = 50
@@ -288,7 +288,7 @@ focus_tree = {
 		y = 1
 		available_if_capitulated = yes
 		ai_will_do = {
-			factor = 1
+			factor = 50
 		}
 		completion_reward = {
 			add_ideas = FLF_New_Tactics
@@ -395,7 +395,7 @@ focus_tree = {
 		y = 4
 		available_if_capitulated = yes
 		ai_will_do = {
-			factor = 1
+			factor = 50
 		}
 		completion_reward = {
 			add_ideas = FLF_Killing_Machines
@@ -413,7 +413,7 @@ focus_tree = {
 		y = 5
 		available_if_capitulated = yes
 		ai_will_do = {
-			factor = 1
+			factor = 50
 		}
 		completion_reward = {
 			add_ideas = FLF_Moral_Boost
@@ -430,7 +430,7 @@ focus_tree = {
 		y = 1
 		available_if_capitulated = yes
 		ai_will_do = {
-			factor = 1
+			factor = 50
 		}
 		completion_reward = {
 			random_owned_controlled_state = {
@@ -479,7 +479,7 @@ focus_tree = {
 		y = 2
 		available_if_capitulated = yes
 		ai_will_do = {
-			factor = 1
+			factor = 50
 		}
 		completion_reward = {
 			random_owned_controlled_state = {
@@ -506,7 +506,7 @@ focus_tree = {
 		y = 2
 		available_if_capitulated = yes
 		ai_will_do = {
-			factor = 1
+			factor = 50
 		}
 		completion_reward = {
 			random_owned_controlled_state = {
@@ -531,7 +531,7 @@ focus_tree = {
 		y = 3
 		available_if_capitulated = yes
 		ai_will_do = {
-			factor = 1
+			factor = 50
 		}
 		completion_reward = {
 			random_owned_controlled_state = {
@@ -555,7 +555,7 @@ focus_tree = {
 		y = 1
 		available_if_capitulated = yes
 		ai_will_do = {
-			factor = 1
+			factor = 50
 		}
 		completion_reward = {
 			random_owned_controlled_state = {
@@ -601,7 +601,7 @@ focus_tree = {
 		y = 2
 		available_if_capitulated = yes
 		ai_will_do = {
-			factor = 1
+			factor = 50
 		}
 		completion_reward = {
 			random_owned_controlled_state = {
@@ -647,7 +647,7 @@ focus_tree = {
 		y = 3
 		available_if_capitulated = yes
 		ai_will_do = {
-			factor = 1
+			factor = 50
 		}
 		completion_reward = {
 			867 = {
@@ -688,7 +688,7 @@ focus_tree = {
 		y = 4
 		available_if_capitulated = yes
 		ai_will_do = {
-			factor = 1
+			factor = 50
 		}
 		completion_reward = {
 			random_owned_controlled_state = {
@@ -825,7 +825,7 @@ focus_tree = {
 		y = 3
 		available_if_capitulated = yes
 		ai_will_do = {
-			factor = 1
+			factor = 50
 		}
 		completion_reward = {
 			add_ideas = FLF_Restoration_Projects
@@ -857,7 +857,7 @@ focus_tree = {
 		y = 3
 		available_if_capitulated = yes
 		ai_will_do = {
-			factor = 1
+			factor = 50
 		}
 		completion_reward = {
 			add_political_power = 10
@@ -875,7 +875,7 @@ focus_tree = {
 		y = 3
 		available_if_capitulated = yes
 		ai_will_do = {
-			factor = 1
+			factor = 50
 		}
 		completion_reward = {
 			add_stability = -0.05
@@ -896,7 +896,7 @@ focus_tree = {
 		y = 4
 		available_if_capitulated = yes
 		ai_will_do = {
-			factor = 1
+			factor = 50
 		}
 		completion_reward = {
 			add_stability = -0.05
@@ -1077,7 +1077,7 @@ focus_tree = {
 		y = 1
 		available_if_capitulated = yes
 		ai_will_do = {
-			factor = 6
+			factor = 50
 			modifier = {
 				factor = 2
 				any_neighbor_country = {
@@ -1120,7 +1120,7 @@ focus_tree = {
 		y = 2
 		available_if_capitulated = yes
 		ai_will_do = {
-			factor = 1
+			factor = 50
 		}
 		completion_reward = {
 			add_stability = 0.15
@@ -1142,7 +1142,7 @@ focus_tree = {
 		y = 3
 		available_if_capitulated = yes
 		ai_will_do = {
-			factor = 1
+			factor = 50
 		}
 		completion_reward = {
 			add_ideas = FLF_Left_War_Plans
@@ -1207,7 +1207,7 @@ focus_tree = {
 		y = 2
 		available_if_capitulated = yes
 		ai_will_do = {
-			factor = 1
+			factor = 50
 		}
 		completion_reward = {
 			add_stability = 0.1
@@ -1240,7 +1240,7 @@ focus_tree = {
 		y = 3
 		available_if_capitulated = yes
 		ai_will_do = {
-			factor = 1
+			factor = 50
 		}
 		completion_reward = {
 			add_stability = 0.1
@@ -1258,7 +1258,7 @@ focus_tree = {
 		y = 4
 		available_if_capitulated = yes
 		ai_will_do = {
-			factor = 1
+			factor = 50
 		}
 		completion_reward = {
 			custom_effect_tooltip = flf_allowed_to_form_csa_tt
@@ -1276,7 +1276,7 @@ focus_tree = {
 		y = 5
 		available_if_capitulated = yes
 		ai_will_do = {
-			factor = 1
+			factor = 50
 		}
 		completion_reward = {
 			create_wargoal = {
@@ -1300,7 +1300,7 @@ focus_tree = {
 		y = 6
 		available_if_capitulated = yes
 		ai_will_do = {
-			factor = 1
+			factor = 50
 		}
 		completion_reward = {
 			create_wargoal = {
@@ -1324,7 +1324,7 @@ focus_tree = {
 		y = 6
 		available_if_capitulated = yes
 		ai_will_do = {
-			factor = 1
+			factor = 50
 		}
 		completion_reward = {
 			create_wargoal = {
@@ -1348,7 +1348,7 @@ focus_tree = {
 		y = 4
 		available_if_capitulated = yes
 		ai_will_do = {
-			factor = 1
+			factor = 50
 		}
 		completion_reward = {
 			add_ideas = FLF_Slavery_Again
@@ -1365,7 +1365,7 @@ focus_tree = {
 		y = 5
 		available_if_capitulated = yes
 		ai_will_do = {
-			factor = 1
+			factor = 50
 		}
 		completion_reward = {
 			add_ideas = FLF_Offensive_Approach
@@ -1385,7 +1385,7 @@ focus_tree = {
 		y = 1
 		available_if_capitulated = yes
 		ai_will_do = {
-			factor = 1
+			factor = 70
 		}
 		completion_reward = {
 			add_tech_bonus = {
@@ -1411,7 +1411,7 @@ focus_tree = {
 		y = 2
 		available_if_capitulated = yes
 		ai_will_do = {
-			factor = 1
+			factor = 70
 		}
 		completion_reward = {
 			add_tech_bonus = {
@@ -1434,7 +1434,7 @@ focus_tree = {
 		y = 2
 		available_if_capitulated = yes
 		ai_will_do = {
-			factor = 1
+			factor = 70
 		}
 		completion_reward = {
 			add_tech_bonus = {
@@ -1457,7 +1457,7 @@ focus_tree = {
 		y = 2
 		available_if_capitulated = yes
 		ai_will_do = {
-			factor = 1
+			factor = 70
 		}
 		completion_reward = {
 			navy_experience = 50
@@ -1515,7 +1515,7 @@ focus_tree = {
 		y = 1
 		available_if_capitulated = yes
 		ai_will_do = {
-			factor = 1
+			factor = 70
 		}
 		completion_reward = {
 			add_tech_bonus = {
@@ -1537,7 +1537,7 @@ focus_tree = {
 		y = 2
 		available_if_capitulated = yes
 		ai_will_do = {
-			factor = 1
+			factor = 70
 		}
 		completion_reward = {
 			add_tech_bonus = {
@@ -1562,7 +1562,7 @@ focus_tree = {
 		y = 6
 		available_if_capitulated = yes
 		ai_will_do = {
-			factor = 1
+			factor = 50
 		}
 		completion_reward = {
 			add_research_slot = 1
@@ -1579,7 +1579,7 @@ focus_tree = {
 		y = 5
 		available_if_capitulated = yes
 		ai_will_do = {
-			factor = 1
+			factor = 50
 		}
 		completion_reward = {
 			add_research_slot = 1
@@ -1596,7 +1596,7 @@ focus_tree = {
 		y = 4
 		available_if_capitulated = yes
 		ai_will_do = {
-			factor = 1
+			factor = 50
 		}
 		completion_reward = {
 			add_stability = 0.25
@@ -1614,7 +1614,7 @@ focus_tree = {
 		y = 5
 		available_if_capitulated = yes
 		ai_will_do = {
-			factor = 1
+			factor = 50
 		}
 		completion_reward = {
 			create_wargoal = {
@@ -1638,7 +1638,7 @@ focus_tree = {
 		y = 4
 		available_if_capitulated = yes
 		ai_will_do = {
-			factor = 1
+			factor = 50
 		}
 		completion_reward = {
 			add_manpower = 15000
@@ -1657,7 +1657,7 @@ focus_tree = {
 		y = 5
 		available_if_capitulated = yes
 		ai_will_do = {
-			factor = 1
+			factor = 50
 		}
 		completion_reward = {
 			add_ideas = FLF_Expanding_Influence
@@ -1674,7 +1674,7 @@ focus_tree = {
 		y = 4
 		available_if_capitulated = yes
 		ai_will_do = {
-			factor = 1
+			factor = 50
 		}
 		completion_reward = {
 			add_popularity = {
@@ -1694,7 +1694,7 @@ focus_tree = {
 		y = 4
 		available_if_capitulated = yes
 		ai_will_do = {
-			factor = 1
+			factor = 50
 		}
 		completion_reward = {
 			add_war_support = -0.05
@@ -1712,7 +1712,7 @@ focus_tree = {
 		y = 5
 		available_if_capitulated = yes
 		ai_will_do = {
-			factor = 1
+			factor = 50
 		}
 		completion_reward = {
 			add_stability = 0.15
@@ -1730,7 +1730,7 @@ focus_tree = {
 		y = 2
 		available_if_capitulated = yes
 		ai_will_do = {
-			factor = 1
+			factor = 50
 		}
 		completion_reward = {
 			navy_experience = 25
@@ -1758,6 +1758,9 @@ focus_tree = {
 		prerequisite = {
 			focus = FLF_dockyardexpansion
 		}
+		ai_will_do = {
+			factor = 50
+		}
 		x = 36
 		y = 3
 		completion_reward = {
@@ -1774,6 +1777,9 @@ focus_tree = {
 		}
 		x = 36
 		y = 4
+		ai_will_do = {
+			factor = 50
+		}
 		completion_reward = {
 			create_wargoal = {
 				type = puppet_wargoal_focus
@@ -1790,6 +1796,9 @@ focus_tree = {
 		}
 		x = 34
 		y = 4
+		ai_will_do = {
+			factor = 50
+		}
 		completion_reward = {
 			create_wargoal = {
 				type = puppet_wargoal_focus
@@ -1807,6 +1816,9 @@ focus_tree = {
 		cost = 10
 		prerequisite = {
 			focus = FLF_alligatorbite
+		}
+		ai_will_do = {
+			factor = 50
 		}
 		x = 38
 		y = 4
@@ -1829,6 +1841,9 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = FLF_hispaniola
+		}
+		ai_will_do = {
+			factor = 60
 		}
 		x = 36
 		y = 5
