@@ -9,6 +9,8 @@
  CSalS:0 "Coastal Salish State"
  PacCom:0 "Pacific Command"
  UNOS:0 "Union Of The Snake"
+
+ WAW_BOOKMARK_DESC:0 "The time since the collapse has not been kind to Washington. The state has been plagued by growing tension between the natives and the colonists, while some measures have been taken, violence still occurs. The military industries have a stranglehold on the economy, and appeasing them seems impossible. All of this while California begins to stir to the South."
  
  
  lwashington.1.t:0 "The Matter Of Native Rights"
@@ -18,11 +20,11 @@
  lwashington.2.t:0 "Washington Demands Salem Submit"
  lwashington.2.d:0 "A message from the Evergreen Union has arrived to us today. Their demands are relatively straightforward. They are demanding that our government resigns effective immediately, and that they are allowed to fill those positions in whatever way they choose. This is absolutely unacceptable, and surely they are trying to goad us into getting some kind of casus belli in the name of national security. We do not have too many options however..."
  lwashington.2.a:0 "Hopefully they are reasonable..."
- lwashington.2.b:0 ""A casus belli they will have!"
+ lwashington.2.b:0 "A casus belli they will have!"
  lwashington.3.t:0 "Washington Demands Boise Submit"
  lwashington.3.d:0 "A message from the Evergreen Union has arrived to us today. Their demands are relatively straightforward. They are demanding that our government resigns effective immediately, and that they are allowed to fill those positions in whatever way they choose. This is absolutely unacceptable, and surely they are trying to goad us into getting some kind of casus belli in the name of national security. We do not have too many options however..."
  lwashington.3.a:0 "Hopefully they are reasonable..."
- lwashington.3.b:0 ""A casus belli they will have!"
+ lwashington.3.b:0 "A casus belli they will have!"
  lwashington.4.t:0 "Washington Demands Compliance"
  lwashington.4.d:0 "It seems that Washington has given us an ultimatum in their so-called "Crusade For Democracy". They are demanding that we either allow them extreme control over our government, or they will do it themselves. They are cowards hiding behind California's military, but our options are limited."
  lwashington.4.a:0 "Our hands are tied..."

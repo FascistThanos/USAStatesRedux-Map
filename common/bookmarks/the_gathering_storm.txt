@@ -7,6 +7,18 @@ bookmarks = {
 		default_country = "NEN"
 		default = yes
 
+		"WAW"={
+			history = "WAW_BOOKMARK_DESC"
+			ideology = democratic
+			ideas = {
+				#
+			}
+			focuses = {
+				WAW_nativerights
+				WAW_nativereconciliation
+				WAW_firmstance
+			}
+		}
 		"TXT" = {
 			history = "TXT_BOOKMARK_DESC"
 			ideology = democratic
@@ -35,18 +47,7 @@ bookmarks = {
 			}
 		}
 
-		"FLF"={
-			history = "FLF_BOOKMARK_DESC"
-			ideology = democratic
-			ideas = {
-				#
-			}
-			focuses = {
-				FLF_southernpride
-				FLF_patrioticrestoration
-				FLF_alligatorbite
-			}
-		}
+		
 
 		"KSK"={
 			history = "KSK_BOOKMARK_DESC"
@@ -98,6 +99,19 @@ bookmarks = {
 		}
 		"---"={
 			history = "OTHER_GATHERING_STORM_DESC"
+		}
+		"FLF"={
+			minor = yes
+			history = "FLF_BOOKMARK_DESC"
+			ideology = democratic
+			ideas = {
+				#
+			}
+			focuses = {
+				FLF_southernpride
+				FLF_patrioticrestoration
+				FLF_alligatorbite
+			}
 		}
 		"CTC"={
 			minor = yes
