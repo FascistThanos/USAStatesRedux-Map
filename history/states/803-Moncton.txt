@@ -1,6 +1,6 @@
 state={
 	id=803
-	name="Monocton"
+	name="Moncton"
 	history={
 		owner = NBN
 		buildings = {

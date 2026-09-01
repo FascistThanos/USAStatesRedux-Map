@@ -1,6 +1,6 @@
 state={
 	id=1248
-	name=STATE_MARQUEZ_COMILLAS
+	name= STATE_MARQUES_COMILLAS
 	history={
 		owner = CAP
 		buildings = {
