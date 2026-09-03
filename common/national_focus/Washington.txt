@@ -4174,7 +4174,7 @@ focus_tree = {
 				start_civil_war = {
 					ruling_party = neutrality
 					ideology = neutrality
-					size = 0.7
+					size = 0.3
 					states = {
 						705 700 694 697 696 699 698
 					}
@@ -4184,7 +4184,7 @@ focus_tree = {
 				start_civil_war = {
 					ruling_party = neutrality
 					ideology = neutrality
-					size = 0.7
+					size = 0.3
 					states = {
 						63 705 700 694 697 696 699 698
 					}
@@ -4203,7 +4203,7 @@ focus_tree = {
 						}
 			701 = {
 					create_unit = { division = "name = \"Patriot Militia\" division_template = \"WAW_patriot_militia\" start_experience_factor = 0.5" owner = WAW
-					count = 2
+					count = 1
 					}
 				}
 			703 = {
